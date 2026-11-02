@@ -18,6 +18,23 @@ This repository contains the static Astro site and versioned protocol sources.
 The registry, submission service, audit records, and supporting datasets remain
 hosted separately. A local website build does not run an audit or start a backend.
 
+## Ways to contribute
+
+Contributions are welcome, including questions and suggestions without code.
+
+| Contribution | Where to start |
+| --- | --- |
+| Improve the scientific protocol or completion criteria | Propose an [issue](https://github.com/yashaektefaie/SPECTRAagent/issues/new) or a pull request editing `protocol/protocol.md` or `protocol/finish.md`, with scientific rationale and supporting evidence. |
+| Improve the website, prompts, or documentation | Open an issue or a focused pull request changing `src/` or the relevant guide in `protocol/`. |
+| Report a bug, broken link, or hosted-service problem | [Open an issue](https://github.com/yashaektefaie/SPECTRAagent/issues/new) with what happened and what you expected. |
+| Contribute a completed audit | Follow the [HTTPS submission guide](protocol/submit.md) to send the audit for review. |
+
+For a pull request, fork this repository, create a branch, make and check your
+changes, then open a pull request against this repository's `main` branch.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the steps, scientific review, and
+versioning requirements. Protocol changes receive maintainer review before
+merging and release.
+
 ## Run, find, or submit an audit
 
 Give your coding agent the [agent guide](https://spectra.yashaektefaie.com/agents.md),

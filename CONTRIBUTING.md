@@ -1,12 +1,33 @@
 # Contributing
 
-Contributions to the AutoSPECTRA website and scientific protocol are welcome.
-Open an issue to discuss a proposed scientific change, or submit a focused pull
-request with the rationale and evidence needed to review it.
+Contributions to the AutoSPECTRA website, scientific protocol, prompts, and
+documentation are welcome. You do not need to write code to contribute:
+[open an issue](https://github.com/yashaektefaie/SPECTRAagent/issues/new) to ask a
+question, suggest an improvement, report a bug or broken link, or discuss a
+scientific change. Include what happened, what you expected, and enough detail
+to reproduce a problem. Hosted-service problems can also be reported here,
+even though the backend is maintained separately. Keep credentials, receipt
+tokens, and private research data out of public reports.
+
+To contribute a completed audit, use the [submission guide](protocol/submit.md).
+Use pull requests for changes to the website and instructions.
 
 ## Make and check a change
 
-Use Node.js 22.12 or later, then work from a branch:
+1. [Fork the repository](https://github.com/yashaektefaie/SPECTRAagent/fork) into
+   your account and clone your fork locally.
+2. Create a branch for your change and edit the appropriate source files below.
+3. Run the checks and inspect the affected content or website interactions.
+4. Commit your changes and push the branch to your fork.
+5. [Open a pull request](https://github.com/yashaektefaie/SPECTRAagent/compare)
+   from your fork's branch to `yashaektefaie/SPECTRAagent`, with `main` as the
+   base branch. Fill in the pull-request template and respond to review feedback.
+
+For a small wording correction, GitHub's file editor can create a fork and pull
+request directly in the browser. You can also describe a suggested correction
+in an issue if you are unsure how to edit it.
+
+For local development, use Node.js 22.12 or later:
 
 ```sh
 npm ci
