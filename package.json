@@ -1,0 +1,17 @@
+{
+  "name": "spectraagent-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "sync:protocol": "node scripts/sync-protocol.mjs",
+    "predev": "npm run sync:protocol",
+    "dev": "astro dev",
+    "prebuild": "npm run sync:protocol",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "npm run build && node scripts/check-site.mjs"
+  },
+  "dependencies": { "astro": "^5.13.0" }
+}

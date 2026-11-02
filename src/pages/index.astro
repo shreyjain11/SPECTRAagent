@@ -1,0 +1,120 @@
+---
+import "../styles/landing.css";
+const canonicalOrigin = "https://spectra.yashaektefaie.com";
+const origin = import.meta.env.DEV ? Astro.url.origin : canonicalOrigin;
+const tasks = [
+  {
+    id: "run", label: "Run an audit", number: "01",
+    title: "Where does your model generalize?",
+    description: "Give your agent a model and a question. AutoSPECTRA guides the investigation.",
+    prompt: "Follow protocol.md (https://spectra.yashaektefaie.com/protocol.md) to audit the generalizability of [model name and identifying information]. Once you believe you have finished, fetch and follow finish.md (https://spectra.yashaektefaie.com/finish.md) before giving your final response.\n\nAvailable compute and access: [hardware, runtime limits, data or checkpoint locations, and other deployment information].",
+    hint: "Fill in your model and available resources, then paste into your coding agent.",
+  },
+  {
+    id: "find", label: "Find an audit", number: "02",
+    title: "Has someone already tested it?",
+    description: "Check what is known about a model before you put it to work.",
+    prompt: "Check the AutoSPECTRA registry at https://spectra.yashaektefaie.com/data/findings.json for audits of [model name or paper link]. Summarize the relevant findings, evidence, limitations, and links to the original results. Distinguish the tested model version and task from my intended use. If no audit matches, tell me.",
+    hint: "Replace the brackets with the model you are interested in.",
+  },
+  {
+    id: "submit", label: "Submit an audit", number: "03",
+    title: "Make your findings useful to others.",
+    description: "Have an audit to share? Your agent can prepare it for the registry.",
+    prompt: "Read https://spectra.yashaektefaie.com/agents.md and help me submit my completed audit of [model name] for review. My report and supporting files are at [path or link].",
+    hint: "Give your agent the audit report and supporting files along with this prompt.",
+  },
+].map((task) => ({
+  ...task,
+  // Protocol previews are local; registry data remains on the hosted service.
+  prompt: task.id === "find" ? task.prompt : task.prompt.replaceAll(canonicalOrigin, origin),
+}));
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8faf8" />
+    <title>AutoSPECTRA — a better understanding of your model</title>
+    <meta name="description" content="Run, find, and share foundation-model generalizability audits. Start AutoSPECTRA with a prompt in the coding agent you already use." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='15' width='5' height='14' rx='2.5' fill='%23c5d6b0'/%3E%3Crect x='10' y='8' width='5' height='21' rx='2.5' fill='%238ebbb0'/%3E%3Crect x='17' y='3' width='5' height='26' rx='2.5' fill='%23447868'/%3E%3Crect x='24' y='11' width='5' height='18' rx='2.5' fill='%231c463b'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=IBM+Plex+Mono:wght@400;450&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip-link" href="#start">Skip to prompts</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="/" aria-label="AutoSPECTRA home">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="2" y="16" width="5" height="13" rx="2.5" fill="#bbcfaa" />
+            <rect x="10" y="9" width="5" height="20" rx="2.5" fill="#83b3a7" />
+            <rect x="18" y="3" width="5" height="26" rx="2.5" fill="#477b69" />
+            <rect x="26" y="12" width="5" height="17" rx="2.5" fill="#1f4c3d" />
+          </svg>
+          <span>Auto<span class="wordmark-strong">SPECTRA</span></span>
+        </a>
+        <nav aria-label="Resources">
+          <a href="/protocol.md" target="_blank" rel="noopener noreferrer">The protocol <span aria-hidden="true">↗</span></a>
+          <a href="/agents.md" target="_blank" rel="noopener noreferrer">Agent guide <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+      <main>
+        <section class="hero" aria-labelledby="welcome">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <p class="eyebrow"><span class="small-star" aria-hidden="true">✳</span> A little more clarity. A lot less setup.</p>
+          <h1 id="welcome">Welcome to <span>AutoSPECTRA.</span></h1>
+          <p class="hero-description">Understand where your foundation model generalizes.<br class="desktop-break" /> Start with a prompt in the agent you already use.</p>
+        </section>
+        <section class="workspace" id="start" aria-label="Get started with AutoSPECTRA">
+          <div class="task-tabs" role="tablist" aria-label="What would you like to do?">
+            {tasks.map((task, index) => (
+              <button id={`tab-${task.id}`} type="button" role="tab" aria-controls={`panel-${task.id}`} aria-selected={index === 0 ? "true" : "false"} tabindex={index === 0 ? 0 : -1} data-task={task.id}>
+                <span class="tab-number" aria-hidden="true">{task.number}</span>
+                <span>{task.label}</span>
+                <svg class="tab-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </button>
+            ))}
+          </div>
+          {tasks.map((task, index) => (
+            <div class="task-panel" id={`panel-${task.id}`} role="tabpanel" aria-labelledby={`tab-${task.id}`} hidden={index !== 0} tabindex="0">
+              <div class="panel-heading">
+                <div><h2>{task.title}</h2><p>{task.description}</p></div>
+                <span class="prompt-label">ONE PROMPT TO START</span>
+              </div>
+              <div class="prompt-box">
+                <p class="prompt-text" id={`prompt-${task.id}`}>{task.prompt}</p>
+                <div class="prompt-actions">
+                  <span class="agent-note"><span class="prompt-cursor" aria-hidden="true">›_</span> Your favorite coding agent</span>
+                  <button class="copy-button" type="button" data-copy-target={`prompt-${task.id}`} aria-label={`Copy prompt to ${task.label.toLowerCase()}`}>
+                    <svg class="copy-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="7" y="7" width="9" height="10" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M12 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.4"/></svg>
+                    <span data-copy-label>Copy prompt</span>
+                  </button>
+                </div>
+              </div>
+              <p class="prompt-hint">{task.hint}</p>
+            </div>
+          ))}
+        </section>
+        <section class="agent-handoff" aria-labelledby="handoff-title">
+          <div class="handoff-heading">
+            <span class="handoff-mark" aria-hidden="true">↳</span>
+            <div><h2 id="handoff-title">Or just give your agent this link.</h2><p>It can help you choose where to start.</p></div>
+          </div>
+          <div class="link-capsule">
+            <a href="/agents.md" id="agent-guide-link">{new URL(origin).host}/agents.md</a>
+            <button type="button" class="copy-link" data-copy-guide aria-label="Copy agent guide link">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="7" y="7" width="9" height="10" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M12 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.4"/></svg>
+            </button>
+          </div>
+        </section>
+        <p class="copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <noscript><p class="noscript-note">You can select and copy the prompt above. For all three options, open the <a href="/agents.md">agent guide</a>.</p></noscript>
+      </main>
+      <footer><p>A clearer picture of what your model can do.</p><a href="/agents.md">Made for scientists. Ready for agents. <span aria-hidden="true">↗</span></a></footer>
+    </div>
+    <script>import "../scripts/prompts.ts";</script>
+  </body>
+</html>

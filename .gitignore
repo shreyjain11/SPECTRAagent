@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+
+# Generated from protocol/ by npm run sync:protocol.
+/public/protocol.md
+/public/finish.md
+/public/agents.md
