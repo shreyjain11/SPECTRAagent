@@ -1,10 +1,10 @@
 # SPECTRA Generalizability Protocol
 
-Version: 2026-10-29.1
+Version: 2026-11-02.1
 
-This server exposes SPECTRA guidance and prior findings as read-only knowledge.
-It does not run audits, launch agents, call models, fetch datasets, or mutate
-artifacts.
+This service exposes SPECTRA guidance and published findings over HTTPS, and
+accepts contributed audit cards into a pending review queue. Audits run in the
+user's agent environment; the service does not execute model evaluations.
 
 ## Purpose
 
@@ -67,8 +67,6 @@ The loop is:
    [finish.md](https://spectra.yashaektefaie.com/finish.md). If useful authorized
    work remains, perform it and repeat the review without waiting for another
    user prompt. Stop only under that review's final-response gate.
-10. Publish the certified finding to the knowledge server before ending the run
-    (see Publication).
 
 ## Roles
 
@@ -429,7 +427,7 @@ keep a persistent target-model evaluator loaded when feasible.
 
 ## Provenance Contract
 
-Every paper-facing or MCP-published SPECTRA finding must include normalized
+Every paper-facing or registry-published SPECTRA finding must include normalized
 provenance. A stored finding is incomplete unless an agent can answer:
 
 1. Where did the model code come from?
@@ -440,7 +438,7 @@ provenance. A stored finding is incomplete unless an agent can answer:
 5. How was each dataset downloaded, filtered, deduplicated, or bounded?
 6. Which metadata resources defined similarity axes, controls, labels, or
    claim boundaries?
-7. Which local paths and MCP artifact ids support the record?
+7. Which local paths and artifact ids support the record?
 8. What exact gaps remain, such as missing checkpoint revisions or legacy
    cache hashes?
 9. Which effective training split and loader rules belong to each scored
@@ -459,11 +457,10 @@ backfill before claiming full reproducibility.
 
 If a paper-facing or reviewer-facing claim requires re-running the analysis
 from per-target or per-example rows, the raw scored tables must be published as
-normal HTTPS downloads with byte size, row count, and SHA-256 checksum. MCP
-artifact preview tools may truncate large files and should not be treated as a
-bulk transport mechanism. Hosted knowledge-server entries should expose such
-files through the download manifest and direct agents to `list_spectra_downloads`
-or `get_spectra_download`.
+normal HTTPS downloads with byte size, row count, and SHA-256 checksum. Hosted
+registry cards expose the download URLs and checksums in their `downloads`
+records. Follow those URLs for complete evidence; summaries are not a bulk
+transport mechanism.
 
 ## Closure Gate
 
@@ -572,53 +569,35 @@ and supported blockers. An incomplete search is not evidence the model has no
 failure regime. Finish review must assess these requirements, execute available
 next steps, and repeat before any final response.
 
-## Publication
+## Sharing an audit over HTTPS
 
-A certified audit is not finished until it is published. When the closure gate
-certifies a validated failure axis, emit the finding as a SPECTRA audit card and
-publish it to the knowledge server in the same session: call
-`get_spectra_submission_schema` for the current contract, assemble the card, and
-call `publish_spectra_finding`, which submits it, runs the autonomous auditor,
-and — only on an accepted verdict — puts it live on the public site. No token is
-required. Do not end the run with the result only in local files or in a chat
-reply — an audit whose result never reaches the registry cannot be reused by the
-next agent or scientist, which is the point of the registry.
+When the user asks to contribute an audit, read
+[the submission guide](https://spectra.yashaektefaie.com/submit.md) and fetch
+[the current submission format](https://spectra.yashaektefaie.com/api/submissions/schema).
+Send the complete JSON bundle to `POST /api/submissions/validate`, resolve the
+reported contract errors, then submit it to `POST /api/submissions`.
+Submission creates a pending review record; it does not certify the scientific
+claim or publish it. Save the returned submission ID and private receipt token
+and use the returned status URL to check review status. Do not place that token
+in a public artifact or a URL. Reading these instructions alone does not
+request a submission.
 
-The card is the machine-readable form of what the gate already checked, so it
-carries the frozen axis and its definition, the `headline` (axis name, direction,
-signed `effect_size` with a 95% `effect_ci` and `n`, and the controlled-vocabulary
-`decision`), the `evidence.levels` spectral performance curve with per-level `n`
-and metric value, `key_metrics`, and the `model_independent_reference` with its
-`model_specific` / `shared` / `reference_degrades_more` verdict. A submission
-missing the frozen headline, the curve, or the reference is not renderable and
-will not pass the backend auditor.
+Use a new, stable finding ID for each independent audit card. Cards can address
+a new model, a new axis on an existing model, or independent evidence for an
+already-audited axis. Preserve the exact checkpoint, task, frozen axis
+definition, dataset, result, claim boundary, uncertainty, and provenance so
+replication or disagreement remains distinguishable. Reference prior card IDs
+when appropriate; never replace an existing card by reusing its ID.
 
-Scored tables, figures, and model outputs are referenced, never inlined: publish
-each artifact at a stable public `http(s)` URL and cite it by URL, SHA-256
-checksum, byte size, and row count in `downloads` and `artifact_manifest`. A card
-whose artifact URLs do not resolve is not reproducible, so verify the URLs are
-live before submitting rather than pointing at a local path or a placeholder.
-Provenance travels with it: model source and weights or official-score
-identifier, every dataset source with its access route and row count, retrieval
-method, execution environment, and known gaps.
+Include the scored evidence and supporting artifact records required by the
+current schema. Large scored tables, figures, and model outputs must be hosted
+at stable HTTPS URLs and referenced with checksums, byte sizes, and row counts
+where applicable. The submission interface accepts metadata and audit cards,
+not bulk artifact uploads. If hosting or submission is unavailable, preserve
+the complete bundle locally and report the blocker accurately.
 
-Submitting is not the same as passing. The backend auditor re-runs the SPECTRA
-discipline checks against the card — schema contract, frozen headline, power
-floor, effect real at power, the spectral curve, the model-independent
-reference, novelty against stored findings, and containment against copied
-evidence — and only an `accepted` verdict promotes the finding into the
-canonical store and regenerates the live feed, at which point it appears on the
-public site. This gate is deterministic and runs on every contribution, so a
-weak or unsupported card is stopped whether or not a human is watching. Treat it
-as an independent reviewer, not a formality: if it returns `needs_revision`, fix
-the substantive gap it names and publish again. Never relabel existing failed
-evidence or drop a criterion retrospectively to force a pass. A scientifically
-justified narrower claim may be newly frozen and independently confirmed, then
-submitted with its own evidence and the original failed result preserved.
-
-Publish validated failure axes only. A negative, inconclusive, or
-data-ceiling result is a routing signal to keep searching, not a submission; it
-is never promoted to the public record. Record the precise claim, panel
-limitations, failed test, and retained signal in the run's ledger. Avoid unchanged
-retries, while allowing a distinct frozen claim or substantive new evidence, and
-continue the loop.
+Published cards can be discovered from
+[the model directory](https://spectra.yashaektefaie.com/api/models). Follow its
+links to models, axes, cards, and evidence. The registry is prior evidence, not
+a substitute for the independence and confirmation requirements above. Keep
+public claims bounded by the tested model version, task, dataset, and axis.

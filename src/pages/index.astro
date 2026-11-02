@@ -1,7 +1,8 @@
 ---
 import "../styles/landing.css";
 const canonicalOrigin = "https://spectra.yashaektefaie.com";
-const origin = import.meta.env.DEV ? Astro.url.origin : canonicalOrigin;
+// Copied prompts always address the hosted service, including in local previews.
+const origin = canonicalOrigin;
 const tasks = [
   {
     id: "run", label: "Run an audit", number: "01",
@@ -14,21 +15,17 @@ const tasks = [
     id: "find", label: "Find an audit", number: "02",
     title: "Has someone already tested it?",
     description: "Check what is known about a model before you put it to work.",
-    prompt: "Check the AutoSPECTRA registry at https://spectra.yashaektefaie.com/data/findings.json for audits of [model name or paper link]. Summarize the relevant findings, evidence, limitations, and links to the original results. Distinguish the tested model version and task from my intended use. If no audit matches, tell me.",
+    prompt: "Find audits of [model name or paper link] in AutoSPECTRA. Start at https://spectra.yashaektefaie.com/api/models and follow the returned model, axis, and audit-card links. Read all relevant cards in JSON and Markdown, then summarize their findings, evidence, limitations, and links to the original results. Distinguish model versions and tasks, and tell me if no audit matches.",
     hint: "Replace the brackets with the model you are interested in.",
   },
   {
     id: "submit", label: "Submit an audit", number: "03",
     title: "Make your findings useful to others.",
     description: "Have an audit to share? Your agent can prepare it for the registry.",
-    prompt: "Read https://spectra.yashaektefaie.com/agents.md and help me submit my completed audit of [model name] for review. My report and supporting files are at [path or link].",
+    prompt: "Follow https://spectra.yashaektefaie.com/submit.md to submit my completed audit of [model name] for review using the HTTPS API. My report and supporting files are at [path or link]. Prepare and validate the full submission bundle, submit it, and save the receipt and status-check token privately. Report the returned status; a pending submission is not published.",
     hint: "Give your agent the audit report and supporting files along with this prompt.",
   },
-].map((task) => ({
-  ...task,
-  // Protocol previews are local; registry data remains on the hosted service.
-  prompt: task.id === "find" ? task.prompt : task.prompt.replaceAll(canonicalOrigin, origin),
-}));
+];
 ---
 <!doctype html>
 <html lang="en">
@@ -104,7 +101,7 @@ const tasks = [
             <div><h2 id="handoff-title">Or just give your agent this link.</h2><p>It can help you choose where to start.</p></div>
           </div>
           <div class="link-capsule">
-            <a href="/agents.md" id="agent-guide-link">{new URL(origin).host}/agents.md</a>
+            <a href={`${canonicalOrigin}/agents.md`} id="agent-guide-link">{new URL(origin).host}/agents.md</a>
             <button type="button" class="copy-link" data-copy-guide aria-label="Copy agent guide link">
               <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="7" y="7" width="9" height="10" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M12 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.4"/></svg>
             </button>

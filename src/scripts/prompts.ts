@@ -70,6 +70,6 @@ document.querySelectorAll<HTMLButtonElement>("[data-copy-target]").forEach((butt
 document.querySelector<HTMLButtonElement>("[data-copy-guide]")?.addEventListener("click", (event) => {
   const button = event.currentTarget as HTMLButtonElement;
   const link = document.querySelector<HTMLAnchorElement>("#agent-guide-link");
-  // Resolve against this host so local previews also share a working URL.
+  // The guide link uses the canonical HTTPS service in local previews too.
   if (link) void copyText(link.href, button, true);
 });

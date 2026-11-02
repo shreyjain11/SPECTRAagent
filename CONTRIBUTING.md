@@ -6,7 +6,7 @@ request with the rationale and evidence needed to review it.
 
 ## Make and check a change
 
-Use Node.js 22 or later, then work from a branch:
+Use Node.js 22.12 or later, then work from a branch:
 
 ```sh
 npm ci
@@ -17,7 +17,9 @@ Website source lives in `src/`. Edit protocol documents in `protocol/`:
 
 - `protocol.md` defines the scientific investigation workflow.
 - `finish.md` defines the review and completion gates.
-- `agents.md` explains how agents use the website and hosted services.
+- `agents.md` explains the hosted HTTPS run/find/submit routes.
+- `prompt.md` contains the starting prompt and compute/access placeholders.
+- `submit.md` explains schema validation, submission, and receipt-status checks.
 
 The development and build prehooks copy these documents to `public/`. Change
 the canonical sources rather than editing generated copies. Keep website
@@ -27,14 +29,28 @@ Before submitting:
 
 ```sh
 npm run check
-npm run build
 npm run preview
 ```
+
+`npm run check` builds the site and checks the generated output. After editing
+protocol sources during a development session, run `npm run sync:protocol` or
+restart the development server. Rebuild before inspecting a changed production
+preview.
 
 For website changes, inspect the result at narrow and wide viewport widths,
 check keyboard navigation and links, and exercise the prompt-selection and
 copy controls. Include screenshots when they help reviewers assess a visual
 change.
+
+Keep prompts and guides consistent with the hosted service contract. Discovery
+starts at `/api/models` and follows returned model, axis, and card links; agents
+read relevant cards in both JSON and Markdown. Submission uses the current
+`/api/submissions/schema`, validation at `/api/submissions/validate`, and a JSON
+`POST` to `/api/submissions`. The body is the full schema bundle, not just a
+finding or a report path. Status checks use the returned receipt token in an
+authorization header. Preserve the distinction between validation, queued
+review, acceptance, and confirmed publication. Never put real receipt tokens
+or credentials in examples, screenshots, or committed files.
 
 ## Review scientific changes explicitly
 
@@ -56,7 +72,8 @@ a passing website check cannot validate a scientific rule.
 For a change to scientific behavior, update the `Version:` field in the affected
 protocol documents and add an entry to `protocol/CHANGELOG.md`. Use the existing
 `YYYY-MM-DD.N` convention, increasing `N` for another revision on the same date.
-Keep protocol and finish-review versions aligned when a change affects both.
+Update both protocol and finish-review versions when a change affects both;
+their version numbers need not match for a change that affects only one.
 Record the rationale and compatibility implications in the changelog. Pure
 formatting or typo corrections can be documented without changing the
 scientific version.
@@ -65,10 +82,26 @@ scientific version.
 
 Keep this repository focused on the website and protocol. Research run files,
 model checkpoints, private data, and registry records belong outside it. The
-live `/data/findings.json` route and submission service are maintained
-separately; reference their public contracts without adding local result data.
+hosted API, artifacts, findings export, and submission queue are maintained
+separately. Reference their public contracts without adding backend code,
+local result data, or copied registry records. User intent determines whether
+an agent runs, finds, or submits an audit; reading a guide is not authorization
+to perform all three. New submissions must remain separate records, including
+when another audit already covers the same model and axis.
 
 Pull requests run checks but do not automatically deploy. A maintainer reviews
 the change and publishes the built `dist/` through the existing hosting setup,
-preserving the registry and service routes. Follow the release checks in the
+preserving `/api/*`, `/downloads/*`, and `/data/findings.json` and their existing
+data. A static-site release does not update the hosted backend or publish audit
+results. Do not configure an automatic deployment as an incidental part of a
+website or documentation change.
+
+For a release, record the reviewed source revision and protocol versions,
+retain a recoverable copy of the previous static release, and verify the
+homepage, assets, five instruction documents, and hosted discovery links.
+Confirm the submission schema and existing artifact/download routes remain
+available. Use validation for contract checks; do not create test submissions
+in the public queue as a release smoke test. If a static release fails, restore
+the previous static files while leaving registry records and the submission
+queue intact. Follow the checks in the
 [README](README.md#hosted-services-and-deployment).
