@@ -30,6 +30,8 @@ on GitHub or in a local website preview.
 
 ## Find prior audits
 
+For the four manuscript case studies, the [manuscript collection](https://spectra.yashaektefaie.com/registry/audits.json) lists all 28 investigations, including rejected axes and retained controls. Each record has a website URL and per-axis evidence links. Use the model index below for the hosted collection and additional findings.
+
 1. `GET` the [model index](https://spectra.yashaektefaie.com/api/models).
 2. Select the relevant model and follow the model and axis links returned by the
    API. Preserve distinctions between model versions, checkpoints, and tasks.

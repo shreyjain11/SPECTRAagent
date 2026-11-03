@@ -74,6 +74,7 @@ for (const name of documents) {
 }
 
 const html = await read("dist/index.html");
+assert.ok(html.includes('href="/registry/"'), "Homepage must link to the hosted manuscript registry");
 checkReleaseText(decode(html), "Homepage");
 const attributes = (tag) => Object.fromEntries(Array.from(tag.matchAll(/([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g), (m) => [m[1], decode(m[2] ?? m[3])]));
 const buttons = Array.from(html.matchAll(/<button\b[^>]*>/gi), (m) => attributes(m[0]));

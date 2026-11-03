@@ -1,0 +1,61 @@
+---
+import Layout from "../../components/RegistryLayout.astro";
+import { models, investigations } from "../../lib/paper-registry";
+---
+
+<Layout
+  title="Audit registry"
+  description="Explore the investigations and evaluated axes in the AutoSPECTRA manuscript."
+>
+  <div class="intro">
+    <p class="eyebrow">Manuscript investigations</p><h1>Audit registry</h1><p
+      class="lead"
+    >
+      Explore the axes tested in each investigation, the evidence behind each
+      decision, and the data and code preserved from the run.
+    </p>
+  </div>
+  <div class="sectionline">
+    <h2>Models</h2><span
+      >{models.length} models · {investigations.length} investigations</span>
+  </div>
+  <div class="models">
+    {
+      models.map((m) => (
+        <article class="modelcard">
+          <a class="model-link" href={`/registry/${m.slug}/`}>
+            <>
+              <div class="card-heading">
+                <>
+                  <div>
+                    <>
+                      <span class="kicker">
+                        Figure {m.figure} / {m.field}
+                      </span>
+                      <h2>{m.name}</h2>
+                    </>
+                  </div>
+                  <span class="arrow" aria-hidden="true">
+                    ↗
+                  </span>
+                </>
+              </div>
+              <p>{m.task}</p>
+              <div class="figure-thumb">
+                <img
+                  src={`/registry/figures/${m.slug}-main.webp`}
+                  alt={`Figure ${m.figure}, ${m.name} audit`}
+                />
+              </div>
+            </>
+          </a>
+        </article>
+      ))
+    }
+  </div>
+  <p class="service-link">
+    Looking for another model? <a
+      href="https://spectra.yashaektefaie.com/api/models"
+      >Browse the hosted model index ↗</a>
+  </p>
+</Layout>

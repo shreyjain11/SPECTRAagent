@@ -15,7 +15,7 @@ const tasks = [
     id: "find", label: "Find an audit", number: "02",
     title: "Has someone already tested it?",
     description: "Check what is known about a model before you put it to work.",
-    prompt: "Find audits of [model name or paper link] in AutoSPECTRA. Start at https://spectra.yashaektefaie.com/api/models and follow the returned model, axis, and audit-card links. Read all relevant cards in JSON and Markdown, then summarize their findings, evidence, limitations, and links to the original results. Distinguish model versions and tasks, and tell me if no audit matches.",
+    prompt: "Find audits of [model name or paper link] in AutoSPECTRA. Start at https://spectra.yashaektefaie.com/api/models and follow the returned model, axis, and audit-card links. For manuscript investigations, also consult https://spectra.yashaektefaie.com/registry/audits.json. Read all relevant cards in JSON and Markdown, then summarize their findings, evidence, limitations, and links to the original results. Distinguish model versions and tasks, and tell me if no audit matches.",
     hint: "Replace the brackets with the model you are interested in.",
   },
   {
@@ -54,6 +54,7 @@ const tasks = [
           <span>Auto<span class="wordmark-strong">SPECTRA</span></span>
         </a>
         <nav aria-label="Resources">
+          <a href="/registry/">Audit registry</a>
           <a href="/protocol.md" target="_blank" rel="noopener noreferrer">The protocol <span aria-hidden="true">↗</span></a>
           <a href="/agents.md" target="_blank" rel="noopener noreferrer">Agent guide <span aria-hidden="true">↗</span></a>
         </nav>
@@ -91,7 +92,7 @@ const tasks = [
                   </button>
                 </div>
               </div>
-              <p class="prompt-hint">{task.hint}</p>
+              <p class="prompt-hint">{task.hint}{task.id === "find" && <> <a href="/registry/">Browse manuscript investigations.</a></>}</p>
             </div>
           ))}
         </section>

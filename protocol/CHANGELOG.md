@@ -1,5 +1,9 @@
 # Protocol changelog
 
+## Manuscript registry discovery
+
+- The agent guide links the 28 figure-linked manuscript investigations and their evidence files. The audit protocol, finish criteria and submission schema retain their existing versions.
+
 ## HTTPS access and sharing — 2026-11-02.1
 
 - Updated the protocol's access and sharing instructions for the hosted HTTPS
