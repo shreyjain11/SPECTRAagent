@@ -195,10 +195,6 @@
   margin-top: 0;
   color: #4a5a4b;
 }
-.technical-details {
-  margin-top: 17px;
-  font-size: 13px;
-}
 .registry summary {
   cursor: pointer;
   color: var(--green);
@@ -210,34 +206,6 @@
 .registry details[open] > summary {
   margin-bottom: 10px;
 }
-.technical-details dl {
-  margin: 12px 0;
-  padding: 16px 20px;
-  border: 1px solid #e7ece3;
-  background: #f5f7f3;
-  border-radius: 12px;
-}
-.technical-details dt {
-  font-weight: 500;
-  margin-top: 12px;
-}
-.technical-details dt:first-child {
-  margin-top: 0;
-}
-.technical-details dd {
-  margin: 3px 0 0;
-  color: var(--muted);
-  overflow-wrap: anywhere;
-}
-.resources {
-  margin: 12px 0;
-  padding-left: 18px;
-  overflow-wrap: anywhere;
-}
-.resources li + li {
-  margin-top: 4px;
-}
-.resources a,
 .registry-downloads a,
 .crumb a,
 .audit-contents a {
@@ -271,3 +239,37 @@
   .runlist a { padding: 21px; }
   .axis-heading h2 { min-width: 180px; }
 }
+
+.open-notebook, .notebook-download {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--green);
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.open-notebook span { margin-left: 4px; }
+.notebook { max-width: 850px; }
+.notebook p { font-size: 14px; }
+.notebook-intro { margin-bottom: 22px; }
+.notebook-intro h1 { margin-top: 6px; }
+.notebook-intro p { max-width: 75ch; margin: 12px 0 0; }
+.notebook-measurement { border-top: 1px solid var(--line); padding-top: 15px; }
+.notebook-measurement h2 { font-size: 14px; }
+.notebook-measurement p { margin: 2px 0 12px; color: var(--muted); }
+.notebook-note { border-left: 2px solid #8eb5a3; padding-left: 12px; }
+.notebook-cell { margin: 20px 0; }
+.notebook-cell h2 { font-size: 15px; }
+.notebook pre {
+  overflow-x: auto; margin: 8px 0; padding: 16px;
+  border: 1px solid var(--line); border-radius: 9px; background: #f3f6f0;
+  color: #30443a; font: 12px/1.7 "IBM Plex Mono", ui-monospace, monospace;
+}
+.notebook pre code { font: inherit; }
+.notebook .notebook-output { white-space: pre-wrap; background: white; overflow-wrap: anywhere; }
+.notebook-chart { display: block; width: 100%; max-width: 760px; height: auto; margin: 10px 0; }
+.plot-code { margin: 12px 0; font-size: 13px; }
+.table-scroll { overflow: auto; margin-top: 10px; }
+.notebook table { border-collapse: collapse; width: 100%; background: white; font-size: 13px; }
+.notebook th, .notebook td { text-align: left; border-bottom: 1px solid var(--line); padding: 8px 11px; vertical-align: top; }
+.notebook th { font-weight: 550; background: #f0f4ed; }

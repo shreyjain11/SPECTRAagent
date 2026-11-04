@@ -17,7 +17,8 @@ The standard site is written to `dist/`. The separate registry build is written 
 ## Contents and checks
 
 - `/registry/` describes the four models and links to seven investigations per model. Pages use the homepage’s shared header, logo, fonts and footer.
-- Each investigation has a plain-language summary. Each test explains the measured property and the comparison before presenting the result. Measurements, data and code are available in expandable sections. HTML, JSON and Markdown views use the same records. Audit dates refer to the audit record.
+- Each investigation has a plain-language summary. Each test explains the measured property and the comparison before presenting the result. “Measurements, data and code” opens an executed notebook for that test. The browser displays its code and saved outputs. Its downloadable Jupyter file contains the inputs required to rerun its analysis cells. Unmeasured tests identify what was unavailable. HTML, JSON and Markdown views use the same records. Audit dates refer to the audit record.
+- The supplied bundle includes one nbformat 4 document per test at `public/registry/notebooks/<audit-id>/test-NN.ipynb`. Notebook metadata identifies the audit, test, and output type. The viewer reads these files at build time.
 - `/registry/audits.json` contains the full collection. A record's `legacyFindingId`, when present, identifies the corresponding earlier hosted finding. Records without a match are separate investigations.
 - The source bundle retains its original figure manifest for provenance. The pages and Markdown downloads display no figure panels or figure links. `/registry/evidence-manifest.json` lists evidence files and checksums.
 - `npm run check:registry` checks row and record identity, figure and evidence checksums, plain-language explanations, shared navigation, per-axis content in rendered pages, and links to local evidence.

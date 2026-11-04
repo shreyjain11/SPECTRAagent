@@ -1,0 +1,58 @@
+---
+import Layout from "../../../../components/RegistryLayout.astro";
+import { investigations, auditURL, notebookFile } from "../../../../lib/paper-registry";
+import { readNotebook, textOf } from "../../../../lib/notebook";
+
+export function getStaticPaths() {
+  return investigations.flatMap((audit) => audit.axes.map((axis, index) => ({
+    params: { model: audit.model.toLowerCase(), audit: audit.id, notebook: `notebook-${index + 1}` },
+    props: { audit, index },
+  })));
+}
+const { audit, index } = Astro.props;
+const axis = audit.axes[index];
+const book = readNotebook(audit, index);
+const info = book.metadata.spectra;
+const visible = book.cells.filter((c) => ["analysis", "plot"].includes(c.metadata.spectra_role));
+const script = book.cells.find((c) => c.metadata.spectra_role === "audit-script");
+const scriptText = script ? textOf(script.source).split("\n").slice(3,-1).join("\n") : "";
+---
+<Layout title={`${axis.name} · Notebook`} description={axis.explanation}>
+  <nav class="crumb" aria-label="Breadcrumb">
+    <a href="/registry/">Audit registry</a><span aria-hidden="true">/</span>
+    <a href={auditURL(audit) + "#axis-" + (index + 1)}>{audit.title}</a>
+  </nav>
+  <div class="notebook">
+    <div class="notebook-intro">
+      <div class="run-meta">Analysis notebook · {audit.model}</div>
+      <h1>{axis.name}</h1>
+      <p>{axis.explanation}</p>
+      <a class="notebook-download" href={notebookFile(audit, index)} download>Download Jupyter notebook (.ipynb)</a>
+    </div>
+    <section class="notebook-measurement">
+      <h2>Measurement</h2><p>{axis.definition}</p>
+      <h2>Data</h2><p>{axis.data}</p>
+      <h2>Audit result</h2><p>{axis.result}</p>
+    </section>
+    <p class="notebook-note">{info.note}</p>
+    {visible.map((cell) => (
+      <section class="notebook-cell">
+        {cell.metadata.spectra_role === "plot" ? (
+          <details class="plot-code"><summary>Plotting code</summary><pre><code>{textOf(cell.source)}</code></pre></details>
+        ) : (
+          <><h2>Analysis code</h2><pre><code>{textOf(cell.source)}</code></pre></>
+        )}
+        {cell.outputs?.map((out) => {
+          const data = out.data;
+          const chart = data?.["image/png"];
+          const table = data?.["application/vnd.spectra.table+json"];
+          if (chart) return <img class="notebook-chart" src={"data:image/png;base64,"+chart} alt={`${axis.name}. ${axis.result}`} />;
+          if (table) return <div class="table-scroll"><table><thead><tr>{table.headers.map((h) => <th scope="col">{h}</th>)}</tr></thead><tbody>{table.rows.map((row) => <tr>{row.map((v) => <td>{v}</td>)}</tr>)}</tbody></table></div>;
+          const output = textOf(out.text || data?.["text/plain"]);
+          return output && <pre class="notebook-output">{output}</pre>;
+        })}
+      </section>
+    ))}
+    {script && <details class="plot-code audit-script"><summary>Audit script · {script.metadata.filename}</summary><pre><code>{scriptText}</code></pre></details>}
+  </div>
+</Layout>

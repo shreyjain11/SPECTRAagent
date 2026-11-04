@@ -82,6 +82,13 @@ export function modelAudits(name: string) {
 export function auditURL(a: Investigation) {
   return `/registry/${a.model.toLowerCase()}/${a.id}/`;
 }
+export function notebookURL(audit: Investigation, index: number) {
+  return auditURL(audit) + "notebook-" + (index + 1) + "/";
+}
+export function notebookFile(audit: Investigation, index: number) {
+  const number = String(index + 1).padStart(2, "0");
+  return `/registry/notebooks/${audit.id}/test-${number}.ipynb`;
+}
 export function figureURL(model: string, variant: string) {
   const record = figures.find(
     (f) => f.model === model && f.version === variant,
@@ -90,21 +97,14 @@ export function figureURL(model: string, variant: string) {
   return "/registry/figures/" + record.file;
 }
 export function auditMarkdown(a: Investigation): string {
-  const showLinks = (links: EvidenceLink[]) =>
-    links.map((link) => `- [${link.label}](${link.href})`).join("\n");
   const blocks = [`# ${a.model} — ${a.title}`, `${a.agent} · ${a.date}`, a.summary];
-  for (const text of [a.date_note, a.eligibility, a.code_provenance]) {
+  for (const text of [a.date_note, a.eligibility]) {
     if (text) blocks.push(text);
   }
-  for (const ax of a.axes) {
+  for (const [index, ax] of a.axes.entries()) {
     blocks.push(
-      `## ${ax.name}\n\n${ax.explanation}\n\n${statusNames[ax.status]}. ${ax.result}\n\n**Definition**  \n${ax.definition}\n\n**Data**  \n${ax.data}\n\n**Analysis code**  \n${ax.code}`,
+      `## ${ax.name}\n\n${ax.explanation}\n\n${statusNames[ax.status]}. ${ax.result}\n\n[Measurements, data and code](${notebookURL(a, index)})`,
     );
-    if (ax.links?.length) blocks.push(showLinks(ax.links));
   }
-  blocks.push(
-    "## Sources",
-    showLinks(a.links),
-  );
   return blocks.join("\n\n") + "\n";
 }

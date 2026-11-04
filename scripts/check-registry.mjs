@@ -47,6 +47,7 @@ for (const route of ["/registry/", ...expected.map((name) => `/registry/${name.t
   assert.ok(!page.includes("<img") && !page.includes("/registry/figures/"), route + " still displays a figure");
 }
 const files = new Set();
+const notebookKinds = new Map();
 for (const model of expected) {
   const entries = index.investigations.filter((a) => a.model === model);
   assert.equal(entries.length, 7);
@@ -60,6 +61,7 @@ assert.equal(index.investigations.length, 28);
 assert.equal(new Set(index.investigations.map((a) => a.id)).size, 28);
 for (const record of index.investigations) {
   const page = await read(record.url + "index.html");
+  assert.ok(!page.includes("How the code was recovered") && !page.includes("Source files and references"));
   const url = record.url.replace(/\/$/, "");
   const markdown = await read(url + ".md");
   const discrete = JSON.parse(await read(url + ".json"));
@@ -75,6 +77,31 @@ for (const record of index.investigations) {
         typeof axis[k] === "string" && axis[k].trim(),
         record.id + "/" + k,
       );
+    const notebookURL = record.url + "notebook-" + (i + 1) + "/";
+    const notebookFile = `/registry/notebooks/${record.id}/test-${String(i + 1).padStart(2, "0")}.ipynb`;
+    assert.ok(page.includes('href="' + notebookURL + '"') && markdown.includes(notebookURL));
+    const viewer = await read(notebookURL + "index.html");
+    const notebook = JSON.parse(await read(notebookFile));
+    const meta = notebook.metadata.spectra;
+    notebookKinds.set(meta.kind, (notebookKinds.get(meta.kind) || 0) + 1);
+    assert.equal(notebook.nbformat, 4);
+    assert.equal(meta.name, axis.name);
+    assert.equal(meta.axis, i + 1);
+    assert.equal(meta.auditId, record.id);
+    assert.equal(header(viewer), header(homepage));
+    assert.ok(viewer.includes('href="' + notebookFile + '"'));
+    const outputs = notebook.cells.flatMap(c => c.outputs || []);
+    assert.ok(outputs.every(out => out.output_type !== "error"));
+    assert.ok(notebook.cells.every(c => c.cell_type !== "code" || c.execution_count > 0));
+    if (meta.kind === "curve" || meta.kind === "comparison") {
+      const plot = outputs.find(out => out.data?.["image/png"]);
+      assert.ok(plot && viewer.includes(plot.data["image/png"]), notebookFile + " missing chart");
+    } else if (meta.kind === "table") {
+      assert.ok(outputs.length && !viewer.includes('class="notebook-chart"'));
+    } else {
+      assert.equal(meta.kind, "none");
+      assert.ok(meta.note && !viewer.includes('class="notebook-chart"'));
+    }
     assert.ok(page.includes(`id="axis-${i + 1}"`));
     assert.ok(markdown.includes(axis.name));
     const visible = page.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#(?:39|x27);/g, "'").replace(/&quot;/g, '"');
@@ -107,3 +134,5 @@ for (const url of files)
 console.log(
   `Registry checks passed for 28 investigations, eight source PDFs and ${files.size} linked evidence files.`,
 );
+
+console.log("Executed notebooks by output:", Object.fromEntries(notebookKinds));
