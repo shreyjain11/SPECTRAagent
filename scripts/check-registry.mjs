@@ -37,6 +37,15 @@ for (const f of figureSources) {
     `Figure changed: ${f.file}`,
   );
 }
+// A shared header must actually render on every route, including the optional build.
+const homepage = await readFile(fileURLToPath(new URL("../dist/index.html", import.meta.url)), "utf8");
+const header = (page) => page.match(/<header class="site-header">[\s\S]*?<\/header>/)?.[0].replace(/ aria-current="page"/g, "");
+assert.ok(header(homepage), "Homepage header is missing");
+for (const route of ["/registry/", ...expected.map((name) => `/registry/${name.toLowerCase()}/`), ...index.investigations.map((a) => a.url)]) {
+  const page = await read(route + "index.html");
+  assert.equal(header(page), header(homepage), route + " has a different header");
+  assert.ok(!page.includes("<img") && !page.includes("/registry/figures/"), route + " still displays a figure");
+}
 const files = new Set();
 for (const model of expected) {
   const entries = index.investigations.filter((a) => a.model === model);
@@ -57,9 +66,11 @@ for (const record of index.investigations) {
   assert.equal(record.id, discrete.id);
   assert.equal(record.axes.length, discrete.axes.length);
   assert.ok(record.axes.length > 0 && record.date && record.agent);
+  assert.ok(record.summary?.trim() && page.includes(record.summary));
+  assert.ok(!page.includes("<img") && !page.includes("/registry/figures/"));
   for (const [i, axis] of record.axes.entries()) {
     assert.ok(decisions.has(axis.status));
-    for (const k of ["name", "definition", "data", "code", "result"])
+    for (const k of ["name", "explanation", "definition", "data", "code", "result"])
       assert.ok(
         typeof axis[k] === "string" && axis[k].trim(),
         record.id + "/" + k,
@@ -67,7 +78,8 @@ for (const record of index.investigations) {
     assert.ok(page.includes(`id="axis-${i + 1}"`));
     assert.ok(markdown.includes(axis.name));
     const visible = page.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#(?:39|x27);/g, "'").replace(/&quot;/g, '"');
-    assert.ok(visible.includes("<h3>" + axis.name + "</h3>"), record.id + " missing axis heading");
+    assert.ok(visible.includes("<h2>" + axis.name + "</h2>"), record.id + " missing axis heading");
+    assert.ok(visible.includes(axis.explanation), record.id + " missing explanation");
     assert.ok(visible.includes(axis.result), record.id + " missing result");
     assert.ok(page.includes(`class="decision ${axis.status}"`), record.id + " missing decision");
   }

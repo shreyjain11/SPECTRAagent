@@ -1,92 +1,64 @@
 ---
 import Layout from "../../../components/RegistryLayout.astro";
-import {
-  investigations,
-  models,
-  statusNames,
-  figureURL,
-} from "../../../lib/paper-registry";
+import { investigations, statusNames } from "../../../lib/paper-registry";
 export function getStaticPaths() {
-  return investigations.map((a) => ({
-    params: { model: a.model.toLowerCase(), audit: a.id },
-    props: { a },
+  return investigations.map((audit) => ({
+    params: { model: audit.model.toLowerCase(), audit: audit.id }, props: { audit },
   }));
 }
-const { a } = Astro.props;
-const m = models.find((m) => m.name === a.model)!;
+const { audit } = Astro.props;
+const modelSlug = audit.model.toLowerCase();
 ---
 
-<Layout title={a.model + " · " + a.title} description={a.title}>
+<Layout title={`${audit.model} · ${audit.title}`} description={audit.summary}>
   <nav class="crumb" aria-label="Breadcrumb">
-    <a href="/registry/">Registry</a><span>/</span><a
-      href={`/registry/${m.slug}/`}>{a.model}</a>
+    <a href="/registry/">Audit registry</a><span aria-hidden="true">/</span>
+    <a href={`/registry/${modelSlug}/`}>{audit.model}</a>
   </nav>
-  <div class="intro small">
-    <p class="eyebrow">
-      {a.model} · Figure {m.figure}{
-        a.scope === "primary" ? "a" : "b, row " + a.figureRow
-      }
-    </p><h1 class="record-title">{a.title}</h1><p class="run-by">
-      {a.agent}
-      <span>·</span>
-      {a.date}
-    </p>
-  </div>
-  <div class="article-grid">
-    <section>
-      <div class="sectionline">
-        <h2>Axes explored</h2><span
-          >{a.axes.length} {a.axes.length === 1 ? "axis" : "axes"}</span>
-      </div>
-      {
-        a.axes.map((axis, index) => (
-          <article class="axis" id={`axis-${index + 1}`}>
-            <div class="axis-heading">
-              <h3>{axis.name}</h3>
-              <span class={`decision ${axis.status}`}>{statusNames[axis.status]}</span>
-            </div>
-            <p class="finding">{axis.result}</p>
+  <div class="audit-body">
+    <div class="registry-intro">
+      <h1>{audit.title}</h1>
+      <p>{audit.summary}</p>
+      <div class="run-meta">{audit.agent} · {audit.date}</div>
+    </div>
+    <details class="audit-contents">
+      <summary>Tests in this audit · {audit.axes.length}</summary>
+      <ol>{audit.axes.map((axis, index) => <li><a href={`#axis-${index + 1}`}>{axis.name}</a></li>)}</ol>
+    </details>
+    <section aria-label="Tests and results">
+      {audit.axes.map((axis, index) => (
+        <article class="axis" id={`axis-${index + 1}`}>
+          <div class="axis-heading">
+            <h2>{axis.name}</h2>
+            <span class={`decision ${axis.status}`}>{statusNames[axis.status]}</span>
+          </div>
+          <p class="explanation">{axis.explanation}</p>
+          <h3>Result</h3>
+          <p class="finding">{axis.result}</p>
+          <details class="technical-details">
+            <summary>Measurements, data and code</summary>
             <dl>
-              {[
-                ["Definition", axis.definition],
-                ["Data", axis.data],
-                ["Analysis code", axis.code],
-              ].map(([term, value]) => (
-                <div>
-                  <dt>{term}</dt>
-                  <dd>{value}</dd>
-                </div>
-              ))}
+              <dt>Measurement</dt><dd>{axis.definition}</dd>
+              <dt>Data</dt><dd>{axis.data}</dd>
+              <dt>Analysis code</dt><dd>{axis.code}</dd>
             </dl>
-            {axis.links?.length ? (
-              <details class="filelist" open={axis.links.length <= 4}>
-                <summary>Data and code · {axis.links.length} {axis.links.length===1?"file or link":"files and links"}</summary>
-                <ul class="resources">
-                  {axis.links.map((link) => (
-                    <li><a href={link.href}>{link.label}</a></li>
-                  ))}
-                </ul>
-              </details>
-            ) : null}
-          </article>
-        ))
-      }
+            {axis.links?.length > 0 && <ul class="resources">{axis.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul>}
+          </details>
+        </article>
+      ))}
     </section>
-    <aside class="record-aside">
-      <h2>Source material</h2>
-      <p class="basis">{a.source}</p>
-      {a.date_note && <p class="basis">{a.date_note}</p>}
-      {a.eligibility && <p class="basis">{a.eligibility}</p>}
-      {a.code_provenance && <details class="filelist"><summary>Code provenance</summary><p class="basis">{a.code_provenance}</p></details>}
-      <a href={figureURL(m.name, "main")}>Figure {m.figure} · {m.name} ↗</a>
-      <a href={figureURL(m.name, "expanded")}>Supplementary figure {m.figure - 1} ↗</a>
-      <details class="filelist"><summary>Investigation files and references ({a.links.length})</summary>
-        {a.links.map((link) => <a href={link.href}>{link.label}</a>)}
+    <section class="audit-files" aria-label="Audit files">
+      {audit.date_note && <p class="basis">{audit.date_note}</p>}
+      {audit.eligibility && <p class="basis">{audit.eligibility}</p>}
+      {audit.code_provenance && <details class="technical-details"><summary>How the code was recovered</summary><p class="basis">{audit.code_provenance}</p></details>}
+      <details class="technical-details">
+        <summary>Source files and references · {audit.links.length}</summary>
+        <ul class="resources">{audit.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul>
       </details>
-      <a href={`/registry/${m.slug}/${a.id}.json`}>Audit JSON ↓</a>
-      <a href={`/registry/${m.slug}/${a.id}.md`}>Audit Markdown ↓</a>
-      <h2>Jump to axis</h2>
-      {a.axes.map((ax, i) => <a href={`#axis-${i + 1}`}>{ax.name}</a>)}
-    </aside>
+      <div class="registry-downloads">
+        <a href={`/registry/${modelSlug}/${audit.id}.json`}>Download JSON</a>
+        <a href={`/registry/${modelSlug}/${audit.id}.md`}>Download Markdown</a>
+      </div>
+    </section>
   </div>
 </Layout>

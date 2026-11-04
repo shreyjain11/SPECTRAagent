@@ -1,70 +1,32 @@
 ---
 import Layout from "../../../components/RegistryLayout.astro";
-import {
-  models,
-  modelAudits,
-  auditURL,
-  figureURL,
-} from "../../../lib/paper-registry";
+import { models, modelAudits, auditURL } from "../../../lib/paper-registry";
 export function getStaticPaths() {
-  return models.map((model) => ({
-    params: { model: model.slug },
-    props: { model },
-  }));
+  return models.map((model) => ({ params: { model: model.slug }, props: { model } }));
 }
 const { model } = Astro.props;
 const runs = modelAudits(model.name);
 ---
 
-<Layout title={model.name + " investigations"} description={model.task}>
-  <nav class="crumb" aria-label="Breadcrumb">
-    <a href="/registry/">Registry</a><span>/</span>{model.name}
-  </nav>
-  <div class="intro small">
-    <p class="eyebrow">{model.field} · Figure {model.figure}</p><h1>
-      {model.name}
-    </h1><p class="lead">{model.task}</p>
+<Layout title={`${model.name} investigations`} description={model.description}>
+  <nav class="crumb" aria-label="Breadcrumb"><a href="/registry/">Audit registry</a><span aria-hidden="true">/</span><span>{model.name}</span></nav>
+  <div class="registry-intro">
+    <h1>{model.name}</h1>
+    <p>{model.description}</p>
   </div>
-  <div class="model-grid">
-    <section>
-      <div class="sectionline">
-        <h2>Investigations</h2><span>{runs.length} records</span>
-      </div>
-      <ol class="runlist">
-        {
-          runs.map((a) => (
-            <li>
-              <a href={auditURL(a)}>
-                <>
-                  <div class="run-meta">
-                    {a.scope === "primary"
-                      ? "Panel a · Primary audit"
-                      : "Panel b · Row " + a.figureRow}
-                  </div>
-                  <h3>{a.title}</h3>
-                  <span>
-                    {a.agent} · {a.date}
-                  </span>
-                </>
-              </a>
-            </li>
-          ))
-        }
-      </ol>
-    </section>
-    <aside class="figurepane">
-      <p class="eyebrow">Manuscript figure {model.figure}</p><a
-        href={figureURL(model.name, "main")}
-        aria-label={`Open the ${model.name} figure PDF`}
-        ><img
-          src={`/registry/figures/${model.slug}-main.webp`}
-          alt={`Submitted figure for ${model.name}`}
-        /></a
-      ><div class="figlinks">
-        <a href={figureURL(model.name, "main")}>Main figure ↗</a><a
-          href={figureURL(model.name, "expanded")}
-          >Supplementary figure {model.figure - 1} ↗</a>
-      </div>
-    </aside>
+  <div class="sectionline">
+    <h2>Investigations</h2><span>{runs.length} records</span>
   </div>
+  <ol class="runlist">
+    {runs.map((audit) => (
+      <li>
+        <a href={auditURL(audit)}>
+          <div class="run-meta">{audit.agent} · {audit.date}</div>
+          <h2>{audit.title}</h2>
+          <p>{audit.summary}</p>
+          <span class="read-audit">Read the audit <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+    ))}
+  </ol>
 </Layout>

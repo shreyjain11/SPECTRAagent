@@ -1,40 +1,23 @@
 ---
+import "../../../src/styles/landing.css";
 import "../styles/registry.css";
+import SiteHead from "../../../src/components/SiteHead.astro";
+import SiteHeader from "../../../src/components/SiteHeader.astro";
+import SiteFooter from "../../../src/components/SiteFooter.astro";
 const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-  <head
-    ><meta charset="utf-8" /><meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    /><meta name="theme-color" content="#f7f9f5" /><meta
-      name="description"
-      content={description}
-    /><title>{title} · AutoSPECTRA</title></head
-  >
+  <head>
+    <SiteHead title={`${title} · AutoSPECTRA`} description={description} />
+  </head>
   <body>
-    <a class="skip" href="#main">Skip to content</a>
-    <header class="top">
-      <div class="wrap header-inner">
-        <a class="brand" href="/" aria-label="AutoSPECTRA home"
-          ><svg viewBox="0 0 36 32" width="30" height="27" aria-hidden="true"
-            ><path d="M2 28v-9h5v9" fill="#b5c8a7"></path><path
-              d="M10 28V12h5v16"
-              fill="#84ae9d"></path><path d="M18 28V3h5v25" fill="#4c796b"
-            ></path><path d="M26 28V9h5v19" fill="#254d40"></path></svg
-          >Auto<strong>SPECTRA</strong></a
-        ><nav aria-label="Website">
-          <a href="/registry/" aria-current="location">Registry</a><a
-            href="/protocol.md">Protocol ↗</a>
-        </nav>
-      </div>
-    </header>
-    <main class="wrap" id="main"><slot /></main>
-    <footer class="wrap bottom">
-      <span>AutoSPECTRA · Manuscript audits</span><a
-        href="/registry/audits.json">Download registry JSON ↓</a>
-    </footer>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-shell">
+      <SiteHeader registry />
+      <main class="registry" id="main"><slot /></main>
+      <SiteFooter />
+    </div>
   </body>
 </html>

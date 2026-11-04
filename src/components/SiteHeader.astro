@@ -1,0 +1,19 @@
+---
+const { registry = false } = Astro.props;
+---
+<header class="site-header">
+        <a class="wordmark" href="/" aria-label="AutoSPECTRA home">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="2" y="16" width="5" height="13" rx="2.5" fill="#bbcfaa" />
+            <rect x="10" y="9" width="5" height="20" rx="2.5" fill="#83b3a7" />
+            <rect x="18" y="3" width="5" height="26" rx="2.5" fill="#477b69" />
+            <rect x="26" y="12" width="5" height="17" rx="2.5" fill="#1f4c3d" />
+          </svg>
+          <span>Auto<span class="wordmark-strong">SPECTRA</span></span>
+        </a>
+        <nav aria-label="Resources">
+          <a href="/registry/" aria-current={registry ? "page" : undefined}>Audit registry</a>
+          <a href="/protocol.md" target="_blank" rel="noopener noreferrer">The protocol <span aria-hidden="true">↗</span></a>
+          <a href="/agents.md" target="_blank" rel="noopener noreferrer">Agent guide <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>

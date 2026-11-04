@@ -16,10 +16,10 @@ The standard site is written to `dist/`. The separate registry build is written 
 
 ## Contents and checks
 
-- `/registry/` lists the four models. Each model page links to the exact main and supplementary figure PDFs and seven investigations in figure order.
-- Each investigation has HTML, JSON and Markdown views. JSON retains the axis definition, evidence, result, and links to available code and data. Figure numbering follows the manuscript. Audit dates refer to the audit record.
+- `/registry/` describes the four models and links to seven investigations per model. Pages use the homepage’s shared header, logo, fonts and footer.
+- Each investigation has a plain-language summary. Each test explains the measured property and the comparison before presenting the result. Measurements, data and code are available in expandable sections. HTML, JSON and Markdown views use the same records. Audit dates refer to the audit record.
 - `/registry/audits.json` contains the full collection. A record's `legacyFindingId`, when present, identifies the corresponding earlier hosted finding. Records without a match are separate investigations.
-- `/registry/figures/sources.json` records the original Overleaf filenames and SHA-256 checksums. `/registry/evidence-manifest.json` lists evidence files and checksums.
-- `npm run check:registry` checks row and record identity, figure and evidence checksums, per-axis content in rendered pages, and links to local evidence.
+- The source bundle retains its original figure manifest for provenance. The pages and Markdown downloads display no figure panels or figure links. `/registry/evidence-manifest.json` lists evidence files and checksums.
+- `npm run check:registry` checks row and record identity, figure and evidence checksums, plain-language explanations, shared navigation, per-axis content in rendered pages, and links to local evidence.
 
 Install the reviewed registry pages and their referenced assets together. The existing hosted API, moderation queue, findings export, and registry entries for other models retain their existing URLs. If a maintainer also imports the collection into the hosted database, match the explicit legacy identifiers, preserve unrelated records and run the service's review process. This repository supplies the website renderer. The hosted backend owns database imports and publication.

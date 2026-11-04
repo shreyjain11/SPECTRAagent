@@ -78,11 +78,11 @@ footer a:hover { color:#355b43; }
 }
 @media (max-width:560px) {
   .page-shell { padding:0 18px; }
-  .site-header { height:84px; }
+  .site-header { min-height:104px; height:auto; padding:18px 0; align-items:flex-start; flex-direction:column; gap:14px; }
   .wordmark { font-size:18px; gap:8px; }
   .brand-mark { width:25px; height:25px; }
   .site-header nav { gap:17px; font-size:11px; }
-  .site-header nav a:first-child { display:none; }
+  .site-header nav { flex-wrap:wrap; }
   .hero { padding:43px 0 34px; }
   h1 { font-size:45px; letter-spacing:-2.1px; line-height:1.12; }
   h1 span { display:block; }

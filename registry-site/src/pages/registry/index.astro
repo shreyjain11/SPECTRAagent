@@ -1,61 +1,29 @@
 ---
 import Layout from "../../components/RegistryLayout.astro";
-import { models, investigations } from "../../lib/paper-registry";
+import { models, investigations, modelAudits } from "../../lib/paper-registry";
 ---
 
-<Layout
-  title="Audit registry"
-  description="Explore the investigations and evaluated axes in the AutoSPECTRA manuscript."
->
-  <div class="intro">
-    <p class="eyebrow">Manuscript investigations</p><h1>Audit registry</h1><p
-      class="lead"
-    >
-      Explore the axes tested in each investigation, the evidence behind each
-      decision, and the data and code preserved from the run.
-    </p>
+<Layout title="Audit registry" description="Read the questions, methods and findings from AutoSPECTRA audits.">
+  <div class="registry-intro">
+    <h1>Audit registry</h1>
+    <p>See what each audit tested, how it tested it, and what the results support.</p>
   </div>
   <div class="sectionline">
-    <h2>Models</h2><span
-      >{models.length} models · {investigations.length} investigations</span>
+    <h2>Browse by model</h2>
+    <span>{models.length} models · {investigations.length} investigations</span>
   </div>
   <div class="models">
-    {
-      models.map((m) => (
-        <article class="modelcard">
-          <a class="model-link" href={`/registry/${m.slug}/`}>
-            <>
-              <div class="card-heading">
-                <>
-                  <div>
-                    <>
-                      <span class="kicker">
-                        Figure {m.figure} / {m.field}
-                      </span>
-                      <h2>{m.name}</h2>
-                    </>
-                  </div>
-                  <span class="arrow" aria-hidden="true">
-                    ↗
-                  </span>
-                </>
-              </div>
-              <p>{m.task}</p>
-              <div class="figure-thumb">
-                <img
-                  src={`/registry/figures/${m.slug}-main.webp`}
-                  alt={`Figure ${m.figure}, ${m.name} audit`}
-                />
-              </div>
-            </>
-          </a>
-        </article>
-      ))
-    }
+    {models.map((model) => (
+      <a class="model-link" href={`/registry/${model.slug}/`}>
+        <span class="model-field">{model.field}</span>
+        <h2>{model.name}</h2>
+        <p>{model.description}</p>
+        <span class="model-count">{modelAudits(model.name).length} investigations <span aria-hidden="true">→</span></span>
+      </a>
+    ))}
   </div>
-  <p class="service-link">
-    Looking for another model? <a
-      href="https://spectra.yashaektefaie.com/api/models"
-      >Browse the hosted model index ↗</a>
-  </p>
+  <div class="registry-downloads">
+    <a href="/registry/audits.json">Download audit records</a>
+    <a href="https://spectra.yashaektefaie.com/api/models">Browse other models ↗</a>
+  </div>
 </Layout>

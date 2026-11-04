@@ -11,6 +11,7 @@ export type Axis = {
   name: string;
   status: string;
   definition: string;
+  explanation: string;
   data: string;
   code: string;
   result: string;
@@ -20,6 +21,7 @@ export type Investigation = {
   id: string;
   model: string;
   title: string;
+  summary: string;
   source: string;
   date_note?: string;
   code_provenance?: string;
@@ -39,6 +41,7 @@ export const models = [
     figure: 2,
     field: "Protein structure",
     task: "Protein structure prediction from amino-acid sequence.",
+    description: "Predicts a protein’s three-dimensional structure from its amino-acid sequence. The audits examine which kinds of proteins are harder to predict accurately.",
   },
   {
     slug: "state",
@@ -46,6 +49,7 @@ export const models = [
     figure: 3,
     field: "Perturbation biology",
     task: "Gene-expression response to genetic or chemical perturbations.",
+    description: "Predicts how a cell’s gene activity changes after a gene is disrupted or a drug is applied. The audits test performance across cell types, treatments and examples with different amounts of training support.",
   },
   {
     slug: "conch",
@@ -53,6 +57,7 @@ export const models = [
     figure: 4,
     field: "Computational pathology",
     task: "Zero-shot classification of colorectal tissue images.",
+    description: "Matches tissue images to text descriptions to identify tissue types. These audits test whether image appearance, focus and resolution affect its accuracy on colorectal tissue.",
   },
   {
     slug: "alphamissense",
@@ -60,6 +65,7 @@ export const models = [
     figure: 5,
     field: "Variant effects",
     task: "Missense variant pathogenicity and functional effects.",
+    description: "Estimates whether changing one amino acid in a human protein is harmful. The audits compare its scores with clinical labels and laboratory measurements across different kinds of variants.",
   },
 ];
 export const statusNames: Record<string, string> = {
@@ -86,23 +92,19 @@ export function figureURL(model: string, variant: string) {
 export function auditMarkdown(a: Investigation): string {
   const showLinks = (links: EvidenceLink[]) =>
     links.map((link) => `- [${link.label}](${link.href})`).join("\n");
-  const blocks = [`# ${a.model} — ${a.title}`, `${a.agent} · ${a.date}`];
-  for (const text of [a.source, a.date_note, a.eligibility, a.code_provenance]) {
+  const blocks = [`# ${a.model} — ${a.title}`, `${a.agent} · ${a.date}`, a.summary];
+  for (const text of [a.date_note, a.eligibility, a.code_provenance]) {
     if (text) blocks.push(text);
   }
   for (const ax of a.axes) {
     blocks.push(
-      `## ${ax.name}\n\n${statusNames[ax.status]}. ${ax.result}\n\n**Definition**  \n${ax.definition}\n\n**Data**  \n${ax.data}\n\n**Analysis code**  \n${ax.code}`,
+      `## ${ax.name}\n\n${ax.explanation}\n\n${statusNames[ax.status]}. ${ax.result}\n\n**Definition**  \n${ax.definition}\n\n**Data**  \n${ax.data}\n\n**Analysis code**  \n${ax.code}`,
     );
     if (ax.links?.length) blocks.push(showLinks(ax.links));
   }
   blocks.push(
     "## Sources",
-    showLinks([
-      { label: "Main figure", href: figureURL(a.model, "main") },
-      { label: "Expanded figure", href: figureURL(a.model, "expanded") },
-      ...a.links,
-    ]),
+    showLinks(a.links),
   );
   return blocks.join("\n\n") + "\n";
 }
