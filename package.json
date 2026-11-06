@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": {
-    "node": ">=22.12.0"
-  },
+  "engines": { "node": ">=22.12.0" },
   "scripts": {
     "sync:protocol": "node scripts/sync-protocol.mjs",
     "predev": "npm run sync:protocol",
@@ -13,12 +11,7 @@
     "prebuild": "npm run sync:protocol",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "npm run build && node scripts/check-site.mjs",
-    "build:registry": "astro build --config registry-site/astro.config.mjs",
-    "check:registry": "npm run build:registry && node scripts/check-registry.mjs"
+    "check": "npm run build && node scripts/check-site.mjs"
   },
-  "dependencies": {
-    "astro": "^5.13.0",
-    "micromark": "4.0.2"
-  }
+  "dependencies": { "astro": "^5.13.0" }
 }

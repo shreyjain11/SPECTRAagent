@@ -18,12 +18,6 @@ This repository contains the static Astro site and versioned protocol sources.
 The registry, submission service, audit records, and supporting datasets remain
 hosted separately. A local website build does not run an audit or start a backend.
 
-## Manuscript audit registry
-
-The [manuscript registry](https://spectra.yashaektefaie.com/registry/) covers Figures 2–5 and the primary and six additional investigations for each model. Each model page follows figure order. Audit pages show the definition, decision, result, data, and available code for every documented axis.
-
-The [curation guide](registry-site/README.md) describes the JSON export, evidence checksums, and relation to existing hosted cards.
-
 ## Ways to contribute
 
 Contributions are welcome, including questions and suggestions without code.
@@ -130,7 +124,8 @@ The hosted `/api/*` routes serve model/axis/card discovery and submissions.
 Curated artifacts are available at `/downloads/*`, and the existing
 [/data/findings.json](https://spectra.yashaektefaie.com/data/findings.json) export
 remains available. The backend and these data are outside this repository.
-Local development uses hosted service links. The optional registry renderer builds a separate artifact from a maintainer-supplied collection.
+Local development uses the hosted service links; it does not create local API
+routes or a registry.
 
 No automatic deployment is configured here. After reviewing a passing build, a
 maintainer deploys `dist/` through the existing hosting setup. Preserve the

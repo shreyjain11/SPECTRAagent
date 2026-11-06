@@ -1,8 +1,5 @@
 ---
 import "../styles/landing.css";
-import SiteHead from "../components/SiteHead.astro";
-import SiteHeader from "../components/SiteHeader.astro";
-import SiteFooter from "../components/SiteFooter.astro";
 const canonicalOrigin = "https://spectra.yashaektefaie.com";
 // Copied prompts always address the hosted service, including in local previews.
 const origin = canonicalOrigin;
@@ -18,7 +15,7 @@ const tasks = [
     id: "find", label: "Find an audit", number: "02",
     title: "Has someone already tested it?",
     description: "Check what is known about a model before you put it to work.",
-    prompt: "Find audits of [model name or paper link] in AutoSPECTRA. Start at https://spectra.yashaektefaie.com/api/models and follow the returned model, axis, and audit-card links. For manuscript investigations, also consult https://spectra.yashaektefaie.com/registry/audits.json. Read all relevant cards in JSON and Markdown, then summarize their findings, evidence, limitations, and links to the original results. Distinguish model versions and tasks, and tell me if no audit matches.",
+    prompt: "Find audits of [model name or paper link] in AutoSPECTRA. Start at https://spectra.yashaektefaie.com/api/models and follow the returned model, axis, and audit-card links. Read all relevant cards in JSON and Markdown, then summarize their findings, evidence, limitations, and links to the original results. Distinguish model versions and tasks, and tell me if no audit matches.",
     hint: "Replace the brackets with the model you are interested in.",
   },
   {
@@ -33,12 +30,34 @@ const tasks = [
 <!doctype html>
 <html lang="en">
   <head>
-    <SiteHead title="AutoSPECTRA — a better understanding of your model" description="Run, find, and share foundation-model generalizability audits. Start AutoSPECTRA with a prompt in the coding agent you already use." />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8faf8" />
+    <title>AutoSPECTRA — a better understanding of your model</title>
+    <meta name="description" content="Run, find, and share foundation-model generalizability audits. Start AutoSPECTRA with a prompt in the coding agent you already use." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='15' width='5' height='14' rx='2.5' fill='%23c5d6b0'/%3E%3Crect x='10' y='8' width='5' height='21' rx='2.5' fill='%238ebbb0'/%3E%3Crect x='17' y='3' width='5' height='26' rx='2.5' fill='%23447868'/%3E%3Crect x='24' y='11' width='5' height='18' rx='2.5' fill='%231c463b'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=IBM+Plex+Mono:wght@400;450&display=swap" rel="stylesheet" />
   </head>
   <body>
     <a class="skip-link" href="#start">Skip to prompts</a>
     <div class="page-shell">
-      <SiteHeader />
+      <header class="site-header">
+        <a class="wordmark" href="/" aria-label="AutoSPECTRA home">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="2" y="16" width="5" height="13" rx="2.5" fill="#bbcfaa" />
+            <rect x="10" y="9" width="5" height="20" rx="2.5" fill="#83b3a7" />
+            <rect x="18" y="3" width="5" height="26" rx="2.5" fill="#477b69" />
+            <rect x="26" y="12" width="5" height="17" rx="2.5" fill="#1f4c3d" />
+          </svg>
+          <span>Auto<span class="wordmark-strong">SPECTRA</span></span>
+        </a>
+        <nav aria-label="Resources">
+          <a href="/protocol.md" target="_blank" rel="noopener noreferrer">The protocol <span aria-hidden="true">↗</span></a>
+          <a href="/agents.md" target="_blank" rel="noopener noreferrer">Agent guide <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
       <main>
         <section class="hero" aria-labelledby="welcome">
           <div class="hero-glow" aria-hidden="true"></div>
@@ -72,7 +91,7 @@ const tasks = [
                   </button>
                 </div>
               </div>
-              <p class="prompt-hint">{task.hint}{task.id === "find" && <> <a href="/registry/">Browse manuscript investigations.</a></>}</p>
+              <p class="prompt-hint">{task.hint}</p>
             </div>
           ))}
         </section>
@@ -91,7 +110,7 @@ const tasks = [
         <p class="copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
         <noscript><p class="noscript-note">You can select and copy the prompt above. For all three options, open the <a href="/agents.md">agent guide</a>.</p></noscript>
       </main>
-      <SiteFooter />
+      <footer><p>A clearer picture of what your model can do.</p><a href="/agents.md">Made for scientists. Ready for agents. <span aria-hidden="true">↗</span></a></footer>
     </div>
     <script>import "../scripts/prompts.ts";</script>
   </body>
