@@ -15,6 +15,7 @@ export type Axis = {
   data: string;
   code: string;
   result: string;
+  review_note?: string;
   links?: EvidenceLink[];
 };
 export type Investigation = {
@@ -103,7 +104,9 @@ export function auditMarkdown(a: Investigation): string {
   }
   for (const [index, ax] of a.axes.entries()) {
     blocks.push(
-      `## ${ax.name}\n\n${ax.explanation}\n\n${statusNames[ax.status]}. ${ax.result}\n\n[Measurements, data and code](${notebookURL(a, index)})`,
+      `## ${ax.name}\n\n${ax.explanation}\n\n${statusNames[ax.status]}. ${ax.result}` +
+      (ax.review_note ? `\n\nReproduction review: ${ax.review_note}` : "") +
+      `\n\n[Measurements, data and code](${notebookURL(a, index)})`,
     );
   }
   return blocks.join("\n\n") + "\n";

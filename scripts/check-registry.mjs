@@ -3,6 +3,7 @@ import { readFile, stat } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateNotebookMetadata } from "../registry-site/src/lib/notebook-metadata.mjs";
 
 const dist = fileURLToPath(new URL("../.registry-build/", import.meta.url));
 const pathFor = (url) => {
@@ -12,6 +13,7 @@ const pathFor = (url) => {
   return p;
 };
 const read = (url) => readFile(pathFor(url), "utf8");
+const decode = (text) => text.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#(?:39|x27);/g, "'").replace(/&quot;/g, '"');
 const index = JSON.parse(await read("/registry/audits.json"));
 const figureSources = JSON.parse(await read("/registry/figures/sources.json"));
 const expected = ["ESMFold2", "STATE", "CONCH", "AlphaMissense"];
@@ -48,6 +50,7 @@ for (const route of ["/registry/", ...expected.map((name) => `/registry/${name.t
 }
 const files = new Set();
 const notebookKinds = new Map();
+let coverageCount = 0;
 for (const model of expected) {
   const entries = index.investigations.filter((a) => a.model === model);
   assert.equal(entries.length, 7);
@@ -83,6 +86,31 @@ for (const record of index.investigations) {
     const viewer = await read(notebookURL + "index.html");
     const notebook = JSON.parse(await read(notebookFile));
     const meta = notebook.metadata.spectra;
+    validateNotebookMetadata(meta, {
+      context: notebookFile,
+      requireCoverage: process.env.SPECTRA_REQUIRE_REPRODUCIBILITY === "1",
+    });
+    if (meta.reproducibility) {
+      coverageCount++;
+      assert.ok(viewer.includes("What can be reproduced"));
+      for (const stage of meta.reproducibility.stages) {
+        assert.ok(viewer.includes(`data-stage="${stage.id}"`), notebookFile + " missing coverage stage");
+      }
+      assert.ok(viewer.includes(meta.reproducibility.end_to_end
+        ? "All five stages are covered by the retained evidence."
+        : "Reproduction has documented limits; coverage is listed below."));
+      assert.equal(viewer.includes("<h3>Limits and missing inputs</h3>"), meta.reproducibility.missing.length > 0);
+      assert.ok(viewer.includes("it does not certify the scientific conclusion"));
+    }
+    if (meta.bundleUrl) {
+      const encodedURL = meta.bundleUrl.replaceAll("&", "&amp;").replaceAll('"', "&quot;");
+      assert.ok(viewer.includes(`href="${encodedURL}"`), notebookFile + " missing full-bundle download");
+      if (meta.bundleUrl.startsWith("/")) {
+        const url = new URL(meta.bundleUrl, "https://registry.invalid");
+        const asset = await stat(pathFor(decodeURIComponent(url.pathname)));
+        assert.ok(asset.isFile() && asset.size > 0, notebookFile + " has an empty or missing full bundle");
+      }
+    }
     notebookKinds.set(meta.kind, (notebookKinds.get(meta.kind) || 0) + 1);
     assert.equal(notebook.nbformat, 4);
     assert.equal(meta.name, axis.name);
@@ -98,17 +126,27 @@ for (const record of index.investigations) {
       assert.ok(plot && viewer.includes(plot.data["image/png"]), notebookFile + " missing chart");
     } else if (meta.kind === "table") {
       assert.ok(outputs.length && !viewer.includes('class="notebook-chart"'));
+    } else if (meta.kind === "analysis") {
+      assert.ok(notebook.cells.some(c => c.cell_type === "code"), notebookFile + " missing analysis code");
     } else {
       assert.equal(meta.kind, "none");
       assert.ok(meta.note && !viewer.includes('class="notebook-chart"'));
     }
     assert.ok(page.includes(`id="axis-${i + 1}"`));
     assert.ok(markdown.includes(axis.name));
-    const visible = page.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#(?:39|x27);/g, "'").replace(/&quot;/g, '"');
+    const visible = decode(page);
     assert.ok(visible.includes("<h2>" + axis.name + "</h2>"), record.id + " missing axis heading");
     assert.ok(visible.includes(axis.explanation), record.id + " missing explanation");
     assert.ok(visible.includes(axis.result), record.id + " missing result");
     assert.ok(page.includes(`class="decision ${axis.status}"`), record.id + " missing decision");
+    if (axis.review_note !== undefined) {
+      assert.ok(typeof axis.review_note === "string" && axis.review_note.trim(), record.id + " empty reproduction review");
+      assert.equal(discrete.axes[i].review_note, axis.review_note);
+      const review = "Reproduction review: " + axis.review_note;
+      assert.ok(visible.includes(review), record.id + " missing reproduction review");
+      assert.ok(decode(viewer).includes(review), notebookFile + " missing reproduction review");
+      assert.ok(markdown.includes(review), record.id + " missing Markdown reproduction review");
+    }
   }
   for (const r of [
     ...record.links,
@@ -136,3 +174,4 @@ console.log(
 );
 
 console.log("Executed notebooks by output:", Object.fromEntries(notebookKinds));
+console.log("Notebooks with five-stage coverage:", coverageCount);

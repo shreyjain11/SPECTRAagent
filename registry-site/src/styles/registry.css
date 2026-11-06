@@ -273,3 +273,17 @@
 .notebook table { border-collapse: collapse; width: 100%; background: white; font-size: 13px; }
 .notebook th, .notebook td { text-align: left; border-bottom: 1px solid var(--line); padding: 8px 11px; vertical-align: top; }
 .notebook th { font-weight: 550; background: #f0f4ed; }
+.notebook-downloads { display: flex; flex-wrap: wrap; gap: 0 20px; }
+.notebook-intro .notebook-run-note { color: var(--muted); font-size: 12px; margin-top: 8px; }
+.notebook-narrative { overflow-wrap: anywhere; font-size: 14px; line-height: 1.65; }
+.reproduction-coverage { margin: 24px 0; padding: 18px 0; border-block: 1px solid var(--line); }
+.reproduction-coverage h2, .reproduction-coverage h3 { font-size: 15px; }
+.reproduction-coverage ol { padding-left: 22px; }
+.reproduction-coverage li { margin: 10px 0; font-size: 13px; }
+.reproduction-coverage p { margin: 3px 0 12px; color: var(--muted); }
+.stage-status { margin-left: 10px; color: var(--muted); font-size: 12px; }
+
+.notebook-narrative h1 { font-size: 20px; }
+.notebook-narrative h2 { font-size: 17px; margin-top: 25px; }
+.notebook-narrative h3 { font-size: 15px; }
+.notebook-narrative ul, .notebook-narrative ol { padding-left: 22px; }

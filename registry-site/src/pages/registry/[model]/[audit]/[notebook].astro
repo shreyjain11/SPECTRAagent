@@ -1,4 +1,5 @@
 ---
+import { micromark } from "micromark";
 import Layout from "../../../../components/RegistryLayout.astro";
 import { investigations, auditURL, notebookFile } from "../../../../lib/paper-registry";
 import { readNotebook, textOf } from "../../../../lib/notebook";
@@ -13,7 +14,9 @@ const { audit, index } = Astro.props;
 const axis = audit.axes[index];
 const book = readNotebook(audit, index);
 const info = book.metadata.spectra;
-const visible = book.cells.filter((c) => ["analysis", "plot"].includes(c.metadata.spectra_role));
+const visible = book.cells.filter((c) =>
+  !["inputs", "readers", "intro", "result", "audit-script"].includes(c.metadata.spectra_role || "")
+);
 const script = book.cells.find((c) => c.metadata.spectra_role === "audit-script");
 const scriptText = script ? textOf(script.source).split("\n").slice(3,-1).join("\n") : "";
 ---
@@ -27,20 +30,40 @@ const scriptText = script ? textOf(script.source).split("\n").slice(3,-1).join("
       <div class="run-meta">Analysis notebook · {audit.model}</div>
       <h1>{axis.name}</h1>
       <p>{axis.explanation}</p>
-      <a class="notebook-download" href={notebookFile(audit, index)} download>Download Jupyter notebook (.ipynb)</a>
+      <div class="notebook-downloads">
+        <a class="notebook-download" href={notebookFile(audit, index)} download>Download Jupyter notebook (.ipynb)</a>
+        {info.bundleUrl && <a class="notebook-download" href={info.bundleUrl} download>Download notebooks, inputs and code</a>}
+      </div>
+      {info.bundleUrl && <p class="notebook-run-note">To run this notebook, extract the full {audit.model} bundle and follow its README.</p>}
     </div>
     <section class="notebook-measurement">
       <h2>Measurement</h2><p>{axis.definition}</p>
       <h2>Data</h2><p>{axis.data}</p>
       <h2>Audit result</h2><p>{axis.result}</p>
+      {axis.review_note && <p class="notebook-note">Reproduction review: {axis.review_note}</p>}
     </section>
-    <p class="notebook-note">{info.note}</p>
+    {info.note && !axis.review_note && <p class="notebook-note">{info.note}</p>}
+    {info.reproducibility && <section class="reproduction-coverage">
+      <h2>What can be reproduced</h2>
+      <p class="coverage-summary">{info.reproducibility.end_to_end
+        ? "All five stages are covered by the retained evidence."
+        : "Reproduction has documented limits; coverage is listed below."}</p>
+      <ol>{info.reproducibility.stages.map((stage) => <li data-stage={stage.id}>
+        <strong>{stage.label}</strong><span class="stage-status">{stage.status.replaceAll("_", " ")}</span>
+        <p>{stage.detail}</p>
+      </li>)}</ol>
+      {info.reproducibility.missing.length > 0 && <><h3>Limits and missing inputs</h3>
+        <ul>{info.reproducibility.missing.map((item) => <li>{item}</li>)}</ul></>}
+      <p>Successful execution verifies the supplied analysis runs; it does not certify the scientific conclusion.</p>
+    </section>}
     {visible.map((cell) => (
       <section class="notebook-cell">
-        {cell.metadata.spectra_role === "plot" ? (
+        {cell.cell_type === "markdown" ? (
+          <div class="notebook-narrative" set:html={micromark(textOf(cell.source).replace(/^# /gm, "## "))} />
+        ) : cell.metadata.spectra_role === "plot" ? (
           <details class="plot-code"><summary>Plotting code</summary><pre><code>{textOf(cell.source)}</code></pre></details>
         ) : (
-          <><h2>Analysis code</h2><pre><code>{textOf(cell.source)}</code></pre></>
+          <><h2>{cell.metadata.title || "Analysis code"}</h2><pre><code>{textOf(cell.source)}</code></pre></>
         )}
         {cell.outputs?.map((out) => {
           const data = out.data;

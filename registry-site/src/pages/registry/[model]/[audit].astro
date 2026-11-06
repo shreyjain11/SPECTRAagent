@@ -35,6 +35,7 @@ const modelSlug = audit.model.toLowerCase();
           <p class="explanation">{axis.explanation}</p>
           <h3>Result</h3>
           <p class="finding">{axis.result}</p>
+          {axis.review_note && <p class="basis">Reproduction review: {axis.review_note}</p>}
           <a class="open-notebook" href={notebookURL(audit, index)} title="Open the analysis notebook">
             Measurements, data and code <span aria-hidden="true">→</span>
           </a>
