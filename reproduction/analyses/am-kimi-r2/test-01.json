@@ -88,5 +88,18 @@
     "saved_code_cells": 2,
     "saved_error_outputs": 0
   },
-  "requested_model": "AlphaMissense"
+  "requested_model": "AlphaMissense",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "am-kimi-r2/test-01",
+    "disposition": "accepted",
+    "result": "AUROC (ClinVar), lowest-confidence level minus highest-confidence level, paired within gene: -0.115 (95% CI -0.144 to -0.087). Shared with the chemistry baseline, which declined by 0.097, but much larger than the conservation baseline, which declined by 0.010",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "am-kimi-r2/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

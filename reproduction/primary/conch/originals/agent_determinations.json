@@ -1,0 +1,42 @@
+[
+  {
+    "native_session_line": 411,
+    "timestamp": "2026-06-03T13:00:07.850Z",
+    "text": "The primary frozen axis is valid in ordering, but its raw levels have noticeable label-composition shifts. That does not invalidate scoring, but the closure check will need class-adjusted evidence and fixed baselines before making any claim."
+  },
+  {
+    "native_session_line": 627,
+    "timestamp": "2026-06-03T13:23:15.596Z",
+    "text": "The broad all-axis pass found a stronger, interpretable localized hypothesis than the primary raw curve: true TUM recall falls sharply as the predeclared tissue-fraction proximity axis decreases. Because that class-localized finding was selected after seeing results, I\u2019m treating it as a live hypothesis and will freeze a fresh confirmation panel before scoring it."
+  },
+  {
+    "native_session_line": 632,
+    "timestamp": "2026-06-03T13:23:20.784Z",
+    "text": "For confirmation I\u2019ll use fresh public NCT-CRC-HE-100K-NONORM TUM patches from the HF/Zenodo mirror, streamed shard-first rather than downloading the 11.7 GB archive. Claim boundary will explicitly include the limitation that this confirmation is public CRC ROI data and not an independent hospital/site cohort."
+  },
+  {
+    "native_session_line": 707,
+    "timestamp": "2026-06-03T13:30:51.086Z",
+    "text": "The fresh confirmation supports a threshold-style boundary: TUM recall is about 0.90-0.93 in levels 1-4 and drops to about 0.70-0.73 in levels 5-6. I\u2019m densifying the same frozen confirmation axis to deciles using the already-scored panel to check whether that threshold shape is stable."
+  },
+  {
+    "native_session_line": 713,
+    "timestamp": "2026-06-03T13:31:02.234Z",
+    "text": "Decile densification keeps the same threshold interpretation: levels 1-7 are mostly 0.85-0.94 TUM recall, while levels 8-10 sit around 0.68-0.73. I\u2019m checking the analogous CRC-VAL TUM-only curve so the discovery and confirmation evidence are summarized on the same axis."
+  },
+  {
+    "native_session_line": 719,
+    "timestamp": "2026-06-03T13:31:12.692Z",
+    "text": "The CRC-VAL TUM-only discovery curve is stronger and more graded, while NONORM confirmation is a milder threshold drop. I\u2019m summarizing what the low-similarity levels mean in concrete image-feature terms so the claim boundary is interpretable."
+  },
+  {
+    "native_session_line": 725,
+    "timestamp": "2026-06-03T13:31:38.349Z",
+    "text": "The closure gate is now satisfiable for a localized claim: the axis was frozen before confirmation scoring, has ordered levels, 300 confirmation examples per level, a densified decile check, fixed baselines, and a clear claim boundary. I\u2019m writing the compact state, ledger updates, command log, and final report now."
+  },
+  {
+    "native_session_line": 745,
+    "timestamp": "2026-06-03T13:33:03.618Z",
+    "text": "Terminal gate passed. I wrote `final_report.md` because the run now has a claim-valid localized SPC, not just a weak checkpoint.\n\nClaim boundary: CONCH zero-shot CRC ROI classification generalizes well overall on CRC-VAL, but TUM / colorectal adenocarcinoma epithelium recall shows a threshold degradation for patches with low prospective tissue-fraction similarity to the NCT reference. This is not a broad hospital/site, WSI, non-CRC, or all-class claim.\n\nKey evidence:\n- CRC-VAL full run: 7,180 images, CONCH accuracy `0.793`, balanced accuracy `0.785`.\n- CRC-VAL TUM discovery curve across decreasing tissue-fraction similarity: recall `[0.779, 0.652, 0.630, 0.574, 0.390, 0.114]`.\n- Fresh NONORM TUM confirmation: 1,800 images, 300 per frozen level, recall `[0.903, 0.930, 0.930, 0.883, 0.697, 0.730]`.\n- Decile densification preserved the low-similarity threshold: deciles 8-10 were `[0.678, 0.733, 0.722]`.\n- Fixed feature baselines were run and were weaker.\n\nNo hard blocker remains. Main limitation: confirmation is fresh relative to CRC-VAL discovery, but still from the public Kather/NCT source family, not an independent hospital cohort.\n\nArtifacts:\n- [final_report.md](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/final_report.md)\n- [spectra_loop_state.json](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/spectra_loop_state.json)\n- [axis_ledger.json](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/axis_ledger.json)\n- [commands_run.json](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/commands_run.json)\n- [target_model_results.csv](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/target_model_results.csv)\n- [spectra_ready_dataset/](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/spectra_ready_dataset)\n- [artifacts/tum_confirmation/analysis.json](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/artifacts/tum_confirmation/analysis.json)"
+  }
+]

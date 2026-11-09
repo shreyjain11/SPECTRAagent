@@ -1,0 +1,45 @@
+[
+  {
+    "dataset": "ClinVar GRCh38 VCF",
+    "recorded_local_name": "clinvar.vcf.gz",
+    "source_location": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260606.vcf.gz",
+    "sha256": "c5bb136e1ac476d390d8110905e8224126ce7d43d5eae0e0bfe689fbe96b8726",
+    "role": "clinical labels",
+    "boundary": "Dated original snapshot identified in official archive and downloaded on2026-11-08; full SHA256 matches original. New download commands are reconstructed recipes; original shell history is not required."
+  },
+  {
+    "dataset": "AlphaMissense hg38 released scores",
+    "source_location": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+    "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+    "role": "clinical-screen predictions",
+    "boundary": "Original source hash retained; original genomic-coordinate join code supplied."
+  },
+  {
+    "dataset": "UniRef50",
+    "source_location": "UniProt UniRef50 release 2026_01 (28-Jan-2026), 60,315,044 clusters",
+    "sha256": null,
+    "role": "sequence support",
+    "boundary": "Original database release file, exact MMseqs search command and complete search-hit output supplied; full database bytes not bundled."
+  },
+  {
+    "dataset": "gnomAD constraint",
+    "source_location": "gnomAD v2.1.1, gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz",
+    "sha256": "78f14346180de3fb552747099d9a34238ca535924418a3596d75f45654837d69",
+    "role": "observed / possible missense support",
+    "boundary": "Hash is for original decompressed gnomad_constraint.tsv, which is supplied."
+  },
+  {
+    "dataset": "ProteinGym DMS and alignments",
+    "source_location": "https://marks.hms.harvard.edu/proteingym/ProteinGym_v1.3/",
+    "sha256": null,
+    "role": "fitness labels, alignment column support, sequence metadata",
+    "boundary": "Original73 DMS assay tables and66 alignment files retained, with member-level hashes. Original filtering/mapping and rejected-assay logs supplied."
+  },
+  {
+    "dataset": "AlphaMissense amino-acid substitution scores",
+    "source_location": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_aa_substitutions.tsv.gz",
+    "sha256": "bc18d954a9aa6b9efab8e40d6d1912e32b774906cd3846a1f51066588e9c176d",
+    "role": "DMS comparison predictions",
+    "boundary": "Original released score source hash retained; supplied64-protein subset is explicitly a reconstruction input."
+  }
+]

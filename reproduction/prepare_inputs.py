@@ -156,15 +156,50 @@ def prepare_notebook(analysis_id):
     if not record_path.resolve().is_relative_to(ROOT / 'analyses'):
         raise ValueError('Invalid analysis identifier.')
     record = read(record_path)
-    model = Path(record['dataset_split']['input_inventory']).stem
+    model = record_model(record)
+    # The retained material notebooks call this function even when their record
+    # now prefers a richer primary workflow with its own input bootstrap.
+    implementation = public_bundle_implementation(record)
+    relative = Path(implementation['notebook']).relative_to(Path('materials') / model)
     directory = prepare_model(model)
-    relative = Path(record['implementation']['notebook']).relative_to(Path('materials') / model)
     notebook_directory = directory / relative.parent
     notebook_directory.mkdir(parents=True, exist_ok=True)
     for path in [directory, notebook_directory, directory / 'upstream_checks']:
         sys.path.insert(0, str(path))
     os.chdir(notebook_directory)
     return directory
+
+
+def record_model(record):
+    """Resolve model identity independently of the preferred input manifest."""
+    dataset = record['dataset_split']
+    archive_id = dataset.get('public_inputs', {}).get('archive')
+    if archive_id:
+        catalog = read(ROOT / 'data.json')
+        matches = [entry['model'] for entry in catalog['archives']
+                   if entry['id'] == archive_id]
+        if len(matches) != 1:
+            raise ValueError(f'Unknown or ambiguous public input archive: {archive_id}')
+        return matches[0]
+    # Support the earlier record format as well as a primary record whose
+    # preferred inventory is artifact_manifest.json/payload_manifest.json.
+    inventory = dataset.get('legacy_input_inventory', dataset['input_inventory'])
+    model = Path(inventory).stem
+    if model not in {'state', 'esmfold2', 'conch', 'alphamissense'}:
+        raise ValueError(f"Cannot resolve model for {record['id']}: {inventory}")
+    return model
+
+
+def public_bundle_implementation(record):
+    """Return the code-only implementation tied to the public input archive."""
+    model = record_model(record)
+    for implementation in [record.get('legacy_implementation'), record['implementation']]:
+        if implementation is None:
+            continue
+        notebook = Path(implementation['notebook'])
+        if notebook.is_relative_to(Path('materials') / model):
+            return implementation
+    raise ValueError(f"No public-bundle implementation recorded for {record['id']}")
 
 
 def input_hashes(directory):

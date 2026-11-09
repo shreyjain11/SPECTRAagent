@@ -1,0 +1,4439 @@
+{
+  "schema_version": 2,
+  "review_scope": "99non-primary entries reassessed against55886b7, which adds public archives, automatic preparation and reported execution checks. Earlier unconnected-input findings are superseded.",
+  "criterion": "Original inputs -> processing -> axes/levels -> individual measurements -> curves/diagnostics -> historical interpretation; no protocol-compliance test.",
+  "counts": {
+    "reviewed": 99,
+    "original_records_missing": 67,
+    "calculation_replay_packaged": 32,
+    "upstream_execution_without_error_reported_and_notebook_hash_matched": 99,
+    "unconnected_input_bundle_findings_remaining": 0
+  },
+  "excluded_as_missing_requirements": [
+    "New independent confirmation absent from original work",
+    "Fresh STATE neural inference when original investigation analyzed released score outputs",
+    "A corrected AlphaMissense cohort or scientific re-review as a prerequisite to repeating historical calculations",
+    "Independent-site generalization or monotonicity requirements"
+  ],
+  "classification_correction": {
+    "analysis_id": "conch-kimi-r2/test-02",
+    "reason": "Remains aggregate-display-only after public input preparation; shared plotting helpers do not constitute stain per-image recalculation."
+  },
+  "groups": [
+    {
+      "investigation": "am-gpt-r1",
+      "entries": 5,
+      "category_counts": {
+        "original_records_missing": 5
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/alphamissense/am-gpt-r1/axis-1.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/alphamissense/am-gpt-r1/axis-1.py",
+          "line": 22,
+          "evidence": "INPUT_MANIFEST.json"
+        }
+      ]
+    },
+    {
+      "investigation": "am-gpt-r2",
+      "entries": 4,
+      "category_counts": {
+        "original_records_missing": 4
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/alphamissense/am-gpt-r2/axis-1.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/alphamissense/am-gpt-r2/axis-1.py",
+          "line": 22,
+          "evidence": "INPUT_MANIFEST.json"
+        }
+      ]
+    },
+    {
+      "investigation": "am-kimi-r1",
+      "entries": 6,
+      "category_counts": {
+        "original_records_missing": 6
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/alphamissense/am-kimi-r1/axis-1.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/alphamissense/am-kimi-r1/axis-1.py",
+          "line": 22,
+          "evidence": "INPUT_MANIFEST.json"
+        }
+      ]
+    },
+    {
+      "investigation": "am-kimi-r2",
+      "entries": 6,
+      "category_counts": {
+        "original_records_missing": 6
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/alphamissense/am-kimi-r2/axis-1.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/alphamissense/am-kimi-r2/axis-1.py",
+          "line": 22,
+          "evidence": "INPUT_MANIFEST.json"
+        }
+      ]
+    },
+    {
+      "investigation": "am-opus-r1",
+      "entries": 3,
+      "category_counts": {
+        "calculation_replay_packaged": 3
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/alphamissense/am-opus-r1/axis-1.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/alphamissense/am-opus-r1/axis-1.py",
+          "line": 28,
+          "evidence": "INPUT_MANIFEST.json"
+        },
+        {
+          "path": "materials/alphamissense/am-opus-r1/axis-1.py",
+          "line": 162,
+          "evidence": "scores.csv"
+        }
+      ]
+    },
+    {
+      "investigation": "am-opus-r2",
+      "entries": 3,
+      "category_counts": {
+        "calculation_replay_packaged": 3
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/alphamissense/am-opus-r2/axis-1.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/alphamissense/am-opus-r2/axis-1.py",
+          "line": 26,
+          "evidence": "INPUT_MANIFEST.json"
+        },
+        {
+          "path": "materials/alphamissense/am-opus-r2/axis-1.py",
+          "line": 270,
+          "evidence": "scores.csv"
+        }
+      ]
+    },
+    {
+      "investigation": "conch-gpt-r1",
+      "entries": 7,
+      "category_counts": {
+        "original_records_missing": 7
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/conch/notebooks/conch-gpt-r1-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/conch/notebooks/conch-gpt-r1-01.py",
+          "line": 49,
+          "evidence": "candidate_axis_ledger.csv"
+        }
+      ]
+    },
+    {
+      "investigation": "conch-gpt-r2",
+      "entries": 7,
+      "category_counts": {
+        "original_records_missing": 7
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/conch/notebooks/conch-gpt-r2-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/conch/notebooks/conch-gpt-r2-01.py",
+          "line": 49,
+          "evidence": "candidate_axis_ledger.csv"
+        }
+      ]
+    },
+    {
+      "investigation": "conch-kimi-r1",
+      "entries": 1,
+      "category_counts": {
+        "original_records_missing": 1
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/conch/notebooks/conch-kimi-r1-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/conch/notebooks/conch-kimi-r1-01.py",
+          "line": 53,
+          "evidence": "No individual-outcome table"
+        }
+      ]
+    },
+    {
+      "investigation": "conch-kimi-r2",
+      "entries": 3,
+      "category_counts": {
+        "calculation_replay_packaged": 2,
+        "original_records_missing": 1
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/conch/notebooks/conch-kimi-r2-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/conch/notebooks/conch-kimi-r2-01.py",
+          "line": 51,
+          "evidence": "per_image_eval.csv"
+        },
+        {
+          "path": "materials/conch/notebooks/conch-kimi-r2-02.py",
+          "line": 53,
+          "evidence": "Only display(read_csv(...axisB_pilot.csv)) after shared helper definitions"
+        }
+      ]
+    },
+    {
+      "investigation": "conch-opus-r1",
+      "entries": 3,
+      "category_counts": {
+        "calculation_replay_packaged": 3
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/conch/notebooks/conch-opus-r1-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/conch/notebooks/conch-opus-r1-01.py",
+          "line": 49,
+          "evidence": "nct_features.csv"
+        }
+      ]
+    },
+    {
+      "investigation": "conch-opus-r2",
+      "entries": 3,
+      "category_counts": {
+        "calculation_replay_packaged": 3
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/conch/notebooks/conch-opus-r2-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/conch/notebooks/conch-opus-r2-01.py",
+          "line": 49,
+          "evidence": "confirmation_per_tile.csv"
+        }
+      ]
+    },
+    {
+      "investigation": "esmfold2-codex-r1",
+      "entries": 4,
+      "category_counts": {
+        "original_records_missing": 4
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-01.py",
+          "line": 21,
+          "evidence": "No reproduction curve computed."
+        }
+      ]
+    },
+    {
+      "investigation": "esmfold2-codex-r2",
+      "entries": 6,
+      "category_counts": {
+        "original_records_missing": 6
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-01.py",
+          "line": 21,
+          "evidence": "No reproduction curve computed."
+        }
+      ]
+    },
+    {
+      "investigation": "esmfold2-kimi-r1",
+      "entries": 3,
+      "category_counts": {
+        "calculation_replay_packaged": 3
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-01.py",
+          "line": 55,
+          "evidence": "merged_per_unit.tsv"
+        }
+      ]
+    },
+    {
+      "investigation": "esmfold2-kimi-r2",
+      "entries": 2,
+      "category_counts": {
+        "calculation_replay_packaged": 2
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.py",
+          "line": 55,
+          "evidence": "scores.csv"
+        }
+      ]
+    },
+    {
+      "investigation": "esmfold2-opus-r1",
+      "entries": 4,
+      "category_counts": {
+        "original_records_missing": 4
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-opus-r1/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-opus-r1/test-01.py",
+          "line": 21,
+          "evidence": "No reproduction curve computed."
+        }
+      ]
+    },
+    {
+      "investigation": "esmfold2-opus-r2",
+      "entries": 4,
+      "category_counts": {
+        "original_records_missing": 4
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-opus-r2/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/esmfold2/notebooks/esmfold2-opus-r2/test-01.py",
+          "line": 21,
+          "evidence": "No reproduction curve computed."
+        }
+      ]
+    },
+    {
+      "investigation": "state-codex-r1",
+      "entries": 4,
+      "category_counts": {
+        "original_records_missing": 4
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/state/notebooks/state-codex-r1/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/state/notebooks/state-codex-r1/test-01.py",
+          "line": 27,
+          "evidence": "STATE_INPUTS.json"
+        },
+        {
+          "path": "materials/state/notebooks/state-codex-r1/test-01.py",
+          "line": 55,
+          "evidence": "No curve or model result is recomputed."
+        }
+      ]
+    },
+    {
+      "investigation": "state-codex-r2",
+      "entries": 5,
+      "category_counts": {
+        "original_records_missing": 5
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/state/notebooks/state-codex-r2/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/state/notebooks/state-codex-r2/test-01.py",
+          "line": 27,
+          "evidence": "STATE_INPUTS.json"
+        },
+        {
+          "path": "materials/state/notebooks/state-codex-r2/test-01.py",
+          "line": 55,
+          "evidence": "No curve or model result is recomputed."
+        }
+      ]
+    },
+    {
+      "investigation": "state-kimi-r1",
+      "entries": 4,
+      "category_counts": {
+        "calculation_replay_packaged": 4
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/state/notebooks/state-kimi-r1/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/state/notebooks/state-kimi-r1/test-01.py",
+          "line": 27,
+          "evidence": "STATE_INPUTS.json"
+        }
+      ]
+    },
+    {
+      "investigation": "state-kimi-r2",
+      "entries": 3,
+      "category_counts": {
+        "original_records_missing": 3
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/state/notebooks/state-kimi-r2/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/state/notebooks/state-kimi-r2/test-01.py",
+          "line": 27,
+          "evidence": "STATE_INPUTS.json"
+        },
+        {
+          "path": "materials/state/notebooks/state-kimi-r2/test-01.py",
+          "line": 55,
+          "evidence": "No curve or model result is recomputed."
+        }
+      ]
+    },
+    {
+      "investigation": "state-opus-r1",
+      "entries": 4,
+      "category_counts": {
+        "calculation_replay_packaged": 4
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/state/notebooks/state-opus-r1/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/state/notebooks/state-opus-r1/test-01.py",
+          "line": 27,
+          "evidence": "STATE_INPUTS.json"
+        }
+      ]
+    },
+    {
+      "investigation": "state-opus-r2",
+      "entries": 5,
+      "category_counts": {
+        "calculation_replay_packaged": 5
+      },
+      "representative_code_pointers": [
+        {
+          "path": "materials/state/notebooks/state-opus-r2/test-01.py",
+          "line": 15,
+          "evidence": "Automatic public archive preparation"
+        },
+        {
+          "path": "materials/state/notebooks/state-opus-r2/test-01.py",
+          "line": 27,
+          "evidence": "STATE_INPUTS.json"
+        }
+      ]
+    }
+  ],
+  "analyses": [
+    {
+      "analysis_id": "am-gpt-r1/test-01",
+      "axis": "Distance to nearest internal exon boundary",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-gpt-r1/axis-1.py",
+      "record_path": "analyses/am-gpt-r1/test-01.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-gpt-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-gpt-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "8071c556ed12dd66fe94bdd6a1f17ed6c7198a667b10bf7d1f83b68db10211ff",
+          "bytes": 2535
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-gpt-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-gpt-r1/test-02",
+      "axis": "Intrinsic disorder",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-gpt-r1/axis-2.py",
+      "record_path": "analyses/am-gpt-r1/test-02.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-gpt-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-gpt-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "8071c556ed12dd66fe94bdd6a1f17ed6c7198a667b10bf7d1f83b68db10211ff",
+          "bytes": 2535
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-gpt-r1/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-gpt-r1/test-03",
+      "axis": "Protein-interface context",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-gpt-r1/axis-3.py",
+      "record_path": "analyses/am-gpt-r1/test-03.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-gpt-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-gpt-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "8071c556ed12dd66fe94bdd6a1f17ed6c7198a667b10bf7d1f83b68db10211ff",
+          "bytes": 2535
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-gpt-r1/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-gpt-r1/test-04",
+      "axis": "Gene age",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-gpt-r1/axis-4.py",
+      "record_path": "analyses/am-gpt-r1/test-04.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-gpt-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-gpt-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "8071c556ed12dd66fe94bdd6a1f17ed6c7198a667b10bf7d1f83b68db10211ff",
+          "bytes": 2535
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-gpt-r1/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-gpt-r1/test-05",
+      "axis": "Protein-function mechanism check",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-gpt-r1/axis-5.py",
+      "record_path": "analyses/am-gpt-r1/test-05.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-gpt-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-gpt-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "8071c556ed12dd66fe94bdd6a1f17ed6c7198a667b10bf7d1f83b68db10211ff",
+          "bytes": 2535
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-gpt-r1/test-05.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-gpt-r2/test-01",
+      "axis": "Minimum exonic distance to an exon boundary",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-gpt-r2/axis-1.py",
+      "record_path": "analyses/am-gpt-r2/test-01.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-gpt-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-gpt-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "6a244f76ff9223d2f882d3d25dae6b5c40ad28b6fa0de05a20cfeea0764eacc0",
+          "bytes": 1390
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-gpt-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-gpt-r2/test-02",
+      "axis": "protein-protein interface/binding context",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-gpt-r2/axis-2.py",
+      "record_path": "analyses/am-gpt-r2/test-02.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-gpt-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-gpt-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "6a244f76ff9223d2f882d3d25dae6b5c40ad28b6fa0de05a20cfeea0764eacc0",
+          "bytes": 1390
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-gpt-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-gpt-r2/test-03",
+      "axis": "gene evolutionary age",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-gpt-r2/axis-3.py",
+      "record_path": "analyses/am-gpt-r2/test-03.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-gpt-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-gpt-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "6a244f76ff9223d2f882d3d25dae6b5c40ad28b6fa0de05a20cfeea0764eacc0",
+          "bytes": 1390
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-gpt-r2/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-gpt-r2/test-04",
+      "axis": "local disorder/low structural confidence",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-gpt-r2/axis-4.py",
+      "record_path": "analyses/am-gpt-r2/test-04.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-gpt-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-gpt-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "6a244f76ff9223d2f882d3d25dae6b5c40ad28b6fa0de05a20cfeea0764eacc0",
+          "bytes": 1390
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-gpt-r2/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r1/test-01",
+      "axis": "Nucleotide distance to the nearest exon boundary",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r1/axis-1.py",
+      "record_path": "analyses/am-kimi-r1/test-01.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "3ffc24e67874abd5b6f387ce7eff794019dd93b6e47c5251b997c71a03700cfe",
+          "bytes": 1384
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r1/test-02",
+      "axis": "local sequence complexity (21-aa windowed entropy, quartiles)",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r1/axis-2.py",
+      "record_path": "analyses/am-kimi-r1/test-02.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "3ffc24e67874abd5b6f387ce7eff794019dd93b6e47c5251b997c71a03700cfe",
+          "bytes": 1384
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r1/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r1/test-03",
+      "axis": "distance to nearest terminus (quartiles)",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r1/axis-3.py",
+      "record_path": "analyses/am-kimi-r1/test-03.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "3ffc24e67874abd5b6f387ce7eff794019dd93b6e47c5251b997c71a03700cfe",
+          "bytes": 1384
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r1/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r1/test-04",
+      "axis": "protein length (quartiles)",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r1/axis-4.py",
+      "record_path": "analyses/am-kimi-r1/test-04.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "3ffc24e67874abd5b6f387ce7eff794019dd93b6e47c5251b997c71a03700cfe",
+          "bytes": 1384
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r1/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r1/test-05",
+      "axis": "homology availability (ortholog count across 6 species; levels 6 / 4\u20135 / 0\u20133 after predeclared merge)",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r1/axis-5.py",
+      "record_path": "analyses/am-kimi-r1/test-05.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "3ffc24e67874abd5b6f387ce7eff794019dd93b6e47c5251b997c71a03700cfe",
+          "bytes": 1384
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r1/test-05.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r1/test-06",
+      "axis": "population observability (AF tiers: unobserved / rare / common)",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r1/axis-6.py",
+      "record_path": "analyses/am-kimi-r1/test-06.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "3ffc24e67874abd5b6f387ce7eff794019dd93b6e47c5251b997c71a03700cfe",
+          "bytes": 1384
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r1/test-06.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r2/test-01",
+      "axis": "AlphaFold residue-level confidence, within gene",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r2/axis-1.py",
+      "record_path": "analyses/am-kimi-r2/test-01.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "67bd3fe4267e36e1a51be918c6869c7df0e3e0700f5577ade160d0463bfa5521",
+          "bytes": 2161
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r2/test-02",
+      "axis": "position phyloP (pooled)",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r2/axis-2.py",
+      "record_path": "analyses/am-kimi-r2/test-02.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "67bd3fe4267e36e1a51be918c6869c7df0e3e0700f5577ade160d0463bfa5521",
+          "bytes": 2161
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r2/test-03",
+      "axis": "position phyloP, paired within-gene",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r2/axis-3.py",
+      "record_path": "analyses/am-kimi-r2/test-03.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "67bd3fe4267e36e1a51be918c6869c7df0e3e0700f5577ade160d0463bfa5521",
+          "bytes": 2161
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r2/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r2/test-04",
+      "axis": "gene-level mean CDS phyloP (quintiles)",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r2/axis-4.py",
+      "record_path": "analyses/am-kimi-r2/test-04.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "67bd3fe4267e36e1a51be918c6869c7df0e3e0700f5577ade160d0463bfa5521",
+          "bytes": 2161
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r2/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r2/test-05",
+      "axis": "Grantham substitution severity (4 levels)",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r2/axis-5.py",
+      "record_path": "analyses/am-kimi-r2/test-05.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "67bd3fe4267e36e1a51be918c6869c7df0e3e0700f5577ade160d0463bfa5521",
+          "bytes": 2161
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r2/test-05.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-kimi-r2/test-06",
+      "axis": "CpG mutational context (3 levels)",
+      "category": "original_records_missing",
+      "code_path": "materials/alphamissense/am-kimi-r2/axis-6.py",
+      "record_path": "analyses/am-kimi-r2/test-06.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-kimi-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-kimi-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "67bd3fe4267e36e1a51be918c6869c7df0e3e0700f5577ade160d0463bfa5521",
+          "bytes": 2161
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/am-kimi-r2/test-06.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-opus-r1/test-01",
+      "axis": "Evolutionary constraint at the variant position",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/alphamissense/am-opus-r1/axis-1.py",
+      "record_path": "analyses/am-opus-r1/test-01.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-opus-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 10,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-opus-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "982008ccb733cff50d12f21de1c19ad27a98d02f3661c81b9dd244d40e0c6499",
+          "bytes": 4527
+        },
+        {
+          "archive_member": "am-opus-r1/data/predictions.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "6c458fc263b7c90db7cc84e48662425c540b6f6f85a52d9a7cb2cfad15d8cc9d",
+          "bytes": 16831690
+        },
+        {
+          "archive_member": "am-opus-r1/data/assay_full.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "b828a664811cc009fbdaf811d3c548213d5231f3e09ed1fed8439d5e86f1c775",
+          "bytes": 53913
+        },
+        {
+          "archive_member": "am-opus-r1/data/uniprot_sprot.fasta.gz",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "b774748a050fd3de0bf2ad49b359ed59a2c2b02c89df3fe0679fafa446751794",
+          "bytes": 93706469
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/am-opus-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-opus-r1/test-02",
+      "axis": "Whole-protein alignment depth",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/alphamissense/am-opus-r1/axis-2.py",
+      "record_path": "analyses/am-opus-r1/test-02.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-opus-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 10,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-opus-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "982008ccb733cff50d12f21de1c19ad27a98d02f3661c81b9dd244d40e0c6499",
+          "bytes": 4527
+        },
+        {
+          "archive_member": "am-opus-r1/data/predictions.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "6c458fc263b7c90db7cc84e48662425c540b6f6f85a52d9a7cb2cfad15d8cc9d",
+          "bytes": 16831690
+        },
+        {
+          "archive_member": "am-opus-r1/data/assay_full.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "b828a664811cc009fbdaf811d3c548213d5231f3e09ed1fed8439d5e86f1c775",
+          "bytes": 53913
+        },
+        {
+          "archive_member": "am-opus-r1/data/uniprot_sprot.fasta.gz",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "b774748a050fd3de0bf2ad49b359ed59a2c2b02c89df3fe0679fafa446751794",
+          "bytes": 93706469
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/am-opus-r1/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-opus-r1/test-03",
+      "axis": "Per-position alignment coverage",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/alphamissense/am-opus-r1/axis-3.py",
+      "record_path": "analyses/am-opus-r1/test-03.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-opus-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 10,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-opus-r1/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "982008ccb733cff50d12f21de1c19ad27a98d02f3661c81b9dd244d40e0c6499",
+          "bytes": 4527
+        },
+        {
+          "archive_member": "am-opus-r1/data/predictions.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "6c458fc263b7c90db7cc84e48662425c540b6f6f85a52d9a7cb2cfad15d8cc9d",
+          "bytes": 16831690
+        },
+        {
+          "archive_member": "am-opus-r1/data/assay_full.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "b828a664811cc009fbdaf811d3c548213d5231f3e09ed1fed8439d5e86f1c775",
+          "bytes": 53913
+        },
+        {
+          "archive_member": "am-opus-r1/data/uniprot_sprot.fasta.gz",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "b774748a050fd3de0bf2ad49b359ed59a2c2b02c89df3fe0679fafa446751794",
+          "bytes": 93706469
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/am-opus-r1/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-opus-r2/test-01",
+      "axis": "AlphaFold residue-level confidence (pLDDT)",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/alphamissense/am-opus-r2/axis-1.py",
+      "record_path": "analyses/am-opus-r2/test-01.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-opus-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 15,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-opus-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "3aef5488fe1b5498da62179f1582f49204885303f13c3865a3c8b4bafa120b27",
+          "bytes": 4692
+        },
+        {
+          "archive_member": "am-opus-r2/inputs/raw_references.tar.gz",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "8079b9e63cbadbf928e09cf6124899a58062d056e40e9a0f5794b3fd25493f11",
+          "bytes": 563555756
+        },
+        {
+          "archive_member": "am-opus-r2/inputs/predictions.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "6c458fc263b7c90db7cc84e48662425c540b6f6f85a52d9a7cb2cfad15d8cc9d",
+          "bytes": 16831690
+        },
+        {
+          "archive_member": "am-opus-r2/inputs/assay_msa_map.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "cc6bf1a5316fc82a0aa29b2fc99c0f120021860caf2ef35b1534bbb7039688c8",
+          "bytes": 6589
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/am-opus-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-opus-r2/test-02",
+      "axis": "Whole-protein alignment depth",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/alphamissense/am-opus-r2/axis-2.py",
+      "record_path": "analyses/am-opus-r2/test-02.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-opus-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 15,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-opus-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "3aef5488fe1b5498da62179f1582f49204885303f13c3865a3c8b4bafa120b27",
+          "bytes": 4692
+        },
+        {
+          "archive_member": "am-opus-r2/inputs/raw_references.tar.gz",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "8079b9e63cbadbf928e09cf6124899a58062d056e40e9a0f5794b3fd25493f11",
+          "bytes": 563555756
+        },
+        {
+          "archive_member": "am-opus-r2/inputs/predictions.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "6c458fc263b7c90db7cc84e48662425c540b6f6f85a52d9a7cb2cfad15d8cc9d",
+          "bytes": 16831690
+        },
+        {
+          "archive_member": "am-opus-r2/inputs/assay_msa_map.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "cc6bf1a5316fc82a0aa29b2fc99c0f120021860caf2ef35b1534bbb7039688c8",
+          "bytes": 6589
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/am-opus-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "am-opus-r2/test-03",
+      "axis": "Within-assay alignment support",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/alphamissense/am-opus-r2/axis-3.py",
+      "record_path": "analyses/am-opus-r2/test-03.json",
+      "expected_standalone_bundle_layout": "materials/alphamissense/am-opus-r2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "alphamissense-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 15,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "am-opus-r2/INPUT_MANIFEST.json",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "3aef5488fe1b5498da62179f1582f49204885303f13c3865a3c8b4bafa120b27",
+          "bytes": 4692
+        },
+        {
+          "archive_member": "am-opus-r2/inputs/raw_references.tar.gz",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "8079b9e63cbadbf928e09cf6124899a58062d056e40e9a0f5794b3fd25493f11",
+          "bytes": 563555756
+        },
+        {
+          "archive_member": "am-opus-r2/inputs/predictions.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "6c458fc263b7c90db7cc84e48662425c540b6f6f85a52d9a7cb2cfad15d8cc9d",
+          "bytes": 16831690
+        },
+        {
+          "archive_member": "am-opus-r2/inputs/assay_msa_map.csv",
+          "archive": "alphamissense-retained-inputs",
+          "sha256": "cc6bf1a5316fc82a0aa29b2fc99c0f120021860caf2ef35b1534bbb7039688c8",
+          "bytes": 6589
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/am-opus-r2/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r1/test-01",
+      "axis": "Texture-only distance from the NCT reference",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r1-01.py",
+      "record_path": "analyses/conch-gpt-r1/test-01.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r1/matched_confound_summary.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "1c17981648d3a9c9f999eb9a612b944ef4f75736ab9662468cf944b2c652e9db",
+          "bytes": 700
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "a7ff96ef57bbc8c1df11293bfe4069c48c23a849067c2ab4325bd595c18a4cc2",
+          "bytes": 14875
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "2661f148329526dda408be92162979fda52b6bd8ae72a0b3b1b24ee006ae745e",
+          "bytes": 2235
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "55e5084775bfda5099d1de8ff7d7a331b4e0218d737d4c8d0b8b8de923df88c8",
+          "bytes": 5731
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r1/test-02",
+      "axis": "joint reference-distribution color-texture distance",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r1-02.py",
+      "record_path": "analyses/conch-gpt-r1/test-02.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r1/matched_confound_summary.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "1c17981648d3a9c9f999eb9a612b944ef4f75736ab9662468cf944b2c652e9db",
+          "bytes": 700
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "a7ff96ef57bbc8c1df11293bfe4069c48c23a849067c2ab4325bd595c18a4cc2",
+          "bytes": 14875
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "2661f148329526dda408be92162979fda52b6bd8ae72a0b3b1b24ee006ae745e",
+          "bytes": 2235
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "55e5084775bfda5099d1de8ff7d7a331b4e0218d737d4c8d0b8b8de923df88c8",
+          "bytes": 5731
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r1/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r1/test-03",
+      "axis": "tissue-background fragmentation / low tissue fraction",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r1-03.py",
+      "record_path": "analyses/conch-gpt-r1/test-03.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r1/matched_confound_summary.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "1c17981648d3a9c9f999eb9a612b944ef4f75736ab9662468cf944b2c652e9db",
+          "bytes": 700
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "a7ff96ef57bbc8c1df11293bfe4069c48c23a849067c2ab4325bd595c18a4cc2",
+          "bytes": 14875
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "2661f148329526dda408be92162979fda52b6bd8ae72a0b3b1b24ee006ae745e",
+          "bytes": 2235
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "55e5084775bfda5099d1de8ff7d7a331b4e0218d737d4c8d0b8b8de923df88c8",
+          "bytes": 5731
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r1/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r1/test-04",
+      "axis": "stain optical-density departure",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r1-04.py",
+      "record_path": "analyses/conch-gpt-r1/test-04.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r1/matched_confound_summary.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "1c17981648d3a9c9f999eb9a612b944ef4f75736ab9662468cf944b2c652e9db",
+          "bytes": 700
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "a7ff96ef57bbc8c1df11293bfe4069c48c23a849067c2ab4325bd595c18a4cc2",
+          "bytes": 14875
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "2661f148329526dda408be92162979fda52b6bd8ae72a0b3b1b24ee006ae745e",
+          "bytes": 2235
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "55e5084775bfda5099d1de8ff7d7a331b4e0218d737d4c8d0b8b8de923df88c8",
+          "bytes": 5731
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r1/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r1/test-05",
+      "axis": "blur/sharpness departure",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r1-05.py",
+      "record_path": "analyses/conch-gpt-r1/test-05.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r1/matched_confound_summary.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "1c17981648d3a9c9f999eb9a612b944ef4f75736ab9662468cf944b2c652e9db",
+          "bytes": 700
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "a7ff96ef57bbc8c1df11293bfe4069c48c23a849067c2ab4325bd595c18a4cc2",
+          "bytes": 14875
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "2661f148329526dda408be92162979fda52b6bd8ae72a0b3b1b24ee006ae745e",
+          "bytes": 2235
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "55e5084775bfda5099d1de8ff7d7a331b4e0218d737d4c8d0b8b8de923df88c8",
+          "bytes": 5731
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r1/test-05.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r1/test-06",
+      "axis": "JPEG corruption",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r1-06.py",
+      "record_path": "analyses/conch-gpt-r1/test-06.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r1/matched_confound_summary.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "1c17981648d3a9c9f999eb9a612b944ef4f75736ab9662468cf944b2c652e9db",
+          "bytes": 700
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "a7ff96ef57bbc8c1df11293bfe4069c48c23a849067c2ab4325bd595c18a4cc2",
+          "bytes": 14875
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "2661f148329526dda408be92162979fda52b6bd8ae72a0b3b1b24ee006ae745e",
+          "bytes": 2235
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "55e5084775bfda5099d1de8ff7d7a331b4e0218d737d4c8d0b8b8de923df88c8",
+          "bytes": 5731
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r1/test-06.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r1/test-07",
+      "axis": "Kather-2016 external transport panel",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r1-07.py",
+      "record_path": "analyses/conch-gpt-r1/test-07.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r1/matched_confound_summary.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "1c17981648d3a9c9f999eb9a612b944ef4f75736ab9662468cf944b2c652e9db",
+          "bytes": 700
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "a7ff96ef57bbc8c1df11293bfe4069c48c23a849067c2ab4325bd595c18a4cc2",
+          "bytes": 14875
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "2661f148329526dda408be92162979fda52b6bd8ae72a0b3b1b24ee006ae745e",
+          "bytes": 2235
+        },
+        {
+          "archive_member": "source/conch-gpt-r1/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "55e5084775bfda5099d1de8ff7d7a331b4e0218d737d4c8d0b8b8de923df88c8",
+          "bytes": 5731
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r1/test-07.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r2/test-01",
+      "axis": "Joint colour-and-texture distance from NCT",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r2-01.py",
+      "record_path": "analyses/conch-gpt-r2/test-01.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r2/extreme_level_contrasts.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "c44b16ff304c072a1c7ea7190130d9b51e85de5f2de1ae1c52dc39c1732e7b94",
+          "bytes": 1131
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "5a61cdb6f97a43e896f80ad7ab641606e60d977d1e07d896b044829264a5a1c7",
+          "bytes": 13634
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "88dc145691c353ca8c9f7d57e8726fe67755ec2369827b5fb1e7889c874f9e23",
+          "bytes": 2085
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "9331998cbaff0e2d7817b7a13b5f6bc5c20ff30f23a92a885e6c0802b2fe324a",
+          "bytes": 6499
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r2/test-02",
+      "axis": "stain drift",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r2-02.py",
+      "record_path": "analyses/conch-gpt-r2/test-02.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r2/extreme_level_contrasts.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "c44b16ff304c072a1c7ea7190130d9b51e85de5f2de1ae1c52dc39c1732e7b94",
+          "bytes": 1131
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "5a61cdb6f97a43e896f80ad7ab641606e60d977d1e07d896b044829264a5a1c7",
+          "bytes": 13634
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "88dc145691c353ca8c9f7d57e8726fe67755ec2369827b5fb1e7889c874f9e23",
+          "bytes": 2085
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "9331998cbaff0e2d7817b7a13b5f6bc5c20ff30f23a92a885e6c0802b2fe324a",
+          "bytes": 6499
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r2/test-03",
+      "axis": "blur/sharpness",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r2-03.py",
+      "record_path": "analyses/conch-gpt-r2/test-03.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r2/extreme_level_contrasts.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "c44b16ff304c072a1c7ea7190130d9b51e85de5f2de1ae1c52dc39c1732e7b94",
+          "bytes": 1131
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "5a61cdb6f97a43e896f80ad7ab641606e60d977d1e07d896b044829264a5a1c7",
+          "bytes": 13634
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "88dc145691c353ca8c9f7d57e8726fe67755ec2369827b5fb1e7889c874f9e23",
+          "bytes": 2085
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "9331998cbaff0e2d7817b7a13b5f6bc5c20ff30f23a92a885e6c0802b2fe324a",
+          "bytes": 6499
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r2/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r2/test-04",
+      "axis": "background/tissue fraction",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r2-04.py",
+      "record_path": "analyses/conch-gpt-r2/test-04.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r2/extreme_level_contrasts.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "c44b16ff304c072a1c7ea7190130d9b51e85de5f2de1ae1c52dc39c1732e7b94",
+          "bytes": 1131
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "5a61cdb6f97a43e896f80ad7ab641606e60d977d1e07d896b044829264a5a1c7",
+          "bytes": 13634
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "88dc145691c353ca8c9f7d57e8726fe67755ec2369827b5fb1e7889c874f9e23",
+          "bytes": 2085
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "9331998cbaff0e2d7817b7a13b5f6bc5c20ff30f23a92a885e6c0802b2fe324a",
+          "bytes": 6499
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r2/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r2/test-05",
+      "axis": "compression artifacts",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r2-05.py",
+      "record_path": "analyses/conch-gpt-r2/test-05.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r2/extreme_level_contrasts.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "c44b16ff304c072a1c7ea7190130d9b51e85de5f2de1ae1c52dc39c1732e7b94",
+          "bytes": 1131
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "5a61cdb6f97a43e896f80ad7ab641606e60d977d1e07d896b044829264a5a1c7",
+          "bytes": 13634
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "88dc145691c353ca8c9f7d57e8726fe67755ec2369827b5fb1e7889c874f9e23",
+          "bytes": 2085
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "9331998cbaff0e2d7817b7a13b5f6bc5c20ff30f23a92a885e6c0802b2fe324a",
+          "bytes": 6499
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r2/test-05.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r2/test-06",
+      "axis": "magnification/scale",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r2-06.py",
+      "record_path": "analyses/conch-gpt-r2/test-06.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r2/extreme_level_contrasts.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "c44b16ff304c072a1c7ea7190130d9b51e85de5f2de1ae1c52dc39c1732e7b94",
+          "bytes": 1131
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "5a61cdb6f97a43e896f80ad7ab641606e60d977d1e07d896b044829264a5a1c7",
+          "bytes": 13634
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "88dc145691c353ca8c9f7d57e8726fe67755ec2369827b5fb1e7889c874f9e23",
+          "bytes": 2085
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "9331998cbaff0e2d7817b7a13b5f6bc5c20ff30f23a92a885e6c0802b2fe324a",
+          "bytes": 6499
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r2/test-06.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-gpt-r2/test-07",
+      "axis": "external cohort/site",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-gpt-r2-07.py",
+      "record_path": "analyses/conch-gpt-r2/test-07.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-gpt-r2/extreme_level_contrasts.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "c44b16ff304c072a1c7ea7190130d9b51e85de5f2de1ae1c52dc39c1732e7b94",
+          "bytes": 1131
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "5a61cdb6f97a43e896f80ad7ab641606e60d977d1e07d896b044829264a5a1c7",
+          "bytes": 13634
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/candidate_axis_ledger.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "88dc145691c353ca8c9f7d57e8726fe67755ec2369827b5fb1e7889c874f9e23",
+          "bytes": 2085
+        },
+        {
+          "archive_member": "source/conch-gpt-r2/spc_table.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "9331998cbaff0e2d7817b7a13b5f6bc5c20ff30f23a92a885e6c0802b2fe324a",
+          "bytes": 6499
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-gpt-r2/test-07.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-kimi-r1/test-01",
+      "axis": "Effective acquisition magnification",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-kimi-r1-01.py",
+      "record_path": "analyses/conch-kimi-r1/test-01.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "individual outcomes and axis-processing inputs; evidence listing is not a per-image recomputation"
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-kimi-r1/report.md",
+          "archive": "conch-retained-inputs",
+          "sha256": "14c7367c4e223a59fc49ba1835d7b3e2732e207a95cd73a35a69b2b73b40cfc7",
+          "bytes": 11088
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-kimi-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-kimi-r2/test-01",
+      "axis": "Effective spatial resolution",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/conch/notebooks/conch-kimi-r2-01.py",
+      "record_path": "analyses/conch-kimi-r2/test-01.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 7,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-kimi-r2/native/data/NCT-sample/nct_sample_manifest.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "bd98e970949b97c91926158811b9525b3b9db1bb646f0bdcc577d4eddaa641b7",
+          "bytes": 932338
+        },
+        {
+          "archive_member": "source/conch-kimi-r2/native/artifacts/axisA_confirm/per_image_eval.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "05b90a0217267877238c785355c843ccf69e87b4c1953d3dc1b5baac7046cb0c",
+          "bytes": 218032
+        },
+        {
+          "archive_member": "source/conch-kimi-r2/native/artifacts/axisA_confirm/probs_CONCH_s1.npy",
+          "archive": "conch-retained-inputs",
+          "sha256": "1891bdc986f0bfb4987d2d1bd083c9b19b48fb5cb6fc9e9818443d93ec4b1400",
+          "bytes": 129728
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/conch-kimi-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-kimi-r2/test-02",
+      "axis": "Stain shift",
+      "category": "original_records_missing",
+      "code_path": "materials/conch/notebooks/conch-kimi-r2-02.py",
+      "record_path": "analyses/conch-kimi-r2/test-02.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original per-image predictions at each stain factor; export only displays aggregate pilot table"
+      ],
+      "classification_reason": "Public download now supplies the aggregate stain pilot table. Actionable code still only hashes/lists evidence and displays that aggregate; original per-image stain-factor predictions remain unavailable.",
+      "code_evidence": [
+        {
+          "path": "materials/conch/notebooks/conch-kimi-r2-02.py",
+          "line": 53,
+          "evidence": "Aggregate pilot display only"
+        }
+      ],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-kimi-r2/native/artifacts/pilot_axisB/axisB_pilot.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "8d3da98b71f3407eaf3b37b1e66e4d4878dc3d3389905ce111cb33adec744440",
+          "bytes": 570
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/conch-kimi-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-kimi-r2/test-03",
+      "axis": "Site shift at native resolution",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/conch/notebooks/conch-kimi-r2-03.py",
+      "record_path": "analyses/conch-kimi-r2/test-03.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 7,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-kimi-r2/native/data/NCT-sample/nct_sample_manifest.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "bd98e970949b97c91926158811b9525b3b9db1bb646f0bdcc577d4eddaa641b7",
+          "bytes": 932338
+        },
+        {
+          "archive_member": "source/conch-kimi-r2/native/artifacts/axisA_confirm/per_image_eval.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "05b90a0217267877238c785355c843ccf69e87b4c1953d3dc1b5baac7046cb0c",
+          "bytes": 218032
+        },
+        {
+          "archive_member": "source/conch-kimi-r2/native/artifacts/axisA_confirm/probs_CONCH_s1.npy",
+          "archive": "conch-retained-inputs",
+          "sha256": "1891bdc986f0bfb4987d2d1bd083c9b19b48fb5cb6fc9e9818443d93ec4b1400",
+          "bytes": 129728
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/conch-kimi-r2/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-opus-r1/test-01",
+      "axis": "Colour and stain distance, within tissue class",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/conch/notebooks/conch-opus-r1-01.py",
+      "record_path": "analyses/conch-opus-r1/test-01.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 8,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-opus-r1/nct_features.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "2069e3a0ccac6efe734bf858792f48870cb7d3404de667b6d4a7e13c7510f886",
+          "bytes": 1121541
+        },
+        {
+          "archive_member": "source/conch-opus-r1/crcval_features.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "cc302d0bbf94e67928b370988a8191256b0e6a68d5c1e78708aabd1badad3e1b",
+          "bytes": 3048981
+        },
+        {
+          "archive_member": "source/shared/crcval_predictions.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "d0f00ee3904e1f5191c75267c04c42fc3b23ffd7e8bd1a0c0c7185f3bdc19852",
+          "bytes": 3063944
+        },
+        {
+          "archive_member": "source/conch-opus-r1/CRC-VAL-HE-7K.zip",
+          "archive": "conch-retained-inputs",
+          "sha256": "1bcb631804a7136dbea427bc83826f2b6b6f61939470d8aec4aede93bfaaf1af",
+          "bytes": 800276929
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/conch-opus-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-opus-r1/test-02",
+      "axis": "Pooled appearance distance",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/conch/notebooks/conch-opus-r1-02.py",
+      "record_path": "analyses/conch-opus-r1/test-02.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 8,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-opus-r1/nct_features.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "2069e3a0ccac6efe734bf858792f48870cb7d3404de667b6d4a7e13c7510f886",
+          "bytes": 1121541
+        },
+        {
+          "archive_member": "source/conch-opus-r1/crcval_features.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "cc302d0bbf94e67928b370988a8191256b0e6a68d5c1e78708aabd1badad3e1b",
+          "bytes": 3048981
+        },
+        {
+          "archive_member": "source/shared/crcval_predictions.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "d0f00ee3904e1f5191c75267c04c42fc3b23ffd7e8bd1a0c0c7185f3bdc19852",
+          "bytes": 3063944
+        },
+        {
+          "archive_member": "source/conch-opus-r1/CRC-VAL-HE-7K.zip",
+          "archive": "conch-retained-inputs",
+          "sha256": "1bcb631804a7136dbea427bc83826f2b6b6f61939470d8aec4aede93bfaaf1af",
+          "bytes": 800276929
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/conch-opus-r1/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-opus-r1/test-03",
+      "axis": "Image sharpness",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/conch/notebooks/conch-opus-r1-03.py",
+      "record_path": "analyses/conch-opus-r1/test-03.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 8,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-opus-r1/nct_features.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "2069e3a0ccac6efe734bf858792f48870cb7d3404de667b6d4a7e13c7510f886",
+          "bytes": 1121541
+        },
+        {
+          "archive_member": "source/conch-opus-r1/crcval_features.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "cc302d0bbf94e67928b370988a8191256b0e6a68d5c1e78708aabd1badad3e1b",
+          "bytes": 3048981
+        },
+        {
+          "archive_member": "source/shared/crcval_predictions.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "d0f00ee3904e1f5191c75267c04c42fc3b23ffd7e8bd1a0c0c7185f3bdc19852",
+          "bytes": 3063944
+        },
+        {
+          "archive_member": "source/conch-opus-r1/CRC-VAL-HE-7K.zip",
+          "archive": "conch-retained-inputs",
+          "sha256": "1bcb631804a7136dbea427bc83826f2b6b6f61939470d8aec4aede93bfaaf1af",
+          "bytes": 800276929
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/conch-opus-r1/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-opus-r2/test-01",
+      "axis": "Controlled Gaussian blur",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/conch/notebooks/conch-opus-r2-01.py",
+      "record_path": "analyses/conch-opus-r2/test-01.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 7,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-opus-r2/confirmation_per_tile.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "5aa18fcf0ec17d2730c19ab71d3b6758931467b857413b75d4e1ead08e0f4630",
+          "bytes": 637278
+        },
+        {
+          "archive_member": "source/conch-opus-r2/confirmation_manifest.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "c59961830524f56c33d512b26bc07f43e9008c57d79b95a5f9023ebcbf9fceea",
+          "bytes": 43956
+        },
+        {
+          "archive_member": "source/conch-opus-r2/analysis_plan.json",
+          "archive": "conch-retained-inputs",
+          "sha256": "25beca1648d21649680a2ea78b87e38886884e19f3002e6d03ed20bc8a7b6db1",
+          "bytes": 4972
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/conch-opus-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-opus-r2/test-02",
+      "axis": "Stain characteristics",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/conch/notebooks/conch-opus-r2-02.py",
+      "record_path": "analyses/conch-opus-r2/test-02.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-opus-r2/dev_features.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "f0ce3035c6a72e1d125561b77177596b29a243e8b536ab01ba8fb8583f6b4854",
+          "bytes": 2074802
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/conch-opus-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "conch-opus-r2/test-03",
+      "axis": "Class composition and stain",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/conch/notebooks/conch-opus-r2-03.py",
+      "record_path": "analyses/conch-opus-r2/test-03.json",
+      "expected_standalone_bundle_layout": "materials/conch",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "conch-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 7,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "source/conch-opus-r2/confirmation_per_tile.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "5aa18fcf0ec17d2730c19ab71d3b6758931467b857413b75d4e1ead08e0f4630",
+          "bytes": 637278
+        },
+        {
+          "archive_member": "source/conch-opus-r2/confirmation_manifest.csv",
+          "archive": "conch-retained-inputs",
+          "sha256": "c59961830524f56c33d512b26bc07f43e9008c57d79b95a5f9023ebcbf9fceea",
+          "bytes": 43956
+        },
+        {
+          "archive_member": "source/conch-opus-r2/analysis_plan.json",
+          "archive": "conch-retained-inputs",
+          "sha256": "25beca1648d21649680a2ea78b87e38886884e19f3002e6d03ed20bc8a7b6db1",
+          "bytes": 4972
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/conch-opus-r2/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-codex-r1/test-01",
+      "axis": "Pfam domain-repertoire similarity",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-01.py",
+      "record_path": "analyses/esmfold2-codex-r1/test-01.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-codex-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-codex-r1/test-02",
+      "axis": "Chain length and sequence homology",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-02.py",
+      "record_path": "analyses/esmfold2-codex-r1/test-02.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-codex-r1/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-codex-r1/test-03",
+      "axis": "Disorder, coiled-coil and low complexity",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-03.py",
+      "record_path": "analyses/esmfold2-codex-r1/test-03.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-codex-r1/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-codex-r1/test-04",
+      "axis": "Membrane topology",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-04.py",
+      "record_path": "analyses/esmfold2-codex-r1/test-04.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-codex-r1/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-codex-r2/test-01",
+      "axis": "Positive net charge on isolated cryo-EM chains",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-01.py",
+      "record_path": "analyses/esmfold2-codex-r2/test-01.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-codex-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-codex-r2/test-02",
+      "axis": "Internal sequence repeats",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-02.py",
+      "record_path": "analyses/esmfold2-codex-r2/test-02.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-codex-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-codex-r2/test-03",
+      "axis": "Low composition entropy",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-03.py",
+      "record_path": "analyses/esmfold2-codex-r2/test-03.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-codex-r2/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-codex-r2/test-04",
+      "axis": "Isolated-chain oligomeric context",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-04.py",
+      "record_path": "analyses/esmfold2-codex-r2/test-04.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-codex-r2/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-codex-r2/test-05",
+      "axis": "Dominant residue fraction",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-05.py",
+      "record_path": "analyses/esmfold2-codex-r2/test-05.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-codex-r2/test-05.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-codex-r2/test-06",
+      "axis": "Cysteine, hydrophobic, glycine/proline and length screens",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-06.py",
+      "record_path": "analyses/esmfold2-codex-r2/test-06.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-codex-r2/test-06.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-kimi-r1/test-01",
+      "axis": "Sequence identity and low complexity (ESMFold v1)",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-01.py",
+      "record_path": "analyses/esmfold2-kimi-r1/test-01.json",
+      "expected_standalone_bundle_layout": "materials/esmfold2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 7,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "assets/kimi-r1/results/merged_per_unit.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "f8e9b289a6f3f95f0a73d14a52d425e47103c7502e2180c0b62cf7d57387a7e5",
+          "bytes": 25838
+        },
+        {
+          "archive_member": "assets/kimi-r1/results/confirm/merged_per_unit.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "05ce6b69014d6315c5f90852ce849921eed251e0a39962e6ae7110b9e7eb6c11",
+          "bytes": 25114
+        },
+        {
+          "archive_member": "assets/kimi-r1/results/panel_final.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "565a97f4dea87b8d09fc1c202c0c9d3734b74c6fab6d7535714c7ffb51a2c52d",
+          "bytes": 11200
+        },
+        {
+          "archive_member": "assets/kimi-r1/results/testclu_cluster.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "7a58e7d04a2ef9e8b2cfc3ef9b975b6e5b5cff98bf18b484eee7b0c4b2bb8e5d",
+          "bytes": 144586
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/esmfold2-kimi-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-kimi-r1/test-02",
+      "axis": "Graded identity and orphan threshold (v1)",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-02.py",
+      "record_path": "analyses/esmfold2-kimi-r1/test-02.json",
+      "expected_standalone_bundle_layout": "materials/esmfold2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 7,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "assets/kimi-r1/results/merged_per_unit.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "f8e9b289a6f3f95f0a73d14a52d425e47103c7502e2180c0b62cf7d57387a7e5",
+          "bytes": 25838
+        },
+        {
+          "archive_member": "assets/kimi-r1/results/confirm/merged_per_unit.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "05ce6b69014d6315c5f90852ce849921eed251e0a39962e6ae7110b9e7eb6c11",
+          "bytes": 25114
+        },
+        {
+          "archive_member": "assets/kimi-r1/results/panel_final.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "565a97f4dea87b8d09fc1c202c0c9d3734b74c6fab6d7535714c7ffb51a2c52d",
+          "bytes": 11200
+        },
+        {
+          "archive_member": "assets/kimi-r1/results/testclu_cluster.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "7a58e7d04a2ef9e8b2cfc3ef9b975b6e5b5cff98bf18b484eee7b0c4b2bb8e5d",
+          "bytes": 144586
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/esmfold2-kimi-r1/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-kimi-r1/test-03",
+      "axis": "Low-complexity fraction (v1)",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-03.py",
+      "record_path": "analyses/esmfold2-kimi-r1/test-03.json",
+      "expected_standalone_bundle_layout": "materials/esmfold2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 7,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "assets/kimi-r1/results/merged_per_unit.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "f8e9b289a6f3f95f0a73d14a52d425e47103c7502e2180c0b62cf7d57387a7e5",
+          "bytes": 25838
+        },
+        {
+          "archive_member": "assets/kimi-r1/results/confirm/merged_per_unit.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "05ce6b69014d6315c5f90852ce849921eed251e0a39962e6ae7110b9e7eb6c11",
+          "bytes": 25114
+        },
+        {
+          "archive_member": "assets/kimi-r1/results/panel_final.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "565a97f4dea87b8d09fc1c202c0c9d3734b74c6fab6d7535714c7ffb51a2c52d",
+          "bytes": 11200
+        },
+        {
+          "archive_member": "assets/kimi-r1/results/testclu_cluster.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "7a58e7d04a2ef9e8b2cfc3ef9b975b6e5b5cff98bf18b484eee7b0c4b2bb8e5d",
+          "bytes": 144586
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/esmfold2-kimi-r1/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-kimi-r2/test-01",
+      "axis": "Maximum sequence identity",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.py",
+      "record_path": "analyses/esmfold2-kimi-r2/test-01.json",
+      "expected_standalone_bundle_layout": "materials/esmfold2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 7,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "assets/kimi-r2/audit/results/scores.csv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "c6c795e793c03a0994ece579cd0efcf24927338d6ffec9d013530ecac8db918e",
+          "bytes": 9233
+        },
+        {
+          "archive_member": "assets/kimi-r2/audit/results/per_unit_enriched.csv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "f1f9ba81f5aff5b3bd80d763a323ab8cca8d3e34dad21738b7cf487d5ae920e5",
+          "bytes": 14080
+        },
+        {
+          "archive_member": "assets/kimi-r2/audit/data/axis_table.csv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "845c963357632a529468bd4682ec01d4800b8382ac7bbe5f2c77aac13936a85d",
+          "bytes": 133722
+        },
+        {
+          "archive_member": "assets/kimi-r2/audit/work_mmseqs/res.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "adedc35088f6e73cf7f8f3d7a0e5d7063ae09d366651250983b9968eac151a1a",
+          "bytes": 24103626
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/esmfold2-kimi-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-kimi-r2/test-02",
+      "axis": "Missing-density and complex-context restrictions",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-02.py",
+      "record_path": "analyses/esmfold2-kimi-r2/test-02.json",
+      "expected_standalone_bundle_layout": "materials/esmfold2",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 7,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "assets/kimi-r2/audit/results/scores.csv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "c6c795e793c03a0994ece579cd0efcf24927338d6ffec9d013530ecac8db918e",
+          "bytes": 9233
+        },
+        {
+          "archive_member": "assets/kimi-r2/audit/results/per_unit_enriched.csv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "f1f9ba81f5aff5b3bd80d763a323ab8cca8d3e34dad21738b7cf487d5ae920e5",
+          "bytes": 14080
+        },
+        {
+          "archive_member": "assets/kimi-r2/audit/data/axis_table.csv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "845c963357632a529468bd4682ec01d4800b8382ac7bbe5f2c77aac13936a85d",
+          "bytes": 133722
+        },
+        {
+          "archive_member": "assets/kimi-r2/audit/work_mmseqs/res.tsv",
+          "archive": "esmfold2-retained-inputs",
+          "sha256": "adedc35088f6e73cf7f8f3d7a0e5d7063ae09d366651250983b9968eac151a1a",
+          "bytes": 24103626
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/esmfold2-kimi-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-opus-r1/test-01",
+      "axis": "Coverage-weighted sequence identity",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-opus-r1/test-01.py",
+      "record_path": "analyses/esmfold2-opus-r1/test-01.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-opus-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-opus-r1/test-02",
+      "axis": "Length",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-opus-r1/test-02.py",
+      "record_path": "analyses/esmfold2-opus-r1/test-02.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-opus-r1/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-opus-r1/test-03",
+      "axis": "Predicted disorder",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-opus-r1/test-03.py",
+      "record_path": "analyses/esmfold2-opus-r1/test-03.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-opus-r1/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-opus-r1/test-04",
+      "axis": "Coverage, resolution and sequence composition",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-opus-r1/test-04.py",
+      "record_path": "analyses/esmfold2-opus-r1/test-04.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-opus-r1/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-opus-r2/test-01",
+      "axis": "Sequence length",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-opus-r2/test-01.py",
+      "record_path": "analyses/esmfold2-opus-r2/test-01.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-opus-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-opus-r2/test-02",
+      "axis": "Training homology",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-opus-r2/test-02.py",
+      "record_path": "analyses/esmfold2-opus-r2/test-02.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-opus-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-opus-r2/test-03",
+      "axis": "Short-chain and long-chain failure tails",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-opus-r2/test-03.py",
+      "record_path": "analyses/esmfold2-opus-r2/test-03.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-opus-r2/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "esmfold2-opus-r2/test-04",
+      "axis": "Resolution, composition and oligomeric state",
+      "category": "original_records_missing",
+      "code_path": "materials/esmfold2/notebooks/esmfold2-opus-r2/test-04.py",
+      "record_path": "analyses/esmfold2-opus-r2/test-04.json",
+      "expected_standalone_bundle_layout": null,
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "sample and split manifest",
+        "axis-generation inputs",
+        "predictions and per-target metrics",
+        "comparison and confirmation records"
+      ],
+      "public_input_preparation": {
+        "archive": "esmfold2-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 2,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/esmfold2-opus-r2/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-codex-r1/test-01",
+      "axis": "Basal transcriptomic distance",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-codex-r1/test-01.py",
+      "record_path": "analyses/state-codex-r1/test-01.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-codex-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-codex-r1/test-02",
+      "axis": "Baseline S-phase heterogeneity",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-codex-r1/test-02.py",
+      "record_path": "analyses/state-codex-r1/test-02.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-codex-r1/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-codex-r1/test-03",
+      "axis": "Training-lineage scarcity",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-codex-r1/test-03.py",
+      "record_path": "analyses/state-codex-r1/test-03.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-codex-r1/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-codex-r1/test-04",
+      "axis": "Perturbation magnitude, DE count, cell count and dose",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-codex-r1/test-04.py",
+      "record_path": "analyses/state-codex-r1/test-04.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-codex-r1/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-codex-r2/test-01",
+      "axis": "Administered drug dose",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-codex-r2/test-01.py",
+      "record_path": "analyses/state-codex-r2/test-01.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-codex-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-codex-r2/test-02",
+      "axis": "Baseline cross-cell-line distance",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-codex-r2/test-02.py",
+      "record_path": "analyses/state-codex-r2/test-02.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-codex-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-codex-r2/test-03",
+      "axis": "Expected perturbation magnitude",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-codex-r2/test-03.py",
+      "record_path": "analyses/state-codex-r2/test-03.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-codex-r2/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-codex-r2/test-04",
+      "axis": "Sampling support, prospective dose displacement and checkpoint sensitivity",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-codex-r2/test-04.py",
+      "record_path": "analyses/state-codex-r2/test-04.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-codex-r2/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-codex-r2/test-05",
+      "axis": "Perturbation modality",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-codex-r2/test-05.py",
+      "record_path": "analyses/state-codex-r2/test-05.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-codex-r2/test-05.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-kimi-r1/test-01",
+      "axis": "Gene\u2013cell-line pair exposure",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-kimi-r1/test-01.py",
+      "record_path": "analyses/state-kimi-r1/test-01.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 6,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-kimi-r1/results/confirm_summary.json",
+          "archive": "state-retained-inputs",
+          "sha256": "32d566bb57f23a870fe8ffc74228f8873f32dcba0fe14324a3c47eac320106d5",
+          "bytes": 2533
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-kimi-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-kimi-r1/test-02",
+      "axis": "Graded gene exposure",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-kimi-r1/test-02.py",
+      "record_path": "analyses/state-kimi-r1/test-02.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 6,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-kimi-r1/results/confirm_summary.json",
+          "archive": "state-retained-inputs",
+          "sha256": "32d566bb57f23a870fe8ffc74228f8873f32dcba0fe14324a3c47eac320106d5",
+          "bytes": 2533
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-kimi-r1/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-kimi-r1/test-03",
+      "axis": "Embedding-norm proximity",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-kimi-r1/test-03.py",
+      "record_path": "analyses/state-kimi-r1/test-03.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 6,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-kimi-r1/results/confirm_summary.json",
+          "archive": "state-retained-inputs",
+          "sha256": "32d566bb57f23a870fe8ffc74228f8873f32dcba0fe14324a3c47eac320106d5",
+          "bytes": 2533
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-kimi-r1/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-kimi-r1/test-04",
+      "axis": "Cell count per observation",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-kimi-r1/test-04.py",
+      "record_path": "analyses/state-kimi-r1/test-04.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 6,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-kimi-r1/results/confirm_summary.json",
+          "archive": "state-retained-inputs",
+          "sha256": "32d566bb57f23a870fe8ffc74228f8873f32dcba0fe14324a3c47eac320106d5",
+          "bytes": 2533
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-kimi-r1/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-kimi-r2/test-01",
+      "axis": "Perturbation exposure in any cell line",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-kimi-r2/test-01.py",
+      "record_path": "analyses/state-kimi-r2/test-01.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-kimi-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-kimi-r2/test-02",
+      "axis": "Graded training-support count",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-kimi-r2/test-02.py",
+      "record_path": "analyses/state-kimi-r2/test-02.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-kimi-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-kimi-r2/test-03",
+      "axis": "Fixed-reference and embedding checks",
+      "category": "original_records_missing",
+      "code_path": "materials/state/notebooks/state-kimi-r2/test-03.py",
+      "record_path": "analyses/state-kimi-r2/test-03.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 4,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        }
+      ],
+      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
+      "historical_notes_reference": "analyses/state-kimi-r2/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-opus-r1/test-01",
+      "axis": "Drug-target training coverage",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-opus-r1/test-01.py",
+      "record_path": "analyses/state-opus-r1/test-01.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 5,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-opus-r1/data/predictions.csv",
+          "archive": "state-retained-inputs",
+          "sha256": "28dbbc22f7482a8f720f096de47eb83a20e84f2dbf7656d5a8a019a7e7d08bc1",
+          "bytes": 25494601
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-opus-r1/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-opus-r1/test-02",
+      "axis": "Drug chemical novelty",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-opus-r1/test-02.py",
+      "record_path": "analyses/state-opus-r1/test-02.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 5,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-opus-r1/data/predictions.csv",
+          "archive": "state-retained-inputs",
+          "sha256": "28dbbc22f7482a8f720f096de47eb83a20e84f2dbf7656d5a8a019a7e7d08bc1",
+          "bytes": 25494601
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-opus-r1/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-opus-r1/test-03",
+      "axis": "Cell-context novelty",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-opus-r1/test-03.py",
+      "record_path": "analyses/state-opus-r1/test-03.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 5,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-opus-r1/data/predictions.csv",
+          "archive": "state-retained-inputs",
+          "sha256": "28dbbc22f7482a8f720f096de47eb83a20e84f2dbf7656d5a8a019a7e7d08bc1",
+          "bytes": 25494601
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-opus-r1/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-opus-r1/test-04",
+      "axis": "Intrinsic perturbation strength",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-opus-r1/test-04.py",
+      "record_path": "analyses/state-opus-r1/test-04.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 5,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-opus-r1/data/predictions.csv",
+          "archive": "state-retained-inputs",
+          "sha256": "28dbbc22f7482a8f720f096de47eb83a20e84f2dbf7656d5a8a019a7e7d08bc1",
+          "bytes": 25494601
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-opus-r1/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-opus-r2/test-01",
+      "axis": "Gene-neighborhood coverage",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-opus-r2/test-01.py",
+      "record_path": "analyses/state-opus-r2/test-01.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 9,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-opus-r2/data/predictions.csv",
+          "archive": "state-retained-inputs",
+          "sha256": "28dbbc22f7482a8f720f096de47eb83a20e84f2dbf7656d5a8a019a7e7d08bc1",
+          "bytes": 25494601
+        },
+        {
+          "archive_member": "assets/state-opus-r2/spectra_run/artifacts/go_terms.json",
+          "archive": "state-retained-inputs",
+          "sha256": "46d2dfb54e52226ee3ea791b0a48a45fd80da7da6e8e2e15f070268c2d259616",
+          "bytes": 585098
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-opus-r2/test-01.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-opus-r2/test-02",
+      "axis": "Chemical structure and mechanism coverage",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-opus-r2/test-02.py",
+      "record_path": "analyses/state-opus-r2/test-02.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 7,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-opus-r2/data/predictions.csv",
+          "archive": "state-retained-inputs",
+          "sha256": "28dbbc22f7482a8f720f096de47eb83a20e84f2dbf7656d5a8a019a7e7d08bc1",
+          "bytes": 25494601
+        },
+        {
+          "archive_member": "assets/state-opus-r2/spectra_run/artifacts/go_terms.json",
+          "archive": "state-retained-inputs",
+          "sha256": "46d2dfb54e52226ee3ea791b0a48a45fd80da7da6e8e2e15f070268c2d259616",
+          "bytes": 585098
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-opus-r2/test-02.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-opus-r2/test-03",
+      "axis": "Drug-target or ligand functional density",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-opus-r2/test-03.py",
+      "record_path": "analyses/state-opus-r2/test-03.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 8,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-opus-r2/data/predictions.csv",
+          "archive": "state-retained-inputs",
+          "sha256": "28dbbc22f7482a8f720f096de47eb83a20e84f2dbf7656d5a8a019a7e7d08bc1",
+          "bytes": 25494601
+        },
+        {
+          "archive_member": "assets/state-opus-r2/spectra_run/artifacts/go_terms.json",
+          "archive": "state-retained-inputs",
+          "sha256": "46d2dfb54e52226ee3ea791b0a48a45fd80da7da6e8e2e15f070268c2d259616",
+          "bytes": 585098
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-opus-r2/test-03.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-opus-r2/test-04",
+      "axis": "Cross-context screen coverage",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-opus-r2/test-04.py",
+      "record_path": "analyses/state-opus-r2/test-04.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 7,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-opus-r2/data/predictions.csv",
+          "archive": "state-retained-inputs",
+          "sha256": "28dbbc22f7482a8f720f096de47eb83a20e84f2dbf7656d5a8a019a7e7d08bc1",
+          "bytes": 25494601
+        },
+        {
+          "archive_member": "assets/state-opus-r2/spectra_run/artifacts/go_terms.json",
+          "archive": "state-retained-inputs",
+          "sha256": "46d2dfb54e52226ee3ea791b0a48a45fd80da7da6e8e2e15f070268c2d259616",
+          "bytes": 585098
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-opus-r2/test-04.json#reconstruction_notes"
+    },
+    {
+      "analysis_id": "state-opus-r2/test-05",
+      "axis": "GO annotation count and perturbation strength",
+      "category": "calculation_replay_packaged",
+      "code_path": "materials/state/notebooks/state-opus-r2/test-05.py",
+      "record_path": "analyses/state-opus-r2/test-05.json",
+      "expected_standalone_bundle_layout": "materials/state",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
+      "public_input_preparation": {
+        "archive": "state-retained-inputs",
+        "catalog": "data.json",
+        "prepare": "prepare_inputs.py",
+        "notebook_preparation_cell": 0
+      },
+      "upstream_execution": {
+        "report": "execution.json",
+        "reported_error": null,
+        "executed_cells": 10,
+        "published_notebook_sha256_matches_execution_record": true,
+        "reviewer_independently_executed": false
+      },
+      "previously_missing_examples_now_mapped_to_public_archive": [
+        {
+          "archive_member": "STATE_INPUTS.json",
+          "archive": "state-retained-inputs",
+          "sha256": "e3995396663cb791d3c5ebc54e8aa9cce0734830d5daa63beb82fa43f86936b6",
+          "bytes": 37538
+        },
+        {
+          "archive_member": "assets/state-opus-r2/data/predictions.csv",
+          "archive": "state-retained-inputs",
+          "sha256": "28dbbc22f7482a8f720f096de47eb83a20e84f2dbf7656d5a8a019a7e7d08bc1",
+          "bytes": 25494601
+        },
+        {
+          "archive_member": "assets/state-opus-r2/spectra_run/artifacts/go_terms.json",
+          "archive": "state-retained-inputs",
+          "sha256": "46d2dfb54e52226ee3ea791b0a48a45fd80da7da6e8e2e15f070268c2d259616",
+          "bytes": 585098
+        }
+      ],
+      "original_traceability": "Retained calculation replay now packaged with inputs; complete original acquisition/model/provenance chain is not established merely by successful execution. See this analysis reconstruction_notes.",
+      "historical_notes_reference": "analyses/state-opus-r2/test-05.json#reconstruction_notes"
+    }
+  ],
+  "limitations": "This reassessment checks code, input inventories and matching upstream execution receipts. It does not independently rerun the99notebooks or download3.3GB. Successful execution of evidence-only cells is not reconstruction of missing historical measurements. No new scientific criteria are imposed.",
+  "category_definitions": {
+    "original_records_missing": "Evidence or aggregate-display export executes, but the original per-record measurements/calculation required to reconstruct that axis are still missing. Some supporting source code may survive.",
+    "calculation_replay_packaged": "Actual scientific calculation code now has a public checksum-verified input preparation route and matching upstream error-free execution evidence. This does not establish every original acquisition/model/provenance step."
+  },
+  "reviewed_upstream_commit": "55886b71052c3cbf073950b976005a0e9d90ad6d",
+  "upstream_change_evidence": {
+    "commit": "55886b71052c3cbf073950b976005a0e9d90ad6d",
+    "catalog": "data.json",
+    "preparation": "prepare_inputs.py",
+    "runner": "run_notebooks.py",
+    "execution_report": "execution.json",
+    "release": "notebook-inputs-2026-11-08-v1",
+    "archive_count": 4,
+    "public_archive_bytes": 3275820821,
+    "retained_archive_members": 4043,
+    "previously_missing_file_examples_mapped": 191,
+    "unique_previously_missing_archive_members_mapped": 46,
+    "archive_urls": [
+      "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/state-inputs.zip",
+      "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/esmfold2-inputs.zip",
+      "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/conch-inputs.zip",
+      "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/alphamissense-inputs.zip"
+    ],
+    "reported_download_check": "execution.json records full anonymous HTTPS GET, byte counts and SHA256 for all four archives. This reviewer did not repeat those bulk downloads.",
+    "reported_execution_scope": "All notebook calculation cells executed against locally prepared copies of the public-release archives. The final preparation cell was separately exercised from the repository root and on repeated execution. This records code execution, not reconstruction of missing historical measurements or scientific validation.",
+    "reported_preparation_checks": {
+      "repository_root": 143,
+      "repeat_in_same_namespace": 143,
+      "exported_script_path": 2
+    },
+    "reported_fresh_public_installation_check": {
+      "analysis": "esmfold2-kimi-r2/test-01",
+      "initial_cache": "empty",
+      "input_source": "Public GitHub release asset, fetched by prepare_inputs.py without credentials",
+      "executed_cells": 7,
+      "error": null
+    }
+  },
+  "checks_performed_in_this_review": [
+    "Read new download/extraction/hash-check/layout-installation and notebook-runner code.",
+    "Verified all99records declare public preparation and all99notebook exports call prepare_notebook with their exact analysis ID.",
+    "Matched all99published notebook SHA256 values to corresponding upstream error-free execution records.",
+    "Mapped all191earlier missing-file examples to published archive inventory members, sizes and hashes.",
+    "Confirmed all67evidence/aggregate-only code paths retain their non-recomputation behavior."
+  ]
+}

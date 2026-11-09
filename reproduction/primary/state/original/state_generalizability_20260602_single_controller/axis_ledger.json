@@ -1,0 +1,44 @@
+[
+  {
+    "axis_id": "A1_tahoe_target_context_chemical_support",
+    "status": "valid_negative_or_weak",
+    "frozen_before_full_target_scoring": true,
+    "schema_probe_exposure": "One C32 ST-HVG result CSV was opened before this script for column inspection only; confirmation summaries use the full loaded Tahoe pool and are not selected by target error.",
+    "unit": "Tahoe perturbation-by-cell-context-by-dose examples, analyzed separately for ST-HVG and ST-SE",
+    "axis_definition": "For each held-out Tahoe few-shot target-context drug/dose, compute RDKit Morgan Tanimoto similarity to the nearest drug that is observed in that same target context's training subset. Split into five equal-frequency levels using the similarity feature only.",
+    "direction": "L1_near has highest target-context training support; L5_far has lowest support.",
+    "validity_checks": {
+      "nontrivial_levels": 5,
+      "min_rows_per_level_per_representation": 720,
+      "similarity_decreases_when_ordered": true,
+      "label_or_target_error_used_for_membership": false,
+      "target_model_confidence_used_for_membership": false,
+      "fixed_baseline": "Zero-response baseline for DE overlap/recall and DE-count MAE; stronger context/perturb-mean baselines require raw train labels or author baseline artifacts not present in small scored CSVs.",
+      "mapping_rate_exact_or_loose": 1.0
+    },
+    "claim_boundary": "Valid only for target-context chemical support in the official Tahoe few-shot context-generalization setup. It is not global unseen-drug generalization because the same drugs may appear in other training contexts.",
+    "primary_artifacts": [
+      "spectra_ready_dataset/tahoe_fewshot_chemical_support_examples.csv",
+      "artifacts/spc_tahoe_fewshot_target_context_chemical_support.csv",
+      "artifacts/spc_tahoe_fewshot_target_context_chemical_support_trends.csv"
+    ]
+  },
+  {
+    "axis_id": "A2_tahoe_dose_protocol",
+    "status": "exploratory_invalid_as_spc_similarity",
+    "axis_definition": "Dose level of held-out Tahoe perturbation (0.05, 0.5, 5.0 uM).",
+    "reason": "Dose is prospective, but it is not a decreasing train-test similarity axis in the official splits because all dose levels are represented in training through other perturbations.",
+    "primary_artifacts": [
+      "artifacts/exploratory_tahoe_dose_protocol_curve.csv"
+    ]
+  },
+  {
+    "axis_id": "A3_all_scored_axis_discovery",
+    "status": "outcome_informed_discovery_only",
+    "axis_definition": "Prospective metadata features mined after scored evidence: dataset family, representation, Tahoe MOA fields, dose.",
+    "reason": "These hypotheses require a frozen confirmation panel before any paper-facing claim.",
+    "primary_artifacts": [
+      "artifacts/all_scored_axis_discovery.json"
+    ]
+  }
+]

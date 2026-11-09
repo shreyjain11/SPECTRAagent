@@ -1,0 +1,13 @@
+# Current public inference route, pinned2026-11-08. Python>=3.11.
+# Install a CUDA-compatible Torch2.6.0 build on the GPU host; Linux PyPI includes CUDA libraries.
+# Historical fork pins remain separately in requirements-inference-legacy.txt.
+torch==2.6.0
+transformers==5.22.2
+huggingface-hub==1.31.0
+safetensors==0.8.0
+tokenizers==0.23.1
+accelerate==1.12.0
+biopython==1.87
+numpy==2.4.6
+pandas==3.0.3
+scipy==1.16.2

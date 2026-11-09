@@ -1,0 +1,2410 @@
+{
+  "n": 7180,
+  "baseline_summary": {
+    "centroid": {
+      "accuracy": 0.6898328690807799,
+      "balanced_accuracy": 0.6020616223614552,
+      "macro_f1": 0.6034676184781866,
+      "weighted_f1": 0.6864561329836005
+    },
+    "logistic": {
+      "accuracy": 0.6694986072423398,
+      "balanced_accuracy": 0.6186598630259929,
+      "macro_f1": 0.6182929973479122,
+      "weighted_f1": 0.680805372632777
+    },
+    "majority_ADI": {
+      "accuracy": 0.18635097493036212,
+      "balanced_accuracy": 0.1111111111111111,
+      "macro_f1": 0.03490647256789544,
+      "weighted_f1": 0.0585436967496653
+    },
+    "target_CONCH": {
+      "accuracy": 0.7926183844011142,
+      "balanced_accuracy": 0.785362682130508,
+      "macro_f1": 0.7689030866654253,
+      "weighted_f1": 0.7930711700019804
+    }
+  },
+  "axis_summaries": {
+    "nct_color_texture_proximity": {
+      "axis_col": "axis_nct_color_texture_similarity",
+      "level_col": "level_nct_color_texture_proximity",
+      "target_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -1.9807236298245618,
+          "accuracy": 0.7451963241436925,
+          "balanced_accuracy": 0.774364150956012,
+          "macro_f1": 0.6767344003628649,
+          "weighted_f1": 0.7554880810673411,
+          "label_counts": {
+            "ADI": 12,
+            "BACK": 3,
+            "DEB": 69,
+            "LYM": 135,
+            "MUC": 161,
+            "MUS": 118,
+            "NORM": 261,
+            "STR": 123,
+            "TUM": 315
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -2.4242862350877195,
+          "accuracy": 0.7644110275689223,
+          "balanced_accuracy": 0.7777338513768242,
+          "macro_f1": 0.707765311889694,
+          "weighted_f1": 0.7779262641327118,
+          "label_counts": {
+            "ADI": 35,
+            "BACK": 19,
+            "DEB": 47,
+            "LYM": 92,
+            "MUC": 287,
+            "MUS": 96,
+            "NORM": 218,
+            "STR": 73,
+            "TUM": 330
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -2.944177563461538,
+          "accuracy": 0.7775919732441472,
+          "balanced_accuracy": 0.7958834674632657,
+          "macro_f1": 0.721155976648047,
+          "weighted_f1": 0.7866039347815865,
+          "label_counts": {
+            "ADI": 46,
+            "BACK": 32,
+            "DEB": 27,
+            "LYM": 90,
+            "MUC": 339,
+            "MUS": 151,
+            "NORM": 154,
+            "STR": 68,
+            "TUM": 289
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -3.856531546867168,
+          "accuracy": 0.7518796992481203,
+          "balanced_accuracy": 0.7683016467797807,
+          "macro_f1": 0.7281919638479141,
+          "weighted_f1": 0.7491218043596105,
+          "label_counts": {
+            "ADI": 124,
+            "BACK": 208,
+            "DEB": 16,
+            "LYM": 134,
+            "MUC": 181,
+            "MUS": 140,
+            "NORM": 92,
+            "STR": 121,
+            "TUM": 181
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -5.18813918319398,
+          "accuracy": 0.8687290969899666,
+          "balanced_accuracy": 0.7663481140247389,
+          "macro_f1": 0.6564218015601164,
+          "weighted_f1": 0.8606073923145598,
+          "label_counts": {
+            "ADI": 679,
+            "BACK": 160,
+            "DEB": 1,
+            "LYM": 173,
+            "MUC": 41,
+            "MUS": 24,
+            "NORM": 15,
+            "STR": 18,
+            "TUM": 85
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -33.85818305179615,
+          "accuracy": 0.847953216374269,
+          "balanced_accuracy": 0.6582762900694766,
+          "macro_f1": 0.6259495461928455,
+          "weighted_f1": 0.8239133482196822,
+          "label_counts": {
+            "ADI": 442,
+            "BACK": 425,
+            "DEB": 179,
+            "LYM": 10,
+            "MUC": 26,
+            "MUS": 63,
+            "NORM": 1,
+            "STR": 18,
+            "TUM": 33
+          }
+        }
+      ],
+      "baseline_centroid_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -1.9807236298245618,
+          "accuracy": 0.6908939014202172,
+          "balanced_accuracy": 0.7203472466889539,
+          "macro_f1": 0.6754395819629669,
+          "weighted_f1": 0.6686543013544284,
+          "label_counts": {
+            "ADI": 12,
+            "BACK": 3,
+            "DEB": 69,
+            "LYM": 135,
+            "MUC": 161,
+            "MUS": 118,
+            "NORM": 261,
+            "STR": 123,
+            "TUM": 315
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -2.4242862350877195,
+          "accuracy": 0.7126148705096074,
+          "balanced_accuracy": 0.7070219009463096,
+          "macro_f1": 0.644865746296269,
+          "weighted_f1": 0.6957333800087838,
+          "label_counts": {
+            "ADI": 35,
+            "BACK": 19,
+            "DEB": 47,
+            "LYM": 92,
+            "MUC": 287,
+            "MUS": 96,
+            "NORM": 218,
+            "STR": 73,
+            "TUM": 330
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -2.944177563461538,
+          "accuracy": 0.6613712374581939,
+          "balanced_accuracy": 0.6309566427510754,
+          "macro_f1": 0.6028241267427255,
+          "weighted_f1": 0.6741173068435696,
+          "label_counts": {
+            "ADI": 46,
+            "BACK": 32,
+            "DEB": 27,
+            "LYM": 90,
+            "MUC": 339,
+            "MUS": 151,
+            "NORM": 154,
+            "STR": 68,
+            "TUM": 289
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -3.856531546867168,
+          "accuracy": 0.5605680868838764,
+          "balanced_accuracy": 0.49196487524017907,
+          "macro_f1": 0.4798054066942584,
+          "weighted_f1": 0.5597261843419413,
+          "label_counts": {
+            "ADI": 124,
+            "BACK": 208,
+            "DEB": 16,
+            "LYM": 134,
+            "MUC": 181,
+            "MUS": 140,
+            "NORM": 92,
+            "STR": 121,
+            "TUM": 181
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -5.18813918319398,
+          "accuracy": 0.7366220735785953,
+          "balanced_accuracy": 0.4442726541028859,
+          "macro_f1": 0.3638879613831628,
+          "weighted_f1": 0.728450404725312,
+          "label_counts": {
+            "ADI": 679,
+            "BACK": 160,
+            "DEB": 1,
+            "LYM": 173,
+            "MUC": 41,
+            "MUS": 24,
+            "NORM": 15,
+            "STR": 18,
+            "TUM": 85
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -33.85818305179615,
+          "accuracy": 0.7769423558897243,
+          "balanced_accuracy": 0.5638258908847145,
+          "macro_f1": 0.4158256207578975,
+          "weighted_f1": 0.7156746060594518,
+          "label_counts": {
+            "ADI": 442,
+            "BACK": 425,
+            "DEB": 179,
+            "LYM": 10,
+            "MUC": 26,
+            "MUS": 63,
+            "NORM": 1,
+            "STR": 18,
+            "TUM": 33
+          }
+        }
+      ],
+      "baseline_logistic_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -1.9807236298245618,
+          "accuracy": 0.7878028404344194,
+          "balanced_accuracy": 0.7934568148236082,
+          "macro_f1": 0.7950667277281068,
+          "weighted_f1": 0.7795562070522485,
+          "label_counts": {
+            "ADI": 12,
+            "BACK": 3,
+            "DEB": 69,
+            "LYM": 135,
+            "MUC": 161,
+            "MUS": 118,
+            "NORM": 261,
+            "STR": 123,
+            "TUM": 315
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -2.4242862350877195,
+          "accuracy": 0.8078529657477026,
+          "balanced_accuracy": 0.7895283247195212,
+          "macro_f1": 0.7793843045181847,
+          "weighted_f1": 0.8114158467553491,
+          "label_counts": {
+            "ADI": 35,
+            "BACK": 19,
+            "DEB": 47,
+            "LYM": 92,
+            "MUC": 287,
+            "MUS": 96,
+            "NORM": 218,
+            "STR": 73,
+            "TUM": 330
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -2.944177563461538,
+          "accuracy": 0.7224080267558528,
+          "balanced_accuracy": 0.6871389749233292,
+          "macro_f1": 0.6803593232808222,
+          "weighted_f1": 0.7449769220133307,
+          "label_counts": {
+            "ADI": 46,
+            "BACK": 32,
+            "DEB": 27,
+            "LYM": 90,
+            "MUC": 339,
+            "MUS": 151,
+            "NORM": 154,
+            "STR": 68,
+            "TUM": 289
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -3.856531546867168,
+          "accuracy": 0.6649958228905597,
+          "balanced_accuracy": 0.6040377064656186,
+          "macro_f1": 0.6082132723091722,
+          "weighted_f1": 0.696755842528956,
+          "label_counts": {
+            "ADI": 124,
+            "BACK": 208,
+            "DEB": 16,
+            "LYM": 134,
+            "MUC": 181,
+            "MUS": 140,
+            "NORM": 92,
+            "STR": 121,
+            "TUM": 181
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -5.18813918319398,
+          "accuracy": 0.7107023411371237,
+          "balanced_accuracy": 0.5373620387053273,
+          "macro_f1": 0.4655357618762815,
+          "weighted_f1": 0.7513950966001955,
+          "label_counts": {
+            "ADI": 679,
+            "BACK": 160,
+            "DEB": 1,
+            "LYM": 173,
+            "MUC": 41,
+            "MUS": 24,
+            "NORM": 15,
+            "STR": 18,
+            "TUM": 85
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -33.85818305179615,
+          "accuracy": 0.3233082706766917,
+          "balanced_accuracy": 0.15074608055657457,
+          "macro_f1": 0.15528123160647914,
+          "weighted_f1": 0.3686769670277494,
+          "label_counts": {
+            "ADI": 442,
+            "BACK": 425,
+            "DEB": 179,
+            "LYM": 10,
+            "MUC": 26,
+            "MUS": 63,
+            "NORM": 1,
+            "STR": 18,
+            "TUM": 33
+          }
+        }
+      ],
+      "class_adjusted_residual_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": 0.030857035879645372
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": 0.033615630467205
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "mean_class_adjusted_correct_residual": 0.015558311251790422
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": -0.05745055990551192
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "mean_class_adjusted_correct_residual": -0.007651238758891507
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": -0.014922573192806396
+        }
+      ],
+      "stable_class_macro_min_support_10": {
+        "min_support": 10,
+        "stable_classes": [
+          "ADI",
+          "LYM",
+          "MUC",
+          "MUS",
+          "STR",
+          "TUM"
+        ],
+        "rows": [
+          {
+            "level": 1,
+            "stable_class_macro_recall": 0.7196560604059211,
+            "stable_classes": [
+              "ADI",
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "ADI": 12,
+              "LYM": 135,
+              "MUC": 161,
+              "MUS": 118,
+              "STR": 123,
+              "TUM": 315
+            }
+          },
+          {
+            "level": 2,
+            "stable_class_macro_recall": 0.7231757006126367,
+            "stable_classes": [
+              "ADI",
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "ADI": 35,
+              "LYM": 92,
+              "MUC": 287,
+              "MUS": 96,
+              "STR": 73,
+              "TUM": 330
+            }
+          },
+          {
+            "level": 3,
+            "stable_class_macro_recall": 0.7607218462165433,
+            "stable_classes": [
+              "ADI",
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "ADI": 46,
+              "LYM": 90,
+              "MUC": 339,
+              "MUS": 151,
+              "STR": 68,
+              "TUM": 289
+            }
+          },
+          {
+            "level": 4,
+            "stable_class_macro_recall": 0.7407328492109199,
+            "stable_classes": [
+              "ADI",
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "ADI": 124,
+              "LYM": 134,
+              "MUC": 181,
+              "MUS": 140,
+              "STR": 121,
+              "TUM": 181
+            }
+          },
+          {
+            "level": 5,
+            "stable_class_macro_recall": 0.7536888377037751,
+            "stable_classes": [
+              "ADI",
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "ADI": 679,
+              "LYM": 173,
+              "MUC": 41,
+              "MUS": 24,
+              "STR": 18,
+              "TUM": 85
+            }
+          },
+          {
+            "level": 6,
+            "stable_class_macro_recall": 0.7649322355204707,
+            "stable_classes": [
+              "ADI",
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "ADI": 442,
+              "LYM": 10,
+              "MUC": 26,
+              "MUS": 63,
+              "STR": 18,
+              "TUM": 33
+            }
+          }
+        ]
+      },
+      "spearman_level_vs_target_bacc": -0.7714285714285715,
+      "spearman_level_vs_target_acc": 0.7714285714285715,
+      "decile_densification": {
+        "target": [
+          {
+            "level": 1,
+            "n": 718,
+            "axis_mean": -1.874055933983287,
+            "accuracy": 0.7200557103064067,
+            "balanced_accuracy": 0.7301823213440364,
+            "macro_f1": 0.5970579321297856,
+            "weighted_f1": 0.7324862465821359,
+            "label_counts": {
+              "ADI": 4,
+              "BACK": 1,
+              "DEB": 25,
+              "LYM": 103,
+              "MUC": 68,
+              "MUS": 76,
+              "NORM": 179,
+              "STR": 70,
+              "TUM": 192
+            }
+          },
+          {
+            "level": 2,
+            "n": 718,
+            "axis_mean": -2.181753378133705,
+            "accuracy": 0.766016713091922,
+            "balanced_accuracy": 0.8005422608584155,
+            "macro_f1": 0.7357325237131322,
+            "weighted_f1": 0.7758500020329341,
+            "label_counts": {
+              "ADI": 13,
+              "BACK": 5,
+              "DEB": 61,
+              "LYM": 46,
+              "MUC": 140,
+              "MUS": 61,
+              "NORM": 120,
+              "STR": 81,
+              "TUM": 191
+            }
+          },
+          {
+            "level": 3,
+            "n": 718,
+            "axis_mean": -2.4176107513927576,
+            "accuracy": 0.7701949860724234,
+            "balanced_accuracy": 0.7797794600243417,
+            "macro_f1": 0.7077424633951378,
+            "weighted_f1": 0.7859549536371135,
+            "label_counts": {
+              "ADI": 18,
+              "BACK": 15,
+              "DEB": 25,
+              "LYM": 43,
+              "MUC": 175,
+              "MUS": 53,
+              "NORM": 141,
+              "STR": 36,
+              "TUM": 212
+            }
+          },
+          {
+            "level": 4,
+            "n": 718,
+            "axis_mean": -2.7050521194986072,
+            "accuracy": 0.7827298050139275,
+            "balanced_accuracy": 0.7920750054635531,
+            "macro_f1": 0.689133558044033,
+            "weighted_f1": 0.8014949985918537,
+            "label_counts": {
+              "ADI": 33,
+              "BACK": 7,
+              "DEB": 13,
+              "LYM": 65,
+              "MUC": 216,
+              "MUS": 80,
+              "NORM": 106,
+              "STR": 26,
+              "TUM": 172
+            }
+          },
+          {
+            "level": 5,
+            "n": 718,
+            "axis_mean": -3.0694848841225633,
+            "accuracy": 0.7729805013927576,
+            "balanced_accuracy": 0.7940132869419153,
+            "macro_f1": 0.7309306046824631,
+            "weighted_f1": 0.7767765666221709,
+            "label_counts": {
+              "ADI": 25,
+              "BACK": 26,
+              "DEB": 19,
+              "LYM": 60,
+              "MUC": 188,
+              "MUS": 95,
+              "NORM": 87,
+              "STR": 51,
+              "TUM": 167
+            }
+          },
+          {
+            "level": 6,
+            "n": 718,
+            "axis_mean": -3.605900159610028,
+            "accuracy": 0.7493036211699164,
+            "balanced_accuracy": 0.7850096764426332,
+            "macro_f1": 0.7450718842093796,
+            "weighted_f1": 0.7541700116562223,
+            "label_counts": {
+              "ADI": 45,
+              "BACK": 47,
+              "DEB": 12,
+              "LYM": 73,
+              "MUC": 134,
+              "MUS": 113,
+              "NORM": 64,
+              "STR": 98,
+              "TUM": 132
+            }
+          },
+          {
+            "level": 7,
+            "n": 718,
+            "axis_mean": -4.367383340389972,
+            "accuracy": 0.775766016713092,
+            "balanced_accuracy": 0.775652262504164,
+            "macro_f1": 0.702473337322587,
+            "weighted_f1": 0.7746526400868368,
+            "label_counts": {
+              "ADI": 175,
+              "BACK": 212,
+              "DEB": 4,
+              "LYM": 98,
+              "MUC": 63,
+              "MUS": 33,
+              "NORM": 34,
+              "STR": 29,
+              "TUM": 70
+            }
+          },
+          {
+            "level": 8,
+            "n": 718,
+            "axis_mean": -5.147450495682451,
+            "accuracy": 0.8704735376044568,
+            "balanced_accuracy": 0.7493541080497602,
+            "macro_f1": 0.6358795139832618,
+            "weighted_f1": 0.8580710266284532,
+            "label_counts": {
+              "ADI": 420,
+              "BACK": 91,
+              "DEB": 1,
+              "LYM": 105,
+              "MUC": 23,
+              "MUS": 16,
+              "NORM": 9,
+              "STR": 8,
+              "TUM": 45
+            }
+          },
+          {
+            "level": 9,
+            "n": 718,
+            "axis_mean": -6.800483136211699,
+            "accuracy": 0.9080779944289693,
+            "balanced_accuracy": 0.7252467990563228,
+            "macro_f1": 0.6065060823395688,
+            "weighted_f1": 0.8961148205694917,
+            "label_counts": {
+              "ADI": 528,
+              "BACK": 70,
+              "DEB": 1,
+              "LYM": 41,
+              "MUC": 11,
+              "MUS": 8,
+              "NORM": 1,
+              "STR": 9,
+              "TUM": 49
+            }
+          },
+          {
+            "level": 10,
+            "n": 718,
+            "axis_mean": -51.59623111002785,
+            "accuracy": 0.8105849582172702,
+            "balanced_accuracy": 0.6973306541797307,
+            "macro_f1": 0.6085015422006004,
+            "weighted_f1": 0.7866397566541529,
+            "label_counts": {
+              "ADI": 77,
+              "BACK": 373,
+              "DEB": 178,
+              "MUC": 17,
+              "MUS": 57,
+              "STR": 13,
+              "TUM": 3
+            }
+          }
+        ],
+        "class_adjusted_residual": [
+          {
+            "level": 1,
+            "n": 718,
+            "mean_class_adjusted_correct_residual": 0.004573718260245468
+          },
+          {
+            "level": 2,
+            "n": 718,
+            "mean_class_adjusted_correct_residual": 0.05477963530250739
+          },
+          {
+            "level": 3,
+            "n": 718,
+            "mean_class_adjusted_correct_residual": 0.04722833127033113
+          },
+          {
+            "level": 4,
+            "n": 718,
+            "mean_class_adjusted_correct_residual": 0.01780621160759561
+          },
+          {
+            "level": 5,
+            "n": 718,
+            "mean_class_adjusted_correct_residual": 0.009012551852246904
+          },
+          {
+            "level": 6,
+            "n": 718,
+            "mean_class_adjusted_correct_residual": -0.027556068011485035
+          },
+          {
+            "level": 7,
+            "n": 718,
+            "mean_class_adjusted_correct_residual": -0.08701385924313679
+          },
+          {
+            "level": 8,
+            "n": 718,
+            "mean_class_adjusted_correct_residual": -0.009408569217677727
+          },
+          {
+            "level": 9,
+            "n": 718,
+            "mean_class_adjusted_correct_residual": 0.040811866947858655
+          },
+          {
+            "level": 10,
+            "n": 718,
+            "mean_class_adjusted_correct_residual": -0.050233818768485636
+          }
+        ],
+        "stable_class_macro_min_support_5": {
+          "min_support": 5,
+          "stable_classes": [
+            "MUC",
+            "MUS",
+            "STR"
+          ],
+          "rows": [
+            {
+              "level": 1,
+              "stable_class_macro_recall": 0.7975748194014448,
+              "stable_classes": [
+                "MUC",
+                "MUS",
+                "STR"
+              ],
+              "supports": {
+                "MUC": 68,
+                "MUS": 76,
+                "STR": 70
+              }
+            },
+            {
+              "level": 2,
+              "stable_class_macro_recall": 0.7932710748739892,
+              "stable_classes": [
+                "MUC",
+                "MUS",
+                "STR"
+              ],
+              "supports": {
+                "MUC": 140,
+                "MUS": 61,
+                "STR": 81
+              }
+            },
+            {
+              "level": 3,
+              "stable_class_macro_recall": 0.7681301786962166,
+              "stable_classes": [
+                "MUC",
+                "MUS",
+                "STR"
+              ],
+              "supports": {
+                "MUC": 175,
+                "MUS": 53,
+                "STR": 36
+              }
+            },
+            {
+              "level": 4,
+              "stable_class_macro_recall": 0.7836538461538461,
+              "stable_classes": [
+                "MUC",
+                "MUS",
+                "STR"
+              ],
+              "supports": {
+                "MUC": 216,
+                "MUS": 80,
+                "STR": 26
+              }
+            },
+            {
+              "level": 5,
+              "stable_class_macro_recall": 0.7883593526996465,
+              "stable_classes": [
+                "MUC",
+                "MUS",
+                "STR"
+              ],
+              "supports": {
+                "MUC": 188,
+                "MUS": 95,
+                "STR": 51
+              }
+            },
+            {
+              "level": 6,
+              "stable_class_macro_recall": 0.7609747901273837,
+              "stable_classes": [
+                "MUC",
+                "MUS",
+                "STR"
+              ],
+              "supports": {
+                "MUC": 134,
+                "MUS": 113,
+                "STR": 98
+              }
+            },
+            {
+              "level": 7,
+              "stable_class_macro_recall": 0.8093911197359475,
+              "stable_classes": [
+                "MUC",
+                "MUS",
+                "STR"
+              ],
+              "supports": {
+                "MUC": 63,
+                "MUS": 33,
+                "STR": 29
+              }
+            },
+            {
+              "level": 8,
+              "stable_class_macro_recall": 0.8152173913043478,
+              "stable_classes": [
+                "MUC",
+                "MUS",
+                "STR"
+              ],
+              "supports": {
+                "MUC": 23,
+                "MUS": 16,
+                "STR": 8
+              }
+            },
+            {
+              "level": 9,
+              "stable_class_macro_recall": 0.8350168350168351,
+              "stable_classes": [
+                "MUC",
+                "MUS",
+                "STR"
+              ],
+              "supports": {
+                "MUC": 11,
+                "MUS": 8,
+                "STR": 9
+              }
+            },
+            {
+              "level": 10,
+              "stable_class_macro_recall": 0.8659469185784975,
+              "stable_classes": [
+                "MUC",
+                "MUS",
+                "STR"
+              ],
+              "supports": {
+                "MUC": 17,
+                "MUS": 57,
+                "STR": 13
+              }
+            }
+          ]
+        }
+      }
+    },
+    "nct_color_proximity": {
+      "axis_col": "axis_nct_color_similarity",
+      "level_col": "level_nct_color_proximity",
+      "target_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -1.7763119157059313,
+          "accuracy": 0.7410192147034252,
+          "balanced_accuracy": 0.7536453604874658,
+          "macro_f1": 0.6249577402095908,
+          "weighted_f1": 0.7513090623816223,
+          "label_counts": {
+            "ADI": 5,
+            "BACK": 1,
+            "DEB": 63,
+            "LYM": 136,
+            "MUC": 198,
+            "MUS": 114,
+            "NORM": 260,
+            "STR": 120,
+            "TUM": 300
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -2.209824621136174,
+          "accuracy": 0.7660818713450293,
+          "balanced_accuracy": 0.7841563570240263,
+          "macro_f1": 0.7093680448112388,
+          "weighted_f1": 0.782790410137551,
+          "label_counts": {
+            "ADI": 31,
+            "BACK": 19,
+            "DEB": 51,
+            "LYM": 80,
+            "MUC": 261,
+            "MUS": 96,
+            "NORM": 231,
+            "STR": 73,
+            "TUM": 355
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -2.6981318563545154,
+          "accuracy": 0.7642140468227425,
+          "balanced_accuracy": 0.7791584699461352,
+          "macro_f1": 0.7035031908578713,
+          "weighted_f1": 0.7743453668803212,
+          "label_counts": {
+            "ADI": 56,
+            "BACK": 26,
+            "DEB": 28,
+            "LYM": 95,
+            "MUC": 321,
+            "MUS": 153,
+            "NORM": 148,
+            "STR": 65,
+            "TUM": 304
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -3.3934970477025894,
+          "accuracy": 0.7802840434419381,
+          "balanced_accuracy": 0.8033927230421233,
+          "macro_f1": 0.7480821725218707,
+          "weighted_f1": 0.7977944611734149,
+          "label_counts": {
+            "ADI": 438,
+            "BACK": 53,
+            "DEB": 13,
+            "LYM": 85,
+            "MUC": 159,
+            "MUS": 119,
+            "NORM": 78,
+            "STR": 105,
+            "TUM": 147
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -4.38015332416388,
+          "accuracy": 0.8553511705685619,
+          "balanced_accuracy": 0.7666935911828856,
+          "macro_f1": 0.6926398486420093,
+          "weighted_f1": 0.8446797268653559,
+          "label_counts": {
+            "ADI": 435,
+            "BACK": 298,
+            "DEB": 5,
+            "LYM": 194,
+            "MUC": 68,
+            "MUS": 45,
+            "NORM": 23,
+            "STR": 37,
+            "TUM": 91
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -33.34444883634085,
+          "accuracy": 0.8487886382623224,
+          "balanced_accuracy": 0.6675131487753991,
+          "macro_f1": 0.6616927939421273,
+          "weighted_f1": 0.8254594759917214,
+          "label_counts": {
+            "ADI": 373,
+            "BACK": 450,
+            "DEB": 179,
+            "LYM": 44,
+            "MUC": 28,
+            "MUS": 65,
+            "NORM": 1,
+            "STR": 21,
+            "TUM": 36
+          }
+        }
+      ],
+      "baseline_centroid_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -1.7763119157059313,
+          "accuracy": 0.6992481203007519,
+          "balanced_accuracy": 0.718654490027039,
+          "macro_f1": 0.6740676451004574,
+          "weighted_f1": 0.6774095868282222,
+          "label_counts": {
+            "ADI": 5,
+            "BACK": 1,
+            "DEB": 63,
+            "LYM": 136,
+            "MUC": 198,
+            "MUS": 114,
+            "NORM": 260,
+            "STR": 120,
+            "TUM": 300
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -2.209824621136174,
+          "accuracy": 0.7050960735171261,
+          "balanced_accuracy": 0.71189575055661,
+          "macro_f1": 0.6501246148999837,
+          "weighted_f1": 0.6942273624015055,
+          "label_counts": {
+            "ADI": 31,
+            "BACK": 19,
+            "DEB": 51,
+            "LYM": 80,
+            "MUC": 261,
+            "MUS": 96,
+            "NORM": 231,
+            "STR": 73,
+            "TUM": 355
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -2.6981318563545154,
+          "accuracy": 0.6555183946488294,
+          "balanced_accuracy": 0.6359318152086736,
+          "macro_f1": 0.5992731522421315,
+          "weighted_f1": 0.6655268914770598,
+          "label_counts": {
+            "ADI": 56,
+            "BACK": 26,
+            "DEB": 28,
+            "LYM": 95,
+            "MUC": 321,
+            "MUS": 153,
+            "NORM": 148,
+            "STR": 65,
+            "TUM": 304
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -3.3934970477025894,
+          "accuracy": 0.6499582289055973,
+          "balanced_accuracy": 0.5195354367189967,
+          "macro_f1": 0.5116281096711346,
+          "weighted_f1": 0.6523609320879511,
+          "label_counts": {
+            "ADI": 438,
+            "BACK": 53,
+            "DEB": 13,
+            "LYM": 85,
+            "MUC": 159,
+            "MUS": 119,
+            "NORM": 78,
+            "STR": 105,
+            "TUM": 147
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -4.38015332416388,
+          "accuracy": 0.6839464882943144,
+          "balanced_accuracy": 0.4450198611597142,
+          "macro_f1": 0.3953208491622921,
+          "weighted_f1": 0.6750660354342392,
+          "label_counts": {
+            "ADI": 435,
+            "BACK": 298,
+            "DEB": 5,
+            "LYM": 194,
+            "MUC": 68,
+            "MUS": 45,
+            "NORM": 23,
+            "STR": 37,
+            "TUM": 91
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -33.34444883634085,
+          "accuracy": 0.7451963241436925,
+          "balanced_accuracy": 0.5725174120884576,
+          "macro_f1": 0.4005773272690353,
+          "weighted_f1": 0.6789465393336697,
+          "label_counts": {
+            "ADI": 373,
+            "BACK": 450,
+            "DEB": 179,
+            "LYM": 44,
+            "MUC": 28,
+            "MUS": 65,
+            "NORM": 1,
+            "STR": 21,
+            "TUM": 36
+          }
+        }
+      ],
+      "baseline_logistic_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -1.7763119157059313,
+          "accuracy": 0.8036758563074352,
+          "balanced_accuracy": 0.8002918403692397,
+          "macro_f1": 0.8035450796136517,
+          "weighted_f1": 0.794928408081819,
+          "label_counts": {
+            "ADI": 5,
+            "BACK": 1,
+            "DEB": 63,
+            "LYM": 136,
+            "MUC": 198,
+            "MUS": 114,
+            "NORM": 260,
+            "STR": 120,
+            "TUM": 300
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -2.209824621136174,
+          "accuracy": 0.7961570593149541,
+          "balanced_accuracy": 0.7822971215750523,
+          "macro_f1": 0.7694117165976485,
+          "weighted_f1": 0.7986589995784823,
+          "label_counts": {
+            "ADI": 31,
+            "BACK": 19,
+            "DEB": 51,
+            "LYM": 80,
+            "MUC": 261,
+            "MUS": 96,
+            "NORM": 231,
+            "STR": 73,
+            "TUM": 355
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -2.6981318563545154,
+          "accuracy": 0.7148829431438127,
+          "balanced_accuracy": 0.6888038866746804,
+          "macro_f1": 0.6779653148544567,
+          "weighted_f1": 0.7381600034384413,
+          "label_counts": {
+            "ADI": 56,
+            "BACK": 26,
+            "DEB": 28,
+            "LYM": 95,
+            "MUC": 321,
+            "MUS": 153,
+            "NORM": 148,
+            "STR": 65,
+            "TUM": 304
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -3.3934970477025894,
+          "accuracy": 0.722639933166249,
+          "balanced_accuracy": 0.6119619510350836,
+          "macro_f1": 0.607800563223665,
+          "weighted_f1": 0.7488160875828197,
+          "label_counts": {
+            "ADI": 438,
+            "BACK": 53,
+            "DEB": 13,
+            "LYM": 85,
+            "MUC": 159,
+            "MUS": 119,
+            "NORM": 78,
+            "STR": 105,
+            "TUM": 147
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -4.38015332416388,
+          "accuracy": 0.6981605351170569,
+          "balanced_accuracy": 0.551932335322508,
+          "macro_f1": 0.5047740093158352,
+          "weighted_f1": 0.7367376508237254,
+          "label_counts": {
+            "ADI": 435,
+            "BACK": 298,
+            "DEB": 5,
+            "LYM": 194,
+            "MUC": 68,
+            "MUS": 45,
+            "NORM": 23,
+            "STR": 37,
+            "TUM": 91
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -33.34444883634085,
+          "accuracy": 0.28153717627401836,
+          "balanced_accuracy": 0.15082287526828492,
+          "macro_f1": 0.1475982603198628,
+          "weighted_f1": 0.29637484759771915,
+          "label_counts": {
+            "ADI": 373,
+            "BACK": 450,
+            "DEB": 179,
+            "LYM": 44,
+            "MUC": 28,
+            "MUS": 65,
+            "NORM": 1,
+            "STR": 21,
+            "TUM": 36
+          }
+        }
+      ],
+      "class_adjusted_residual_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": 0.020682082607574016
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": 0.04677584108704209
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "mean_class_adjusted_correct_residual": 0.0043965217516293426
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": -0.030586423327116787
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "mean_class_adjusted_correct_residual": -0.023754091031275536
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": -0.017530102824928884
+        }
+      ],
+      "stable_class_macro_min_support_10": {
+        "min_support": 10,
+        "stable_classes": [
+          "LYM",
+          "MUC",
+          "MUS",
+          "STR",
+          "TUM"
+        ],
+        "rows": [
+          {
+            "level": 1,
+            "stable_class_macro_recall": 0.7911770334928229,
+            "stable_classes": [
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "LYM": 136,
+              "MUC": 198,
+              "MUS": 114,
+              "STR": 120,
+              "TUM": 300
+            }
+          },
+          {
+            "level": 2,
+            "stable_class_macro_recall": 0.7834965243357483,
+            "stable_classes": [
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "LYM": 80,
+              "MUC": 261,
+              "MUS": 96,
+              "STR": 73,
+              "TUM": 355
+            }
+          },
+          {
+            "level": 3,
+            "stable_class_macro_recall": 0.7997528431706407,
+            "stable_classes": [
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "LYM": 95,
+              "MUC": 321,
+              "MUS": 153,
+              "STR": 65,
+              "TUM": 304
+            }
+          },
+          {
+            "level": 4,
+            "stable_class_macro_recall": 0.754095449500555,
+            "stable_classes": [
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "LYM": 85,
+              "MUC": 159,
+              "MUS": 119,
+              "STR": 105,
+              "TUM": 147
+            }
+          },
+          {
+            "level": 5,
+            "stable_class_macro_recall": 0.7133772359848771,
+            "stable_classes": [
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "LYM": 194,
+              "MUC": 68,
+              "MUS": 45,
+              "STR": 37,
+              "TUM": 91
+            }
+          },
+          {
+            "level": 6,
+            "stable_class_macro_recall": 0.7405738705738706,
+            "stable_classes": [
+              "LYM",
+              "MUC",
+              "MUS",
+              "STR",
+              "TUM"
+            ],
+            "supports": {
+              "LYM": 44,
+              "MUC": 28,
+              "MUS": 65,
+              "STR": 21,
+              "TUM": 36
+            }
+          }
+        ]
+      },
+      "spearman_level_vs_target_bacc": -0.2571428571428572,
+      "spearman_level_vs_target_acc": 0.8857142857142858,
+      "decile_densification": null
+    },
+    "nct_tissue_fraction_proximity": {
+      "axis_col": "axis_nct_tissue_fraction_similarity",
+      "level_col": "level_nct_tissue_fraction_proximity",
+      "target_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -0.041226172472776254,
+          "accuracy": 0.8412698412698413,
+          "balanced_accuracy": 0.8070434331861361,
+          "macro_f1": 0.751712395917777,
+          "weighted_f1": 0.8463761448709551,
+          "label_counts": {
+            "ADI": 71,
+            "BACK": 143,
+            "DEB": 77,
+            "LYM": 4,
+            "MUC": 441,
+            "MUS": 147,
+            "NORM": 43,
+            "STR": 122,
+            "TUM": 149
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -0.06518621235445653,
+          "accuracy": 0.8404344193817878,
+          "balanced_accuracy": 0.787157391214662,
+          "macro_f1": 0.7318657541064262,
+          "weighted_f1": 0.8400030180652045,
+          "label_counts": {
+            "ADI": 75,
+            "BACK": 360,
+            "DEB": 33,
+            "LYM": 5,
+            "MUC": 347,
+            "MUS": 136,
+            "NORM": 52,
+            "STR": 74,
+            "TUM": 115
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -0.09508928347085348,
+          "accuracy": 0.8035117056856187,
+          "balanced_accuracy": 0.7671820852276565,
+          "macro_f1": 0.7121020457398949,
+          "weighted_f1": 0.8115370351876533,
+          "label_counts": {
+            "ADI": 6,
+            "BACK": 322,
+            "DEB": 41,
+            "LYM": 51,
+            "MUC": 123,
+            "MUS": 139,
+            "NORM": 179,
+            "STR": 92,
+            "TUM": 243
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -0.171527456213658,
+          "accuracy": 0.7443609022556391,
+          "balanced_accuracy": 0.8046823506979253,
+          "macro_f1": 0.6512978709269582,
+          "weighted_f1": 0.7510938521617297,
+          "label_counts": {
+            "ADI": 4,
+            "BACK": 17,
+            "DEB": 14,
+            "LYM": 218,
+            "MUC": 82,
+            "MUS": 130,
+            "NORM": 332,
+            "STR": 83,
+            "TUM": 317
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -0.35005610840966705,
+          "accuracy": 0.6663879598662207,
+          "balanced_accuracy": 0.7320451298705737,
+          "macro_f1": 0.5699033642551584,
+          "weighted_f1": 0.7166093374238443,
+          "label_counts": {
+            "ADI": 204,
+            "BACK": 5,
+            "DEB": 6,
+            "LYM": 352,
+            "MUC": 41,
+            "MUS": 33,
+            "NORM": 134,
+            "STR": 47,
+            "TUM": 374
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -0.8232089180332494,
+          "accuracy": 0.8596491228070176,
+          "balanced_accuracy": 0.556349510663161,
+          "macro_f1": 0.4431385846512048,
+          "weighted_f1": 0.895141535018906,
+          "label_counts": {
+            "ADI": 978,
+            "DEB": 168,
+            "LYM": 4,
+            "MUC": 1,
+            "MUS": 7,
+            "NORM": 1,
+            "STR": 3,
+            "TUM": 35
+          }
+        }
+      ],
+      "baseline_centroid_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -0.041226172472776254,
+          "accuracy": 0.7510442773600668,
+          "balanced_accuracy": 0.7146951628737017,
+          "macro_f1": 0.664456325576196,
+          "weighted_f1": 0.7405193872540076,
+          "label_counts": {
+            "ADI": 71,
+            "BACK": 143,
+            "DEB": 77,
+            "LYM": 4,
+            "MUC": 441,
+            "MUS": 147,
+            "NORM": 43,
+            "STR": 122,
+            "TUM": 149
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -0.06518621235445653,
+          "accuracy": 0.8061821219715957,
+          "balanced_accuracy": 0.714146083861474,
+          "macro_f1": 0.6547530814419439,
+          "weighted_f1": 0.8158503793631223,
+          "label_counts": {
+            "ADI": 75,
+            "BACK": 360,
+            "DEB": 33,
+            "LYM": 5,
+            "MUC": 347,
+            "MUS": 136,
+            "NORM": 52,
+            "STR": 74,
+            "TUM": 115
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -0.09508928347085348,
+          "accuracy": 0.7650501672240803,
+          "balanced_accuracy": 0.7025982261710436,
+          "macro_f1": 0.6065613255336972,
+          "weighted_f1": 0.7540726002000195,
+          "label_counts": {
+            "ADI": 6,
+            "BACK": 322,
+            "DEB": 41,
+            "LYM": 51,
+            "MUC": 123,
+            "MUS": 139,
+            "NORM": 179,
+            "STR": 92,
+            "TUM": 243
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -0.171527456213658,
+          "accuracy": 0.6157059314954052,
+          "balanced_accuracy": 0.6352092252421621,
+          "macro_f1": 0.4974201851533098,
+          "weighted_f1": 0.6067265863557986,
+          "label_counts": {
+            "ADI": 4,
+            "BACK": 17,
+            "DEB": 14,
+            "LYM": 218,
+            "MUC": 82,
+            "MUS": 130,
+            "NORM": 332,
+            "STR": 83,
+            "TUM": 317
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -0.35005610840966705,
+          "accuracy": 0.40301003344481606,
+          "balanced_accuracy": 0.4831602430329116,
+          "macro_f1": 0.384004541528924,
+          "weighted_f1": 0.401835364501594,
+          "label_counts": {
+            "ADI": 204,
+            "BACK": 5,
+            "DEB": 6,
+            "LYM": 352,
+            "MUC": 41,
+            "MUS": 33,
+            "NORM": 134,
+            "STR": 47,
+            "TUM": 374
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -0.8232089180332494,
+          "accuracy": 0.797827903091061,
+          "balanced_accuracy": 0.5131281040023371,
+          "macro_f1": 0.2280795178975491,
+          "weighted_f1": 0.7526262991939422,
+          "label_counts": {
+            "ADI": 978,
+            "DEB": 168,
+            "LYM": 4,
+            "MUC": 1,
+            "MUS": 7,
+            "NORM": 1,
+            "STR": 3,
+            "TUM": 35
+          }
+        }
+      ],
+      "baseline_logistic_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -0.041226172472776254,
+          "accuracy": 0.8538011695906432,
+          "balanced_accuracy": 0.8206862501107538,
+          "macro_f1": 0.770751977934364,
+          "weighted_f1": 0.8510388490573684,
+          "label_counts": {
+            "ADI": 71,
+            "BACK": 143,
+            "DEB": 77,
+            "LYM": 4,
+            "MUC": 441,
+            "MUS": 147,
+            "NORM": 43,
+            "STR": 122,
+            "TUM": 149
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -0.06518621235445653,
+          "accuracy": 0.8279030910609858,
+          "balanced_accuracy": 0.7250265565090479,
+          "macro_f1": 0.6814526365536966,
+          "weighted_f1": 0.8295446167394688,
+          "label_counts": {
+            "ADI": 75,
+            "BACK": 360,
+            "DEB": 33,
+            "LYM": 5,
+            "MUC": 347,
+            "MUS": 136,
+            "NORM": 52,
+            "STR": 74,
+            "TUM": 115
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -0.09508928347085348,
+          "accuracy": 0.6789297658862876,
+          "balanced_accuracy": 0.7032529338712017,
+          "macro_f1": 0.6760154345063965,
+          "weighted_f1": 0.6835465619726067,
+          "label_counts": {
+            "ADI": 6,
+            "BACK": 322,
+            "DEB": 41,
+            "LYM": 51,
+            "MUC": 123,
+            "MUS": 139,
+            "NORM": 179,
+            "STR": 92,
+            "TUM": 243
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -0.171527456213658,
+          "accuracy": 0.6875522138680034,
+          "balanced_accuracy": 0.6624052108696764,
+          "macro_f1": 0.570430748506187,
+          "weighted_f1": 0.6971928823119775,
+          "label_counts": {
+            "ADI": 4,
+            "BACK": 17,
+            "DEB": 14,
+            "LYM": 218,
+            "MUC": 82,
+            "MUS": 130,
+            "NORM": 332,
+            "STR": 83,
+            "TUM": 317
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -0.35005610840966705,
+          "accuracy": 0.4431438127090301,
+          "balanced_accuracy": 0.55829712690767,
+          "macro_f1": 0.3964660491416697,
+          "weighted_f1": 0.465018254545836,
+          "label_counts": {
+            "ADI": 204,
+            "BACK": 5,
+            "DEB": 6,
+            "LYM": 352,
+            "MUC": 41,
+            "MUS": 33,
+            "NORM": 134,
+            "STR": 47,
+            "TUM": 374
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -0.8232089180332494,
+          "accuracy": 0.5254803675856308,
+          "balanced_accuracy": 0.3764944858311423,
+          "macro_f1": 0.17785290622170055,
+          "weighted_f1": 0.6491924037556737,
+          "label_counts": {
+            "ADI": 978,
+            "DEB": 168,
+            "LYM": 4,
+            "MUC": 1,
+            "MUS": 7,
+            "NORM": 1,
+            "STR": 3,
+            "TUM": 35
+          }
+        }
+      ],
+      "class_adjusted_residual_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": 0.0411116467266638
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": 0.0001952707478654758
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "mean_class_adjusted_correct_residual": 0.028135518471899917
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": 0.01635667687867521
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "mean_class_adjusted_correct_residual": -0.10616518946825722
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": 0.020300888948084808
+        }
+      ],
+      "stable_class_macro_min_support_10": {
+        "min_support": 10,
+        "stable_classes": [
+          "TUM"
+        ],
+        "rows": [
+          {
+            "level": 1,
+            "stable_class_macro_recall": 0.7785234899328859,
+            "stable_classes": [
+              "TUM"
+            ],
+            "supports": {
+              "TUM": 149
+            }
+          },
+          {
+            "level": 2,
+            "stable_class_macro_recall": 0.6521739130434783,
+            "stable_classes": [
+              "TUM"
+            ],
+            "supports": {
+              "TUM": 115
+            }
+          },
+          {
+            "level": 3,
+            "stable_class_macro_recall": 0.6296296296296297,
+            "stable_classes": [
+              "TUM"
+            ],
+            "supports": {
+              "TUM": 243
+            }
+          },
+          {
+            "level": 4,
+            "stable_class_macro_recall": 0.5741324921135647,
+            "stable_classes": [
+              "TUM"
+            ],
+            "supports": {
+              "TUM": 317
+            }
+          },
+          {
+            "level": 5,
+            "stable_class_macro_recall": 0.39037433155080214,
+            "stable_classes": [
+              "TUM"
+            ],
+            "supports": {
+              "TUM": 374
+            }
+          },
+          {
+            "level": 6,
+            "stable_class_macro_recall": 0.11428571428571428,
+            "stable_classes": [
+              "TUM"
+            ],
+            "supports": {
+              "TUM": 35
+            }
+          }
+        ]
+      },
+      "spearman_level_vs_target_bacc": -0.8285714285714287,
+      "spearman_level_vs_target_acc": -0.14285714285714288,
+      "decile_densification": null
+    },
+    "nct_texture_complexity_proximity": {
+      "axis_col": "axis_nct_texture_complexity_similarity",
+      "level_col": "level_nct_texture_complexity_proximity",
+      "target_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -0.0687121382773531,
+          "accuracy": 0.7794486215538847,
+          "balanced_accuracy": 0.764541356082246,
+          "macro_f1": 0.6506114993909973,
+          "weighted_f1": 0.7989721581510766,
+          "label_counts": {
+            "ADI": 27,
+            "DEB": 77,
+            "LYM": 80,
+            "MUC": 316,
+            "MUS": 163,
+            "NORM": 16,
+            "STR": 133,
+            "TUM": 385
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -0.17002409779046077,
+          "accuracy": 0.7627401837928154,
+          "balanced_accuracy": 0.7934441873114768,
+          "macro_f1": 0.6925752905851396,
+          "weighted_f1": 0.7991037504193764,
+          "label_counts": {
+            "ADI": 32,
+            "DEB": 73,
+            "LYM": 120,
+            "MUC": 286,
+            "MUS": 150,
+            "NORM": 51,
+            "STR": 79,
+            "TUM": 406
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -0.2756483891556995,
+          "accuracy": 0.7525083612040134,
+          "balanced_accuracy": 0.7810322585781662,
+          "macro_f1": 0.6881755422022445,
+          "weighted_f1": 0.7808615781903449,
+          "label_counts": {
+            "ADI": 48,
+            "DEB": 76,
+            "LYM": 184,
+            "MUC": 213,
+            "MUS": 105,
+            "NORM": 200,
+            "STR": 71,
+            "TUM": 299
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -0.39305985924096803,
+          "accuracy": 0.7343358395989975,
+          "balanced_accuracy": 0.7490061875406684,
+          "macro_f1": 0.6486373935588703,
+          "weighted_f1": 0.753865899850046,
+          "label_counts": {
+            "ADI": 64,
+            "DEB": 67,
+            "LYM": 227,
+            "MUC": 139,
+            "MUS": 57,
+            "NORM": 445,
+            "STR": 68,
+            "TUM": 130
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -0.879775890651379,
+          "accuracy": 0.7918060200668896,
+          "balanced_accuracy": 0.6319528875550803,
+          "macro_f1": 0.595396072942502,
+          "weighted_f1": 0.8254646400209033,
+          "label_counts": {
+            "ADI": 801,
+            "BACK": 20,
+            "DEB": 42,
+            "LYM": 23,
+            "MUC": 81,
+            "MUS": 117,
+            "NORM": 29,
+            "STR": 70,
+            "TUM": 13
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -2.192245776761918,
+          "accuracy": 0.9348370927318296,
+          "balanced_accuracy": 0.6175480096823288,
+          "macro_f1": 0.47600820889005324,
+          "weighted_f1": 0.9514429656944445,
+          "label_counts": {
+            "ADI": 366,
+            "BACK": 827,
+            "DEB": 4
+          }
+        }
+      ],
+      "baseline_centroid_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -0.0687121382773531,
+          "accuracy": 0.6608187134502924,
+          "balanced_accuracy": 0.4765750746730771,
+          "macro_f1": 0.4549305014231887,
+          "weighted_f1": 0.6575884657003067,
+          "label_counts": {
+            "ADI": 27,
+            "DEB": 77,
+            "LYM": 80,
+            "MUC": 316,
+            "MUS": 163,
+            "NORM": 16,
+            "STR": 133,
+            "TUM": 385
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -0.17002409779046077,
+          "accuracy": 0.6123642439431913,
+          "balanced_accuracy": 0.49116553013218667,
+          "macro_f1": 0.46809791549917423,
+          "weighted_f1": 0.6179419990661107,
+          "label_counts": {
+            "ADI": 32,
+            "DEB": 73,
+            "LYM": 120,
+            "MUC": 286,
+            "MUS": 150,
+            "NORM": 51,
+            "STR": 79,
+            "TUM": 406
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -0.2756483891556995,
+          "accuracy": 0.5744147157190636,
+          "balanced_accuracy": 0.5175259229347806,
+          "macro_f1": 0.5015472541312933,
+          "weighted_f1": 0.5719016906045516,
+          "label_counts": {
+            "ADI": 48,
+            "DEB": 76,
+            "LYM": 184,
+            "MUC": 213,
+            "MUS": 105,
+            "NORM": 200,
+            "STR": 71,
+            "TUM": 299
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -0.39305985924096803,
+          "accuracy": 0.5288220551378446,
+          "balanced_accuracy": 0.45918858350712544,
+          "macro_f1": 0.38004924952701535,
+          "weighted_f1": 0.5419669890655239,
+          "label_counts": {
+            "ADI": 64,
+            "DEB": 67,
+            "LYM": 227,
+            "MUC": 139,
+            "MUS": 57,
+            "NORM": 445,
+            "STR": 68,
+            "TUM": 130
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -0.879775890651379,
+          "accuracy": 0.7658862876254181,
+          "balanced_accuracy": 0.4478824385375167,
+          "macro_f1": 0.4445819137550435,
+          "weighted_f1": 0.7565654325056294,
+          "label_counts": {
+            "ADI": 801,
+            "BACK": 20,
+            "DEB": 42,
+            "LYM": 23,
+            "MUC": 81,
+            "MUS": 117,
+            "NORM": 29,
+            "STR": 70,
+            "TUM": 13
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -2.192245776761918,
+          "accuracy": 0.9966583124477861,
+          "balanced_accuracy": 0.6666666666666666,
+          "macro_f1": 0.6658624849215923,
+          "weighted_f1": 0.9949914996578701,
+          "label_counts": {
+            "ADI": 366,
+            "BACK": 827,
+            "DEB": 4
+          }
+        }
+      ],
+      "baseline_logistic_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "axis_mean": -0.0687121382773531,
+          "accuracy": 0.7050960735171261,
+          "balanced_accuracy": 0.548685146362532,
+          "macro_f1": 0.4651897000772494,
+          "weighted_f1": 0.7412578686066695,
+          "label_counts": {
+            "ADI": 27,
+            "DEB": 77,
+            "LYM": 80,
+            "MUC": 316,
+            "MUS": 163,
+            "NORM": 16,
+            "STR": 133,
+            "TUM": 385
+          }
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "axis_mean": -0.17002409779046077,
+          "accuracy": 0.6666666666666666,
+          "balanced_accuracy": 0.576588457243199,
+          "macro_f1": 0.4991106775132647,
+          "weighted_f1": 0.7112520732806109,
+          "label_counts": {
+            "ADI": 32,
+            "DEB": 73,
+            "LYM": 120,
+            "MUC": 286,
+            "MUS": 150,
+            "NORM": 51,
+            "STR": 79,
+            "TUM": 406
+          }
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "axis_mean": -0.2756483891556995,
+          "accuracy": 0.6011705685618729,
+          "balanced_accuracy": 0.5232834147701442,
+          "macro_f1": 0.4753421136524427,
+          "weighted_f1": 0.6141217732098099,
+          "label_counts": {
+            "ADI": 48,
+            "DEB": 76,
+            "LYM": 184,
+            "MUC": 213,
+            "MUS": 105,
+            "NORM": 200,
+            "STR": 71,
+            "TUM": 299
+          }
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "axis_mean": -0.39305985924096803,
+          "accuracy": 0.6441102756892231,
+          "balanced_accuracy": 0.5001846670202605,
+          "macro_f1": 0.4673187949016547,
+          "weighted_f1": 0.6548624767946242,
+          "label_counts": {
+            "ADI": 64,
+            "DEB": 67,
+            "LYM": 227,
+            "MUC": 139,
+            "MUS": 57,
+            "NORM": 445,
+            "STR": 68,
+            "TUM": 130
+          }
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "axis_mean": -0.879775890651379,
+          "accuracy": 0.5693979933110368,
+          "balanced_accuracy": 0.5266018397239304,
+          "macro_f1": 0.4702258080577223,
+          "weighted_f1": 0.6443394696688391,
+          "label_counts": {
+            "ADI": 801,
+            "BACK": 20,
+            "DEB": 42,
+            "LYM": 23,
+            "MUC": 81,
+            "MUS": 117,
+            "NORM": 29,
+            "STR": 70,
+            "TUM": 13
+          }
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "axis_mean": -2.192245776761918,
+          "accuracy": 0.8304093567251462,
+          "balanced_accuracy": 0.9105629009984075,
+          "macro_f1": 0.49288873824734897,
+          "weighted_f1": 0.9024876738978153,
+          "label_counts": {
+            "ADI": 366,
+            "BACK": 827,
+            "DEB": 4
+          }
+        }
+      ],
+      "class_adjusted_residual_by_level": [
+        {
+          "level": 1,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": 0.04253393209165677
+        },
+        {
+          "level": 2,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": 0.021785770836173703
+        },
+        {
+          "level": 3,
+          "n": 1196,
+          "mean_class_adjusted_correct_residual": 0.0060937258369041705
+        },
+        {
+          "level": 4,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": -0.014073396722082116
+        },
+        {
+          "level": 5,
+          "n": 1196,
+          "mean_class_adjusted_correct_residual": -0.06095110270271073
+        },
+        {
+          "level": 6,
+          "n": 1197,
+          "mean_class_adjusted_correct_residual": 0.004565241606703261
+        }
+      ],
+      "stable_class_macro_min_support_10": {
+        "min_support": 10,
+        "stable_classes": [
+          "ADI"
+        ],
+        "rows": [
+          {
+            "level": 1,
+            "stable_class_macro_recall": 0.9259259259259259,
+            "stable_classes": [
+              "ADI"
+            ],
+            "supports": {
+              "ADI": 27
+            }
+          },
+          {
+            "level": 2,
+            "stable_class_macro_recall": 0.96875,
+            "stable_classes": [
+              "ADI"
+            ],
+            "supports": {
+              "ADI": 32
+            }
+          },
+          {
+            "level": 3,
+            "stable_class_macro_recall": 0.9583333333333334,
+            "stable_classes": [
+              "ADI"
+            ],
+            "supports": {
+              "ADI": 48
+            }
+          },
+          {
+            "level": 4,
+            "stable_class_macro_recall": 0.953125,
+            "stable_classes": [
+              "ADI"
+            ],
+            "supports": {
+              "ADI": 64
+            }
+          },
+          {
+            "level": 5,
+            "stable_class_macro_recall": 0.8564294631710362,
+            "stable_classes": [
+              "ADI"
+            ],
+            "supports": {
+              "ADI": 801
+            }
+          },
+          {
+            "level": 6,
+            "stable_class_macro_recall": 0.8961748633879781,
+            "stable_classes": [
+              "ADI"
+            ],
+            "supports": {
+              "ADI": 366
+            }
+          }
+        ]
+      },
+      "spearman_level_vs_target_bacc": -0.8285714285714287,
+      "spearman_level_vs_target_acc": 0.4285714285714286,
+      "decile_densification": null
+    }
+  }
+}

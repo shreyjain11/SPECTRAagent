@@ -1,0 +1,70 @@
+======================================================================
+CHECK 1 -- SIGN STABILITY (flip vs weaken, signed rho)
+======================================================================
+
+COARSE hard vs easy: n_common=61  FLIP=6  weaken=43  strengthen=12
+    FLIP ACE2_HUMAN_Chan_2020: easy=-0.245 -> hard=+0.281
+    FLIP CBPA2_HUMAN_Tsuboyama_2023_1O6X: easy=-0.473 -> hard=+0.201
+    FLIP DNJA1_HUMAN_Tsuboyama_2023_2LO1: easy=-0.306 -> hard=+0.495
+    FLIP HMDH_HUMAN_Jiang_2019: easy=-0.401 -> hard=+0.075
+    FLIP MK01_HUMAN_Brenan_2016: easy=-0.233 -> hard=+0.018
+    FLIP SOX30_HUMAN_Tsuboyama_2023_7JJK: easy=-0.273 -> hard=+0.143
+    hard |rho|<0.10 (collapsed to noise): 7 -> [('CAR11_HUMAN_Meitlis_2020_gof', -0.007), ('CCR5_HUMAN_Gill_2023', -0.087), ('HMDH_HUMAN_Jiang_2019', 0.075), ('HXK4_HUMAN_Gersing_2022_activity', -0.075), ('MK01_HUMAN_Brenan_2016', 0.018), ('TADBP_HUMAN_Bolognesi_2019', 0.076), ('VKOR1_HUMAN_Chiasson_2020_activity', -0.061)]
+
+DEEP&occ<0.7 vs DEEP&occ>=0.9: n_common=28  FLIP=5  weaken=19  strengthen=4
+    FLIP CBPA2_HUMAN_Tsuboyama_2023_1O6X: easy=-0.473 -> hard=+0.377
+    FLIP DNJA1_HUMAN_Tsuboyama_2023_2LO1: easy=-0.306 -> hard=+0.061
+    FLIP HMDH_HUMAN_Jiang_2019: easy=-0.401 -> hard=+0.009
+    FLIP MET_HUMAN_Estevam_2023: easy=-0.618 -> hard=+0.034
+    FLIP PR40A_HUMAN_Tsuboyama_2023_1UZC: easy=-0.506 -> hard=+0.410
+    hard |rho|<0.10 (collapsed to noise): 7 -> [('DNJA1_HUMAN_Tsuboyama_2023_2LO1', 0.061), ('HEM3_HUMAN_Loggerenberg_2023', -0.043), ('HMDH_HUMAN_Jiang_2019', 0.009), ('MET_HUMAN_Estevam_2023', 0.034), ('OTU7A_HUMAN_Tsuboyama_2023_2L2D', -0.028), ('PAI1_HUMAN_Huttinger_2021', -0.068), ('PPARG_HUMAN_Majithia_2016', -0.022)]
+
+INSERT vs easy: n_common=46  FLIP=6  weaken=32  strengthen=8
+    FLIP DNJA1_HUMAN_Tsuboyama_2023_2LO1: easy=-0.306 -> hard=+0.206
+    FLIP HMDH_HUMAN_Jiang_2019: easy=-0.401 -> hard=+0.081
+    FLIP MK01_HUMAN_Brenan_2016: easy=-0.233 -> hard=+0.070
+    FLIP OTU7A_HUMAN_Tsuboyama_2023_2L2D: easy=-0.221 -> hard=+0.061
+    FLIP PIN1_HUMAN_Tsuboyama_2023_1I6C: easy=-0.577 -> hard=+0.005
+    FLIP UBR5_HUMAN_Tsuboyama_2023_1I2T: easy=-0.445 -> hard=+0.078
+    hard |rho|<0.10 (collapsed to noise): 11 -> [('ADRB2_HUMAN_Jones_2020', -0.004), ('CCR5_HUMAN_Gill_2023', -0.052), ('HMDH_HUMAN_Jiang_2019', 0.081), ('MK01_HUMAN_Brenan_2016', 0.07), ('MSH2_HUMAN_Jia_2020', -0.1), ('OTU7A_HUMAN_Tsuboyama_2023_2L2D', 0.061), ('PIN1_HUMAN_Tsuboyama_2023_1I6C', 0.005), ('PPARG_HUMAN_Majithia_2016', -0.041), ('TADBP_HUMAN_Bolognesi_2019', 0.028), ('UBR5_HUMAN_Tsuboyama_2023_1I2T', 0.078), ('VKOR1_HUMAN_Chiasson_2020_activity', -0.053)]
+
+======================================================================
+CHECK 2 -- CONCENTRATION of the DEEP & occ<0.7 cell
+======================================================================
+cell n_assays=28  total_variants=5438
+assay                                 n_var   share  signed_rho
+SHOC2_HUMAN_Kwon_2022                   779   14.3%      -0.399
+S22A1_HUMAN_Yee_2023_activity           703   12.9%      -0.522
+S22A1_HUMAN_Yee_2023_abundance          691   12.7%      -0.507
+PPARG_HUMAN_Majithia_2016               665   12.2%      -0.022
+CCR5_HUMAN_Gill_2023                    304    5.6%      -0.122
+HXK4_HUMAN_Gersing_2022_activity        261    4.8%      -0.149
+CBS_HUMAN_Sun_2020                      236    4.3%      -0.299
+UBE4B_HUMAN_Tsuboyama_2023_3L1X         198    3.6%      -0.312
+HXK4_HUMAN_Gersing_2023_abundance       183    3.4%      -0.229
+HMDH_HUMAN_Jiang_2019                   152    2.8%       0.009
+PAI1_HUMAN_Huttinger_2021               134    2.5%      -0.068
+MTHR_HUMAN_Weile_2021                   133    2.4%      -0.311
+SERC_HUMAN_Xie_2023                     109    2.0%      -0.507
+MET_HUMAN_Estevam_2023                   94    1.7%       0.034
+OTC_HUMAN_Lo_2023                        86    1.6%      -0.828
+HEM3_HUMAN_Loggerenberg_2023             84    1.5%      -0.043
+CBPA2_HUMAN_Tsuboyama_2023_1O6X          76    1.4%       0.377
+OBSCN_HUMAN_Tsuboyama_2023_1V1C          74    1.4%      -0.207
+OTU7A_HUMAN_Tsuboyama_2023_2L2D          60    1.1%      -0.028
+AICDA_HUMAN_Gajula_2014_3cycles          57    1.0%      -0.122
+CBX4_HUMAN_Tsuboyama_2023_2K28           57    1.0%      -0.511
+EPHB2_HUMAN_Tsuboyama_2023_1F0M          57    1.0%      -0.229
+RD23A_HUMAN_Tsuboyama_2023_1IFY          57    1.0%      -0.315
+NPC1_HUMAN_Erwood_2022_HEK293T           41    0.8%      -0.365
+PR40A_HUMAN_Tsuboyama_2023_1UZC          38    0.7%       0.410
+SOX30_HUMAN_Tsuboyama_2023_7JJK          38    0.7%      -0.413
+DNJA1_HUMAN_Tsuboyama_2023_2LO1          36    0.7%       0.061
+NPC1_HUMAN_Erwood_2022_RPE1              35    0.6%      -0.615
+
+reference DEEP&occ>=0.9 wmean|rho|=0.475
+cell DEEP&occ<0.7 wmean|rho|=0.305  gap=+0.169
+drop largest (SHOC2_HUMAN_Kwon_2022, 779 var): cell wmean|rho|=0.290  gap=+0.185
+leave-one-out gap range: min=+0.130  max=+0.202  (full=+0.169)
+
+coarse HARD bin: 65 assays, 63148 var; top-3 share=18.5%  top3=[('PPM1D_HUMAN_Miller_2022', 4188), ('SHOC2_HUMAN_Kwon_2022', 3836), ('PPARG_HUMAN_Majithia_2016', 3686)]

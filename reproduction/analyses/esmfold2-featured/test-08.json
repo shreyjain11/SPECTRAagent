@@ -4,8 +4,8 @@
   "model": "ESMFold2",
   "axis": "Potential disulfide capacity",
   "dataset_split": {
-    "description": "Exact target identities, sequences and archived evaluation setting are loaded and checked.",
-    "input_inventory": "inputs/esmfold2.json",
+    "description": "Original frozen records and source identities are preserved; packaged inputs and executable acquisition steps are documented in the linked recovery chain.",
+    "input_inventory": "primary/esmfold2/artifact_manifest.json",
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
@@ -512,36 +512,118 @@
       "archive": "esmfold2-retained-inputs",
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
-      "notebook_preparation_cell": 0
-    }
+      "notebook_preparation_cell": 0,
+      "implementation": "legacy_implementation",
+      "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
+    },
+    "legacy_input_inventory": "inputs/esmfold2.json",
+    "recovered_workflow": "primary/esmfold2/traceability.json"
   },
   "axis_levels": {
     "definition": "floor(cysteine count / 2) × 100 / sequence length. The sequence-derived score counts possible pairs.",
-    "calculation": "Potential disulfide capacity is recalculated from sequence. This is a cysteine-based proxy, not an observed bond count.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-08.py"
+    "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
+    "code": "primary/esmfold2/notebooks/test-08.py"
   },
   "model_evaluation": {
-    "measurements": "Original per-target/per-sample accuracy retained; complete prediction/reference coordinates unavailable.",
+    "measurements": "Original individual model measurements and scoring/selection code are packaged. The optional full-workflow route uses the documented current implementation with pinned original weights.",
     "fine_tuning": {
       "target_weight_updates_in_replay": false,
       "target_fine_tuning_during_original_audit": null,
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-08.py"
+    "code": "primary/esmfold2/notebooks/test-08.py"
   },
   "curve": {
-    "aggregation_and_uncertainty": "Group statistics are recalculated from individual scores; original means checked where available.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-08.py"
+    "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
+    "code": "primary/esmfold2/notebooks/test-08.py"
   },
   "insight": {
-    "comparison_controls_confirmation": "Original sample-selection policies, comparisons and control calculations are replayed below.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-08.py"
+    "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
+    "code": "primary/esmfold2/notebooks/test-08.py"
   },
   "reconstruction_notes": [
-    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference."
+    "The full bulk-download/raw-feature/current-model route is connected but was not executed during this integration.",
+    "Historical results used the older Biohub fork. The current implementation uses pinned original model sources; completed conversion validation checked tensor keys/shapes, not independent saved-value or prediction equality.",
+    "Original frozen memberships and per-analysis metadata missingness are preserved, including the documented flexible-axis boundary case."
   ],
   "implementation": {
+    "format": "recovered_historical_notebook",
+    "notebook": "primary/esmfold2/notebooks/test-08.ipynb",
+    "script": "primary/esmfold2/notebooks/test-08.py",
+    "supporting_code": "code/primary-esmfold2.json",
+    "published_notebook_sha256": "939aa1af018c605970424236bc2c060b46a23f2ad2d974d81add929ecdffc50b",
+    "published_script_sha256": "8c46eee49cb0bae247a321c4ef78b023774d7a8609ecdb61e2ed0bf3899fd5ad",
+    "cell_locations": [
+      {
+        "notebook_cell": 3,
+        "start_line": 1,
+        "end_line": 43
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 44,
+        "end_line": 105
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 106,
+        "end_line": 143
+      },
+      {
+        "notebook_cell": 7,
+        "start_line": 144,
+        "end_line": 157
+      },
+      {
+        "notebook_cell": 8,
+        "start_line": 158,
+        "end_line": 182
+      },
+      {
+        "notebook_cell": 10,
+        "start_line": 183,
+        "end_line": 185
+      },
+      {
+        "notebook_cell": 11,
+        "start_line": 186,
+        "end_line": 194
+      },
+      {
+        "notebook_cell": 12,
+        "start_line": 195,
+        "end_line": 206
+      },
+      {
+        "notebook_cell": 16,
+        "start_line": 207,
+        "end_line": 209
+      },
+      {
+        "notebook_cell": 18,
+        "start_line": 210,
+        "end_line": 219
+      }
+    ],
+    "saved_code_cells": 10,
+    "saved_error_outputs": 0,
+    "saved_figures": 1,
+    "changes": [
+      "Recovered original inputs and programs are packaged or acquired with content checks.",
+      "Markdown, original decisions and selected historical outputs are retained.",
+      "Default replay and optional full raw-data/model execution are explicitly distinguished."
+    ]
+  },
+  "requested_model": "ESMFold2",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "esmfold2-featured/test-08",
+    "disposition": "accepted",
+    "result": "The 134 proteins at or above the 80th-percentile threshold averaged Cα-lDDT 0.713 versus 0.862 in the remaining 518. This measures a risk proxy, not experimentally observed bonds.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "legacy_implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-featured/test-08.ipynb",
     "script": "materials/esmfold2/notebooks/esmfold2-featured/test-08.py",
     "supporting_code": "code/esmfold2.json",
@@ -581,5 +663,162 @@
     "saved_code_cells": 4,
     "saved_error_outputs": 0
   },
-  "requested_model": "ESMFold2"
+  "legacy_reconstruction_notes": [
+    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference."
+  ],
+  "primary_recovery": {
+    "package": "primary/esmfold2",
+    "traceability": "primary/esmfold2/traceability.json",
+    "record_id": "esmfold2-featured/test-08",
+    "evidence_paths_relative_to": "primary/esmfold2",
+    "stages": {
+      "data": {
+        "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+        "artifacts": [
+          "ACQUISITION_MANIFEST.json",
+          "ORIGINAL_ACQUISITION_EVIDENCE.json",
+          "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv",
+          "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/cys_confirmation_candidate_features.csv",
+          "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/viral_disulfide_pilot_candidate_features.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/envelope_fusion_confirmation_candidate_features.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_confirmation_candidate_features.csv"
+        ],
+        "panels": [
+          "cameo",
+          "cameo_scaled14",
+          "cameo_scaled40",
+          "external34",
+          "flexible107",
+          "charge97",
+          "acidic78",
+          "cysteine95",
+          "viral36",
+          "envelope38",
+          "surface45"
+        ],
+        "code": [
+          "acquisition.py:download_plan",
+          "acquisition.py:fetch_references",
+          "bootstrap.py:ensure_assets"
+        ],
+        "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+      },
+      "processing": {
+        "status": "original_programs_retained_and_rerun_connected",
+        "description": "Original sequence features, sequence/near-duplicate clustering, source consistency and controls",
+        "artifacts": [
+          "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/iterate_proxy_axes.py",
+          "original_runs/esmfold2_reviewer_proofing_20260602/scripts/save_example_predictions.py",
+          "original_runs/esmfold2_reviewer_proofing_20260602/scripts/reviewer_proofing_analysis.py",
+          "original_runs/esmfold2_paper_ready_final_20260602/scripts/save_example_predictions.py",
+          "original_runs/esmfold2_paper_ready_final_20260602/scripts/global_hypothesis_audit.py",
+          "original_runs/esmfold2_paper_ready_final_20260602/scripts/reviewer_proofing_analysis.py"
+        ],
+        "portable_code": [
+          "original_workflow.py:rebuild_features",
+          "original_workflow.py:require_features"
+        ],
+        "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+      },
+      "axis": {
+        "status": "definition_and_code_retained",
+        "definition": "Estimated disulfide capacity from cysteine count; sequence/provenance proxy candidates",
+        "artifacts": [
+          "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/iterate_proxy_axes.py",
+          "original_runs/esmfold2_reviewer_proofing_20260602/scripts/save_example_predictions.py",
+          "original_runs/esmfold2_reviewer_proofing_20260602/scripts/reviewer_proofing_analysis.py",
+          "original_runs/esmfold2_paper_ready_final_20260602/scripts/save_example_predictions.py",
+          "original_runs/esmfold2_paper_ready_final_20260602/scripts/global_hypothesis_audit.py",
+          "original_runs/esmfold2_paper_ready_final_20260602/scripts/reviewer_proofing_analysis.py"
+        ]
+      },
+      "levels": {
+        "status": "original_assignment_or_frozen_fit_retained",
+        "description": "Original80th-percentile capacity threshold and418proxy comparisons",
+        "artifacts": []
+      },
+      "evaluation": {
+        "status": "original_scores_retained_current_inference_route_connected",
+        "artifacts": [
+          "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/combined_proxy_feature_table.csv",
+          "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/combined_proxy_cluster_table.csv",
+          "original_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_structure_targets.csv",
+          "original_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_prediction_overlay_summary.csv",
+          "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/cluster_assignments.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/tables/cluster_assignments.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/example_structures/example_structure_targets.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/example_structures/example_prediction_overlay_summary.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/data/primary_exact_sequence_dedup.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/data/all_esmfold2_scored_evaluations.csv"
+        ],
+        "code": [
+          "acquisition.py:run_inference",
+          "current_esmfold2_adapter.py",
+          "current_implementation.py",
+          "original_workflow.py:validate_results"
+        ],
+        "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+        "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+      },
+      "curve": {
+        "status": "original_functions_replayed_and_new_results_connected",
+        "artifacts": [
+          "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_control_models.csv",
+          "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_axis_screen.csv",
+          "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_source_consistency.csv",
+          "original_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_prediction_overlay_summary.csv",
+          "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/high_disulfide_quartile_curve.csv",
+          "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/matched_control_pairs.csv",
+          "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/confidence_calibration_summary.csv",
+          "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/per_source_high_disulfide_summary.csv",
+          "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/matched_control_summary.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/tables/high_disulfide_quartile_curve.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_level_curves_all_evaluations.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/tables/matched_control_pairs.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/tables/confidence_calibration_summary.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/tables/per_source_high_disulfide_summary.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_level_curves_primary_sequence.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/tables/matched_control_summary.csv",
+          "original_runs/esmfold2_paper_ready_final_20260602/example_structures/example_prediction_overlay_summary.csv"
+        ],
+        "code": [
+          "original_workflow.py:run_axis"
+        ],
+        "validation": [
+          "WORKFLOW_VALIDATION.json",
+          "CURVE_REPLAY_VALIDATION.json",
+          "WORKFLOW_GUARD_VALIDATION.json"
+        ],
+        "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+      },
+      "decision": {
+        "status": "original_record_preserved",
+        "artifacts": [
+          "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/proxy_axis_iteration_report.md",
+          "original_runs/esmfold2_reviewer_proofing_20260602/reviewer_proofing_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/10_envelope_fusion_confirmation_failed_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/06_charge_fresh_confirmation_failed_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/02_beyond_msa_flexible_nonhelical_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/03_flexible_nonhelical_external_rcsb_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/04_reference_geometry_benchmark_only_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/01_cameo_msa_depth_final_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/09_viral_disulfide_pilot_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/05_shared_charge_saved_outputs_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/11_surface_lowhelical_and_classII_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/07_high_cysteine_fresh_confirmation_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/source_reports/global_hypothesis_audit_report.md",
+          "original_runs/esmfold2_paper_ready_final_20260602/source_reports/reviewer_proofing_report.md"
+        ],
+        "notebook_cell": 14,
+        "recorded_text": "## Recorded conclusion\n\nThe 134 proteins at or above the 80th-percentile threshold averaged Cα-lDDT 0.713 versus 0.862 in the remaining 518. This measures a risk proxy, not experimentally observed bonds.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+      }
+    }
+  }
 }

@@ -1,0 +1,36 @@
+Step-1 confound recheck -- OLD (73, incl UBC9/P63279) vs NEW (72, excl UBC9)
+residue unit = distinct (accession,target_pos); terminal = within 20 res of MSA span ends
+method mirrors terminal_check.py exactly; no Spearman / no scores touched
+==============================================================================
+
+COARSE HARD (insert + occ<=0.9)
+  metric                               OLD (73)         NEW (72)
+  n_resid (distinct prot-pos)              3554             3502
+  distinct proteins                          57               56
+  single-protein max frac                  7.5%             7.6%
+  internal fraction                       67.7%            68.1%
+  terminal fraction                       32.3%            31.9%
+
+OCC q0 aligned (occ<=0.945)
+  metric                               OLD (73)         NEW (72)
+  n_resid (distinct prot-pos)              2611             2572
+  distinct proteins                          56               55
+  single-protein max frac                  9.2%             9.3%
+  internal fraction                       80.2%            80.8%
+  terminal fraction                       19.8%            19.2%
+
+INSERT-STATE only
+  metric                               OLD (73)         NEW (72)
+  n_resid (distinct prot-pos)              1774             1751
+  distinct proteins                          49               48
+  single-protein max frac                 12.7%            12.8%
+  internal fraction                       58.3%            58.7%
+  terminal fraction                       41.7%            41.3%
+
+DEEP(Neff>=200) & occ<0.7
+  metric                               OLD (73)         NEW (72)
+  n_resid (distinct prot-pos)               291              291
+  distinct proteins                          28               28
+  single-protein max frac                 14.1%            14.1%
+  internal fraction                       73.2%            73.2%
+  terminal fraction                       26.8%            26.8%

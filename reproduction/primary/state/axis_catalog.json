@@ -1,0 +1,154 @@
+[
+  {
+    "number": 1,
+    "title": "Chemical similarity to training drugs",
+    "notebook": "notebooks/test-01.ipynb",
+    "stage": "initial",
+    "curve": "spc_tahoe_fewshot_target_context_chemical_support.csv",
+    "original_agent_determination": "No meaningful decline. HVG overlap@N was 0.013 higher in the least-similar bin than in the most-similar bin."
+  },
+  {
+    "number": 2,
+    "title": "Dose represented in training",
+    "notebook": "notebooks/test-02.ipynb",
+    "stage": "initial",
+    "curve": "exploratory_tahoe_dose_protocol_curve.csv",
+    "original_agent_determination": "The agent plotted dose as an exploratory protocol diagnostic and rejected it as a decreasing training-similarity axis because every dose level was represented in training. This entry retains that original curve and rejection."
+  },
+  {
+    "number": 3,
+    "title": "Reactome pathway-set similarity",
+    "notebook": "notebooks/test-03.ipynb",
+    "stage": "replogle",
+    "curve": "spc_replogle_fewshot_reactome_support.csv",
+    "original_agent_determination": "Above versus at or below 0.5 Jaccard similarity, overlap@N fell from 0.272 to 0.176 (HVG) and from 0.219 to 0.134 (SE)."
+  },
+  {
+    "number": 4,
+    "title": "Reactome mean",
+    "notebook": "notebooks/test-04.ipynb",
+    "stage": "replogle",
+    "curve": "spc_state_replogle_reactome_pathway_mean_train_support_v2.csv",
+    "original_agent_determination": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.092."
+  },
+  {
+    "number": 5,
+    "title": "Reactome log-mean (REP)",
+    "notebook": "notebooks/test-05.ipynb",
+    "stage": "replogle",
+    "curve": "spc_state_replogle_reactome_pathway_log_train_support_v2.csv",
+    "original_agent_determination": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.119. The selected measure retained a low-minus-high gap of \u22120.148 (HVG) and \u22120.128 (SE) within annotated genes."
+  },
+  {
+    "number": 6,
+    "title": "Reactome minimum",
+    "notebook": "notebooks/test-06.ipynb",
+    "stage": "replogle",
+    "curve": "spc_state_replogle_reactome_pathway_min_train_support_v2.csv",
+    "original_agent_determination": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.116."
+  },
+  {
+    "number": 7,
+    "title": "HGNC log-mean",
+    "notebook": "notebooks/test-07.ipynb",
+    "stage": "replogle",
+    "curve": "spc_state_replogle_hgnc_group_log_train_support_v2.csv",
+    "original_agent_determination": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.105."
+  },
+  {
+    "number": 8,
+    "title": "Gene-symbol prefix",
+    "notebook": "notebooks/test-08.ipynb",
+    "stage": "replogle",
+    "curve": "spc_state_replogle_symbol_family_support_control.csv",
+    "original_agent_determination": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.094."
+  },
+  {
+    "number": 9,
+    "title": "Cell context and annotation counts",
+    "notebook": "notebooks/test-09.ipynb",
+    "stage": "controls",
+    "curve": "controls_replogle_best_axis_level_summary_all.csv",
+    "original_agent_determination": "The association persisted after excluding unannotated genes and matching pathway counts. Some strata contained no eligible comparisons."
+  },
+  {
+    "number": 10,
+    "title": "Multivariable adjustment",
+    "notebook": "notebooks/test-10.ipynb",
+    "stage": "controls",
+    "curve": null,
+    "original_agent_determination": "The adjusted support coefficient remained positive (about 0.03 per SD after adjustment for DE-gene count)."
+  },
+  {
+    "number": 11,
+    "title": "Zero-shot pathway support",
+    "notebook": "notebooks/test-11.ipynb",
+    "stage": "zeroshot",
+    "curve": "spc_replogle_zeroshot_reactome_support_confirmation.csv",
+    "original_agent_determination": "The lowest and highest annotated bins differed by \u22120.129 (HVG) and \u22120.077 (SE) in the supplementary plot."
+  },
+  {
+    "number": 12,
+    "title": "Ligand-family training support",
+    "notebook": "notebooks/test-12.ipynb",
+    "stage": "parse",
+    "curve": "spc_parse_fewshot_ligand_family_support.csv",
+    "original_agent_determination": "Higher same-family support did not improve accuracy. The observed direction reversed."
+  },
+  {
+    "number": 13,
+    "title": "Reactome cross-ontology check",
+    "notebook": "notebooks/test-13.ipynb",
+    "stage": "ontology",
+    "curve": "spc_multi_pathway_reactome.csv",
+    "original_agent_determination": "High-minus-low overlap@N: few-shot HVG +0.114, SE +0.085. Zero-shot HVG +0.068, SE +0.044."
+  },
+  {
+    "number": 14,
+    "title": "HGNC_gene_group cross-ontology check",
+    "notebook": "notebooks/test-14.ipynb",
+    "stage": "ontology",
+    "curve": "spc_multi_pathway_hgnc_gene_group.csv",
+    "original_agent_determination": "High-minus-low overlap@N: few-shot HVG +0.114, SE +0.093. Zero-shot HVG +0.068, SE +0.047."
+  },
+  {
+    "number": 15,
+    "title": "GO_BP cross-ontology check",
+    "notebook": "notebooks/test-15.ipynb",
+    "stage": "ontology",
+    "curve": "spc_multi_pathway_go_bp.csv",
+    "original_agent_determination": "High-minus-low overlap@N: few-shot HVG +0.161, SE +0.135. Zero-shot HVG +0.087, SE +0.057."
+  },
+  {
+    "number": 16,
+    "title": "GO_MF cross-ontology check",
+    "notebook": "notebooks/test-16.ipynb",
+    "stage": "ontology",
+    "curve": "spc_multi_pathway_go_mf.csv",
+    "original_agent_determination": "High-minus-low overlap@N: few-shot HVG +0.014, SE +0.054. Zero-shot HVG +0.035, SE +0.048. The controlled few-shot coefficient was weak."
+  },
+  {
+    "number": 17,
+    "title": "GO_CC cross-ontology check",
+    "notebook": "notebooks/test-17.ipynb",
+    "stage": "ontology",
+    "curve": "spc_multi_pathway_go_cc.csv",
+    "original_agent_determination": "High-minus-low overlap@N: few-shot HVG +0.121, SE +0.090. Zero-shot HVG +0.081, SE +0.055."
+  },
+  {
+    "number": 18,
+    "title": "WikiPathways cross-ontology check",
+    "notebook": "notebooks/test-18.ipynb",
+    "stage": "ontology",
+    "curve": "spc_multi_pathway_wikipathways.csv",
+    "original_agent_determination": "High-minus-low overlap@N: few-shot HVG +0.104, SE +0.127. Zero-shot HVG +0.035, SE +0.034."
+  },
+  {
+    "number": 19,
+    "title": "KEGG cross-ontology check",
+    "notebook": "notebooks/test-19.ipynb",
+    "stage": "ontology",
+    "curve": "spc_multi_pathway_kegg.csv",
+    "original_agent_determination": "High-minus-low overlap@N: few-shot HVG +0.141, SE +0.128. Zero-shot HVG +0.066, SE +0.047."
+  }
+]

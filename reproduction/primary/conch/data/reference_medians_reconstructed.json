@@ -1,0 +1,42 @@
+{
+  "tissue": {
+    "columns": [
+      "tissue_fraction",
+      "white_fraction",
+      "dark_fraction",
+      "saturation_high_fraction"
+    ],
+    "axis_column": "axis_nct_tissue_fraction_similarity",
+    "median": [
+      0.9612464126275518,
+      0.03567442602040727,
+      0.002112563775510586,
+      0.07001355229591807
+    ],
+    "method": "Solve d_i^2 - ||x_i||^2 = -2*x_i dot m + ||m||^2 using all 7,180 original feature/distance pairs; no outcomes enter.",
+    "status": "Numerically reconstructed from retained prospective axis values; not original reference-file recovery",
+    "verification_rows": 7180,
+    "maximum_absolute_distance_error": 1.5543122344752192e-15,
+    "intercept_norm_error": 1.2212453270876722e-15
+  },
+  "texture": {
+    "columns": [
+      "edge_mean",
+      "edge_std",
+      "gray_std",
+      "gray_entropy"
+    ],
+    "axis_column": "axis_nct_texture_complexity_similarity",
+    "median": [
+      0.07000984996513726,
+      0.05631996505018688,
+      0.15197338163832452,
+      3.181565880775467
+    ],
+    "method": "Solve d_i^2 - ||x_i||^2 = -2*x_i dot m + ||m||^2 using all 7,180 original feature/distance pairs; no outcomes enter.",
+    "status": "Numerically reconstructed from retained prospective axis values; not original reference-file recovery",
+    "verification_rows": 7180,
+    "maximum_absolute_distance_error": 7.110215194394698e-13,
+    "intercept_norm_error": 2.1316282072803006e-14
+  }
+}

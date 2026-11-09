@@ -1,0 +1,38 @@
+{
+  "reference_status": "reconstructed from exact original public shard revision and deterministic sampling",
+  "original_saved_csv_status": "not located; original export omitted reference tables; Sept22 chat already reports original source root missing",
+  "matrix": "data/nct_reference_features.reconstructed.csv",
+  "matrix_sha256": "6bf27c2ae6ca2a57c3f1037f1ee4206d92ab7ffa6736a8957a1409303f13920c",
+  "reference_images": 1800,
+  "features_per_image": 67,
+  "axis_assignments_checked": 28720,
+  "axis_assignment_mismatches": 0,
+  "baseline_labels_checked": 25960,
+  "baseline_label_mismatches": 0,
+  "maximum_knn_distance_difference": 0.00010517578130020411,
+  "maximum_median_axis_distance_difference": 8.881784197001252e-16,
+  "server_observed_and_locally_matched_versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.16.2",
+    "scikit-learn": "1.7.2",
+    "pandas": "3.0.3",
+    "Pillow": "12.1.1"
+  },
+  "earlier_local_environment_comparison": {
+    "versions": {
+      "numpy": "1.26.4",
+      "scipy": "1.14.1",
+      "scikit-learn": "1.6.0",
+      "pandas": "2.1.4",
+      "Pillow": "11.0.0"
+    },
+    "logistic_label_mismatches": 32,
+    "status": "resolved by pinned version replay"
+  },
+  "download_recipe": "reconstruct_reference.py",
+  "offline_pixel_replay": "replay_reference_pixels.py",
+  "downstream_check": "verify_reference.py",
+  "environment": "requirements_reference.txt",
+  "raw_image_and_shard_identities": "data/reference_reconstruction/identities.json",
+  "original_location_chat_records": "originals/reference_location_trace.json"
+}

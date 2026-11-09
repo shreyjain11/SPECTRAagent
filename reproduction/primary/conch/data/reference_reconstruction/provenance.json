@@ -1,0 +1,18 @@
+{
+  "status": "deterministic reconstruction of original saved input; original CSV itself not found",
+  "public_dataset": "1aurent/NCT-CRC-HE",
+  "revision": "97765ecb14bf11ce7bb8779a1097d187844a67cb",
+  "revision_last_modified": "2024-05-25T17:11:03.000Z",
+  "selection": "First200 matching-label records in each of the nine exact original normalized NCT shards, labels0..8 in sorted order",
+  "source_code": "originals/scripts/build_crc_candidate_table.py",
+  "recipe": "reconstruct_reference.py",
+  "pixel_replay": "replay_reference_pixels.py",
+  "requirements": "requirements_reference.txt",
+  "rows": 1800,
+  "download_bytes": 239835541,
+  "validation": "data/reference_reconstruction/verification_server_versions.json",
+  "historical_trace": "originals/reference_location_trace.json",
+  "original_csv_location": "/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/spectra_ready_dataset/nct_reference_features.csv",
+  "location_evidence": "Original export command omitted reference inputs; Sept22 original chat already reported source run MISSING. Current export has only tumor panels and diagnostics.",
+  "remaining_numerical_difference": "Float32 kNN values differ by at most1.052e-4 across platforms; every original axis level and both baseline predictions match."
+}

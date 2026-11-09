@@ -1,0 +1,1142 @@
+{
+  "schema_version": 1,
+  "package_root": "reproduction/primary/conch",
+  "analyses": [
+    {
+      "analysis_id": "conch-primary/test-01",
+      "notebook": "notebooks/01-conch-primary.ipynb",
+      "code_export": "code/01-conch-primary.py",
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 1,
+          "end_line": 14
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 15,
+          "end_line": 49
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 50,
+          "end_line": 71
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 72,
+          "end_line": 102
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 103,
+          "end_line": 118
+        },
+        {
+          "notebook_cell": 10,
+          "start_line": 119,
+          "end_line": 146
+        },
+        {
+          "notebook_cell": 13,
+          "start_line": 147,
+          "end_line": 158
+        },
+        {
+          "notebook_cell": 14,
+          "start_line": 159,
+          "end_line": 190
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 191,
+          "end_line": 219
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 220,
+          "end_line": 232
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 233,
+          "end_line": 238
+        },
+        {
+          "notebook_cell": 23,
+          "start_line": 239,
+          "end_line": 246
+        },
+        {
+          "notebook_cell": 25,
+          "start_line": 247,
+          "end_line": 251
+        },
+        {
+          "notebook_cell": 26,
+          "start_line": 252,
+          "end_line": 256
+        },
+        {
+          "notebook_cell": 29,
+          "start_line": 257,
+          "end_line": 268
+        }
+      ],
+      "data": {
+        "exact_derived_payloads": [
+          "payload/data/discovery.csv.gz",
+          "payload/data/nct_reference_features.reconstructed.csv.gz"
+        ],
+        "checksums": "PAYLOAD_MANIFEST.json",
+        "materialization": "bootstrap_replay.py",
+        "original_image_ids_and_reference_sampling": [
+          "payload/data/reference_reconstruction/identities.json.gz",
+          "data/reference_reconstruction/provenance.json"
+        ],
+        "raw_acquisition": [
+          "original_pipeline.py",
+          "acquire_original_inputs.py",
+          "reconstruct_reference.py"
+        ],
+        "dataset_revision": "97765ecb14bf11ce7bb8779a1097d187844a67cb",
+        "target_rows": {
+          "discovery": 7180
+        },
+        "reference_rows": 1800
+      },
+      "processing": {
+        "source": "originals/scripts/build_crc_candidate_table.py",
+        "functions": [
+          "image_features",
+          "build_crc_features",
+          "build_nct_reference_features"
+        ],
+        "reference_reconstruction": "reconstruct_reference.py",
+        "exact_original_script_provenance": "originals/script_provenance.json",
+        "execution_adapter": "run_original_stage.py",
+        "scope": "67 prospective RGB/HSV/intensity/edge/entropy/tissue features, computed without model outcomes"
+      },
+      "axis": {
+        "name": "nct_color_texture_proximity",
+        "source": "originals/scripts/freeze_axes.py",
+        "functions": [
+          "feature_columns",
+          "zscore",
+          "mean_knn_distance",
+          "main"
+        ],
+        "interpretation": "Pooled color/texture proximity"
+      },
+      "levels": {
+        "source": "originals/scripts/freeze_axes.py",
+        "function": "assign_similarity_levels",
+        "discovery_levels": 6,
+        "ordering": "level 1 highest similarity; rank/quantile equal-frequency groups",
+        "all_four_axis_levels_recomputed": true
+      },
+      "evaluation": {
+        "target_source": "originals/scripts/score_conch_crc_val.py",
+        "target_functions": [
+          "load_crc_prompts",
+          "main"
+        ],
+        "source_revision": "141cc09c7d4ff33d8eda562bd75169b457f71a62",
+        "checkpoint_revision": "f9ca9f877171a28ade80228fb195ac5d79003357",
+        "prompt": "prompts/crc100k_prompts_all_per_class.json, set0, ordered ADI BACK DEB LYM MUC MUS NORM STR TUM",
+        "baseline_source": "originals/scripts/analyze_spc.py",
+        "baseline_methods": [
+          "standardized nearest centroid",
+          "standardized LogisticRegression(C=1,lbfgs,max_iter=1000,random_state=0)"
+        ],
+        "default_execution": "Retained per-image nine-class logits/probabilities/labels; original reference classifiers refit. No neural inference in portable default.",
+        "full_execution": "RUN_ORIGINAL_WORKFLOW executes acquired raw images through the original scoring scripts and generated scores feed all curves.",
+        "full_raw_to_model_run_executed_during_integration": false
+      },
+      "curves_and_diagnostics": {
+        "aggregation": "originals/scripts/analyze_spc.py",
+        "functions": [
+          "metrics",
+          "metric_by_level",
+          "class_adjusted_residual_by_level",
+          "stable_class_macro"
+        ],
+        "historical_metric_summary": "originals/run/artifacts/spc_analysis/spc_summary.json",
+        "notebook_plots": "selected individual score-table values -> plot_axis -> saved figure",
+        "comparisons": [
+          "CONCH",
+          "fixed centroid",
+          "fixed logistic",
+          "class composition and within-class controls"
+        ]
+      },
+      "historical_decision": {
+        "text": "Not retained as broad final claim; class-composition sensitivity motivated localized follow-up.",
+        "source": "originals/agent_determinations.json",
+        "native_session_lines": [
+          627,
+          632,
+          713,
+          719,
+          725,
+          745
+        ],
+        "final_report": "originals/run/final_report.md",
+        "scope": "Original agent determination, not newly assigned acceptance criteria"
+      },
+      "remaining_limits": [
+        "Portable default has no raw-image cache; pixel-level checks explicitly report not executed.",
+        "Original reference CSV was not found; deterministic reconstructed matrix and exact-image recipe supply its input role.",
+        "Full clean-environment raw-image model rerun remains unexecuted; gated model access, dependencies, storage and compute are prerequisites."
+      ]
+    },
+    {
+      "analysis_id": "conch-primary/test-02",
+      "notebook": "notebooks/02-conch-primary.ipynb",
+      "code_export": "code/02-conch-primary.py",
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 1,
+          "end_line": 14
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 15,
+          "end_line": 49
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 50,
+          "end_line": 71
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 72,
+          "end_line": 102
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 103,
+          "end_line": 118
+        },
+        {
+          "notebook_cell": 10,
+          "start_line": 119,
+          "end_line": 146
+        },
+        {
+          "notebook_cell": 13,
+          "start_line": 147,
+          "end_line": 158
+        },
+        {
+          "notebook_cell": 14,
+          "start_line": 159,
+          "end_line": 190
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 191,
+          "end_line": 219
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 220,
+          "end_line": 225
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 226,
+          "end_line": 233
+        },
+        {
+          "notebook_cell": 23,
+          "start_line": 234,
+          "end_line": 238
+        },
+        {
+          "notebook_cell": 24,
+          "start_line": 239,
+          "end_line": 243
+        },
+        {
+          "notebook_cell": 27,
+          "start_line": 244,
+          "end_line": 255
+        }
+      ],
+      "data": {
+        "exact_derived_payloads": [
+          "payload/data/discovery.csv.gz",
+          "payload/data/nct_reference_features.reconstructed.csv.gz"
+        ],
+        "checksums": "PAYLOAD_MANIFEST.json",
+        "materialization": "bootstrap_replay.py",
+        "original_image_ids_and_reference_sampling": [
+          "payload/data/reference_reconstruction/identities.json.gz",
+          "data/reference_reconstruction/provenance.json"
+        ],
+        "raw_acquisition": [
+          "original_pipeline.py",
+          "acquire_original_inputs.py",
+          "reconstruct_reference.py"
+        ],
+        "dataset_revision": "97765ecb14bf11ce7bb8779a1097d187844a67cb",
+        "target_rows": {
+          "discovery": 7180
+        },
+        "reference_rows": 1800
+      },
+      "processing": {
+        "source": "originals/scripts/build_crc_candidate_table.py",
+        "functions": [
+          "image_features",
+          "build_crc_features",
+          "build_nct_reference_features"
+        ],
+        "reference_reconstruction": "reconstruct_reference.py",
+        "exact_original_script_provenance": "originals/script_provenance.json",
+        "execution_adapter": "run_original_stage.py",
+        "scope": "67 prospective RGB/HSV/intensity/edge/entropy/tissue features, computed without model outcomes"
+      },
+      "axis": {
+        "name": "nct_color_proximity",
+        "source": "originals/scripts/freeze_axes.py",
+        "functions": [
+          "feature_columns",
+          "zscore",
+          "mean_knn_distance",
+          "main"
+        ],
+        "interpretation": "Color-only proximity"
+      },
+      "levels": {
+        "source": "originals/scripts/freeze_axes.py",
+        "function": "assign_similarity_levels",
+        "discovery_levels": 6,
+        "ordering": "level 1 highest similarity; rank/quantile equal-frequency groups",
+        "all_four_axis_levels_recomputed": true
+      },
+      "evaluation": {
+        "target_source": "originals/scripts/score_conch_crc_val.py",
+        "target_functions": [
+          "load_crc_prompts",
+          "main"
+        ],
+        "source_revision": "141cc09c7d4ff33d8eda562bd75169b457f71a62",
+        "checkpoint_revision": "f9ca9f877171a28ade80228fb195ac5d79003357",
+        "prompt": "prompts/crc100k_prompts_all_per_class.json, set0, ordered ADI BACK DEB LYM MUC MUS NORM STR TUM",
+        "baseline_source": "originals/scripts/analyze_spc.py",
+        "baseline_methods": [
+          "standardized nearest centroid",
+          "standardized LogisticRegression(C=1,lbfgs,max_iter=1000,random_state=0)"
+        ],
+        "default_execution": "Retained per-image nine-class logits/probabilities/labels; original reference classifiers refit. No neural inference in portable default.",
+        "full_execution": "RUN_ORIGINAL_WORKFLOW executes acquired raw images through the original scoring scripts and generated scores feed all curves.",
+        "full_raw_to_model_run_executed_during_integration": false
+      },
+      "curves_and_diagnostics": {
+        "aggregation": "originals/scripts/analyze_spc.py",
+        "functions": [
+          "metrics",
+          "metric_by_level",
+          "class_adjusted_residual_by_level",
+          "stable_class_macro"
+        ],
+        "historical_metric_summary": "originals/run/artifacts/spc_analysis/spc_summary.json",
+        "notebook_plots": "selected individual score-table values -> plot_axis -> saved figure",
+        "comparisons": [
+          "CONCH",
+          "fixed centroid",
+          "fixed logistic",
+          "class composition and within-class controls"
+        ]
+      },
+      "historical_decision": {
+        "text": "Secondary screen; no separate accepted/rejected verdict in original final report; not selected.",
+        "source": "originals/agent_determinations.json",
+        "native_session_lines": [
+          627,
+          632,
+          713
+        ],
+        "final_report": "originals/run/final_report.md",
+        "scope": "Original agent determination, not newly assigned acceptance criteria"
+      },
+      "remaining_limits": [
+        "Portable default has no raw-image cache; pixel-level checks explicitly report not executed.",
+        "Original reference CSV was not found; deterministic reconstructed matrix and exact-image recipe supply its input role.",
+        "Full clean-environment raw-image model rerun remains unexecuted; gated model access, dependencies, storage and compute are prerequisites."
+      ]
+    },
+    {
+      "analysis_id": "conch-primary/test-03",
+      "notebook": "notebooks/03-conch-primary.ipynb",
+      "code_export": "code/03-conch-primary.py",
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 1,
+          "end_line": 14
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 15,
+          "end_line": 49
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 50,
+          "end_line": 71
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 72,
+          "end_line": 102
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 103,
+          "end_line": 118
+        },
+        {
+          "notebook_cell": 10,
+          "start_line": 119,
+          "end_line": 146
+        },
+        {
+          "notebook_cell": 13,
+          "start_line": 147,
+          "end_line": 158
+        },
+        {
+          "notebook_cell": 14,
+          "start_line": 159,
+          "end_line": 190
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 191,
+          "end_line": 219
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 220,
+          "end_line": 225
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 226,
+          "end_line": 234
+        },
+        {
+          "notebook_cell": 22,
+          "start_line": 235,
+          "end_line": 242
+        },
+        {
+          "notebook_cell": 24,
+          "start_line": 243,
+          "end_line": 247
+        },
+        {
+          "notebook_cell": 25,
+          "start_line": 248,
+          "end_line": 252
+        },
+        {
+          "notebook_cell": 28,
+          "start_line": 253,
+          "end_line": 264
+        }
+      ],
+      "data": {
+        "exact_derived_payloads": [
+          "payload/data/discovery.csv.gz",
+          "payload/data/nct_reference_features.reconstructed.csv.gz"
+        ],
+        "checksums": "PAYLOAD_MANIFEST.json",
+        "materialization": "bootstrap_replay.py",
+        "original_image_ids_and_reference_sampling": [
+          "payload/data/reference_reconstruction/identities.json.gz",
+          "data/reference_reconstruction/provenance.json"
+        ],
+        "raw_acquisition": [
+          "original_pipeline.py",
+          "acquire_original_inputs.py",
+          "reconstruct_reference.py"
+        ],
+        "dataset_revision": "97765ecb14bf11ce7bb8779a1097d187844a67cb",
+        "target_rows": {
+          "discovery": 7180
+        },
+        "reference_rows": 1800
+      },
+      "processing": {
+        "source": "originals/scripts/build_crc_candidate_table.py",
+        "functions": [
+          "image_features",
+          "build_crc_features",
+          "build_nct_reference_features"
+        ],
+        "reference_reconstruction": "reconstruct_reference.py",
+        "exact_original_script_provenance": "originals/script_provenance.json",
+        "execution_adapter": "run_original_stage.py",
+        "scope": "67 prospective RGB/HSV/intensity/edge/entropy/tissue features, computed without model outcomes"
+      },
+      "axis": {
+        "name": "nct_texture_complexity_proximity",
+        "source": "originals/scripts/freeze_axes.py",
+        "functions": [
+          "feature_columns",
+          "zscore",
+          "mean_knn_distance",
+          "main"
+        ],
+        "interpretation": "Texture-only proximity"
+      },
+      "levels": {
+        "source": "originals/scripts/freeze_axes.py",
+        "function": "assign_similarity_levels",
+        "discovery_levels": 6,
+        "ordering": "level 1 highest similarity; rank/quantile equal-frequency groups",
+        "all_four_axis_levels_recomputed": true
+      },
+      "evaluation": {
+        "target_source": "originals/scripts/score_conch_crc_val.py",
+        "target_functions": [
+          "load_crc_prompts",
+          "main"
+        ],
+        "source_revision": "141cc09c7d4ff33d8eda562bd75169b457f71a62",
+        "checkpoint_revision": "f9ca9f877171a28ade80228fb195ac5d79003357",
+        "prompt": "prompts/crc100k_prompts_all_per_class.json, set0, ordered ADI BACK DEB LYM MUC MUS NORM STR TUM",
+        "baseline_source": "originals/scripts/analyze_spc.py",
+        "baseline_methods": [
+          "standardized nearest centroid",
+          "standardized LogisticRegression(C=1,lbfgs,max_iter=1000,random_state=0)"
+        ],
+        "default_execution": "Retained per-image nine-class logits/probabilities/labels; original reference classifiers refit. No neural inference in portable default.",
+        "full_execution": "RUN_ORIGINAL_WORKFLOW executes acquired raw images through the original scoring scripts and generated scores feed all curves.",
+        "full_raw_to_model_run_executed_during_integration": false
+      },
+      "curves_and_diagnostics": {
+        "aggregation": "originals/scripts/analyze_spc.py",
+        "functions": [
+          "metrics",
+          "metric_by_level",
+          "class_adjusted_residual_by_level",
+          "stable_class_macro"
+        ],
+        "historical_metric_summary": "originals/run/artifacts/spc_analysis/spc_summary.json",
+        "notebook_plots": "selected individual score-table values -> plot_axis -> saved figure",
+        "comparisons": [
+          "CONCH",
+          "fixed centroid",
+          "fixed logistic",
+          "class composition and within-class controls"
+        ]
+      },
+      "historical_decision": {
+        "text": "Secondary screen; no separate accepted/rejected verdict in original final report; not selected.",
+        "source": "originals/agent_determinations.json",
+        "native_session_lines": [
+          627,
+          632,
+          713
+        ],
+        "final_report": "originals/run/final_report.md",
+        "scope": "Original agent determination, not newly assigned acceptance criteria"
+      },
+      "remaining_limits": [
+        "Portable default has no raw-image cache; pixel-level checks explicitly report not executed.",
+        "Original reference CSV was not found; deterministic reconstructed matrix and exact-image recipe supply its input role.",
+        "Full clean-environment raw-image model rerun remains unexecuted; gated model access, dependencies, storage and compute are prerequisites."
+      ]
+    },
+    {
+      "analysis_id": "conch-primary/test-04",
+      "notebook": "notebooks/04-conch-primary.ipynb",
+      "code_export": "code/04-conch-primary.py",
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 1,
+          "end_line": 14
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 15,
+          "end_line": 49
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 50,
+          "end_line": 71
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 72,
+          "end_line": 102
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 103,
+          "end_line": 118
+        },
+        {
+          "notebook_cell": 10,
+          "start_line": 119,
+          "end_line": 146
+        },
+        {
+          "notebook_cell": 13,
+          "start_line": 147,
+          "end_line": 158
+        },
+        {
+          "notebook_cell": 14,
+          "start_line": 159,
+          "end_line": 190
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 191,
+          "end_line": 219
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 220,
+          "end_line": 225
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 226,
+          "end_line": 234
+        },
+        {
+          "notebook_cell": 22,
+          "start_line": 235,
+          "end_line": 242
+        },
+        {
+          "notebook_cell": 24,
+          "start_line": 243,
+          "end_line": 247
+        },
+        {
+          "notebook_cell": 25,
+          "start_line": 248,
+          "end_line": 252
+        },
+        {
+          "notebook_cell": 28,
+          "start_line": 253,
+          "end_line": 256
+        },
+        {
+          "notebook_cell": 29,
+          "start_line": 257,
+          "end_line": 263
+        },
+        {
+          "notebook_cell": 30,
+          "start_line": 264,
+          "end_line": 289
+        },
+        {
+          "notebook_cell": 33,
+          "start_line": 290,
+          "end_line": 313
+        },
+        {
+          "notebook_cell": 36,
+          "start_line": 314,
+          "end_line": 325
+        }
+      ],
+      "data": {
+        "exact_derived_payloads": [
+          "payload/data/discovery.csv.gz",
+          "payload/data/confirmation.csv.gz",
+          "payload/data/expansion.csv.gz",
+          "payload/data/nct_reference_features.reconstructed.csv.gz"
+        ],
+        "checksums": "PAYLOAD_MANIFEST.json",
+        "materialization": "bootstrap_replay.py",
+        "original_image_ids_and_reference_sampling": [
+          "payload/data/reference_reconstruction/identities.json.gz",
+          "data/reference_reconstruction/provenance.json"
+        ],
+        "raw_acquisition": [
+          "original_pipeline.py",
+          "acquire_original_inputs.py",
+          "reconstruct_reference.py"
+        ],
+        "dataset_revision": "97765ecb14bf11ce7bb8779a1097d187844a67cb",
+        "target_rows": {
+          "discovery": 7180,
+          "confirmation": 1800,
+          "expansion": 4000
+        },
+        "reference_rows": 1800
+      },
+      "processing": {
+        "source": "originals/scripts/build_crc_candidate_table.py",
+        "functions": [
+          "image_features",
+          "build_crc_features",
+          "build_nct_reference_features"
+        ],
+        "reference_reconstruction": "reconstruct_reference.py",
+        "exact_original_script_provenance": "originals/script_provenance.json",
+        "execution_adapter": "run_original_stage.py",
+        "scope": "67 prospective RGB/HSV/intensity/edge/entropy/tissue features, computed without model outcomes",
+        "followup_sources": [
+          "originals/scripts/build_tum_confirmation_panel.py",
+          "originals/scripts/build_tum_expansion_panel.py"
+        ]
+      },
+      "axis": {
+        "name": "nct_tissue_fraction_proximity",
+        "source": "originals/scripts/freeze_axes.py",
+        "functions": [
+          "feature_columns",
+          "zscore",
+          "mean_knn_distance",
+          "main"
+        ],
+        "interpretation": "Within-TUM tissue/stain proximity"
+      },
+      "levels": {
+        "source": "originals/scripts/freeze_axes.py",
+        "function": "assign_similarity_levels",
+        "discovery_levels": 6,
+        "ordering": "level 1 highest similarity; rank/quantile equal-frequency groups",
+        "all_four_axis_levels_recomputed": true,
+        "confirmation_levels": 6,
+        "expansion_levels": 10
+      },
+      "evaluation": {
+        "target_source": "originals/scripts/score_conch_crc_val.py",
+        "target_functions": [
+          "load_crc_prompts",
+          "main"
+        ],
+        "source_revision": "141cc09c7d4ff33d8eda562bd75169b457f71a62",
+        "checkpoint_revision": "f9ca9f877171a28ade80228fb195ac5d79003357",
+        "prompt": "prompts/crc100k_prompts_all_per_class.json, set0, ordered ADI BACK DEB LYM MUC MUS NORM STR TUM",
+        "baseline_source": "originals/scripts/analyze_spc.py",
+        "baseline_methods": [
+          "standardized nearest centroid",
+          "standardized LogisticRegression(C=1,lbfgs,max_iter=1000,random_state=0)"
+        ],
+        "default_execution": "Retained per-image nine-class logits/probabilities/labels; original reference classifiers refit. No neural inference in portable default.",
+        "full_execution": "RUN_ORIGINAL_WORKFLOW executes acquired raw images through the original scoring scripts and generated scores feed all curves.",
+        "full_raw_to_model_run_executed_during_integration": false,
+        "followup_sources": [
+          "originals/scripts/score_tum_confirmation.py",
+          "originals/scripts/score_tum_panel_generic.py",
+          "originals/scripts/analyze_tum_confirmation.py"
+        ]
+      },
+      "curves_and_diagnostics": {
+        "aggregation": "originals/scripts/analyze_spc.py",
+        "functions": [
+          "metrics",
+          "metric_by_level",
+          "class_adjusted_residual_by_level",
+          "stable_class_macro"
+        ],
+        "historical_metric_summary": "originals/run/artifacts/spc_analysis/spc_summary.json",
+        "notebook_plots": "selected individual score-table values -> plot_axis -> saved figure",
+        "comparisons": [
+          "CONCH",
+          "fixed centroid",
+          "fixed logistic",
+          "class composition and within-class controls"
+        ],
+        "followup_analysis": [
+          "originals/run/artifacts/tum_confirmation/analysis.json",
+          "originals/run/artifacts/tum_expansion/analysis.json",
+          "originals/scripts/report_tum_expansion.py"
+        ],
+        "uncertainty": "Original Wilson intervals and original pooled levels1\u20137 versus8\u201310 contrast; fresh numerical results separated from hardcoded historical report prose."
+      },
+      "historical_decision": {
+        "text": "Retained original localized finding; 1,800-image confirmation and 4,000-image expansion. Original limit: weak for independent-site/deployment generalization.",
+        "source": "originals/agent_determinations.json",
+        "native_session_lines": [
+          627,
+          632,
+          713,
+          719,
+          725,
+          745
+        ],
+        "final_report": "originals/run/final_report.md",
+        "scope": "Original agent determination, not newly assigned acceptance criteria",
+        "expansion_source": "originals/expansion_agent_determinations.json",
+        "expansion_native_line": 1834
+      },
+      "remaining_limits": [
+        "Portable default has no raw-image cache; pixel-level checks explicitly report not executed.",
+        "Original reference CSV was not found; deterministic reconstructed matrix and exact-image recipe supply its input role.",
+        "Full clean-environment raw-image model rerun remains unexecuted; gated model access, dependencies, storage and compute are prerequisites."
+      ]
+    },
+    {
+      "analysis_id": "conch-primary/test-05",
+      "notebook": "notebooks/05-conch-primary.ipynb",
+      "code_export": "code/05-conch-primary.py",
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 1,
+          "end_line": 14
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 15,
+          "end_line": 49
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 50,
+          "end_line": 71
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 72,
+          "end_line": 102
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 103,
+          "end_line": 118
+        },
+        {
+          "notebook_cell": 10,
+          "start_line": 119,
+          "end_line": 146
+        },
+        {
+          "notebook_cell": 13,
+          "start_line": 147,
+          "end_line": 158
+        },
+        {
+          "notebook_cell": 14,
+          "start_line": 159,
+          "end_line": 190
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 191,
+          "end_line": 219
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 220,
+          "end_line": 222
+        },
+        {
+          "notebook_cell": 20,
+          "start_line": 223,
+          "end_line": 234
+        },
+        {
+          "notebook_cell": 23,
+          "start_line": 235,
+          "end_line": 246
+        }
+      ],
+      "data": {
+        "exact_derived_payloads": [
+          "payload/data/discovery.csv.gz",
+          "payload/data/nct_reference_features.reconstructed.csv.gz"
+        ],
+        "checksums": "PAYLOAD_MANIFEST.json",
+        "materialization": "bootstrap_replay.py",
+        "original_image_ids_and_reference_sampling": [
+          "payload/data/reference_reconstruction/identities.json.gz",
+          "data/reference_reconstruction/provenance.json"
+        ],
+        "raw_acquisition": [
+          "original_pipeline.py",
+          "acquire_original_inputs.py",
+          "reconstruct_reference.py"
+        ],
+        "dataset_revision": "97765ecb14bf11ce7bb8779a1097d187844a67cb",
+        "target_rows": {
+          "discovery": 7180
+        },
+        "reference_rows": 1800
+      },
+      "processing": {
+        "source": "originals/scripts/build_crc_candidate_table.py",
+        "functions": [
+          "image_features",
+          "build_crc_features",
+          "build_nct_reference_features"
+        ],
+        "reference_reconstruction": "reconstruct_reference.py",
+        "exact_original_script_provenance": "originals/script_provenance.json",
+        "execution_adapter": "run_original_stage.py",
+        "scope": "67 prospective RGB/HSV/intensity/edge/entropy/tissue features, computed without model outcomes"
+      },
+      "axis": {
+        "name": "all_four_original_axes",
+        "source": "originals/scripts/freeze_axes.py",
+        "functions": [
+          "feature_columns",
+          "zscore",
+          "mean_knn_distance",
+          "main"
+        ],
+        "interpretation": "Tissue-class composition control"
+      },
+      "levels": {
+        "source": "originals/scripts/freeze_axes.py",
+        "function": "assign_similarity_levels",
+        "discovery_levels": 6,
+        "ordering": "level 1 highest similarity; rank/quantile equal-frequency groups",
+        "all_four_axis_levels_recomputed": true
+      },
+      "evaluation": {
+        "target_source": "originals/scripts/score_conch_crc_val.py",
+        "target_functions": [
+          "load_crc_prompts",
+          "main"
+        ],
+        "source_revision": "141cc09c7d4ff33d8eda562bd75169b457f71a62",
+        "checkpoint_revision": "f9ca9f877171a28ade80228fb195ac5d79003357",
+        "prompt": "prompts/crc100k_prompts_all_per_class.json, set0, ordered ADI BACK DEB LYM MUC MUS NORM STR TUM",
+        "baseline_source": "originals/scripts/analyze_spc.py",
+        "baseline_methods": [
+          "standardized nearest centroid",
+          "standardized LogisticRegression(C=1,lbfgs,max_iter=1000,random_state=0)"
+        ],
+        "default_execution": "Retained per-image nine-class logits/probabilities/labels; original reference classifiers refit. No neural inference in portable default.",
+        "full_execution": "RUN_ORIGINAL_WORKFLOW executes acquired raw images through the original scoring scripts and generated scores feed all curves.",
+        "full_raw_to_model_run_executed_during_integration": false
+      },
+      "curves_and_diagnostics": {
+        "aggregation": "originals/scripts/analyze_spc.py",
+        "functions": [
+          "metrics",
+          "metric_by_level",
+          "class_adjusted_residual_by_level",
+          "stable_class_macro"
+        ],
+        "historical_metric_summary": "originals/run/artifacts/spc_analysis/spc_summary.json",
+        "notebook_plots": "selected individual score-table values -> plot_axis -> saved figure",
+        "comparisons": [
+          "CONCH",
+          "fixed centroid",
+          "fixed logistic",
+          "class composition and within-class controls"
+        ]
+      },
+      "historical_decision": {
+        "text": "Control explaining why pooled raw accuracy was not retained as broad claim; not separate confirmed failure.",
+        "source": "originals/agent_determinations.json",
+        "native_session_lines": [
+          627,
+          632,
+          713,
+          719,
+          725,
+          745
+        ],
+        "final_report": "originals/run/final_report.md",
+        "scope": "Original agent determination, not newly assigned acceptance criteria"
+      },
+      "remaining_limits": [
+        "Portable default has no raw-image cache; pixel-level checks explicitly report not executed.",
+        "Original reference CSV was not found; deterministic reconstructed matrix and exact-image recipe supply its input role.",
+        "Full clean-environment raw-image model rerun remains unexecuted; gated model access, dependencies, storage and compute are prerequisites."
+      ]
+    },
+    {
+      "analysis_id": "conch-primary/test-06",
+      "notebook": "notebooks/06-conch-primary.ipynb",
+      "code_export": "code/06-conch-primary.py",
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 1,
+          "end_line": 14
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 15,
+          "end_line": 49
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 50,
+          "end_line": 71
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 72,
+          "end_line": 102
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 103,
+          "end_line": 118
+        },
+        {
+          "notebook_cell": 10,
+          "start_line": 119,
+          "end_line": 146
+        },
+        {
+          "notebook_cell": 13,
+          "start_line": 147,
+          "end_line": 158
+        },
+        {
+          "notebook_cell": 14,
+          "start_line": 159,
+          "end_line": 190
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 191,
+          "end_line": 219
+        },
+        {
+          "notebook_cell": 20,
+          "start_line": 220,
+          "end_line": 222
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 223,
+          "end_line": 225
+        },
+        {
+          "notebook_cell": 22,
+          "start_line": 226,
+          "end_line": 233
+        },
+        {
+          "notebook_cell": 25,
+          "start_line": 234,
+          "end_line": 245
+        }
+      ],
+      "data": {
+        "exact_derived_payloads": [
+          "payload/data/discovery.csv.gz",
+          "payload/data/nct_reference_features.reconstructed.csv.gz"
+        ],
+        "checksums": "PAYLOAD_MANIFEST.json",
+        "materialization": "bootstrap_replay.py",
+        "original_image_ids_and_reference_sampling": [
+          "payload/data/reference_reconstruction/identities.json.gz",
+          "data/reference_reconstruction/provenance.json"
+        ],
+        "raw_acquisition": [
+          "original_pipeline.py",
+          "acquire_original_inputs.py",
+          "reconstruct_reference.py"
+        ],
+        "dataset_revision": "97765ecb14bf11ce7bb8779a1097d187844a67cb",
+        "target_rows": {
+          "discovery": 7180
+        },
+        "reference_rows": 1800
+      },
+      "processing": {
+        "source": "originals/scripts/build_crc_candidate_table.py",
+        "functions": [
+          "image_features",
+          "build_crc_features",
+          "build_nct_reference_features"
+        ],
+        "reference_reconstruction": "reconstruct_reference.py",
+        "exact_original_script_provenance": "originals/script_provenance.json",
+        "execution_adapter": "run_original_stage.py",
+        "scope": "67 prospective RGB/HSV/intensity/edge/entropy/tissue features, computed without model outcomes"
+      },
+      "axis": {
+        "name": "all_four_original_axes",
+        "source": "originals/scripts/freeze_axes.py",
+        "functions": [
+          "feature_columns",
+          "zscore",
+          "mean_knn_distance",
+          "main"
+        ],
+        "interpretation": "Fixed reference classifiers"
+      },
+      "levels": {
+        "source": "originals/scripts/freeze_axes.py",
+        "function": "assign_similarity_levels",
+        "discovery_levels": 6,
+        "ordering": "level 1 highest similarity; rank/quantile equal-frequency groups",
+        "all_four_axis_levels_recomputed": true
+      },
+      "evaluation": {
+        "target_source": "originals/scripts/score_conch_crc_val.py",
+        "target_functions": [
+          "load_crc_prompts",
+          "main"
+        ],
+        "source_revision": "141cc09c7d4ff33d8eda562bd75169b457f71a62",
+        "checkpoint_revision": "f9ca9f877171a28ade80228fb195ac5d79003357",
+        "prompt": "prompts/crc100k_prompts_all_per_class.json, set0, ordered ADI BACK DEB LYM MUC MUS NORM STR TUM",
+        "baseline_source": "originals/scripts/analyze_spc.py",
+        "baseline_methods": [
+          "standardized nearest centroid",
+          "standardized LogisticRegression(C=1,lbfgs,max_iter=1000,random_state=0)"
+        ],
+        "default_execution": "Retained per-image nine-class logits/probabilities/labels; original reference classifiers refit. No neural inference in portable default.",
+        "full_execution": "RUN_ORIGINAL_WORKFLOW executes acquired raw images through the original scoring scripts and generated scores feed all curves.",
+        "full_raw_to_model_run_executed_during_integration": false
+      },
+      "curves_and_diagnostics": {
+        "aggregation": "originals/scripts/analyze_spc.py",
+        "functions": [
+          "metrics",
+          "metric_by_level",
+          "class_adjusted_residual_by_level",
+          "stable_class_macro"
+        ],
+        "historical_metric_summary": "originals/run/artifacts/spc_analysis/spc_summary.json",
+        "notebook_plots": "selected individual score-table values -> plot_axis -> saved figure",
+        "comparisons": [
+          "CONCH",
+          "fixed centroid",
+          "fixed logistic",
+          "class composition and within-class controls"
+        ]
+      },
+      "historical_decision": {
+        "text": "Centroid and logistic comparators for all four screens; no CONCH fine-tuning.",
+        "source": "originals/agent_determinations.json",
+        "native_session_lines": [
+          627,
+          632,
+          713,
+          719,
+          725,
+          745
+        ],
+        "final_report": "originals/run/final_report.md",
+        "scope": "Original agent determination, not newly assigned acceptance criteria"
+      },
+      "remaining_limits": [
+        "Portable default has no raw-image cache; pixel-level checks explicitly report not executed.",
+        "Original reference CSV was not found; deterministic reconstructed matrix and exact-image recipe supply its input role.",
+        "Full clean-environment raw-image model rerun remains unexecuted; gated model access, dependencies, storage and compute are prerequisites."
+      ]
+    }
+  ],
+  "review_scope": "Original data\u2192processing\u2192axis\u2192levels\u2192measurements\u2192curves/diagnostics\u2192historical decisions; no new protocol-compliance classification."
+}

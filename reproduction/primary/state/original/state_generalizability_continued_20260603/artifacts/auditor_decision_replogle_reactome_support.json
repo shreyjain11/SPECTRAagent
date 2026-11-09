@@ -1,0 +1,12 @@
+{
+  "axis_id": "STATE_REPLOGLE_REACTOME_TRAIN_SUPPORT_V1",
+  "decision": "valid",
+  "issues": [],
+  "closure_gate": {
+    "prospective": true,
+    "frozen_before_confirmation": true,
+    "measured_similarity_order": "see spc_replogle_fewshot_reactome_support.csv",
+    "confirmed_on_held_out_contexts": true,
+    "baseline_context": "No raw labels/predictions were available in official result CSVs; fixed-label baseline cannot be rerun without raw matrices."
+  }
+}

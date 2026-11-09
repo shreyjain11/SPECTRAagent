@@ -1,0 +1,284 @@
+[
+  {
+    "candidate_axis": "dataset_family",
+    "feature": "dataset_family",
+    "metric": "overlap_at_N",
+    "n_levels_ge20": 3,
+    "mean_spread": 0.17503643377301334,
+    "best_level": "Tahoe-100M",
+    "worst_level": "Replogle-Nadig",
+    "status": "outcome_informed_discovery_only",
+    "level_summary": [
+      {
+        "dataset_family": "Replogle-Nadig",
+        "count": 19634,
+        "mean": 0.14595008628289993,
+        "std": 0.18690592279660315
+      },
+      {
+        "dataset_family": "Parse-PBMC",
+        "count": 1458,
+        "mean": 0.3057091158280087,
+        "std": 0.22838419033865623
+      },
+      {
+        "dataset_family": "Tahoe-100M",
+        "count": 18716,
+        "mean": 0.32098652005591327,
+        "std": 0.2077607082802934
+      }
+    ]
+  },
+  {
+    "candidate_axis": "tahoe_moa_fine",
+    "feature": "drugmeta_moa-fine",
+    "metric": "overlap_at_N",
+    "n_levels_ge20": 26,
+    "mean_spread": 0.1250947529686372,
+    "best_level": "Proteasome inhibitor",
+    "worst_level": "DNA methyltransferase inhibitor",
+    "status": "outcome_informed_discovery_only",
+    "level_summary": [
+      {
+        "drugmeta_moa-fine": "DNA methyltransferase inhibitor",
+        "count": 170,
+        "mean": 0.27616100745483946,
+        "std": 0.22264305114801863
+      },
+      {
+        "drugmeta_moa-fine": "EGFR/ERBB inhibitor",
+        "count": 570,
+        "mean": 0.2849476214461245,
+        "std": 0.19551559364736273
+      },
+      {
+        "drugmeta_moa-fine": "Other TK inhibitor",
+        "count": 660,
+        "mean": 0.297224189320638,
+        "std": 0.20392905573083311
+      },
+      {
+        "drugmeta_moa-fine": "Sonic inhibitor",
+        "count": 140,
+        "mean": 0.3003832503856378,
+        "std": 0.21637585854878172
+      },
+      {
+        "drugmeta_moa-fine": "Other MAPK inhibitor",
+        "count": 510,
+        "mean": 0.30071389129715925,
+        "std": 0.1987891831449382
+      },
+      {
+        "drugmeta_moa-fine": "Adrenoceptor agonist",
+        "count": 380,
+        "mean": 0.3017080075419724,
+        "std": 0.20101672085190392
+      },
+      {
+        "drugmeta_moa-fine": "GSK3 inhibitor",
+        "count": 180,
+        "mean": 0.30232215419776703,
+        "std": 0.19773007118244657
+      },
+      {
+        "drugmeta_moa-fine": "Multi-TK inhibitor",
+        "count": 460,
+        "mean": 0.3045801241017002,
+        "std": 0.201523216862092
+      },
+      {
+        "drugmeta_moa-fine": "PI3K/AKT inhibitor",
+        "count": 270,
+        "mean": 0.3097948316660418,
+        "std": 0.1941315936210903
+      },
+      {
+        "drugmeta_moa-fine": "unclear",
+        "count": 9750,
+        "mean": 0.3109168530328336,
+        "std": 0.2101795915631771
+      },
+      {
+        "drugmeta_moa-fine": "MEK inhibitor",
+        "count": 240,
+        "mean": 0.311338646650397,
+        "std": 0.1611036517894177
+      },
+      {
+        "drugmeta_moa-fine": "RAS inhibitor",
+        "count": 210,
+        "mean": 0.32506413749842294,
+        "std": 0.17216278104725263
+      },
+      {
+        "drugmeta_moa-fine": "Cyclooxygenase inhibitor",
+        "count": 680,
+        "mean": 0.32621346414191765,
+        "std": 0.21332294822481107
+      },
+      {
+        "drugmeta_moa-fine": "Androgen receptor antagonist",
+        "count": 190,
+        "mean": 0.326783988858525,
+        "std": 0.215699808148212
+      },
+      {
+        "drugmeta_moa-fine": "JAK/STAT inhibitor",
+        "count": 340,
+        "mean": 0.3389276617515626,
+        "std": 0.19837678233757594
+      },
+      {
+        "drugmeta_moa-fine": "DNA synthesis/repair inhibitor",
+        "count": 1290,
+        "mean": 0.3399195006501739,
+        "std": 0.21772186120228457
+      },
+      {
+        "drugmeta_moa-fine": "Glucose transporter inhibitor",
+        "count": 220,
+        "mean": 0.36091802247429944,
+        "std": 0.22978329260779587
+      },
+      {
+        "drugmeta_moa-fine": "MTOR inhibitor",
+        "count": 420,
+        "mean": 0.3627186511143625,
+        "std": 0.19502971420153278
+      },
+      {
+        "drugmeta_moa-fine": "RAF inhibitor",
+        "count": 176,
+        "mean": 0.3629422096549461,
+        "std": 0.21862237525712688
+      },
+      {
+        "drugmeta_moa-fine": "CDK inhibitor",
+        "count": 300,
+        "mean": 0.36453195823604145,
+        "std": 0.18202063767048857
+      },
+      {
+        "drugmeta_moa-fine": "Glucocorticoid receptor agonist",
+        "count": 280,
+        "mean": 0.36815421698819356,
+        "std": 0.1749659406004725
+      },
+      {
+        "drugmeta_moa-fine": "Protein synthesis inhibitor",
+        "count": 330,
+        "mean": 0.3687316954251153,
+        "std": 0.20772718551985594
+      },
+      {
+        "drugmeta_moa-fine": "Retinoic receptor agonist",
+        "count": 220,
+        "mean": 0.3786191287712921,
+        "std": 0.18232001702212203
+      },
+      {
+        "drugmeta_moa-fine": "HDAC inhibitor",
+        "count": 170,
+        "mean": 0.3923557948025106,
+        "std": 0.2192747623462327
+      },
+      {
+        "drugmeta_moa-fine": "Microtubule inhibitor",
+        "count": 390,
+        "mean": 0.3943236764800518,
+        "std": 0.1943796990550051
+      },
+      {
+        "drugmeta_moa-fine": "Proteasome inhibitor",
+        "count": 170,
+        "mean": 0.40125576042347666,
+        "std": 0.1710101063432151
+      }
+    ]
+  },
+  {
+    "candidate_axis": "representation",
+    "feature": "representation",
+    "metric": "overlap_at_N",
+    "n_levels_ge20": 2,
+    "mean_spread": 0.05767750439922559,
+    "best_level": "HVG",
+    "worst_level": "SE",
+    "status": "outcome_informed_discovery_only",
+    "level_summary": [
+      {
+        "representation": "SE",
+        "count": 19873,
+        "mean": 0.20521228255937513,
+        "std": 0.21846144447015012
+      },
+      {
+        "representation": "HVG",
+        "count": 19935,
+        "mean": 0.2628897869586007,
+        "std": 0.21124004635238766
+      }
+    ]
+  },
+  {
+    "candidate_axis": "tahoe_moa_broad",
+    "feature": "drugmeta_moa-broad",
+    "metric": "overlap_at_N",
+    "n_levels_ge20": 3,
+    "mean_spread": 0.020772902315989994,
+    "best_level": "activator/agonist",
+    "worst_level": "unclear",
+    "status": "outcome_informed_discovery_only",
+    "level_summary": [
+      {
+        "drugmeta_moa-broad": "unclear",
+        "count": 3760,
+        "mean": 0.31742390262078196,
+        "std": 0.2144528791434508
+      },
+      {
+        "drugmeta_moa-broad": "inhibitor/antagonist",
+        "count": 13626,
+        "mean": 0.32028974643669644,
+        "std": 0.20629451918224606
+      },
+      {
+        "drugmeta_moa-broad": "activator/agonist",
+        "count": 1330,
+        "mean": 0.33819680493677196,
+        "std": 0.20279100072022097
+      }
+    ]
+  },
+  {
+    "candidate_axis": "tahoe_dose",
+    "feature": "dose",
+    "metric": "overlap_at_N",
+    "n_levels_ge20": 3,
+    "mean_spread": 0.008059252214153267,
+    "best_level": "0.5",
+    "worst_level": "5.0",
+    "status": "outcome_informed_discovery_only",
+    "level_summary": [
+      {
+        "dose": 5.0,
+        "count": 5780,
+        "mean": 0.3171153501558342,
+        "std": 0.2070889144932
+      },
+      {
+        "dose": 0.05,
+        "count": 6470,
+        "mean": 0.3202593518611148,
+        "std": 0.20882185886477744
+      },
+      {
+        "dose": 0.5,
+        "count": 6466,
+        "mean": 0.32517460236998746,
+        "std": 0.20725150445593277
+      }
+    ]
+  }
+]

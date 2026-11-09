@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv*/
+generated/
+data/*.csv
+data/reference_reconstruction/identities.json
+data/reference_reconstruction/*_images.zip
+data/reference_reconstruction/*_features.csv
+data/reference_reconstruction/*_identities.json
+data/reference_reconstruction/*_download.json
+data/image_samples/
+html/

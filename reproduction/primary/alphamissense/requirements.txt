@@ -1,0 +1,15 @@
+# Python3.11; numerical package versions used for recovered-replay validation.
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.14.1
+matplotlib==3.10.0
+scikit-learn==1.6.0
+biopython==1.84
+pyarrow==17.0.0
+nbformat==5.10.4
+nbclient==0.8.0
+nbconvert==7.16.4
+ipykernel==6.29.5
+IPython==8.31.0
+# Optional clinical raw-source join also requires bcftools on PATH.
+# Optional fresh MSA/search processing uses the exact Linux x86-64 MMseqs payload.

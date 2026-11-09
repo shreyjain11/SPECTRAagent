@@ -4,8 +4,8 @@
   "model": "STATE",
   "axis": "GO_MF cross-ontology check",
   "dataset_split": {
-    "description": "Exact source row identifiers retained and selected in executable cells.",
-    "input_inventory": "inputs/state.json",
+    "description": "Original frozen records and source identities are preserved; packaged inputs and executable acquisition steps are documented in the linked recovery chain.",
+    "input_inventory": "primary/state/payload_manifest.json",
     "public_sources": [
       "state-score-001",
       "state-score-002",
@@ -676,37 +676,96 @@
       "archive": "state-retained-inputs",
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
-      "notebook_preparation_cell": 0
-    }
+      "notebook_preparation_cell": 0,
+      "implementation": "legacy_implementation",
+      "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
+    },
+    "legacy_input_inventory": "inputs/state.json",
+    "recovered_workflow": "primary/state/traceability.json"
   },
   "axis_levels": {
     "definition": "Normalized training-gene support across the functional sets assigned to each test gene in GO_MF.",
-    "calculation": "Archived per-gene annotation features are available; exact original annotation source snapshots are not all retained. Levels and aggregation are rerun from those features.",
-    "code": "materials/state/notebooks/state-featured/test-16.py"
+    "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
+    "code": "primary/state/notebooks/test-16.py"
   },
   "model_evaluation": {
-    "measurements": "Official per-perturbation scores retained; original predicted/observed expression vectors are unavailable.",
+    "measurements": "Original released per-record evaluation scores, processed as the original agent did; no fresh STATE inference is required for this workflow.",
     "fine_tuning": {
       "target_weight_updates_in_replay": false,
       "target_fine_tuning_during_original_audit": null,
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/state/notebooks/state-featured/test-16.py"
+    "code": "primary/state/notebooks/test-16.py"
   },
   "curve": {
-    "aggregation_and_uncertainty": "Aggregates and replay intervals recomputed from individual scores.",
-    "code": "materials/state/notebooks/state-featured/test-16.py"
+    "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
+    "code": "primary/state/notebooks/test-16.py"
   },
   "insight": {
-    "comparison_controls_confirmation": "Original discovery and confirmation boundaries retained; no new independent experiment claimed.",
-    "code": "materials/state/notebooks/state-featured/test-16.py"
+    "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
+    "code": "primary/state/notebooks/test-16.py"
   },
   "reconstruction_notes": [
-    "Predicted expression vectors, observed matrices and checkpoint-linked evaluation code needed to independently recompute per-record model metrics.",
-    "Exact original annotation membership snapshot for independent feature recomputation (go_mf)."
+    "The workflow intentionally starts from the official scored files used by the original agent. Exact similarity ties can change nearest-drug names without changing values, levels or curves."
   ],
   "implementation": {
+    "format": "recovered_historical_notebook",
+    "notebook": "primary/state/notebooks/test-16.ipynb",
+    "script": "primary/state/notebooks/test-16.py",
+    "supporting_code": "code/primary-state.json",
+    "published_notebook_sha256": "90366674834d58624d260e2a7f28d11e552c1d4ad72f8e7611c55b692d709811",
+    "published_script_sha256": "dac32031181d11a02df633464da39220b81de20ba5d38fe8c6243adaeab08a07",
+    "cell_locations": [
+      {
+        "notebook_cell": 2,
+        "start_line": 2,
+        "end_line": 11
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 14,
+        "end_line": 15
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 18,
+        "end_line": 18
+      },
+      {
+        "notebook_cell": 8,
+        "start_line": 21,
+        "end_line": 21
+      },
+      {
+        "notebook_cell": 9,
+        "start_line": 24,
+        "end_line": 25
+      },
+      {
+        "notebook_cell": 11,
+        "start_line": 28,
+        "end_line": 30
+      }
+    ],
+    "saved_code_cells": 6,
+    "saved_error_outputs": 0,
+    "saved_figures": 1,
+    "changes": [
+      "Recovered original inputs and programs are packaged or acquired with content checks.",
+      "Markdown, original decisions and selected historical outputs are retained.",
+      "Default replay and optional full raw-data/model execution are explicitly distinguished."
+    ]
+  },
+  "requested_model": "STATE",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "state-featured/test-16",
+    "disposition": "control",
+    "result": "High-minus-low overlap@N: few-shot HVG +0.014, SE +0.054. Zero-shot HVG +0.035, SE +0.048. The controlled few-shot coefficient was weak.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "legacy_implementation": {
     "notebook": "materials/state/notebooks/state-featured/test-16.ipynb",
     "script": "materials/state/notebooks/state-featured/test-16.py",
     "supporting_code": "code/state.json",
@@ -761,5 +820,76 @@
     "saved_code_cells": 7,
     "saved_error_outputs": 0
   },
-  "requested_model": "STATE"
+  "legacy_reconstruction_notes": [
+    "Predicted expression vectors, observed matrices and checkpoint-linked evaluation code needed to independently recompute per-record model metrics.",
+    "Exact original annotation membership snapshot for independent feature recomputation (go_mf)."
+  ],
+  "primary_recovery": {
+    "package": "primary/state",
+    "traceability": "primary/state/traceability.json",
+    "record_id": "state-featured/test-16",
+    "evidence_paths_relative_to": "primary/state",
+    "stages": {
+      "data": {
+        "status": "exact_original_inputs_packaged_or_pinned_release",
+        "artifacts": [
+          "payload_manifest.json",
+          "download_manifest.json"
+        ]
+      },
+      "processing": {
+        "status": "original_processing_connected",
+        "evidence": [
+          {
+            "path": "recovered_pipeline.py",
+            "function": "stage_ontology"
+          },
+          {
+            "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+          }
+        ]
+      },
+      "axis": {
+        "status": "original_definition_retained",
+        "evidence": [
+          {
+            "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+          },
+          {
+            "path": "axis_catalog.json",
+            "number": 16
+          }
+        ]
+      },
+      "levels": {
+        "status": "original_level_assignment_code_and_membership_retained",
+        "evidence": [
+          {
+            "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+          },
+          {
+            "path": "axis_catalog.json",
+            "number": 16
+          }
+        ]
+      },
+      "evaluation": {
+        "status": "original_released_predictions_joined_and_reaggregated",
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve": {
+        "status": "original_curve_or_diagnostic_recomputed",
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_mf.csv",
+        "generated": "computed/continued/artifacts/spc_multi_pathway_go_mf.csv"
+      },
+      "decision": {
+        "status": "historical_agent_disposition_retained",
+        "path": "axis_catalog.json",
+        "number": 16,
+        "text": "High-minus-low overlap@N: few-shot HVG +0.014, SE +0.054. Zero-shot HVG +0.035, SE +0.048. The controlled few-shot coefficient was weak.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      }
+    }
+  }
 }

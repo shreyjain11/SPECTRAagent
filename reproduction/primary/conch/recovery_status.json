@@ -1,0 +1,57 @@
+{
+  "original_native_session": "originals/selected_evidence_provenance.json",
+  "original_scripts_recovered": 10,
+  "complete_original_scored_tables": {
+    "discovery": 7180,
+    "confirmation": 1800,
+    "expansion": 4000
+  },
+  "raw_image_feature_check_sample": 18,
+  "unresolved_originals": [
+    "Original saved NCT1800 CSV was not found; exact pinned-image reconstruction now supplies its role.",
+    "Original target-image and checkpoint caches were not copied; the executable workflow reacquires pinned public shards and the access-controlled checkpoint."
+  ],
+  "excluded_empty_local_source_reads": [
+    "originals/run/session_contract.json",
+    "originals/run/axis_ledger.json",
+    "originals/run/artifacts/target_model_summary.json",
+    "originals/run/artifacts/tum_axis_feature_characterization.json",
+    "originals/run/artifacts/tum_confirmation/target_model_results_tum_confirmation.csv",
+    "originals/run/artifacts/tum_expansion/summary.json",
+    "originals/run/artifacts/tum_expansion/expanded_metrics.json",
+    "originals/run/artifacts/tum_expansion/target_model_results_tum_expansion.csv",
+    "originals/run/artifacts/tum_expansion/scored_tum_expansion_with_baselines.csv",
+    "originals/run/artifacts/spc_analysis/nct_color_texture_decile_assignments.csv",
+    "originals/run/spectra_ready_dataset/dataset_diagnostics.json",
+    "originals/run/spectra_ready_dataset/tum_confirmation_panel.csv"
+  ],
+  "scope": "Reconstruct original tested/rejected/retained analyses and determinations; no new confirmation or scientific certification.",
+  "expansion_native_excerpt": "originals/selected_evidence_provenance.json",
+  "reference_matrix_available": "data/nct_reference_features.reconstructed.csv",
+  "reference_reconstruction": "data/reference_reconstruction/provenance.json",
+  "reference_image_count": 1800,
+  "historical_original_csv_status": "Saved original CSV unlocated; original export omitted it and Sept22 chat already reports original run missing. Deterministic reconstruction now supplies its input role.",
+  "original_workflow": {
+    "entrypoint": "original_pipeline.py",
+    "instructions": "WORKFLOW.md",
+    "validation": "WORKFLOW_VALIDATION.json",
+    "switch": "RUN_ORIGINAL_WORKFLOW",
+    "environment_switch": "SPECTRA_RUN_ORIGINAL_WORKFLOW=1",
+    "default_mode": "historical_replay",
+    "full_raw_to_model_run_executed": false,
+    "generated_results_require_complete_receipt": true,
+    "archived_scores_used_as_rerun_fallback": false,
+    "model_source_revision": "141cc09c7d4ff33d8eda562bd75169b457f71a62",
+    "checkpoint_revision": "f9ca9f877171a28ade80228fb195ac5d79003357",
+    "dataset_revision": "97765ecb14bf11ce7bb8779a1097d187844a67cb",
+    "prerequisites": [
+      "Python3.11 notebook and separate inference environments",
+      "Hugging Face CONCH access and token/login",
+      "CUDA device by default, explicit CPU option",
+      "Network and disk for seven target-image shards and802MB checkpoint"
+    ]
+  },
+  "reference_raw_images_in_git": false,
+  "reference_raw_acquisition": "reconstruct_reference.py",
+  "portable_default": "Checksum-verified bundled numerical payloads, original reference fits, axis levels and curves. Raw-image checks skipped explicitly when caches absent."
+}

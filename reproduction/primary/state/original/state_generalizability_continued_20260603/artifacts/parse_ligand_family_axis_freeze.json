@@ -1,0 +1,22 @@
+{
+  "axis_id": "STATE_PARSE_LIGAND_FAMILY_SUPPORT_V1",
+  "status": "frozen_before_confirmation",
+  "unit": "Parse-PBMC few-shot ligand perturbation in target cell type and representation",
+  "similarity": "Count of same prospective ligand/cytokine family perturbations in same-context training set",
+  "direction": "STATE performance should degrade as same-family training support decreases",
+  "discovery_contexts": [
+    "B_Intermediate_Memory",
+    "B_Naive",
+    "Plasmablast"
+  ],
+  "confirmation_contexts": [
+    "CD14_Mono",
+    "CD4_Memory"
+  ],
+  "target_metric": "overlap_at_N",
+  "cutpoints_from_discovery": {
+    "<=q33": 0.0,
+    "<=q66": 0.0,
+    ">q66": "L3_high"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "axis": "gnomAD_observed_missense_saturation",
+  "n_levels": 10,
+  "axis_direction": "level 0 = lowest population support (lowest obs/possible missense)",
+  "overall_am_auroc": 0.9624,
+  "levels": [
+    {
+      "level": 0,
+      "n_var": 28742,
+      "n_gene": 1365,
+      "prev": 0.559,
+      "med_saturation": 0.0394,
+      "med_oe_mis": 0.518,
+      "am_auroc": 0.9538,
+      "am_ci95": [
+        0.9446,
+        0.9618
+      ],
+      "blosum_auroc": 0.6645
+    },
+    {
+      "level": 1,
+      "n_var": 17682,
+      "n_gene": 1364,
+      "prev": 0.421,
+      "med_saturation": 0.0553,
+      "med_oe_mis": 0.668,
+      "am_auroc": 0.9722,
+      "am_ci95": [
+        0.9623,
+        0.9799
+      ],
+      "blosum_auroc": 0.715
+    },
+    {
+      "level": 2,
+      "n_var": 16565,
+      "n_gene": 1364,
+      "prev": 0.278,
+      "med_saturation": 0.0644,
+      "med_oe_mis": 0.77,
+      "am_auroc": 0.9622,
+      "am_ci95": [
+        0.9484,
+        0.9709
+      ],
+      "blosum_auroc": 0.7042
+    },
+    {
+      "level": 3,
+      "n_var": 17873,
+      "n_gene": 1364,
+      "prev": 0.215,
+      "med_saturation": 0.0698,
+      "med_oe_mis": 0.845,
+      "am_auroc": 0.9655,
+      "am_ci95": [
+        0.9567,
+        0.9739
+      ],
+      "blosum_auroc": 0.7053
+    },
+    {
+      "level": 4,
+      "n_var": 17807,
+      "n_gene": 1364,
+      "prev": 0.264,
+      "med_saturation": 0.0737,
+      "med_oe_mis": 0.877,
+      "am_auroc": 0.9592,
+      "am_ci95": [
+        0.9505,
+        0.9693
+      ],
+      "blosum_auroc": 0.6998
+    },
+    {
+      "level": 5,
+      "n_var": 17398,
+      "n_gene": 1364,
+      "prev": 0.171,
+      "med_saturation": 0.0778,
+      "med_oe_mis": 0.925,
+      "am_auroc": 0.9485,
+      "am_ci95": [
+        0.9331,
+        0.9604
+      ],
+      "blosum_auroc": 0.6863
+    },
+    {
+      "level": 6,
+      "n_var": 16986,
+      "n_gene": 1364,
+      "prev": 0.224,
+      "med_saturation": 0.0826,
+      "med_oe_mis": 0.947,
+      "am_auroc": 0.9534,
+      "am_ci95": [
+        0.9443,
+        0.962
+      ],
+      "blosum_auroc": 0.6916
+    },
+    {
+      "level": 7,
+      "n_var": 18517,
+      "n_gene": 1364,
+      "prev": 0.298,
+      "med_saturation": 0.0878,
+      "med_oe_mis": 0.989,
+      "am_auroc": 0.9611,
+      "am_ci95": [
+        0.9549,
+        0.9678
+      ],
+      "blosum_auroc": 0.7027
+    },
+    {
+      "level": 8,
+      "n_var": 16464,
+      "n_gene": 1364,
+      "prev": 0.243,
+      "med_saturation": 0.0938,
+      "med_oe_mis": 1.04,
+      "am_auroc": 0.957,
+      "am_ci95": [
+        0.9469,
+        0.9656
+      ],
+      "blosum_auroc": 0.6953
+    },
+    {
+      "level": 9,
+      "n_var": 18480,
+      "n_gene": 1365,
+      "prev": 0.204,
+      "med_saturation": 0.1055,
+      "med_oe_mis": 1.182,
+      "am_auroc": 0.963,
+      "am_ci95": [
+        0.9556,
+        0.9705
+      ],
+      "blosum_auroc": 0.6976
+    }
+  ],
+  "saturation_monotonic": true,
+  "spearman_saturation_vs_AM_auroc": {
+    "rho": -0.164,
+    "p": 0.6515
+  },
+  "am_auroc_lowest_vs_highest": [
+    0.9538,
+    0.963
+  ],
+  "confounder_med_oe_lowest_vs_highest": [
+    0.518,
+    1.182
+  ]
+}

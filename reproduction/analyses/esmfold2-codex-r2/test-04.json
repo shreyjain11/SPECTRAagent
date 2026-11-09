@@ -77,5 +77,18 @@
     "saved_code_cells": 2,
     "saved_error_outputs": 0
   },
-  "requested_model": "ESMFold2"
+  "requested_model": "ESMFold2",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "esmfold2-codex-r2/test-04",
+    "disposition": "rejected",
+    "result": "The prespecified condition failed in confirmation.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "esmfold2-codex-r2/test-04",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

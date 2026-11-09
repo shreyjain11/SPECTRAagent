@@ -1,0 +1,54 @@
+{
+  "clinvar": {
+    "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260606.vcf.gz",
+    "filename": "clinvar_20260606.vcf.gz",
+    "bytes": 196569024,
+    "sha256": "c5bb136e1ac476d390d8110905e8224126ce7d43d5eae0e0bfe689fbe96b8726",
+    "version": "2026-06-06; downloaded and SHA256-identical to original snapshot"
+  },
+  "am_hg38": {
+    "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+    "filename": "AlphaMissense_hg38.tsv.gz",
+    "bytes": 642961469,
+    "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+    "version": "official released hg38 predictions, 2023-08-03 object"
+  },
+  "am_substitutions": {
+    "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_aa_substitutions.tsv.gz",
+    "filename": "AlphaMissense_aa_substitutions.tsv.gz",
+    "bytes": 1207278510,
+    "sha256": "bc18d954a9aa6b9efab8e40d6d1912e32b774906cd3846a1f51066588e9c176d",
+    "version": "official released amino-acid predictions, 2023-09-19 object"
+  },
+  "gnomad": {
+    "url": "https://storage.googleapis.com/gcp-public-data--gnomad/release/2.1.1/constraint/gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz",
+    "filename": "gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz",
+    "bytes": 4609488,
+    "sha256": "153031d34b6794e8e99eb0306bc3c50b13b18accda8b0ffef91c2623dd3affd5",
+    "version": "2.1.1"
+  },
+  "proteingym_dms": {
+    "url": "https://marks.hms.harvard.edu/proteingym/ProteinGym_v1.3/DMS_ProteinGym_substitutions.zip",
+    "filename": "DMS_ProteinGym_substitutions_v1.3.zip",
+    "bytes": 43021128,
+    "sha256": "3a83766254ac9ac9984ec25cb73c6e010ea4418f5e35f143933e6b6e6473b921",
+    "version": "1.3; original73 selected-member hashes enforced",
+    "hash_origin": "fresh public download; all73 selected members independently match original hashes"
+  },
+  "proteingym_msa": {
+    "url": "https://marks.hms.harvard.edu/proteingym/ProteinGym_v1.3/DMS_msa_files.zip",
+    "filename": "DMS_msa_files_v1.3.zip",
+    "bytes": 1504361305,
+    "sha256": null,
+    "version": "1.3; original66 selected-member hashes enforced"
+  },
+  "uniref": {
+    "url": "https://ftp.uniprot.org/pub/databases/uniprot/previous_major_releases/release-2026_01/uniref/uniref2026_01.tar.gz",
+    "filename": "uniref2026_01.tar.gz",
+    "bytes": 268122174916,
+    "sha256": null,
+    "version": "2026_01; full UniRef bundle; optional expensive search recipe",
+    "md5": "4eb0172248fa0f8f96e86aedc57e485c",
+    "hash_origin": "official release2026_01 RELEASE.metalink (MD5), metadata checked; full archive not downloaded"
+  }
+}

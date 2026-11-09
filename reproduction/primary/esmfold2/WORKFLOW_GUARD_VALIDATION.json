@@ -1,0 +1,38 @@
+{
+  "model_inference_executed": false,
+  "downloads_executed": false,
+  "checks": [
+    {
+      "check": "inference_command_uses_rebuilt_file_without_restoring_archive",
+      "passed": true
+    },
+    {
+      "check": "changed_feature_hash_rejected",
+      "passed": true
+    },
+    {
+      "check": "missing_expected_target_rejected",
+      "passed": true
+    },
+    {
+      "check": "missing_results_do_not_fall_back_to_archived_measurements",
+      "passed": true
+    },
+    {
+      "check": "changed_model_measurement_changes_generated_curve",
+      "passed": true,
+      "target_id": "8XTN_A"
+    },
+    {
+      "check": "changed_reconstructed_feature_changes_generated_analysis",
+      "passed": true,
+      "target_id": "8XTN_A"
+    },
+    {
+      "check": "new_cross_panel_confidence_winner_propagates_to_combined_screens",
+      "passed": true,
+      "target_id": "11HB_G"
+    }
+  ],
+  "passed": true
+}

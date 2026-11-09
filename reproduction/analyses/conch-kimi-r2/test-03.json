@@ -115,5 +115,18 @@
     "saved_code_cells": 7,
     "saved_error_outputs": 0
   },
-  "requested_model": "CONCH"
+  "requested_model": "CONCH",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "conch-kimi-r2/test-03",
+    "disposition": "unresolved",
+    "result": "NCT balanced accuracy 0.771 versus CRC-VAL 0.756. The run did not freeze a site-specific axis.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "conch-kimi-r2/test-03",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

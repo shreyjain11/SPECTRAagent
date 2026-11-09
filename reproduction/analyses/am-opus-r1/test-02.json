@@ -293,5 +293,18 @@
     "saved_code_cells": 10,
     "saved_error_outputs": 0
   },
-  "requested_model": "AlphaMissense"
+  "requested_model": "AlphaMissense",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "am-opus-r1/test-02",
+    "disposition": "rejected",
+    "result": "Across 73 assays agreement increased as depth decreased (ρ = −0.30). Stability assays confounded the pooled relationship.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "am-opus-r1/test-02",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

@@ -87,5 +87,18 @@
     "saved_code_cells": 2,
     "saved_error_outputs": 0
   },
-  "requested_model": "AlphaMissense"
+  "requested_model": "AlphaMissense",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "am-gpt-r1/test-01",
+    "disposition": "accepted",
+    "result": "AUROC (ClinVar), closest level (median 1 bp) minus farthest level (median 135 bp), confirmation partition: -0.0435 (95% CI -0.0572 to -0.0306). BLOSUM62 declined by 0.0432 on the same variants, 0.0002 from AlphaMissense and inside the pre-declared +/-0.03 margin",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "am-gpt-r1/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

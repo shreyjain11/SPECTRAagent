@@ -1,0 +1,14 @@
+{
+  "gnomad_staged": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/clinvar/gnomad_constraint.tsv",
+  "DMS_members_staged": 73,
+  "fresh_subset_staging": {
+    "rows": 955738,
+    "proteins": 64,
+    "content_sha256": "842c6638df5a0f05fd2e45e9e58d395d9718c8ec5338bb8649c3173050c92c58",
+    "compression": "New compressed input reproduced original gzip bytes in an empty target folder",
+    "gzip_sha256": "1657bce1cad681b6755831da727ceb00b5ee9d0a024e274eec4c05acbbdf80b1",
+    "test_boundary": "Selection/staging exercised on retained official64-protein rows; full1.2GB source was not downloaded in this test."
+  },
+  "clinical_path_replacements_validated": true,
+  "clinical_rerun_boundary": "bcftools is not installed locally; full constructor not rerun in this download-recipe change. Earlier byte-identical constructor replay is retained."
+}

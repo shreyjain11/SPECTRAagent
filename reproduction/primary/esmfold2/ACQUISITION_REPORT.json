@@ -1,0 +1,217 @@
+{
+  "date": "2026-11-08",
+  "recipe": "Reconstructed portable acquisition adapter using unchanged original programs and frozen manifests",
+  "dry_run_checks": [
+    {
+      "axis": 1,
+      "download_files": 286,
+      "panels": [
+        "cameo"
+      ],
+      "all_sources_have_original_content_hash": true
+    },
+    {
+      "axis": 2,
+      "download_files": 286,
+      "panels": [
+        "cameo"
+      ],
+      "all_sources_have_original_content_hash": true
+    },
+    {
+      "axis": 3,
+      "download_files": 397,
+      "panels": [
+        "cameo",
+        "cameo_scaled14",
+        "cameo_scaled40",
+        "external34",
+        "flexible107"
+      ],
+      "all_sources_have_original_content_hash": true
+    },
+    {
+      "axis": 4,
+      "download_files": 460,
+      "panels": [
+        "cameo",
+        "cameo_scaled40",
+        "external34",
+        "flexible107",
+        "charge97"
+      ],
+      "all_sources_have_original_content_hash": true
+    },
+    {
+      "axis": 5,
+      "download_files": 494,
+      "panels": [
+        "cameo",
+        "cameo_scaled14",
+        "cameo_scaled40",
+        "external34",
+        "flexible107",
+        "charge97",
+        "acidic78"
+      ],
+      "all_sources_have_original_content_hash": true
+    },
+    {
+      "axis": 6,
+      "download_files": 547,
+      "panels": [
+        "cameo",
+        "cameo_scaled14",
+        "cameo_scaled40",
+        "external34",
+        "flexible107",
+        "charge97",
+        "acidic78",
+        "cysteine95"
+      ],
+      "all_sources_have_original_content_hash": true
+    },
+    {
+      "axis": 7,
+      "download_files": 628,
+      "panels": [
+        "cameo",
+        "cameo_scaled14",
+        "cameo_scaled40",
+        "external34",
+        "flexible107",
+        "charge97",
+        "acidic78",
+        "cysteine95",
+        "viral36",
+        "envelope38",
+        "surface45"
+      ],
+      "all_sources_have_original_content_hash": true
+    },
+    {
+      "axis": 8,
+      "download_files": 628,
+      "panels": [
+        "cameo",
+        "cameo_scaled14",
+        "cameo_scaled40",
+        "external34",
+        "flexible107",
+        "charge97",
+        "acidic78",
+        "cysteine95",
+        "viral36",
+        "envelope38",
+        "surface45"
+      ],
+      "all_sources_have_original_content_hash": true
+    },
+    {
+      "axis": 9,
+      "download_files": 311,
+      "panels": [
+        "cameo",
+        "cameo_scaled40",
+        "external34"
+      ],
+      "all_sources_have_original_content_hash": true
+    },
+    {
+      "axis": 10,
+      "download_files": 36,
+      "panels": [
+        "viral36"
+      ],
+      "all_sources_have_original_content_hash": true
+    },
+    {
+      "axis": 11,
+      "download_files": 66,
+      "panels": [
+        "viral36",
+        "envelope38"
+      ],
+      "all_sources_have_original_content_hash": true
+    },
+    {
+      "axis": 12,
+      "download_files": 103,
+      "panels": [
+        "viral36",
+        "envelope38",
+        "surface45"
+      ],
+      "all_sources_have_original_content_hash": true
+    }
+  ],
+  "path_adapter_commands_checked": 11,
+  "actual_small_downloads": [
+    {
+      "url": "https://huggingface.co/datasets/THU-ATOM/cameo_data/resolve/d0f5ddaf5dc1a8516bec5c92930f5d0da0d4b874/experiment_structures/8YPF_B.pdb",
+      "path": "/private/var/folders/8_/q45b7bjx67sd9d7y0tnhscnr0000gn/T/esm-acquisition-check-ncxcucmd/downloads/cameo/experiment_structures/8YPF_B.pdb",
+      "status": "downloaded_original_bytes",
+      "sha256": "9f0382ec663167693590fce7d26e993f44f66111947600c068aff1d5841ee943",
+      "bytes": 4624
+    },
+    {
+      "url": "https://files.rcsb.org/download/9O9K.pdb",
+      "path": "/private/var/folders/8_/q45b7bjx67sd9d7y0tnhscnr0000gn/T/esm-acquisition-check-ncxcucmd/downloads/rcsb/9O9K-873d8e09d5bb0197.pdb",
+      "status": "downloaded_original_bytes",
+      "sha256": "873d8e09d5bb01970de12750d0cbfd47c88a37915d3a4c4b6a4f514b18352460",
+      "bytes": 69903
+    }
+  ],
+  "bulk_reference_download_executed": false,
+  "model_weight_download_executed": false,
+  "GPU_inference_executed": false,
+  "original_reference_hashes": 671,
+  "original_hf_file_etags": 286,
+  "pins": {
+    "cameo_repo": "THU-ATOM/cameo_data",
+    "cameo_revision": "d0f5ddaf5dc1a8516bec5c92930f5d0da0d4b874",
+    "model_repo": "biohub/ESMFold2",
+    "model_revision": "e1e189d0f5fb70c2693da2332eca4443c0ccccd6",
+    "transformers_git": "https://github.com/Biohub/transformers.git",
+    "transformers_commit": "f9a5a374be135f63b3019c1cefb91ea9e2d27e10",
+    "torch": "2.5.0",
+    "provenance": "Cache .metadata and installed direct_url.json read from exxact05 on2026-11-08; package version snapshot is the surviving environment, not proof of an unchanged historical environment."
+  },
+  "source_pins_note": "Cache .metadata and installed direct_url.json read from exxact05 on2026-11-08; package version snapshot is the surviving environment, not proof of an unchanged historical environment.",
+  "user_steps": [
+    "Create and activate the separate notebook environment in ENVIRONMENTS.txt before starting a kernel.",
+    "Set RUN_ORIGINAL_WORKFLOW=True in a notebook, or use execute_notebook.py --original-workflow.",
+    "The master switch executes hashed reference acquisition, materialized feature reconstruction, pinned current-model setup/download/conversion, inference, and axis-specific original analyses.",
+    "All12 notebooks share references, weights, environment and provenance-bound per-panel results. Each axis writes analysis/axis-NN.",
+    "Optional individual stage switches support resume. Missing/changed generated inputs and unbound old result files stop execution; no archived-results fallback."
+  ],
+  "remaining_gaps": [
+    "Full bulk-reference reconstruction and fresh model evaluation were not executed; validation uses explicitly labelled retained-data fixtures.",
+    "Current-model original-weight conversion previously verified2658 keys/shapes; independent saved-value/prediction equivalence was not established.",
+    "Historical frozen memberships are retained, including the documented8S7A_A qcut boundary discrepancy.",
+    "RCSB reference endpoints must still return original hashed bytes; no changed-structure substitution is permitted."
+  ],
+  "installed_source_transfer_performed": false,
+  "source_copy_status": "User declined for now; no package copied or alternate transfer attempted.",
+  "url_checks_file": "ACQUISITION_URL_CHECKS.json",
+  "all12_notebooks_executed_with_download_flags_false": true,
+  "reconstructed_code_sha256": "579210390348c90cd386742da9048b153d815d56ba8db1aae9f3f387fc271216",
+  "frozen_manifest_sha256": "1a5ea1e5f1177e2fc36bfda7f097cbd8150cd814de710676e6ed4669ca817a37",
+  "structure_downloads_recoverable_by_recorded_hash": 671,
+  "bulk_files_retained_locally": false,
+  "inference_package_copy_performed": false,
+  "historical_inference_dependency": "The original fork is documented but not required by the portable current route. See IMPLEMENTATION_COMPARISON.json for the keys/shapes-only completed verification and remaining numerical boundaries.",
+  "current_implementation_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+  "current_conversion_helper": "current_implementation.py",
+  "implementation_comparison": "IMPLEMENTATION_COMPARISON.json",
+  "current_notebook_validation": "CURRENT_NOTEBOOK_CHECKS.json",
+  "prior_reconstructed_code_sha256": "0e6060e74ddf089e5b1bd185a4502559bea580edbb0c322840596beeca5b88f5",
+  "prediction_comparison_status": "not_completed_stopped_at_user_request",
+  "current_conversion_scope": {
+    "converted_tensors": 2658,
+    "native_keys_and_shapes_verified": true,
+    "independent_elementwise_equality_checked": false,
+    "receipt": "compatibility/CONVERSION_RECEIPT.json"
+  },
+  "workflow_validation": "WORKFLOW_VALIDATION.json"
+}

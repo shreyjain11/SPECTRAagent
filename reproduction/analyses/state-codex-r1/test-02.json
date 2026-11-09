@@ -147,5 +147,18 @@
     "saved_code_cells": 4,
     "saved_error_outputs": 0
   },
-  "requested_model": "STATE"
+  "requested_model": "STATE",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "state-codex-r1/test-02",
+    "disposition": "rejected",
+    "result": "Five context means were non-monotonic. Their rank correlation of 0.30 missed the frozen 0.70 cutoff.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "state-codex-r1/test-02",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

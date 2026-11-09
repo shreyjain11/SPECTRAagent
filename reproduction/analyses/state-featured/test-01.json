@@ -4,8 +4,8 @@
   "model": "STATE",
   "axis": "Chemical similarity to training drugs",
   "dataset_split": {
-    "description": "Exact source row identifiers retained and selected in executable cells.",
-    "input_inventory": "inputs/state.json",
+    "description": "Original frozen records and source identities are preserved; packaged inputs and executable acquisition steps are documented in the linked recovery chain.",
+    "input_inventory": "primary/state/payload_manifest.json",
     "public_sources": [
       "state-score-001",
       "state-score-002",
@@ -676,37 +676,96 @@
       "archive": "state-retained-inputs",
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
-      "notebook_preparation_cell": 0
-    }
+      "notebook_preparation_cell": 0,
+      "implementation": "legacy_implementation",
+      "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
+    },
+    "legacy_input_inventory": "inputs/state.json",
+    "recovered_workflow": "primary/state/traceability.json"
   },
   "axis_levels": {
     "definition": "Maximum Morgan-fingerprint Tanimoto similarity to a training drug in the held-out target context. Five quantiles order drugs from most to least similar.",
-    "calculation": "Original Tahoe training drug lists and fingerprint-generation script are not preserved here; recorded SMILES, similarities, and assigned chemical levels are retained.",
-    "code": "materials/state/notebooks/state-featured/test-01.py"
+    "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
+    "code": "primary/state/notebooks/test-01.py"
   },
   "model_evaluation": {
-    "measurements": "Official per-perturbation scores retained; original predicted/observed expression vectors are unavailable.",
+    "measurements": "Original released per-record evaluation scores, processed as the original agent did; no fresh STATE inference is required for this workflow.",
     "fine_tuning": {
       "target_weight_updates_in_replay": false,
       "target_fine_tuning_during_original_audit": null,
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/state/notebooks/state-featured/test-01.py"
+    "code": "primary/state/notebooks/test-01.py"
   },
   "curve": {
-    "aggregation_and_uncertainty": "Aggregates and replay intervals recomputed from individual scores.",
-    "code": "materials/state/notebooks/state-featured/test-01.py"
+    "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
+    "code": "primary/state/notebooks/test-01.py"
   },
   "insight": {
-    "comparison_controls_confirmation": "Original discovery and confirmation boundaries retained; no new independent experiment claimed.",
-    "code": "materials/state/notebooks/state-featured/test-01.py"
+    "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
+    "code": "primary/state/notebooks/test-01.py"
   },
   "reconstruction_notes": [
-    "Predicted expression vectors, observed matrices and checkpoint-linked evaluation code needed to independently recompute per-record model metrics.",
-    "Original Tahoe training drug identity lists and fingerprint-generation script."
+    "The workflow intentionally starts from the official scored files used by the original agent. Exact similarity ties can change nearest-drug names without changing values, levels or curves."
   ],
   "implementation": {
+    "format": "recovered_historical_notebook",
+    "notebook": "primary/state/notebooks/test-01.ipynb",
+    "script": "primary/state/notebooks/test-01.py",
+    "supporting_code": "code/primary-state.json",
+    "published_notebook_sha256": "39bc556d2078d507e1e532f04f90fcb51deaab1ebaa27623d45eb9e34dbda846",
+    "published_script_sha256": "eb9d8b7a397f9cb2d0a1ca5f48b7d20074c353562bcfbe92845812da85a6bf04",
+    "cell_locations": [
+      {
+        "notebook_cell": 2,
+        "start_line": 2,
+        "end_line": 11
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 14,
+        "end_line": 15
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 18,
+        "end_line": 18
+      },
+      {
+        "notebook_cell": 8,
+        "start_line": 21,
+        "end_line": 21
+      },
+      {
+        "notebook_cell": 9,
+        "start_line": 24,
+        "end_line": 25
+      },
+      {
+        "notebook_cell": 11,
+        "start_line": 28,
+        "end_line": 29
+      }
+    ],
+    "saved_code_cells": 6,
+    "saved_error_outputs": 0,
+    "saved_figures": 1,
+    "changes": [
+      "Recovered original inputs and programs are packaged or acquired with content checks.",
+      "Markdown, original decisions and selected historical outputs are retained.",
+      "Default replay and optional full raw-data/model execution are explicitly distinguished."
+    ]
+  },
+  "requested_model": "STATE",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "state-featured/test-01",
+    "disposition": "rejected",
+    "result": "No meaningful decline. HVG overlap@N was 0.013 higher in the least-similar bin than in the most-similar bin.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "legacy_implementation": {
     "notebook": "materials/state/notebooks/state-featured/test-01.ipynb",
     "script": "materials/state/notebooks/state-featured/test-01.py",
     "supporting_code": "code/state.json",
@@ -756,5 +815,76 @@
     "saved_code_cells": 6,
     "saved_error_outputs": 0
   },
-  "requested_model": "STATE"
+  "legacy_reconstruction_notes": [
+    "Predicted expression vectors, observed matrices and checkpoint-linked evaluation code needed to independently recompute per-record model metrics.",
+    "Original Tahoe training drug identity lists and fingerprint-generation script."
+  ],
+  "primary_recovery": {
+    "package": "primary/state",
+    "traceability": "primary/state/traceability.json",
+    "record_id": "state-featured/test-01",
+    "evidence_paths_relative_to": "primary/state",
+    "stages": {
+      "data": {
+        "status": "exact_original_inputs_packaged_or_pinned_release",
+        "artifacts": [
+          "payload_manifest.json",
+          "download_manifest.json"
+        ]
+      },
+      "processing": {
+        "status": "original_processing_connected",
+        "evidence": [
+          {
+            "path": "recovered_pipeline.py",
+            "function": "stage_initial"
+          },
+          {
+            "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+          }
+        ]
+      },
+      "axis": {
+        "status": "original_definition_retained",
+        "evidence": [
+          {
+            "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+          },
+          {
+            "path": "axis_catalog.json",
+            "number": 1
+          }
+        ]
+      },
+      "levels": {
+        "status": "original_level_assignment_code_and_membership_retained",
+        "evidence": [
+          {
+            "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+          },
+          {
+            "path": "axis_catalog.json",
+            "number": 1
+          }
+        ]
+      },
+      "evaluation": {
+        "status": "original_released_predictions_joined_and_reaggregated",
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve": {
+        "status": "original_curve_or_diagnostic_recomputed",
+        "original": "original/state_generalizability_20260602_single_controller/artifacts/spc_tahoe_fewshot_target_context_chemical_support.csv",
+        "generated": "computed/initial/artifacts/spc_tahoe_fewshot_target_context_chemical_support.csv"
+      },
+      "decision": {
+        "status": "historical_agent_disposition_retained",
+        "path": "axis_catalog.json",
+        "number": 1,
+        "text": "No meaningful decline. HVG overlap@N was 0.013 higher in the least-similar bin than in the most-similar bin.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      }
+    }
+  }
 }

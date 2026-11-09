@@ -219,5 +219,18 @@
     "saved_code_cells": 10,
     "saved_error_outputs": 0
   },
-  "requested_model": "STATE"
+  "requested_model": "STATE",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "state-opus-r2/test-05",
+    "disposition": "control",
+    "result": "GO term count was null. The neighborhood relation persisted after adjustment for strength and in fixed-N analyses.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "state-opus-r2/test-05",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

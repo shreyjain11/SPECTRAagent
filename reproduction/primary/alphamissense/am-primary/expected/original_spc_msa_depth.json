@@ -1,0 +1,206 @@
+{
+  "axis": "MSA_depth_uniref50_homolog_count",
+  "axis_direction": "level 0 = lowest depth (lowest similarity/support)",
+  "n_levels": 10,
+  "overall": {
+    "n_variants": 194379,
+    "n_proteins": 14866,
+    "am_auroc_overall": 0.9627612772617729,
+    "blosum_auroc_overall": 0.689922400426508
+  },
+  "levels": [
+    {
+      "level": 0,
+      "label_desc": "lowest_MSA_depth",
+      "n_variants": 19153,
+      "n_proteins": 1450,
+      "n_pathogenic": 2074,
+      "n_benign": 17079,
+      "prevalence": 0.1083,
+      "median_depth": 33,
+      "median_logdepth": 1.5315,
+      "am_auroc": 0.9681433175447717,
+      "am_auprc": 0.8701504560966191,
+      "blosum_auroc": 0.6643631164790225,
+      "am_auroc_ci95": [
+        0.9577545301585904,
+        0.9790053130296964
+      ]
+    },
+    {
+      "level": 1,
+      "label_desc": "",
+      "n_variants": 18474,
+      "n_proteins": 1510,
+      "n_pathogenic": 2474,
+      "n_benign": 16000,
+      "prevalence": 0.1339,
+      "median_depth": 71,
+      "median_logdepth": 1.8573,
+      "am_auroc": 0.9620917037186743,
+      "am_auprc": 0.8533987264774419,
+      "blosum_auroc": 0.6869759119846403,
+      "am_auroc_ci95": [
+        0.9508068013698748,
+        0.972004636882628
+      ]
+    },
+    {
+      "level": 2,
+      "label_desc": "",
+      "n_variants": 15461,
+      "n_proteins": 1493,
+      "n_pathogenic": 2647,
+      "n_benign": 12814,
+      "prevalence": 0.1712,
+      "median_depth": 112,
+      "median_logdepth": 2.0531,
+      "am_auroc": 0.9624806500304346,
+      "am_auprc": 0.8676690197354098,
+      "blosum_auroc": 0.7158832463241912,
+      "am_auroc_ci95": [
+        0.9561762620874312,
+        0.970569990396862
+      ]
+    },
+    {
+      "level": 3,
+      "label_desc": "",
+      "n_variants": 16307,
+      "n_proteins": 1471,
+      "n_pathogenic": 3152,
+      "n_benign": 13155,
+      "prevalence": 0.1933,
+      "median_depth": 166,
+      "median_logdepth": 2.2227,
+      "am_auroc": 0.9594695204772461,
+      "am_auprc": 0.8885948173843325,
+      "blosum_auroc": 0.6836516051297783,
+      "am_auroc_ci95": [
+        0.9500377258841382,
+        0.9671589710647873
+      ]
+    },
+    {
+      "level": 4,
+      "label_desc": "",
+      "n_variants": 21935,
+      "n_proteins": 1504,
+      "n_pathogenic": 5400,
+      "n_benign": 16535,
+      "prevalence": 0.2462,
+      "median_depth": 246,
+      "median_logdepth": 2.3927,
+      "am_auroc": 0.9600569387046556,
+      "am_auprc": 0.898688943007394,
+      "blosum_auroc": 0.6875830561435339,
+      "am_auroc_ci95": [
+        0.9526232264836719,
+        0.9668823373160104
+      ]
+    },
+    {
+      "level": 5,
+      "label_desc": "",
+      "n_variants": 22621,
+      "n_proteins": 1489,
+      "n_pathogenic": 6912,
+      "n_benign": 15709,
+      "prevalence": 0.3056,
+      "median_depth": 365,
+      "median_logdepth": 2.5635,
+      "am_auroc": 0.9556169827304706,
+      "am_auprc": 0.9099180576976376,
+      "blosum_auroc": 0.6821136744785957,
+      "am_auroc_ci95": [
+        0.9461656078416188,
+        0.9631281185161789
+      ]
+    },
+    {
+      "level": 6,
+      "label_desc": "",
+      "n_variants": 23955,
+      "n_proteins": 1485,
+      "n_pathogenic": 11112,
+      "n_benign": 12843,
+      "prevalence": 0.4639,
+      "median_depth": 587,
+      "median_logdepth": 2.7694,
+      "am_auroc": 0.9660292208158037,
+      "am_auprc": 0.9571420288693094,
+      "blosum_auroc": 0.7221773414398748,
+      "am_auroc_ci95": [
+        0.9555775963984428,
+        0.9750820735121645
+      ]
+    },
+    {
+      "level": 7,
+      "label_desc": "",
+      "n_variants": 19188,
+      "n_proteins": 1490,
+      "n_pathogenic": 8063,
+      "n_benign": 11125,
+      "prevalence": 0.4202,
+      "median_depth": 1014,
+      "median_logdepth": 3.0065,
+      "am_auroc": 0.9615416181837692,
+      "am_auprc": 0.9428530379832588,
+      "blosum_auroc": 0.7011376031727674,
+      "am_auroc_ci95": [
+        0.9548752531007252,
+        0.966836079647226
+      ]
+    },
+    {
+      "level": 8,
+      "label_desc": "",
+      "n_variants": 24741,
+      "n_proteins": 1487,
+      "n_pathogenic": 10739,
+      "n_benign": 14002,
+      "prevalence": 0.4341,
+      "median_depth": 1988,
+      "median_logdepth": 3.2986,
+      "am_auroc": 0.9566917987412145,
+      "am_auprc": 0.9418155131405734,
+      "blosum_auroc": 0.679092230302619,
+      "am_auroc_ci95": [
+        0.9478234587661912,
+        0.9662036980159957
+      ]
+    },
+    {
+      "level": 9,
+      "label_desc": "highest_MSA_depth",
+      "n_variants": 12544,
+      "n_proteins": 1487,
+      "n_pathogenic": 5417,
+      "n_benign": 7127,
+      "prevalence": 0.4318,
+      "median_depth": 4902,
+      "median_logdepth": 3.6905,
+      "am_auroc": 0.9677163513448443,
+      "am_auprc": 0.9565443443529137,
+      "blosum_auroc": 0.7087583355114813,
+      "am_auroc_ci95": [
+        0.9617502055627232,
+        0.9737511293436009
+      ]
+    }
+  ],
+  "median_depth_monotonic_increasing": true,
+  "spearman_depth_vs_AM_auroc": {
+    "rho": -0.2121212121212121,
+    "p": 0.5563057751029299
+  },
+  "am_auroc_lowest_vs_highest": [
+    0.9681433175447717,
+    0.9677163513448443
+  ],
+  "blosum_auroc_lowest_vs_highest": [
+    0.6643631164790225,
+    0.7087583355114813
+  ]
+}

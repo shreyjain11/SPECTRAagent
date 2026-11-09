@@ -1,0 +1,27 @@
+{
+  "remote_task_directory": "/ewsc/yektefai/spectra_runs/esmfold2_transformers_comparison_20261108",
+  "converted_checkpoint": "/ewsc/yektefai/spectra_runs/esmfold2_transformers_comparison_20261108/converted-original",
+  "converted_tensor_count": 2658,
+  "verification": "Official converter checked exact standard model state keys and shapes before saving. Completed conversion log retained. Prediction comparison stopped at user request; no prediction equivalence conclusion.",
+  "active_comparison_processes_after_cleanup": [],
+  "stopped_processes": [
+    4088969,
+    4088954
+  ],
+  "copied_small_files": [
+    "conversion.log",
+    "official_conversion/source_provenance.json",
+    "results/original_cpu_benchmark/environment.json",
+    "results/legacy_cpu_benchmark/environment.json",
+    "results/standard_cpu_benchmark/environment.json"
+  ],
+  "checked_at_utc": "2026-11-09T01:19:46.834774+00:00",
+  "verification_scope": {
+    "converted_tensor_count": 2658,
+    "exact_standard_model_keyset_checked": true,
+    "exact_standard_model_shapes_checked": true,
+    "official_conversion_from_pinned_original_weights": true,
+    "independent_saved_tensor_elementwise_equality_check_performed": false,
+    "prediction_equivalence_test_completed": false
+  }
+}

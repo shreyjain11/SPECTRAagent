@@ -115,5 +115,18 @@
     "saved_code_cells": 7,
     "saved_error_outputs": 0
   },
-  "requested_model": "CONCH"
+  "requested_model": "CONCH",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "conch-kimi-r2/test-01",
+    "disposition": "accepted",
+    "result": "balanced accuracy, 4.0 micrometre per pixel minus 0.5 micrometre per pixel: -0.633. No contrast interval reported. The general vision-language baseline barely moved from its low starting level (-0.033), and the information-availability baseline held 0.667 where CONCH reached 0.138, so class information survived the transformation. The DINOv2 probe's own decline of 0.302 was retained as a real effect shared across models",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "conch-kimi-r2/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

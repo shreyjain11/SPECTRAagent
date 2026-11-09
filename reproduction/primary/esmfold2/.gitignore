@@ -1,0 +1,10 @@
+# Restored byte-identical inputs are carried once in original-artifacts.zip.
+/original_runs/
+/source/
+# Local runs and regenerated exports do not belong in the source package.
+/reproduction/
+/validation/
+/html/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

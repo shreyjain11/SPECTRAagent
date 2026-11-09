@@ -1,0 +1,453 @@
+{
+  "n": 4000,
+  "target_overall_tum_recall": 0.837,
+  "baseline_centroid_overall_tum_recall": 0.2145,
+  "baseline_logistic_overall_tum_recall": 0.11375,
+  "target_by_level": [
+    {
+      "level": 1,
+      "n": 400,
+      "axis_mean": -0.03215673819154313,
+      "tum_recall": 0.875,
+      "prediction_counts": {
+        "DEB": 12,
+        "LYM": 4,
+        "MUC": 1,
+        "NORM": 1,
+        "STR": 32,
+        "TUM": 350
+      }
+    },
+    {
+      "level": 2,
+      "n": 400,
+      "axis_mean": -0.05249815196113371,
+      "tum_recall": 0.95,
+      "prediction_counts": {
+        "DEB": 1,
+        "LYM": 2,
+        "MUC": 3,
+        "MUS": 1,
+        "NORM": 1,
+        "STR": 12,
+        "TUM": 380
+      }
+    },
+    {
+      "level": 3,
+      "n": 400,
+      "axis_mean": -0.06491176392463452,
+      "tum_recall": 0.9425,
+      "prediction_counts": {
+        "DEB": 1,
+        "LYM": 2,
+        "MUC": 6,
+        "NORM": 3,
+        "STR": 11,
+        "TUM": 377
+      }
+    },
+    {
+      "level": 4,
+      "n": 400,
+      "axis_mean": -0.07923519340536918,
+      "tum_recall": 0.9275,
+      "prediction_counts": {
+        "DEB": 3,
+        "MUC": 8,
+        "NORM": 2,
+        "STR": 16,
+        "TUM": 371
+      }
+    },
+    {
+      "level": 5,
+      "n": 400,
+      "axis_mean": -0.10685911272265088,
+      "tum_recall": 0.9125,
+      "prediction_counts": {
+        "DEB": 1,
+        "LYM": 1,
+        "MUC": 9,
+        "NORM": 5,
+        "STR": 19,
+        "TUM": 365
+      }
+    },
+    {
+      "level": 6,
+      "n": 400,
+      "axis_mean": -0.15345025465881337,
+      "tum_recall": 0.89,
+      "prediction_counts": {
+        "BACK": 2,
+        "DEB": 4,
+        "MUC": 9,
+        "NORM": 2,
+        "STR": 27,
+        "TUM": 356
+      }
+    },
+    {
+      "level": 7,
+      "n": 400,
+      "axis_mean": -0.24530111849651184,
+      "tum_recall": 0.83,
+      "prediction_counts": {
+        "BACK": 15,
+        "DEB": 2,
+        "LYM": 1,
+        "MUC": 20,
+        "MUS": 1,
+        "STR": 29,
+        "TUM": 332
+      }
+    },
+    {
+      "level": 8,
+      "n": 400,
+      "axis_mean": -0.4344567379494981,
+      "tum_recall": 0.64,
+      "prediction_counts": {
+        "ADI": 3,
+        "BACK": 17,
+        "DEB": 25,
+        "LYM": 10,
+        "MUC": 47,
+        "MUS": 2,
+        "STR": 40,
+        "TUM": 256
+      }
+    },
+    {
+      "level": 9,
+      "n": 400,
+      "axis_mean": -0.6397387986207269,
+      "tum_recall": 0.7,
+      "prediction_counts": {
+        "ADI": 2,
+        "BACK": 7,
+        "DEB": 15,
+        "LYM": 6,
+        "MUC": 44,
+        "MUS": 1,
+        "NORM": 1,
+        "STR": 44,
+        "TUM": 280
+      }
+    },
+    {
+      "level": 10,
+      "n": 400,
+      "axis_mean": -0.8467361235586389,
+      "tum_recall": 0.7025,
+      "prediction_counts": {
+        "ADI": 1,
+        "BACK": 33,
+        "DEB": 24,
+        "LYM": 8,
+        "MUC": 7,
+        "MUS": 2,
+        "STR": 44,
+        "TUM": 281
+      }
+    }
+  ],
+  "baseline_centroid_by_level": [
+    {
+      "level": 1,
+      "n": 400,
+      "axis_mean": -0.03215673819154313,
+      "tum_recall": 0.66,
+      "prediction_counts": {
+        "LYM": 5,
+        "MUC": 14,
+        "MUS": 47,
+        "NORM": 2,
+        "STR": 68,
+        "TUM": 264
+      }
+    },
+    {
+      "level": 2,
+      "n": 400,
+      "axis_mean": -0.05249815196113371,
+      "tum_recall": 0.33,
+      "prediction_counts": {
+        "DEB": 1,
+        "LYM": 2,
+        "MUC": 80,
+        "MUS": 47,
+        "NORM": 1,
+        "STR": 137,
+        "TUM": 132
+      }
+    },
+    {
+      "level": 3,
+      "n": 400,
+      "axis_mean": -0.06491176392463452,
+      "tum_recall": 0.15,
+      "prediction_counts": {
+        "ADI": 3,
+        "DEB": 1,
+        "LYM": 2,
+        "MUC": 158,
+        "MUS": 46,
+        "STR": 130,
+        "TUM": 60
+      }
+    },
+    {
+      "level": 4,
+      "n": 400,
+      "axis_mean": -0.07923519340536918,
+      "tum_recall": 0.2475,
+      "prediction_counts": {
+        "ADI": 9,
+        "LYM": 6,
+        "MUC": 87,
+        "MUS": 134,
+        "NORM": 1,
+        "STR": 64,
+        "TUM": 99
+      }
+    },
+    {
+      "level": 5,
+      "n": 400,
+      "axis_mean": -0.10685911272265088,
+      "tum_recall": 0.29,
+      "prediction_counts": {
+        "ADI": 3,
+        "BACK": 1,
+        "LYM": 17,
+        "MUC": 16,
+        "MUS": 240,
+        "NORM": 1,
+        "STR": 6,
+        "TUM": 116
+      }
+    },
+    {
+      "level": 6,
+      "n": 400,
+      "axis_mean": -0.15345025465881337,
+      "tum_recall": 0.2275,
+      "prediction_counts": {
+        "ADI": 8,
+        "LYM": 19,
+        "MUC": 6,
+        "MUS": 268,
+        "NORM": 8,
+        "TUM": 91
+      }
+    },
+    {
+      "level": 7,
+      "n": 400,
+      "axis_mean": -0.24530111849651184,
+      "tum_recall": 0.1575,
+      "prediction_counts": {
+        "ADI": 6,
+        "BACK": 8,
+        "LYM": 12,
+        "MUC": 22,
+        "MUS": 272,
+        "NORM": 17,
+        "TUM": 63
+      }
+    },
+    {
+      "level": 8,
+      "n": 400,
+      "axis_mean": -0.4344567379494981,
+      "tum_recall": 0.075,
+      "prediction_counts": {
+        "BACK": 32,
+        "LYM": 8,
+        "MUC": 149,
+        "MUS": 149,
+        "NORM": 32,
+        "TUM": 30
+      }
+    },
+    {
+      "level": 9,
+      "n": 400,
+      "axis_mean": -0.6397387986207269,
+      "tum_recall": 0.0075,
+      "prediction_counts": {
+        "ADI": 14,
+        "BACK": 67,
+        "LYM": 4,
+        "MUC": 256,
+        "MUS": 35,
+        "NORM": 21,
+        "TUM": 3
+      }
+    },
+    {
+      "level": 10,
+      "n": 400,
+      "axis_mean": -0.8467361235586389,
+      "tum_recall": 0.0,
+      "prediction_counts": {
+        "ADI": 63,
+        "BACK": 130,
+        "MUC": 201,
+        "MUS": 6
+      }
+    }
+  ],
+  "baseline_logistic_by_level": [
+    {
+      "level": 1,
+      "n": 400,
+      "axis_mean": -0.03215673819154313,
+      "tum_recall": 0.3775,
+      "prediction_counts": {
+        "DEB": 48,
+        "LYM": 21,
+        "MUC": 2,
+        "MUS": 89,
+        "NORM": 3,
+        "STR": 86,
+        "TUM": 151
+      }
+    },
+    {
+      "level": 2,
+      "n": 400,
+      "axis_mean": -0.05249815196113371,
+      "tum_recall": 0.255,
+      "prediction_counts": {
+        "DEB": 25,
+        "LYM": 8,
+        "MUS": 104,
+        "NORM": 3,
+        "STR": 158,
+        "TUM": 102
+      }
+    },
+    {
+      "level": 3,
+      "n": 400,
+      "axis_mean": -0.06491176392463452,
+      "tum_recall": 0.1075,
+      "prediction_counts": {
+        "BACK": 5,
+        "DEB": 18,
+        "LYM": 5,
+        "MUC": 1,
+        "MUS": 141,
+        "NORM": 1,
+        "STR": 186,
+        "TUM": 43
+      }
+    },
+    {
+      "level": 4,
+      "n": 400,
+      "axis_mean": -0.07923519340536918,
+      "tum_recall": 0.1725,
+      "prediction_counts": {
+        "ADI": 1,
+        "BACK": 5,
+        "DEB": 37,
+        "LYM": 3,
+        "MUC": 6,
+        "MUS": 194,
+        "NORM": 5,
+        "STR": 80,
+        "TUM": 69
+      }
+    },
+    {
+      "level": 5,
+      "n": 400,
+      "axis_mean": -0.10685911272265088,
+      "tum_recall": 0.165,
+      "prediction_counts": {
+        "BACK": 2,
+        "DEB": 62,
+        "LYM": 1,
+        "MUC": 1,
+        "MUS": 255,
+        "NORM": 6,
+        "STR": 7,
+        "TUM": 66
+      }
+    },
+    {
+      "level": 6,
+      "n": 400,
+      "axis_mean": -0.15345025465881337,
+      "tum_recall": 0.06,
+      "prediction_counts": {
+        "DEB": 80,
+        "LYM": 1,
+        "MUC": 1,
+        "MUS": 289,
+        "NORM": 1,
+        "STR": 4,
+        "TUM": 24
+      }
+    },
+    {
+      "level": 7,
+      "n": 400,
+      "axis_mean": -0.24530111849651184,
+      "tum_recall": 0.0,
+      "prediction_counts": {
+        "ADI": 2,
+        "BACK": 5,
+        "DEB": 68,
+        "MUC": 24,
+        "MUS": 297,
+        "NORM": 3,
+        "STR": 1
+      }
+    },
+    {
+      "level": 8,
+      "n": 400,
+      "axis_mean": -0.4344567379494981,
+      "tum_recall": 0.0,
+      "prediction_counts": {
+        "ADI": 15,
+        "BACK": 70,
+        "DEB": 39,
+        "MUC": 127,
+        "MUS": 144,
+        "NORM": 5
+      }
+    },
+    {
+      "level": 9,
+      "n": 400,
+      "axis_mean": -0.6397387986207269,
+      "tum_recall": 0.0,
+      "prediction_counts": {
+        "ADI": 23,
+        "BACK": 88,
+        "DEB": 10,
+        "MUC": 247,
+        "MUS": 32
+      }
+    },
+    {
+      "level": 10,
+      "n": 400,
+      "axis_mean": -0.8467361235586389,
+      "tum_recall": 0.0,
+      "prediction_counts": {
+        "ADI": 6,
+        "BACK": 253,
+        "DEB": 2,
+        "MUC": 133,
+        "MUS": 6
+      }
+    }
+  ]
+}

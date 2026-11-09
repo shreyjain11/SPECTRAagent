@@ -1,0 +1,487 @@
+{
+  "status": "exploratory_only_outcome_informed",
+  "lowest_groups": [
+    {
+      "feature": "chem_support_level",
+      "value": "L3_mid",
+      "n_rows": 1458,
+      "mean_overlap_at_N": 0.5053482340101367,
+      "mean_de_sig_genes_recall": 0.6874874964745544,
+      "mean_pearson_delta": 0.9051800990740376
+    },
+    {
+      "feature": "chem_support_level",
+      "value": "L1_near",
+      "n_rows": 1458,
+      "mean_overlap_at_N": 0.5135398378804875,
+      "mean_de_sig_genes_recall": 0.6883161185407319,
+      "mean_pearson_delta": 0.9272107665103813
+    },
+    {
+      "feature": "chem_support_level",
+      "value": "L4_low_mid",
+      "n_rows": 1457,
+      "mean_overlap_at_N": 0.5237620289839947,
+      "mean_de_sig_genes_recall": 0.6942043632481113,
+      "mean_pearson_delta": 0.9171364551660808
+    },
+    {
+      "feature": "chem_support_level",
+      "value": "L5_far",
+      "n_rows": 1458,
+      "mean_overlap_at_N": 0.5269851011647784,
+      "mean_de_sig_genes_recall": 0.6867936252249953,
+      "mean_pearson_delta": 0.9251058690341902
+    },
+    {
+      "feature": "chem_support_level",
+      "value": "L2_high_mid",
+      "n_rows": 1457,
+      "mean_overlap_at_N": 0.5321821993808319,
+      "mean_de_sig_genes_recall": 0.7043593052208518,
+      "mean_pearson_delta": 0.9212630636166773
+    },
+    {
+      "feature": "context",
+      "value": "Plasmablast",
+      "n_rows": 304,
+      "mean_overlap_at_N": 0.03882593839820908,
+      "mean_de_sig_genes_recall": 0.11178108540026328,
+      "mean_pearson_delta": 0.1945505806870642
+    },
+    {
+      "feature": "context",
+      "value": "jurkat",
+      "n_rows": 5242,
+      "mean_overlap_at_N": 0.12785554199062482,
+      "mean_de_sig_genes_recall": 0.15992636548968855,
+      "mean_pearson_delta": 0.2648305204836496
+    },
+    {
+      "feature": "context",
+      "value": "rpe1",
+      "n_rows": 5120,
+      "mean_overlap_at_N": 0.14937050786434644,
+      "mean_de_sig_genes_recall": 0.17001842582280036,
+      "mean_pearson_delta": 0.323329899679311
+    },
+    {
+      "feature": "context",
+      "value": "k562",
+      "n_rows": 4702,
+      "mean_overlap_at_N": 0.1494900310658744,
+      "mean_de_sig_genes_recall": 0.21223331052710986,
+      "mean_pearson_delta": 0.2736896187956806
+    },
+    {
+      "feature": "context",
+      "value": "hepg2",
+      "n_rows": 4570,
+      "mean_overlap_at_N": 0.15923109773006708,
+      "mean_de_sig_genes_recall": 0.19989513084554897,
+      "mean_pearson_delta": 0.31862171842800124
+    },
+    {
+      "feature": "context",
+      "value": "B_Intermediate_Memory",
+      "n_rows": 304,
+      "mean_overlap_at_N": 0.24156285578964037,
+      "mean_de_sig_genes_recall": 0.47722098705610894,
+      "mean_pearson_delta": 0.6866483891774949
+    },
+    {
+      "feature": "context",
+      "value": "HepG2-C3A",
+      "n_rows": 3744,
+      "mean_overlap_at_N": 0.27911220643489726,
+      "mean_de_sig_genes_recall": 0.6476776097652778,
+      "mean_pearson_delta": 0.595009094046758
+    },
+    {
+      "feature": "context",
+      "value": "Hs 766T",
+      "n_rows": 3744,
+      "mean_overlap_at_N": 0.2835824530569768,
+      "mean_de_sig_genes_recall": 0.7539871385410485,
+      "mean_pearson_delta": 0.6043491289893943
+    },
+    {
+      "feature": "context",
+      "value": "B_Naive",
+      "n_rows": 304,
+      "mean_overlap_at_N": 0.30981725399621984,
+      "mean_de_sig_genes_recall": 0.5306902682014134,
+      "mean_pearson_delta": 0.7173132692022544
+    },
+    {
+      "feature": "context",
+      "value": "PANC-1",
+      "n_rows": 3740,
+      "mean_overlap_at_N": 0.3220846318423647,
+      "mean_de_sig_genes_recall": 0.7775233155221678,
+      "mean_pearson_delta": 0.6485185430570243
+    },
+    {
+      "feature": "context",
+      "value": "C32",
+      "n_rows": 3744,
+      "mean_overlap_at_N": 0.3516863868577496,
+      "mean_de_sig_genes_recall": 0.7097195308538881,
+      "mean_pearson_delta": 0.6979396258543408
+    },
+    {
+      "feature": "context",
+      "value": "CD4_Memory",
+      "n_rows": 242,
+      "mean_overlap_at_N": 0.36415433145608306,
+      "mean_de_sig_genes_recall": 0.7284848306831696,
+      "mean_pearson_delta": 0.777534784118006
+    },
+    {
+      "feature": "context",
+      "value": "HOP62",
+      "n_rows": 3744,
+      "mean_overlap_at_N": 0.3684680952839311,
+      "mean_de_sig_genes_recall": 0.7805967990445474,
+      "mean_pearson_delta": 0.693994955053344
+    },
+    {
+      "feature": "context",
+      "value": "CD14_Mono",
+      "n_rows": 304,
+      "mean_overlap_at_N": 0.5861049474240378,
+      "mean_de_sig_genes_recall": 0.651762780935924,
+      "mean_pearson_delta": 0.7707339172300539
+    },
+    {
+      "feature": "dataset_family",
+      "value": "Replogle-Nadig",
+      "n_rows": 19634,
+      "mean_overlap_at_N": 0.14595008628289993,
+      "mean_de_sig_genes_recall": 0.18438780290171716,
+      "mean_pearson_delta": 0.294727539753826
+    },
+    {
+      "feature": "dataset_family",
+      "value": "Parse-PBMC",
+      "n_rows": 1458,
+      "mean_overlap_at_N": 0.3057091158280087,
+      "mean_de_sig_genes_recall": 0.4944710045932112,
+      "mean_pearson_delta": 0.6230550406521297
+    },
+    {
+      "feature": "dataset_family",
+      "value": "Tahoe-100M",
+      "n_rows": 18716,
+      "mean_overlap_at_N": 0.32098652005591327,
+      "mean_de_sig_genes_recall": 0.733891555719787,
+      "mean_pearson_delta": 0.6479621505128765
+    },
+    {
+      "feature": "drugmeta_moa-broad",
+      "value": "unclear",
+      "n_rows": 3760,
+      "mean_overlap_at_N": 0.317423902620782,
+      "mean_de_sig_genes_recall": 0.7362889536804292,
+      "mean_pearson_delta": 0.6351610712246335
+    },
+    {
+      "feature": "drugmeta_moa-broad",
+      "value": "inhibitor/antagonist",
+      "n_rows": 13626,
+      "mean_overlap_at_N": 0.3202897464366965,
+      "mean_de_sig_genes_recall": 0.7325944900790952,
+      "mean_pearson_delta": 0.651682725135209
+    },
+    {
+      "feature": "drugmeta_moa-broad",
+      "value": "activator/agonist",
+      "n_rows": 1330,
+      "mean_overlap_at_N": 0.33819680493677196,
+      "mean_de_sig_genes_recall": 0.7404025332296013,
+      "mean_pearson_delta": 0.6460339612797116
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "DNA methyltransferase inhibitor",
+      "n_rows": 170,
+      "mean_overlap_at_N": 0.27616100745483946,
+      "mean_de_sig_genes_recall": 0.7781210876532728,
+      "mean_pearson_delta": 0.6794741724508212
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "EGFR/ERBB inhibitor",
+      "n_rows": 570,
+      "mean_overlap_at_N": 0.28494762144612445,
+      "mean_de_sig_genes_recall": 0.7390496565563354,
+      "mean_pearson_delta": 0.6502342591911816
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Other TK inhibitor",
+      "n_rows": 660,
+      "mean_overlap_at_N": 0.297224189320638,
+      "mean_de_sig_genes_recall": 0.7195225424467704,
+      "mean_pearson_delta": 0.5878044243210532
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Sonic inhibitor",
+      "n_rows": 140,
+      "mean_overlap_at_N": 0.3003832503856378,
+      "mean_de_sig_genes_recall": 0.747302258409999,
+      "mean_pearson_delta": 0.5802327273679632
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Other MAPK inhibitor",
+      "n_rows": 510,
+      "mean_overlap_at_N": 0.30071389129715925,
+      "mean_de_sig_genes_recall": 0.7126912274261489,
+      "mean_pearson_delta": 0.6484068100797195
+    }
+  ],
+  "highest_groups": [
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "DNA methyltransferase inhibitor",
+      "n_rows": 170,
+      "mean_overlap_at_N": 0.27616100745483946,
+      "mean_de_sig_genes_recall": 0.7781210876532728,
+      "mean_pearson_delta": 0.6794741724508212
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "EGFR/ERBB inhibitor",
+      "n_rows": 570,
+      "mean_overlap_at_N": 0.28494762144612445,
+      "mean_de_sig_genes_recall": 0.7390496565563354,
+      "mean_pearson_delta": 0.6502342591911816
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Other TK inhibitor",
+      "n_rows": 660,
+      "mean_overlap_at_N": 0.297224189320638,
+      "mean_de_sig_genes_recall": 0.7195225424467704,
+      "mean_pearson_delta": 0.5878044243210532
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Sonic inhibitor",
+      "n_rows": 140,
+      "mean_overlap_at_N": 0.3003832503856378,
+      "mean_de_sig_genes_recall": 0.747302258409999,
+      "mean_pearson_delta": 0.5802327273679632
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Other MAPK inhibitor",
+      "n_rows": 510,
+      "mean_overlap_at_N": 0.30071389129715925,
+      "mean_de_sig_genes_recall": 0.7126912274261489,
+      "mean_pearson_delta": 0.6484068100797195
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Adrenoceptor agonist",
+      "n_rows": 380,
+      "mean_overlap_at_N": 0.3017080075419724,
+      "mean_de_sig_genes_recall": 0.7291255700023127,
+      "mean_pearson_delta": 0.6306648391323458
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "GSK3 inhibitor",
+      "n_rows": 180,
+      "mean_overlap_at_N": 0.30232215419776703,
+      "mean_de_sig_genes_recall": 0.6880740571429423,
+      "mean_pearson_delta": 0.6294599278726511
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Multi-TK inhibitor",
+      "n_rows": 460,
+      "mean_overlap_at_N": 0.3045801241017002,
+      "mean_de_sig_genes_recall": 0.7460812868877836,
+      "mean_pearson_delta": 0.6472068401529332
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "PI3K/AKT inhibitor",
+      "n_rows": 270,
+      "mean_overlap_at_N": 0.3097948316660418,
+      "mean_de_sig_genes_recall": 0.7378480142991641,
+      "mean_pearson_delta": 0.6724556157434428
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "unclear",
+      "n_rows": 9750,
+      "mean_overlap_at_N": 0.3109168530328336,
+      "mean_de_sig_genes_recall": 0.7322774364620941,
+      "mean_pearson_delta": 0.6363217213987261
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "MEK inhibitor",
+      "n_rows": 240,
+      "mean_overlap_at_N": 0.31133864665039707,
+      "mean_de_sig_genes_recall": 0.7709765014972626,
+      "mean_pearson_delta": 0.7043437694742655
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "RAS inhibitor",
+      "n_rows": 210,
+      "mean_overlap_at_N": 0.3250641374984229,
+      "mean_de_sig_genes_recall": 0.7264401423661525,
+      "mean_pearson_delta": 0.6381481252788078
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Cyclooxygenase inhibitor",
+      "n_rows": 680,
+      "mean_overlap_at_N": 0.32621346414191765,
+      "mean_de_sig_genes_recall": 0.7413250942039727,
+      "mean_pearson_delta": 0.6664491406470702
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Androgen receptor antagonist",
+      "n_rows": 190,
+      "mean_overlap_at_N": 0.326783988858525,
+      "mean_de_sig_genes_recall": 0.7731401007844302,
+      "mean_pearson_delta": 0.6225235913114279
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "JAK/STAT inhibitor",
+      "n_rows": 340,
+      "mean_overlap_at_N": 0.33892766175156264,
+      "mean_de_sig_genes_recall": 0.7270949281604864,
+      "mean_pearson_delta": 0.6246561726733275
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "DNA synthesis/repair inhibitor",
+      "n_rows": 1290,
+      "mean_overlap_at_N": 0.3399195006501739,
+      "mean_de_sig_genes_recall": 0.7424030516286367,
+      "mean_pearson_delta": 0.6514408248178201
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Glucose transporter inhibitor",
+      "n_rows": 220,
+      "mean_overlap_at_N": 0.36091802247429944,
+      "mean_de_sig_genes_recall": 0.7556975926222972,
+      "mean_pearson_delta": 0.6952141849559914
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "MTOR inhibitor",
+      "n_rows": 420,
+      "mean_overlap_at_N": 0.3627186511143625,
+      "mean_de_sig_genes_recall": 0.7277103197194202,
+      "mean_pearson_delta": 0.700735258268902
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "RAF inhibitor",
+      "n_rows": 176,
+      "mean_overlap_at_N": 0.3629422096549461,
+      "mean_de_sig_genes_recall": 0.6643990483944567,
+      "mean_pearson_delta": 0.5797192862142269
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "CDK inhibitor",
+      "n_rows": 300,
+      "mean_overlap_at_N": 0.36453195823604145,
+      "mean_de_sig_genes_recall": 0.7198124812678253,
+      "mean_pearson_delta": 0.7272001217771321
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Glucocorticoid receptor agonist",
+      "n_rows": 280,
+      "mean_overlap_at_N": 0.36815421698819356,
+      "mean_de_sig_genes_recall": 0.7532829678104692,
+      "mean_pearson_delta": 0.7641397176551566
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Protein synthesis inhibitor",
+      "n_rows": 330,
+      "mean_overlap_at_N": 0.36873169542511536,
+      "mean_de_sig_genes_recall": 0.7100548156496329,
+      "mean_pearson_delta": 0.6719573722446732
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Retinoic receptor agonist",
+      "n_rows": 220,
+      "mean_overlap_at_N": 0.3786191287712921,
+      "mean_de_sig_genes_recall": 0.7496367407090879,
+      "mean_pearson_delta": 0.6714592429724606
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "HDAC inhibitor",
+      "n_rows": 170,
+      "mean_overlap_at_N": 0.39235579480251054,
+      "mean_de_sig_genes_recall": 0.7964869117419634,
+      "mean_pearson_delta": 0.6798293925143833
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Microtubule inhibitor",
+      "n_rows": 390,
+      "mean_overlap_at_N": 0.3943236764800518,
+      "mean_de_sig_genes_recall": 0.7422259447123177,
+      "mean_pearson_delta": 0.716141456594834
+    },
+    {
+      "feature": "drugmeta_moa-fine",
+      "value": "Proteasome inhibitor",
+      "n_rows": 170,
+      "mean_overlap_at_N": 0.40125576042347677,
+      "mean_de_sig_genes_recall": 0.7215210327942178,
+      "mean_pearson_delta": 0.7757355345303522
+    },
+    {
+      "feature": "protocol",
+      "value": "zeroshot",
+      "n_rows": 23786,
+      "mean_overlap_at_N": 0.15337008894446777,
+      "mean_de_sig_genes_recall": 0.45229413027682747,
+      "mean_pearson_delta": 0.3581256233091921
+    },
+    {
+      "feature": "protocol",
+      "value": "fewshot",
+      "n_rows": 16022,
+      "mean_overlap_at_N": 0.3539402483266169,
+      "mean_de_sig_genes_recall": 0.4567349167198684,
+      "mean_pearson_delta": 0.643114361363374
+    },
+    {
+      "feature": "representation",
+      "value": "SE",
+      "n_rows": 19873,
+      "mean_overlap_at_N": 0.20521228255937513,
+      "mean_de_sig_genes_recall": 0.4600542721940042,
+      "mean_pearson_delta": 0.43311294942219586
+    },
+    {
+      "feature": "representation",
+      "value": "HVG",
+      "n_rows": 19935,
+      "mean_overlap_at_N": 0.2628897869586007,
+      "mean_de_sig_genes_recall": 0.4481273423251553,
+      "mean_pearson_delta": 0.5124204028055743
+    }
+  ]
+}

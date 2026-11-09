@@ -89,5 +89,18 @@
     "saved_code_cells": 4,
     "saved_error_outputs": 0
   },
-  "requested_model": "CONCH"
+  "requested_model": "CONCH",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "conch-gpt-r2/test-05",
+    "disposition": "control",
+    "result": "Measured prospectively; excluded from primary axis and used as a nuisance control",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "conch-gpt-r2/test-05",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

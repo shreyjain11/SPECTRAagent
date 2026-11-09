@@ -1,0 +1,88 @@
+{
+  "checked_date": "2026-11-08",
+  "checks": [
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/",
+      "status": 200,
+      "final_url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/",
+      "length": null,
+      "modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/weekly/",
+      "status": 200,
+      "final_url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/weekly/",
+      "length": null,
+      "modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://marks.hms.harvard.edu/proteingym/ProteinGym_v1.3/DMS_ProteinGym_substitutions.zip",
+      "status": 200,
+      "final_url": "https://marks.hms.harvard.edu/proteingym/ProteinGym_v1.3/DMS_ProteinGym_substitutions.zip",
+      "length": "43021128",
+      "modified": "Sun, 13 Apr 2025 02:47:58 GMT",
+      "etag": "\"2907348-6329ff6970941\""
+    },
+    {
+      "url": "https://marks.hms.harvard.edu/proteingym/ProteinGym_v1.3/DMS_msa_files.zip",
+      "status": 200,
+      "final_url": "https://marks.hms.harvard.edu/proteingym/ProteinGym_v1.3/DMS_msa_files.zip",
+      "length": "1504361305",
+      "modified": "Sun, 13 Apr 2025 02:47:57 GMT",
+      "etag": "\"59aabb59-6329ff68e4faf\""
+    },
+    {
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+      "status": 200,
+      "final_url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+      "length": "642961469",
+      "modified": "Thu, 03 Aug 2023 14:36:53 GMT",
+      "etag": "\"9fd167735f16a1b87da6eb3e4c25fcb5\""
+    },
+    {
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_aa_substitutions.tsv.gz",
+      "status": 200,
+      "final_url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_aa_substitutions.tsv.gz",
+      "length": "1207278510",
+      "modified": "Tue, 19 Sep 2023 12:02:53 GMT",
+      "etag": "\"b9ccb339e0de6cb0a8d1973ad2026576\""
+    },
+    {
+      "url": "https://storage.googleapis.com/gcp-public-data--gnomad/release/2.1.1/constraint/gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz",
+      "status": 200,
+      "final_url": "https://storage.googleapis.com/gcp-public-data--gnomad/release/2.1.1/constraint/gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz",
+      "length": "4609488",
+      "modified": "Thu, 20 Aug 2020 15:19:05 GMT",
+      "etag": "\"967fb59dc509d9ee351b9d35efacf52a\""
+    },
+    {
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/previous_major_releases/release-2026_01/uniref/uniref50/uniref50.fasta.gz",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/previous_major_releases/release-2026_01/uniref/uniref50/",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "uniref": [
+    {
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/previous_major_releases/release-2026_01/uniref/uniref50.release_note",
+      "status": 200,
+      "bytes": "311",
+      "text": "                  UniProt Reference Clusters - UniRef50\n\n                      Release: 2026_01, 28-Jan-2026\n                      Number of clusters: 60,315,044\n\n Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms.\n Distributed under the Creative Commons Attribution (CC BY 4.0) License.\n\n"
+    },
+    {
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/previous_major_releases/release-2026_01/uniref/RELEASE.metalink",
+      "status": 200,
+      "bytes": "2641",
+      "text": "<metalink xmlns=\"http://www.metalinker.org/\" version=\"3.0\">\n  <publisher>\n    <name>UniProt Consortium</name>\n    <url>http://www.uniprot.org/</url>\n  </publisher>\n  <license>\n    <name>Creative Commons Attribution 4.0 International (CC BY 4.0)</name>\n    <url>http://creativecommons.org/licenses/by/4.0/</url>\n  </license>\n  <description>UniProt</description>\n  <version>2026_01</version>\n  <files>\n    <file name=\"uniref100.release_note\">\n      <size>312</size>\n      <verification>\n        <hash type=\"md5\">3ecd3db9889616032494dde5dc790983</hash>\n      </verification>\n      <resources>\n        <url type=\"ftp\" location=\"uk\" preference=\"100\">ftp://ftp.ebi.ac.uk/pub/databases/uniprot/previous_releases/release-2026_01/uniref/uniref100.release_note</url>\n        <url type=\"ftp\" location=\"us\" preference=\"100\">ftp://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2026_01/uniref/uniref100.release_note</url>\n      </resources>\n    </file>\n  <file name=\"uniref2026_01.tar.gz\">\n      <size>268122174916</size>\n      <verification>\n        <hash type=\"md5\">4eb0172248fa0f8f96e86aedc57e485c</hash>\n      </verification>\n      <resources>\n        <url type=\"ftp\" location=\"uk\" preference=\"100\">ftp://ftp.ebi.ac.uk/pub/databases/uniprot/previous_releases/release-2026_01/uniref/uniref2026_01.tar.gz</url>\n        <url type=\"ftp\" location=\"us\" preference=\"100\">ftp://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2026_01/uniref/uniref2026_01.tar.gz</url>\n      </resources>\n    </file>\n  <file name=\"uniref90.release_note\">\n      <size>311</size>\n      <verification>\n        <hash type=\"md5\">f4c9206b75266d0ec43d778545e04e2d</hash>\n      </verification>\n      <resources>\n        <url type=\"ftp\" location=\"uk\" preference=\"100\">ftp://ftp.ebi.ac.uk/pub/databases/uniprot/previous_releases/release-2026_01/uniref/uniref90.release_note</url>\n        <url type=\"ftp\" location=\"us\" preference=\"100\">ftp://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2026_01/uniref/uniref90.release_note</url>\n      </resources>\n    </file>\n  <file name=\"uniref50.release_note\">\n      <size>311</size>\n      <verification>\n        <hash type=\"md5\">214af75f6561921e90579c7970cd9a89</hash>\n      </verification>\n      <resources>\n        <url type=\"ftp\" location=\"uk\" preference=\"100\">ftp://ftp.ebi.ac.uk/pub/databases/uniprot/previous_releases/release-2026_01/uniref/uniref50.release_note</url>\n        <url type=\"ftp\" location=\"us\" preference=\"100\">ftp://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2026_01/uniref/uniref50.release_note</url>\n      </resources>\n    </file>\n  </files>\n</metalink>"
+    },
+    {
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/previous_major_releases/release-2026_01/uniref/uniref2026_01.tar.gz",
+      "status": 200,
+      "bytes": "268122174916"
+    }
+  ]
+}

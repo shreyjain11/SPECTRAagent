@@ -1,0 +1,129 @@
+{
+  "reference_rows": 1800,
+  "feature_columns": [
+    "r_mean",
+    "r_std",
+    "r_p05",
+    "r_p95",
+    "g_mean",
+    "g_std",
+    "g_p05",
+    "g_p95",
+    "b_mean",
+    "b_std",
+    "b_p05",
+    "b_p95",
+    "h_mean",
+    "h_std",
+    "s_mean",
+    "s_std",
+    "v_mean",
+    "v_std",
+    "h_hist_00",
+    "h_hist_01",
+    "h_hist_02",
+    "h_hist_03",
+    "h_hist_04",
+    "h_hist_05",
+    "h_hist_06",
+    "h_hist_07",
+    "s_hist_00",
+    "s_hist_01",
+    "s_hist_02",
+    "s_hist_03",
+    "s_hist_04",
+    "s_hist_05",
+    "s_hist_06",
+    "s_hist_07",
+    "v_hist_00",
+    "v_hist_01",
+    "v_hist_02",
+    "v_hist_03",
+    "v_hist_04",
+    "v_hist_05",
+    "v_hist_06",
+    "v_hist_07",
+    "gray_hist_00",
+    "gray_hist_01",
+    "gray_hist_02",
+    "gray_hist_03",
+    "gray_hist_04",
+    "gray_hist_05",
+    "gray_hist_06",
+    "gray_hist_07",
+    "gray_hist_08",
+    "gray_hist_09",
+    "gray_hist_10",
+    "gray_hist_11",
+    "gray_hist_12",
+    "gray_hist_13",
+    "gray_hist_14",
+    "gray_hist_15",
+    "gray_mean",
+    "gray_std",
+    "gray_entropy",
+    "edge_mean",
+    "edge_std",
+    "tissue_fraction",
+    "white_fraction",
+    "dark_fraction",
+    "saturation_high_fraction"
+  ],
+  "axes": {
+    "color_texture": {
+      "rows": 7180,
+      "maximum_absolute_distance_error": 0.00010517578130020411,
+      "mean_absolute_distance_error": 6.82449947138361e-07,
+      "level_mismatches": 0
+    },
+    "color": {
+      "rows": 7180,
+      "maximum_absolute_distance_error": 7.470703121725819e-05,
+      "mean_absolute_distance_error": 6.278937198620549e-07,
+      "level_mismatches": 0
+    },
+    "tissue_fraction": {
+      "rows": 7180,
+      "maximum_absolute_distance_error": 2.220446049250313e-16,
+      "mean_absolute_distance_error": 3.527604281300559e-17,
+      "level_mismatches": 0
+    },
+    "texture_complexity": {
+      "rows": 7180,
+      "maximum_absolute_distance_error": 8.881784197001252e-16,
+      "mean_absolute_distance_error": 5.013809894960766e-17,
+      "level_mismatches": 0
+    }
+  },
+  "baselines": {
+    "discovery": {
+      "rows": 7180,
+      "centroid_prediction_mismatches": 0,
+      "logistic_prediction_mismatches": 0
+    },
+    "confirmation": {
+      "rows": 1800,
+      "centroid_prediction_mismatches": 0,
+      "logistic_prediction_mismatches": 0
+    },
+    "expansion": {
+      "rows": 4000,
+      "centroid_prediction_mismatches": 0,
+      "logistic_prediction_mismatches": 0
+    }
+  },
+  "medians": {
+    "tissue_fraction": {
+      "tissue_fraction": 0.9612464126275511,
+      "white_fraction": 0.0356744260204081,
+      "dark_fraction": 0.0021125637755102,
+      "saturation_high_fraction": 0.07001355229591835
+    },
+    "texture_complexity": {
+      "gray_entropy": 3.1815658807754517,
+      "edge_mean": 0.0700098499655723,
+      "edge_std": 0.0563199650496244,
+      "gray_std": 0.15197338163852692
+    }
+  }
+}

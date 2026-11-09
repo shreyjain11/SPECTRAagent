@@ -1,0 +1,40 @@
+{
+  "sources": {
+    "GOA": "https://current.geneontology.org/annotations/goa_human.gaf.gz",
+    "GO_basic": "https://current.geneontology.org/ontology/go-basic.obo",
+    "WikiPathways": "https://data.wikipathways.org/current/gmt/wikipathways-20260510-gmt-Homo_sapiens.gmt",
+    "KEGG_list_hsa": "https://rest.kegg.jp/list/hsa",
+    "KEGG_list_pathway": "https://rest.kegg.jp/list/pathway/hsa",
+    "KEGG_link_pathway": "https://rest.kegg.jp/link/pathway/hsa"
+  },
+  "collections": {
+    "Reactome": {
+      "n_genes": 11461,
+      "n_features": 2823
+    },
+    "HGNC_gene_group": {
+      "n_genes": 27676,
+      "n_features": 2037
+    },
+    "GO_BP": {
+      "n_genes": 31552,
+      "n_features": 11190
+    },
+    "GO_MF": {
+      "n_genes": 27010,
+      "n_features": 4855
+    },
+    "GO_CC": {
+      "n_genes": 32339,
+      "n_features": 1944
+    },
+    "WikiPathways": {
+      "n_genes": 8960,
+      "n_features": 985
+    },
+    "KEGG": {
+      "n_genes": 29104,
+      "n_features": 371
+    }
+  }
+}

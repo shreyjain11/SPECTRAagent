@@ -1,0 +1,30 @@
+{
+  "status": "official_weight_conversion_complete_key_shape_checks_passed_prediction_comparison_stopped",
+  "current_transformers": "5.22.2",
+  "current_torch": "2.6.0",
+  "historical_transformers_commit": "f9a5a374be135f63b3019c1cefb91ea9e2d27e10",
+  "same_source_weights": true,
+  "weight_conversion": {
+    "status": "official_conversion_complete_keys_shapes_verified",
+    "verification_host": "exxact05",
+    "fold_revision": "e1e189d0f5fb70c2693da2332eca4443c0ccccd6",
+    "backbone_revision": "89c554c46a44d825fbfbe3ce2a6bdc539770bdaa",
+    "converter_commit": "3d87599b23ff5f630de770e08eeed64950e25a9e",
+    "converted_tensor_count": 2658,
+    "native_keys_verified": true,
+    "native_shapes_verified": true,
+    "independent_saved_tensor_elementwise_equality_check_performed": false,
+    "receipt": "compatibility/CONVERSION_RECEIPT.json"
+  },
+  "prediction_comparison": {
+    "status": "not_completed_stopped_at_user_request",
+    "numerical_equivalence_established": false,
+    "comparison_results": []
+  },
+  "current_notebook_settings": {
+    "precision": "Native current loading default; no untested ESMC-only BF16 override added",
+    "confidence": "Current native output fields; historical confidence aggregation equivalence not established",
+    "parameters": "Original evaluator loops, steps, samples and recorded seeds retained"
+  },
+  "note": "Official original-weight conversion completed: 2,658 tensors; native keys and shapes verified. Elementwise equality of saved tensor values was not independently tested. Prediction comparison was stopped at the user's request. Original archived measurements and decisions remain unchanged."
+}

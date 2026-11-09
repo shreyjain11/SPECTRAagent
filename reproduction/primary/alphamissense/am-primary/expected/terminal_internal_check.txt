@@ -1,0 +1,16 @@
+
+COARSE HARD (insert-state + occ<=0.9): n_hard_resid=3554
+   internal :   2406 (67.7%)
+   terminal :   1148 (32.3%)
+
+OCC q0 aligned (occ<=0.945): n_hard_resid=2611
+   internal :   2095 (80.2%)
+   terminal :    516 (19.8%)
+
+INSERT-STATE only: n_hard_resid=1774
+   internal :   1035 (58.3%)
+   terminal :    739 (41.7%)
+
+DEEP(Neff>=200) & occ<0.7: n_hard_resid=291
+   internal :    213 (73.2%)
+   terminal :     78 (26.8%)

@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-08",
+  "purpose": "Executable reconstructed public-source download recipes wired to7 original primary notebooks",
+  "notebook_flags": {
+    "RUN_DOWNLOADS": "Fetch axis-specific sources, verify and stage expected original inputs",
+    "DOWNLOAD_FULL_MSAS": "Additionally fetch ProteinGym v1.3 MSA archive and verify/extract original66members",
+    "REBUILD_ALIGNMENTS": "Run original alignment constructors with --msa-dir; Linux x86-64",
+    "REBUILD_UNIREF_SEARCH": "Axis1 only: archived268GB UniRef2026_01 database and original exact-version search"
+  },
+  "default_flags": false,
+  "helper": "reproduce_downloads.py",
+  "sources": "download_sources.json",
+  "actual_downloads": [
+    {
+      "dataset": "clinvar",
+      "bytes": 196569024,
+      "sha256": "c5bb136e1ac476d390d8110905e8224126ce7d43d5eae0e0bfe689fbe96b8726"
+    },
+    {
+      "dataset": "gnomad",
+      "bytes": 4609488,
+      "sha256": "153031d34b6794e8e99eb0306bc3c50b13b18accda8b0ffef91c2623dd3affd5"
+    },
+    {
+      "dataset": "proteingym_dms",
+      "bytes": 43021128,
+      "sha256": "3a83766254ac9ac9984ec25cb73c6e010ea4418f5e35f143933e6b6e6473b921"
+    }
+  ],
+  "checks": [
+    "ClinVar2026-06-06 full SHA256 matches original, header fileDate also confirms",
+    "All73 downloaded DMS member bytes match original inputs and stage successfully",
+    "gnomAD compressed and decompressed hashes match original and stage successfully",
+    "Empty-target64-protein score subset generation recreates exact original gzip hash using retained official rows as fixture",
+    "42 notebook acquisition/setup/source-display cells executed with defaults off",
+    "Full axis1 rerun checks optional fresh-hit path integration",
+    "Official AM release and MSA endpoints checked by HTTP metadata",
+    "Archived UniRef release note exactly matches original;268GB archive size and publisher MD5 recorded"
+  ],
+  "not_executed_in_this_change": [
+    "Full642MB hg38 and1.2GB amino-acid prediction downloads",
+    "Full1.5GB MSA download/fresh66MSA computation",
+    "Full268GB UniRef archive download/search",
+    "New clinical source-join invocation: bcftools absent locally; prior exact original constructor replay retained"
+  ],
+  "original_science_preserved": true,
+  "original_history_preserved": true,
+  "remaining_limitations": [
+    "Fresh alignment reconstruction still has the documented OTU7A37-position weighted-count difference; unchanged by download recipes",
+    "Clinical source reconstruction requires bcftools on PATH",
+    "Fresh alignment/homology execution uses supplied Linux x86-64 MMseqs binary; other platforms retain explicit recorded-output reuse"
+  ],
+  "source_identity_resolved": "Exact original ClinVar dated snapshot recovered; original shell-history absence is not a replay obstacle",
+  "original_input_code_manifest_verified_files": 130,
+  "notebook_code_cells": 130,
+  "notebook_errors": 0,
+  "axis1_full_rerun_seconds": 44.797,
+  "html_exports": "html/axis-1.html through html/axis-7.html plus html/download-checks.html"
+}

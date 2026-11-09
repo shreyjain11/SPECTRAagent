@@ -1,0 +1,1559 @@
+{
+  "schema_version": 1,
+  "scope": "Original workflow traceability for12primary ESMFold2 groups; no protocol-compliance verdicts",
+  "archive": "artifact_manifest.json",
+  "stage_paths": "Relative to this directory. Archived artifacts are expanded offline by bootstrap.py. Code:function pointers identify functions, not line numbers.",
+  "entries": [
+    {
+      "id": "esmfold2-featured/test-01",
+      "axis": "Evolutionary support",
+      "notebook": "notebooks/test-01.ipynb",
+      "script": "notebooks/test-01.py",
+      "published_notebook_sha256": "939d0ab4bbab851984fbf053b00ad5f5c60858b0cbcfb68a3ef96efdc1a7e095",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv"
+          ],
+          "panels": [
+            "cameo"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original A3M parser/counting and CAMEO metadata/FASTA/reference parser",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/scripts/evaluate_esmfold2_cameo.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/finalize_spectra_outputs.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/analyze_spectra_axes.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/build_cameo_dataset.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "log10(nonquery MSA rows+1)",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/scripts/evaluate_esmfold2_cameo.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/finalize_spectra_outputs.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/analyze_spectra_axes.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/build_cameo_dataset.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original depth quintiles/eighths plus >=3,2.6\u20133,<2.6 bands",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv"
+          ]
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/target_model_results.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/spectral_performance_curve.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/final_report.md",
+            "original_runs/esmfold2_single_controller_final_run/axis_ledger.json",
+            "original_runs/esmfold2_single_controller_final_run/spectra_loop_state.json"
+          ],
+          "notebook_cell": 15,
+          "recorded_text": "## Recorded conclusion\n\nMean C\u03b1-lDDT was 0.919 in the 105 targets at or above log-depth 3 and 0.723 in the other 33. Spearman \u03c1 = 0.379, P = 4.49 \u00d7 10\u207b\u2076.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes."
+      ]
+    },
+    {
+      "id": "esmfold2-featured/test-02",
+      "axis": "CAMEO difficulty, length and resolution",
+      "notebook": "notebooks/test-02.ipynb",
+      "script": "notebooks/test-02.py",
+      "published_notebook_sha256": "9ccc0be86449ad30f231944b7306907c1e1e1d728e92357ee9e05116895c622e",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv"
+          ],
+          "panels": [
+            "cameo"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original CAMEO metadata/sequence parser",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/scripts/evaluate_esmfold2_cameo.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/finalize_spectra_outputs.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/analyze_spectra_axes.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/build_cameo_dataset.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "CAMEO difficulty, sequence length and reference resolution",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/scripts/evaluate_esmfold2_cameo.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/finalize_spectra_outputs.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/analyze_spectra_axes.py",
+            "original_runs/esmfold2_single_controller_final_run/scripts/build_cameo_dataset.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original difficulty categories and length quintiles; resolution control",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv"
+          ]
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/target_model_results.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/spectral_performance_curve.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/final_report.md",
+            "original_runs/esmfold2_single_controller_final_run/axis_ledger.json",
+            "original_runs/esmfold2_single_controller_final_run/spectra_loop_state.json"
+          ],
+          "notebook_cell": 15,
+          "recorded_text": "## Recorded conclusion\n\nMean C\u03b1-lDDT across easy, medium and hard categories was 0.918, 0.861 and 0.737. These benchmark controls do not establish three independent discoveries.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes."
+      ]
+    },
+    {
+      "id": "esmfold2-featured/test-03",
+      "axis": "Flexible / non-helical composition",
+      "notebook": "notebooks/test-03.ipynb",
+      "script": "notebooks/test-03.py",
+      "published_notebook_sha256": "47db20c1c22fdcf8d27d3d7801f84143d50841e9ee6b691c764a970ab970d3e9",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/spectra_ready_dataset/candidate_features.csv"
+          ],
+          "panels": [
+            "cameo",
+            "cameo_scaled14",
+            "cameo_scaled40",
+            "external34",
+            "flexible107"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original sequence-feature code and613-row external pool; scaling/external confirmation",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/score_axes.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/build_nonerror_features.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/finalize_spectra_outputs.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/freeze_followup_axes.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/score_followup_axes.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/mine_outcome_informed_hypotheses.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/densify_primary_axis.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/build_external_rcsb_bucket_panel.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/score_axes.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/build_nonerror_features.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/finalize_spectra_outputs.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/freeze_followup_axes.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/score_followup_axes.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/mine_outcome_informed_hypotheses.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/densify_primary_axis.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/summarize_expanded_external_spc.py",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/build_expanded_external_panel.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "Mean percentile rank of proline and Chou\u2013Fasman beta/turn-minus-helix components",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/score_axes.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/build_nonerror_features.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/finalize_spectra_outputs.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/freeze_followup_axes.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/score_followup_axes.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/mine_outcome_informed_hypotheses.py",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/densify_primary_axis.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/build_external_rcsb_bucket_panel.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/score_axes.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/build_nonerror_features.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/finalize_spectra_outputs.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/freeze_followup_axes.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/score_followup_axes.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/mine_outcome_informed_hypotheses.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/densify_primary_axis.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/summarize_expanded_external_spc.py",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/build_expanded_external_panel.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original141-target rank reference and freeze program; external <= empirical-CDF rule; original frozen7levels retained",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_definitions_prejoin.json",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_definitions_followup.json",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/primary_axis_membership.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/rcsb_external_candidate_pool.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_ready_dataset/candidate_features.prior.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_ready_dataset/prospective_features.followup.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_ready_dataset/prospective_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/axis_definitions_prejoin.json",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/axis_definitions_followup.json",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/primary_axis_membership.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/rcsb_external_candidate_pool.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/candidate_features.prior.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/prospective_features.followup.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/prospective_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/spectra_ready_dataset/candidate_features.csv"
+          ]
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/target_model_results.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/primary_axis_membership.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/target_model_results.scaled_samples.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/target_model_results.scaled_samples.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/target_model_results.scaled_samples.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/target_model_results.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/primary_axis_membership.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/target_model_results.scaled_samples.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/target_model_results.scaled_samples.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/target_model_results.scaled_samples.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/target_model_results.scaled_samples.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectral_curves_all_axes.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/followup_axis_summary.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/followup_axis_curves.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectral_performance_curve.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_summary.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/primary_axis_decile_curve.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_paired_effect_summary.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_group_summary.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_high_vs_control_effects.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_paired_effect_summary.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_group_summary.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_high_vs_control_effects.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaled_group_summary.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaled_high_vs_control_effects.csv",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectral_curves_all_axes.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/followup_axis_summary.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/followup_axis_curves.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectral_performance_curve.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/axis_summary.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/primary_axis_decile_curve.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_paired_effect_summary.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_group_summary.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_high_vs_control_effects.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_paired_effect_summary.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_group_summary.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_high_vs_control_effects.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaled_group_summary.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaled_high_vs_control_effects.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaled_selection_summary_by_target.csv",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_spc_by_level.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/final_report.md",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_ledger.json",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_loop_state.json",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_report.md",
+            "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_expansion_report.md",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/final_report.md",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/axis_ledger.json",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_loop_state.json",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_report.md",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_expansion_report.md",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_report.md"
+          ],
+          "notebook_cell": 16,
+          "recorded_text": "## Recorded conclusion\n\nHighest-stress minus remaining targets was \u22120.179 in discovery and +0.031 in confirmation. The CAMEO association did not generalize.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes.",
+        "Original8S7A_A flexible level4 is retained; local qcut yields level5 at that boundary, while continuous ranks and1839external percentile components reproduce."
+      ]
+    },
+    {
+      "id": "esmfold2-featured/test-04",
+      "axis": "Absolute sequence charge",
+      "notebook": "notebooks/test-04.ipynb",
+      "script": "notebooks/test-04.py",
+      "published_notebook_sha256": "9bd27a49796b920779020f3ecf057afe3c0d1d7f36d01d99fe03e07d62d00033",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/candidate_features.csv"
+          ],
+          "panels": [
+            "cameo",
+            "cameo_scaled40",
+            "external34",
+            "flexible107",
+            "charge97"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original common sequence features, shared source comparison and97-target fresh panel",
+          "artifacts": [
+            "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/scripts/analyze_shared_axes.py",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/summarize_charge_confirmation.py",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/build_fresh_charge_panel.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "Absolute sequence charge under each original program\u2019s recorded chemistry convention",
+          "artifacts": [
+            "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/scripts/analyze_shared_axes.py",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/summarize_charge_confirmation.py",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/build_fresh_charge_panel.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original eligible-pool charge bands plus discovery-fitted charge/hydropathy levels",
+          "artifacts": [
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/eligible_unscored_charge_pool.csv",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/candidate_features.csv"
+          ]
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/target_model_results.csv",
+            "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/spectra_ready_dataset/combined_prospective_performance.csv",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/target_model_results.scaled_samples.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/shared_axis_source_heldout_summary.csv",
+            "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/shared_axis_level_curves.csv",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/analysis_outputs/charge_confirmation_level_curves.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/final_report.md",
+            "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/axis_ledger.json",
+            "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/spectra_loop_state.json",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/final_report.md",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_loop_state.json"
+          ],
+          "notebook_cell": 15,
+          "recorded_text": "## Recorded conclusion\n\nHighest-minus-rest C\u03b1-lDDT was \u22120.071 in discovery and +0.007 in confirmation.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes."
+      ]
+    },
+    {
+      "id": "esmfold2-featured/test-05",
+      "axis": "Acidic windows",
+      "notebook": "notebooks/test-05.ipynb",
+      "script": "notebooks/test-05.py",
+      "published_notebook_sha256": "605dcb56c1664730852620443939c8f3dec87f4a42d662c2d9a09ffd8d1503a5",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv"
+          ],
+          "panels": [
+            "cameo",
+            "cameo_scaled14",
+            "cameo_scaled40",
+            "external34",
+            "flexible107",
+            "charge97",
+            "acidic78"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original window constructor and panel assignment; all514 retained screen combinations",
+          "artifacts": [
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/ingest_all_evidence_and_screen.py",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/summarize_acidic_window_confirmation.py",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/build_acidic_window_confirmation_panel.py",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/post_acidic_discovery_screen.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "Maximum negative-charge31-residue window, low direction is harder",
+          "artifacts": [
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/ingest_all_evidence_and_screen.py",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/summarize_acidic_window_confirmation.py",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/build_acidic_window_confirmation_panel.py",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/post_acidic_discovery_screen.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original33-finite discovery quintiles;105eligible\u219278selected,77finite confirmation",
+          "artifacts": [
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/eligible_unscored_acidic_window_pool.csv",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv"
+          ]
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.acidic_window_confirmation.target_level.csv",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.acidic_window_confirmation.scaled_samples.csv",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.csv",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/combined_evidence_table.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/all_evidence_axis_screen.csv",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/fresh_panel_remaining_axis_screen.csv",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/acidic_window_confirmation_level_curves.csv",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/post_acidic_axis_screen.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/axis_ledger.json",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_loop_state.json"
+          ],
+          "notebook_cell": 13,
+          "recorded_text": "## Original agent determination\n\nThe historical ledger marks the fresh local-acidic-window axis **failed_fresh_confirmation**. The exact best-by-pTM top-minus-rest contrast is \u22120.0172900832; its original bootstrap interval includes zero. The original discovery 33-target subset and original five-band curve are reproduced above. The recovered source is preserved even where its chemistry convention or selection order differs from other axes.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes."
+      ]
+    },
+    {
+      "id": "esmfold2-featured/test-06",
+      "axis": "Cysteine fraction",
+      "notebook": "notebooks/test-06.ipynb",
+      "script": "notebooks/test-06.py",
+      "published_notebook_sha256": "c81f7dc81c0a6eb6e0cee2e678f8a514fc1159cbbc0cd7cbb5a6f04e2391e238",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/cys_confirmation_candidate_features.csv"
+          ],
+          "panels": [
+            "cameo",
+            "cameo_scaled14",
+            "cameo_scaled40",
+            "external34",
+            "flexible107",
+            "charge97",
+            "acidic78",
+            "cysteine95"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original pool/exclusion order; expanded feature and sequence-neighborhood construction;828screens",
+          "artifacts": [
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/build_cys_confirmation_panel.py",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/summarize_cys_confirmation.py",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/expand_all_scored_features.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "Cysteine fraction",
+          "artifacts": [
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/build_cys_confirmation_panel.py",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/summarize_cys_confirmation.py",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/expand_all_scored_features.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original pre-exclusion quantiles on613pool\u2192207eligible\u219295selected",
+          "artifacts": [
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/cys_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/eligible_unscored_cys_pool.csv",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/expanded_candidate_pool_features.csv"
+          ]
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/target_model_results.cys_confirmation.target_level.csv",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/target_model_results.csv",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/target_model_results.cys_confirmation.scaled_samples.csv",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/combined_evidence_with_cys_confirmation.csv",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/expanded_all_scored_evidence_table.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/expanded_all_scored_axis_screen.csv",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/cys_confirmation_level_curves.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/final_report.md",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/axis_ledger.json",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_loop_state.json"
+          ],
+          "notebook_cell": 16,
+          "recorded_text": "## Recorded conclusion\n\nC\u03b1-lDDT averaged 0.901 in the lowest and 0.787 in the highest cysteine group (mean cysteine content 0.11% and 4.03%, respectively). The intermediate groups did not form a strictly monotone curve.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes."
+      ]
+    },
+    {
+      "id": "esmfold2-featured/test-07",
+      "axis": "Viral envelope proteins",
+      "notebook": "notebooks/test-07.ipynb",
+      "script": "notebooks/test-07.py",
+      "published_notebook_sha256": "6f8a6bee63d55b183a4f6f36a876b0705220af59ad45a7e5ba41ad69953f22af",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/cys_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/viral_disulfide_pilot_candidate_features.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/envelope_fusion_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_confirmation_candidate_features.csv"
+          ],
+          "panels": [
+            "cameo",
+            "cameo_scaled14",
+            "cameo_scaled40",
+            "external34",
+            "flexible107",
+            "charge97",
+            "acidic78",
+            "cysteine95",
+            "viral36",
+            "envelope38",
+            "surface45"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original global normalization/deduplication, original metadata missingness preserved",
+          "artifacts": [
+            "original_runs/esmfold2_global_hypothesis_audit_20260602/scripts/global_hypothesis_audit.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "Viral/phage and E/E2/envelope-E metadata groups",
+          "artifacts": [
+            "original_runs/esmfold2_global_hypothesis_audit_20260602/scripts/global_hypothesis_audit.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original metadata-available groups and complementary groups",
+          "artifacts": []
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_global_hypothesis_audit_20260602/spectra_ready_dataset/primary_exact_sequence_dedup.csv",
+            "original_runs/esmfold2_global_hypothesis_audit_20260602/spectra_ready_dataset/all_esmfold2_scored_evaluations.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_level_curves_all_evaluations.csv",
+            "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_level_curves_primary_sequence.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_global_hypothesis_audit_20260602/global_hypothesis_audit_report.md"
+          ],
+          "notebook_cell": 14,
+          "recorded_text": "## Recorded conclusion\n\nMean C\u03b1-lDDT was 0.591 for 105 viral/phage proteins and 0.899 for 184 others. The 11 E/E2/envelope-E proteins averaged 0.396 versus 0.803 for the remaining 278.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes."
+      ]
+    },
+    {
+      "id": "esmfold2-featured/test-08",
+      "axis": "Potential disulfide capacity",
+      "notebook": "notebooks/test-08.ipynb",
+      "script": "notebooks/test-08.py",
+      "published_notebook_sha256": "939aa1af018c605970424236bc2c060b46a23f2ad2d974d81add929ecdffc50b",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/cys_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/viral_disulfide_pilot_candidate_features.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/envelope_fusion_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_confirmation_candidate_features.csv"
+          ],
+          "panels": [
+            "cameo",
+            "cameo_scaled14",
+            "cameo_scaled40",
+            "external34",
+            "flexible107",
+            "charge97",
+            "acidic78",
+            "cysteine95",
+            "viral36",
+            "envelope38",
+            "surface45"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original sequence features, sequence/near-duplicate clustering, source consistency and controls",
+          "artifacts": [
+            "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/iterate_proxy_axes.py",
+            "original_runs/esmfold2_reviewer_proofing_20260602/scripts/save_example_predictions.py",
+            "original_runs/esmfold2_reviewer_proofing_20260602/scripts/reviewer_proofing_analysis.py",
+            "original_runs/esmfold2_paper_ready_final_20260602/scripts/save_example_predictions.py",
+            "original_runs/esmfold2_paper_ready_final_20260602/scripts/global_hypothesis_audit.py",
+            "original_runs/esmfold2_paper_ready_final_20260602/scripts/reviewer_proofing_analysis.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "Estimated disulfide capacity from cysteine count; sequence/provenance proxy candidates",
+          "artifacts": [
+            "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/iterate_proxy_axes.py",
+            "original_runs/esmfold2_reviewer_proofing_20260602/scripts/save_example_predictions.py",
+            "original_runs/esmfold2_reviewer_proofing_20260602/scripts/reviewer_proofing_analysis.py",
+            "original_runs/esmfold2_paper_ready_final_20260602/scripts/save_example_predictions.py",
+            "original_runs/esmfold2_paper_ready_final_20260602/scripts/global_hypothesis_audit.py",
+            "original_runs/esmfold2_paper_ready_final_20260602/scripts/reviewer_proofing_analysis.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original80th-percentile capacity threshold and418proxy comparisons",
+          "artifacts": []
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/combined_proxy_feature_table.csv",
+            "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/combined_proxy_cluster_table.csv",
+            "original_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_structure_targets.csv",
+            "original_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_prediction_overlay_summary.csv",
+            "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/cluster_assignments.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/tables/cluster_assignments.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/example_structures/example_structure_targets.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/example_structures/example_prediction_overlay_summary.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/data/primary_exact_sequence_dedup.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/data/all_esmfold2_scored_evaluations.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_control_models.csv",
+            "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_axis_screen.csv",
+            "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_source_consistency.csv",
+            "original_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_prediction_overlay_summary.csv",
+            "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/high_disulfide_quartile_curve.csv",
+            "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/matched_control_pairs.csv",
+            "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/confidence_calibration_summary.csv",
+            "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/per_source_high_disulfide_summary.csv",
+            "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/matched_control_summary.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/tables/high_disulfide_quartile_curve.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_level_curves_all_evaluations.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/tables/matched_control_pairs.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/tables/confidence_calibration_summary.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/tables/per_source_high_disulfide_summary.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_level_curves_primary_sequence.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/tables/matched_control_summary.csv",
+            "original_runs/esmfold2_paper_ready_final_20260602/example_structures/example_prediction_overlay_summary.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/proxy_axis_iteration_report.md",
+            "original_runs/esmfold2_reviewer_proofing_20260602/reviewer_proofing_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/10_envelope_fusion_confirmation_failed_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/06_charge_fresh_confirmation_failed_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/02_beyond_msa_flexible_nonhelical_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/03_flexible_nonhelical_external_rcsb_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/04_reference_geometry_benchmark_only_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/01_cameo_msa_depth_final_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/09_viral_disulfide_pilot_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/05_shared_charge_saved_outputs_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/11_surface_lowhelical_and_classII_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/07_high_cysteine_fresh_confirmation_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/source_reports/global_hypothesis_audit_report.md",
+            "original_runs/esmfold2_paper_ready_final_20260602/source_reports/reviewer_proofing_report.md"
+          ],
+          "notebook_cell": 14,
+          "recorded_text": "## Recorded conclusion\n\nThe 134 proteins at or above the 80th-percentile threshold averaged C\u03b1-lDDT 0.713 versus 0.862 in the remaining 518. This measures a risk proxy, not experimentally observed bonds.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes."
+      ]
+    },
+    {
+      "id": "esmfold2-featured/test-09",
+      "axis": "Reference geometry",
+      "notebook": "notebooks/test-09.ipynb",
+      "script": "notebooks/test-09.py",
+      "published_notebook_sha256": "babe7d38993dc321238a42150026cb77501fc9bef40d2bfe72a94ecda5f2dd0b",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+            "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv"
+          ],
+          "panels": [
+            "cameo",
+            "cameo_scaled40",
+            "external34"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original reference geometry parsing, common features, catalogue and frozen-axis audits",
+          "artifacts": [
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_hydropathy_axis.py",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_axis.py",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/build_combined_and_score_axes.py",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_reference_topology_axes.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "Reference radius of gyration/length^(1/3), shape and contact topology",
+          "artifacts": [
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_hydropathy_axis.py",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_axis.py",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/build_combined_and_score_axes.py",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_reference_topology_axes.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original hash0\u20135 discovery cutpoints applied to hash6\u20139 and external/scaled sets",
+          "artifacts": [
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_ready_dataset/combined_prospective_features.csv"
+          ]
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/target_model_results.csv",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_ready_dataset/combined_feature_outcome_table.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/candidate_axis_curves.csv",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_hydropathy_axis_curves.csv",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/candidate_axis_summary.csv",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_axis_curves.csv",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_rg_len13_norm_threshold_summary.csv",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/charge_window_followup_axis_summary.csv",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/charge_window_followup_axis_curves.csv",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_reference_topology_axis_curves.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/final_report.md",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/axis_ledger.json",
+            "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_loop_state.json"
+          ],
+          "notebook_cell": 14,
+          "recorded_text": "## Recorded conclusion\n\nAssociation was limited to retrospective benchmarking. The feature needs a reference structure.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes."
+      ]
+    },
+    {
+      "id": "esmfold2-featured/test-10",
+      "axis": "Viral-disulfide pilot",
+      "notebook": "notebooks/test-10.ipynb",
+      "script": "notebooks/test-10.py",
+      "published_notebook_sha256": "1ae50f85550b3dcde8510eb247e84211d71edb2bc40e4bd4c0ba5e2cb444e0ea",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/viral_disulfide_pilot_candidate_features.csv"
+          ],
+          "panels": [
+            "viral36"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original viral/disulfide rule and four sample policies",
+          "artifacts": [
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/build_viral_disulfide_pilot_panel.py",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/fetch_rcsb_envelope_candidates.py",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/summarize_viral_disulfide_pilot.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "Viral metadata plus sequence-derived disulfide capacity",
+          "artifacts": [
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/build_viral_disulfide_pilot_panel.py",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/fetch_rcsb_envelope_candidates.py",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/summarize_viral_disulfide_pilot.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original frozen pilot score bands on36targets",
+          "artifacts": [
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/viral_disulfide_pilot_candidate_features.csv",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/eligible_unscored_viral_disulfide_pool.csv"
+          ]
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/target_model_results.viral_disulfide_pilot.target_level.csv",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/target_model_results.viral_disulfide_pilot.scaled_samples.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/analysis_outputs/viral_disulfide_pilot_level_curves.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/viral_disulfide_pilot_report.md"
+          ],
+          "notebook_cell": 15,
+          "recorded_text": "## Recorded conclusion\n\nOnly eight top-level proteins were available. The result was treated as a pilot.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes."
+      ]
+    },
+    {
+      "id": "esmfold2-featured/test-11",
+      "axis": "Envelope/fusion proxy",
+      "notebook": "notebooks/test-11.ipynb",
+      "script": "notebooks/test-11.py",
+      "published_notebook_sha256": "7dfa3362a496d74e1dd103d7ee5bdc5870e23cc74cc206484f9c80b12e53b006",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/viral_disulfide_pilot_candidate_features.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/envelope_fusion_confirmation_candidate_features.csv"
+          ],
+          "panels": [
+            "viral36",
+            "envelope38"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original sequence proxy functions, score assignment and four policies",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/fetch_additional_surface_lowhelical_controls.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/discover_envelope_subaxes.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_envelope_fusion_confirmation_panel.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_surface_lowhelical_confirmation.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_envelope_fusion_confirmation.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/package_surface_lowhelical_panel_from_pool.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_surface_lowhelical_confirmation_panel.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "Envelope/fusion proxy from disulfide capacity, membrane and glycosylation sequence signals",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/fetch_additional_surface_lowhelical_controls.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/discover_envelope_subaxes.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_envelope_fusion_confirmation_panel.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_surface_lowhelical_confirmation.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_envelope_fusion_confirmation.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/package_surface_lowhelical_panel_from_pool.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_surface_lowhelical_confirmation_panel.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original frozen38-target score; exploratory envelope subaxes preserved",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_candidate_pool.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/envelope_fusion_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/eligible_envelope_fusion_pool.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/package_surface_lowhelical_panel_from_pool.py"
+          ]
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.envelope_fusion_confirmation.scaled_samples.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.envelope_fusion_confirmation.target_level.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.surface_lowhelical_confirmation.target_level.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.surface_lowhelical_confirmation.scaled_samples.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_feature_table.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_fusion_confirmation_level_curves.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/surface_lowhelical_confirmation_level_curves.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/envelope_fusion_confirmation_report.md",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/surface_lowhelical_confirmation_report.md",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_discovery_report.md"
+          ],
+          "notebook_cell": 15,
+          "recorded_text": "## Recorded conclusion\n\nThe frozen envelope/fusion score failed confirmation.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes."
+      ]
+    },
+    {
+      "id": "esmfold2-featured/test-12",
+      "axis": "Viral surface / low-helical subtype",
+      "notebook": "notebooks/test-12.ipynb",
+      "script": "notebooks/test-12.py",
+      "published_notebook_sha256": "92dd8a3a7cc3c93c73a097da9dd06de2207fed6a2eff344ab9a5ecf9b70b5157",
+      "stages": {
+        "data": {
+          "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+          "artifacts": [
+            "ACQUISITION_MANIFEST.json",
+            "ORIGINAL_ACQUISITION_EVIDENCE.json",
+            "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/viral_disulfide_pilot_candidate_features.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/envelope_fusion_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_confirmation_candidate_features.csv"
+          ],
+          "panels": [
+            "viral36",
+            "envelope38",
+            "surface45"
+          ],
+          "code": [
+            "acquisition.py:download_plan",
+            "acquisition.py:fetch_references",
+            "bootstrap.py:ensure_assets"
+          ],
+          "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+        },
+        "processing": {
+          "status": "original_programs_retained_and_rerun_connected",
+          "description": "Original sequence proxy functions and envelope/subtype discovery; four policies",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/fetch_additional_surface_lowhelical_controls.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/discover_envelope_subaxes.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_envelope_fusion_confirmation_panel.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_surface_lowhelical_confirmation.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_envelope_fusion_confirmation.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/package_surface_lowhelical_panel_from_pool.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_surface_lowhelical_confirmation_panel.py"
+          ],
+          "portable_code": [
+            "original_workflow.py:rebuild_features",
+            "original_workflow.py:require_features"
+          ],
+          "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+        },
+        "axis": {
+          "status": "definition_and_code_retained",
+          "definition": "Viral surface/low-helical subtype proxy",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/fetch_additional_surface_lowhelical_controls.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/discover_envelope_subaxes.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_envelope_fusion_confirmation_panel.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_surface_lowhelical_confirmation.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_envelope_fusion_confirmation.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/package_surface_lowhelical_panel_from_pool.py",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_surface_lowhelical_confirmation_panel.py"
+          ]
+        },
+        "levels": {
+          "status": "original_assignment_or_frozen_fit_retained",
+          "description": "Original frozen45-target score and metadata/sequence subtype rules",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_candidate_pool.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/envelope_fusion_confirmation_candidate_features.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/eligible_envelope_fusion_pool.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/package_surface_lowhelical_panel_from_pool.py"
+          ]
+        },
+        "evaluation": {
+          "status": "original_scores_retained_current_inference_route_connected",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.envelope_fusion_confirmation.scaled_samples.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.envelope_fusion_confirmation.target_level.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.surface_lowhelical_confirmation.target_level.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.surface_lowhelical_confirmation.scaled_samples.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_feature_table.csv"
+          ],
+          "code": [
+            "acquisition.py:run_inference",
+            "current_esmfold2_adapter.py",
+            "current_implementation.py",
+            "original_workflow.py:validate_results"
+          ],
+          "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+          "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+        },
+        "curve": {
+          "status": "original_functions_replayed_and_new_results_connected",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_fusion_confirmation_level_curves.csv",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/surface_lowhelical_confirmation_level_curves.csv"
+          ],
+          "code": [
+            "original_workflow.py:run_axis"
+          ],
+          "validation": [
+            "WORKFLOW_VALIDATION.json",
+            "CURVE_REPLAY_VALIDATION.json",
+            "WORKFLOW_GUARD_VALIDATION.json"
+          ],
+          "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+        },
+        "decision": {
+          "status": "original_record_preserved",
+          "artifacts": [
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/envelope_fusion_confirmation_report.md",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/surface_lowhelical_confirmation_report.md",
+            "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_discovery_report.md"
+          ],
+          "notebook_cell": 15,
+          "recorded_text": "## Recorded conclusion\n\nA localized low-accuracy subtype motivated the subsequent E/E2/envelope-E analysis.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+          "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+        }
+      },
+      "known_boundaries": [
+        "Bulk reference/MSA acquisition and full fresh-model execution not rerun during integration.",
+        "Current implementation numerical equivalence not established; completed conversion checked2658native tensor keys/shapes."
+      ]
+    }
+  ],
+  "summary": {
+    "entries": 12,
+    "chain_stages_per_entry": 7,
+    "original_files": 406,
+    "replay_source_files": 178,
+    "unmapped_recovered_files": [],
+    "primary_saved_figures": 15,
+    "full_raw_to_model_run_executed": false
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "clean_package_start": "No expanded source or original_runs directories; notebook bootstrap restored inputs offline.",
+  "notebooks": [
+    {
+      "notebook": "notebooks/test-01.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 10.336,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    },
+    {
+      "notebook": "notebooks/test-02.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 10.334,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    },
+    {
+      "notebook": "notebooks/test-03.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 15.669,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    },
+    {
+      "notebook": "notebooks/test-04.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 13.497,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    },
+    {
+      "notebook": "notebooks/test-05.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 16.14,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    },
+    {
+      "notebook": "notebooks/test-06.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 19.592,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    },
+    {
+      "notebook": "notebooks/test-07.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 13.417,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    },
+    {
+      "notebook": "notebooks/test-08.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 15.852,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    },
+    {
+      "notebook": "notebooks/test-09.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 11.553,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    },
+    {
+      "notebook": "notebooks/test-10.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 8.584,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    },
+    {
+      "notebook": "notebooks/test-11.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 8.609,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    },
+    {
+      "notebook": "notebooks/test-12.ipynb",
+      "default_replay_completed": true,
+      "elapsed_seconds": 8.404,
+      "saved_error_outputs": 0,
+      "network_or_model_run": false
+    }
+  ],
+  "all12_clean_notebooks_passed": true,
+  "archive": {
+    "file": "original-artifacts.zip",
+    "sha256": "e1afd7e920537a6ba5a1a716d715f6d1962f635e5274d3b8a5081e1903ed182f",
+    "bytes": 7827964,
+    "unique_objects": 301,
+    "expanded_verified_files": 584
+  },
+  "bootstrap_concurrent_processes": 3,
+  "bootstrap_concurrent_passed": true,
+  "changed_original_overwrite_rejected": true,
+  "python_modules_and_exports_parsed": 22,
+  "main_saved_figures": 15,
+  "traceability_entries": 12,
+  "traceability_stages_per_entry": 7,
+  "active_helpers_with_user_machine_paths": [],
+  "shared_dependencies": {
+    "execute_notebook.py": true,
+    "requirements-notebook.txt": true
+  },
+  "bulk_reference_downloads_executed": false,
+  "model_inference_executed": false,
+  "original_archived_bytes_modified": false,
+  "retained_analysis_validation": [
+    "WORKFLOW_VALIDATION.json",
+    "CURVE_REPLAY_VALIDATION.json",
+    "WORKFLOW_GUARD_VALIDATION.json"
+  ],
+  "package_helper_sha256": {
+    "original_workflow.py": "783ce4a2e719b201ae2d29b223229ea214f18d33bb74fd08ccea1478dc149529",
+    "current_implementation.py": "b78af10517773be5f304778311b6ac04ec2c4e04090a848733efbd66375b3f15",
+    "bootstrap.py": "22b89d9932e39ff8ea32bf35bbabed75f0f1a611d90fab11b78086317448fdc6",
+    "validate_original_workflow.py": "49d0cd198d4b15d1ab1907223ef1ddbb3c66375fd8f52676977f651477da2653",
+    "validate_workflow_guards.py": "8e0dab93662d58e65be1d6d781f9e78ea40460aa00c045a0d68114989513581a",
+    "current_esmfold2_adapter.py": "78d49d29408e596088a035ab104a75e3749f1b2753bd54af9b644a0e4952b04e",
+    "acquisition.py": "015585ba23f22e8b74e8f7f23b596a5ec201c3d24027d186ec5d7708ed7350da",
+    "compare_workflow_curves.py": "40a307603825a1dcf531be3d80a55392733037a45deba6f8c9f92b1d15243f6d"
+  }
+}

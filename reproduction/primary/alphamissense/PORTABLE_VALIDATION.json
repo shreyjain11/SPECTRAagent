@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "purpose": "Portable packaged copy checked from restored versioned inputs; original scientific calculations and historical decisions preserved",
+  "clean_payload_extraction_verified_files": 177,
+  "notebook_runs": [
+    {
+      "axis": 1,
+      "exit_code": 0,
+      "seconds": 45.78
+    },
+    {
+      "axis": 2,
+      "exit_code": 0,
+      "seconds": 30.07
+    },
+    {
+      "axis": 3,
+      "exit_code": 0,
+      "seconds": 36.07
+    },
+    {
+      "axis": 4,
+      "exit_code": 0,
+      "seconds": 34.41
+    },
+    {
+      "axis": 5,
+      "exit_code": 0,
+      "seconds": 35.0
+    },
+    {
+      "axis": 6,
+      "exit_code": 0,
+      "seconds": 34.81
+    },
+    {
+      "axis": 7,
+      "exit_code": 0,
+      "seconds": 34.36
+    }
+  ],
+  "notebooks": [
+    {
+      "notebook": "am-primary/axis-1.ipynb",
+      "code_cells": 12,
+      "executed_code_cells": 12,
+      "saved_png_figures": 1,
+      "errors": 0
+    },
+    {
+      "notebook": "am-primary/axis-2.ipynb",
+      "code_cells": 12,
+      "executed_code_cells": 12,
+      "saved_png_figures": 1,
+      "errors": 0
+    },
+    {
+      "notebook": "am-primary/axis-3.ipynb",
+      "code_cells": 22,
+      "executed_code_cells": 22,
+      "saved_png_figures": 2,
+      "errors": 0
+    },
+    {
+      "notebook": "am-primary/axis-4.ipynb",
+      "code_cells": 21,
+      "executed_code_cells": 21,
+      "saved_png_figures": 1,
+      "errors": 0
+    },
+    {
+      "notebook": "am-primary/axis-5.ipynb",
+      "code_cells": 21,
+      "executed_code_cells": 21,
+      "saved_png_figures": 1,
+      "errors": 0
+    },
+    {
+      "notebook": "am-primary/axis-6.ipynb",
+      "code_cells": 21,
+      "executed_code_cells": 21,
+      "saved_png_figures": 1,
+      "errors": 0
+    },
+    {
+      "notebook": "am-primary/axis-7.ipynb",
+      "code_cells": 21,
+      "executed_code_cells": 21,
+      "saved_png_figures": 1,
+      "errors": 0
+    }
+  ],
+  "new_model_inference_executed": false,
+  "new_raw_source_downloads_executed": false,
+  "fresh_alignment_clustering_executed": false,
+  "default_execution": "released predictions / original search output and preserved feature inputs; same-run recomputation of original curves and diagnostics",
+  "requirements": "requirements.txt",
+  "artifact_manifest": "payload_manifest.json",
+  "traceability": "traceability.json",
+  "external_assets": [
+    {
+      "name": "am-original-uniref-hits-20260606.m8.gz",
+      "url": "https://github.com/yashaektefaie/SPECTRAagent/releases/download/primary-reproduction-2026-11-08/am-original-uniref-hits-20260606.m8.gz",
+      "bytes": 183094126,
+      "sha256": "265a1872bed445cf32c38798738bb988fd044dafdc4d5fb6fb5fb248fdca7e01",
+      "publication_status": "verified_public",
+      "publication_evidence": "RELEASE_INPUT_VERIFICATION.json"
+    }
+  ],
+  "external_asset_test_source": "Local exact release-asset cache; public publication/endpoint verification tracked separately by integrator",
+  "all_notebooks_executed_without_error": true,
+  "code_cells": 130,
+  "saved_png_figures": 8,
+  "portability_corrections": [
+    "Only axis-relevant input hashes are required; DMS axes do not require clinical files.",
+    "Optional raw alignment reconstruction is explicit on all platforms; default consumes recorded, hash-verified Linux arrays.",
+    "Supplemental per-variant PSSM comparison runs only after the same notebook constructs its original-feature individual records; no cached prior output dependency."
+  ],
+  "scientific_limits": [
+    "Optional bcftools clinical rejoin, full released score downloads, full MSA reconstruction and268GB UniRef search were not rerun during packaging.",
+    "Recorded MSA reconstruction has37 OTU7A weighted-count differences; occupancy/levels/AM and DMS statistics unchanged, small PSSM sensitivity retained separately."
+  ],
+  "original_primary_manifest_files_verified": 130
+}

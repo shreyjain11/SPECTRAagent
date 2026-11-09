@@ -1,0 +1,233 @@
+{
+  "scope": "Direct numerical comparison of integrated original-analysis outputs using retained original inputs and model measurements",
+  "full_raw_to_model_run_executed": false,
+  "inference_executed": false,
+  "absolute_tolerance": 1e-10,
+  "relative_tolerance": 1e-10,
+  "axes_checked": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "all_passed": true,
+  "tables": [
+    {
+      "axis": 1,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-01/spectral_performance_curve.csv",
+      "original": "original_runs/esmfold2_single_controller_final_run/spectral_performance_curve.csv",
+      "status": "passed",
+      "rows": 24,
+      "columns": 18,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "9f9658de3c76d959981e6c427fd9025d5821ce9d04c20b12ce9d096236da0764",
+      "original_sha256": "2f89842a021cdda10facbbbba6c44f36c6be371f32cb711706d8b9f147cf9984"
+    },
+    {
+      "axis": 2,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-02/spectral_performance_curve.csv",
+      "original": "original_runs/esmfold2_single_controller_final_run/spectral_performance_curve.csv",
+      "status": "passed",
+      "rows": 24,
+      "columns": 18,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "9f9658de3c76d959981e6c427fd9025d5821ce9d04c20b12ce9d096236da0764",
+      "original_sha256": "2f89842a021cdda10facbbbba6c44f36c6be371f32cb711706d8b9f147cf9984"
+    },
+    {
+      "axis": 3,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-03/spectral_curves_all_axes.csv",
+      "original": "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectral_curves_all_axes.csv",
+      "status": "passed",
+      "rows": 95,
+      "columns": 21,
+      "maximum_absolute_numeric_difference": 5.684341886080802e-14,
+      "generated_sha256": "a4c4a192610cbb51df30a8c543a2fb5c7bdc18a0825eb64cee3f7d331d52932b",
+      "original_sha256": "4e7024dbf040af23be76fd8e635b7da9819e57b1f72c77b609158c2b53529bec"
+    },
+    {
+      "axis": 3,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-03/followup_axis_curves.csv",
+      "original": "original_runs/esmfold2_beyond_evolutionary_support_final_run/followup_axis_curves.csv",
+      "status": "passed",
+      "rows": 120,
+      "columns": 21,
+      "maximum_absolute_numeric_difference": 8.526512829121202e-14,
+      "generated_sha256": "4c786a7325db37b1f308a523e41a50e619589c4d796d7a6a2eddf99fc96b785e",
+      "original_sha256": "a7b66bb8a310543d90a54e1f8898f5ec2fa361aed1cb2589bf3884c1e2c27dbb"
+    },
+    {
+      "axis": 3,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-03/flexible107_curves.csv",
+      "original": "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_spc_by_level.csv",
+      "status": "passed",
+      "rows": 20,
+      "columns": 17,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "9ee727e70b7806abc183d4ea7339e66a26c58279285193338fc20701ec40a7a4",
+      "original_sha256": "b5a41e226705c5ebda765ce6a673f3ff73336e4ebeb4770ef7cdc215f01ce68e"
+    },
+    {
+      "axis": 4,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-04/charge97_curves.csv",
+      "original": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/analysis_outputs/charge_confirmation_level_curves.csv",
+      "status": "passed",
+      "rows": 20,
+      "columns": 17,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "753871779e5f97f7b7263a760054e6a2c0ec73bbf772e56a7d27b52ae27dc229",
+      "original_sha256": "96cbe359559fd34122e9ccf0fdfca129bd3db7525dfc4d14259e70f3671ab4b5"
+    },
+    {
+      "axis": 4,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-04/frozen_charge_axis_curves.csv",
+      "original": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_axis_curves.csv",
+      "status": "passed",
+      "rows": 101,
+      "columns": 19,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "72a3189ff040f1871ccc97de1c9ab7cc02100b2e4f5ecfe632fb070d44221e84",
+      "original_sha256": "72a3189ff040f1871ccc97de1c9ab7cc02100b2e4f5ecfe632fb070d44221e84"
+    },
+    {
+      "axis": 4,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-04/frozen_charge_hydropathy_axis_curves.csv",
+      "original": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_hydropathy_axis_curves.csv",
+      "status": "passed",
+      "rows": 102,
+      "columns": 19,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "c6560cd18249ec999fc1b80d6746f2966116f6d30fdcf206d9cc81362b9ba3a3",
+      "original_sha256": "c6560cd18249ec999fc1b80d6746f2966116f6d30fdcf206d9cc81362b9ba3a3"
+    },
+    {
+      "axis": 5,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-05/acidic78_curves.csv",
+      "original": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/acidic_window_confirmation_level_curves.csv",
+      "status": "passed",
+      "rows": 20,
+      "columns": 16,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "59447ebb18f5c59daa85311ec0d31678244c41af2a3e25b247e63eff77da80a4",
+      "original_sha256": "59447ebb18f5c59daa85311ec0d31678244c41af2a3e25b247e63eff77da80a4"
+    },
+    {
+      "axis": 6,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-06/cysteine95_curves.csv",
+      "original": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/cys_confirmation_level_curves.csv",
+      "status": "passed",
+      "rows": 20,
+      "columns": 13,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "82a9cb4aebf7aba5ee8a3ad662ebb714b2094d42d9b369f53eed027d3967f5b8",
+      "original_sha256": "82a9cb4aebf7aba5ee8a3ad662ebb714b2094d42d9b369f53eed027d3967f5b8"
+    },
+    {
+      "axis": 7,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-07/all_evaluations_curves.csv",
+      "original": "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_level_curves_all_evaluations.csv",
+      "status": "passed",
+      "rows": 99,
+      "columns": 9,
+      "maximum_absolute_numeric_difference": 8.881784197001252e-16,
+      "generated_sha256": "dca230fac27341200f2165ab339ae7d74ec5f6a745e685ea07f3b7afc6626408",
+      "original_sha256": "55789677446db442223162b11475890a93f7cb409f5ebb3c29aef250793499eb"
+    },
+    {
+      "axis": 7,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-07/primary_sequence_curves.csv",
+      "original": "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_level_curves_primary_sequence.csv",
+      "status": "passed",
+      "rows": 99,
+      "columns": 9,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "e3b9615ab02c844430aa48c1afee0ccfeedb872b5774cf53b00742c6dd0f7f99",
+      "original_sha256": "add3e02502d96c1543589fc30a65190bd7ea03cdf52577fbb3a451fd866428cc"
+    },
+    {
+      "axis": 8,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-08/all_evaluations_curves.csv",
+      "original": "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_level_curves_all_evaluations.csv",
+      "status": "passed",
+      "rows": 99,
+      "columns": 9,
+      "maximum_absolute_numeric_difference": 8.881784197001252e-16,
+      "generated_sha256": "dca230fac27341200f2165ab339ae7d74ec5f6a745e685ea07f3b7afc6626408",
+      "original_sha256": "55789677446db442223162b11475890a93f7cb409f5ebb3c29aef250793499eb"
+    },
+    {
+      "axis": 8,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-08/primary_sequence_curves.csv",
+      "original": "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_level_curves_primary_sequence.csv",
+      "status": "passed",
+      "rows": 99,
+      "columns": 9,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "e3b9615ab02c844430aa48c1afee0ccfeedb872b5774cf53b00742c6dd0f7f99",
+      "original_sha256": "add3e02502d96c1543589fc30a65190bd7ea03cdf52577fbb3a451fd866428cc"
+    },
+    {
+      "axis": 9,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-09/frozen_reference_topology_axis_curves.csv",
+      "original": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_reference_topology_axis_curves.csv",
+      "status": "passed",
+      "rows": 295,
+      "columns": 19,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "0c377ca3dad58d702585a9dd1173edbf781459c31bd26f3ac3c2dd6b0a3eeaa9",
+      "original_sha256": "0c377ca3dad58d702585a9dd1173edbf781459c31bd26f3ac3c2dd6b0a3eeaa9"
+    },
+    {
+      "axis": 10,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-10/viral36_curves.csv",
+      "original": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/analysis_outputs/viral_disulfide_pilot_level_curves.csv",
+      "status": "passed",
+      "rows": 12,
+      "columns": 16,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "cb9b5f6eb17c2b4b9c0c26f7201299dabbcdfdbb0d8bd99dd53848cc5eb71bc2",
+      "original_sha256": "cb9b5f6eb17c2b4b9c0c26f7201299dabbcdfdbb0d8bd99dd53848cc5eb71bc2"
+    },
+    {
+      "axis": 11,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-11/envelope38_curves.csv",
+      "original": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_fusion_confirmation_level_curves.csv",
+      "status": "passed",
+      "rows": 12,
+      "columns": 17,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "a40b6cef4b5e429ad24315e05b047ed17d143acfefae72c3baca6deea05c7d66",
+      "original_sha256": "a40b6cef4b5e429ad24315e05b047ed17d143acfefae72c3baca6deea05c7d66"
+    },
+    {
+      "axis": 12,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-12/envelope38_curves.csv",
+      "original": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_fusion_confirmation_level_curves.csv",
+      "status": "passed",
+      "rows": 12,
+      "columns": 17,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "a40b6cef4b5e429ad24315e05b047ed17d143acfefae72c3baca6deea05c7d66",
+      "original_sha256": "a40b6cef4b5e429ad24315e05b047ed17d143acfefae72c3baca6deea05c7d66"
+    },
+    {
+      "axis": 12,
+      "generated": "<package>/validation/retained-workflow/analysis/axis-12/surface45_curves.csv",
+      "original": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/surface_lowhelical_confirmation_level_curves.csv",
+      "status": "passed",
+      "rows": 12,
+      "columns": 15,
+      "maximum_absolute_numeric_difference": 0.0,
+      "generated_sha256": "2c7fb2be86f7061c111ba03b362f34e75b6ffad69487d032f548b5fdae7b4a3b",
+      "original_sha256": "2c7fb2be86f7061c111ba03b362f34e75b6ffad69487d032f548b5fdae7b4a3b"
+    }
+  ]
+}

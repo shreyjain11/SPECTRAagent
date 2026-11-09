@@ -1,0 +1,1241 @@
+{
+  "schema_version": 1,
+  "model": "state",
+  "description": "Exact historical inputs for the original scored-output STATE analysis. No model inference.",
+  "assets": [
+    {
+      "name": "state-historical-comparison-tables.tar.gz",
+      "kind": "tar.gz",
+      "path": "payloads/state-historical-comparison-tables.tar.gz",
+      "bytes": 47043467,
+      "sha256": "fe67f3adf529ff5fd3ef9098ac9102288fb95d93ab55efb1ce7c524393cd56f6",
+      "profiles": [
+        "default"
+      ],
+      "members": [
+        {
+          "path": "original/state_generalizability_20260602_single_controller/spectra_ready_dataset/tahoe_fewshot_chemical_support_examples.csv",
+          "bytes": 5919987,
+          "sha256": "8a649d95df1d2e4c572393e8fb04fe703247a0c5655ad675e0c3856bb3ace731"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/target_model_results.csv",
+          "bytes": 26605492,
+          "sha256": "1d64a06067e25cee6f52e77114cf7e31359319708b11b0e46c80ba20863829cf"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_go_bp_fewshot_examples.csv",
+          "bytes": 5139628,
+          "sha256": "0ea0caf1a23f3b8abaadda0fe5a99cec3079b86c58965d7d5ac2796148f6eb93"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_go_bp_zeroshot_examples.csv",
+          "bytes": 7409712,
+          "sha256": "22421708f29a74baa97dadbd47646528f5f03a9fcb149837d8ee058416ccba8d"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_go_cc_fewshot_examples.csv",
+          "bytes": 5136064,
+          "sha256": "fdd413530510ae1d187336a5c9d608595e8874c5eee830f4282c66bbcd15a62e"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_go_cc_zeroshot_examples.csv",
+          "bytes": 7395870,
+          "sha256": "96269a1466b88f90794e58e2310498b24b1aa516304c863611e81928d81ea228"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_go_mf_fewshot_examples.csv",
+          "bytes": 5130644,
+          "sha256": "25f3d33bed2724f87cd30c32333022fe0cdc47d77665da038bfc19decbdd380c"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_go_mf_zeroshot_examples.csv",
+          "bytes": 7388954,
+          "sha256": "2fc59c9db1c24ca4f9d18630d1336dd305e2d85b40a431f901d91dc99d5c7435"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_hgnc_gene_group_fewshot_examples.csv",
+          "bytes": 5120190,
+          "sha256": "be087681129d898f9c45bbf78d878a1e5b45c3d6762daddd771110de9aa4f1c6"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_hgnc_gene_group_zeroshot_examples.csv",
+          "bytes": 7481096,
+          "sha256": "cae33ad8951c1dd9892ae427ebc67adedea4f391f4d9550c356de92fde6da1e3"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_kegg_fewshot_examples.csv",
+          "bytes": 5029404,
+          "sha256": "10e986f30a74026f7189932441c5246291f54300b711eb77626c57c50930948d"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_kegg_zeroshot_examples.csv",
+          "bytes": 7281268,
+          "sha256": "4376f12e26088ad9bda462b4937ea881a76e5675c23e35666ce4e7ee45447972"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_reactome_fewshot_examples.csv",
+          "bytes": 5123102,
+          "sha256": "f147bdde6ed1aaaa53d874c3b775b4ef4cd33ed4e0d29c75c4659cfaf3a85e05"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_reactome_zeroshot_examples.csv",
+          "bytes": 7397730,
+          "sha256": "ae2fdace9bac5df6bda37725a933bc7c66bc696a5291254db6a18963b40f3c60"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_wikipathways_fewshot_examples.csv",
+          "bytes": 5094500,
+          "sha256": "998dec96d3b5a2447e05ee1787d8555fc16608b4e82807b3b774e777b5b47cf3"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/multi_pathway_wikipathways_zeroshot_examples.csv",
+          "bytes": 7378238,
+          "sha256": "f93007a032359fcbb4fd3758f2d5552df75bc7798692dbbda197d78e12906cbb"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/parse_fewshot_ligand_family_support_examples.csv",
+          "bytes": 334031,
+          "sha256": "2da5dea2afef9cd54c7ed4944839a10f5a3ebcc3f6e45baf34a27779016cd02e"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/replogle_fewshot_reactome_support_examples.csv",
+          "bytes": 5727478,
+          "sha256": "9c45b147e68451191a4f21ea9ca25625df52b397d237e421bae24d74147fe2ba"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/replogle_zeroshot_reactome_support_confirmation_examples.csv",
+          "bytes": 7515826,
+          "sha256": "8eb48c71be3879310f3aaf78ad8a8d649d5806010c55a9ef67df350e62ee53cf"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/state_replogle_hgnc_group_log_train_support_v2_examples.csv",
+          "bytes": 5804952,
+          "sha256": "1a143e8a068bc80865a111895425afb00340f36f8e57d4d1dc18388928eccbd1"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/state_replogle_reactome_pathway_log_train_support_v2_examples.csv",
+          "bytes": 5809464,
+          "sha256": "aa3b9541552cfb0f62c363837f1767c6ccf262b49bcc8b4f82d2efe9a8414362"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/state_replogle_reactome_pathway_mean_train_support_v2_examples.csv",
+          "bytes": 5808788,
+          "sha256": "767068225877354a80b34ed12ee95c8317e3578181fb75c90709f31e0efb3abf"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/state_replogle_reactome_pathway_min_train_support_v2_examples.csv",
+          "bytes": 5806715,
+          "sha256": "1d57e29587e046f7ad6b900d6e7330075c342a0e0de71268510a81824786b50d"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/spectra_ready_dataset/state_replogle_symbol_family_support_control_examples.csv",
+          "bytes": 5836194,
+          "sha256": "6e4532f2f0f864eee1198007170d3fd35eaccce6264cbbf2abc68a74f6716aba"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/target_model_results.csv",
+          "bytes": 26605492,
+          "sha256": "1d64a06067e25cee6f52e77114cf7e31359319708b11b0e46c80ba20863829cf"
+        }
+      ]
+    },
+    {
+      "name": "state-official-score-cache.tar.gz",
+      "kind": "tar.gz",
+      "path": "payloads/state-official-score-cache.tar.gz",
+      "bytes": 12887389,
+      "sha256": "765538b19962f35b4450e83a00919bf058ca2f9576f405f247d64cd96d067fc6",
+      "profiles": [
+        "default"
+      ],
+      "members": [
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/datasets--tahoebio--Tahoe-100M/67641f5bdd3fb077978ff1fec4d0d617490674bcd42850515ae3997194c29d4d.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/datasets--tahoebio--Tahoe-100M/7a04c7a6611e74c92253163b994ff0a47191928ee7511f1c2ca508cee0e79f28.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/datasets--tahoebio--Tahoe-100M/d6104d1ca570d94832be0d27ffe8b7e4e54cfd366c9080239219f9c406eb751c.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Parse/09553a37706d948fddf8cf5bacf5b88880cf3cfb90a2b866f08524b49e909401.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Parse/1030abc5a7bd1cb1b9c692c35ba4ce16d0515d299dec9c7cf50eb2ede9641a65.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Parse/13935da60494fb572039e10aed4f44748bf9e7e8dd0ee2acf4fe8bcfe158a852.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Parse/202ca8338564bcdc2a7c68007b0976800b4dbb7ca5e6d8a0799b0d428615233c.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Parse/50b1d9d6f15cbd9d27ccb17e07605f21b94a0e461d346555d81b7d911694d5ec.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Parse/84f0f00cd17c871b879ee38d92ce5183241c38e1afb20405f3b00e361c98eaa1.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Parse/9a7f4a4c564d25dc2cfe06e25367ae936dc50873aa5711ad26e5d1e3f46d0916.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Parse/df68464d3caf07c7c5129a0d911d10ba17c75020e7ac866e4afde28155ac4786.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Parse/e9d288b06289e24e7928b9a79ccce8ed74a702c9b2fdf92c5a6470aeb11cdbc1.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Parse/f6a553831669d4f5fb0a6957d7f32e815a4fa5be89a0cf13677396b6039aa157.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Replogle/0c930ad038b56c6f43d25896a15cd68e121d8902e5457718b4dfc9f163f10604.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Replogle/397533d40a2efba9d75a54fca855fc39db1562ff50c765408e9afdea61826803.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Replogle/3efc817549bbf24edd6e427fb99466f58de8fadb3a4b4335523f5cfac1bc8098.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Replogle/42dd8ef412843c9e0782c72d669ef352d40af63fbe7f1d11ab26b9d0f188a5e3.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Replogle/8bd145c4667e03c9e367079dcfb38126e4e1f06b562f8a3fa6d1eaa1d0ba5821.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Replogle/c187b3a026c8381a84acbe5035efa30947a6774c82a6519749b1b37e85fdd14d.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Replogle/c518efe5a6492b62dd3aea985e6f50ca5a8b2e9df742134041e313d2e6605ba6.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Replogle/fff2d8598e61229052483d2215809b267a9be5b28187147ea8eaa078a115280d.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/2171a50b43d55ed6a5fae82c50685fd519b21b3a821872cb0e147a338d26a332.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/2654fe5b526d577807a63b30a9c85a70d829979afe452325650071a3f22a03ae.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/349568c871815e55d0be63ce67162dcfec01a7282adc5a3be9ace6d4bd5ad025.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/489cbe64636b7765fe7f24fe5536da9fb1ee86226effd9eeb422634d5731396b.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/49e3ce723ec7ca6bfc044d438902129ffb9ec2682d33a73e16693735c4746ad4.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/4bc3c2a0a4720084400295318523351c92772a08.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/4cb8ff39ad14a2d1a48e7684283ebc9b2c6d05d0dca62a5fe2b1bd740f92ec0e.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/8f953408f94eadc1461851599a33e2a4f84e413621d5ee54a52a8746c2037691.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/a0de78f621e8c6dfc67ac6ab6acbbab65fbd3aaddf7e56732ed6f03569d39f94.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/b9ab34b3d93a414e5db0650aaad70fb9bc558abade0e4c4eb3322ab3e4a47080.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/c15e7e9137e04f1834490418d48989a37c3e5c43.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/ca5377b00f6700bee2b4b17eeaf4e703fc2d3797ac8271c2f282088fcbb289e8.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/e3fef3287ccc5f38ac64c1c249915684a11dda7b38b43884b1f636cde792364a.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-HVG-Tahoe/f391f46e60061332b2a555567443aeb3190239c4bdac146bcb3340d503aeebe9.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Parse/0073fb52db8657ccb14815b58025f53f89abde3a27eb1614c650e930375d3f60.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Parse/06ef8b31481e21845e29eb3408827469eb7da67c01e17c315d2e82d77ddd325a.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Parse/2cbac97ecdeee9ae7333245fc4d06860969d17d38f2fc4ebea8f99e8af5657fa.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Parse/3d8466310099d70f91a69725fb0e181e1fd541f57ed644daab5c41be6ae1b88d.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Parse/41377aad49e688a710264d343378e5bc6ce1a698880b8bb1c4f0be9ad025c48f.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Parse/579286dcc83ffaead762b234891442b560b6213d847956d87147389323c7df5b.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Parse/73b37fc58ca8a8734dc5cc34c6b44ec94cdbb6ccb47dadfb3c5bccedf8c99655.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Parse/87c04e97d215f7bda9a13d602472e62db0be919dc791ab4c4d4732f5a48cf06c.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Parse/bb35f1b85f8d9603b10fcf8706602b122bdc520548c9c53f891386dcd40026a1.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Replogle/1e4cd7df90212c61f7f171fcd5da69449e5e3edde4462201b8dedd99d07aa2c4.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Replogle/36b6afce7889485a2afa99a13449b59dbd06d14d564e985a37629f93101ffd34.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Replogle/372db67f297565e5542cac1bda688586c07e03e92a999bea953a9df812ba5317.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Replogle/7352c785869bf83402fb5dc79ebdbb2d911d77153c3530db4b9f143a5bec2626.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Replogle/9b7b329faa11cfdfbbac37ad571bdf47e8af7f988d61561eab51d80dce9d643a.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Replogle/bcba9ae671c391e78b11efda0bb0d3d48f8052541ae7599d522b293e96e3594c.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Replogle/ce7034b9e7af7255f44347ac9fdcbdd41e13b8ce674cab3c2700c0b41a1b1ffa.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Replogle/eaf22cc6169fa98ab90913366529db232ac2109fe421599f66d47b14ffd183b3.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Tahoe/4904a9d8a3ed52a2cccd9de85cd0eeec0277bcc07d184eefb8096395719a2746.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Tahoe/5a40d67c26a428487d3b0f602b5b7a69006b5c4595eaaf0ffb5f44eaf5160239.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Tahoe/646052bbdb9844e1a2b94f19c095d0f5a07db9529010f41252c61ba228544d56.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Tahoe/80c38255fdce0444457f909d7ef9c2186a82c5476550bfe82604bd48896aae72.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Tahoe/8483133246cf1dba89c76a94f8a407757f4714bff5c9534f66890fbfe3d7ec03.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Tahoe/9106d01893815fbf77d85f4e2351da8a607adedc74edb62cc452c110812b09a2.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Tahoe/9fee724f7d5dc46a3e0061e264347ce4c8c5c29b6c0dac2dc67303bcae25894a.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Tahoe/a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Tahoe/cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/.locks/models--arcinstitute--ST-SE-Tahoe/dedd141ec8fdff513a19cb46f3bb95b76372b117935620b02f50f2f8e339d33d.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/datasets--tahoebio--Tahoe-100M/blobs/67641f5bdd3fb077978ff1fec4d0d617490674bcd42850515ae3997194c29d4d",
+          "bytes": 19040,
+          "sha256": "67641f5bdd3fb077978ff1fec4d0d617490674bcd42850515ae3997194c29d4d"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/datasets--tahoebio--Tahoe-100M/blobs/7a04c7a6611e74c92253163b994ff0a47191928ee7511f1c2ca508cee0e79f28",
+          "bytes": 40475,
+          "sha256": "7a04c7a6611e74c92253163b994ff0a47191928ee7511f1c2ca508cee0e79f28"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/datasets--tahoebio--Tahoe-100M/blobs/d6104d1ca570d94832be0d27ffe8b7e4e54cfd366c9080239219f9c406eb751c",
+          "bytes": 1326799,
+          "sha256": "d6104d1ca570d94832be0d27ffe8b7e4e54cfd366c9080239219f9c406eb751c"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/datasets--tahoebio--Tahoe-100M/refs/main",
+          "bytes": 40,
+          "sha256": "a4dc63a6ca4a259d236d0e097a5b7b44160cdde9778dae60538f9ebbf4590fbe"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/datasets--tahoebio--Tahoe-100M/snapshots/2dc57900b7981cfcf5e211527169a0b006546a95/metadata/cell_line_metadata.parquet",
+          "bytes": 19040,
+          "sha256": "67641f5bdd3fb077978ff1fec4d0d617490674bcd42850515ae3997194c29d4d"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/datasets--tahoebio--Tahoe-100M/snapshots/2dc57900b7981cfcf5e211527169a0b006546a95/metadata/drug_metadata.parquet",
+          "bytes": 40475,
+          "sha256": "7a04c7a6611e74c92253163b994ff0a47191928ee7511f1c2ca508cee0e79f28"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/datasets--tahoebio--Tahoe-100M/snapshots/2dc57900b7981cfcf5e211527169a0b006546a95/metadata/gene_metadata.parquet",
+          "bytes": 1326799,
+          "sha256": "d6104d1ca570d94832be0d27ffe8b7e4e54cfd366c9080239219f9c406eb751c"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/blobs/09553a37706d948fddf8cf5bacf5b88880cf3cfb90a2b866f08524b49e909401",
+          "bytes": 23267,
+          "sha256": "09553a37706d948fddf8cf5bacf5b88880cf3cfb90a2b866f08524b49e909401"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/blobs/1030abc5a7bd1cb1b9c692c35ba4ce16d0515d299dec9c7cf50eb2ede9641a65",
+          "bytes": 21542,
+          "sha256": "1030abc5a7bd1cb1b9c692c35ba4ce16d0515d299dec9c7cf50eb2ede9641a65"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/blobs/13935da60494fb572039e10aed4f44748bf9e7e8dd0ee2acf4fe8bcfe158a852",
+          "bytes": 21260,
+          "sha256": "13935da60494fb572039e10aed4f44748bf9e7e8dd0ee2acf4fe8bcfe158a852"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/blobs/202ca8338564bcdc2a7c68007b0976800b4dbb7ca5e6d8a0799b0d428615233c",
+          "bytes": 20723,
+          "sha256": "202ca8338564bcdc2a7c68007b0976800b4dbb7ca5e6d8a0799b0d428615233c"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/blobs/50b1d9d6f15cbd9d27ccb17e07605f21b94a0e461d346555d81b7d911694d5ec",
+          "bytes": 27434,
+          "sha256": "50b1d9d6f15cbd9d27ccb17e07605f21b94a0e461d346555d81b7d911694d5ec"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/blobs/84f0f00cd17c871b879ee38d92ce5183241c38e1afb20405f3b00e361c98eaa1",
+          "bytes": 31420,
+          "sha256": "84f0f00cd17c871b879ee38d92ce5183241c38e1afb20405f3b00e361c98eaa1"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/blobs/9a7f4a4c564d25dc2cfe06e25367ae936dc50873aa5711ad26e5d1e3f46d0916",
+          "bytes": 32762,
+          "sha256": "9a7f4a4c564d25dc2cfe06e25367ae936dc50873aa5711ad26e5d1e3f46d0916"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/blobs/df68464d3caf07c7c5129a0d911d10ba17c75020e7ac866e4afde28155ac4786",
+          "bytes": 31512,
+          "sha256": "df68464d3caf07c7c5129a0d911d10ba17c75020e7ac866e4afde28155ac4786"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/blobs/e9d288b06289e24e7928b9a79ccce8ed74a702c9b2fdf92c5a6470aeb11cdbc1",
+          "bytes": 22921,
+          "sha256": "e9d288b06289e24e7928b9a79ccce8ed74a702c9b2fdf92c5a6470aeb11cdbc1"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/blobs/f6a553831669d4f5fb0a6957d7f32e815a4fa5be89a0cf13677396b6039aa157",
+          "bytes": 33745,
+          "sha256": "f6a553831669d4f5fb0a6957d7f32e815a4fa5be89a0cf13677396b6039aa157"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/refs/main",
+          "bytes": 40,
+          "sha256": "65b26cca5f02bf0e92058046306c9daa53cde6794d6843f7caf762a498afeeb0"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/snapshots/827df657cd87063026d2abefd73e99036755ac1b/fewshot/split_0/eval_best.ckpt/B_Intermediate_Memory_results.csv",
+          "bytes": 23267,
+          "sha256": "09553a37706d948fddf8cf5bacf5b88880cf3cfb90a2b866f08524b49e909401"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/snapshots/827df657cd87063026d2abefd73e99036755ac1b/fewshot/split_1/eval_best.ckpt/B_Naive_results.csv",
+          "bytes": 22921,
+          "sha256": "e9d288b06289e24e7928b9a79ccce8ed74a702c9b2fdf92c5a6470aeb11cdbc1"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/snapshots/827df657cd87063026d2abefd73e99036755ac1b/fewshot/split_2/eval_best.ckpt/Plasmablast_results.csv",
+          "bytes": 20723,
+          "sha256": "202ca8338564bcdc2a7c68007b0976800b4dbb7ca5e6d8a0799b0d428615233c"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/snapshots/827df657cd87063026d2abefd73e99036755ac1b/fewshot/split_3/eval_best.ckpt/CD4_Memory_results.csv",
+          "bytes": 21260,
+          "sha256": "13935da60494fb572039e10aed4f44748bf9e7e8dd0ee2acf4fe8bcfe158a852"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/snapshots/827df657cd87063026d2abefd73e99036755ac1b/fewshot/split_4/eval_best.ckpt/CD14_Mono_results.csv",
+          "bytes": 21542,
+          "sha256": "1030abc5a7bd1cb1b9c692c35ba4ce16d0515d299dec9c7cf50eb2ede9641a65"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/snapshots/827df657cd87063026d2abefd73e99036755ac1b/zeroshot/split_0/eval_best.ckpt/B_Intermediate_Memory_results.csv",
+          "bytes": 33745,
+          "sha256": "f6a553831669d4f5fb0a6957d7f32e815a4fa5be89a0cf13677396b6039aa157"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/snapshots/827df657cd87063026d2abefd73e99036755ac1b/zeroshot/split_1/eval_best.ckpt/B_Naive_results.csv",
+          "bytes": 32762,
+          "sha256": "9a7f4a4c564d25dc2cfe06e25367ae936dc50873aa5711ad26e5d1e3f46d0916"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/snapshots/827df657cd87063026d2abefd73e99036755ac1b/zeroshot/split_2/eval_best.ckpt/Plasmablast_results.csv",
+          "bytes": 27434,
+          "sha256": "50b1d9d6f15cbd9d27ccb17e07605f21b94a0e461d346555d81b7d911694d5ec"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/snapshots/827df657cd87063026d2abefd73e99036755ac1b/zeroshot/split_3/eval_best.ckpt/CD4_Memory_results.csv",
+          "bytes": 31420,
+          "sha256": "84f0f00cd17c871b879ee38d92ce5183241c38e1afb20405f3b00e361c98eaa1"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Parse/snapshots/827df657cd87063026d2abefd73e99036755ac1b/zeroshot/split_4/eval_best.ckpt/CD14_Mono_results.csv",
+          "bytes": 31512,
+          "sha256": "df68464d3caf07c7c5129a0d911d10ba17c75020e7ac866e4afde28155ac4786"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/blobs/0c930ad038b56c6f43d25896a15cd68e121d8902e5457718b4dfc9f163f10604",
+          "bytes": 506756,
+          "sha256": "0c930ad038b56c6f43d25896a15cd68e121d8902e5457718b4dfc9f163f10604"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/blobs/397533d40a2efba9d75a54fca855fc39db1562ff50c765408e9afdea61826803",
+          "bytes": 406063,
+          "sha256": "397533d40a2efba9d75a54fca855fc39db1562ff50c765408e9afdea61826803"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/blobs/3efc817549bbf24edd6e427fb99466f58de8fadb3a4b4335523f5cfac1bc8098",
+          "bytes": 582103,
+          "sha256": "3efc817549bbf24edd6e427fb99466f58de8fadb3a4b4335523f5cfac1bc8098"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/blobs/42dd8ef412843c9e0782c72d669ef352d40af63fbe7f1d11ab26b9d0f188a5e3",
+          "bytes": 360951,
+          "sha256": "42dd8ef412843c9e0782c72d669ef352d40af63fbe7f1d11ab26b9d0f188a5e3"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/blobs/8bd145c4667e03c9e367079dcfb38126e4e1f06b562f8a3fa6d1eaa1d0ba5821",
+          "bytes": 538095,
+          "sha256": "8bd145c4667e03c9e367079dcfb38126e4e1f06b562f8a3fa6d1eaa1d0ba5821"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/blobs/c187b3a026c8381a84acbe5035efa30947a6774c82a6519749b1b37e85fdd14d",
+          "bytes": 575323,
+          "sha256": "c187b3a026c8381a84acbe5035efa30947a6774c82a6519749b1b37e85fdd14d"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/blobs/c518efe5a6492b62dd3aea985e6f50ca5a8b2e9df742134041e313d2e6605ba6",
+          "bytes": 368088,
+          "sha256": "c518efe5a6492b62dd3aea985e6f50ca5a8b2e9df742134041e313d2e6605ba6"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/blobs/fff2d8598e61229052483d2215809b267a9be5b28187147ea8eaa078a115280d",
+          "bytes": 423657,
+          "sha256": "fff2d8598e61229052483d2215809b267a9be5b28187147ea8eaa078a115280d"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/refs/main",
+          "bytes": 40,
+          "sha256": "022d1dfbf8dcd71bcd766b9e43c585fce9b439dcd28d4c25d8f76ebfae66927b"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/snapshots/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/fewshot/hepg2/eval_best.ckpt/hepg2_results.csv",
+          "bytes": 360951,
+          "sha256": "42dd8ef412843c9e0782c72d669ef352d40af63fbe7f1d11ab26b9d0f188a5e3"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/snapshots/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/fewshot/jurkat/eval_best.ckpt/jurkat_results.csv",
+          "bytes": 423657,
+          "sha256": "fff2d8598e61229052483d2215809b267a9be5b28187147ea8eaa078a115280d"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/snapshots/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/fewshot/k562/eval_best.ckpt/k562_results.csv",
+          "bytes": 368088,
+          "sha256": "c518efe5a6492b62dd3aea985e6f50ca5a8b2e9df742134041e313d2e6605ba6"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/snapshots/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/fewshot/rpe1/eval_best.ckpt/rpe1_results.csv",
+          "bytes": 406063,
+          "sha256": "397533d40a2efba9d75a54fca855fc39db1562ff50c765408e9afdea61826803"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/snapshots/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/hepg2/eval_best.ckpt/hepg2_results.csv",
+          "bytes": 506756,
+          "sha256": "0c930ad038b56c6f43d25896a15cd68e121d8902e5457718b4dfc9f163f10604"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/snapshots/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/jurkat/eval_best.ckpt/jurkat_results.csv",
+          "bytes": 582103,
+          "sha256": "3efc817549bbf24edd6e427fb99466f58de8fadb3a4b4335523f5cfac1bc8098"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/snapshots/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/k562/eval_best.ckpt/k562_results.csv",
+          "bytes": 538095,
+          "sha256": "8bd145c4667e03c9e367079dcfb38126e4e1f06b562f8a3fa6d1eaa1d0ba5821"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Replogle/snapshots/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/rpe1/eval_best.ckpt/rpe1_results.csv",
+          "bytes": 575323,
+          "sha256": "c187b3a026c8381a84acbe5035efa30947a6774c82a6519749b1b37e85fdd14d"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/2171a50b43d55ed6a5fae82c50685fd519b21b3a821872cb0e147a338d26a332",
+          "bytes": 461203,
+          "sha256": "2171a50b43d55ed6a5fae82c50685fd519b21b3a821872cb0e147a338d26a332"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/2654fe5b526d577807a63b30a9c85a70d829979afe452325650071a3f22a03ae",
+          "bytes": 272057,
+          "sha256": "2654fe5b526d577807a63b30a9c85a70d829979afe452325650071a3f22a03ae"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/349568c871815e55d0be63ce67162dcfec01a7282adc5a3be9ace6d4bd5ad025",
+          "bytes": 977655,
+          "sha256": "349568c871815e55d0be63ce67162dcfec01a7282adc5a3be9ace6d4bd5ad025"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/489cbe64636b7765fe7f24fe5536da9fb1ee86226effd9eeb422634d5731396b",
+          "bytes": 269473,
+          "sha256": "489cbe64636b7765fe7f24fe5536da9fb1ee86226effd9eeb422634d5731396b"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/49e3ce723ec7ca6bfc044d438902129ffb9ec2682d33a73e16693735c4746ad4",
+          "bytes": 284828,
+          "sha256": "49e3ce723ec7ca6bfc044d438902129ffb9ec2682d33a73e16693735c4746ad4"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/4bc3c2a0a4720084400295318523351c92772a08",
+          "bytes": 590,
+          "sha256": "83ee774e7e3709d3fa123e279685905dd055c4b900df8155c4c4b1047ef6f37c"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/4cb8ff39ad14a2d1a48e7684283ebc9b2c6d05d0dca62a5fe2b1bd740f92ec0e",
+          "bytes": 3385,
+          "sha256": "4cb8ff39ad14a2d1a48e7684283ebc9b2c6d05d0dca62a5fe2b1bd740f92ec0e"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/8f953408f94eadc1461851599a33e2a4f84e413621d5ee54a52a8746c2037691",
+          "bytes": 479496,
+          "sha256": "8f953408f94eadc1461851599a33e2a4f84e413621d5ee54a52a8746c2037691"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/a0de78f621e8c6dfc67ac6ab6acbbab65fbd3aaddf7e56732ed6f03569d39f94",
+          "bytes": 468117,
+          "sha256": "a0de78f621e8c6dfc67ac6ab6acbbab65fbd3aaddf7e56732ed6f03569d39f94"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/b9ab34b3d93a414e5db0650aaad70fb9bc558abade0e4c4eb3322ab3e4a47080",
+          "bytes": 466949,
+          "sha256": "b9ab34b3d93a414e5db0650aaad70fb9bc558abade0e4c4eb3322ab3e4a47080"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/c15e7e9137e04f1834490418d48989a37c3e5c43",
+          "bytes": 2707,
+          "sha256": "effb67f1ee5380a483a3938e08d4088e7b22355c7a079c94b791eda02536843a"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/ca5377b00f6700bee2b4b17eeaf4e703fc2d3797ac8271c2f282088fcbb289e8",
+          "bytes": 276570,
+          "sha256": "ca5377b00f6700bee2b4b17eeaf4e703fc2d3797ac8271c2f282088fcbb289e8"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/e3fef3287ccc5f38ac64c1c249915684a11dda7b38b43884b1f636cde792364a",
+          "bytes": 459434,
+          "sha256": "e3fef3287ccc5f38ac64c1c249915684a11dda7b38b43884b1f636cde792364a"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/blobs/f391f46e60061332b2a555567443aeb3190239c4bdac146bcb3340d503aeebe9",
+          "bytes": 275993,
+          "sha256": "f391f46e60061332b2a555567443aeb3190239c4bdac146bcb3340d503aeebe9"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/refs/main",
+          "bytes": 40,
+          "sha256": "c084115a9258bf7bc573cf07784522275696771b36700ba3bf3d69bea79371c5"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/fewshot/state_generalization_X_hvg/config.yaml",
+          "bytes": 2707,
+          "sha256": "effb67f1ee5380a483a3938e08d4088e7b22355c7a079c94b791eda02536843a"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/fewshot/state_generalization_X_hvg/eval_best.ckpt/C32_agg_results.csv",
+          "bytes": 3385,
+          "sha256": "4cb8ff39ad14a2d1a48e7684283ebc9b2c6d05d0dca62a5fe2b1bd740f92ec0e"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/fewshot/state_generalization_X_hvg/eval_best.ckpt/C32_results.csv",
+          "bytes": 276570,
+          "sha256": "ca5377b00f6700bee2b4b17eeaf4e703fc2d3797ac8271c2f282088fcbb289e8"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/fewshot/state_generalization_X_hvg/eval_best.ckpt/HOP62_results.csv",
+          "bytes": 269473,
+          "sha256": "489cbe64636b7765fe7f24fe5536da9fb1ee86226effd9eeb422634d5731396b"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/fewshot/state_generalization_X_hvg/eval_best.ckpt/HepG2-C3A_results.csv",
+          "bytes": 284828,
+          "sha256": "49e3ce723ec7ca6bfc044d438902129ffb9ec2682d33a73e16693735c4746ad4"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/fewshot/state_generalization_X_hvg/eval_best.ckpt/Hs 766T_results.csv",
+          "bytes": 275993,
+          "sha256": "f391f46e60061332b2a555567443aeb3190239c4bdac146bcb3340d503aeebe9"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/fewshot/state_generalization_X_hvg/eval_best.ckpt/PANC-1_results.csv",
+          "bytes": 272057,
+          "sha256": "2654fe5b526d577807a63b30a9c85a70d829979afe452325650071a3f22a03ae"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/fewshot/state_generalization_X_hvg/var_dims.pkl",
+          "bytes": 977655,
+          "sha256": "349568c871815e55d0be63ce67162dcfec01a7282adc5a3be9ace6d4bd5ad025"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/generalization.toml",
+          "bytes": 590,
+          "sha256": "83ee774e7e3709d3fa123e279685905dd055c4b900df8155c4c4b1047ef6f37c"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_results.csv",
+          "bytes": 468117,
+          "sha256": "a0de78f621e8c6dfc67ac6ab6acbbab65fbd3aaddf7e56732ed6f03569d39f94"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_results.csv",
+          "bytes": 459434,
+          "sha256": "e3fef3287ccc5f38ac64c1c249915684a11dda7b38b43884b1f636cde792364a"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_results.csv",
+          "bytes": 479496,
+          "sha256": "8f953408f94eadc1461851599a33e2a4f84e413621d5ee54a52a8746c2037691"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs 766T_results.csv",
+          "bytes": 466949,
+          "sha256": "b9ab34b3d93a414e5db0650aaad70fb9bc558abade0e4c4eb3322ab3e4a47080"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_results.csv",
+          "bytes": 461203,
+          "sha256": "2171a50b43d55ed6a5fae82c50685fd519b21b3a821872cb0e147a338d26a332"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/blobs/0073fb52db8657ccb14815b58025f53f89abde3a27eb1614c650e930375d3f60",
+          "bytes": 22494,
+          "sha256": "0073fb52db8657ccb14815b58025f53f89abde3a27eb1614c650e930375d3f60"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/blobs/06ef8b31481e21845e29eb3408827469eb7da67c01e17c315d2e82d77ddd325a",
+          "bytes": 23028,
+          "sha256": "06ef8b31481e21845e29eb3408827469eb7da67c01e17c315d2e82d77ddd325a"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/blobs/2cbac97ecdeee9ae7333245fc4d06860969d17d38f2fc4ebea8f99e8af5657fa",
+          "bytes": 31883,
+          "sha256": "2cbac97ecdeee9ae7333245fc4d06860969d17d38f2fc4ebea8f99e8af5657fa"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/blobs/3d8466310099d70f91a69725fb0e181e1fd541f57ed644daab5c41be6ae1b88d",
+          "bytes": 21275,
+          "sha256": "3d8466310099d70f91a69725fb0e181e1fd541f57ed644daab5c41be6ae1b88d"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/blobs/41377aad49e688a710264d343378e5bc6ce1a698880b8bb1c4f0be9ad025c48f",
+          "bytes": 33911,
+          "sha256": "41377aad49e688a710264d343378e5bc6ce1a698880b8bb1c4f0be9ad025c48f"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/blobs/579286dcc83ffaead762b234891442b560b6213d847956d87147389323c7df5b",
+          "bytes": 30873,
+          "sha256": "579286dcc83ffaead762b234891442b560b6213d847956d87147389323c7df5b"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/blobs/73b37fc58ca8a8734dc5cc34c6b44ec94cdbb6ccb47dadfb3c5bccedf8c99655",
+          "bytes": 28814,
+          "sha256": "73b37fc58ca8a8734dc5cc34c6b44ec94cdbb6ccb47dadfb3c5bccedf8c99655"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/blobs/87c04e97d215f7bda9a13d602472e62db0be919dc791ab4c4d4732f5a48cf06c",
+          "bytes": 20130,
+          "sha256": "87c04e97d215f7bda9a13d602472e62db0be919dc791ab4c4d4732f5a48cf06c"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/blobs/bb35f1b85f8d9603b10fcf8706602b122bdc520548c9c53f891386dcd40026a1",
+          "bytes": 33789,
+          "sha256": "bb35f1b85f8d9603b10fcf8706602b122bdc520548c9c53f891386dcd40026a1"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/refs/main",
+          "bytes": 40,
+          "sha256": "95aff5a236038bb593bde28c5c86d03bc927141729a2c5c0410f2ee8cfcd78c2"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/snapshots/fa458ffda8690c5c5bdff080dfdc46b46713043b/fewshot/split_0/eval_best.ckpt/B_Intermediate_Memory_results.csv",
+          "bytes": 23028,
+          "sha256": "06ef8b31481e21845e29eb3408827469eb7da67c01e17c315d2e82d77ddd325a"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/snapshots/fa458ffda8690c5c5bdff080dfdc46b46713043b/fewshot/split_1/eval_best.ckpt/B_Naive_results.csv",
+          "bytes": 22494,
+          "sha256": "0073fb52db8657ccb14815b58025f53f89abde3a27eb1614c650e930375d3f60"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/snapshots/fa458ffda8690c5c5bdff080dfdc46b46713043b/fewshot/split_2/eval_best.ckpt/Plasmablast_results.csv",
+          "bytes": 20130,
+          "sha256": "87c04e97d215f7bda9a13d602472e62db0be919dc791ab4c4d4732f5a48cf06c"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/snapshots/fa458ffda8690c5c5bdff080dfdc46b46713043b/fewshot/split_4/eval_best.ckpt/CD14_Mono_results.csv",
+          "bytes": 21275,
+          "sha256": "3d8466310099d70f91a69725fb0e181e1fd541f57ed644daab5c41be6ae1b88d"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/snapshots/fa458ffda8690c5c5bdff080dfdc46b46713043b/zeroshot/split_0/eval_best.ckpt/B_Intermediate_Memory_results.csv",
+          "bytes": 33911,
+          "sha256": "41377aad49e688a710264d343378e5bc6ce1a698880b8bb1c4f0be9ad025c48f"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/snapshots/fa458ffda8690c5c5bdff080dfdc46b46713043b/zeroshot/split_1/eval_best.ckpt/B_Naive_results.csv",
+          "bytes": 33789,
+          "sha256": "bb35f1b85f8d9603b10fcf8706602b122bdc520548c9c53f891386dcd40026a1"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/snapshots/fa458ffda8690c5c5bdff080dfdc46b46713043b/zeroshot/split_2/eval_best.ckpt/Plasmablast_results.csv",
+          "bytes": 28814,
+          "sha256": "73b37fc58ca8a8734dc5cc34c6b44ec94cdbb6ccb47dadfb3c5bccedf8c99655"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/snapshots/fa458ffda8690c5c5bdff080dfdc46b46713043b/zeroshot/split_3/eval_best.ckpt/CD4_Memory_results.csv",
+          "bytes": 31883,
+          "sha256": "2cbac97ecdeee9ae7333245fc4d06860969d17d38f2fc4ebea8f99e8af5657fa"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Parse/snapshots/fa458ffda8690c5c5bdff080dfdc46b46713043b/zeroshot/split_4/eval_best.ckpt/CD14_Mono_results.csv",
+          "bytes": 30873,
+          "sha256": "579286dcc83ffaead762b234891442b560b6213d847956d87147389323c7df5b"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/blobs/1e4cd7df90212c61f7f171fcd5da69449e5e3edde4462201b8dedd99d07aa2c4",
+          "bytes": 354986,
+          "sha256": "1e4cd7df90212c61f7f171fcd5da69449e5e3edde4462201b8dedd99d07aa2c4"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/blobs/36b6afce7889485a2afa99a13449b59dbd06d14d564e985a37629f93101ffd34",
+          "bytes": 411935,
+          "sha256": "36b6afce7889485a2afa99a13449b59dbd06d14d564e985a37629f93101ffd34"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/blobs/372db67f297565e5542cac1bda688586c07e03e92a999bea953a9df812ba5317",
+          "bytes": 568100,
+          "sha256": "372db67f297565e5542cac1bda688586c07e03e92a999bea953a9df812ba5317"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/blobs/7352c785869bf83402fb5dc79ebdbb2d911d77153c3530db4b9f143a5bec2626",
+          "bytes": 403167,
+          "sha256": "7352c785869bf83402fb5dc79ebdbb2d911d77153c3530db4b9f143a5bec2626"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/blobs/9b7b329faa11cfdfbbac37ad571bdf47e8af7f988d61561eab51d80dce9d643a",
+          "bytes": 509894,
+          "sha256": "9b7b329faa11cfdfbbac37ad571bdf47e8af7f988d61561eab51d80dce9d643a"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/blobs/bcba9ae671c391e78b11efda0bb0d3d48f8052541ae7599d522b293e96e3594c",
+          "bytes": 365675,
+          "sha256": "bcba9ae671c391e78b11efda0bb0d3d48f8052541ae7599d522b293e96e3594c"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/blobs/ce7034b9e7af7255f44347ac9fdcbdd41e13b8ce674cab3c2700c0b41a1b1ffa",
+          "bytes": 535692,
+          "sha256": "ce7034b9e7af7255f44347ac9fdcbdd41e13b8ce674cab3c2700c0b41a1b1ffa"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/blobs/eaf22cc6169fa98ab90913366529db232ac2109fe421599f66d47b14ffd183b3",
+          "bytes": 528013,
+          "sha256": "eaf22cc6169fa98ab90913366529db232ac2109fe421599f66d47b14ffd183b3"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/refs/main",
+          "bytes": 40,
+          "sha256": "d80317639cfb2a5df6961963bffcdfe6668fe5459995b16d370f9adefba9ffa4"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/snapshots/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/fewshot/hepg2/eval_best.ckpt/hepg2_results.csv",
+          "bytes": 354986,
+          "sha256": "1e4cd7df90212c61f7f171fcd5da69449e5e3edde4462201b8dedd99d07aa2c4"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/snapshots/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/fewshot/jurkat/eval_best.ckpt/jurkat_results.csv",
+          "bytes": 403167,
+          "sha256": "7352c785869bf83402fb5dc79ebdbb2d911d77153c3530db4b9f143a5bec2626"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/snapshots/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/fewshot/k562/eval_best.ckpt/k562_results.csv",
+          "bytes": 365675,
+          "sha256": "bcba9ae671c391e78b11efda0bb0d3d48f8052541ae7599d522b293e96e3594c"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/snapshots/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/fewshot/rpe1/eval_best.ckpt/rpe1_results.csv",
+          "bytes": 411935,
+          "sha256": "36b6afce7889485a2afa99a13449b59dbd06d14d564e985a37629f93101ffd34"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/snapshots/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/hepg2/eval_best.ckpt/hepg2_results.csv",
+          "bytes": 509894,
+          "sha256": "9b7b329faa11cfdfbbac37ad571bdf47e8af7f988d61561eab51d80dce9d643a"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/snapshots/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/jurkat/eval_best.ckpt/jurkat_results.csv",
+          "bytes": 568100,
+          "sha256": "372db67f297565e5542cac1bda688586c07e03e92a999bea953a9df812ba5317"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/snapshots/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/k562/eval_best.ckpt/k562_results.csv",
+          "bytes": 528013,
+          "sha256": "eaf22cc6169fa98ab90913366529db232ac2109fe421599f66d47b14ffd183b3"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Replogle/snapshots/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/rpe1/eval_best.ckpt/rpe1_results.csv",
+          "bytes": 535692,
+          "sha256": "ce7034b9e7af7255f44347ac9fdcbdd41e13b8ce674cab3c2700c0b41a1b1ffa"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/blobs/4904a9d8a3ed52a2cccd9de85cd0eeec0277bcc07d184eefb8096395719a2746",
+          "bytes": 468068,
+          "sha256": "4904a9d8a3ed52a2cccd9de85cd0eeec0277bcc07d184eefb8096395719a2746"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/blobs/5a40d67c26a428487d3b0f602b5b7a69006b5c4595eaaf0ffb5f44eaf5160239",
+          "bytes": 273025,
+          "sha256": "5a40d67c26a428487d3b0f602b5b7a69006b5c4595eaaf0ffb5f44eaf5160239"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/blobs/646052bbdb9844e1a2b94f19c095d0f5a07db9529010f41252c61ba228544d56",
+          "bytes": 269030,
+          "sha256": "646052bbdb9844e1a2b94f19c095d0f5a07db9529010f41252c61ba228544d56"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/blobs/80c38255fdce0444457f909d7ef9c2186a82c5476550bfe82604bd48896aae72",
+          "bytes": 277100,
+          "sha256": "80c38255fdce0444457f909d7ef9c2186a82c5476550bfe82604bd48896aae72"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/blobs/8483133246cf1dba89c76a94f8a407757f4714bff5c9534f66890fbfe3d7ec03",
+          "bytes": 464280,
+          "sha256": "8483133246cf1dba89c76a94f8a407757f4714bff5c9534f66890fbfe3d7ec03"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/blobs/9106d01893815fbf77d85f4e2351da8a607adedc74edb62cc452c110812b09a2",
+          "bytes": 287583,
+          "sha256": "9106d01893815fbf77d85f4e2351da8a607adedc74edb62cc452c110812b09a2"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/blobs/9fee724f7d5dc46a3e0061e264347ce4c8c5c29b6c0dac2dc67303bcae25894a",
+          "bytes": 281263,
+          "sha256": "9fee724f7d5dc46a3e0061e264347ce4c8c5c29b6c0dac2dc67303bcae25894a"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/blobs/a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb",
+          "bytes": 473841,
+          "sha256": "a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/blobs/cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79",
+          "bytes": 468674,
+          "sha256": "cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/blobs/dedd141ec8fdff513a19cb46f3bb95b76372b117935620b02f50f2f8e339d33d",
+          "bytes": 463111,
+          "sha256": "dedd141ec8fdff513a19cb46f3bb95b76372b117935620b02f50f2f8e339d33d"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/refs/main",
+          "bytes": 40,
+          "sha256": "9c73b06ba16111b73710650f811a9fc8c63cbe0cf24f717446b19800aa1774a4"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/fewshot/state_generalization_X_state/eval_best.ckpt/C32_results.csv",
+          "bytes": 281263,
+          "sha256": "9fee724f7d5dc46a3e0061e264347ce4c8c5c29b6c0dac2dc67303bcae25894a"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/fewshot/state_generalization_X_state/eval_best.ckpt/HOP62_results.csv",
+          "bytes": 269030,
+          "sha256": "646052bbdb9844e1a2b94f19c095d0f5a07db9529010f41252c61ba228544d56"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/fewshot/state_generalization_X_state/eval_best.ckpt/HepG2-C3A_results.csv",
+          "bytes": 287583,
+          "sha256": "9106d01893815fbf77d85f4e2351da8a607adedc74edb62cc452c110812b09a2"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/fewshot/state_generalization_X_state/eval_best.ckpt/Hs 766T_results.csv",
+          "bytes": 277100,
+          "sha256": "80c38255fdce0444457f909d7ef9c2186a82c5476550bfe82604bd48896aae72"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/fewshot/state_generalization_X_state/eval_best.ckpt/PANC-1_results.csv",
+          "bytes": 273025,
+          "sha256": "5a40d67c26a428487d3b0f602b5b7a69006b5c4595eaaf0ffb5f44eaf5160239"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_results.csv",
+          "bytes": 468674,
+          "sha256": "cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_results.csv",
+          "bytes": 463111,
+          "sha256": "dedd141ec8fdff513a19cb46f3bb95b76372b117935620b02f50f2f8e339d33d"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_results.csv",
+          "bytes": 473841,
+          "sha256": "a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs 766T_results.csv",
+          "bytes": 468068,
+          "sha256": "4904a9d8a3ed52a2cccd9de85cd0eeec0277bcc07d184eefb8096395719a2746"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_results.csv",
+          "bytes": 464280,
+          "sha256": "8483133246cf1dba89c76a94f8a407757f4714bff5c9534f66890fbfe3d7ec03"
+        }
+      ]
+    },
+    {
+      "name": "state-historical-annotations.tar.gz",
+      "kind": "tar.gz",
+      "path": "payloads/state-historical-annotations.tar.gz",
+      "bytes": 40411527,
+      "sha256": "ddba844c5803aeb2e32c51f72889b16fc77efa13f1ace9ba541508f4ed31c059",
+      "profiles": [
+        "default"
+      ],
+      "members": [
+        {
+          "path": "original/state_generalizability_continued_20260603/external/Ensembl2Reactome_Homo_sapiens.txt",
+          "bytes": 145040178,
+          "sha256": "7bd9f04802324d18fe50431d3e8bb9fce56f64aaf0afba83b7078e9d8623e0c5"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/external/go-basic.obo",
+          "bytes": 32212518,
+          "sha256": "923645000afcb1df0e72e252b64950b1c2bcc98c9393fec8c1dd1a0f7c9d4d77"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/external/goa_human.gaf.gz",
+          "bytes": 15041996,
+          "sha256": "db472faff1785878521693af62646546cea6af4a386609dd01c72c0554a46a30"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/external/hgnc_complete_set.txt",
+          "bytes": 16738373,
+          "sha256": "1f8826fb0b519296233dba3f987bc38efcfb3706032ed0c0685a6936f9b11e93"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/external/kegg_link_pathway_hsa.txt",
+          "bytes": 921053,
+          "sha256": "e0cdbd21acc42a37f8103156488894c279ff6c3562081677eaf141ed422ca714"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/external/kegg_list_hsa.txt",
+          "bytes": 2622690,
+          "sha256": "5a8ec02840789bf3a3f652369dbcd616bd236d743722b54c0c36154886086fba"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/external/kegg_list_pathway_hsa.txt",
+          "bytes": 22034,
+          "sha256": "e4f0c57e5e6b47d16034881b365591d3f0cf7fd8f6f0b03a34e0d6b487deb891"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/external/wikipathways-20260510-gmt-Homo_sapiens.gmt",
+          "bytes": 340454,
+          "sha256": "ef2cb6dce69107b0f95daa0544ee5a35c888fe073d10ad8915f406b6aecc9500"
+        }
+      ]
+    }
+  ],
+  "excluded_recovery_material": [
+    {
+      "path": "original/state_generalizability_20260602_single_controller/controller_prompt.md",
+      "bytes": 26110,
+      "sha256": "479a64a1d499c0886c1337933c642eec4222989762d72347e9b65907cc0d4cf6",
+      "reason": "Unused downloaded background resource or native controller/session record; not a replay dependency"
+    },
+    {
+      "path": "original/state_generalizability_20260602_single_controller/controller_session.log",
+      "bytes": 2838725,
+      "sha256": "54382eb90f89fe54936eb4eac17b987465d57dd93acdd4023d6cc84b5972b053",
+      "reason": "Unused downloaded background resource or native controller/session record; not a replay dependency"
+    },
+    {
+      "path": "original/state_generalizability_20260602_single_controller/session_contract.json",
+      "bytes": 73547,
+      "sha256": "393a262d2a51748bc08f18fc7a2b16e976543145888614a3c1583f306c449d2a",
+      "reason": "Unused downloaded background resource or native controller/session record; not a replay dependency"
+    },
+    {
+      "path": "original/state_generalizability_20260602_single_controller/session_manifest.json",
+      "bytes": 868,
+      "sha256": "ca84d3954c18668523afb0f914a712df6d7793fe75403327c23c811e21b45437",
+      "reason": "Unused downloaded background resource or native controller/session record; not a replay dependency"
+    },
+    {
+      "path": "original/state_generalizability_continued_20260603/controller_prompt.md",
+      "bytes": 28057,
+      "sha256": "69f11ad38a0b59c2a3781b49c107d0c5a15a10c3f299b999f48c6abfe1af135f",
+      "reason": "Unused downloaded background resource or native controller/session record; not a replay dependency"
+    },
+    {
+      "path": "original/state_generalizability_continued_20260603/controller_session.log",
+      "bytes": 301085,
+      "sha256": "886a5e4ef32dc8339a4d07a42def892efcf70914e9850547fad3ce8cae40c117",
+      "reason": "Unused downloaded background resource or native controller/session record; not a replay dependency"
+    },
+    {
+      "path": "original/state_generalizability_continued_20260603/session_contract.json",
+      "bytes": 75379,
+      "sha256": "d6ee7f9b9d810d02324694bc076a7cdc1e6274a30472a35d23dedd4e32fff0d2",
+      "reason": "Unused downloaded background resource or native controller/session record; not a replay dependency"
+    },
+    {
+      "path": "original/state_generalizability_continued_20260603/session_manifest.json",
+      "bytes": 828,
+      "sha256": "606139f4b364d5a5bb38eea890bc84d330f0df09998dd6f34d5c4116332e000f",
+      "reason": "Unused downloaded background resource or native controller/session record; not a replay dependency"
+    },
+    {
+      "path": "original/state_generalizability_20260602_single_controller/external/state_openreview.txt",
+      "bytes": 118246,
+      "sha256": "afcea157e50449f18b964b670074aa6245d48c99fff8b3e92ffd38db0cb5d905",
+      "reason": "Unused downloaded background resource or native controller/session record; not a replay dependency"
+    },
+    {
+      "path": "original/state_generalizability_20260602_single_controller/external/state_openreview.pdf",
+      "bytes": 25272277,
+      "sha256": "9bef76a7a57d8c22604e48adf52d7efebdd0e4be81e3f473521468a84357ebd5",
+      "reason": "Unused downloaded background resource or native controller/session record; not a replay dependency"
+    },
+    {
+      "path": "original/state_generalizability_continued_20260603/external/Ensembl2Reactome_All_Levels.txt",
+      "bytes": 488853346,
+      "sha256": "0ee93b64ab7145b1fece7fd271c84073baf4144c992ff8b7d63588ea888fb9ef",
+      "reason": "Unused downloaded background resource or native controller/session record; not a replay dependency"
+    }
+  ]
+}

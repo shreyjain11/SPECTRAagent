@@ -1,0 +1,571 @@
+[
+  {
+    "key": "clinvar",
+    "path": "/tmp/alphamissense-source-downloads/clinvar_20260606.vcf.gz",
+    "bytes": 196569024,
+    "sha256": "c5bb136e1ac476d390d8110905e8224126ce7d43d5eae0e0bfe689fbe96b8726",
+    "header": [
+      "##fileformat=VCFv4.1",
+      "##fileDate=2026-06-06",
+      "##source=ClinVar",
+      "##reference=GRCh38",
+      "##ID=<Description=\"ClinVar Variation ID\">",
+      "##INFO=<ID=AF_ESP,Number=1,Type=Float,Description=\"allele frequencies from GO-ESP\">",
+      "##INFO=<ID=AF_EXAC,Number=1,Type=Float,Description=\"allele frequencies from ExAC\">",
+      "##INFO=<ID=AF_TGP,Number=1,Type=Float,Description=\"allele frequencies from TGP\">",
+      "##INFO=<ID=ALLELEID,Number=1,Type=Integer,Description=\"the ClinVar Allele ID\">",
+      "##INFO=<ID=CLNDN,Number=.,Type=String,Description=\"ClinVar's preferred disease name for the concept specified by disease identifiers in CLNDISDB\">",
+      "##INFO=<ID=CLNDNINCL,Number=.,Type=String,Description=\"For included Variant : ClinVar's preferred disease name for the concept specified by disease identifiers in CLNDISDB\">",
+      "##INFO=<ID=CLNDISDB,Number=.,Type=String,Description=\"Tag-value pairs of disease database name and identifier submitted for germline classifications, e.g. OMIM:NNNNNN\">",
+      "##INFO=<ID=CLNDISDBINCL,Number=.,Type=String,Description=\"For included Variant: Tag-value pairs of disease database name and identifier for germline classifications, e.g. OMIM:NNNNNN\">",
+      "##INFO=<ID=CLNHGVS,Number=.,Type=String,Description=\"Top-level (primary assembly, alt, or patch) HGVS expression.\">",
+      "##INFO=<ID=CLNREVSTAT,Number=.,Type=String,Description=\"ClinVar review status of germline classification for the Variation ID\">",
+      "##INFO=<ID=CLNSIG,Number=.,Type=String,Description=\"Aggregate germline classification for this single variant; multiple values are separated by a vertical bar\">",
+      "##INFO=<ID=CLNSIGCONF,Number=.,Type=String,Description=\"Conflicting germline classification for this single variant; multiple values are separated by a vertical bar\">",
+      "##INFO=<ID=CLNSIGINCL,Number=.,Type=String,Description=\"Germline classification for a haplotype or genotype that includes this variant. Reported as pairs of VariationID:classification; multiple values are separated by a vertical bar\">",
+      "##INFO=<ID=CLNSIGSCV,Number=.,Type=String,Description=\"SCV accession numbers for the submissions that contribute to the aggregate germline classification in ClinVar; multiple values are separated by a vertical bar\">",
+      "##INFO=<ID=CLNVC,Number=1,Type=String,Description=\"Variant type\">",
+      "##INFO=<ID=CLNVCSO,Number=1,Type=String,Description=\"Sequence Ontology id for variant type\">",
+      "##INFO=<ID=CLNVI,Number=.,Type=String,Description=\"the variant's clinical sources reported as tag-value pairs of database and variant identifier\">",
+      "##INFO=<ID=DBVARID,Number=.,Type=String,Description=\"nsv accessions from dbVar for the variant\">",
+      "##INFO=<ID=GENEINFO,Number=1,Type=String,Description=\"Gene(s) for the variant reported as gene symbol:gene id. The gene symbol and id are delimited by a colon (:) and each pair is delimited by a vertical bar (|)\">",
+      "##INFO=<ID=MC,Number=.,Type=String,Description=\"comma separated list of molecular consequence in the form of Sequence Ontology ID|molecular_consequence\">",
+      "##INFO=<ID=ONCDN,Number=.,Type=String,Description=\"ClinVar's preferred disease name for the concept specified by disease identifiers in ONCDISDB\">",
+      "##INFO=<ID=ONCDNINCL,Number=.,Type=String,Description=\"For included variant: ClinVar's preferred disease name for the concept specified by disease identifiers in ONCDISDBINCL\">",
+      "##INFO=<ID=ONCDISDB,Number=.,Type=String,Description=\"Tag-value pairs of disease database name and identifier submitted for oncogenicity classifications, e.g. MedGen:NNNNNN\">",
+      "##INFO=<ID=ONCDISDBINCL,Number=.,Type=String,Description=\"For included variant: Tag-value pairs of disease database name and identifier for oncogenicity classifications, e.g. OMIM:NNNNNN\">",
+      "##INFO=<ID=ONC,Number=.,Type=String,Description=\"Aggregate oncogenicity classification for this single variant; multiple values are separated by a vertical bar\">"
+    ]
+  },
+  {
+    "key": "gnomad",
+    "path": "/tmp/alphamissense-source-downloads/gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz",
+    "bytes": 4609488,
+    "sha256": "153031d34b6794e8e99eb0306bc3c50b13b18accda8b0ffef91c2623dd3affd5"
+  },
+  {
+    "key": "proteingym_dms",
+    "path": "/tmp/alphamissense-source-downloads/DMS_ProteinGym_substitutions_v1.3.zip",
+    "bytes": 43021128,
+    "sha256": "3a83766254ac9ac9984ec25cb73c6e010ea4418f5e35f143933e6b6e6473b921",
+    "validation": {
+      "kind": "dms",
+      "verified_members": 73,
+      "staged": false,
+      "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73",
+      "members": [
+        {
+          "filename": "A4_HUMAN_Seuma_2022.csv",
+          "sha256": "40cfab98f3e3f8531421d54e625e01e22ef449faa22cd3004926f663ad7da932",
+          "bytes": 11890296,
+          "member": "DMS_ProteinGym_substitutions/A4_HUMAN_Seuma_2022.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/A4_HUMAN_Seuma_2022.csv"
+        },
+        {
+          "filename": "ACE2_HUMAN_Chan_2020.csv",
+          "sha256": "419c9c9182a722d5b2d653d5a40d1ef8b74b970fbe7fe614c2d1231e58c6c30f",
+          "bytes": 1840157,
+          "member": "DMS_ProteinGym_substitutions/ACE2_HUMAN_Chan_2020.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/ACE2_HUMAN_Chan_2020.csv"
+        },
+        {
+          "filename": "ADRB2_HUMAN_Jones_2020.csv",
+          "sha256": "905941be7060b3ebf735d868327b34e1b7b9cbd47e87ee251c15e2328643a956",
+          "bytes": 3425091,
+          "member": "DMS_ProteinGym_substitutions/ADRB2_HUMAN_Jones_2020.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/ADRB2_HUMAN_Jones_2020.csv"
+        },
+        {
+          "filename": "AICDA_HUMAN_Gajula_2014_3cycles.csv",
+          "sha256": "03e154dd4fe004b718cc3749b8c0c0c2e651c71f6a846c37c8b8565746ab31d1",
+          "bytes": 46852,
+          "member": "DMS_ProteinGym_substitutions/AICDA_HUMAN_Gajula_2014_3cycles.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/AICDA_HUMAN_Gajula_2014_3cycles.csv"
+        },
+        {
+          "filename": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1.csv",
+          "sha256": "0768cc07f06ccfa28e20cfd2b1b0ffc60fbbb7d21174b5d2b3b780930c4b80be",
+          "bytes": 37226,
+          "member": "DMS_ProteinGym_substitutions/B2L11_HUMAN_Dutta_2010_binding-Mcl-1.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/B2L11_HUMAN_Dutta_2010_binding-Mcl-1.csv"
+        },
+        {
+          "filename": "BRCA1_HUMAN_Findlay_2018.csv",
+          "sha256": "abde5d47e84b1feeac6c32b60c1f3b5d2881accf3ceccfbadccceeea73e81c43",
+          "bytes": 3463590,
+          "member": "DMS_ProteinGym_substitutions/BRCA1_HUMAN_Findlay_2018.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/BRCA1_HUMAN_Findlay_2018.csv"
+        },
+        {
+          "filename": "BRCA2_HUMAN_Erwood_2022_HEK293T.csv",
+          "sha256": "4fc00cf38e89679c11266fa651644c61297a3ac5eb36320fba3a715d5b64f8f2",
+          "bytes": 911656,
+          "member": "DMS_ProteinGym_substitutions/BRCA2_HUMAN_Erwood_2022_HEK293T.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/BRCA2_HUMAN_Erwood_2022_HEK293T.csv"
+        },
+        {
+          "filename": "CALM1_HUMAN_Weile_2017.csv",
+          "sha256": "cadc19e35beab1051c08e2961f0d8b9e97f5c5c3cd627a73ebffd0ebeabbcf5d",
+          "bytes": 308544,
+          "member": "DMS_ProteinGym_substitutions/CALM1_HUMAN_Weile_2017.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/CALM1_HUMAN_Weile_2017.csv"
+        },
+        {
+          "filename": "CAR11_HUMAN_Meitlis_2020_gof.csv",
+          "sha256": "8a900036b2fcdc98fe542d6f9762d74073ed6e808f59a698fcb709cc4748d7a3",
+          "bytes": 2792735,
+          "member": "DMS_ProteinGym_substitutions/CAR11_HUMAN_Meitlis_2020_gof.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/CAR11_HUMAN_Meitlis_2020_gof.csv"
+        },
+        {
+          "filename": "CAR11_HUMAN_Meitlis_2020_lof.csv",
+          "sha256": "e4dd9b444028c7327b7498c590bf3c38aec5a4a81ded50adb396ec43980c78a1",
+          "bytes": 2817484,
+          "member": "DMS_ProteinGym_substitutions/CAR11_HUMAN_Meitlis_2020_lof.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/CAR11_HUMAN_Meitlis_2020_lof.csv"
+        },
+        {
+          "filename": "CBPA2_HUMAN_Tsuboyama_2023_1O6X.csv",
+          "sha256": "2b985cb6a9d2a06471acd4858487a772a53c887fc46045e56b73a43ecda4038d",
+          "bytes": 208988,
+          "member": "DMS_ProteinGym_substitutions/CBPA2_HUMAN_Tsuboyama_2023_1O6X.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/CBPA2_HUMAN_Tsuboyama_2023_1O6X.csv"
+        },
+        {
+          "filename": "CBS_HUMAN_Sun_2020.csv",
+          "sha256": "557b2682b74aedef28f1179540892e17be52de650551c2c6058c00311073a0a1",
+          "bytes": 4144925,
+          "member": "DMS_ProteinGym_substitutions/CBS_HUMAN_Sun_2020.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/CBS_HUMAN_Sun_2020.csv"
+        },
+        {
+          "filename": "CBX4_HUMAN_Tsuboyama_2023_2K28.csv",
+          "sha256": "3ffc9405e5f6e7467cedffb845e91f17baba09862dbb6d1750f54230c8ad3a0d",
+          "bytes": 182963,
+          "member": "DMS_ProteinGym_substitutions/CBX4_HUMAN_Tsuboyama_2023_2K28.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/CBX4_HUMAN_Tsuboyama_2023_2K28.csv"
+        },
+        {
+          "filename": "CCR5_HUMAN_Gill_2023.csv",
+          "sha256": "33f10e7e6552a017318b715ddb6936222375851639cd67093e7269fb1b5f97b3",
+          "bytes": 2264116,
+          "member": "DMS_ProteinGym_substitutions/CCR5_HUMAN_Gill_2023.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/CCR5_HUMAN_Gill_2023.csv"
+        },
+        {
+          "filename": "CD19_HUMAN_Klesmith_2019_FMC_singles.csv",
+          "sha256": "c07f0c1001b4ba527affc7674274e116f8295d128a5e1896fb2f0fa15c25eaea",
+          "bytes": 2195953,
+          "member": "DMS_ProteinGym_substitutions/CD19_HUMAN_Klesmith_2019_FMC_singles.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/CD19_HUMAN_Klesmith_2019_FMC_singles.csv"
+        },
+        {
+          "filename": "CP2C9_HUMAN_Amorosi_2021_abundance.csv",
+          "sha256": "1f4ba7b86e88709783b2e68b04c82fe1f305181c164edfff6391369833ad62ad",
+          "bytes": 3259960,
+          "member": "DMS_ProteinGym_substitutions/CP2C9_HUMAN_Amorosi_2021_abundance.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/CP2C9_HUMAN_Amorosi_2021_abundance.csv"
+        },
+        {
+          "filename": "CP2C9_HUMAN_Amorosi_2021_activity.csv",
+          "sha256": "2373e6a5aea9ae6431cbfd519733a3ccd5be2c109a60e5e2d59cc5ff39eb6b27",
+          "bytes": 3143321,
+          "member": "DMS_ProteinGym_substitutions/CP2C9_HUMAN_Amorosi_2021_activity.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/CP2C9_HUMAN_Amorosi_2021_activity.csv"
+        },
+        {
+          "filename": "DLG4_HUMAN_Faure_2021.csv",
+          "sha256": "07d58d0222260ebc431f906a523cee11e5a0f90b020ecdbbc1c393e793053370",
+          "bytes": 5280599,
+          "member": "DMS_ProteinGym_substitutions/DLG4_HUMAN_Faure_2021.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/DLG4_HUMAN_Faure_2021.csv"
+        },
+        {
+          "filename": "DNJA1_HUMAN_Tsuboyama_2023_2LO1.csv",
+          "sha256": "15003de1e5af995bd284b0e4f02a4546f46211774727b4c9b988ee1f982bebe7",
+          "bytes": 214092,
+          "member": "DMS_ProteinGym_substitutions/DNJA1_HUMAN_Tsuboyama_2023_2LO1.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/DNJA1_HUMAN_Tsuboyama_2023_2LO1.csv"
+        },
+        {
+          "filename": "EPHB2_HUMAN_Tsuboyama_2023_1F0M.csv",
+          "sha256": "d00c87c40458e956d53a1ecf879ef845c5167a861aacfaa1fb74115efc831dfd",
+          "bytes": 186573,
+          "member": "DMS_ProteinGym_substitutions/EPHB2_HUMAN_Tsuboyama_2023_1F0M.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/EPHB2_HUMAN_Tsuboyama_2023_1F0M.csv"
+        },
+        {
+          "filename": "ERBB2_HUMAN_Elazar_2016.csv",
+          "sha256": "e1190b949da4835344be4069c98b336825a6975e2f0f169221772070007bec0d",
+          "bytes": 418439,
+          "member": "DMS_ProteinGym_substitutions/ERBB2_HUMAN_Elazar_2016.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/ERBB2_HUMAN_Elazar_2016.csv"
+        },
+        {
+          "filename": "FKBP3_HUMAN_Tsuboyama_2023_2KFV.csv",
+          "sha256": "7a6f0deb67126a95bd5ba22d51c4a3b90e3e209d6e68966e5cb22fa8d5118e94",
+          "bytes": 119196,
+          "member": "DMS_ProteinGym_substitutions/FKBP3_HUMAN_Tsuboyama_2023_2KFV.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/FKBP3_HUMAN_Tsuboyama_2023_2KFV.csv"
+        },
+        {
+          "filename": "GDIA_HUMAN_Silverstein_2021.csv",
+          "sha256": "5763703fa35d8be84d434cd930fa3d3b4471aee8e65e4064db85434d9fb63edb",
+          "bytes": 539560,
+          "member": "DMS_ProteinGym_substitutions/GDIA_HUMAN_Silverstein_2021.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/GDIA_HUMAN_Silverstein_2021.csv"
+        },
+        {
+          "filename": "GRB2_HUMAN_Faure_2021.csv",
+          "sha256": "0a60d0e1855ebe79ad2d03aec5e4c5ae933f3f96d338d34c184ae7366fffc5e6",
+          "bytes": 15881632,
+          "member": "DMS_ProteinGym_substitutions/GRB2_HUMAN_Faure_2021.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/GRB2_HUMAN_Faure_2021.csv"
+        },
+        {
+          "filename": "HEM3_HUMAN_Loggerenberg_2023.csv",
+          "sha256": "0595215d5507a81c640743231413964505daba227f610b80da96a6b6ad2e7dbe",
+          "bytes": 2167272,
+          "member": "DMS_ProteinGym_substitutions/HEM3_HUMAN_Loggerenberg_2023.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/HEM3_HUMAN_Loggerenberg_2023.csv"
+        },
+        {
+          "filename": "HMDH_HUMAN_Jiang_2019.csv",
+          "sha256": "4ad060808d1ba6f740428148afd230450662113f77292328f0a0d40d679b27c1",
+          "bytes": 15234779,
+          "member": "DMS_ProteinGym_substitutions/HMDH_HUMAN_Jiang_2019.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/HMDH_HUMAN_Jiang_2019.csv"
+        },
+        {
+          "filename": "HXK4_HUMAN_Gersing_2022_activity.csv",
+          "sha256": "3cb5c29a2bdbc052601e6fc03f7f55ef33c6b0fedee808deff2e8aef79d17b69",
+          "bytes": 4172568,
+          "member": "DMS_ProteinGym_substitutions/HXK4_HUMAN_Gersing_2022_activity.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/HXK4_HUMAN_Gersing_2022_activity.csv"
+        },
+        {
+          "filename": "HXK4_HUMAN_Gersing_2023_abundance.csv",
+          "sha256": "90d7129bbbb67ad58765b3f7df06158344f33aff1f2ce1284ebb00a15fea2438",
+          "bytes": 4130371,
+          "member": "DMS_ProteinGym_substitutions/HXK4_HUMAN_Gersing_2023_abundance.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/HXK4_HUMAN_Gersing_2023_abundance.csv"
+        },
+        {
+          "filename": "KCNH2_HUMAN_Kozek_2020.csv",
+          "sha256": "240011099f76ac97f9997e34bc6f27fb5c3ea030d56a9c77eb8057051ccf5b4c",
+          "bytes": 236079,
+          "member": "DMS_ProteinGym_substitutions/KCNH2_HUMAN_Kozek_2020.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/KCNH2_HUMAN_Kozek_2020.csv"
+        },
+        {
+          "filename": "LYAM1_HUMAN_Elazar_2016.csv",
+          "sha256": "147e6cd09ad0e23d228ab280a2cf16ca24dd2d3e0ade8efe4004ae8c2bcd2f1b",
+          "bytes": 143761,
+          "member": "DMS_ProteinGym_substitutions/LYAM1_HUMAN_Elazar_2016.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/LYAM1_HUMAN_Elazar_2016.csv"
+        },
+        {
+          "filename": "MET_HUMAN_Estevam_2023.csv",
+          "sha256": "75d3a221eddf9fbb8cbb2236fe8f18fbfd05dc7e15e15fc1d2ebf67f29572578",
+          "bytes": 1692707,
+          "member": "DMS_ProteinGym_substitutions/MET_HUMAN_Estevam_2023.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/MET_HUMAN_Estevam_2023.csv"
+        },
+        {
+          "filename": "MK01_HUMAN_Brenan_2016.csv",
+          "sha256": "a668d66a330a9c3f8a3d15481907732b4d3b56d0107e3da31242e97211da84fd",
+          "bytes": 2606319,
+          "member": "DMS_ProteinGym_substitutions/MK01_HUMAN_Brenan_2016.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/MK01_HUMAN_Brenan_2016.csv"
+        },
+        {
+          "filename": "MSH2_HUMAN_Jia_2020.csv",
+          "sha256": "00ac2d2b66ab786150025988ec8e9bb9570caa42ad5fcd0833a4eb5c0d1d58bc",
+          "bytes": 15876280,
+          "member": "DMS_ProteinGym_substitutions/MSH2_HUMAN_Jia_2020.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/MSH2_HUMAN_Jia_2020.csv"
+        },
+        {
+          "filename": "MTHR_HUMAN_Weile_2021.csv",
+          "sha256": "68653df3c7a35b3cb8a011b8a85e1dfcf52b55b619b65106342253972b869a71",
+          "bytes": 8375562,
+          "member": "DMS_ProteinGym_substitutions/MTHR_HUMAN_Weile_2021.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/MTHR_HUMAN_Weile_2021.csv"
+        },
+        {
+          "filename": "NPC1_HUMAN_Erwood_2022_HEK293T.csv",
+          "sha256": "ecc2f47ab85326973e0797081d40fe88938a01f7d6128ab04c02ce6f495b7c3c",
+          "bytes": 827864,
+          "member": "DMS_ProteinGym_substitutions/NPC1_HUMAN_Erwood_2022_HEK293T.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/NPC1_HUMAN_Erwood_2022_HEK293T.csv"
+        },
+        {
+          "filename": "NPC1_HUMAN_Erwood_2022_RPE1.csv",
+          "sha256": "75c21ccf623cff8b8a8f6b5b2c903f025efca5512c2c78889ccd9337df9975ca",
+          "bytes": 81917,
+          "member": "DMS_ProteinGym_substitutions/NPC1_HUMAN_Erwood_2022_RPE1.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/NPC1_HUMAN_Erwood_2022_RPE1.csv"
+        },
+        {
+          "filename": "NUD15_HUMAN_Suiter_2020.csv",
+          "sha256": "e7540f10fe0568c066edb0b996a8f908127dc37d2a6aebf232ef33f05ea25900",
+          "bytes": 531037,
+          "member": "DMS_ProteinGym_substitutions/NUD15_HUMAN_Suiter_2020.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/NUD15_HUMAN_Suiter_2020.csv"
+        },
+        {
+          "filename": "OBSCN_HUMAN_Tsuboyama_2023_1V1C.csv",
+          "sha256": "7f09d4f2c7d00854bd32dc5c502a640c01eadf3a66571680204237b8f9cb59e0",
+          "bytes": 305491,
+          "member": "DMS_ProteinGym_substitutions/OBSCN_HUMAN_Tsuboyama_2023_1V1C.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/OBSCN_HUMAN_Tsuboyama_2023_1V1C.csv"
+        },
+        {
+          "filename": "OPSD_HUMAN_Wan_2019.csv",
+          "sha256": "926c0afdd6d0c07bf7170710535423c447215b07cccb46eec5dd5b22368d1a8d",
+          "bytes": 61997,
+          "member": "DMS_ProteinGym_substitutions/OPSD_HUMAN_Wan_2019.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/OPSD_HUMAN_Wan_2019.csv"
+        },
+        {
+          "filename": "OTC_HUMAN_Lo_2023.csv",
+          "sha256": "0b149c8eeae4a695d5bbce6e0af456359656f476b7c1c3586d16f0ff78dba2f7",
+          "bytes": 581787,
+          "member": "DMS_ProteinGym_substitutions/OTC_HUMAN_Lo_2023.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/OTC_HUMAN_Lo_2023.csv"
+        },
+        {
+          "filename": "OTU7A_HUMAN_Tsuboyama_2023_2L2D.csv",
+          "sha256": "e46a6f57fa05d76f20e353536bebe956ef9392e880d890068eee103fa8c39cc4",
+          "bytes": 44090,
+          "member": "DMS_ProteinGym_substitutions/OTU7A_HUMAN_Tsuboyama_2023_2L2D.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/OTU7A_HUMAN_Tsuboyama_2023_2L2D.csv"
+        },
+        {
+          "filename": "P53_HUMAN_Kotler_2018.csv",
+          "sha256": "0e6fd5232d1a6893fb310fea7d433b11dc6d1be708bc430b00075e27e9ecf886",
+          "bytes": 437223,
+          "member": "DMS_ProteinGym_substitutions/P53_HUMAN_Kotler_2018.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/P53_HUMAN_Kotler_2018.csv"
+        },
+        {
+          "filename": "PAI1_HUMAN_Huttinger_2021.csv",
+          "sha256": "5e29eb12bf8977c232633897016fea00fa0f4ff61b73d058d1df01b84e1753ac",
+          "bytes": 2261327,
+          "member": "DMS_ProteinGym_substitutions/PAI1_HUMAN_Huttinger_2021.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/PAI1_HUMAN_Huttinger_2021.csv"
+        },
+        {
+          "filename": "PIN1_HUMAN_Tsuboyama_2023_1I6C.csv",
+          "sha256": "4b805e0a24543d68bb677230053c0c8548e93fae2ab4870a6c16fd13e170cc87",
+          "bytes": 53750,
+          "member": "DMS_ProteinGym_substitutions/PIN1_HUMAN_Tsuboyama_2023_1I6C.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/PIN1_HUMAN_Tsuboyama_2023_1I6C.csv"
+        },
+        {
+          "filename": "PPARG_HUMAN_Majithia_2016.csv",
+          "sha256": "807eb7547b62d44d39fb6d22310a6eac54a62ca6768edb46e47de03c93ae642a",
+          "bytes": 4981194,
+          "member": "DMS_ProteinGym_substitutions/PPARG_HUMAN_Majithia_2016.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/PPARG_HUMAN_Majithia_2016.csv"
+        },
+        {
+          "filename": "PPM1D_HUMAN_Miller_2022.csv",
+          "sha256": "4aaf327103807e81cf86aec13dc52a01c1eec91fa48e1f94f893f002656a1d60",
+          "bytes": 4894106,
+          "member": "DMS_ProteinGym_substitutions/PPM1D_HUMAN_Miller_2022.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/PPM1D_HUMAN_Miller_2022.csv"
+        },
+        {
+          "filename": "PR40A_HUMAN_Tsuboyama_2023_1UZC.csv",
+          "sha256": "db4e8f1a8bedef74a6add1846f44c1578f3c7abf17399487e29fa2d478fd40a2",
+          "bytes": 188231,
+          "member": "DMS_ProteinGym_substitutions/PR40A_HUMAN_Tsuboyama_2023_1UZC.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/PR40A_HUMAN_Tsuboyama_2023_1UZC.csv"
+        },
+        {
+          "filename": "PRKN_HUMAN_Clausen_2023.csv",
+          "sha256": "4adf616e5b72d7f4a25db0a91febb67ea91fb3301d0bd26f26dc67b1cabd27d2",
+          "bytes": 4305910,
+          "member": "DMS_ProteinGym_substitutions/PRKN_HUMAN_Clausen_2023.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/PRKN_HUMAN_Clausen_2023.csv"
+        },
+        {
+          "filename": "PTEN_HUMAN_Matreyek_2021.csv",
+          "sha256": "1c52aba95950c6d3b1ac8320df4cb99a79ae97353bd43e24c87ef78dbb02e636",
+          "bytes": 2184896,
+          "member": "DMS_ProteinGym_substitutions/PTEN_HUMAN_Matreyek_2021.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/PTEN_HUMAN_Matreyek_2021.csv"
+        },
+        {
+          "filename": "PTEN_HUMAN_Mighell_2018.csv",
+          "sha256": "d532bed24c80449936dd61cf303225d78e6e9963a58165c1c36dff92c89557e1",
+          "bytes": 3088566,
+          "member": "DMS_ProteinGym_substitutions/PTEN_HUMAN_Mighell_2018.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/PTEN_HUMAN_Mighell_2018.csv"
+        },
+        {
+          "filename": "RAF1_HUMAN_Zinkus-Boltz_2019.csv",
+          "sha256": "87a15083d06f33a9fd76884ee45f98e5f72db9b32f7718770586e9c9395c7238",
+          "bytes": 200716,
+          "member": "DMS_ProteinGym_substitutions/RAF1_HUMAN_Zinkus-Boltz_2019.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/RAF1_HUMAN_Zinkus-Boltz_2019.csv"
+        },
+        {
+          "filename": "RASH_HUMAN_Bandaru_2017.csv",
+          "sha256": "0704164d427ab68cfb8ac72fcbe438a819ad91b31f9fa4fcb1056690173a0736",
+          "bytes": 660853,
+          "member": "DMS_ProteinGym_substitutions/RASH_HUMAN_Bandaru_2017.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/RASH_HUMAN_Bandaru_2017.csv"
+        },
+        {
+          "filename": "RD23A_HUMAN_Tsuboyama_2023_1IFY.csv",
+          "sha256": "41f6a378236f23bd42a2a0773545031996e15cdf8eb9347042178632eac8fbdc",
+          "bytes": 73966,
+          "member": "DMS_ProteinGym_substitutions/RD23A_HUMAN_Tsuboyama_2023_1IFY.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/RD23A_HUMAN_Tsuboyama_2023_1IFY.csv"
+        },
+        {
+          "filename": "S22A1_HUMAN_Yee_2023_abundance.csv",
+          "sha256": "b8bfa31eae84d0e0bdfe40f0f2c5e58390c163d17e17b922f42f2992df1e196a",
+          "bytes": 5630422,
+          "member": "DMS_ProteinGym_substitutions/S22A1_HUMAN_Yee_2023_abundance.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/S22A1_HUMAN_Yee_2023_abundance.csv"
+        },
+        {
+          "filename": "S22A1_HUMAN_Yee_2023_activity.csv",
+          "sha256": "5b470a590da0b56e05b090b6a7aa4639956096117e562bf45eede43c94149152",
+          "bytes": 5796217,
+          "member": "DMS_ProteinGym_substitutions/S22A1_HUMAN_Yee_2023_activity.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/S22A1_HUMAN_Yee_2023_activity.csv"
+        },
+        {
+          "filename": "SC6A4_HUMAN_Young_2021.csv",
+          "sha256": "0ad59ccefda5ac0d808ee39ad873db63e4260b1dc6a463cfc52f16d5d3caf62e",
+          "bytes": 7552894,
+          "member": "DMS_ProteinGym_substitutions/SC6A4_HUMAN_Young_2021.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/SC6A4_HUMAN_Young_2021.csv"
+        },
+        {
+          "filename": "SCN5A_HUMAN_Glazer_2019.csv",
+          "sha256": "1b26c30f9f7eea00a751b78d534408b50e490d37988c482c413b66755a390450",
+          "bytes": 455311,
+          "member": "DMS_ProteinGym_substitutions/SCN5A_HUMAN_Glazer_2019.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/SCN5A_HUMAN_Glazer_2019.csv"
+        },
+        {
+          "filename": "SERC_HUMAN_Xie_2023.csv",
+          "sha256": "6b8cc8fec82a7f6d4b00b65a0ced7a6b57a8d6f2639bd58e22ccc4d6774db873",
+          "bytes": 759544,
+          "member": "DMS_ProteinGym_substitutions/SERC_HUMAN_Xie_2023.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/SERC_HUMAN_Xie_2023.csv"
+        },
+        {
+          "filename": "SHOC2_HUMAN_Kwon_2022.csv",
+          "sha256": "36e169325becc6589e6b1f715989f2fd56d51170031a8331479c68ddbbb49d56",
+          "bytes": 6685995,
+          "member": "DMS_ProteinGym_substitutions/SHOC2_HUMAN_Kwon_2022.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/SHOC2_HUMAN_Kwon_2022.csv"
+        },
+        {
+          "filename": "SOX30_HUMAN_Tsuboyama_2023_7JJK.csv",
+          "sha256": "072f71cb9b083664a9b990b87f7387b3d676ef4da818fb33be04388d5e706958",
+          "bytes": 85309,
+          "member": "DMS_ProteinGym_substitutions/SOX30_HUMAN_Tsuboyama_2023_7JJK.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/SOX30_HUMAN_Tsuboyama_2023_7JJK.csv"
+        },
+        {
+          "filename": "SRC_HUMAN_Ahler_2019.csv",
+          "sha256": "fe9b3eb54aa97892ece60cf167764277d248b3141e9fab6754efc7734a7b7cd7",
+          "bytes": 1883026,
+          "member": "DMS_ProteinGym_substitutions/SRC_HUMAN_Ahler_2019.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/SRC_HUMAN_Ahler_2019.csv"
+        },
+        {
+          "filename": "SRC_HUMAN_Chakraborty_2023_binding-DAS_25uM.csv",
+          "sha256": "b6fbe12a4aea4cfec065e1ae21c096508d8c68b0d5a86c43fe85c25e86af6c52",
+          "bytes": 2027332,
+          "member": "DMS_ProteinGym_substitutions/SRC_HUMAN_Chakraborty_2023_binding-DAS_25uM.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/SRC_HUMAN_Chakraborty_2023_binding-DAS_25uM.csv"
+        },
+        {
+          "filename": "SRC_HUMAN_Nguyen_2022.csv",
+          "sha256": "f97271be317982c7f67e076e3f967bbc422156757a60c0f1981b597a284d438f",
+          "bytes": 1900602,
+          "member": "DMS_ProteinGym_substitutions/SRC_HUMAN_Nguyen_2022.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/SRC_HUMAN_Nguyen_2022.csv"
+        },
+        {
+          "filename": "SUMO1_HUMAN_Weile_2017.csv",
+          "sha256": "71fd17bba2e8a6cbca9ea051c29eebb055d27022b4b432aeb08271b9d4b63a0c",
+          "bytes": 207299,
+          "member": "DMS_ProteinGym_substitutions/SUMO1_HUMAN_Weile_2017.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/SUMO1_HUMAN_Weile_2017.csv"
+        },
+        {
+          "filename": "TADBP_HUMAN_Bolognesi_2019.csv",
+          "sha256": "22894a3fac10cc215bfc06f5d7798b83900608a7c6b7b557f342659e6f2bdced",
+          "bytes": 528863,
+          "member": "DMS_ProteinGym_substitutions/TADBP_HUMAN_Bolognesi_2019.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/TADBP_HUMAN_Bolognesi_2019.csv"
+        },
+        {
+          "filename": "TPK1_HUMAN_Weile_2017.csv",
+          "sha256": "b5b641b4186d42dd2ea4cc67205a50d7ceb2f747c0d3f985556f908309f9ce7e",
+          "bytes": 840554,
+          "member": "DMS_ProteinGym_substitutions/TPK1_HUMAN_Weile_2017.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/TPK1_HUMAN_Weile_2017.csv"
+        },
+        {
+          "filename": "TPMT_HUMAN_Matreyek_2018.csv",
+          "sha256": "bafd9deb8ccc5e0454b7222f0dcb03e4facc1ad949177a65292bded268084d39",
+          "bytes": 972049,
+          "member": "DMS_ProteinGym_substitutions/TPMT_HUMAN_Matreyek_2018.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/TPMT_HUMAN_Matreyek_2018.csv"
+        },
+        {
+          "filename": "UBC9_HUMAN_Weile_2017.csv",
+          "sha256": "3906055fdcba1b05ea9c89708eacf5e666af6803ee46a6abc895396d4b072b06",
+          "bytes": 462958,
+          "member": "DMS_ProteinGym_substitutions/UBC9_HUMAN_Weile_2017.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/UBC9_HUMAN_Weile_2017.csv"
+        },
+        {
+          "filename": "UBE4B_HUMAN_Tsuboyama_2023_3L1X.csv",
+          "sha256": "840b65cb8566c8b6bea9ad87cdbf25d5ce9782daf690ed5f19fdb1ad9e0059d3",
+          "bytes": 361882,
+          "member": "DMS_ProteinGym_substitutions/UBE4B_HUMAN_Tsuboyama_2023_3L1X.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/UBE4B_HUMAN_Tsuboyama_2023_3L1X.csv"
+        },
+        {
+          "filename": "UBR5_HUMAN_Tsuboyama_2023_1I2T.csv",
+          "sha256": "9989fd8fc7fb10ab4ff7db4f34ceee082927e83751acf4158e098411d3933201",
+          "bytes": 125853,
+          "member": "DMS_ProteinGym_substitutions/UBR5_HUMAN_Tsuboyama_2023_1I2T.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/UBR5_HUMAN_Tsuboyama_2023_1I2T.csv"
+        },
+        {
+          "filename": "VKOR1_HUMAN_Chiasson_2020_abundance.csv",
+          "sha256": "04fc7a81a09c372ed14b9ad283c5da7ceed7d51c4d949a13e2c143b6c138a7d5",
+          "bytes": 510816,
+          "member": "DMS_ProteinGym_substitutions/VKOR1_HUMAN_Chiasson_2020_abundance.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/VKOR1_HUMAN_Chiasson_2020_abundance.csv"
+        },
+        {
+          "filename": "VKOR1_HUMAN_Chiasson_2020_activity.csv",
+          "sha256": "1aebf00f05b72ade9aa8c6330a89318e3874ea855ae9bef080fe3437cd76729d",
+          "bytes": 132039,
+          "member": "DMS_ProteinGym_substitutions/VKOR1_HUMAN_Chiasson_2020_activity.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/VKOR1_HUMAN_Chiasson_2020_activity.csv"
+        },
+        {
+          "filename": "YAP1_HUMAN_Araya_2012.csv",
+          "sha256": "8e41f730c339fc341629eb37f4a3d481e35cf171308380b6bd4ac2656bb71258",
+          "bytes": 5381227,
+          "member": "DMS_ProteinGym_substitutions/YAP1_HUMAN_Araya_2012.csv",
+          "destination": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary/inputs/proteingym/dms_final_73/YAP1_HUMAN_Araya_2012.csv"
+        }
+      ]
+    }
+  }
+]

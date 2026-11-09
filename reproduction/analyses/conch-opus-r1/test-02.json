@@ -174,5 +174,18 @@
     "saved_code_cells": 8,
     "saved_error_outputs": 0
   },
-  "requested_model": "CONCH"
+  "requested_model": "CONCH",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "conch-opus-r1/test-02",
+    "disposition": "rejected",
+    "result": "Raw accuracy increased with distance because tissue classes had different baseline accuracy.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "conch-opus-r1/test-02",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

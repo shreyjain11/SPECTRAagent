@@ -85,5 +85,18 @@
     "saved_code_cells": 2,
     "saved_error_outputs": 0
   },
-  "requested_model": "AlphaMissense"
+  "requested_model": "AlphaMissense",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "am-gpt-r2/test-01",
+    "disposition": "accepted",
+    "result": "AUROC (ClinVar), level L3 (0-2 nt) minus level L0 (>= 31 nt), confirmation partition: -0.04788 (95% CI -0.06159 to -0.03549). BLOSUM62 declined by 0.05984 on the same variants and the paired between-model difference included zero",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "am-gpt-r2/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

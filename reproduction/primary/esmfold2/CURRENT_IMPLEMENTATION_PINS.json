@@ -1,0 +1,71 @@
+{
+  "checked_date": "2026-11-08",
+  "transformers": "5.22.2",
+  "torch": "2.6.0",
+  "python_minimum": "3.11",
+  "converter_commit": "3d87599b23ff5f630de770e08eeed64950e25a9e",
+  "fold": {
+    "repo": "biohub/ESMFold2",
+    "revision": "e1e189d0f5fb70c2693da2332eca4443c0ccccd6",
+    "files": [
+      {
+        "path": "model.safetensors",
+        "bytes": 939505228,
+        "sha256": "138fd4350d6892b81ce6be7ff9bf5a93ae9d4d3751f46a27438a3f9f0dcefa0e"
+      },
+      {
+        "path": "config.json",
+        "bytes": 2337,
+        "sha256": "e9ec2496ec433a1dce18627ed4bf3785b4ce0c1d69e4bb4663dad1ab895da012"
+      }
+    ]
+  },
+  "backbone": {
+    "repo": "biohub/ESMC-6B",
+    "revision": "89c554c46a44d825fbfbe3ce2a6bdc539770bdaa",
+    "files": [
+      {
+        "path": "model-00001-of-00006.safetensors",
+        "bytes": 4864457920,
+        "sha256": "bd90149ff223e6ac1a0cac6147a5ae0df20d3a21df4f65356a1f19cd14f4aa8a"
+      },
+      {
+        "path": "model-00002-of-00006.safetensors",
+        "bytes": 4971211344,
+        "sha256": "f75e2144d8269fe2eb4b3e0823fb089b94f176d8024153e85b8fb573a42294fa"
+      },
+      {
+        "path": "model-00003-of-00006.safetensors",
+        "bytes": 4863752992,
+        "sha256": "f699f01ecc9691d9c6470492765fe54b8b5d2e9f277c139e89427433ffdfe0b2"
+      },
+      {
+        "path": "model-00004-of-00006.safetensors",
+        "bytes": 4971211344,
+        "sha256": "46add1b7be098bbfdc3073884851ba3057f1b33ea23a158b650a37007dabd13d"
+      },
+      {
+        "path": "model-00005-of-00006.safetensors",
+        "bytes": 4863752992,
+        "sha256": "1e1cb62f060a34e18f54a31a76683ef888b8cec59e73315f5b31d25d45a1f88c"
+      },
+      {
+        "path": "model-00006-of-00006.safetensors",
+        "bytes": 873762296,
+        "sha256": "56c73e13ae96e777ce65eee99364056069ef93b646470f352f83c5f1037b1b18"
+      },
+      {
+        "path": "config.json",
+        "bytes": 341,
+        "sha256": "c5566fab6a17fd674141331fe75de917b7904d99fb7a410d2b1593c21e576913"
+      }
+    ]
+  },
+  "provenance": "Folding revision from original source cache metadata; ESMC revision is the sole surviving original-host snapshot and refs/main confirmed during compatibility comparison. Public pinned LFS hashes identify source tensor bytes. This records surviving inputs without asserting the historical software environment never changed.",
+  "original_transformers_commit": "f9a5a374be135f63b3019c1cefb91ea9e2d27e10",
+  "sources": [
+    "https://pypi.org/project/transformers/5.22.2/",
+    "https://huggingface.co/docs/transformers/v5.22.2/model_doc/esmfold2",
+    "https://github.com/huggingface/transformers/pull/46419"
+  ]
+}

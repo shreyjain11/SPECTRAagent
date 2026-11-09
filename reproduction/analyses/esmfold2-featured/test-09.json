@@ -4,8 +4,8 @@
   "model": "ESMFold2",
   "axis": "Reference geometry",
   "dataset_split": {
-    "description": "Exact target identities, sequences and archived evaluation setting are loaded and checked.",
-    "input_inventory": "inputs/esmfold2.json",
+    "description": "Original frozen records and source identities are preserved; packaged inputs and executable acquisition steps are documented in the linked recovery chain.",
+    "input_inventory": "primary/esmfold2/artifact_manifest.json",
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
@@ -512,37 +512,113 @@
       "archive": "esmfold2-retained-inputs",
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
-      "notebook_preparation_cell": 0
-    }
+      "notebook_preparation_cell": 0,
+      "implementation": "legacy_implementation",
+      "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
+    },
+    "legacy_input_inventory": "inputs/esmfold2.json",
+    "recovered_workflow": "primary/esmfold2/traceability.json"
   },
   "axis_levels": {
     "definition": "Experimental radius of gyration divided by length to the one-third power.",
-    "calculation": "The original discovery-only cutpoints and confirmation membership are reproduced. Raw experimental coordinates are missing; the retained geometry feature is reference-derived, not an input-only predictor.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-09.py"
+    "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
+    "code": "primary/esmfold2/notebooks/test-09.py"
   },
   "model_evaluation": {
-    "measurements": "Original per-target/per-sample accuracy retained; complete prediction/reference coordinates unavailable.",
+    "measurements": "Original individual model measurements and scoring/selection code are packaged. The optional full-workflow route uses the documented current implementation with pinned original weights.",
     "fine_tuning": {
       "target_weight_updates_in_replay": false,
       "target_fine_tuning_during_original_audit": null,
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-09.py"
+    "code": "primary/esmfold2/notebooks/test-09.py"
   },
   "curve": {
-    "aggregation_and_uncertainty": "Group statistics are recalculated from individual scores; original means checked where available.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-09.py"
+    "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
+    "code": "primary/esmfold2/notebooks/test-09.py"
   },
   "insight": {
-    "comparison_controls_confirmation": "Original sample-selection policies, comparisons and control calculations are replayed below.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-09.py"
+    "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
+    "code": "primary/esmfold2/notebooks/test-09.py"
   },
   "reconstruction_notes": [
-    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference.",
-    "The original discovery-only cutpoints and confirmation membership are reproduced. Raw experimental coordinates are missing; the retained geometry feature is reference-derived, not an input-only predictor."
+    "The full bulk-download/raw-feature/current-model route is connected but was not executed during this integration.",
+    "Historical results used the older Biohub fork. The current implementation uses pinned original model sources; completed conversion validation checked tensor keys/shapes, not independent saved-value or prediction equality.",
+    "Original frozen memberships and per-analysis metadata missingness are preserved, including the documented flexible-axis boundary case."
   ],
   "implementation": {
+    "format": "recovered_historical_notebook",
+    "notebook": "primary/esmfold2/notebooks/test-09.ipynb",
+    "script": "primary/esmfold2/notebooks/test-09.py",
+    "supporting_code": "code/primary-esmfold2.json",
+    "published_notebook_sha256": "babe7d38993dc321238a42150026cb77501fc9bef40d2bfe72a94ecda5f2dd0b",
+    "published_script_sha256": "d832e6ebfcfd83207f43e6e877038414f164aa16941fd4f9aa9915663d2c2b53",
+    "cell_locations": [
+      {
+        "notebook_cell": 3,
+        "start_line": 1,
+        "end_line": 43
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 44,
+        "end_line": 105
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 106,
+        "end_line": 143
+      },
+      {
+        "notebook_cell": 7,
+        "start_line": 144,
+        "end_line": 157
+      },
+      {
+        "notebook_cell": 8,
+        "start_line": 158,
+        "end_line": 182
+      },
+      {
+        "notebook_cell": 10,
+        "start_line": 183,
+        "end_line": 185
+      },
+      {
+        "notebook_cell": 11,
+        "start_line": 186,
+        "end_line": 195
+      },
+      {
+        "notebook_cell": 12,
+        "start_line": 196,
+        "end_line": 204
+      },
+      {
+        "notebook_cell": 16,
+        "start_line": 205,
+        "end_line": 207
+      }
+    ],
+    "saved_code_cells": 9,
+    "saved_error_outputs": 0,
+    "saved_figures": 2,
+    "changes": [
+      "Recovered original inputs and programs are packaged or acquired with content checks.",
+      "Markdown, original decisions and selected historical outputs are retained.",
+      "Default replay and optional full raw-data/model execution are explicitly distinguished."
+    ]
+  },
+  "requested_model": "ESMFold2",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "esmfold2-featured/test-09",
+    "disposition": "control",
+    "result": "Association was limited to retrospective benchmarking. The feature needs a reference structure.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "legacy_implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-featured/test-09.ipynb",
     "script": "materials/esmfold2/notebooks/esmfold2-featured/test-09.py",
     "supporting_code": "code/esmfold2.json",
@@ -582,5 +658,117 @@
     "saved_code_cells": 4,
     "saved_error_outputs": 0
   },
-  "requested_model": "ESMFold2"
+  "legacy_reconstruction_notes": [
+    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference.",
+    "The original discovery-only cutpoints and confirmation membership are reproduced. Raw experimental coordinates are missing; the retained geometry feature is reference-derived, not an input-only predictor."
+  ],
+  "primary_recovery": {
+    "package": "primary/esmfold2",
+    "traceability": "primary/esmfold2/traceability.json",
+    "record_id": "esmfold2-featured/test-09",
+    "evidence_paths_relative_to": "primary/esmfold2",
+    "stages": {
+      "data": {
+        "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+        "artifacts": [
+          "ACQUISITION_MANIFEST.json",
+          "ORIGINAL_ACQUISITION_EVIDENCE.json",
+          "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv"
+        ],
+        "panels": [
+          "cameo",
+          "cameo_scaled40",
+          "external34"
+        ],
+        "code": [
+          "acquisition.py:download_plan",
+          "acquisition.py:fetch_references",
+          "bootstrap.py:ensure_assets"
+        ],
+        "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+      },
+      "processing": {
+        "status": "original_programs_retained_and_rerun_connected",
+        "description": "Original reference geometry parsing, common features, catalogue and frozen-axis audits",
+        "artifacts": [
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_hydropathy_axis.py",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_axis.py",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/build_combined_and_score_axes.py",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_reference_topology_axes.py"
+        ],
+        "portable_code": [
+          "original_workflow.py:rebuild_features",
+          "original_workflow.py:require_features"
+        ],
+        "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+      },
+      "axis": {
+        "status": "definition_and_code_retained",
+        "definition": "Reference radius of gyration/length^(1/3), shape and contact topology",
+        "artifacts": [
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_hydropathy_axis.py",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_axis.py",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/build_combined_and_score_axes.py",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_reference_topology_axes.py"
+        ]
+      },
+      "levels": {
+        "status": "original_assignment_or_frozen_fit_retained",
+        "description": "Original hash0–5 discovery cutpoints applied to hash6–9 and external/scaled sets",
+        "artifacts": [
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_ready_dataset/combined_prospective_features.csv"
+        ]
+      },
+      "evaluation": {
+        "status": "original_scores_retained_current_inference_route_connected",
+        "artifacts": [
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/target_model_results.csv",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_ready_dataset/combined_feature_outcome_table.csv"
+        ],
+        "code": [
+          "acquisition.py:run_inference",
+          "current_esmfold2_adapter.py",
+          "current_implementation.py",
+          "original_workflow.py:validate_results"
+        ],
+        "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+        "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+      },
+      "curve": {
+        "status": "original_functions_replayed_and_new_results_connected",
+        "artifacts": [
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/candidate_axis_curves.csv",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_hydropathy_axis_curves.csv",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/candidate_axis_summary.csv",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_axis_curves.csv",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_rg_len13_norm_threshold_summary.csv",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/charge_window_followup_axis_summary.csv",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/charge_window_followup_axis_curves.csv",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_reference_topology_axis_curves.csv"
+        ],
+        "code": [
+          "original_workflow.py:run_axis"
+        ],
+        "validation": [
+          "WORKFLOW_VALIDATION.json",
+          "CURVE_REPLAY_VALIDATION.json",
+          "WORKFLOW_GUARD_VALIDATION.json"
+        ],
+        "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+      },
+      "decision": {
+        "status": "original_record_preserved",
+        "artifacts": [
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/final_report.md",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/axis_ledger.json",
+          "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_loop_state.json"
+        ],
+        "notebook_cell": 14,
+        "recorded_text": "## Recorded conclusion\n\nAssociation was limited to retrospective benchmarking. The feature needs a reference structure.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+      }
+    }
+  }
 }

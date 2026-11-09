@@ -1,0 +1,26 @@
+[
+  {
+    "id": "C1_context_generalization",
+    "source": "State manuscript abstract/results and README",
+    "claim": "STATE predicts perturbation effects across diverse contexts and improves context generalization on chemical, signaling, and genetic perturbation datasets.",
+    "scientific_unit": "perturbation-by-cell-context response example",
+    "paper_protocol": "few-shot context generalization: target contexts contribute part of perturbations to training; remaining perturbations are held out in that context",
+    "spectra_risk": "The same perturbation may be present in other training contexts, so this is not global perturbation novelty."
+  },
+  {
+    "id": "C2_embedding_transfer",
+    "source": "State manuscript results and README",
+    "claim": "SE-trained representations enable transfer across datasets and improve novel-context performance with less data.",
+    "scientific_unit": "dataset/context-level perturbation response examples",
+    "paper_protocol": "ST+SE compared with ST+HVG and other baselines on public/preprint splits",
+    "spectra_risk": "Precomputed model-card results are author-produced; independent target rerun needs checkpoints plus H5ADs."
+  },
+  {
+    "id": "C3_novel_context_no_perturbations",
+    "source": "State manuscript abstract and zero-shot TOMLs",
+    "claim": "STATE can identify strong perturbations in novel cellular contexts where no perturbations were observed during training.",
+    "scientific_unit": "perturbation-by-heldout-cell-context response example",
+    "paper_protocol": "zeroshot context holdout",
+    "spectra_risk": "Only five Tahoe zero-shot contexts in scored artifacts; context-similarity axis is underpowered without downloading/running more data."
+  }
+]

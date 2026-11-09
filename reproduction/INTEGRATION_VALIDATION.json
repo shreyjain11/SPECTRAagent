@@ -1,0 +1,42 @@
+{
+  "integrated_on": "2026-11-08",
+  "upstream_pr_head_integrated": "55886b71052c3cbf073950b976005a0e9d90ad6d",
+  "scope": "Workflow traceability and portable notebook execution; no new scientific adjudication or bulk model inference.",
+  "record_validation": {
+    "analyses": 143,
+    "investigations": 28,
+    "primary_workflows": 44,
+    "preferred_code_cells": 894,
+    "legacy_materials_code_cells": 756,
+    "legacy_execution_receipts_hash_verified": 143,
+    "public_input_archives": 4,
+    "bundled_payloads_hash_verified": 14,
+    "sample_tables_verified": 214
+  },
+  "routing_validation": {
+    "existing_archive_integrity_tests_passed": 6,
+    "offline_routing_checks_passed": 7,
+    "argument_rejection_checks_passed": 3,
+    "actual_tiny_notebook_execution_checks_passed": 2,
+    "published_notebooks_unchanged": true,
+    "scientific_notebooks_rerun_for_routing_check": false
+  },
+  "anonymous_public_release_heads": {
+    "archives": "data.json",
+    "all_four_http_status": 200,
+    "all_four_content_lengths_match": true,
+    "full_GET_hash_evidence": "execution.json (upstream verification, preserved with notebook hashes)"
+  },
+  "primary_execution_evidence": {
+    "esmfold2": "primary/esmfold2/PACKAGE_VALIDATION.json",
+    "state": "primary/state/PORTABLE_VALIDATION.json",
+    "conch": "primary/conch/PORTABILITY_VALIDATION.json",
+    "alphamissense": "primary/alphamissense/PORTABLE_VALIDATION.json"
+  },
+  "repository_check": "npm run check passed; site and protocol source files unchanged",
+  "limits": [
+    "Full bulk acquisition and new CONCH/ESMFold2 model execution were not run during integration.",
+    "32 additional calculation replays have portable inputs; their remaining original-provenance limitations remain documented.",
+    "67 additional entries execute evidence/summary displays but still lack original individual computations."
+  ]
+}

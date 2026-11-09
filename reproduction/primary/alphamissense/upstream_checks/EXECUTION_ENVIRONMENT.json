@@ -1,0 +1,15 @@
+{
+  "platform": "Linux-6.1.0-54-cloud-amd64-x86_64-with-glibc2.36",
+  "python": "3.11.2",
+  "numpy": "2.1.2",
+  "cpu_count": 16,
+  "mmseqs_version": "fd711934753052544df18fa1dff8c762d6fe2188",
+  "source_mount_readonly": true,
+  "portable_runner_test": [
+    {
+      "msa": "CD19_HUMAN_2023-10-12_b01.a2m.npz",
+      "all_arrays_equal": true,
+      "output_sha256": "b4f8db48911b0595419cca38fe2ad42633d036cad197e02f802ae6389daac0ca"
+    }
+  ]
+}

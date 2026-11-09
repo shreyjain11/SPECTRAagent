@@ -1,0 +1,27 @@
+# Derived stats (from axis3_baselines_binstats.tsv + axis3_dms_signal_perbin.tsv)
+# easy->hard drops, |rho| to 3dp, percentages to 1dp
+
+=== q4 -> q0 (all three predictors defined) ===
+AM: q4=0.515 q0=0.395  abs_drop=0.120  rel_drop=23.3%
+PSSM: q4=0.479 q0=0.308  abs_drop=0.172  rel_drop=35.8%
+BLOSUM62: q4=0.244 q0=0.157  abs_drop=0.088  rel_drop=35.9%
+
+=== q4 -> insert (PSSM undefined at insert) ===
+AM: q4=0.515 insert=0.266  abs_drop=0.249  rel_drop=48.3%
+BLOSUM62: q4=0.244 insert=0.119  abs_drop=0.125  rel_drop=51.2%
+
+=== AM advantage (|rho| gap) over baselines per bin ===
+AM-BLOSUM62 @ q4: 0.271
+AM-BLOSUM62 @ q0: 0.238
+AM-BLOSUM62 @ insert: 0.147
+AM-PSSM @ q4: 0.036
+AM-PSSM @ q0: 0.087
+
+=== intrinsic-difficulty counterfactual ===
+BLOSUM62 proportional q4->q0 decline = 35.9%
+AM q0 if it tracked that decline = 0.330; ACTUAL AM q0 = 0.395 (actual > counterfactual => AM sub-intrinsic/more robust)
+
+=== DMS dynamic-range shrink (mean relative spread) ===
+q4=1.004 q0=0.865 insert=0.730
+shrink q4->q0  = 13.8%
+shrink q4->insert = 27.2%

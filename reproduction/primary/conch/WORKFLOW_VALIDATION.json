@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "purpose": "Integration validation for the recovered original CONCH scientific workflow; no new analysis or confirmation",
+  "entrypoint": "original_pipeline.py",
+  "instructions": "WORKFLOW.md",
+  "stages_wired": [
+    "source",
+    "images",
+    "checkpoint",
+    "reference",
+    "discovery_features",
+    "freeze_discovery",
+    "score_discovery",
+    "analyze_discovery",
+    "freeze_confirmation",
+    "score_confirmation",
+    "analyze_confirmation",
+    "freeze_expansion",
+    "score_expansion",
+    "analyze_expansion",
+    "report_expansion"
+  ],
+  "notebook_switch": "RUN_ORIGINAL_WORKFLOW",
+  "runner_environment_switch": "SPECTRA_RUN_ORIGINAL_WORKFLOW=1",
+  "source_revision": "141cc09c7d4ff33d8eda562bd75169b457f71a62",
+  "dataset_revision": "97765ecb14bf11ce7bb8779a1097d187844a67cb",
+  "checkpoint_revision": "f9ca9f877171a28ade80228fb195ac5d79003357",
+  "full_raw_to_model_run_executed": false,
+  "new_model_inference_executed": false,
+  "new_target_shard_or_checkpoint_downloads_performed": false,
+  "runtime_enforcement": [
+    "Explicit expensive-stage opt-in",
+    "Pinned dataset/source/checkpoint revisions",
+    "Full shard/checkpoint SHA256 against pinned HF LFS metadata",
+    "Original source and prompt hashes/classes/templates recorded",
+    "Original CRC image hashes/order checked before axis construction",
+    "Follow-up decoded image MD5 checked while scoring",
+    "Original per-stage command logs and resumable content-hash receipts",
+    "No archived target-score fallback; generated curves require complete inference receipts",
+    "Full mode requires Python3.11 notebook/inference interpreters",
+    "Numerical caches are ABI-specific; reuse requires real compiled imports; pipeline checks actual imports and pinned versions"
+  ],
+  "prerequisites": [
+    "Install Python3.11 notebook environment and separate model environment using setup_inference.py",
+    "Accept MahmoodLab/conch access and supply Hugging Face login or HF_TOKEN",
+    "CUDA device visible (or deliberate CPU option)",
+    "Network and disk for seven target shards,802MB checkpoint,environments and outputs"
+  ],
+  "remaining_execution_limits": [
+    "Full clean inference environment installation and raw-to-model execution were not performed during this integration, respecting request not to start heavy downloads/GPU work.",
+    "Known original model versions are pinned; complete original environment lock was not retained. Other dependencies are recipe pins.",
+    "No newly generated CONCH predictions are claimed numerically equivalent to archived predictions until the opt-in run is executed.",
+    "Recovered expansion report has hardcoded historical interpretation; fresh numeric curves/contrast are displayed separately from original decisions."
+  ],
+  "source_metadata_checks": [
+    "https://raw.githubusercontent.com/mahmoodlab/CONCH/141cc09c7d4ff33d8eda562bd75169b457f71a62/pyproject.toml",
+    "https://raw.githubusercontent.com/mahmoodlab/CONCH/141cc09c7d4ff33d8eda562bd75169b457f71a62/conch/open_clip_custom/custom_tokenizer.py",
+    "https://pypi.org/pypi/datasets/2.21.0/json",
+    "https://pypi.org/pypi/matplotlib/3.10.8/json"
+  ],
+  "notebook_execution_details": "notebook_validation.json",
+  "independent_review": {
+    "completed": true,
+    "remaining_concrete_wiring_blockers_identified": 0,
+    "reviewed": [
+      "stage CLI arguments",
+      "consistent local pinned-data redirection",
+      "decoded-image identity guards",
+      "expansion exclusions",
+      "model/prompt/tokenizer assets",
+      "analysis/report paths",
+      "Python ABI isolation"
+    ],
+    "full_model_run_not_performed": true
+  },
+  "prior_local_recovery_checks": {
+    "all_new_python_and_all_six_notebook_cells_compile": true,
+    "read_only_pipeline_plan": true,
+    "all_six_default_notebooks_executed_from_notebooks_directory": true,
+    "code_cells": 88,
+    "saved_charts": 17,
+    "notebook_errors": 0,
+    "historical_reference_images_and_feature_matrix_verified": 1800,
+    "historical_discovery_axis_level_assignments_verified": 28720,
+    "historical_baseline_prediction_labels_verified": 25960,
+    "historical_CRC_raw_image_feature_examples_verified": 18,
+    "unchanged_stage_resumed_without_action": true,
+    "changed_input_invalidated_stage": true,
+    "changed_output_invalidated_stage": true,
+    "incomplete_generated_results_rejected": true,
+    "missing_model_environment_failed_without_score_fallback": true,
+    "unchanged_manifested_original_files": 42,
+    "original_freeze_and_analysis_main_executed_on_historical_inputs": {
+      "rows": 7180,
+      "prospective_feature_columns": 67,
+      "target_prediction_mismatches": 0,
+      "centroid_prediction_mismatches": 0,
+      "logistic_prediction_mismatches": 0,
+      "inference_executed": false
+    }
+  },
+  "portable_package_validation": "PORTABILITY_VALIDATION.json",
+  "prior_execution_scope": "Local recovery bundle had raw sample/reference images. Portable clean-checkout validation is separate and explicitly skips absent raw-image checks."
+}

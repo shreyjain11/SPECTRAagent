@@ -168,5 +168,18 @@
     "saved_code_cells": 7,
     "saved_error_outputs": 0
   },
-  "requested_model": "CONCH"
+  "requested_model": "CONCH",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "conch-opus-r2/test-01",
+    "disposition": "accepted",
+    "result": "Top-1 accuracy fell from 0.789 to 0.246 versus 0.932 to 0.609 for the fixed ImageNet ResNet-50. Extra CONCH loss 0.219 (95% CI 0.182–0.257). Independent of development, within the NCT source family.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "conch-opus-r2/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

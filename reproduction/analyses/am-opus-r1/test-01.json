@@ -293,5 +293,18 @@
     "saved_code_cells": 10,
     "saved_error_outputs": 0
   },
-  "requested_model": "AlphaMissense"
+  "requested_model": "AlphaMissense",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "am-opus-r1/test-01",
+    "disposition": "accepted",
+    "result": "|Spearman| (ProteinGym), variable positions minus conserved positions, pooled over assays: -0.119 (95% CI -0.161 to -0.078). Specific against chemistry: AlphaMissense minus BLOSUM62 is +0.057, 95% CI [+0.012, +0.102]. Not specific against conservation: AlphaMissense minus the position-specific scoring matrix is -0.018, 95% CI [-0.057, +0.021], while the matrix beats chemistry by +0.075",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "am-opus-r1/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

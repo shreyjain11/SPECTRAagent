@@ -1,0 +1,58 @@
+[
+  {
+    "id": "am-primary/test-01",
+    "axis": "UniRef50 homolog count",
+    "historical_disposition": "rejected",
+    "notebook": "am-primary/axis-1.ipynb",
+    "shared_pipeline": "clinical_homolog_count",
+    "curve_kind": "performance/control curve"
+  },
+  {
+    "id": "am-primary/test-02",
+    "axis": "gnomAD missense-variation support",
+    "historical_disposition": "rejected",
+    "notebook": "am-primary/axis-2.ipynb",
+    "shared_pipeline": "clinical_population_support",
+    "curve_kind": "performance/control curve"
+  },
+  {
+    "id": "am-primary/test-03",
+    "axis": "Effective alignment depth",
+    "historical_disposition": "rejected",
+    "notebook": "am-primary/axis-3.ipynb",
+    "shared_pipeline": "alignment_occupancy",
+    "curve_kind": "pre-scoring bin diagnostic"
+  },
+  {
+    "id": "am-primary/test-04",
+    "axis": "Alignment occupancy",
+    "historical_disposition": "accepted",
+    "notebook": "am-primary/axis-4.ipynb",
+    "shared_pipeline": "alignment_occupancy",
+    "curve_kind": "performance/control curve"
+  },
+  {
+    "id": "am-primary/test-05",
+    "axis": "Occupancy at high effective depth",
+    "historical_disposition": "control",
+    "notebook": "am-primary/axis-5.ipynb",
+    "shared_pipeline": "alignment_occupancy",
+    "curve_kind": "performance/control curve"
+  },
+  {
+    "id": "am-primary/test-06",
+    "axis": "Position-specific and substitution-score references",
+    "historical_disposition": "control",
+    "notebook": "am-primary/axis-6.ipynb",
+    "shared_pipeline": "alignment_occupancy",
+    "curve_kind": "performance/control curve"
+  },
+  {
+    "id": "am-primary/test-07",
+    "axis": "Experimental dynamic range",
+    "historical_disposition": "control",
+    "notebook": "am-primary/axis-7.ipynb",
+    "shared_pipeline": "alignment_occupancy",
+    "curve_kind": "performance/control curve"
+  }
+]

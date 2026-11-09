@@ -1,0 +1,989 @@
+{
+  "schema_version": 1,
+  "model": "alphamissense",
+  "description": "Exact original panel, released prediction subset and original search output for seven primary AlphaMissense analyses. Recorded alignment reconstruction arrays retain their distinct provenance.",
+  "assets": [
+    {
+      "name": "am-clinical-replay-inputs.tar.gz",
+      "kind": "tar.gz",
+      "path": "payloads/am-clinical-replay-inputs.tar.gz",
+      "bytes": 12700944,
+      "sha256": "4e98399db2f2ca965e735027808f9e62a85075ac40bbf09640def31889e85a97",
+      "profiles": [
+        "axis-1",
+        "axis-2"
+      ],
+      "members": [
+        {
+          "path": "acquisition/work_quarantined/query.fasta",
+          "bytes": 9718631,
+          "sha256": "48f7ce1b1c51997c4359ba70aa3ebba61e16251c6890833ddb69e9fd5e3e6f9d"
+        },
+        {
+          "path": "am-primary/inputs/clinvar/BENCHMARK_REPLAY_VERIFY.txt",
+          "bytes": 749,
+          "sha256": "9721121d569c4146530ba8be0c197804d6c264248b2215ba78e360459204eee3"
+        },
+        {
+          "path": "am-primary/inputs/clinvar/ORIGINAL_SHA256SUMS",
+          "bytes": 287,
+          "sha256": "7c415ef196fc6799745fde2e6054ce75000c05f047073a13100b3df168507bf8"
+        },
+        {
+          "path": "am-primary/inputs/clinvar/clinvar_am_benchmark.tsv",
+          "bytes": 15442006,
+          "sha256": "783a79533ae1aa4ae4b7d99615f78959fd134aa4913666407720c4bc7f6ad481"
+        },
+        {
+          "path": "am-primary/inputs/clinvar/gnomad_constraint.tsv",
+          "bytes": 13203203,
+          "sha256": "78f14346180de3fb552747099d9a34238ca535924418a3596d75f45654837d69"
+        }
+      ]
+    },
+    {
+      "name": "am-original-linux-mmseqs.tar.gz",
+      "kind": "tar.gz",
+      "path": "payloads/am-original-linux-mmseqs.tar.gz",
+      "bytes": 8629845,
+      "sha256": "d53b0855819fe80146d5748eee4548f9b2006ecd1dd9cb0bc71be45b6e20c0b2",
+      "profiles": [
+        "alignments"
+      ],
+      "members": [
+        {
+          "path": "upstream_checks/bin/LICENSE.md",
+          "bytes": 1125,
+          "sha256": "adc3ea1f2f5096d2464460495e12a65a94f466edb9ccca50d1f25844ca83792a"
+        },
+        {
+          "path": "upstream_checks/bin/MMSEQS_PROVENANCE.json",
+          "bytes": 286,
+          "sha256": "39592666bd8f386336e93a7d87135123ebd698a074dfc0e16c4bdc577436b75b"
+        },
+        {
+          "path": "upstream_checks/bin/README.md",
+          "bytes": 15204,
+          "sha256": "4f19de2addc3736a392e13b1ce34522215ad3ea169e940846ba745e0f5bdbe8b"
+        },
+        {
+          "path": "upstream_checks/bin/mmseqs",
+          "bytes": 23969680,
+          "sha256": "c58e5b422092544aac95646828eb563cee32ca609c260c50a195bb560d24f2e6"
+        }
+      ]
+    },
+    {
+      "name": "am-recorded-alignment-results.tar.gz",
+      "kind": "tar.gz",
+      "path": "payloads/am-recorded-alignment-results.tar.gz",
+      "bytes": 3723464,
+      "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+      "profiles": [
+        "axis-3",
+        "axis-4",
+        "axis-5",
+        "axis-6",
+        "axis-7"
+      ],
+      "members": [
+        {
+          "path": "upstream_checks/original_calibration/A4_HUMAN_2023-08-07_b01.a2m.clu_cluster.tsv",
+          "bytes": 47702,
+          "sha256": "0c547d752bd34eec755c71646b5175b423fc797e80a8770e41d8f6a4fb54c834"
+        },
+        {
+          "path": "upstream_checks/original_calibration/B2L11_HUMAN_2023-08-07_b04.a2m.clu_cluster.tsv",
+          "bytes": 4626,
+          "sha256": "41707c3394d4b8343459542c85267bbf7542d5ab0f273313ed88f2022beeef1c"
+        },
+        {
+          "path": "upstream_checks/original_calibration/BRCA1_HUMAN_full_11-26-2021_b02.a2m.clu_cluster.tsv",
+          "bytes": 7423,
+          "sha256": "e1ed068c66b1a5b5bddec56638a7feffbdb668576e9ce2d803dd8d4c16cd52bb"
+        },
+        {
+          "path": "upstream_checks/original_calibration/BRCA2_HUMAN_2023-10-12_b01.a2m.clu_cluster.tsv",
+          "bytes": 7093,
+          "sha256": "79547ab687c435e33329a5f84fb4e510266b1eb1d680973d16bad3ee1bf5ab67"
+        },
+        {
+          "path": "upstream_checks/original_calibration/CALM1_HUMAN_full_11-26-2021_b03.a2m.clu_cluster.tsv",
+          "bytes": 2235146,
+          "sha256": "c2695bede89771312425b425ca60b6541678f9d67bd0b09f42bdff8b5e76e205"
+        },
+        {
+          "path": "upstream_checks/results/A4_HUMAN_2023-08-07_b01.a2m.npz",
+          "bytes": 71234,
+          "sha256": "1f32c6275aaf19ca97dc12e140d2e6d516c70a5eac4a2467bd8c4ffbfe1b9848"
+        },
+        {
+          "path": "upstream_checks/results/ACE2_HUMAN_2023-10-12_b05.a2m.npz",
+          "bytes": 73973,
+          "sha256": "86208a41bc62084d663a9d66f1df210637f439c2cb428953406d907337fc7c99"
+        },
+        {
+          "path": "upstream_checks/results/ADRB2_HUMAN_full_11-26-2021_b03.a2m.npz",
+          "bytes": 50846,
+          "sha256": "2aed3df70f048b076e279bf18ef38df37821b4f8f0bd70c75ef683cf288d1093"
+        },
+        {
+          "path": "upstream_checks/results/AICDA_HUMAN_2023-08-07_b01.a2m.npz",
+          "bytes": 27459,
+          "sha256": "102fd4c5b10b3cd9f1f016ca3dc70c9b97b90ae671be47512db39831e9124299"
+        },
+        {
+          "path": "upstream_checks/results/B2L11_HUMAN_2023-08-07_b04.a2m.npz",
+          "bytes": 12916,
+          "sha256": "f5e569c7809a6e62b76e47438507d720209152d2a6cafe8f5eb6fde5b0e1d49a"
+        },
+        {
+          "path": "upstream_checks/results/BRCA1_HUMAN_full_11-26-2021_b02.a2m.npz",
+          "bytes": 95025,
+          "sha256": "fc5b9e89c3b28484548b206e6a07f0c04b5bb82fa8ba4363d4b24c5b5a847ef8"
+        },
+        {
+          "path": "upstream_checks/results/BRCA2_HUMAN_2023-10-12_b01.a2m.npz",
+          "bytes": 219278,
+          "sha256": "3bfb81f543aac7e41b6eb07c8bd08184049c28dd83357ab43494c662d577fc6c"
+        },
+        {
+          "path": "upstream_checks/results/CALM1_HUMAN_full_11-26-2021_b03.a2m.npz",
+          "bytes": 24404,
+          "sha256": "2bd7facb50347f29497e214b9af89197459e68782f1aad768b0fef75187ae974"
+        },
+        {
+          "path": "upstream_checks/results/CAR11_HUMAN_2023-10-12_b02.a2m.npz",
+          "bytes": 61576,
+          "sha256": "8451cdf2514b521494c9571987e7722c9f7a47263fd5efb55d08693b18d4befd"
+        },
+        {
+          "path": "upstream_checks/results/CBPA2_HUMAN_2023-08-07_b03.a2m.npz",
+          "bytes": 11938,
+          "sha256": "3203812f69f658ff2155bffd2054cec1ad52c53b3d6097379d4add2981fc80a2"
+        },
+        {
+          "path": "upstream_checks/results/CBS_HUMAN_2023-10-12_b08.a2m.npz",
+          "bytes": 56194,
+          "sha256": "e88f95153bbf6aa62b2adbc38b2b732d267a613d6a73a820e001807fa0530a88"
+        },
+        {
+          "path": "upstream_checks/results/CBX4_HUMAN_2023-08-07_b03.a2m.npz",
+          "bytes": 9462,
+          "sha256": "d8da0ee496527365d65e8660539acb79869c5c06fc5d2700fd4f6fb32c4add02"
+        },
+        {
+          "path": "upstream_checks/results/CCR5_HUMAN_2023-08-07_b03.a2m.npz",
+          "bytes": 51294,
+          "sha256": "ff3c394f0822309c6b25bac9568f6f400cc909ccbc3dba93079ff8445a41107c"
+        },
+        {
+          "path": "upstream_checks/results/CD19_HUMAN_2023-10-12_b01.a2m.npz",
+          "bytes": 49832,
+          "sha256": "b4f8db48911b0595419cca38fe2ad42633d036cad197e02f802ae6389daac0ca"
+        },
+        {
+          "path": "upstream_checks/results/CP2C9_HUMAN_full_11-26-2021_b04.a2m.npz",
+          "bytes": 74943,
+          "sha256": "5e9f6b35fa15ea4c91865b0534d48b1663b340d46fe9792804872f98996f017c"
+        },
+        {
+          "path": "upstream_checks/results/DLG4_HUMAN_full_11-26-2021_b02.a2m.npz",
+          "bytes": 74594,
+          "sha256": "2b41865ac94adc7cecbc494302a052678d10f0f5ca8250b08791bfc039cfac4f"
+        },
+        {
+          "path": "upstream_checks/results/DNJA1_HUMAN_2023-08-07_b07.a2m.npz",
+          "bytes": 11971,
+          "sha256": "215a4605e08f7864320b58d1283b74259f74e822846c24c94e7addf61561feab"
+        },
+        {
+          "path": "upstream_checks/results/EPHB2_HUMAN_2023-08-07_b04.a2m.npz",
+          "bytes": 11302,
+          "sha256": "35f256c354968decc9d2732991a7ed8d0ffa497b2ae06d4f286e5d0d65e2a5a0"
+        },
+        {
+          "path": "upstream_checks/results/ERBB2_HUMAN_2023-10-12_b02.a2m.npz",
+          "bytes": 154327,
+          "sha256": "8f35c288495adcb009a80bf0925a96194007a6fe3f29a94450e15870c761a9fa"
+        },
+        {
+          "path": "upstream_checks/results/FKBP3_HUMAN_2023-08-07_b03.a2m.npz",
+          "bytes": 6612,
+          "sha256": "5751a28a924e92052a60b531b0d1d71a26d1773620f143b9366b73f9d7f3b5fb"
+        },
+        {
+          "path": "upstream_checks/results/GDIA_HUMAN_2023-10-12_b05.a2m.npz",
+          "bytes": 44674,
+          "sha256": "193d28e2bd984f62de4ee9719cb7c0932e74f3c2b57e103590393dc820f51043"
+        },
+        {
+          "path": "upstream_checks/results/GRB2_HUMAN_full_11-26-2021_b05.a2m.npz",
+          "bytes": 29277,
+          "sha256": "5f783fde2657c86f2b41007bc4669acdfe598a5ad2c758d1cf03ff6a3602ed2e"
+        },
+        {
+          "path": "upstream_checks/results/HEM3_HUMAN_2023-08-07_b02.a2m.npz",
+          "bytes": 44834,
+          "sha256": "021a9845784059cd72dfc52ed9155f48ee8b3664df0997474a90bd7ee8bb7557"
+        },
+        {
+          "path": "upstream_checks/results/HMDH_HUMAN_2023-10-12_b05.a2m.npz",
+          "bytes": 80567,
+          "sha256": "2578038d130d08885219671f2be4967d651162a5126b1e1deff22c06cdb2462c"
+        },
+        {
+          "path": "upstream_checks/results/HXK4_HUMAN_2023-08-07_b01.a2m.npz",
+          "bytes": 68105,
+          "sha256": "3c65f9512cf5b891e55ab50bb100b362a1a96f956be9de8c10ca12d693149b4e"
+        },
+        {
+          "path": "upstream_checks/results/HXK4_HUMAN_b0.1.a2m.npz",
+          "bytes": 68969,
+          "sha256": "3511067c246b1d959adda0c16bf9e04319082487cd3f5e620c7a01c7dc8545ab"
+        },
+        {
+          "path": "upstream_checks/results/KCNH2_HUMAN_535-565_11-26-2021_b05.a2m.npz",
+          "bytes": 4407,
+          "sha256": "d61de07edf8b687ba363ce158c4f82f9f51dec47e4f6602b87631cd0484acfd2"
+        },
+        {
+          "path": "upstream_checks/results/LYAM1_HUMAN_2023-10-12_b04.a2m.npz",
+          "bytes": 32250,
+          "sha256": "432ce1c11ed9e5678e83ebf4281a3f545e8801e34b732400817f03ff0d137955"
+        },
+        {
+          "path": "upstream_checks/results/MET_HUMAN_2023-08-07_b09.a2m.npz",
+          "bytes": 46488,
+          "sha256": "df10a8e11eea7fbdcd41bf97f04f9972451fc7c7f5e4dbb46d0721bcf1d388a9"
+        },
+        {
+          "path": "upstream_checks/results/MK01_HUMAN_full_11-26-2021_b06.a2m.npz",
+          "bytes": 49967,
+          "sha256": "c200de2ea0c1b73ab2ff7c64b4ae08b393a99c7f1606e9547981ea1d90fcaa2b"
+        },
+        {
+          "path": "upstream_checks/results/MSH2_HUMAN_full_11-26-2021_b05.a2m.npz",
+          "bytes": 123738,
+          "sha256": "e308c5ecb30f5b99d03a9959e58d3917263bcc32b174b7e92a2e0e8689a88cef"
+        },
+        {
+          "path": "upstream_checks/results/MTHR_HUMAN_2023-08-07_b02.a2m.npz",
+          "bytes": 64363,
+          "sha256": "d9fc51f5aea48238a52a613b8beb00e3cee0fd13c9ca54dc0690684faa83e7f7"
+        },
+        {
+          "path": "upstream_checks/results/NPC1_HUMAN_2023-10-12_b07.a2m.npz",
+          "bytes": 136418,
+          "sha256": "25a43d26947430460c1fafdec8b60572101f51ec453a0d750bef053f333a6cf4"
+        },
+        {
+          "path": "upstream_checks/results/NUD15_HUMAN_full_11-26-2021_b04.a2m.npz",
+          "bytes": 21520,
+          "sha256": "e16f71bae83d0f041463e1f94ca80a4584dbf135586def8435281b0dd52f93a7"
+        },
+        {
+          "path": "upstream_checks/results/OBSCN_HUMAN_2023-08-07_b02.a2m.npz",
+          "bytes": 10483,
+          "sha256": "8aafd1fd5dcfb28520cccb6c64466501fc4165661a51e479b8298122acd04717"
+        },
+        {
+          "path": "upstream_checks/results/OPSD_HUMAN_2023-10-12_b04.a2m.npz",
+          "bytes": 53304,
+          "sha256": "c6234472be3234b43dd6d65d04ea51e09a5621540600dfa3b0c5309080f8ff83"
+        },
+        {
+          "path": "upstream_checks/results/OTC_HUMAN_2023-08-07_b02.a2m.npz",
+          "bytes": 49602,
+          "sha256": "fbd1fedce45f0d63c46a853a0496c42567f99c33f6d47af8a64ed62d6976ab1d"
+        },
+        {
+          "path": "upstream_checks/results/OTU7A_HUMAN_2023-08-07_b02.a2m.npz",
+          "bytes": 8013,
+          "sha256": "136ff4aa437c3fcfdac577eb01de66f52d9f1dfad75bbaa8430e0b181685bc8a"
+        },
+        {
+          "path": "upstream_checks/results/P53_HUMAN_full_11-26-2021_b09.a2m.npz",
+          "bytes": 28370,
+          "sha256": "fbd2d1e02ad4905c7b4d33310dcdea2a52ff62a7173da0d99e3cb9d7ed4a765e"
+        },
+        {
+          "path": "upstream_checks/results/PAI1_HUMAN_2023-10-12_b05.a2m.npz",
+          "bytes": 62386,
+          "sha256": "ed2680ffe67ce7ea6179b1ed0991d4ed20bf63adb60109b5d5c1b9376bd781d5"
+        },
+        {
+          "path": "upstream_checks/results/PIN1_HUMAN_2023-08-07_b02.a2m.npz",
+          "bytes": 6680,
+          "sha256": "595747ef2293114e93ddf838335dafdc4756e4922e30fb31b79f3baa128fdd87"
+        },
+        {
+          "path": "upstream_checks/results/PPARG_HUMAN_2023-10-12_b04.a2m.npz",
+          "bytes": 63160,
+          "sha256": "2b03d0ecf76aeaf9d1f136f23d7f2c96b967f08c050d12cc0b81868c406d22c7"
+        },
+        {
+          "path": "upstream_checks/results/PPM1D_HUMAN_2023-10-12_b01.a2m.npz",
+          "bytes": 59718,
+          "sha256": "65eaebd388fc9313c5482e608ef67c0eb62c4091759947db198a25a5a9c42c1f"
+        },
+        {
+          "path": "upstream_checks/results/PR40A_HUMAN_2023-08-07_b03.a2m.npz",
+          "bytes": 10097,
+          "sha256": "874c58ba25ffa688cc83ce84298375a3568501f596296d7d0a14d9b30fd39018"
+        },
+        {
+          "path": "upstream_checks/results/PRKN_HUMAN_2023-08-07_b05.a2m.npz",
+          "bytes": 35392,
+          "sha256": "0b71ec039436cd8591394ca8d1b918a987e767218cd497c97f52d8cb0c9f3e2b"
+        },
+        {
+          "path": "upstream_checks/results/PTEN_HUMAN_full_11-26-2021_b01.a2m.npz",
+          "bytes": 46213,
+          "sha256": "a194b96ab53383ab0e49f6e85e26f1f23f409f8b9e89012f29c17e7541f251fd"
+        },
+        {
+          "path": "upstream_checks/results/RAF1_HUMAN_2023-10-12_b05.a2m.npz",
+          "bytes": 71854,
+          "sha256": "89b1c27676c9cb91b4969a7b3c7589a2bbd7dbba4fef397bf79a71c413e749bc"
+        },
+        {
+          "path": "upstream_checks/results/RASH_HUMAN_full_11-26-2021_b03.a2m.npz",
+          "bytes": 29374,
+          "sha256": "5d2243a01b74588fb7b864c67b74e69905b05cb9673c6fa8558889905f734bca"
+        },
+        {
+          "path": "upstream_checks/results/RD23A_HUMAN_2023-08-07_b04.a2m.npz",
+          "bytes": 7538,
+          "sha256": "3e3c4480340179fd470fae39c758e804838a8d2ef81724b5c5824ada7d13847c"
+        },
+        {
+          "path": "upstream_checks/results/S22A1_HUMAN_2023-08-07_b02.a2m.npz",
+          "bytes": 76421,
+          "sha256": "d52e9f3a15a37ae2aa018f2c1efa6037eac32ed9435086eeb85f84e15e9e55a4"
+        },
+        {
+          "path": "upstream_checks/results/SC6A4_HUMAN_full_11-26-2021_b02.a2m.npz",
+          "bytes": 79874,
+          "sha256": "fd0a3249b7453e80bf5b9d202bf6288b5b9564ade98ee261dd648114cffc2c24"
+        },
+        {
+          "path": "upstream_checks/results/SCN5A_HUMAN_1611-1642_11-26-2021_b03.a2m.npz",
+          "bytes": 4576,
+          "sha256": "5d0a9e5a18fc26dff2790e677e17d6b212f1dbec909bea6cafe67dfb1e2da885"
+        },
+        {
+          "path": "upstream_checks/results/SERC_HUMAN_2023-08-07_b02.a2m.npz",
+          "bytes": 59578,
+          "sha256": "80c133d64baf05759ef6ffae43b2018c1b0bf4003289c15a3b1444058c81422c"
+        },
+        {
+          "path": "upstream_checks/results/SHOC2_HUMAN_2023-10-12_b04.a2m.npz",
+          "bytes": 70164,
+          "sha256": "260a80c72699ee046af61f5f58cac2420b1b8c4e9f3eb2b5854fe452845f4607"
+        },
+        {
+          "path": "upstream_checks/results/SOX30_HUMAN_2023-08-07_b03.a2m.npz",
+          "bytes": 10861,
+          "sha256": "7104d9501018ac6004e266a73202cdda7ad0133c0046d9a0b8ce71bf6567e2b5"
+        },
+        {
+          "path": "upstream_checks/results/SRC_HUMAN_2023-08-07_b06.a2m.npz",
+          "bytes": 71010,
+          "sha256": "aa19a7f12c513cdec44a36b4c547230b45149722dc3f90db5fbb57b149f8577a"
+        },
+        {
+          "path": "upstream_checks/results/SRC_HUMAN_full_11-26-2021_b06.a2m.npz",
+          "bytes": 63693,
+          "sha256": "4d05a6a870d5abf2a03c32a61a7fe29e83885693f3eebfd05594b9d06518a77c"
+        },
+        {
+          "path": "upstream_checks/results/SUMO1_HUMAN_full_11-26-2021_b02.a2m.npz",
+          "bytes": 13776,
+          "sha256": "566d5a0dcbcd3ad228eba65363e9022ae00f5eeccdd9db7fc6302249daeeac6b"
+        },
+        {
+          "path": "upstream_checks/results/TADBP_HUMAN_full_11-26-2021_b09.a2m.npz",
+          "bytes": 27768,
+          "sha256": "6bf5987e1b6ecd619ecb20ca03ce817b6b617842d2b6ae69a7efb3bb1c86c606"
+        },
+        {
+          "path": "upstream_checks/results/TPK1_HUMAN_full_11-26-2021_b02.a2m.npz",
+          "bytes": 30301,
+          "sha256": "6b373dc95434c9d00447e67d70796c60c6a2a98d0c4d79e42eaae6055e7f0cd7"
+        },
+        {
+          "path": "upstream_checks/results/TPMT_HUMAN_full_11-26-2021_b03.a2m.npz",
+          "bytes": 28133,
+          "sha256": "7eb06f37588769a7f4fbf170215eba709956701783ece45afb5e77a96910a048"
+        },
+        {
+          "path": "upstream_checks/results/UBC9_HUMAN_full_11-26-2021_b03.a2m.npz",
+          "bytes": 24399,
+          "sha256": "df947ffd61af5a5eab82ffcc31663346b75f3f4a90e14ebb1ec1835b97f32ba3"
+        },
+        {
+          "path": "upstream_checks/results/UBE4B_HUMAN_2023-08-07_b04.a2m.npz",
+          "bytes": 12510,
+          "sha256": "7bf74efba7d53f190d0810abce84288a761b956b146e137a640cb94d8845948e"
+        },
+        {
+          "path": "upstream_checks/results/UBR5_HUMAN_2023-08-07_b05.a2m.npz",
+          "bytes": 9005,
+          "sha256": "acfcd77d950aaf3ed012712d1dfda7c6cbcd9b6592b61401e224e6bca488d029"
+        },
+        {
+          "path": "upstream_checks/results/VKOR1_HUMAN_full_11-26-2021_b03.a2m.npz",
+          "bytes": 18164,
+          "sha256": "7d52ff9f0122ca7b55cb66d296f812238c78910e97b4657150ff17edbbbd085b"
+        },
+        {
+          "path": "upstream_checks/results/YAP1_HUMAN_full_11-26-2021_b02.a2m.npz",
+          "bytes": 33457,
+          "sha256": "9373798169dba27f7bc3420eb8a82060529e7ff25da323dc96269d26ec9de20d"
+        }
+      ]
+    },
+    {
+      "name": "am-frozen-panel-and-score-inputs.tar.gz",
+      "kind": "tar.gz",
+      "path": "payloads/am-frozen-panel-and-score-inputs.tar.gz",
+      "bytes": 9447902,
+      "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+      "profiles": [
+        "axis-3",
+        "axis-4",
+        "axis-5",
+        "axis-6",
+        "axis-7"
+      ],
+      "members": [
+        {
+          "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv",
+          "bytes": 1211478,
+          "sha256": "dd47d663430b368087a46a120c035a63c5fe3cb9e06022bee36799ae2e4932cd"
+        },
+        {
+          "path": "am-primary/inputs/official_scores_64_proteins.tsv.gz",
+          "bytes": 5089583,
+          "sha256": "1657bce1cad681b6755831da727ceb00b5ee9d0a024e274eec4c05acbbdf80b1"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/BINPREVIEW_PROXY_PREMSA.tsv",
+          "bytes": 4297,
+          "sha256": "00c1fb8ce72f23a2300075f2aaee145658bffa997956c75601b1d6789c26486c"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/DMS_substitutions.csv",
+          "bytes": 208734,
+          "sha256": "a8f498011532a74aa9fe556a50555a75e928c5837d19c06a87592ae04049b308"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/DMS_substitutions_v1.2.csv",
+          "bytes": 208973,
+          "sha256": "28cd00e1d6d4f18a36fdc80538da0d655bc262053151f891b27f833474cd96b9"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/DMS_substitutions_v1.3.csv",
+          "bytes": 208734,
+          "sha256": "a8f498011532a74aa9fe556a50555a75e928c5837d19c06a87592ae04049b308"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/DMS_substitutions_v2.csv",
+          "bytes": 208734,
+          "sha256": "a8f498011532a74aa9fe556a50555a75e928c5837d19c06a87592ae04049b308"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/VERIFICATION_73ASSAYS_FINAL.tsv",
+          "bytes": 6569,
+          "sha256": "505be9f8349743e23e92a4540113f648bfeff8bd667b8298fb54d5e66717870c"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/VERIFICATION_73ASSAYS_SINGLES_COUNTCHECK.tsv",
+          "bytes": 6991,
+          "sha256": "c0cfa4103621c2f73f6a23b52f615bbfa6c46656cc5d8a75a34490c7a1586b99"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/WT_SPOTCHECK_17_RESULTS.tsv",
+          "bytes": 1229,
+          "sha256": "c3dfaa0c37ca24a5331f57c4c13c2b3701263300d8ff17b6a1f20ddf2c426444"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_v1.2_mapping.tsv",
+          "bytes": 3464,
+          "sha256": "1a4e5c45a05864edb4bb1f191b26acefe9459c4d569e78d50965b7327d61204f"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_v1.2_verified_mapping.tsv",
+          "bytes": 1081,
+          "sha256": "bc24fc81c38547c973a2bc7f7ad52f0bfb5ec0871f25c754be7a115fac8375d2"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/hf_actual_files.txt",
+          "bytes": 2596,
+          "sha256": "b80b8ac3da23d4474f4c6609123e23227c3855047b3e7cb0fcaad46f2ef4aef1"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/kept_assays.tsv",
+          "bytes": 17353,
+          "sha256": "c37d41503f784316d700257b1ef1507d6c608dde3e70d36c3cc195f328706bf3"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/kept_assays_verified.tsv",
+          "bytes": 81710,
+          "sha256": "509f3fa469e7b2ef1f57b4455827b8f70025014a64c627fcf19bcbae1d9d06e3"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/rejection_log.tsv",
+          "bytes": 12528,
+          "sha256": "16a316efa294c3fac0890b41338ef6a44861ce1cb139ad72069a26b5fefaa7a6"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/rejection_log_final.tsv",
+          "bytes": 10032,
+          "sha256": "4e9a6674a0f6483b5c1165173f988e95dee4e655360ba05e2c60e65b2f7fbd50"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/step_a_dms_v1.3_mapping.tsv",
+          "bytes": 1081,
+          "sha256": "e444441f1439e6da035730f30eb28628d295f88b817c4d73d8220937739baa32"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/step_a_final_v1.3_73assays.tsv",
+          "bytes": 8429,
+          "sha256": "64458f8dec14bde25c9788996ffdc91c9b347411e5ce29cc698c9d5bbbdbf9ac"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/step_a_final_v1.3_mapping.tsv",
+          "bytes": 2576,
+          "sha256": "e22d8817622f1d8fbf89265510137fe907defa62e504a5cad803c53d50cbba80"
+        },
+        {
+          "path": "am-primary/inputs/pssm_counts.tsv",
+          "bytes": 3137988,
+          "sha256": "652650ed4a3e7f74df54ef3a4a805fd9c554090ae8c4d15b21cb106913c6d740"
+        },
+        {
+          "path": "am-primary/inputs/raw_dms_single_mutants.parquet",
+          "bytes": 3367135,
+          "sha256": "fdc48e494b5f9c2a645d41989e89b80a5398f098b22d92c93ef785d47aef6358"
+        },
+        {
+          "path": "am-primary/inputs/sequence_offsets_reconstructed.csv",
+          "bytes": 3290,
+          "sha256": "c5b1649e9b6665c0acb709875f59e1a332938e524557c32bdc51842779228ab9"
+        }
+      ]
+    },
+    {
+      "name": "am-original-dms-members.tar.gz",
+      "kind": "tar.gz",
+      "path": "payloads/am-original-dms-members.tar.gz",
+      "bytes": 6629852,
+      "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+      "profiles": [
+        "axis-3",
+        "axis-4",
+        "axis-5",
+        "axis-6",
+        "axis-7"
+      ],
+      "members": [
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/A4_HUMAN_Seuma_2022.csv",
+          "bytes": 11890296,
+          "sha256": "40cfab98f3e3f8531421d54e625e01e22ef449faa22cd3004926f663ad7da932"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/ACE2_HUMAN_Chan_2020.csv",
+          "bytes": 1840157,
+          "sha256": "419c9c9182a722d5b2d653d5a40d1ef8b74b970fbe7fe614c2d1231e58c6c30f"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/ADRB2_HUMAN_Jones_2020.csv",
+          "bytes": 3425091,
+          "sha256": "905941be7060b3ebf735d868327b34e1b7b9cbd47e87ee251c15e2328643a956"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/AICDA_HUMAN_Gajula_2014_3cycles.csv",
+          "bytes": 46852,
+          "sha256": "03e154dd4fe004b718cc3749b8c0c0c2e651c71f6a846c37c8b8565746ab31d1"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/B2L11_HUMAN_Dutta_2010_binding-Mcl-1.csv",
+          "bytes": 37226,
+          "sha256": "0768cc07f06ccfa28e20cfd2b1b0ffc60fbbb7d21174b5d2b3b780930c4b80be"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/BRCA1_HUMAN_Findlay_2018.csv",
+          "bytes": 3463590,
+          "sha256": "abde5d47e84b1feeac6c32b60c1f3b5d2881accf3ceccfbadccceeea73e81c43"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/BRCA2_HUMAN_Erwood_2022_HEK293T.csv",
+          "bytes": 911656,
+          "sha256": "4fc00cf38e89679c11266fa651644c61297a3ac5eb36320fba3a715d5b64f8f2"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/CALM1_HUMAN_Weile_2017.csv",
+          "bytes": 308544,
+          "sha256": "cadc19e35beab1051c08e2961f0d8b9e97f5c5c3cd627a73ebffd0ebeabbcf5d"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/CAR11_HUMAN_Meitlis_2020_gof.csv",
+          "bytes": 2792735,
+          "sha256": "8a900036b2fcdc98fe542d6f9762d74073ed6e808f59a698fcb709cc4748d7a3"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/CAR11_HUMAN_Meitlis_2020_lof.csv",
+          "bytes": 2817484,
+          "sha256": "e4dd9b444028c7327b7498c590bf3c38aec5a4a81ded50adb396ec43980c78a1"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/CBPA2_HUMAN_Tsuboyama_2023_1O6X.csv",
+          "bytes": 208988,
+          "sha256": "2b985cb6a9d2a06471acd4858487a772a53c887fc46045e56b73a43ecda4038d"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/CBS_HUMAN_Sun_2020.csv",
+          "bytes": 4144925,
+          "sha256": "557b2682b74aedef28f1179540892e17be52de650551c2c6058c00311073a0a1"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/CBX4_HUMAN_Tsuboyama_2023_2K28.csv",
+          "bytes": 182963,
+          "sha256": "3ffc9405e5f6e7467cedffb845e91f17baba09862dbb6d1750f54230c8ad3a0d"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/CCR5_HUMAN_Gill_2023.csv",
+          "bytes": 2264116,
+          "sha256": "33f10e7e6552a017318b715ddb6936222375851639cd67093e7269fb1b5f97b3"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/CD19_HUMAN_Klesmith_2019_FMC_singles.csv",
+          "bytes": 2195953,
+          "sha256": "c07f0c1001b4ba527affc7674274e116f8295d128a5e1896fb2f0fa15c25eaea"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/CP2C9_HUMAN_Amorosi_2021_abundance.csv",
+          "bytes": 3259960,
+          "sha256": "1f4ba7b86e88709783b2e68b04c82fe1f305181c164edfff6391369833ad62ad"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/CP2C9_HUMAN_Amorosi_2021_activity.csv",
+          "bytes": 3143321,
+          "sha256": "2373e6a5aea9ae6431cbfd519733a3ccd5be2c109a60e5e2d59cc5ff39eb6b27"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/DLG4_HUMAN_Faure_2021.csv",
+          "bytes": 5280599,
+          "sha256": "07d58d0222260ebc431f906a523cee11e5a0f90b020ecdbbc1c393e793053370"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/DNJA1_HUMAN_Tsuboyama_2023_2LO1.csv",
+          "bytes": 214092,
+          "sha256": "15003de1e5af995bd284b0e4f02a4546f46211774727b4c9b988ee1f982bebe7"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/EPHB2_HUMAN_Tsuboyama_2023_1F0M.csv",
+          "bytes": 186573,
+          "sha256": "d00c87c40458e956d53a1ecf879ef845c5167a861aacfaa1fb74115efc831dfd"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/ERBB2_HUMAN_Elazar_2016.csv",
+          "bytes": 418439,
+          "sha256": "e1190b949da4835344be4069c98b336825a6975e2f0f169221772070007bec0d"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/FKBP3_HUMAN_Tsuboyama_2023_2KFV.csv",
+          "bytes": 119196,
+          "sha256": "7a6f0deb67126a95bd5ba22d51c4a3b90e3e209d6e68966e5cb22fa8d5118e94"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/GDIA_HUMAN_Silverstein_2021.csv",
+          "bytes": 539560,
+          "sha256": "5763703fa35d8be84d434cd930fa3d3b4471aee8e65e4064db85434d9fb63edb"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/GRB2_HUMAN_Faure_2021.csv",
+          "bytes": 15881632,
+          "sha256": "0a60d0e1855ebe79ad2d03aec5e4c5ae933f3f96d338d34c184ae7366fffc5e6"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/HEM3_HUMAN_Loggerenberg_2023.csv",
+          "bytes": 2167272,
+          "sha256": "0595215d5507a81c640743231413964505daba227f610b80da96a6b6ad2e7dbe"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/HMDH_HUMAN_Jiang_2019.csv",
+          "bytes": 15234779,
+          "sha256": "4ad060808d1ba6f740428148afd230450662113f77292328f0a0d40d679b27c1"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/HXK4_HUMAN_Gersing_2022_activity.csv",
+          "bytes": 4172568,
+          "sha256": "3cb5c29a2bdbc052601e6fc03f7f55ef33c6b0fedee808deff2e8aef79d17b69"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/HXK4_HUMAN_Gersing_2023_abundance.csv",
+          "bytes": 4130371,
+          "sha256": "90d7129bbbb67ad58765b3f7df06158344f33aff1f2ce1284ebb00a15fea2438"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/KCNH2_HUMAN_Kozek_2020.csv",
+          "bytes": 236079,
+          "sha256": "240011099f76ac97f9997e34bc6f27fb5c3ea030d56a9c77eb8057051ccf5b4c"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/LYAM1_HUMAN_Elazar_2016.csv",
+          "bytes": 143761,
+          "sha256": "147e6cd09ad0e23d228ab280a2cf16ca24dd2d3e0ade8efe4004ae8c2bcd2f1b"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/MET_HUMAN_Estevam_2023.csv",
+          "bytes": 1692707,
+          "sha256": "75d3a221eddf9fbb8cbb2236fe8f18fbfd05dc7e15e15fc1d2ebf67f29572578"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/MK01_HUMAN_Brenan_2016.csv",
+          "bytes": 2606319,
+          "sha256": "a668d66a330a9c3f8a3d15481907732b4d3b56d0107e3da31242e97211da84fd"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/MSH2_HUMAN_Jia_2020.csv",
+          "bytes": 15876280,
+          "sha256": "00ac2d2b66ab786150025988ec8e9bb9570caa42ad5fcd0833a4eb5c0d1d58bc"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/MTHR_HUMAN_Weile_2021.csv",
+          "bytes": 8375562,
+          "sha256": "68653df3c7a35b3cb8a011b8a85e1dfcf52b55b619b65106342253972b869a71"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/NPC1_HUMAN_Erwood_2022_HEK293T.csv",
+          "bytes": 827864,
+          "sha256": "ecc2f47ab85326973e0797081d40fe88938a01f7d6128ab04c02ce6f495b7c3c"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/NPC1_HUMAN_Erwood_2022_RPE1.csv",
+          "bytes": 81917,
+          "sha256": "75c21ccf623cff8b8a8f6b5b2c903f025efca5512c2c78889ccd9337df9975ca"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/NUD15_HUMAN_Suiter_2020.csv",
+          "bytes": 531037,
+          "sha256": "e7540f10fe0568c066edb0b996a8f908127dc37d2a6aebf232ef33f05ea25900"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/OBSCN_HUMAN_Tsuboyama_2023_1V1C.csv",
+          "bytes": 305491,
+          "sha256": "7f09d4f2c7d00854bd32dc5c502a640c01eadf3a66571680204237b8f9cb59e0"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/OPSD_HUMAN_Wan_2019.csv",
+          "bytes": 61997,
+          "sha256": "926c0afdd6d0c07bf7170710535423c447215b07cccb46eec5dd5b22368d1a8d"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/OTC_HUMAN_Lo_2023.csv",
+          "bytes": 581787,
+          "sha256": "0b149c8eeae4a695d5bbce6e0af456359656f476b7c1c3586d16f0ff78dba2f7"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/OTU7A_HUMAN_Tsuboyama_2023_2L2D.csv",
+          "bytes": 44090,
+          "sha256": "e46a6f57fa05d76f20e353536bebe956ef9392e880d890068eee103fa8c39cc4"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/P53_HUMAN_Kotler_2018.csv",
+          "bytes": 437223,
+          "sha256": "0e6fd5232d1a6893fb310fea7d433b11dc6d1be708bc430b00075e27e9ecf886"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/PAI1_HUMAN_Huttinger_2021.csv",
+          "bytes": 2261327,
+          "sha256": "5e29eb12bf8977c232633897016fea00fa0f4ff61b73d058d1df01b84e1753ac"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/PIN1_HUMAN_Tsuboyama_2023_1I6C.csv",
+          "bytes": 53750,
+          "sha256": "4b805e0a24543d68bb677230053c0c8548e93fae2ab4870a6c16fd13e170cc87"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/PPARG_HUMAN_Majithia_2016.csv",
+          "bytes": 4981194,
+          "sha256": "807eb7547b62d44d39fb6d22310a6eac54a62ca6768edb46e47de03c93ae642a"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/PPM1D_HUMAN_Miller_2022.csv",
+          "bytes": 4894106,
+          "sha256": "4aaf327103807e81cf86aec13dc52a01c1eec91fa48e1f94f893f002656a1d60"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/PR40A_HUMAN_Tsuboyama_2023_1UZC.csv",
+          "bytes": 188231,
+          "sha256": "db4e8f1a8bedef74a6add1846f44c1578f3c7abf17399487e29fa2d478fd40a2"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/PRKN_HUMAN_Clausen_2023.csv",
+          "bytes": 4305910,
+          "sha256": "4adf616e5b72d7f4a25db0a91febb67ea91fb3301d0bd26f26dc67b1cabd27d2"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/PTEN_HUMAN_Matreyek_2021.csv",
+          "bytes": 2184896,
+          "sha256": "1c52aba95950c6d3b1ac8320df4cb99a79ae97353bd43e24c87ef78dbb02e636"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/PTEN_HUMAN_Mighell_2018.csv",
+          "bytes": 3088566,
+          "sha256": "d532bed24c80449936dd61cf303225d78e6e9963a58165c1c36dff92c89557e1"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/RAF1_HUMAN_Zinkus-Boltz_2019.csv",
+          "bytes": 200716,
+          "sha256": "87a15083d06f33a9fd76884ee45f98e5f72db9b32f7718770586e9c9395c7238"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/RASH_HUMAN_Bandaru_2017.csv",
+          "bytes": 660853,
+          "sha256": "0704164d427ab68cfb8ac72fcbe438a819ad91b31f9fa4fcb1056690173a0736"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/RD23A_HUMAN_Tsuboyama_2023_1IFY.csv",
+          "bytes": 73966,
+          "sha256": "41f6a378236f23bd42a2a0773545031996e15cdf8eb9347042178632eac8fbdc"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/S22A1_HUMAN_Yee_2023_abundance.csv",
+          "bytes": 5630422,
+          "sha256": "b8bfa31eae84d0e0bdfe40f0f2c5e58390c163d17e17b922f42f2992df1e196a"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/S22A1_HUMAN_Yee_2023_activity.csv",
+          "bytes": 5796217,
+          "sha256": "5b470a590da0b56e05b090b6a7aa4639956096117e562bf45eede43c94149152"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/SC6A4_HUMAN_Young_2021.csv",
+          "bytes": 7552894,
+          "sha256": "0ad59ccefda5ac0d808ee39ad873db63e4260b1dc6a463cfc52f16d5d3caf62e"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/SCN5A_HUMAN_Glazer_2019.csv",
+          "bytes": 455311,
+          "sha256": "1b26c30f9f7eea00a751b78d534408b50e490d37988c482c413b66755a390450"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/SERC_HUMAN_Xie_2023.csv",
+          "bytes": 759544,
+          "sha256": "6b8cc8fec82a7f6d4b00b65a0ced7a6b57a8d6f2639bd58e22ccc4d6774db873"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/SHOC2_HUMAN_Kwon_2022.csv",
+          "bytes": 6685995,
+          "sha256": "36e169325becc6589e6b1f715989f2fd56d51170031a8331479c68ddbbb49d56"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/SOX30_HUMAN_Tsuboyama_2023_7JJK.csv",
+          "bytes": 85309,
+          "sha256": "072f71cb9b083664a9b990b87f7387b3d676ef4da818fb33be04388d5e706958"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/SRC_HUMAN_Ahler_2019.csv",
+          "bytes": 1883026,
+          "sha256": "fe9b3eb54aa97892ece60cf167764277d248b3141e9fab6754efc7734a7b7cd7"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/SRC_HUMAN_Chakraborty_2023_binding-DAS_25uM.csv",
+          "bytes": 2027332,
+          "sha256": "b6fbe12a4aea4cfec065e1ae21c096508d8c68b0d5a86c43fe85c25e86af6c52"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/SRC_HUMAN_Nguyen_2022.csv",
+          "bytes": 1900602,
+          "sha256": "f97271be317982c7f67e076e3f967bbc422156757a60c0f1981b597a284d438f"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/SUMO1_HUMAN_Weile_2017.csv",
+          "bytes": 207299,
+          "sha256": "71fd17bba2e8a6cbca9ea051c29eebb055d27022b4b432aeb08271b9d4b63a0c"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/TADBP_HUMAN_Bolognesi_2019.csv",
+          "bytes": 528863,
+          "sha256": "22894a3fac10cc215bfc06f5d7798b83900608a7c6b7b557f342659e6f2bdced"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/TPK1_HUMAN_Weile_2017.csv",
+          "bytes": 840554,
+          "sha256": "b5b641b4186d42dd2ea4cc67205a50d7ceb2f747c0d3f985556f908309f9ce7e"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/TPMT_HUMAN_Matreyek_2018.csv",
+          "bytes": 972049,
+          "sha256": "bafd9deb8ccc5e0454b7222f0dcb03e4facc1ad949177a65292bded268084d39"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/UBC9_HUMAN_Weile_2017.csv",
+          "bytes": 462958,
+          "sha256": "3906055fdcba1b05ea9c89708eacf5e666af6803ee46a6abc895396d4b072b06"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/UBE4B_HUMAN_Tsuboyama_2023_3L1X.csv",
+          "bytes": 361882,
+          "sha256": "840b65cb8566c8b6bea9ad87cdbf25d5ce9782daf690ed5f19fdb1ad9e0059d3"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/UBR5_HUMAN_Tsuboyama_2023_1I2T.csv",
+          "bytes": 125853,
+          "sha256": "9989fd8fc7fb10ab4ff7db4f34ceee082927e83751acf4158e098411d3933201"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/VKOR1_HUMAN_Chiasson_2020_abundance.csv",
+          "bytes": 510816,
+          "sha256": "04fc7a81a09c372ed14b9ad283c5da7ceed7d51c4d949a13e2c143b6c138a7d5"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/VKOR1_HUMAN_Chiasson_2020_activity.csv",
+          "bytes": 132039,
+          "sha256": "1aebf00f05b72ade9aa8c6330a89318e3874ea855ae9bef080fe3437cd76729d"
+        },
+        {
+          "path": "am-primary/inputs/proteingym/dms_final_73/YAP1_HUMAN_Araya_2012.csv",
+          "bytes": 5381227,
+          "sha256": "8e41f730c339fc341629eb37f4a3d481e35cf171308380b6bd4ac2656bb71258"
+        }
+      ]
+    },
+    {
+      "name": "am-original-uniref-hits-20260606.m8.gz",
+      "kind": "file",
+      "url": "https://github.com/yashaektefaie/SPECTRAagent/releases/download/primary-reproduction-2026-11-08/am-original-uniref-hits-20260606.m8.gz",
+      "publication_status": "verified_public",
+      "bytes": 183094126,
+      "sha256": "265a1872bed445cf32c38798738bb988fd044dafdc4d5fb6fb5fb248fdca7e01",
+      "profiles": [
+        "axis-1"
+      ],
+      "members": [
+        {
+          "path": "am-primary/inputs/clinvar/msa_hits.m8.gz",
+          "bytes": 183094126,
+          "sha256": "265a1872bed445cf32c38798738bb988fd044dafdc4d5fb6fb5fb248fdca7e01"
+        }
+      ],
+      "publication_evidence": "RELEASE_INPUT_VERIFICATION.json"
+    }
+  ],
+  "not_bundled": [
+    {
+      "path": "am-opus-r2/inputs/raw_references.tar.gz",
+      "reason": "Duplicate bulk MSA archive. Public v1.3 download recipe verifies all66 original members; optional fresh reconstruction uses --msa-dir."
+    },
+    {
+      "path": "upstream_checks/clusters",
+      "reason": "Generated66 cluster tables not required by default recorded-array replay; original clustering is executable through optional raw-MSA route."
+    }
+  ]
+}

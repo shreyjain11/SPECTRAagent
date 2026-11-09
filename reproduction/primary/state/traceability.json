@@ -1,0 +1,3098 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "this model folder",
+  "entries": [
+    {
+      "id": "state-featured/test-01",
+      "axis": "Chemical similarity to training drugs",
+      "notebook": "notebooks/test-01.ipynb",
+      "script": "notebooks/test-01.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_initial"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 1
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_20260602_single_controller/artifacts/spc_tahoe_fewshot_target_context_chemical_support.csv",
+        "generated": "computed/initial/artifacts/spc_tahoe_fewshot_target_context_chemical_support.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 1,
+        "text": "No meaningful decline. HVG overlap@N was 0.013 higher in the least-similar bin than in the most-similar bin.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "39bc556d2078d507e1e532f04f90fcb51deaab1ebaa27623d45eb9e34dbda846",
+      "published_script_sha256": "eb9d8b7a397f9cb2d0a1ca5f48b7d20074c353562bcfbe92845812da85a6bf04",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_initial"
+            },
+            {
+              "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 1
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 1
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_20260602_single_controller/artifacts/spc_tahoe_fewshot_target_context_chemical_support.csv",
+          "generated": "computed/initial/artifacts/spc_tahoe_fewshot_target_context_chemical_support.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 1,
+          "text": "No meaningful decline. HVG overlap@N was 0.013 higher in the least-similar bin than in the most-similar bin.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 29
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-02",
+      "axis": "Dose represented in training",
+      "notebook": "notebooks/test-02.ipynb",
+      "script": "notebooks/test-02.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_initial"
+        },
+        {
+          "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 2
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_20260602_single_controller/artifacts/exploratory_tahoe_dose_protocol_curve.csv",
+        "generated": "computed/initial/artifacts/exploratory_tahoe_dose_protocol_curve.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 2,
+        "text": "The agent plotted dose as an exploratory protocol diagnostic and rejected it as a decreasing training-similarity axis because every dose level was represented in training. This entry retains that original curve and rejection.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "8595690554f508250f915cc8827b1d542df21f14b81ae7fb4ede320904a6c97d",
+      "published_script_sha256": "02f3630582234fee2774420a0f72d0314517b8d23af0357ea19a0bef66d2ff84",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_initial"
+            },
+            {
+              "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 2
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_20260602_single_controller/scripts/run_state_spectra_audit.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 2
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_20260602_single_controller/artifacts/exploratory_tahoe_dose_protocol_curve.csv",
+          "generated": "computed/initial/artifacts/exploratory_tahoe_dose_protocol_curve.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 2,
+          "text": "The agent plotted dose as an exploratory protocol diagnostic and rejected it as a decreasing training-similarity axis because every dose level was represented in training. This entry retains that original curve and rejection.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 29
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-03",
+      "axis": "Reactome pathway-set similarity",
+      "notebook": "notebooks/test-03.ipynb",
+      "script": "notebooks/test-03.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_replogle"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 3
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_replogle_fewshot_reactome_support.csv",
+        "generated": "computed/continued/artifacts/spc_replogle_fewshot_reactome_support.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 3,
+        "text": "Above versus at or below 0.5 Jaccard similarity, overlap@N fell from 0.272 to 0.176 (HVG) and from 0.219 to 0.134 (SE).",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "8f7003879336f853e2a9501c9b79577b5c624c882d3f34a023950ed9f338be39",
+      "published_script_sha256": "3d991147e14d44be9d50e59222ef2e44aa9d453ac95607f0cf379f56d44e2271",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_replogle"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 3
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 3
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_replogle_fewshot_reactome_support.csv",
+          "generated": "computed/continued/artifacts/spc_replogle_fewshot_reactome_support.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 3,
+          "text": "Above versus at or below 0.5 Jaccard similarity, overlap@N fell from 0.272 to 0.176 (HVG) and from 0.219 to 0.134 (SE).",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 28
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-04",
+      "axis": "Reactome mean",
+      "notebook": "notebooks/test-04.ipynb",
+      "script": "notebooks/test-04.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_replogle"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 4
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_state_replogle_reactome_pathway_mean_train_support_v2.csv",
+        "generated": "computed/continued/artifacts/spc_state_replogle_reactome_pathway_mean_train_support_v2.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 4,
+        "text": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.092.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "268b0ee41be467ba56f5ce5ce729571c8c94b6224944206276e6868788476409",
+      "published_script_sha256": "a392790b0af316661c53761d1557d12e08164a6b99d8a2b24f61f9496a22a6d3",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_replogle"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 4
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 4
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_state_replogle_reactome_pathway_mean_train_support_v2.csv",
+          "generated": "computed/continued/artifacts/spc_state_replogle_reactome_pathway_mean_train_support_v2.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 4,
+          "text": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.092.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-05",
+      "axis": "Reactome log-mean (REP)",
+      "notebook": "notebooks/test-05.ipynb",
+      "script": "notebooks/test-05.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_replogle"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 5
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_state_replogle_reactome_pathway_log_train_support_v2.csv",
+        "generated": "computed/continued/artifacts/spc_state_replogle_reactome_pathway_log_train_support_v2.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 5,
+        "text": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.119. The selected measure retained a low-minus-high gap of \u22120.148 (HVG) and \u22120.128 (SE) within annotated genes.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "45399661ce4a8793cd97f64911fc6cd72169855fdf9b8461f4dcb71db1d4e1eb",
+      "published_script_sha256": "3e8b354a2843fdb5af090e469b9f23db656b953fbdb93e98629423b85aa5c177",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_replogle"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 5
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 5
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_state_replogle_reactome_pathway_log_train_support_v2.csv",
+          "generated": "computed/continued/artifacts/spc_state_replogle_reactome_pathway_log_train_support_v2.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 5,
+          "text": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.119. The selected measure retained a low-minus-high gap of \u22120.148 (HVG) and \u22120.128 (SE) within annotated genes.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-06",
+      "axis": "Reactome minimum",
+      "notebook": "notebooks/test-06.ipynb",
+      "script": "notebooks/test-06.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_replogle"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 6
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_state_replogle_reactome_pathway_min_train_support_v2.csv",
+        "generated": "computed/continued/artifacts/spc_state_replogle_reactome_pathway_min_train_support_v2.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 6,
+        "text": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.116.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "00fb54bf0493c3070ac5ca548d99bbad7f18f34ce8cc73267a855294b0eb80f7",
+      "published_script_sha256": "ddf49fc57bd33f4c446103eb25bc5a5af44e0fda5a82fc4b5edfc7c6b2622870",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_replogle"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 6
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 6
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_state_replogle_reactome_pathway_min_train_support_v2.csv",
+          "generated": "computed/continued/artifacts/spc_state_replogle_reactome_pathway_min_train_support_v2.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 6,
+          "text": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.116.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-07",
+      "axis": "HGNC log-mean",
+      "notebook": "notebooks/test-07.ipynb",
+      "script": "notebooks/test-07.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_replogle"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 7
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_state_replogle_hgnc_group_log_train_support_v2.csv",
+        "generated": "computed/continued/artifacts/spc_state_replogle_hgnc_group_log_train_support_v2.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 7,
+        "text": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.105.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "a20a2824d402772a8c0c4914c814fc723a1c8df8b1c1392947911c81c7815691",
+      "published_script_sha256": "1bafa275bdc649ab1e841c271ebb663f17042a7ba0a4cf95339e7c2191917399",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_replogle"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 7
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 7
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_state_replogle_hgnc_group_log_train_support_v2.csv",
+          "generated": "computed/continued/artifacts/spc_state_replogle_hgnc_group_log_train_support_v2.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 7,
+          "text": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.105.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-08",
+      "axis": "Gene-symbol prefix",
+      "notebook": "notebooks/test-08.ipynb",
+      "script": "notebooks/test-08.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_replogle"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 8
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_state_replogle_symbol_family_support_control.csv",
+        "generated": "computed/continued/artifacts/spc_state_replogle_symbol_family_support_control.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 8,
+        "text": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.094.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "a52ba01d01cd33d3ceff31780feb467c16beb1a9f6a646c37b876fd7a6cee71a",
+      "published_script_sha256": "255380d39fb26108a9a50c0c822cf0d00b259fab7ae915ddd11bf1d0ec530ac6",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_replogle"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 8
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 8
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_state_replogle_symbol_family_support_control.csv",
+          "generated": "computed/continued/artifacts/spc_state_replogle_symbol_family_support_control.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 8,
+          "text": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.094.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-09",
+      "axis": "Cell context and annotation counts",
+      "notebook": "notebooks/test-09.ipynb",
+      "script": "notebooks/test-09.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6,
+          9
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_controls"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_controls.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_controls.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 9
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/controls_replogle_best_axis_level_summary_all.csv",
+        "generated": "computed/continued/artifacts/controls_replogle_best_axis_level_summary_all.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 9,
+        "text": "The association persisted after excluding unannotated genes and matching pathway counts. Some strata contained no eligible comparisons.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "b09a79cb4bedec3c8cb1179ae756bbfdab2fd0b53eb383bbf187109f0cdca498",
+      "published_script_sha256": "9dd48f05828b922e821961853507ccb8c7c7753db99339bf1f4810f1616d7260",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_controls"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_controls.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_controls.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 9
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_controls.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 9
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/controls_replogle_best_axis_level_summary_all.csv",
+          "generated": "computed/continued/artifacts/controls_replogle_best_axis_level_summary_all.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 9,
+          "text": "The association persisted after excluding unannotated genes and matching pathway counts. Some strata contained no eligible comparisons.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-10",
+      "axis": "Multivariable adjustment",
+      "notebook": "notebooks/test-10.ipynb",
+      "script": "notebooks/test-10.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [],
+        "decision": [
+          0,
+          9,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_controls"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_controls.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_controls.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 10
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/controls_replogle_best_axis_regression.json",
+        "generated": "computed/continued/artifacts/controls_replogle_best_axis_regression.json"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 10,
+        "text": "The adjusted support coefficient remained positive (about 0.03 per SD after adjustment for DE-gene count).",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "03c478fcb69fb23608a6687ec1027dc39c69d55824015825baf1c497c273a038",
+      "published_script_sha256": "abe0ba208dbb3af3acbbc77e89d1ecb96ef9ffd2796dfe9fdacf14e24dd6dde8",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_controls"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_controls.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_controls.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 10
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_controls.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 10
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/controls_replogle_best_axis_regression.json",
+          "generated": "computed/continued/artifacts/controls_replogle_best_axis_regression.json"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 10,
+          "text": "The adjusted support coefficient remained positive (about 0.03 per SD after adjustment for DE-gene count).",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 24
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 27,
+          "end_line": 28
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-11",
+      "axis": "Zero-shot pathway support",
+      "notebook": "notebooks/test-11.ipynb",
+      "script": "notebooks/test-11.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_zeroshot"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_zeroshot_confirmation.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_zeroshot_confirmation.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 11
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_replogle_zeroshot_reactome_support_confirmation.csv",
+        "generated": "computed/continued/artifacts/spc_replogle_zeroshot_reactome_support_confirmation.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 11,
+        "text": "The lowest and highest annotated bins differed by \u22120.129 (HVG) and \u22120.077 (SE) in the supplementary plot.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "c5711773a3523adbb37d69fc3dc0f2227db0f256c74028379e7ff7e045e301e0",
+      "published_script_sha256": "f5b4facbd60185ef835c2436f58cb8421279a0db47b5e5666179ffa516b44706",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_zeroshot"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_zeroshot_confirmation.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_zeroshot_confirmation.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 11
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_replogle_zeroshot_confirmation.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 11
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_replogle_zeroshot_reactome_support_confirmation.csv",
+          "generated": "computed/continued/artifacts/spc_replogle_zeroshot_reactome_support_confirmation.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 11,
+          "text": "The lowest and highest annotated bins differed by \u22120.129 (HVG) and \u22120.077 (SE) in the supplementary plot.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 28
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-12",
+      "axis": "Ligand-family training support",
+      "notebook": "notebooks/test-12.ipynb",
+      "script": "notebooks/test-12.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10,
+          11
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_parse"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 12
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_parse_fewshot_ligand_family_support.csv",
+        "generated": "computed/continued/artifacts/spc_parse_fewshot_ligand_family_support.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 12,
+        "text": "Higher same-family support did not improve accuracy. The observed direction reversed.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "ee7cc50e179a38cdde4908e915a6adb4a1e104e54eff8d09851fc760a27c27f4",
+      "published_script_sha256": "763d329ec255349fe39bee73bbf43cda5ee2024147171257d940638b391d4ecc",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_parse"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 12
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_spectra_loop.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 12
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_parse_fewshot_ligand_family_support.csv",
+          "generated": "computed/continued/artifacts/spc_parse_fewshot_ligand_family_support.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 12,
+          "text": "Higher same-family support did not improve accuracy. The observed direction reversed.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 31
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-13",
+      "axis": "Reactome cross-ontology check",
+      "notebook": "notebooks/test-13.ipynb",
+      "script": "notebooks/test-13.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_ontology"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 13
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_reactome.csv",
+        "generated": "computed/continued/artifacts/spc_multi_pathway_reactome.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 13,
+        "text": "High-minus-low overlap@N: few-shot HVG +0.114, SE +0.085. Zero-shot HVG +0.068, SE +0.044.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "b9270379641632302621dbbd6774c561708324be8ff93af3bc2e6f61afbaffc9",
+      "published_script_sha256": "8fdc4280cd402cf930372f98eb30686ee5b23b44d91a5b2294f6528eb17c6bea",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_ontology"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 13
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 13
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_reactome.csv",
+          "generated": "computed/continued/artifacts/spc_multi_pathway_reactome.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 13,
+          "text": "High-minus-low overlap@N: few-shot HVG +0.114, SE +0.085. Zero-shot HVG +0.068, SE +0.044.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-14",
+      "axis": "HGNC_gene_group cross-ontology check",
+      "notebook": "notebooks/test-14.ipynb",
+      "script": "notebooks/test-14.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_ontology"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 14
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_hgnc_gene_group.csv",
+        "generated": "computed/continued/artifacts/spc_multi_pathway_hgnc_gene_group.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 14,
+        "text": "High-minus-low overlap@N: few-shot HVG +0.114, SE +0.093. Zero-shot HVG +0.068, SE +0.047.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "6ddcbe72bf85ad21dc9cf57d9b0322f99271c267550219d0ee2cd6692a0bb106",
+      "published_script_sha256": "906f08920468475e4a1ca507de103b5d96c6c7f54d1f60bae55b290bf9bf9dcc",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_ontology"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 14
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 14
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_hgnc_gene_group.csv",
+          "generated": "computed/continued/artifacts/spc_multi_pathway_hgnc_gene_group.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 14,
+          "text": "High-minus-low overlap@N: few-shot HVG +0.114, SE +0.093. Zero-shot HVG +0.068, SE +0.047.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-15",
+      "axis": "GO_BP cross-ontology check",
+      "notebook": "notebooks/test-15.ipynb",
+      "script": "notebooks/test-15.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_ontology"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 15
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_bp.csv",
+        "generated": "computed/continued/artifacts/spc_multi_pathway_go_bp.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 15,
+        "text": "High-minus-low overlap@N: few-shot HVG +0.161, SE +0.135. Zero-shot HVG +0.087, SE +0.057.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "8c8523054f2b214e18569fa0c3a079080981fa6c7fac62795c6bb9e5a54f96ee",
+      "published_script_sha256": "2c37ed360cd1fdaaa0cabb3f4599de41bb10c1d45cb6190ebd39f71db89f0c80",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_ontology"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 15
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 15
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_bp.csv",
+          "generated": "computed/continued/artifacts/spc_multi_pathway_go_bp.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 15,
+          "text": "High-minus-low overlap@N: few-shot HVG +0.161, SE +0.135. Zero-shot HVG +0.087, SE +0.057.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-16",
+      "axis": "GO_MF cross-ontology check",
+      "notebook": "notebooks/test-16.ipynb",
+      "script": "notebooks/test-16.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_ontology"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 16
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_mf.csv",
+        "generated": "computed/continued/artifacts/spc_multi_pathway_go_mf.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 16,
+        "text": "High-minus-low overlap@N: few-shot HVG +0.014, SE +0.054. Zero-shot HVG +0.035, SE +0.048. The controlled few-shot coefficient was weak.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "90366674834d58624d260e2a7f28d11e552c1d4ad72f8e7611c55b692d709811",
+      "published_script_sha256": "dac32031181d11a02df633464da39220b81de20ba5d38fe8c6243adaeab08a07",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_ontology"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 16
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 16
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_mf.csv",
+          "generated": "computed/continued/artifacts/spc_multi_pathway_go_mf.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 16,
+          "text": "High-minus-low overlap@N: few-shot HVG +0.014, SE +0.054. Zero-shot HVG +0.035, SE +0.048. The controlled few-shot coefficient was weak.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-17",
+      "axis": "GO_CC cross-ontology check",
+      "notebook": "notebooks/test-17.ipynb",
+      "script": "notebooks/test-17.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_ontology"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 17
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_cc.csv",
+        "generated": "computed/continued/artifacts/spc_multi_pathway_go_cc.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 17,
+        "text": "High-minus-low overlap@N: few-shot HVG +0.121, SE +0.090. Zero-shot HVG +0.081, SE +0.055.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "b6233dd81d0bec71a15d08a047ba7641c32ab6f66c91a97703afe9b7567c99e4",
+      "published_script_sha256": "eae312a09912bafec96d0258a3b02cedb436875638e9e07656e12056af22bbf4",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_ontology"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 17
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 17
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_cc.csv",
+          "generated": "computed/continued/artifacts/spc_multi_pathway_go_cc.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 17,
+          "text": "High-minus-low overlap@N: few-shot HVG +0.121, SE +0.090. Zero-shot HVG +0.081, SE +0.055.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-18",
+      "axis": "WikiPathways cross-ontology check",
+      "notebook": "notebooks/test-18.ipynb",
+      "script": "notebooks/test-18.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_ontology"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 18
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_wikipathways.csv",
+        "generated": "computed/continued/artifacts/spc_multi_pathway_wikipathways.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 18,
+        "text": "High-minus-low overlap@N: few-shot HVG +0.104, SE +0.127. Zero-shot HVG +0.035, SE +0.034.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "db6ee7a7119fb342d9d0875508f7e648ec4cc02c94761410e8dae353f34a4604",
+      "published_script_sha256": "909a3192c734863b6fb8bfdbfed8ad0930a5ce09a8856796952894dedd1d8619",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_ontology"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 18
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 18
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_wikipathways.csv",
+          "generated": "computed/continued/artifacts/spc_multi_pathway_wikipathways.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 18,
+          "text": "High-minus-low overlap@N: few-shot HVG +0.104, SE +0.127. Zero-shot HVG +0.035, SE +0.034.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "id": "state-featured/test-19",
+      "axis": "KEGG cross-ontology check",
+      "notebook": "notebooks/test-19.ipynb",
+      "script": "notebooks/test-19.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          2,
+          4
+        ],
+        "processing": [
+          4,
+          6
+        ],
+        "levels": [
+          6
+        ],
+        "evaluation": [
+          4
+        ],
+        "curve": [
+          9
+        ],
+        "decision": [
+          0,
+          10
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "download_manifest.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "recovered_pipeline.py",
+          "function": "stage_ontology"
+        },
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+        },
+        {
+          "path": "axis_catalog.json",
+          "number": 19
+        }
+      ],
+      "evaluation": {
+        "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+        "path": "download_manifest.json"
+      },
+      "curve_or_diagnostic": {
+        "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_kegg.csv",
+        "generated": "computed/continued/artifacts/spc_multi_pathway_kegg.csv"
+      },
+      "historical_decision": {
+        "path": "axis_catalog.json",
+        "number": 19,
+        "text": "High-minus-low overlap@N: few-shot HVG +0.141, SE +0.128. Zero-shot HVG +0.066, SE +0.047.",
+        "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+      },
+      "published_notebook_sha256": "f7fc46b98c9ca23d42765508c6db2675fae4d2e8cdb874ce2df01f71a20116f8",
+      "published_script_sha256": "1d31d7194753349b8a870a1580b90a38e74658ee044c63a1c6ffbf93036c09b1",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "download_manifest.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "recovered_pipeline.py",
+              "function": "stage_ontology"
+            },
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 19
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "original/state_generalizability_continued_20260603/scripts/state_multi_pathway_support.py"
+            },
+            {
+              "path": "axis_catalog.json",
+              "number": 19
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Original official released STATE individual scored CSVs, exact public revisions",
+          "path": "download_manifest.json"
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "original": "original/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_kegg.csv",
+          "generated": "computed/continued/artifacts/spc_multi_pathway_kegg.csv"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_catalog.json",
+          "number": 19,
+          "text": "High-minus-low overlap@N: few-shot HVG +0.141, SE +0.128. Zero-shot HVG +0.066, SE +0.047.",
+          "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 2,
+          "start_line": 2,
+          "end_line": 11
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 14,
+          "end_line": 15
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 18,
+          "end_line": 18
+        },
+        {
+          "notebook_cell": 8,
+          "start_line": 21,
+          "end_line": 21
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 24,
+          "end_line": 25
+        },
+        {
+          "notebook_cell": 11,
+          "start_line": 28,
+          "end_line": 30
+        }
+      ]
+    }
+  ],
+  "artifact_manifest": "payload_manifest.json",
+  "validation": "PORTABLE_VALIDATION.json"
+}

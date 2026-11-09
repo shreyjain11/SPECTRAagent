@@ -1,0 +1,44 @@
+[
+  {
+    "native_session_line": 1624,
+    "timestamp": "2026-06-03T14:35:08.109Z",
+    "command": "HF_HOME=/path/to/original-audit-home/.cache/spectra/hf HF_DATASETS_CACHE=/path/to/original-audit-home/.cache/spectra/hf/datasets /path/to/original-workspace/envs/envs/pgt/bin/python scripts/build_tum_expansion_panel.py --per-shard 1000 --levels 10",
+    "working_directory": "/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked",
+    "call_id": "call_vkJN8OwwWfTGmWMoFKb8vGsu"
+  },
+  {
+    "native_session_line": 1643,
+    "timestamp": "2026-06-03T14:36:10.043Z",
+    "command": "CUDA_VISIBLE_DEVICES=7 HF_HOME=/path/to/original-audit-home/.cache/spectra/hf HF_DATASETS_CACHE=/path/to/original-audit-home/.cache/spectra/hf/datasets /path/to/original-workspace/envs/envs/pgt/bin/python scripts/score_tum_panel_generic.py --conch-source /path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603/source/CONCH --checkpoint model_cache/models--MahmoodLab--conch/snapshots/f9ca9f877171a28ade80228fb195ac5d79003357/pytorch_model.bin --prompt-json /path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603/source/CONCH/prompts/crc100k_prompts_all_per_class.json --panel spectra_ready_dataset/tum_expansion_panel.csv --out artifacts/tum_expansion/target_model_results_tum_expansion.csv --summary artifacts/tum_expansion/summary.json --batch-size 128",
+    "working_directory": "/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked",
+    "call_id": "call_NHOKC7SBnCqpVpUbXtpgQogY"
+  },
+  {
+    "native_session_line": 1746,
+    "timestamp": "2026-06-03T14:44:47.623Z",
+    "command": "ps -eo pid,ppid,stat,etime,cmd | rg 'score_tum_panel_generic|tum_expansion|conch_generalizability_audit_20260603_unblocked'",
+    "working_directory": "/path/to/original-audit-home/SPECTRA/SPECTRA",
+    "call_id": "call_BuzZJFexx2Khg1Awe6YU6knt"
+  },
+  {
+    "native_session_line": 1757,
+    "timestamp": "2026-06-03T14:44:56.900Z",
+    "command": "ps -eo pid,ppid,stat,etime,cmd | grep -E 'score_tum_panel_generic|tum_expansion|conch_generalizability_audit_20260603_unblocked' | grep -v grep",
+    "working_directory": "/path/to/original-audit-home/SPECTRA/SPECTRA",
+    "call_id": "call_LTot83ln6GrC44j8vH74VMH8"
+  },
+  {
+    "native_session_line": 1770,
+    "timestamp": "2026-06-03T14:45:08.868Z",
+    "command": "/path/to/original-workspace/envs/envs/pgt/bin/python scripts/analyze_tum_confirmation.py --panel spectra_ready_dataset/tum_expansion_panel.csv --results artifacts/tum_expansion/target_model_results_tum_expansion.csv --out artifacts/tum_expansion/analysis.json",
+    "working_directory": "/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked",
+    "call_id": "call_U1Jfxm3pOPQJ0MIyRzgljjqR"
+  },
+  {
+    "native_session_line": 1787,
+    "timestamp": "2026-06-03T14:46:56.903Z",
+    "command": "/path/to/original-workspace/envs/envs/pgt/bin/python scripts/report_tum_expansion.py --root .",
+    "working_directory": "/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked",
+    "call_id": "call_JU2QC2diRzQs2zPuPD3DBkHV"
+  }
+]

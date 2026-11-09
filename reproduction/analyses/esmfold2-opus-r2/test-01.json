@@ -77,5 +77,18 @@
     "saved_code_cells": 2,
     "saved_error_outputs": 0
   },
-  "requested_model": "ESMFold2"
+  "requested_model": "ESMFold2",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "esmfold2-opus-r2/test-01",
+    "disposition": "rejected",
+    "result": "Across 260 scored chains, the frozen monotone decline was absent. Spearman ρ = +0.176; adjusted β = +0.019, P = 0.11. Chains above the tested 40–767 residue range were unavailable.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "esmfold2-opus-r2/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

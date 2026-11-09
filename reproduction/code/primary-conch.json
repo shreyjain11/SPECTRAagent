@@ -1,0 +1,110 @@
+[
+  {
+    "path": "primary/conch/acquire_original_inputs.py",
+    "sha256": "8468f7653ecab483e6fef517e34f0d5aa5e71814e2262c7e491c1e64d85a93a1"
+  },
+  {
+    "path": "primary/conch/bootstrap_replay.py",
+    "sha256": "5fb91dfd42361f752d3123fe7f785b8240fb0952b4a45aa55331b4825bc60678"
+  },
+  {
+    "path": "primary/conch/build_notebooks.py",
+    "sha256": "de98bc384c0f4c0256e4ecbf376ea27db9786fc9c0cc751bc5b997ef9ffa8be2"
+  },
+  {
+    "path": "primary/conch/code/01-conch-primary.py",
+    "sha256": "fad8e5608822c1bd35ef97de83e1dd7af25680dcaa44b6bf3ddb215efbdffa8e"
+  },
+  {
+    "path": "primary/conch/code/02-conch-primary.py",
+    "sha256": "40cc414693e5ce6da89e2646d18524b0cb7b1c3e888827c6bb94efff55e7d638"
+  },
+  {
+    "path": "primary/conch/code/03-conch-primary.py",
+    "sha256": "7608d99d2de06ae31bc0a367195e327018b837e0382d3044449941ca6ec50b7f"
+  },
+  {
+    "path": "primary/conch/code/04-conch-primary.py",
+    "sha256": "b2d11750704b8d6dd27e036f057b82cc740aa09fd957078b9ebd4efd39e7db19"
+  },
+  {
+    "path": "primary/conch/code/05-conch-primary.py",
+    "sha256": "88987c4d558c03a89f5866433a17babbcd339571f4e79160776ba7d759083f30"
+  },
+  {
+    "path": "primary/conch/code/06-conch-primary.py",
+    "sha256": "988ba12e66aef32261af571e1e85542764a9bd88eba1599ca37cbe58eb3d4b42"
+  },
+  {
+    "path": "primary/conch/export_notebooks.py",
+    "sha256": "4e451ac895c92b87cb4244e9af76f551636f2845742024fc92737990d4fab394"
+  },
+  {
+    "path": "primary/conch/original_pipeline.py",
+    "sha256": "45b8b14cc3b3f5a07bedb96ebeba76d21454cf245406095cffe9eedd7ed22d6a"
+  },
+  {
+    "path": "primary/conch/originals/scripts/analyze_spc.py",
+    "sha256": "81f4aa80207c3dadb1e451b06821c08275a2cbfb1eb366015cb8c22780e652bb"
+  },
+  {
+    "path": "primary/conch/originals/scripts/analyze_tum_confirmation.py",
+    "sha256": "6950b5f7d350c812abe68fe15fccdcf84344ffdab46851d94d1037bf4e15246c"
+  },
+  {
+    "path": "primary/conch/originals/scripts/build_crc_candidate_table.py",
+    "sha256": "415aca773167e3056bef60d83a326b0089327ed15c4e758ec079c2de47951ecb"
+  },
+  {
+    "path": "primary/conch/originals/scripts/build_tum_confirmation_panel.py",
+    "sha256": "ac99d42323be18b96dd418ff4737074c5827e5d8aad200f3df32f7cec116bfc3"
+  },
+  {
+    "path": "primary/conch/originals/scripts/build_tum_expansion_panel.py",
+    "sha256": "9c69eb33021c709d1d1c74bf69d784ddf3d978bf2400857521f69e80434120a8"
+  },
+  {
+    "path": "primary/conch/originals/scripts/freeze_axes.py",
+    "sha256": "dd7b9be8125d39d85403aa6bbf451ccebe5140100239d802db1e188b0e4795a3"
+  },
+  {
+    "path": "primary/conch/originals/scripts/report_tum_expansion.py",
+    "sha256": "490a48cf87ab0473e85ca282f8cca34d3dc9ce65a1c6fea619c28e94900e6e85"
+  },
+  {
+    "path": "primary/conch/originals/scripts/score_conch_crc_val.py",
+    "sha256": "4dc00808aac2ab6375b2caffa54afd50f646bc20c874f4f6b103d8d82760ec13"
+  },
+  {
+    "path": "primary/conch/originals/scripts/score_tum_confirmation.py",
+    "sha256": "105416b8970b156edb27ec20c3a333860935f974ba0eff7d614841b0f0e1a2b0"
+  },
+  {
+    "path": "primary/conch/originals/scripts/score_tum_panel_generic.py",
+    "sha256": "d3bcc51220dffa7749eb5016dce9b3655809a9dfad317b69bca2d19669056b24"
+  },
+  {
+    "path": "primary/conch/reconstruct_reference.py",
+    "sha256": "1b404e83becec280f3e65a0cff22b28bef430783037483c5112bc6ebef27c89e"
+  },
+  {
+    "path": "primary/conch/replay_reference_pixels.py",
+    "sha256": "c09ae61a638f80f4ad89b9119661de5b6079e054f9093cd6279df577c590146c"
+  },
+  {
+    "path": "primary/conch/run_notebook.py",
+    "sha256": "fbfa67b91ff5e1e17170ba0cb33620ce800e40b44fbf59968c84f4eaa6267000"
+  },
+  {
+    "path": "primary/conch/run_original_stage.py",
+    "sha256": "3142d20683222d9ce1e6a232b5519cd765825c4a95cb25b75b6e6245ed9c0f44"
+  },
+  {
+    "path": "primary/conch/setup_inference.py",
+    "sha256": "18b3dbf59ad36712f7653bbade0b15ad469a328330f6876c8b6fb4b872d709fa"
+  },
+  {
+    "path": "primary/conch/verify_reference.py",
+    "sha256": "06b5dfa8e9ea823a97c1312bbbfdc820c81a65d6e8c3d27f2cda4f3324b7743b"
+  }
+]

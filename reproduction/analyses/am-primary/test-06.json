@@ -4,8 +4,8 @@
   "model": "AlphaMissense",
   "axis": "Position-specific and substitution-score references",
   "dataset_split": {
-    "description": "73 raw assay files; 273,135 single-mutant records; original offset/WT checks reproduce 270,572 scored variants in 72 assays and 63 proteins. No independent split recorded.",
-    "input_inventory": "inputs/alphamissense.json",
+    "description": "Original frozen records and source identities are preserved; packaged inputs and executable acquisition steps are documented in the linked recovery chain.",
+    "input_inventory": "primary/alphamissense/payload_manifest.json",
     "public_sources": [
       "alphamissense-scores",
       "alphamissense-genomic",
@@ -880,37 +880,172 @@
       "archive": "alphamissense-retained-inputs",
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
-      "notebook_preparation_cell": 0
-    }
+      "notebook_preparation_cell": 0,
+      "implementation": "legacy_implementation",
+      "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
+    },
+    "legacy_input_inventory": "inputs/alphamissense.json",
+    "recovered_workflow": "primary/alphamissense/traceability.json"
   },
   "axis_levels": {
     "definition": "Evaluate the position-specific scoring matrix and BLOSUM62 on the same variants and occupancy bins.",
-    "calculation": "All 66 exact original alignments reclustered with original MMseqs binary/parameters. All occupancy values, insert flags and depth bins match; 65 weighted-feature sets match exactly, while OTU7A differs at 37 positions. Original and rebuilt tracks are both evaluated.",
-    "code": "materials/alphamissense/am-primary/axis-6.py"
+    "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
+    "code": "primary/alphamissense/am-primary/axis-6.py"
   },
   "model_evaluation": {
-    "measurements": "Original code correctly maps canonical fragment positions and evaluates hash-pinned public predictions; no fresh inference claimed",
+    "measurements": "Original released AlphaMissense predictions, benchmark joins and original comparator calculations; fresh target-model inference was not part of this workflow.",
     "fine_tuning": {
       "target_weight_updates_in_replay": false,
       "target_fine_tuning_during_original_audit": null,
       "original_training_evidence": "These calculations reuse released AlphaMissense scores without updating model weights. Upstream checkpoint training is separate from this audit.",
       "comparators": []
     },
-    "code": "materials/alphamissense/am-primary/axis-6.py"
+    "code": "primary/alphamissense/am-primary/axis-6.py"
   },
   "curve": {
-    "aggregation_and_uncertainty": "All 587 historical assay/bin rows and 24 predictor/bin rows reproduce from archived features. Rebuilt features preserve all AlphaMissense results; one PSSM interval bound shifts by 0.0001 at saved precision. Original 5,000-assay bootstrap rerun.",
-    "code": "materials/alphamissense/am-primary/axis-6.py"
+    "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
+    "code": "primary/alphamissense/am-primary/axis-6.py"
   },
   "insight": {
-    "comparison_controls_confirmation": "High-depth subset, original PSSM/BLOSUM, dynamic range and paired sign checks reproduced; same-dataset controls, no independent confirmation cohort",
-    "code": "materials/alphamissense/am-primary/axis-6.py"
+    "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
+    "code": "primary/alphamissense/am-primary/axis-6.py"
   },
   "reconstruction_notes": [
-    "The cause of the isolated original-versus-rebuilt OTU7A weighted-count difference remains unresolved.",
-    "Independent confirmation cohort was not part of the retained analysis."
+    "Some large public-download/preparation steps have not been rerun in full. The default replay uses the exact retained inputs supplied by the package/bootstrap.",
+    "The original OTU7A weighted-feature discrepancy is preserved and documented; AlphaMissense results are unchanged and one comparator interval bound differs by 0.0001."
   ],
   "implementation": {
+    "format": "recovered_historical_notebook",
+    "notebook": "primary/alphamissense/am-primary/axis-6.ipynb",
+    "script": "primary/alphamissense/am-primary/axis-6.py",
+    "supporting_code": "code/primary-alphamissense.json",
+    "published_notebook_sha256": "fa8b6814b2195a06b2089401cf5289fa2ebda827eac94ee93a213d1b25ae8787",
+    "published_script_sha256": "371be206364db77f89840bda94f36fe0feb2ff36558f0b648b461863153fec15",
+    "cell_locations": [
+      {
+        "notebook_cell": 3,
+        "start_line": 2,
+        "end_line": 19
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 22,
+        "end_line": 27
+      },
+      {
+        "notebook_cell": 5,
+        "start_line": 30,
+        "end_line": 38
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 41,
+        "end_line": 52
+      },
+      {
+        "notebook_cell": 7,
+        "start_line": 55,
+        "end_line": 62
+      },
+      {
+        "notebook_cell": 9,
+        "start_line": 65,
+        "end_line": 69
+      },
+      {
+        "notebook_cell": 15,
+        "start_line": 72,
+        "end_line": 75
+      },
+      {
+        "notebook_cell": 17,
+        "start_line": 78,
+        "end_line": 95
+      },
+      {
+        "notebook_cell": 19,
+        "start_line": 98,
+        "end_line": 112
+      },
+      {
+        "notebook_cell": 21,
+        "start_line": 115,
+        "end_line": 376
+      },
+      {
+        "notebook_cell": 22,
+        "start_line": 379,
+        "end_line": 554
+      },
+      {
+        "notebook_cell": 23,
+        "start_line": 557,
+        "end_line": 573
+      },
+      {
+        "notebook_cell": 25,
+        "start_line": 576,
+        "end_line": 577
+      },
+      {
+        "notebook_cell": 26,
+        "start_line": 580,
+        "end_line": 595
+      },
+      {
+        "notebook_cell": 28,
+        "start_line": 598,
+        "end_line": 859
+      },
+      {
+        "notebook_cell": 29,
+        "start_line": 862,
+        "end_line": 871
+      },
+      {
+        "notebook_cell": 31,
+        "start_line": 874,
+        "end_line": 1049
+      },
+      {
+        "notebook_cell": 32,
+        "start_line": 1052,
+        "end_line": 1090
+      },
+      {
+        "notebook_cell": 33,
+        "start_line": 1093,
+        "end_line": 1104
+      },
+      {
+        "notebook_cell": 35,
+        "start_line": 1107,
+        "end_line": 1124
+      },
+      {
+        "notebook_cell": 37,
+        "start_line": 1127,
+        "end_line": 1131
+      }
+    ],
+    "saved_code_cells": 21,
+    "saved_error_outputs": 0,
+    "saved_figures": 1,
+    "changes": [
+      "Recovered original inputs and programs are packaged or acquired with content checks.",
+      "Markdown, original decisions and selected historical outputs are retained.",
+      "Default replay and optional full raw-data/model execution are explicitly distinguished."
+    ]
+  },
+  "requested_model": "AlphaMissense",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "am-primary/test-06",
+    "disposition": "control",
+    "result": "From highest to lowest occupancy, PSSM agreement fell from 0.479 to 0.308 and BLOSUM62 from 0.244 to 0.157. All three methods lost accuracy.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "legacy_implementation": {
     "notebook": "materials/alphamissense/am-primary/axis-6.ipynb",
     "script": "materials/alphamissense/am-primary/axis-6.py",
     "supporting_code": "code/alphamissense.json",
@@ -1011,5 +1146,110 @@
     "saved_code_cells": 16,
     "saved_error_outputs": 0
   },
-  "requested_model": "AlphaMissense"
+  "legacy_reconstruction_notes": [
+    "The cause of the isolated original-versus-rebuilt OTU7A weighted-count difference remains unresolved.",
+    "Independent confirmation cohort was not part of the retained analysis."
+  ],
+  "primary_recovery": {
+    "package": "primary/alphamissense",
+    "traceability": "primary/alphamissense/traceability.json",
+    "record_id": "am-primary/test-06",
+    "evidence_paths_relative_to": "primary/alphamissense",
+    "stages": {
+      "data": {
+        "status": "exact_original_inputs_packaged_or_pinned_release",
+        "artifacts": [
+          "payload_manifest.json",
+          "acquisition/download_sources.json",
+          "acquisition/sources.json"
+        ]
+      },
+      "processing": {
+        "status": "original_processing_connected",
+        "evidence": [
+          {
+            "path": "upstream_checks/code/build_axes.py"
+          },
+          {
+            "path": "upstream_checks/code/build_pssm.py"
+          },
+          {
+            "path": "upstream_checks/materialize_features.py"
+          }
+        ]
+      },
+      "axis": {
+        "status": "original_definition_retained",
+        "evidence": [
+          {
+            "path": "am-primary/axis-6.ipynb",
+            "cells_zero_based": [
+              19,
+              23,
+              32,
+              35
+            ]
+          },
+          {
+            "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+          }
+        ]
+      },
+      "levels": {
+        "status": "original_level_assignment_code_and_membership_retained",
+        "evidence": [
+          {
+            "path": "am-primary/axis-6.ipynb",
+            "cells_zero_based": [
+              19,
+              23,
+              32,
+              35
+            ]
+          },
+          {
+            "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+          }
+        ]
+      },
+      "evaluation": {
+        "status": "original_released_predictions_joined_and_reaggregated",
+        "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+        "sources": "acquisition/download_sources.json",
+        "original_program_in_notebook_cells": [
+          21,
+          22,
+          23,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33
+        ]
+      },
+      "curve": {
+        "status": "original_curve_or_diagnostic_recomputed",
+        "path": "am-primary/axis-6.ipynb",
+        "cells_zero_based": [
+          33
+        ],
+        "kind": "performance/control curve",
+        "expected_tables": "am-primary/expected"
+      },
+      "decision": {
+        "status": "historical_agent_disposition_retained",
+        "path": "axis_index.json",
+        "id": "am-primary/test-06",
+        "disposition": "control",
+        "notebook_cells_zero_based": [
+          0,
+          2,
+          10,
+          27,
+          38
+        ]
+      }
+    }
+  }
 }

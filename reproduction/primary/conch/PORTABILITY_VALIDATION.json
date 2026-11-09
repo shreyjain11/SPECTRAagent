@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "source": "PR integration checkout, standalone reproduction/primary/conch package",
+  "validation_mode": "historical replay using bundled exact numerical payload; no raw-image network acquisition or neural inference",
+  "notebooks_executed": 6,
+  "code_cells_executed": 88,
+  "saved_figures": 17,
+  "errors": 0,
+  "working_directory": "notebooks/",
+  "payload_materialization": "Five bundled gzip payloads verified against both compressed and exact expanded SHA256; materialized without network.",
+  "original_scripts_unchanged": 10,
+  "full_raw_to_model_run_executed": false,
+  "raw_image_checks_executed_in_portable_default": false,
+  "raw_image_skip_notices_verified": true,
+  "matrix_axis_level_comparisons": 28720,
+  "reference_classifier_label_comparisons": 25960,
+  "portable_dependency_inputs": [
+    "requirements_notebook.txt",
+    "requirements_reference.txt",
+    "requirements_inference.txt"
+  ],
+  "no_external_workspace_paths_needed": true,
+  "syntax_checks": "All package helpers, original scripts and six cell-order exports parsed.",
+  "published_runtime_paths": "Notebook runtime interpreter/working-directory prefixes normalized; original numerical outputs and figures retained.",
+  "git_payload_bytes": 13066776,
+  "largest_git_file": {
+    "path": "reproduction/primary/conch/payload/data/discovery.csv.gz",
+    "bytes": 4899662
+  },
+  "git_cache_policy": "No raw-image archives, parquet shards, checkpoints, environments, uncompressed bulk CSVs or full chat logs.",
+  "details": "notebook_validation.json",
+  "traceability": "traceability.json",
+  "limitations": [
+    "Full inference setup/download/model run remains opt-in and was not executed during packaging.",
+    "Recorded historical conclusions are preserved; no new scientific acceptance rule is applied."
+  ]
+}

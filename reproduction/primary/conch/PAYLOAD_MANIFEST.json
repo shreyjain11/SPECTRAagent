@@ -1,0 +1,52 @@
+[
+  {
+    "destination": "data/discovery.csv",
+    "archive": "payload/data/discovery.csv.gz",
+    "archive_bytes": 4899662,
+    "archive_sha256": "c17ecf47d2b005fedbe578e2a0b763cc595d50b0ea63b0b5750fe5b1a1164156",
+    "expanded_bytes": 12604776,
+    "expanded_sha256": "a5d6cd24a529511234dd4202d8e40fe7881ce64f24ac506914c2a883573079bf",
+    "kind": "retained_per_image_features_and_model_outputs",
+    "original_local_path": "data/discovery.csv"
+  },
+  {
+    "destination": "data/confirmation.csv",
+    "archive": "payload/data/confirmation.csv.gz",
+    "archive_bytes": 1220579,
+    "archive_sha256": "a9b3b02372043e047453ffc0c2d144cc4d8f1928fd4e6d3666f8cf239ac7b44f",
+    "expanded_bytes": 3241229,
+    "expanded_sha256": "34491b8de5e7266b5765a8bd9cc68073de8ecdd8259d023facee69c146b32a03",
+    "kind": "retained_per_image_features_and_model_outputs",
+    "original_local_path": "data/confirmation.csv"
+  },
+  {
+    "destination": "data/expansion.csv",
+    "archive": "payload/data/expansion.csv.gz",
+    "archive_bytes": 2712622,
+    "archive_sha256": "10f98d0c4353aa78ee122e02543d731b801de91c1e717f01dd58fe7004c61b06",
+    "expanded_bytes": 7210706,
+    "expanded_sha256": "8841ea7c09cef30ae34e094326bb3b13fa8f5e1d39ef0c7b4c1fc9b76433abb4",
+    "kind": "retained_per_image_features_and_model_outputs",
+    "original_local_path": "data/expansion.csv"
+  },
+  {
+    "destination": "data/nct_reference_features.reconstructed.csv",
+    "archive": "payload/data/nct_reference_features.reconstructed.csv.gz",
+    "archive_bytes": 838386,
+    "archive_sha256": "913fd9cf9db55169f0b4ba0f68edfdac72c5fac0b689085a0adf0591f27b53bb",
+    "expanded_bytes": 2548140,
+    "expanded_sha256": "6bf27c2ae6ca2a57c3f1037f1ee4206d92ab7ffa6736a8957a1409303f13920c",
+    "kind": "derived_reference_features",
+    "original_local_path": "data/nct_reference_features.reconstructed.csv"
+  },
+  {
+    "destination": "data/reference_reconstruction/identities.json",
+    "archive": "payload/data/reference_reconstruction/identities.json.gz",
+    "archive_bytes": 149923,
+    "archive_sha256": "90732f5d976cc5359200520bfe5d5b0b89d62a90e77f59dc7b5e22b7edb03d64",
+    "expanded_bytes": 862812,
+    "expanded_sha256": "e93e6f85290480eeb748918e5959d3fd751025731843218fd8f23c2f399bec01",
+    "kind": "raw_image_identity_manifest",
+    "original_local_path": "data/reference_reconstruction/identities.json"
+  }
+]

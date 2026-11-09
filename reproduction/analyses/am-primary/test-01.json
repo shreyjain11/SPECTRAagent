@@ -4,8 +4,8 @@
   "model": "AlphaMissense",
   "axis": "UniRef50 homolog count",
   "dataset_split": {
-    "description": "Original 194,408-row clinical benchmark recovered; constructor independently rerun from original ClinVar/AlphaMissense hg38 snapshots and output matched byte-for-byte. Notebook starts from that exact table; no independent split recorded.",
-    "input_inventory": "inputs/alphamissense.json",
+    "description": "Original frozen records and source identities are preserved; packaged inputs and executable acquisition steps are documented in the linked recovery chain.",
+    "input_inventory": "primary/alphamissense/payload_manifest.json",
     "public_sources": [
       "alphamissense-scores",
       "alphamissense-genomic",
@@ -880,38 +880,127 @@
       "archive": "alphamissense-retained-inputs",
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
-      "notebook_preparation_cell": 0
-    }
+      "notebook_preparation_cell": 0,
+      "implementation": "legacy_implementation",
+      "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
+    },
+    "legacy_input_inventory": "inputs/alphamissense.json",
+    "recovered_workflow": "primary/alphamissense/traceability.json"
   },
   "axis_levels": {
     "definition": "Count distinct UniRef50 sequence hits for each protein with MMseqs2, E < 0.001 and query coverage ≥50%. Evaluate ClinVar AUROC in ten protein-balanced bins.",
-    "calculation": "Complete original UniRef50 search hits produce per-protein homolog counts and original protein-balanced deciles. The original sequence search itself is not rerun.",
-    "code": "materials/alphamissense/am-primary/axis-1.py"
+    "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
+    "code": "primary/alphamissense/am-primary/axis-1.py"
   },
   "model_evaluation": {
-    "measurements": "Original 194,379 eligible individual prediction/clinical-label pairs and BLOSUM62 scores reproduced; no fresh AlphaMissense inference.",
+    "measurements": "Original released AlphaMissense predictions, benchmark joins and original comparator calculations; fresh target-model inference was not part of this workflow.",
     "fine_tuning": {
       "target_weight_updates_in_replay": false,
       "target_fine_tuning_during_original_audit": null,
       "original_training_evidence": "These calculations reuse released AlphaMissense scores without updating model weights. Upstream checkpoint training is separate from this audit.",
       "comparators": []
     },
-    "code": "materials/alphamissense/am-primary/axis-1.py"
+    "code": "primary/alphamissense/am-primary/axis-1.py"
   },
   "curve": {
-    "aggregation_and_uncertainty": "All historical group results and 500 protein cluster-bootstrap confidence intervals reproduce within 1e-12 using the original program and seed.",
-    "code": "materials/alphamissense/am-primary/axis-1.py"
+    "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
+    "code": "primary/alphamissense/am-primary/axis-1.py"
   },
   "insight": {
-    "comparison_controls_confirmation": "Original BLOSUM reference, prevalence and retained proxy controls reproduced; the measurements do not show the proposed monotonic degradation. No independent confirmation claim added.",
-    "code": "materials/alphamissense/am-primary/axis-1.py"
+    "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
+    "code": "primary/alphamissense/am-primary/axis-1.py"
   },
   "reconstruction_notes": [
-    "Original UniRef50 database snapshot and search invocation are not bundled; the complete original search-hit file is provided.",
-    "Raw ClinVar VCF and AlphaMissense hg38 files were recovered and their constructor rerun, but are not duplicated in this package; exact source hashes and the constructor are included.",
-    "Independent confirmation was not part of the retained screen."
+    "Some large public-download/preparation steps have not been rerun in full. The default replay uses the exact retained inputs supplied by the package/bootstrap.",
+    "The original OTU7A weighted-feature discrepancy is preserved and documented; AlphaMissense results are unchanged and one comparator interval bound differs by 0.0001."
   ],
   "implementation": {
+    "format": "recovered_historical_notebook",
+    "notebook": "primary/alphamissense/am-primary/axis-1.ipynb",
+    "script": "primary/alphamissense/am-primary/axis-1.py",
+    "supporting_code": "code/primary-alphamissense.json",
+    "published_notebook_sha256": "cf2c9b7d957d893ed35de5d39fc759bca990d45bd4eff9ba02bee25d7a5f5934",
+    "published_script_sha256": "b3f1efa36c83c1879f9835c4eea378a47014b8c7dbb5ed32e96c6337baace651",
+    "cell_locations": [
+      {
+        "notebook_cell": 3,
+        "start_line": 2,
+        "end_line": 19
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 22,
+        "end_line": 27
+      },
+      {
+        "notebook_cell": 5,
+        "start_line": 30,
+        "end_line": 38
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 41,
+        "end_line": 49
+      },
+      {
+        "notebook_cell": 7,
+        "start_line": 52,
+        "end_line": 59
+      },
+      {
+        "notebook_cell": 9,
+        "start_line": 62,
+        "end_line": 67
+      },
+      {
+        "notebook_cell": 14,
+        "start_line": 70,
+        "end_line": 79
+      },
+      {
+        "notebook_cell": 16,
+        "start_line": 82,
+        "end_line": 269
+      },
+      {
+        "notebook_cell": 17,
+        "start_line": 272,
+        "end_line": 287
+      },
+      {
+        "notebook_cell": 19,
+        "start_line": 290,
+        "end_line": 302
+      },
+      {
+        "notebook_cell": 21,
+        "start_line": 305,
+        "end_line": 312
+      },
+      {
+        "notebook_cell": 22,
+        "start_line": 315,
+        "end_line": 316
+      }
+    ],
+    "saved_code_cells": 12,
+    "saved_error_outputs": 0,
+    "saved_figures": 1,
+    "changes": [
+      "Recovered original inputs and programs are packaged or acquired with content checks.",
+      "Markdown, original decisions and selected historical outputs are retained.",
+      "Default replay and optional full raw-data/model execution are explicitly distinguished."
+    ]
+  },
+  "requested_model": "AlphaMissense",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "am-primary/test-01",
+    "disposition": "rejected",
+    "result": "No monotonic decline: ρ = −0.21, P = 0.5563 across the ten support-bin medians and AUROCs. Intervals used 500 protein bootstraps.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "legacy_implementation": {
     "notebook": "materials/alphamissense/am-primary/axis-1.ipynb",
     "script": "materials/alphamissense/am-primary/axis-1.py",
     "supporting_code": "code/alphamissense.json",
@@ -966,5 +1055,101 @@
     "saved_code_cells": 7,
     "saved_error_outputs": 0
   },
-  "requested_model": "AlphaMissense"
+  "legacy_reconstruction_notes": [
+    "Original UniRef50 database snapshot and search invocation are not bundled; the complete original search-hit file is provided.",
+    "Raw ClinVar VCF and AlphaMissense hg38 files were recovered and their constructor rerun, but are not duplicated in this package; exact source hashes and the constructor are included.",
+    "Independent confirmation was not part of the retained screen."
+  ],
+  "primary_recovery": {
+    "package": "primary/alphamissense",
+    "traceability": "primary/alphamissense/traceability.json",
+    "record_id": "am-primary/test-01",
+    "evidence_paths_relative_to": "primary/alphamissense",
+    "stages": {
+      "data": {
+        "status": "exact_original_inputs_packaged_or_pinned_release",
+        "artifacts": [
+          "payload_manifest.json",
+          "acquisition/download_sources.json",
+          "acquisition/sources.json"
+        ]
+      },
+      "processing": {
+        "status": "original_processing_connected",
+        "evidence": [
+          {
+            "path": "acquisition/reproduce_downloads.py",
+            "function": "prepare_axis"
+          },
+          {
+            "path": "am-primary/code/build_benchmark.py"
+          }
+        ]
+      },
+      "axis": {
+        "status": "original_definition_retained",
+        "evidence": [
+          {
+            "path": "am-primary/axis-1.ipynb",
+            "cells_zero_based": [
+              16,
+              17,
+              19,
+              21
+            ]
+          },
+          {
+            "path": "am-primary/inputs/clinvar/msa_hits.m8.gz"
+          }
+        ]
+      },
+      "levels": {
+        "status": "original_level_assignment_code_and_membership_retained",
+        "evidence": [
+          {
+            "path": "am-primary/axis-1.ipynb",
+            "cells_zero_based": [
+              16,
+              17,
+              19,
+              21
+            ]
+          },
+          {
+            "path": "am-primary/inputs/clinvar/msa_hits.m8.gz"
+          }
+        ]
+      },
+      "evaluation": {
+        "status": "original_released_predictions_joined_and_reaggregated",
+        "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+        "sources": "acquisition/download_sources.json",
+        "original_program_in_notebook_cells": [
+          16,
+          19,
+          21
+        ]
+      },
+      "curve": {
+        "status": "original_curve_or_diagnostic_recomputed",
+        "path": "am-primary/axis-1.ipynb",
+        "cells_zero_based": [
+          21
+        ],
+        "kind": "performance/control curve",
+        "expected_tables": "am-primary/expected"
+      },
+      "decision": {
+        "status": "historical_agent_disposition_retained",
+        "path": "axis_index.json",
+        "id": "am-primary/test-01",
+        "disposition": "rejected",
+        "notebook_cells_zero_based": [
+          0,
+          2,
+          23
+        ]
+      }
+    }
+  }
 }

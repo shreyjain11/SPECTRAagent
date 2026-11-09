@@ -1,0 +1,2084 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "this model folder",
+  "entries": [
+    {
+      "id": "am-primary/test-01",
+      "axis": "UniRef50 homolog count",
+      "notebook": "am-primary/axis-1.ipynb",
+      "script": "am-primary/axis-1.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "processing": [
+          9
+        ],
+        "levels": [
+          16,
+          17,
+          19,
+          21
+        ],
+        "evaluation": [
+          16,
+          19,
+          21
+        ],
+        "curve": [
+          21
+        ],
+        "decision": [
+          0,
+          2,
+          23
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "acquisition/download_sources.json",
+        "acquisition/sources.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "acquisition/reproduce_downloads.py",
+          "function": "prepare_axis"
+        },
+        {
+          "path": "am-primary/code/build_benchmark.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "am-primary/axis-1.ipynb",
+          "cells_zero_based": [
+            16,
+            17,
+            19,
+            21
+          ]
+        },
+        {
+          "path": "am-primary/inputs/clinvar/msa_hits.m8.gz"
+        }
+      ],
+      "evaluation": {
+        "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+        "sources": "acquisition/download_sources.json",
+        "original_program_in_notebook_cells": [
+          16,
+          19,
+          21
+        ]
+      },
+      "curve_or_diagnostic": {
+        "path": "am-primary/axis-1.ipynb",
+        "cells_zero_based": [
+          21
+        ],
+        "kind": "performance/control curve",
+        "expected_tables": "am-primary/expected"
+      },
+      "historical_decision": {
+        "path": "axis_index.json",
+        "id": "am-primary/test-01",
+        "disposition": "rejected",
+        "notebook_cells_zero_based": [
+          0,
+          2,
+          23
+        ]
+      },
+      "published_notebook_sha256": "cf2c9b7d957d893ed35de5d39fc759bca990d45bd4eff9ba02bee25d7a5f5934",
+      "published_script_sha256": "b3f1efa36c83c1879f9835c4eea378a47014b8c7dbb5ed32e96c6337baace651",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "acquisition/download_sources.json",
+            "acquisition/sources.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "acquisition/reproduce_downloads.py",
+              "function": "prepare_axis"
+            },
+            {
+              "path": "am-primary/code/build_benchmark.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-1.ipynb",
+              "cells_zero_based": [
+                16,
+                17,
+                19,
+                21
+              ]
+            },
+            {
+              "path": "am-primary/inputs/clinvar/msa_hits.m8.gz"
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-1.ipynb",
+              "cells_zero_based": [
+                16,
+                17,
+                19,
+                21
+              ]
+            },
+            {
+              "path": "am-primary/inputs/clinvar/msa_hits.m8.gz"
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+          "sources": "acquisition/download_sources.json",
+          "original_program_in_notebook_cells": [
+            16,
+            19,
+            21
+          ]
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "path": "am-primary/axis-1.ipynb",
+          "cells_zero_based": [
+            21
+          ],
+          "kind": "performance/control curve",
+          "expected_tables": "am-primary/expected"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_index.json",
+          "id": "am-primary/test-01",
+          "disposition": "rejected",
+          "notebook_cells_zero_based": [
+            0,
+            2,
+            23
+          ]
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 2,
+          "end_line": 19
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 22,
+          "end_line": 27
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 30,
+          "end_line": 38
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 41,
+          "end_line": 49
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 52,
+          "end_line": 59
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 62,
+          "end_line": 67
+        },
+        {
+          "notebook_cell": 14,
+          "start_line": 70,
+          "end_line": 79
+        },
+        {
+          "notebook_cell": 16,
+          "start_line": 82,
+          "end_line": 269
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 272,
+          "end_line": 287
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 290,
+          "end_line": 302
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 305,
+          "end_line": 312
+        },
+        {
+          "notebook_cell": 22,
+          "start_line": 315,
+          "end_line": 316
+        }
+      ]
+    },
+    {
+      "id": "am-primary/test-02",
+      "axis": "gnomAD missense-variation support",
+      "notebook": "am-primary/axis-2.ipynb",
+      "script": "am-primary/axis-2.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          3,
+          4,
+          7
+        ],
+        "processing": [
+          9
+        ],
+        "levels": [
+          16,
+          17,
+          19,
+          21
+        ],
+        "evaluation": [
+          6,
+          16,
+          19,
+          21
+        ],
+        "curve": [
+          21
+        ],
+        "decision": [
+          0,
+          2,
+          23
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "acquisition/download_sources.json",
+        "acquisition/sources.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "acquisition/reproduce_downloads.py",
+          "function": "prepare_axis"
+        },
+        {
+          "path": "am-primary/code/build_benchmark.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "am-primary/axis-2.ipynb",
+          "cells_zero_based": [
+            16,
+            17,
+            19,
+            21
+          ]
+        },
+        {
+          "path": "am-primary/inputs/clinvar/gnomad_constraint.tsv"
+        }
+      ],
+      "evaluation": {
+        "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+        "sources": "acquisition/download_sources.json",
+        "original_program_in_notebook_cells": [
+          6,
+          16,
+          19,
+          21
+        ]
+      },
+      "curve_or_diagnostic": {
+        "path": "am-primary/axis-2.ipynb",
+        "cells_zero_based": [
+          21
+        ],
+        "kind": "performance/control curve",
+        "expected_tables": "am-primary/expected"
+      },
+      "historical_decision": {
+        "path": "axis_index.json",
+        "id": "am-primary/test-02",
+        "disposition": "rejected",
+        "notebook_cells_zero_based": [
+          0,
+          2,
+          23
+        ]
+      },
+      "published_notebook_sha256": "8b1094b372bc67285e28949e0351fed3d682bc7d32fc60f620bf07122e36c0d5",
+      "published_script_sha256": "548023de1a8907f7da8da5536c62c10ee9b16e75314dda325e1afebcc5e9d84c",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "acquisition/download_sources.json",
+            "acquisition/sources.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "acquisition/reproduce_downloads.py",
+              "function": "prepare_axis"
+            },
+            {
+              "path": "am-primary/code/build_benchmark.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-2.ipynb",
+              "cells_zero_based": [
+                16,
+                17,
+                19,
+                21
+              ]
+            },
+            {
+              "path": "am-primary/inputs/clinvar/gnomad_constraint.tsv"
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-2.ipynb",
+              "cells_zero_based": [
+                16,
+                17,
+                19,
+                21
+              ]
+            },
+            {
+              "path": "am-primary/inputs/clinvar/gnomad_constraint.tsv"
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+          "sources": "acquisition/download_sources.json",
+          "original_program_in_notebook_cells": [
+            6,
+            16,
+            19,
+            21
+          ]
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "path": "am-primary/axis-2.ipynb",
+          "cells_zero_based": [
+            21
+          ],
+          "kind": "performance/control curve",
+          "expected_tables": "am-primary/expected"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_index.json",
+          "id": "am-primary/test-02",
+          "disposition": "rejected",
+          "notebook_cells_zero_based": [
+            0,
+            2,
+            23
+          ]
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 2,
+          "end_line": 19
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 22,
+          "end_line": 27
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 30,
+          "end_line": 38
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 41,
+          "end_line": 41
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 44,
+          "end_line": 51
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 54,
+          "end_line": 59
+        },
+        {
+          "notebook_cell": 14,
+          "start_line": 62,
+          "end_line": 72
+        },
+        {
+          "notebook_cell": 16,
+          "start_line": 75,
+          "end_line": 198
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 201,
+          "end_line": 216
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 219,
+          "end_line": 232
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 235,
+          "end_line": 242
+        },
+        {
+          "notebook_cell": 22,
+          "start_line": 245,
+          "end_line": 246
+        }
+      ]
+    },
+    {
+      "id": "am-primary/test-03",
+      "axis": "Effective alignment depth",
+      "notebook": "am-primary/axis-3.ipynb",
+      "script": "am-primary/axis-3.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "processing": [
+          21
+        ],
+        "levels": [
+          12,
+          21,
+          25,
+          34,
+          37
+        ],
+        "evaluation": [
+          23,
+          24,
+          25,
+          28,
+          30,
+          31,
+          33,
+          34,
+          35
+        ],
+        "curve": [
+          35
+        ],
+        "decision": [
+          0,
+          2,
+          10,
+          14,
+          29,
+          40
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "acquisition/download_sources.json",
+        "acquisition/sources.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "upstream_checks/code/build_axes.py"
+        },
+        {
+          "path": "upstream_checks/code/build_pssm.py"
+        },
+        {
+          "path": "upstream_checks/materialize_features.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "am-primary/axis-3.ipynb",
+          "cells_zero_based": [
+            12,
+            21,
+            25,
+            34,
+            37
+          ]
+        },
+        {
+          "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+        }
+      ],
+      "evaluation": {
+        "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+        "sources": "acquisition/download_sources.json",
+        "original_program_in_notebook_cells": [
+          23,
+          24,
+          25,
+          28,
+          30,
+          31,
+          33,
+          34,
+          35
+        ]
+      },
+      "curve_or_diagnostic": {
+        "path": "am-primary/axis-3.ipynb",
+        "cells_zero_based": [
+          35
+        ],
+        "kind": "pre-scoring bin diagnostic",
+        "expected_tables": "am-primary/expected"
+      },
+      "historical_decision": {
+        "path": "axis_index.json",
+        "id": "am-primary/test-03",
+        "disposition": "rejected",
+        "notebook_cells_zero_based": [
+          0,
+          2,
+          10,
+          14,
+          29,
+          40
+        ]
+      },
+      "published_notebook_sha256": "8f0528737bcc731ecc7d739ad9bb7538f8c3bec59075d9886c8ed714399cbf5f",
+      "published_script_sha256": "7573236a5dcf3d021c7941aaa1a5022423ca95f55893a3a6cb49a6c22ef096f3",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "acquisition/download_sources.json",
+            "acquisition/sources.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "upstream_checks/code/build_axes.py"
+            },
+            {
+              "path": "upstream_checks/code/build_pssm.py"
+            },
+            {
+              "path": "upstream_checks/materialize_features.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-3.ipynb",
+              "cells_zero_based": [
+                12,
+                21,
+                25,
+                34,
+                37
+              ]
+            },
+            {
+              "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-3.ipynb",
+              "cells_zero_based": [
+                12,
+                21,
+                25,
+                34,
+                37
+              ]
+            },
+            {
+              "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+          "sources": "acquisition/download_sources.json",
+          "original_program_in_notebook_cells": [
+            23,
+            24,
+            25,
+            28,
+            30,
+            31,
+            33,
+            34,
+            35
+          ]
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "path": "am-primary/axis-3.ipynb",
+          "cells_zero_based": [
+            35
+          ],
+          "kind": "pre-scoring bin diagnostic",
+          "expected_tables": "am-primary/expected"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_index.json",
+          "id": "am-primary/test-03",
+          "disposition": "rejected",
+          "notebook_cells_zero_based": [
+            0,
+            2,
+            10,
+            14,
+            29,
+            40
+          ]
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 2,
+          "end_line": 19
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 22,
+          "end_line": 27
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 30,
+          "end_line": 38
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 41,
+          "end_line": 52
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 55,
+          "end_line": 62
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 65,
+          "end_line": 69
+        },
+        {
+          "notebook_cell": 12,
+          "start_line": 72,
+          "end_line": 84
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 87,
+          "end_line": 90
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 93,
+          "end_line": 110
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 113,
+          "end_line": 127
+        },
+        {
+          "notebook_cell": 23,
+          "start_line": 130,
+          "end_line": 391
+        },
+        {
+          "notebook_cell": 24,
+          "start_line": 394,
+          "end_line": 569
+        },
+        {
+          "notebook_cell": 25,
+          "start_line": 572,
+          "end_line": 588
+        },
+        {
+          "notebook_cell": 27,
+          "start_line": 591,
+          "end_line": 592
+        },
+        {
+          "notebook_cell": 28,
+          "start_line": 595,
+          "end_line": 610
+        },
+        {
+          "notebook_cell": 30,
+          "start_line": 613,
+          "end_line": 874
+        },
+        {
+          "notebook_cell": 31,
+          "start_line": 877,
+          "end_line": 886
+        },
+        {
+          "notebook_cell": 33,
+          "start_line": 889,
+          "end_line": 1064
+        },
+        {
+          "notebook_cell": 34,
+          "start_line": 1067,
+          "end_line": 1116
+        },
+        {
+          "notebook_cell": 35,
+          "start_line": 1119,
+          "end_line": 1130
+        },
+        {
+          "notebook_cell": 37,
+          "start_line": 1133,
+          "end_line": 1150
+        },
+        {
+          "notebook_cell": 39,
+          "start_line": 1153,
+          "end_line": 1157
+        }
+      ]
+    },
+    {
+      "id": "am-primary/test-04",
+      "axis": "Alignment occupancy",
+      "notebook": "am-primary/axis-4.ipynb",
+      "script": "am-primary/axis-4.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "processing": [
+          19
+        ],
+        "levels": [
+          19,
+          23,
+          32,
+          35
+        ],
+        "evaluation": [
+          21,
+          22,
+          23,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33
+        ],
+        "curve": [
+          33
+        ],
+        "decision": [
+          0,
+          2,
+          10,
+          12,
+          27,
+          38
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "acquisition/download_sources.json",
+        "acquisition/sources.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "upstream_checks/code/build_axes.py"
+        },
+        {
+          "path": "upstream_checks/code/build_pssm.py"
+        },
+        {
+          "path": "upstream_checks/materialize_features.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "am-primary/axis-4.ipynb",
+          "cells_zero_based": [
+            19,
+            23,
+            32,
+            35
+          ]
+        },
+        {
+          "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+        }
+      ],
+      "evaluation": {
+        "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+        "sources": "acquisition/download_sources.json",
+        "original_program_in_notebook_cells": [
+          21,
+          22,
+          23,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33
+        ]
+      },
+      "curve_or_diagnostic": {
+        "path": "am-primary/axis-4.ipynb",
+        "cells_zero_based": [
+          33
+        ],
+        "kind": "performance/control curve",
+        "expected_tables": "am-primary/expected"
+      },
+      "historical_decision": {
+        "path": "axis_index.json",
+        "id": "am-primary/test-04",
+        "disposition": "accepted",
+        "notebook_cells_zero_based": [
+          0,
+          2,
+          10,
+          12,
+          27,
+          38
+        ]
+      },
+      "published_notebook_sha256": "8fdc94d78d0d97221bfd5e4184bc9b387bd5deb959bed709ced6d9deac0f2f19",
+      "published_script_sha256": "7daa2a3587bb6aca43d026461f6762fbe8fa8cb781b672ccc83a0ba0c285c753",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "acquisition/download_sources.json",
+            "acquisition/sources.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "upstream_checks/code/build_axes.py"
+            },
+            {
+              "path": "upstream_checks/code/build_pssm.py"
+            },
+            {
+              "path": "upstream_checks/materialize_features.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-4.ipynb",
+              "cells_zero_based": [
+                19,
+                23,
+                32,
+                35
+              ]
+            },
+            {
+              "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-4.ipynb",
+              "cells_zero_based": [
+                19,
+                23,
+                32,
+                35
+              ]
+            },
+            {
+              "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+          "sources": "acquisition/download_sources.json",
+          "original_program_in_notebook_cells": [
+            21,
+            22,
+            23,
+            26,
+            28,
+            29,
+            31,
+            32,
+            33
+          ]
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "path": "am-primary/axis-4.ipynb",
+          "cells_zero_based": [
+            33
+          ],
+          "kind": "performance/control curve",
+          "expected_tables": "am-primary/expected"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_index.json",
+          "id": "am-primary/test-04",
+          "disposition": "accepted",
+          "notebook_cells_zero_based": [
+            0,
+            2,
+            10,
+            12,
+            27,
+            38
+          ]
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 2,
+          "end_line": 19
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 22,
+          "end_line": 27
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 30,
+          "end_line": 38
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 41,
+          "end_line": 52
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 55,
+          "end_line": 62
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 65,
+          "end_line": 69
+        },
+        {
+          "notebook_cell": 15,
+          "start_line": 72,
+          "end_line": 75
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 78,
+          "end_line": 95
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 98,
+          "end_line": 112
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 115,
+          "end_line": 376
+        },
+        {
+          "notebook_cell": 22,
+          "start_line": 379,
+          "end_line": 554
+        },
+        {
+          "notebook_cell": 23,
+          "start_line": 557,
+          "end_line": 573
+        },
+        {
+          "notebook_cell": 25,
+          "start_line": 576,
+          "end_line": 577
+        },
+        {
+          "notebook_cell": 26,
+          "start_line": 580,
+          "end_line": 595
+        },
+        {
+          "notebook_cell": 28,
+          "start_line": 598,
+          "end_line": 859
+        },
+        {
+          "notebook_cell": 29,
+          "start_line": 862,
+          "end_line": 871
+        },
+        {
+          "notebook_cell": 31,
+          "start_line": 874,
+          "end_line": 1049
+        },
+        {
+          "notebook_cell": 32,
+          "start_line": 1052,
+          "end_line": 1090
+        },
+        {
+          "notebook_cell": 33,
+          "start_line": 1093,
+          "end_line": 1104
+        },
+        {
+          "notebook_cell": 35,
+          "start_line": 1107,
+          "end_line": 1124
+        },
+        {
+          "notebook_cell": 37,
+          "start_line": 1127,
+          "end_line": 1131
+        }
+      ]
+    },
+    {
+      "id": "am-primary/test-05",
+      "axis": "Occupancy at high effective depth",
+      "notebook": "am-primary/axis-5.ipynb",
+      "script": "am-primary/axis-5.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "processing": [
+          19
+        ],
+        "levels": [
+          19,
+          23,
+          32,
+          35
+        ],
+        "evaluation": [
+          21,
+          22,
+          23,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33
+        ],
+        "curve": [
+          33
+        ],
+        "decision": [
+          0,
+          2,
+          10,
+          27,
+          38
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "acquisition/download_sources.json",
+        "acquisition/sources.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "upstream_checks/code/build_axes.py"
+        },
+        {
+          "path": "upstream_checks/code/build_pssm.py"
+        },
+        {
+          "path": "upstream_checks/materialize_features.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "am-primary/axis-5.ipynb",
+          "cells_zero_based": [
+            19,
+            23,
+            32,
+            35
+          ]
+        },
+        {
+          "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+        }
+      ],
+      "evaluation": {
+        "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+        "sources": "acquisition/download_sources.json",
+        "original_program_in_notebook_cells": [
+          21,
+          22,
+          23,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33
+        ]
+      },
+      "curve_or_diagnostic": {
+        "path": "am-primary/axis-5.ipynb",
+        "cells_zero_based": [
+          33
+        ],
+        "kind": "performance/control curve",
+        "expected_tables": "am-primary/expected"
+      },
+      "historical_decision": {
+        "path": "axis_index.json",
+        "id": "am-primary/test-05",
+        "disposition": "control",
+        "notebook_cells_zero_based": [
+          0,
+          2,
+          10,
+          27,
+          38
+        ]
+      },
+      "published_notebook_sha256": "9788d5dfc9d46d2a9e13d7d4c8753f48963f56017453a72a13724d33741beb1a",
+      "published_script_sha256": "616c329ec4bbfc59276af14f3bb7d416efa1cbb22b9f4eb8cbe881a39425733b",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "acquisition/download_sources.json",
+            "acquisition/sources.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "upstream_checks/code/build_axes.py"
+            },
+            {
+              "path": "upstream_checks/code/build_pssm.py"
+            },
+            {
+              "path": "upstream_checks/materialize_features.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-5.ipynb",
+              "cells_zero_based": [
+                19,
+                23,
+                32,
+                35
+              ]
+            },
+            {
+              "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-5.ipynb",
+              "cells_zero_based": [
+                19,
+                23,
+                32,
+                35
+              ]
+            },
+            {
+              "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+          "sources": "acquisition/download_sources.json",
+          "original_program_in_notebook_cells": [
+            21,
+            22,
+            23,
+            26,
+            28,
+            29,
+            31,
+            32,
+            33
+          ]
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "path": "am-primary/axis-5.ipynb",
+          "cells_zero_based": [
+            33
+          ],
+          "kind": "performance/control curve",
+          "expected_tables": "am-primary/expected"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_index.json",
+          "id": "am-primary/test-05",
+          "disposition": "control",
+          "notebook_cells_zero_based": [
+            0,
+            2,
+            10,
+            27,
+            38
+          ]
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 2,
+          "end_line": 19
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 22,
+          "end_line": 27
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 30,
+          "end_line": 38
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 41,
+          "end_line": 52
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 55,
+          "end_line": 62
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 65,
+          "end_line": 69
+        },
+        {
+          "notebook_cell": 15,
+          "start_line": 72,
+          "end_line": 75
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 78,
+          "end_line": 95
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 98,
+          "end_line": 112
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 115,
+          "end_line": 376
+        },
+        {
+          "notebook_cell": 22,
+          "start_line": 379,
+          "end_line": 554
+        },
+        {
+          "notebook_cell": 23,
+          "start_line": 557,
+          "end_line": 573
+        },
+        {
+          "notebook_cell": 25,
+          "start_line": 576,
+          "end_line": 577
+        },
+        {
+          "notebook_cell": 26,
+          "start_line": 580,
+          "end_line": 595
+        },
+        {
+          "notebook_cell": 28,
+          "start_line": 598,
+          "end_line": 859
+        },
+        {
+          "notebook_cell": 29,
+          "start_line": 862,
+          "end_line": 871
+        },
+        {
+          "notebook_cell": 31,
+          "start_line": 874,
+          "end_line": 1049
+        },
+        {
+          "notebook_cell": 32,
+          "start_line": 1052,
+          "end_line": 1090
+        },
+        {
+          "notebook_cell": 33,
+          "start_line": 1093,
+          "end_line": 1104
+        },
+        {
+          "notebook_cell": 35,
+          "start_line": 1107,
+          "end_line": 1124
+        },
+        {
+          "notebook_cell": 37,
+          "start_line": 1127,
+          "end_line": 1131
+        }
+      ]
+    },
+    {
+      "id": "am-primary/test-06",
+      "axis": "Position-specific and substitution-score references",
+      "notebook": "am-primary/axis-6.ipynb",
+      "script": "am-primary/axis-6.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "processing": [
+          19
+        ],
+        "levels": [
+          19,
+          23,
+          32,
+          35
+        ],
+        "evaluation": [
+          21,
+          22,
+          23,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33
+        ],
+        "curve": [
+          33
+        ],
+        "decision": [
+          0,
+          2,
+          10,
+          27,
+          38
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "acquisition/download_sources.json",
+        "acquisition/sources.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "upstream_checks/code/build_axes.py"
+        },
+        {
+          "path": "upstream_checks/code/build_pssm.py"
+        },
+        {
+          "path": "upstream_checks/materialize_features.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "am-primary/axis-6.ipynb",
+          "cells_zero_based": [
+            19,
+            23,
+            32,
+            35
+          ]
+        },
+        {
+          "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+        }
+      ],
+      "evaluation": {
+        "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+        "sources": "acquisition/download_sources.json",
+        "original_program_in_notebook_cells": [
+          21,
+          22,
+          23,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33
+        ]
+      },
+      "curve_or_diagnostic": {
+        "path": "am-primary/axis-6.ipynb",
+        "cells_zero_based": [
+          33
+        ],
+        "kind": "performance/control curve",
+        "expected_tables": "am-primary/expected"
+      },
+      "historical_decision": {
+        "path": "axis_index.json",
+        "id": "am-primary/test-06",
+        "disposition": "control",
+        "notebook_cells_zero_based": [
+          0,
+          2,
+          10,
+          27,
+          38
+        ]
+      },
+      "published_notebook_sha256": "fa8b6814b2195a06b2089401cf5289fa2ebda827eac94ee93a213d1b25ae8787",
+      "published_script_sha256": "371be206364db77f89840bda94f36fe0feb2ff36558f0b648b461863153fec15",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "acquisition/download_sources.json",
+            "acquisition/sources.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "upstream_checks/code/build_axes.py"
+            },
+            {
+              "path": "upstream_checks/code/build_pssm.py"
+            },
+            {
+              "path": "upstream_checks/materialize_features.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-6.ipynb",
+              "cells_zero_based": [
+                19,
+                23,
+                32,
+                35
+              ]
+            },
+            {
+              "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-6.ipynb",
+              "cells_zero_based": [
+                19,
+                23,
+                32,
+                35
+              ]
+            },
+            {
+              "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+          "sources": "acquisition/download_sources.json",
+          "original_program_in_notebook_cells": [
+            21,
+            22,
+            23,
+            26,
+            28,
+            29,
+            31,
+            32,
+            33
+          ]
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "path": "am-primary/axis-6.ipynb",
+          "cells_zero_based": [
+            33
+          ],
+          "kind": "performance/control curve",
+          "expected_tables": "am-primary/expected"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_index.json",
+          "id": "am-primary/test-06",
+          "disposition": "control",
+          "notebook_cells_zero_based": [
+            0,
+            2,
+            10,
+            27,
+            38
+          ]
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 2,
+          "end_line": 19
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 22,
+          "end_line": 27
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 30,
+          "end_line": 38
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 41,
+          "end_line": 52
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 55,
+          "end_line": 62
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 65,
+          "end_line": 69
+        },
+        {
+          "notebook_cell": 15,
+          "start_line": 72,
+          "end_line": 75
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 78,
+          "end_line": 95
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 98,
+          "end_line": 112
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 115,
+          "end_line": 376
+        },
+        {
+          "notebook_cell": 22,
+          "start_line": 379,
+          "end_line": 554
+        },
+        {
+          "notebook_cell": 23,
+          "start_line": 557,
+          "end_line": 573
+        },
+        {
+          "notebook_cell": 25,
+          "start_line": 576,
+          "end_line": 577
+        },
+        {
+          "notebook_cell": 26,
+          "start_line": 580,
+          "end_line": 595
+        },
+        {
+          "notebook_cell": 28,
+          "start_line": 598,
+          "end_line": 859
+        },
+        {
+          "notebook_cell": 29,
+          "start_line": 862,
+          "end_line": 871
+        },
+        {
+          "notebook_cell": 31,
+          "start_line": 874,
+          "end_line": 1049
+        },
+        {
+          "notebook_cell": 32,
+          "start_line": 1052,
+          "end_line": 1090
+        },
+        {
+          "notebook_cell": 33,
+          "start_line": 1093,
+          "end_line": 1104
+        },
+        {
+          "notebook_cell": 35,
+          "start_line": 1107,
+          "end_line": 1124
+        },
+        {
+          "notebook_cell": 37,
+          "start_line": 1127,
+          "end_line": 1131
+        }
+      ]
+    },
+    {
+      "id": "am-primary/test-07",
+      "axis": "Experimental dynamic range",
+      "notebook": "am-primary/axis-7.ipynb",
+      "script": "am-primary/axis-7.py",
+      "notebook_cells_zero_based": {
+        "setup": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "processing": [
+          19
+        ],
+        "levels": [
+          19,
+          23,
+          32,
+          35
+        ],
+        "evaluation": [
+          21,
+          22,
+          23,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33
+        ],
+        "curve": [
+          33
+        ],
+        "decision": [
+          0,
+          2,
+          10,
+          27,
+          38
+        ]
+      },
+      "data_sources": [
+        "payload_manifest.json",
+        "acquisition/download_sources.json",
+        "acquisition/sources.json"
+      ],
+      "fresh_neural_inference_required": false,
+      "processing": [
+        {
+          "path": "upstream_checks/code/build_axes.py"
+        },
+        {
+          "path": "upstream_checks/code/build_pssm.py"
+        },
+        {
+          "path": "upstream_checks/materialize_features.py"
+        }
+      ],
+      "axis_and_levels": [
+        {
+          "path": "am-primary/axis-7.ipynb",
+          "cells_zero_based": [
+            19,
+            23,
+            32,
+            35
+          ]
+        },
+        {
+          "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+        }
+      ],
+      "evaluation": {
+        "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+        "sources": "acquisition/download_sources.json",
+        "original_program_in_notebook_cells": [
+          21,
+          22,
+          23,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33
+        ]
+      },
+      "curve_or_diagnostic": {
+        "path": "am-primary/axis-7.ipynb",
+        "cells_zero_based": [
+          33
+        ],
+        "kind": "performance/control curve",
+        "expected_tables": "am-primary/expected"
+      },
+      "historical_decision": {
+        "path": "axis_index.json",
+        "id": "am-primary/test-07",
+        "disposition": "control",
+        "notebook_cells_zero_based": [
+          0,
+          2,
+          10,
+          27,
+          38
+        ]
+      },
+      "published_notebook_sha256": "321d80b7540a5780842db5a0642e9f0dfadeaada27714cd1536deb64972f7f2d",
+      "published_script_sha256": "c7f0fc6bbc20f4a0ea371f380de992b5443b130eb6a1c7dd0187cbb9d77b9944",
+      "stages": {
+        "data": {
+          "status": "exact_original_inputs_packaged_or_pinned_release",
+          "artifacts": [
+            "payload_manifest.json",
+            "acquisition/download_sources.json",
+            "acquisition/sources.json"
+          ]
+        },
+        "processing": {
+          "status": "original_processing_connected",
+          "evidence": [
+            {
+              "path": "upstream_checks/code/build_axes.py"
+            },
+            {
+              "path": "upstream_checks/code/build_pssm.py"
+            },
+            {
+              "path": "upstream_checks/materialize_features.py"
+            }
+          ]
+        },
+        "axis": {
+          "status": "original_definition_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-7.ipynb",
+              "cells_zero_based": [
+                19,
+                23,
+                32,
+                35
+              ]
+            },
+            {
+              "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+            }
+          ]
+        },
+        "levels": {
+          "status": "original_level_assignment_code_and_membership_retained",
+          "evidence": [
+            {
+              "path": "am-primary/axis-7.ipynb",
+              "cells_zero_based": [
+                19,
+                23,
+                32,
+                35
+              ]
+            },
+            {
+              "path": "am-primary/inputs/axis3_pathC_percolumn_FROZEN.tsv"
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "original_released_predictions_joined_and_reaggregated",
+          "origin": "Official released AlphaMissense prediction-table join; no fresh model inference",
+          "sources": "acquisition/download_sources.json",
+          "original_program_in_notebook_cells": [
+            21,
+            22,
+            23,
+            26,
+            28,
+            29,
+            31,
+            32,
+            33
+          ]
+        },
+        "curve": {
+          "status": "original_curve_or_diagnostic_recomputed",
+          "path": "am-primary/axis-7.ipynb",
+          "cells_zero_based": [
+            33
+          ],
+          "kind": "performance/control curve",
+          "expected_tables": "am-primary/expected"
+        },
+        "decision": {
+          "status": "historical_agent_disposition_retained",
+          "path": "axis_index.json",
+          "id": "am-primary/test-07",
+          "disposition": "control",
+          "notebook_cells_zero_based": [
+            0,
+            2,
+            10,
+            27,
+            38
+          ]
+        }
+      },
+      "cell_locations": [
+        {
+          "notebook_cell": 3,
+          "start_line": 2,
+          "end_line": 19
+        },
+        {
+          "notebook_cell": 4,
+          "start_line": 22,
+          "end_line": 27
+        },
+        {
+          "notebook_cell": 5,
+          "start_line": 30,
+          "end_line": 38
+        },
+        {
+          "notebook_cell": 6,
+          "start_line": 41,
+          "end_line": 52
+        },
+        {
+          "notebook_cell": 7,
+          "start_line": 55,
+          "end_line": 62
+        },
+        {
+          "notebook_cell": 9,
+          "start_line": 65,
+          "end_line": 69
+        },
+        {
+          "notebook_cell": 15,
+          "start_line": 72,
+          "end_line": 75
+        },
+        {
+          "notebook_cell": 17,
+          "start_line": 78,
+          "end_line": 95
+        },
+        {
+          "notebook_cell": 19,
+          "start_line": 98,
+          "end_line": 112
+        },
+        {
+          "notebook_cell": 21,
+          "start_line": 115,
+          "end_line": 376
+        },
+        {
+          "notebook_cell": 22,
+          "start_line": 379,
+          "end_line": 554
+        },
+        {
+          "notebook_cell": 23,
+          "start_line": 557,
+          "end_line": 573
+        },
+        {
+          "notebook_cell": 25,
+          "start_line": 576,
+          "end_line": 577
+        },
+        {
+          "notebook_cell": 26,
+          "start_line": 580,
+          "end_line": 595
+        },
+        {
+          "notebook_cell": 28,
+          "start_line": 598,
+          "end_line": 859
+        },
+        {
+          "notebook_cell": 29,
+          "start_line": 862,
+          "end_line": 871
+        },
+        {
+          "notebook_cell": 31,
+          "start_line": 874,
+          "end_line": 1049
+        },
+        {
+          "notebook_cell": 32,
+          "start_line": 1052,
+          "end_line": 1090
+        },
+        {
+          "notebook_cell": 33,
+          "start_line": 1093,
+          "end_line": 1104
+        },
+        {
+          "notebook_cell": 35,
+          "start_line": 1107,
+          "end_line": 1124
+        },
+        {
+          "notebook_cell": 37,
+          "start_line": 1127,
+          "end_line": 1131
+        }
+      ]
+    }
+  ],
+  "artifact_manifest": "payload_manifest.json",
+  "validation": "PORTABLE_VALIDATION.json"
+}

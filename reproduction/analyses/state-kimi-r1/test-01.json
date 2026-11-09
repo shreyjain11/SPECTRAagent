@@ -298,5 +298,18 @@
     "saved_code_cells": 6,
     "saved_error_outputs": 0
   },
-  "requested_model": "STATE"
+  "requested_model": "STATE",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "state-kimi-r1/test-01",
+    "disposition": "accepted",
+    "result": "Across three held-out confirmation contexts the pooled unseen-minus-seen difference in expression-change Pearson r was −0.118. No interval was published for the pooled estimate.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "state-kimi-r1/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

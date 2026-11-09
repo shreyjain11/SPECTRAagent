@@ -4,8 +4,8 @@
   "model": "CONCH",
   "axis": "Texture-only reference distance",
   "dataset_split": {
-    "description": "Exact record ids missing confirmation image map.",
-    "input_inventory": "inputs/conch.json",
+    "description": "Original frozen records and source identities are preserved; packaged inputs and executable acquisition steps are documented in the linked recovery chain.",
+    "input_inventory": "primary/conch/PAYLOAD_MANIFEST.json",
     "public_sources": [
       "nct-images",
       "crcval-images",
@@ -57,38 +57,142 @@
       "archive": "conch-retained-inputs",
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
-      "notebook_preparation_cell": 0
-    }
+      "notebook_preparation_cell": 0,
+      "implementation": "legacy_implementation",
+      "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
+    },
+    "legacy_input_inventory": "inputs/conch.json",
+    "recovered_workflow": "primary/conch/traceability.json"
   },
   "axis_levels": {
     "definition": "Edge mean and variance, gray-level spread and entropy measure texture complexity relative to the reference. Six groups ordered by decreasing similarity to a class-balanced reference of 1,800 NCT-CRC-HE-100K tiles (200 per class).",
-    "calculation": "Original values only missing reference.",
-    "code": "materials/conch/notebooks/conch-primary-03.py"
+    "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
+    "code": "primary/conch/code/03-conch-primary.py"
   },
   "model_evaluation": {
-    "measurements": "Discovery logits rescored confirmation correctness retained.",
+    "measurements": "Original target logits/labels and both follow-up panels are packaged. Pinned image acquisition, original CONCH scoring and analysis are connected in optional full-workflow mode.",
     "fine_tuning": {
       "target_weight_updates_in_replay": false,
       "target_fine_tuning_during_original_audit": null,
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/conch/notebooks/conch-primary-03.py"
+    "code": "primary/conch/code/03-conch-primary.py"
   },
   "curve": {
-    "aggregation_and_uncertainty": "Recomputed from individual records.",
-    "code": "materials/conch/notebooks/conch-primary-03.py"
+    "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
+    "code": "primary/conch/code/03-conch-primary.py"
   },
   "insight": {
-    "comparison_controls_confirmation": "Within class and fixed references replayed.",
-    "code": "materials/conch/notebooks/conch-primary-03.py"
+    "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
+    "code": "primary/conch/code/03-conch-primary.py"
   },
   "reconstruction_notes": [
-    "Original prospective reference feature matrix and source code assigning axis values/levels were not recovered. Axis step is retained evidence, not recomputed.",
-    "Fresh inference and original raw-image feature extraction are not rerun. Original confirmation target predicted labels/logits and raw image identity mapping are missing; only per-image correctness remains.",
-    "The confidence intervals in this repair are newly recomputed diagnostics, clearly labeled."
+    "The full target-image download and new CONCH inference route is connected but has not been executed during this integration. It requires the documented model access and environment.",
+    "The reconstructed reference matrix has been validated against original level assignments and comparator labels. Optional raw-pixel checks are distinguished from default retained-input replay."
   ],
   "implementation": {
+    "format": "recovered_historical_notebook",
+    "notebook": "primary/conch/notebooks/03-conch-primary.ipynb",
+    "script": "primary/conch/code/03-conch-primary.py",
+    "supporting_code": "code/primary-conch.json",
+    "published_notebook_sha256": "ab1a4e8db71f7b4b47f0952a24e1b5c4cf10ad0801806b0d959613a20a489ad0",
+    "published_script_sha256": "7608d99d2de06ae31bc0a367195e327018b837e0382d3044449941ca6ec50b7f",
+    "cell_locations": [
+      {
+        "notebook_cell": 3,
+        "start_line": 1,
+        "end_line": 14
+      },
+      {
+        "notebook_cell": 5,
+        "start_line": 15,
+        "end_line": 49
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 50,
+        "end_line": 71
+      },
+      {
+        "notebook_cell": 7,
+        "start_line": 72,
+        "end_line": 102
+      },
+      {
+        "notebook_cell": 8,
+        "start_line": 103,
+        "end_line": 118
+      },
+      {
+        "notebook_cell": 10,
+        "start_line": 119,
+        "end_line": 146
+      },
+      {
+        "notebook_cell": 13,
+        "start_line": 147,
+        "end_line": 158
+      },
+      {
+        "notebook_cell": 14,
+        "start_line": 159,
+        "end_line": 190
+      },
+      {
+        "notebook_cell": 17,
+        "start_line": 191,
+        "end_line": 219
+      },
+      {
+        "notebook_cell": 19,
+        "start_line": 220,
+        "end_line": 225
+      },
+      {
+        "notebook_cell": 21,
+        "start_line": 226,
+        "end_line": 234
+      },
+      {
+        "notebook_cell": 22,
+        "start_line": 235,
+        "end_line": 242
+      },
+      {
+        "notebook_cell": 24,
+        "start_line": 243,
+        "end_line": 247
+      },
+      {
+        "notebook_cell": 25,
+        "start_line": 248,
+        "end_line": 252
+      },
+      {
+        "notebook_cell": 28,
+        "start_line": 253,
+        "end_line": 264
+      }
+    ],
+    "saved_code_cells": 15,
+    "saved_error_outputs": 0,
+    "saved_figures": 1,
+    "changes": [
+      "Recovered original inputs and programs are packaged or acquired with content checks.",
+      "Markdown, original decisions and selected historical outputs are retained.",
+      "Default replay and optional full raw-data/model execution are explicitly distinguished."
+    ]
+  },
+  "requested_model": "CONCH",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "conch-primary/test-03",
+    "disposition": "unresolved",
+    "result": "Frozen and scored as a candidate. No separate texture-only confirmation was reported in this investigation.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "legacy_implementation": {
     "notebook": "materials/conch/notebooks/conch-primary-03.ipynb",
     "script": "materials/conch/notebooks/conch-primary-03.py",
     "supporting_code": "code/conch.json",
@@ -137,5 +241,115 @@
     "saved_code_cells": 6,
     "saved_error_outputs": 0
   },
-  "requested_model": "CONCH"
+  "legacy_reconstruction_notes": [
+    "Original prospective reference feature matrix and source code assigning axis values/levels were not recovered. Axis step is retained evidence, not recomputed.",
+    "Fresh inference and original raw-image feature extraction are not rerun. Original confirmation target predicted labels/logits and raw image identity mapping are missing; only per-image correctness remains.",
+    "The confidence intervals in this repair are newly recomputed diagnostics, clearly labeled."
+  ],
+  "primary_recovery": {
+    "package": "primary/conch",
+    "traceability": "primary/conch/traceability.json",
+    "record_id": "conch-primary/test-03",
+    "evidence_paths_relative_to": "primary/conch",
+    "stages": {
+      "data": {
+        "exact_derived_payloads": [
+          "payload/data/discovery.csv.gz",
+          "payload/data/nct_reference_features.reconstructed.csv.gz"
+        ],
+        "checksums": "PAYLOAD_MANIFEST.json",
+        "materialization": "bootstrap_replay.py",
+        "original_image_ids_and_reference_sampling": [
+          "payload/data/reference_reconstruction/identities.json.gz",
+          "data/reference_reconstruction/provenance.json"
+        ],
+        "raw_acquisition": [
+          "original_pipeline.py",
+          "acquire_original_inputs.py",
+          "reconstruct_reference.py"
+        ],
+        "dataset_revision": "97765ecb14bf11ce7bb8779a1097d187844a67cb",
+        "target_rows": {
+          "discovery": 7180
+        },
+        "reference_rows": 1800
+      },
+      "processing": {
+        "source": "originals/scripts/build_crc_candidate_table.py",
+        "functions": [
+          "image_features",
+          "build_crc_features",
+          "build_nct_reference_features"
+        ],
+        "reference_reconstruction": "reconstruct_reference.py",
+        "exact_original_script_provenance": "originals/script_provenance.json",
+        "execution_adapter": "run_original_stage.py",
+        "scope": "67 prospective RGB/HSV/intensity/edge/entropy/tissue features, computed without model outcomes"
+      },
+      "axis": {
+        "name": "nct_texture_complexity_proximity",
+        "source": "originals/scripts/freeze_axes.py",
+        "functions": [
+          "feature_columns",
+          "zscore",
+          "mean_knn_distance",
+          "main"
+        ],
+        "interpretation": "Texture-only proximity"
+      },
+      "levels": {
+        "source": "originals/scripts/freeze_axes.py",
+        "function": "assign_similarity_levels",
+        "discovery_levels": 6,
+        "ordering": "level 1 highest similarity; rank/quantile equal-frequency groups",
+        "all_four_axis_levels_recomputed": true
+      },
+      "evaluation": {
+        "target_source": "originals/scripts/score_conch_crc_val.py",
+        "target_functions": [
+          "load_crc_prompts",
+          "main"
+        ],
+        "source_revision": "141cc09c7d4ff33d8eda562bd75169b457f71a62",
+        "checkpoint_revision": "f9ca9f877171a28ade80228fb195ac5d79003357",
+        "prompt": "prompts/crc100k_prompts_all_per_class.json, set0, ordered ADI BACK DEB LYM MUC MUS NORM STR TUM",
+        "baseline_source": "originals/scripts/analyze_spc.py",
+        "baseline_methods": [
+          "standardized nearest centroid",
+          "standardized LogisticRegression(C=1,lbfgs,max_iter=1000,random_state=0)"
+        ],
+        "default_execution": "Retained per-image nine-class logits/probabilities/labels; original reference classifiers refit. No neural inference in portable default.",
+        "full_execution": "RUN_ORIGINAL_WORKFLOW executes acquired raw images through the original scoring scripts and generated scores feed all curves.",
+        "full_raw_to_model_run_executed_during_integration": false
+      },
+      "curve": {
+        "aggregation": "originals/scripts/analyze_spc.py",
+        "functions": [
+          "metrics",
+          "metric_by_level",
+          "class_adjusted_residual_by_level",
+          "stable_class_macro"
+        ],
+        "historical_metric_summary": "originals/run/artifacts/spc_analysis/spc_summary.json",
+        "notebook_plots": "selected individual score-table values -> plot_axis -> saved figure",
+        "comparisons": [
+          "CONCH",
+          "fixed centroid",
+          "fixed logistic",
+          "class composition and within-class controls"
+        ]
+      },
+      "decision": {
+        "text": "Secondary screen; no separate accepted/rejected verdict in original final report; not selected.",
+        "source": "originals/agent_determinations.json",
+        "native_session_lines": [
+          627,
+          632,
+          713
+        ],
+        "final_report": "originals/run/final_report.md",
+        "scope": "Original agent determination, not newly assigned acceptance criteria"
+      }
+    }
+  }
 }

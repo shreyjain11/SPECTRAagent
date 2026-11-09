@@ -1,0 +1,356 @@
+{
+  "date": "2026-11-08",
+  "approved_original_transfer": {
+    "files": 406,
+    "bytes": 30746003,
+    "all_sha256_verified": true,
+    "host": "exxact05"
+  },
+  "notebooks": [
+    {
+      "notebook": "notebooks/test-01.ipynb",
+      "html": "html/test-01.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 10,
+      "figure_outputs": 2,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 9.454,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    },
+    {
+      "notebook": "notebooks/test-02.ipynb",
+      "html": "html/test-02.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 10,
+      "figure_outputs": 2,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 9.441,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    },
+    {
+      "notebook": "notebooks/test-03.ipynb",
+      "html": "html/test-03.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 11,
+      "figure_outputs": 12,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 14.518,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    },
+    {
+      "notebook": "notebooks/test-04.ipynb",
+      "html": "html/test-04.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 10,
+      "figure_outputs": 7,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 13.383,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    },
+    {
+      "notebook": "notebooks/test-05.ipynb",
+      "html": "html/test-05.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 10,
+      "figure_outputs": 8,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 16.068,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    },
+    {
+      "notebook": "notebooks/test-06.ipynb",
+      "html": "html/test-06.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 12,
+      "figure_outputs": 12,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 19.762,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    },
+    {
+      "notebook": "notebooks/test-07.ipynb",
+      "html": "html/test-07.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 9,
+      "figure_outputs": 7,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 13.235,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    },
+    {
+      "notebook": "notebooks/test-08.ipynb",
+      "html": "html/test-08.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 10,
+      "figure_outputs": 11,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 15.752,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    },
+    {
+      "notebook": "notebooks/test-09.ipynb",
+      "html": "html/test-09.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 9,
+      "figure_outputs": 9,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 11.148,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    },
+    {
+      "notebook": "notebooks/test-10.ipynb",
+      "html": "html/test-10.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 10,
+      "figure_outputs": 2,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 8.609,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    },
+    {
+      "notebook": "notebooks/test-11.ipynb",
+      "html": "html/test-11.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 10,
+      "figure_outputs": 3,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 9.292,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    },
+    {
+      "notebook": "notebooks/test-12.ipynb",
+      "html": "html/test-12.html",
+      "completed": true,
+      "error_outputs": 0,
+      "executed_code_cells": 10,
+      "figure_outputs": 3,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 9.463,
+        "error": null,
+        "python": "<validation-python>",
+        "working_directory": "<package>"
+      }
+    }
+  ],
+  "all_12_complete": true,
+  "candidate_coverage": {
+    "screen_curve_tables": 64,
+    "unmapped_files": [],
+    "by_notebook": [
+      {
+        "notebook": "notebooks/test-01.ipynb",
+        "original_files": 21,
+        "screen_curve_tables": 1,
+        "screen_curve_rows": 24,
+        "distinct_archived_labels": 5,
+        "historical_ledgers": 1
+      },
+      {
+        "notebook": "notebooks/test-02.ipynb",
+        "original_files": 21,
+        "screen_curve_tables": 1,
+        "screen_curve_rows": 24,
+        "distinct_archived_labels": 5,
+        "historical_ledgers": 1
+      },
+      {
+        "notebook": "notebooks/test-03.ipynb",
+        "original_files": 142,
+        "screen_curve_tables": 14,
+        "screen_curve_rows": 584,
+        "distinct_archived_labels": 28,
+        "historical_ledgers": 2
+      },
+      {
+        "notebook": "notebooks/test-04.ipynb",
+        "original_files": 29,
+        "screen_curve_tables": 6,
+        "screen_curve_rows": 2678,
+        "distinct_archived_labels": 58,
+        "historical_ledgers": 1
+      },
+      {
+        "notebook": "notebooks/test-05.ipynb",
+        "original_files": 27,
+        "screen_curve_tables": 6,
+        "screen_curve_rows": 1151,
+        "distinct_archived_labels": 61,
+        "historical_ledgers": 1
+      },
+      {
+        "notebook": "notebooks/test-06.ipynb",
+        "original_files": 28,
+        "screen_curve_tables": 4,
+        "screen_curve_rows": 1508,
+        "distinct_archived_labels": 121,
+        "historical_ledgers": 1
+      },
+      {
+        "notebook": "notebooks/test-07.ipynb",
+        "original_files": 14,
+        "screen_curve_tables": 7,
+        "screen_curve_rows": 420,
+        "distinct_archived_labels": 32,
+        "historical_ledgers": 0
+      },
+      {
+        "notebook": "notebooks/test-08.ipynb",
+        "original_files": 65,
+        "screen_curve_tables": 14,
+        "screen_curve_rows": 1188,
+        "distinct_archived_labels": 77,
+        "historical_ledgers": 0
+      },
+      {
+        "notebook": "notebooks/test-09.ipynb",
+        "original_files": 38,
+        "screen_curve_tables": 8,
+        "screen_curve_rows": 1584,
+        "distinct_archived_labels": 36,
+        "historical_ledgers": 1
+      },
+      {
+        "notebook": "notebooks/test-10.ipynb",
+        "original_files": 14,
+        "screen_curve_tables": 1,
+        "screen_curve_rows": 12,
+        "distinct_archived_labels": 1,
+        "historical_ledgers": 0
+      },
+      {
+        "notebook": "notebooks/test-11.ipynb",
+        "original_files": 28,
+        "screen_curve_tables": 3,
+        "screen_curve_rows": 40,
+        "distinct_archived_labels": 18,
+        "historical_ledgers": 0
+      },
+      {
+        "notebook": "notebooks/test-12.ipynb",
+        "original_files": 28,
+        "screen_curve_tables": 3,
+        "screen_curve_rows": 40,
+        "distinct_archived_labels": 18,
+        "historical_ledgers": 0
+      }
+    ]
+  },
+  "replay_checks": {
+    "flexible_reference_rows": 141,
+    "flexible_continuous_ranks_match": true,
+    "flexible_frozen_labels_matching_local_qcut": 140,
+    "flexible_frozen_labels_total": 141,
+    "external_percentile_components_reproduced": 1839,
+    "acidic_discovery_finite": 33,
+    "acidic_eligible_pool": 105,
+    "acidic_selected": 78,
+    "acidic_confirmation_finite": 77,
+    "acidic_all_four_selection_curves_match": true,
+    "cysteine_original_pool": 613,
+    "cysteine_reconstructed_eligible_pool": 207,
+    "cysteine_selected": 95,
+    "all_evidence_screen_combinations_reproduced": 514,
+    "expanded_screen_combinations_reproduced": 828,
+    "original_proxy_comparisons_shown": 418,
+    "flexible_boundary_target": {
+      "target_id": "8S7A_A",
+      "original_level": 4,
+      "local_qcut_level": 5,
+      "original_labels_preserved": true
+    }
+  },
+  "remaining_boundaries": [
+    "Full bulk-reference reconstruction and fresh model evaluation were not executed; validation uses explicitly labelled retained-data fixtures.",
+    "Current-model original-weight conversion previously verified2658 keys/shapes; independent saved-value/prediction equivalence was not established.",
+    "Historical frozen memberships are retained, including the documented8S7A_A qcut boundary discrepancy.",
+    "RCSB reference endpoints must still return original hashed bytes; no changed-structure substitution is permitted."
+  ],
+  "scientific_reinterpretation": false,
+  "acquisition": {
+    "helper": "acquisition.py",
+    "manifest": "ACQUISITION_MANIFEST.json",
+    "report": "ACQUISITION_REPORT.json",
+    "original_hash_evidence": "ORIGINAL_ACQUISITION_EVIDENCE.json",
+    "URL_checks": "ACQUISITION_URL_CHECKS.json",
+    "visible_executable_cells_in_all12_notebooks": true,
+    "notebooks_executed_with_network_flags_false": true,
+    "plans_validated": 12,
+    "portable_evaluator_commands_validated": 11,
+    "original_structure_hashes": 671,
+    "original_HF_content_etags": 286,
+    "small_complete_public_downloads_verified": 2,
+    "bulk_downloads_performed": false,
+    "GPU_inference_performed": false,
+    "installed_source_package_copied": false
+  },
+  "current_recipe_execution": {
+    "cells": 48,
+    "errors": 0,
+    "flags_default_off": true,
+    "scientific_outputs_retained": true,
+    "details": "CURRENT_NOTEBOOK_CHECKS.json"
+  },
+  "original_workflow_integration": {
+    "all12_passed": true,
+    "report": "WORKFLOW_VALIDATION.json",
+    "guard_checks": 7,
+    "numeric_comparison": "CURVE_REPLAY_VALIDATION.json",
+    "full_raw_to_model_run_executed": false
+  }
+}

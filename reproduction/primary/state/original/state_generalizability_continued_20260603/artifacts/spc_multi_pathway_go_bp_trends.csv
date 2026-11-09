@@ -1,0 +1,7 @@
+spectra_subset,representation,n_levels,n_rows,similarity_monotone_increasing,spearman_level_vs_overlap_at_N,low_level,high_level,low_overlap_at_N_mean,high_overlap_at_N_mean,high_minus_low_overlap_at_N
+confirmation_jurkat_rpe1,HVG,5,2145,True,0.9999999999999999,L0_no_annotation,L4_very_high,0.14015315009268797,0.3015755794526268,0.16142242935993883
+confirmation_jurkat_rpe1,SE,5,2145,True,0.9999999999999999,L0_no_annotation,L4_very_high,0.09963651984986088,0.2341861432359547,0.13454962338609383
+discovery_hepg2_k562,HVG,5,1913,True,0.8999999999999998,L0_no_annotation,L4_very_high,0.16401907369085028,0.3174699574405055,0.1534508837496552
+discovery_hepg2_k562,SE,5,1913,True,0.8999999999999998,L0_no_annotation,L4_very_high,0.1401165748030956,0.2463608231714494,0.10624424836835378
+zeroshot_cross_protocol_confirmation,HVG,5,5759,True,0.6,L0_no_annotation,L4_very_high,0.07920687777658658,0.16649097823326056,0.08728410045667398
+zeroshot_cross_protocol_confirmation,SE,5,5759,True,0.6,L0_no_annotation,L4_very_high,0.03973277083452115,0.09652649561044398,0.05679372477592283

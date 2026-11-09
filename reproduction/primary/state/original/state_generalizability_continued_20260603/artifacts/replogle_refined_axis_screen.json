@@ -1,0 +1,104 @@
+{
+  "status": "completed",
+  "screen": [
+    {
+      "axis_id": "STATE_REPLOGLE_REACTOME_PATHWAY_LOG_TRAIN_SUPPORT_V2",
+      "feature": "reactome_pathway_train_support_log_mean",
+      "status": "tested",
+      "discovery_pass": true,
+      "confirmation_pass": true,
+      "all_context_pass": true,
+      "score_confirmation_mean_high_minus_low": 0.11856279265461289,
+      "n_confirmation_representations": 2,
+      "discovery_high_minus_low_mean": 0.14784159123409074,
+      "confirmation_high_minus_low_mean": 0.11856279265461289
+    },
+    {
+      "axis_id": "STATE_REPLOGLE_REACTOME_PATHWAY_MEAN_TRAIN_SUPPORT_V2",
+      "feature": "reactome_pathway_train_support_mean",
+      "status": "tested",
+      "discovery_pass": true,
+      "confirmation_pass": true,
+      "all_context_pass": true,
+      "score_confirmation_mean_high_minus_low": 0.09200171768458447,
+      "n_confirmation_representations": 2,
+      "discovery_high_minus_low_mean": 0.11962718436640678,
+      "confirmation_high_minus_low_mean": 0.09200171768458447
+    },
+    {
+      "axis_id": "STATE_REPLOGLE_REACTOME_PATHWAY_MIN_TRAIN_SUPPORT_V2",
+      "feature": "reactome_pathway_train_support_min",
+      "status": "tested",
+      "discovery_pass": true,
+      "confirmation_pass": true,
+      "all_context_pass": true,
+      "score_confirmation_mean_high_minus_low": 0.11597832610923275,
+      "n_confirmation_representations": 2,
+      "discovery_high_minus_low_mean": 0.16373107995045005,
+      "confirmation_high_minus_low_mean": 0.11597832610923275
+    },
+    {
+      "axis_id": "STATE_REPLOGLE_HGNC_GROUP_LOG_TRAIN_SUPPORT_V2",
+      "feature": "hgnc_group_train_support_log_mean",
+      "status": "tested",
+      "discovery_pass": true,
+      "confirmation_pass": true,
+      "all_context_pass": true,
+      "score_confirmation_mean_high_minus_low": 0.10463953924354054,
+      "n_confirmation_representations": 2,
+      "discovery_high_minus_low_mean": 0.1625647755386408,
+      "confirmation_high_minus_low_mean": 0.10463953924354054
+    },
+    {
+      "axis_id": "STATE_REPLOGLE_SYMBOL_FAMILY_SUPPORT_CONTROL",
+      "feature": "symbol_family_candidate_train_count",
+      "status": "tested",
+      "discovery_pass": true,
+      "confirmation_pass": true,
+      "all_context_pass": true,
+      "score_confirmation_mean_high_minus_low": 0.09400951562164811,
+      "n_confirmation_representations": 2,
+      "discovery_high_minus_low_mean": 0.2409159769571028,
+      "confirmation_high_minus_low_mean": 0.09400951562164811
+    }
+  ],
+  "best_axis": {
+    "axis_id": "STATE_REPLOGLE_REACTOME_PATHWAY_LOG_TRAIN_SUPPORT_V2",
+    "feature": "reactome_pathway_train_support_log_mean",
+    "description": "Mean log(1 + same-context training genes sharing each Reactome pathway of the target gene)",
+    "decision": "valid_current_pool_confirmed",
+    "caveat": "Confirmed on held-out Replogle contexts using official scored rows; fresh raw-data confirmation would further strengthen the claim.",
+    "freeze": {
+      "axis_id": "STATE_REPLOGLE_REACTOME_PATHWAY_LOG_TRAIN_SUPPORT_V2",
+      "status": "frozen_from_discovery_contexts_before_heldout_context_confirmation",
+      "feature": "reactome_pathway_train_support_log_mean",
+      "description": "Mean log(1 + same-context training genes sharing each Reactome pathway of the target gene)",
+      "unit": "Replogle few-shot gene perturbation in target cell context and representation",
+      "similarity_direction": "higher support means closer to same-context training biology",
+      "performance_direction": "STATE performance should degrade as support decreases",
+      "discovery_contexts": [
+        "hepg2",
+        "k562"
+      ],
+      "confirmation_contexts": [
+        "jurkat",
+        "rpe1"
+      ],
+      "cutpoints_from_discovery": [
+        2.3128842769830324,
+        2.748013858950496,
+        3.2382440667788206
+      ],
+      "level_rule": "L0 if no annotation; otherwise discovery quantile support bins from low to high",
+      "target_metric": "overlap_at_N",
+      "artifacts": [
+        "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_state_replogle_reactome_pathway_log_train_support_v2.csv",
+        "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_state_replogle_reactome_pathway_log_train_support_v2_trends.csv",
+        "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/spectra_ready_dataset/state_replogle_reactome_pathway_log_train_support_v2_examples.csv"
+      ]
+    },
+    "levels_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_replogle_best_refined_axis.csv",
+    "trends_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_replogle_best_refined_axis_trends.csv",
+    "context_trends_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_replogle_best_refined_axis_context_trends.csv"
+  }
+}

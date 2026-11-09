@@ -105,5 +105,18 @@
     "saved_code_cells": 7,
     "saved_error_outputs": 0
   },
-  "requested_model": "ESMFold2"
+  "requested_model": "ESMFold2",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "esmfold2-kimi-r1/test-03",
+    "disposition": "unresolved",
+    "result": "No v1 decline. This audit cannot establish a result for ESMFold2.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "esmfold2-kimi-r1/test-03",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

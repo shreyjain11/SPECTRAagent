@@ -4,8 +4,8 @@
   "model": "ESMFold2",
   "axis": "Viral surface / low-helical subtype",
   "dataset_split": {
-    "description": "Exact target identities, sequences and archived evaluation setting are loaded and checked.",
-    "input_inventory": "inputs/esmfold2.json",
+    "description": "Original frozen records and source identities are preserved; packaged inputs and executable acquisition steps are documented in the linked recovery chain.",
+    "input_inventory": "primary/esmfold2/artifact_manifest.json",
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
@@ -512,36 +512,118 @@
       "archive": "esmfold2-retained-inputs",
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
-      "notebook_preparation_cell": 0
-    }
+      "notebook_preparation_cell": 0,
+      "implementation": "legacy_implementation",
+      "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
+    },
+    "legacy_input_inventory": "inputs/esmfold2.json",
+    "recovered_workflow": "primary/esmfold2/traceability.json"
   },
   "axis_levels": {
     "definition": "Viral surface proteins grouped using disulfide capacity and predicted transmembrane/helical propensity.",
-    "calculation": "The original metadata-plus-sequence subtype rule and exact confirmation samples are replayed.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-12.py"
+    "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
+    "code": "primary/esmfold2/notebooks/test-12.py"
   },
   "model_evaluation": {
-    "measurements": "Original per-target/per-sample accuracy retained; complete prediction/reference coordinates unavailable.",
+    "measurements": "Original individual model measurements and scoring/selection code are packaged. The optional full-workflow route uses the documented current implementation with pinned original weights.",
     "fine_tuning": {
       "target_weight_updates_in_replay": false,
       "target_fine_tuning_during_original_audit": null,
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-12.py"
+    "code": "primary/esmfold2/notebooks/test-12.py"
   },
   "curve": {
-    "aggregation_and_uncertainty": "Group statistics are recalculated from individual scores; original means checked where available.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-12.py"
+    "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
+    "code": "primary/esmfold2/notebooks/test-12.py"
   },
   "insight": {
-    "comparison_controls_confirmation": "Original sample-selection policies, comparisons and control calculations are replayed below.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-12.py"
+    "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
+    "code": "primary/esmfold2/notebooks/test-12.py"
   },
   "reconstruction_notes": [
-    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference."
+    "The full bulk-download/raw-feature/current-model route is connected but was not executed during this integration.",
+    "Historical results used the older Biohub fork. The current implementation uses pinned original model sources; completed conversion validation checked tensor keys/shapes, not independent saved-value or prediction equality.",
+    "Original frozen memberships and per-analysis metadata missingness are preserved, including the documented flexible-axis boundary case."
   ],
   "implementation": {
+    "format": "recovered_historical_notebook",
+    "notebook": "primary/esmfold2/notebooks/test-12.ipynb",
+    "script": "primary/esmfold2/notebooks/test-12.py",
+    "supporting_code": "code/primary-esmfold2.json",
+    "published_notebook_sha256": "92dd8a3a7cc3c93c73a097da9dd06de2207fed6a2eff344ab9a5ecf9b70b5157",
+    "published_script_sha256": "be38f51681037be9bd1cc6c415a6cc346458ad8a4b052ee76beeb7bae2471505",
+    "cell_locations": [
+      {
+        "notebook_cell": 3,
+        "start_line": 1,
+        "end_line": 43
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 44,
+        "end_line": 105
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 106,
+        "end_line": 143
+      },
+      {
+        "notebook_cell": 7,
+        "start_line": 144,
+        "end_line": 157
+      },
+      {
+        "notebook_cell": 8,
+        "start_line": 158,
+        "end_line": 182
+      },
+      {
+        "notebook_cell": 10,
+        "start_line": 183,
+        "end_line": 185
+      },
+      {
+        "notebook_cell": 11,
+        "start_line": 186,
+        "end_line": 192
+      },
+      {
+        "notebook_cell": 12,
+        "start_line": 193,
+        "end_line": 200
+      },
+      {
+        "notebook_cell": 13,
+        "start_line": 201,
+        "end_line": 206
+      },
+      {
+        "notebook_cell": 17,
+        "start_line": 207,
+        "end_line": 209
+      }
+    ],
+    "saved_code_cells": 10,
+    "saved_error_outputs": 0,
+    "saved_figures": 1,
+    "changes": [
+      "Recovered original inputs and programs are packaged or acquired with content checks.",
+      "Markdown, original decisions and selected historical outputs are retained.",
+      "Default replay and optional full raw-data/model execution are explicitly distinguished."
+    ]
+  },
+  "requested_model": "ESMFold2",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "esmfold2-featured/test-12",
+    "disposition": "control",
+    "result": "A localized low-accuracy subtype motivated the subsequent E/E2/envelope-E analysis.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "legacy_implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-featured/test-12.ipynb",
     "script": "materials/esmfold2/notebooks/esmfold2-featured/test-12.py",
     "supporting_code": "code/esmfold2.json",
@@ -586,5 +668,127 @@
     "saved_code_cells": 5,
     "saved_error_outputs": 0
   },
-  "requested_model": "ESMFold2"
+  "legacy_reconstruction_notes": [
+    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference."
+  ],
+  "primary_recovery": {
+    "package": "primary/esmfold2",
+    "traceability": "primary/esmfold2/traceability.json",
+    "record_id": "esmfold2-featured/test-12",
+    "evidence_paths_relative_to": "primary/esmfold2",
+    "stages": {
+      "data": {
+        "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+        "artifacts": [
+          "ACQUISITION_MANIFEST.json",
+          "ORIGINAL_ACQUISITION_EVIDENCE.json",
+          "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/viral_disulfide_pilot_candidate_features.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/envelope_fusion_confirmation_candidate_features.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_confirmation_candidate_features.csv"
+        ],
+        "panels": [
+          "viral36",
+          "envelope38",
+          "surface45"
+        ],
+        "code": [
+          "acquisition.py:download_plan",
+          "acquisition.py:fetch_references",
+          "bootstrap.py:ensure_assets"
+        ],
+        "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+      },
+      "processing": {
+        "status": "original_programs_retained_and_rerun_connected",
+        "description": "Original sequence proxy functions and envelope/subtype discovery; four policies",
+        "artifacts": [
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/fetch_additional_surface_lowhelical_controls.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/discover_envelope_subaxes.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_envelope_fusion_confirmation_panel.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_surface_lowhelical_confirmation.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_envelope_fusion_confirmation.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/package_surface_lowhelical_panel_from_pool.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_surface_lowhelical_confirmation_panel.py"
+        ],
+        "portable_code": [
+          "original_workflow.py:rebuild_features",
+          "original_workflow.py:require_features"
+        ],
+        "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+      },
+      "axis": {
+        "status": "definition_and_code_retained",
+        "definition": "Viral surface/low-helical subtype proxy",
+        "artifacts": [
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/fetch_additional_surface_lowhelical_controls.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/discover_envelope_subaxes.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_envelope_fusion_confirmation_panel.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_surface_lowhelical_confirmation.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_envelope_fusion_confirmation.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/package_surface_lowhelical_panel_from_pool.py",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_surface_lowhelical_confirmation_panel.py"
+        ]
+      },
+      "levels": {
+        "status": "original_assignment_or_frozen_fit_retained",
+        "description": "Original frozen45-target score and metadata/sequence subtype rules",
+        "artifacts": [
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_confirmation_candidate_features.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_candidate_pool.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/envelope_fusion_confirmation_candidate_features.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/eligible_envelope_fusion_pool.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/package_surface_lowhelical_panel_from_pool.py"
+        ]
+      },
+      "evaluation": {
+        "status": "original_scores_retained_current_inference_route_connected",
+        "artifacts": [
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.envelope_fusion_confirmation.scaled_samples.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.envelope_fusion_confirmation.target_level.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.surface_lowhelical_confirmation.target_level.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.surface_lowhelical_confirmation.scaled_samples.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_feature_table.csv"
+        ],
+        "code": [
+          "acquisition.py:run_inference",
+          "current_esmfold2_adapter.py",
+          "current_implementation.py",
+          "original_workflow.py:validate_results"
+        ],
+        "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+        "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+      },
+      "curve": {
+        "status": "original_functions_replayed_and_new_results_connected",
+        "artifacts": [
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_fusion_confirmation_level_curves.csv",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/surface_lowhelical_confirmation_level_curves.csv"
+        ],
+        "code": [
+          "original_workflow.py:run_axis"
+        ],
+        "validation": [
+          "WORKFLOW_VALIDATION.json",
+          "CURVE_REPLAY_VALIDATION.json",
+          "WORKFLOW_GUARD_VALIDATION.json"
+        ],
+        "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+      },
+      "decision": {
+        "status": "original_record_preserved",
+        "artifacts": [
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/envelope_fusion_confirmation_report.md",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/surface_lowhelical_confirmation_report.md",
+          "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_discovery_report.md"
+        ],
+        "notebook_cell": 15,
+        "recorded_text": "## Recorded conclusion\n\nA localized low-accuracy subtype motivated the subsequent E/E2/envelope-E analysis.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+      }
+    }
+  }
 }

@@ -1,0 +1,8 @@
+# Notebook, source acquisition and analysis environment (Python 3.11+).
+# Install this separately from requirements-inference.txt; their NumPy,
+# pandas and huggingface-hub versions intentionally differ.
+-r ../requirements-notebook.txt
+-r requirements.txt
+huggingface-hub==0.36.0
+datasets==4.7.0
+requests==2.32.5

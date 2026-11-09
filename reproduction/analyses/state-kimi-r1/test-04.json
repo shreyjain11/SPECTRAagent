@@ -298,5 +298,18 @@
     "saved_code_cells": 6,
     "saved_error_outputs": 0
   },
-  "requested_model": "STATE"
+  "requested_model": "STATE",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "state-kimi-r1/test-04",
+    "disposition": "control",
+    "result": "Cell count was treated as a nuisance variable.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "state-kimi-r1/test-04",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

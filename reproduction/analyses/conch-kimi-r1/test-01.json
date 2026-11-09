@@ -88,5 +88,18 @@
     "saved_code_cells": 4,
     "saved_error_outputs": 0
   },
-  "requested_model": "CONCH"
+  "requested_model": "CONCH",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "conch-kimi-r1/test-01",
+    "disposition": "accepted",
+    "result": "top-1 accuracy, 4.0 micrometre per pixel minus 0.5 micrometre per pixel: -0.527 (95% CI -0.541 to -0.513). The fixed ImageNet ResNet-50 with k-nearest-neighbour baseline received the same degraded pixels and lost 29.1% relative; even after retraining it held 0.62 accuracy where CONCH reached 0.28, so the transformed images still carried class information that CONCH used less effectively",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "conch-kimi-r1/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

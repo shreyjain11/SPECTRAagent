@@ -1,0 +1,22 @@
+[
+  {
+    "command": "clone ArcInstitute/state, cell-eval, cell-load",
+    "purpose": "official source inspection"
+  },
+  {
+    "command": "download OpenReview STATE PDF and pdftotext",
+    "purpose": "claim extraction"
+  },
+  {
+    "command": "HuggingFace API model/dataset manifest",
+    "purpose": "access and feasibility audit"
+  },
+  {
+    "command": "download only *_results.csv plus small Tahoe metadata parquet files",
+    "purpose": "bounded target-score and prospective-feature table construction"
+  },
+  {
+    "command": "scripts/run_state_spectra_audit.py",
+    "purpose": "single-controller SPECTRA table, axis, SPC, and ledger generation"
+  }
+]

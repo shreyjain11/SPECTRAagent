@@ -1,0 +1,2456 @@
+{
+  "host": "exxact05",
+  "destination": "<package>/",
+  "purpose": "Restore original primary ESMFold2 notebook download, processing, curve and historical-decision evidence for all12 primary analyses.",
+  "scope": "User explicitly approved exact406files30746003bytes on2026-11-08; copied read-only; no scientific execution.",
+  "files": [
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/final_report.md",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/final_report.md",
+      "bytes": 4949,
+      "sha256": "8a436a590ebdaa363589d2b7e40027c9bb7f383f07c1a4049203d52b446bc715"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/axis_ledger.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/axis_ledger.json",
+      "bytes": 2668,
+      "sha256": "cb6d0dcca085bded6368d64a368b32f6de62635f9c777c65c58e7c8e1bd90483"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/README.md",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/README.md",
+      "bytes": 305,
+      "sha256": "0eac533e549a74be44c13ce79b970429aee914dc0cab095c6c80cb2bcc99b905"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/spectra_loop_state.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/spectra_loop_state.json",
+      "bytes": 1554,
+      "sha256": "32c07f4aff1dfa7bef902e62361e6685541767c9980803568503cd80466755eb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/session_manifest.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/session_manifest.json",
+      "bytes": 1467,
+      "sha256": "4ab9450bf251bfd5f45b98bd65b266a30cfa49eb0b30c16af9ba6cff8c63f38d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/commands_run.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/commands_run.json",
+      "bytes": 731,
+      "sha256": "71096428d4353954e2de39ab8f45d65dc48f7e9a7c6778078d0a3c255eacc54a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/target_model_results.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/target_model_results.csv",
+      "bytes": 32532,
+      "sha256": "e46dc283557254f5fd987f2e213645e7d4f989dbef80d9dc559e5b627ec0938f"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/controller_prompt.md",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/controller_prompt.md",
+      "bytes": 18447,
+      "sha256": "9e6878eb0466e7c984ce57587d9820ae621f62d285822f32ed50c4d767440db6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/session_contract.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/session_contract.json",
+      "bytes": 55456,
+      "sha256": "a04c05045bddaad611ec0983d3c0eda2b873463d5db68c6d43e1365d59079429"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/spectral_performance_curve.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/spectral_performance_curve.csv",
+      "bytes": 7047,
+      "sha256": "2f89842a021cdda10facbbbba6c44f36c6be371f32cb711706d8b9f147cf9984"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/control_analysis.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/control_analysis.json",
+      "bytes": 3289,
+      "sha256": "49173fca43771d7dc3263932ab99c89efe95d76d6c5d9dd3c12392837b686160"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/schema_report.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/schema_report.json",
+      "bytes": 767,
+      "sha256": "e0b66c613bec190ce10d2b2ac86ca8cfff9b0d236a1998394476a46d0a1ed09d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/deduplication_report.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/deduplication_report.json",
+      "bytes": 250,
+      "sha256": "a2eebe2f68d2c7b94058ef0d0ead27af8d0401da4dc3d201c97761653a5054c1"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/missingness_report.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/missingness_report.json",
+      "bytes": 1021,
+      "sha256": "375f91a52e8e72b91625485059a03fdcf4527f1646f4941d2ddc825a4f8552e1"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+      "bytes": 110908,
+      "sha256": "49925439e55c413f27d88fbe8e1972b5b7fe55df027494e2b8fea0022c40c638"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/raw_cameo_hf/README.md",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/raw_cameo_hf/README.md",
+      "bytes": 4116,
+      "sha256": "97cbf91262407fb45dff8e825d9cb196fa4cfed0adf3776459f169658f714e82"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/raw_cameo_hf/meta.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/raw_cameo_hf/meta.csv",
+      "bytes": 13314,
+      "sha256": "194e33a375f7b2798f7af364018c51f584fab2142f2f8a09273a88ae58b3f06a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/scripts/evaluate_esmfold2_cameo.py",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/scripts/evaluate_esmfold2_cameo.py",
+      "bytes": 11084,
+      "sha256": "0677949e68aba0bc426efd039c5157e876751522acc8acd5526bef7c13c4c5e1"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/scripts/finalize_spectra_outputs.py",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/scripts/finalize_spectra_outputs.py",
+      "bytes": 14355,
+      "sha256": "58c7af3ca9da71fdd9a798115524afd4e7ae7bd7d3151e95ffa862e757e65e29"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/scripts/analyze_spectra_axes.py",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/scripts/analyze_spectra_axes.py",
+      "bytes": 6265,
+      "sha256": "761029bf3eb09b4e2eb3df9bb43aa31a2294ebf3acfae3459544578694cfdd74"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/scripts/build_cameo_dataset.py",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/scripts/build_cameo_dataset.py",
+      "bytes": 12513,
+      "sha256": "dc60f283a24a9ada09dd0936abb121492dceffa333a590c7ee0a78722376d3c9"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/final_report.md",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/final_report.md",
+      "bytes": 6227,
+      "sha256": "30172f8325660be421ca9a50dabc15dbc9569d403c6eda747b83acd3b438518b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_ledger.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_ledger.json",
+      "bytes": 14849,
+      "sha256": "efe4ebe908db22215e56c80813775a82cc336efc93a35c02cb880d458e39a4a4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/README.md",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/README.md",
+      "bytes": 315,
+      "sha256": "3ebb7ce265d6009a20a6aba2146f55482a43671a5353890c411bfa2976c78d79"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_loop_state.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_loop_state.json",
+      "bytes": 1192,
+      "sha256": "2f19660d055ac7d0a79049c40c8e116a0968692658d5abef0cad697d70322d25"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_definitions_prejoin.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_definitions_prejoin.json",
+      "bytes": 28300,
+      "sha256": "baacc9ae30149a3a8522d7bbe441de6260c5fea6882746e408286dd095f5bf49"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectral_curves_all_axes.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectral_curves_all_axes.csv",
+      "bytes": 31042,
+      "sha256": "4e7024dbf040af23be76fd8e635b7da9819e57b1f72c77b609158c2b53529bec"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/session_manifest.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/session_manifest.json",
+      "bytes": 1537,
+      "sha256": "f31c4847660fb413ee23d4d4ec42927179c23333241f523d20906b817330bfa7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/commands_run.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/commands_run.json",
+      "bytes": 1659,
+      "sha256": "1ba4b59ac63c91c7a9947554ce46ae8209d2024f2575ab0266b8691232c7fa72"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/target_model_results.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/target_model_results.csv",
+      "bytes": 32532,
+      "sha256": "e46dc283557254f5fd987f2e213645e7d4f989dbef80d9dc559e5b627ec0938f"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/followup_axis_summary.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/followup_axis_summary.csv",
+      "bytes": 10512,
+      "sha256": "d28dd5f5245888880cf303c50e1915103c9f2b9de55725761c238e8ee6e622e6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_definitions_followup.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_definitions_followup.json",
+      "bytes": 12047,
+      "sha256": "5fc95cef73bc8ff47ae7c0c7defc80040f9bfc9c99be061f9fbee4d3e3c90336"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/followup_axis_curves.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/followup_axis_curves.csv",
+      "bytes": 42989,
+      "sha256": "a7b66bb8a310543d90a54e1f8898f5ec2fa361aed1cb2589bf3884c1e2c27dbb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/primary_axis_densification.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/primary_axis_densification.json",
+      "bytes": 424,
+      "sha256": "eea00ec5d1ca25ca2f630bf7c8e026fab0403aecc0c70bc3f26890531ebc925c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/primary_axis_threshold_sweep.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/primary_axis_threshold_sweep.csv",
+      "bytes": 2592,
+      "sha256": "af5bb06bc69e3bdcebf8fa959004a6ab8299a25e2582e4a2b9f40b177a1fb9de"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/primary_axis_membership.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/primary_axis_membership.csv",
+      "bytes": 18778,
+      "sha256": "3d3aaf819167f3017b8aa1962f5908696c9f47f6f69ba36edfaf6b38bd55e50e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/controller_prompt.md",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/controller_prompt.md",
+      "bytes": 19685,
+      "sha256": "112b9fe8996df4d1bca29ea283ce8e69c48ada0255f6951e69e9d37e95fee9b6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/session_contract.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/session_contract.json",
+      "bytes": 56854,
+      "sha256": "9a20bfa3031badd82dc0861a0bbfaa1b7d755e56c0a7b35d0c71294f2190fc4c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectral_performance_curve.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectral_performance_curve.csv",
+      "bytes": 2849,
+      "sha256": "6acd87a2094e629fc9dd91a380b1d0bb9455bd1b566b6decbc7dbb26032ef4da"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/control_analysis.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/control_analysis.json",
+      "bytes": 690,
+      "sha256": "9dec16b5d470a1e63f8d0b4e70786061b058a75e34ff99c85b942676141cf212"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/outcome_informed_hypotheses.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/outcome_informed_hypotheses.json",
+      "bytes": 8240,
+      "sha256": "ee769685113fc2eeff11296051536507b6d0a310cfbc8c43e331562b1e43473b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_summary.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/axis_summary.csv",
+      "bytes": 9262,
+      "sha256": "0d73ff57d6b0adc7b6647db884dba8c08d56c7aea016ae9e17646e92d539bd2c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/primary_axis_decile_curve.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/primary_axis_decile_curve.csv",
+      "bytes": 3208,
+      "sha256": "c06df0049100538c5df330216a2fbe27d4a9d94a6da37e0df97300a08aa765aa"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/matched_pairs.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/matched_pairs.csv",
+      "bytes": 725,
+      "sha256": "84a6d71517588da243ca18d619f39417172bffb3ee9ca449bb546d92f5c3657a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_panel_manifest.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_panel_manifest.json",
+      "bytes": 15897,
+      "sha256": "54099920272a1e019b01826c645e901404101ac5c087fbdf990f60ea001e43b4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_paired_effects_by_target.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_paired_effects_by_target.csv",
+      "bytes": 10526,
+      "sha256": "80a00b961a743d79560bc7df4a66193e1fc469bd8defd3129588d862fa42c256"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_paired_effect_summary.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_paired_effect_summary.csv",
+      "bytes": 700,
+      "sha256": "94c410c49f5de914168c3ad5851502753538e39e4936e00eb581893c252075e6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_summary.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_summary.json",
+      "bytes": 1467,
+      "sha256": "16b079c48d42da05c42dd38ede84487aa1aba55174decb488a5512289678c831"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_group_summary.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_group_summary.csv",
+      "bytes": 1693,
+      "sha256": "3a6c0d0dabcc2539800887d029bc97553f31c9991b6726456402058b0a82dedc"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_high_vs_control_effects.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_high_vs_control_effects.csv",
+      "bytes": 930,
+      "sha256": "f59629a97bbfd75609277db0c127bd4187b680f816d10017be2049ce38ec88ae"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/target_model_results.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/target_model_results.scaled_samples.csv",
+      "bytes": 49803,
+      "sha256": "6fb22796f0280a727f885d239f9d19fe97358601031efb4c46980921af97e863"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_report.md",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_report.md",
+      "bytes": 1390,
+      "sha256": "3721549ef10a1674b78af437d9c920837b10f378d1b435cdb790fdd0577dae94"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_selection_summary_by_target.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_selection_summary_by_target.csv",
+      "bytes": 71911,
+      "sha256": "9ee8995ecd3f3f660fa42f4c22cf21e6907277e244022822586d242cf7519446"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/matched_pairs.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/matched_pairs.csv",
+      "bytes": 728,
+      "sha256": "c086ad91468b0e89a4717a549cff7f85e6af26010e3423115cc1fce365dcc4a4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_expansion_report.md",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_expansion_report.md",
+      "bytes": 1941,
+      "sha256": "b504ef31feb6a9b22564f34c59a5e5bc8056bf16ef500f084854a5fc4fb6f2af"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_selection_summary_by_target.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_selection_summary_by_target.csv",
+      "bytes": 55647,
+      "sha256": "09fe043a2b7d177695aeffdb99f3e2057f948ecddbb5548ed197b18eb51232eb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_expansion_manifest.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_expansion_manifest.json",
+      "bytes": 676,
+      "sha256": "5698a39747a75900330cf1a17095329deaacb57c8e22d47b4856625926f11f72"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_paired_effect_summary.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_paired_effect_summary.csv",
+      "bytes": 454,
+      "sha256": "8f30a6d27547bd00cf2ba9f307ce3306966583d2e0a019c7e403121180ea4bd0"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_paired_effects_by_target.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_paired_effects_by_target.csv",
+      "bytes": 6744,
+      "sha256": "8ec99a73c1d1a4b0739aebbcf0845352592ecc09b27b6968adf131dbe2f88c06"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/rcsb_external_candidate_pool.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/rcsb_external_candidate_pool.csv",
+      "bytes": 673026,
+      "sha256": "b406422c7d2e5a2f13faf3c035e4319cc20e35c4d51ffa87b7864ea141887d5a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_group_summary.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_group_summary.csv",
+      "bytes": 1442,
+      "sha256": "4b2484cfee37af03626836419c2d1cd1e51b59dd4fb3432b6989a817cc19b309"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_expansion_summary.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_expansion_summary.json",
+      "bytes": 1763,
+      "sha256": "9607b5bc91ec6fb5ef1082743399a79301e4840b30459f5e8a7b44d2d4b98c7c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/target_model_results.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/target_model_results.scaled_samples.csv",
+      "bytes": 41731,
+      "sha256": "7f455e8c0efb2c03d2bb051cfbbe795dba8f42b0da3d89b3bb6875e53779e5c6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_high_vs_control_effects.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/external_rcsb_same_bucket_expansion_20260531/external_scaled_high_vs_control_effects.csv",
+      "bytes": 843,
+      "sha256": "2dd3f92bcc7fa23e474fe6f0b55e2dfd6c5e738c6dd9148b923740d010e6b68a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_ready_dataset/feature_build_report.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_ready_dataset/feature_build_report.json",
+      "bytes": 317,
+      "sha256": "1767f3faebe2ed5456eeec969731c47297c62c22b322621cfe1b1a31df709965"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_ready_dataset/candidate_features.prior.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_ready_dataset/candidate_features.prior.csv",
+      "bytes": 110908,
+      "sha256": "49925439e55c413f27d88fbe8e1972b5b7fe55df027494e2b8fea0022c40c638"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_ready_dataset/prospective_features.followup.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_ready_dataset/prospective_features.followup.csv",
+      "bytes": 258279,
+      "sha256": "b099be56dab4c39d8c493ff783e96dbaf626ce98339b2b7ce63ed48cd2e902b8"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_ready_dataset/prospective_features.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/spectra_ready_dataset/prospective_features.csv",
+      "bytes": 254331,
+      "sha256": "ce27ad0249523904eb336f25fc84c3bdf64a43ed9e52a0f7c332b8cdbb38f903"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/score_axes.py",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/score_axes.py",
+      "bytes": 12545,
+      "sha256": "f23feb8dd6cf32570886d2f24aeb04e04efb5a4771c257efe50a940bfab416e4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/build_nonerror_features.py",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/build_nonerror_features.py",
+      "bytes": 27241,
+      "sha256": "edd27c619a8b9fd3afca498ae0a7e07ec82758b7173f791093d3c1cdce9b6b94"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/finalize_spectra_outputs.py",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/finalize_spectra_outputs.py",
+      "bytes": 13070,
+      "sha256": "d201a61a8c7c19082f75546c456af59f09e908338488d3d67bcf07d5ea0c72fb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/freeze_followup_axes.py",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/freeze_followup_axes.py",
+      "bytes": 6498,
+      "sha256": "09d863bc908c072aeb0de20eaf29429c2e6560d9c91457a65c0f06130f3f9827"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/score_followup_axes.py",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/score_followup_axes.py",
+      "bytes": 11153,
+      "sha256": "aa9f921172e092cda948bf494ae30f7ab29b09fcfde04203486013c04560a68b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/mine_outcome_informed_hypotheses.py",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/mine_outcome_informed_hypotheses.py",
+      "bytes": 5946,
+      "sha256": "a271ac13e6874c564638d429bf59eb1bae397372462f4d8a00922ed4ad1eb295"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/densify_primary_axis.py",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/densify_primary_axis.py",
+      "bytes": 6104,
+      "sha256": "3d757a96f65129e6167af7d1e7ed9b7fc19f7232c1758a4a1a3a1aa44f0eedaf"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaling_panel_manifest.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaling_panel_manifest.json",
+      "bytes": 5836,
+      "sha256": "268a8ee505c2f082de5df596528b5aa6be216238a6acd43cf6134505f16e17ff"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaling_summary.json",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaling_summary.json",
+      "bytes": 870,
+      "sha256": "a5de2634c318b172ede05a78cef2f876a0d06c56d64a5cb7c8a26afb1c111d1a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaled_group_summary.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaled_group_summary.csv",
+      "bytes": 1678,
+      "sha256": "6a043c370ae5ea93b5465617690accdd339743be3f6faf5b0daffb7a1339aa54"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaled_high_vs_control_effects.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaled_high_vs_control_effects.csv",
+      "bytes": 923,
+      "sha256": "32ecb3a02cb7b5116fa6898ddf50637a103470a090bdf2a2a4b6736f3ce3c56c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/target_model_results.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/target_model_results.scaled_samples.csv",
+      "bytes": 17857,
+      "sha256": "09ec195013655ba8b36863a5c533e3a04594f942cee13c3c673f28775a1b9c41"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaled_selection_summary_by_target.csv",
+      "relative_destination": "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/inference_time_scaling_10loops68steps_5seeds/scaled_selection_summary_by_target.csv",
+      "bytes": 25692,
+      "sha256": "6896dcf58bfa63532c150e15be8219ef77e9d727f5d9deccd3cca20b3ef92285"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/final_report.md",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/final_report.md",
+      "bytes": 6227,
+      "sha256": "30172f8325660be421ca9a50dabc15dbc9569d403c6eda747b83acd3b438518b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/axis_ledger.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/axis_ledger.json",
+      "bytes": 14849,
+      "sha256": "efe4ebe908db22215e56c80813775a82cc336efc93a35c02cb880d458e39a4a4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/README.md",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/README.md",
+      "bytes": 315,
+      "sha256": "3ebb7ce265d6009a20a6aba2146f55482a43671a5353890c411bfa2976c78d79"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_loop_state.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_loop_state.json",
+      "bytes": 1192,
+      "sha256": "2f19660d055ac7d0a79049c40c8e116a0968692658d5abef0cad697d70322d25"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/axis_definitions_prejoin.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/axis_definitions_prejoin.json",
+      "bytes": 28300,
+      "sha256": "baacc9ae30149a3a8522d7bbe441de6260c5fea6882746e408286dd095f5bf49"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/spectral_curves_all_axes.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectral_curves_all_axes.csv",
+      "bytes": 31042,
+      "sha256": "4e7024dbf040af23be76fd8e635b7da9819e57b1f72c77b609158c2b53529bec"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/session_manifest.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/session_manifest.json",
+      "bytes": 1537,
+      "sha256": "f31c4847660fb413ee23d4d4ec42927179c23333241f523d20906b817330bfa7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/commands_run.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/commands_run.json",
+      "bytes": 1659,
+      "sha256": "1ba4b59ac63c91c7a9947554ce46ae8209d2024f2575ab0266b8691232c7fa72"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/target_model_results.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/target_model_results.csv",
+      "bytes": 32532,
+      "sha256": "e46dc283557254f5fd987f2e213645e7d4f989dbef80d9dc559e5b627ec0938f"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/followup_axis_summary.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/followup_axis_summary.csv",
+      "bytes": 10512,
+      "sha256": "d28dd5f5245888880cf303c50e1915103c9f2b9de55725761c238e8ee6e622e6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/axis_definitions_followup.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/axis_definitions_followup.json",
+      "bytes": 12047,
+      "sha256": "5fc95cef73bc8ff47ae7c0c7defc80040f9bfc9c99be061f9fbee4d3e3c90336"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/followup_axis_curves.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/followup_axis_curves.csv",
+      "bytes": 42989,
+      "sha256": "a7b66bb8a310543d90a54e1f8898f5ec2fa361aed1cb2589bf3884c1e2c27dbb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/primary_axis_densification.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/primary_axis_densification.json",
+      "bytes": 424,
+      "sha256": "eea00ec5d1ca25ca2f630bf7c8e026fab0403aecc0c70bc3f26890531ebc925c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/primary_axis_threshold_sweep.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/primary_axis_threshold_sweep.csv",
+      "bytes": 2592,
+      "sha256": "af5bb06bc69e3bdcebf8fa959004a6ab8299a25e2582e4a2b9f40b177a1fb9de"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/primary_axis_membership.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/primary_axis_membership.csv",
+      "bytes": 18778,
+      "sha256": "3d3aaf819167f3017b8aa1962f5908696c9f47f6f69ba36edfaf6b38bd55e50e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/controller_prompt.md",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/controller_prompt.md",
+      "bytes": 19685,
+      "sha256": "112b9fe8996df4d1bca29ea283ce8e69c48ada0255f6951e69e9d37e95fee9b6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/session_contract.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/session_contract.json",
+      "bytes": 56854,
+      "sha256": "9a20bfa3031badd82dc0861a0bbfaa1b7d755e56c0a7b35d0c71294f2190fc4c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/spectral_performance_curve.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectral_performance_curve.csv",
+      "bytes": 2849,
+      "sha256": "6acd87a2094e629fc9dd91a380b1d0bb9455bd1b566b6decbc7dbb26032ef4da"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/control_analysis.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/control_analysis.json",
+      "bytes": 690,
+      "sha256": "9dec16b5d470a1e63f8d0b4e70786061b058a75e34ff99c85b942676141cf212"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/outcome_informed_hypotheses.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/outcome_informed_hypotheses.json",
+      "bytes": 8240,
+      "sha256": "ee769685113fc2eeff11296051536507b6d0a310cfbc8c43e331562b1e43473b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/axis_summary.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/axis_summary.csv",
+      "bytes": 9262,
+      "sha256": "0d73ff57d6b0adc7b6647db884dba8c08d56c7aea016ae9e17646e92d539bd2c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/primary_axis_decile_curve.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/primary_axis_decile_curve.csv",
+      "bytes": 3208,
+      "sha256": "c06df0049100538c5df330216a2fbe27d4a9d94a6da37e0df97300a08aa765aa"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/matched_pairs.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/matched_pairs.csv",
+      "bytes": 725,
+      "sha256": "84a6d71517588da243ca18d619f39417172bffb3ee9ca449bb546d92f5c3657a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_panel_manifest.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_panel_manifest.json",
+      "bytes": 15897,
+      "sha256": "54099920272a1e019b01826c645e901404101ac5c087fbdf990f60ea001e43b4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_paired_effects_by_target.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_paired_effects_by_target.csv",
+      "bytes": 10526,
+      "sha256": "80a00b961a743d79560bc7df4a66193e1fc469bd8defd3129588d862fa42c256"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_paired_effect_summary.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_paired_effect_summary.csv",
+      "bytes": 700,
+      "sha256": "94c410c49f5de914168c3ad5851502753538e39e4936e00eb581893c252075e6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_summary.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_summary.json",
+      "bytes": 1467,
+      "sha256": "16b079c48d42da05c42dd38ede84487aa1aba55174decb488a5512289678c831"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_group_summary.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_group_summary.csv",
+      "bytes": 1693,
+      "sha256": "3a6c0d0dabcc2539800887d029bc97553f31c9991b6726456402058b0a82dedc"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_high_vs_control_effects.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_high_vs_control_effects.csv",
+      "bytes": 930,
+      "sha256": "f59629a97bbfd75609277db0c127bd4187b680f816d10017be2049ce38ec88ae"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/target_model_results.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/target_model_results.scaled_samples.csv",
+      "bytes": 49803,
+      "sha256": "6fb22796f0280a727f885d239f9d19fe97358601031efb4c46980921af97e863"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_report.md",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaling_report.md",
+      "bytes": 1390,
+      "sha256": "3721549ef10a1674b78af437d9c920837b10f378d1b435cdb790fdd0577dae94"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_selection_summary_by_target.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scaled_selection_summary_by_target.csv",
+      "bytes": 71911,
+      "sha256": "9ee8995ecd3f3f660fa42f4c22cf21e6907277e244022822586d242cf7519446"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+      "bytes": 35862,
+      "sha256": "f91e512865754907837faab13bde01931cf99485bf07c90cf75bc9a121ae4b02"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "bytes": 9108,
+      "sha256": "6c851321abf8988e7f567abef98a9728a20511c00642596a60d54847e3cdf6c6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scripts/evaluate_esmfold2_scaling.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/scripts/evaluate_esmfold2_scaling.py",
+      "bytes": 11084,
+      "sha256": "0677949e68aba0bc426efd039c5157e876751522acc8acd5526bef7c13c4c5e1"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/matched_pairs.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/matched_pairs.csv",
+      "bytes": 728,
+      "sha256": "c086ad91468b0e89a4717a549cff7f85e6af26010e3423115cc1fce365dcc4a4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_expansion_report.md",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_expansion_report.md",
+      "bytes": 1941,
+      "sha256": "b504ef31feb6a9b22564f34c59a5e5bc8056bf16ef500f084854a5fc4fb6f2af"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_selection_summary_by_target.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_selection_summary_by_target.csv",
+      "bytes": 55647,
+      "sha256": "09fe043a2b7d177695aeffdb99f3e2057f948ecddbb5548ed197b18eb51232eb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_expansion_manifest.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_expansion_manifest.json",
+      "bytes": 676,
+      "sha256": "5698a39747a75900330cf1a17095329deaacb57c8e22d47b4856625926f11f72"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_paired_effect_summary.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_paired_effect_summary.csv",
+      "bytes": 454,
+      "sha256": "8f30a6d27547bd00cf2ba9f307ce3306966583d2e0a019c7e403121180ea4bd0"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_paired_effects_by_target.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_paired_effects_by_target.csv",
+      "bytes": 6744,
+      "sha256": "8ec99a73c1d1a4b0739aebbcf0845352592ecc09b27b6968adf131dbe2f88c06"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/rcsb_external_candidate_pool.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/rcsb_external_candidate_pool.csv",
+      "bytes": 673026,
+      "sha256": "b406422c7d2e5a2f13faf3c035e4319cc20e35c4d51ffa87b7864ea141887d5a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_group_summary.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_group_summary.csv",
+      "bytes": 1442,
+      "sha256": "4b2484cfee37af03626836419c2d1cd1e51b59dd4fb3432b6989a817cc19b309"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_expansion_summary.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_expansion_summary.json",
+      "bytes": 1763,
+      "sha256": "9607b5bc91ec6fb5ef1082743399a79301e4840b30459f5e8a7b44d2d4b98c7c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/target_model_results.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/target_model_results.scaled_samples.csv",
+      "bytes": 41731,
+      "sha256": "7f455e8c0efb2c03d2bb051cfbbe795dba8f42b0da3d89b3bb6875e53779e5c6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_high_vs_control_effects.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/external_scaled_high_vs_control_effects.csv",
+      "bytes": 843,
+      "sha256": "2dd3f92bcc7fa23e474fe6f0b55e2dfd6c5e738c6dd9148b923740d010e6b68a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv",
+      "bytes": 42148,
+      "sha256": "51dbddb5c6be6ad5c53183b12f754f482b14dfb130e00b7835bd2d6bb69fc607"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "bytes": 9108,
+      "sha256": "6c851321abf8988e7f567abef98a9728a20511c00642596a60d54847e3cdf6c6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/evaluate_esmfold2_scaling.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/evaluate_esmfold2_scaling.py",
+      "bytes": 11084,
+      "sha256": "0677949e68aba0bc426efd039c5157e876751522acc8acd5526bef7c13c4c5e1"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/build_external_rcsb_bucket_panel.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/scripts/build_external_rcsb_bucket_panel.py",
+      "bytes": 13928,
+      "sha256": "0c2620750df4098ac815ad04f9f7d4d78a3e6135bd90522f9b552d0a04a1b114"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/feature_build_report.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/feature_build_report.json",
+      "bytes": 317,
+      "sha256": "1767f3faebe2ed5456eeec969731c47297c62c22b322621cfe1b1a31df709965"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/candidate_features.prior.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/candidate_features.prior.csv",
+      "bytes": 110908,
+      "sha256": "49925439e55c413f27d88fbe8e1972b5b7fe55df027494e2b8fea0022c40c638"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/prospective_features.followup.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/prospective_features.followup.csv",
+      "bytes": 258279,
+      "sha256": "b099be56dab4c39d8c493ff783e96dbaf626ce98339b2b7ce63ed48cd2e902b8"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/prospective_features.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/prospective_features.csv",
+      "bytes": 254331,
+      "sha256": "ce27ad0249523904eb336f25fc84c3bdf64a43ed9e52a0f7c332b8cdbb38f903"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/raw_cameo_hf/README.md",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/raw_cameo_hf/README.md",
+      "bytes": 4116,
+      "sha256": "97cbf91262407fb45dff8e825d9cb196fa4cfed0adf3776459f169658f714e82"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/raw_cameo_hf/meta.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/spectra_ready_dataset/raw_cameo_hf/meta.csv",
+      "bytes": 13314,
+      "sha256": "194e33a375f7b2798f7af364018c51f584fab2142f2f8a09273a88ae58b3f06a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/score_axes.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/score_axes.py",
+      "bytes": 12545,
+      "sha256": "f23feb8dd6cf32570886d2f24aeb04e04efb5a4771c257efe50a940bfab416e4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/build_nonerror_features.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/build_nonerror_features.py",
+      "bytes": 27241,
+      "sha256": "edd27c619a8b9fd3afca498ae0a7e07ec82758b7173f791093d3c1cdce9b6b94"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/finalize_spectra_outputs.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/finalize_spectra_outputs.py",
+      "bytes": 13070,
+      "sha256": "d201a61a8c7c19082f75546c456af59f09e908338488d3d67bcf07d5ea0c72fb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/freeze_followup_axes.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/freeze_followup_axes.py",
+      "bytes": 6498,
+      "sha256": "09d863bc908c072aeb0de20eaf29429c2e6560d9c91457a65c0f06130f3f9827"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/score_followup_axes.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/score_followup_axes.py",
+      "bytes": 11153,
+      "sha256": "aa9f921172e092cda948bf494ae30f7ab29b09fcfde04203486013c04560a68b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/mine_outcome_informed_hypotheses.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/mine_outcome_informed_hypotheses.py",
+      "bytes": 5946,
+      "sha256": "a271ac13e6874c564638d429bf59eb1bae397372462f4d8a00922ed4ad1eb295"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/densify_primary_axis.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/scripts/densify_primary_axis.py",
+      "bytes": 6104,
+      "sha256": "3d757a96f65129e6167af7d1e7ed9b7fc19f7232c1758a4a1a3a1aa44f0eedaf"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaling_panel_manifest.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaling_panel_manifest.json",
+      "bytes": 5836,
+      "sha256": "268a8ee505c2f082de5df596528b5aa6be216238a6acd43cf6134505f16e17ff"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaling_summary.json",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaling_summary.json",
+      "bytes": 870,
+      "sha256": "a5de2634c318b172ede05a78cef2f876a0d06c56d64a5cb7c8a26afb1c111d1a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaled_group_summary.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaled_group_summary.csv",
+      "bytes": 1678,
+      "sha256": "6a043c370ae5ea93b5465617690accdd339743be3f6faf5b0daffb7a1339aa54"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaled_high_vs_control_effects.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaled_high_vs_control_effects.csv",
+      "bytes": 923,
+      "sha256": "32ecb3a02cb7b5116fa6898ddf50637a103470a090bdf2a2a4b6736f3ce3c56c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/target_model_results.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/target_model_results.scaled_samples.csv",
+      "bytes": 17857,
+      "sha256": "09ec195013655ba8b36863a5c533e3a04594f942cee13c3c673f28775a1b9c41"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaled_selection_summary_by_target.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scaled_selection_summary_by_target.csv",
+      "bytes": 25692,
+      "sha256": "6896dcf58bfa63532c150e15be8219ef77e9d727f5d9deccd3cca20b3ef92285"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/spectra_ready_dataset/candidate_features.csv",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/spectra_ready_dataset/candidate_features.csv",
+      "bytes": 11047,
+      "sha256": "062f6c3191a4a5e36c7daf83689a09682d7784f4c75d32acfaf9a6d5682bc764"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "bytes": 9108,
+      "sha256": "6c851321abf8988e7f567abef98a9728a20511c00642596a60d54847e3cdf6c6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scripts/evaluate_esmfold2_scaling.py",
+      "relative_destination": "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/scripts/evaluate_esmfold2_scaling.py",
+      "bytes": 11084,
+      "sha256": "0677949e68aba0bc426efd039c5157e876751522acc8acd5526bef7c13c4c5e1"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_spc_by_level.csv",
+      "relative_destination": "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_spc_by_level.csv",
+      "bytes": 5034,
+      "sha256": "b5a41e226705c5ebda765ce6a673f3ff73336e4ebeb4770ef7cdc215f01ce68e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_report.md",
+      "relative_destination": "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_report.md",
+      "bytes": 2194,
+      "sha256": "0a57b969ae2af549cddcde1f0dac256cf612b1875ec438e81b50f9b945da26aa"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_panel_manifest.json",
+      "relative_destination": "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_panel_manifest.json",
+      "bytes": 3006,
+      "sha256": "1b4215c584596b207286a7accf80e06abc7fe1eee63cdec471703c6eddabea7f"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_effects.json",
+      "relative_destination": "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_effects.json",
+      "bytes": 3436,
+      "sha256": "d278ca570b1d81293c22e61241dcb7abe803d95d95f88d26d7fdc3c06ddae701"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/target_model_results.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/target_model_results.scaled_samples.csv",
+      "bytes": 134180,
+      "sha256": "3f1c0475b968a80f3e07f64eeab682b9355b04520d6192a0f4d94a27425b6e17"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/spectra_ready_dataset/candidate_features.csv",
+      "relative_destination": "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/spectra_ready_dataset/candidate_features.csv",
+      "bytes": 132856,
+      "sha256": "20b5183b2849ef843abd7d5c347fbcfb99a98c07a9cc9ad439c05ca834c07ed7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "relative_destination": "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "bytes": 9108,
+      "sha256": "6c851321abf8988e7f567abef98a9728a20511c00642596a60d54847e3cdf6c6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/evaluate_esmfold2_scaling.py",
+      "relative_destination": "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/evaluate_esmfold2_scaling.py",
+      "bytes": 11084,
+      "sha256": "0677949e68aba0bc426efd039c5157e876751522acc8acd5526bef7c13c4c5e1"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/summarize_expanded_external_spc.py",
+      "relative_destination": "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/summarize_expanded_external_spc.py",
+      "bytes": 8627,
+      "sha256": "624774da83a8066e3ec0ca690586a684526b6e897aec78749d0718ebdce9e66b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/build_expanded_external_panel.py",
+      "relative_destination": "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/scripts/build_expanded_external_panel.py",
+      "bytes": 8194,
+      "sha256": "201c5ec2727ea579496f7ccea517e7a84b5dfbc3e19dda11b81a43fc1131e993"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/final_report.md",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/final_report.md",
+      "bytes": 3578,
+      "sha256": "47cefd50ba44fd6d31c21153f8a1e9c7bbc8ef92ea8142d52f957ec615e07e92"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_hydropathy_axis_matched_pairs_q7.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_hydropathy_axis_matched_pairs_q7.csv",
+      "bytes": 6223,
+      "sha256": "677f6e946455db3dc8af9a8390e87236da3aa9eb2a7bf3037487aad26b3e6974"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_hydropathy_axis_matched_pairs_q10.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_hydropathy_axis_matched_pairs_q10.csv",
+      "bytes": 5270,
+      "sha256": "d54cdc68a7ebc53b3484929f5166759870e0ef188c813989ea83cfae59ccf556"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/candidate_axis_curves.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/candidate_axis_curves.csv",
+      "bytes": 231648,
+      "sha256": "5953fef5e8fdbcd43bce42a59f519956f8c9813524035d533e2aaff64c1f02f4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/candidate_axis_discovery_ranking.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/candidate_axis_discovery_ranking.csv",
+      "bytes": 11879,
+      "sha256": "6afd57fb4e82618cfeec4f1dfefa1677ab6428ec0a255d176917d52a08c378fc"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_rg_len13_norm_matched_pairs_q10.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_rg_len13_norm_matched_pairs_q10.csv",
+      "bytes": 2883,
+      "sha256": "3648242ddbca0fa2c0e475237da867d92fe64db7aa4b083b5e22c5db92680cf7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_shape_anisotropy_matched_pairs_q7.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_shape_anisotropy_matched_pairs_q7.csv",
+      "bytes": 4080,
+      "sha256": "e8aa997738a2912c35b6474f7149ac84cff754ce8faba164084d855e5fc22de7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/axis_ledger.json",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/axis_ledger.json",
+      "bytes": 4075,
+      "sha256": "753889ae77a2ab8314a2abd4c9c4db0a12c538a4ed98a3348eb73ad6028710a5"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/README.md",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/README.md",
+      "bytes": 319,
+      "sha256": "f5362f50e6f2546daa8d9e80de2fc1407241e8bf848bc1e2976cf69e48f814be"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_reference_topology_axes_audit.json",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_reference_topology_axes_audit.json",
+      "bytes": 65289,
+      "sha256": "c36dbf245e38acdf8a10507dc047d76c21dd8758752508971ad6948f6f0722b5"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_loop_state.json",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_loop_state.json",
+      "bytes": 2817,
+      "sha256": "06da6087940e1d47c847a84ccae61ba6c0914a97e38d812e3c842ae953a4109c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_rg_len13_norm_matched_pairs_q7.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_rg_len13_norm_matched_pairs_q7.csv",
+      "bytes": 4343,
+      "sha256": "98f0e29324deac915d48fe8f6189d8212f8351c9c973b413725101613a465466"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_shape_anisotropy_matched_pairs_q10.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_shape_anisotropy_matched_pairs_q10.csv",
+      "bytes": 3129,
+      "sha256": "5e4014c2306925827e137db18680cf4406254f9ce3be9ef99239a01683dea1f0"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/session_manifest.json",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/session_manifest.json",
+      "bytes": 1565,
+      "sha256": "24004a3651908f8c835748b792845c99876369453bb7d9364170b88ba278560a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_hydropathy_axis_curves.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_hydropathy_axis_curves.csv",
+      "bytes": 34418,
+      "sha256": "c6560cd18249ec999fc1b80d6746f2966116f6d30fdcf206d9cc81362b9ba3a3"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_axis_audit.json",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_axis_audit.json",
+      "bytes": 20573,
+      "sha256": "36dffe7a198b3912fa8710056c56db12b07bdff61871eb02b7db76b5bd36e577"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/candidate_axis_summary.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/candidate_axis_summary.csv",
+      "bytes": 50654,
+      "sha256": "cb66eceb86d93878525d3e2b4d2808103f63cd2e30d8123ccccf39b2b3ba0f41"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/commands_run.json",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/commands_run.json",
+      "bytes": 1516,
+      "sha256": "b2b736719a78c30ce5570166b0f77ff76f6dad8dad7f60afa56baf1467e28cac"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/target_model_results.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/target_model_results.csv",
+      "bytes": 55287,
+      "sha256": "a5f75293e121a7ca99607112296ffadde7a36e12b6f21472373aefb830610ba7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_axis_curves.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_axis_curves.csv",
+      "bytes": 33534,
+      "sha256": "72a3189ff040f1871ccc97de1c9ab7cc02100b2e4f5ecfe632fb070d44221e84"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_rg_len13_norm_threshold_summary.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_rg_len13_norm_threshold_summary.csv",
+      "bytes": 2281,
+      "sha256": "153aa2b33d8ded3b90c39bcb8ef24463e8f823222dbbc3086e5d686c3d6b2c8b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_hydropathy_axis_audit.json",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_hydropathy_axis_audit.json",
+      "bytes": 20287,
+      "sha256": "774e1ce04d3995fb429f28acf4cd72a2f7187ae6a3dce19883836d9b68f9bb07"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_axis_matched_pairs_q10.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_axis_matched_pairs_q10.csv",
+      "bytes": 3590,
+      "sha256": "1160791fdc1edd178f7fd17b6eb77687605b2ada3ffd5929d28c9f3d6d7cbb49"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/charge_window_followup_axis_summary.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/charge_window_followup_axis_summary.csv",
+      "bytes": 11029,
+      "sha256": "60626456b7264cf18c1e6c73713de544aea16391fa5107fad996d2623db31052"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/charge_window_followup_axis_curves.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/charge_window_followup_axis_curves.csv",
+      "bytes": 49340,
+      "sha256": "23a32c7d56813b7b05fa9855620c708fc714ce1ae0f7d474ccfb7ff42c29e1ab"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_reference_topology_axis_curves.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_reference_topology_axis_curves.csv",
+      "bytes": 98247,
+      "sha256": "0c377ca3dad58d702585a9dd1173edbf781459c31bd26f3ac3c2dd6b0a3eeaa9"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_relative_contact_order_matched_pairs_q10.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_relative_contact_order_matched_pairs_q10.csv",
+      "bytes": 4782,
+      "sha256": "d0aa3a67b98cd965bd9e80f9003d9f9cab6cdecf2a1dc0bd2000cfb9682de9f0"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/controller_prompt.md",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/controller_prompt.md",
+      "bytes": 20430,
+      "sha256": "223019606c245f41352601134c81f5f59b0e2c0c8032a7cd2075fb5bdb118eaf"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/session_contract.json",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/session_contract.json",
+      "bytes": 57663,
+      "sha256": "e09e68304191bd67b0b714f4ef54b8f91dcb2c97c331a43b80ad34feaa49bf29"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_axis_matched_pairs_q7.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_charge_axis_matched_pairs_q7.csv",
+      "bytes": 4563,
+      "sha256": "dc07cc28431d524e22a2e0cf9ebd25da82c14fc000ab9a62fbe2a0856b75b783"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_relative_contact_order_matched_pairs_q7.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/frozen_relative_contact_order_matched_pairs_q7.csv",
+      "bytes": 5741,
+      "sha256": "43d38b6b908e705aeed0bc4e8521c22ab136d72b629a01806b794d88ec7b1b2c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/outcome_informed_hypotheses.json",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/outcome_informed_hypotheses.json",
+      "bytes": 7508,
+      "sha256": "a7df09bdfa0afa16d83d0a0a852d2dd7c571e56398196f7c8110a7a852e68631"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_ready_dataset/combined_prospective_features.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_ready_dataset/combined_prospective_features.csv",
+      "bytes": 466692,
+      "sha256": "5be4ad7c47b1dc15689ce9e0121678c4621f03d03ea4773bade461cb95cbdef6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_ready_dataset/combined_feature_outcome_table.csv",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_ready_dataset/combined_feature_outcome_table.csv",
+      "bytes": 524201,
+      "sha256": "cacdb585382e9a191b758a92094ed1a0475259586eb55e7bcbca25af2e444f27"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_hydropathy_axis.py",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_hydropathy_axis.py",
+      "bytes": 7773,
+      "sha256": "fb4e228fb5913ec3c275759a6c85563c57a2f2aa12e837dc36564f8f0a90d7bd"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_axis.py",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_charge_axis.py",
+      "bytes": 14985,
+      "sha256": "3f6e882c8968d89de333b05932f0aaf404a7d579c4efbc24d03b64437bc3b529"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/build_combined_and_score_axes.py",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/build_combined_and_score_axes.py",
+      "bytes": 31845,
+      "sha256": "92389054913b0ef149119a4f8a2a4f294b6030c70867ec14c0509e844e924d10"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_reference_topology_axes.py",
+      "relative_destination": "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/scripts/audit_frozen_reference_topology_axes.py",
+      "bytes": 10592,
+      "sha256": "3e1341449b25fffe52cd0b99c8ecafc03a4e539119a7de8a0b549c5964b1f424"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/final_report.md",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/final_report.md",
+      "bytes": 1710,
+      "sha256": "9aeb952cf84640b4093fa2a7f8efc0da8789b360d5eb9c2052370bf91bfb5de2"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/axis_ledger.json",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/axis_ledger.json",
+      "bytes": 34608,
+      "sha256": "ce8bee221a3fb9c275e9d363ac6326f5e3a6706def50ea11070598a7d2c1a894"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/README.md",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/README.md",
+      "bytes": 310,
+      "sha256": "5b5c757a40cfb13c37a050c62384ef411fbaa942c3da591a1d9e2802235f8f9a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/spectra_loop_state.json",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/spectra_loop_state.json",
+      "bytes": 8878,
+      "sha256": "c6936e5a730955b7aa9bf07523de5656e00c25e66553cb24d1c16924b2882e7c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/session_manifest.json",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/session_manifest.json",
+      "bytes": 1501,
+      "sha256": "58965977b15d667055d4af66ec21294bb2ea48ed6d08a5130d70e350286c34c5"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/commands_run.json",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/commands_run.json",
+      "bytes": 230,
+      "sha256": "d9fec3f48a293968c33cf7e4f642e424fbd312c100f9e9ce0729d918e14cdb17"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/target_model_results.csv",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/target_model_results.csv",
+      "bytes": 84928,
+      "sha256": "3e3ddbc6f1c7dc928d8ae62b2a148f95ed349eef5fed6aa1fb464e131bafc721"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/controller_prompt.md",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/controller_prompt.md",
+      "bytes": 16834,
+      "sha256": "5dd0a16a6be3e17a42570f33b3eaa184e392f50525b863e061a3e978e7ca0652"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/session_contract.json",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/session_contract.json",
+      "bytes": 53899,
+      "sha256": "b9d4bf8ab6a85df1297ca9424c6c0467bbcdf01bd28a49e5845f8173b805e773"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/spectra_ready_dataset/combined_prospective_performance.csv",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/spectra_ready_dataset/combined_prospective_performance.csv",
+      "bytes": 706585,
+      "sha256": "379cdb6a4c004d61215a43d0d351edb7c00b8c7941b6b20c348732e5983edf95"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/scripts/analyze_shared_axes.py",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/scripts/analyze_shared_axes.py",
+      "bytes": 51233,
+      "sha256": "5799fc908939ad53215486a59ad945a5c1305495543f50d0f45e501ead776785"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/outcome_informed_feature_mining.csv",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/outcome_informed_feature_mining.csv",
+      "bytes": 17705,
+      "sha256": "1fef0ecd95fc971aff0278f20b350e7ceb4a5a58e43ffa9cb3dc8d54f0c49f3e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/densified_candidate_axes.csv",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/densified_candidate_axes.csv",
+      "bytes": 148119,
+      "sha256": "977d3ec2fcd5ef1df63304e65b1da9a67a40b5312afa157961de5b655277314d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/shared_axis_source_heldout_summary.csv",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/shared_axis_source_heldout_summary.csv",
+      "bytes": 50039,
+      "sha256": "b2f8e73938d3cc5157a0ac5cc5f59b2afe2ae5720eaa0007b23896d888e52955"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/shared_prospective_feature_list.csv",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/shared_prospective_feature_list.csv",
+      "bytes": 1273,
+      "sha256": "4b472862bc97be72329f3acb8ce1a0523100c55b6e0edb8f3d715a6d55a7b279"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/shared_axis_level_curves.csv",
+      "relative_destination": "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/analysis_outputs/shared_axis_level_curves.csv",
+      "bytes": 502167,
+      "sha256": "e3617b9427a45cf71323e205406a9e37c63e4faa987c5e10b5d13a22c86a8bbe"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/final_report.md",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/final_report.md",
+      "bytes": 3864,
+      "sha256": "49b9214355b2158205c284a120ce3ffa8525e472dbbd3f9a237541703006dfc6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_loop_state.json",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_loop_state.json",
+      "bytes": 9640,
+      "sha256": "cf079d1992bfc805c40f239d51a2d45d918525e1a1b28a084bac872c47bbe5e7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/charge_confirmation_panel_manifest.json",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/charge_confirmation_panel_manifest.json",
+      "bytes": 7110,
+      "sha256": "1660c04065cc56fb81dd53009fdc6b52b7ea58c2f7c086d23e64f919575162ba"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/target_model_results.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/target_model_results.scaled_samples.csv",
+      "bytes": 121475,
+      "sha256": "6ba62d54ae5c8afce08cabb712c02cde669cef3b397e3e2847476a6ef6b15c6d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/eligible_unscored_charge_pool.csv",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/eligible_unscored_charge_pool.csv",
+      "bytes": 268285,
+      "sha256": "9ed424a345eef5e70268ec6ac84fbba5fd10ad84be96e66e047720b80c03522c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/candidate_features.csv",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/candidate_features.csv",
+      "bytes": 146804,
+      "sha256": "bc1e893bd8834022c1e725b3ef6783e647ebdcbca885ec1b5c5638f57357bca7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/summarize_charge_confirmation.py",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/summarize_charge_confirmation.py",
+      "bytes": 15424,
+      "sha256": "75de1fa1aa9ec52d63c6ef3ce1538dec2fea0e83bd84007be299214e445368a7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "bytes": 9108,
+      "sha256": "6c851321abf8988e7f567abef98a9728a20511c00642596a60d54847e3cdf6c6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/evaluate_esmfold2_scaling.py",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/evaluate_esmfold2_scaling.py",
+      "bytes": 11241,
+      "sha256": "052444e3a416c99d3541f1ea580966b8d29fd51ac939db9fc5b206e159c6c0ba"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/build_fresh_charge_panel.py",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/build_fresh_charge_panel.py",
+      "bytes": 14724,
+      "sha256": "85b7de25380dd7fc6eac479479b9453cf82ef4443e3636aa7aa6792f79e3e788"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/analysis_outputs/charge_confirmation_level_curves.csv",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/analysis_outputs/charge_confirmation_level_curves.csv",
+      "bytes": 5117,
+      "sha256": "96cbe359559fd34122e9ccf0fdfca129bd3db7525dfc4d14259e70f3671ab4b5"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/analysis_outputs/charge_confirmation_effects.json",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/analysis_outputs/charge_confirmation_effects.json",
+      "bytes": 4989,
+      "sha256": "712a10034ef17b079daef8919d8ba61dd535ca0459e38e148ed4f475940f924c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/analysis_outputs/reference_parse_sanity.csv",
+      "relative_destination": "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/analysis_outputs/reference_parse_sanity.csv",
+      "bytes": 2251,
+      "sha256": "27a091029a38dcc98960124a579facf38bbb0875be968233e0525c48b6687ca2"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/axis_ledger.json",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/axis_ledger.json",
+      "bytes": 23613,
+      "sha256": "2e40fc25fbd239544fc73d2c3fbeb2b947770afb3897102759496c385c5b2f4b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/README.md",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/README.md",
+      "bytes": 318,
+      "sha256": "bf540e15b91e9497c4e12af8e009ba66f973a943e91afe007a69b18369c4a252"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.acidic_window_confirmation.target_level.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.acidic_window_confirmation.target_level.csv",
+      "bytes": 145756,
+      "sha256": "aac3ef41f6f452294cb5ebf515a56905d4322b6d848fbf8496f099962e0b3835"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_loop_state.json",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_loop_state.json",
+      "bytes": 10602,
+      "sha256": "0f9f92bfac3d7c49c39ea4f1ce6899da5e15269bddcde439075f3393cb2c85aa"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.acidic_window_confirmation.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.acidic_window_confirmation.scaled_samples.csv",
+      "bytes": 98161,
+      "sha256": "e0057b191b3165742be577df0fb8da10274fcd8cce515fb676c5bda277f08052"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/session_manifest.json",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/session_manifest.json",
+      "bytes": 1558,
+      "sha256": "964898e8693aacb63557c50fca9de3043dd76f5b200dd21f5f2b301e19d7f21b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/commands_run.json",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/commands_run.json",
+      "bytes": 2022,
+      "sha256": "1a7c5a4ba2af8560daf9fc73890d4dab48f68e2a3ef490c8b7bd095afda55b7c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.csv",
+      "bytes": 203575,
+      "sha256": "c1b5285136fe984662349e173a62d50e1cbd40ae0d5c1d86580a9b8412c167bc"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/acidic_window_confirmation_panel_manifest.json",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/acidic_window_confirmation_panel_manifest.json",
+      "bytes": 9575,
+      "sha256": "8f9160c63e5ad7840d561738fe7013fa46e169ce7b1dc24bf0e8e1f71cc51e3e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/controller_prompt.md",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/controller_prompt.md",
+      "bytes": 17614,
+      "sha256": "dd96db4dbc9e207280dda5647a2689f0c5a26cff89a6d2976c548968dee04db3"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/session_contract.json",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/session_contract.json",
+      "bytes": 60242,
+      "sha256": "a0f43e4a38ec609140283a1ed65f2c07f81951cdea5c42ff790108ff89bf9f7a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/eligible_unscored_acidic_window_pool.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/eligible_unscored_acidic_window_pool.csv",
+      "bytes": 143755,
+      "sha256": "601f18095e001dc9d9c58d87ca738f369a27a5dd25909a4c8bbfc3e982fcab78"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/combined_evidence_table.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/combined_evidence_table.csv",
+      "bytes": 1218933,
+      "sha256": "16cc47928e4fdc2c9eb6f5c12deb3308ae825a0e45b93dca3b2f8d3263c2d7fa"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv",
+      "bytes": 125129,
+      "sha256": "90acb81d0af99c0d373355e26f92f2f0ad35091d0e264567971a081224c69d74"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/ingest_all_evidence_and_screen.py",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/ingest_all_evidence_and_screen.py",
+      "bytes": 32348,
+      "sha256": "7d0bf1eb44be762b328f859d71817c64e8470bcfd3d3fb0abd13fe50fcb5c8bc"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "bytes": 9108,
+      "sha256": "6c851321abf8988e7f567abef98a9728a20511c00642596a60d54847e3cdf6c6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/summarize_acidic_window_confirmation.py",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/summarize_acidic_window_confirmation.py",
+      "bytes": 16583,
+      "sha256": "f684d9bba4929a0e84d4d2363bf8f154e74fea7c35e4e31421a7c6cbd467f84c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling.py",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling.py",
+      "bytes": 11241,
+      "sha256": "052444e3a416c99d3541f1ea580966b8d29fd51ac939db9fc5b206e159c6c0ba"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/build_acidic_window_confirmation_panel.py",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/build_acidic_window_confirmation_panel.py",
+      "bytes": 15824,
+      "sha256": "feeb79da8992e7bc9b82029a777fe90e189031f396acecbc445765a0186e7246"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/post_acidic_discovery_screen.py",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/post_acidic_discovery_screen.py",
+      "bytes": 9055,
+      "sha256": "e6b6d7717b416df5119c189b65d51e6810f875f184b986e03c9938d11bedef0a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/outcome_mining_after_charge_failure.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/outcome_mining_after_charge_failure.csv",
+      "bytes": 13367,
+      "sha256": "417e9f5b6cdd310cc00dbb9f5b627d6190670e58c554b6d6463b99f4f82d4b47"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/all_evidence_axis_screen.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/all_evidence_axis_screen.csv",
+      "bytes": 167324,
+      "sha256": "bc5c8d7c5f67a12a82d300a0a6e25d7190398e2785b9c1628912b89ddd6d1c0d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/fresh_panel_remaining_axis_screen.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/fresh_panel_remaining_axis_screen.csv",
+      "bytes": 5359,
+      "sha256": "372c3677ba5c45c72a533c0298b814992bf3ebe49ade41110b0e5d0b89920343"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/acidic_window_confirmation_effects.json",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/acidic_window_confirmation_effects.json",
+      "bytes": 4270,
+      "sha256": "df8b0b9e1fe185c052af6578b69f3af38dfcb4a2e2fa5901d701bf3de3efe37e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/acidic_window_confirmation_level_curves.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/acidic_window_confirmation_level_curves.csv",
+      "bytes": 4773,
+      "sha256": "59447ebb18f5c59daa85311ec0d31678244c41af2a3e25b247e63eff77da80a4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/post_acidic_axis_screen.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/post_acidic_axis_screen.csv",
+      "bytes": 202994,
+      "sha256": "881349f197a666bb370e916998c52c80b162751428eb4b661b43e9195df5d07d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/post_acidic_outcome_mining.csv",
+      "relative_destination": "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/post_acidic_outcome_mining.csv",
+      "bytes": 16643,
+      "sha256": "f862b1c86e384d18cbdfd8a19fe45ceaee60faae859347d017581d3c7d5676f5"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/final_report.md",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/final_report.md",
+      "bytes": 4025,
+      "sha256": "119f592e8789400f64f5de749677421d6125b98a6fbad18a8b64fb3f2a13be9b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/axis_ledger.json",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/axis_ledger.json",
+      "bytes": 41486,
+      "sha256": "811b4c1b6c17d46fe12a054f474f741a53c2126644e7f1c262dd9a949822ddc4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/README.md",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/README.md",
+      "bytes": 312,
+      "sha256": "d49a7fbd7d8efa7f687be042292b5769e0371b9572357bbceddb876d7c4319a1"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_loop_state.json",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_loop_state.json",
+      "bytes": 19017,
+      "sha256": "061ca18d773cd65b4157b4876591398b96a7c6d53df819d0f281a180a923fb2b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/target_model_results.cys_confirmation.target_level.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/target_model_results.cys_confirmation.target_level.csv",
+      "bytes": 210017,
+      "sha256": "a2e6a324609b92b99411cabe7b0b338a21f522157f2b66610096bf3597a13ba4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/cys_confirmation_panel_manifest.json",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/cys_confirmation_panel_manifest.json",
+      "bytes": 9932,
+      "sha256": "f01fb4352c65cba0fb6cec73f4577702b5ac46971a06220dbd8f81e0ede879f6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/session_manifest.json",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/session_manifest.json",
+      "bytes": 1516,
+      "sha256": "9a17fb174b46c4753edb9d51f9e249b4ee984ccee606b2caac98459b90073ea7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/commands_run.json",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/commands_run.json",
+      "bytes": 1986,
+      "sha256": "94fb5377914d6b0d4d5cb7ac7e2e4ea691676521c5c2738901d46efd8041ade5"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/target_model_results.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/target_model_results.csv",
+      "bytes": 210017,
+      "sha256": "a2e6a324609b92b99411cabe7b0b338a21f522157f2b66610096bf3597a13ba4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/controller_prompt.md",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/controller_prompt.md",
+      "bytes": 20954,
+      "sha256": "9ae8eb1c4f2460e7ab53b6cbacc8509765ca624d6e1ba67351d1ce6babbd00b6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/session_contract.json",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/session_contract.json",
+      "bytes": 68374,
+      "sha256": "2dbab7e5c3c2fd4b369724dc7fb039423892978f8a1261165ca60543846a5ef4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/target_model_results.cys_confirmation.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/target_model_results.cys_confirmation.scaled_samples.csv",
+      "bytes": 118922,
+      "sha256": "ed37086bce8ed38386b76a0fde7fb3d0c4b239416df2ecf9fdd61ed0eeeacef7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/cys_confirmation_candidate_features.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/cys_confirmation_candidate_features.csv",
+      "bytes": 187107,
+      "sha256": "1280435e6580ede8ec7a23d2bf7771a58ceb38f4baed095546d5fe61e8f8966f"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/eligible_unscored_cys_pool.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/eligible_unscored_cys_pool.csv",
+      "bytes": 358989,
+      "sha256": "56166f3d933825f08c11e1374ab61d6ddb6c629e401ce454b1ddd75b04aad477"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/expanded_candidate_pool_features.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/expanded_candidate_pool_features.csv",
+      "bytes": 977763,
+      "sha256": "c8c3b37e1e778f0374f156d18b974d501f927379c327bc706bbbc8a0323e8337"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/combined_evidence_with_cys_confirmation.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/combined_evidence_with_cys_confirmation.csv",
+      "bytes": 1550513,
+      "sha256": "f65509a08712767b61b89763297646264254e31c53ddce6f7fe16468fd08e1eb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/expanded_all_scored_evidence_table.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/expanded_all_scored_evidence_table.csv",
+      "bytes": 1313527,
+      "sha256": "127c947a8df747d4abd20889e2bf8995a1ce1bf6e81c73d623561ae1732db000"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/build_cys_confirmation_panel.py",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/build_cys_confirmation_panel.py",
+      "bytes": 17285,
+      "sha256": "692cec0b068736164e8f27e771b875b7ec2a60ecdb86f9f16f2dcd43642aae2b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "bytes": 9108,
+      "sha256": "6c851321abf8988e7f567abef98a9728a20511c00642596a60d54847e3cdf6c6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/summarize_cys_confirmation.py",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/summarize_cys_confirmation.py",
+      "bytes": 15684,
+      "sha256": "bdb12c546883b13720f4efa0dd68f756cf9dbf95f221fcab2ee001a708fd4f12"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/evaluate_esmfold2_scaling.py",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/evaluate_esmfold2_scaling.py",
+      "bytes": 11241,
+      "sha256": "052444e3a416c99d3541f1ea580966b8d29fd51ac939db9fc5b206e159c6c0ba"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/expand_all_scored_features.py",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/scripts/expand_all_scored_features.py",
+      "bytes": 34412,
+      "sha256": "c8205dde602e76daade46eb647e413955dfc0d70ff3f8154f055ad36718aee98"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/expanded_candidate_hypothesis_review.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/expanded_candidate_hypothesis_review.csv",
+      "bytes": 52935,
+      "sha256": "397139ecff692dc6f80b8c5214a0049442c5dad90cfb795339f206256c811be9"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/expanded_all_scored_axis_screen.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/expanded_all_scored_axis_screen.csv",
+      "bytes": 446861,
+      "sha256": "f9bfa000d19f71d2e70a8a6b429a2989da79be692779873773fa8058f6946790"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/expanded_outcome_mining.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/expanded_outcome_mining.csv",
+      "bytes": 68541,
+      "sha256": "a232be6ec1f52c7c03aabd0a21fc2b80e4809c8e5f297a39ce2df63af98947e6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/cys_confirmation_level_curves.csv",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/cys_confirmation_level_curves.csv",
+      "bytes": 3208,
+      "sha256": "82a9cb4aebf7aba5ee8a3ad662ebb714b2094d42d9b369f53eed027d3967f5b8"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/cys_proxy_investigation.md",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/cys_proxy_investigation.md",
+      "bytes": 3217,
+      "sha256": "f9f8cd9285024f0aeb365ad9d9cd9753b9c48d53b2c2e7ac6940a6cba69b6d6d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/cys_confirmation_effects.json",
+      "relative_destination": "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/analysis_outputs/cys_confirmation_effects.json",
+      "bytes": 6548,
+      "sha256": "f5a9d4e6f06f34a79698001566642e7274ee83e09d156f8d08e60cb35789b5ed"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_cys_proxy_axis_iteration_20260602/proxy_axis_iteration_report.md",
+      "relative_destination": "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/proxy_axis_iteration_report.md",
+      "bytes": 4791,
+      "sha256": "0393dbd7a6ffff6b13dea3385138abd59748e76cff9c5afe6054a31825af826a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_control_models.csv",
+      "relative_destination": "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_control_models.csv",
+      "bytes": 11694,
+      "sha256": "d37952879fb650af970f7a3094304854cc8cf871678b7420b15d49f05bb2e96a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_cys_proxy_axis_iteration_20260602/combined_proxy_feature_table.csv",
+      "relative_destination": "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/combined_proxy_feature_table.csv",
+      "bytes": 1927824,
+      "sha256": "bf72d2c9a429e2d167690a030bc92e109b7497cf5823377b5bd5ae67ba667983"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_cys_proxy_axis_iteration_20260602/iterate_proxy_axes.py",
+      "relative_destination": "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/iterate_proxy_axes.py",
+      "bytes": 26141,
+      "sha256": "f2a4be625f3afe06ed9e668f1f93d5c3c0b69b6bbdbaf7207ab80a6e42ad85cc"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_cys_proxy_axis_iteration_20260602/combined_proxy_cluster_table.csv",
+      "relative_destination": "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/combined_proxy_cluster_table.csv",
+      "bytes": 1214884,
+      "sha256": "6788ad0c2afc85f8a6893b99ba83d5f40fbcf4e83a512b2159c81abf4cee509e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_axis_screen.csv",
+      "relative_destination": "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_axis_screen.csv",
+      "bytes": 96599,
+      "sha256": "ba13dda82475984b1b2d351e94b1ceaaefb08b22bc12daa76703dad275db86a2"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_source_consistency.csv",
+      "relative_destination": "original_runs/esmfold2_cys_proxy_axis_iteration_20260602/candidate_source_consistency.csv",
+      "bytes": 71251,
+      "sha256": "4ce82f1d4e52d691c66802401f465342e75a77e89801045a7c44e104597cc848"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/viral_disulfide_pilot_manifest.json",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/viral_disulfide_pilot_manifest.json",
+      "bytes": 3372,
+      "sha256": "ba763f11a550495e4a17ff725abea52181bbaf8c33c1391eec6e382a82111ccf"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/target_model_results.viral_disulfide_pilot.target_level.csv",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/target_model_results.viral_disulfide_pilot.target_level.csv",
+      "bytes": 348569,
+      "sha256": "7bea940acb12fead997c29b4da8e18eedeef739ac370069e53b24f097f8857f4"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/viral_disulfide_pilot_report.md",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/viral_disulfide_pilot_report.md",
+      "bytes": 1025,
+      "sha256": "fa398c0310b95a82bbd3cdec11f98b2a556fb6eb070bdaa39450b5afe104144e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/target_model_results.viral_disulfide_pilot.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/target_model_results.viral_disulfide_pilot.scaled_samples.csv",
+      "bytes": 45389,
+      "sha256": "06ac426660606dd72099bc8ec40d36a2a5685fa3469db6ed979ac471499500c0"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/viral_disulfide_pilot_candidate_features.csv",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/viral_disulfide_pilot_candidate_features.csv",
+      "bytes": 79615,
+      "sha256": "bc284b40022ea3eb9612d974bd0db521254e453cba7bf026341ea66221e22550"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/eligible_unscored_viral_disulfide_pool.csv",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/eligible_unscored_viral_disulfide_pool.csv",
+      "bytes": 213852,
+      "sha256": "b1e169551e7776927f5b3b3e070d530ea273fa7c91073343b35d84cc0ef88fdc"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/rcsb_envelope_fusion_candidates.csv",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/spectra_ready_dataset/rcsb_envelope_fusion_candidates.csv",
+      "bytes": 259571,
+      "sha256": "369a29e1da58625df13028744cc12f314d5181efadc77787715356e097762d54"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "bytes": 9108,
+      "sha256": "6c851321abf8988e7f567abef98a9728a20511c00642596a60d54847e3cdf6c6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/evaluate_esmfold2_scaling.py",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/evaluate_esmfold2_scaling.py",
+      "bytes": 11241,
+      "sha256": "052444e3a416c99d3541f1ea580966b8d29fd51ac939db9fc5b206e159c6c0ba"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/build_viral_disulfide_pilot_panel.py",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/build_viral_disulfide_pilot_panel.py",
+      "bytes": 11093,
+      "sha256": "ce9ec8855a1755b9ead5746aa14a1b8c11a28197eecc4a920f93d7ea54842f3d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/fetch_rcsb_envelope_candidates.py",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/fetch_rcsb_envelope_candidates.py",
+      "bytes": 8068,
+      "sha256": "fe423d96d33b644a53db22e293a0dcd337db87a98b5d3e8fe3124164bf985036"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/summarize_viral_disulfide_pilot.py",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/scripts/summarize_viral_disulfide_pilot.py",
+      "bytes": 10637,
+      "sha256": "04d2aa599c5a3c287f5838fb5503f255ceecf50cd4110bfbf8d7225a5f32877a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/analysis_outputs/viral_disulfide_pilot_level_curves.csv",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/analysis_outputs/viral_disulfide_pilot_level_curves.csv",
+      "bytes": 2151,
+      "sha256": "cb9b5f6eb17c2b4b9c0c26f7201299dabbcdfdbb0d8bd99dd53848cc5eb71bc2"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_viral_disulfide_axis_pilot_20260602/analysis_outputs/viral_disulfide_pilot_effects.json",
+      "relative_destination": "original_runs/esmfold2_viral_disulfide_axis_pilot_20260602/analysis_outputs/viral_disulfide_pilot_effects.json",
+      "bytes": 3872,
+      "sha256": "002b8330ab833b3ce3ac6603162616978e68373e429885dbec305e563bf2e616"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/surface_lowhelical_confirmation_manifest.json",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/surface_lowhelical_confirmation_manifest.json",
+      "bytes": 3807,
+      "sha256": "d641f269c206fa43b05ee6f4ea4865819ab06aa04dd19e926730774d064760b0"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/envelope_fusion_confirmation_report.md",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/envelope_fusion_confirmation_report.md",
+      "bytes": 2486,
+      "sha256": "596be0cf56e4bd9470191bed710ecec65dd9fabc84143a3e6501ecf6a312d54c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.envelope_fusion_confirmation.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.envelope_fusion_confirmation.scaled_samples.csv",
+      "bytes": 47395,
+      "sha256": "85b354faa2fc859163b45671514bf090085c7a6db26fb780805dae11b715938e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.envelope_fusion_confirmation.target_level.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.envelope_fusion_confirmation.target_level.csv",
+      "bytes": 209827,
+      "sha256": "9c612734edce1392000d49475d937ae36e49a8a8fa7c234e6b8eaa68a375e4f5"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.surface_lowhelical_confirmation.target_level.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.surface_lowhelical_confirmation.target_level.csv",
+      "bytes": 264950,
+      "sha256": "3305cd4dc06dd183e6fff3b627767eb587ab80a0c135e1d79d945d323255f421"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/envelope_fusion_confirmation_manifest.json",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/envelope_fusion_confirmation_manifest.json",
+      "bytes": 4268,
+      "sha256": "d50e62ffd97b344938a39745cbbb69d1231906045fcc9db969d74ea8d648900c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/surface_lowhelical_confirmation_report.md",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/surface_lowhelical_confirmation_report.md",
+      "bytes": 2624,
+      "sha256": "cc09a9b92cfcf27adfd058643dec7db0d295caebb4e6f437a6ad262bc8e420fb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.surface_lowhelical_confirmation.scaled_samples.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/target_model_results.surface_lowhelical_confirmation.scaled_samples.csv",
+      "bytes": 57402,
+      "sha256": "c36cefe233ae4ad996210bb6791db5ed539e1da9df0ee7b36ec3d4b41340d820"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_confirmation_candidate_features.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_confirmation_candidate_features.csv",
+      "bytes": 53776,
+      "sha256": "e5bfada29673c1d154dbf8c56272b64401fac4c00817093a5d93d7227806b079"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_candidate_pool.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/surface_lowhelical_candidate_pool.csv",
+      "bytes": 155484,
+      "sha256": "19457f3d2fdc2b03fea5b236f039b56d7680cf1ce5287ab40b31ede2acd46ad5"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/envelope_fusion_confirmation_candidate_features.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/envelope_fusion_confirmation_candidate_features.csv",
+      "bytes": 43452,
+      "sha256": "3f8d1468b3c3f5ec3e07a629dea1a1cf34e8aa18b37a81ec80b2a4b3e2de670e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/eligible_envelope_fusion_pool.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/spectra_ready_dataset/eligible_envelope_fusion_pool.csv",
+      "bytes": 82631,
+      "sha256": "45732e090531c4629251759596f21205438b99617417d8cf530f5d981966f4cd"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/fetch_additional_surface_lowhelical_controls.py",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/fetch_additional_surface_lowhelical_controls.py",
+      "bytes": 5246,
+      "sha256": "840d5f0bddc2a8ce8b3382443690a8eebadb917fccb9a221ed7977d2433a85cc"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/discover_envelope_subaxes.py",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/discover_envelope_subaxes.py",
+      "bytes": 9100,
+      "sha256": "b69e2f4c3527e1e1298a2742a8ef342d32032ec417490429875316ce06e6169d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_envelope_fusion_confirmation_panel.py",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_envelope_fusion_confirmation_panel.py",
+      "bytes": 10060,
+      "sha256": "cba8516bb2cb94354ff3137875ded174f918e89442942e3bb398ee2c35590f6d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_surface_lowhelical_confirmation.py",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_surface_lowhelical_confirmation.py",
+      "bytes": 11926,
+      "sha256": "7ce35d80101a5ee2938ae48e63506c013a0e0044b1b3f2fb151bd1be2aa825f7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling_multisample.py",
+      "bytes": 9108,
+      "sha256": "6c851321abf8988e7f567abef98a9728a20511c00642596a60d54847e3cdf6c6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling.py",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/evaluate_esmfold2_scaling.py",
+      "bytes": 11241,
+      "sha256": "052444e3a416c99d3541f1ea580966b8d29fd51ac939db9fc5b206e159c6c0ba"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_envelope_fusion_confirmation.py",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/summarize_envelope_fusion_confirmation.py",
+      "bytes": 12705,
+      "sha256": "186abf0b0bae89f7cd6f191a7d6bea22fe3ffc5707c0981d1f01e6c24398cbc0"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/package_surface_lowhelical_panel_from_pool.py",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/package_surface_lowhelical_panel_from_pool.py",
+      "bytes": 4801,
+      "sha256": "14353b78ef6d126608af30208a3445daf9ead147aba64eb5505af124cf41a1d1"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_surface_lowhelical_confirmation_panel.py",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/scripts/build_surface_lowhelical_confirmation_panel.py",
+      "bytes": 18647,
+      "sha256": "88eced581bea953adbac6351e534c2b2cca68c13c9bfe76ac6826c95a3f0ed03"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_fusion_confirmation_level_curves.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_fusion_confirmation_level_curves.csv",
+      "bytes": 2728,
+      "sha256": "a40b6cef4b5e429ad24315e05b047ed17d143acfefae72c3baca6deea05c7d66"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_fusion_confirmation_effects.json",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_fusion_confirmation_effects.json",
+      "bytes": 4620,
+      "sha256": "2aad1732397b6675a0efc6cd19b9a43926fa03bc380f4239f18b801727992982"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/surface_lowhelical_confirmation_effects.json",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/surface_lowhelical_confirmation_effects.json",
+      "bytes": 3955,
+      "sha256": "3045d3ddb161e0d360e631b2e72abb75084a4d934f177a9a2b4901d87c907929"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_discovery_candidates.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_discovery_candidates.csv",
+      "bytes": 5129,
+      "sha256": "051638dd89f445135f06f53b7f485a2f9417d59d234b05c47a3030cee940b0d7"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_feature_table.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_feature_table.csv",
+      "bytes": 58213,
+      "sha256": "920b1a23555071f66e0b01b1a6d316e1a2b653eae34426d340c92b735a9c3474"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_discovery_report.md",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/envelope_subaxis_discovery_report.md",
+      "bytes": 2619,
+      "sha256": "68d7937cfa48e035e0cfd88454c263a714ce4749cc90aefcc44b3fcbc5738d08"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/surface_lowhelical_confirmation_level_curves.csv",
+      "relative_destination": "original_runs/esmfold2_envelope_fusion_axis_confirmation_20260602/analysis_outputs/surface_lowhelical_confirmation_level_curves.csv",
+      "bytes": 1885,
+      "sha256": "2c7fb2be86f7061c111ba03b362f34e75b6ffad69487d032f548b5fdae7b4a3b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/global_hypothesis_interpretation.md",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/global_hypothesis_interpretation.md",
+      "bytes": 4594,
+      "sha256": "19d3b73e887ea45889228ab017a957de84fad7d3c222dae04f02ee47d8888e6f"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/global_hypothesis_audit_report.md",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/global_hypothesis_audit_report.md",
+      "bytes": 4574,
+      "sha256": "d7913606134b87862ffc768723ebb1efcafd34cae9459ea07d959a7c58b427b5"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/input_manifest.json",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/input_manifest.json",
+      "bytes": 6245,
+      "sha256": "627b717332109c9cd57afb0527c19a2733d513f14b5ca601061aeb103d561d98"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/summary.json",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/summary.json",
+      "bytes": 2437,
+      "sha256": "01d2622211d0099754aaaa0cd93b1b167c8a0d93060391097741512ad5162123"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/spectra_ready_dataset/primary_exact_sequence_dedup.csv",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/spectra_ready_dataset/primary_exact_sequence_dedup.csv",
+      "bytes": 1724488,
+      "sha256": "4f35b2fa090e619a75af641b0f76d211401e7a42f829032fa121e0255f20a11c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/spectra_ready_dataset/all_esmfold2_scored_evaluations.csv",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/spectra_ready_dataset/all_esmfold2_scored_evaluations.csv",
+      "bytes": 1830916,
+      "sha256": "d69ada693ae0daccc466ed4da38bf85a5e5a734621f79b370cfe53107b4db7fa"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/scripts/global_hypothesis_audit.py",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/scripts/global_hypothesis_audit.py",
+      "bytes": 34758,
+      "sha256": "f49f1fc1422542e7389f818728ee52c549f29be2c24e28aa002f9a9849590176"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_slice_effects_primary_sequence.csv",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_slice_effects_primary_sequence.csv",
+      "bytes": 8289,
+      "sha256": "f1f137ff0be06d9b38653deabfbc27fe7d752b6321ad5c9265f1826d2ae1fda9"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_level_curves_all_evaluations.csv",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_level_curves_all_evaluations.csv",
+      "bytes": 12949,
+      "sha256": "55789677446db442223162b11475890a93f7cb409f5ebb3c29aef250793499eb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_effects_all_evaluations.csv",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_effects_all_evaluations.csv",
+      "bytes": 10282,
+      "sha256": "b5c58a1c63339ac59caf98c753494c2d87208143ef757f2a5c41f5f555f4e09a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_adjusted_effects_primary_sequence.csv",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_adjusted_effects_primary_sequence.csv",
+      "bytes": 1755,
+      "sha256": "e611f42b8d079da5c73bfae4823a0ae982f6e5c7e8a7e150a4ecd63d6ea22a40"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_level_curves_primary_sequence.csv",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_level_curves_primary_sequence.csv",
+      "bytes": 12951,
+      "sha256": "add3e02502d96c1543589fc30a65190bd7ea03cdf52577fbb3a451fd866428cc"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_slice_effects_all_evaluations.csv",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_slice_effects_all_evaluations.csv",
+      "bytes": 8297,
+      "sha256": "cf751e5b5c22811532a99a6c40922b058944ed55d34d593d9cb7b524b56cc576"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_effects_primary_sequence.csv",
+      "relative_destination": "original_runs/esmfold2_global_hypothesis_audit_20260602/analysis_outputs/global_hypothesis_effects_primary_sequence.csv",
+      "bytes": 10244,
+      "sha256": "09288af08e0bef30fb567984778a9ae068505e39ad25159b78bfb01da199d5a2"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/reviewer_proofing_report.md",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/reviewer_proofing_report.md",
+      "bytes": 3982,
+      "sha256": "433f8ca1de208bb20a06c235ffa09998b9c5b1b15fbebff4a6f7e7d57271c835"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/summary.json",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/summary.json",
+      "bytes": 6243,
+      "sha256": "bce7b874781f2504930ccf2862ee517a7ea1e1e423f21f368692472b267d32ca"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/scripts/save_example_predictions.py",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/scripts/save_example_predictions.py",
+      "bytes": 7143,
+      "sha256": "b13025f11dda4bf97cb671df9af96a66b71f8bb1ff64eb70b0f9d0d07c89a99e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/scripts/reviewer_proofing_analysis.py",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/scripts/reviewer_proofing_analysis.py",
+      "bytes": 28888,
+      "sha256": "88eb0f5e2dd0098ff6e688ed7847269a17e6055d7f16e40e82fafe2aa40b83cf"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_structure_targets.csv",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_structure_targets.csv",
+      "bytes": 4421,
+      "sha256": "02437ab6effa9b0a58cf918adaca99fc47da36633862b749d5bfa28374096be3"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_prediction_overlay_summary.csv",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_prediction_overlay_summary.csv",
+      "bytes": 1263,
+      "sha256": "774036b42f4b912cb1fe31a2b8070aa23dfa242795ab7b09f78d935e8080b9fd"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_prediction_config.json",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/example_structures/example_prediction_config.json",
+      "bytes": 217,
+      "sha256": "43fc3d125f8fab7705b94ef39808e31f75f88c813a8468c953664c58cc271bd3"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/high_disulfide_quartile_curve.csv",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/high_disulfide_quartile_curve.csv",
+      "bytes": 270,
+      "sha256": "7876de30a8b5fa0e4b3ab27fb02193c8970f8a76592cc6ca23f47d0e36b54b58"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/cluster_assignments.csv",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/cluster_assignments.csv",
+      "bytes": 193459,
+      "sha256": "8f3cbb70645860e91019c18a8e4327abb455cff4e2f007b6df231749c41d1cfd"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/ptm_calibration_bins.csv",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/ptm_calibration_bins.csv",
+      "bytes": 680,
+      "sha256": "688b7730930b09d2eef2c9772835d30bf4c30014119d8e561f0b018a2a7f0f3a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/matched_control_pairs.csv",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/matched_control_pairs.csv",
+      "bytes": 26962,
+      "sha256": "ad4994ecc403197bbf495b67fe3f66294f33da509a1e1fb5c8888611ed204b7b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/cluster_aware_disulfide_effects.csv",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/cluster_aware_disulfide_effects.csv",
+      "bytes": 1019,
+      "sha256": "3709a76563fea1a841106b1dc90201043124871655f8109bbfb2e9ab9c2dd01d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/confidence_calibration_summary.csv",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/confidence_calibration_summary.csv",
+      "bytes": 1669,
+      "sha256": "fe639295cc71c4fb42d70d047fb3d4df9e4d5801afce659a66abf145d0f4b753"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/per_source_high_disulfide_summary.csv",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/per_source_high_disulfide_summary.csv",
+      "bytes": 881,
+      "sha256": "71b1b7d84d63c88561360be329cb8fb4d186b89f754c26bd9ede02617c1d7234"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/matched_control_summary.csv",
+      "relative_destination": "original_runs/esmfold2_reviewer_proofing_20260602/analysis_outputs/matched_control_summary.csv",
+      "bytes": 728,
+      "sha256": "5ddefb8a1b26023f1823f0d7cbce5032f2bf06d51cd4d0596aaeda28c1262254"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/README.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/README.md",
+      "bytes": 2579,
+      "sha256": "ae5e43784962184ef398822efc92e4ff4b25167b2fa9509180315314443b0775"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/ARTIFACT_INDEX.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/ARTIFACT_INDEX.md",
+      "bytes": 4587,
+      "sha256": "eb5056c62e4da1ffc7198b80aed1836e25397d9e6d760ae29b41b2298b099eaa"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/FINAL_ESMFOLD2_RESULT.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/FINAL_ESMFOLD2_RESULT.md",
+      "bytes": 9107,
+      "sha256": "51d9d2174b9e00d368e8a7a661f5baca7b2166e6bf2070f1cdc248fb2cec0429"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/PAPER_FIGURE_GUIDE.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/PAPER_FIGURE_GUIDE.md",
+      "bytes": 4678,
+      "sha256": "c1efb6db22dd54d93d7cac3e7fb2cb399feb2617a08710c9c31f0892aa1e1c6f"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/provenance/input_manifest.json",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/provenance/input_manifest.json",
+      "bytes": 6245,
+      "sha256": "627b717332109c9cd57afb0527c19a2733d513f14b5ca601061aeb103d561d98"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/provenance/summary.json",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/provenance/summary.json",
+      "bytes": 6243,
+      "sha256": "bce7b874781f2504930ccf2862ee517a7ea1e1e423f21f368692472b267d32ca"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/10_envelope_fusion_confirmation_failed_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/10_envelope_fusion_confirmation_failed_report.md",
+      "bytes": 2486,
+      "sha256": "596be0cf56e4bd9470191bed710ecec65dd9fabc84143a3e6501ecf6a312d54c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/06_charge_fresh_confirmation_failed_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/06_charge_fresh_confirmation_failed_report.md",
+      "bytes": 3864,
+      "sha256": "49b9214355b2158205c284a120ce3ffa8525e472dbbd3f9a237541703006dfc6"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/02_beyond_msa_flexible_nonhelical_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/02_beyond_msa_flexible_nonhelical_report.md",
+      "bytes": 6227,
+      "sha256": "30172f8325660be421ca9a50dabc15dbc9569d403c6eda747b83acd3b438518b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/08_cysteine_proxy_investigation.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/08_cysteine_proxy_investigation.md",
+      "bytes": 3217,
+      "sha256": "f9f8cd9285024f0aeb365ad9d9cd9753b9c48d53b2c2e7ac6940a6cba69b6d6d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/03_flexible_nonhelical_external_rcsb_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/03_flexible_nonhelical_external_rcsb_report.md",
+      "bytes": 1941,
+      "sha256": "b504ef31feb6a9b22564f34c59a5e5bc8056bf16ef500f084854a5fc4fb6f2af"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/04_reference_geometry_benchmark_only_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/04_reference_geometry_benchmark_only_report.md",
+      "bytes": 3578,
+      "sha256": "47cefd50ba44fd6d31c21153f8a1e9c7bbc8ef92ea8142d52f957ec615e07e92"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/01_cameo_msa_depth_final_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/01_cameo_msa_depth_final_report.md",
+      "bytes": 4949,
+      "sha256": "8a436a590ebdaa363589d2b7e40027c9bb7f383f07c1a4049203d52b446bc715"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/09_viral_disulfide_pilot_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/09_viral_disulfide_pilot_report.md",
+      "bytes": 1025,
+      "sha256": "fa398c0310b95a82bbd3cdec11f98b2a556fb6eb070bdaa39450b5afe104144e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/05_shared_charge_saved_outputs_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/05_shared_charge_saved_outputs_report.md",
+      "bytes": 1710,
+      "sha256": "9aeb952cf84640b4093fa2a7f8efc0da8789b360d5eb9c2052370bf91bfb5de2"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/11_surface_lowhelical_and_classII_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/11_surface_lowhelical_and_classII_report.md",
+      "bytes": 2624,
+      "sha256": "cc09a9b92cfcf27adfd058643dec7db0d295caebb4e6f437a6ad262bc8e420fb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/07_high_cysteine_fresh_confirmation_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/prior_axis_reports/07_high_cysteine_fresh_confirmation_report.md",
+      "bytes": 4025,
+      "sha256": "119f592e8789400f64f5de749677421d6125b98a6fbad18a8b64fb3f2a13be9b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/high_disulfide_quartile_curve.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/high_disulfide_quartile_curve.csv",
+      "bytes": 270,
+      "sha256": "7876de30a8b5fa0e4b3ab27fb02193c8970f8a76592cc6ca23f47d0e36b54b58"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_slice_effects_primary_sequence.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_slice_effects_primary_sequence.csv",
+      "bytes": 8289,
+      "sha256": "f1f137ff0be06d9b38653deabfbc27fe7d752b6321ad5c9265f1826d2ae1fda9"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/cluster_assignments.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/cluster_assignments.csv",
+      "bytes": 193459,
+      "sha256": "8f3cbb70645860e91019c18a8e4327abb455cff4e2f007b6df231749c41d1cfd"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_level_curves_all_evaluations.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_level_curves_all_evaluations.csv",
+      "bytes": 12949,
+      "sha256": "55789677446db442223162b11475890a93f7cb409f5ebb3c29aef250793499eb"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_effects_all_evaluations.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_effects_all_evaluations.csv",
+      "bytes": 10282,
+      "sha256": "b5c58a1c63339ac59caf98c753494c2d87208143ef757f2a5c41f5f555f4e09a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/ptm_calibration_bins.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/ptm_calibration_bins.csv",
+      "bytes": 680,
+      "sha256": "688b7730930b09d2eef2c9772835d30bf4c30014119d8e561f0b018a2a7f0f3a"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_adjusted_effects_primary_sequence.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_adjusted_effects_primary_sequence.csv",
+      "bytes": 1755,
+      "sha256": "e611f42b8d079da5c73bfae4823a0ae982f6e5c7e8a7e150a4ecd63d6ea22a40"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/matched_control_pairs.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/matched_control_pairs.csv",
+      "bytes": 26962,
+      "sha256": "ad4994ecc403197bbf495b67fe3f66294f33da509a1e1fb5c8888611ed204b7b"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/cluster_aware_disulfide_effects.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/cluster_aware_disulfide_effects.csv",
+      "bytes": 1019,
+      "sha256": "3709a76563fea1a841106b1dc90201043124871655f8109bbfb2e9ab9c2dd01d"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/confidence_calibration_summary.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/confidence_calibration_summary.csv",
+      "bytes": 1669,
+      "sha256": "fe639295cc71c4fb42d70d047fb3d4df9e4d5801afce659a66abf145d0f4b753"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/per_source_high_disulfide_summary.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/per_source_high_disulfide_summary.csv",
+      "bytes": 881,
+      "sha256": "71b1b7d84d63c88561360be329cb8fb4d186b89f754c26bd9ede02617c1d7234"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_level_curves_primary_sequence.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_level_curves_primary_sequence.csv",
+      "bytes": 12951,
+      "sha256": "add3e02502d96c1543589fc30a65190bd7ea03cdf52577fbb3a451fd866428cc"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_slice_effects_all_evaluations.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_slice_effects_all_evaluations.csv",
+      "bytes": 8297,
+      "sha256": "cf751e5b5c22811532a99a6c40922b058944ed55d34d593d9cb7b524b56cc576"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_effects_primary_sequence.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/global_hypothesis_effects_primary_sequence.csv",
+      "bytes": 10244,
+      "sha256": "09288af08e0bef30fb567984778a9ae068505e39ad25159b78bfb01da199d5a2"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/tables/matched_control_summary.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/tables/matched_control_summary.csv",
+      "bytes": 728,
+      "sha256": "5ddefb8a1b26023f1823f0d7cbce5032f2bf06d51cd4d0596aaeda28c1262254"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/scripts/save_example_predictions.py",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/scripts/save_example_predictions.py",
+      "bytes": 7143,
+      "sha256": "b13025f11dda4bf97cb671df9af96a66b71f8bb1ff64eb70b0f9d0d07c89a99e"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/scripts/global_hypothesis_audit.py",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/scripts/global_hypothesis_audit.py",
+      "bytes": 34758,
+      "sha256": "f49f1fc1422542e7389f818728ee52c549f29be2c24e28aa002f9a9849590176"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/scripts/reviewer_proofing_analysis.py",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/scripts/reviewer_proofing_analysis.py",
+      "bytes": 28888,
+      "sha256": "88eb0f5e2dd0098ff6e688ed7847269a17e6055d7f16e40e82fafe2aa40b83cf"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/example_structures/example_structure_targets.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/example_structures/example_structure_targets.csv",
+      "bytes": 4421,
+      "sha256": "02437ab6effa9b0a58cf918adaca99fc47da36633862b749d5bfa28374096be3"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/example_structures/example_prediction_overlay_summary.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/example_structures/example_prediction_overlay_summary.csv",
+      "bytes": 1263,
+      "sha256": "774036b42f4b912cb1fe31a2b8070aa23dfa242795ab7b09f78d935e8080b9fd"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/example_structures/example_prediction_config.json",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/example_structures/example_prediction_config.json",
+      "bytes": 217,
+      "sha256": "43fc3d125f8fab7705b94ef39808e31f75f88c813a8468c953664c58cc271bd3"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/data/primary_exact_sequence_dedup.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/data/primary_exact_sequence_dedup.csv",
+      "bytes": 1724488,
+      "sha256": "4f35b2fa090e619a75af641b0f76d211401e7a42f829032fa121e0255f20a11c"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/data/all_esmfold2_scored_evaluations.csv",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/data/all_esmfold2_scored_evaluations.csv",
+      "bytes": 1830916,
+      "sha256": "d69ada693ae0daccc466ed4da38bf85a5e5a734621f79b370cfe53107b4db7fa"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/source_reports/global_hypothesis_interpretation.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/source_reports/global_hypothesis_interpretation.md",
+      "bytes": 4594,
+      "sha256": "19d3b73e887ea45889228ab017a957de84fad7d3c222dae04f02ee47d8888e6f"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/source_reports/global_hypothesis_audit_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/source_reports/global_hypothesis_audit_report.md",
+      "bytes": 4574,
+      "sha256": "d7913606134b87862ffc768723ebb1efcafd34cae9459ea07d959a7c58b427b5"
+    },
+    {
+      "remote_path": "/ewsc/yektefai/spectra_runs/esmfold2_paper_ready_final_20260602/source_reports/reviewer_proofing_report.md",
+      "relative_destination": "original_runs/esmfold2_paper_ready_final_20260602/source_reports/reviewer_proofing_report.md",
+      "bytes": 3982,
+      "sha256": "433f8ca1de208bb20a06c235ffa09998b9c5b1b15fbebff4a6f7e7d57271c835"
+    }
+  ],
+  "total_files": 406,
+  "total_bytes": 30746003,
+  "excluded": [
+    "all model checkpoint/weight files",
+    "all raw protein coordinate/structure files",
+    "all raw sequence/alignment files",
+    "all native transcripts and controller logs",
+    "all files over20MB",
+    "all symlink targets",
+    "third-party source repositories",
+    "files deeper than3relative path components"
+  ]
+}

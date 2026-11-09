@@ -1,0 +1,826 @@
+{
+  "original_files_checked_unchanged": 342,
+  "original_file_mismatches": [],
+  "notebooks_executed": 20,
+  "executed_cells": 122,
+  "figures": 18,
+  "notebook_errors": 0,
+  "checks": {
+    "zeroshot_verification": {
+      "comparison": {
+        "rows": 11518,
+        "differences": {
+          "zeroshot_reactome_support_norm_log_mean": 0,
+          "zeroshot_norm_support_level_from_fewshot_freeze": 0
+        },
+        "all_match": true
+      }
+    },
+    "initial_verification": {
+      "score_files": 55,
+      "score_rows": 39808,
+      "chemical_rows": 7288,
+      "drug_metadata_rows": 379,
+      "comparison": {
+        "rows": 39808,
+        "differences": {
+          "source_repo": 0,
+          "source_path": 0,
+          "perturbation": 0,
+          "overlap_at_N": 0,
+          "de_sig_genes_recall": 0,
+          "pearson_delta": 0,
+          "max_tanimoto_to_target_context_train_drug": 0,
+          "chem_support_level": 0,
+          "target_context_train_drug_count": 0
+        },
+        "all_match": true
+      },
+      "tie_note": {
+        "nearest_reference_label_differences": 50,
+        "all_are_equal_similarity_ties": true,
+        "explanation": "Original code iterates a Python set and chooses the first maximum. Tied nearest-drug labels can differ with hash order; all similarities, level assignments and evaluated outcomes match."
+      }
+    },
+    "controls_verification": {
+      "output": "continued/artifacts/controls_replogle_best_axis_summary.json"
+    },
+    "parse_verification": {
+      "comparison": {
+        "rows": 558,
+        "differences": {
+          "parse_train_ligand_count": 0,
+          "parse_family_train_count": 0,
+          "parse_family_support_fraction": 0,
+          "parse_family_support_level": 0
+        },
+        "all_match": true
+      },
+      "freeze": {
+        "axis_id": "STATE_PARSE_LIGAND_FAMILY_SUPPORT_V1",
+        "status": "frozen_before_confirmation",
+        "unit": "Parse-PBMC few-shot ligand perturbation in target cell type and representation",
+        "similarity": "Count of same prospective ligand/cytokine family perturbations in same-context training set",
+        "direction": "STATE performance should degrade as same-family training support decreases",
+        "discovery_contexts": [
+          "B_Intermediate_Memory",
+          "B_Naive",
+          "Plasmablast"
+        ],
+        "confirmation_contexts": [
+          "CD14_Mono",
+          "CD4_Memory"
+        ],
+        "target_metric": "overlap_at_N",
+        "cutpoints_from_discovery": {
+          "<=q33": 0.0,
+          "<=q66": 0.0,
+          ">q66": "L3_high"
+        }
+      }
+    },
+    "history_verification": {
+      "candidate_screen": {
+        "status": "exploratory_only_outcome_informed",
+        "lowest_groups": [
+          {
+            "feature": "chem_support_level",
+            "value": "L3_mid",
+            "n_rows": 1458,
+            "mean_overlap_at_N": 0.5053482340101367,
+            "mean_de_sig_genes_recall": 0.6874874964745544,
+            "mean_pearson_delta": 0.9051800990740376
+          },
+          {
+            "feature": "chem_support_level",
+            "value": "L1_near",
+            "n_rows": 1458,
+            "mean_overlap_at_N": 0.5135398378804875,
+            "mean_de_sig_genes_recall": 0.6883161185407319,
+            "mean_pearson_delta": 0.9272107665103813
+          },
+          {
+            "feature": "chem_support_level",
+            "value": "L4_low_mid",
+            "n_rows": 1457,
+            "mean_overlap_at_N": 0.5237620289839947,
+            "mean_de_sig_genes_recall": 0.6942043632481113,
+            "mean_pearson_delta": 0.9171364551660808
+          },
+          {
+            "feature": "chem_support_level",
+            "value": "L5_far",
+            "n_rows": 1458,
+            "mean_overlap_at_N": 0.5269851011647784,
+            "mean_de_sig_genes_recall": 0.6867936252249953,
+            "mean_pearson_delta": 0.9251058690341902
+          },
+          {
+            "feature": "chem_support_level",
+            "value": "L2_high_mid",
+            "n_rows": 1457,
+            "mean_overlap_at_N": 0.5321821993808319,
+            "mean_de_sig_genes_recall": 0.7043593052208518,
+            "mean_pearson_delta": 0.9212630636166773
+          },
+          {
+            "feature": "context",
+            "value": "Plasmablast",
+            "n_rows": 304,
+            "mean_overlap_at_N": 0.03882593839820908,
+            "mean_de_sig_genes_recall": 0.11178108540026328,
+            "mean_pearson_delta": 0.1945505806870642
+          },
+          {
+            "feature": "context",
+            "value": "jurkat",
+            "n_rows": 5242,
+            "mean_overlap_at_N": 0.12785554199062482,
+            "mean_de_sig_genes_recall": 0.15992636548968855,
+            "mean_pearson_delta": 0.2648305204836496
+          },
+          {
+            "feature": "context",
+            "value": "rpe1",
+            "n_rows": 5120,
+            "mean_overlap_at_N": 0.14937050786434644,
+            "mean_de_sig_genes_recall": 0.17001842582280036,
+            "mean_pearson_delta": 0.323329899679311
+          },
+          {
+            "feature": "context",
+            "value": "k562",
+            "n_rows": 4702,
+            "mean_overlap_at_N": 0.1494900310658744,
+            "mean_de_sig_genes_recall": 0.21223331052710986,
+            "mean_pearson_delta": 0.2736896187956806
+          },
+          {
+            "feature": "context",
+            "value": "hepg2",
+            "n_rows": 4570,
+            "mean_overlap_at_N": 0.15923109773006708,
+            "mean_de_sig_genes_recall": 0.19989513084554897,
+            "mean_pearson_delta": 0.31862171842800124
+          },
+          {
+            "feature": "context",
+            "value": "B_Intermediate_Memory",
+            "n_rows": 304,
+            "mean_overlap_at_N": 0.24156285578964037,
+            "mean_de_sig_genes_recall": 0.47722098705610894,
+            "mean_pearson_delta": 0.6866483891774949
+          },
+          {
+            "feature": "context",
+            "value": "HepG2-C3A",
+            "n_rows": 3744,
+            "mean_overlap_at_N": 0.27911220643489726,
+            "mean_de_sig_genes_recall": 0.6476776097652778,
+            "mean_pearson_delta": 0.595009094046758
+          },
+          {
+            "feature": "context",
+            "value": "Hs 766T",
+            "n_rows": 3744,
+            "mean_overlap_at_N": 0.2835824530569768,
+            "mean_de_sig_genes_recall": 0.7539871385410485,
+            "mean_pearson_delta": 0.6043491289893943
+          },
+          {
+            "feature": "context",
+            "value": "B_Naive",
+            "n_rows": 304,
+            "mean_overlap_at_N": 0.30981725399621984,
+            "mean_de_sig_genes_recall": 0.5306902682014134,
+            "mean_pearson_delta": 0.7173132692022544
+          },
+          {
+            "feature": "context",
+            "value": "PANC-1",
+            "n_rows": 3740,
+            "mean_overlap_at_N": 0.3220846318423647,
+            "mean_de_sig_genes_recall": 0.7775233155221678,
+            "mean_pearson_delta": 0.6485185430570243
+          },
+          {
+            "feature": "context",
+            "value": "C32",
+            "n_rows": 3744,
+            "mean_overlap_at_N": 0.3516863868577496,
+            "mean_de_sig_genes_recall": 0.7097195308538881,
+            "mean_pearson_delta": 0.6979396258543408
+          },
+          {
+            "feature": "context",
+            "value": "CD4_Memory",
+            "n_rows": 242,
+            "mean_overlap_at_N": 0.36415433145608306,
+            "mean_de_sig_genes_recall": 0.7284848306831696,
+            "mean_pearson_delta": 0.777534784118006
+          },
+          {
+            "feature": "context",
+            "value": "HOP62",
+            "n_rows": 3744,
+            "mean_overlap_at_N": 0.3684680952839311,
+            "mean_de_sig_genes_recall": 0.7805967990445474,
+            "mean_pearson_delta": 0.693994955053344
+          },
+          {
+            "feature": "context",
+            "value": "CD14_Mono",
+            "n_rows": 304,
+            "mean_overlap_at_N": 0.5861049474240378,
+            "mean_de_sig_genes_recall": 0.651762780935924,
+            "mean_pearson_delta": 0.7707339172300539
+          },
+          {
+            "feature": "dataset_family",
+            "value": "Replogle-Nadig",
+            "n_rows": 19634,
+            "mean_overlap_at_N": 0.1459500862828999,
+            "mean_de_sig_genes_recall": 0.18438780290171716,
+            "mean_pearson_delta": 0.294727539753826
+          },
+          {
+            "feature": "dataset_family",
+            "value": "Parse-PBMC",
+            "n_rows": 1458,
+            "mean_overlap_at_N": 0.3057091158280087,
+            "mean_de_sig_genes_recall": 0.4944710045932112,
+            "mean_pearson_delta": 0.6230550406521297
+          },
+          {
+            "feature": "dataset_family",
+            "value": "Tahoe-100M",
+            "n_rows": 18716,
+            "mean_overlap_at_N": 0.32098652005591327,
+            "mean_de_sig_genes_recall": 0.7338915557197871,
+            "mean_pearson_delta": 0.6479621505128765
+          },
+          {
+            "feature": "drugmeta_moa-broad",
+            "value": "unclear",
+            "n_rows": 3760,
+            "mean_overlap_at_N": 0.317423902620782,
+            "mean_de_sig_genes_recall": 0.7362889536804292,
+            "mean_pearson_delta": 0.6351610712246335
+          },
+          {
+            "feature": "drugmeta_moa-broad",
+            "value": "inhibitor/antagonist",
+            "n_rows": 13626,
+            "mean_overlap_at_N": 0.32028974643669644,
+            "mean_de_sig_genes_recall": 0.7325944900790953,
+            "mean_pearson_delta": 0.651682725135209
+          },
+          {
+            "feature": "drugmeta_moa-broad",
+            "value": "activator/agonist",
+            "n_rows": 1330,
+            "mean_overlap_at_N": 0.33819680493677196,
+            "mean_de_sig_genes_recall": 0.7404025332296013,
+            "mean_pearson_delta": 0.6460339612797116
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "DNA methyltransferase inhibitor",
+            "n_rows": 170,
+            "mean_overlap_at_N": 0.27616100745483946,
+            "mean_de_sig_genes_recall": 0.7781210876532728,
+            "mean_pearson_delta": 0.6794741724508212
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "EGFR/ERBB inhibitor",
+            "n_rows": 570,
+            "mean_overlap_at_N": 0.28494762144612445,
+            "mean_de_sig_genes_recall": 0.7390496565563354,
+            "mean_pearson_delta": 0.6502342591911816
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Other TK inhibitor",
+            "n_rows": 660,
+            "mean_overlap_at_N": 0.297224189320638,
+            "mean_de_sig_genes_recall": 0.7195225424467704,
+            "mean_pearson_delta": 0.5878044243210532
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Sonic inhibitor",
+            "n_rows": 140,
+            "mean_overlap_at_N": 0.3003832503856378,
+            "mean_de_sig_genes_recall": 0.747302258409999,
+            "mean_pearson_delta": 0.5802327273679632
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Other MAPK inhibitor",
+            "n_rows": 510,
+            "mean_overlap_at_N": 0.30071389129715925,
+            "mean_de_sig_genes_recall": 0.7126912274261489,
+            "mean_pearson_delta": 0.6484068100797195
+          }
+        ],
+        "highest_groups": [
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "DNA methyltransferase inhibitor",
+            "n_rows": 170,
+            "mean_overlap_at_N": 0.27616100745483946,
+            "mean_de_sig_genes_recall": 0.7781210876532728,
+            "mean_pearson_delta": 0.6794741724508212
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "EGFR/ERBB inhibitor",
+            "n_rows": 570,
+            "mean_overlap_at_N": 0.28494762144612445,
+            "mean_de_sig_genes_recall": 0.7390496565563354,
+            "mean_pearson_delta": 0.6502342591911816
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Other TK inhibitor",
+            "n_rows": 660,
+            "mean_overlap_at_N": 0.297224189320638,
+            "mean_de_sig_genes_recall": 0.7195225424467704,
+            "mean_pearson_delta": 0.5878044243210532
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Sonic inhibitor",
+            "n_rows": 140,
+            "mean_overlap_at_N": 0.3003832503856378,
+            "mean_de_sig_genes_recall": 0.747302258409999,
+            "mean_pearson_delta": 0.5802327273679632
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Other MAPK inhibitor",
+            "n_rows": 510,
+            "mean_overlap_at_N": 0.30071389129715925,
+            "mean_de_sig_genes_recall": 0.7126912274261489,
+            "mean_pearson_delta": 0.6484068100797195
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Adrenoceptor agonist",
+            "n_rows": 380,
+            "mean_overlap_at_N": 0.3017080075419724,
+            "mean_de_sig_genes_recall": 0.7291255700023127,
+            "mean_pearson_delta": 0.6306648391323458
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "GSK3 inhibitor",
+            "n_rows": 180,
+            "mean_overlap_at_N": 0.30232215419776703,
+            "mean_de_sig_genes_recall": 0.6880740571429423,
+            "mean_pearson_delta": 0.6294599278726511
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Multi-TK inhibitor",
+            "n_rows": 460,
+            "mean_overlap_at_N": 0.3045801241017002,
+            "mean_de_sig_genes_recall": 0.7460812868877836,
+            "mean_pearson_delta": 0.6472068401529332
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "PI3K/AKT inhibitor",
+            "n_rows": 270,
+            "mean_overlap_at_N": 0.3097948316660418,
+            "mean_de_sig_genes_recall": 0.7378480142991641,
+            "mean_pearson_delta": 0.6724556157434428
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "unclear",
+            "n_rows": 9750,
+            "mean_overlap_at_N": 0.3109168530328336,
+            "mean_de_sig_genes_recall": 0.732277436462094,
+            "mean_pearson_delta": 0.6363217213987261
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "MEK inhibitor",
+            "n_rows": 240,
+            "mean_overlap_at_N": 0.31133864665039707,
+            "mean_de_sig_genes_recall": 0.7709765014972626,
+            "mean_pearson_delta": 0.7043437694742655
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "RAS inhibitor",
+            "n_rows": 210,
+            "mean_overlap_at_N": 0.3250641374984229,
+            "mean_de_sig_genes_recall": 0.7264401423661525,
+            "mean_pearson_delta": 0.6381481252788078
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Cyclooxygenase inhibitor",
+            "n_rows": 680,
+            "mean_overlap_at_N": 0.32621346414191765,
+            "mean_de_sig_genes_recall": 0.7413250942039727,
+            "mean_pearson_delta": 0.6664491406470702
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Androgen receptor antagonist",
+            "n_rows": 190,
+            "mean_overlap_at_N": 0.326783988858525,
+            "mean_de_sig_genes_recall": 0.7731401007844302,
+            "mean_pearson_delta": 0.6225235913114279
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "JAK/STAT inhibitor",
+            "n_rows": 340,
+            "mean_overlap_at_N": 0.33892766175156264,
+            "mean_de_sig_genes_recall": 0.7270949281604864,
+            "mean_pearson_delta": 0.6246561726733275
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "DNA synthesis/repair inhibitor",
+            "n_rows": 1290,
+            "mean_overlap_at_N": 0.3399195006501739,
+            "mean_de_sig_genes_recall": 0.7424030516286367,
+            "mean_pearson_delta": 0.6514408248178201
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Glucose transporter inhibitor",
+            "n_rows": 220,
+            "mean_overlap_at_N": 0.36091802247429944,
+            "mean_de_sig_genes_recall": 0.7556975926222972,
+            "mean_pearson_delta": 0.6952141849559914
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "MTOR inhibitor",
+            "n_rows": 420,
+            "mean_overlap_at_N": 0.3627186511143625,
+            "mean_de_sig_genes_recall": 0.7277103197194202,
+            "mean_pearson_delta": 0.700735258268902
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "RAF inhibitor",
+            "n_rows": 176,
+            "mean_overlap_at_N": 0.3629422096549461,
+            "mean_de_sig_genes_recall": 0.6643990483944567,
+            "mean_pearson_delta": 0.5797192862142269
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "CDK inhibitor",
+            "n_rows": 300,
+            "mean_overlap_at_N": 0.36453195823604145,
+            "mean_de_sig_genes_recall": 0.7198124812678253,
+            "mean_pearson_delta": 0.7272001217771321
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Glucocorticoid receptor agonist",
+            "n_rows": 280,
+            "mean_overlap_at_N": 0.36815421698819356,
+            "mean_de_sig_genes_recall": 0.7532829678104692,
+            "mean_pearson_delta": 0.7641397176551566
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Protein synthesis inhibitor",
+            "n_rows": 330,
+            "mean_overlap_at_N": 0.36873169542511536,
+            "mean_de_sig_genes_recall": 0.7100548156496329,
+            "mean_pearson_delta": 0.6719573722446732
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Retinoic receptor agonist",
+            "n_rows": 220,
+            "mean_overlap_at_N": 0.3786191287712921,
+            "mean_de_sig_genes_recall": 0.7496367407090879,
+            "mean_pearson_delta": 0.6714592429724606
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "HDAC inhibitor",
+            "n_rows": 170,
+            "mean_overlap_at_N": 0.39235579480251054,
+            "mean_de_sig_genes_recall": 0.7964869117419634,
+            "mean_pearson_delta": 0.6798293925143833
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Microtubule inhibitor",
+            "n_rows": 390,
+            "mean_overlap_at_N": 0.3943236764800518,
+            "mean_de_sig_genes_recall": 0.7422259447123177,
+            "mean_pearson_delta": 0.716141456594834
+          },
+          {
+            "feature": "drugmeta_moa-fine",
+            "value": "Proteasome inhibitor",
+            "n_rows": 170,
+            "mean_overlap_at_N": 0.40125576042347677,
+            "mean_de_sig_genes_recall": 0.7215210327942178,
+            "mean_pearson_delta": 0.7757355345303522
+          },
+          {
+            "feature": "protocol",
+            "value": "zeroshot",
+            "n_rows": 23786,
+            "mean_overlap_at_N": 0.1533700889444678,
+            "mean_de_sig_genes_recall": 0.45229413027682747,
+            "mean_pearson_delta": 0.3581256233091921
+          },
+          {
+            "feature": "protocol",
+            "value": "fewshot",
+            "n_rows": 16022,
+            "mean_overlap_at_N": 0.3539402483266169,
+            "mean_de_sig_genes_recall": 0.4567349167198683,
+            "mean_pearson_delta": 0.643114361363374
+          },
+          {
+            "feature": "representation",
+            "value": "SE",
+            "n_rows": 19873,
+            "mean_overlap_at_N": 0.20521228255937513,
+            "mean_de_sig_genes_recall": 0.4600542721940042,
+            "mean_pearson_delta": 0.43311294942219586
+          },
+          {
+            "feature": "representation",
+            "value": "HVG",
+            "n_rows": 19935,
+            "mean_overlap_at_N": 0.2628897869586007,
+            "mean_de_sig_genes_recall": 0.4481273423251553,
+            "mean_pearson_delta": 0.5124204028055743
+          }
+        ]
+      }
+    },
+    "replogle_verification": {
+      "comparison": {
+        "rows": 8116,
+        "differences": {
+          "reactome_pathway_count": 0,
+          "reactome_max_jaccard_to_train": 0,
+          "reactome_pathway_train_support_min": 0,
+          "reactome_pathway_train_support_mean": 0,
+          "reactome_pathway_train_support_log_mean": 0,
+          "hgnc_group_count": 0,
+          "hgnc_group_train_support_log_mean": 0,
+          "context_train_gene_count": 0,
+          "symbol_family_candidate_train_count": 0,
+          "reactome_support_level": 0
+        },
+        "all_match": true
+      },
+      "refinement": {
+        "status": "completed",
+        "screen": [
+          {
+            "axis_id": "STATE_REPLOGLE_REACTOME_PATHWAY_LOG_TRAIN_SUPPORT_V2",
+            "feature": "reactome_pathway_train_support_log_mean",
+            "status": "tested",
+            "discovery_pass": true,
+            "confirmation_pass": true,
+            "all_context_pass": true,
+            "score_confirmation_mean_high_minus_low": 0.11856279265461289,
+            "n_confirmation_representations": 2,
+            "discovery_high_minus_low_mean": 0.14784159123409074,
+            "confirmation_high_minus_low_mean": 0.11856279265461289
+          },
+          {
+            "axis_id": "STATE_REPLOGLE_REACTOME_PATHWAY_MEAN_TRAIN_SUPPORT_V2",
+            "feature": "reactome_pathway_train_support_mean",
+            "status": "tested",
+            "discovery_pass": true,
+            "confirmation_pass": true,
+            "all_context_pass": true,
+            "score_confirmation_mean_high_minus_low": 0.09200171768458447,
+            "n_confirmation_representations": 2,
+            "discovery_high_minus_low_mean": 0.11962718436640678,
+            "confirmation_high_minus_low_mean": 0.09200171768458447
+          },
+          {
+            "axis_id": "STATE_REPLOGLE_REACTOME_PATHWAY_MIN_TRAIN_SUPPORT_V2",
+            "feature": "reactome_pathway_train_support_min",
+            "status": "tested",
+            "discovery_pass": true,
+            "confirmation_pass": true,
+            "all_context_pass": true,
+            "score_confirmation_mean_high_minus_low": 0.11597832610923275,
+            "n_confirmation_representations": 2,
+            "discovery_high_minus_low_mean": 0.16373107995045005,
+            "confirmation_high_minus_low_mean": 0.11597832610923275
+          },
+          {
+            "axis_id": "STATE_REPLOGLE_HGNC_GROUP_LOG_TRAIN_SUPPORT_V2",
+            "feature": "hgnc_group_train_support_log_mean",
+            "status": "tested",
+            "discovery_pass": true,
+            "confirmation_pass": true,
+            "all_context_pass": true,
+            "score_confirmation_mean_high_minus_low": 0.10463953924354054,
+            "n_confirmation_representations": 2,
+            "discovery_high_minus_low_mean": 0.1625647755386408,
+            "confirmation_high_minus_low_mean": 0.10463953924354054
+          },
+          {
+            "axis_id": "STATE_REPLOGLE_SYMBOL_FAMILY_SUPPORT_CONTROL",
+            "feature": "symbol_family_candidate_train_count",
+            "status": "tested",
+            "discovery_pass": true,
+            "confirmation_pass": true,
+            "all_context_pass": true,
+            "score_confirmation_mean_high_minus_low": 0.09400951562164811,
+            "n_confirmation_representations": 2,
+            "discovery_high_minus_low_mean": 0.2409159769571028,
+            "confirmation_high_minus_low_mean": 0.09400951562164811
+          }
+        ],
+        "best_axis": {
+          "axis_id": "STATE_REPLOGLE_REACTOME_PATHWAY_LOG_TRAIN_SUPPORT_V2",
+          "feature": "reactome_pathway_train_support_log_mean",
+          "description": "Mean log(1 + same-context training genes sharing each Reactome pathway of the target gene)",
+          "decision": "valid_current_pool_confirmed",
+          "caveat": "Confirmed on held-out Replogle contexts using official scored rows; fresh raw-data confirmation would further strengthen the claim.",
+          "freeze": {
+            "axis_id": "STATE_REPLOGLE_REACTOME_PATHWAY_LOG_TRAIN_SUPPORT_V2",
+            "status": "frozen_from_discovery_contexts_before_heldout_context_confirmation",
+            "feature": "reactome_pathway_train_support_log_mean",
+            "description": "Mean log(1 + same-context training genes sharing each Reactome pathway of the target gene)",
+            "unit": "Replogle few-shot gene perturbation in target cell context and representation",
+            "similarity_direction": "higher support means closer to same-context training biology",
+            "performance_direction": "STATE performance should degrade as support decreases",
+            "discovery_contexts": [
+              "hepg2",
+              "k562"
+            ],
+            "confirmation_contexts": [
+              "jurkat",
+              "rpe1"
+            ],
+            "cutpoints_from_discovery": [
+              2.312884276983032,
+              2.7480138589504954,
+              3.2382440667788206
+            ],
+            "level_rule": "L0 if no annotation; otherwise discovery quantile support bins from low to high",
+            "target_metric": "overlap_at_N",
+            "artifacts": [
+              "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/computed/continued/artifacts/spc_state_replogle_reactome_pathway_log_train_support_v2.csv",
+              "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/computed/continued/artifacts/spc_state_replogle_reactome_pathway_log_train_support_v2_trends.csv",
+              "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/computed/continued/spectra_ready_dataset/state_replogle_reactome_pathway_log_train_support_v2_examples.csv"
+            ]
+          },
+          "levels_artifact": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/computed/continued/artifacts/spc_replogle_best_refined_axis.csv",
+          "trends_artifact": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/computed/continued/artifacts/spc_replogle_best_refined_axis_trends.csv",
+          "context_trends_artifact": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/computed/continued/artifacts/spc_replogle_best_refined_axis_context_trends.csv"
+        }
+      }
+    },
+    "ontology_verification": {
+      "comparisons": {
+        "reactome_fewshot": {
+          "rows": 8116,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "reactome_zeroshot": {
+          "rows": 11518,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "hgnc_gene_group_fewshot": {
+          "rows": 8116,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "hgnc_gene_group_zeroshot": {
+          "rows": 11518,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "go_bp_fewshot": {
+          "rows": 8116,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "go_bp_zeroshot": {
+          "rows": 11518,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "go_mf_fewshot": {
+          "rows": 8116,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "go_mf_zeroshot": {
+          "rows": 11518,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "go_cc_fewshot": {
+          "rows": 8116,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "go_cc_zeroshot": {
+          "rows": 11518,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "wikipathways_fewshot": {
+          "rows": 8116,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "wikipathways_zeroshot": {
+          "rows": 11518,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "kegg_fewshot": {
+          "rows": 8116,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        },
+        "kegg_zeroshot": {
+          "rows": 11518,
+          "differences": {
+            "feature_count": 0,
+            "support_norm_log_mean": 0,
+            "support_level": 0
+          },
+          "all_match": true
+        }
+      }
+    }
+  },
+  "recovery_source": "Read-only approved SSH copy from exxact05 of the two original June run directories and their official-score cache/split files.",
+  "ties": "50 nearest-reference name differences were verified to be exact Tanimoto ties; similarity, level and metric comparisons match."
+}

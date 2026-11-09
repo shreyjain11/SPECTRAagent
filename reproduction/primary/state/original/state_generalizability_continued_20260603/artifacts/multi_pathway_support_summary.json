@@ -1,0 +1,187 @@
+{
+  "status": "completed",
+  "interpretation": "Independent gene-set systems were tested using the same frozen train-support SPECTRA protocol.",
+  "screen": [
+    {
+      "collection": "Reactome",
+      "status": "supports_broader_claim",
+      "n_genes_with_features": 11461,
+      "n_unique_features": 2823,
+      "cutpoints_from_fewshot_discovery_norm_support": [
+        0.38495730076261436,
+        0.45794964463954363,
+        0.5379052511876651
+      ],
+      "fewshot_confirmation_hvg_gap": 0.11442499617137572,
+      "fewshot_confirmation_se_gap": 0.0853133416214851,
+      "zeroshot_hvg_gap": 0.06759509582361632,
+      "zeroshot_se_gap": 0.04366868229270465,
+      "fewshot_support_coef_controlled": {
+        "n_rows": 6640,
+        "coef": 0.028550118245131227,
+        "se": 0.0019885170440246376,
+        "t": 14.357492348844808,
+        "r2": 0.5714659004622622
+      },
+      "levels_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_reactome.csv",
+      "trends_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_reactome_trends.csv"
+    },
+    {
+      "collection": "HGNC_gene_group",
+      "status": "supports_broader_claim",
+      "n_genes_with_features": 27676,
+      "n_unique_features": 2037,
+      "cutpoints_from_fewshot_discovery_norm_support": [
+        0.1485535550192543,
+        0.23176698890230232,
+        0.3448101587032167
+      ],
+      "fewshot_confirmation_hvg_gap": 0.11440916158922323,
+      "fewshot_confirmation_se_gap": 0.09349610480936038,
+      "zeroshot_hvg_gap": 0.06784820070713694,
+      "zeroshot_se_gap": 0.04709512216210218,
+      "fewshot_support_coef_controlled": {
+        "n_rows": 6890,
+        "coef": 0.027792203160280235,
+        "se": 0.0018490461850017039,
+        "t": 15.03056191116969,
+        "r2": 0.5708710591644486
+      },
+      "levels_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_hgnc_gene_group.csv",
+      "trends_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_hgnc_gene_group_trends.csv"
+    },
+    {
+      "collection": "GO_BP",
+      "status": "supports_broader_claim",
+      "n_genes_with_features": 31552,
+      "n_unique_features": 11190,
+      "cutpoints_from_fewshot_discovery_norm_support": [
+        0.1373479432020825,
+        0.21412019957433295,
+        0.32169200918320495
+      ],
+      "fewshot_confirmation_hvg_gap": 0.16142242935993883,
+      "fewshot_confirmation_se_gap": 0.13454962338609383,
+      "zeroshot_hvg_gap": 0.08728410045667398,
+      "zeroshot_se_gap": 0.05679372477592283,
+      "fewshot_support_coef_controlled": {
+        "n_rows": 7894,
+        "coef": 0.014513540797310064,
+        "se": 0.0017848389532440934,
+        "t": 8.131568829182315,
+        "r2": 0.5637045419615238
+      },
+      "levels_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_bp.csv",
+      "trends_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_bp_trends.csv"
+    },
+    {
+      "collection": "GO_MF",
+      "status": "supports_broader_claim",
+      "n_genes_with_features": 27010,
+      "n_unique_features": 4855,
+      "cutpoints_from_fewshot_discovery_norm_support": [
+        0.375427823373317,
+        0.4969000292315334,
+        0.6653358452617005
+      ],
+      "fewshot_confirmation_hvg_gap": 0.014290327742854159,
+      "fewshot_confirmation_se_gap": 0.05446165487021215,
+      "zeroshot_hvg_gap": 0.03475203924213899,
+      "zeroshot_se_gap": 0.04838798734364081,
+      "fewshot_support_coef_controlled": {
+        "n_rows": 7978,
+        "coef": 0.003624780334345941,
+        "se": 0.002042888069909935,
+        "t": 1.7743411338760946,
+        "r2": 0.5602075643959663
+      },
+      "levels_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_mf.csv",
+      "trends_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_mf_trends.csv"
+    },
+    {
+      "collection": "GO_CC",
+      "status": "supports_broader_claim",
+      "n_genes_with_features": 32339,
+      "n_unique_features": 1944,
+      "cutpoints_from_fewshot_discovery_norm_support": [
+        0.45701104549789345,
+        0.5531692739379114,
+        0.6483854199891448
+      ],
+      "fewshot_confirmation_hvg_gap": 0.12148896665462433,
+      "fewshot_confirmation_se_gap": 0.09012950874358991,
+      "zeroshot_hvg_gap": 0.08118915099470098,
+      "zeroshot_se_gap": 0.054814120166704054,
+      "fewshot_support_coef_controlled": {
+        "n_rows": 8040,
+        "coef": 0.006538185810734835,
+        "se": 0.0019034652817374416,
+        "t": 3.434885770423363,
+        "r2": 0.5567215356739263
+      },
+      "levels_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_cc.csv",
+      "trends_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_go_cc_trends.csv"
+    },
+    {
+      "collection": "WikiPathways",
+      "status": "supports_broader_claim",
+      "n_genes_with_features": 8960,
+      "n_unique_features": 985,
+      "cutpoints_from_fewshot_discovery_norm_support": [
+        0.18367099315760274,
+        0.2634902745869932,
+        0.3673559975049469
+      ],
+      "fewshot_confirmation_hvg_gap": 0.10391150850190306,
+      "fewshot_confirmation_se_gap": 0.12657449260014575,
+      "zeroshot_hvg_gap": 0.03463333467107879,
+      "zeroshot_se_gap": 0.03435926350815288,
+      "fewshot_support_coef_controlled": {
+        "n_rows": 4602,
+        "coef": 0.018654204442852595,
+        "se": 0.0023540540569825063,
+        "t": 7.924288903868286,
+        "r2": 0.5891941913685256
+      },
+      "levels_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_wikipathways.csv",
+      "trends_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_wikipathways_trends.csv"
+    },
+    {
+      "collection": "KEGG",
+      "status": "supports_broader_claim",
+      "n_genes_with_features": 29104,
+      "n_unique_features": 371,
+      "cutpoints_from_fewshot_discovery_norm_support": [
+        0.2690731414998516,
+        0.34765048335345344,
+        0.4253164021613055
+      ],
+      "fewshot_confirmation_hvg_gap": 0.14145411631807847,
+      "fewshot_confirmation_se_gap": 0.12784130906180616,
+      "zeroshot_hvg_gap": 0.06640513263059115,
+      "zeroshot_se_gap": 0.046663728328522766,
+      "fewshot_support_coef_controlled": {
+        "n_rows": 4414,
+        "coef": 0.025459552357949278,
+        "se": 0.0023838075819991563,
+        "t": 10.680204455343615,
+        "r2": 0.5788017624402835
+      },
+      "levels_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_kegg.csv",
+      "trends_artifact": "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_multi_pathway_kegg_trends.csv"
+    }
+  ],
+  "supporting_collections": [
+    "Reactome",
+    "HGNC_gene_group",
+    "GO_BP",
+    "GO_MF",
+    "GO_CC",
+    "WikiPathways",
+    "KEGG"
+  ],
+  "artifacts": [
+    "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/multi_pathway_source_manifest.json",
+    "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/multi_pathway_support_screen.csv"
+  ]
+}

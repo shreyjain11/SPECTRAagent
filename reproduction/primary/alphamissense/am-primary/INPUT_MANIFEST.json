@@ -1,0 +1,652 @@
+[
+  {
+    "path": "inputs/axis3_pathC_percolumn_FROZEN.tsv",
+    "sha256": "dd47d663430b368087a46a120c035a63c5fe3cb9e06022bee36799ae2e4932cd",
+    "bytes": 1211478
+  },
+  {
+    "path": "inputs/clinvar/BENCHMARK_REPLAY_VERIFY.txt",
+    "sha256": "9721121d569c4146530ba8be0c197804d6c264248b2215ba78e360459204eee3",
+    "bytes": 749
+  },
+  {
+    "path": "inputs/clinvar/CLINVAR_SOURCE_HASHES.json",
+    "sha256": "4bf226b7ce335324e5e8bcf8c75a183fac601f2b7c10d9bfec4e7b6700a3e716",
+    "bytes": 452
+  },
+  {
+    "path": "inputs/clinvar/INPUT_MANIFEST.json",
+    "sha256": "bcf7efe1de4c594362cf8460e6e7f2a7c2ca1dd7b1162116ab25f125239a187a",
+    "bytes": 1040
+  },
+  {
+    "path": "inputs/clinvar/ORIGINAL_SHA256SUMS",
+    "sha256": "7c415ef196fc6799745fde2e6054ce75000c05f047073a13100b3df168507bf8",
+    "bytes": 287
+  },
+  {
+    "path": "inputs/clinvar/RETRIEVAL_VERIFIED.json",
+    "sha256": "562d6c439412112865c14f6994cdee465691132e7cfd1f69552f34cc7fbfbf26",
+    "bytes": 557
+  },
+  {
+    "path": "inputs/clinvar/clinvar_am_benchmark.tsv",
+    "sha256": "783a79533ae1aa4ae4b7d99615f78959fd134aa4913666407720c4bc7f6ad481",
+    "bytes": 15442006
+  },
+  {
+    "path": "inputs/clinvar/gnomad_constraint.tsv",
+    "sha256": "78f14346180de3fb552747099d9a34238ca535924418a3596d75f45654837d69",
+    "bytes": 13203203
+  },
+  {
+    "path": "inputs/clinvar/msa_hits.m8.gz",
+    "sha256": "265a1872bed445cf32c38798738bb988fd044dafdc4d5fb6fb5fb248fdca7e01",
+    "bytes": 183094126
+  },
+  {
+    "path": "inputs/official_score_subset_provenance.json",
+    "sha256": "5e579fa7cd0e2137c60ef45ef4f4767f8fdb167bfe796d21f309094c7a3a2a71",
+    "bytes": 549
+  },
+  {
+    "path": "inputs/official_scores_64_proteins.tsv.gz",
+    "sha256": "1657bce1cad681b6755831da727ceb00b5ee9d0a024e274eec4c05acbbdf80b1",
+    "bytes": 5089583
+  },
+  {
+    "path": "inputs/proteingym/BINPREVIEW_PROXY_PREMSA.tsv",
+    "sha256": "00c1fb8ce72f23a2300075f2aaee145658bffa997956c75601b1d6789c26486c",
+    "bytes": 4297
+  },
+  {
+    "path": "inputs/proteingym/DMS_substitutions.csv",
+    "sha256": "a8f498011532a74aa9fe556a50555a75e928c5837d19c06a87592ae04049b308",
+    "bytes": 208734
+  },
+  {
+    "path": "inputs/proteingym/DMS_substitutions_v1.2.csv",
+    "sha256": "28cd00e1d6d4f18a36fdc80538da0d655bc262053151f891b27f833474cd96b9",
+    "bytes": 208973
+  },
+  {
+    "path": "inputs/proteingym/DMS_substitutions_v1.3.csv",
+    "sha256": "a8f498011532a74aa9fe556a50555a75e928c5837d19c06a87592ae04049b308",
+    "bytes": 208734
+  },
+  {
+    "path": "inputs/proteingym/DMS_substitutions_v2.csv",
+    "sha256": "a8f498011532a74aa9fe556a50555a75e928c5837d19c06a87592ae04049b308",
+    "bytes": 208734
+  },
+  {
+    "path": "inputs/proteingym/VERIFICATION_73ASSAYS_FINAL.tsv",
+    "sha256": "505be9f8349743e23e92a4540113f648bfeff8bd667b8298fb54d5e66717870c",
+    "bytes": 6569
+  },
+  {
+    "path": "inputs/proteingym/VERIFICATION_73ASSAYS_SINGLES_COUNTCHECK.tsv",
+    "sha256": "c0cfa4103621c2f73f6a23b52f615bbfa6c46656cc5d8a75a34490c7a1586b99",
+    "bytes": 6991
+  },
+  {
+    "path": "inputs/proteingym/WT_SPOTCHECK_17_RESULTS.tsv",
+    "sha256": "c3dfaa0c37ca24a5331f57c4c13c2b3701263300d8ff17b6a1f20ddf2c426444",
+    "bytes": 1229
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/A4_HUMAN_Seuma_2022.csv",
+    "sha256": "40cfab98f3e3f8531421d54e625e01e22ef449faa22cd3004926f663ad7da932",
+    "bytes": 11890296
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/ACE2_HUMAN_Chan_2020.csv",
+    "sha256": "419c9c9182a722d5b2d653d5a40d1ef8b74b970fbe7fe614c2d1231e58c6c30f",
+    "bytes": 1840157
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/ADRB2_HUMAN_Jones_2020.csv",
+    "sha256": "905941be7060b3ebf735d868327b34e1b7b9cbd47e87ee251c15e2328643a956",
+    "bytes": 3425091
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/AICDA_HUMAN_Gajula_2014_3cycles.csv",
+    "sha256": "03e154dd4fe004b718cc3749b8c0c0c2e651c71f6a846c37c8b8565746ab31d1",
+    "bytes": 46852
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/B2L11_HUMAN_Dutta_2010_binding-Mcl-1.csv",
+    "sha256": "0768cc07f06ccfa28e20cfd2b1b0ffc60fbbb7d21174b5d2b3b780930c4b80be",
+    "bytes": 37226
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/BRCA1_HUMAN_Findlay_2018.csv",
+    "sha256": "abde5d47e84b1feeac6c32b60c1f3b5d2881accf3ceccfbadccceeea73e81c43",
+    "bytes": 3463590
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/BRCA2_HUMAN_Erwood_2022_HEK293T.csv",
+    "sha256": "4fc00cf38e89679c11266fa651644c61297a3ac5eb36320fba3a715d5b64f8f2",
+    "bytes": 911656
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/CALM1_HUMAN_Weile_2017.csv",
+    "sha256": "cadc19e35beab1051c08e2961f0d8b9e97f5c5c3cd627a73ebffd0ebeabbcf5d",
+    "bytes": 308544
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/CAR11_HUMAN_Meitlis_2020_gof.csv",
+    "sha256": "8a900036b2fcdc98fe542d6f9762d74073ed6e808f59a698fcb709cc4748d7a3",
+    "bytes": 2792735
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/CAR11_HUMAN_Meitlis_2020_lof.csv",
+    "sha256": "e4dd9b444028c7327b7498c590bf3c38aec5a4a81ded50adb396ec43980c78a1",
+    "bytes": 2817484
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/CBPA2_HUMAN_Tsuboyama_2023_1O6X.csv",
+    "sha256": "2b985cb6a9d2a06471acd4858487a772a53c887fc46045e56b73a43ecda4038d",
+    "bytes": 208988
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/CBS_HUMAN_Sun_2020.csv",
+    "sha256": "557b2682b74aedef28f1179540892e17be52de650551c2c6058c00311073a0a1",
+    "bytes": 4144925
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/CBX4_HUMAN_Tsuboyama_2023_2K28.csv",
+    "sha256": "3ffc9405e5f6e7467cedffb845e91f17baba09862dbb6d1750f54230c8ad3a0d",
+    "bytes": 182963
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/CCR5_HUMAN_Gill_2023.csv",
+    "sha256": "33f10e7e6552a017318b715ddb6936222375851639cd67093e7269fb1b5f97b3",
+    "bytes": 2264116
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/CD19_HUMAN_Klesmith_2019_FMC_singles.csv",
+    "sha256": "c07f0c1001b4ba527affc7674274e116f8295d128a5e1896fb2f0fa15c25eaea",
+    "bytes": 2195953
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/CP2C9_HUMAN_Amorosi_2021_abundance.csv",
+    "sha256": "1f4ba7b86e88709783b2e68b04c82fe1f305181c164edfff6391369833ad62ad",
+    "bytes": 3259960
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/CP2C9_HUMAN_Amorosi_2021_activity.csv",
+    "sha256": "2373e6a5aea9ae6431cbfd519733a3ccd5be2c109a60e5e2d59cc5ff39eb6b27",
+    "bytes": 3143321
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/DLG4_HUMAN_Faure_2021.csv",
+    "sha256": "07d58d0222260ebc431f906a523cee11e5a0f90b020ecdbbc1c393e793053370",
+    "bytes": 5280599
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/DNJA1_HUMAN_Tsuboyama_2023_2LO1.csv",
+    "sha256": "15003de1e5af995bd284b0e4f02a4546f46211774727b4c9b988ee1f982bebe7",
+    "bytes": 214092
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/EPHB2_HUMAN_Tsuboyama_2023_1F0M.csv",
+    "sha256": "d00c87c40458e956d53a1ecf879ef845c5167a861aacfaa1fb74115efc831dfd",
+    "bytes": 186573
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/ERBB2_HUMAN_Elazar_2016.csv",
+    "sha256": "e1190b949da4835344be4069c98b336825a6975e2f0f169221772070007bec0d",
+    "bytes": 418439
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/FKBP3_HUMAN_Tsuboyama_2023_2KFV.csv",
+    "sha256": "7a6f0deb67126a95bd5ba22d51c4a3b90e3e209d6e68966e5cb22fa8d5118e94",
+    "bytes": 119196
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/GDIA_HUMAN_Silverstein_2021.csv",
+    "sha256": "5763703fa35d8be84d434cd930fa3d3b4471aee8e65e4064db85434d9fb63edb",
+    "bytes": 539560
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/GRB2_HUMAN_Faure_2021.csv",
+    "sha256": "0a60d0e1855ebe79ad2d03aec5e4c5ae933f3f96d338d34c184ae7366fffc5e6",
+    "bytes": 15881632
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/HEM3_HUMAN_Loggerenberg_2023.csv",
+    "sha256": "0595215d5507a81c640743231413964505daba227f610b80da96a6b6ad2e7dbe",
+    "bytes": 2167272
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/HMDH_HUMAN_Jiang_2019.csv",
+    "sha256": "4ad060808d1ba6f740428148afd230450662113f77292328f0a0d40d679b27c1",
+    "bytes": 15234779
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/HXK4_HUMAN_Gersing_2022_activity.csv",
+    "sha256": "3cb5c29a2bdbc052601e6fc03f7f55ef33c6b0fedee808deff2e8aef79d17b69",
+    "bytes": 4172568
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/HXK4_HUMAN_Gersing_2023_abundance.csv",
+    "sha256": "90d7129bbbb67ad58765b3f7df06158344f33aff1f2ce1284ebb00a15fea2438",
+    "bytes": 4130371
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/KCNH2_HUMAN_Kozek_2020.csv",
+    "sha256": "240011099f76ac97f9997e34bc6f27fb5c3ea030d56a9c77eb8057051ccf5b4c",
+    "bytes": 236079
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/LYAM1_HUMAN_Elazar_2016.csv",
+    "sha256": "147e6cd09ad0e23d228ab280a2cf16ca24dd2d3e0ade8efe4004ae8c2bcd2f1b",
+    "bytes": 143761
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/MET_HUMAN_Estevam_2023.csv",
+    "sha256": "75d3a221eddf9fbb8cbb2236fe8f18fbfd05dc7e15e15fc1d2ebf67f29572578",
+    "bytes": 1692707
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/MK01_HUMAN_Brenan_2016.csv",
+    "sha256": "a668d66a330a9c3f8a3d15481907732b4d3b56d0107e3da31242e97211da84fd",
+    "bytes": 2606319
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/MSH2_HUMAN_Jia_2020.csv",
+    "sha256": "00ac2d2b66ab786150025988ec8e9bb9570caa42ad5fcd0833a4eb5c0d1d58bc",
+    "bytes": 15876280
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/MTHR_HUMAN_Weile_2021.csv",
+    "sha256": "68653df3c7a35b3cb8a011b8a85e1dfcf52b55b619b65106342253972b869a71",
+    "bytes": 8375562
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/NPC1_HUMAN_Erwood_2022_HEK293T.csv",
+    "sha256": "ecc2f47ab85326973e0797081d40fe88938a01f7d6128ab04c02ce6f495b7c3c",
+    "bytes": 827864
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/NPC1_HUMAN_Erwood_2022_RPE1.csv",
+    "sha256": "75c21ccf623cff8b8a8f6b5b2c903f025efca5512c2c78889ccd9337df9975ca",
+    "bytes": 81917
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/NUD15_HUMAN_Suiter_2020.csv",
+    "sha256": "e7540f10fe0568c066edb0b996a8f908127dc37d2a6aebf232ef33f05ea25900",
+    "bytes": 531037
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/OBSCN_HUMAN_Tsuboyama_2023_1V1C.csv",
+    "sha256": "7f09d4f2c7d00854bd32dc5c502a640c01eadf3a66571680204237b8f9cb59e0",
+    "bytes": 305491
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/OPSD_HUMAN_Wan_2019.csv",
+    "sha256": "926c0afdd6d0c07bf7170710535423c447215b07cccb46eec5dd5b22368d1a8d",
+    "bytes": 61997
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/OTC_HUMAN_Lo_2023.csv",
+    "sha256": "0b149c8eeae4a695d5bbce6e0af456359656f476b7c1c3586d16f0ff78dba2f7",
+    "bytes": 581787
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/OTU7A_HUMAN_Tsuboyama_2023_2L2D.csv",
+    "sha256": "e46a6f57fa05d76f20e353536bebe956ef9392e880d890068eee103fa8c39cc4",
+    "bytes": 44090
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/P53_HUMAN_Kotler_2018.csv",
+    "sha256": "0e6fd5232d1a6893fb310fea7d433b11dc6d1be708bc430b00075e27e9ecf886",
+    "bytes": 437223
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/PAI1_HUMAN_Huttinger_2021.csv",
+    "sha256": "5e29eb12bf8977c232633897016fea00fa0f4ff61b73d058d1df01b84e1753ac",
+    "bytes": 2261327
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/PIN1_HUMAN_Tsuboyama_2023_1I6C.csv",
+    "sha256": "4b805e0a24543d68bb677230053c0c8548e93fae2ab4870a6c16fd13e170cc87",
+    "bytes": 53750
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/PPARG_HUMAN_Majithia_2016.csv",
+    "sha256": "807eb7547b62d44d39fb6d22310a6eac54a62ca6768edb46e47de03c93ae642a",
+    "bytes": 4981194
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/PPM1D_HUMAN_Miller_2022.csv",
+    "sha256": "4aaf327103807e81cf86aec13dc52a01c1eec91fa48e1f94f893f002656a1d60",
+    "bytes": 4894106
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/PR40A_HUMAN_Tsuboyama_2023_1UZC.csv",
+    "sha256": "db4e8f1a8bedef74a6add1846f44c1578f3c7abf17399487e29fa2d478fd40a2",
+    "bytes": 188231
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/PRKN_HUMAN_Clausen_2023.csv",
+    "sha256": "4adf616e5b72d7f4a25db0a91febb67ea91fb3301d0bd26f26dc67b1cabd27d2",
+    "bytes": 4305910
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/PTEN_HUMAN_Matreyek_2021.csv",
+    "sha256": "1c52aba95950c6d3b1ac8320df4cb99a79ae97353bd43e24c87ef78dbb02e636",
+    "bytes": 2184896
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/PTEN_HUMAN_Mighell_2018.csv",
+    "sha256": "d532bed24c80449936dd61cf303225d78e6e9963a58165c1c36dff92c89557e1",
+    "bytes": 3088566
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/RAF1_HUMAN_Zinkus-Boltz_2019.csv",
+    "sha256": "87a15083d06f33a9fd76884ee45f98e5f72db9b32f7718770586e9c9395c7238",
+    "bytes": 200716
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/RASH_HUMAN_Bandaru_2017.csv",
+    "sha256": "0704164d427ab68cfb8ac72fcbe438a819ad91b31f9fa4fcb1056690173a0736",
+    "bytes": 660853
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/RD23A_HUMAN_Tsuboyama_2023_1IFY.csv",
+    "sha256": "41f6a378236f23bd42a2a0773545031996e15cdf8eb9347042178632eac8fbdc",
+    "bytes": 73966
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/S22A1_HUMAN_Yee_2023_abundance.csv",
+    "sha256": "b8bfa31eae84d0e0bdfe40f0f2c5e58390c163d17e17b922f42f2992df1e196a",
+    "bytes": 5630422
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/S22A1_HUMAN_Yee_2023_activity.csv",
+    "sha256": "5b470a590da0b56e05b090b6a7aa4639956096117e562bf45eede43c94149152",
+    "bytes": 5796217
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/SC6A4_HUMAN_Young_2021.csv",
+    "sha256": "0ad59ccefda5ac0d808ee39ad873db63e4260b1dc6a463cfc52f16d5d3caf62e",
+    "bytes": 7552894
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/SCN5A_HUMAN_Glazer_2019.csv",
+    "sha256": "1b26c30f9f7eea00a751b78d534408b50e490d37988c482c413b66755a390450",
+    "bytes": 455311
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/SERC_HUMAN_Xie_2023.csv",
+    "sha256": "6b8cc8fec82a7f6d4b00b65a0ced7a6b57a8d6f2639bd58e22ccc4d6774db873",
+    "bytes": 759544
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/SHOC2_HUMAN_Kwon_2022.csv",
+    "sha256": "36e169325becc6589e6b1f715989f2fd56d51170031a8331479c68ddbbb49d56",
+    "bytes": 6685995
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/SOX30_HUMAN_Tsuboyama_2023_7JJK.csv",
+    "sha256": "072f71cb9b083664a9b990b87f7387b3d676ef4da818fb33be04388d5e706958",
+    "bytes": 85309
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/SRC_HUMAN_Ahler_2019.csv",
+    "sha256": "fe9b3eb54aa97892ece60cf167764277d248b3141e9fab6754efc7734a7b7cd7",
+    "bytes": 1883026
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/SRC_HUMAN_Chakraborty_2023_binding-DAS_25uM.csv",
+    "sha256": "b6fbe12a4aea4cfec065e1ae21c096508d8c68b0d5a86c43fe85c25e86af6c52",
+    "bytes": 2027332
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/SRC_HUMAN_Nguyen_2022.csv",
+    "sha256": "f97271be317982c7f67e076e3f967bbc422156757a60c0f1981b597a284d438f",
+    "bytes": 1900602
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/SUMO1_HUMAN_Weile_2017.csv",
+    "sha256": "71fd17bba2e8a6cbca9ea051c29eebb055d27022b4b432aeb08271b9d4b63a0c",
+    "bytes": 207299
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/TADBP_HUMAN_Bolognesi_2019.csv",
+    "sha256": "22894a3fac10cc215bfc06f5d7798b83900608a7c6b7b557f342659e6f2bdced",
+    "bytes": 528863
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/TPK1_HUMAN_Weile_2017.csv",
+    "sha256": "b5b641b4186d42dd2ea4cc67205a50d7ceb2f747c0d3f985556f908309f9ce7e",
+    "bytes": 840554
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/TPMT_HUMAN_Matreyek_2018.csv",
+    "sha256": "bafd9deb8ccc5e0454b7222f0dcb03e4facc1ad949177a65292bded268084d39",
+    "bytes": 972049
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/UBC9_HUMAN_Weile_2017.csv",
+    "sha256": "3906055fdcba1b05ea9c89708eacf5e666af6803ee46a6abc895396d4b072b06",
+    "bytes": 462958
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/UBE4B_HUMAN_Tsuboyama_2023_3L1X.csv",
+    "sha256": "840b65cb8566c8b6bea9ad87cdbf25d5ce9782daf690ed5f19fdb1ad9e0059d3",
+    "bytes": 361882
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/UBR5_HUMAN_Tsuboyama_2023_1I2T.csv",
+    "sha256": "9989fd8fc7fb10ab4ff7db4f34ceee082927e83751acf4158e098411d3933201",
+    "bytes": 125853
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/VKOR1_HUMAN_Chiasson_2020_abundance.csv",
+    "sha256": "04fc7a81a09c372ed14b9ad283c5da7ceed7d51c4d949a13e2c143b6c138a7d5",
+    "bytes": 510816
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/VKOR1_HUMAN_Chiasson_2020_activity.csv",
+    "sha256": "1aebf00f05b72ade9aa8c6330a89318e3874ea855ae9bef080fe3437cd76729d",
+    "bytes": 132039
+  },
+  {
+    "path": "inputs/proteingym/dms_final_73/YAP1_HUMAN_Araya_2012.csv",
+    "sha256": "8e41f730c339fc341629eb37f4a3d481e35cf171308380b6bd4ac2656bb71258",
+    "bytes": 5381227
+  },
+  {
+    "path": "inputs/proteingym/dms_v1.2_mapping.tsv",
+    "sha256": "1a4e5c45a05864edb4bb1f191b26acefe9459c4d569e78d50965b7327d61204f",
+    "bytes": 3464
+  },
+  {
+    "path": "inputs/proteingym/dms_v1.2_verified_mapping.tsv",
+    "sha256": "bc24fc81c38547c973a2bc7f7ad52f0bfb5ec0871f25c754be7a115fac8375d2",
+    "bytes": 1081
+  },
+  {
+    "path": "inputs/proteingym/hf_actual_files.txt",
+    "sha256": "b80b8ac3da23d4474f4c6609123e23227c3855047b3e7cb0fcaad46f2ef4aef1",
+    "bytes": 2596
+  },
+  {
+    "path": "inputs/proteingym/kept_assays.tsv",
+    "sha256": "c37d41503f784316d700257b1ef1507d6c608dde3e70d36c3cc195f328706bf3",
+    "bytes": 17353
+  },
+  {
+    "path": "inputs/proteingym/kept_assays_verified.tsv",
+    "sha256": "509f3fa469e7b2ef1f57b4455827b8f70025014a64c627fcf19bcbae1d9d06e3",
+    "bytes": 81710
+  },
+  {
+    "path": "inputs/proteingym/rejection_log.tsv",
+    "sha256": "16a316efa294c3fac0890b41338ef6a44861ce1cb139ad72069a26b5fefaa7a6",
+    "bytes": 12528
+  },
+  {
+    "path": "inputs/proteingym/rejection_log_final.tsv",
+    "sha256": "4e9a6674a0f6483b5c1165173f988e95dee4e655360ba05e2c60e65b2f7fbd50",
+    "bytes": 10032
+  },
+  {
+    "path": "inputs/proteingym/step_a_dms_v1.3_mapping.tsv",
+    "sha256": "e444441f1439e6da035730f30eb28628d295f88b817c4d73d8220937739baa32",
+    "bytes": 1081
+  },
+  {
+    "path": "inputs/proteingym/step_a_final.json",
+    "sha256": "da27db1e04a842b05ed56760203a629e4858cc9ce3831c6b8aaca86ebb2da6cc",
+    "bytes": 310
+  },
+  {
+    "path": "inputs/proteingym/step_a_final_summary.json",
+    "sha256": "84c31124d206fd51b54206b28b74209fd6b90f499e5bb33796ad1361f8b63dab",
+    "bytes": 225
+  },
+  {
+    "path": "inputs/proteingym/step_a_final_v1.3_73assays.tsv",
+    "sha256": "64458f8dec14bde25c9788996ffdc91c9b347411e5ce29cc698c9d5bbbdbf9ac",
+    "bytes": 8429
+  },
+  {
+    "path": "inputs/proteingym/step_a_final_v1.3_mapping.tsv",
+    "sha256": "e22d8817622f1d8fbf89265510137fe907defa62e504a5cad803c53d50cbba80",
+    "bytes": 2576
+  },
+  {
+    "path": "inputs/proteingym/step_a_summary.json",
+    "sha256": "5924c5365c175d3612950e4c3c1cd99a12668ce149cf97c1525400113db99b2b",
+    "bytes": 141
+  },
+  {
+    "path": "inputs/proteingym/step_a_wt_verified.json",
+    "sha256": "f9166d8dda275e1346f31dccb3d707e99403ef1ffe8c50298dc2c8f8c30a5977",
+    "bytes": 207
+  },
+  {
+    "path": "inputs/pssm_counts.tsv",
+    "sha256": "652650ed4a3e7f74df54ef3a4a805fd9c554090ae8c4d15b21cb106913c6d740",
+    "bytes": 3137988
+  },
+  {
+    "path": "inputs/raw_dms_single_mutants.parquet",
+    "sha256": "fdc48e494b5f9c2a645d41989e89b80a5398f098b22d92c93ef785d47aef6358",
+    "bytes": 3367135
+  },
+  {
+    "path": "inputs/sequence_offsets_reconstructed.csv",
+    "sha256": "c5b1649e9b6665c0acb709875f59e1a332938e524557c32bdc51842779228ab9",
+    "bytes": 3290
+  },
+  {
+    "path": "code/build_benchmark.py",
+    "sha256": "e7314473fef00fa840739e7a9d90437945ae39c36715bba6e3e03060861d852d",
+    "bytes": 3233
+  },
+  {
+    "path": "code/build_pssm.py",
+    "sha256": "a567a9bc876eaf8deb219b6721fdcd39257b9d1706ea0b29e7401b31dc16c99b",
+    "bytes": 5100
+  },
+  {
+    "path": "code/confounds_72.py",
+    "sha256": "2dc8d250088d839e8f698221fd07ca28a4a4ed5978d79edd80cdb7631e710ac5",
+    "bytes": 4060
+  },
+  {
+    "path": "code/derived_stats.py",
+    "sha256": "3ed2515651067a2a5ef0c0286473c38d0de2ef6ddf177b210e96c99e2775100f",
+    "bytes": 2697
+  },
+  {
+    "path": "code/pop_spc.py",
+    "sha256": "3a76490004eced79f206148becffd1dc8962d00dea30cb5d63305a38846ecf96",
+    "bytes": 6086
+  },
+  {
+    "path": "code/score_axis3.py",
+    "sha256": "781c7685f3670a1289154c85be014f5be4bed9de7225d4fcb33b9cfeb2c22608",
+    "bytes": 12904
+  },
+  {
+    "path": "code/score_baselines.py",
+    "sha256": "5d3bc2ad562cffc192476f891a1312e5b8675ea06504965c98157e98f41e070e",
+    "bytes": 7766
+  },
+  {
+    "path": "code/spc_analysis.py",
+    "sha256": "f0af919716a90c4d59e8c1c9dfaed5fce162b0099911c44b9e31699bcb30bb2b",
+    "bytes": 7880
+  },
+  {
+    "path": "expected/INDEX.md",
+    "sha256": "67d6b5b3cb24226a829b4483e280b4959b43999397bce4a1f27348736490445d",
+    "bytes": 3560
+  },
+  {
+    "path": "expected/STEP_B_PATHC_REPORT.md",
+    "sha256": "8b238db5b0f8196f5014f4c4e4032cd8b76376f775af1ec8c29017b0a48dcd7b",
+    "bytes": 3534
+  },
+  {
+    "path": "expected/STEP_B_SCORING_RESULTS.md",
+    "sha256": "406f368e550c8d2e0b66299c99b7f7a7f0f7bf330523fc6670467915523248cf",
+    "bytes": 11441
+  },
+  {
+    "path": "expected/axis3_SPC_perassay_bins.tsv",
+    "sha256": "5a1178b90351a0677974cc4d91331c95a24135ea31cb153ec8e33354544f22c4",
+    "bytes": 35637
+  },
+  {
+    "path": "expected/axis3_baselines_binstats.tsv",
+    "sha256": "5feae3dbc798aa2c293eef44900861de0c548bd7ed797fae486490c911dc23af",
+    "bytes": 1128
+  },
+  {
+    "path": "expected/axis3_dms_signal_perbin.tsv",
+    "sha256": "a32b5f2d1df37f797c65b75213375f8c4f9a1b11fbb7b6acc4d06fc40af4c41f",
+    "bytes": 186
+  },
+  {
+    "path": "expected/confound_recheck_72.txt",
+    "sha256": "b25228131d0c0caac2e2ef32464af6ff3b796be145f53c74d32d6e9f75fc5615",
+    "bytes": 1988
+  },
+  {
+    "path": "expected/derived_stats_for_tex.txt",
+    "sha256": "399cc3bff599dc9efeaf6690b481bc499543b001fbe98919f172f4278257c9c5",
+    "bytes": 1046
+  },
+  {
+    "path": "expected/figure_axis3_SPC_data.tsv",
+    "sha256": "5eddc2e89988cc81a82e3ac02fc5daaa6c3f3d5724316e6b9b338a5ed882e39a",
+    "bytes": 1407
+  },
+  {
+    "path": "expected/original_spc_msa_depth.json",
+    "sha256": "32782ed8b532ddfc93e3cdb35d83cdaa0c4d75162531b01d7015558ffdbbf269",
+    "bytes": 5219
+  },
+  {
+    "path": "expected/original_spc_pop_support.json",
+    "sha256": "8e85c51c91f69e274fc4359b3679f09954d57413cbcb1824a533443e9f8712e9",
+    "bytes": 3132
+  },
+  {
+    "path": "expected/sign_concentration_checks.txt",
+    "sha256": "017226941186ab44f8e6fa5c0c023fe1c5803e2cd6577e617a96badf83857e0d",
+    "bytes": 5125
+  },
+  {
+    "path": "expected/terminal_internal_check.txt",
+    "sha256": "4e8e6a430e2f73835315a5419904bb88de0357af54ce900ec590039d7247c8f0",
+    "bytes": 421
+  }
+]

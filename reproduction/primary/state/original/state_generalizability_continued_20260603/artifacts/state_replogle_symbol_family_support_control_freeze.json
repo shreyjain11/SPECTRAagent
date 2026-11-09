@@ -1,0 +1,29 @@
+{
+  "axis_id": "STATE_REPLOGLE_SYMBOL_FAMILY_SUPPORT_CONTROL",
+  "status": "frozen_from_discovery_contexts_before_heldout_context_confirmation",
+  "feature": "symbol_family_candidate_train_count",
+  "description": "Deterministic gene-symbol prefix family support control",
+  "unit": "Replogle few-shot gene perturbation in target cell context and representation",
+  "similarity_direction": "higher support means closer to same-context training biology",
+  "performance_direction": "STATE performance should degrade as support decreases",
+  "discovery_contexts": [
+    "hepg2",
+    "k562"
+  ],
+  "confirmation_contexts": [
+    "jurkat",
+    "rpe1"
+  ],
+  "cutpoints_from_discovery": [
+    1.0,
+    2.0,
+    5.0
+  ],
+  "level_rule": "L0 if no annotation; otherwise discovery quantile support bins from low to high",
+  "target_metric": "overlap_at_N",
+  "artifacts": [
+    "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_state_replogle_symbol_family_support_control.csv",
+    "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_state_replogle_symbol_family_support_control_trends.csv",
+    "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/spectra_ready_dataset/state_replogle_symbol_family_support_control_examples.csv"
+  ]
+}

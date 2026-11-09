@@ -88,5 +88,18 @@
     "saved_code_cells": 2,
     "saved_error_outputs": 0
   },
-  "requested_model": "AlphaMissense"
+  "requested_model": "AlphaMissense",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "am-kimi-r2/test-04",
+    "disposition": "rejected",
+    "result": "AM flat: 0.953/0.958/0.953/0.948/0.956; Δ=+0.003, CI [−0.005,+0.012]; phyloP-as-predictor collapses (Δ=−0.108) while AM does not Negative at adequate power (AM robust where its conservation reference fails)",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "am-kimi-r2/test-04",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

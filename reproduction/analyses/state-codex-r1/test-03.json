@@ -147,5 +147,18 @@
     "saved_code_cells": 4,
     "saved_error_outputs": 0
   },
-  "requested_model": "STATE"
+  "requested_model": "STATE",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "state-codex-r1/test-03",
+    "disposition": "rejected",
+    "result": "The follow-up reversed upon removing HepG2/C3A and disagreed across representations.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "state-codex-r1/test-03",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

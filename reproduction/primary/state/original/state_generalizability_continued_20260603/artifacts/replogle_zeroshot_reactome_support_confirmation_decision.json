@@ -1,0 +1,33 @@
+{
+  "axis_id": "STATE_REPLOGLE_REACTOME_SUPPORT_CROSS_PROTOCOL_CONFIRMATION",
+  "decision": "supports_axis",
+  "note": "This is a harder cross-protocol check; context zeroshot performance can be dominated by cell-context novelty.",
+  "trends": [
+    {
+      "spectra_subset": "zeroshot_cross_protocol_confirmation",
+      "representation": "HVG",
+      "n_levels": 5,
+      "n_rows": 5759,
+      "similarity_monotone_increasing": true,
+      "spearman_level_vs_overlap_at_N": 0.7,
+      "low_level": "L0_no_annotation",
+      "high_level": "L4_very_high",
+      "low_overlap_at_N_mean": 0.10954658868974469,
+      "high_overlap_at_N_mean": 0.17714168451336101,
+      "high_minus_low_overlap_at_N": 0.06759509582361632
+    },
+    {
+      "spectra_subset": "zeroshot_cross_protocol_confirmation",
+      "representation": "SE",
+      "n_levels": 5,
+      "n_rows": 5759,
+      "similarity_monotone_increasing": true,
+      "spearman_level_vs_overlap_at_N": 0.7,
+      "low_level": "L0_no_annotation",
+      "high_level": "L4_very_high",
+      "low_overlap_at_N_mean": 0.05626565474207329,
+      "high_overlap_at_N_mean": 0.09993433703477794,
+      "high_minus_low_overlap_at_N": 0.04366868229270465
+    }
+  ]
+}

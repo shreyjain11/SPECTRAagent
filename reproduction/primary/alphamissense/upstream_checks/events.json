@@ -1,0 +1,2601 @@
+[
+  {
+    "msa": "CD19_HUMAN_2023-10-12_b01.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.753853250999953,
+    "child_peak_rss_kib": 956284
+  },
+  {
+    "msa": "CD19_HUMAN_2023-10-12_b01.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "7772bad058e70234ba9fe1a0581c5ebac240a815107a5bd3a6da2537266ddfb3"
+  },
+  {
+    "msa": "CD19_HUMAN_2023-10-12_b01.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 4.912946946999966,
+    "nseq": 1183,
+    "ncol": 556,
+    "global_neff": 246.00000000000003,
+    "output_sha256": "b4f8db48911b0595419cca38fe2ad42633d036cad197e02f802ae6389daac0ca"
+  },
+  {
+    "msa": "B2L11_HUMAN_2023-08-07_b04.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.2463331810000113,
+    "child_peak_rss_kib": 974316
+  },
+  {
+    "msa": "B2L11_HUMAN_2023-08-07_b04.a2m",
+    "kind": "original_cluster_comparison",
+    "identical": false
+  },
+  {
+    "msa": "B2L11_HUMAN_2023-08-07_b04.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "90e7b6f5d9bf5e24f1eb8f13566ce40a5c5751b2d4219ed1736c06b797b20e58"
+  },
+  {
+    "msa": "B2L11_HUMAN_2023-08-07_b04.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 2.3016115990000117,
+    "nseq": 660,
+    "ncol": 197,
+    "global_neff": 75.0,
+    "output_sha256": "f5e569c7809a6e62b76e47438507d720209152d2a6cafe8f5eb6fde5b0e1d49a"
+  },
+  {
+    "msa": "FKBP3_HUMAN_2023-08-07_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.2620165320000183,
+    "child_peak_rss_kib": 974316
+  },
+  {
+    "msa": "FKBP3_HUMAN_2023-08-07_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "8a0b57c57cf5e8dc3312c6b15d2cc4a8f8af9a2f07775ff5bdd14882a0805c6e"
+  },
+  {
+    "msa": "FKBP3_HUMAN_2023-08-07_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 2.3798096410000085,
+    "nseq": 3216,
+    "ncol": 66,
+    "global_neff": 129.0,
+    "output_sha256": "5751a28a924e92052a60b531b0d1d71a26d1773620f143b9366b73f9d7f3b5fb"
+  },
+  {
+    "msa": "TADBP_HUMAN_full_11-26-2021_b09.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.317708944000003,
+    "child_peak_rss_kib": 974316
+  },
+  {
+    "msa": "TADBP_HUMAN_full_11-26-2021_b09.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "ad3615d872fcf4c47ee661c9547f71c88be1d35ba85be142492153429cfef9c4"
+  },
+  {
+    "msa": "TADBP_HUMAN_full_11-26-2021_b09.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 2.4329397669999935,
+    "nseq": 1211,
+    "ncol": 377,
+    "global_neff": 108.99999999999999,
+    "output_sha256": "6bf5987e1b6ecd619ecb20ca03ce817b6b617842d2b6ae69a7efb3bb1c86c606"
+  },
+  {
+    "msa": "PRKN_HUMAN_2023-08-07_b05.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.552671291999985,
+    "child_peak_rss_kib": 978832
+  },
+  {
+    "msa": "PRKN_HUMAN_2023-08-07_b05.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "c9523e9625ef7228880179062ed7dbb835d1ffc39bc219c549b5880a99a09025"
+  },
+  {
+    "msa": "PRKN_HUMAN_2023-08-07_b05.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 2.703483726999991,
+    "nseq": 1457,
+    "ncol": 464,
+    "global_neff": 168.00000000000003,
+    "output_sha256": "0b71ec039436cd8591394ca8d1b918a987e767218cd497c97f52d8cb0c9f3e2b"
+  },
+  {
+    "msa": "YAP1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.5301957970000046,
+    "child_peak_rss_kib": 978832
+  },
+  {
+    "msa": "YAP1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "649365fe8d2e972783d82805e3270369ba5a4b5768e21a454a8f3e82e6ca5a2b"
+  },
+  {
+    "msa": "YAP1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 2.6980592870000066,
+    "nseq": 1604,
+    "ncol": 433,
+    "global_neff": 124.0,
+    "output_sha256": "9373798169dba27f7bc3420eb8a82060529e7ff25da323dc96269d26ec9de20d"
+  },
+  {
+    "msa": "KCNH2_HUMAN_535-565_11-26-2021_b05.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.440862698000018,
+    "child_peak_rss_kib": 978832
+  },
+  {
+    "msa": "KCNH2_HUMAN_535-565_11-26-2021_b05.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "89224f8a2ecb6cbb251589ec96d7a183dd34ed347f3bf6c672856ba562bdff74"
+  },
+  {
+    "msa": "KCNH2_HUMAN_535-565_11-26-2021_b05.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 2.8461968240000033,
+    "nseq": 13907,
+    "ncol": 31,
+    "global_neff": 221.0,
+    "output_sha256": "d61de07edf8b687ba363ce158c4f82f9f51dec47e4f6602b87631cd0484acfd2"
+  },
+  {
+    "msa": "PPM1D_HUMAN_2023-10-12_b01.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.009304897000021,
+    "child_peak_rss_kib": 991364
+  },
+  {
+    "msa": "PPM1D_HUMAN_2023-10-12_b01.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "fbaadc3997a701dcdbd4757a626ebba5cdf0517d89d253d034f78ed5bdf524d8"
+  },
+  {
+    "msa": "PPM1D_HUMAN_2023-10-12_b01.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 3.2438595620000115,
+    "nseq": 1844,
+    "ncol": 601,
+    "global_neff": 256.0,
+    "output_sha256": "65eaebd388fc9313c5482e608ef67c0eb62c4091759947db198a25a5a9c42c1f"
+  },
+  {
+    "msa": "CBPA2_HUMAN_2023-08-07_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.930977576999993,
+    "child_peak_rss_kib": 991364
+  },
+  {
+    "msa": "CBPA2_HUMAN_2023-08-07_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "27f89b9aedb2f83a4a74f0a45ce495c801164715fb7f5bd6966093cb1ffb747e"
+  },
+  {
+    "msa": "CBPA2_HUMAN_2023-08-07_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 3.393911301000003,
+    "nseq": 12711,
+    "ncol": 71,
+    "global_neff": 3272.0,
+    "output_sha256": "3203812f69f658ff2155bffd2054cec1ad52c53b3d6097379d4add2981fc80a2"
+  },
+  {
+    "msa": "LYAM1_HUMAN_2023-10-12_b04.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.9176866130000008,
+    "child_peak_rss_kib": 1013788
+  },
+  {
+    "msa": "LYAM1_HUMAN_2023-10-12_b04.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "f47ba128c977061caf692c4930e610d7967a647fabaea40944f1c5cdc453b0bb"
+  },
+  {
+    "msa": "LYAM1_HUMAN_2023-10-12_b04.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 3.2432892859999924,
+    "nseq": 3974,
+    "ncol": 307,
+    "global_neff": 411.0,
+    "output_sha256": "432ce1c11ed9e5678e83ebf4281a3f545e8801e34b732400817f03ff0d137955"
+  },
+  {
+    "msa": "UBR5_HUMAN_2023-08-07_b05.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.2588214939999887,
+    "child_peak_rss_kib": 1013788
+  },
+  {
+    "msa": "UBR5_HUMAN_2023-08-07_b05.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "92a9bc59690537915a4cc4556c5b89eda062c9645b514e07b5da048359993409"
+  },
+  {
+    "msa": "UBR5_HUMAN_2023-08-07_b05.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 3.842905459999997,
+    "nseq": 17888,
+    "ncol": 56,
+    "global_neff": 1157.0,
+    "output_sha256": "acfcd77d950aaf3ed012712d1dfda7c6cbcd9b6592b61401e224e6bca488d029"
+  },
+  {
+    "msa": "CAR11_HUMAN_2023-10-12_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.1417061589999946,
+    "child_peak_rss_kib": 1013788
+  },
+  {
+    "msa": "CAR11_HUMAN_2023-10-12_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "bac5fb491883bb48b52c5fff1c3376404139e20311d6f14e6f3c732e56b6f539"
+  },
+  {
+    "msa": "CAR11_HUMAN_2023-10-12_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 3.4413275339999814,
+    "nseq": 1352,
+    "ncol": 1152,
+    "global_neff": 47.0,
+    "output_sha256": "8451cdf2514b521494c9571987e7722c9f7a47263fd5efb55d08693b18d4befd"
+  },
+  {
+    "msa": "P53_HUMAN_full_11-26-2021_b09.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.5487119230000133,
+    "child_peak_rss_kib": 1013788
+  },
+  {
+    "msa": "P53_HUMAN_full_11-26-2021_b09.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "8a1402f5010bc25c17596d841a079fabc712977a3a8859f65a78c3a509c83a4a"
+  },
+  {
+    "msa": "P53_HUMAN_full_11-26-2021_b09.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 2.8977668069999822,
+    "nseq": 4129,
+    "ncol": 339,
+    "global_neff": 114.99999999999999,
+    "output_sha256": "fbd2d1e02ad4905c7b4d33310dcdea2a52ff62a7173da0d99e3cb9d7ed4a765e"
+  },
+  {
+    "msa": "BRCA1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.4635034789999963,
+    "child_peak_rss_kib": 1013788
+  },
+  {
+    "msa": "BRCA1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "original_cluster_comparison",
+    "identical": false
+  },
+  {
+    "msa": "BRCA1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "b020bd8f4f6d2fb85d81a6087688e64797449d73c5400f484d023d3edb20838d"
+  },
+  {
+    "msa": "BRCA1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 3.782088965000014,
+    "nseq": 1008,
+    "ncol": 1432,
+    "global_neff": 102.0,
+    "output_sha256": "fc5b9e89c3b28484548b206e6a07f0c04b5bb82fa8ba4363d4b24c5b5a847ef8"
+  },
+  {
+    "msa": "GDIA_HUMAN_2023-10-12_b05.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.265509530999992,
+    "child_peak_rss_kib": 1013788
+  },
+  {
+    "msa": "GDIA_HUMAN_2023-10-12_b05.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "a819f030261ed7866d399dbafe2607063198d993a08435a93a5e2780d6d4a568"
+  },
+  {
+    "msa": "GDIA_HUMAN_2023-10-12_b05.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 3.794542679999978,
+    "nseq": 5196,
+    "ncol": 445,
+    "global_neff": 398.0,
+    "output_sha256": "193d28e2bd984f62de4ee9719cb7c0932e74f3c2b57e103590393dc820f51043"
+  },
+  {
+    "msa": "VKOR1_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.7544068360000153,
+    "child_peak_rss_kib": 1013788
+  },
+  {
+    "msa": "VKOR1_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "06778b209414e29f3de98ee52a878291389365a0f4b0c2691380652f9e083f8a"
+  },
+  {
+    "msa": "VKOR1_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 4.512513888000001,
+    "nseq": 14510,
+    "ncol": 127,
+    "global_neff": 4803.0,
+    "output_sha256": "7d52ff9f0122ca7b55cb66d296f812238c78910e97b4657150ff17edbbbd085b"
+  },
+  {
+    "msa": "HMDH_HUMAN_2023-10-12_b05.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.403207199000008,
+    "child_peak_rss_kib": 1013788
+  },
+  {
+    "msa": "HMDH_HUMAN_2023-10-12_b05.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "79615f0d1e10bef9dcbcc60576572add7665d35bb4a15f51c15e9b417922b870"
+  },
+  {
+    "msa": "HMDH_HUMAN_2023-10-12_b05.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 4.986400113999991,
+    "nseq": 3153,
+    "ncol": 884,
+    "global_neff": 495.0,
+    "output_sha256": "2578038d130d08885219671f2be4967d651162a5126b1e1deff22c06cdb2462c"
+  },
+  {
+    "msa": "BRCA2_HUMAN_2023-10-12_b01.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 7.022485627000009,
+    "child_peak_rss_kib": 1013788
+  },
+  {
+    "msa": "BRCA2_HUMAN_2023-10-12_b01.a2m",
+    "kind": "original_cluster_comparison",
+    "identical": false
+  },
+  {
+    "msa": "BRCA2_HUMAN_2023-10-12_b01.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "76adf509f586feee05dd0dbcc5fd51507456edd3179312071ba60dc12c6087b5"
+  },
+  {
+    "msa": "BRCA2_HUMAN_2023-10-12_b01.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 7.6299823680000145,
+    "nseq": 933,
+    "ncol": 3413,
+    "global_neff": 93.0,
+    "output_sha256": "3bfb81f543aac7e41b6eb07c8bd08184049c28dd83357ab43494c662d577fc6c"
+  },
+  {
+    "msa": "SCN5A_HUMAN_1611-1642_11-26-2021_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.277646544999982,
+    "child_peak_rss_kib": 1013788
+  },
+  {
+    "msa": "SCN5A_HUMAN_1611-1642_11-26-2021_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "ba86b3278703af01f2c02cc5c066d3f34b1d7929064844ad354255a0d98a4329"
+  },
+  {
+    "msa": "SCN5A_HUMAN_1611-1642_11-26-2021_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 4.667259931999979,
+    "nseq": 49973,
+    "ncol": 26,
+    "global_neff": 813.0,
+    "output_sha256": "5d0a9e5a18fc26dff2790e677e17d6b212f1dbec909bea6cafe67dfb1e2da885"
+  },
+  {
+    "msa": "MTHR_HUMAN_2023-08-07_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.9894820419999633,
+    "child_peak_rss_kib": 1013788
+  },
+  {
+    "msa": "MTHR_HUMAN_2023-08-07_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "0f3f66f6eff7f38ce3d86ed13921872e60a085b5ac7b35aa714ffe58590eab39"
+  },
+  {
+    "msa": "MTHR_HUMAN_2023-08-07_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 4.645521008000003,
+    "nseq": 4783,
+    "ncol": 630,
+    "global_neff": 683.0,
+    "output_sha256": "d9fc51f5aea48238a52a613b8beb00e3cee0fd13c9ca54dc0690684faa83e7f7"
+  },
+  {
+    "msa": "AICDA_HUMAN_2023-08-07_b01.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.455564307999964,
+    "child_peak_rss_kib": 1028076
+  },
+  {
+    "msa": "AICDA_HUMAN_2023-08-07_b01.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "29444057b1480654d4b5388db40f65d4bd5ddbfc9fafb16a58cf204e833cad08"
+  },
+  {
+    "msa": "AICDA_HUMAN_2023-08-07_b01.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 5.5042432520000375,
+    "nseq": 18148,
+    "ncol": 174,
+    "global_neff": 3463.0,
+    "output_sha256": "102fd4c5b10b3cd9f1f016ca3dc70c9b97b90ae671be47512db39831e9124299"
+  },
+  {
+    "msa": "A4_HUMAN_2023-08-07_b01.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.6235333799999694,
+    "child_peak_rss_kib": 1028076
+  },
+  {
+    "msa": "A4_HUMAN_2023-08-07_b01.a2m",
+    "kind": "original_cluster_comparison",
+    "identical": false
+  },
+  {
+    "msa": "A4_HUMAN_2023-08-07_b01.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "faabcff13e30e2d75b4778a92d256f54792c4c37155fbe3f0307608a8f8ea83f"
+  },
+  {
+    "msa": "A4_HUMAN_2023-08-07_b01.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 4.423208370000054,
+    "nseq": 5272,
+    "ncol": 760,
+    "global_neff": 64.0,
+    "output_sha256": "1f32c6275aaf19ca97dc12e140d2e6d516c70a5eac4a2467bd8c4ffbfe1b9848"
+  },
+  {
+    "msa": "TPMT_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 5.244151033000037,
+    "child_peak_rss_kib": 1028076
+  },
+  {
+    "msa": "TPMT_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "6ca1f1617c5bc87d3fdc2d40ed24d0d71d8d03f4406934cfdb9a30ed88d0768c"
+  },
+  {
+    "msa": "TPMT_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 6.524830519000034,
+    "nseq": 19526,
+    "ncol": 179,
+    "global_neff": 6287.0,
+    "output_sha256": "7eb06f37588769a7f4fbf170215eba709956701783ece45afb5e77a96910a048"
+  },
+  {
+    "msa": "TPK1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 6.247235092999972,
+    "child_peak_rss_kib": 1028076
+  },
+  {
+    "msa": "TPK1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "a71dc0321fe338a471e296656234e58b96dbf4abc7842f720b788dedb653fe28"
+  },
+  {
+    "msa": "TPK1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 8.014690729999984,
+    "nseq": 21515,
+    "ncol": 200,
+    "global_neff": 7171.0,
+    "output_sha256": "6b373dc95434c9d00447e67d70796c60c6a2a98d0c4d79e42eaae6055e7f0cd7"
+  },
+  {
+    "msa": "PR40A_HUMAN_2023-08-07_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.24395930999998,
+    "child_peak_rss_kib": 1028076
+  },
+  {
+    "msa": "PR40A_HUMAN_2023-08-07_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "d110df06e0bfc17fb612d20cf5bc4f4876086f832a81e71a83d30cbd2fea8b56"
+  },
+  {
+    "msa": "PR40A_HUMAN_2023-08-07_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 6.348857681999959,
+    "nseq": 63560,
+    "ncol": 54,
+    "global_neff": 3854.0,
+    "output_sha256": "874c58ba25ffa688cc83ce84298375a3568501f596296d7d0a14d9b30fd39018"
+  },
+  {
+    "msa": "RAF1_HUMAN_2023-10-12_b05.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.1343904579999844,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "RAF1_HUMAN_2023-10-12_b05.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "7f0656639aea948cdff7f3c6ffa80a9366c378112bed9c83f7f1e20ffb55aab2"
+  },
+  {
+    "msa": "RAF1_HUMAN_2023-10-12_b05.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 4.527287681000018,
+    "nseq": 9685,
+    "ncol": 630,
+    "global_neff": 354.0,
+    "output_sha256": "89b1c27676c9cb91b4969a7b3c7589a2bbd7dbba4fef397bf79a71c413e749bc"
+  },
+  {
+    "msa": "RD23A_HUMAN_2023-08-07_b04.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.072059646000014,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "RD23A_HUMAN_2023-08-07_b04.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "d4b93f18c0790547b65b91d12a5ccb4f78b5d1610f72a8524a29e5d0da88fb69"
+  },
+  {
+    "msa": "RD23A_HUMAN_2023-08-07_b04.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 6.107101127000021,
+    "nseq": 100991,
+    "ncol": 38,
+    "global_neff": 8410.0,
+    "output_sha256": "3e3c4480340179fd470fae39c758e804838a8d2ef81724b5c5824ada7d13847c"
+  },
+  {
+    "msa": "GRB2_HUMAN_full_11-26-2021_b05.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.8736825699999713,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "GRB2_HUMAN_full_11-26-2021_b05.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "0bf87bff5b8eadc54822cdd558984b2415beafa60362bbcf733c79cdf31b9794"
+  },
+  {
+    "msa": "GRB2_HUMAN_full_11-26-2021_b05.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 4.777693073000023,
+    "nseq": 33228,
+    "ncol": 177,
+    "global_neff": 1581.0,
+    "output_sha256": "5f783fde2657c86f2b41007bc4669acdfe598a5ad2c758d1cf03ff6a3602ed2e"
+  },
+  {
+    "msa": "PTEN_HUMAN_full_11-26-2021_b01.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.953612597000017,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "PTEN_HUMAN_full_11-26-2021_b01.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "e6f301641649f4fecf1c308ce2103cfdd3310d53ab723e030dec97221f325d30"
+  },
+  {
+    "msa": "PTEN_HUMAN_full_11-26-2021_b01.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 4.540067644999965,
+    "nseq": 19058,
+    "ncol": 303,
+    "global_neff": 1453.0,
+    "output_sha256": "a194b96ab53383ab0e49f6e85e26f1f23f409f8b9e89012f29c17e7541f251fd"
+  },
+  {
+    "msa": "NPC1_HUMAN_2023-10-12_b07.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 5.250895364999963,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "NPC1_HUMAN_2023-10-12_b07.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "4d396fbde157be44746bf96cdedb5a9039d239d47c19fcdbdae923e631114c8a"
+  },
+  {
+    "msa": "NPC1_HUMAN_2023-10-12_b07.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 7.037773281,
+    "nseq": 6333,
+    "ncol": 1261,
+    "global_neff": 870.0,
+    "output_sha256": "25a43d26947430460c1fafdec8b60572101f51ec453a0d750bef053f333a6cf4"
+  },
+  {
+    "msa": "CBX4_HUMAN_2023-08-07_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.868881154999997,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "CBX4_HUMAN_2023-08-07_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "90c09753a789caf44b26ca25206430a42f36508d9be9824e92ff82309734cbba"
+  },
+  {
+    "msa": "CBX4_HUMAN_2023-08-07_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 7.257037527000023,
+    "nseq": 108263,
+    "ncol": 48,
+    "global_neff": 13392.0,
+    "output_sha256": "d8da0ee496527365d65e8660539acb79869c5c06fc5d2700fd4f6fb32c4add02"
+  },
+  {
+    "msa": "ACE2_HUMAN_2023-10-12_b05.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.618064970999967,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "ACE2_HUMAN_2023-10-12_b05.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "6fbe5dabcb8a02cafa917a527fd821baea75a77667907183d224d9d74a79c28f"
+  },
+  {
+    "msa": "ACE2_HUMAN_2023-10-12_b05.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 6.327754880999976,
+    "nseq": 11106,
+    "ncol": 598,
+    "global_neff": 1571.9999999999998,
+    "output_sha256": "86208a41bc62084d663a9d66f1df210637f439c2cb428953406d907337fc7c99"
+  },
+  {
+    "msa": "ERBB2_HUMAN_2023-10-12_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.365271964999977,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "ERBB2_HUMAN_2023-10-12_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "bcd9433891d3eb81361515619d03573d560594624bae4237d9f6019fb913eb22"
+  },
+  {
+    "msa": "ERBB2_HUMAN_2023-10-12_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 6.5850647210000375,
+    "nseq": 8311,
+    "ncol": 1231,
+    "global_neff": 417.0,
+    "output_sha256": "8f35c288495adcb009a80bf0925a96194007a6fe3f29a94450e15870c761a9fa"
+  },
+  {
+    "msa": "SUMO1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.185014916,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "SUMO1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "affb17218c7a165766c8e28cbfbc284851cb37d340a79092aee0b118cbe51478"
+  },
+  {
+    "msa": "SUMO1_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 7.499595101000011,
+    "nseq": 85570,
+    "ncol": 71,
+    "global_neff": 14018.0,
+    "output_sha256": "566d5a0dcbcd3ad228eba65363e9022ae00f5eeccdd9db7fc6302249daeeac6b"
+  },
+  {
+    "msa": "CBS_HUMAN_2023-10-12_b08.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 6.073651422000012,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "CBS_HUMAN_2023-10-12_b08.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "74771e2ac6fddb7f6e2e5cb6fb527ae6bfa46ca03609ecbac46067ed20470798"
+  },
+  {
+    "msa": "CBS_HUMAN_2023-10-12_b08.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 8.18532744600003,
+    "nseq": 19563,
+    "ncol": 459,
+    "global_neff": 1934.0,
+    "output_sha256": "e88f95153bbf6aa62b2adbc38b2b732d267a613d6a73a820e001807fa0530a88"
+  },
+  {
+    "msa": "HXK4_HUMAN_b0.1.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.909037219000027,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "HXK4_HUMAN_b0.1.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "9c9f201c8478af248e220847a80a4647b77cf4068e0e1c37cda7eea018494104"
+  },
+  {
+    "msa": "HXK4_HUMAN_b0.1.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 7.28084248600004,
+    "nseq": 23354,
+    "ncol": 465,
+    "global_neff": 2440.0,
+    "output_sha256": "3511067c246b1d959adda0c16bf9e04319082487cd3f5e620c7a01c7dc8545ab"
+  },
+  {
+    "msa": "HXK4_HUMAN_2023-08-07_b01.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 6.066541212000004,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "HXK4_HUMAN_2023-08-07_b01.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "4b7e37ff548a90bb4cea3b0d5c22128602e3376a522f011ef7c8ddb7a69ef85f"
+  },
+  {
+    "msa": "HXK4_HUMAN_2023-08-07_b01.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 8.514759438999988,
+    "nseq": 24177,
+    "ncol": 449,
+    "global_neff": 2634.0,
+    "output_sha256": "3c65f9512cf5b891e55ab50bb100b362a1a96f956be9de8c10ca12d693149b4e"
+  },
+  {
+    "msa": "UBC9_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 8.481385837000005,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "UBC9_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "b925727533333238eb4c6d5bf3ebf760989e19d4a44e439b411d3b7cc8e69062"
+  },
+  {
+    "msa": "UBC9_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 11.908523312,
+    "nseq": 69788,
+    "ncol": 135,
+    "global_neff": 8839.0,
+    "output_sha256": "df947ffd61af5a5eab82ffcc31663346b75f3f4a90e14ebb1ec1835b97f32ba3"
+  },
+  {
+    "msa": "SHOC2_HUMAN_2023-10-12_b04.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 8.709478690000026,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "SHOC2_HUMAN_2023-10-12_b04.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "d874cfc1659784cab42f6c7a7ef186e81dc563d798a24f2a93a8c6d21f26501a"
+  },
+  {
+    "msa": "SHOC2_HUMAN_2023-10-12_b04.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 11.341053503000012,
+    "nseq": 22163,
+    "ncol": 452,
+    "global_neff": 8550.0,
+    "output_sha256": "260a80c72699ee046af61f5f58cac2420b1b8c4e9f3eb2b5854fe452845f4607"
+  },
+  {
+    "msa": "SOX30_HUMAN_2023-08-07_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 7.5048127160000035,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "SOX30_HUMAN_2023-08-07_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "03063eb1e8ba18f4f176c882663c90f9577df4c1535ffe186eb4473e899a3ad3"
+  },
+  {
+    "msa": "SOX30_HUMAN_2023-08-07_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 12.583821926999974,
+    "nseq": 158104,
+    "ncol": 56,
+    "global_neff": 15505.000000000002,
+    "output_sha256": "7104d9501018ac6004e266a73202cdda7ad0133c0046d9a0b8ce71bf6567e2b5"
+  },
+  {
+    "msa": "SRC_HUMAN_full_11-26-2021_b06.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 6.473194076000027,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "SRC_HUMAN_full_11-26-2021_b06.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "e2cda1d0056a1f28156f9c6336f8ac2a413ebbe942ef4ffdf3c0bb7149e3f9fd"
+  },
+  {
+    "msa": "SRC_HUMAN_full_11-26-2021_b06.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 9.260232550000012,
+    "nseq": 26974,
+    "ncol": 433,
+    "global_neff": 1409.0,
+    "output_sha256": "4d05a6a870d5abf2a03c32a61a7fe29e83885693f3eebfd05594b9d06518a77c"
+  },
+  {
+    "msa": "PIN1_HUMAN_2023-08-07_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 8.06408436800001,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "PIN1_HUMAN_2023-08-07_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "72c1d4503118ad2963a0977ecc4ef687c96b959eacdbdc07fbe34af17903fbf6"
+  },
+  {
+    "msa": "PIN1_HUMAN_2023-08-07_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 15.26923096600001,
+    "nseq": 248269,
+    "ncol": 32,
+    "global_neff": 11786.000000000002,
+    "output_sha256": "595747ef2293114e93ddf838335dafdc4756e4922e30fb31b79f3baa128fdd87"
+  },
+  {
+    "msa": "DLG4_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.7816061659999605,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "DLG4_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "4555dbf87e6c01812293908261807b246420ee334d0d956223acfedc5143f0b6"
+  },
+  {
+    "msa": "DLG4_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 8.53036754599998,
+    "nseq": 25338,
+    "ncol": 597,
+    "global_neff": 361.00000000000006,
+    "output_sha256": "2b41865ac94adc7cecbc494302a052678d10f0f5ca8250b08791bfc039cfac4f"
+  },
+  {
+    "msa": "EPHB2_HUMAN_2023-08-07_b04.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 7.0067048500000055,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "EPHB2_HUMAN_2023-08-07_b04.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "b983af683590845ebbcd5e15e7228fbb65822727ed3613ce12a0bea13a466be5"
+  },
+  {
+    "msa": "EPHB2_HUMAN_2023-08-07_b04.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 13.94689602599999,
+    "nseq": 212234,
+    "ncol": 59,
+    "global_neff": 8887.0,
+    "output_sha256": "35f256c354968decc9d2732991a7ed8d0ffa497b2ae06d4f286e5d0d65e2a5a0"
+  },
+  {
+    "msa": "SRC_HUMAN_2023-08-07_b06.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 5.748846931999992,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "SRC_HUMAN_2023-08-07_b06.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "ce4d6888f996290ed2256b28abe320b55e22cc41af76db9ee23fd3542c9b4867"
+  },
+  {
+    "msa": "SRC_HUMAN_2023-08-07_b06.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 9.744499084999973,
+    "nseq": 37675,
+    "ncol": 466,
+    "global_neff": 1757.0,
+    "output_sha256": "aa19a7f12c513cdec44a36b4c547230b45149722dc3f90db5fbb57b149f8577a"
+  },
+  {
+    "msa": "PPARG_HUMAN_2023-10-12_b04.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.8214637240000116,
+    "child_peak_rss_kib": 1040672
+  },
+  {
+    "msa": "PPARG_HUMAN_2023-10-12_b04.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "04b2fae24c20330ecd37608e9d9819f5445cea2322206353e3ffa4fd5b1b41ad"
+  },
+  {
+    "msa": "PPARG_HUMAN_2023-10-12_b04.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 8.830394827999953,
+    "nseq": 39993,
+    "ncol": 404,
+    "global_neff": 2600.0,
+    "output_sha256": "2b03d0ecf76aeaf9d1f136f23d7f2c96b967f08c050d12cc0b81868c406d22c7"
+  },
+  {
+    "msa": "PAI1_HUMAN_2023-10-12_b05.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 10.031650346999982,
+    "child_peak_rss_kib": 1041880
+  },
+  {
+    "msa": "PAI1_HUMAN_2023-10-12_b05.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "22a42f2091ebf86628f68846205d003c0045eeb77acd7c75bc08f1371450abbe"
+  },
+  {
+    "msa": "PAI1_HUMAN_2023-10-12_b05.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 15.103034223000009,
+    "nseq": 52528,
+    "ncol": 378,
+    "global_neff": 12519.0,
+    "output_sha256": "ed2680ffe67ce7ea6179b1ed0991d4ed20bf63adb60109b5d5c1b9376bd781d5"
+  },
+  {
+    "msa": "HEM3_HUMAN_2023-08-07_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 11.463788771999987,
+    "child_peak_rss_kib": 1041880
+  },
+  {
+    "msa": "HEM3_HUMAN_2023-08-07_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "3d548b0af7e381285654d6c94f310f77c6afa0193e9a483fdd1ce53be346a9af"
+  },
+  {
+    "msa": "HEM3_HUMAN_2023-08-07_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 16.37681623399999,
+    "nseq": 59544,
+    "ncol": 307,
+    "global_neff": 11837.0,
+    "output_sha256": "021a9845784059cd72dfc52ed9155f48ee8b3664df0997474a90bd7ee8bb7557"
+  },
+  {
+    "msa": "DNJA1_HUMAN_2023-08-07_b07.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 17.69365651399994,
+    "child_peak_rss_kib": 1050516
+  },
+  {
+    "msa": "DNJA1_HUMAN_2023-08-07_b07.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "9fd96c3e435cb97f0bdb6604b4d8633923676e558e871820b02219ae2a54163b"
+  },
+  {
+    "msa": "DNJA1_HUMAN_2023-08-07_b07.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 27.025619344000006,
+    "nseq": 280284,
+    "ncol": 63,
+    "global_neff": 41072.0,
+    "output_sha256": "215a4605e08f7864320b58d1283b74259f74e822846c24c94e7addf61561feab"
+  },
+  {
+    "msa": "SC6A4_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 9.962753110999984,
+    "child_peak_rss_kib": 1050516
+  },
+  {
+    "msa": "SC6A4_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "02dd190093569d778305bbb86600e2692a441de3127489742969becb94a90b2a"
+  },
+  {
+    "msa": "SC6A4_HUMAN_full_11-26-2021_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 15.032261938000033,
+    "nseq": 40971,
+    "ncol": 507,
+    "global_neff": 5126.0,
+    "output_sha256": "fd0a3249b7453e80bf5b9d202bf6288b5b9564ade98ee261dd648114cffc2c24"
+  },
+  {
+    "msa": "NUD15_HUMAN_full_11-26-2021_b04.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 11.166731533000075,
+    "child_peak_rss_kib": 1050516
+  },
+  {
+    "msa": "NUD15_HUMAN_full_11-26-2021_b04.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "523544314718bd283f6f9d5fe7071b763afc0102ce58262071f11c41662c55bb"
+  },
+  {
+    "msa": "NUD15_HUMAN_full_11-26-2021_b04.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 19.292987874999994,
+    "nseq": 153922,
+    "ncol": 118,
+    "global_neff": 43028.0,
+    "output_sha256": "e16f71bae83d0f041463e1f94ca80a4584dbf135586def8435281b0dd52f93a7"
+  },
+  {
+    "msa": "UBE4B_HUMAN_2023-08-07_b04.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 12.365630743999986,
+    "child_peak_rss_kib": 1050516
+  },
+  {
+    "msa": "UBE4B_HUMAN_2023-08-07_b04.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "a0da1199a08fcb2d24ae3d459fe105ab66af6c05f221752aadd93580c35b8105"
+  },
+  {
+    "msa": "UBE4B_HUMAN_2023-08-07_b04.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 22.94004395500008,
+    "nseq": 310943,
+    "ncol": 64,
+    "global_neff": 36095.999999999985,
+    "output_sha256": "7bf74efba7d53f190d0810abce84288a761b956b146e137a640cb94d8845948e"
+  },
+  {
+    "msa": "CALM1_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 10.771690742999908,
+    "child_peak_rss_kib": 1050516
+  },
+  {
+    "msa": "CALM1_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "original_cluster_comparison",
+    "identical": false
+  },
+  {
+    "msa": "CALM1_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "f547cf27b25fb8deff2c126a46406efd911b31e223b973f60ac71020ff08f2c6"
+  },
+  {
+    "msa": "CALM1_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 19.465165587,
+    "nseq": 177633,
+    "ncol": 133,
+    "global_neff": 29268.000000000007,
+    "output_sha256": "2bd7facb50347f29497e214b9af89197459e68782f1aad768b0fef75187ae974"
+  },
+  {
+    "msa": "RASH_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 14.723380745999975,
+    "child_peak_rss_kib": 1050516
+  },
+  {
+    "msa": "RASH_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "6e7e033872b9794c36131d2dc1eb4002e7b56f843390501b744195ae358f9ce6"
+  },
+  {
+    "msa": "RASH_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 26.21330716500006,
+    "nseq": 204751,
+    "ncol": 163,
+    "global_neff": 24701.0,
+    "output_sha256": "5d2243a01b74588fb7b864c67b74e69905b05cb9673c6fa8558889905f734bca"
+  },
+  {
+    "msa": "MK01_HUMAN_full_11-26-2021_b06.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 11.858649216999993,
+    "child_peak_rss_kib": 1050516
+  },
+  {
+    "msa": "MK01_HUMAN_full_11-26-2021_b06.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "7b375ca21fc9a29333e845a75657d81e6733ae0539f99b983bd4e7820b678532"
+  },
+  {
+    "msa": "MK01_HUMAN_full_11-26-2021_b06.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 21.62857592299997,
+    "nseq": 124248,
+    "ncol": 290,
+    "global_neff": 8945.0,
+    "output_sha256": "c200de2ea0c1b73ab2ff7c64b4ae08b393a99c7f1606e9547981ea1d90fcaa2b"
+  },
+  {
+    "msa": "OTC_HUMAN_2023-08-07_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 22.367708416000028,
+    "child_peak_rss_kib": 1067400
+  },
+  {
+    "msa": "OTC_HUMAN_2023-08-07_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "74aa7a98f5fab4e6039c3b8229c53e4aae388fc104bca4a4fcbcb43514bb12b3"
+  },
+  {
+    "msa": "OTC_HUMAN_2023-08-07_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 33.43227166500003,
+    "nseq": 135607,
+    "ncol": 308,
+    "global_neff": 19835.999999999996,
+    "output_sha256": "fbd1fedce45f0d63c46a853a0496c42567f99c33f6d47af8a64ed62d6976ab1d"
+  },
+  {
+    "msa": "MSH2_HUMAN_full_11-26-2021_b05.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 33.15889968299996,
+    "child_peak_rss_kib": 1069044
+  },
+  {
+    "msa": "MSH2_HUMAN_full_11-26-2021_b05.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "8ec601889da551472bcc96fe71fc59ef7dd37b543fb45d1230926fe398f7f4f7"
+  },
+  {
+    "msa": "MSH2_HUMAN_full_11-26-2021_b05.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 46.09732474300006,
+    "nseq": 61226,
+    "ncol": 842,
+    "global_neff": 10747.0,
+    "output_sha256": "e308c5ecb30f5b99d03a9959e58d3917263bcc32b174b7e92a2e0e8689a88cef"
+  },
+  {
+    "msa": "MET_HUMAN_2023-08-07_b09.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 16.330485479000004,
+    "child_peak_rss_kib": 1069044
+  },
+  {
+    "msa": "MET_HUMAN_2023-08-07_b09.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "906471912d9ce3b888afc11caad6b95f79b211d41351db1779899c48dc6fb49a"
+  },
+  {
+    "msa": "MET_HUMAN_2023-08-07_b09.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 29.378172748999987,
+    "nseq": 185885,
+    "ncol": 273,
+    "global_neff": 5555.999999999999,
+    "output_sha256": "df10a8e11eea7fbdcd41bf97f04f9972451fc7c7f5e4dbb46d0721bcf1d388a9"
+  },
+  {
+    "msa": "OBSCN_HUMAN_2023-08-07_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 20.19091407799999,
+    "child_peak_rss_kib": 1069044
+  },
+  {
+    "msa": "OBSCN_HUMAN_2023-08-07_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "4b821664a1e1a94ab0bd60158c1f1a0e5e8505d7ca20bca0d8d128b2771f065f"
+  },
+  {
+    "msa": "OBSCN_HUMAN_2023-08-07_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 43.754378371999906,
+    "nseq": 718751,
+    "ncol": 53,
+    "global_neff": 26549.000000000004,
+    "output_sha256": "8aafd1fd5dcfb28520cccb6c64466501fc4165661a51e479b8298122acd04717"
+  },
+  {
+    "msa": "ADRB2_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 25.24792614599994,
+    "child_peak_rss_kib": 1069044
+  },
+  {
+    "msa": "ADRB2_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "bdd03aa0049344369d6c1b1bce5983d2095a0174e9593dca565053edc6e3fab3"
+  },
+  {
+    "msa": "ADRB2_HUMAN_full_11-26-2021_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 43.75031938500001,
+    "nseq": 204722,
+    "ncol": 294,
+    "global_neff": 26119.0,
+    "output_sha256": "2aed3df70f048b076e279bf18ef38df37821b4f8f0bd70c75ef683cf288d1093"
+  },
+  {
+    "msa": "SERC_HUMAN_2023-08-07_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 40.767315147999966,
+    "child_peak_rss_kib": 1113952
+  },
+  {
+    "msa": "SERC_HUMAN_2023-08-07_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "89eaf1efe25b15a4a3f5643ea2adb0ace33ef645d80d4d2a2809718669e7035d"
+  },
+  {
+    "msa": "SERC_HUMAN_2023-08-07_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 61.563509651000004,
+    "nseq": 232438,
+    "ncol": 351,
+    "global_neff": 42428.99999999999,
+    "output_sha256": "80c133d64baf05759ef6ffae43b2018c1b0bf4003289c15a3b1444058c81422c"
+  },
+  {
+    "msa": "OTU7A_HUMAN_2023-08-07_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 53.17494756399992,
+    "child_peak_rss_kib": 1600068
+  },
+  {
+    "msa": "OTU7A_HUMAN_2023-08-07_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "eb1f122a401054e16db76e955c902587c927d292de3930340ccb66985977fa43"
+  },
+  {
+    "msa": "OTU7A_HUMAN_2023-08-07_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 95.96911083700002,
+    "nseq": 1359071,
+    "ncol": 37,
+    "global_neff": 522258.99999999994,
+    "output_sha256": "136ff4aa437c3fcfdac577eb01de66f52d9f1dfad75bbaa8430e0b181685bc8a"
+  },
+  {
+    "msa": "S22A1_HUMAN_2023-08-07_b02.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 39.62751667800012,
+    "child_peak_rss_kib": 1600068
+  },
+  {
+    "msa": "S22A1_HUMAN_2023-08-07_b02.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "0283192215d0a87ebd4bcdf7960aaa5aa2e800b201544d11412a9552c8b4fb80"
+  },
+  {
+    "msa": "S22A1_HUMAN_2023-08-07_b02.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 62.074314189000006,
+    "nseq": 198790,
+    "ncol": 446,
+    "global_neff": 33771.0,
+    "output_sha256": "d52e9f3a15a37ae2aa018f2c1efa6037eac32ed9435086eeb85f84e15e9e55a4"
+  },
+  {
+    "msa": "OPSD_HUMAN_2023-10-12_b04.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 32.50949223199996,
+    "child_peak_rss_kib": 1600068
+  },
+  {
+    "msa": "OPSD_HUMAN_2023-10-12_b04.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "7642b45b891c8e50a419c0cf83f825b300c8bd79684854fcd0eab054ff829c3e"
+  },
+  {
+    "msa": "OPSD_HUMAN_2023-10-12_b04.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 61.39589827099985,
+    "nseq": 342311,
+    "ncol": 305,
+    "global_neff": 38044.00000000001,
+    "output_sha256": "c6234472be3234b43dd6d65d04ea51e09a5621540600dfa3b0c5309080f8ff83"
+  },
+  {
+    "msa": "CP2C9_HUMAN_full_11-26-2021_b04.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 66.67274677699993,
+    "child_peak_rss_kib": 1600068
+  },
+  {
+    "msa": "CP2C9_HUMAN_full_11-26-2021_b04.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "0d20ac69416787d0bd6667d8aecd1bf47e60531b3daead53d4c58ce1cec862f2"
+  },
+  {
+    "msa": "CP2C9_HUMAN_full_11-26-2021_b04.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 96.82355584900006,
+    "nseq": 264279,
+    "ncol": 434,
+    "global_neff": 75199.99999999999,
+    "output_sha256": "5e9f6b35fa15ea4c91865b0534d48b1663b340d46fe9792804872f98996f017c"
+  },
+  {
+    "msa": "CCR5_HUMAN_2023-08-07_b03.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 80.07422035199988,
+    "child_peak_rss_kib": 1600068
+  },
+  {
+    "msa": "CCR5_HUMAN_2023-08-07_b03.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "d5fffa2a44de5feaeb516c516f869726225c488a1abd534727509ad6713f9b30"
+  },
+  {
+    "msa": "CCR5_HUMAN_2023-08-07_b03.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 133.41763087599998,
+    "nseq": 632074,
+    "ncol": 292,
+    "global_neff": 68199.00000000004,
+    "output_sha256": "ff3c394f0822309c6b25bac9568f6f400cc909ccbc3dba93079ff8445a41107c"
+  }
+]

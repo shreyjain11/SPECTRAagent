@@ -1,0 +1,41 @@
+[
+  {
+    "msa": "CD19_HUMAN_2023-10-12_b01.a2m",
+    "kind": "fresh_clustering",
+    "command": [
+      "/tmp/mmseqs-original",
+      "easy-cluster",
+      "/tmp/alpha-upstream-replay/clu_work/seqs.fa",
+      "/tmp/alpha-upstream-replay/clu_work/clu",
+      "/tmp/alpha-upstream-replay/clu_work/tmp",
+      "--min-seq-id",
+      "0.8",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "1",
+      "--threads",
+      "16",
+      "-v",
+      "1"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.753853250999953,
+    "child_peak_rss_kib": 956284
+  },
+  {
+    "msa": "CD19_HUMAN_2023-10-12_b01.a2m",
+    "kind": "cluster_reuse",
+    "origin": "replay_cache",
+    "sha256": "7772bad058e70234ba9fe1a0581c5ebac240a815107a5bd3a6da2537266ddfb3"
+  },
+  {
+    "msa": "CD19_HUMAN_2023-10-12_b01.a2m",
+    "kind": "features_complete",
+    "elapsed_seconds": 4.912946946999966,
+    "nseq": 1183,
+    "ncol": 556,
+    "global_neff": 246.00000000000003,
+    "output_sha256": "b4f8db48911b0595419cca38fe2ad42633d036cad197e02f802ae6389daac0ca"
+  }
+]

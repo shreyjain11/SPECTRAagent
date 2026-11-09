@@ -1,0 +1,261 @@
+[
+  {
+    "id": "am-primary/test-01",
+    "model": "AlphaMissense",
+    "folder": "alphamissense",
+    "axis": "UniRef50 homolog count",
+    "historical_disposition": "rejected",
+    "historical_result": "No monotonic decline: \u03c1 = \u22120.21, P = 0.5563 across the ten support-bin medians and AUROCs. Intervals used 500 protein bootstraps.",
+    "notebook": "alphamissense/am-primary/axis-1.ipynb",
+    "html": "alphamissense/html/axis-1.html",
+    "completed": true,
+    "executed_code_cells": 12,
+    "saved_figures": 1,
+    "notebook_sha256": "2962acec39d458e5ab4c8a86c134bc47f4760bfcb2ff5b9ad8887745e9be1b00",
+    "execution": {
+      "completed": true,
+      "elapsed_seconds": 44.797,
+      "error": null,
+      "python": "/opt/homebrew/anaconda3/envs/fleming/bin/python",
+      "working_directory": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08"
+    },
+    "acquisition_execution": {
+      "bulk_downloads_enabled": false,
+      "cells": [
+        "public-download-axis1-1",
+        "public-download-axis1-2",
+        "public-download-axis1-3",
+        "public-download-axis1-4",
+        "am-1-1",
+        "am-1-3"
+      ],
+      "completed": true,
+      "date": "2026-11-08",
+      "note": "Only added setup/download checks and original source-display cells reexecuted; prior scientific results retained.",
+      "source": "../acquisition/download-checks.ipynb"
+    },
+    "workflow_execution": {}
+  },
+  {
+    "id": "am-primary/test-02",
+    "model": "AlphaMissense",
+    "folder": "alphamissense",
+    "axis": "gnomAD missense-variation support",
+    "historical_disposition": "rejected",
+    "historical_result": "No monotonic decline: \u03c1 = \u22120.16, P = 0.6515 across the ten bin medians and AUROCs. Intervals used 400 gene bootstraps.",
+    "notebook": "alphamissense/am-primary/axis-2.ipynb",
+    "html": "alphamissense/html/axis-2.html",
+    "completed": true,
+    "executed_code_cells": 12,
+    "saved_figures": 1,
+    "notebook_sha256": "7949bff019d95d3af8d0a47d1157b5dfaf489a7dd6d92debbadb1517abb86290",
+    "execution": {
+      "completed": true,
+      "elapsed_seconds": 31.643,
+      "error": null,
+      "python": "/opt/homebrew/anaconda3/envs/fleming/bin/python",
+      "working_directory": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary"
+    },
+    "acquisition_execution": {
+      "bulk_downloads_enabled": false,
+      "cells": [
+        "public-download-axis2-1",
+        "public-download-axis2-2",
+        "public-download-axis2-3",
+        "public-download-axis2-4",
+        "am-2-1",
+        "am-2-3"
+      ],
+      "completed": true,
+      "date": "2026-11-08",
+      "note": "Only added setup/download checks and original source-display cells reexecuted; prior scientific results retained.",
+      "source": "../acquisition/download-checks.ipynb"
+    },
+    "workflow_execution": {}
+  },
+  {
+    "id": "am-primary/test-03",
+    "model": "AlphaMissense",
+    "folder": "alphamissense",
+    "axis": "Effective alignment depth",
+    "historical_disposition": "rejected",
+    "historical_result": "The two shallowest groups covered only one or two proteins. Occupancy became the primary axis.",
+    "notebook": "alphamissense/am-primary/axis-3.ipynb",
+    "html": "alphamissense/html/axis-3.html",
+    "completed": true,
+    "executed_code_cells": 22,
+    "saved_figures": 2,
+    "notebook_sha256": "7750cd76474f947aceeccaa632fd2795ec5a489cb5b3aaee056f72c8ba030225",
+    "execution": {
+      "completed": true,
+      "elapsed_seconds": 42.351,
+      "error": null,
+      "python": "/opt/homebrew/anaconda3/envs/fleming/bin/python",
+      "working_directory": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary"
+    },
+    "acquisition_execution": {
+      "bulk_downloads_enabled": false,
+      "cells": [
+        "public-download-axis3-1",
+        "public-download-axis3-2",
+        "public-download-axis3-3",
+        "public-download-axis3-4",
+        "am-3-1",
+        "am-3-3"
+      ],
+      "completed": true,
+      "date": "2026-11-08",
+      "note": "Only added setup/download checks and original source-display cells reexecuted; prior scientific results retained.",
+      "source": "../acquisition/download-checks.ipynb"
+    },
+    "workflow_execution": {}
+  },
+  {
+    "id": "am-primary/test-04",
+    "model": "AlphaMissense",
+    "folder": "alphamissense",
+    "axis": "Alignment occupancy",
+    "historical_disposition": "accepted",
+    "historical_result": "Weighted mean absolute within-assay Spearman fell from 0.515 in the highest occupancy quintile to 0.395 in the lowest.",
+    "notebook": "alphamissense/am-primary/axis-4.ipynb",
+    "html": "alphamissense/html/axis-4.html",
+    "completed": true,
+    "executed_code_cells": 21,
+    "saved_figures": 1,
+    "notebook_sha256": "7a6e3ee89d135eb9cd3cff0f3964c9974e5360136cc0a8a038492771a33907b2",
+    "execution": {
+      "completed": true,
+      "elapsed_seconds": 42.454,
+      "error": null,
+      "python": "/opt/homebrew/anaconda3/envs/fleming/bin/python",
+      "working_directory": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary"
+    },
+    "acquisition_execution": {
+      "bulk_downloads_enabled": false,
+      "cells": [
+        "public-download-axis4-1",
+        "public-download-axis4-2",
+        "public-download-axis4-3",
+        "public-download-axis4-4",
+        "am-4-1",
+        "am-4-3"
+      ],
+      "completed": true,
+      "date": "2026-11-08",
+      "note": "Only added setup/download checks and original source-display cells reexecuted; prior scientific results retained.",
+      "source": "../acquisition/download-checks.ipynb"
+    },
+    "workflow_execution": {}
+  },
+  {
+    "id": "am-primary/test-05",
+    "model": "AlphaMissense",
+    "folder": "alphamissense",
+    "axis": "Occupancy at high effective depth",
+    "historical_disposition": "control",
+    "historical_result": "Agreement was 0.475 versus 0.305. In 24 of 28 paired assays agreement declined.",
+    "notebook": "alphamissense/am-primary/axis-5.ipynb",
+    "html": "alphamissense/html/axis-5.html",
+    "completed": true,
+    "executed_code_cells": 21,
+    "saved_figures": 1,
+    "notebook_sha256": "f4a5d1553b207e8bf503d6cadea4d22243d202e5784f551f1716ef8f3c16132c",
+    "execution": {
+      "completed": true,
+      "elapsed_seconds": 43.076,
+      "error": null,
+      "python": "/opt/homebrew/anaconda3/envs/fleming/bin/python",
+      "working_directory": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary"
+    },
+    "acquisition_execution": {
+      "bulk_downloads_enabled": false,
+      "cells": [
+        "public-download-axis5-1",
+        "public-download-axis5-2",
+        "public-download-axis5-3",
+        "public-download-axis5-4",
+        "am-5-1",
+        "am-5-3"
+      ],
+      "completed": true,
+      "date": "2026-11-08",
+      "note": "Only added setup/download checks and original source-display cells reexecuted; prior scientific results retained.",
+      "source": "../acquisition/download-checks.ipynb"
+    },
+    "workflow_execution": {}
+  },
+  {
+    "id": "am-primary/test-06",
+    "model": "AlphaMissense",
+    "folder": "alphamissense",
+    "axis": "Position-specific and substitution-score references",
+    "historical_disposition": "control",
+    "historical_result": "From highest to lowest occupancy, PSSM agreement fell from 0.479 to 0.308 and BLOSUM62 from 0.244 to 0.157. All three methods lost accuracy.",
+    "notebook": "alphamissense/am-primary/axis-6.ipynb",
+    "html": "alphamissense/html/axis-6.html",
+    "completed": true,
+    "executed_code_cells": 21,
+    "saved_figures": 1,
+    "notebook_sha256": "ced592d7af8f03198981c5df674141c867fae945dab8687b2dfd67d5f025cab2",
+    "execution": {
+      "completed": true,
+      "elapsed_seconds": 41.256,
+      "error": null,
+      "python": "/opt/homebrew/anaconda3/envs/fleming/bin/python",
+      "working_directory": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary"
+    },
+    "acquisition_execution": {
+      "bulk_downloads_enabled": false,
+      "cells": [
+        "public-download-axis6-1",
+        "public-download-axis6-2",
+        "public-download-axis6-3",
+        "public-download-axis6-4",
+        "am-6-1",
+        "am-6-3"
+      ],
+      "completed": true,
+      "date": "2026-11-08",
+      "note": "Only added setup/download checks and original source-display cells reexecuted; prior scientific results retained.",
+      "source": "../acquisition/download-checks.ipynb"
+    },
+    "workflow_execution": {}
+  },
+  {
+    "id": "am-primary/test-07",
+    "model": "AlphaMissense",
+    "folder": "alphamissense",
+    "axis": "Experimental dynamic range",
+    "historical_disposition": "control",
+    "historical_result": "DMS dynamic range weakened at lower occupancy. This is a response-measurement control.",
+    "notebook": "alphamissense/am-primary/axis-7.ipynb",
+    "html": "alphamissense/html/axis-7.html",
+    "completed": true,
+    "executed_code_cells": 21,
+    "saved_figures": 1,
+    "notebook_sha256": "4916412a353df18870834ca55cd678c18800afa3a866d981f1b64c83910d5db6",
+    "execution": {
+      "completed": true,
+      "elapsed_seconds": 45.957,
+      "error": null,
+      "python": "/opt/homebrew/anaconda3/envs/fleming/bin/python",
+      "working_directory": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/alphamissense/am-primary"
+    },
+    "acquisition_execution": {
+      "bulk_downloads_enabled": false,
+      "cells": [
+        "public-download-axis7-1",
+        "public-download-axis7-2",
+        "public-download-axis7-3",
+        "public-download-axis7-4",
+        "am-7-1",
+        "am-7-3"
+      ],
+      "completed": true,
+      "date": "2026-11-08",
+      "note": "Only added setup/download checks and original source-display cells reexecuted; prior scientific results retained.",
+      "source": "../acquisition/download-checks.ipynb"
+    },
+    "workflow_execution": {}
+  }
+]

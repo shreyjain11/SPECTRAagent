@@ -193,5 +193,18 @@
     "saved_code_cells": 5,
     "saved_error_outputs": 0
   },
-  "requested_model": "STATE"
+  "requested_model": "STATE",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "state-opus-r1/test-01",
+    "disposition": "accepted",
+    "result": "For lower coverage the adjusted association with overlap@N was partial Spearman ρ = −0.118 [−0.235, −0.003]. Raw uncovered-minus-covered overlap@N was −0.063. The exact training gene list was unavailable.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "state-opus-r1/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

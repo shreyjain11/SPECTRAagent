@@ -1,0 +1,1437 @@
+{
+  "source_snapshot_sha256": "2ec6af848395dfc566e01ceed9a625917f1d5e8090e13377cfc90434bd0bb9f5",
+  "source_snapshot_date": "2026-11-06",
+  "purpose": "Preserve what each historical investigation recorded; these are not new reviewer decisions. Primary notebooks additionally link the recovered decision evidence.",
+  "records": [
+    {
+      "id": "esmfold2-featured/test-01",
+      "axis": "Evolutionary support",
+      "historical_disposition": "accepted",
+      "historical_result": "Mean Cα-lDDT was 0.919 in the 105 targets at or above log-depth 3 and 0.723 in the other 33. Spearman ρ = 0.379, P = 4.49 × 10⁻⁶.",
+      "historical_explanation": "Evolutionary support measures how many related sequences are available in the protein’s alignment. The audit compared alignment depth with how closely the predicted structure matched the experimental structure across 138 CAMEO proteins.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-featured/test-02",
+      "axis": "CAMEO difficulty, length and resolution",
+      "historical_disposition": "control",
+      "historical_result": "Mean Cα-lDDT across easy, medium and hard categories was 0.918, 0.861 and 0.737. These benchmark controls do not establish three independent discoveries.",
+      "historical_explanation": "Long proteins, difficult benchmark targets, and less precisely resolved experimental structures can all complicate an accuracy comparison. The audit examined these existing properties alongside alignment depth to assess how they related to the observed accuracy differences.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-featured/test-03",
+      "axis": "Flexible / non-helical composition",
+      "historical_disposition": "rejected",
+      "historical_result": "Highest-stress minus remaining targets was −0.179 in discovery and +0.031 in confirmation. The CAMEO association did not generalize.",
+      "historical_explanation": "This score combines sequence features associated with flexible turns and a lower tendency to form helices. The audit first compared high-score proteins with the other CAMEO proteins, then checked whether the accuracy difference persisted in an external set.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-featured/test-04",
+      "axis": "Absolute sequence charge",
+      "historical_disposition": "rejected",
+      "historical_result": "Highest-minus-rest Cα-lDDT was −0.071 in discovery and +0.007 in confirmation.",
+      "historical_explanation": "This measure estimates how strongly a protein’s sequence is charged in either direction, positive or negative. The audit compared highly charged proteins with the rest and tested the same proposed accuracy decline on fresh experimental structures.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-featured/test-05",
+      "axis": "Acidic windows",
+      "historical_disposition": "rejected",
+      "historical_result": "Highest-minus-rest Cα-lDDT was −0.114 initially and −0.017 in confirmation. The confirmation interval crossed zero.",
+      "historical_explanation": "Acidic windows are short stretches of a protein sequence with a concentration of negatively charged residues. The audit calculated this property from the sequence and compared accuracy in the most acidic group with the remaining proteins in an initial set and a confirmation set.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-featured/test-06",
+      "axis": "Cysteine fraction",
+      "historical_disposition": "accepted",
+      "historical_result": "Cα-lDDT averaged 0.901 in the lowest and 0.787 in the highest cysteine group (mean cysteine content 0.11% and 4.03%, respectively). The intermediate groups did not form a strictly monotone curve.",
+      "historical_explanation": "Cysteine fraction is the proportion of amino acids in a sequence that are cysteine. The audit fixed a set of independent proteins before scoring them and compared structural accuracy across groups with increasing cysteine content.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-featured/test-07",
+      "axis": "Viral envelope proteins",
+      "historical_disposition": "accepted",
+      "historical_result": "Mean Cα-lDDT was 0.591 for 105 viral/phage proteins and 0.899 for 184 others. The 11 E/E2/envelope-E proteins averaged 0.396 versus 0.803 for the remaining 278.",
+      "historical_explanation": "Viral and envelope annotations identify proteins associated with viruses and, more specifically, proteins on a viral envelope. As an exploratory follow-up, the audit used available protein metadata to compare their structural accuracy with that of other evaluated proteins.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-featured/test-08",
+      "axis": "Potential disulfide capacity",
+      "historical_disposition": "accepted",
+      "historical_result": "The 134 proteins at or above the 80th-percentile threshold averaged Cα-lDDT 0.713 versus 0.862 in the remaining 518. This measures a risk proxy, not experimentally observed bonds.",
+      "historical_explanation": "Two cysteines can potentially form a disulfide bond, so the count of possible pairs gives a rough sequence-based measure of disulfide capacity. The audit compared accuracy in proteins with the highest estimated capacity against the remaining proteins, without measuring actual bonds.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-featured/test-09",
+      "axis": "Reference geometry",
+      "historical_disposition": "control",
+      "historical_result": "Association was limited to retrospective benchmarking. The feature needs a reference structure.",
+      "historical_explanation": "This measure describes how spread out the experimentally observed protein structure is relative to its length. The audit used saved reference structures to examine its association with accuracy, so the measure could only support a retrospective check.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-featured/test-10",
+      "axis": "Viral-disulfide pilot",
+      "historical_disposition": "unresolved",
+      "historical_result": "Only eight top-level proteins were available. The result was treated as a pilot.",
+      "historical_explanation": "The pilot combined a viral-protein annotation with a high estimate of possible disulfide pairs. The audit fixed this combined score before testing an independent set, but only eight proteins reached the highest score group.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-featured/test-11",
+      "axis": "Envelope/fusion proxy",
+      "historical_disposition": "rejected",
+      "historical_result": "The frozen envelope/fusion score failed confirmation.",
+      "historical_explanation": "This proposed score combined possible disulfide pairs with sequence patterns intended to flag viral envelope or fusion proteins. The audit fixed the score and tested it on newly selected viral proteins after excluding proteins and sequences used earlier.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-featured/test-12",
+      "axis": "Viral surface / low-helical subtype",
+      "historical_disposition": "control",
+      "historical_result": "A localized low-accuracy subtype motivated the subsequent E/E2/envelope-E analysis.",
+      "historical_explanation": "This check separated viral surface proteins using estimated disulfide capacity and sequence predictions of membrane-spanning or helical regions. Accuracy comparisons in a fresh annotated set identified a subgroup for further investigation of envelope proteins.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 2a / Supplementary Figure 1 / ESMFold2 curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-codex-r1/test-01",
+      "axis": "Pfam domain-repertoire similarity",
+      "historical_disposition": "accepted",
+      "historical_result": "Low-minus-high mean target-normalized TM-score was −0.096 [−0.116, −0.075]. Template transfer declined by 0.473 on the same chains, indicating shared difficulty.",
+      "historical_explanation": "A protein may contain several domains, which are recognizable functional or structural parts of its sequence. The audit compared each test protein’s set of Pfam domain families with sets from older reference proteins, then measured structural accuracy across groups with decreasing domain overlap.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 2b / Supplementary Table 19 / codex_L4_run1_ESMFold2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-codex-r1/test-02",
+      "axis": "Chain length and sequence homology",
+      "historical_disposition": "control",
+      "historical_result": "They contributed to adjustment and reference comparison.",
+      "historical_explanation": "Protein length and sequence similarity to known structures can affect how hard a protein is to predict. The audit included these factors when adjusting the domain comparison and evaluated a predictor that transfers the nearest known template on the same proteins.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 2b / Supplementary Table 19 / codex_L4_run1_ESMFold2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-codex-r1/test-03",
+      "axis": "Disorder, coiled-coil and low complexity",
+      "historical_disposition": "control",
+      "historical_result": "Adjustment did not eliminate the domain-repertoire effect.",
+      "historical_explanation": "Disordered segments, coiled coils, and repetitive or compositionally simple sequences can each affect structural prediction. The audit estimated these properties from the sequences and checked whether the domain-combination association persisted after accounting for them.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 2b / Supplementary Table 19 / codex_L4_run1_ESMFold2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-codex-r1/test-04",
+      "axis": "Membrane topology",
+      "historical_disposition": "unresolved",
+      "historical_result": "Not measured on the scored cohort.",
+      "historical_explanation": "Membrane topology describes whether and how a protein passes through a cell membrane. The audit proposed separating proteins by this property, but it did not measure it on the evaluated set.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 2b / Supplementary Table 19 / codex_L4_run1_ESMFold2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-codex-r2/test-01",
+      "axis": "Positive net charge on isolated cryo-EM chains",
+      "historical_disposition": "accepted",
+      "historical_result": "Positively charged versus negatively charged chains differed by −0.102 TM-score [−0.177, −0.025]. Template transfer also declined (0.115), supporting shared difficulty.",
+      "historical_explanation": "Net charge estimates the balance of positively and negatively charged amino acids in a protein sequence. The audit compared similarly sized chains modeled without their assembly partners across three charge groups and tested the final comparison on 150 previously unscored clusters.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 2b / Supplementary Table 19 / codex_L4_run2_ESMFold2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-codex-r2/test-02",
+      "axis": "Internal sequence repeats",
+      "historical_disposition": "rejected",
+      "historical_result": "The prespecified confirmation failed.",
+      "historical_explanation": "Internal repeats are sequence patterns that recur within the same protein. The audit measured repeat burden and tested whether more repetitive chains had poorer structural predictions in the predefined confirmation set.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 2b / Supplementary Table 19 / codex_L4_run2_ESMFold2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-codex-r2/test-03",
+      "axis": "Low composition entropy",
+      "historical_disposition": "rejected",
+      "historical_result": "Failed confirmation, including the expanded rescue.",
+      "historical_explanation": "Low composition entropy means a sequence relies heavily on a limited set of amino acids. The audit tested whether this uneven composition predicted lower structural accuracy, including an expanded follow-up confirmation.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 2b / Supplementary Table 19 / codex_L4_run2_ESMFold2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-codex-r2/test-04",
+      "axis": "Isolated-chain oligomeric context",
+      "historical_disposition": "rejected",
+      "historical_result": "The prespecified condition failed in confirmation.",
+      "historical_explanation": "An assembly-derived protein chain may normally interact with other chains that help determine its structure. The audit tested whether modeling a chain on its own identified a reliable accuracy decline associated with losing that partner context.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 2b / Supplementary Table 19 / codex_L4_run2_ESMFold2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-codex-r2/test-05",
+      "axis": "Dominant residue fraction",
+      "historical_disposition": "rejected",
+      "historical_result": "The frozen axis failed.",
+      "historical_explanation": "Dominant residue fraction is the share of a sequence made up by its most common amino acid. The audit fixed this score and tested whether increasingly dominated sequences had poorer structural predictions in confirmation.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 2b / Supplementary Table 19 / codex_L4_run2_ESMFold2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-codex-r2/test-06",
+      "axis": "Cysteine, hydrophobic, glycine/proline and length screens",
+      "historical_disposition": "rejected",
+      "historical_result": "Their observed directions opposed the hypotheses. The net-charge result was confirmed on 150 previously unscored clusters.",
+      "historical_explanation": "These screens examined cysteine content, hydrophobic residues, glycine and proline, and chain length as possible signs of difficult proteins. The audit compared each sequence property with discovery accuracy before selecting the charge comparison for independent testing.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 2b / Supplementary Table 19 / codex_L4_run2_ESMFold2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-opus-r1/test-01",
+      "axis": "Coverage-weighted sequence identity",
+      "historical_disposition": "accepted",
+      "historical_result": "High-to-orphan TM-score fell by 0.141 in ESMFold2 and 0.063 in AlphaFold2. The excess decline was 0.078 [0.006, 0.150]. The run did not publish an interval for the standalone 0.141 effect.",
+      "historical_explanation": "Coverage-weighted identity captures both how many aligned amino acids match an older protein and how much of the test sequence that alignment covers. The audit compared structural accuracy from close matches to proteins with little such support, using separate protein clusters for discovery and confirmation.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 2b / Supplementary Table 19 / opus_esm_L4a",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-opus-r1/test-02",
+      "axis": "Length",
+      "historical_disposition": "rejected",
+      "historical_result": "Cα-lDDT and GDT showed no length failure through roughly 600 residues.",
+      "historical_explanation": "Length is the number of amino acids in a protein chain. The audit compared structural accuracy for shorter and longer proteins to test whether prediction became worse over the investigated length range.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 2b / Supplementary Table 19 / opus_esm_L4a",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-opus-r1/test-03",
+      "axis": "Predicted disorder",
+      "historical_disposition": "rejected",
+      "historical_result": "A discovery association of ρ = −0.139 did not replicate (confirmation ρ = −0.032, P = 0.52).",
+      "historical_explanation": "Predicted disorder estimates how much of a sequence is unlikely to adopt a stable folded structure. The audit checked whether that estimate tracked lower structural accuracy in discovery and then repeated the comparison in confirmation.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 2b / Supplementary Table 19 / opus_esm_L4a",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-opus-r1/test-04",
+      "axis": "Coverage, resolution and sequence composition",
+      "historical_disposition": "control",
+      "historical_result": "No robust independent axis. The homology effect survived adjustment.",
+      "historical_explanation": "Alignment coverage, simple sequence composition, membrane-associated patterns, and experimental resolution can accompany low sequence similarity. The audit checked these properties as alternative explanations and assessed whether the main sequence-similarity result survived adjustment.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 2b / Supplementary Table 19 / opus_esm_L4a",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-opus-r2/test-01",
+      "axis": "Sequence length",
+      "historical_disposition": "rejected",
+      "historical_result": "Across 260 scored chains, the frozen monotone decline was absent. Spearman ρ = +0.176; adjusted β = +0.019, P = 0.11. Chains above the tested 40–767 residue range were unavailable.",
+      "historical_explanation": "Sequence length is the number of amino acids the model must fold into a structure. The audit grouped 260 proteins into six length ranges and tested whether structural accuracy declined steadily from shorter to longer chains.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 2b / Supplementary Table 19 / opus_esm_L4b",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-opus-r2/test-02",
+      "axis": "Training homology",
+      "historical_disposition": "rejected",
+      "historical_result": "Adjusted β approximately zero, P = 0.93.",
+      "historical_explanation": "Training homology measures how closely a test sequence matches proteins resembling the training reference. Within the length study, the audit included this similarity in its adjusted analysis to check whether it independently tracked accuracy.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 2b / Supplementary Table 19 / opus_esm_L4b",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-opus-r2/test-03",
+      "axis": "Short-chain and long-chain failure tails",
+      "historical_disposition": "control",
+      "historical_result": "The long-chain failure rate was 21% versus 39% for the reference. Distributional tail effects did not support a model-specific monotone mean decline.",
+      "historical_explanation": "Averages can hide a subgroup of failed predictions, and structural scores can behave differently on very short chains. The audit examined short-chain score normalization and compared the frequency of long-chain failures with a reference method.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 2b / Supplementary Table 19 / opus_esm_L4b",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-opus-r2/test-04",
+      "axis": "Resolution, composition and oligomeric state",
+      "historical_disposition": "control",
+      "historical_result": "No robust independent effect in the joint fit.",
+      "historical_explanation": "Experimental resolution, amino-acid composition, and whether a chain belongs to a larger assembly may vary with protein length. The audit considered these properties together to check whether they explained the observed accuracy patterns.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 2b / Supplementary Table 19 / opus_esm_L4b",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-kimi-r2/test-01",
+      "axis": "Maximum sequence identity",
+      "historical_disposition": "accepted",
+      "historical_result": "The lowest-minus-highest-identity TM-score contrast was −0.086, with a Welch interval of [−0.163, −0.009] reconstructed from reported group means, SDs and counts. The template baseline deteriorated more severely.",
+      "historical_explanation": "Maximum sequence identity is the largest fraction of matching amino acids in an eligible alignment to an older reference protein. The audit scored 40 proteins in each of four similarity groups and compared the lowest and highest groups for both ESMFold2 and a template-based predictor.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 2b / Supplementary Table 19 / kimi_L4_ESM_r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-kimi-r2/test-02",
+      "axis": "Missing-density and complex-context restrictions",
+      "historical_disposition": "control",
+      "historical_result": "The missing-density-filtered endpoint alone was nonsignificant; the intersection sensitivity retained the trend and endpoint.",
+      "historical_explanation": "Experimental structures can omit unresolved residues or represent proteins whose shape depends on neighboring chains. The audit repeated selected comparisons under predefined restrictions on these features to assess how they affected the sequence-similarity result.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 2b / Supplementary Table 19 / kimi_L4_ESM_r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-kimi-r1/test-01",
+      "axis": "Sequence identity and low complexity (ESMFold v1)",
+      "historical_disposition": "unresolved",
+      "historical_result": "This run used ESMFold v1. Its identity results and low-complexity tests provide no estimate for ESMFold2.",
+      "historical_explanation": "An orphan protein was defined here as having less than 30% sequence identity to every protein in the older reference pool. The run compared structure predictions across similarity groups and examined simple sequence composition, using ESMFold v1 throughout.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 2b / Supplementary Table 19 / kimi_L4_ESM_r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-kimi-r1/test-02",
+      "axis": "Graded identity and orphan threshold (v1)",
+      "historical_disposition": "unresolved",
+      "historical_result": "The graded effect missed its frozen criterion. A v1 orphan association passed its own test. Both are off-target for ESMFold2.",
+      "historical_explanation": "The graded test divided proteins into four levels of similarity to older sequences, and a later comparison separated orphan proteins using a fixed threshold. The run tested those comparisons with ESMFold v1, so its findings apply to that model version.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 2b / Supplementary Table 19 / kimi_L4_ESM_r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "esmfold2-kimi-r1/test-03",
+      "axis": "Low-complexity fraction (v1)",
+      "historical_disposition": "unresolved",
+      "historical_result": "No v1 decline. This audit cannot establish a result for ESMFold2.",
+      "historical_explanation": "Low complexity describes sequences dominated by simple, repetitive, or compositionally biased patterns. The run tested whether a larger low-complexity fraction predicted poorer structural accuracy for ESMFold v1.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 2b / Supplementary Table 19 / kimi_L4_ESM_r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-01",
+      "axis": "Chemical similarity to training drugs",
+      "historical_disposition": "rejected",
+      "historical_result": "No meaningful decline. HVG overlap@N was 0.013 higher in the least-similar bin than in the most-similar bin.",
+      "historical_explanation": "Chemical similarity describes how closely a test drug’s molecular structure resembles a drug used in training. The audit placed drugs into five similarity groups and compared how well STATE recovered the genes that responded to each drug.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-02",
+      "axis": "Dose represented in training",
+      "historical_disposition": "rejected",
+      "historical_result": "All three doses occur in training. Dose did not define a training-novelty axis in this investigation.",
+      "historical_explanation": "A dose would count as unfamiliar if that concentration had been absent from training. The audit checked the training split for each of the three tested concentrations before treating dose as a measure of novelty.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-03",
+      "axis": "Reactome pathway-set similarity",
+      "historical_disposition": "accepted",
+      "historical_result": "Above versus at or below 0.5 Jaccard similarity, overlap@N fell from 0.272 to 0.176 (HVG) and from 0.219 to 0.134 (SE).",
+      "historical_explanation": "Genes can share biological pathways even when they are different genes. The audit compared each test gene’s pathway list with the lists of training genes, then checked whether genes with more shared pathways had more accurate predictions in held-out cell types.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-04",
+      "axis": "Reactome mean",
+      "historical_disposition": "accepted",
+      "historical_result": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.092.",
+      "historical_explanation": "This measure counts how many training genes belong to each pathway associated with the test gene, then averages those counts. The audit chose high- and low-support groups using two cell types and compared their prediction accuracy in two other cell types.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-05",
+      "axis": "Reactome log-mean (REP)",
+      "historical_disposition": "accepted",
+      "historical_result": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.119. The selected measure retained a low-minus-high gap of −0.148 (HVG) and −0.128 (SE) within annotated genes.",
+      "historical_explanation": "This measure asks how well training covered the biological pathways associated with a test gene, while reducing the influence of very large pathway counts. After choosing the grouping thresholds in two cell types, the audit checked whether higher support predicted better recovery of responsive genes in two held-out cell types.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-06",
+      "axis": "Reactome minimum",
+      "historical_disposition": "accepted",
+      "historical_result": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.116.",
+      "historical_explanation": "This measure focuses on the least represented pathway associated with a test gene. The audit compared prediction accuracy for genes whose weakest-covered pathway had many versus few training genes, using thresholds chosen before testing the held-out cell types.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-07",
+      "axis": "HGNC log-mean",
+      "historical_disposition": "accepted",
+      "historical_result": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.105.",
+      "historical_explanation": "HGNC groups collect genes into families or other related sets. The audit counted training genes in the test gene’s groups, reduced the influence of very large counts, and checked whether higher support predicted better accuracy in held-out cell types.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-08",
+      "axis": "Gene-symbol prefix",
+      "historical_disposition": "accepted",
+      "historical_result": "Passed the five-measure screen. High minus low mean overlap@N across representations was 0.094.",
+      "historical_explanation": "Related gene names sometimes share an initial string of letters, which provides a rough way to identify gene families. The audit counted training genes with the same name prefix as each test gene and compared accuracy between higher- and lower-support groups in held-out cell types.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-09",
+      "axis": "Cell context and annotation counts",
+      "historical_disposition": "control",
+      "historical_result": "The association persisted after excluding unannotated genes and matching pathway counts. Some strata contained no eligible comparisons.",
+      "historical_explanation": "Genes with more pathway annotations may appear better supported simply because more is known about them. The audit repeated the comparison within individual cell types and among genes with similar numbers of pathway annotations to check this alternative explanation.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-10",
+      "axis": "Multivariable adjustment",
+      "historical_disposition": "control",
+      "historical_result": "The adjusted support coefficient remained positive (about 0.03 per SD after adjustment for DE-gene count).",
+      "historical_explanation": "Pathway support can vary alongside cell type, the number of gene annotations, and the strength of the measured response. The audit included these factors together in a regression to ask whether pathway support still tracked prediction accuracy after accounting for them.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-11",
+      "axis": "Zero-shot pathway support",
+      "historical_disposition": "control",
+      "historical_result": "The lowest and highest annotated bins differed by −0.129 (HVG) and −0.077 (SE) in the supplementary plot.",
+      "historical_explanation": "This check asks whether pathway support remains informative when the support is measured using training examples from other cell contexts. The audit adjusted that support for training-set size and compared zero-shot prediction accuracy across fixed support groups.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-12",
+      "axis": "Ligand-family training support",
+      "historical_disposition": "rejected",
+      "historical_result": "Higher same-family support did not improve accuracy. The observed direction reversed.",
+      "historical_explanation": "Cytokines from the same ligand family may trigger related biological signals. The audit grouped the Parse perturbations by how well their ligand families were represented in training and checked whether greater family support predicted better responses.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-13",
+      "axis": "Reactome cross-ontology check",
+      "historical_disposition": "control",
+      "historical_result": "High-minus-low overlap@N: few-shot HVG +0.114, SE +0.085. Zero-shot HVG +0.068, SE +0.044.",
+      "historical_explanation": "Reactome groups genes by the biological pathways in which they participate. This check used a normalized count of training genes in those pathways and compared high- and low-support groups in held-out cell types under both few-shot and zero-shot evaluation.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-14",
+      "axis": "HGNC_gene_group cross-ontology check",
+      "historical_disposition": "control",
+      "historical_result": "High-minus-low overlap@N: few-shot HVG +0.114, SE +0.093. Zero-shot HVG +0.068, SE +0.047.",
+      "historical_explanation": "HGNC groups organize genes into related families and functional sets. This check counted training genes in those groups, normalized for training support, and compared prediction accuracy in held-out cell types under both few-shot and zero-shot evaluation.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-15",
+      "axis": "GO_BP cross-ontology check",
+      "historical_disposition": "control",
+      "historical_result": "High-minus-low overlap@N: few-shot HVG +0.161, SE +0.135. Zero-shot HVG +0.087, SE +0.057.",
+      "historical_explanation": "Gene Ontology Biological Process groups genes by the processes they contribute to, such as cell division or DNA repair. The audit used these groups to calculate training support and checked whether the pathway-support association also appeared with this annotation system.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-16",
+      "axis": "GO_MF cross-ontology check",
+      "historical_disposition": "control",
+      "historical_result": "High-minus-low overlap@N: few-shot HVG +0.014, SE +0.054. Zero-shot HVG +0.035, SE +0.048. The controlled few-shot coefficient was weak.",
+      "historical_explanation": "Gene Ontology Molecular Function groups genes by activities performed by their products, such as binding or catalysis. The audit measured training support within these groups and checked whether more support tracked better predictions in held-out cell types.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-17",
+      "axis": "GO_CC cross-ontology check",
+      "historical_disposition": "control",
+      "historical_result": "High-minus-low overlap@N: few-shot HVG +0.121, SE +0.090. Zero-shot HVG +0.081, SE +0.055.",
+      "historical_explanation": "Gene Ontology Cellular Component groups gene products by where they act in the cell. The audit measured training support within these groups and compared prediction accuracy for high- and low-support genes in held-out cell types.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-18",
+      "axis": "WikiPathways cross-ontology check",
+      "historical_disposition": "control",
+      "historical_result": "High-minus-low overlap@N: few-shot HVG +0.104, SE +0.127. Zero-shot HVG +0.035, SE +0.034.",
+      "historical_explanation": "WikiPathways provides another collection of biological pathways linking genes by function. The audit repeated the support comparison using these pathway memberships to check whether the association depended on the choice of annotation source.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-featured/test-19",
+      "axis": "KEGG cross-ontology check",
+      "historical_disposition": "control",
+      "historical_result": "High-minus-low overlap@N: few-shot HVG +0.141, SE +0.128. Zero-shot HVG +0.066, SE +0.047.",
+      "historical_explanation": "KEGG provides pathway maps that connect genes involved in related biological activities. The audit counted training support within these pathways and compared high- and low-support predictions in held-out cell types under both few-shot and zero-shot evaluation.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 3a / Supplementary Figure 2 / STATE curve-reconstruction bundle",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-codex-r1/test-01",
+      "axis": "Basal transcriptomic distance",
+      "historical_disposition": "rejected",
+      "historical_result": "The frozen decline failed. RMSE slopes were −0.032 raw and −0.150 adjusted, indicating improvement as distance increased. The five contexts gave a coarse ordering test.",
+      "historical_explanation": "Basal expression is a cell’s pattern of gene activity before treatment. The audit measured how far each held-out cell context was from its nearest training contexts across 2,000 genes, then tested whether larger distance predicted larger expression-prediction errors.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 3b / Supplementary Table 20 / GPT r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-codex-r1/test-02",
+      "axis": "Baseline S-phase heterogeneity",
+      "historical_disposition": "rejected",
+      "historical_result": "Five context means were non-monotonic. Their rank correlation of 0.30 missed the frozen 0.70 cutoff.",
+      "historical_explanation": "S-phase scores summarize activity of genes associated with DNA replication during the cell cycle. The audit compared untreated-cell scores across contexts and tested whether differences in this baseline cell state ordered STATE’s prediction accuracy as expected.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 3b / Supplementary Table 20 / GPT r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-codex-r1/test-03",
+      "axis": "Training-lineage scarcity",
+      "historical_disposition": "rejected",
+      "historical_result": "The follow-up reversed upon removing HepG2/C3A and disagreed across representations.",
+      "historical_explanation": "Training-lineage scarcity asks whether a test cell lineage has few similar lineages represented in training. The audit compared that scarcity with accuracy and checked whether the relationship survived removing one influential cell context and changing the model representation.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 3b / Supplementary Table 20 / GPT r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-codex-r1/test-04",
+      "axis": "Perturbation magnitude, DE count, cell count and dose",
+      "historical_disposition": "control",
+      "historical_result": "Sensitivity checks did not reverse the basal-distance result.",
+      "historical_explanation": "A strong treatment response or a large number of sampled cells can make prediction accuracy easier to measure. The audit adjusted or grouped comparisons by these factors, the number of responsive genes, and drug dose to check whether they explained the basal-expression result.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 3b / Supplementary Table 20 / GPT r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-codex-r2/test-01",
+      "axis": "Administered drug dose",
+      "historical_disposition": "accepted",
+      "historical_result": "Signed-LFC Spearman fell from 0.4738 to 0.4417. The low-minus-high contrast was −0.03204 [−0.04880, −0.01676]. The fixed basal reference was nearly flat; the model-reference slope contrast was inside the comparability band. Dose is an experimental condition.",
+      "historical_explanation": "Drug dose is the concentration applied to the cells. Holding drug identity constant, the audit compared how well STATE ranked the direction and size of measured gene-expression changes at 5, 0.5, and 0.05 micromolar, and checked the pattern against a fixed basal-expression reference.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 3b / Supplementary Table 20 / GPT r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-codex-r2/test-02",
+      "axis": "Baseline cross-cell-line distance",
+      "historical_disposition": "rejected",
+      "historical_result": "The frozen Replogle context ordering failed. Four-context permutation P = 0.583.",
+      "historical_explanation": "This measure compares a test cell context’s untreated gene-expression profile with profiles from training contexts. The audit used two reference atlases to define the ordering and tested whether greater baseline distance predicted poorer performance in held-out contexts.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 3b / Supplementary Table 20 / GPT r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-codex-r2/test-03",
+      "axis": "Expected perturbation magnitude",
+      "historical_disposition": "unresolved",
+      "historical_result": "No eligible independent same-atlas confirmation targets remained. External Tahoe confirmation lacked a verified gene mapping and complete input scan.",
+      "historical_explanation": "Expected perturbation magnitude estimates how large a response a treatment should produce using information from training cells. The audit proposed checking whether smaller expected responses were harder to predict, but it lacked eligible independent targets with verified compatible inputs for confirmation.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 3b / Supplementary Table 20 / GPT r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-codex-r2/test-04",
+      "axis": "Sampling support, prospective dose displacement and checkpoint sensitivity",
+      "historical_disposition": "unresolved",
+      "historical_result": "The underlying input aggregation was incomplete. These reserve tests were not scored.",
+      "historical_explanation": "These proposed checks asked whether limited sampling, a shift in dose, or the choice of model checkpoint altered the prediction result. They required a prospective summary of the Tahoe inputs, which was incomplete, so these tests were not scored.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 3b / Supplementary Table 20 / GPT r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-codex-r2/test-05",
+      "axis": "Perturbation modality",
+      "historical_disposition": "unresolved",
+      "historical_result": "Modality was confounded with dataset and checkpoint, preventing an isolated estimate.",
+      "historical_explanation": "Perturbation modality distinguishes genetic interventions from chemical treatments. The audit considered comparing their prediction accuracy, but modality also changed with the dataset and checkpoint, preventing a separate estimate of its effect.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 3b / Supplementary Table 20 / GPT r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-opus-r1/test-01",
+      "axis": "Drug-target training coverage",
+      "historical_disposition": "accepted",
+      "historical_result": "For lower coverage the adjusted association with overlap@N was partial Spearman ρ = −0.118 [−0.235, −0.003]. Raw uncovered-minus-covered overlap@N was −0.063. The exact training gene list was unavailable.",
+      "historical_explanation": "A drug can act on several target genes, and this score is the fraction present in the available gene-knockdown panel. The audit used panel membership as a proxy for training exposure and tested whether lower coverage predicted poorer recovery of measured response genes after accounting for other factors.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 3b / Supplementary Table 20 / Opus r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-opus-r1/test-02",
+      "axis": "Drug chemical novelty",
+      "historical_disposition": "rejected",
+      "historical_result": "The quartile curve was flat and Spearman ρ = −0.02.",
+      "historical_explanation": "Chemical novelty measures how different a drug’s molecular structure is from the closest reference drug. The audit grouped drugs by structure similarity and compared prediction accuracy across those groups.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 3b / Supplementary Table 20 / Opus r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-opus-r1/test-03",
+      "axis": "Cell-context novelty",
+      "historical_disposition": "rejected",
+      "historical_result": "The mean contrast was +0.012.",
+      "historical_explanation": "Cell-context novelty asks whether a perturbation is harder to predict in a held-out cell context than in a context similar to training. The audit compared matched gene perturbations across those context categories to reduce differences in which genes were tested.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 3b / Supplementary Table 20 / Opus r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-opus-r1/test-04",
+      "axis": "Intrinsic perturbation strength",
+      "historical_disposition": "control",
+      "historical_result": "Stronger biological responses were easier to predict; this accounted for part of the coverage association.",
+      "historical_explanation": "A perturbation that changes many genes can be easier to detect than one with a small biological effect. The audit counted the genes that actually changed and used that count to check whether response strength explained part of the drug-target coverage association.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 3b / Supplementary Table 20 / Opus r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-opus-r2/test-01",
+      "axis": "Gene-neighborhood coverage",
+      "historical_disposition": "accepted",
+      "historical_result": "HVG overlap@N rose from 0.090 to 0.185 across four coverage quartiles, a low-minus-high difference of −0.095. The slope reproduced across four contexts. A same-task baseline could not be computed, and the result did not generalize to drugs or cytokines.",
+      "historical_explanation": "A gene’s functional neighborhood consists of other genes annotated to similar biological processes. The audit measured how densely the training panel covered that neighborhood, fixed the relationship in two cell contexts, and tested recovery of responsive genes in two held-out contexts.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 3b / Supplementary Table 20 / Opus r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-opus-r2/test-02",
+      "axis": "Chemical structure and mechanism coverage",
+      "historical_disposition": "rejected",
+      "historical_result": "Tahoe chemical and mechanism measures were null or in the opposite direction.",
+      "historical_explanation": "Drugs can resemble training examples through their molecular structure, biological mechanism, or target genes. The audit screened these three forms of similarity against the released Tahoe drug-response scores to check whether they identified a reliable accuracy decline.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 3b / Supplementary Table 20 / Opus r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-opus-r2/test-03",
+      "axis": "Drug-target or ligand functional density",
+      "historical_disposition": "rejected",
+      "historical_result": "Drug target ρ = +0.007 and cytokine ρ = −0.005.",
+      "historical_explanation": "This check extended the gene-neighborhood idea to genes targeted by drugs and genes encoding cytokine ligands. The audit tested whether greater functional support for those genes predicted better responses in the Tahoe and Parse datasets.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 3b / Supplementary Table 20 / Opus r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-opus-r2/test-04",
+      "axis": "Cross-context screen coverage",
+      "historical_disposition": "rejected",
+      "historical_result": "Genes with no coverage were somewhat worse, without a graded curve.",
+      "historical_explanation": "A gene may have been measured in several other cell contexts even if it is held out in the context being tested. The audit counted those other contexts and asked whether accuracy improved steadily with more such coverage.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 3b / Supplementary Table 20 / Opus r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-opus-r2/test-05",
+      "axis": "GO annotation count and perturbation strength",
+      "historical_disposition": "control",
+      "historical_result": "GO term count was null. The neighborhood relation persisted after adjustment for strength and in fixed-N analyses.",
+      "historical_explanation": "Well-annotated genes and genes that cause stronger responses could make functional-neighborhood coverage appear more useful. The audit checked annotation counts, adjusted for response strength, and compared predictions using a fixed number of ranked genes.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 3b / Supplementary Table 20 / Opus r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-kimi-r1/test-01",
+      "axis": "Gene–cell-line pair exposure",
+      "historical_disposition": "accepted",
+      "historical_result": "Across three held-out confirmation contexts the pooled unseen-minus-seen difference in expression-change Pearson r was −0.118. No interval was published for the pooled estimate.",
+      "historical_explanation": "A gene–cell-line pair is a particular gene perturbation carried out in a particular cell line. The audit compared pairs included in training with pairs held out, fixed that comparison after discovery in one context, and tested agreement between predicted and measured expression changes in three other contexts.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 3b / Supplementary Table 20 / Kimi r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-kimi-r1/test-02",
+      "axis": "Graded gene exposure",
+      "historical_disposition": "rejected",
+      "historical_result": "Nonmonotonic on the discovery data. Effect magnitude partly explained the relation.",
+      "historical_explanation": "Graded exposure attempts to distinguish several amounts of prior training support for a gene rather than only seen versus unseen pairs. The audit compared accuracy across four exposure levels in the discovery data to test whether more exposure led to a steady improvement.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 3b / Supplementary Table 20 / Kimi r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-kimi-r1/test-03",
+      "axis": "Embedding-norm proximity",
+      "historical_disposition": "control",
+      "historical_result": "The unadjusted correlation reproduced across three contexts; sensitivity to adjustment for perturbation magnitude varied by context.",
+      "historical_explanation": "An embedding is the numerical representation the model learns for a perturbation, and its norm measures the size of that representation. The audit checked whether this size tracked prediction accuracy for unseen observations and whether the relationship persisted after accounting for the measured response magnitude.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 3b / Supplementary Table 20 / Kimi r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-kimi-r1/test-04",
+      "axis": "Cell count per observation",
+      "historical_disposition": "control",
+      "historical_result": "Cell count was treated as a nuisance variable.",
+      "historical_explanation": "Each observed perturbation response can be estimated from a different number of cells. The audit examined cell count as an alternative explanation for the accuracy difference between seen and unseen gene–cell-line pairs.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 3b / Supplementary Table 20 / Kimi r1",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-kimi-r2/test-01",
+      "axis": "Perturbation exposure in any cell line",
+      "historical_disposition": "accepted",
+      "historical_result": "The K562 discovery contrast was −0.152 [−0.176, −0.128] in expression-change Pearson r. The held-out Jurkat, HepG2 and RPE1 contrasts were −0.114, −0.055 and −0.045. The binary boundary was fixed after inspecting discovery.",
+      "historical_explanation": "A perturbation is unseen here only if training contained no example of it in any cell line. The audit compared predicted and observed expression changes for completely unseen versus previously seen perturbations, then checked the discovery comparison in three other cell contexts.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 3b / Supplementary Table 20 / Kimi r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-kimi-r2/test-02",
+      "axis": "Graded training-support count",
+      "historical_disposition": "rejected",
+      "historical_result": "The discovery gradient failed. Among seen perturbations K562 ρ = −0.083.",
+      "historical_explanation": "This measure counts how much training support a perturbation received across several levels. The audit tested whether accuracy improved steadily with that count, including comparisons among perturbations already represented in training.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 3b / Supplementary Table 20 / Kimi r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "state-kimi-r2/test-03",
+      "axis": "Fixed-reference and embedding checks",
+      "historical_disposition": "control",
+      "historical_result": "Untrained one-hot columns had mean norm 0.233; trained columns were much larger. The comparison with the global mean supported a model-specific contribution.",
+      "historical_explanation": "A model’s learned representation for a perturbation may be poorly developed if its corresponding input was never trained. The audit examined representation sizes and compared STATE with predictions based on cross-context or overall averages to assess the model’s contribution to the seen-versus-unseen difference.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 3b / Supplementary Table 20 / Kimi r2",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-primary/test-01",
+      "axis": "Pooled color–texture distance",
+      "historical_disposition": "rejected",
+      "historical_result": "Raw accuracy increased with distance (Spearman ρ = +0.77 across six bins), while balanced accuracy fell (ρ = −0.77). Adipose and background class enrichment changed the pooled trend.",
+      "historical_explanation": "This measures how unusual an image looks in both color and texture compared with a reference collection. The audit divided images into six groups from most to least similar, then compared both overall accuracy and accuracy giving each tissue type equal weight.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 4a and Supplementary Figure 3a. CONCH discovery axis ledger and original tile-level scoring tables (3 June 2026).",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-primary/test-02",
+      "axis": "Color-only reference distance",
+      "historical_disposition": "unresolved",
+      "historical_result": "Frozen and scored as a candidate. The audit retained the within-tumor tissue/stain result. No standalone confirmation of a color-only curve was reported.",
+      "historical_explanation": "This measures how much an image’s colors and brightness differ from the reference images. The audit fixed six similarity groups and scored them, but did not separately confirm a performance trend for color alone.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 4a and Supplementary Figure 3a. CONCH discovery axis ledger and original tile-level scoring tables (3 June 2026).",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-primary/test-03",
+      "axis": "Texture-only reference distance",
+      "historical_disposition": "unresolved",
+      "historical_result": "Frozen and scored as a candidate. No separate texture-only confirmation was reported in this investigation.",
+      "historical_explanation": "This measures differences in visual texture, such as edges and variation between light and dark pixels. The audit fixed six groups by similarity to the reference and scored them, but did not separately confirm a texture-only performance trend.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 4a and Supplementary Figure 3a. CONCH discovery axis ledger and original tile-level scoring tables (3 June 2026).",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-primary/test-04",
+      "axis": "Within-tumor tissue/stain distance",
+      "historical_disposition": "accepted",
+      "historical_result": "Discovery recall fell from 0.779 to 0.114 on 1,233 tumor tiles. In 1,800 fresh NCT NONORM tumor tiles, the six recalls were 0.903, 0.930, 0.930, 0.883, 0.697 and 0.730. Confirmation was within the same public source family.",
+      "historical_explanation": "This measures how unusual a tumor image is in its proportions of tissue, white space, dark pixels, and strongly colored pixels. The audit compared the fraction of tumors correctly recognized across six appearance groups, then repeated the comparison on 1,800 fresh tumor images.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 4a and Supplementary Figure 3a. CONCH discovery axis ledger and original tile-level scoring tables (3 June 2026).",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-primary/test-05",
+      "axis": "Tissue-class composition",
+      "historical_disposition": "control",
+      "historical_result": "Adjustment reversed the pooled trend and motivated within-class analysis.",
+      "historical_explanation": "Some tissue types are easier to classify than others, so changing their proportions can change overall accuracy. The audit checked the same image groups while giving tissue types equal weight and examining each type separately.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 4a and Supplementary Figure 3a. CONCH discovery axis ledger and original tile-level scoring tables (3 June 2026).",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-primary/test-06",
+      "axis": "Fixed reference classifiers",
+      "historical_disposition": "control",
+      "historical_result": "Both references lost tumor recall in the low-similarity tail; a shared difficulty component remained.",
+      "historical_explanation": "These are simpler classifiers trained on image measurements from the reference collection. Comparing their tumor recognition with CONCH on the same appearance groups tested whether difficult images also challenged other methods.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 4a and Supplementary Figure 3a. CONCH discovery axis ledger and original tile-level scoring tables (3 June 2026).",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r1/test-01",
+      "axis": "Texture-only distance from the NCT reference",
+      "historical_disposition": "rejected",
+      "historical_result": "balanced accuracy, most distant level minus nearest level, CRC-VAL-HE-7K: -0.0537 (95% CI -0.1129 to +0.0056). Both NCT-only baselines declined more: 0.0873 (handcrafted) and 0.1959 (MobileNet) versus 0.0537 for CONCH",
+      "historical_explanation": "Texture describes the arrangement of edges and light-dark patterns within a tissue image. The audit measured how far those patterns were from reference images, separated the measure from color, and compared class-balanced accuracy across distance groups.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r1. Native session opened 14 July 2026; the run report records closure on 18 July 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r1/test-02",
+      "axis": "joint reference-distribution color-texture distance",
+      "historical_disposition": "unresolved",
+      "historical_result": "Prospective decomposition showed a cleaner morphology-texture driver; color/stain retained as control rather than discarding the hypothesis",
+      "historical_explanation": "This combines unusual color and unusual texture in one distance from reference images. The audit considered the combined measure but separated the components so that a known stain effect could be checked alongside the texture comparison.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r1. Native session opened 14 July 2026; the run report records closure on 18 July 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r1/test-03",
+      "axis": "tissue-background fragmentation / low tissue fraction",
+      "historical_disposition": "control",
+      "historical_result": "Must not be closure axis unless re-attributed as real acquisition driver",
+      "historical_explanation": "This measures how much of an image contains tissue and whether that tissue is broken into small disconnected areas. The audit treated it as a possible image-quality or sampling explanation to check before attributing a result to tissue texture.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r1. Native session opened 14 July 2026; the run report records closure on 18 July 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r1/test-04",
+      "axis": "stain optical-density departure",
+      "historical_disposition": "control",
+      "historical_result": "Measure prospectively; cannot be claimed novel",
+      "historical_explanation": "Stain optical density measures how strongly histological dyes absorb light in an image. The audit included departure from the reference stain appearance as a control because stain sensitivity was already a known issue.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r1. Native session opened 14 July 2026; the run report records closure on 18 July 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r1/test-05",
+      "axis": "blur/sharpness departure",
+      "historical_disposition": "control",
+      "historical_result": "Measure prospectively; cannot be claimed novel",
+      "historical_explanation": "Sharpness describes whether small edges and tissue details are clear or blurred. The audit included sharpness departure from the reference as an image-quality control rather than selecting an already documented blur effect as a new finding.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r1. Native session opened 14 July 2026; the run report records closure on 18 July 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r1/test-06",
+      "axis": "JPEG corruption",
+      "historical_disposition": "control",
+      "historical_result": "Characterizes sensitivity; cannot answer novelty question alone",
+      "historical_explanation": "JPEG compression can introduce blocks and other artificial image patterns. The audit identified it as a known image-quality control whose sensitivity alone would not establish a new generalization failure.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r1. Native session opened 14 July 2026; the run report records closure on 18 July 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r1/test-07",
+      "axis": "Kather-2016 external transport panel",
+      "historical_disposition": "unresolved",
+      "historical_result": "No class met the frozen >=50-per-level gate; axis-focus rho=-0.711 and tissue-fraction rho=-0.545, so protocol correctly blocks target-model scoring on this panel",
+      "historical_explanation": "This was a planned check on images from a different colorectal tissue dataset. The audit examined the fixed comparison groups before scoring CONCH and found too few images per tissue class and level, together with differences in sharpness and tissue fraction.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r1. Native session opened 14 July 2026; the run report records closure on 18 July 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r2/test-01",
+      "axis": "Joint colour-and-texture distance from NCT",
+      "historical_disposition": "accepted",
+      "historical_result": "balanced accuracy, most distant level minus nearest level, CRC-VAL-HE-7K primary cohort: -0.0788 (95% CI -0.1163 to -0.0386). Dataset dependent. In CRC the handcrafted logistic baseline declined by 0.3462 against 0.0788 for CONCH. In Stanford CONCH declined by 0.0949 against 0.0515 and 0.0633 for the baselines",
+      "historical_explanation": "This measures how different an image’s color and texture are from a reference containing equal numbers of each tissue class. The audit fixed five distance groups before scoring and compared accuracy with each tissue class weighted equally, then checked the same measure in an external cohort.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r2/test-02",
+      "axis": "stain drift",
+      "historical_disposition": "control",
+      "historical_result": "Prospective stain-distance control measured; not claimed as novel; simultaneous adjustment attenuates primary continuous trend but not external trend",
+      "historical_explanation": "Stain drift means changes in the color and intensity produced by tissue dyes. The audit measured stain departure from the reference and adjusted for it to check how much of the broader appearance trend it could explain.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r2/test-03",
+      "axis": "blur/sharpness",
+      "historical_disposition": "control",
+      "historical_result": "Prospective quality control measured; generic corruption is known from Histopath-C",
+      "historical_explanation": "Sharpness measures the visibility of fine edges and small tissue details. The audit used two image-based sharpness measurements as controls to check whether blur could explain performance changes along the appearance measure.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r2/test-04",
+      "axis": "background/tissue fraction",
+      "historical_disposition": "control",
+      "historical_result": "Measured prospectively; reported through class-fixed and fully adjusted correctness models",
+      "historical_explanation": "Tissue fraction measures how much of an image contains biological tissue rather than empty background. The audit measured this fraction and brightness, then included them in analyses that also accounted for tissue class.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r2/test-05",
+      "axis": "compression artifacts",
+      "historical_disposition": "control",
+      "historical_result": "Measured prospectively; excluded from primary axis and used as a nuisance control",
+      "historical_explanation": "Compression artifacts are blocks or repeated patterns introduced by image encoding. The audit measured these patterns and used them as controls when assessing the separate color-and-texture comparison.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r2/test-06",
+      "axis": "magnification/scale",
+      "historical_disposition": "unresolved",
+      "historical_result": "Both primary/reference are documented at 0.5 MPP; Stanford public small archive lacks per-tile MPP metadata so no valid continuous within-cohort scale axis was constructible",
+      "historical_explanation": "Image scale describes how much physical tissue each pixel represents. The main and reference datasets had a documented common scale, but missing image-level scale information in the Stanford archive prevented a valid continuous scale comparison there.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-gpt-r2/test-07",
+      "axis": "external cohort/site",
+      "historical_disposition": "control",
+      "historical_result": "Stanford independently confirms the frozen continuous-axis CONCH degradation; site remains a confirmation stratum rather than the axis",
+      "historical_explanation": "An external cohort contains images collected separately from the main evaluation dataset. The audit applied its fixed appearance measure in the Stanford cohort to check whether the performance trend carried over, while accounting for the cohort itself.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 4b, GPT r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-opus-r1/test-01",
+      "axis": "Colour and stain distance, within tissue class",
+      "historical_disposition": "accepted",
+      "historical_result": "balanced accuracy, most distant third minus nearest third: -0.125. No contrast interval reported. The reference classifier declined more than CONCH, 0.177 against 0.112",
+      "historical_explanation": "This measures how different an image’s colors and stain appearance are from reference images of the same tissue type. The audit formed three distance groups within each of the nine classes, then compared accuracy while giving every class equal weight.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 4b, Opus r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-opus-r1/test-02",
+      "axis": "Pooled appearance distance",
+      "historical_disposition": "rejected",
+      "historical_result": "Raw accuracy increased with distance because tissue classes had different baseline accuracy.",
+      "historical_explanation": "This measures unusual color and stain appearance while pooling images from all tissue types. The audit checked the overall relationship, then found that differences in the mix of easy and difficult tissue classes changed its interpretation.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 4b, Opus r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-opus-r1/test-03",
+      "axis": "Image sharpness",
+      "historical_disposition": "accepted",
+      "historical_result": "Both relationships persisted in a held-out half. The fixed reference also deteriorated on blurred tiles.",
+      "historical_explanation": "Sharpness measures how clearly an image preserves fine tissue detail. The audit compared naturally sharper and blurrier images within tissue classes, checked the relationship alongside stain distance, and repeated the analysis in a held-out half.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 4b, Opus r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-opus-r2/test-01",
+      "axis": "Controlled Gaussian blur",
+      "historical_disposition": "accepted",
+      "historical_result": "Top-1 accuracy fell from 0.789 to 0.246 versus 0.932 to 0.609 for the fixed ImageNet ResNet-50. Extra CONCH loss 0.219 (95% CI 0.182–0.257). Independent of development, within the NCT source family.",
+      "historical_explanation": "Gaussian blur smooths nearby pixels together, progressively removing fine tissue detail. The audit applied four fixed blur strengths to every confirmation image and compared the loss in accuracy for CONCH with a fixed reference classifier given the identical images.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 4b, Opus r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-opus-r2/test-02",
+      "axis": "Stain characteristics",
+      "historical_disposition": "unresolved",
+      "historical_result": "No separate frozen stain confirmation on the independent cohort.",
+      "historical_explanation": "Stain characteristics describe the colors and densities produced by dyes in tissue images. The audit screened these measurements during development and checked their relationships with tissue class and blur, but did not run a separate fixed stain test on the confirmation cohort.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 4b, Opus r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-opus-r2/test-03",
+      "axis": "Class composition and stain",
+      "historical_disposition": "control",
+      "historical_result": "Brightness remained constant across levels; reference-proximity and measured sharpness fell.",
+      "historical_explanation": "Using the same image at each blur level holds its tissue type constant, while checking brightness helps identify changes in color intensity. The audit verified these properties across the paired blur conditions as controls on the interpretation of the accuracy loss.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 4b, Opus r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-kimi-r1/test-01",
+      "axis": "Effective acquisition magnification",
+      "historical_disposition": "accepted",
+      "historical_result": "top-1 accuracy, 4.0 micrometre per pixel minus 0.5 micrometre per pixel: -0.527 (95% CI -0.541 to -0.513). The fixed ImageNet ResNet-50 with k-nearest-neighbour baseline received the same degraded pixels and lost 29.1% relative; even after retraining it held 0.62 accuracy where CONCH reached 0.28, so the transformed images still carried class information that CONCH used less effectively",
+      "historical_explanation": "Lower effective resolution means each image retains fewer fine details of the tissue. The audit simulated five resolution levels by shrinking images and enlarging them back to the required input size, then compared CONCH and reference predictions on exactly the same pixels.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 4b, Kimi r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-kimi-r2/test-01",
+      "axis": "Effective spatial resolution",
+      "historical_disposition": "accepted",
+      "historical_result": "balanced accuracy, 4.0 micrometre per pixel minus 0.5 micrometre per pixel: -0.633. No contrast interval reported. The general vision-language baseline barely moved from its low starting level (-0.033), and the information-availability baseline held 0.667 where CONCH reached 0.138, so class information survived the transformation. The DINOv2 probe's own decline of 0.302 was retained as a real effect shared across models",
+      "historical_explanation": "Spatial resolution determines how much fine tissue structure an image can show. The audit fixed six levels of digital downsampling after a pilot, restored images to the model’s input size, and compared class-balanced accuracy on images held apart from the pilot.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 4b, Kimi r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-kimi-r2/test-02",
+      "axis": "Stain shift",
+      "historical_disposition": "control",
+      "historical_result": "Pilot accuracy changed from 0.751 to 0.727. It was not retained for frozen confirmation.",
+      "historical_explanation": "Stain shift changes the color appearance of a tissue image. The audit tested this change during its pilot, observed a small accuracy difference, and did not choose it for the fixed confirmation experiment.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 4b, Kimi r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "conch-kimi-r2/test-03",
+      "axis": "Site shift at native resolution",
+      "historical_disposition": "unresolved",
+      "historical_result": "NCT balanced accuracy 0.771 versus CRC-VAL 0.756. The run did not freeze a site-specific axis.",
+      "historical_explanation": "Collection-site shift compares images from different centers while retaining their original resolution. The audit compared balanced accuracy between NCT and CRC-VAL images, but did not define and freeze a separate series of site-related conditions for confirmation.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 4b, Kimi r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-primary/test-01",
+      "axis": "UniRef50 homolog count",
+      "historical_disposition": "rejected",
+      "historical_result": "No monotonic decline: ρ = −0.21, P = 0.5563 across the ten support-bin medians and AUROCs. Intervals used 500 protein bootstraps.",
+      "historical_explanation": "This counts how many groups of related protein sequences can be found for each protein. The audit sorted proteins into ten support groups and checked how well AlphaMissense separated clinically pathogenic from benign variants in each group.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 5a and Supplementary Figure 4a. Final scored occupancy analysis, 10 June 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-primary/test-02",
+      "axis": "gnomAD missense-variation support",
+      "historical_disposition": "rejected",
+      "historical_result": "No monotonic decline: ρ = −0.16, P = 0.6515 across the ten bin medians and AUROCs. Intervals used 400 gene bootstraps.",
+      "historical_explanation": "This measures how many possible amino-acid-changing variants in a gene have actually been observed in a population database. The audit grouped genes by that fraction and compared how well AlphaMissense separated clinically pathogenic from benign variants.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 5a and Supplementary Figure 4a. Final scored occupancy analysis, 10 June 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-primary/test-03",
+      "axis": "Effective alignment depth",
+      "historical_disposition": "rejected",
+      "historical_result": "The two shallowest groups covered only one or two proteins. Occupancy became the primary axis.",
+      "historical_explanation": "This counts the sequence support for each protein position while reducing the influence of nearly identical sequences. The audit checked whether its planned support groups contained enough different proteins and found that the shallowest groups were too narrowly represented.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 5a and Supplementary Figure 4a. Final scored occupancy analysis, 10 June 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-primary/test-04",
+      "axis": "Alignment occupancy",
+      "historical_disposition": "accepted",
+      "historical_result": "Weighted mean absolute within-assay Spearman fell from 0.515 in the highest occupancy quintile to 0.395 in the lowest.",
+      "historical_explanation": "An alignment lines up related protein sequences, and occupancy is the fraction that contain an amino acid rather than a gap at a particular position. The audit divided positions into five occupancy groups and compared how closely AlphaMissense ranked variant effects against measurements from the same laboratory assay.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 5a and Supplementary Figure 4a. Final scored occupancy analysis, 10 June 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-primary/test-05",
+      "axis": "Occupancy at high effective depth",
+      "historical_disposition": "control",
+      "historical_result": "Agreement was 0.475 versus 0.305. In 24 of 28 paired assays agreement declined.",
+      "historical_explanation": "A position can be represented by many sequences yet still be absent from a large fraction of the alignment. The audit restricted the comparison to positions with substantial effective sequence support, then compared prediction agreement between high- and low-occupancy positions within the same assays.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 5a and Supplementary Figure 4a. Final scored occupancy analysis, 10 June 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-primary/test-06",
+      "axis": "Position-specific and substitution-score references",
+      "historical_disposition": "control",
+      "historical_result": "From highest to lowest occupancy, PSSM agreement fell from 0.479 to 0.308 and BLOSUM62 from 0.244 to 0.157. All three methods lost accuracy.",
+      "historical_explanation": "The reference methods score substitutions using either the amino acids observed at a position or a standard table of amino-acid exchanges. Scoring the same variants in the same occupancy groups tested whether low occupancy also made these simpler methods less reliable.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 5a and Supplementary Figure 4a. Final scored occupancy analysis, 10 June 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-primary/test-07",
+      "axis": "Experimental dynamic range",
+      "historical_disposition": "control",
+      "historical_result": "DMS dynamic range weakened at lower occupancy. This is a response-measurement control.",
+      "historical_explanation": "Dynamic range is the spread between laboratory measurements of stronger and weaker variant effects. The audit checked whether that spread changed across occupancy groups, because a narrower range can make agreement with predictions harder to measure.",
+      "recorded_agent": "Codex / GPT-5.5 (xhigh), with investigator follow-up",
+      "source_description": "Figure 5a and Supplementary Figure 4a. Final scored occupancy analysis, 10 June 2026.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-gpt-r1/test-01",
+      "axis": "Distance to nearest internal exon boundary",
+      "historical_disposition": "accepted",
+      "historical_result": "AUROC (ClinVar), closest level (median 1 bp) minus farthest level (median 135 bp), confirmation partition: -0.0435 (95% CI -0.0572 to -0.0306). BLOSUM62 declined by 0.0432 on the same variants, 0.0002 from AlphaMissense and inside the pre-declared +/-0.03 margin",
+      "historical_explanation": "Internal exon boundaries are where coding segments meet the intervening sequence removed when RNA is processed. The audit grouped variants by their distance from the nearest boundary, then compared how well AlphaMissense separated clinically pathogenic from benign variants in a held-out partition.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 5b, GPT r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-gpt-r1/test-02",
+      "axis": "Intrinsic disorder",
+      "historical_disposition": "unresolved",
+      "historical_result": "Not tested after the exon-distance axis passed. No negative performance conclusion.",
+      "historical_explanation": "Intrinsically disordered protein regions do not settle into one stable three-dimensional structure. The audit listed disorder as a possible comparison, but set it aside because prior work had already examined that setting and the exon-distance test supplied the retained result.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 5b, GPT r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-gpt-r1/test-03",
+      "axis": "Protein-interface context",
+      "historical_disposition": "unresolved",
+      "historical_result": "Not tested after the exon-distance axis passed. No negative performance conclusion.",
+      "historical_explanation": "A protein interface is a surface where a protein contacts a binding partner. The audit considered comparing variants at these surfaces with other variants, but did not perform the comparison because it required a separate map of interfaces.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 5b, GPT r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-gpt-r1/test-04",
+      "axis": "Gene age",
+      "historical_disposition": "unresolved",
+      "historical_result": "Not tested after the exon-distance axis passed. No negative performance conclusion.",
+      "historical_explanation": "Gene age describes how far back in evolution a gene can be traced using related species. The audit considered this comparison but did not test it, recording that sequence support, protein length, and availability of clinical labels could complicate interpretation.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 5b, GPT r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-gpt-r1/test-05",
+      "axis": "Protein-function mechanism check",
+      "historical_disposition": "control",
+      "historical_result": "The DMS control did not reproduce the clinical loss near boundaries.",
+      "historical_explanation": "Laboratory mutation assays measure effects on protein function, whereas clinical classifications can also reflect effects on RNA processing. The audit checked whether the loss near exon boundaries also appeared in protein-function measurements to explore that distinction.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 5b, GPT r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-gpt-r2/test-01",
+      "axis": "Minimum exonic distance to an exon boundary",
+      "historical_disposition": "accepted",
+      "historical_result": "AUROC (ClinVar), level L3 (0-2 nt) minus level L0 (>= 31 nt), confirmation partition: -0.04788 (95% CI -0.06159 to -0.03549). BLOSUM62 declined by 0.05984 on the same variants and the paired between-model difference included zero",
+      "historical_explanation": "This is the shortest distance, counted within an exon, between a variant and an internal exon boundary. The audit fixed four distance groups and compared AlphaMissense’s separation of clinically pathogenic and benign variants in the confirmation partition.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 5b, GPT r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-gpt-r2/test-02",
+      "axis": "protein-protein interface/binding context",
+      "historical_disposition": "rejected",
+      "historical_result": "binding median AM Spearman 0.366 discovery (5 assays/5 proteins) and 0.539 confirmation (2/2); no replicated binding-specific degradation; confirmation support too small for an SPC rejected as primary; axis-level failure not supported",
+      "historical_explanation": "Binding and interface sites are positions where a protein interacts with another molecule. The audit compared prediction agreement in laboratory binding assays, but the small confirmation set did not support a replicated binding-specific decline.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 5b, GPT r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-gpt-r2/test-03",
+      "axis": "gene evolutionary age",
+      "historical_disposition": "unresolved",
+      "historical_result": "lower defensibility than exact exon distance and no unique frozen age ontology was available in the acquired releases not selected; no negative performance claim",
+      "historical_explanation": "Gene evolutionary age estimates how long a gene has existed by identifying related genes in other species. The audit considered comparing age groups but did not select a fixed definition that could be used consistently with the available transcript mappings.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 5b, GPT r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-gpt-r2/test-04",
+      "axis": "local disorder/low structural confidence",
+      "historical_disposition": "rejected",
+      "historical_result": "exact AlphaMissense failure already reported, so it cannot satisfy this audit's novelty goal rejected on exact-match novelty",
+      "historical_explanation": "Disorder and low structural confidence identify positions whose three-dimensional shape is uncertain or variable. The audit considered this setting but excluded it from its search for a new failure pattern because the same AlphaMissense limitation had already been reported.",
+      "recorded_agent": "Codex / GPT-5.6 Sol",
+      "source_description": "Figure 5b, GPT r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-opus-r1/test-01",
+      "axis": "Evolutionary constraint at the variant position",
+      "historical_disposition": "accepted",
+      "historical_result": "|Spearman| (ProteinGym), variable positions minus conserved positions, pooled over assays: -0.119 (95% CI -0.161 to -0.078). Specific against chemistry: AlphaMissense minus BLOSUM62 is +0.057, 95% CI [+0.012, +0.102]. Not specific against conservation: AlphaMissense minus the position-specific scoring matrix is -0.018, 95% CI [-0.057, +0.021], while the matrix beats chemistry by +0.075",
+      "historical_explanation": "A conserved position tends to contain the same amino acid across related proteins, while a variable position contains a wider mix. The audit divided positions into three conservation groups within each laboratory assay and compared how closely predicted variant effects matched the measurements.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 5b, Opus r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-opus-r1/test-02",
+      "axis": "Whole-protein alignment depth",
+      "historical_disposition": "rejected",
+      "historical_result": "Across 73 assays agreement increased as depth decreased (ρ = −0.30). Stability assays confounded the pooled relationship.",
+      "historical_explanation": "Alignment depth measures how many different related sequences support a protein, with near-duplicates downweighted and the count scaled by protein length. The audit compared prediction agreement across assays, then checked whether differences between assay types explained the overall pattern.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 5b, Opus r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-opus-r1/test-03",
+      "axis": "Per-position alignment coverage",
+      "historical_disposition": "accepted",
+      "historical_result": "Agreement declined 0.095 (95% CI 0.050–0.141) versus 0.075 for BLOSUM62. The difference in declines included zero.",
+      "historical_explanation": "Alignment coverage is the fraction of related sequences represented at a particular protein position. The audit made three coverage groups within each laboratory assay and compared the loss in agreement for AlphaMissense with the loss for a simple substitution score.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 5b, Opus r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-opus-r2/test-01",
+      "axis": "AlphaFold residue-level confidence (pLDDT)",
+      "historical_disposition": "accepted",
+      "historical_result": "|Spearman| (ProteinGym), lowest-confidence level minus highest-confidence level, paired over assays: -0.297 (95% CI -0.386 to -0.207). Exceeds chemistry by +0.134 (p = 0.002) but is shared with the position-specific scoring matrix, difference +0.024 (p = 0.46)",
+      "historical_explanation": "AlphaFold assigns each amino acid a confidence score for its predicted local structure, called pLDDT. The audit grouped variant positions into four confidence levels and compared AlphaMissense’s agreement with laboratory measurements within the same assays.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 5b, Opus r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-opus-r2/test-02",
+      "axis": "Whole-protein alignment depth",
+      "historical_disposition": "rejected",
+      "historical_result": "The inverse pooled association was confounded by stability assays.",
+      "historical_explanation": "Effective alignment depth counts distinct sequence support for a protein while reducing the influence of nearly identical sequences. The audit compared agreement across proteins and checked assay type, finding that stability assays distorted the pooled relationship.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 5b, Opus r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-opus-r2/test-03",
+      "axis": "Within-assay alignment support",
+      "historical_disposition": "control",
+      "historical_result": "The run compared the evolutionary results with residue-level confidence before selecting pLDDT.",
+      "historical_explanation": "Evolutionary support describes how well a protein position is represented in related sequences. The audit examined this support within each laboratory assay and compared those results with structural confidence before choosing the main test.",
+      "recorded_agent": "Claude Code / Opus 4.8",
+      "source_description": "Figure 5b, Opus r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r1/test-01",
+      "axis": "Nucleotide distance to the nearest exon boundary",
+      "historical_disposition": "accepted",
+      "historical_result": "AUROC (ClinVar), closest level L4 minus farthest level L1: -0.0427 (95% CI -0.0504 to -0.0355). AlphaMissense declined less than both references on the same variants: BLOSUM62 by 0.0541 and Grantham by 0.0598",
+      "historical_explanation": "This counts DNA bases from a variant to the nearest exon boundary on the transcript used by AlphaMissense. The audit fixed four distance groups before scoring and compared the separation of pathogenic and benign clinical variants for AlphaMissense and two substitution-score references.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r1/test-02",
+      "axis": "local sequence complexity (21-aa windowed entropy, quartiles)",
+      "historical_disposition": "rejected",
+      "historical_result": "AM 0.957→0.969 (improves; Δ=−0.0112, CI −0.0138..−0.0085); BLOSUM reference degrades significantly (+0.0237) NEGATIVE (high power, reversed). Axis nontrivial: reference degrades.",
+      "historical_explanation": "Local sequence complexity describes how varied the amino acids are around a variant, with repetitive stretches having lower complexity. The audit measured a 21-amino-acid window, divided variants into four groups, and tested whether clinical classification became less accurate in simpler stretches.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r1/test-03",
+      "axis": "distance to nearest terminus (quartiles)",
+      "historical_disposition": "rejected",
+      "historical_result": "AM 0.959→0.968 (Δ=−0.0088, CI −0.0116..−0.0062); both references degrade (+0.024, +0.031) NEGATIVE (high power, reversed).",
+      "historical_explanation": "A protein terminus is one of the two ends of its amino-acid sequence. The audit grouped variants by distance from the nearer end and tested whether AlphaMissense’s clinical classification became less accurate toward the ends.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r1/test-04",
+      "axis": "protein length (quartiles)",
+      "historical_disposition": "rejected",
+      "historical_result": "AM 0.955→0.971 (Δ=−0.0161, CI −0.0190..−0.0135) NEGATIVE (high power, reversed).",
+      "historical_explanation": "Protein length is the number of amino acids in the protein containing a variant. The audit divided variants into four protein-length groups and tested the prediction that shorter proteins would have poorer clinical classification.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r1/test-05",
+      "axis": "homology availability (ortholog count across 6 species; levels 6 / 4–5 / 0–3 after predeclared merge)",
+      "historical_disposition": "rejected",
+      "historical_result": "AM 0.959→0.974 (Δ=−0.0156, CI −0.0187..−0.0125); robust across entropy, length, ≥2-star controls NEGATIVE (high power, reversed).",
+      "historical_explanation": "This counts how many of six other species have an identifiable counterpart of the human gene. The audit compared clinical classification across three levels of this support and checked whether sequence complexity, protein length, or clinical-label confidence explained the result.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r1/test-06",
+      "axis": "population observability (AF tiers: unobserved / rare / common)",
+      "historical_disposition": "unresolved",
+      "historical_result": "AM 0.969→0.925→0.820; but extreme tier has only 40 positives and is a label-ascertainment artifact regime EXPLORATORY, not certified (nuisance label artifact at the extreme; shared at the well-powered rare tier).",
+      "historical_explanation": "Population observability describes whether a variant is absent, rare, or common in a population database. The audit compared clinical classification across those groups, but the common group contained very few pathogenic examples and was affected by how clinical labels were collected.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r1. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r2/test-01",
+      "axis": "AlphaFold residue-level confidence, within gene",
+      "historical_disposition": "accepted",
+      "historical_result": "AUROC (ClinVar), lowest-confidence level minus highest-confidence level, paired within gene: -0.115 (95% CI -0.144 to -0.087). Shared with the chemistry baseline, which declined by 0.097, but much larger than the conservation baseline, which declined by 0.010",
+      "historical_explanation": "AlphaFold’s local confidence score describes how certain it is about the structure around an amino acid. The audit fixed four confidence levels and compared AlphaMissense’s clinical classification across levels within the same gene.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r2/test-02",
+      "axis": "position phyloP (pooled)",
+      "historical_disposition": "rejected",
+      "historical_result": "AM AUC *higher* at low conservation (L1 0.929 vs L5 0.899, Δ=−0.030); gene-stratification reverses it → Simpson reversal Invalid as stated (gene-composition nuisance; gate rule 2 → re-attributed as B1)",
+      "historical_explanation": "The phyloP score measures how strongly evolution has preserved a DNA position across species. The audit first grouped variants from all genes together by this score, then found that accounting for gene identity reversed the apparent trend.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r2/test-03",
+      "axis": "position phyloP, paired within-gene",
+      "historical_disposition": "rejected",
+      "historical_result": "Δ(HIGH−LOW)=−0.015, CI [−0.033, +0.002], 279 genes Negative at adequate power (CI excludes +0.05)",
+      "historical_explanation": "This uses the same measure of evolutionary conservation but compares variants within each gene. The audit paired high- and low-conservation groups from the same gene to test whether conservation predicted a decline after gene composition was controlled.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r2/test-04",
+      "axis": "gene-level mean CDS phyloP (quintiles)",
+      "historical_disposition": "rejected",
+      "historical_result": "AM flat: 0.953/0.958/0.953/0.948/0.956; Δ=+0.003, CI [−0.005,+0.012]; phyloP-as-predictor collapses (Δ=−0.108) while AM does not Negative at adequate power (AM robust where its conservation reference fails)",
+      "historical_explanation": "This averages evolutionary conservation over the protein-coding DNA of a gene. The audit divided genes into five groups and compared clinical classification across them, including a reference method that used conservation directly.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r2/test-05",
+      "axis": "Grantham substitution severity (4 levels)",
+      "historical_disposition": "rejected",
+      "historical_result": "Δ(T4−T1)=−0.005; paired (604 genes) +0.010 [−0.004,+0.024] Negative at adequate power",
+      "historical_explanation": "The Grantham score measures how different the original and substituted amino acids are in properties such as size and chemical composition. The audit grouped substitutions into four severity levels and compared AlphaMissense’s clinical classification, including comparisons within the same gene.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    },
+    {
+      "id": "am-kimi-r2/test-06",
+      "axis": "CpG mutational context (3 levels)",
+      "historical_disposition": "rejected",
+      "historical_result": "AM: pooled +0.003, paired (808 genes) −0.005 [−0.012,+0.002]. Grantham reference degrades at CpG (+0.080) while AM does not Negative for AM at adequate power",
+      "historical_explanation": "CpG refers to neighboring C and G bases in DNA, a sequence context with distinctive mutation patterns. The audit grouped variants into three categories of this context and compared clinical classification both across genes and within each gene.",
+      "recorded_agent": "OpenCode / Kimi K3",
+      "source_description": "Figure 5b, Kimi r2. Original audit and corresponding manuscript figure source.",
+      "record_kind": "Historical registry summary, preserved without new scientific adjudication"
+    }
+  ]
+}

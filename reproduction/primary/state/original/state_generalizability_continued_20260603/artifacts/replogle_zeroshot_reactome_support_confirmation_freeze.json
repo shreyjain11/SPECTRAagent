@@ -1,0 +1,21 @@
+{
+  "axis_id": "STATE_REPLOGLE_REACTOME_SUPPORT_CROSS_PROTOCOL_CONFIRMATION",
+  "status": "applied_fewshot_discovery_normalized_cutpoints_to_zeroshot_protocol",
+  "similarity": "Mean log(1 + training genes sharing each Reactome pathway), normalized by train-set size",
+  "fewshot_discovery_contexts_for_cutpoints": [
+    "hepg2",
+    "k562"
+  ],
+  "zeroshot_confirmation_contexts": [
+    "hepg2",
+    "jurkat",
+    "k562",
+    "rpe1"
+  ],
+  "cutpoints_from_fewshot_discovery_norm_support": [
+    0.38411650554884896,
+    0.45715139549068506,
+    0.5378563310610743
+  ],
+  "target_metric": "overlap_at_N"
+}

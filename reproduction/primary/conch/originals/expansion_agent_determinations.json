@@ -1,0 +1,12 @@
+[
+  {
+    "native_session_line": 1732,
+    "timestamp": "2026-06-03T14:44:10.027Z",
+    "text": "The scorer is at 3,584 of 4,000. I\u2019m expecting the output files under `artifacts/tum_expansion/` as soon as the final batches flush."
+  },
+  {
+    "native_session_line": 1834,
+    "timestamp": "2026-06-03T14:48:18.589Z",
+    "text": "Expanded the finding and finished the run. No scoring processes are still running.\n\nThe expanded SPECTRA result is stronger: using the same frozen prospective TUM tissue/stain-fraction axis, I added `4,000` unused NONORM TUM images, split into `10` frozen similarity levels with `400` images each. The panel excluded all prior `1,800` confirmation rows, had `0` exact MD5 duplicates, `0` exact overlap, `0` dHash overlap, and measured similarity decreased across all 10 levels before CONCH scoring.\n\nCONCH TUM recall by level:\n\n`[0.875, 0.950, 0.943, 0.927, 0.912, 0.890, 0.830, 0.640, 0.700, 0.703]`\n\nMain readout:\n- Levels `1-7`: `2531/2800 = 0.904` recall, 95% CI `[0.892, 0.914]`\n- Levels `8-10`: `817/1200 = 0.681` recall, 95% CI `[0.654, 0.707]`\n- Difference: `0.223`, 95% CI `[0.195, 0.252]`\n- Spearman level-vs-recall: `-0.770`\n\nSo the finding is now best described as a **threshold-shaped low-similarity tail degradation**, not a smooth monotone decline. The low-similarity tail is mainly a **dark/high-saturation stain tail**, not simply low tissue area.\n\nValidity update: **valid for the bounded public CRC ROI TUM low-similarity tail boundary**, but still **weak for independent-site/deployment generalization** because the expanded confirmation is still within the public Kather/NCT source family.\n\nArtifacts:\n- [expanded_finding_report.md](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/artifacts/tum_expansion/expanded_finding_report.md)\n- [expanded_metrics.json](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/artifacts/tum_expansion/expanded_metrics.json)\n- [tum_expansion_panel.csv](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/spectra_ready_dataset/tum_expansion_panel.csv)\n- [target_model_results_tum_expansion.csv](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/artifacts/tum_expansion/target_model_results_tum_expansion.csv)\n- [axis_ledger.json](/path/to/original-audit-home/.cache/spectra/runs/conch_generalizability_audit_20260603_unblocked/axis_ledger.json)"
+  }
+]

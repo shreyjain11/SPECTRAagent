@@ -1,0 +1,59 @@
+ESMFold2 notebook and model environments
+
+Use Python 3.11 for the commands below. Start in this esmfold2 directory.
+The notebook/analysis environment and the current model environment are separate.
+Do not install requirements-acquisition.txt and requirements-inference.txt into
+the same environment: their NumPy, pandas and huggingface-hub versions differ.
+
+1. Create the notebook environment before opening or executing a notebook:
+
+    python3.11 -m venv .venv-notebook
+    .venv-notebook/bin/python -m pip install -r requirements-acquisition.txt
+
+This installs acquisition/analysis dependencies and the shared notebook runtime
+(ipykernel, nbclient, nbformat and nbconvert). Installing packages inside an
+already running notebook does not replace imported NumPy/pandas modules. If you
+change this environment, restart its kernel before running analysis cells.
+
+2. Execute the archived-measurement notebook using this interpreter:
+
+    .venv-notebook/bin/python ../execute_notebook.py notebooks/test-01.ipynb --cwd .
+
+Replace test-01.ipynb with test-02.ipynb through test-12.ipynb as needed.
+The shared runner creates a temporary kernel registration for this interpreter.
+No permanent kernel installation is needed for that command.
+
+3. To request the original acquisition -> processing -> model evaluation ->
+   analysis workflow implemented by the notebook, use its explicit run mode:
+
+    .venv-notebook/bin/python ../execute_notebook.py notebooks/test-01.ipynb --cwd . --original-workflow --timeout 86400
+
+This enables the notebook's workflow switch. It can download large source files,
+install the separate inference environment, convert the pinned original model
+weights, and launch model evaluation. The intended original evaluator uses CUDA;
+run this mode on a compatible GPU host. The timeout is per notebook cell.
+Missing prerequisites or generated results must be resolved before the workflow
+can finish; archived measurements are not a substitute for fresh stage outputs.
+
+The current model environment is created separately by
+current_implementation.install_environment(workspace). Its returned interpreter
+is used for conversion and model-evaluation subprocesses. It installs only
+requirements-inference.txt: Transformers 5.22.2, Torch 2.6.0 and the matching
+current dependencies. The notebook remains in .venv-notebook. The workspace and
+inference interpreter paths are shown in the notebook's setup/workflow cells.
+
+If you use the individual opt-in recipe cells instead of --original-workflow,
+RUN_INFERENCE_SETUP creates that same separate model environment. Use its
+returned INFERENCE_PYTHON for RUN_CONVERT_MODEL and RUN_INFERENCE. Reference
+processing and curve calculations continue in the notebook environment.
+
+Model provenance: the historical run used the older Biohub Transformers fork,
+documented in requirements-inference-legacy.txt. The current route downloads the
+pinned original folding and ESMC weights and converts them with official public
+utilities. See CURRENT_IMPLEMENTATION_PINS.json and IMPLEMENTATION_COMPARISON.json.
+The completed remote conversion checked 2,658 tensor keys/shapes; independent
+saved-value equality and prediction equivalence were not tested. This setup does
+not promise identical predictions across implementations.
+
+No package installation, new source download, model run or numerical experiment
+was performed when adding these environment instructions.

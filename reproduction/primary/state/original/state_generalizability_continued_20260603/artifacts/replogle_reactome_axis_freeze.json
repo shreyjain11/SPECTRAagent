@@ -1,0 +1,41 @@
+{
+  "axis_id": "STATE_REPLOGLE_REACTOME_TRAIN_SUPPORT_V1",
+  "status": "frozen_before_confirmation",
+  "unit": "Replogle few-shot gene perturbation in a target cell context and representation",
+  "similarity": "Max Jaccard overlap of Reactome pathway memberships between held-out target gene and any same-context training gene perturbation",
+  "direction": "STATE performance should degrade as Reactome support level decreases",
+  "discovery_contexts": [
+    "hepg2",
+    "k562"
+  ],
+  "confirmation_contexts": [
+    "jurkat",
+    "rpe1"
+  ],
+  "target_metric": "overlap_at_N",
+  "secondary_metrics": [
+    "de_sig_genes_recall",
+    "pearson_delta"
+  ],
+  "cutpoints_from_discovery": {
+    "<=q33": 0.5,
+    "<=q66": 1.0,
+    "<=q90": 1.0,
+    ">q90": "L4_very_high"
+  },
+  "excluded": [
+    "NON-TARGETING"
+  ],
+  "prohibited_split_features": [
+    "target model error",
+    "reference-derived DE counts",
+    "prediction confidence",
+    "outcome metrics"
+  ],
+  "success_criteria": [
+    "Measured similarity increases from low to high levels in discovery and confirmation",
+    "At least three nontrivial support levels per representation in confirmation",
+    "High-minus-low overlap_at_N is positive in both HVG and SE confirmation slices",
+    "Trend not entirely explained by one context or annotation-missing bucket"
+  ]
+}

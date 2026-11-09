@@ -94,5 +94,18 @@
     "saved_code_cells": 4,
     "saved_error_outputs": 0
   },
-  "requested_model": "CONCH"
+  "requested_model": "CONCH",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "conch-gpt-r1/test-07",
+    "disposition": "unresolved",
+    "result": "No class met the frozen >=50-per-level gate; axis-focus rho=-0.711 and tissue-fraction rho=-0.545, so protocol correctly blocks target-model scoring on this panel",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "conch-gpt-r1/test-07",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

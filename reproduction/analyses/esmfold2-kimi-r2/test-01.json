@@ -172,5 +172,18 @@
     "saved_code_cells": 7,
     "saved_error_outputs": 0
   },
-  "requested_model": "ESMFold2"
+  "requested_model": "ESMFold2",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "esmfold2-kimi-r2/test-01",
+    "disposition": "accepted",
+    "result": "The lowest-minus-highest-identity TM-score contrast was −0.086, with a Welch interval of [−0.163, −0.009] reconstructed from reported group means, SDs and counts. The template baseline deteriorated more severely.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "calculation_replay_packaged",
+    "review": "traceability_review.json",
+    "record_id": "esmfold2-kimi-r2/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

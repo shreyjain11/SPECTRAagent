@@ -89,5 +89,18 @@
     "saved_code_cells": 4,
     "saved_error_outputs": 0
   },
-  "requested_model": "CONCH"
+  "requested_model": "CONCH",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "conch-gpt-r2/test-01",
+    "disposition": "accepted",
+    "result": "balanced accuracy, most distant level minus nearest level, CRC-VAL-HE-7K primary cohort: -0.0788 (95% CI -0.1163 to -0.0386). Dataset dependent. In CRC the handcrafted logistic baseline declined by 0.3462 against 0.0788 for CONCH. In Stanford CONCH declined by 0.0949 against 0.0515 and 0.0633 for the baselines",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "original_records_missing",
+    "review": "traceability_review.json",
+    "record_id": "conch-gpt-r2/test-01",
+    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  }
 }

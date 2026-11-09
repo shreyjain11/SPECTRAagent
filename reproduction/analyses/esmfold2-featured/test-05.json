@@ -4,8 +4,8 @@
   "model": "ESMFold2",
   "axis": "Acidic windows",
   "dataset_split": {
-    "description": "A broader212-record feature/outcome pool survives, but the exact33- and77-target cohorts used in the reported acidic-window contrast were not identified.",
-    "input_inventory": "inputs/esmfold2.json",
+    "description": "Original frozen records and source identities are preserved; packaged inputs and executable acquisition steps are documented in the linked recovery chain.",
+    "input_inventory": "primary/esmfold2/artifact_manifest.json",
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
@@ -512,38 +512,118 @@
       "archive": "esmfold2-retained-inputs",
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
-      "notebook_preparation_cell": 0
-    }
+      "notebook_preparation_cell": 0,
+      "implementation": "legacy_implementation",
+      "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
+    },
+    "legacy_input_inventory": "inputs/esmfold2.json",
+    "recovered_workflow": "primary/esmfold2/traceability.json"
   },
   "axis_levels": {
     "definition": "Sequence-local acidic charge burden across sliding windows, scored before outcome comparison.",
-    "calculation": "Acidic-window features are retained per target, but the exact historical window-weighting implementation and frozen cutpoints are missing. This replay cannot establish the original five-bin curve.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-05.py"
+    "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
+    "code": "primary/esmfold2/notebooks/test-05.py"
   },
   "model_evaluation": {
-    "measurements": "Original per-target/per-sample accuracy retained; complete prediction/reference coordinates unavailable.",
+    "measurements": "Original individual model measurements and scoring/selection code are packaged. The optional full-workflow route uses the documented current implementation with pinned original weights.",
     "fine_tuning": {
       "target_weight_updates_in_replay": false,
       "target_fine_tuning_during_original_audit": null,
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-05.py"
+    "code": "primary/esmfold2/notebooks/test-05.py"
   },
   "curve": {
-    "aggregation_and_uncertainty": "The exact original binning implementation is missing; no summary-only substitute is drawn.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-05.py"
+    "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
+    "code": "primary/esmfold2/notebooks/test-05.py"
   },
   "insight": {
-    "comparison_controls_confirmation": "Retained per-target acidic-window values and sample folds are exposed; the exact original binning implementation cannot be reproduced.",
-    "code": "materials/esmfold2/notebooks/esmfold2-featured/test-05.py"
+    "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
+    "code": "primary/esmfold2/notebooks/test-05.py"
   },
   "reconstruction_notes": [
-    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference.",
-    "Acidic-window features are retained per target, but the exact historical window-weighting implementation and frozen cutpoints are missing. This replay cannot establish the original five-bin curve.",
-    "Exact sample membership and frozen binning for the reported33- and77-target acidic-window cohorts."
+    "The full bulk-download/raw-feature/current-model route is connected but was not executed during this integration.",
+    "Historical results used the older Biohub fork. The current implementation uses pinned original model sources; completed conversion validation checked tensor keys/shapes, not independent saved-value or prediction equality.",
+    "Original frozen memberships and per-analysis metadata missingness are preserved, including the documented flexible-axis boundary case."
   ],
   "implementation": {
+    "format": "recovered_historical_notebook",
+    "notebook": "primary/esmfold2/notebooks/test-05.ipynb",
+    "script": "primary/esmfold2/notebooks/test-05.py",
+    "supporting_code": "code/primary-esmfold2.json",
+    "published_notebook_sha256": "605dcb56c1664730852620443939c8f3dec87f4a42d662c2d9a09ffd8d1503a5",
+    "published_script_sha256": "43b84ddc8303274a41302049ff67b708bdf4792b37382c3dbc9914c6a62469d0",
+    "cell_locations": [
+      {
+        "notebook_cell": 3,
+        "start_line": 1,
+        "end_line": 43
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 44,
+        "end_line": 105
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 106,
+        "end_line": 143
+      },
+      {
+        "notebook_cell": 7,
+        "start_line": 144,
+        "end_line": 157
+      },
+      {
+        "notebook_cell": 8,
+        "start_line": 158,
+        "end_line": 182
+      },
+      {
+        "notebook_cell": 10,
+        "start_line": 183,
+        "end_line": 185
+      },
+      {
+        "notebook_cell": 11,
+        "start_line": 186,
+        "end_line": 208
+      },
+      {
+        "notebook_cell": 12,
+        "start_line": 209,
+        "end_line": 237
+      },
+      {
+        "notebook_cell": 15,
+        "start_line": 238,
+        "end_line": 240
+      },
+      {
+        "notebook_cell": 17,
+        "start_line": 241,
+        "end_line": 274
+      }
+    ],
+    "saved_code_cells": 10,
+    "saved_error_outputs": 0,
+    "saved_figures": 2,
+    "changes": [
+      "Recovered original inputs and programs are packaged or acquired with content checks.",
+      "Markdown, original decisions and selected historical outputs are retained.",
+      "Default replay and optional full raw-data/model execution are explicitly distinguished."
+    ]
+  },
+  "requested_model": "ESMFold2",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "esmfold2-featured/test-05",
+    "disposition": "rejected",
+    "result": "Highest-minus-rest Cα-lDDT was −0.114 initially and −0.017 in confirmation. The confirmation interval crossed zero.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "legacy_implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-featured/test-05.ipynb",
     "script": "materials/esmfold2/notebooks/esmfold2-featured/test-05.py",
     "supporting_code": "code/esmfold2.json",
@@ -578,5 +658,128 @@
     "saved_code_cells": 3,
     "saved_error_outputs": 0
   },
-  "requested_model": "ESMFold2"
+  "legacy_reconstruction_notes": [
+    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference.",
+    "Acidic-window features are retained per target, but the exact historical window-weighting implementation and frozen cutpoints are missing. This replay cannot establish the original five-bin curve.",
+    "Exact sample membership and frozen binning for the reported33- and77-target acidic-window cohorts."
+  ],
+  "primary_recovery": {
+    "package": "primary/esmfold2",
+    "traceability": "primary/esmfold2/traceability.json",
+    "record_id": "esmfold2-featured/test-05",
+    "evidence_paths_relative_to": "primary/esmfold2",
+    "stages": {
+      "data": {
+        "status": "retained_exact_cohorts_and_hashed_public_acquisition",
+        "artifacts": [
+          "ACQUISITION_MANIFEST.json",
+          "ORIGINAL_ACQUISITION_EVIDENCE.json",
+          "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5seeds/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_beyond_evolutionary_support_final_run/inference_time_scaling_10loops68steps_5samples_full_top_tail_matched/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_beyond_evolutionary_support_final_run/external_rcsb_same_bucket_expansion_20260531/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_ready_dataset/candidate_features.csv",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv"
+        ],
+        "panels": [
+          "cameo",
+          "cameo_scaled14",
+          "cameo_scaled40",
+          "external34",
+          "flexible107",
+          "charge97",
+          "acidic78"
+        ],
+        "code": [
+          "acquisition.py:download_plan",
+          "acquisition.py:fetch_references",
+          "bootstrap.py:ensure_assets"
+        ],
+        "note": "Original public structures and CAMEO alignments are fetched only on explicit full run; frozen metadata and selected/prefilter tables are in the offline archive."
+      },
+      "processing": {
+        "status": "original_programs_retained_and_rerun_connected",
+        "description": "Original window constructor and panel assignment; all514 retained screen combinations",
+        "artifacts": [
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/ingest_all_evidence_and_screen.py",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/summarize_acidic_window_confirmation.py",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling.py",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/build_acidic_window_confirmation_panel.py",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/post_acidic_discovery_screen.py"
+        ],
+        "portable_code": [
+          "original_workflow.py:rebuild_features",
+          "original_workflow.py:require_features"
+        ],
+        "note": "Rebuilt scientific features feed materialized panel files; original cohort and fitted memberships are preserved."
+      },
+      "axis": {
+        "status": "definition_and_code_retained",
+        "definition": "Maximum negative-charge31-residue window, low direction is harder",
+        "artifacts": [
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/ingest_all_evidence_and_screen.py",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling_multisample.py",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/summarize_acidic_window_confirmation.py",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/evaluate_esmfold2_scaling.py",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/build_acidic_window_confirmation_panel.py",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/scripts/post_acidic_discovery_screen.py"
+        ]
+      },
+      "levels": {
+        "status": "original_assignment_or_frozen_fit_retained",
+        "description": "Original33-finite discovery quintiles;105eligible→78selected,77finite confirmation",
+        "artifacts": [
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/eligible_unscored_acidic_window_pool.csv",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv"
+        ]
+      },
+      "evaluation": {
+        "status": "original_scores_retained_current_inference_route_connected",
+        "artifacts": [
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.acidic_window_confirmation.target_level.csv",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.acidic_window_confirmation.scaled_samples.csv",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/target_model_results.csv",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/combined_evidence_table.csv"
+        ],
+        "code": [
+          "acquisition.py:run_inference",
+          "current_esmfold2_adapter.py",
+          "current_implementation.py",
+          "original_workflow.py:validate_results"
+        ],
+        "source_pins": "CURRENT_IMPLEMENTATION_PINS.json",
+        "implementation_note": "Original scientific scoring/sample-selection code is used. User-approved current implementation replaces the older fork. Native key/shape conversion was verified; fresh prediction equivalence not established."
+      },
+      "curve": {
+        "status": "original_functions_replayed_and_new_results_connected",
+        "artifacts": [
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/all_evidence_axis_screen.csv",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/fresh_panel_remaining_axis_screen.csv",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/acidic_window_confirmation_level_curves.csv",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/analysis_outputs/post_acidic_axis_screen.csv"
+        ],
+        "code": [
+          "original_workflow.py:run_axis"
+        ],
+        "validation": [
+          "WORKFLOW_VALIDATION.json",
+          "CURVE_REPLAY_VALIDATION.json",
+          "WORKFLOW_GUARD_VALIDATION.json"
+        ],
+        "note": "Historical curves/diagnostics remain visible. New results use the corresponding original per-axis controls, selections and grouped candidate screens."
+      },
+      "decision": {
+        "status": "original_record_preserved",
+        "artifacts": [
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/axis_ledger.json",
+          "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_loop_state.json"
+        ],
+        "notebook_cell": 13,
+        "recorded_text": "## Original agent determination\n\nThe historical ledger marks the fresh local-acidic-window axis **failed_fresh_confirmation**. The exact best-by-pTM top-minus-rest contrast is −0.0172900832; its original bootstrap interval includes zero. The original discovery 33-target subset and original five-band curve are reproduced above. The recovered source is preserved even where its chemistry convention or selection order differs from other axes.",
+        "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
+      }
+    }
+  }
 }

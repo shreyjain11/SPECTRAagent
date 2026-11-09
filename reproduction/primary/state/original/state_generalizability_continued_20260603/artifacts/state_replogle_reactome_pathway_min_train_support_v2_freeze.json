@@ -1,0 +1,29 @@
+{
+  "axis_id": "STATE_REPLOGLE_REACTOME_PATHWAY_MIN_TRAIN_SUPPORT_V2",
+  "status": "frozen_from_discovery_contexts_before_heldout_context_confirmation",
+  "feature": "reactome_pathway_train_support_min",
+  "description": "Minimum same-context training support over the target gene's Reactome pathways",
+  "unit": "Replogle few-shot gene perturbation in target cell context and representation",
+  "similarity_direction": "higher support means closer to same-context training biology",
+  "performance_direction": "STATE performance should degrade as support decreases",
+  "discovery_contexts": [
+    "hepg2",
+    "k562"
+  ],
+  "confirmation_contexts": [
+    "jurkat",
+    "rpe1"
+  ],
+  "cutpoints_from_discovery": [
+    2.0,
+    4.0,
+    10.0
+  ],
+  "level_rule": "L0 if no annotation; otherwise discovery quantile support bins from low to high",
+  "target_metric": "overlap_at_N",
+  "artifacts": [
+    "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_state_replogle_reactome_pathway_min_train_support_v2.csv",
+    "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/artifacts/spc_state_replogle_reactome_pathway_min_train_support_v2_trends.csv",
+    "/ewsc/yektefai/spectra_runs/state_generalizability_continued_20260603/spectra_ready_dataset/state_replogle_reactome_pathway_min_train_support_v2_examples.csv"
+  ]
+}

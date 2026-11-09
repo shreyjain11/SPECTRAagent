@@ -1,0 +1,226 @@
+{
+  "full_raw_to_model_run_executed": false,
+  "inference_executed": false,
+  "downloads_executed": false,
+  "validation_mode": "Explicit retained original input/result fixtures through actual per-axis dispatch",
+  "axes": [
+    {
+      "axis": 1,
+      "status": "passed",
+      "artifacts": {
+        "cameo_features.csv": "<package>/validation/retained-workflow/analysis/axis-01/cameo_features.csv",
+        "cameo_results.csv": "<package>/validation/retained-workflow/analysis/axis-01/cameo_results.csv",
+        "finalize_spectra_outputs.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-01/finalize_spectra_outputs.py.stdout.txt",
+        "spectral_performance_curve.csv": "<package>/validation/retained-workflow/analysis/axis-01/spectral_performance_curve.csv",
+        "control_analysis.json": "<package>/validation/retained-workflow/analysis/axis-01/control_analysis.json"
+      },
+      "elapsed_seconds": 0.443
+    },
+    {
+      "axis": 2,
+      "status": "passed",
+      "artifacts": {
+        "cameo_features.csv": "<package>/validation/retained-workflow/analysis/axis-02/cameo_features.csv",
+        "cameo_results.csv": "<package>/validation/retained-workflow/analysis/axis-02/cameo_results.csv",
+        "finalize_spectra_outputs.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-02/finalize_spectra_outputs.py.stdout.txt",
+        "spectral_performance_curve.csv": "<package>/validation/retained-workflow/analysis/axis-02/spectral_performance_curve.csv",
+        "control_analysis.json": "<package>/validation/retained-workflow/analysis/axis-02/control_analysis.json"
+      },
+      "elapsed_seconds": 0.041
+    },
+    {
+      "axis": 3,
+      "status": "passed",
+      "artifacts": {
+        "followup_features.csv": "<package>/validation/retained-workflow/analysis/axis-03/followup_features.csv",
+        "cameo_results.csv": "<package>/validation/retained-workflow/analysis/axis-03/cameo_results.csv",
+        "score_axes.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-03/score_axes.py.stdout.txt",
+        "score_followup_axes.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-03/score_followup_axes.py.stdout.txt",
+        "spectral_curves_all_axes.csv": "<package>/validation/retained-workflow/analysis/axis-03/spectral_curves_all_axes.csv",
+        "axis_summary.csv": "<package>/validation/retained-workflow/analysis/axis-03/axis_summary.csv",
+        "followup_axis_curves.csv": "<package>/validation/retained-workflow/analysis/axis-03/followup_axis_curves.csv",
+        "followup_axis_summary.csv": "<package>/validation/retained-workflow/analysis/axis-03/followup_axis_summary.csv",
+        "control_analysis.json": "<package>/validation/retained-workflow/analysis/axis-03/control_analysis.json",
+        "densify_primary_axis.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-03/densify_primary_axis.py.stdout.txt",
+        "mine_outcome_informed_hypotheses.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-03/mine_outcome_informed_hypotheses.py.stdout.txt",
+        "primary_axis_decile_curve.csv": "<package>/validation/retained-workflow/analysis/axis-03/primary_axis_decile_curve.csv",
+        "primary_axis_threshold_sweep.csv": "<package>/validation/retained-workflow/analysis/axis-03/primary_axis_threshold_sweep.csv",
+        "primary_axis_densification.json": "<package>/validation/retained-workflow/analysis/axis-03/primary_axis_densification.json",
+        "outcome_informed_hypotheses.json": "<package>/validation/retained-workflow/analysis/axis-03/outcome_informed_hypotheses.json",
+        "flexible107_curves.csv": "<package>/validation/retained-workflow/analysis/axis-03/flexible107_curves.csv",
+        "flexible107_effects.json": "<package>/validation/retained-workflow/analysis/axis-03/flexible107_effects.json",
+        "flexible107_target_level.csv": "<package>/validation/retained-workflow/analysis/axis-03/flexible107_target_level.csv"
+      },
+      "elapsed_seconds": 1.007
+    },
+    {
+      "axis": 4,
+      "status": "passed",
+      "artifacts": {
+        "charge97_curves.csv": "<package>/validation/retained-workflow/analysis/axis-04/charge97_curves.csv",
+        "charge97_effects.json": "<package>/validation/retained-workflow/analysis/axis-04/charge97_effects.json",
+        "charge97_target_level.csv": "<package>/validation/retained-workflow/analysis/axis-04/charge97_target_level.csv",
+        "shared_combined_prospective_performance.csv": "<package>/validation/retained-workflow/analysis/axis-04/shared_combined_prospective_performance.csv",
+        "shared_target_model_results.csv": "<package>/validation/retained-workflow/analysis/axis-04/shared_target_model_results.csv",
+        "shared_input_manifest.json": "<package>/validation/retained-workflow/analysis/axis-04/shared_input_manifest.json",
+        "shared_candidate_summary.csv": "<package>/validation/retained-workflow/analysis/axis-04/shared_candidate_summary.csv",
+        "shared_candidate_curves.csv": "<package>/validation/retained-workflow/analysis/axis-04/shared_candidate_curves.csv",
+        "shared_candidate_dense.csv": "<package>/validation/retained-workflow/analysis/axis-04/shared_candidate_dense.csv",
+        "spectra_ready_dataset/combined_feature_outcome_table.csv": "<package>/validation/retained-workflow/analysis/axis-04/spectra_ready_dataset/combined_feature_outcome_table.csv",
+        "audit_frozen_charge_axis.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-04/audit_frozen_charge_axis.py.stdout.txt",
+        "audit_frozen_charge_hydropathy_axis.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-04/audit_frozen_charge_hydropathy_axis.py.stdout.txt",
+        "frozen_charge_axis_matched_pairs_q7.csv": "<package>/validation/retained-workflow/analysis/axis-04/frozen_charge_axis_matched_pairs_q7.csv",
+        "frozen_charge_hydropathy_axis_audit.json": "<package>/validation/retained-workflow/analysis/axis-04/frozen_charge_hydropathy_axis_audit.json",
+        "frozen_charge_axis_curves.csv": "<package>/validation/retained-workflow/analysis/axis-04/frozen_charge_axis_curves.csv",
+        "frozen_charge_axis_audit.json": "<package>/validation/retained-workflow/analysis/axis-04/frozen_charge_axis_audit.json",
+        "frozen_charge_hydropathy_axis_matched_pairs_q10.csv": "<package>/validation/retained-workflow/analysis/axis-04/frozen_charge_hydropathy_axis_matched_pairs_q10.csv",
+        "frozen_charge_hydropathy_axis_curves.csv": "<package>/validation/retained-workflow/analysis/axis-04/frozen_charge_hydropathy_axis_curves.csv",
+        "frozen_charge_axis_matched_pairs_q10.csv": "<package>/validation/retained-workflow/analysis/axis-04/frozen_charge_axis_matched_pairs_q10.csv",
+        "frozen_charge_hydropathy_axis_matched_pairs_q7.csv": "<package>/validation/retained-workflow/analysis/axis-04/frozen_charge_hydropathy_axis_matched_pairs_q7.csv"
+      },
+      "elapsed_seconds": 12.232
+    },
+    {
+      "axis": 5,
+      "status": "passed",
+      "artifacts": {
+        "acidic78_curves.csv": "<package>/validation/retained-workflow/analysis/axis-05/acidic78_curves.csv",
+        "acidic78_effects.json": "<package>/validation/retained-workflow/analysis/axis-05/acidic78_effects.json",
+        "acidic78_target_level.csv": "<package>/validation/retained-workflow/analysis/axis-05/acidic78_target_level.csv",
+        "acidic_discovery_curve.csv": "<package>/validation/retained-workflow/analysis/axis-05/acidic_discovery_curve.csv",
+        "acidic_discovery_effect.json": "<package>/validation/retained-workflow/analysis/axis-05/acidic_discovery_effect.json",
+        "combined_evidence_table.csv": "<package>/validation/retained-workflow/analysis/axis-05/combined_evidence_table.csv",
+        "all_evidence_screen_effects.json": "<package>/validation/retained-workflow/analysis/axis-05/all_evidence_screen_effects.json",
+        "screen_unusable.json": "<package>/validation/retained-workflow/analysis/axis-05/screen_unusable.json",
+        "all_evidence_screen_curves.csv": "<package>/validation/retained-workflow/analysis/axis-05/all_evidence_screen_curves.csv"
+      },
+      "elapsed_seconds": 18.373
+    },
+    {
+      "axis": 6,
+      "status": "passed",
+      "artifacts": {
+        "cysteine95_curves.csv": "<package>/validation/retained-workflow/analysis/axis-06/cysteine95_curves.csv",
+        "cysteine95_effects.json": "<package>/validation/retained-workflow/analysis/axis-06/cysteine95_effects.json",
+        "cysteine95_target_level.csv": "<package>/validation/retained-workflow/analysis/axis-06/cysteine95_target_level.csv",
+        "recomputed_candidate_pool.csv": "<package>/validation/retained-workflow/analysis/axis-06/recomputed_candidate_pool.csv",
+        "expanded_all_scored_evidence_table.csv": "<package>/validation/retained-workflow/analysis/axis-06/expanded_all_scored_evidence_table.csv",
+        "expanded_screen_effects.json": "<package>/validation/retained-workflow/analysis/axis-06/expanded_screen_effects.json",
+        "screen_unusable.json": "<package>/validation/retained-workflow/analysis/axis-06/screen_unusable.json",
+        "expanded_screen_curves.csv": "<package>/validation/retained-workflow/analysis/axis-06/expanded_screen_curves.csv"
+      },
+      "elapsed_seconds": 12.422
+    },
+    {
+      "axis": 7,
+      "status": "passed",
+      "artifacts": {
+        "all_evaluations_features.csv": "<package>/validation/retained-workflow/analysis/axis-07/all_evaluations_features.csv",
+        "all_evaluations_effects.csv": "<package>/validation/retained-workflow/analysis/axis-07/all_evaluations_effects.csv",
+        "all_evaluations_curves.csv": "<package>/validation/retained-workflow/analysis/axis-07/all_evaluations_curves.csv",
+        "all_evaluations_slices.csv": "<package>/validation/retained-workflow/analysis/axis-07/all_evaluations_slices.csv",
+        "primary_sequence_features.csv": "<package>/validation/retained-workflow/analysis/axis-07/primary_sequence_features.csv",
+        "primary_sequence_effects.csv": "<package>/validation/retained-workflow/analysis/axis-07/primary_sequence_effects.csv",
+        "primary_sequence_curves.csv": "<package>/validation/retained-workflow/analysis/axis-07/primary_sequence_curves.csv",
+        "primary_sequence_slices.csv": "<package>/validation/retained-workflow/analysis/axis-07/primary_sequence_slices.csv"
+      },
+      "elapsed_seconds": 4.25
+    },
+    {
+      "axis": 8,
+      "status": "passed",
+      "artifacts": {
+        "all_evaluations_features.csv": "<package>/validation/retained-workflow/analysis/axis-08/all_evaluations_features.csv",
+        "all_evaluations_effects.csv": "<package>/validation/retained-workflow/analysis/axis-08/all_evaluations_effects.csv",
+        "all_evaluations_curves.csv": "<package>/validation/retained-workflow/analysis/axis-08/all_evaluations_curves.csv",
+        "all_evaluations_slices.csv": "<package>/validation/retained-workflow/analysis/axis-08/all_evaluations_slices.csv",
+        "primary_sequence_features.csv": "<package>/validation/retained-workflow/analysis/axis-08/primary_sequence_features.csv",
+        "primary_sequence_effects.csv": "<package>/validation/retained-workflow/analysis/axis-08/primary_sequence_effects.csv",
+        "primary_sequence_curves.csv": "<package>/validation/retained-workflow/analysis/axis-08/primary_sequence_curves.csv",
+        "primary_sequence_slices.csv": "<package>/validation/retained-workflow/analysis/axis-08/primary_sequence_slices.csv",
+        "proxy_prior.csv": "<package>/validation/retained-workflow/analysis/axis-08/proxy_prior.csv",
+        "proxy_combined.csv": "<package>/validation/retained-workflow/analysis/axis-08/proxy_combined.csv",
+        "proxy_fresh.csv": "<package>/validation/retained-workflow/analysis/axis-08/proxy_fresh.csv",
+        "iterate_proxy_axes.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-08/iterate_proxy_axes.py.stdout.txt",
+        "candidate_axis_screen.csv": "<package>/validation/retained-workflow/analysis/axis-08/candidate_axis_screen.csv",
+        "candidate_source_consistency.csv": "<package>/validation/retained-workflow/analysis/axis-08/candidate_source_consistency.csv",
+        "candidate_control_models.csv": "<package>/validation/retained-workflow/analysis/axis-08/candidate_control_models.csv"
+      },
+      "elapsed_seconds": 8.805
+    },
+    {
+      "axis": 9,
+      "status": "passed",
+      "artifacts": {
+        "spectra_ready_dataset/combined_feature_outcome_table.csv": "<package>/validation/retained-workflow/analysis/axis-09/spectra_ready_dataset/combined_feature_outcome_table.csv",
+        "audit_frozen_reference_topology_axes.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-09/audit_frozen_reference_topology_axes.py.stdout.txt",
+        "frozen_reference_topology_axis_curves.csv": "<package>/validation/retained-workflow/analysis/axis-09/frozen_reference_topology_axis_curves.csv",
+        "frozen_reference_topology_axes_audit.json": "<package>/validation/retained-workflow/analysis/axis-09/frozen_reference_topology_axes_audit.json",
+        "geometry_candidate_scores.json": "<package>/validation/retained-workflow/analysis/axis-09/geometry_candidate_scores.json",
+        "geometry_candidate_curves.csv": "<package>/validation/retained-workflow/analysis/axis-09/geometry_candidate_curves.csv"
+      },
+      "elapsed_seconds": 4.96
+    },
+    {
+      "axis": 10,
+      "status": "passed",
+      "artifacts": {
+        "viral36_curves.csv": "<package>/validation/retained-workflow/analysis/axis-10/viral36_curves.csv",
+        "viral36_effects.json": "<package>/validation/retained-workflow/analysis/axis-10/viral36_effects.json",
+        "viral36_target_level.csv": "<package>/validation/retained-workflow/analysis/axis-10/viral36_target_level.csv"
+      },
+      "elapsed_seconds": 0.373
+    },
+    {
+      "axis": 11,
+      "status": "passed",
+      "artifacts": {
+        "envelope38_curves.csv": "<package>/validation/retained-workflow/analysis/axis-11/envelope38_curves.csv",
+        "envelope38_effects.json": "<package>/validation/retained-workflow/analysis/axis-11/envelope38_effects.json",
+        "envelope38_target_level.csv": "<package>/validation/retained-workflow/analysis/axis-11/envelope38_target_level.csv",
+        "discover_envelope_subaxes.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-11/discover_envelope_subaxes.py.stdout.txt",
+        "envelope_subaxis_candidates.csv": "<package>/validation/retained-workflow/analysis/axis-11/envelope_subaxis_candidates.csv"
+      },
+      "elapsed_seconds": 1.456
+    },
+    {
+      "axis": 12,
+      "status": "passed",
+      "artifacts": {
+        "envelope38_curves.csv": "<package>/validation/retained-workflow/analysis/axis-12/envelope38_curves.csv",
+        "envelope38_effects.json": "<package>/validation/retained-workflow/analysis/axis-12/envelope38_effects.json",
+        "envelope38_target_level.csv": "<package>/validation/retained-workflow/analysis/axis-12/envelope38_target_level.csv",
+        "discover_envelope_subaxes.py.stdout.txt": "<package>/validation/retained-workflow/analysis/axis-12/discover_envelope_subaxes.py.stdout.txt",
+        "envelope_subaxis_candidates.csv": "<package>/validation/retained-workflow/analysis/axis-12/envelope_subaxis_candidates.csv",
+        "surface45_curves.csv": "<package>/validation/retained-workflow/analysis/axis-12/surface45_curves.csv",
+        "surface45_effects.json": "<package>/validation/retained-workflow/analysis/axis-12/surface45_effects.json",
+        "surface45_target_level.csv": "<package>/validation/retained-workflow/analysis/axis-12/surface45_target_level.csv"
+      },
+      "elapsed_seconds": 1.9
+    }
+  ],
+  "all_12_axis_dispatches_passed": true,
+  "guard_validation": "WORKFLOW_GUARD_VALIDATION.json",
+  "curve_comparison": "CURVE_REPLAY_VALIDATION.json",
+  "guard_checks_passed": 7,
+  "notebook_execution": "CURRENT_NOTEBOOK_CHECKS.json",
+  "raw_feature_reconstruction_from_full_downloads_executed": false,
+  "original_workflow_entry": "RUN_ORIGINAL_WORKFLOW=True or SPECTRA_RUN_ORIGINAL_WORKFLOW=1",
+  "shared_workspace": "reproduction/transformers-5.22.2 (override SPECTRA_ESMFOLD2_WORKSPACE)",
+  "prerequisites": [
+    "Separate pinned notebook/acquisition environment from ENVIRONMENTS.txt",
+    "Exact original public reference bytes (SHA/ETag checks reject changes)",
+    "Pinned model source downloads and current environment; CUDA hardware for original evaluator entrypoints"
+  ],
+  "remaining_boundaries": [
+    "Full bulk-reference reconstruction and fresh model evaluation were not executed; validation uses explicitly labelled retained-data fixtures.",
+    "Current-model original-weight conversion previously verified2658 keys/shapes; independent saved-value/prediction equivalence was not established.",
+    "Historical frozen memberships are retained, including the documented8S7A_A qcut boundary discrepancy.",
+    "RCSB reference endpoints must still return original hashed bytes; no changed-structure substitution is permitted."
+  ],
+  "helper_sha256": {
+    "original_workflow.py": "783ce4a2e719b201ae2d29b223229ea214f18d33bb74fd08ccea1478dc149529",
+    "acquisition.py": "579210390348c90cd386742da9048b153d815d56ba8db1aae9f3f387fc271216",
+    "current_esmfold2_adapter.py": "78d49d29408e596088a035ab104a75e3749f1b2753bd54af9b644a0e4952b04e"
+  }
+}
