@@ -23,7 +23,7 @@ The original decision remains tied to the original measurements. New results are
 
 ## Additional investigations
 
-The independent [nonprimary review](NONPRIMARY_REVIEW.json) was updated for upstream commit `55886b7`. Every previously missing input-file example now maps to a published archive member in [the data catalog](data.json) and model inventories. [Automatic preparation](prepare_inputs.py) verifies and materializes these inputs, and [the upstream execution report](execution.json) records checks for all 143 notebooks. The review matched all 99 nonprimary notebook hashes to their error-free execution records; it did not repeat the bulk downloads or scientific executions. The [complete per-axis review](traceability_review.json) covers all 143 entries.
+The independent [nonprimary review](NONPRIMARY_REVIEW.json) was updated for upstream commit `55886b7`. Every previously missing input-file example now maps to a published archive member in [the data catalog](data.json) and model inventories. [Automatic preparation](prepare_inputs.py) verifies and materializes these inputs, and [the upstream execution report](execution.json) records checks for all 143 notebooks. The review matched all 99 nonprimary notebook hashes to their error-free execution records. Independent HEAD checks returned HTTP 200 and matching declared sizes for all four public archives; the bulk downloads and scientific executions were not repeated. The [complete per-axis review](traceability_review.json) covers all 143 entries.
 
 | Investigation | Original calculations/records missing | Public-input-backed calculation replay |
 | --- | ---: | ---: |

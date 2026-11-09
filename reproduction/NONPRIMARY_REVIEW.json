@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "review_scope": "99non-primary entries reassessed against55886b7, which adds public archives, automatic preparation and reported execution checks. Earlier unconnected-input findings are superseded.",
+  "review_scope": "The 99 nonprimary entries reassessed against upstream commit 55886b7, which adds public archives, automatic preparation and reported execution checks. Earlier unconnected-input findings are superseded.",
   "criterion": "Original inputs -> processing -> axes/levels -> individual measurements -> curves/diagnostics -> historical interpretation; no protocol-compliance test.",
   "counts": {
     "reviewed": 99,
@@ -4390,7 +4390,7 @@
       "historical_notes_reference": "analyses/state-opus-r2/test-05.json#reconstruction_notes"
     }
   ],
-  "limitations": "This reassessment checks code, input inventories and matching upstream execution receipts. It does not independently rerun the99notebooks or download3.3GB. Successful execution of evidence-only cells is not reconstruction of missing historical measurements. No new scientific criteria are imposed.",
+  "limitations": "This reassessment checks code, input inventories and matching upstream execution receipts. It does not independently rerun the 99 notebooks or download the 3.3 GB of archives. Independent HEAD checks verify access and declared size, not archive body hashes. Successful execution of evidence-only cells is not reconstruction of missing historical measurements. No new scientific criteria are imposed.",
   "category_definitions": {
     "original_records_missing": "Evidence or aggregate-display export executes, but the original per-record measurements/calculation required to reconstruct that axis are still missing. Some supporting source code may survive.",
     "calculation_replay_packaged": "Actual scientific calculation code now has a public checksum-verified input preparation route and matching upstream error-free execution evidence. This does not establish every original acquisition/model/provenance step."
@@ -4427,13 +4427,52 @@
       "input_source": "Public GitHub release asset, fetched by prepare_inputs.py without credentials",
       "executed_cells": 7,
       "error": null
-    }
+    },
+    "independent_access_checks": [
+      {
+        "url": "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/state-inputs.zip",
+        "method": "HEAD",
+        "observed_by": "Root agent during this PR integration",
+        "http_status": 200,
+        "content_length": 440390168,
+        "matches_catalog_bytes": true,
+        "body_hash_verified_by_this_check": false
+      },
+      {
+        "url": "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/esmfold2-inputs.zip",
+        "method": "HEAD",
+        "observed_by": "Root agent during this PR integration",
+        "http_status": 200,
+        "content_length": 39878104,
+        "matches_catalog_bytes": true,
+        "body_hash_verified_by_this_check": false
+      },
+      {
+        "url": "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/conch-inputs.zip",
+        "method": "HEAD",
+        "observed_by": "Root agent during this PR integration",
+        "http_status": 200,
+        "content_length": 1796761504,
+        "matches_catalog_bytes": true,
+        "body_hash_verified_by_this_check": false
+      },
+      {
+        "url": "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/alphamissense-inputs.zip",
+        "method": "HEAD",
+        "observed_by": "Root agent during this PR integration",
+        "http_status": 200,
+        "content_length": 998791045,
+        "matches_catalog_bytes": true,
+        "body_hash_verified_by_this_check": false
+      }
+    ]
   },
   "checks_performed_in_this_review": [
-    "Read new download/extraction/hash-check/layout-installation and notebook-runner code.",
-    "Verified all99records declare public preparation and all99notebook exports call prepare_notebook with their exact analysis ID.",
-    "Matched all99published notebook SHA256 values to corresponding upstream error-free execution records.",
-    "Mapped all191earlier missing-file examples to published archive inventory members, sizes and hashes.",
-    "Confirmed all67evidence/aggregate-only code paths retain their non-recomputation behavior."
+    "Read the new download, extraction, hash verification, layout installation and notebook runner code.",
+    "Verified that all 99 records declare public preparation and all 99 notebook exports call prepare_notebook with their exact analysis ID.",
+    "Matched all 99 published notebook SHA256 values to corresponding upstream error-free execution records.",
+    "Mapped all 191 earlier missing-file examples, representing 46 unique files, to published archive members, sizes and hashes.",
+    "Confirmed that all 67 evidence or aggregate-only code paths retain their non-recomputation behavior.",
+    "The root agent independently requested the headers of all four Shrey release assets: each returned HTTP 200 and Content-Length matching data.json."
   ]
 }
