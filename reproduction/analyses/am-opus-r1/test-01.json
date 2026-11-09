@@ -15,7 +15,8 @@
       "clinvar",
       "gencode32",
       "gencode50",
-      "alphafold-example"
+      "alphafold-example",
+      "alphamissense-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -183,7 +184,13 @@
           "split"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "alphamissense-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Evolutionary constraint at the variant position, defined as negative alignment-column entropy and compared within each assay; verified ordering 2.92, 2.17, 1.08 bits",
@@ -214,8 +221,7 @@
     "Independent evidence establishing original split timing relative to axis selection",
     "Exact upstream weighting procedure for ProteinGym whole-protein MSA_Neff_L metadata",
     "Original PSSM score-construction command; retained per-variant comparator scores are used",
-    "The original fragment-coordinate lookup changes 37,014 scores when corrected and omits 1,934 variants. The full corrected cohort has not been reconstructed; a same-panel sensitivity is a separate analysis.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "The original fragment-coordinate lookup changes 37,014 scores when corrected and omits 1,934 variants. The full corrected cohort has not been reconstructed; a same-panel sensitivity is a separate analysis."
   ],
   "implementation": {
     "notebook": "materials/alphamissense/am-opus-r1/axis-1.ipynb",
@@ -223,60 +229,68 @@
     "supporting_code": "code/alphamissense.json",
     "cell_locations": [
       {
-        "notebook_cell": 3,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 18
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 35
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 36,
+        "end_line": 50
+      },
+      {
+        "notebook_cell": 3,
+        "start_line": 51,
+        "end_line": 98
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 99,
+        "end_line": 121
       },
       {
         "notebook_cell": 5,
-        "start_line": 19,
-        "end_line": 33
+        "start_line": 122,
+        "end_line": 135
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 136,
+        "end_line": 197
       },
       {
         "notebook_cell": 7,
-        "start_line": 34,
-        "end_line": 81
+        "start_line": 198,
+        "end_line": 222
       },
       {
         "notebook_cell": 8,
-        "start_line": 82,
-        "end_line": 104
+        "start_line": 223,
+        "end_line": 234
       },
       {
-        "notebook_cell": 10,
-        "start_line": 105,
-        "end_line": 118
-      },
-      {
-        "notebook_cell": 12,
-        "start_line": 119,
-        "end_line": 180
-      },
-      {
-        "notebook_cell": 14,
-        "start_line": 181,
-        "end_line": 205
-      },
-      {
-        "notebook_cell": 16,
-        "start_line": 206,
-        "end_line": 217
-      },
-      {
-        "notebook_cell": 18,
-        "start_line": 218,
-        "end_line": 223
+        "notebook_cell": 9,
+        "start_line": 235,
+        "end_line": 240
       }
     ],
     "original_notebook_sha256": "37f88d225eb141cc158b56debd9ef3a61547352267b0bc045c6e97c54a697193",
-    "published_notebook_sha256": "8327634d8d6938e95a6f26ca38d98dc8a7b67b03a5a21cd1326ce59319bd08a9",
+    "published_notebook_sha256": "153a54eac6b737821d1c24e8fd66edbe08bd6fd4bfee9304f2daa2cc4e5510b7",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "Retained file checks use the public hashes after removing original local paths and normalizing code whitespace; fixed benchmark and array checks remain unchanged.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 9,
+    "saved_code_cells": 10,
     "saved_error_outputs": 0
   },
   "requested_model": "AlphaMissense"

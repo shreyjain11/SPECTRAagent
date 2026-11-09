@@ -15,7 +15,8 @@
       "clinvar",
       "gencode32",
       "gencode50",
-      "alphafold-example"
+      "alphafold-example",
+      "alphamissense-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -255,7 +256,13 @@
           "split"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "alphamissense-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Compare agreement across proteins using effective alignment depth; inspect assay type.",
@@ -285,8 +292,7 @@
     "A full cohort repair restoring the 1,934 originally omitted fragment variants, followed by scientific review",
     "Independent evidence establishing original split timing relative to axis selection",
     "Exact upstream weighting procedure for ProteinGym whole-protein MSA_Neff_L metadata",
-    "The original fragment-coordinate lookup changes 37,014 scores when corrected and omits 1,934 variants. The full corrected cohort has not been reconstructed; a same-panel sensitivity is a separate analysis.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "The original fragment-coordinate lookup changes 37,014 scores when corrected and omits 1,934 variants. The full corrected cohort has not been reconstructed; a same-panel sensitivity is a separate analysis."
   ],
   "implementation": {
     "notebook": "materials/alphamissense/am-opus-r2/axis-2.ipynb",
@@ -294,85 +300,93 @@
     "supporting_code": "code/alphamissense.json",
     "cell_locations": [
       {
-        "notebook_cell": 3,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 23
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 40
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 41,
+        "end_line": 51
+      },
+      {
+        "notebook_cell": 3,
+        "start_line": 52,
+        "end_line": 112
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 113,
+        "end_line": 118
       },
       {
         "notebook_cell": 5,
-        "start_line": 24,
-        "end_line": 34
+        "start_line": 119,
+        "end_line": 163
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 164,
+        "end_line": 168
       },
       {
         "notebook_cell": 7,
-        "start_line": 35,
-        "end_line": 95
+        "start_line": 169,
+        "end_line": 227
       },
       {
         "notebook_cell": 8,
-        "start_line": 96,
-        "end_line": 101
+        "start_line": 228,
+        "end_line": 247
       },
       {
-        "notebook_cell": 10,
-        "start_line": 102,
-        "end_line": 146
-      },
-      {
-        "notebook_cell": 11,
-        "start_line": 147,
-        "end_line": 151
-      },
-      {
-        "notebook_cell": 13,
-        "start_line": 152,
-        "end_line": 210
-      },
-      {
-        "notebook_cell": 14,
-        "start_line": 211,
-        "end_line": 230
-      },
-      {
-        "notebook_cell": 16,
-        "start_line": 231,
-        "end_line": 256
-      },
-      {
-        "notebook_cell": 18,
-        "start_line": 257,
+        "notebook_cell": 9,
+        "start_line": 248,
         "end_line": 273
       },
       {
-        "notebook_cell": 20,
+        "notebook_cell": 10,
         "start_line": 274,
-        "end_line": 295
+        "end_line": 290
       },
       {
-        "notebook_cell": 22,
-        "start_line": 296,
-        "end_line": 313
+        "notebook_cell": 11,
+        "start_line": 291,
+        "end_line": 312
       },
       {
-        "notebook_cell": 24,
-        "start_line": 314,
-        "end_line": 346
+        "notebook_cell": 12,
+        "start_line": 313,
+        "end_line": 330
       },
       {
-        "notebook_cell": 26,
-        "start_line": 347,
-        "end_line": 352
+        "notebook_cell": 13,
+        "start_line": 331,
+        "end_line": 363
+      },
+      {
+        "notebook_cell": 14,
+        "start_line": 364,
+        "end_line": 369
       }
     ],
     "original_notebook_sha256": "596eccbf02d49f7c2408b1917c559d70a48c8f7e849e9ec65d15fc50fe9c79ac",
-    "published_notebook_sha256": "656152fe29d9779846969520536843aa54be85e29f1f943900579e225d836ac3",
+    "published_notebook_sha256": "0ac2c260006b163e1ef610ac9559b774b5d8aec5068a82fa4229579fdb00aed5",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "Retained file checks use the public hashes after removing original local paths and normalizing code whitespace; fixed benchmark and array checks remain unchanged.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 14,
+    "saved_code_cells": 15,
     "saved_error_outputs": 0
   },
   "requested_model": "AlphaMissense"

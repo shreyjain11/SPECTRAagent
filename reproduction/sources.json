@@ -1035,5 +1035,61 @@
     "http_status": 200,
     "content_type": "application/json",
     "anonymous_access_observed": true
+  },
+  {
+    "id": "state-retained-inputs",
+    "url": "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/state-inputs.zip",
+    "kind": "download",
+    "purpose": "Retained state notebook inputs, including saved measurements and original sample tables.",
+    "qualification": "These are retained audit inputs. Unavailable historical data remain identified in each analysis record.",
+    "sha256": "fb45e9305dcf32bfa9d68ff910f7539707b3e4ff58c695db2e8c5ee8a9e8a9fc",
+    "bytes": 440390168,
+    "anonymous_access_observed": true,
+    "http_status": 200,
+    "checked_at": "2026-11-09T02:15:31.190913+00:00",
+    "content_type": "application/octet-stream",
+    "verification_method": "Full anonymous HTTPS GET; streamed byte count and SHA-256, without GitHub tokens or cookies."
+  },
+  {
+    "id": "esmfold2-retained-inputs",
+    "url": "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/esmfold2-inputs.zip",
+    "kind": "download",
+    "purpose": "Retained esmfold2 notebook inputs, including saved measurements and original sample tables.",
+    "qualification": "These are retained audit inputs. Unavailable historical data remain identified in each analysis record.",
+    "sha256": "c0c76766965d90de4128d0d3e11abadcf39f4acac8cff64c374657ee77172b24",
+    "bytes": 39878104,
+    "anonymous_access_observed": true,
+    "http_status": 200,
+    "checked_at": "2026-11-09T02:15:22.489462+00:00",
+    "content_type": "application/octet-stream",
+    "verification_method": "Full anonymous HTTPS GET; streamed byte count and SHA-256, without GitHub tokens or cookies."
+  },
+  {
+    "id": "conch-retained-inputs",
+    "url": "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/conch-inputs.zip",
+    "kind": "download",
+    "purpose": "Retained conch notebook inputs, including saved measurements and original sample tables.",
+    "qualification": "These are retained audit inputs. Unavailable historical data remain identified in each analysis record.",
+    "sha256": "c02c3a3957a21935eaa1e0bcf4ef1be9582b32c521777eba57320089099ab6d7",
+    "bytes": 1796761504,
+    "anonymous_access_observed": true,
+    "http_status": 200,
+    "checked_at": "2026-11-09T02:16:29.294911+00:00",
+    "content_type": "application/octet-stream",
+    "verification_method": "Full anonymous HTTPS GET; streamed byte count and SHA-256, without GitHub tokens or cookies."
+  },
+  {
+    "id": "alphamissense-retained-inputs",
+    "url": "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/alphamissense-inputs.zip",
+    "kind": "download",
+    "purpose": "Retained alphamissense notebook inputs, including saved measurements and original sample tables.",
+    "qualification": "These are retained audit inputs. Unavailable historical data remain identified in each analysis record.",
+    "sha256": "9088ab792238292f8f1ec5587f95876e0951a06484795266362d51b12641228c",
+    "bytes": 998791045,
+    "anonymous_access_observed": true,
+    "http_status": 200,
+    "checked_at": "2026-11-09T02:16:11.203436+00:00",
+    "content_type": "application/octet-stream",
+    "verification_method": "Full anonymous HTTPS GET; streamed byte count and SHA-256, without GitHub tokens or cookies."
   }
 ]

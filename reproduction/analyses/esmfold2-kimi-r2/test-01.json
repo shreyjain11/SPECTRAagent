@@ -9,7 +9,8 @@
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
-      "esm-code"
+      "esm-code",
+      "esmfold2-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -78,7 +79,13 @@
           "entity"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "esmfold2-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "maximum MMseqs2 sequence identity (fident, -s 7.5 --cov-mode 0 -c 0.8) to any PDB chain released before 2021-09-30",
@@ -109,8 +116,7 @@
     "The original standalone TMalign20220412 binary is unavailable locally; tmtools0.3.0 rescoring agreement is reported per sample rather than assumed.",
     "Template reference is undefined at lowest identity. Model means are nonmonotonic across middle levels.",
     "New t-interval display bands and Welch confidence intervals are diagnostic recomputations.",
-    "The 128-target expansion has endpoint difference -0.0598103, interval [-0.141321, 0.0217004], p=0.146802. It must be kept separate from the pooled 160-target calculation.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "The 128-target expansion has endpoint difference -0.0598103, interval [-0.141321, 0.0217004], p=0.146802. It must be kept separate from the pooled 160-target calculation."
   ],
   "implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.ipynb",
@@ -118,45 +124,52 @@
     "supporting_code": "code/esmfold2.json",
     "cell_locations": [
       {
-        "notebook_cell": 1,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 35
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 52
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 53,
+        "end_line": 68
       },
       {
         "notebook_cell": 3,
-        "start_line": 36,
-        "end_line": 51
+        "start_line": 69,
+        "end_line": 83
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 84,
+        "end_line": 115
       },
       {
         "notebook_cell": 5,
-        "start_line": 52,
-        "end_line": 66
-      },
-      {
-        "notebook_cell": 7,
-        "start_line": 67,
-        "end_line": 98
-      },
-      {
-        "notebook_cell": 9,
-        "start_line": 99,
-        "end_line": 106
-      },
-      {
-        "notebook_cell": 11,
-        "start_line": 107,
+        "start_line": 116,
         "end_line": 123
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 124,
+        "end_line": 140
       }
     ],
     "original_notebook_sha256": "f927fcaf87988f90a85225b48abcf4c0812946d379a91cbc276e2a6446f18549",
-    "published_notebook_sha256": "42f2f5065c9d118cde3ac1ef1293ed94390ab96985f790412ffab48343228737",
+    "published_notebook_sha256": "aad2b2a5f551ae8f3f684ae31c8a76790de4a10e2a22684f811b18475cafb359",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 6,
+    "saved_code_cells": 7,
     "saved_error_outputs": 0
   },
   "requested_model": "ESMFold2"

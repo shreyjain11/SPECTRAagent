@@ -9,7 +9,8 @@
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
-      "esm-code"
+      "esm-code",
+      "esmfold2-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -506,7 +507,13 @@
           "target_id"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "esmfold2-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Absolute value of the sequence net-charge proxy per residue; larger values were predicted to be harder.",
@@ -532,8 +539,7 @@
     "code": "materials/esmfold2/notebooks/esmfold2-featured/test-04.py"
   },
   "reconstruction_notes": [
-    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference."
   ],
   "implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-featured/test-04.ipynb",
@@ -541,35 +547,43 @@
     "supporting_code": "code/esmfold2.json",
     "cell_locations": [
       {
-        "notebook_cell": 2,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 40
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 57
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 58,
+        "end_line": 64
       },
       {
         "notebook_cell": 3,
-        "start_line": 41,
-        "end_line": 47
+        "start_line": 65,
+        "end_line": 73
       },
       {
         "notebook_cell": 4,
-        "start_line": 48,
-        "end_line": 56
-      },
-      {
-        "notebook_cell": 5,
-        "start_line": 57,
-        "end_line": 61
+        "start_line": 74,
+        "end_line": 78
       }
     ],
     "original_notebook_sha256": "953baa6c5dadafb63f24498d5f28f60e49627981676fa9e6f3f3c0291c5c3292",
-    "published_notebook_sha256": "58720e56bb3068cdc3cd72882b27d5523d7bd960f9d74cfb11cdaff8872f121c",
+    "published_notebook_sha256": "6c9ee612e1c3d94d7673c419a0fdb59661bcc401dadf10e4f02328018296751b",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "File checks use the published data and code hashes, including redacted provenance files.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 4,
+    "saved_code_cells": 5,
     "saved_error_outputs": 0
   },
   "requested_model": "ESMFold2"

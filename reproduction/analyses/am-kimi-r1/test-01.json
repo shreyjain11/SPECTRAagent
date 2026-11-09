@@ -15,9 +15,16 @@
       "clinvar",
       "gencode32",
       "gencode50",
-      "alphafold-example"
+      "alphafold-example",
+      "alphamissense-retained-inputs"
     ],
-    "sample_tables": []
+    "sample_tables": [],
+    "public_inputs": {
+      "archive": "alphamissense-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Nucleotide distance to the nearest exon boundary on the AlphaMissense transcript, four groups defined from exon coordinates before scoring",
@@ -48,8 +55,7 @@
     "data/raw/uniprot_human_proteome.fasta.gz",
     "data/raw/clinvar.vcf.gz",
     "data/raw/gencode.v50.basic.annotation.gtf.gz",
-    "The original homology/ortholog annotations and population-frequency annotations consumed by the supplementary scripts",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "The original homology/ortholog annotations and population-frequency annotations consumed by the supplementary scripts"
   ],
   "implementation": {
     "notebook": "materials/alphamissense/am-kimi-r1/axis-1.ipynb",
@@ -57,20 +63,28 @@
     "supporting_code": "code/alphamissense.json",
     "cell_locations": [
       {
-        "notebook_cell": 2,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 10
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 27
       }
     ],
     "original_notebook_sha256": "7ba8796ff83b6f4a8f0ae1b1bc1c1275b0a08c1897ae5579244e5fcc24da1f19",
-    "published_notebook_sha256": "f64baebfda59a743bf71c4385dcaa7c54bc9c36aa7c3266db3520008cfc4b6ef",
+    "published_notebook_sha256": "d60764fb0830151c4341c4acd3c933f3e7133e31171dd45dfc9a5d53e47627eb",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "Retained file checks use the public hashes after removing original local paths and normalizing code whitespace; fixed benchmark and array checks remain unchanged.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 1,
+    "saved_code_cells": 2,
     "saved_error_outputs": 0
   },
   "requested_model": "AlphaMissense"

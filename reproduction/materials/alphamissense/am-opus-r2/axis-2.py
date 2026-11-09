@@ -1,4 +1,21 @@
-# Original notebook cell 3
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('am-opus-r2/test-02')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import hashlib,json,tarfile,os,sys,platform
 import numpy as np,pandas as pd
@@ -8,7 +25,7 @@ import matplotlib.pyplot as plt
 ROOT=Path.cwd(); INPUT=ROOT/'inputs'; OUT=ROOT/'recomputed';OUT.mkdir(exist_ok=True)
 for item in json.loads((ROOT/'INPUT_MANIFEST.json').read_text()):
     path=ROOT/item['path']
-    assert hashlib.sha256(path.read_bytes()).hexdigest()==item['sha256'],item['path']
+    assert hashlib.sha256(path.read_bytes()).hexdigest() == SPECTRA_HASHES[str(path.relative_to(SPECTRA_DATA))]['sha256'],item['path']
 print('All recovered inputs and programs verified.')
 with tarfile.open(INPUT/'raw_references.tar.gz') as archive:
     for member in archive.getmembers():
@@ -21,7 +38,7 @@ os.chdir(OUT)
 for name in ['assay_msa_map.csv','DMS_substitutions.csv','assay_meta.csv']:
     (OUT/name).write_bytes((INPUT/name).read_bytes())
 
-# Original notebook cell 5
+# Notebook cell 2
 pred=pd.read_csv(INPUT/'predictions.csv')
 assert len(pred)==271201 and pred.assay.nunique()==73 and pred.acc.nunique()==64
 assert not pred.duplicated(['assay','acc','position','mutant']).any()
@@ -32,7 +49,7 @@ pred['split']=np.where(pred.acc.isin(discovery),'discovery','confirmation')
 pred[['assay','acc','position','mutant','split']].to_csv(OUT/'sample_split.csv.gz',index=False)
 display(pred.groupby('split').agg(variants=('mutant','size'),assays=('assay','nunique'),proteins=('acc','nunique')))
 
-# Original notebook cell 7
+# Notebook cell 3
 import numpy as np, pandas as pd, os, time, sys
 
 AA="ACDEFGHIKLMNPQRSTVWY"
@@ -93,13 +110,13 @@ cov=pd.DataFrame(covrows,columns=['MSA_filename','col0','nseq','coverage','n_pre
 cov.to_csv('msa_coverage_by_col.csv',index=False)
 print('DONE total columns:',len(cov))
 
-# Original notebook cell 8
+# Notebook cell 4
 new_cov=pd.read_csv(OUT/'msa_coverage_by_col.csv')
 old_cov=pd.read_csv(INPUT/'msa_coverage_by_col.csv')
 pd.testing.assert_frame_equal(new_cov,old_cov,check_exact=False,rtol=1e-12,atol=1e-12)
 print(len(new_cov),'alignment columns reproduced.')
 
-# Original notebook cell 10
+# Notebook cell 5
 import numpy as np, pandas as pd
 from Bio.Align import substitution_matrices
 AA="ACDEFGHIKLMNPQRSTVWY"; aa2i={c:i for i,c in enumerate(AA)}
@@ -144,12 +161,12 @@ print('coverage describe:'); print(df.coverage.describe())
 df.to_parquet('master.parquet')
 print('saved master.parquet')
 
-# Original notebook cell 11
+# Notebook cell 6
 new_master=pd.read_parquet(OUT/'master.parquet');old_master=pd.read_parquet(INPUT/'master.parquet')
 pd.testing.assert_frame_equal(new_master,old_master,check_exact=False,rtol=1e-12,atol=1e-12)
 print('All variant joins, coverage values, PSSM scores and BLOSUM62 scores reproduced.')
 
-# Original notebook cell 13
+# Notebook cell 7
 import numpy as np, pandas as pd, glob, os
 from Bio import Align
 aa3={'ALA':'A','ARG':'R','ASN':'N','ASP':'D','CYS':'C','GLN':'Q','GLU':'E','GLY':'G','HIS':'H','ILE':'I','LEU':'L','LYS':'K','MET':'M','PHE':'F','PRO':'P','SER':'S','THR':'T','TRP':'W','TYR':'Y','VAL':'V'}
@@ -208,7 +225,7 @@ df.to_parquet('master_plddt.parquet')
 D.to_csv('plddt_mapping_diag.csv',index=False)
 print('saved corrected master_plddt.parquet')
 
-# Original notebook cell 14
+# Notebook cell 8
 master=pd.read_parquet(OUT/'master_plddt.parquet')
 expected=pd.read_parquet(INPUT/'master_plddt.parquet')
 pd.testing.assert_frame_equal(master,expected,check_exact=False,rtol=1e-12,atol=1e-12)
@@ -228,7 +245,7 @@ master.to_parquet(OUT/'variant_scores_and_features.parquet',index=False)
 print('All mapped pLDDT values reproduced:',int(master.plddt.notna().sum()),'of',len(master),'variants.')
 display(master[master.plddt.isna()].groupby('acc').size().rename('excluded_from_pLDDT'))
 
-# Original notebook cell 16
+# Notebook cell 9
 def sp(g,col):
     if len(g)>=50 and g.DMS_score.nunique()>5 and g[col].nunique()>2:
         return abs(spearmanr(g[col],g.DMS_score).statistic)
@@ -254,7 +271,7 @@ scores.to_csv(OUT/'plddt_assay_scores.csv',index=False)
 print(len(scores),'assay/level cells match the original table.')
 print('Fresh-PSSM versus historical-PSSM maximum cell discrepancy:',(scores.PSSM_recomputed-scores.PSSM).abs().max())
 
-# Original notebook cell 18
+# Notebook cell 10
 curve=[]
 for method in ['AM','BLOSUM','PSSM']:
     for level in labels:
@@ -271,7 +288,7 @@ ax.set(xticks=range(4),xticklabels=['<50','50–<70','70–<90','≥90'],xlabel=
 ax.legend(frameon=False);plt.tight_layout();plt.show()
 display(curve.round(6))
 
-# Original notebook cell 20
+# Notebook cell 11
 def paired(t,label):
     piv={m:t.pivot(index='assay',columns='level',values=m) for m in ['AM','BLOSUM','PSSM']}
     common=set.intersection(*[set(p[[labels[0],labels[3]]].dropna().index) for p in piv.values()])
@@ -293,7 +310,7 @@ for name,key in [('Discovery','discovery_AM_drop'),('Confirmation','confirmation
     assert abs(actual-reported['held_out'][key])<.0006
 print('Pooled and split-specific point estimates match the original report at its stated precision.')
 
-# Original notebook cell 22
+# Notebook cell 12
 def horse(binby):
     rows=[]
     for assay,g in df.groupby('assay'):
@@ -311,7 +328,7 @@ def horse(binby):
     return [dict(binning=binby,covariate=c,beta=beta[i+1],t=beta[i+1]/se[i+1],cells=len(r)) for i,c in enumerate(columns)]
 control=pd.DataFrame(horse('coverage')+horse('plddt'));control.to_csv(OUT/'adjusted_control.csv',index=False);display(control)
 
-# Original notebook cell 24
+# Notebook cell 13
 coverage=master.copy();edges=[-1e-9,.10,.50,.80,.95,.99,1.01]
 covlabels=['<.10','.10–.50','.50–.80','.80–.95','.95–.99','≥.99']
 coverage['level']=pd.cut(coverage.coverage,edges,labels=covlabels)
@@ -344,7 +361,7 @@ for label,g in [('All',depth),('Excluding stability',depth[depth.selection!='Sta
     rho,p=spearmanr(np.log1p(g.depth),g.agreement);depth_stats.append(dict(group=label,n=len(g),rho=rho,p=p))
 display(pd.DataFrame(depth_stats));pd.DataFrame(depth_stats).to_csv(OUT/'whole_protein_depth_control.csv',index=False)
 
-# Original notebook cell 26
+# Notebook cell 14
 os.chdir(ROOT)
 paths=[p for p in OUT.glob('*') if p.is_file()]
 manifest=[dict(path=p.name,sha256=hashlib.sha256(p.read_bytes()).hexdigest(),bytes=p.stat().st_size) for p in sorted(paths)]

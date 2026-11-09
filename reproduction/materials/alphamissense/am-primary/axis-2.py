@@ -1,4 +1,21 @@
-# Original notebook cell 2
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('am-primary/test-02')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import hashlib,json,csv,platform
 import numpy as np,pandas as pd
@@ -6,11 +23,11 @@ import matplotlib.pyplot as plt
 from IPython.display import display
 ROOT=Path.cwd();INPUT=ROOT/'inputs/clinvar';OUT=ROOT/'recomputed/clinvar_pop';OUT.mkdir(exist_ok=True,parents=True)
 for item in json.loads((INPUT/'INPUT_MANIFEST.json').read_text()):
-    p=INPUT/item['path'];assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'],item['path']
+    p=INPUT/item['path'];assert hashlib.sha256(p.read_bytes()).hexdigest() == SPECTRA_HASHES[str(p.relative_to(SPECTRA_DATA))]['sha256'],item['path']
 assert hashlib.sha256((INPUT/'clinvar_am_benchmark.tsv').read_bytes()).hexdigest()=='783a79533ae1aa4ae4b7d99615f78959fd134aa4913666407720c4bc7f6ad481'
 print('Exact individual benchmark and axis inputs verified; Python',platform.python_version())
 
-# Original notebook cell 4
+# Notebook cell 2
 #!/usr/bin/env python3
 """SPECTRA SPC: AlphaMissense vs population-variation support (gnomAD).
 
@@ -136,7 +153,7 @@ json.dump(summary,open(f"{ART}/spc_pop_support.json","w"),indent=2)
 print("\n",json.dumps({k:summary[k] for k in ["overall_am_auroc","saturation_monotonic","spearman_saturation_vs_AM_auroc","am_auroc_lowest_vs_highest","confounder_med_oe_lowest_vs_highest"]},indent=2))
 print("wrote spc_pop_support.json")
 
-# Original notebook cell 5
+# Notebook cell 3
 # Archived summary values are validation targets, never inputs to the calculation.
 original=json.loads((ROOT/'expected/original_spc_pop_support.json').read_text())
 replayed=json.loads((OUT/'spc_pop_support.json').read_text())
@@ -154,7 +171,7 @@ compare(original,replayed)
 print('Every original summary field reproduced within 1e-12, including the original clustered confidence intervals.')
 display(pd.DataFrame(replayed['levels']))
 
-# Original notebook cell 7
+# Notebook cell 4
 records=[]
 with open(INPUT/'clinvar_am_benchmark.tsv') as f:
     for row_id,r in enumerate(csv.DictReader(f,delimiter='\t'),start=1):
@@ -170,7 +187,7 @@ individual.to_csv(OUT/'per_variant_scored.csv.gz',index=False)
 pd.DataFrame([dict(gene=g,axis_value=gene_sat[g],level=glvl[g]) for g in genes]).to_csv(OUT/'gene_levels.csv',index=False)
 display(individual.head())
 
-# Original notebook cell 9
+# Notebook cell 5
 curve=pd.DataFrame(replayed['levels']);x=curve['med_saturation'].to_numpy();y=curve['am_auroc'].to_numpy();ci=np.asarray(curve['am_ci95'].tolist())
 fig,ax=plt.subplots(figsize=(6.5,3.7),constrained_layout=True)
 ax.errorbar(x,y,yerr=[y-ci[:,0],ci[:,1]-y],marker='o',capsize=3,color='#8e3c35',label='AlphaMissense')
@@ -180,6 +197,6 @@ fig.savefig(OUT/'curve.png',dpi=180);plt.show()
 curve.to_csv(OUT/'curve_from_individual_records.csv',index=False)
 print('The published negative screen is retained. No new independent confirmation is asserted.')
 
-# Original notebook cell 10
+# Notebook cell 6
 manifest=[dict(path=p.name,sha256=hashlib.sha256(p.read_bytes()).hexdigest(),bytes=p.stat().st_size) for p in sorted(OUT.glob('*')) if p.is_file() and p.name!='OUTPUT_MANIFEST.json']
 (OUT/'OUTPUT_MANIFEST.json').write_text(json.dumps(manifest,indent=2));print(len(manifest),'recomputed outputs saved and hashed.')

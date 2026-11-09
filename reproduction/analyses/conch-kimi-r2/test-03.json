@@ -11,9 +11,16 @@
       "crcval-images",
       "kather-images",
       "nct-mirror",
-      "conch-code"
+      "conch-code",
+      "conch-retained-inputs"
     ],
-    "sample_tables": []
+    "sample_tables": [],
+    "public_inputs": {
+      "archive": "conch-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Compare center cohorts at native-resolution input.",
@@ -52,8 +59,7 @@
   "reconstruction_notes": [
     "Fresh target inference was not rerun. NCT target logits/probabilities are rescored; CRC-VAL retains predicted labels but native class-score arrays were not recovered.",
     "The two-cohort comparison was not a separately frozen site-specific confirmation and cannot isolate a causal site effect.",
-    "New class-stratified bootstrap bands are diagnostic recalculations, not historical reported intervals.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "New class-stratified bootstrap bands are diagnostic recalculations, not historical reported intervals."
   ],
   "implementation": {
     "notebook": "materials/conch/notebooks/conch-kimi-r2-03.ipynb",
@@ -61,45 +67,52 @@
     "supporting_code": "code/conch.json",
     "cell_locations": [
       {
-        "notebook_cell": 1,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 30
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 47
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 48,
+        "end_line": 61
       },
       {
         "notebook_cell": 3,
-        "start_line": 31,
-        "end_line": 44
+        "start_line": 62,
+        "end_line": 67
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 68,
+        "end_line": 76
       },
       {
         "notebook_cell": 5,
-        "start_line": 45,
-        "end_line": 50
+        "start_line": 77,
+        "end_line": 99
       },
       {
-        "notebook_cell": 7,
-        "start_line": 51,
-        "end_line": 59
-      },
-      {
-        "notebook_cell": 9,
-        "start_line": 60,
-        "end_line": 82
-      },
-      {
-        "notebook_cell": 11,
-        "start_line": 83,
-        "end_line": 86
+        "notebook_cell": 6,
+        "start_line": 100,
+        "end_line": 103
       }
     ],
     "original_notebook_sha256": "b2ecb312f218f0e0a6ad57b696c7887651d1f9d8e740a58c49982b057fedddc6",
-    "published_notebook_sha256": "1410d5bb818e22011e9741522678c27b0fa4185ad3635182871dbcfaa14dced6",
+    "published_notebook_sha256": "dfa771e4d4f1a8d642dedb5de5429135152d854d69f1e5dbe72e86661c50b3b3",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 6,
+    "saved_code_cells": 7,
     "saved_error_outputs": 0
   },
   "requested_model": "CONCH"

@@ -68,7 +68,8 @@
       "go-annotations",
       "go-ontology",
       "wikipathways",
-      "kegg"
+      "kegg",
+      "state-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -670,7 +671,13 @@
           "chem_support_level"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "state-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Compute training support from other cell contexts, normalize by training-set size, and apply fixed thresholds to zero-shot predictions.",
@@ -696,8 +703,7 @@
     "code": "materials/state/notebooks/state-featured/test-11.py"
   },
   "reconstruction_notes": [
-    "Predicted expression vectors, observed matrices and checkpoint-linked evaluation code needed to independently recompute per-record model metrics.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "Predicted expression vectors, observed matrices and checkpoint-linked evaluation code needed to independently recompute per-record model metrics."
   ],
   "implementation": {
     "notebook": "materials/state/notebooks/state-featured/test-11.ipynb",
@@ -705,40 +711,48 @@
     "supporting_code": "code/state.json",
     "cell_locations": [
       {
-        "notebook_cell": 1,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 25
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 42
       },
       {
         "notebook_cell": 2,
-        "start_line": 26,
-        "end_line": 54
+        "start_line": 43,
+        "end_line": 71
       },
       {
         "notebook_cell": 3,
-        "start_line": 55,
-        "end_line": 75
-      },
-      {
-        "notebook_cell": 4,
-        "start_line": 76,
+        "start_line": 72,
         "end_line": 92
       },
       {
-        "notebook_cell": 5,
+        "notebook_cell": 4,
         "start_line": 93,
-        "end_line": 98
+        "end_line": 109
+      },
+      {
+        "notebook_cell": 5,
+        "start_line": 110,
+        "end_line": 115
       }
     ],
     "original_notebook_sha256": "2f22be5f795b3ac9015d1a37090b77cb45a41a915a828a29447dd8cdcee85547",
-    "published_notebook_sha256": "99635cd06d2112dd1e3c601d46ce36d09f8025a01e4e5c752f98617477131754",
+    "published_notebook_sha256": "da51646179a1d10d2f78b8457d6697380204d6566927f9eb500114d45645d7b8",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "File checks use the published data and code hashes, including redacted provenance files.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 5,
+    "saved_code_cells": 6,
     "saved_error_outputs": 0
   },
   "requested_model": "STATE"

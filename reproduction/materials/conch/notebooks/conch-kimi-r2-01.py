@@ -1,4 +1,21 @@
-# Original notebook cell 1
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('conch-kimi-r2/test-01')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import json, hashlib
 import numpy as np
@@ -28,7 +45,7 @@ def show_curve(table, x='level', group='model', y='accuracy', xlabel='Level', yl
         if 'lo' in g and 'hi' in g: ax.fill_between(g[x],g.lo,g.hi,alpha=.13)
     ax.set(xlabel=xlabel,ylabel=ylabel);ax.spines[['top','right']].set_visible(False);ax.legend(frameon=False);fig.tight_layout();plt.show()
 
-# Original notebook cell 3
+# Notebook cell 2
 K=SOURCE/'conch-kimi-r2/native'
 manifest=pd.read_csv(K/'data/NCT-sample/nct_sample_manifest.csv')
 pi=pd.read_csv(K/'artifacts/axisA_confirm/per_image_eval.csv')
@@ -40,7 +57,7 @@ assert not set(train.md5)&set(evaluation.md5)
 display(manifest.groupby(['split','class']).size().unstack(0))
 display(evaluation[['zip_entry','class','label','split','md5']].head())
 
-# Original notebook cell 5
+# Notebook cell 3
 from PIL import Image
 # Original zeroshot_common.py intervention: bicubic downsample then upsample.
 def degrade_resolution(img,s):
@@ -84,7 +101,7 @@ with tarfile.open(K/'confirmation_images.tar.gz',mode='r|gz') as archive:
 display(pd.DataFrame(checks))
 print('All 3600 original image MD5 hashes verified; original SSIM image-transform check replayed on the same 300 tiles; all embedding-cosine values recalculated from retained DINOv2 vectors.')
 
-# Original notebook cell 7
+# Notebook cell 4
 models=['CONCH','R1-OpenCLIP-B32-LAION','R2-DINOv2-logreg']
 y=pi.label.to_numpy()
 for model in models:
@@ -98,7 +115,7 @@ print('All CONCH/OpenCLIP predicted labels reproduced from stored class-score ar
 print('All models rescored against the exact evaluation labels; DINOv2 uses retained predicted labels.')
 display(pi[['path','label','pred_CONCH_s1','pred_CONCH_s8','correct_CONCH_s1','correct_CONCH_s8']].head())
 
-# Original notebook cell 9
+# Notebook cell 5
 summary=pd.read_csv(K/'artifacts/axisA_confirm/axisA_summary.csv')
 result=[]
 for model in models:
@@ -114,7 +131,7 @@ result=pd.DataFrame(result);display(result)
 show_curve(result,xlabel='Effective resolution (micrometers per pixel)',ylabel='Accuracy on class-balanced tiles')
 print('Shading: Wilson 95% intervals recalculated from individual outcomes for this notebook, not original audit intervals.')
 
-# Original notebook cell 11
+# Notebook cell 6
 recorded=pd.read_csv(K/'artifacts/axisA_confirm/confirmatory_stats.csv')
 comparisons=[]
 for model in models:

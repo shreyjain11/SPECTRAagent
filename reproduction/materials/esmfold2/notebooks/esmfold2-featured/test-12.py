@@ -1,4 +1,21 @@
-# Original notebook cell 2
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('esmfold2-featured/test-12')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import json,hashlib,importlib.util,sys,io
 import numpy as np
@@ -10,7 +27,7 @@ matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 root=next((p for p in [Path.cwd(),*Path.cwd().parents] if (p/'ESM_INPUTS.json').is_file()),None)
 assert root is not None,'Extract the full ESMFold2 bundle and open this notebook inside it.'
-manifest=json.loads((root/'ESM_INPUTS.json').read_text());P=root/'source/esmfold2';A=P/'reconstruction/prior_axes'
+manifest=SPECTRA_HASHES;P=root/'source/esmfold2';A=P/'reconstruction/prior_axes'
 def checked(p):
     p=Path(p);k=str(p.relative_to(root));assert hashlib.sha256(p.read_bytes()).hexdigest()==manifest[k]['sha256'],k
     return p
@@ -38,14 +55,14 @@ def plot_rows(df,level,metric='ca_lddt',label='Retained evaluation'):
     ax.set_xticks(range(len(t)),t.level.astype(str));ax.set(xlabel=level,ylabel=metric,title=label);ax.spines[['top','right']].set_visible(False)
     b=io.BytesIO();fig.savefig(b,format='png',dpi=120);plt.close(fig);display(Image(data=b.getvalue()));return t
 
-# Original notebook cell 3
+# Notebook cell 2
 D=A/'10_11_envelope_surface';m=module(D/'scripts'/'summarize_surface_lowhelical_confirmation.py')
 f=read(D/'spectra_ready_dataset'/'surface_lowhelical_confirmation_candidate_features.csv');r=read(D/'target_model_results.surface_lowhelical_confirmation.scaled_samples.csv')
 assert f.target_id.is_unique
 np.testing.assert_array_equal(f.sequence.str.len(),f.seq_len)
 print('Exact targets:',len(f),'prediction sample rows:',len(r));display(f[['target_id','sequence','surface_lowhelical_score']].head())
 
-# Original notebook cell 4
+# Notebook cell 3
 b=module(D/'scripts/build_surface_lowhelical_confirmation_panel.py')
 for col,fn in [('disulfide_capacity_per100',b.disulfide_capacity_per100),('tm_helix_proxy_calc',b.tm_proxy)]:
     np.testing.assert_allclose(f.sequence.map(fn),f[col],atol=1e-10)
@@ -53,7 +70,7 @@ calc=pd.DataFrame([b.axis_features(row) for row in f.to_dict('records')])
 np.testing.assert_array_equal(calc.surface_lowhelical_score,f.surface_lowhelical_score)
 print('Sequence-feature/level checks completed.')
 
-# Original notebook cell 5
+# Notebook cell 4
 curve,effect,d=m.summarize_policy(f,r,'best_by_ptm')
 equal_curve(curve,D/'analysis_outputs'/'surface_lowhelical_confirmation_level_curves.csv',['surface_lowhelical_score'],['n','ca_lddt_mean'])
 plot_rows(d,'surface_lowhelical_score',label='Original confirmation panel')

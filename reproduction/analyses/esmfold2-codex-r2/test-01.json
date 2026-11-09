@@ -9,9 +9,16 @@
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
-      "esm-code"
+      "esm-code",
+      "esmfold2-retained-inputs"
     ],
-    "sample_tables": []
+    "sample_tables": [],
+    "public_inputs": {
+      "archive": "esmfold2-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "positive net-charge burden (net_charge_proxy) in cryo-EM assembly-derived chains folded in isolation, frozen spec version 5.0",
@@ -39,8 +46,7 @@
   "reconstruction_notes": [
     "Original exact target split manifest, sequences/alignments and feature-generation inputs.",
     "Original predicted and reference structures or per-target metric table for this audit.",
-    "Original per-target comparator and confirmation records.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "Original per-target comparator and confirmation records."
   ],
   "implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-01.ipynb",
@@ -48,20 +54,27 @@
     "supporting_code": "code/esmfold2.json",
     "cell_locations": [
       {
-        "notebook_cell": 2,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 4
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 21
       }
     ],
     "original_notebook_sha256": "e3435cd3a53f0212114b63bcf11d559f067409a02f3a3b7a8338b06ae1d4f0d4",
-    "published_notebook_sha256": "ca7079e2732b10f986bd3f067ce3735f15c1cc575d6d79730624bfd958f9bfdf",
+    "published_notebook_sha256": "1ff87b9f97df433e894714b9c682c9a003d11be606b2590289eb34ec39898278",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 1,
+    "saved_code_cells": 2,
     "saved_error_outputs": 0
   },
   "requested_model": "ESMFold2"

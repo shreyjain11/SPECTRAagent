@@ -1,4 +1,21 @@
-# Original notebook cell 1
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('conch-gpt-r1/test-05')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import json, hashlib
 import numpy as np
@@ -28,9 +45,9 @@ def show_curve(table, x='level', group='model', y='accuracy', xlabel='Level', yl
         if 'lo' in g and 'hi' in g: ax.fill_between(g[x],g.lo,g.hi,alpha=.13)
     ax.set(xlabel=xlabel,ylabel=ylabel);ax.spines[['top','right']].set_visible(False);ax.legend(frameon=False);fig.tight_layout();plt.show()
 
-# Original notebook cell 4
+# Notebook cell 2
 files=['conch-gpt-r1/matched_confound_summary.csv', 'conch-gpt-r1/report.md', 'conch-gpt-r1/candidate_axis_ledger.csv', 'conch-gpt-r1/spc_table.csv', 'conch-gpt-r1/extreme_contrasts.csv', 'conch-gpt-r1/code/finalize_population_gate.py', 'conch-gpt-r1/code/analyze_spc.py', 'conch-gpt-r1/code/derive_prospective_axis.py', 'conch-gpt-r1/code/summarize_levels.py', 'conch-gpt-r1/code/finalize_dedup.py', 'conch-gpt-r1/code/deduplicate.py', 'conch-gpt-r1/code/score_conch.py', 'conch-gpt-r1/code/extract_imagenet_embeddings.py', 'conch-gpt-r1/code/fit_fixed_references.py', 'conch-gpt-r1/code/blind_extract.py', 'conch-gpt-r1/code/extract_prospective_features.py', 'conch-gpt-r1/code/recheck_population_after_dedup.py', 'conch-gpt-r1/original_bundle/README.md', 'conch-gpt-r1/original_bundle/results/matched_confound_summary.csv', 'conch-gpt-r1/original_bundle/results/spc_table.csv', 'conch-gpt-r1/original_bundle/results/reference_only_within_class_spc_all_mapped.csv', 'conch-gpt-r1/original_bundle/results/integrity_validation.json', 'conch-gpt-r1/original_bundle/results/reference_only_within_class_spc.csv', 'conch-gpt-r1/original_bundle/results/extreme_contrasts.csv', 'conch-gpt-r1/original_bundle/results/closure_statistics.json', 'conch-gpt-r1/original_bundle/results/reference_only_spc_table.csv', 'conch-gpt-r1/original_bundle/results/within_class_spc_all_mapped.csv', 'conch-gpt-r1/original_bundle/results/within_class_spc.csv', 'conch-gpt-r1/original_bundle/results/reference_only_closure_statistics.json', 'conch-gpt-r1/original_bundle/results/deduplication_summary.json', 'conch-gpt-r1/original_bundle/provenance/sources.json', 'conch-gpt-r1/original_bundle/provenance/runtime.json', 'conch-gpt-r1/original_bundle/provenance/references.json', 'conch-gpt-r1/original_bundle/provenance/checkpoint_access.json', 'conch-gpt-r1/original_bundle/provenance/downloads.json', 'conch-gpt-r1/original_bundle/provenance/artifact_manifest.json', 'conch-gpt-r1/original_bundle/audit/candidate_axis_ledger.csv', 'conch-gpt-r1/original_bundle/audit/power_plan.json', 'conch-gpt-r1/original_bundle/audit/closure_checklist.md', 'conch-gpt-r1/original_bundle/audit/frozen_axis.json', 'conch-gpt-r1/original_bundle/reports/novelty_search.md', 'conch-gpt-r1/original_bundle/reports/preclosure_status.md', 'conch-gpt-r1/original_bundle/data/manifests/crc_val_7k.blind.csv', 'conch-gpt-r1/original_bundle/data/manifests/kather2016_5k.blind.csv']
 display(pd.DataFrame([{'file':p,'bytes':(SOURCE/p).stat().st_size,'sha256':hashlib.sha256((SOURCE/p).read_bytes()).hexdigest()} for p in files]))
 
-# Original notebook cell 10
+# Notebook cell 3
 display(read_csv('conch-gpt-r1/candidate_axis_ledger.csv'))

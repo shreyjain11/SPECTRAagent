@@ -9,9 +9,16 @@
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
-      "esm-code"
+      "esm-code",
+      "esmfold2-retained-inputs"
     ],
-    "sample_tables": []
+    "sample_tables": [],
+    "public_inputs": {
+      "archive": "esmfold2-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "orphan status, defined as maximum sequence identity < 30 percent to the pre-2020-05-01 training pool",
@@ -42,8 +49,7 @@
     "Fresh model inference was not rerun. Original target structures were rescored; baseline per-unit scores are retained.",
     "Display mean confidence intervals are new t-interval diagnostics, not the original reported standard deviations.",
     "Template-reference means use only covered examples: 10/80 discovery A4 and 27/170 confirmation orphans. Missing baseline predictions are not zero, and their coverage differs from the target model.",
-    "The retained structures come from ESMFold v1; the intended target was ESMFold2.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "The retained structures come from ESMFold v1; the intended target was ESMFold2."
   ],
   "implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-01.ipynb",
@@ -51,45 +57,52 @@
     "supporting_code": "code/esmfold2.json",
     "cell_locations": [
       {
-        "notebook_cell": 2,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 35
+        "end_line": 17
       },
       {
-        "notebook_cell": 4,
-        "start_line": 36,
+        "notebook_cell": 1,
+        "start_line": 18,
         "end_line": 52
       },
       {
-        "notebook_cell": 6,
+        "notebook_cell": 2,
         "start_line": 53,
-        "end_line": 73
+        "end_line": 69
       },
       {
-        "notebook_cell": 8,
-        "start_line": 74,
-        "end_line": 92
+        "notebook_cell": 3,
+        "start_line": 70,
+        "end_line": 90
       },
       {
-        "notebook_cell": 10,
-        "start_line": 93,
-        "end_line": 99
+        "notebook_cell": 4,
+        "start_line": 91,
+        "end_line": 109
       },
       {
-        "notebook_cell": 12,
-        "start_line": 100,
-        "end_line": 115
+        "notebook_cell": 5,
+        "start_line": 110,
+        "end_line": 116
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 117,
+        "end_line": 132
       }
     ],
     "original_notebook_sha256": "6d9195a4e7121db625da91373aad1d025d5cc3166aa710912cb4f13f93ebf07b",
-    "published_notebook_sha256": "cd98dd07973aab283c860b80cf5cd9970b6c58b32536e5688d87f27a5effa78c",
+    "published_notebook_sha256": "e977f50165d456e156c443431625d59faf66d1f250e526b74bd5f82855f9e831",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 6,
+    "saved_code_cells": 7,
     "saved_error_outputs": 0
   },
   "requested_model": "ESMFold2"

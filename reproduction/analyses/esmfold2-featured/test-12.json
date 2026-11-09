@@ -9,7 +9,8 @@
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
-      "esm-code"
+      "esm-code",
+      "esmfold2-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -506,7 +507,13 @@
           "target_id"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "esmfold2-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Viral surface proteins grouped using disulfide capacity and predicted transmembrane/helical propensity.",
@@ -532,8 +539,7 @@
     "code": "materials/esmfold2/notebooks/esmfold2-featured/test-12.py"
   },
   "reconstruction_notes": [
-    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference."
   ],
   "implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-featured/test-12.ipynb",
@@ -541,35 +547,43 @@
     "supporting_code": "code/esmfold2.json",
     "cell_locations": [
       {
-        "notebook_cell": 2,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 40
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 57
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 58,
+        "end_line": 64
       },
       {
         "notebook_cell": 3,
-        "start_line": 41,
-        "end_line": 47
+        "start_line": 65,
+        "end_line": 72
       },
       {
         "notebook_cell": 4,
-        "start_line": 48,
-        "end_line": 55
-      },
-      {
-        "notebook_cell": 5,
-        "start_line": 56,
-        "end_line": 60
+        "start_line": 73,
+        "end_line": 77
       }
     ],
     "original_notebook_sha256": "a4c55743207813243e26a2d57a5a9cd46627f9be62489569e9622f40d406f09b",
-    "published_notebook_sha256": "39d3363e032662fafa0986786ef7a748480074737ec5e6abdd57a4468f6bcacd",
+    "published_notebook_sha256": "861990eee2c7f38afc4226a0ee525ea173610a6252964b13da828e15e5e3302c",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "File checks use the published data and code hashes, including redacted provenance files.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 4,
+    "saved_code_cells": 5,
     "saved_error_outputs": 0
   },
   "requested_model": "ESMFold2"

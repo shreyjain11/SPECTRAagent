@@ -1,10 +1,27 @@
-# Original notebook cell 3
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('am-primary/test-06')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import os
 PRIMARY_REPLAY_DIR=Path.cwd()
 os.chdir(PRIMARY_REPLAY_DIR.parent/'upstream_checks')
 
-# Original notebook cell 5
+# Notebook cell 2
 from pathlib import Path
 import json,hashlib,platform,subprocess,sys,tarfile
 import numpy as np,pandas as pd
@@ -24,20 +41,14 @@ with tarfile.open(archive,'r|gz') as t:
                 for part in iter(lambda:f.read(16777216),b''):h.update(part)
             assert h.hexdigest()==expected[name],name;checked[name]=h.hexdigest()
 assert len(checked)==66
-assert hashlib.sha256((ROOT/'bin/mmseqs').read_bytes()).hexdigest()=='c58e5b422092544aac95646828eb563cee32ca609c260c50a195bb560d24f2e6'
-if platform.system()=='Linux' and platform.machine() in ['x86_64','AMD64']:
-    subprocess.run([sys.executable,str(ROOT/'run_upstream.py'),'--all','--resume'],check=True)
-    RESULT=ROOT/'rebuilt/results';events=json.loads((ROOT/'rebuilt/events.json').read_text())
-    print('Executed upstream reconstruction on Linux.')
-else:
-    RESULT=ROOT/'results';events=json.loads((ROOT/'events.json').read_text())
-    print('This platform uses the recorded Linux execution arrays; it does not execute the Linux MMseqs binary here.')
+RESULT=ROOT/'results';events=json.loads((ROOT/'events.json').read_text())
+print('Replaying the retained alignment-feature arrays. The upstream build code is supplied separately.')
 done={x['msa']:x for x in events if x['kind']=='features_complete'};assert len(done)==66
 for name,item in done.items():assert hashlib.sha256((RESULT/(name+'.npz')).read_bytes()).hexdigest()==item['output_sha256'],name
 print('All 66 raw alignments and completed array outputs verified.')
 display(pd.DataFrame([json.loads((ROOT/'EXECUTION_ENVIRONMENT.json').read_text())]))
 
-# Original notebook cell 7
+# Notebook cell 3
 from materialize_features import materialize
 OUT=ROOT/'reconstructed'
 record=materialize(BUNDLE,RESULT,OUT);assert record['axis_rows']==17536 and record['pssm_rows']==15478
@@ -54,7 +65,7 @@ assert all('OTU7A' in a for a in comparison['affected_assays'])
 (OUT/'feature_comparison.json').write_text(json.dumps(comparison,indent=2));display(pd.DataFrame([comparison]))
 old_axis.loc[axis_changed].assign(new_effective_depth=new_axis.loc[axis_changed,'neff_theta02'].to_numpy()).to_csv(OUT/'differing_positions.csv',index=False)
 
-# Original notebook cell 9
+# Notebook cell 4
 #!/usr/bin/env python3
 """SPECTRA Axis-3 AM scoring (Path A, occupancy axis).
 Join AM pathogenicity -> DMS single-mutant fitness for the 73-assay panel, then compute
@@ -318,7 +329,7 @@ print(f"DEEP&occ>=.9: wmean|rho|={fmt(dhi)} (na={dhi['n_assays']},np={dhi['n_pro
 print("\nWROTE stepB/STEP_B_SCORING_RESULTS.md and stepB/axis3_SPC_perassay_bins.tsv")
 print("DONE")
 
-# Original notebook cell 10
+# Notebook cell 5
 #!/usr/bin/env python3
 """Score AM vs AM-INDEPENDENT baselines (site-independent PSSM log-odds, BLOSUM62) on the SAME
 frozen occupancy bins, plus a DMS-signal control (within-assay DMS spread per bin). Answers:
@@ -496,7 +507,7 @@ for bl in ABINS:
 print("\nWROTE axis3_baselines_binstats.tsv, axis3_dms_signal_perbin.tsv")
 print("DONE")
 
-# Original notebook cell 11
+# Notebook cell 6
 assert len(rec)==270572
 old=pd.read_csv(EXPECTED/'axis3_baselines_binstats.tsv',sep='\t');new=pd.read_csv(OUT/'axis3_baselines_binstats.tsv',sep='\t')
 changes=[]
@@ -515,11 +526,11 @@ old_individual=pd.read_parquet(BUNDLE/'am-primary/recomputed/individual_predicti
 old_individual['rebuilt_PSSM']=[pssm_score(r.assay,r.target_pos,r.mutant[0],r.mutant[-1]) for r in old_individual.itertuples()]
 old_individual.loc[old_individual.PSSM.notna()&old_individual.rebuilt_PSSM.notna()&old_individual.PSSM.ne(old_individual.rebuilt_PSSM),['assay','acc','mutant','target_pos','DMS_score','PSSM','rebuilt_PSSM']].to_csv(OUT/'changed_individual_pssm_scores.csv.gz',index=False)
 
-# Original notebook cell 13
+# Notebook cell 7
 os.chdir(PRIMARY_REPLAY_DIR)
 print('The archived-feature track below is preserved separately from the rebuilt-feature comparison above.')
 
-# Original notebook cell 14
+# Notebook cell 8
 from pathlib import Path
 import json,hashlib,shutil,platform
 import numpy as np,pandas as pd
@@ -527,7 +538,7 @@ import matplotlib.pyplot as plt
 from IPython.display import display
 ROOT=Path.cwd();INPUT=ROOT/'inputs';EXPECTED=ROOT/'expected';OUT=ROOT/'recomputed';OUT.mkdir(exist_ok=True)
 for item in json.loads((ROOT/'INPUT_MANIFEST.json').read_text()):
-    p=ROOT/item['path'];assert p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'],item['path']
+    p=ROOT/item['path'];assert p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest() == SPECTRA_HASHES[str(p.relative_to(SPECTRA_DATA))]['sha256'],item['path']
 source=json.loads((INPUT/'official_score_subset_provenance.json').read_text())
 assert source['source_sha256']=='bc18d954a9aa6b9efab8e40d6d1912e32b774906cd3846a1f51066588e9c176d'
 assert source['selected_rows']==955738 and source['selected_proteins']==64
@@ -536,7 +547,7 @@ for name in ['axis3_pathC_percolumn_FROZEN.tsv','pssm_counts.tsv']:
 print('All retained inputs and code verified; Python',platform.python_version())
 display(pd.DataFrame([source]))
 
-# Original notebook cell 16
+# Notebook cell 9
 #!/usr/bin/env python3
 """SPECTRA Axis-3 AM scoring (Path A, occupancy axis).
 Join AM pathogenicity -> DMS single-mutant fitness for the 73-assay panel, then compute
@@ -800,7 +811,7 @@ print(f"DEEP&occ>=.9: wmean|rho|={fmt(dhi)} (na={dhi['n_assays']},np={dhi['n_pro
 print("\nWROTE stepB/STEP_B_SCORING_RESULTS.md and stepB/axis3_SPC_perassay_bins.tsv")
 print("DONE")
 
-# Original notebook cell 17
+# Notebook cell 10
 assert tot_single==273135 and tot_scored==270572 and n_scored_binned==270572
 original= pd.read_csv(EXPECTED/'axis3_SPC_perassay_bins.tsv',sep='\t')
 replayed= pd.read_csv(OUT/'axis3_SPC_perassay_bins.tsv',sep='\t')
@@ -812,7 +823,7 @@ print('All 587 original assay/bin results reproduced exactly at the saved four-d
 display(coverage[coverage.status.ne('OK')])
 display(replayed.groupby('bin_label').agg(assays=('assay','nunique'),variants=('n_variants','sum')))
 
-# Original notebook cell 19
+# Notebook cell 11
 #!/usr/bin/env python3
 """Score AM vs AM-INDEPENDENT baselines (site-independent PSSM log-odds, BLOSUM62) on the SAME
 frozen occupancy bins, plus a DMS-signal control (within-assay DMS spread per bin). Answers:
@@ -990,7 +1001,7 @@ for bl in ABINS:
 print("\nWROTE axis3_baselines_binstats.tsv, axis3_dms_signal_perbin.tsv")
 print("DONE")
 
-# Original notebook cell 20
+# Notebook cell 12
 for filename in ['axis3_baselines_binstats.tsv','axis3_dms_signal_perbin.tsv']:
     old=pd.read_csv(EXPECTED/filename,sep='\t');new=pd.read_csv(OUT/filename,sep='\t')
     pd.testing.assert_frame_equal(old,new,check_exact=True)
@@ -1031,7 +1042,7 @@ for pname,pidx in PRED.items():
 per=pd.DataFrame(per);per.to_csv(OUT/'individual_assay_bin_performance.csv',index=False)
 display(measurements.head());display(curve)
 
-# Original notebook cell 21
+# Notebook cell 13
 fig,axs=plt.subplots(1,2,figsize=(11,3.7),constrained_layout=True)
 order=['insert','q0','q1','q2','q3','q4']
 for predictor,color in [('AM','#9b2d30'),('PSSM','#4a708b'),('BLOSUM62','#677f59')]:
@@ -1045,7 +1056,7 @@ axs[1].set_xticks(range(6),['Insert','Q1','Q2','Q3','Q4','Q5']);axs[1].set_ylabe
 for ax in axs:ax.spines[['top','right']].set_visible(False)
 fig.savefig(OUT/'occupancy_and_dynamic_range.png',dpi=180);plt.show()
 
-# Original notebook cell 23
+# Notebook cell 14
 from scipy.stats import binomtest
 paired=[]
 for name,high,low in [('coarse','coarse_easy','coarse_hard'),('occupancy','q4','q0'),('high_depth','deep_occ>=0.9','deep_occ<0.7')]:
@@ -1065,7 +1076,7 @@ print('Original absolute depth groups:');display(levels)
 assert levels.loc[0,'proteins']==1 and levels.loc[1,'proteins']==2
 print('No independent confirmation cohort is retained or asserted. The upstream notebook documents the executed alignment reconstruction and isolated OTU7A difference.')
 
-# Original notebook cell 25
+# Notebook cell 15
 outputs=[]
 for p in sorted(OUT.glob('*')):
     if p.is_file():outputs.append(dict(path=p.name,sha256=hashlib.sha256(p.read_bytes()).hexdigest(),bytes=p.stat().st_size))

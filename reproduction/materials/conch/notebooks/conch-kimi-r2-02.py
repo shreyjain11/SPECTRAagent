@@ -1,4 +1,21 @@
-# Original notebook cell 1
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('conch-kimi-r2/test-02')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import json, hashlib
 import numpy as np
@@ -28,9 +45,9 @@ def show_curve(table, x='level', group='model', y='accuracy', xlabel='Level', yl
         if 'lo' in g and 'hi' in g: ax.fill_between(g[x],g.lo,g.hi,alpha=.13)
     ax.set(xlabel=xlabel,ylabel=ylabel);ax.spines[['top','right']].set_visible(False);ax.legend(frameon=False);fig.tight_layout();plt.show()
 
-# Original notebook cell 4
+# Notebook cell 2
 files=['conch-kimi-r2/report.md', 'conch-kimi-r2/native/REPORT.md', 'conch-kimi-r2/native/AXIS_SPEC.md', 'conch-kimi-r2/code/stats_axisA_kimi.py', 'conch-kimi-r2/code/zeroshot_common.py', 'conch-kimi-r2/code/pilot_resolution.py', 'conch-kimi-r2/code/build_nct_sample.py', 'conch-kimi-r2/code/run_axisA_confirm.py', 'conch-kimi-r2/code/pilot_axisB_stain.py', 'conch-kimi-r2/code/run_axisA_crcval.py', 'conch-kimi-r2/native/artifacts/provenance_manifest.json', 'conch-kimi-r2/native/artifacts/axisA_frozen_spec.md', 'conch-kimi-r2/native/notes/distillation_and_ledger.md', 'conch-kimi-r2/native/scripts/eval_resnet.py', 'conch-kimi-r2/native/scripts/stats_axisA_kimi.py', 'conch-kimi-r2/native/scripts/transforms_spec.py', 'conch-kimi-r2/native/scripts/zeroshot_common.py', 'conch-kimi-r2/native/scripts/pilot_resolution.py', 'conch-kimi-r2/native/scripts/build_nct_sample.py', 'conch-kimi-r2/native/scripts/stats_axisA.py', 'conch-kimi-r2/native/scripts/run_axisA_confirm.py', 'conch-kimi-r2/native/scripts/eval_conch.py', 'conch-kimi-r2/native/scripts/train_resnet.py', 'conch-kimi-r2/native/scripts/pilot_axisB_stain.py', 'conch-kimi-r2/native/scripts/run_axisA_crcval.py', 'conch-kimi-r2/native/data/NCT-sample/nct_sample_manifest.csv', 'conch-kimi-r2/native/artifacts/axisA_crcval/crcval_per_image.csv', 'conch-kimi-r2/native/artifacts/axisA_crcval/crcval_summary.csv', 'conch-kimi-r2/native/artifacts/pilot_axisB/axisB_pilot.csv', 'conch-kimi-r2/native/artifacts/pilot/pilot_results.csv', 'conch-kimi-r2/native/artifacts/pilot/pilot_sample.csv', 'conch-kimi-r2/native/artifacts/pilot/pilot_per_image.csv', 'conch-kimi-r2/native/artifacts/axisA_confirm/confirmatory_stats.csv', 'conch-kimi-r2/native/artifacts/axisA_confirm/per_image_eval.csv', 'conch-kimi-r2/native/artifacts/axisA_confirm/axis_order_verification.csv', 'conch-kimi-r2/native/artifacts/axisA_confirm/axisA_summary.csv']
 display(pd.DataFrame([{'file':p,'bytes':(SOURCE/p).stat().st_size,'sha256':hashlib.sha256((SOURCE/p).read_bytes()).hexdigest()} for p in files]))
 
-# Original notebook cell 10
+# Notebook cell 3
 display(read_csv('conch-kimi-r2/native/artifacts/pilot_axisB/axisB_pilot.csv'))

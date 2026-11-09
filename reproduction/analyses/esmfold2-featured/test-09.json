@@ -9,7 +9,8 @@
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
-      "esm-code"
+      "esm-code",
+      "esmfold2-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -506,7 +507,13 @@
           "target_id"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "esmfold2-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Experimental radius of gyration divided by length to the one-third power.",
@@ -533,8 +540,7 @@
   },
   "reconstruction_notes": [
     "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference.",
-    "The original discovery-only cutpoints and confirmation membership are reproduced. Raw experimental coordinates are missing; the retained geometry feature is reference-derived, not an input-only predictor.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "The original discovery-only cutpoints and confirmation membership are reproduced. Raw experimental coordinates are missing; the retained geometry feature is reference-derived, not an input-only predictor."
   ],
   "implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-featured/test-09.ipynb",
@@ -542,30 +548,38 @@
     "supporting_code": "code/esmfold2.json",
     "cell_locations": [
       {
-        "notebook_cell": 2,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 40
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 57
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 58,
+        "end_line": 67
       },
       {
         "notebook_cell": 3,
-        "start_line": 41,
-        "end_line": 50
-      },
-      {
-        "notebook_cell": 4,
-        "start_line": 51,
-        "end_line": 58
+        "start_line": 68,
+        "end_line": 75
       }
     ],
     "original_notebook_sha256": "5c9177bde2a4c594829fe2e8eab1d39e0def78f4e42dfb42b452d351626c7e9b",
-    "published_notebook_sha256": "2f5ddfb8d544cfea17d033876fbc71e5dd893220657c34a79c03d1c8d1889ca1",
+    "published_notebook_sha256": "4acb094a4774d82bf0518e20fab0cd6eb7d7d1f3ca6cd4cf9aadb2bcf34d7d65",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "File checks use the published data and code hashes, including redacted provenance files.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 3,
+    "saved_code_cells": 4,
     "saved_error_outputs": 0
   },
   "requested_model": "ESMFold2"

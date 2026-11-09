@@ -1,4 +1,21 @@
-# Original notebook cell 3
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('am-opus-r1/test-03')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import hashlib, json, sys, platform
 import numpy as np, pandas as pd, scipy, pyhmmer
@@ -11,12 +28,12 @@ ROOT = Path.cwd()
 assert (ROOT / 'INPUT_MANIFEST.json').exists(), 'Run this notebook from its packaged folder.'
 for item in json.loads((ROOT / 'INPUT_MANIFEST.json').read_text()):
     p = ROOT / item['path']
-    assert p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest() == item['sha256'], item['path']
+    assert p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest() == SPECTRA_HASHES[str(p.relative_to(SPECTRA_DATA))]['sha256'], item['path']
 assert pyhmmer.__version__ == '0.12.1', 'The historical feature calculation used pyhmmer 0.12.1.'
 OUT = ROOT / 'recomputed'; OUT.mkdir(exist_ok=True)
 print('Input hashes verified. Python', platform.python_version(), 'pyhmmer', pyhmmer.__version__, 'pandas',pd.__version__, 'scipy',scipy.__version__)
 
-# Original notebook cell 5
+# Notebook cell 2
 pred = pd.read_csv(ROOT/'data/predictions.csv')
 meta = pd.read_csv(ROOT/'data/assay_full.csv')
 split = pd.read_csv(ROOT/'data/assay_split.csv')
@@ -31,7 +48,7 @@ variants[['assay','acc','position','mutant','split']].to_csv(OUT/'sample_split.c
 display(variants.groupby('split').agg(variants=('mutant','size'),assays=('assay','nunique'),proteins=('acc','nunique')))
 display(variants.head())
 
-# Original notebook cell 7
+# Notebook cell 3
 import pyhmmer, time, numpy as np
 from pyhmmer.easel import Alphabet, TextSequence, SequenceFile
 from pyhmmer.plan7 import Pipeline
@@ -79,7 +96,7 @@ def per_position_features(name, seq, db, max_hits=8000, incE=1e-3):
     return dict(L=L, nhits=nhits, total_hits=len(hits), cov=cov, entropy=ent)
 
 
-# Original notebook cell 8
+# Notebook cell 4
 unique = meta.drop_duplicates('target_seq')[['UniProt_ID','target_seq']].reset_index(drop=True)
 db = load_db(str(ROOT/'data/uniprot_sprot.fasta.gz'))
 assert len(db)==575503 and len(unique)==64
@@ -102,7 +119,7 @@ variants=variants.merge(features,on=['UniProt_ID','position'],validate='many_to_
 variants['constraint']=-variants.entropy
 print('All 32,071 residue features reproduced to numerical precision.')
 
-# Original notebook cell 10
+# Notebook cell 5
 variants['wt']=variants.mutant.str[0]
 variants['mut_aa']=variants.mutant.str[-1]
 blosum=substitution_matrices.load('BLOSUM62')
@@ -116,7 +133,7 @@ for col in ['am_pathogenicity','DMS_score','blosum62','pssm']:
 variants.to_parquet(OUT/'variant_scores_and_features.parquet',index=False)
 display(variants[keys+['split','cov_frac','entropy','am_pathogenicity','DMS_score','blosum62','pssm']].head())
 
-# Original notebook cell 12
+# Notebook cell 6
 def assign_levels(sub, feature, nlevels):
     positions=sub[['position',feature]].drop_duplicates('position').sort_values(feature).reset_index(drop=True)
     positions['level']=pd.qcut(positions[feature].rank(method='first'),nlevels,labels=False)
@@ -178,7 +195,7 @@ for ax,table,label in zip(axes,[conservation3,conservation5,coverage3],['Conserv
     stats.to_csv(OUT/(label.lower().replace(' ','_')+'_curve.csv'),index=False)
 plt.show()
 
-# Original notebook cell 14
+# Notebook cell 7
 def effect_summary(table,label):
     am=table.pivot(index='assay',columns='level',values='AM')
     bl=table.pivot(index='assay',columns='level',values='BLOSUM')
@@ -203,7 +220,7 @@ print('Conservation quintile AM means:',means.tolist())
 print('Strictly non-decreasing:',bool((means.diff().dropna()>=0).all()))
 assert not (means.diff().dropna()>=0).all()
 
-# Original notebook cell 16
+# Notebook cell 8
 accuracy=[]
 for assay,g in variants.groupby('assay'):
     accuracy.append(dict(assay=assay,agreement=abs(spearmanr(g.am_pathogenicity,g.DMS_score).statistic),depth=g.MSA_Neff_L.iloc[0],selection=g.coarse_selection_type.iloc[0],n=len(g)))
@@ -215,7 +232,7 @@ for label,g in [('All assays',accuracy),('Without stability assays',accuracy[acc
 display(pd.DataFrame(depth_results))
 pd.DataFrame(depth_results).to_csv(OUT/'whole_protein_depth_control.csv',index=False)
 
-# Original notebook cell 18
+# Notebook cell 9
 manifest=[]
 for path in sorted(OUT.iterdir()):
     if path.is_file():manifest.append(dict(path=path.name,sha256=hashlib.sha256(path.read_bytes()).hexdigest(),bytes=path.stat().st_size))

@@ -68,7 +68,8 @@
       "go-annotations",
       "go-ontology",
       "wikipathways",
-      "kegg"
+      "kegg",
+      "state-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -113,7 +114,13 @@
           "perturbation_name"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "state-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Test annotation count, fixed N and observed DE strength as alternate explanations.",
@@ -140,8 +147,7 @@
   },
   "reconstruction_notes": [
     "Predicted and observed expression matrices for independent metric calculation; original model checkpoint provenance.",
-    "Exact original gene-half membership and Python hash seed are missing. The historical hash(g)%2 split is not rerun or claimed independently reproduced.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "Exact original gene-half membership and Python hash seed are missing. The historical hash(g)%2 split is not rerun or claimed independently reproduced."
   ],
   "implementation": {
     "notebook": "materials/state/notebooks/state-opus-r2/test-05.ipynb",
@@ -149,60 +155,68 @@
     "supporting_code": "code/state.json",
     "cell_locations": [
       {
-        "notebook_cell": 3,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 18
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 35
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 36,
+        "end_line": 51
+      },
+      {
+        "notebook_cell": 3,
+        "start_line": 52,
+        "end_line": 57
       },
       {
         "notebook_cell": 4,
-        "start_line": 19,
-        "end_line": 34
+        "start_line": 58,
+        "end_line": 102
       },
       {
         "notebook_cell": 5,
-        "start_line": 35,
-        "end_line": 40
+        "start_line": 103,
+        "end_line": 149
       },
       {
         "notebook_cell": 6,
-        "start_line": 41,
-        "end_line": 85
+        "start_line": 150,
+        "end_line": 203
       },
       {
         "notebook_cell": 7,
-        "start_line": 86,
-        "end_line": 132
+        "start_line": 204,
+        "end_line": 247
       },
       {
         "notebook_cell": 8,
-        "start_line": 133,
-        "end_line": 186
+        "start_line": 248,
+        "end_line": 284
       },
       {
         "notebook_cell": 9,
-        "start_line": 187,
-        "end_line": 230
-      },
-      {
-        "notebook_cell": 10,
-        "start_line": 231,
-        "end_line": 267
-      },
-      {
-        "notebook_cell": 11,
-        "start_line": 268,
-        "end_line": 269
+        "start_line": 285,
+        "end_line": 286
       }
     ],
     "original_notebook_sha256": "dea43c92d99b69fb44186f21e0e8751a0f37504fb9f271dd3adbe9f871e056e2",
-    "published_notebook_sha256": "77ee0e4240da91effba1032963d6e4e66b94f24723f398da0a65b0c634df2def",
+    "published_notebook_sha256": "11f188f2a8082147b84f2e23785ac7d6f52c1cd784ccb0fa98c1ff3fffd69e15",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "File checks use the published data and code hashes, including redacted provenance files.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 9,
+    "saved_code_cells": 10,
     "saved_error_outputs": 0
   },
   "requested_model": "STATE"

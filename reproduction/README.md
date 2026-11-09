@@ -1,43 +1,48 @@
-# Analysis records for agents
+# Notebook data and analysis records
 
-Start with `index.json`. It lists 28 investigations and links to 143 analysis records. Paths resolve relative to this directory. There is no website renderer or hosted service in this change.
+`index.json` lists 28 investigations and 143 analysis entries. Each entry links to its notebook, code, input files and five sections: dataset/split, axis/levels, model evaluation, curve/uncertainty, and comparisons/controls/confirmation.
 
-Every analysis has five sections:
+## Run a notebook
 
-1. `dataset_split`: source identities, retained sample/split tables, input inventory and public data sources.
-2. `axis_levels`: measured property and the code assigning levels.
-3. `model_evaluation`: individual measurements and what is known about training or fine-tuning.
-4. `curve`: aggregation and uncertainty calculations.
-5. `insight`: comparisons, controls and confirmation procedures.
-
-`reconstruction_notes` identifies missing inputs, original design details that cannot be recovered, and specific numerical discrepancies. These records do not assign scientific verdicts or grades. All 143 entries remain represented, including candidates with no retained measurements.
-
-## Inputs and code
-
-- `sources.json` lists public upstream downloads and repositories checked without credentials. Released STATE score tables use pinned repository revisions. A current annotation release is not necessarily the original snapshot.
-- `samples/<model>/index.json` describes compressed JSON tables of retained sample identities and recorded split/level assignments. Each table identifies its original source file and hash. These are identity/assignment columns, not replacement predictions. Run the linked analysis code to apply its exact inclusion rules; a source table can contain a larger pool than a particular axis uses.
-- `inputs/<model>.json` records original input filenames, sizes and hashes. `download_source: null` means no exact anonymous download was established. Do not substitute an upstream dataset for a missing original sample selection, intermediate feature table or prediction file. No private bucket links, account-specific paths or login instructions are supplied.
-- `materials/` contains the retained supporting scripts, requirements and code-only notebook exports. Python exports preserve notebook cell order and identify original cell numbers. Use the notebook environment for cells requiring IPython features. The notebooks have no saved outputs or execution claims; the earlier executed records remain separate historical artifacts. Published notebooks are identified by SHA-256 in their analysis record.
-- `code/<model>.json` identifies original supporting scripts, hashes and published hashes. Where necessary, account-specific home-directory prefixes were replaced by `/path/to/audit-home`. Trailing whitespace was normalized only where the parsed Python syntax tree remained identical. These scripts require path configuration and their specified inputs. Their presence does not establish that every historical command was executed.
-
-To inspect the records:
+Use Python 3.12 or newer on Linux or macOS (execution was checked with Python 3.13). Until the PR is merged, use the public PR branch and install the requirements for the model you want to inspect:
 
 ```sh
-python reproduction/validate.py
-python reproduction/fetch_source.py --list
-python reproduction/fetch_source.py --source state-score-001 --output /tmp/state-score-001.csv
+git clone --branch manuscript-audit-registry https://github.com/shreyjain11/SPECTRAagent.git
+cd SPECTRAagent
+python -m pip install -r reproduction/materials/conch/requirements.txt
+python reproduction/run_notebooks.py --analysis conch-opus-r2/test-01
 ```
 
-Fetching a public upstream file does not rebuild an audit automatically. Use its analysis record, sample tables and input hashes to determine what still needs reconstruction. Pass `--sha256 <original-hash>` when the required file hash is known; the command refuses to save mismatched bytes. Exact original arrays, predictions or annotation versions may remain unavailable even when a related public dataset exists. Never silently generate a different split and call it the original experiment.
+You can also open the linked notebook in Jupyter and run its cells. Its first cell downloads the model's public input archive, verifies the archive and file hashes, and prepares the working directory. No GCP account, credentials or original run folder is needed.
 
-## Training and interpretation
+The four archives are listed in `data.json` and available in the [public data release](https://github.com/shreyjain11/SPECTRAagent/releases/tag/notebook-inputs-2026-11-08-v1). They contain the retained sample tables, features, saved predictions, measurements, structures or images used by the supplied calculations. They are hosted as public GitHub release assets; the large files are not stored in Git. `sources.json` also lists the upstream datasets and code repositories.
 
-`target_weight_updates_in_replay` refers only to the retained notebook calculation. `target_fine_tuning_during_original_audit: null` means the original event was not established by the retained evidence. It is not a statement that fine-tuning did not occur. Upstream checkpoint training is separate from audit-specific training.
+To download the data before opening a notebook:
 
-Comparator fitting is recorded separately. For example, the CONCH Opus blur comparison used frozen ImageNet ResNet50 features with a trained logistic-regression head. Another retained CONCH script fine-tunes ResNet18 parameters; execution and use of that checkpoint in the reported comparison were not established. Neither operation should be described as fine-tuning CONCH.
+```sh
+python reproduction/prepare_inputs.py --model state
+python reproduction/prepare_inputs.py --all
+```
 
-`reconstruction.json` collects the per-analysis reconstruction notes. The AlphaMissense Opus coordinate-join error and the ESMFold v1 target mismatch remain explicit. A historical replay, a corrected same-panel sensitivity and an independent confirmation are different analyses.
+Data are cached under `reproduction/.data/`. Set `SPECTRA_DATA_DIR` to use another disk. The full download is about 3.3 GB, with additional space needed for extraction and notebook outputs. Repeated notebook runs reuse the downloads.
 
-`validate.py` checks the record structure, identifiers, published file hashes, code syntax, sample-table dimensions and links within this directory. It does not execute the scientific analyses, reproduce the 40 analyses discussed in the reviewer inventory, or certify a scientific conclusion.
+Execution outputs are saved under `reproduction/.executions/`. Select another location with `run_notebooks.py --output`. To execute all notebooks, install `reproduction/requirements.txt`, then run `python reproduction/run_notebooks.py --all --workers 4`. Notebooks within a model execute sequentially.
 
-The existing website and scientific protocol are unchanged. No data have been imported into the hosted API. A maintainer can consume these JSON files without a frontend or authentication to this repository.
+## What the notebooks reproduce
+
+The notebooks run the calculations supported by the retained records. Some reconstruct individual measurements and curves; others display recovered summaries or the record of a candidate that was never measured. Successful code execution does not recover missing historical measurements or establish a scientific conclusion.
+
+The data downloads resolve access to the retained files. `reconstruction_notes` in each analysis, collected in `reconstruction.json`, still identify unavailable original samples, splits, annotations, predictions and design details. Those gaps have not been filled with newly generated results. An upstream dataset alone cannot recover a lost original experiment.
+
+AlphaMissense's default replay uses the retained alignment-feature arrays on both macOS and Linux. The separate upstream build scripts are preserved; the original Linux MMseqs executable is not required for the replay or redistributed in the data archive. The documented coordinate-join error and OTU7A discrepancy remain explicit. ESMFold Kimi r1 retains its actual ESMFold v1 identity.
+
+## Files and verification
+
+- `inputs/<model>.json` lists each public archive member, size, hash and archive identifier. When provenance text was cleaned of original machine or private storage locations, its original hash is retained separately.
+- `materials/` contains the supporting scripts and code-only notebooks. Notebook outputs are generated locally when executed.
+- `samples/` contains compact identity/split/level tables. The full retained tables are in the public data archives.
+- `code/<model>.json` identifies the supporting scripts and their public and original hashes.
+- `execution.json` records the notebook execution checks, code hashes and environment. It distinguishes those checks from historical reconstruction.
+- `validate.py` checks JSON records, notebook preparation cells, code hashes, archive mappings and sample tables. `run_notebooks.py` executes the notebooks; it does not assign scientific grades.
+
+Model evaluation records distinguish fitting a comparator from fine-tuning the target model. Unknown original training events remain unknown. The website, protocol and hosted API are unchanged.

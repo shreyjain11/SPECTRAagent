@@ -1,4 +1,21 @@
-# Original notebook cell 2
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('esmfold2-featured/test-08')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import json,hashlib,importlib.util,sys,io
 import numpy as np
@@ -10,7 +27,7 @@ matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 root=next((p for p in [Path.cwd(),*Path.cwd().parents] if (p/'ESM_INPUTS.json').is_file()),None)
 assert root is not None,'Extract the full ESMFold2 bundle and open this notebook inside it.'
-manifest=json.loads((root/'ESM_INPUTS.json').read_text());P=root/'source/esmfold2';A=P/'reconstruction/prior_axes'
+manifest=SPECTRA_HASHES;P=root/'source/esmfold2';A=P/'reconstruction/prior_axes'
 def checked(p):
     p=Path(p);k=str(p.relative_to(root));assert hashlib.sha256(p.read_bytes()).hexdigest()==manifest[k]['sha256'],k
     return p
@@ -38,7 +55,7 @@ def plot_rows(df,level,metric='ca_lddt',label='Retained evaluation'):
     ax.set_xticks(range(len(t)),t.level.astype(str));ax.set(xlabel=level,ylabel=metric,title=label);ax.spines[['top','right']].set_visible(False)
     b=io.BytesIO();fig.savefig(b,format='png',dpi=120);plt.close(fig);display(Image(data=b.getvalue()));return t
 
-# Original notebook cell 3
+# Notebook cell 2
 g=module(P/'scripts/global_hypothesis_audit.py')
 raw=read(P/'data/primary_exact_sequence_dedup.csv')
 assert raw.sequence_hash_calc.is_unique
@@ -47,7 +64,7 @@ np.testing.assert_allclose(d.disulfide_capacity_per100_calc,raw.disulfide_capaci
 print('Exact deduplicated sequences:',len(d));display(d[['target_id','sequence_clean','data_family','setting_label','ca_lddt']].head())
 effects,curves,slices=g.evaluate_hypotheses(d,'primary_sequence')
 
-# Original notebook cell 4
+# Notebook cell 3
 names=['high_disulfide_capacity']
 got=effects[effects.axis.isin(names)];old=read(P/'tables/global_hypothesis_effects_primary_sequence.csv');old=old[old.axis.isin(names)]
 a=got.set_index('axis').sort_index();b=old.set_index('axis').sort_index()

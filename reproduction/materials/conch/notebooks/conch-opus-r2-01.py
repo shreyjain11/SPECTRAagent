@@ -1,4 +1,21 @@
-# Original notebook cell 1
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('conch-opus-r2/test-01')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import json, hashlib
 import numpy as np
@@ -28,7 +45,7 @@ def show_curve(table, x='level', group='model', y='accuracy', xlabel='Level', yl
         if 'lo' in g and 'hi' in g: ax.fill_between(g[x],g.lo,g.hi,alpha=.13)
     ax.set(xlabel=xlabel,ylabel=ylabel);ax.spines[['top','right']].set_visible(False);ax.legend(frameon=False);fig.tight_layout();plt.show()
 
-# Original notebook cell 3
+# Notebook cell 2
 rows=read_csv('conch-opus-r2/confirmation_per_tile.csv')
 manifest=read_csv('conch-opus-r2/confirmation_manifest.csv')
 reference=read_csv('conch-opus-r2/reference_manifest.csv')
@@ -40,7 +57,7 @@ print('Confirmation tiles:',len(manifest),'paired outcome rows:',len(rows))
 display(manifest.groupby('label_name').size().rename('n').to_frame())
 display(manifest.head())
 
-# Original notebook cell 6
+# Notebook cell 3
 import cv2
 from PIL import Image
 sigmas=[float(level['sigma']) for level in plan['ordered_levels']]
@@ -68,7 +85,7 @@ np.testing.assert_allclose(axis.saturation_mean_replay,axis.saturation_mean,rtol
 print('All 4,320 image interventions and pixel-feature measurements independently replayed and matched.')
 display(axis.groupby('sigma')[['sharpness','brightness_replay','saturation_mean_replay']].mean())
 
-# Original notebook cell 9
+# Notebook cell 4
 for model in ['conch','baseline']:
     score=(rows[model+'_pred']==rows.label).astype(int)
     assert np.array_equal(score,rows[model+'_correct'])
@@ -78,7 +95,7 @@ assert rows.groupby('sample_id').label.nunique().eq(1).all()
 print('All saved target and baseline predictions rescored against labels; no new model inference is represented here.')
 display(rows[['sample_id','sigma','label','conch_pred','conch_correct','baseline_pred','baseline_correct']].head())
 
-# Original notebook cell 11
+# Notebook cell 5
 result=[]
 for sigma,group in rows.sort_values('sample_id').groupby('sigma'):
     for model in ['conch','baseline']:
@@ -92,7 +109,7 @@ for item in result.to_dict('records'):
 display(result)
 show_curve(result,xlabel='Gaussian blur sigma (pixels)',ylabel='Top-1 accuracy')
 
-# Original notebook cell 13
+# Notebook cell 6
 p=rows.pivot(index='sample_id',columns='sigma',values=['conch_correct','baseline_correct']).sort_index()
 conch_drop=(p['conch_correct'][min(sigmas)]-p['conch_correct'][max(sigmas)]).to_numpy()
 base_drop=(p['baseline_correct'][min(sigmas)]-p['baseline_correct'][max(sigmas)]).to_numpy()

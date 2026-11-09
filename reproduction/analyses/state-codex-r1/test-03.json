@@ -68,9 +68,16 @@
       "go-annotations",
       "go-ontology",
       "wikipathways",
-      "kegg"
+      "kegg",
+      "state-retained-inputs"
     ],
-    "sample_tables": []
+    "sample_tables": [],
+    "public_inputs": {
+      "archive": "state-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "How sparsely a held-out lineage was represented among training contexts.",
@@ -98,8 +105,7 @@
   "reconstruction_notes": [
     "Final continuation sample-level data from /path/to/audit-home/codex_spectra_audits/STATE; the saved aggregate tables and partial scripts are insufficient.",
     "Original axis input features and level-assignment outputs.",
-    "Original individual predictions/observations and matched reference outputs.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "Original individual predictions/observations and matched reference outputs."
   ],
   "implementation": {
     "notebook": "materials/state/notebooks/state-codex-r1/test-03.ipynb",
@@ -107,30 +113,38 @@
     "supporting_code": "code/state.json",
     "cell_locations": [
       {
-        "notebook_cell": 2,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 18
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 35
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 36,
+        "end_line": 51
       },
       {
         "notebook_cell": 3,
-        "start_line": 19,
-        "end_line": 34
-      },
-      {
-        "notebook_cell": 5,
-        "start_line": 35,
-        "end_line": 38
+        "start_line": 52,
+        "end_line": 55
       }
     ],
     "original_notebook_sha256": "d298de86a267de1c84582f6527c734e072f4a611e6b18b97ca916d626e68f3e1",
-    "published_notebook_sha256": "f8647f727fffd8039d9ba9edb4ecb93d7e8d66323925eaf60c8c084cfc9a6b6b",
+    "published_notebook_sha256": "b2119767d984e4aa9de77bf106aa6520c064aee413f0b9dc29ca0341d555885c",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "File checks use the published data and code hashes, including redacted provenance files.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 3,
+    "saved_code_cells": 4,
     "saved_error_outputs": 0
   },
   "requested_model": "STATE"

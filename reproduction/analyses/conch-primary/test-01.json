@@ -11,7 +11,8 @@
       "crcval-images",
       "kather-images",
       "nct-mirror",
-      "conch-code"
+      "conch-code",
+      "conch-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -51,7 +52,13 @@
           "label_name"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "conch-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Mean distance to the 20 nearest reference tiles in standardized RGB/HSV, intensity, edge, entropy and tissue features. Six groups ordered by decreasing similarity to a class-balanced reference of 1,800 NCT-CRC-HE-100K tiles (200 per class).",
@@ -79,8 +86,7 @@
   "reconstruction_notes": [
     "Original prospective reference feature matrix and source code assigning axis values/levels were not recovered. Axis step is retained evidence, not recomputed.",
     "Fresh inference and original raw-image feature extraction are not rerun. Original confirmation target predicted labels/logits and raw image identity mapping are missing; only per-image correctness remains.",
-    "The confidence intervals in this repair are newly recomputed diagnostics, clearly labeled.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "The confidence intervals in this repair are newly recomputed diagnostics, clearly labeled."
   ],
   "implementation": {
     "notebook": "materials/conch/notebooks/conch-primary-01.ipynb",
@@ -88,40 +94,47 @@
     "supporting_code": "code/conch.json",
     "cell_locations": [
       {
-        "notebook_cell": 1,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 30
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 47
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 48,
+        "end_line": 59
       },
       {
         "notebook_cell": 3,
-        "start_line": 31,
-        "end_line": 42
+        "start_line": 60,
+        "end_line": 65
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 66,
+        "end_line": 77
       },
       {
         "notebook_cell": 5,
-        "start_line": 43,
-        "end_line": 48
-      },
-      {
-        "notebook_cell": 7,
-        "start_line": 49,
-        "end_line": 60
-      },
-      {
-        "notebook_cell": 9,
-        "start_line": 61,
-        "end_line": 70
+        "start_line": 78,
+        "end_line": 87
       }
     ],
     "original_notebook_sha256": "bc7e9ab1786c1f75f25b773adc4d5e0ba2e30720c81de2bab6b8870e35fe68f6",
-    "published_notebook_sha256": "f2b943c817973e5cd8a1ae38a4754b509d23d4c46e55bf6c928d72bbc0472ab8",
+    "published_notebook_sha256": "c8a7e92f5eaa416207a894a705451dc06427e6bdde6fd96d206b80c9196b3254",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 5,
+    "saved_code_cells": 6,
     "saved_error_outputs": 0
   },
   "requested_model": "CONCH"

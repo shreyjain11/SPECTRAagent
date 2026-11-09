@@ -1,4 +1,21 @@
-# Original notebook cell 1
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('state-featured/test-12')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import sys, json, hashlib, io, contextlib, inspect
 import numpy as np
@@ -10,7 +27,7 @@ from matplotlib import pyplot as plt
 root = next((p for p in [Path.cwd(), *Path.cwd().parents] if (p/'STATE_INPUTS.json').is_file()), None)
 assert root is not None, 'Extract the complete STATE input bundle and open this notebook inside it.'
 assets = root/'assets'
-manifest = json.loads((root/'STATE_INPUTS.json').read_text())
+manifest = {key.removeprefix('assets/'): value for key, value in SPECTRA_HASHES.items() if key.startswith('assets/')}
 def checked(relative):
     p = assets/relative
     assert hashlib.sha256(p.read_bytes()).hexdigest() == manifest[relative]['sha256'], relative
@@ -23,7 +40,7 @@ raw = base.load_results()
 assert raw.row_key.is_unique
 print(f'{len(raw):,} scored perturbation/context/representation records. Individual cells are not the sample unit.')
 
-# Original notebook cell 2
+# Notebook cell 2
 def compare_archive(actual, relative, keys, columns):
     expected = pd.read_csv(checked('primary/'+relative))
     a=actual.set_index(keys).sort_index(); b=expected.set_index(keys).sort_index()
@@ -52,27 +69,27 @@ def plot_rows(df, level_col, metric='overlap_at_N', grouping=('spectra_subset','
     b=io.BytesIO();fig.savefig(b,format='png',dpi=120);plt.close(fig);display(Image(data=b.getvalue()))
     return table
 
-# Original notebook cell 3
+# Notebook cell 3
 data=pd.read_csv(checked('primary/spectra_ready_dataset/parse_fewshot_ligand_family_support_examples.csv'),low_memory=False)
 level='parse_family_support_level';feature='parse_family_train_count'
 print('Exact sample identities:',len(data))
 display(data[['row_key','context','perturbation','parse_ligand_family',feature,level]].head())
 
-# Original notebook cell 4
+# Notebook cell 4
 # These are official saved evaluation outputs. The archive does not contain the
 # corresponding predicted expression vectors and ground truth matrices.
 # Therefore overlap@N, DE recall and Pearson delta cannot be independently re-scored here.
 assert np.allclose(data.overlap_at_N, raw.set_index('row_key').loc[data.row_key,'overlap_at_N'],equal_nan=True)
 print('Every selected outcome links to the original scored row_key; fresh inference and metric re-scoring remain unavailable.')
 
-# Original notebook cell 5
+# Notebook cell 5
 discovery=data[data.spectra_subset=='discovery_b_cells_plasmablast']
 q=discovery.parse_family_train_count.quantile([.33,.66])
 levels=base.assign_levels_by_cutpoints(data.parse_family_train_count,[float(q.loc[.33]),float(q.loc[.66]),float('inf')],['L1_low','L2_mid','L3_high'])
 assert (levels==data.parse_family_support_level).all()
 print('All Parse family levels match the original discovery-only cutpoints:',q.to_dict())
 
-# Original notebook cell 6
+# Notebook cell 6
 curve=base.summarize_levels(data,level,feature,['overlap_at_N'])
 compare_archive(curve,'artifacts/spc_parse_fewshot_ligand_family_support.csv',['spectra_subset','representation','level'],['n_rows','overlap_at_N_mean'])
 plot_rows(data,level)

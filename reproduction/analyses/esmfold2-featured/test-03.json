@@ -9,7 +9,8 @@
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
-      "esm-code"
+      "esm-code",
+      "esmfold2-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -506,7 +507,13 @@
           "target_id"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "esmfold2-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Mean of percentile ranks for proline fraction, beta-minus-helix propensity and turn-minus-helix propensity.",
@@ -533,8 +540,7 @@
   },
   "reconstruction_notes": [
     "The complete original predicted and experimental coordinate sets needed to recompute structural accuracy from coordinates. These notebooks use archived per-target/per-sample metrics, not fresh inference.",
-    "Sequence components are recalculated. Original percentile reference distributions are missing; recorded percentile components and frozen levels are retained.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "Sequence components are recalculated. Original percentile reference distributions are missing; recorded percentile components and frozen levels are retained."
   ],
   "implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-featured/test-03.ipynb",
@@ -542,35 +548,43 @@
     "supporting_code": "code/esmfold2.json",
     "cell_locations": [
       {
-        "notebook_cell": 2,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 40
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 57
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 58,
+        "end_line": 69
       },
       {
         "notebook_cell": 3,
-        "start_line": 41,
-        "end_line": 52
+        "start_line": 70,
+        "end_line": 77
       },
       {
         "notebook_cell": 4,
-        "start_line": 53,
-        "end_line": 60
-      },
-      {
-        "notebook_cell": 5,
-        "start_line": 61,
-        "end_line": 69
+        "start_line": 78,
+        "end_line": 86
       }
     ],
     "original_notebook_sha256": "f9b99a8623429854ac888c546db41a76f36515c89c8f1f17117de9da701b2a36",
-    "published_notebook_sha256": "42ee5c8b4e3d6b634f886b5a466d62ee71f4a48c9ae2fb9745751a9c7a42f4ad",
+    "published_notebook_sha256": "416bdca82c10ef183ac36596b7692efd257f145c98de74df89e07c76b9697929",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "File checks use the published data and code hashes, including redacted provenance files.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 4,
+    "saved_code_cells": 5,
     "saved_error_outputs": 0
   },
   "requested_model": "ESMFold2"

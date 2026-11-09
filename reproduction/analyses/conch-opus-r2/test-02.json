@@ -11,7 +11,8 @@
       "crcval-images",
       "kather-images",
       "nct-mirror",
-      "conch-code"
+      "conch-code",
+      "conch-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -72,7 +73,13 @@
           "sample_id"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "conch-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Screened naturally varying stain features on development tiles; checked correlation with tissue class and blur.",
@@ -105,8 +112,7 @@
   },
   "reconstruction_notes": [
     "Development feature extraction and fresh inference were not rerun.",
-    "No independent stain confirmation exists in this investigation; exploratory output cannot substitute for it.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "No independent stain confirmation exists in this investigation; exploratory output cannot substitute for it."
   ],
   "implementation": {
     "notebook": "materials/conch/notebooks/conch-opus-r2-02.ipynb",
@@ -114,30 +120,37 @@
     "supporting_code": "code/conch.json",
     "cell_locations": [
       {
-        "notebook_cell": 1,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 30
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 47
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 48,
+        "end_line": 50
       },
       {
         "notebook_cell": 3,
-        "start_line": 31,
-        "end_line": 33
-      },
-      {
-        "notebook_cell": 9,
-        "start_line": 34,
-        "end_line": 51
+        "start_line": 51,
+        "end_line": 68
       }
     ],
     "original_notebook_sha256": "64ce640565acb048bd232bea3e1ae464398a651f4650df286f6dafce1ebe565c",
-    "published_notebook_sha256": "4681a144d4561491f028e2606d33f282578cc8a3a055b00efccc19254c0fac22",
+    "published_notebook_sha256": "47e4f117c4e2060a309e40171cfd89c27188ad64835fdd7466121fc97fe6c952",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 3,
+    "saved_code_cells": 4,
     "saved_error_outputs": 0
   },
   "requested_model": "CONCH"

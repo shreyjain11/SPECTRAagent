@@ -68,7 +68,8 @@
       "go-annotations",
       "go-ontology",
       "wikipathways",
-      "kegg"
+      "kegg",
+      "state-retained-inputs"
     ],
     "sample_tables": [
       {
@@ -213,7 +214,13 @@
           "level"
         ]
       }
-    ]
+    ],
+    "public_inputs": {
+      "archive": "state-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Norm of the learned perturbation embedding in unseen units.",
@@ -240,8 +247,7 @@
   },
   "reconstruction_notes": [
     "Individual cell-ID lists, raw single-cell inputs and frozen checkpoints for fresh model inference.",
-    "Exact trained embedding weights and perturbation index map.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "Exact trained embedding weights and perturbation index map."
   ],
   "implementation": {
     "notebook": "materials/state/notebooks/state-kimi-r1/test-03.ipynb",
@@ -249,40 +255,48 @@
     "supporting_code": "code/state.json",
     "cell_locations": [
       {
-        "notebook_cell": 2,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 18
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 35
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 36,
+        "end_line": 51
       },
       {
         "notebook_cell": 3,
-        "start_line": 19,
-        "end_line": 34
+        "start_line": 52,
+        "end_line": 56
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 57,
+        "end_line": 67
       },
       {
         "notebook_cell": 5,
-        "start_line": 35,
-        "end_line": 39
-      },
-      {
-        "notebook_cell": 6,
-        "start_line": 40,
-        "end_line": 50
-      },
-      {
-        "notebook_cell": 7,
-        "start_line": 51,
-        "end_line": 61
+        "start_line": 68,
+        "end_line": 78
       }
     ],
     "original_notebook_sha256": "502ecaabd1d0e2ee227cdf47435ac94002ec4f3f29551ae4f5414c37a90cdd95",
-    "published_notebook_sha256": "d913a5db94e16c819d7ffaa42ab249d044a83d314d827cc5ccbf3d18b824623f",
+    "published_notebook_sha256": "6a3ac1a517e79174794273f9ea45fec177e8e5bff1371a20458b8324dfe6358e",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "File checks use the published data and code hashes, including redacted provenance files.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 5,
+    "saved_code_cells": 6,
     "saved_error_outputs": 0
   },
   "requested_model": "STATE"

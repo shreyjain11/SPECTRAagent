@@ -1,4 +1,21 @@
-# Original notebook cell 1
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('conch-primary/test-06')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import json, hashlib
 import numpy as np
@@ -28,7 +45,7 @@ def show_curve(table, x='level', group='model', y='accuracy', xlabel='Level', yl
         if 'lo' in g and 'hi' in g: ax.fill_between(g[x],g.lo,g.hi,alpha=.13)
     ax.set(xlabel=xlabel,ylabel=ylabel);ax.spines[['top','right']].set_visible(False);ax.legend(frameon=False);fig.tight_layout();plt.show()
 
-# Original notebook cell 3
+# Notebook cell 2
 dev=read_csv('conch-primary/discovery.csv'); confirm=read_csv('conch-primary/confirmation.csv')
 pred=read_csv('shared/crcval_predictions.csv')
 assert dev.sample_id.is_unique and confirm.sample_id.is_unique
@@ -40,13 +57,13 @@ display(pd.DataFrame({'discovery':dev.label_name.value_counts(),'confirmation':c
 print('Original confirmation IDs; raw images and filename/hash mapping are not retained here:')
 display(confirm[['sample_id','label','label_name']].head())
 
-# Original notebook cell 5
+# Notebook cell 3
 level_col='level_nct_tissue_fraction_proximity'; axis_col='axis_nct_tissue_fraction_similarity'
 assert dev[level_col].between(1,6).all()
 display(dev.groupby(level_col)[axis_col].agg(['count','min','max','mean']))
 print('These are retained prospective axis values and original level assignments. The reference feature matrix and original assignment implementation have not been recovered; this cell does not claim to recompute them.')
 
-# Original notebook cell 7
+# Notebook cell 4
 classes=['ADI','BACK','DEB','LYM','MUC','MUS','NORM','STR','TUM']
 pred_logits=pred[['logit_'+c for c in classes]].to_numpy().argmax(1)
 assert np.array_equal(pred_logits,pred.pred)
@@ -58,7 +75,7 @@ for frame in [dev,confirm]:
         frame[model+'_correct']=(frame['baseline_'+model+'_pred']==frame.label).astype(int)
 print('Discovery correctness recalculated from saved predictions/logits for 7,180 images. Both confirmation baseline correctness arrays were recalculated from predicted labels.')
 
-# Original notebook cell 9
+# Notebook cell 5
 result=[]
 for cohort,frame in [('Discovery',dev[dev.label_name=='TUM']),('Confirmation',confirm)]:
     for level,g in frame.groupby(level_col):

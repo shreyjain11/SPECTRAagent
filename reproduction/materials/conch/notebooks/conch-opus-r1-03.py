@@ -1,4 +1,21 @@
-# Original notebook cell 1
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('conch-opus-r1/test-03')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import json, hashlib
 import numpy as np
@@ -28,7 +45,7 @@ def show_curve(table, x='level', group='model', y='accuracy', xlabel='Level', yl
         if 'lo' in g and 'hi' in g: ax.fill_between(g[x],g.lo,g.hi,alpha=.13)
     ax.set(xlabel=xlabel,ylabel=ylabel);ax.spines[['top','right']].set_visible(False);ax.legend(frameon=False);fig.tight_layout();plt.show()
 
-# Original notebook cell 4
+# Notebook cell 2
 ref = read_csv('conch-opus-r1/nct_features.csv')
 test = read_csv('conch-opus-r1/crcval_features.csv')
 pred = read_csv('shared/crcval_predictions.csv')
@@ -41,7 +58,7 @@ display(pd.DataFrame({'reference':ref.cls.value_counts(),'evaluation':test.label
 print('Exact sample IDs and image filenames are in the displayed table and packaged manifests.')
 display(test[['sample_id','id','label_name']].head())
 
-# Original notebook cell 7
+# Notebook cell 3
 import sys,zipfile,tarfile,io
 from PIL import Image
 sys.path.insert(0,str(SOURCE/'conch-opus-r1/code'))
@@ -70,7 +87,7 @@ print('Re-extracted and verified all',len(test)+len(ref),'original images,',len(
 # Downstream uses the recomputed values, not the archived feature columns.
 test[feature_names]=pixel_test[feature_names];ref[feature_names]=pixel_ref[feature_names]
 
-# Original notebook cell 8
+# Notebook cell 4
 from sklearn.covariance import LedoitWolf
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
@@ -102,7 +119,7 @@ archived=read_csv('conch-opus-r1/crcval_scored.csv').set_index('id')
 np.testing.assert_allclose(test.novelty,archived.loc[test.id,'novelty'],rtol=2e-6,atol=1e-8)
 print('Recomputed Mahalanobis distance matches the archived per-image values.')
 
-# Original notebook cell 11
+# Notebook cell 5
 logit_cols=['logit_'+c for c in classes]
 computed_pred=test[logit_cols].to_numpy().argmax(1)
 assert np.array_equal(computed_pred,test.pred)
@@ -118,7 +135,7 @@ print('Reference prediction agreement with original:',base_matches)
 assert base_matches > .999, 'Reference refit differs: inspect environment before using results.'
 display(test[['sample_id','label_name','pred_label_name','conch_correct','base_pred_replay','baseline_correct']].head())
 
-# Original notebook cell 13
+# Notebook cell 6
 def curve(df,levcol,balanced=True):
     rows=[]
     for level,group in df.groupby(levcol):
@@ -139,7 +156,7 @@ display(result)
 show_curve(result,ylabel='Class-balanced accuracy' if True else 'Overall accuracy')
 print('Curves exactly match original stored results. Shading is a new class-stratified tile-bootstrap interval (2000 draws, seed 20261106), not an original reported interval.')
 
-# Original notebook cell 15
+# Notebook cell 7
 import statsmodels.api as sm
 # Reproduce the original 07_final.py reference-only blur residualization.
 assert list(test.id)==list(archived.index), 'The original permutation requires the exact original row order.'

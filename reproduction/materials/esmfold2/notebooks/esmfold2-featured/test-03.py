@@ -1,4 +1,21 @@
-# Original notebook cell 2
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('esmfold2-featured/test-03')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import json,hashlib,importlib.util,sys,io
 import numpy as np
@@ -10,7 +27,7 @@ matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 root=next((p for p in [Path.cwd(),*Path.cwd().parents] if (p/'ESM_INPUTS.json').is_file()),None)
 assert root is not None,'Extract the full ESMFold2 bundle and open this notebook inside it.'
-manifest=json.loads((root/'ESM_INPUTS.json').read_text());P=root/'source/esmfold2';A=P/'reconstruction/prior_axes'
+manifest=SPECTRA_HASHES;P=root/'source/esmfold2';A=P/'reconstruction/prior_axes'
 def checked(p):
     p=Path(p);k=str(p.relative_to(root));assert hashlib.sha256(p.read_bytes()).hexdigest()==manifest[k]['sha256'],k
     return p
@@ -38,7 +55,7 @@ def plot_rows(df,level,metric='ca_lddt',label='Retained evaluation'):
     ax.set_xticks(range(len(t)),t.level.astype(str));ax.set(xlabel=level,ylabel=metric,title=label);ax.spines[['top','right']].set_visible(False)
     b=io.BytesIO();fig.savefig(b,format='png',dpi=120);plt.close(fig);display(Image(data=b.getvalue()));return t
 
-# Original notebook cell 3
+# Notebook cell 2
 D=A/'03_external_flexible';m=module(D/'scripts/summarize_expanded_external_spc.py');g=module(P/'scripts/global_hypothesis_audit.py')
 f=read(D/'spectra_ready_dataset/candidate_features.csv');r=read(D/'target_model_results.scaled_samples.csv')
 assert f.target_id.is_unique
@@ -50,7 +67,7 @@ np.testing.assert_allclose(rank,f.flexible_nonhelical_composite_rank,atol=1e-12)
 selected=m.best_by(r,'ptm');d=f.merge(selected,on='target_id',validate='one_to_one',suffixes=('','_metric'));d=d[(d.status=='ok')&d.ca_lddt.notna()]
 print('Exact confirmation targets:',len(d),'prediction samples:',len(r));display(d[['target_id','sample_index','external_axis_level','ca_lddt']].head())
 
-# Original notebook cell 4
+# Notebook cell 3
 curve,effect=m.summarize('best_by_ptm',selected,f)
 equal_curve(curve,D/'expanded_external_spc_by_level.csv',['external_axis_level'],['n','ca_lddt_mean','rank_mean'])
 plot_rows(d,'external_axis_level',label='Original external confirmation')
@@ -58,7 +75,7 @@ print(json.dumps(effect,indent=2))
 for policy,col in [('best_by_plddt','plddt_mean'),('oracle_best_ca_lddt','ca_lddt')]:
     c,e=m.summarize(policy,m.best_by(r,col),f);print(policy,json.dumps(e))
 
-# Original notebook cell 5
+# Notebook cell 4
 discovery=read(A/'02_flexible_nonhelical/primary_axis_membership.csv')
 assert discovery.target_id.is_unique and len(discovery)==138
 level='axis_flexible_nonhelical_composite_rank_q7_level'

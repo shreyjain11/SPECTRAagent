@@ -9,9 +9,16 @@
     "public_sources": [
       "rcsb-example",
       "rcsb-entity",
-      "esm-code"
+      "esm-code",
+      "esmfold2-retained-inputs"
     ],
-    "sample_tables": []
+    "sample_tables": [],
+    "public_inputs": {
+      "archive": "esmfold2-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0
+    }
   },
   "axis_levels": {
     "definition": "Prospective sequence-based covariates.",
@@ -39,8 +46,7 @@
   "reconstruction_notes": [
     "Original exact target split manifest, sequences/alignments and feature-generation inputs.",
     "Original predicted and reference structures or per-target metric table for this audit.",
-    "Original per-target comparator and confirmation records.",
-    "Exact retained audit inputs are identified by relative filename and hash in the input inventory. A null download_source means no matching anonymous download has been established. Public upstream datasets do not substitute for missing original splits, predictions or annotations."
+    "Original per-target comparator and confirmation records."
   ],
   "implementation": {
     "notebook": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-03.ipynb",
@@ -48,20 +54,27 @@
     "supporting_code": "code/esmfold2.json",
     "cell_locations": [
       {
-        "notebook_cell": 2,
+        "notebook_cell": 0,
         "start_line": 1,
-        "end_line": 4
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 21
       }
     ],
     "original_notebook_sha256": "d4bbfe8190f672483184468005ceb54ef0195e00b92780ca4e1c64e177a86dbb",
-    "published_notebook_sha256": "be4fade3aa90f7b918e7ac2ad3d5ba2004c8cfc11b6686c4aebeeafcf1da177c",
+    "published_notebook_sha256": "0c4c5613fa5e3d5a35dbb2b2be00072f0d9a76f62dbeb9ae7259ffcae7df1ce8",
     "changes": [
       "Code-only export; Markdown verdicts and saved outputs omitted.",
       "Machine-specific home paths replaced with /path/to/audit-home where present.",
       "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged."
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
     ],
-    "saved_code_cells": 1,
+    "saved_code_cells": 2,
     "saved_error_outputs": 0
   },
   "requested_model": "ESMFold2"

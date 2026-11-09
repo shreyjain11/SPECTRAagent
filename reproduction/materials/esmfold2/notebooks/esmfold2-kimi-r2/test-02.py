@@ -1,4 +1,21 @@
-# Original notebook cell 1
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('esmfold2-kimi-r2/test-02')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import json,importlib.util
 import numpy as np
@@ -33,7 +50,7 @@ def welch(a,b):
     df=(v1+v2)**2/(v1*v1/(len(a)-1)+v2*v2/(len(b)-1));h=stats.t.ppf(.975,df)*se
     return {'difference':diff,'lo':diff-h,'hi':diff+h,'p_two_sided':stats.ttest_ind(a,b,equal_var=False).pvalue}
 
-# Original notebook cell 3
+# Notebook cell 2
 P=ROOT/'assets/kimi-r2/audit'
 scored=pd.read_csv(P/'results/scores.csv');enriched=pd.read_csv(P/'results/per_unit_enriched.csv')
 axis=pd.read_csv(P/'data/axis_table.csv');plan=pd.read_csv(P/'data/sample_plan_full.csv')
@@ -49,7 +66,7 @@ assert set(pilot.entity)|set(expansion.entity)==set(scored.entity)
 print('Original 160 scored entities: 32 pilot + 128 expansion; 40 per level; distinct 40%-identity clusters.')
 display(scored.groupby('bin').agg(n=('entity','size'),mean_identity=('ident','mean')))
 
-# Original notebook cell 5
+# Notebook cell 3
 hits=pd.read_csv(P/'work_mmseqs/res.tsv',sep='\t',header=None,names=['query','target','fident','length','qcov','tcov','evalue','bits'])
 max_identity=hits.groupby('query').fident.max()
 axis['recomputed_identity']=axis.entity.map(max_identity).fillna(0)
@@ -64,7 +81,7 @@ print('Maximum identity and level assignment recomputed from all retained origin
 print('The underlying reference FASTA/search database is not supplied; the search itself is not rerun.')
 display(scored.groupby('bin').recomputed_identity.agg(['min','mean','max','size']))
 
-# Original notebook cell 7
+# Notebook cell 4
 from tmtools import tm_align
 from Bio.SeqUtils import seq1
 import importlib.metadata
@@ -96,7 +113,7 @@ np.testing.assert_allclose(scored.tm_model_recomputed,scored.tm_model,atol=1e-12
 np.testing.assert_allclose(scored.tm_ref_recomputed,scored.tm_ref,atol=1e-12,rtol=0,equal_nan=True)
 print('All 280 coordinate-rescored metrics match original scores after original 5-decimal rounding. Curves and controls below use those recomputed values, not the archived score columns. No fresh model inference was performed.')
 
-# Original notebook cell 9
+# Notebook cell 5
 table=mean_curve(scored,'bin',{'ESMFold2 (coordinate-rescored)':'tm_model_recomputed','Template reference (coordinate-rescored)':'tm_ref_recomputed'})
 display(table);draw_curve(table,'Identity level (I1 high → I4 no detected homology)')
 effect=welch(scored.loc[scored.bin=='I4_lt20','tm_model_recomputed'],scored.loc[scored.bin=='I1_ge80','tm_model_recomputed'])
@@ -104,7 +121,7 @@ print('Original lowest-minus-highest identity endpoint:',effect)
 print('Coordinate-rescore endpoint:',welch(scored.loc[scored.bin=='I4_lt20','model_rescore'],scored.loc[scored.bin=='I1_ge80','model_rescore']))
 assert abs(effect['difference']+.086)<.002
 
-# Original notebook cell 11
+# Notebook cell 6
 conf=json.loads((P/'data/entry_confounds.json').read_text())
 scored['obs_frac_recomputed']=scored.observed_ca/scored['len']
 scored['protein_entities']=scored.entity.map(lambda e:conf[e.split('_')[0]]['prot_ent'])

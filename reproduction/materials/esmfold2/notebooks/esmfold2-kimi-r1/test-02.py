@@ -1,4 +1,21 @@
-# Original notebook cell 2
+# Notebook cell 0
+from pathlib import Path
+import sys
+_search = [Path.cwd(), *Path.cwd().parents]
+if '__file__' in globals():
+    _script_directory = Path(__file__).resolve().parent
+    _search = [_script_directory, *_script_directory.parents, *_search]
+if globals().get('_registry') is not None:
+    _search.append(Path(_registry))
+_registry = next((q for p in _search for q in (p, p / 'reproduction')
+                  if (q / 'prepare_inputs.py').is_file() and (q / 'data.json').is_file()), None)
+assert _registry is not None, 'Open this notebook in the public SPECTRAagent checkout.'
+sys.path.insert(0, str(_registry))
+from prepare_inputs import prepare_notebook, input_hashes
+SPECTRA_DATA = prepare_notebook('esmfold2-kimi-r1/test-02')
+SPECTRA_HASHES = input_hashes(SPECTRA_DATA)
+
+# Notebook cell 1
 from pathlib import Path
 import json,importlib.util
 import numpy as np
@@ -33,7 +50,7 @@ def welch(a,b):
     df=(v1+v2)**2/(v1*v1/(len(a)-1)+v2*v2/(len(b)-1));h=stats.t.ppf(.975,df)*se
     return {'difference':diff,'lo':diff-h,'hi':diff+h,'p_two_sided':stats.ttest_ind(a,b,equal_var=False).pvalue}
 
-# Original notebook cell 4
+# Notebook cell 2
 P=ROOT/'assets/kimi-r1'
 dev=pd.read_csv(P/'results/merged_per_unit.tsv',sep='\t')
 confirm=pd.read_csv(P/'results/confirm/merged_per_unit.tsv',sep='\t')
@@ -50,7 +67,7 @@ assert not {cluster_of[x] for x in dev.rep}&{cluster_of[x] for x in confirm.rep}
 print('Discovery320 and confirmation340 have disjoint original30%-identity clusters. Both are from the same prospective PDB pool.')
 display(dev.groupby('levelA').size().rename('n').to_frame());display(confirm.groupby('group').size().rename('n').to_frame())
 
-# Original notebook cell 6
+# Notebook cell 3
 # Execute only function definitions from the original source; its I/O entrypoint is not run.
 import ast,types
 original=(P/'scripts/04_select_panel.py').read_text();tree=ast.parse(original)
@@ -71,7 +88,7 @@ print('Low-complexity fraction recomputed from full original input sequences for
 print('Original MMseqs hit table/reference FASTA not included: maximum identity itself cannot be recomputed from an alignment search.')
 display(dev.groupby('levelA').agg(n=('rep','size'),mean_identity=('max_pident','mean'),mean_low_complexity=('lc_recomputed','mean')))
 
-# Original notebook cell 8
+# Notebook cell 4
 sc=load_module('original_08_score',P/'scripts/08_score.py')
 errors=[]
 for frame,prefix in [(dev,'results'),(confirm,'results/confirm')]:
@@ -90,14 +107,14 @@ for frame,prefix in [(dev,'results'),(confirm,'results/confirm')]:
 print('Original scoring function rescored all660 archived model structures; maximum deviation before original rounding:',max(errors))
 print('Reference baseline scores remain original per-unit values. Template raw coordinate-transfer inputs were not recovered, so those scores are not independently regenerated.')
 
-# Original notebook cell 10
+# Notebook cell 5
 table=mean_curve(dev,'levelA',{'ESMFold v1':'tm_recomputed','Template reference (retained)':'base_tm'})
 display(table);draw_curve(table,'Original graded identity level (A1 high → A4 low)')
 contrast=welch(dev.loc[dev.levelA=='A1','tm_recomputed'],dev.loc[dev.levelA=='A4','tm_recomputed'])
 print('Graded endpoint:',contrast)
 print('Original frozen minimum gap0.15 met:',contrast['difference']>=.15)
 
-# Original notebook cell 12
+# Notebook cell 6
 comparison=mean_curve(confirm,'group',{'ESMFold v1':'tm_recomputed','Template reference (retained)':'base_tm'})
 display(comparison)
 non=confirm.loc[confirm.group=='nonorphan','tm_recomputed'];orp=confirm.loc[confirm.group=='orphan','tm_recomputed']
