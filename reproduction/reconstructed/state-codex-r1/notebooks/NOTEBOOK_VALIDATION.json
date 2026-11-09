@@ -1,0 +1,88 @@
+{
+  "status": "all_notebooks_executed_and_exported",
+  "notebooks": [
+    {
+      "notebook": "01-state-codex-r1-distance.ipynb",
+      "sha256": "2636e95c770107ac8815859b2720b7786abf182cd5a50b1bee725e3e78a5eb36",
+      "html": "01-state-codex-r1-distance.html",
+      "html_sha256": "96033d1f7930ee6c127d6275342656b004d4f29753976b3175f49711f76609c9",
+      "code_cells": 7,
+      "code_cells_executed": 7,
+      "error_outputs": 0,
+      "embedded_pngs": 1,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 234.159,
+        "error": null,
+        "original_workflow_requested": false,
+        "python": "/ewsc/yektefai/spectra_runs/state_codex_r1_reconstruction_20261109/.venv/bin/python",
+        "working_directory": "/ewsc/yektefai/spectra_runs/state_codex_r1_reconstruction_20261109"
+      },
+      "calculation_inputs": "verified public source bytes; derived stages recalculated by default",
+      "historical_aggregates": "comparison targets only"
+    },
+    {
+      "notebook": "02-state-codex-r1-sphase.ipynb",
+      "sha256": "15dd5d2c00ec08be23945e8f25374f62a4d25940ab69997d12fdfba7447a81aa",
+      "html": "02-state-codex-r1-sphase.html",
+      "html_sha256": "d721837153077799ab1b6f44e66dbccb7be797eaec07e5d91ea9198ef707e3a6",
+      "code_cells": 7,
+      "code_cells_executed": 7,
+      "error_outputs": 0,
+      "embedded_pngs": 1,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 216.82,
+        "error": null,
+        "original_workflow_requested": false,
+        "python": "/ewsc/yektefai/spectra_runs/state_codex_r1_reconstruction_20261109/.venv/bin/python",
+        "working_directory": "/ewsc/yektefai/spectra_runs/state_codex_r1_reconstruction_20261109"
+      },
+      "calculation_inputs": "verified public source bytes; derived stages recalculated by default",
+      "historical_aggregates": "comparison targets only"
+    },
+    {
+      "notebook": "03-state-codex-r1-lineage.ipynb",
+      "sha256": "a4242bc8be625c12cad4f0799056db2bc809bf63d64dade3f13b98c9b4c4636a",
+      "html": "03-state-codex-r1-lineage.html",
+      "html_sha256": "19971ef9b778e2b842141e42d9c47ac807248b59ec3939685a9fd2252af98319",
+      "code_cells": 7,
+      "code_cells_executed": 7,
+      "error_outputs": 0,
+      "embedded_pngs": 1,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 220.212,
+        "error": null,
+        "original_workflow_requested": false,
+        "python": "/ewsc/yektefai/spectra_runs/state_codex_r1_reconstruction_20261109/.venv/bin/python",
+        "working_directory": "/ewsc/yektefai/spectra_runs/state_codex_r1_reconstruction_20261109"
+      },
+      "calculation_inputs": "verified public source bytes; derived stages recalculated by default",
+      "historical_aggregates": "comparison targets only"
+    },
+    {
+      "notebook": "04-state-codex-r1-controls.ipynb",
+      "sha256": "fac524055ebe81deeb067751818a53f6dfccddb08c4bfd128190b9d1aa0bf5cb",
+      "html": "04-state-codex-r1-controls.html",
+      "html_sha256": "b4808aefd2fce7e2f44a4d6c35ebeddf2d114d120559c9aa02d6065d7bed77a7",
+      "code_cells": 7,
+      "code_cells_executed": 7,
+      "error_outputs": 0,
+      "embedded_pngs": 3,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 220.97,
+        "error": null,
+        "original_workflow_requested": false,
+        "python": "/ewsc/yektefai/spectra_runs/state_codex_r1_reconstruction_20261109/.venv/bin/python",
+        "working_directory": "/ewsc/yektefai/spectra_runs/state_codex_r1_reconstruction_20261109"
+      },
+      "calculation_inputs": "verified public source bytes; derived stages recalculated by default",
+      "historical_aggregates": "comparison targets only"
+    }
+  ],
+  "scientific_execution_host": "exxact05",
+  "new_neural_inference": false,
+  "note": "Default notebook execution requests fresh derived-stage calculations from verified original public source bytes. Pipeline receipts record the actual mode."
+}

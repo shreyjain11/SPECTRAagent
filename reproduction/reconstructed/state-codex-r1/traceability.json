@@ -1,0 +1,225 @@
+{
+  "scope": "Four STATE Codex r1 source-to-decision reconstructions; no scientific re-adjudication.",
+  "scientific_execution_host": "exxact05",
+  "historical_aggregates_used_as_calculation_inputs": false,
+  "execution_evidence": "reconstructed/state-codex-r1/notebooks/NOTEBOOK_VALIDATION.json",
+  "remaining_method_qualifications": [
+    "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+    "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+    "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+  ],
+  "entries": [
+    {
+      "id": "state-codex-r1/test-01",
+      "notebook": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb",
+      "stages": {
+        "data": [
+          "reconstructed/state-codex-r1/methods/sources.json",
+          "reconstructed/state-codex-r1/execution_evidence/download_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r1/methods/run_pipeline.py",
+          "reconstructed/state-codex-r1/methods/build_features.py",
+          "reconstructed/state-codex-r1/methods/build_scores.py",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r1/computed/features/primary_cmp_distances.csv",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r1/methods/reconstruct.py",
+          "reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r1/methods/original/04_analyze_frozen_axis.py",
+          "reconstructed/state-codex-r1/computed/scores/score_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r1/computed/analysis/distance/analysis.json",
+          "reconstructed/state-codex-r1/computed/analysis/distance/spc.png",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r1/recovery/original_handoff/REPORT.md",
+          "reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-14"
+        ]
+      },
+      "original_decision": {
+        "source": "historical_decisions.json",
+        "record_id": "state-codex-r1/test-01",
+        "disposition": "rejected",
+        "result": "The frozen decline failed. RMSE slopes were −0.032 raw and −0.150 adjusted, indicating improvement as distance increased. The five contexts gave a coarse ordering test.",
+        "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+      },
+      "method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ]
+    },
+    {
+      "id": "state-codex-r1/test-02",
+      "notebook": "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb",
+      "stages": {
+        "data": [
+          "reconstructed/state-codex-r1/methods/sources.json",
+          "reconstructed/state-codex-r1/execution_evidence/download_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r1/methods/run_pipeline.py",
+          "reconstructed/state-codex-r1/methods/build_features.py",
+          "reconstructed/state-codex-r1/methods/build_scores.py",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r1/computed/features/s_phase_features.csv",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r1/methods/reconstruct.py",
+          "reconstructed/state-codex-r1/computed/analysis/s_phase/per_condition_scores.csv",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r1/methods/original/04_analyze_frozen_axis.py",
+          "reconstructed/state-codex-r1/computed/scores/score_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r1/computed/analysis/s_phase/analysis.json",
+          "reconstructed/state-codex-r1/computed/analysis/s_phase/spc.png",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r1/recovery/original_handoff/REPORT.md",
+          "reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-14"
+        ]
+      },
+      "original_decision": {
+        "source": "historical_decisions.json",
+        "record_id": "state-codex-r1/test-02",
+        "disposition": "rejected",
+        "result": "Five context means were non-monotonic. Their rank correlation of 0.30 missed the frozen 0.70 cutoff.",
+        "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+      },
+      "method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ]
+    },
+    {
+      "id": "state-codex-r1/test-03",
+      "notebook": "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb",
+      "stages": {
+        "data": [
+          "reconstructed/state-codex-r1/methods/sources.json",
+          "reconstructed/state-codex-r1/execution_evidence/download_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r1/methods/run_pipeline.py",
+          "reconstructed/state-codex-r1/methods/build_features.py",
+          "reconstructed/state-codex-r1/methods/build_scores.py",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r1/computed/features/lineage_features.csv",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r1/methods/reconstruct.py",
+          "reconstructed/state-codex-r1/computed/analysis/lineage/per_condition_scores.csv",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r1/methods/original/04_analyze_frozen_axis.py",
+          "reconstructed/state-codex-r1/computed/scores/score_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r1/computed/analysis/lineage/analysis.json",
+          "reconstructed/state-codex-r1/computed/analysis/lineage/spc.png",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r1/recovery/original_handoff/REPORT.md",
+          "reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-14"
+        ]
+      },
+      "original_decision": {
+        "source": "historical_decisions.json",
+        "record_id": "state-codex-r1/test-03",
+        "disposition": "rejected",
+        "result": "The follow-up reversed upon removing HepG2/C3A and disagreed across representations.",
+        "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+      },
+      "method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ]
+    },
+    {
+      "id": "state-codex-r1/test-04",
+      "notebook": "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb",
+      "stages": {
+        "data": [
+          "reconstructed/state-codex-r1/methods/sources.json",
+          "reconstructed/state-codex-r1/execution_evidence/download_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r1/methods/run_pipeline.py",
+          "reconstructed/state-codex-r1/methods/build_features.py",
+          "reconstructed/state-codex-r1/methods/build_scores.py",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r1/computed/features/cell_counts.csv",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r1/methods/reconstruct.py",
+          "reconstructed/state-codex-r1/computed/analysis/controls/per_condition_scores.csv",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r1/methods/original/04_analyze_frozen_axis.py",
+          "reconstructed/state-codex-r1/computed/scores/score_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r1/computed/analysis/controls/analysis.json",
+          "reconstructed/state-codex-r1/computed/analysis/controls/spc.png",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r1/recovery/original_handoff/REPORT.md",
+          "reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-14"
+        ]
+      },
+      "original_decision": {
+        "source": "historical_decisions.json",
+        "record_id": "state-codex-r1/test-04",
+        "disposition": "control",
+        "result": "Sensitivity checks did not reverse the basal-distance result.",
+        "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+      },
+      "method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ]
+    }
+  ]
+}

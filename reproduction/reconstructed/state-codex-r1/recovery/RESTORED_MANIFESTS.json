@@ -1,0 +1,39 @@
+[
+  {
+    "destination": "original_handoff/supporting/acquisition/official_scores/verified_manifest.json",
+    "recovered_source": "tar_recovery/supporting/acquisition/official_scores/verified_manifest.json",
+    "bytes": 8383,
+    "sha256": "bcf0e8846cee9bb665fbe25b2c21cd09560a56cbee893a91568f99567d8a6a33",
+    "note": "Replace scratch copy created from a dataless/empty macOS read with exact archive-recovered original bytes; original files unchanged."
+  },
+  {
+    "destination": "original_handoff/supporting/acquisition/official_scores_st_se/verified_manifest.json",
+    "recovered_source": "tar_recovery/supporting/acquisition/official_scores_st_se/verified_manifest.json",
+    "bytes": 9329,
+    "sha256": "b532d0b2daa9d01e12279da7bb466c2e9e8eb42ab9cc04e2122da877d895d028",
+    "note": "Replace scratch copy created from a dataless/empty macOS read with exact archive-recovered original bytes; original files unchanged."
+  },
+  {
+    "destination": "original_handoff/supporting/acquisition/official_scores_st_se_last/verified_manifest.json",
+    "recovered_source": "tar_recovery/supporting/acquisition/official_scores_st_se_last/verified_manifest.json",
+    "bytes": 6888,
+    "sha256": "46a069b6c4c583da85431c052a7816a9cbb65d04144a9bb92dea999e047e2267",
+    "note": "Replace scratch copy created from a dataless/empty macOS read with exact archive-recovered original bytes; original files unchanged."
+  },
+  {
+    "destination": "original_handoff/supporting/results/distance_closure_validation/same_example_reference_comparison_paired.csv",
+    "source_archive": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22.tar.gz",
+    "archive_member": "STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/distance_closure_validation/same_example_reference_comparison_paired.csv",
+    "bytes": 248,
+    "sha256": "92fa61a6b03ac8959cad431bf4ac87067eb62aaa57436e520202a2c28b4e6ea5",
+    "note": "Replace empty scratch copy with exact archive member bytes; original archive/files unchanged."
+  },
+  {
+    "destination": "original_handoff/PROMPT.md",
+    "source_archive": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22.tar.gz",
+    "archive_member": "STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/PROMPT.md",
+    "bytes": 4465,
+    "sha256": "afd6edaaddfde99b50ddfd0c0cd329cd3373ed81fa5307c7c728f8f2de126864",
+    "note": "Replace empty scratch copy with exact archive member bytes; original archive/files unchanged."
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "reduction": "actual_original_DE_rows",
+  "run": "se_last",
+  "cell_line": "PANC-1",
+  "source_manifest_sha256": "d7bba695215da557ee1b4a9cd83aa861eb384a11fc037a375f1ec6c2a9090b2a",
+  "method_sha256": {
+    "methods/build_scores.py": "f9983187827cb392aaf47b5d43c6a5bdb623a7c32a814ec7a1c78832e011f8ff",
+    "methods/original/04_analyze_frozen_axis.py": "d923071894cfe535728a42c62b283ea2f02453423b701d31654efc3d91aad484"
+  },
+  "inputs": [
+    {
+      "path": "acquisition/official_scores/PANC-1_real_de.csv",
+      "sha256": "2b9ed18f2dae9d83dbfa910d9e7e2cac1da7ad0f73e43bed40b8daaf62a254c9",
+      "bytes": 398029547,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/PANC-1_pred_de.csv",
+      "sha256": "86d681868029bc745ea30922db880a429990078d7012416de5249e0ef9fcc3f1",
+      "bytes": 388182416,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/PANC-1_results.csv",
+      "sha256": "8fc145356c04a850fce6fc174874a0817703e464eaa1883a325d22710a076396",
+      "bytes": 463903,
+      "verified": true
+    }
+  ],
+  "outputs": {
+    "computed/scores/se_last/PANC-1_lfc.csv": {
+      "sha256": "ba6ec98d684d69b664ed622c4d4587f613b0603830e2956f750d09f12ca9a34a",
+      "bytes": 91977
+    },
+    "computed/scores/se_last/PANC-1_results.csv": {
+      "sha256": "8fc145356c04a850fce6fc174874a0817703e464eaa1883a325d22710a076396",
+      "bytes": 463903
+    }
+  },
+  "targets": 1136,
+  "DE_rows": 2272000,
+  "elapsed_seconds": 4.569
+}

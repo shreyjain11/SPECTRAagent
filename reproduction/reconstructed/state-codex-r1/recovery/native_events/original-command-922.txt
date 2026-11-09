@@ -1,0 +1,15 @@
+.venv-audit/bin/python - <<'PY'
+import pyarrow.dataset as ds, pandas as pd, re
+from scipy.stats import spearmanr
+cells=['C32','HOP62','HepG2/C3A','Hs 766T','PANC-1']
+p=ds.dataset('acquisition/tahoe_obs_metadata.parquet',format='parquet')
+f=ds.field('cell_name').isin(cells)&(ds.field('drug')=='DMSO_TF')
+x=p.to_table(columns=['cell_name','plate','S_score'],filter=f).to_pandas()
+x['plate_num']=x.plate.astype(str).str.extract(r'(\d+)')[0].astype(int)
+rows=[]
+for label,mask in [('odd',x.plate_num%2==1),('even',x.plate_num%2==0),('all',x.plate_num>0)]:
+ g=x[mask].groupby('cell_name',observed=True).S_score.agg(['std','count']).reset_index(); g['subset']=label; rows.append(g)
+out=pd.concat(rows); out.to_csv('results/s_score_axis_plate_replication.csv',index=False)
+piv=out.pivot(index='cell_name',columns='subset',values='std')
+print(out.to_string(index=False)); print('odd-even rho',spearmanr(piv.odd,piv.even).statistic)
+PY

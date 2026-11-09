@@ -4,6 +4,160 @@
   "model": "STATE",
   "axis": "Basal transcriptomic distance",
   "dataset_split": {
+    "description": "Original public source bytes reconstructed into input-side features and released-score condition measurements; frozen compound hashing and eligibility applied to real rows.",
+    "input_inventory": "reconstructed/state-codex-r1/methods/sources.json",
+    "source_manifest": "reconstructed/state-codex-r1/methods/sources.json",
+    "legacy_input_inventory": "inputs/state.json",
+    "public_sources": [],
+    "source_access_evidence": "reconstructed/state-codex-r1/execution_evidence/download_receipt.json",
+    "sample_tables": [],
+    "computed_condition_table": "reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv",
+    "public_inputs": {
+      "archive": "state-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0,
+      "implementation": "legacy_implementation"
+    }
+  },
+  "axis_levels": {
+    "definition": "Median standardized Euclidean distance to five nearest training contexts across 2,000 genes.",
+    "calculation": "Input-side features rebuilt from original sources; levels and completeness/compound partitions computed from individual rows. See notebook stages3–4 and method policy.",
+    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py"
+  },
+  "model_evaluation": {
+    "measurements": "Actual original released prediction/observed DE rows reduced using unchanged original full-feature log2-fold-change scorer; identity reference, DE counts and original observed-cell counts recomputed.",
+    "fine_tuning": {
+      "target_weight_updates_in_replay": false,
+      "target_fine_tuning_during_original_audit": null,
+      "original_training_evidence": "This investigation consumed pinned official STATE output releases. Reproduction recalculates errors and analysis; it does not update model weights.",
+      "comparators": []
+    },
+    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py"
+  },
+  "curve": {
+    "aggregation_and_uncertainty": "Condition-level target-centered regression and compound clustered inference; compound-balanced curves and paired10000-resample bootstrap uncertainty are recomputed. Dose/context/atlas/QC/indicator controls are linked; reconstructed choices recorded in policy.",
+    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py"
+  },
+  "insight": {
+    "comparison_controls_confirmation": "New calculated results are compared with original recorded coefficients, curves and decision grounds. Historical aggregate tables are comparison targets only. No new protocol or scientific verdict is imposed.",
+    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py"
+  },
+  "reconstruction_notes": [
+    "Actual source-to-condition reconstruction executed on exxact05: public source hashes, input-side features, original released-DE scoring, eligibility, regressions, reference contrasts, curves and controls are linked.",
+    "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+    "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+    "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility.",
+    "Original neural inference is not repeated: this investigation consumed official released predictions, whose full-feature errors are recomputed from the original individual DE rows."
+  ],
+  "implementation": {
+    "format": "source_workflow_notebook",
+    "notebook": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb",
+    "script": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py",
+    "html": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.html",
+    "supporting_code": "reconstructed/state-codex-r1/supporting_code.json",
+    "published_notebook_sha256": "2636e95c770107ac8815859b2720b7786abf182cd5a50b1bee725e3e78a5eb36",
+    "published_script_sha256": "1e990b090a702f5ce9204a61f31b30ca557b979789f255293d63030642865a16",
+    "cell_locations": [
+      {
+        "notebook_cell": 2,
+        "start_line": 1,
+        "end_line": 20
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 23,
+        "end_line": 32
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 35,
+        "end_line": 40
+      },
+      {
+        "notebook_cell": 8,
+        "start_line": 43,
+        "end_line": 48
+      },
+      {
+        "notebook_cell": 10,
+        "start_line": 51,
+        "end_line": 53
+      },
+      {
+        "notebook_cell": 12,
+        "start_line": 56,
+        "end_line": 74
+      },
+      {
+        "notebook_cell": 14,
+        "start_line": 77,
+        "end_line": 79
+      }
+    ],
+    "saved_code_cells": 7,
+    "saved_error_outputs": 0,
+    "changes": [
+      "Full source-to-condition reconstruction with actual remotely executed curves and controls.",
+      "Original released outputs reused as predictions; individual errors recomputed from original DE rows.",
+      "Original code-only implementation and its execution evidence retained separately."
+    ]
+  },
+  "requested_model": "STATE",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "state-codex-r1/test-01",
+    "disposition": "rejected",
+    "result": "The frozen decline failed. RMSE slopes were −0.032 raw and −0.150 adjusted, indicating improvement as distance increased. The five contexts gave a coarse ordering test.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "source_workflow_reconstructed",
+    "review": "traceability_review.json",
+    "record_id": "state-codex-r1/test-01",
+    "scope": "Original workflow reconstruction with explicit continuation choices; not scientific adjudication."
+  },
+  "legacy_implementation": {
+    "notebook": "materials/state/notebooks/state-codex-r1/test-01.ipynb",
+    "script": "materials/state/notebooks/state-codex-r1/test-01.py",
+    "supporting_code": "code/state.json",
+    "cell_locations": [
+      {
+        "notebook_cell": 0,
+        "start_line": 1,
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 35
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 36,
+        "end_line": 51
+      },
+      {
+        "notebook_cell": 3,
+        "start_line": 52,
+        "end_line": 55
+      }
+    ],
+    "original_notebook_sha256": "f11ef1f77cea915b8d0aa4c1457087c780872840dd6cd508adba2334ceaa28fd",
+    "published_notebook_sha256": "ddf22b900dc855f46b02b4e5c6001566885eedd9bec4c8532ba4091fdb6414c0",
+    "changes": [
+      "Code-only export; Markdown verdicts and saved outputs omitted.",
+      "Machine-specific home paths replaced with /path/to/audit-home where present.",
+      "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "File checks use the published data and code hashes, including redacted provenance files.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
+    ],
+    "saved_code_cells": 4,
+    "saved_error_outputs": 0
+  },
+  "legacy_dataset_split": {
     "description": "The report survives, but the exact sample-level table needed for this test was not recovered.",
     "input_inventory": "inputs/state.json",
     "public_sources": [
@@ -79,86 +233,54 @@
       "notebook_preparation_cell": 0
     }
   },
-  "axis_levels": {
-    "definition": "Median standardized Euclidean distance to five nearest training contexts across 2,000 genes.",
-    "calculation": "Any retained script is available in the input bundle; missing source arrays prevent a full replay.",
-    "code": "materials/state/notebooks/state-codex-r1/test-01.py"
-  },
-  "model_evaluation": {
-    "measurements": "Original per-record predictions and outcomes missing.",
-    "fine_tuning": {
-      "target_weight_updates_in_replay": false,
-      "target_fine_tuning_during_original_audit": null,
-      "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
-      "comparators": []
-    },
-    "code": "materials/state/notebooks/state-codex-r1/test-01.py"
-  },
-  "curve": {
-    "aggregation_and_uncertainty": "Cannot compute a curve from missing individual observations.",
-    "code": "materials/state/notebooks/state-codex-r1/test-01.py"
-  },
-  "insight": {
-    "comparison_controls_confirmation": "Original report remains a historical record; its checks cannot be rerun from summaries.",
-    "code": "materials/state/notebooks/state-codex-r1/test-01.py"
-  },
-  "reconstruction_notes": [
+  "legacy_reconstruction_notes": [
     "Final continuation sample-level data from /path/to/audit-home/codex_spectra_audits/STATE; the saved aggregate tables and partial scripts are insufficient.",
     "Original axis input features and level-assignment outputs.",
     "Original individual predictions/observations and matched reference outputs."
   ],
-  "implementation": {
-    "notebook": "materials/state/notebooks/state-codex-r1/test-01.ipynb",
-    "script": "materials/state/notebooks/state-codex-r1/test-01.py",
-    "supporting_code": "code/state.json",
-    "cell_locations": [
-      {
-        "notebook_cell": 0,
-        "start_line": 1,
-        "end_line": 17
-      },
-      {
-        "notebook_cell": 1,
-        "start_line": 18,
-        "end_line": 35
-      },
-      {
-        "notebook_cell": 2,
-        "start_line": 36,
-        "end_line": 51
-      },
-      {
-        "notebook_cell": 3,
-        "start_line": 52,
-        "end_line": 55
-      }
-    ],
-    "original_notebook_sha256": "f11ef1f77cea915b8d0aa4c1457087c780872840dd6cd508adba2334ceaa28fd",
-    "published_notebook_sha256": "ddf22b900dc855f46b02b4e5c6001566885eedd9bec4c8532ba4091fdb6414c0",
-    "changes": [
-      "Code-only export; Markdown verdicts and saved outputs omitted.",
-      "Machine-specific home paths replaced with /path/to/audit-home where present.",
-      "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
-      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
-      "File checks use the published data and code hashes, including redacted provenance files.",
-      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
-    ],
-    "saved_code_cells": 4,
-    "saved_error_outputs": 0
-  },
-  "requested_model": "STATE",
-  "historical_decision": {
-    "source": "historical_decisions.json",
-    "record_id": "state-codex-r1/test-01",
-    "disposition": "rejected",
-    "result": "The frozen decline failed. RMSE slopes were −0.032 raw and −0.150 adjusted, indicating improvement as distance increased. The five contexts gave a coarse ordering test.",
-    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
-  },
-  "traceability_review": {
-    "coverage": "original_records_missing",
-    "review": "traceability_review.json",
-    "record_id": "state-codex-r1/test-01",
-    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  "workflow_reconstruction": {
+    "traceability": "reconstructed/state-codex-r1/traceability.json",
+    "stages": {
+      "data": [
+        "reconstructed/state-codex-r1/methods/sources.json",
+        "reconstructed/state-codex-r1/execution_evidence/download_receipt.json",
+        "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-2"
+      ],
+      "processing": [
+        "reconstructed/state-codex-r1/methods/run_pipeline.py",
+        "reconstructed/state-codex-r1/methods/build_features.py",
+        "reconstructed/state-codex-r1/methods/build_scores.py",
+        "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-4"
+      ],
+      "axis": [
+        "reconstructed/state-codex-r1/computed/features/primary_cmp_distances.csv",
+        "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-6"
+      ],
+      "levels": [
+        "reconstructed/state-codex-r1/methods/reconstruct.py",
+        "reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv",
+        "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-8"
+      ],
+      "evaluation": [
+        "reconstructed/state-codex-r1/methods/original/04_analyze_frozen_axis.py",
+        "reconstructed/state-codex-r1/computed/scores/score_receipt.json",
+        "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-10"
+      ],
+      "curve": [
+        "reconstructed/state-codex-r1/computed/analysis/distance/analysis.json",
+        "reconstructed/state-codex-r1/computed/analysis/distance/spc.png",
+        "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-12"
+      ],
+      "decision": [
+        "reconstructed/state-codex-r1/recovery/original_handoff/REPORT.md",
+        "reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv",
+        "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-14"
+      ]
+    },
+    "execution_evidence": "reconstructed/state-codex-r1/notebooks/NOTEBOOK_VALIDATION.json",
+    "package_manifest": "reconstructed/state-codex-r1/PACKAGE_MANIFEST.json",
+    "pipeline_execution_evidence": "reconstructed/state-codex-r1/execution_evidence/01-state-codex-r1-distance_pipeline.json",
+    "analysis_execution_evidence": "reconstructed/state-codex-r1/execution_evidence/01-state-codex-r1-distance_analysis.json",
+    "policy": "reconstructed/state-codex-r1/computed/analysis/reconstruction_policy.json"
   }
 }

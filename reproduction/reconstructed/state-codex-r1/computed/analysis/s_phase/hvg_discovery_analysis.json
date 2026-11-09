@@ -1,0 +1,189 @@
+{
+  "reconstruction": true,
+  "seed": 20260714,
+  "bootstrap_reps": 10000,
+  "partition": "discovery",
+  "axis_standardization": {
+    "scope": "all_rows",
+    "mean": 0.20826933993565247,
+    "sample_sd": 0.07433796945588961
+  },
+  "models": {
+    "state_raw": {
+      "estimate": 0.09127620543263479,
+      "se_cluster": 0.009873423223229422,
+      "p_one_sided": 1.1802118597233016e-20,
+      "p_two_sided": 2.360423719446603e-20,
+      "n_rows": 1660,
+      "n_targets": 332,
+      "n_compounds": 111,
+      "controls": [],
+      "bootstrap_ci95": [
+        0.072015224871879,
+        0.11029507074414754
+      ]
+    },
+    "state_adjusted": {
+      "estimate": 0.12174569434245736,
+      "se_cluster": 0.007827120026520137,
+      "p_one_sided": 7.433877618101215e-55,
+      "p_two_sided": 1.486775523620243e-54,
+      "n_rows": 1660,
+      "n_targets": 332,
+      "n_compounds": 111,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ],
+      "bootstrap_ci95": [
+        0.10586734866314558,
+        0.13655950880126344
+      ]
+    },
+    "identity_raw": {
+      "estimate": -0.029770104973866684,
+      "se_cluster": 0.010728105464668585,
+      "p_one_sided": 0.9972396079010979,
+      "p_two_sided": 0.005520784197804264,
+      "n_rows": 1660,
+      "n_targets": 332,
+      "n_compounds": 111,
+      "controls": [],
+      "bootstrap_ci95": [
+        -0.05078113670388633,
+        -0.008797217810251265
+      ]
+    }
+  },
+  "paired_state_minus_identity": {
+    "estimate": 0.12104631040650148,
+    "ci95": [
+      0.11200061808715096,
+      0.1301766816579059
+    ]
+  },
+  "dose_sensitivity": {
+    "0.05": {
+      "estimate": 0.14069215794668838,
+      "se_cluster": 0.009611549075777513,
+      "p_one_sided": 8.057242983643361e-49,
+      "p_two_sided": 1.6114485967286722e-48,
+      "n_rows": 555,
+      "n_targets": 111,
+      "n_compounds": 111,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "0.5": {
+      "estimate": 0.1279076079925844,
+      "se_cluster": 0.009186402487273164,
+      "p_one_sided": 2.2775297249228063e-44,
+      "p_two_sided": 4.555059449845613e-44,
+      "n_rows": 550,
+      "n_targets": 110,
+      "n_compounds": 110,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "5.0": {
+      "estimate": 0.09721822975146949,
+      "se_cluster": 0.009838649383165633,
+      "p_one_sided": 2.509943532081535e-23,
+      "p_two_sided": 5.01988706416307e-23,
+      "n_rows": 555,
+      "n_targets": 111,
+      "n_compounds": 111,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    }
+  },
+  "leave_one_context_out": {
+    "C32": {
+      "estimate": 0.10626166636640931,
+      "se_cluster": 0.00803521454566004,
+      "p_one_sided": 3.1680062348704735e-40,
+      "p_two_sided": 6.336012469740947e-40,
+      "n_rows": 1328,
+      "n_targets": 332,
+      "n_compounds": 111,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "HOP62": {
+      "estimate": 0.13987689273634718,
+      "se_cluster": 0.007109206293995276,
+      "p_one_sided": 1.749988032947595e-86,
+      "p_two_sided": 3.49997606589519e-86,
+      "n_rows": 1328,
+      "n_targets": 332,
+      "n_compounds": 111,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "HepG2/C3A": {
+      "estimate": 0.09643626306965153,
+      "se_cluster": 0.0073754164347613295,
+      "p_one_sided": 2.276859720573682e-39,
+      "p_two_sided": 4.553719441147364e-39,
+      "n_rows": 1328,
+      "n_targets": 332,
+      "n_compounds": 111,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "Hs 766T": {
+      "estimate": 0.1401542349297379,
+      "se_cluster": 0.014019150320513677,
+      "p_one_sided": 7.827147845894493e-24,
+      "p_two_sided": 1.5654295691788986e-23,
+      "n_rows": 1328,
+      "n_targets": 332,
+      "n_compounds": 111,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "PANC-1": {
+      "estimate": 0.11829305100610638,
+      "se_cluster": 0.006681971014308683,
+      "p_one_sided": 1.976611464474708e-70,
+      "p_two_sided": 3.953222928949416e-70,
+      "n_rows": 1328,
+      "n_targets": 332,
+      "n_compounds": 111,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    }
+  },
+  "context_spearman": 0.8999999999999998,
+  "counts": {
+    "rows": 1660,
+    "targets": 332,
+    "compounds": 111,
+    "contexts": 5
+  }
+}

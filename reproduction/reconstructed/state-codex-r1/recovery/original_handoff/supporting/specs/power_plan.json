@@ -1,0 +1,40 @@
+{
+  "seed": 20260714,
+  "simulations_per_grid_point": 10000,
+  "one_sided_alpha": 0.05,
+  "design_effect_sd_per_distance_sd": 0.15,
+  "compound_random_slope_sd": 0.35,
+  "dose_random_slope_sd": 0.8,
+  "minimum_doses_per_compound": 2,
+  "minimum_compound_clusters_for_80pct_power": 150,
+  "grid": [
+    {
+      "compound_clusters": 100,
+      "power": 0.7202
+    },
+    {
+      "compound_clusters": 120,
+      "power": 0.7885
+    },
+    {
+      "compound_clusters": 150,
+      "power": 0.8639
+    },
+    {
+      "compound_clusters": 180,
+      "power": 0.9125
+    },
+    {
+      "compound_clusters": 200,
+      "power": 0.9405
+    },
+    {
+      "compound_clusters": 220,
+      "power": 0.9558
+    },
+    {
+      "compound_clusters": 250,
+      "power": 0.9724
+    }
+  ]
+}

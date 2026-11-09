@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "reduction": "actual_original_DE_rows",
+  "run": "se_best",
+  "cell_line": "C32",
+  "source_manifest_sha256": "d7bba695215da557ee1b4a9cd83aa861eb384a11fc037a375f1ec6c2a9090b2a",
+  "method_sha256": {
+    "methods/build_scores.py": "f9983187827cb392aaf47b5d43c6a5bdb623a7c32a814ec7a1c78832e011f8ff",
+    "methods/original/04_analyze_frozen_axis.py": "d923071894cfe535728a42c62b283ea2f02453423b701d31654efc3d91aad484"
+  },
+  "inputs": [
+    {
+      "path": "acquisition/official_scores/C32_real_de.csv",
+      "sha256": "19922ccec8820e43daa74dac907adeaa7b12d651308570650920762269f568d2",
+      "bytes": 387383572,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores_st_se/C32_pred_de.csv",
+      "sha256": "7169a2f135657b9f1db7440a9c7feef3f759428b0783f4fc89ac1c48ccac4d76",
+      "bytes": 388384053,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores_st_se/C32_results.csv",
+      "sha256": "cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79",
+      "bytes": 468674,
+      "verified": true
+    }
+  ],
+  "outputs": {
+    "computed/scores/se_best/C32_lfc.csv": {
+      "sha256": "31d5d04996591f419fe45b74398e8335f4601720f1606fec9190edfede2df11e",
+      "bytes": 91945
+    },
+    "computed/scores/se_best/C32_results.csv": {
+      "sha256": "cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79",
+      "bytes": 468674
+    }
+  },
+  "targets": 1137,
+  "DE_rows": 2274000,
+  "elapsed_seconds": 5.448
+}

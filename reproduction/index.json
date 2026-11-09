@@ -436,29 +436,29 @@
           "id": "state-codex-r1/test-01",
           "axis": "Basal transcriptomic distance",
           "path": "analyses/state-codex-r1/test-01.json",
-          "notebook": "materials/state/notebooks/state-codex-r1/test-01.ipynb",
-          "traceability_coverage": "original_records_missing"
+          "notebook": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb",
+          "traceability_coverage": "source_workflow_reconstructed"
         },
         {
           "id": "state-codex-r1/test-02",
           "axis": "Baseline S-phase heterogeneity",
           "path": "analyses/state-codex-r1/test-02.json",
-          "notebook": "materials/state/notebooks/state-codex-r1/test-02.ipynb",
-          "traceability_coverage": "original_records_missing"
+          "notebook": "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb",
+          "traceability_coverage": "source_workflow_reconstructed"
         },
         {
           "id": "state-codex-r1/test-03",
           "axis": "Training-lineage scarcity",
           "path": "analyses/state-codex-r1/test-03.json",
-          "notebook": "materials/state/notebooks/state-codex-r1/test-03.ipynb",
-          "traceability_coverage": "original_records_missing"
+          "notebook": "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb",
+          "traceability_coverage": "source_workflow_reconstructed"
         },
         {
           "id": "state-codex-r1/test-04",
           "axis": "Perturbation magnitude, DE count, cell count and dose",
           "path": "analyses/state-codex-r1/test-04.json",
-          "notebook": "materials/state/notebooks/state-codex-r1/test-04.ipynb",
-          "traceability_coverage": "original_records_missing"
+          "notebook": "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb",
+          "traceability_coverage": "source_workflow_reconstructed"
         }
       ]
     },
@@ -1175,5 +1175,6 @@
   "reconstruction_notes": "reconstruction.json",
   "historical_decisions": "historical_decisions.json",
   "traceability_review": "traceability_review.json",
-  "primary_workflows": "primary/README.md"
+  "primary_workflows": "primary/README.md",
+  "reconstructed_workflows": "reconstructed/state-codex-r1/README.md"
 }

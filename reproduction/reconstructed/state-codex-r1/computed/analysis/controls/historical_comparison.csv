@@ -1,0 +1,61 @@
+axis,metric,historical,recomputed,difference,tolerance,within_tolerance,note
+distance,state_raw,-0.03221,-0.03221314709295117,-3.14709295116955e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+distance,state_adjusted,-0.15004,-0.15003501777680278,4.9822231972251885e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+distance,identity_raw,0.16321,0.1632059465229533,-4.0534770466837955e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+distance,quintile_matching,-0.12478,-0.12785232696670146,-0.0030723269667014552,,,Original eight quintile-control columns and full-row inclusion recovered; partition-specific cutpoint scope is an explicit reconstruction assumption.
+distance,confirmation_rows,4020.0,4020.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+distance,confirmation_targets,804.0,804.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+distance,confirmation_compounds,268.0,268.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+distance,confirmation_contexts,5.0,5.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+s_phase,state_raw,0.08056,0.08056142430069513,1.4243006951214499e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+s_phase,state_adjusted,0.09515,0.0951492384736003,-7.615263997035049e-07,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+s_phase,identity_raw,-0.0387,-0.03870414198820594,-4.141988205939862e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+s_phase,paired_state_minus_identity,0.11927,0.11926556628890106,-4.4337110989417505e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+s_phase,context_spearman,0.3,0.3,0.0,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+s_phase,quintile_matching,0.10494,0.10697155861414112,0.0020315586141411157,,,Original eight quintile-control columns and full-row inclusion recovered; partition-specific cutpoint scope is an explicit reconstruction assumption.
+s_phase,confirmation_rows,4020.0,4020.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+s_phase,confirmation_targets,804.0,804.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+s_phase,confirmation_compounds,268.0,268.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+s_phase,confirmation_contexts,5.0,5.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+lineage,state_adjusted,0.03223,0.032225992879319126,-4.007120680875331e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+lineage,paired_state_minus_identity,0.01266,0.012661652471262608,1.6524712626083543e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+lineage,context_spearman,0.82078,0.8207826816681234,2.681668123449832e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+lineage,confirmation_rows,4020.0,4020.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+lineage,confirmation_targets,804.0,804.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+lineage,confirmation_compounds,268.0,268.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+lineage,confirmation_contexts,5.0,5.0,0.0,0.0,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+distance,ccle_adjusted,-0.12962,-0.12962335754559148,-3.357545591470279e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+distance,ccle_exact_contexts_adjusted,-0.07886,-0.07885959112908413,4.08870915874493e-07,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+lineage,hvg_discovery_adjusted,-0.07233,-0.0723214496153309,8.550384669112066e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+lineage,exclude_HepG2_adjusted,-0.01196,-0.011958456121416869,1.543878583131278e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+lineage,dose_5_adjusted,0.01027,0.010265297663959463,-4.702336040536201e-06,5e-05,True,Reported rounded value; no calculation choice is changed to obtain agreement.
+distance,HOP62/state_rmse_mean,2.2151370578739016,2.2151370578739016,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+distance,HOP62/identity_rmse_mean,1.6809512210725968,1.6809512210725968,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+distance,PANC-1/state_rmse_mean,2.3262161140078903,2.3262161140078903,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+distance,PANC-1/identity_rmse_mean,1.5539256767759528,1.5539256767759528,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+distance,Hs 766T/state_rmse_mean,2.3987606839312074,2.3987606839312074,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+distance,Hs 766T/identity_rmse_mean,1.821537191889552,1.821537191889552,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+distance,C32/state_rmse_mean,2.143416063367083,2.143416063367083,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+distance,C32/identity_rmse_mean,1.9619173456757435,1.9619173456757433,-2.220446049250313e-16,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+distance,HepG2/C3A/state_rmse_mean,2.206717757968041,2.206717757968041,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+distance,HepG2/C3A/identity_rmse_mean,2.062155995852501,2.062155995852501,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+s_phase,C32/state_rmse_mean,2.999676057714076,2.999676057714076,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+s_phase,C32/identity_rmse_mean,1.9619173456757435,1.9619173456757433,-2.220446049250313e-16,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+s_phase,HOP62/state_rmse_mean,2.6530217818768547,2.6530217818768547,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+s_phase,HOP62/identity_rmse_mean,1.6809512210725968,1.6809512210725968,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+s_phase,HepG2/C3A/state_rmse_mean,3.4000784152470627,3.4000784152470627,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+s_phase,HepG2/C3A/identity_rmse_mean,2.062155995852501,2.062155995852501,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+s_phase,PANC-1/state_rmse_mean,2.725900247240764,2.725900247240764,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+s_phase,PANC-1/identity_rmse_mean,1.5539256767759528,1.5539256767759528,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+s_phase,Hs 766T/state_rmse_mean,3.165564353648012,3.1655643536480116,-4.440892098500626e-16,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+s_phase,Hs 766T/identity_rmse_mean,1.821537191889552,1.821537191889552,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+lineage,HOP62/state_rmse_mean,2.980761867477727,2.980761867477727,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+lineage,HOP62/identity_rmse_mean,1.6809512210725968,1.6809512210725968,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+lineage,Hs 766T/state_rmse_mean,3.180017462249225,3.1800174622492254,4.440892098500626e-16,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+lineage,Hs 766T/identity_rmse_mean,1.821537191889552,1.821537191889552,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+lineage,PANC-1/state_rmse_mean,2.790114356105651,2.7901143561056516,4.440892098500626e-16,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+lineage,PANC-1/identity_rmse_mean,1.5539256767759528,1.5539256767759528,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+lineage,C32/state_rmse_mean,3.22756312360934,3.2275631236093396,-4.440892098500626e-16,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+lineage,C32/identity_rmse_mean,1.9619173456757435,1.9619173456757433,-2.220446049250313e-16,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+lineage,HepG2/C3A/state_rmse_mean,3.4151381167307817,3.4151381167307817,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.
+lineage,HepG2/C3A/identity_rmse_mean,2.062155995852501,2.062155995852501,0.0,1e-09,True,Original aggregate is used only as an independent comparison target after per-condition computation.

@@ -1,0 +1,708 @@
+{
+  "policy": {
+    "policy_fixed_before_results": true,
+    "axis_z_scope": "all_rows",
+    "axis_z_reason": "Inherit surviving original04: mean/sample SD over all released score rows before completeness filtering.",
+    "bootstrap_seed": 20260714,
+    "bootstrap_seed_reason": "Inherit initial original04 seed; final continuation seed was not recovered.",
+    "bootstrap_reps": 10000,
+    "bootstrap_reps_reason": "Documented final S-phase count; same fixed count used for all reconstructed intervals.",
+    "bootstrap_pairing": "Identical parent-compound multinomial multiplicities for STATE and identity reference.",
+    "matching": "Recovered original sensitivity: eight effect_q_1..4/cells_q_1..4 quintile indicators, all rows retained, original within-target OLS. Cutpoint scope inferred once as within current analysis partition, shared across contexts.",
+    "sensitivity_standardization": "Retain the full released-panel axis scale when subsetting doses, contexts or partitions.",
+    "no_result_tuning": true
+  },
+  "controls": [
+    "identity_lfc_rmse",
+    "log_n_de",
+    "log_n_cells"
+  ],
+  "cell_count_rule": "full-QC cells when positive, otherwise all observed cells",
+  "axes": {
+    "distance": {
+      "reconstruction": true,
+      "seed": 20260714,
+      "bootstrap_reps": 10000,
+      "partition": "confirmation",
+      "axis_standardization": {
+        "scope": "all_rows",
+        "mean": 1.1610823764970235,
+        "sample_sd": 0.15604243607362278
+      },
+      "models": {
+        "state_raw": {
+          "estimate": -0.03221314709295117,
+          "se_cluster": 0.005238690116541011,
+          "p_one_sided": 0.9999999996103422,
+          "p_two_sided": 7.793155818243619e-10,
+          "n_rows": 4020,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [],
+          "bootstrap_ci95": [
+            -0.04254994885774676,
+            -0.022016928105237407
+          ]
+        },
+        "state_adjusted": {
+          "estimate": -0.15003501777680278,
+          "se_cluster": 0.00497584941456821,
+          "p_one_sided": 1.0,
+          "p_two_sided": 9.903387260522053e-200,
+          "n_rows": 4020,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ],
+          "bootstrap_ci95": [
+            -0.15951551154128896,
+            -0.1398012127844341
+          ]
+        },
+        "identity_raw": {
+          "estimate": 0.1632059465229533,
+          "se_cluster": 0.004507184848417223,
+          "p_one_sided": 2.1054726897384764e-287,
+          "p_two_sided": 4.210945379476953e-287,
+          "n_rows": 4020,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [],
+          "bootstrap_ci95": [
+            0.15451658381991967,
+            0.17208150746334852
+          ]
+        }
+      },
+      "paired_state_minus_identity": {
+        "estimate": -0.19541909361590448,
+        "ci95": [
+          -0.20156880125316654,
+          -0.18916182491813147
+        ]
+      },
+      "dose_sensitivity": {
+        "0.05": {
+          "estimate": -0.15290464368778678,
+          "se_cluster": 0.0060524932819783096,
+          "p_one_sided": 1.0,
+          "p_two_sided": 8.134430032201376e-141,
+          "n_rows": 1340,
+          "n_targets": 268,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "0.5": {
+          "estimate": -0.13406250275547893,
+          "se_cluster": 0.008169524091318391,
+          "p_one_sided": 1.0,
+          "p_two_sided": 1.620053213202651e-60,
+          "n_rows": 1340,
+          "n_targets": 268,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "5.0": {
+          "estimate": -0.15995009373246644,
+          "se_cluster": 0.006808560476077877,
+          "p_one_sided": 1.0,
+          "p_two_sided": 4.866488638217212e-122,
+          "n_rows": 1340,
+          "n_targets": 268,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        }
+      },
+      "leave_one_context_out": {
+        "C32": {
+          "estimate": -0.12858409708646745,
+          "se_cluster": 0.005731523906109359,
+          "p_one_sided": 1.0,
+          "p_two_sided": 1.8117681092111833e-111,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "HOP62": {
+          "estimate": -0.269291192187856,
+          "se_cluster": 0.0074717377544123815,
+          "p_one_sided": 1.0,
+          "p_two_sided": 1.8871084265137986e-284,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "HepG2/C3A": {
+          "estimate": -0.09457675214372968,
+          "se_cluster": 0.004761550980053978,
+          "p_one_sided": 1.0,
+          "p_two_sided": 8.57650918572413e-88,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "Hs 766T": {
+          "estimate": -0.085715974799493,
+          "se_cluster": 0.005954027227357834,
+          "p_one_sided": 1.0,
+          "p_two_sided": 5.458702482644215e-47,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "PANC-1": {
+          "estimate": -0.15975958446984964,
+          "se_cluster": 0.005211574030560064,
+          "p_one_sided": 1.0,
+          "p_two_sided": 2.283106157650115e-206,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        }
+      },
+      "context_spearman": -0.49999999999999994,
+      "counts": {
+        "rows": 4020,
+        "targets": 804,
+        "compounds": 268,
+        "contexts": 5
+      },
+      "matching_reconstructed": {
+        "estimate": -0.12785232696670146,
+        "se_cluster": 0.00639542072695752,
+        "p_one_sided": 1.0,
+        "p_two_sided": 6.565720306586314e-89,
+        "n_rows": 4020,
+        "n_targets": 804,
+        "n_compounds": 268,
+        "controls": [
+          "effect_q_1",
+          "effect_q_2",
+          "effect_q_3",
+          "effect_q_4",
+          "cells_q_1",
+          "cells_q_2",
+          "cells_q_3",
+          "cells_q_4"
+        ],
+        "status": "computed",
+        "reconstructed_method": true,
+        "method": "Historical matching sensitivity: eight effect/cell-count quintile indicators in original within-target OLS, retaining every analysis row",
+        "cutpoint_scope": "Within the analyzed partition; shared across contexts; inferred because continuation code is absent",
+        "effect_quintile_edges": [
+          0.6341520789816006,
+          1.4863594373723947,
+          1.678034620681951,
+          1.8821652037536678,
+          2.1171848694164668,
+          4.245885533813539
+        ],
+        "cell_count_quintile_edges": [
+          1.0,
+          831.8000000000001,
+          1472.2000000000003,
+          2287.0,
+          3545.2000000000003,
+          57193.0
+        ]
+      }
+    },
+    "s_phase": {
+      "reconstruction": true,
+      "seed": 20260714,
+      "bootstrap_reps": 10000,
+      "partition": "confirmation",
+      "axis_standardization": {
+        "scope": "all_rows",
+        "mean": 0.20826933993565247,
+        "sample_sd": 0.07433796945588961
+      },
+      "models": {
+        "state_raw": {
+          "estimate": 0.08056142430069513,
+          "se_cluster": 0.00543429892825545,
+          "p_one_sided": 5.07754044576241e-50,
+          "p_two_sided": 1.015508089152482e-49,
+          "n_rows": 4020,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [],
+          "bootstrap_ci95": [
+            0.07003709724091521,
+            0.09127560998069496
+          ]
+        },
+        "state_adjusted": {
+          "estimate": 0.0951492384736003,
+          "se_cluster": 0.004811520748730514,
+          "p_one_sided": 2.429922439490422e-87,
+          "p_two_sided": 4.859844878980844e-87,
+          "n_rows": 4020,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ],
+          "bootstrap_ci95": [
+            0.08557307362373744,
+            0.10463657754157514
+          ]
+        },
+        "identity_raw": {
+          "estimate": -0.03870414198820594,
+          "se_cluster": 0.006549921138161477,
+          "p_one_sided": 0.9999999982800956,
+          "p_two_sided": 3.4398089816082525e-09,
+          "n_rows": 4020,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [],
+          "bootstrap_ci95": [
+            -0.051348050781266925,
+            -0.02593388565033348
+          ]
+        }
+      },
+      "paired_state_minus_identity": {
+        "estimate": 0.11926556628890106,
+        "ci95": [
+          0.11218130670046204,
+          0.1260038916503761
+        ]
+      },
+      "dose_sensitivity": {
+        "0.05": {
+          "estimate": 0.08886124808655196,
+          "se_cluster": 0.006069167298493093,
+          "p_one_sided": 7.641738488091006e-49,
+          "p_two_sided": 1.528347697618201e-48,
+          "n_rows": 1340,
+          "n_targets": 268,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "0.5": {
+          "estimate": 0.09060688176020501,
+          "se_cluster": 0.006193924156681433,
+          "p_one_sided": 9.261430842626456e-49,
+          "p_two_sided": 1.852286168525291e-48,
+          "n_rows": 1340,
+          "n_targets": 268,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "5.0": {
+          "estimate": 0.10786561934154658,
+          "se_cluster": 0.00566643583457458,
+          "p_one_sided": 4.301370356298076e-81,
+          "p_two_sided": 8.602740712596152e-81,
+          "n_rows": 1340,
+          "n_targets": 268,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        }
+      },
+      "leave_one_context_out": {
+        "C32": {
+          "estimate": 0.09612625766862207,
+          "se_cluster": 0.005134753315023448,
+          "p_one_sided": 1.6780529063171796e-78,
+          "p_two_sided": 3.356105812634359e-78,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "HOP62": {
+          "estimate": 0.06715576509625132,
+          "se_cluster": 0.005349403345857244,
+          "p_one_sided": 1.8925063341645427e-36,
+          "p_two_sided": 3.785012668329085e-36,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "HepG2/C3A": {
+          "estimate": 0.12459162698823355,
+          "se_cluster": 0.004567858552110357,
+          "p_one_sided": 4.11752625314683e-164,
+          "p_two_sided": 8.23505250629366e-164,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "Hs 766T": {
+          "estimate": 0.13122638381661644,
+          "se_cluster": 0.010512203885966716,
+          "p_one_sided": 4.607827191711763e-36,
+          "p_two_sided": 9.215654383423526e-36,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "PANC-1": {
+          "estimate": 0.0979943964141732,
+          "se_cluster": 0.004552551571289874,
+          "p_one_sided": 4.525472223725702e-103,
+          "p_two_sided": 9.050944447451404e-103,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        }
+      },
+      "context_spearman": 0.3,
+      "counts": {
+        "rows": 4020,
+        "targets": 804,
+        "compounds": 268,
+        "contexts": 5
+      },
+      "matching_reconstructed": {
+        "estimate": 0.10697155861414112,
+        "se_cluster": 0.003656520002134383,
+        "p_one_sided": 1.9382832171596032e-188,
+        "p_two_sided": 3.8765664343192064e-188,
+        "n_rows": 4020,
+        "n_targets": 804,
+        "n_compounds": 268,
+        "controls": [
+          "effect_q_1",
+          "effect_q_2",
+          "effect_q_3",
+          "effect_q_4",
+          "cells_q_1",
+          "cells_q_2",
+          "cells_q_3",
+          "cells_q_4"
+        ],
+        "status": "computed",
+        "reconstructed_method": true,
+        "method": "Historical matching sensitivity: eight effect/cell-count quintile indicators in original within-target OLS, retaining every analysis row",
+        "cutpoint_scope": "Within the analyzed partition; shared across contexts; inferred because continuation code is absent",
+        "effect_quintile_edges": [
+          0.6341520789816006,
+          1.4863594373723947,
+          1.678034620681951,
+          1.8821652037536678,
+          2.1171848694164668,
+          4.245885533813539
+        ],
+        "cell_count_quintile_edges": [
+          1.0,
+          831.8000000000001,
+          1472.2000000000003,
+          2287.0,
+          3545.2000000000003,
+          57193.0
+        ]
+      }
+    },
+    "lineage": {
+      "reconstruction": true,
+      "seed": 20260714,
+      "bootstrap_reps": 10000,
+      "partition": "confirmation",
+      "axis_standardization": {
+        "scope": "all_rows",
+        "mean": -1.601272077147413,
+        "sample_sd": 0.6475700738274858
+      },
+      "models": {
+        "state_raw": {
+          "estimate": 0.13824382333083018,
+          "se_cluster": 0.0035030007598201083,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "n_rows": 4020,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [],
+          "bootstrap_ci95": [
+            0.13151643594925108,
+            0.14495319754753258
+          ]
+        },
+        "state_adjusted": {
+          "estimate": 0.032225992879319126,
+          "se_cluster": 0.005003541778459105,
+          "p_one_sided": 5.948682328459786e-11,
+          "p_two_sided": 1.1897364656919573e-10,
+          "n_rows": 4020,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ],
+          "bootstrap_ci95": [
+            0.022425278603436502,
+            0.0417230963849279
+          ]
+        },
+        "identity_raw": {
+          "estimate": 0.12558217085956758,
+          "se_cluster": 0.0030531520725084883,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "n_rows": 4020,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [],
+          "bootstrap_ci95": [
+            0.11973696060867156,
+            0.13154727895042664
+          ]
+        }
+      },
+      "paired_state_minus_identity": {
+        "estimate": 0.012661652471262608,
+        "ci95": [
+          0.0028347401297653513,
+          0.022362027798700463
+        ]
+      },
+      "dose_sensitivity": {
+        "0.05": {
+          "estimate": 0.03620390056869141,
+          "se_cluster": 0.005674426092099038,
+          "p_one_sided": 8.843583689959443e-11,
+          "p_two_sided": 1.7687167379918885e-10,
+          "n_rows": 1340,
+          "n_targets": 268,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "0.5": {
+          "estimate": 0.0490399985220493,
+          "se_cluster": 0.006621291567132829,
+          "p_one_sided": 6.488223236937324e-14,
+          "p_two_sided": 1.2976446473874648e-13,
+          "n_rows": 1340,
+          "n_targets": 268,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "5.0": {
+          "estimate": 0.010265297663959463,
+          "se_cluster": 0.007401254444228518,
+          "p_one_sided": 0.08272587184220709,
+          "p_two_sided": 0.16545174368441418,
+          "n_rows": 1340,
+          "n_targets": 268,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        }
+      },
+      "leave_one_context_out": {
+        "C32": {
+          "estimate": 0.039492839169665714,
+          "se_cluster": 0.00710532130191338,
+          "p_one_sided": 1.3628082887619308e-08,
+          "p_two_sided": 2.7256165775238616e-08,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "HOP62": {
+          "estimate": 0.11954649896086171,
+          "se_cluster": 0.011455947954092225,
+          "p_one_sided": 8.551697885097022e-26,
+          "p_two_sided": 1.7103395770194045e-25,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "HepG2/C3A": {
+          "estimate": -0.011958456121416869,
+          "se_cluster": 0.0044175486880881285,
+          "p_one_sided": 0.99660563854827,
+          "p_two_sided": 0.006788722903459918,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "Hs 766T": {
+          "estimate": 0.016169225853842617,
+          "se_cluster": 0.0049489683215624075,
+          "p_one_sided": 0.0005431014280257706,
+          "p_two_sided": 0.0010862028560515412,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        },
+        "PANC-1": {
+          "estimate": 0.08309272144428811,
+          "se_cluster": 0.0055044325203611405,
+          "p_one_sided": 8.65506652109548e-52,
+          "p_two_sided": 1.731013304219096e-51,
+          "n_rows": 3216,
+          "n_targets": 804,
+          "n_compounds": 268,
+          "controls": [
+            "identity_lfc_rmse",
+            "log_n_de",
+            "log_n_cells"
+          ]
+        }
+      },
+      "context_spearman": 0.8207826816681234,
+      "counts": {
+        "rows": 4020,
+        "targets": 804,
+        "compounds": 268,
+        "contexts": 5
+      },
+      "matching_reconstructed": {
+        "estimate": 0.04011760280541752,
+        "se_cluster": 0.005086302760276269,
+        "p_one_sided": 1.542982903538424e-15,
+        "p_two_sided": 3.085965807076848e-15,
+        "n_rows": 4020,
+        "n_targets": 804,
+        "n_compounds": 268,
+        "controls": [
+          "effect_q_1",
+          "effect_q_2",
+          "effect_q_3",
+          "effect_q_4",
+          "cells_q_1",
+          "cells_q_2",
+          "cells_q_3",
+          "cells_q_4"
+        ],
+        "status": "computed",
+        "reconstructed_method": true,
+        "method": "Historical matching sensitivity: eight effect/cell-count quintile indicators in original within-target OLS, retaining every analysis row",
+        "cutpoint_scope": "Within the analyzed partition; shared across contexts; inferred because continuation code is absent",
+        "effect_quintile_edges": [
+          0.6341520789816006,
+          1.4863594373723947,
+          1.678034620681951,
+          1.8821652037536678,
+          2.1171848694164668,
+          4.245885533813539
+        ],
+        "cell_count_quintile_edges": [
+          1.0,
+          831.8000000000001,
+          1472.2000000000003,
+          2287.0,
+          3545.2000000000003,
+          57193.0
+        ]
+      }
+    }
+  },
+  "historical_interpretation": "Controls did not rescue the failed original distance, S-phase shape or lineage stability findings; reconstructed matching is labeled separately."
+}

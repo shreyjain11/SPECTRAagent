@@ -1,0 +1,135 @@
+schema_version: 1
+frozen_at_utc: "2026-07-14T15:55:00Z"
+status: frozen_before_any_state_score_access
+hypothesis_source: user_predeclared_priority_axis
+
+model:
+  name: STATE
+  component: State Transition (ST)
+  released_checkpoint_family: ST-HVG-Tahoe
+  representation: X_hvg, 2000 genes
+  perturbation_representation: one-hot drug-dose
+  official_split: Tahoe-100M zero-shot generalization
+  held_out_contexts: [C32, HOP62, HepG2/C3A, Hs 766T, PANC-1]
+  training_context_rule: all other contexts in the released 50-context map
+
+scientific_unit:
+  primary_unit: drug-dose block observed in all five held-out contexts
+  resampling_cluster: normalized parent compound
+  context_panel: fixed finite panel of five prospectively ordered cell lines
+  modality: small-molecule chemical perturbation
+  exposure_time: 24 hours
+  doses_expected_uM: [0.05, 0.5, 5.0]
+
+axis:
+  name: basal transcriptomic distance from STATE training panel
+  direction: farther_from_training_is_harder
+  primary_atlas: Sanger Cell Model Passports RNA-seq TPM, 2022-06-24
+  primary_context_mapping: exact SangerModelID through DepMap Model 23Q4
+  primary_training_context_count: 44
+  primary_held_out_context_count: 5
+  genes:
+    selection: 2000 highest-variance protein-coding symbols in the primary training contexts only
+    transform: log2(TPM + 1), then gene-wise z-score using training-context mean and sample SD
+    constant_genes: dropped
+  distance:
+    pair_metric: root-mean-square standardized Euclidean distance over frozen genes
+    panel_aggregation: median of the five nearest training-context distances
+    similarity_for_spc: negative_distance
+  measured_order_near_to_far:
+    - {level: 1, context: HOP62, distance: 0.953059}
+    - {level: 2, context: PANC-1, distance: 1.062149}
+    - {level: 3, context: Hs 766T, distance: 1.131635}
+    - {level: 4, context: C32, distance: 1.254312}
+    - {level: 5, context: HepG2/C3A, distance: 1.404170}
+
+atlas_replication:
+  atlas: DepMap/CCLE 23Q4 protein-coding log2(TPM+1)
+  genes: intersection with frozen primary gene set (1832 genes)
+  training_context_count: 43
+  held_out_context_count: 5
+  c3a_rule: use parental HepG2 (ACH-000739) because DepMap has no C3A RNA-seq row; also report a four-exact-context sensitivity analysis
+  measured_order_near_to_far:
+    - {level: 1, context: HOP62, distance: 0.995532}
+    - {level: 2, context: PANC-1, distance: 1.087685}
+    - {level: 3, context: Hs 766T, distance: 1.196330}
+    - {level: 4, context: C32, distance: 1.264095}
+    - {level: 5, context: HepG2/C3A, distance: 1.363152}
+  required_rank_spearman: 0.8
+  observed_rank_spearman_before_scoring: 1.0
+
+outcome_access_rule:
+  allowed_only_after_this_contract: true
+  official_files: per-context real DE, predicted DE, per-condition result, and aggregate result CSVs under the released zero-shot eval_best checkpoint
+  no_condition_selection_from_outcomes: true
+
+performance:
+  target_metric: per-condition RMSE between STATE-predicted and observed log2 fold-change across the full joined HVG feature panel
+  metric_direction: larger_RMSE_is_worse
+  missing_prediction_rule: predicted log2 fold-change is zero only when a released predicted-DE row is absent
+  fixed_reference:
+    name: identity_no_effect
+    prediction: zero log2 fold-change for every gene
+    held_out_outcomes_consumed_by_predictor: false
+    metric: same per-condition LFC RMSE, genes, contexts, and perturbations as STATE
+  secondary_metrics: [released pearson_delta, released de_spearman_lfc_sig]
+
+discovery_confirmation:
+  partition_key: normalized parent compound name only
+  hash: SHA256 UTF-8, first 16 hex digits interpreted as integer modulo 10
+  discovery_buckets: [0, 1, 2]
+  confirmation_buckets: [3, 4, 5, 6, 7, 8, 9]
+  rule: all doses and all five contexts for a compound stay in one partition
+  discovery_use: estimate shape and audit schema/confounds; no closure claim
+  confirmation_use: one frozen primary test on untouched compounds
+
+power:
+  design_effect: 0.15 residual-SD RMSE increase per one SD of distance
+  one_sided_alpha: 0.05
+  desired_power: 0.80
+  assumed_compound_random_slope_sd: 0.35
+  assumed_dose_random_slope_sd: 0.80
+  minimum_doses_per_compound: 2
+  minimum_confirmation_compounds: 150
+  minimum_confirmation_rows: 750
+  source: specs/power_plan.json, generated before outcome access
+
+controls:
+  required:
+    - identity-reference RMSE (true perturbation magnitude)
+    - count of observed DE genes at FDR < 0.05
+    - observed cell count per condition where released raw/scored output exposes it
+    - dose
+    - parent compound blocking/clustering
+    - perturbation modality and exposure time (fixed by dataset)
+    - checkpoint family and representation (fixed by selected official release)
+    - tissue/lineage sensitivity
+  adjusted_model: STATE_RMSE ~ z_distance + identity_RMSE + log1p(n_DE) + log1p(n_cells) + drug-dose block fixed effects
+  fallback_if_cell_count_absent: report the provenance gap; use released per-context total cell counts only as a sensitivity covariate, never claim per-condition cell-count control
+  matching_sensitivity: within effect-magnitude quintile and dose, equal-weight contexts and compound clusters
+
+success_criteria:
+  counts: at least 150 confirmation compound clusters with at least two doses and all five contexts
+  progression: five nontrivial levels in the frozen measured order
+  primary_slope: adjusted z-distance coefficient greater than zero with one-sided cluster-robust p < 0.05 and compound-bootstrap 95% CI lower bound greater than zero
+  shape: context-mean RMSE Spearman rho with distance at least 0.7
+  stability: same slope direction in discovery, confirmation, and all-data descriptive estimate
+  atlas: same slope direction using independent-atlas distances and rank Spearman at least 0.8
+
+reference_gate:
+  comparison: paired compound-bootstrap difference in STATE and identity-reference RMSE slopes
+  larger: lower 95% CI of STATE-minus-reference slope is above zero
+  smaller: upper 95% CI of STATE-minus-reference slope is below zero
+  comparable: difference CI includes zero
+  retention: retain any real STATE degradation whose own lower 95% CI is above zero, even if shared or smaller
+
+error_spending:
+  trigger: directionally consistent confirmation that misses the declared decision boundary
+  next_increment: acquire and score additional public Tahoe drug-dose blocks under the same released zero-shot checkpoint, genes, contexts, metric, and controls
+  looks: two maximum confirmatory looks
+  alpha_spending: one-sided O'Brien-Fleming, nominal alpha 0.005 at look 1 and 0.048 at final look
+  stopping: unambiguous positive, unambiguous flat/negative at adequate power, or true exhaustion of obtainable same-design data
+
+confound_reattribution:
+  rule: if effect magnitude, DE count, or cell count explains the curve, freeze that measured driver as a new prospective axis and confirm on the untouched confirmation partition; do not mislabel it as transcriptomic distance
+

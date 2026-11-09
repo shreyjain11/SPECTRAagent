@@ -1,0 +1,63 @@
+{
+  "scope": "Read-only original-method evidence search for quintile-control reconstruction discrepancy; no alternative binning/calculation executed.",
+  "native_session": {
+    "path": "methods/original-state-codex-r1.jsonl",
+    "sha256": "459cb1f97337e44e51db73cfb9b428e7a7128e3af9e8bc6d9c1d99e02019d125",
+    "strict_qcut_or_indicator_hits": [],
+    "quintile_mentions_at_lines": [
+      547,
+      548
+    ],
+    "finding": "Only the initial frozen-spec prose appears (events547/548); no implemented qcut/cut/indicator construction survives in this session."
+  },
+  "recovered_evidence": [
+    {
+      "path": "recovery/native_events/frozen_axis.yaml",
+      "line": 109,
+      "text": "matching_sensitivity: within effect-magnitude quintile and dose, equal-weight contexts and compound clusters",
+      "limitation": "Does not identify bin-estimation population, cutpoint values, tie handling or final eight-indicator implementation."
+    },
+    {
+      "path": "recovery/original_handoff/supporting/results/distance_closure_validation/control_sensitivities.csv",
+      "row": "effect_and_cell_quintile_matched",
+      "original_estimate": -0.12478184094198272,
+      "n_rows": 4020,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "n_contexts": 5,
+      "controls": [
+        "effect_q_1",
+        "effect_q_2",
+        "effect_q_3",
+        "effect_q_4",
+        "cells_q_1",
+        "cells_q_2",
+        "cells_q_3",
+        "cells_q_4"
+      ],
+      "limitation": "Retains coefficient/design term names and counts, but no indicator values, bin boundaries or source binning code."
+    },
+    {
+      "path": "recovery/original_handoff/REPORT.md",
+      "lines": [
+        47,
+        80
+      ],
+      "finding": "Describes effect/cell-count-quintile matching and final slopes; gives no cutpoint population or tie policy."
+    }
+  ],
+  "additional_searches": [
+    "Exact qcut/effect_q_/cells_q_ search of initial native session; zero code hits.",
+    "Exact effect_q_/cells_q_/06_confirm_s_phase_st_se.py/09_validate_closure.py search of exported vm/codex and local transcript roots; no hits.",
+    "GPT_r1 handoff tar member inventory; final continuation scripts, per-condition tables and matching assignment/cutpoint files absent.",
+    "Export MISSING_TRANSCRIPTS.txt lines8\u20139 explicitly records missing r1 continuation sessions."
+  ],
+  "not_recovered": [
+    "Original population used to estimate quintile boundaries",
+    "Original cutpoint values",
+    "Tie handling / qcut-vs-rank strategy",
+    "Original per-row effect/cell quintile assignment"
+  ],
+  "action": "Keep the declared within-analysis-partition cutpoints fixed and label their unknown historical identity. Report observed differences; do not try other definitions to match a target.",
+  "causal_claim": "The missing binning detail is a reproduction limitation. This search does not establish that it is the sole cause of numerical differences."
+}

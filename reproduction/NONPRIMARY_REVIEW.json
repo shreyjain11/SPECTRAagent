@@ -4,10 +4,11 @@
   "criterion": "Original inputs -> processing -> axes/levels -> individual measurements -> curves/diagnostics -> historical interpretation; no protocol-compliance test.",
   "counts": {
     "reviewed": 99,
-    "original_records_missing": 67,
+    "original_records_missing": 63,
     "calculation_replay_packaged": 32,
     "upstream_execution_without_error_reported_and_notebook_hash_matched": 99,
-    "unconnected_input_bundle_findings_remaining": 0
+    "unconnected_input_bundle_findings_remaining": 0,
+    "source_workflow_reconstructed": 4
   },
   "excluded_as_missing_requirements": [
     "New independent confirmation absent from original work",
@@ -382,23 +383,18 @@
       "investigation": "state-codex-r1",
       "entries": 4,
       "category_counts": {
-        "original_records_missing": 4
+        "source_workflow_reconstructed": 4
       },
       "representative_code_pointers": [
         {
-          "path": "materials/state/notebooks/state-codex-r1/test-01.py",
-          "line": 15,
-          "evidence": "Automatic public archive preparation"
+          "path": "reconstructed/state-codex-r1/methods/run_pipeline.py",
+          "line": 1,
+          "evidence": "Real source/features/scores/analysis orchestration"
         },
         {
-          "path": "materials/state/notebooks/state-codex-r1/test-01.py",
-          "line": 27,
-          "evidence": "STATE_INPUTS.json"
-        },
-        {
-          "path": "materials/state/notebooks/state-codex-r1/test-01.py",
-          "line": 55,
-          "evidence": "No curve or model result is recomputed."
+          "path": "reconstructed/state-codex-r1/methods/run_analysis.py",
+          "line": 1,
+          "evidence": "Condition-level fits, controls and historical comparison"
         }
       ]
     },
@@ -927,7 +923,7 @@
     },
     {
       "analysis_id": "am-kimi-r1/test-05",
-      "axis": "homology availability (ortholog count across 6 species; levels 6 / 4\u20135 / 0\u20133 after predeclared merge)",
+      "axis": "homology availability (ortholog count across 6 species; levels 6 / 4–5 / 0–3 after predeclared merge)",
       "category": "original_records_missing",
       "code_path": "materials/alphamissense/am-kimi-r1/axis-5.py",
       "record_path": "analyses/am-kimi-r1/test-05.json",
@@ -3436,15 +3432,11 @@
     {
       "analysis_id": "state-codex-r1/test-01",
       "axis": "Basal transcriptomic distance",
-      "category": "original_records_missing",
-      "code_path": "materials/state/notebooks/state-codex-r1/test-01.py",
+      "category": "source_workflow_reconstructed",
+      "code_path": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py",
       "record_path": "analyses/state-codex-r1/test-01.json",
-      "expected_standalone_bundle_layout": "materials/state",
-      "missing_original_artifact_kinds_explicit_in_code_or_record": [
-        "original individual inputs/predictions",
-        "axis feature and level outputs",
-        "matched reference outputs"
-      ],
+      "expected_standalone_bundle_layout": "reconstructed/state-codex-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
       "public_input_preparation": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
@@ -3466,21 +3458,29 @@
           "bytes": 37538
         }
       ],
-      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
-      "historical_notes_reference": "analyses/state-codex-r1/test-01.json#reconstruction_notes"
+      "original_traceability": "Actual source-to-decision computation executed; preserved choices and differences are explicitly labeled.",
+      "historical_notes_reference": "analyses/state-codex-r1/test-01.json#reconstruction_notes",
+      "legacy_code_path": "materials/state/notebooks/state-codex-r1/test-01.py",
+      "legacy_missing_artifact_kinds": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "execution_evidence": "reconstructed/state-codex-r1/notebooks/NOTEBOOK_VALIDATION.json",
+      "remaining_method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ]
     },
     {
       "analysis_id": "state-codex-r1/test-02",
       "axis": "Baseline S-phase heterogeneity",
-      "category": "original_records_missing",
-      "code_path": "materials/state/notebooks/state-codex-r1/test-02.py",
+      "category": "source_workflow_reconstructed",
+      "code_path": "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.py",
       "record_path": "analyses/state-codex-r1/test-02.json",
-      "expected_standalone_bundle_layout": "materials/state",
-      "missing_original_artifact_kinds_explicit_in_code_or_record": [
-        "original individual inputs/predictions",
-        "axis feature and level outputs",
-        "matched reference outputs"
-      ],
+      "expected_standalone_bundle_layout": "reconstructed/state-codex-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
       "public_input_preparation": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
@@ -3502,21 +3502,29 @@
           "bytes": 37538
         }
       ],
-      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
-      "historical_notes_reference": "analyses/state-codex-r1/test-02.json#reconstruction_notes"
+      "original_traceability": "Actual source-to-decision computation executed; preserved choices and differences are explicitly labeled.",
+      "historical_notes_reference": "analyses/state-codex-r1/test-02.json#reconstruction_notes",
+      "legacy_code_path": "materials/state/notebooks/state-codex-r1/test-02.py",
+      "legacy_missing_artifact_kinds": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "execution_evidence": "reconstructed/state-codex-r1/notebooks/NOTEBOOK_VALIDATION.json",
+      "remaining_method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ]
     },
     {
       "analysis_id": "state-codex-r1/test-03",
       "axis": "Training-lineage scarcity",
-      "category": "original_records_missing",
-      "code_path": "materials/state/notebooks/state-codex-r1/test-03.py",
+      "category": "source_workflow_reconstructed",
+      "code_path": "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.py",
       "record_path": "analyses/state-codex-r1/test-03.json",
-      "expected_standalone_bundle_layout": "materials/state",
-      "missing_original_artifact_kinds_explicit_in_code_or_record": [
-        "original individual inputs/predictions",
-        "axis feature and level outputs",
-        "matched reference outputs"
-      ],
+      "expected_standalone_bundle_layout": "reconstructed/state-codex-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
       "public_input_preparation": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
@@ -3538,21 +3546,29 @@
           "bytes": 37538
         }
       ],
-      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
-      "historical_notes_reference": "analyses/state-codex-r1/test-03.json#reconstruction_notes"
+      "original_traceability": "Actual source-to-decision computation executed; preserved choices and differences are explicitly labeled.",
+      "historical_notes_reference": "analyses/state-codex-r1/test-03.json#reconstruction_notes",
+      "legacy_code_path": "materials/state/notebooks/state-codex-r1/test-03.py",
+      "legacy_missing_artifact_kinds": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "execution_evidence": "reconstructed/state-codex-r1/notebooks/NOTEBOOK_VALIDATION.json",
+      "remaining_method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ]
     },
     {
       "analysis_id": "state-codex-r1/test-04",
       "axis": "Perturbation magnitude, DE count, cell count and dose",
-      "category": "original_records_missing",
-      "code_path": "materials/state/notebooks/state-codex-r1/test-04.py",
+      "category": "source_workflow_reconstructed",
+      "code_path": "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.py",
       "record_path": "analyses/state-codex-r1/test-04.json",
-      "expected_standalone_bundle_layout": "materials/state",
-      "missing_original_artifact_kinds_explicit_in_code_or_record": [
-        "original individual inputs/predictions",
-        "axis feature and level outputs",
-        "matched reference outputs"
-      ],
+      "expected_standalone_bundle_layout": "reconstructed/state-codex-r1",
+      "missing_original_artifact_kinds_explicit_in_code_or_record": [],
       "public_input_preparation": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
@@ -3574,8 +3590,20 @@
           "bytes": 37538
         }
       ],
-      "original_traceability": "Missing original per-record computation or outcomes; downloaded evidence/display execution does not reconstruct them.",
-      "historical_notes_reference": "analyses/state-codex-r1/test-04.json#reconstruction_notes"
+      "original_traceability": "Actual source-to-decision computation executed; preserved choices and differences are explicitly labeled.",
+      "historical_notes_reference": "analyses/state-codex-r1/test-04.json#reconstruction_notes",
+      "legacy_code_path": "materials/state/notebooks/state-codex-r1/test-04.py",
+      "legacy_missing_artifact_kinds": [
+        "original individual inputs/predictions",
+        "axis feature and level outputs",
+        "matched reference outputs"
+      ],
+      "execution_evidence": "reconstructed/state-codex-r1/notebooks/NOTEBOOK_VALIDATION.json",
+      "remaining_method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ]
     },
     {
       "analysis_id": "state-codex-r2/test-01",
@@ -3759,7 +3787,7 @@
     },
     {
       "analysis_id": "state-kimi-r1/test-01",
-      "axis": "Gene\u2013cell-line pair exposure",
+      "axis": "Gene–cell-line pair exposure",
       "category": "calculation_replay_packaged",
       "code_path": "materials/state/notebooks/state-kimi-r1/test-01.py",
       "record_path": "analyses/state-kimi-r1/test-01.json",
@@ -4393,7 +4421,8 @@
   "limitations": "This reassessment checks code, input inventories and matching upstream execution receipts. It does not independently rerun the 99 notebooks or download the 3.3 GB of archives. Independent HEAD checks verify access and declared size, not archive body hashes. Successful execution of evidence-only cells is not reconstruction of missing historical measurements. No new scientific criteria are imposed.",
   "category_definitions": {
     "original_records_missing": "Evidence or aggregate-display export executes, but the original per-record measurements/calculation required to reconstruct that axis are still missing. Some supporting source code may survive.",
-    "calculation_replay_packaged": "Actual scientific calculation code now has a public checksum-verified input preparation route and matching upstream error-free execution evidence. This does not establish every original acquisition/model/provenance step."
+    "calculation_replay_packaged": "Actual scientific calculation code now has a public checksum-verified input preparation route and matching upstream error-free execution evidence. This does not establish every original acquisition/model/provenance step.",
+    "source_workflow_reconstructed": "Original public input bytes processed into individual measurements, fitted curves/controls and linked historical decisions; actual remote execution retained, with reconstructed continuation choices explicit."
   },
   "reviewed_upstream_commit": "55886b71052c3cbf073950b976005a0e9d90ad6d",
   "upstream_change_evidence": {
@@ -4472,7 +4501,9 @@
     "Verified that all 99 records declare public preparation and all 99 notebook exports call prepare_notebook with their exact analysis ID.",
     "Matched all 99 published notebook SHA256 values to corresponding upstream error-free execution records.",
     "Mapped all 191 earlier missing-file examples, representing 46 unique files, to published archive members, sizes and hashes.",
-    "Confirmed that all 67 evidence or aggregate-only code paths retain their non-recomputation behavior.",
-    "The root agent independently requested the headers of all four Shrey release assets: each returned HTTP 200 and Content-Length matching data.json."
-  ]
+    "At the upstream55886b7 review,67 evidence or aggregate-only paths retained non-recomputation behavior; this follow-up replaces4 STATE Codex r1 preferred workflows with source reconstruction, leaving63 in that category.",
+    "The root agent independently requested the headers of all four Shrey release assets: each returned HTTP 200 and Content-Length matching data.json.",
+    "Follow-up: four STATE Codex r1 workflows reconstructed and executed on exxact05 from original public source bytes; other95 nonprimary entries are unchanged."
+  ],
+  "followup_reconstruction": "Four STATE Codex r1 entries now have actual source-to-condition execution; original upstream execution evidence remains bound to their legacy exports."
 }

@@ -1,0 +1,578 @@
+{
+  "inputs": [
+    {
+      "path": "acquisition/DepMap_Model_23Q4.csv",
+      "bytes": 530469,
+      "sha256": "6b77a73209ce3faaa7442dbd947d8e08ddcb08b538c36fe820163f9cff321341",
+      "url": "https://ndownloader.figshare.com/files/43746708",
+      "evidence": "Original acquisition commands and final artifact manifest; Tahoe revision from existing primary cache, original bytes enforced by hash."
+    },
+    {
+      "path": "acquisition/OmicsExpressionProteinCodingGenesTPMLogp1_23Q4.csv",
+      "bytes": 449782440,
+      "sha256": "d8e6eb9152c164e9bae49741fd46f5d4fd14c0d298c2a6de5d0996cb6cd3a6f8",
+      "url": "https://ndownloader.figshare.com/files/43347204",
+      "evidence": "Original acquisition commands and final artifact manifest; Tahoe revision from existing primary cache, original bytes enforced by hash."
+    },
+    {
+      "path": "acquisition/cmp_rnaseq_all_20220624.zip",
+      "bytes": 940707972,
+      "sha256": "2af6fd33a16c5c3d48a8d78976f54b4a09fcf0bac4102317b621f24d7bdca39a",
+      "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20220624.zip",
+      "evidence": "Original acquisition commands and final artifact manifest; Tahoe revision from existing primary cache, original bytes enforced by hash."
+    },
+    {
+      "path": "acquisition/tahoe_obs_metadata.parquet",
+      "bytes": 2293981573,
+      "sha256": "e51b24f3666f5f433c59ff01dd6fa33934627091455e89d929f2c1ddc87401fe",
+      "url": "https://huggingface.co/datasets/tahoebio/Tahoe-100M/resolve/2dc57900b7981cfcf5e211527169a0b006546a95/metadata/obs_metadata.parquet",
+      "evidence": "Original acquisition commands and final artifact manifest; Tahoe revision from existing primary cache, original bytes enforced by hash."
+    },
+    {
+      "path": "acquisition/state_tahoe_cell_type_onehot_map_verified.pkl",
+      "bytes": 517889,
+      "sha256": "44bbc9823979ec02a336d62651cf6918e3f6ce162e20b42f86eb06d7e872e20a",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/cell_type_onehot_map.pkl",
+      "evidence": "Native event521 used this official zeroshot cell map. SHA from sibling run API inventory, not original failed48-byte download."
+    },
+    {
+      "path": "acquisition/official_scores_st_se/C32_pred_de.csv",
+      "bytes": 388384053,
+      "sha256": "7169a2f135657b9f1db7440a9c7feef3f759428b0783f4fc89ac1c48ccac4d76",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_pred_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "pred_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/C32_results.csv",
+      "bytes": 468674,
+      "sha256": "cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "results"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/C32_agg_results.csv",
+      "bytes": 3547,
+      "sha256": "5a88c0744b9d31bfa73dcbcbe2d3366b7779f3e334d3a74be0bc7d6a8a53ca76",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_agg_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "agg_results"
+    },
+    {
+      "path": "acquisition/official_scores/C32_real_de.csv",
+      "bytes": 387383572,
+      "sha256": "19922ccec8820e43daa74dac907adeaa7b12d651308570650920762269f568d2",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_real_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "real_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/HOP62_pred_de.csv",
+      "bytes": 393288407,
+      "sha256": "5db83d0ef3c96cbcfc9f61dd1e851e5e4f2661a22fe831638e80741036ecc594",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_pred_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "pred_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/HOP62_results.csv",
+      "bytes": 463111,
+      "sha256": "dedd141ec8fdff513a19cb46f3bb95b76372b117935620b02f50f2f8e339d33d",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "results"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/HOP62_agg_results.csv",
+      "bytes": 3526,
+      "sha256": "c3c47eee13f78ed360408888e41434afa402bcdd177506e92fbbd5fdb3917e2b",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_agg_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "agg_results"
+    },
+    {
+      "path": "acquisition/official_scores/HOP62_real_de.csv",
+      "bytes": 395844167,
+      "sha256": "05c3fa4a991b1e94cdd991be01a787bd779c384d66760b70fbd569ffe5411063",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_real_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "real_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/HepG2-C3A_pred_de.csv",
+      "bytes": 385102563,
+      "sha256": "c7ee1dfdfcf69c34bd6a5a3a6774471b7b422ba446bb5d634f7151009f79fece",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_pred_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "pred_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/HepG2-C3A_results.csv",
+      "bytes": 473841,
+      "sha256": "a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "results"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/HepG2-C3A_agg_results.csv",
+      "bytes": 3591,
+      "sha256": "56019515df6daf90d29bb982dd9bf140e3a436d4a9d4f4e9ebb2030c47aa9930",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_agg_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "agg_results"
+    },
+    {
+      "path": "acquisition/official_scores/HepG2-C3A_real_de.csv",
+      "bytes": 381547673,
+      "sha256": "a038a095e74641cf068dc048a5e4f619b572c5b0b97ff9a10c47931ab75db13b",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_real_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "real_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/Hs 766T_pred_de.csv",
+      "bytes": 390361943,
+      "sha256": "65e61de4e9bfca4eb72bd331941cbead70ccd8ff15142cc8892a3b61fde42eca",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs%20766T_pred_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "pred_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/Hs 766T_results.csv",
+      "bytes": 468068,
+      "sha256": "4904a9d8a3ed52a2cccd9de85cd0eeec0277bcc07d184eefb8096395719a2746",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs%20766T_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "results"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/Hs 766T_agg_results.csv",
+      "bytes": 3534,
+      "sha256": "f7ac4dbc6e53c70ea9e4f2c8206187e2c4b6c2c49782356f9094e18c68245302",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs%20766T_agg_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "agg_results"
+    },
+    {
+      "path": "acquisition/official_scores/Hs 766T_real_de.csv",
+      "bytes": 389336629,
+      "sha256": "7d9f9e651c57a4ebb11ee04c256dac7a8b642b4736d3499c75cefa39908469d5",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs%20766T_real_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "real_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/PANC-1_pred_de.csv",
+      "bytes": 385408705,
+      "sha256": "eff16442c313b748156fcac2a6311c5c4b798e53c1e13e6bdebeca7b86f5b2e9",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_pred_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "pred_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/PANC-1_results.csv",
+      "bytes": 464280,
+      "sha256": "8483133246cf1dba89c76a94f8a407757f4714bff5c9534f66890fbfe3d7ec03",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "results"
+    },
+    {
+      "path": "acquisition/official_scores_st_se/PANC-1_agg_results.csv",
+      "bytes": 3558,
+      "sha256": "67a40b4e6aa50b0e164c54a6c29efc5dca4fcee468c9f5b51bc88f9169bf9b15",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_agg_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "agg_results"
+    },
+    {
+      "path": "acquisition/official_scores/PANC-1_real_de.csv",
+      "bytes": 398029547,
+      "sha256": "2b9ed18f2dae9d83dbfa910d9e7e2cac1da7ad0f73e43bed40b8daaf62a254c9",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_real_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/st_se_confirmation/integrity_checks.json",
+      "run": "ST-SE-eval-best",
+      "kind": "real_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/C32_pred_de.csv",
+      "bytes": 385492119,
+      "sha256": "a2dceb91caa40e395d5696bbe2e17727fb503f20b3fa7ad20840477731ecd683",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/C32_pred_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "pred_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/C32_results.csv",
+      "bytes": 469125,
+      "sha256": "8dd14088e807f1e7c5e8f1beac919902d7435c18522c8b6274bf628ea41e0f1a",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/C32_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "results"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/C32_agg_results.csv",
+      "bytes": 3616,
+      "sha256": "ac6e9a2388c23e925d4c4b1b7c01646081bb1a5036b1cd5309abc4846624a04f",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/C32_agg_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "agg_results"
+    },
+    {
+      "path": "acquisition/official_scores/C32_real_de.csv",
+      "bytes": 387383572,
+      "sha256": "19922ccec8820e43daa74dac907adeaa7b12d651308570650920762269f568d2",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/C32_real_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "real_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/HOP62_pred_de.csv",
+      "bytes": 390497664,
+      "sha256": "52b5d92e4c89ce75c13bf3446a48316d76171f97477d170fdab34a845459e5e6",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/HOP62_pred_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "pred_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/HOP62_results.csv",
+      "bytes": 462185,
+      "sha256": "264fef6665edc32dfc0ff9f883487700ce0414ff32f225373127af9a7395d040",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/HOP62_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "results"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/HOP62_agg_results.csv",
+      "bytes": 3540,
+      "sha256": "306bcaab8dc33488d6d0d4ad79c54c59c91d8bc8b19c9acac1b695de0c91ba38",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/HOP62_agg_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "agg_results"
+    },
+    {
+      "path": "acquisition/official_scores/HOP62_real_de.csv",
+      "bytes": 395844167,
+      "sha256": "05c3fa4a991b1e94cdd991be01a787bd779c384d66760b70fbd569ffe5411063",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/HOP62_real_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "real_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/HepG2-C3A_pred_de.csv",
+      "bytes": 389244674,
+      "sha256": "17781adce27c0eb7992ae5c1e4f1a9afff75898396580dcedc7419b19fd8af94",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/HepG2-C3A_pred_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "pred_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/HepG2-C3A_results.csv",
+      "bytes": 472904,
+      "sha256": "daf5f44740d8fc0021e4e929ecc612fac02b9e41696833e548a3115dc036d98b",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/HepG2-C3A_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "results"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/HepG2-C3A_agg_results.csv",
+      "bytes": 3572,
+      "sha256": "c8d78c5f95a980d987be3abb00deb035f83ebc306722f109f297beb55a3a833e",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/HepG2-C3A_agg_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "agg_results"
+    },
+    {
+      "path": "acquisition/official_scores/HepG2-C3A_real_de.csv",
+      "bytes": 381547673,
+      "sha256": "a038a095e74641cf068dc048a5e4f619b572c5b0b97ff9a10c47931ab75db13b",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/HepG2-C3A_real_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "real_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/Hs 766T_pred_de.csv",
+      "bytes": 386516529,
+      "sha256": "dbc67c5eb60a895f5d40dd4ed13ae60b6303449c7c576794fd816e629ddcde7e",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/Hs%20766T_pred_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "pred_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/Hs 766T_results.csv",
+      "bytes": 468149,
+      "sha256": "de285cb0ea1196046b8d823da01fd45950f68653c2d8666b9af3899b5308d6e4",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/Hs%20766T_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "results"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/Hs 766T_agg_results.csv",
+      "bytes": 3550,
+      "sha256": "2af928eaaec6b8157d74e14dbb0404900761a5f3a39951c316e997ed6c330710",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/Hs%20766T_agg_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "agg_results"
+    },
+    {
+      "path": "acquisition/official_scores/Hs 766T_real_de.csv",
+      "bytes": 389336629,
+      "sha256": "7d9f9e651c57a4ebb11ee04c256dac7a8b642b4736d3499c75cefa39908469d5",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/Hs%20766T_real_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "real_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/PANC-1_pred_de.csv",
+      "bytes": 388182416,
+      "sha256": "86d681868029bc745ea30922db880a429990078d7012416de5249e0ef9fcc3f1",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/PANC-1_pred_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "pred_de"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/PANC-1_results.csv",
+      "bytes": 463903,
+      "sha256": "8fc145356c04a850fce6fc174874a0817703e464eaa1883a325d22710a076396",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/PANC-1_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "results"
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/PANC-1_agg_results.csv",
+      "bytes": 3560,
+      "sha256": "6282422639050412e75130431d5d6100b41804735ba352c17747c3ee28072434",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/PANC-1_agg_results.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "agg_results"
+    },
+    {
+      "path": "acquisition/official_scores/PANC-1_real_de.csv",
+      "bytes": 398029547,
+      "sha256": "2b9ed18f2dae9d83dbfa910d9e7e2cac1da7ad0f73e43bed40b8daaf62a254c9",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_last.ckpt/PANC-1_real_de.csv",
+      "evidence": "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/state-l4-handoff/STATE_L4_figure_runs_2026-10-22/runs/GPT_r1/supporting/results/lineage_followup/integrity_checks.json",
+      "run": "ST-SE-eval-last",
+      "kind": "real_de"
+    },
+    {
+      "path": "acquisition/official_scores/C32_agg_results.csv",
+      "bytes": 3524,
+      "sha256": "6bc7a3590dc9818bf7843d119fdd7f73852c023ec7cab716e06623252dde0460",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_agg_results.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/C32_pred_de.csv",
+      "bytes": 399394066,
+      "sha256": "58a5341d3e6b308c8eba7c82b45d4eb9dd140f9bf659bcb037eac647ce97e374",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_pred_de.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/C32_real_de.csv",
+      "bytes": 387383572,
+      "sha256": "19922ccec8820e43daa74dac907adeaa7b12d651308570650920762269f568d2",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_real_de.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/C32_results.csv",
+      "bytes": 468117,
+      "sha256": "a0de78f621e8c6dfc67ac6ab6acbbab65fbd3aaddf7e56732ed6f03569d39f94",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_results.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/HOP62_agg_results.csv",
+      "bytes": 3556,
+      "sha256": "ba42a81656733e015c59bc9f596b6ae4a88972d19c0335b6c5db9ed763e5bffc",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_agg_results.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/HOP62_pred_de.csv",
+      "bytes": 406763875,
+      "sha256": "1d8b2a07b60e751746854378effb7e8ba79cbd66446fa6c2d03acdeb328bbed4",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_pred_de.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/HOP62_real_de.csv",
+      "bytes": 395844167,
+      "sha256": "05c3fa4a991b1e94cdd991be01a787bd779c384d66760b70fbd569ffe5411063",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_real_de.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/HOP62_results.csv",
+      "bytes": 459434,
+      "sha256": "e3fef3287ccc5f38ac64c1c249915684a11dda7b38b43884b1f636cde792364a",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_results.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/HepG2-C3A_agg_results.csv",
+      "bytes": 3606,
+      "sha256": "935197c8bd6a4dbb2edbd93dccea64ab271f16b7016bf3248edf3ed7a7a05ce0",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_agg_results.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/HepG2-C3A_pred_de.csv",
+      "bytes": 399787916,
+      "sha256": "b3ce247d0e2019fedd2f910af1c0f84c5f4ff0af1a854ac8e1c69e4975c1ba82",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_pred_de.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/HepG2-C3A_real_de.csv",
+      "bytes": 381547673,
+      "sha256": "a038a095e74641cf068dc048a5e4f619b572c5b0b97ff9a10c47931ab75db13b",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_real_de.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/HepG2-C3A_results.csv",
+      "bytes": 479496,
+      "sha256": "8f953408f94eadc1461851599a33e2a4f84e413621d5ee54a52a8746c2037691",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_results.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/Hs 766T_agg_results.csv",
+      "bytes": 3569,
+      "sha256": "ebd92010ea8f59e6bfc8a689a37a7e7b031e46c4e6296806b7419608f7cf32dc",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs%20766T_agg_results.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/Hs 766T_pred_de.csv",
+      "bytes": 404556041,
+      "sha256": "a19eb583fb89f7152bf863e3681fe291e513f0ee65654b3ee55b1ad7ef1f009b",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs%20766T_pred_de.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/Hs 766T_real_de.csv",
+      "bytes": 389336629,
+      "sha256": "7d9f9e651c57a4ebb11ee04c256dac7a8b642b4736d3499c75cefa39908469d5",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs%20766T_real_de.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/Hs 766T_results.csv",
+      "bytes": 466949,
+      "sha256": "b9ab34b3d93a414e5db0650aaad70fb9bc558abade0e4c4eb3322ab3e4a47080",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs%20766T_results.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/PANC-1_agg_results.csv",
+      "bytes": 3635,
+      "sha256": "58717b0f897dbb4ad5a2f67b621f92e0cfdd0524f0a963c651e986361289e7e4",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_agg_results.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/PANC-1_pred_de.csv",
+      "bytes": 407599726,
+      "sha256": "11a225a6a6851507cec93ddf22b67df570f52cb3ce1b25cd60d46bc26fa03a5a",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_pred_de.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/PANC-1_real_de.csv",
+      "bytes": 398029547,
+      "sha256": "2b9ed18f2dae9d83dbfa910d9e7e2cac1da7ad0f73e43bed40b8daaf62a254c9",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_real_de.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    },
+    {
+      "path": "acquisition/official_scores/PANC-1_results.csv",
+      "bytes": 461203,
+      "sha256": "2171a50b43d55ed6a5fae82c50685fd519b21b3a821872cb0e147a338d26a332",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_results.csv",
+      "evidence": "Original verified_manifest.json recovered from handoff tar.",
+      "run": "ST-HVG-eval-best"
+    }
+  ],
+  "cmp_member": {
+    "path": "acquisition/rnaseq_tpm_20220624.csv",
+    "bytes": 257466286,
+    "sha256": "54514510ffa03f3050e3787ab3d7f5a4d677068c4ed1a20177a7b57381d3a5bb",
+    "archive_member": "rnaseq_tpm_20220624.csv"
+  },
+  "existing_local_result_files": [
+    "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_results.csv",
+    "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs 766T_results.csv",
+    "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_results.csv",
+    "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_results.csv",
+    "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-HVG-Tahoe/snapshots/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_results.csv",
+    "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_results.csv",
+    "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs 766T_results.csv",
+    "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_results.csv",
+    "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_results.csv",
+    "/Users/yashaektefaie/Library/CloudStorage/Dropbox/SPECTRA_agent/output/primary-notebook-recovery-2026-11-08/state/original/state_generalizability_20260602_single_controller/hf_cache/hub/models--arcinstitute--ST-SE-Tahoe/snapshots/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_results.csv"
+  ],
+  "important": "No large input downloads executed by methods subagent. Score result CSVs alone cannot replace DE-row calculation of LFC RMSE."
+}

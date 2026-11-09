@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "stage": "obs",
+  "completed": true,
+  "scientific_execution": "recomputed_from_verified_public_source_bytes",
+  "source_specifications": [
+    {
+      "path": "acquisition/tahoe_obs_metadata.parquet",
+      "bytes": 2293981573,
+      "sha256": "e51b24f3666f5f433c59ff01dd6fa33934627091455e89d929f2c1ddc87401fe",
+      "url": "https://huggingface.co/datasets/tahoebio/Tahoe-100M/resolve/2dc57900b7981cfcf5e211527169a0b006546a95/metadata/obs_metadata.parquet"
+    }
+  ],
+  "verified_inputs": [
+    {
+      "path": "acquisition/tahoe_obs_metadata.parquet",
+      "bytes": 2293981573,
+      "sha256": "e51b24f3666f5f433c59ff01dd6fa33934627091455e89d929f2c1ddc87401fe",
+      "url": "https://huggingface.co/datasets/tahoebio/Tahoe-100M/resolve/2dc57900b7981cfcf5e211527169a0b006546a95/metadata/obs_metadata.parquet",
+      "actual_sha256": "e51b24f3666f5f433c59ff01dd6fa33934627091455e89d929f2c1ddc87401fe",
+      "verified": true
+    }
+  ],
+  "method_sha256": {
+    "methods/build_features.py": "b67611c14f8d8f171a79ed9a40937931f18264553f131a8a3b6d9c12cf590bf0",
+    "methods/original/01_build_prospective_axis.py": "6c1ab549ee43a81c6aa2a7d5c226670061543de3584731aa681dd1f4f50db7b2",
+    "methods/original/04_analyze_frozen_axis.py": "d923071894cfe535728a42c62b283ea2f02453423b701d31654efc3d91aad484"
+  },
+  "output_path_base": "feature_directory",
+  "outputs": [
+    {
+      "path": "baseline_heterogeneity.csv",
+      "bytes": 943,
+      "sha256": "59f8bd7ec7b582ba3155b103f8750214f81b5eec71474239dfd8d7deec73f0f4"
+    },
+    {
+      "path": "s_phase_features.csv",
+      "bytes": 318,
+      "sha256": "390e9ffe892981cd316dab7118bbdf900e8b0bd9d66ebfdc2846dffb4702342a"
+    },
+    {
+      "path": "s_score_axis_plate_replication.csv",
+      "bytes": 581,
+      "sha256": "9a833a0412a724436915f8fc2e0a85fab019c4f6ef662e2a45d3c4cc092f7376"
+    },
+    {
+      "path": "s_phase_qc_filter_sensitivity.csv",
+      "bytes": 525,
+      "sha256": "fea3d5aca1f75adf2d8d7adc1c94b500bcc049f0369fbda45f8b84915e404d50"
+    },
+    {
+      "path": "cell_counts.csv",
+      "bytes": 290966,
+      "sha256": "086bbbd0c688eca17c1ab260c4e28b97aa772c4b4d864cea8189fb2c7d692f5c"
+    }
+  ],
+  "checks": {
+    "baseline_cells": 319511,
+    "context_count": 5,
+    "original_measurement_sources": [
+      "recovery/native_events/original-command-911.txt",
+      "recovery/native_events/original-command-922.txt"
+    ],
+    "categorical_grouping": "observed=True removes unused categories; entropy includes only positive-frequency observed phases",
+    "sphase_vs_original_max_abs_error": {
+      "axis_value": 8.326672684688674e-17
+    },
+    "sphase_original_comparison_source": {
+      "path": "recovery/original_handoff/supporting/results/st_se_confirmation/spc_table.csv",
+      "sha256": "fce883b421dcffc44ad9b81e7efd5395d2fdbfbb3c26e690d10f9970134fdbcd"
+    },
+    "qc_vs_original_max_abs_error": {
+      "recomputed_all_cell_SD": 8.326672684688674e-17,
+      "full_pass_filter_SD": 8.326672684688674e-17
+    },
+    "qc_original_comparison_source": {
+      "path": "recovery/original_handoff/supporting/results/distance_closure_validation/s_phase_qc_filter_sensitivity.csv",
+      "sha256": "a5662c2903f139e23c067a3942f8d2738062469ebaba06b7de461fc6a36d2e63"
+    },
+    "odd_even_rank_spearman": 0.9999999999999999,
+    "full_filter_rank_spearman": 0.9999999999999999,
+    "n_control_by_context": {
+      "C32": 51984,
+      "HOP62": 78130,
+      "HepG2/C3A": 31538,
+      "Hs 766T": 60761,
+      "PANC-1": 97098
+    },
+    "condition_count_rows": 5689,
+    "condition_all_cell_total": 13787629,
+    "condition_full_cell_total": 13168068,
+    "count_method": "Unmodified 04_analyze_frozen_axis.extract_cell_counts: three projected columns, held-out context filter, batches of 500000, exact counters",
+    "all_original_feature_comparisons_passed": true
+  },
+  "runtime": {
+    "python": "3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "pyarrow": "16.1.0"
+  },
+  "elapsed_seconds": 44.19,
+  "executed_at_utc": "2026-11-09T14:43:05Z"
+}

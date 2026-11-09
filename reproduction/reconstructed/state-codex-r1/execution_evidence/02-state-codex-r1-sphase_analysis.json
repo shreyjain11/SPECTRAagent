@@ -1,0 +1,195 @@
+{
+  "completed": true,
+  "scientific_workflow_executed": true,
+  "input_kind": "original public DE rows and original atlas/observation metadata; verified upstream computation receipts",
+  "historical_aggregate_fallback": false,
+  "source_manifest_sha256": "d7bba695215da557ee1b4a9cd83aa861eb384a11fc037a375f1ec6c2a9090b2a",
+  "method_sha256": {
+    "methods/run_analysis.py": "a46988d7bd4ea525351068f26fc6f271376d9727864d298ea56765fbef1176a8",
+    "methods/reconstruct.py": "51d4a1af744f89f70d94cc56a8bcfab3736b6cf43194099aa8391e8cd6b0043a",
+    "methods/original/04_analyze_frozen_axis.py": "d923071894cfe535728a42c62b283ea2f02453423b701d31654efc3d91aad484"
+  },
+  "stage_receipt_sha256": {
+    "computed/scores/score_receipt.json": "a5f1e6a62f3610946b78f5bfd4d1d4208ae8f66c3aacbe27dacd56bc559c652c",
+    "computed/features/obs_receipt.json": "413f797a252833b88fd0f39f165ff3f17f3a2e3f62932129db9f580d0911cdc5",
+    "computed/features/expression_receipt.json": "d34f029e6b7fc45aca59134eb8c9d43abe6c0bb8f8d8062ef756e23dec00f425"
+  },
+  "policy": {
+    "policy_fixed_before_results": true,
+    "axis_z_scope": "all_rows",
+    "axis_z_reason": "Inherit surviving original04: mean/sample SD over all released score rows before completeness filtering.",
+    "bootstrap_seed": 20260714,
+    "bootstrap_seed_reason": "Inherit initial original04 seed; final continuation seed was not recovered.",
+    "bootstrap_reps": 10000,
+    "bootstrap_reps_reason": "Documented final S-phase count; same fixed count used for all reconstructed intervals.",
+    "bootstrap_pairing": "Identical parent-compound multinomial multiplicities for STATE and identity reference.",
+    "matching": "Recovered original sensitivity: eight effect_q_1..4/cells_q_1..4 quintile indicators, all rows retained, original within-target OLS. Cutpoint scope inferred once as within current analysis partition, shared across contexts.",
+    "sensitivity_standardization": "Retain the full released-panel axis scale when subsetting doses, contexts or partitions.",
+    "no_result_tuning": true
+  },
+  "versions": {
+    "python": "3.11.13",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2"
+  },
+  "outputs": {
+    "computed/analysis/reconstruction_policy.json": {
+      "bytes": 986,
+      "sha256": "0a8616dbc684f94f39a93f7be0a9228f0ea80c38708f9da3f88c04404c492225"
+    },
+    "computed/analysis/historical_comparison.csv": {
+      "bytes": 10457,
+      "sha256": "73e21a03d3c8c90406e1379d6642a7fd256c80cfb1a4bad707aa5bb6ae5485c3"
+    },
+    "computed/analysis/lineage/analysis.json": {
+      "bytes": 21654,
+      "sha256": "586ae27b16cab809409f3eab6604abc229ee7a3cfc62c050730adccab0c75773"
+    },
+    "computed/analysis/lineage/per_condition_scores.csv": {
+      "bytes": 3416933,
+      "sha256": "fce578a56f978ec5f94a28aa48aa34c6a593571b564aa8ae7021d406269bd7b0"
+    },
+    "computed/analysis/lineage/spc_table.csv": {
+      "bytes": 911,
+      "sha256": "d1974f667c0b54a65a7ebb45bbbf7b98764ae053c2eba383de105922c34a22b5"
+    },
+    "computed/analysis/lineage/hvg_discovery_analysis.json": {
+      "bytes": 4656,
+      "sha256": "b3291e01f20ce02a55a4a2b6d8997e6470bee987d7c3f156a5f47911bbf600a6"
+    },
+    "computed/analysis/lineage/hvg_discovery_spc.csv": {
+      "bytes": 912,
+      "sha256": "e67e69a8a28db9a3ab0b32b506556ae5b7a0866f40bbc92036961273058b24de"
+    },
+    "computed/analysis/lineage/matching_weights.csv": {
+      "bytes": 2566531,
+      "sha256": "928941188bcbcd15dd85927bcb95d69b47398af485f5c9ec31fc8ed4f6d02e35"
+    },
+    "computed/analysis/lineage/spc.png": {
+      "bytes": 72334,
+      "sha256": "0858fe10b7faa920d5508b680f6262b24d16fab84d8c3ac6bb7e0628347c1304"
+    },
+    "computed/analysis/lineage/matching_strata.csv": {
+      "bytes": 446,
+      "sha256": "8ffe9e8725849e263736e823e2ff3ad69e781f65e1924b529a7ec85fc7b08b22"
+    },
+    "computed/analysis/lineage/compound_eligibility.csv": {
+      "bytes": 12337,
+      "sha256": "1c283a382dfc3ba5fe273c8b7c677dc7d642112c2f122239ec7781ed82657e62"
+    },
+    "computed/analysis/s_phase/analysis.json": {
+      "bytes": 21777,
+      "sha256": "e3dde600f2c9f5a8d78b6cd1070821da385eb1df29605a1319f3e00a2f71f175"
+    },
+    "computed/analysis/s_phase/per_condition_scores.csv": {
+      "bytes": 3499835,
+      "sha256": "e0c49c1fc1f16d9d3a3315f0c01e317fb14c2bf8baa2a2006125852daa344206"
+    },
+    "computed/analysis/s_phase/spc_table.csv": {
+      "bytes": 905,
+      "sha256": "56d42c1138a06bdbec3b5096408e074d018c989ecb3643fe5b1999eca18b237e"
+    },
+    "computed/analysis/s_phase/hvg_discovery_analysis.json": {
+      "bytes": 4718,
+      "sha256": "d02652acdd83e62018c3c1325ba286fdd638337e434abd478d34c541fbe49543"
+    },
+    "computed/analysis/s_phase/hvg_discovery_spc.csv": {
+      "bytes": 907,
+      "sha256": "18259c7547eccd8f3c778dda8daab6d09ce1f5c4406f516ed0e7046fc0dd74fc"
+    },
+    "computed/analysis/s_phase/matching_weights.csv": {
+      "bytes": 2624938,
+      "sha256": "5de175aed4c783be4526a5bdac9fca22b32b60c14bd5911ceeb7ce011f13e32f"
+    },
+    "computed/analysis/s_phase/spc.png": {
+      "bytes": 87952,
+      "sha256": "ced742a7b240cfc5b10ed1d4b6adcbc117ab51d2b3240462cdd946a3e2cd4da0"
+    },
+    "computed/analysis/s_phase/matching_strata.csv": {
+      "bytes": 446,
+      "sha256": "8ffe9e8725849e263736e823e2ff3ad69e781f65e1924b529a7ec85fc7b08b22"
+    },
+    "computed/analysis/s_phase/compound_eligibility.csv": {
+      "bytes": 12337,
+      "sha256": "1c283a382dfc3ba5fe273c8b7c677dc7d642112c2f122239ec7781ed82657e62"
+    },
+    "computed/analysis/controls/analysis.json": {
+      "bytes": 21482,
+      "sha256": "6037aefb7ae1e41d171d8d274af4049d0695dd85dfb0b1fc11026f9e0452e5a7"
+    },
+    "computed/analysis/controls/all_sensitivity_estimates.csv": {
+      "bytes": 13217,
+      "sha256": "f3a4bac97bd546a6b44e00b36fe83f0446f8293037ef0715ccbba8c1d681e87e"
+    },
+    "computed/analysis/controls/baseline_discovery_screen.csv": {
+      "bytes": 434,
+      "sha256": "ec43beafa59aa08a86a24bb787ea41c9bff65249e4e9192d68a63e57b3ccc1b2"
+    },
+    "computed/analysis/controls/per_condition_scores.csv": {
+      "bytes": 11264658,
+      "sha256": "b5343513c7f5dd25dbf68eac5d39a1b060b4814edeccdf8adfbb1bc99468058e"
+    },
+    "computed/analysis/controls/source_axis_counts.csv": {
+      "bytes": 512,
+      "sha256": "200f1fc90f80f72d55f63221f534667d7c6d5f6915ea0f7aa3d2b5b3877ab483"
+    },
+    "computed/analysis/controls/baseline_discovery_features.csv": {
+      "bytes": 1046,
+      "sha256": "2bdd674cf24e433ed2b66732289440e46c7c0b4119d75cb068eb7b04654ebfd0"
+    },
+    "computed/analysis/controls/spc.png": {
+      "bytes": 47783,
+      "sha256": "a60ea05a64325e5f24ab4b0e08354f6b10ca3f7368eda4c370b7204c3a550c41"
+    },
+    "computed/analysis/controls/historical_comparison.csv": {
+      "bytes": 10457,
+      "sha256": "73e21a03d3c8c90406e1379d6642a7fd256c80cfb1a4bad707aa5bb6ae5485c3"
+    },
+    "computed/analysis/distance/analysis.json": {
+      "bytes": 21202,
+      "sha256": "8866fde8b04d20a5b781a2a94c5af3ef4ffaccde1b4849a06e8d49489eae7c1a"
+    },
+    "computed/analysis/distance/ccle_spc_table.csv": {
+      "bytes": 909,
+      "sha256": "32425fe4b0c0cca98c096ccd117359dcc1ad3384a9051bacbb007b662be95e57"
+    },
+    "computed/analysis/distance/per_condition_scores.csv": {
+      "bytes": 3843586,
+      "sha256": "3bce858c2b79f137d39866df6a364ea721f97a704d75d5d62f800d25ed3d363f"
+    },
+    "computed/analysis/distance/spc_table.csv": {
+      "bytes": 909,
+      "sha256": "81df866a2acac111153c85f0298613e6e4e9f7da09dfa068ff6aa8bc32cf0741"
+    },
+    "computed/analysis/distance/matching_weights.csv": {
+      "bytes": 2868360,
+      "sha256": "0480349e2cafc19ffcda71a59d181ee0f1b384f7a23d40d1b4b4287005052693"
+    },
+    "computed/analysis/distance/ccle_exact_contexts_spc_table.csv": {
+      "bytes": 757,
+      "sha256": "1c8edae4061e584a277d110b0f3deca58669d73ed63c3afd91431f9e0d4e72b3"
+    },
+    "computed/analysis/distance/spc.png": {
+      "bytes": 74735,
+      "sha256": "cc6b047494a1435733c510ba7f4d7dda8ec9492a76c8b6a2fec1f0671f5c9d72"
+    },
+    "computed/analysis/distance/ccle_analysis.json": {
+      "bytes": 4548,
+      "sha256": "30a2e3f68cc3579d1c8f4772b2626d97fcd8d176fb987b3602f78b8ed4b9bf26"
+    },
+    "computed/analysis/distance/matching_strata.csv": {
+      "bytes": 446,
+      "sha256": "8ffe9e8725849e263736e823e2ff3ad69e781f65e1924b529a7ec85fc7b08b22"
+    },
+    "computed/analysis/distance/compound_eligibility.csv": {
+      "bytes": 12337,
+      "sha256": "1c283a382dfc3ba5fe273c8b7c677dc7d642112c2f122239ec7781ed82657e62"
+    },
+    "computed/analysis/distance/ccle_exact_contexts_analysis.json": {
+      "bytes": 4225,
+      "sha256": "4a127c96832325793759f4e84af7ae6d9b8ef3966fedef7f1845b71d32da1062"
+    }
+  },
+  "historical_comparisons": 60,
+  "elapsed_seconds": 97.841
+}

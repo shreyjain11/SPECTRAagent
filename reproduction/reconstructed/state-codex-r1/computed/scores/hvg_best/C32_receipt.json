@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "reduction": "actual_original_DE_rows",
+  "run": "hvg_best",
+  "cell_line": "C32",
+  "source_manifest_sha256": "d7bba695215da557ee1b4a9cd83aa861eb384a11fc037a375f1ec6c2a9090b2a",
+  "method_sha256": {
+    "methods/build_scores.py": "f9983187827cb392aaf47b5d43c6a5bdb623a7c32a814ec7a1c78832e011f8ff",
+    "methods/original/04_analyze_frozen_axis.py": "d923071894cfe535728a42c62b283ea2f02453423b701d31654efc3d91aad484"
+  },
+  "inputs": [
+    {
+      "path": "acquisition/official_scores/C32_real_de.csv",
+      "sha256": "19922ccec8820e43daa74dac907adeaa7b12d651308570650920762269f568d2",
+      "bytes": 387383572,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores/C32_pred_de.csv",
+      "sha256": "58a5341d3e6b308c8eba7c82b45d4eb9dd140f9bf659bcb037eac647ce97e374",
+      "bytes": 399394066,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores/C32_results.csv",
+      "sha256": "a0de78f621e8c6dfc67ac6ab6acbbab65fbd3aaddf7e56732ed6f03569d39f94",
+      "bytes": 468117,
+      "verified": true
+    }
+  ],
+  "outputs": {
+    "computed/scores/hvg_best/C32_lfc.csv": {
+      "sha256": "787f98505e2f015534b9f9d6a36a808529f60e211567d45f98af5ed07ebd9c3c",
+      "bytes": 92020
+    },
+    "computed/scores/hvg_best/C32_results.csv": {
+      "sha256": "a0de78f621e8c6dfc67ac6ab6acbbab65fbd3aaddf7e56732ed6f03569d39f94",
+      "bytes": 468117
+    }
+  },
+  "targets": 1137,
+  "DE_rows": 2274000,
+  "elapsed_seconds": 6.006
+}

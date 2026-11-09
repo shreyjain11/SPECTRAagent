@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "reduction": "actual_original_DE_rows",
+  "run": "hvg_best",
+  "cell_line": "Hs 766T",
+  "source_manifest_sha256": "d7bba695215da557ee1b4a9cd83aa861eb384a11fc037a375f1ec6c2a9090b2a",
+  "method_sha256": {
+    "methods/build_scores.py": "f9983187827cb392aaf47b5d43c6a5bdb623a7c32a814ec7a1c78832e011f8ff",
+    "methods/original/04_analyze_frozen_axis.py": "d923071894cfe535728a42c62b283ea2f02453423b701d31654efc3d91aad484"
+  },
+  "inputs": [
+    {
+      "path": "acquisition/official_scores/Hs 766T_real_de.csv",
+      "sha256": "7d9f9e651c57a4ebb11ee04c256dac7a8b642b4736d3499c75cefa39908469d5",
+      "bytes": 389336629,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores/Hs 766T_pred_de.csv",
+      "sha256": "a19eb583fb89f7152bf863e3681fe291e513f0ee65654b3ee55b1ad7ef1f009b",
+      "bytes": 404556041,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores/Hs 766T_results.csv",
+      "sha256": "b9ab34b3d93a414e5db0650aaad70fb9bc558abade0e4c4eb3322ab3e4a47080",
+      "bytes": 466949,
+      "verified": true
+    }
+  ],
+  "outputs": {
+    "computed/scores/hvg_best/Hs 766T_lfc.csv": {
+      "sha256": "c1ac9323d8da773a24b88effcac16aed2091ade0151d16410907e703ec37b572",
+      "bytes": 91958
+    },
+    "computed/scores/hvg_best/Hs 766T_results.csv": {
+      "sha256": "b9ab34b3d93a414e5db0650aaad70fb9bc558abade0e4c4eb3322ab3e4a47080",
+      "bytes": 466949
+    }
+  },
+  "targets": 1137,
+  "DE_rows": 2274000,
+  "elapsed_seconds": 5.58
+}

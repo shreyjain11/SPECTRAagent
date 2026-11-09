@@ -3,8 +3,9 @@
   "scientific_adjudication_performed": false,
   "counts": {
     "primary_workflow_packaged": 44,
-    "original_records_missing": 67,
-    "calculation_replay_packaged": 32
+    "original_records_missing": 63,
+    "calculation_replay_packaged": 32,
+    "source_workflow_reconstructed": 4
   },
   "criteria": [
     "data",
@@ -1405,130 +1406,294 @@
     {
       "id": "state-codex-r1/test-01",
       "axis": "Basal transcriptomic distance",
-      "coverage": "original_records_missing",
-      "notebook": "materials/state/notebooks/state-codex-r1/test-01.ipynb",
+      "coverage": "source_workflow_reconstructed",
+      "notebook": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb",
       "stages": {
-        "data": "public_checksum_verified_retained_input_archive",
-        "processing": "missing_original_inputs_or_code",
-        "axis": "recorded_definition",
-        "levels": "original_individual_construction_missing",
-        "evaluation": "original_individual_computation_missing",
-        "curve": "summary_or_evidence_display_only",
-        "decision": "attributed_historical_summary"
+        "data": "source_workflow_computed_and_linked",
+        "processing": "source_workflow_computed_and_linked",
+        "axis": "source_workflow_computed_and_linked",
+        "levels": "source_workflow_computed_and_linked",
+        "evaluation": "source_workflow_computed_and_linked",
+        "curve": "source_workflow_computed_and_linked",
+        "decision": "source_workflow_computed_and_linked"
       },
-      "public_inputs": {
+      "execution_evidence": "reconstructed/state-codex-r1/notebooks/NOTEBOOK_VALIDATION.json",
+      "independent_review": "NONPRIMARY_REVIEW.json",
+      "remaining_traceability_gaps": [],
+      "coverage_limit": "Complete executable source-to-decision chain, with explicit reconstructed continuation choices; original aggregate numbers are checks rather than inputs.",
+      "original_reconstruction_notes": [
+        "Final continuation sample-level data from /path/to/audit-home/codex_spectra_audits/STATE; the saved aggregate tables and partial scripts are insufficient.",
+        "Original axis input features and level-assignment outputs.",
+        "Original individual predictions/observations and matched reference outputs."
+      ],
+      "remaining_method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ],
+      "stage_evidence": {
+        "data": [
+          "reconstructed/state-codex-r1/methods/sources.json",
+          "reconstructed/state-codex-r1/execution_evidence/download_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r1/methods/run_pipeline.py",
+          "reconstructed/state-codex-r1/methods/build_features.py",
+          "reconstructed/state-codex-r1/methods/build_scores.py",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r1/computed/features/primary_cmp_distances.csv",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r1/methods/reconstruct.py",
+          "reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r1/methods/original/04_analyze_frozen_axis.py",
+          "reconstructed/state-codex-r1/computed/scores/score_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r1/computed/analysis/distance/analysis.json",
+          "reconstructed/state-codex-r1/computed/analysis/distance/spc.png",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r1/recovery/original_handoff/REPORT.md",
+          "reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv",
+          "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.ipynb#cell-14"
+        ]
+      },
+      "legacy_public_inputs": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
         "prepare": "prepare_inputs.py",
         "notebook_preparation_cell": 0
       },
-      "execution_evidence": "execution.json",
-      "independent_review": "NONPRIMARY_REVIEW.json",
-      "remaining_traceability_gaps": [
-        "The public archive enables execution of the retained evidence/summary display; original individual inputs and/or calculations remain missing."
-      ],
-      "coverage_limit": "Executable retained calculation replay; complete original provenance is not certified. See per-entry review and original reconstruction notes. Scientific corrections or experiments not originally performed are not reproduction requirements.",
-      "original_reconstruction_notes": [
-        "Final continuation sample-level data from /path/to/audit-home/codex_spectra_audits/STATE; the saved aggregate tables and partial scripts are insufficient.",
-        "Original axis input features and level-assignment outputs.",
-        "Original individual predictions/observations and matched reference outputs."
-      ]
+      "public_sources": "reconstructed/state-codex-r1/methods/sources.json"
     },
     {
       "id": "state-codex-r1/test-02",
       "axis": "Baseline S-phase heterogeneity",
-      "coverage": "original_records_missing",
-      "notebook": "materials/state/notebooks/state-codex-r1/test-02.ipynb",
+      "coverage": "source_workflow_reconstructed",
+      "notebook": "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb",
       "stages": {
-        "data": "public_checksum_verified_retained_input_archive",
-        "processing": "missing_original_inputs_or_code",
-        "axis": "recorded_definition",
-        "levels": "original_individual_construction_missing",
-        "evaluation": "original_individual_computation_missing",
-        "curve": "summary_or_evidence_display_only",
-        "decision": "attributed_historical_summary"
+        "data": "source_workflow_computed_and_linked",
+        "processing": "source_workflow_computed_and_linked",
+        "axis": "source_workflow_computed_and_linked",
+        "levels": "source_workflow_computed_and_linked",
+        "evaluation": "source_workflow_computed_and_linked",
+        "curve": "source_workflow_computed_and_linked",
+        "decision": "source_workflow_computed_and_linked"
       },
-      "public_inputs": {
+      "execution_evidence": "reconstructed/state-codex-r1/notebooks/NOTEBOOK_VALIDATION.json",
+      "independent_review": "NONPRIMARY_REVIEW.json",
+      "remaining_traceability_gaps": [],
+      "coverage_limit": "Complete executable source-to-decision chain, with explicit reconstructed continuation choices; original aggregate numbers are checks rather than inputs.",
+      "original_reconstruction_notes": [
+        "Final continuation sample-level data from /path/to/audit-home/codex_spectra_audits/STATE; the saved aggregate tables and partial scripts are insufficient.",
+        "Original axis input features and level-assignment outputs.",
+        "Original individual predictions/observations and matched reference outputs."
+      ],
+      "remaining_method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ],
+      "stage_evidence": {
+        "data": [
+          "reconstructed/state-codex-r1/methods/sources.json",
+          "reconstructed/state-codex-r1/execution_evidence/download_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r1/methods/run_pipeline.py",
+          "reconstructed/state-codex-r1/methods/build_features.py",
+          "reconstructed/state-codex-r1/methods/build_scores.py",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r1/computed/features/s_phase_features.csv",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r1/methods/reconstruct.py",
+          "reconstructed/state-codex-r1/computed/analysis/s_phase/per_condition_scores.csv",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r1/methods/original/04_analyze_frozen_axis.py",
+          "reconstructed/state-codex-r1/computed/scores/score_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r1/computed/analysis/s_phase/analysis.json",
+          "reconstructed/state-codex-r1/computed/analysis/s_phase/spc.png",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r1/recovery/original_handoff/REPORT.md",
+          "reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv",
+          "reconstructed/state-codex-r1/notebooks/02-state-codex-r1-sphase.ipynb#cell-14"
+        ]
+      },
+      "legacy_public_inputs": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
         "prepare": "prepare_inputs.py",
         "notebook_preparation_cell": 0
       },
-      "execution_evidence": "execution.json",
-      "independent_review": "NONPRIMARY_REVIEW.json",
-      "remaining_traceability_gaps": [
-        "The public archive enables execution of the retained evidence/summary display; original individual inputs and/or calculations remain missing."
-      ],
-      "coverage_limit": "Executable retained calculation replay; complete original provenance is not certified. See per-entry review and original reconstruction notes. Scientific corrections or experiments not originally performed are not reproduction requirements.",
-      "original_reconstruction_notes": [
-        "Final continuation sample-level data from /path/to/audit-home/codex_spectra_audits/STATE; the saved aggregate tables and partial scripts are insufficient.",
-        "Original axis input features and level-assignment outputs.",
-        "Original individual predictions/observations and matched reference outputs."
-      ]
+      "public_sources": "reconstructed/state-codex-r1/methods/sources.json"
     },
     {
       "id": "state-codex-r1/test-03",
       "axis": "Training-lineage scarcity",
-      "coverage": "original_records_missing",
-      "notebook": "materials/state/notebooks/state-codex-r1/test-03.ipynb",
+      "coverage": "source_workflow_reconstructed",
+      "notebook": "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb",
       "stages": {
-        "data": "public_checksum_verified_retained_input_archive",
-        "processing": "missing_original_inputs_or_code",
-        "axis": "recorded_definition",
-        "levels": "original_individual_construction_missing",
-        "evaluation": "original_individual_computation_missing",
-        "curve": "summary_or_evidence_display_only",
-        "decision": "attributed_historical_summary"
+        "data": "source_workflow_computed_and_linked",
+        "processing": "source_workflow_computed_and_linked",
+        "axis": "source_workflow_computed_and_linked",
+        "levels": "source_workflow_computed_and_linked",
+        "evaluation": "source_workflow_computed_and_linked",
+        "curve": "source_workflow_computed_and_linked",
+        "decision": "source_workflow_computed_and_linked"
       },
-      "public_inputs": {
+      "execution_evidence": "reconstructed/state-codex-r1/notebooks/NOTEBOOK_VALIDATION.json",
+      "independent_review": "NONPRIMARY_REVIEW.json",
+      "remaining_traceability_gaps": [],
+      "coverage_limit": "Complete executable source-to-decision chain, with explicit reconstructed continuation choices; original aggregate numbers are checks rather than inputs.",
+      "original_reconstruction_notes": [
+        "Final continuation sample-level data from /path/to/audit-home/codex_spectra_audits/STATE; the saved aggregate tables and partial scripts are insufficient.",
+        "Original axis input features and level-assignment outputs.",
+        "Original individual predictions/observations and matched reference outputs."
+      ],
+      "remaining_method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ],
+      "stage_evidence": {
+        "data": [
+          "reconstructed/state-codex-r1/methods/sources.json",
+          "reconstructed/state-codex-r1/execution_evidence/download_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r1/methods/run_pipeline.py",
+          "reconstructed/state-codex-r1/methods/build_features.py",
+          "reconstructed/state-codex-r1/methods/build_scores.py",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r1/computed/features/lineage_features.csv",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r1/methods/reconstruct.py",
+          "reconstructed/state-codex-r1/computed/analysis/lineage/per_condition_scores.csv",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r1/methods/original/04_analyze_frozen_axis.py",
+          "reconstructed/state-codex-r1/computed/scores/score_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r1/computed/analysis/lineage/analysis.json",
+          "reconstructed/state-codex-r1/computed/analysis/lineage/spc.png",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r1/recovery/original_handoff/REPORT.md",
+          "reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv",
+          "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.ipynb#cell-14"
+        ]
+      },
+      "legacy_public_inputs": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
         "prepare": "prepare_inputs.py",
         "notebook_preparation_cell": 0
       },
-      "execution_evidence": "execution.json",
-      "independent_review": "NONPRIMARY_REVIEW.json",
-      "remaining_traceability_gaps": [
-        "The public archive enables execution of the retained evidence/summary display; original individual inputs and/or calculations remain missing."
-      ],
-      "coverage_limit": "Executable retained calculation replay; complete original provenance is not certified. See per-entry review and original reconstruction notes. Scientific corrections or experiments not originally performed are not reproduction requirements.",
-      "original_reconstruction_notes": [
-        "Final continuation sample-level data from /path/to/audit-home/codex_spectra_audits/STATE; the saved aggregate tables and partial scripts are insufficient.",
-        "Original axis input features and level-assignment outputs.",
-        "Original individual predictions/observations and matched reference outputs."
-      ]
+      "public_sources": "reconstructed/state-codex-r1/methods/sources.json"
     },
     {
       "id": "state-codex-r1/test-04",
       "axis": "Perturbation magnitude, DE count, cell count and dose",
-      "coverage": "original_records_missing",
-      "notebook": "materials/state/notebooks/state-codex-r1/test-04.ipynb",
+      "coverage": "source_workflow_reconstructed",
+      "notebook": "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb",
       "stages": {
-        "data": "public_checksum_verified_retained_input_archive",
-        "processing": "missing_original_inputs_or_code",
-        "axis": "recorded_definition",
-        "levels": "original_individual_construction_missing",
-        "evaluation": "original_individual_computation_missing",
-        "curve": "summary_or_evidence_display_only",
-        "decision": "attributed_historical_summary"
+        "data": "source_workflow_computed_and_linked",
+        "processing": "source_workflow_computed_and_linked",
+        "axis": "source_workflow_computed_and_linked",
+        "levels": "source_workflow_computed_and_linked",
+        "evaluation": "source_workflow_computed_and_linked",
+        "curve": "source_workflow_computed_and_linked",
+        "decision": "source_workflow_computed_and_linked"
       },
-      "public_inputs": {
+      "execution_evidence": "reconstructed/state-codex-r1/notebooks/NOTEBOOK_VALIDATION.json",
+      "independent_review": "NONPRIMARY_REVIEW.json",
+      "remaining_traceability_gaps": [],
+      "coverage_limit": "Complete executable source-to-decision chain, with explicit reconstructed continuation choices; original aggregate numbers are checks rather than inputs.",
+      "original_reconstruction_notes": [
+        "Final continuation sample-level data from /path/to/audit-home/codex_spectra_audits/STATE; the saved aggregate tables and partial scripts are insufficient.",
+        "Original axis input features and level-assignment outputs.",
+        "Original individual predictions/observations and matched reference outputs."
+      ],
+      "remaining_method_qualifications": [
+        "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+        "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
+        "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility."
+      ],
+      "stage_evidence": {
+        "data": [
+          "reconstructed/state-codex-r1/methods/sources.json",
+          "reconstructed/state-codex-r1/execution_evidence/download_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r1/methods/run_pipeline.py",
+          "reconstructed/state-codex-r1/methods/build_features.py",
+          "reconstructed/state-codex-r1/methods/build_scores.py",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r1/computed/features/cell_counts.csv",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r1/methods/reconstruct.py",
+          "reconstructed/state-codex-r1/computed/analysis/controls/per_condition_scores.csv",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r1/methods/original/04_analyze_frozen_axis.py",
+          "reconstructed/state-codex-r1/computed/scores/score_receipt.json",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r1/computed/analysis/controls/analysis.json",
+          "reconstructed/state-codex-r1/computed/analysis/controls/spc.png",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r1/recovery/original_handoff/REPORT.md",
+          "reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv",
+          "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.ipynb#cell-14"
+        ]
+      },
+      "legacy_public_inputs": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
         "prepare": "prepare_inputs.py",
         "notebook_preparation_cell": 0
       },
-      "execution_evidence": "execution.json",
-      "independent_review": "NONPRIMARY_REVIEW.json",
-      "remaining_traceability_gaps": [
-        "The public archive enables execution of the retained evidence/summary display; original individual inputs and/or calculations remain missing."
-      ],
-      "coverage_limit": "Executable retained calculation replay; complete original provenance is not certified. See per-entry review and original reconstruction notes. Scientific corrections or experiments not originally performed are not reproduction requirements.",
-      "original_reconstruction_notes": [
-        "Final continuation sample-level data from /path/to/audit-home/codex_spectra_audits/STATE; the saved aggregate tables and partial scripts are insufficient.",
-        "Original axis input features and level-assignment outputs.",
-        "Original individual predictions/observations and matched reference outputs."
-      ]
+      "public_sources": "reconstructed/state-codex-r1/methods/sources.json"
     },
     {
       "id": "state-codex-r2/test-01",

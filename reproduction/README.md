@@ -2,7 +2,9 @@
 
 Start with the [44 primary notebooks](primary/README.md). They link the original data sources and processing, axis definitions, level construction, model results or released scores, curves or screening diagnostics, and the historical agent decisions. Retained, discarded and unresolved candidates remain represented.
 
-The [index](index.json) lists all 28 investigations and 143 entries. The [whole-PR review](PR_REVIEW.md) distinguishes 44 recovered primary workflows, 32 additional calculation replays with downloadable inputs, and 67 evidence/summary displays whose original individual calculations remain missing. All retained notebooks have input preparation routes; successful execution of a summary display does not restore the missing original work.
+The [index](index.json) lists all 28 investigations and 143 entries. The [whole-PR review](PR_REVIEW.md) distinguishes 44 recovered primary workflows, 32 additional calculation replays with downloadable inputs, four [STATE Codex r1 source reconstructions](reconstructed/state-codex-r1/README.md), and 63 evidence/summary displays whose original individual calculations remain missing. All retained notebooks have input preparation routes; successful execution of a summary display does not restore the missing original work.
+
+The four STATE Codex r1 notebooks now recalculate features, released-prediction errors, regressions, curves and controls from verified public inputs by default. All four were executed on exxact05. Their original code-only exports remain available separately. Main results and saved curve means reproduce; two quintile-control estimates differ under the explicitly reconstructed binning method. See the [comparison table](reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv) and [method qualifications](reconstructed/state-codex-r1/methods/METHODS.md).
 
 ## What the records contain
 
@@ -16,7 +18,7 @@ Each analysis retains `dataset_split`, `axis_levels`, `model_evaluation`, `curve
 
 The primary packages carry small, checksum-verified compressed input packs, original code and portable bootstrap helpers. Large raw datasets and model weights use the pinned public acquisition recipes. The original AlphaMissense UniRef50 search-hit table exceeds GitHub's Git-file limit and is a versioned, checksum-verified release asset linked by its package manifest. No private cloud bucket or access to the original analysis server is required.
 
-Default primary execution replays retained historical measurements. ESMFold2 and CONCH have an explicit full-workflow switch connecting acquisition, processing, model scoring and their original analyses. Missing generated results stop those runs; they cannot silently substitute archived predictions. Full raw-data/model execution has not been performed during this integration. CONCH's model download requires the original publisher's access approval.
+Default primary execution replays retained historical measurements. ESMFold2 and CONCH have an explicit full-workflow switch connecting acquisition, processing, model scoring and their original analyses. Missing generated results stop those runs; they cannot silently substitute archived predictions. Full fresh CONCH/ESMFold2 model execution has not been performed during this integration. The separate STATE Codex r1 package has completed its original public-data-to-analysis route, which uses released predictions. CONCH's model download requires the original publisher's access approval.
 
 STATE starts from the official per-record evaluation files the original agent used. AlphaMissense starts from released prediction scores. Neither original workflow requires a new target-model inference run. The current ESMFold2 implementation is a documented replacement for the older historical fork; prediction equality across implementations is not claimed.
 

@@ -1,0 +1,11 @@
+candidate_axis,hypothesis_source,prospective_feature,status,reason_or_next_test
+basal transcriptomic distance from training panel,user-predeclared,Sanger CMP k5 local distance,axis_negative,Untouched confirmation adjusted slope -0.1500 and context rho -0.50; farther contexts were not harder
+true perturbation effect magnitude,required control,identity-reference LFC RMSE,control_then_reattribute_if_driver,Test adjusted and matched curves
+number of differentially expressed genes,required control,observed FDR<0.05 count,control_then_reattribute_if_driver,Test adjusted and matched curves
+cell count / measurement depth,required control,released per-condition cell count if available,control_then_reattribute_if_driver,Acquire raw scored output if absent
+dose,user-required confound check,0.05/0.5/5 uM,control,Block and stratify
+tissue or lineage distance,mechanistically plausible,negative log1p count of training contexts sharing DepMap Oncotree lineage,axis_negative_followup_not_closure_eligible,Overall adjusted +0.0322 CI 0.0223 to 0.0419 and rho 0.821 but 5 uM inconclusive; excluding HepG2/C3A reversed slope; ST-HVG discovery direction negative; exact operationalization followed related eval_best access
+representation family,user-required confound check,HVG versus STATE embedding,held_fixed,Selected ST-HVG official checkpoint
+perturbation modality,user-required confound check,chemical versus genetic,held_fixed,Tahoe analysis is chemical only
+exposure time,user-required confound check,24 hours,held_fixed,Tahoe analysis has fixed exposure
+baseline untreated-cell S-phase-score heterogeneity,discovery-only ST-HVG candidate,Tahoe DMSO_TF S_score sample SD,axis_negative_strong_regression_but_shape_failed,Untouched ST-SE confirmation adjusted slope +0.0951 CI 0.0859 to 0.1047 but frozen context-mean rho 0.30 below 0.70

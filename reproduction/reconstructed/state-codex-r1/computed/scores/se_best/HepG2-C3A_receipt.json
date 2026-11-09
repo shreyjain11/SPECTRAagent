@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "reduction": "actual_original_DE_rows",
+  "run": "se_best",
+  "cell_line": "HepG2/C3A",
+  "source_manifest_sha256": "d7bba695215da557ee1b4a9cd83aa861eb384a11fc037a375f1ec6c2a9090b2a",
+  "method_sha256": {
+    "methods/build_scores.py": "f9983187827cb392aaf47b5d43c6a5bdb623a7c32a814ec7a1c78832e011f8ff",
+    "methods/original/04_analyze_frozen_axis.py": "d923071894cfe535728a42c62b283ea2f02453423b701d31654efc3d91aad484"
+  },
+  "inputs": [
+    {
+      "path": "acquisition/official_scores/HepG2-C3A_real_de.csv",
+      "sha256": "a038a095e74641cf068dc048a5e4f619b572c5b0b97ff9a10c47931ab75db13b",
+      "bytes": 381547673,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores_st_se/HepG2-C3A_pred_de.csv",
+      "sha256": "c7ee1dfdfcf69c34bd6a5a3a6774471b7b422ba446bb5d634f7151009f79fece",
+      "bytes": 385102563,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores_st_se/HepG2-C3A_results.csv",
+      "sha256": "a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb",
+      "bytes": 473841,
+      "verified": true
+    }
+  ],
+  "outputs": {
+    "computed/scores/se_best/HepG2-C3A_lfc.csv": {
+      "sha256": "db8a8f4eef4a0a33b5f2634b0b8163b95208b852887432d1cea88154a0613874",
+      "bytes": 91857
+    },
+    "computed/scores/se_best/HepG2-C3A_results.csv": {
+      "sha256": "a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb",
+      "bytes": 473841
+    }
+  },
+  "targets": 1137,
+  "DE_rows": 2274000,
+  "elapsed_seconds": 5.428
+}

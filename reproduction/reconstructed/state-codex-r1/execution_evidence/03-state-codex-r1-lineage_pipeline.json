@@ -1,0 +1,27 @@
+{
+  "completed": true,
+  "stage": "all",
+  "host": "exxact05.broadinstitute.org",
+  "python": "3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]",
+  "started_unix": 1794235114.124782,
+  "elapsed_seconds": 216.962,
+  "steps": [
+    {
+      "script": "download_inputs.py",
+      "elapsed_seconds": 3.932
+    },
+    {
+      "script": "build_features.py",
+      "elapsed_seconds": 58.639
+    },
+    {
+      "script": "build_scores.py",
+      "elapsed_seconds": 52.644
+    },
+    {
+      "script": "run_analysis.py",
+      "elapsed_seconds": 101.746
+    }
+  ],
+  "derived_stage_policy": "recompute_from_source_inputs"
+}

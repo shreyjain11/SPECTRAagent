@@ -1,0 +1,28 @@
+{
+  "closed_at_utc": "2026-07-17T22:51:46Z",
+  "verdict": "CLOSED_NEGATIVE_NO_CERTIFIED_GENERALIZABILITY_FAILURE",
+  "certified_failure": false,
+  "pending_queue_submission": false,
+  "primary_candidates": {
+    "basal_transcriptomic_distance": "axis_negative_opposite_direction",
+    "baseline_s_phase_score_heterogeneity": "axis_negative_strong_regression_but_shape_failed",
+    "training_lineage_scarcity": "axis_negative_unstable_and_not_independently_prospective"
+  },
+  "strongest_nonclosing_signal": {
+    "candidate": "baseline untreated-cell S-phase-score heterogeneity",
+    "model": "STATE ST-SE-Tahoe eval_best",
+    "adjusted_slope_per_axis_sd": 0.09514923847360032,
+    "compound_bootstrap_ci_95": [0.0858581966451881, 0.10474651833991676],
+    "one_sided_p": 2.429922439488829e-87,
+    "context_mean_spearman_rho": 0.3,
+    "required_rho": 0.7,
+    "closure_reason": "frozen context-shape gate failed"
+  },
+  "confirmation_counts": {
+    "compounds": 268,
+    "drug_dose_targets": 804,
+    "context_condition_rows": 4020,
+    "contexts": 5
+  },
+  "report": "report.md"
+}

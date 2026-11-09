@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "stage": "expression",
+  "completed": true,
+  "scientific_execution": "recomputed_from_verified_public_source_bytes",
+  "source_specifications": [
+    {
+      "path": "acquisition/DepMap_Model_23Q4.csv",
+      "bytes": 530469,
+      "sha256": "6b77a73209ce3faaa7442dbd947d8e08ddcb08b538c36fe820163f9cff321341",
+      "url": "https://ndownloader.figshare.com/files/43746708"
+    },
+    {
+      "path": "acquisition/OmicsExpressionProteinCodingGenesTPMLogp1_23Q4.csv",
+      "bytes": 449782440,
+      "sha256": "d8e6eb9152c164e9bae49741fd46f5d4fd14c0d298c2a6de5d0996cb6cd3a6f8",
+      "url": "https://ndownloader.figshare.com/files/43347204"
+    },
+    {
+      "path": "acquisition/cmp_rnaseq_all_20220624.zip",
+      "bytes": 940707972,
+      "sha256": "2af6fd33a16c5c3d48a8d78976f54b4a09fcf0bac4102317b621f24d7bdca39a",
+      "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20220624.zip"
+    },
+    {
+      "path": "acquisition/state_tahoe_cell_type_onehot_map_verified.pkl",
+      "bytes": 517889,
+      "sha256": "44bbc9823979ec02a336d62651cf6918e3f6ce162e20b42f86eb06d7e872e20a",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/cell_type_onehot_map.pkl"
+    }
+  ],
+  "verified_inputs": [
+    {
+      "path": "acquisition/DepMap_Model_23Q4.csv",
+      "bytes": 530469,
+      "sha256": "6b77a73209ce3faaa7442dbd947d8e08ddcb08b538c36fe820163f9cff321341",
+      "url": "https://ndownloader.figshare.com/files/43746708",
+      "actual_sha256": "6b77a73209ce3faaa7442dbd947d8e08ddcb08b538c36fe820163f9cff321341",
+      "verified": true
+    },
+    {
+      "path": "acquisition/OmicsExpressionProteinCodingGenesTPMLogp1_23Q4.csv",
+      "bytes": 449782440,
+      "sha256": "d8e6eb9152c164e9bae49741fd46f5d4fd14c0d298c2a6de5d0996cb6cd3a6f8",
+      "url": "https://ndownloader.figshare.com/files/43347204",
+      "actual_sha256": "d8e6eb9152c164e9bae49741fd46f5d4fd14c0d298c2a6de5d0996cb6cd3a6f8",
+      "verified": true
+    },
+    {
+      "path": "acquisition/cmp_rnaseq_all_20220624.zip",
+      "bytes": 940707972,
+      "sha256": "2af6fd33a16c5c3d48a8d78976f54b4a09fcf0bac4102317b621f24d7bdca39a",
+      "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20220624.zip",
+      "actual_sha256": "2af6fd33a16c5c3d48a8d78976f54b4a09fcf0bac4102317b621f24d7bdca39a",
+      "verified": true
+    },
+    {
+      "path": "acquisition/state_tahoe_cell_type_onehot_map_verified.pkl",
+      "bytes": 517889,
+      "sha256": "44bbc9823979ec02a336d62651cf6918e3f6ce162e20b42f86eb06d7e872e20a",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/cell_type_onehot_map.pkl",
+      "actual_sha256": "44bbc9823979ec02a336d62651cf6918e3f6ce162e20b42f86eb06d7e872e20a",
+      "verified": true
+    }
+  ],
+  "method_sha256": {
+    "methods/build_features.py": "b67611c14f8d8f171a79ed9a40937931f18264553f131a8a3b6d9c12cf590bf0",
+    "methods/original/01_build_prospective_axis.py": "6c1ab549ee43a81c6aa2a7d5c226670061543de3584731aa681dd1f4f50db7b2",
+    "methods/original/04_analyze_frozen_axis.py": "d923071894cfe535728a42c62b283ea2f02453423b701d31654efc3d91aad484"
+  },
+  "output_path_base": "feature_directory",
+  "outputs": [
+    {
+      "path": "cell_line_mapping.csv",
+      "bytes": 6165,
+      "sha256": "120956d9475bf8304a3faf7e9d738311010de7d3fe1d86bfc96c73478733f12e"
+    },
+    {
+      "path": "primary_cmp_distances.csv",
+      "bytes": 732,
+      "sha256": "2a243ddf1427644d190599e8adb30d9e56449000e4fa1870f48be848320ed862"
+    },
+    {
+      "path": "primary_cmp_pairwise_distances.csv",
+      "bytes": 4627,
+      "sha256": "22e20492a07e3546d5bfe0c4f1dcd375fbd59ee594be95b866f5132af020762f"
+    },
+    {
+      "path": "primary_gene_set.txt",
+      "bytes": 12747,
+      "sha256": "48a8b99c9af22f4a45951ef7f21f2a9a6ce813f0f3b3d593c6fa807c2228c5c7"
+    },
+    {
+      "path": "independent_ccle_distances.csv",
+      "bytes": 556,
+      "sha256": "eb82b7d87b507f8a88243c4646526a9f8ada1b45896355c501955076206e6025"
+    },
+    {
+      "path": "independent_ccle_pairwise_distances.csv",
+      "bytes": 4565,
+      "sha256": "7f57e0281df9cf4bbc657e24a42964e9ed0250b41bf455a21d0a504e386350a9"
+    },
+    {
+      "path": "axis_replication_summary.json",
+      "bytes": 486,
+      "sha256": "453c59cd211870655e3118042932d946ee764019b5a607bc2ebbbccb03312057"
+    },
+    {
+      "path": "lineage_features.csv",
+      "bytes": 248,
+      "sha256": "d427508a169787aa9159b2b8c0b0f77b24807e9132d08c7aedc18c258ded21d2"
+    },
+    {
+      "path": "original_axis_stdout.txt",
+      "bytes": 942,
+      "sha256": "0108dad47e790593a5c3413f7e354deb5eb18689eac14abaac7450ead5bcfc94"
+    },
+    {
+      "path": "original_axis_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "checks": {
+    "cmp_extracted_member": {
+      "member": "rnaseq_tpm_20220624.csv",
+      "bytes": 257466286,
+      "sha256": "54514510ffa03f3050e3787ab3d7f5a4d677068c4ed1a20177a7b57381d3a5bb"
+    },
+    "lineage_rule": "Count mapped non-held-out training contexts by DepMap Oncotree lineage; -log1p(count), tied values retain same dense level",
+    "training_mapped_contexts": 44,
+    "all_original_feature_comparisons_passed": true,
+    "primary_vs_original_max_abs_error": {
+      "distance": 0.0
+    },
+    "ccle_vs_original_max_abs_error": {
+      "distance": 0.0
+    },
+    "distance_original_comparison_source": {
+      "path": "recovery/original_handoff/supporting/results/spc_table.csv",
+      "sha256": "9fc6575477e123439d04a2e92382b42f1c4ca044f6002dc71dfc058afd87aa9e"
+    },
+    "lineage_vs_original_max_abs_error": {
+      "axis_value": 2.220446049250313e-16
+    },
+    "lineage_original_comparison_source": {
+      "path": "recovery/original_handoff/supporting/results/lineage_followup/spc_table.csv",
+      "sha256": "861c6253112e243ae01b0f8e542231abf61678565db40630dca60b98963bad17"
+    }
+  },
+  "runtime": {
+    "python": "3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "pyarrow": "16.1.0"
+  },
+  "elapsed_seconds": 13.848,
+  "executed_at_utc": "2026-11-09T14:43:19Z"
+}

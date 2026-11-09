@@ -1,0 +1,13 @@
+{
+  "policy_fixed_before_results": true,
+  "axis_z_scope": "all_rows",
+  "axis_z_reason": "Inherit surviving original04: mean/sample SD over all released score rows before completeness filtering.",
+  "bootstrap_seed": 20260714,
+  "bootstrap_seed_reason": "Inherit initial original04 seed; final continuation seed was not recovered.",
+  "bootstrap_reps": 10000,
+  "bootstrap_reps_reason": "Documented final S-phase count; same fixed count used for all reconstructed intervals.",
+  "bootstrap_pairing": "Identical parent-compound multinomial multiplicities for STATE and identity reference.",
+  "matching": "Recovered original sensitivity: eight effect_q_1..4/cells_q_1..4 quintile indicators, all rows retained, original within-target OLS. Cutpoint scope inferred once as within current analysis partition, shared across contexts.",
+  "sensitivity_standardization": "Retain the full released-panel axis scale when subsetting doses, contexts or partitions.",
+  "no_result_tuning": true
+}

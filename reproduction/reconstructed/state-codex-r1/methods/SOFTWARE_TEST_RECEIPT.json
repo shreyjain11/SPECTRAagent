@@ -1,0 +1,86 @@
+{
+  "purpose": "software validation only; no scientific data or result reproduction",
+  "scientific_workflow_executed": false,
+  "method_source_sha256": {
+    "reconstruct.py": "51d4a1af744f89f70d94cc56a8bcfab3736b6cf43194099aa8391e8cd6b0043a",
+    "test_software.py": "c2a8dc9a5420fec7662041626379be8cf0a8e63a5d854c84fc233d885cd01328",
+    "original/04_analyze_frozen_axis.py": "d923071894cfe535728a42c62b283ea2f02453423b701d31654efc3d91aad484"
+  },
+  "fixture_origin": "generated in this file; temporary files removed",
+  "python": "3.11.13",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.2",
+    "pyarrow": "16.1.0"
+  },
+  "checks": [
+    {
+      "check": "Official-DE log2 RMSE and zero-effect reference agree with independent analytic arithmetic",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "Five-context eligibility, compound SHA partition and zero-full-QC fallback",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "Original within-target coefficient equals independent explicit target-fixed-effects OLS",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "Reconstructed analysis point estimates use surviving original fit function",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "Paired bootstrap identical-outcome invariant gives exactly zero difference and interval",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "Reference contrast uses exactly shared original compound-bootstrap multiplicities",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "Batched bootstrap matches original scalar least-squares draws across batch boundaries",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "Recovered quintile indicator adjustment keeps all rows and matches explicit target-fixed-effects OLS",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "SPC balances compounds after dose averaging instead of weighting every condition equally",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "Unrecovered seed/repetitions and axis-z scope cannot silently default",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "Unsupported standardization policy rejected",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "S-phase uses sample SD of untreated cells and separates full-QC/plate sensitivities",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    },
+    {
+      "check": "Lineage counts exclude held-out contexts and preserve tied lineage levels",
+      "passed": true,
+      "input_kind": "synthetic software fixture"
+    }
+  ],
+  "passed": 13
+}

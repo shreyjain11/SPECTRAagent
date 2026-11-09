@@ -1,0 +1,36 @@
+{
+  "n_tahoe_contexts": 50,
+  "n_training_contexts_cmp": 44,
+  "n_held_out_contexts_cmp": 5,
+  "n_training_contexts_ccle": 43,
+  "n_held_out_contexts_ccle_including_parental_proxy": 5,
+  "n_primary_genes": 2000,
+  "n_replication_genes": 1832,
+  "distance_rank_spearman": 0.9999999999999999,
+  "primary_order": [
+    "HOP62",
+    "PANC-1",
+    "Hs 766T",
+    "C32",
+    "HepG2/C3A"
+  ],
+  "independent_order": [
+    "HOP62",
+    "PANC-1",
+    "Hs 766T",
+    "C32",
+    "HepG2/C3A"
+  ]
+}
+cell_line  distance  rank_near_to_far
+    HOP62  0.953059                 1
+   PANC-1  1.062149                 2
+  Hs 766T  1.131635                 3
+      C32  1.254312                 4
+HepG2/C3A  1.404170                 5
+cell_line  distance  rank_near_to_far
+    HOP62  0.995532                 1
+   PANC-1  1.087685                 2
+  Hs 766T  1.196330                 3
+      C32  1.264095                 4
+HepG2/C3A  1.363152                 5

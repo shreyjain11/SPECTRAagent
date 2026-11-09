@@ -8,6 +8,8 @@ from functools import lru_cache
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
+RICH_FORMATS={'recovered_historical_notebook','source_workflow_notebook'}
+SOURCE_WORKFLOW_IDS={f'state-codex-r1/test-{i:02d}' for i in range(1,5)}
 def read(path):return json.loads((ROOT/path).read_text())
 def file(path):
     p=(ROOT/path).resolve()
@@ -43,8 +45,8 @@ def check_legacy_notebook(record,archives):
     file(public['prepare']);file(public['catalog'])
     name=public.get('implementation','implementation')
     assert name in ['implementation','legacy_implementation'],(record['id'],name)
-    primary=record['implementation'].get('format')=='recovered_historical_notebook'
-    assert name==('legacy_implementation' if primary else 'implementation'),record['id']
+    rich=record['implementation'].get('format') in RICH_FORMATS
+    assert name==('legacy_implementation' if rich else 'implementation'),record['id']
     impl=record[name];assert impl['notebook'].startswith('materials/'),impl['notebook']
     assert digest(impl['notebook'])==impl['published_notebook_sha256'],impl['notebook']
     book=read(impl['notebook']);assert book['nbformat']==4
@@ -54,7 +56,7 @@ def check_legacy_notebook(record,archives):
     ast.parse(file(impl['script']).read_text())
     for item in read(impl['supporting_code']):assert digest(item['path'])==item['sha256'],item['path']
     expected_inventory=f"inputs/{archives[public['archive']]['model']}.json"
-    inventory=split['legacy_input_inventory'] if primary else split['input_inventory']
+    inventory=split['legacy_input_inventory'] if rich else split['input_inventory']
     assert inventory==expected_inventory,(record['id'],inventory)
     return impl,book
 
@@ -128,7 +130,7 @@ def main(allow_staged_downloads=False):
             assert s['anonymous_access_observed'] is True and s['http_status']==200 and s['checked_at']
         assert not re.search(r'(?:token|api_key|signature)=',s['url'],re.I)
     data,archives=check_public_archives({item['id']:item for item in sources})
-    count=0;cells=0;primary=0;ids=set();primaryids=set();models={};samplefiles=set();legacy={}
+    count=0;cells=0;primary=0;ids=set();primaryids=set();sourceids_reconstructed=set();models={};samplefiles=set();legacy={}
     decisions={d['id']:d for d in read(index['historical_decisions'])['records']}
     for investigation in index['investigations']:
         for entry in investigation['analyses']:
@@ -150,15 +152,39 @@ def main(allow_staged_downloads=False):
             impl=d['implementation'];assert digest(impl['notebook'])==impl['published_notebook_sha256']
             b=read(impl['notebook']);assert b['nbformat']==4
             code=[c for c in b['cells'] if c['cell_type']=='code']
-            if impl.get('format')=='recovered_historical_notebook':
-                primary+=1;primaryids.add(d['id'])
+            if impl.get('format') in RICH_FORMATS:
+                if impl['format']=='recovered_historical_notebook':
+                    primary+=1;primaryids.add(d['id'])
+                else:
+                    assert d['id'] in SOURCE_WORKFLOW_IDS,d['id']
+                    sourceids_reconstructed.add(d['id'])
                 assert any(c['cell_type']=='markdown' for c in b['cells']),impl['notebook']
                 assert not [o for c in code for o in c.get('outputs',[]) if o.get('output_type')=='error']
                 assert digest(impl['script'])==impl['published_script_sha256']
                 assert len(impl['cell_locations'])==len(code)
-                recovered=d['primary_recovery'];file(recovered['traceability'])
+                recovered=d['primary_recovery'] if impl['format']=='recovered_historical_notebook' else d['workflow_reconstruction']
+                file(recovered['traceability'])
                 assert set(recovered['stages'])=={'data','processing','axis','levels','evaluation','curve','decision'}
                 assert all(recovered['stages'].values())
+                if impl['format']=='source_workflow_notebook':
+                    assert all(c['execution_count'] is not None for c in code),impl['notebook']
+                    receipt=read(recovered['execution_evidence'])
+                    assert receipt['status']=='all_notebooks_executed_and_exported'
+                    matches=[r for r in receipt['notebooks'] if r['notebook']==Path(impl['notebook']).name]
+                    assert len(matches)==1 and matches[0]['sha256']==digest(impl['notebook'])
+                    assert matches[0]['execution']['completed'] is True
+                    assert matches[0]['error_outputs']==0
+                    pipeline=read(recovered['pipeline_execution_evidence'])
+                    assert pipeline['completed'] and pipeline['derived_stage_policy']=='recompute_from_source_inputs'
+                    assert 'exxact05' in pipeline['host'].lower()
+                    analysis=read(recovered['analysis_execution_evidence'])
+                    assert analysis['completed'] and analysis['scientific_workflow_executed']
+                    assert analysis['historical_aggregate_fallback'] is False
+                    trace=read(recovered['traceability'])
+                    assert trace['historical_aggregates_used_as_calculation_inputs'] is False
+                    assert trace['scientific_execution_host']=='exxact05'
+                    for item in read(recovered['package_manifest'])['files']:
+                        assert digest(item['path'])==item['sha256'],item['path']
             else:
                 assert all(c['cell_type']=='code' and c['execution_count'] is None and c['outputs']==[] for c in b['cells'])
             assert len(code)==impl['saved_code_cells'] and impl['saved_error_outputs']==0
@@ -178,7 +204,11 @@ def main(allow_staged_downloads=False):
     review=read(index['traceability_review'])
     assert {d['id'] for d in review['entries']}==ids==set(decisions)
     assert review['scientific_adjudication_performed'] is False
-    assert review['counts']=={'primary_workflow_packaged':44,'original_records_missing':67,'calculation_replay_packaged':32}
+    expected_counts={'primary_workflow_packaged':44,'original_records_missing':67-len(sourceids_reconstructed),'calculation_replay_packaged':32}
+    if sourceids_reconstructed:
+        assert sourceids_reconstructed==SOURCE_WORKFLOW_IDS
+        expected_counts['source_workflow_reconstructed']=len(sourceids_reconstructed)
+    assert review['counts']==expected_counts
     assert dict(Counter(row['coverage'] for row in review['entries']))==review['counts']
     assert all(set(row['stages'])==set(review['criteria']) for row in review['entries'])
     nonprimary=read('NONPRIMARY_REVIEW.json')
@@ -186,11 +216,12 @@ def main(allow_staged_downloads=False):
     assert len(nonprimary['analyses'])==len(nonprimary_ids)==nonprimary['counts']['reviewed']==99
     assert nonprimary_ids==ids-primaryids
     nonprimary_counts=Counter(row['category'] for row in nonprimary['analyses'])
-    assert nonprimary_counts=={'original_records_missing':67,'calculation_replay_packaged':32}
+    expected_nonprimary={k:v for k,v in expected_counts.items() if k!='primary_workflow_packaged'}
+    assert nonprimary_counts==expected_nonprimary
     assert all(nonprimary['counts'][category]==number for category,number in nonprimary_counts.items())
     file(index['primary_workflows'])
     payloads=check_payloads()
-    print(json.dumps({'investigations':28,'analyses':count,'primary_workflows':primary,'code_cells':cells,'legacy_materials_code_cells':legacy_cells,'legacy_execution_receipts_verified':executed,'public_sources':len(sources),'public_input_archives':len(archives),'downloads_not_yet_publicly_verified':staged,'linked_sample_tables':len(samplefiles),'payloads_verified':payloads,'traceability_review':review['counts'],'nonprimary_review':dict(nonprimary_counts),'per_model':models},indent=2))
+    print(json.dumps({'investigations':28,'analyses':count,'primary_workflows':primary,'source_workflows_reconstructed':len(sourceids_reconstructed),'code_cells':cells,'legacy_materials_code_cells':legacy_cells,'legacy_execution_receipts_verified':executed,'public_sources':len(sources),'public_input_archives':len(archives),'downloads_not_yet_publicly_verified':staged,'linked_sample_tables':len(samplefiles),'payloads_verified':payloads,'traceability_review':review['counts'],'nonprimary_review':dict(nonprimary_counts),'per_model':models},indent=2))
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)

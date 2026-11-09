@@ -1,0 +1,299 @@
+{
+  "official_repository": "arcinstitute/ST-SE-Tahoe",
+  "official_revision": "03b1971d7cc93a7535fd2e957c6948dba267378b",
+  "selected_file_checks": [
+    {
+      "cell_line": "C32",
+      "kind": "pred_de",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_pred_de.csv",
+      "local_path": "acquisition/official_scores_st_se/C32_pred_de.csv",
+      "expected_bytes": 388384053,
+      "actual_bytes": 388384053,
+      "expected_sha256": "7169a2f135657b9f1db7440a9c7feef3f759428b0783f4fc89ac1c48ccac4d76",
+      "actual_sha256": "7169a2f135657b9f1db7440a9c7feef3f759428b0783f4fc89ac1c48ccac4d76",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "C32",
+      "kind": "results",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_results.csv",
+      "local_path": "acquisition/official_scores_st_se/C32_results.csv",
+      "expected_bytes": 468674,
+      "actual_bytes": 468674,
+      "expected_sha256": "cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79",
+      "actual_sha256": "cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "C32",
+      "kind": "agg_results",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_agg_results.csv",
+      "local_path": "acquisition/official_scores_st_se/C32_agg_results.csv",
+      "expected_bytes": 3547,
+      "actual_bytes": 3547,
+      "expected_sha256": "5a88c0744b9d31bfa73dcbcbe2d3366b7779f3e334d3a74be0bc7d6a8a53ca76",
+      "actual_sha256": "5a88c0744b9d31bfa73dcbcbe2d3366b7779f3e334d3a74be0bc7d6a8a53ca76",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "C32",
+      "kind": "real_de",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_real_de.csv",
+      "local_path": "acquisition/official_scores/C32_real_de.csv",
+      "expected_bytes": 387383572,
+      "actual_bytes": 387383572,
+      "expected_sha256": "19922ccec8820e43daa74dac907adeaa7b12d651308570650920762269f568d2",
+      "actual_sha256": "19922ccec8820e43daa74dac907adeaa7b12d651308570650920762269f568d2",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": true
+    },
+    {
+      "cell_line": "HOP62",
+      "kind": "pred_de",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_pred_de.csv",
+      "local_path": "acquisition/official_scores_st_se/HOP62_pred_de.csv",
+      "expected_bytes": 393288407,
+      "actual_bytes": 393288407,
+      "expected_sha256": "5db83d0ef3c96cbcfc9f61dd1e851e5e4f2661a22fe831638e80741036ecc594",
+      "actual_sha256": "5db83d0ef3c96cbcfc9f61dd1e851e5e4f2661a22fe831638e80741036ecc594",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "HOP62",
+      "kind": "results",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_results.csv",
+      "local_path": "acquisition/official_scores_st_se/HOP62_results.csv",
+      "expected_bytes": 463111,
+      "actual_bytes": 463111,
+      "expected_sha256": "dedd141ec8fdff513a19cb46f3bb95b76372b117935620b02f50f2f8e339d33d",
+      "actual_sha256": "dedd141ec8fdff513a19cb46f3bb95b76372b117935620b02f50f2f8e339d33d",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "HOP62",
+      "kind": "agg_results",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_agg_results.csv",
+      "local_path": "acquisition/official_scores_st_se/HOP62_agg_results.csv",
+      "expected_bytes": 3526,
+      "actual_bytes": 3526,
+      "expected_sha256": "c3c47eee13f78ed360408888e41434afa402bcdd177506e92fbbd5fdb3917e2b",
+      "actual_sha256": "c3c47eee13f78ed360408888e41434afa402bcdd177506e92fbbd5fdb3917e2b",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "HOP62",
+      "kind": "real_de",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_real_de.csv",
+      "local_path": "acquisition/official_scores/HOP62_real_de.csv",
+      "expected_bytes": 395844167,
+      "actual_bytes": 395844167,
+      "expected_sha256": "05c3fa4a991b1e94cdd991be01a787bd779c384d66760b70fbd569ffe5411063",
+      "actual_sha256": "05c3fa4a991b1e94cdd991be01a787bd779c384d66760b70fbd569ffe5411063",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": true
+    },
+    {
+      "cell_line": "HepG2/C3A",
+      "kind": "pred_de",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_pred_de.csv",
+      "local_path": "acquisition/official_scores_st_se/HepG2-C3A_pred_de.csv",
+      "expected_bytes": 385102563,
+      "actual_bytes": 385102563,
+      "expected_sha256": "c7ee1dfdfcf69c34bd6a5a3a6774471b7b422ba446bb5d634f7151009f79fece",
+      "actual_sha256": "c7ee1dfdfcf69c34bd6a5a3a6774471b7b422ba446bb5d634f7151009f79fece",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "HepG2/C3A",
+      "kind": "results",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_results.csv",
+      "local_path": "acquisition/official_scores_st_se/HepG2-C3A_results.csv",
+      "expected_bytes": 473841,
+      "actual_bytes": 473841,
+      "expected_sha256": "a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb",
+      "actual_sha256": "a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "HepG2/C3A",
+      "kind": "agg_results",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_agg_results.csv",
+      "local_path": "acquisition/official_scores_st_se/HepG2-C3A_agg_results.csv",
+      "expected_bytes": 3591,
+      "actual_bytes": 3591,
+      "expected_sha256": "56019515df6daf90d29bb982dd9bf140e3a436d4a9d4f4e9ebb2030c47aa9930",
+      "actual_sha256": "56019515df6daf90d29bb982dd9bf140e3a436d4a9d4f4e9ebb2030c47aa9930",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "HepG2/C3A",
+      "kind": "real_de",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_real_de.csv",
+      "local_path": "acquisition/official_scores/HepG2-C3A_real_de.csv",
+      "expected_bytes": 381547673,
+      "actual_bytes": 381547673,
+      "expected_sha256": "a038a095e74641cf068dc048a5e4f619b572c5b0b97ff9a10c47931ab75db13b",
+      "actual_sha256": "a038a095e74641cf068dc048a5e4f619b572c5b0b97ff9a10c47931ab75db13b",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": true
+    },
+    {
+      "cell_line": "Hs 766T",
+      "kind": "pred_de",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs 766T_pred_de.csv",
+      "local_path": "acquisition/official_scores_st_se/Hs 766T_pred_de.csv",
+      "expected_bytes": 390361943,
+      "actual_bytes": 390361943,
+      "expected_sha256": "65e61de4e9bfca4eb72bd331941cbead70ccd8ff15142cc8892a3b61fde42eca",
+      "actual_sha256": "65e61de4e9bfca4eb72bd331941cbead70ccd8ff15142cc8892a3b61fde42eca",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "Hs 766T",
+      "kind": "results",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs 766T_results.csv",
+      "local_path": "acquisition/official_scores_st_se/Hs 766T_results.csv",
+      "expected_bytes": 468068,
+      "actual_bytes": 468068,
+      "expected_sha256": "4904a9d8a3ed52a2cccd9de85cd0eeec0277bcc07d184eefb8096395719a2746",
+      "actual_sha256": "4904a9d8a3ed52a2cccd9de85cd0eeec0277bcc07d184eefb8096395719a2746",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "Hs 766T",
+      "kind": "agg_results",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs 766T_agg_results.csv",
+      "local_path": "acquisition/official_scores_st_se/Hs 766T_agg_results.csv",
+      "expected_bytes": 3534,
+      "actual_bytes": 3534,
+      "expected_sha256": "f7ac4dbc6e53c70ea9e4f2c8206187e2c4b6c2c49782356f9094e18c68245302",
+      "actual_sha256": "f7ac4dbc6e53c70ea9e4f2c8206187e2c4b6c2c49782356f9094e18c68245302",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "Hs 766T",
+      "kind": "real_de",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs 766T_real_de.csv",
+      "local_path": "acquisition/official_scores/Hs 766T_real_de.csv",
+      "expected_bytes": 389336629,
+      "actual_bytes": 389336629,
+      "expected_sha256": "7d9f9e651c57a4ebb11ee04c256dac7a8b642b4736d3499c75cefa39908469d5",
+      "actual_sha256": "7d9f9e651c57a4ebb11ee04c256dac7a8b642b4736d3499c75cefa39908469d5",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": true
+    },
+    {
+      "cell_line": "PANC-1",
+      "kind": "pred_de",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_pred_de.csv",
+      "local_path": "acquisition/official_scores_st_se/PANC-1_pred_de.csv",
+      "expected_bytes": 385408705,
+      "actual_bytes": 385408705,
+      "expected_sha256": "eff16442c313b748156fcac2a6311c5c4b798e53c1e13e6bdebeca7b86f5b2e9",
+      "actual_sha256": "eff16442c313b748156fcac2a6311c5c4b798e53c1e13e6bdebeca7b86f5b2e9",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "PANC-1",
+      "kind": "results",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_results.csv",
+      "local_path": "acquisition/official_scores_st_se/PANC-1_results.csv",
+      "expected_bytes": 464280,
+      "actual_bytes": 464280,
+      "expected_sha256": "8483133246cf1dba89c76a94f8a407757f4714bff5c9534f66890fbfe3d7ec03",
+      "actual_sha256": "8483133246cf1dba89c76a94f8a407757f4714bff5c9534f66890fbfe3d7ec03",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "PANC-1",
+      "kind": "agg_results",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_agg_results.csv",
+      "local_path": "acquisition/official_scores_st_se/PANC-1_agg_results.csv",
+      "expected_bytes": 3558,
+      "actual_bytes": 3558,
+      "expected_sha256": "67a40b4e6aa50b0e164c54a6c29efc5dca4fcee468c9f5b51bc88f9169bf9b15",
+      "actual_sha256": "67a40b4e6aa50b0e164c54a6c29efc5dca4fcee468c9f5b51bc88f9169bf9b15",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": false
+    },
+    {
+      "cell_line": "PANC-1",
+      "kind": "real_de",
+      "official_path": "zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_real_de.csv",
+      "local_path": "acquisition/official_scores/PANC-1_real_de.csv",
+      "expected_bytes": 398029547,
+      "actual_bytes": 398029547,
+      "expected_sha256": "2b9ed18f2dae9d83dbfa910d9e7e2cac1da7ad0f73e43bed40b8daaf62a254c9",
+      "actual_sha256": "2b9ed18f2dae9d83dbfa910d9e7e2cac1da7ad0f73e43bed40b8daaf62a254c9",
+      "verified": true,
+      "reused_identical_ST_HVG_outcome": true
+    }
+  ],
+  "all_selected_files_verified": true,
+  "download_manifest_entries": 15,
+  "axis_measurement": {
+    "baseline_control_cells": 319511,
+    "frozen_values_exact_to_1e-12": {
+      "C32": true,
+      "HOP62": true,
+      "HepG2/C3A": true,
+      "PANC-1": true,
+      "Hs 766T": true
+    },
+    "all_frozen_values_reproduced": true,
+    "rank_spearman_vs_frozen": {
+      "odd": 0.9999999999999999,
+      "even": 0.9999999999999999,
+      "all": 0.9999999999999999
+    },
+    "odd_even_rank_spearman": 0.9999999999999999
+  },
+  "schema_and_accounting": {
+    "de_accounting": {
+      "C32": {
+        "rows": 2274000,
+        "chunks": 10,
+        "targets": 1137
+      },
+      "HOP62": {
+        "rows": 2274000,
+        "chunks": 10,
+        "targets": 1137
+      },
+      "HepG2/C3A": {
+        "rows": 2274000,
+        "chunks": 10,
+        "targets": 1137
+      },
+      "Hs 766T": {
+        "rows": 2274000,
+        "chunks": 10,
+        "targets": 1137
+      },
+      "PANC-1": {
+        "rows": 2272000,
+        "chunks": 10,
+        "targets": 1136
+      }
+    },
+    "all_released_result_rows": 5684,
+    "confirmation_rows": 4020,
+    "no_missing_confirmation_values": true,
+    "five_contexts_per_confirmation_target": true,
+    "one_partition_per_compound": true
+  }
+}

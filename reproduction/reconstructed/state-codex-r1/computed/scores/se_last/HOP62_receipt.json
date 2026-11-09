@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "reduction": "actual_original_DE_rows",
+  "run": "se_last",
+  "cell_line": "HOP62",
+  "source_manifest_sha256": "d7bba695215da557ee1b4a9cd83aa861eb384a11fc037a375f1ec6c2a9090b2a",
+  "method_sha256": {
+    "methods/build_scores.py": "f9983187827cb392aaf47b5d43c6a5bdb623a7c32a814ec7a1c78832e011f8ff",
+    "methods/original/04_analyze_frozen_axis.py": "d923071894cfe535728a42c62b283ea2f02453423b701d31654efc3d91aad484"
+  },
+  "inputs": [
+    {
+      "path": "acquisition/official_scores/HOP62_real_de.csv",
+      "sha256": "05c3fa4a991b1e94cdd991be01a787bd779c384d66760b70fbd569ffe5411063",
+      "bytes": 395844167,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/HOP62_pred_de.csv",
+      "sha256": "52b5d92e4c89ce75c13bf3446a48316d76171f97477d170fdab34a845459e5e6",
+      "bytes": 390497664,
+      "verified": true
+    },
+    {
+      "path": "acquisition/official_scores_st_se_last/HOP62_results.csv",
+      "sha256": "264fef6665edc32dfc0ff9f883487700ce0414ff32f225373127af9a7395d040",
+      "bytes": 462185,
+      "verified": true
+    }
+  ],
+  "outputs": {
+    "computed/scores/se_last/HOP62_lfc.csv": {
+      "sha256": "f9f2857a44c6d0fe28c4f931315f84c4393592b653dd04e940c4ce44baf7210b",
+      "bytes": 92063
+    },
+    "computed/scores/se_last/HOP62_results.csv": {
+      "sha256": "264fef6665edc32dfc0ff9f883487700ce0414ff32f225373127af9a7395d040",
+      "bytes": 462185
+    }
+  },
+  "targets": 1137,
+  "DE_rows": 2274000,
+  "elapsed_seconds": 5.192
+}

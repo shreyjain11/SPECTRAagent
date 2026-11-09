@@ -1,0 +1,30 @@
+{
+  "validated_at_utc": "2026-07-17T22:55:00Z",
+  "frozen_hash_checks": {
+    "specs/frozen_s_phase_axis.yaml": true,
+    "specs/frozen_lineage_scarcity_axis.yaml": true
+  },
+  "script_compile_check": true,
+  "valid_json_files": 24,
+  "yaml_validation": true,
+  "known_unused_invalid_json": {
+    "path": "acquisition/tahoe_cell_line_rows.json",
+    "content": "HTTP 503 HTML response",
+    "used_by_analysis": false,
+    "preserved_as_provenance": true
+  },
+  "official_score_manifests": {
+    "ST_HVG_eval_best": {"entries": 20, "all_verified": true, "total_bytes": 3972596301},
+    "ST_SE_eval_best": {"entries": 15, "all_verified": true, "total_bytes": 1944901401},
+    "ST_SE_eval_last": {"entries": 15, "all_verified": true, "total_bytes": 1942287506}
+  },
+  "analysis_integrity": {
+    "ST_SE_eval_best_all_selected_files_verified": true,
+    "ST_SE_eval_last_all_selected_files_verified": true,
+    "five_contexts_per_confirmation_target": true,
+    "one_partition_per_compound": true,
+    "missing_required_confirmation_values": false
+  },
+  "placeholder_scan_clear": true,
+  "pending_queue_submission": false
+}

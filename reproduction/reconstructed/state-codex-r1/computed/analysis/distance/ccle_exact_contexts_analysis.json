@@ -1,0 +1,175 @@
+{
+  "reconstruction": true,
+  "seed": 20260714,
+  "bootstrap_reps": 10000,
+  "partition": "confirmation",
+  "axis_standardization": {
+    "scope": "all_rows",
+    "mean": 1.1813752460015758,
+    "sample_sd": 0.12918710318274085
+  },
+  "models": {
+    "state_raw": {
+      "estimate": -0.010601204517719735,
+      "se_cluster": 0.003377753064371026,
+      "p_one_sided": 0.9991510338405436,
+      "p_two_sided": 0.0016979323189127908,
+      "n_rows": 3216,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [],
+      "bootstrap_ci95": [
+        -0.017266598971421607,
+        -0.0038611534572938378
+      ]
+    },
+    "state_adjusted": {
+      "estimate": -0.07885959112908413,
+      "se_cluster": 0.004661984614371498,
+      "p_one_sided": 1.0,
+      "p_two_sided": 3.461328499492095e-64,
+      "n_rows": 3216,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ],
+      "bootstrap_ci95": [
+        -0.08811643035478556,
+        -0.06960214245444395
+      ]
+    },
+    "identity_raw": {
+      "estimate": 0.1553284615580478,
+      "se_cluster": 0.0017295145011859182,
+      "p_one_sided": 0.0,
+      "p_two_sided": 0.0,
+      "n_rows": 3216,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [],
+      "bootstrap_ci95": [
+        0.15201271943547967,
+        0.1587075762501301
+      ]
+    }
+  },
+  "paired_state_minus_identity": {
+    "estimate": -0.16592966607576753,
+    "ci95": [
+      -0.17175043337515,
+      -0.1600560585579502
+    ]
+  },
+  "dose_sensitivity": {
+    "0.05": {
+      "estimate": -0.08581640252880632,
+      "se_cluster": 0.006600697586585799,
+      "p_one_sided": 1.0,
+      "p_two_sided": 1.2057859613894964e-38,
+      "n_rows": 1072,
+      "n_targets": 268,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "0.5": {
+      "estimate": -0.06527189341960087,
+      "se_cluster": 0.007211823300773117,
+      "p_one_sided": 1.0,
+      "p_two_sided": 1.4208282588577124e-19,
+      "n_rows": 1072,
+      "n_targets": 268,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "5.0": {
+      "estimate": -0.08624874397468556,
+      "se_cluster": 0.0069273918135813696,
+      "p_one_sided": 1.0,
+      "p_two_sided": 1.391598994565549e-35,
+      "n_rows": 1072,
+      "n_targets": 268,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    }
+  },
+  "leave_one_context_out": {
+    "C32": {
+      "estimate": 0.06368795173141702,
+      "se_cluster": 0.00971513458825451,
+      "p_one_sided": 2.772047456290968e-11,
+      "p_two_sided": 5.544094912581936e-11,
+      "n_rows": 2412,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "HOP62": {
+      "estimate": -0.3167872043865207,
+      "se_cluster": 0.011481667191593112,
+      "p_one_sided": 1.0,
+      "p_two_sided": 1.4388460603238306e-167,
+      "n_rows": 2412,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "Hs 766T": {
+      "estimate": -0.005211824140702785,
+      "se_cluster": 0.006679895465380832,
+      "p_one_sided": 0.7823708942256631,
+      "p_two_sided": 0.4352582115486737,
+      "n_rows": 2412,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "PANC-1": {
+      "estimate": -0.09455679565119993,
+      "se_cluster": 0.005529265739681395,
+      "p_one_sided": 1.0,
+      "p_two_sided": 1.455078527022656e-65,
+      "n_rows": 2412,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    }
+  },
+  "context_spearman": -0.19999999999999998,
+  "counts": {
+    "rows": 3216,
+    "targets": 804,
+    "compounds": 268,
+    "contexts": 4
+  }
+}

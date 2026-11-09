@@ -1,0 +1,11 @@
+analysis,dose,excluded_context,estimate,se_cluster,p_one_sided,p_two_sided,n_rows,n_targets,n_compounds,n_contexts,controls
+continuous_controls,all,,-0.15003501777680286,0.004975849414568216,1.0,9.903387260528253e-200,4020,804,268,5,"['identity_lfc_rmse', 'log_n_de', 'log_n_cells']"
+effect_and_cell_quintile_matched,all,,-0.12478184094198272,0.006286842283295441,1.0,1.1445937836356956e-87,4020,804,268,5,"['effect_q_1', 'effect_q_2', 'effect_q_3', 'effect_q_4', 'cells_q_1', 'cells_q_2', 'cells_q_3', 'cells_q_4']"
+dose_stratified,0.05,,-0.15290464368778672,0.006052493281978306,1.0,8.134430032199063e-141,1340,268,268,5,"['identity_lfc_rmse', 'log_n_de', 'log_n_cells']"
+dose_stratified,0.5,,-0.13406250275547904,0.008169524091318405,1.0,1.6200532132030672e-60,1340,268,268,5,"['identity_lfc_rmse', 'log_n_de', 'log_n_cells']"
+dose_stratified,5.0,,-0.15995009373246644,0.006808560476077882,1.0,4.866488638218872e-122,1340,268,268,5,"['identity_lfc_rmse', 'log_n_de', 'log_n_cells']"
+leave_one_context_out,all,C32,-0.12858409708646748,0.005731523906109349,1.0,1.8117681092093257e-111,3216,804,268,4,"['identity_lfc_rmse', 'log_n_de', 'log_n_cells']"
+leave_one_context_out,all,HOP62,-0.2692911921878559,0.007471737754412384,1.0,1.8871084265159455e-284,3216,804,268,4,"['identity_lfc_rmse', 'log_n_de', 'log_n_cells']"
+leave_one_context_out,all,HepG2/C3A,-0.09457675214372965,0.004761550980053972,1.0,8.576509185720218e-88,3216,804,268,4,"['identity_lfc_rmse', 'log_n_de', 'log_n_cells']"
+leave_one_context_out,all,Hs 766T,-0.085715974799493,0.005954027227357811,1.0,5.458702482640007e-47,3216,804,268,4,"['identity_lfc_rmse', 'log_n_de', 'log_n_cells']"
+leave_one_context_out,all,PANC-1,-0.15975958446984978,0.0052115740305600676,1.0,2.2831061576497256e-206,3216,804,268,4,"['identity_lfc_rmse', 'log_n_de', 'log_n_cells']"

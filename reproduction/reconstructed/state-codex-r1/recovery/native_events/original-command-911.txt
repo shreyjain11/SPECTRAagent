@@ -1,0 +1,15 @@
+.venv-audit/bin/python - <<'PY'
+import pyarrow.dataset as ds, pandas as pd, numpy as np
+from scipy.stats import spearmanr
+p=ds.dataset('acquisition/tahoe_obs_metadata.parquet',format='parquet')
+f=(ds.field('cell_name').isin(['C32','HOP62','HepG2/C3A','Hs 766T','PANC-1'])) & (ds.field('drug')=='DMSO_TF')
+t=p.to_table(columns=['cell_name','gene_count','tscp_count','mread_count','pcnt_mito','S_score','G2M_score','phase'],filter=f).to_pandas()
+features=t.groupby('cell_name').agg(n_control=('gene_count','size'),gene_mean=('gene_count','mean'),gene_sd=('gene_count','std'),tscp_mean=('tscp_count','mean'),tscp_sd=('tscp_count','std'),mito_mean=('pcnt_mito','mean'),mito_sd=('pcnt_mito','std'),S_sd=('S_score','std'),G2M_sd=('G2M_score','std'))
+entropy=t.groupby('cell_name').phase.value_counts(normalize=True).groupby(level=0).apply(lambda x:-(x*np.log(x)).sum())
+features['phase_entropy']=entropy
+x=pd.read_csv('results/per_condition_scores.csv'); y=x[x.partition=='discovery'].groupby('cell_line').state_lfc_rmse.mean(); features['state_rmse_discovery']=y
+print(features.to_string())
+print('\nSpearman with discovery RMSE:')
+for c in features.columns[:-1]: print(c, spearmanr(features[c],features.state_rmse_discovery).statistic)
+features.reset_index().to_csv('results/discovery_baseline_heterogeneity.csv',index=False)
+PY

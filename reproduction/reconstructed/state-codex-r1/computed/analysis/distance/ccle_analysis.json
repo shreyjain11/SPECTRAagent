@@ -1,0 +1,189 @@
+{
+  "reconstruction": true,
+  "seed": 20260714,
+  "bootstrap_reps": 10000,
+  "partition": "confirmation",
+  "axis_standardization": {
+    "scope": "all_rows",
+    "mean": 1.1813752460015758,
+    "sample_sd": 0.12918710318274085
+  },
+  "models": {
+    "state_raw": {
+      "estimate": -0.023414951144292723,
+      "se_cluster": 0.004538069455505594,
+      "p_one_sided": 0.9999998763087504,
+      "p_two_sided": 2.473824991822917e-07,
+      "n_rows": 4020,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [],
+      "bootstrap_ci95": [
+        -0.03232141833551465,
+        -0.014454778505619591
+      ]
+    },
+    "state_adjusted": {
+      "estimate": -0.12962335754559148,
+      "se_cluster": 0.005338857080706984,
+      "p_one_sided": 1.0,
+      "p_two_sided": 3.2490772474466888e-130,
+      "n_rows": 4020,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ],
+      "bootstrap_ci95": [
+        -0.13984976403795132,
+        -0.11872820599805779
+      ]
+    },
+    "identity_raw": {
+      "estimate": 0.1649979835057686,
+      "se_cluster": 0.0034807240987383197,
+      "p_one_sided": 0.0,
+      "p_two_sided": 0.0,
+      "n_rows": 4020,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [],
+      "bootstrap_ci95": [
+        0.1583014484592723,
+        0.17182814738518234
+      ]
+    }
+  },
+  "paired_state_minus_identity": {
+    "estimate": -0.18841293465006134,
+    "ci95": [
+      -0.19444479862524278,
+      -0.18225605618284912
+    ]
+  },
+  "dose_sensitivity": {
+    "0.05": {
+      "estimate": -0.12979707488156117,
+      "se_cluster": 0.006375129553310469,
+      "p_one_sided": 1.0,
+      "p_two_sided": 3.792664463337021e-92,
+      "n_rows": 1340,
+      "n_targets": 268,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "0.5": {
+      "estimate": -0.11460352575998947,
+      "se_cluster": 0.008055753737453344,
+      "p_one_sided": 1.0,
+      "p_two_sided": 6.292891949387214e-46,
+      "n_rows": 1340,
+      "n_targets": 268,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "5.0": {
+      "estimate": -0.14090575848605782,
+      "se_cluster": 0.007177303005289701,
+      "p_one_sided": 1.0,
+      "p_two_sided": 8.219273413785838e-86,
+      "n_rows": 1340,
+      "n_targets": 268,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    }
+  },
+  "leave_one_context_out": {
+    "C32": {
+      "estimate": -0.09749118882132721,
+      "se_cluster": 0.006242132055726656,
+      "p_one_sided": 1.0,
+      "p_two_sided": 5.468470994559415e-55,
+      "n_rows": 3216,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "HOP62": {
+      "estimate": -0.30689551622925604,
+      "se_cluster": 0.008941181409532645,
+      "p_one_sided": 1.0,
+      "p_two_sided": 3.4629088765953517e-258,
+      "n_rows": 3216,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "HepG2/C3A": {
+      "estimate": -0.07885959112908413,
+      "se_cluster": 0.004661984614371498,
+      "p_one_sided": 1.0,
+      "p_two_sided": 3.461328499492095e-64,
+      "n_rows": 3216,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "Hs 766T": {
+      "estimate": -0.08311353984400846,
+      "se_cluster": 0.00561426112189105,
+      "p_one_sided": 1.0,
+      "p_two_sided": 1.3801781700167315e-49,
+      "n_rows": 3216,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    },
+    "PANC-1": {
+      "estimate": -0.1286392684285738,
+      "se_cluster": 0.005560056232331261,
+      "p_one_sided": 1.0,
+      "p_two_sided": 1.9961438116073066e-118,
+      "n_rows": 3216,
+      "n_targets": 804,
+      "n_compounds": 268,
+      "controls": [
+        "identity_lfc_rmse",
+        "log_n_de",
+        "log_n_cells"
+      ]
+    }
+  },
+  "context_spearman": -0.49999999999999994,
+  "counts": {
+    "rows": 4020,
+    "targets": 804,
+    "compounds": 268,
+    "contexts": 5
+  }
+}
