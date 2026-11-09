@@ -98,5 +98,80 @@
     "review": "traceability_review.json",
     "record_id": "am-gpt-r2/test-02",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/alphamissense/am-gpt-r2/axis-2.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/alphamissense/am-gpt-r2/axis-2.ipynb",
+    "html": "inline/alphamissense/am-gpt-r2/axis-2.html",
+    "execution_evidence": "inline/alphamissense/am-gpt-r2/axis-2.execution.json",
+    "published_notebook_sha256": "f072c5b10999b225808d03ac327e4b10ff3f856923cf0642145defe59a9bd7f4",
+    "published_html_sha256": "f493064e17f27904b918b83081b84fc39fe01e0cf25e379b322a1b78d400cd43",
+    "code_cells": 8,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data acquisition",
+        "markdown_cell": 0,
+        "code_cells": [
+          1,
+          2
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Raw processing",
+        "markdown_cell": 3,
+        "code_cells": [
+          4
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis and levels",
+        "markdown_cell": 5,
+        "code_cells": [
+          6
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results and reference",
+        "markdown_cell": 7,
+        "code_cells": [
+          8
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 9,
+        "code_cells": [
+          10
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. Result and decision",
+        "markdown_cell": 11,
+        "code_cells": [
+          12,
+          13
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        12,
+        13
+      ]
+    },
+    "status": "executed_inline"
   }
 }

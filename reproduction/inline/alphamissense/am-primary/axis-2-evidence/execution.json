@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "path": "AlphaMissense_hg38.tsv.gz",
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+      "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+      "bytes": 642961469
+    },
+    {
+      "path": "clinvar_20260606.vcf.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260606.vcf.gz",
+      "sha256": "c5bb136e1ac476d390d8110905e8224126ce7d43d5eae0e0bfe689fbe96b8726",
+      "bytes": 196569024
+    },
+    {
+      "path": "gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz",
+      "url": "https://storage.googleapis.com/gcp-public-data--gnomad/release/2.1.1/constraint/gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz",
+      "sha256": "153031d34b6794e8e99eb0306bc3c50b13b18accda8b0ffef91c2623dd3affd5",
+      "bytes": 4609488
+    }
+  ],
+  "decision": "Do not retain the proposed lower-support degradation claim: the complete calculated curve and endpoint interval do not jointly support the specified direction.",
+  "host": "exxact05.broadinstitute.org",
+  "rows": 186514,
+  "bootstrap_replicates": 500,
+  "bootstrap_unit": "gene",
+  "outputs": {
+    "composition.csv": "7663a89046eb5f53828635fc9f0520f0334e316d907cdb8d7fa9fd8d64e7d005",
+    "variants.csv.gz": "77d83b32f518a1b11ef83231d90a6332fbb6ec7b43290dd375e1c9234692a514",
+    "curves.csv": "153421f4b49ad5088d32c3d78758bb4bc78baa1a3e7592b7f23588d50ea26421",
+    "contrasts.csv": "4eeadf02d1c9cbbd4a463caef1b909ffe2e712620ac1a549e34a26903a3a7349",
+    "controls.csv": "8c2913b6fc19c661a212552744957956c62f8068fc38f30f74a34351a313c921"
+  }
+}

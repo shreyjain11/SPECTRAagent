@@ -1,0 +1,45 @@
+{
+  "axis": "Distance to protein terminus",
+  "sources": [
+    {
+      "path": "AlphaMissense_hg38.tsv.gz",
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+      "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+      "bytes": 642961469
+    },
+    {
+      "path": "clinvar_20260720.vcf.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260720.vcf.gz",
+      "sha256": "ecedd212660c7e04c94ffdf8d516ec6881283ab501f4b7700b87e82c65e4551b",
+      "bytes": 192806479
+    },
+    {
+      "path": "uniprot_reviewed_human_20261109.fasta.gz",
+      "url": "https://rest.uniprot.org/uniprotkb/stream?query=%28proteome%3AUP000005640%29%20AND%20%28reviewed%3Atrue%29&format=fasta&compressed=true",
+      "sha256": "97e06262e2679f9541d1b10245f480f1cd82e00a79e2c99db032e6669dd5b48d",
+      "bytes": 7505116
+    }
+  ],
+  "variants": 164792,
+  "levels": [
+    "L1: highest quartile",
+    "L2",
+    "L3",
+    "L4: lowest quartile"
+  ],
+  "bootstrap_replicates": 2000,
+  "bootstrap_unit": "variant; gene for within-gene summary",
+  "seed": 20260722,
+  "decision": "Do not retain this axis as a supported directional degradation claim: the AlphaMissense endpoint contrast is not positive with a confidence interval excluding zero.",
+  "host": "exxact05.broadinstitute.org",
+  "elapsed_seconds": 135.0359342098236,
+  "outputs": {
+    "composition.csv": "280809ce8e2aa69776f4621836ad3e02a09305f9f8e4cc30f2fcde03716c0633",
+    "contrasts.csv": "e06d419a51a5d2d2eb35da89c946d905362c322ecb33809e575324ba0ba06863",
+    "controls.csv": "6b30c8723398803d16e3d5d3eb71f1b08a61ec54814f5ba253133cfec32d7d9b",
+    "curves.csv": "fc3623ff972fe8cf9264f27161609f622013460cb91614b4312f6a14fd4c2d6c",
+    "variants.csv": "e120aefba74d30e08ce0ddf019dad5c487915e7c5ad3c6d13e00cda60c29ffcb",
+    "within_gene.csv": "44d3ab8a7748962a90d3da07c91aa9752f3c03e53f6088d7beb370a89fcb4988",
+    "within_gene_summary.csv": "fc3b55ca0a4b4a0b524efb04fd6e7e47c044030524ae75619592413b4c35611e"
+  }
+}

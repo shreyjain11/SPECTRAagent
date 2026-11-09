@@ -890,5 +890,85 @@
         "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
       }
     }
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-featured/test-03.ipynb",
+    "html": "inline/state/state-featured/test-03.html",
+    "execution_evidence": "inline/state/state-featured/test-03.execution.json",
+    "published_notebook_sha256": "b534c75eb8f4c8c18e0cf9ffd06c9574f306019625262ede9245c39232d35978",
+    "published_html_sha256": "9c5cb2a0ff8753ae2f97746c0f0fade33db87f0a44d18f7fbee9bac6bfa2744c",
+    "code_cells": 13,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          6,
+          7
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 8,
+        "code_cells": [
+          10,
+          12
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 13,
+        "code_cells": [
+          14
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 15,
+        "code_cells": [
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 19,
+        "code_cells": [
+          20,
+          21
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        20,
+        21
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-featured/test-03.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

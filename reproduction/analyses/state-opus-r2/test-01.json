@@ -218,7 +218,7 @@
     "source": "historical_decisions.json",
     "record_id": "state-opus-r2/test-01",
     "disposition": "accepted",
-    "result": "HVG overlap@N rose from 0.090 to 0.185 across four coverage quartiles, a low-minus-high difference of −0.095. The slope reproduced across four contexts. A same-task baseline could not be computed, and the result did not generalize to drugs or cytokines.",
+    "result": "HVG overlap@N rose from 0.090 to 0.185 across four coverage quartiles, a low-minus-high difference of \u22120.095. The slope reproduced across four contexts. A same-task baseline could not be computed, and the result did not generalize to drugs or cytokines.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -226,5 +226,83 @@
     "review": "traceability_review.json",
     "record_id": "state-opus-r2/test-01",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-opus-r2/test-01.ipynb",
+    "html": "inline/state/state-opus-r2/test-01.html",
+    "execution_evidence": "inline/state/state-opus-r2/test-01.execution.json",
+    "published_notebook_sha256": "f2819c9022114bf1a58390ed86fe7c72624f9860a14711cf39dbf66a337efccf",
+    "published_html_sha256": "c5c48f48c8f72e695211794e313388c66e28646beb3e628e9974a73e4d6e31cd",
+    "code_cells": 11,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source and acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results and released scores",
+        "markdown_cell": 9,
+        "code_cells": [
+          10
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 11,
+        "code_cells": [
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 16,
+        "code_cells": [
+          18,
+          19
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        18,
+        19
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-opus-r2/test-01.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

@@ -1,44 +1,23 @@
-# Original investigation workflows and analysis records
+# Executable analysis notebooks
 
-Start with the [44 primary notebooks](primary/README.md). They link the original data sources and processing, axis definitions, level construction, model results or released scores, curves or screening diagnostics, and the historical agent decisions. Retained, discarded and unresolved candidates remain represented.
+Start with the [inline notebook guide](inline/README.md) and [notebook index](inline/INDEX.md). The registry covers 143 entries across 28 investigations. Each preferred notebook has six sections: data acquisition, processing, axis and levels, model results or released scores, curves and controls, and the calculated decision with its explanation. Custom calculation code executes directly in the visible cells.
 
-The [index](index.json) lists all 28 investigations and 143 entries. The [whole-PR review](PR_REVIEW.md) distinguishes 44 recovered primary workflows, 32 additional calculation replays with downloadable inputs, nine STATE source reconstructions ([Codex r1](reconstructed/state-codex-r1/README.md), [Codex r2](reconstructed/state-codex-r2/README.md)), and 58 evidence/summary displays whose original individual calculations remain missing. All retained notebooks have input preparation routes; successful execution of a summary display does not restore the missing original work.
+The index and [execution review](PR_REVIEW.md) distinguish completed executions, documented unperformed candidates, and entries still awaiting execution. Completed notebooks link their rendered results and hash-bound execution evidence. Their section 6 decisions follow the displayed calculations; supporting registry summaries are not presented as newly calculated results.
 
-The four STATE Codex r1 notebooks now recalculate features, released-prediction errors, regressions, curves and controls from verified public inputs by default. All four were executed on exxact05. Their original code-only exports remain available separately. Main results and saved curve means reproduce; two quintile-control estimates differ under the explicitly reconstructed binning method. See the [comparison table](reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv) and [method qualifications](reconstructed/state-codex-r1/methods/METHODS.md).
-
-The five STATE Codex r2 notebooks also executed on exxact05, covering all original candidates and their stopping diagnostics. They rebuild dose and distance results from public releases, plus actual input/eligibility calculations for candidates that stopped before scoring. Original helpers were unavailable: reconstructed choices are explicit, the A9 mitochondrial result does not numerically reproduce, and unfinished A2e mapping rows remain missing. These limits are shown beside the historical results.
-
-## What the records contain
-
-Each analysis retains `dataset_split`, `axis_levels`, `model_evaluation`, `curve` and `insight`. For the recovered primary entries, `implementation` points to the current rich notebook and Python export, and `primary_recovery.stages` explicitly connects all seven stages. Its paths resolve relative to the named package. The public-bundle code-only export and its notes are preserved under `legacy_*`. Its preparation route remains available alongside the preferred primary notebook.
-
-`historical_decision` links an attributed record in [historical_decisions.json](historical_decisions.json). These summaries preserve the original recorded disposition and result, not a new reviewer judgment. Primary notebooks additionally link recovered ledgers, reports or original decision excerpts. A candidate discarded before scoring has its original diagnostic, not an invented performance curve.
-
-`traceability_review.json` reviews every entry against this workflow criterion. It does not demand new confirmation studies, repairs to historical scientific conclusions, or fresh model inference that the original agent never performed. Older `reconstruction_notes` can contain scientific context as well as missing inputs; the workflow review does not treat every such note as a reproduction requirement.
-
-## Inputs and execution
-
-The primary packages carry small, checksum-verified compressed input packs, original code and portable bootstrap helpers. Large raw datasets and model weights use the pinned public acquisition recipes. The original AlphaMissense UniRef50 search-hit table exceeds GitHub's Git-file limit and is a versioned, checksum-verified release asset linked by its package manifest. No private cloud bucket or access to the original analysis server is required.
-
-Default primary execution replays retained historical measurements. ESMFold2 and CONCH have an explicit full-workflow switch connecting acquisition, processing, model scoring and their original analyses. Missing generated results stop those runs; they cannot silently substitute archived predictions. Full fresh CONCH/ESMFold2 model execution has not been performed during this integration. The separate STATE Codex r1 package has completed its original public-data-to-analysis route, which uses released predictions. CONCH's model download requires the original publisher's access approval.
-
-STATE starts from the official per-record evaluation files the original agent used. AlphaMissense starts from released prediction scores. Neither original workflow requires a new target-model inference run. The current ESMFold2 implementation is a documented replacement for the older historical fork; prediction equality across implementations is not claimed.
-
-The `materials/`, `inputs/`, `samples/` and `code/` inventories remain for the additional investigations and public-bundle exports. Four checksum-verified archives are listed in [data.json](data.json) and the [public input release](https://github.com/shreyjain11/SPECTRAagent/releases/tag/notebook-inputs-2026-11-08-v1). These supply retained features, measurements, predictions, structures or images, not merely sample identifiers. The full download is about 3.3 GB; `SPECTRA_DATA_DIR` selects its cache location.
+Use the [environment guide](inline/README.md#setup), then run a selected analysis from the repository root:
 
 ```sh
-python reproduction/prepare_inputs.py --all
-python reproduction/run_notebooks.py --all --implementation public-bundle --workers 4
+python reproduction/run_notebooks.py --analysis state-codex-r1/test-01 --python /path/to/environment/bin/python
 ```
 
-Install `reproduction/requirements.txt` for that public-bundle route. `execution.json` records its original execution checks and binds each result to the corresponding `materials/` notebook hash. The preferred primary notebooks instead use their model-specific environments and package checks; see [primary setup](primary/README.md). The bulk runner defaults to preferred notebooks, and `--primary-only` restricts it to those 44. Use `--python` or its per-model interpreter options to select the environments. Outputs are written under `reproduction/.executions/` or the location selected by `--output`.
+The default route requires the preferred inline notebook. It refuses pending entries instead of substituting a different implementation. Run All processes raw inputs, constructs axes and levels, and calculates results; public individual model scores are used where explicitly identified. Fine-tuning, new inference, verified prediction reuse, and comparator training are disclosed in each notebook. Large data and model files are acquired by the visible cells rather than stored in Git.
 
-## Checks
+[Registry records](index.json), public input inventories and supporting materials remain available. Select `--implementation supporting` or `--implementation public-bundle` only when that alternate route is intended. The public-bundle inputs are listed in [data.json](data.json) and prepared with `python reproduction/prepare_inputs.py --all`.
+
+Validate all registry links, included payloads, and preferred notebook evidence with:
 
 ```sh
 python reproduction/validate.py
 ```
 
-This checks all 143 records, preferred and public-bundle notebook hashes, archive mappings, seven-stage primary links, attributed historical decisions, sample tables and bundled payload hashes. Model-specific package validation records distinguish actual clean-package replay checks from optional full runs. `integrate_primary.py` refreshes the primary links and review after an intentional package change.
-
-The website, hosted API and scientific protocol are unchanged. This PR neither merges its own changes nor imports findings into a hosted service.
+`integrate_inline.py --source /path/to/review-directory` refreshes the preferred route from completed, hash-matching notebook executions. It does not execute analyses or infer success from notebook existence. The website, hosted API, and scientific manuscript are separate from this notebook route.

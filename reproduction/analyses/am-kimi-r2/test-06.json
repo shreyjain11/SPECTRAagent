@@ -93,7 +93,7 @@
     "source": "historical_decisions.json",
     "record_id": "am-kimi-r2/test-06",
     "disposition": "rejected",
-    "result": "AM: pooled +0.003, paired (808 genes) −0.005 [−0.012,+0.002]. Grantham reference degrades at CpG (+0.080) while AM does not Negative for AM at adequate power",
+    "result": "AM: pooled +0.003, paired (808 genes) \u22120.005 [\u22120.012,+0.002]. Grantham reference degrades at CpG (+0.080) while AM does not Negative for AM at adequate power",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -101,5 +101,81 @@
     "review": "traceability_review.json",
     "record_id": "am-kimi-r2/test-06",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/alphamissense/am-kimi-r2/axis-6.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/alphamissense/am-kimi-r2/axis-6.ipynb",
+    "html": "inline/alphamissense/am-kimi-r2/axis-6.html",
+    "execution_evidence": "inline/alphamissense/am-kimi-r2/axis-6.execution.json",
+    "published_notebook_sha256": "5f01267446dfe58088c00a97023cf226985b695a3bab20043266cb47173c197a",
+    "published_html_sha256": "a8ee65324b37a1c55b76a1834cb7df8ea5ae4943db83f6dffb94ee504a1f1ada",
+    "code_cells": 10,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data acquisition",
+        "markdown_cell": 0,
+        "code_cells": [
+          1,
+          2
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Raw processing",
+        "markdown_cell": 3,
+        "code_cells": [
+          4,
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis and levels",
+        "markdown_cell": 6,
+        "code_cells": [
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results and references",
+        "markdown_cell": 10,
+        "code_cells": [
+          11
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 12,
+        "code_cells": [
+          13
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. Result and decision",
+        "markdown_cell": 14,
+        "code_cells": [
+          15
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        15
+      ]
+    },
+    "status": "executed_inline"
   }
 }

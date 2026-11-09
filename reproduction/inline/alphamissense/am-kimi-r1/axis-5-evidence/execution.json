@@ -1,0 +1,93 @@
+{
+  "axis": "Ortholog presence across six species",
+  "sources": [
+    {
+      "path": "AlphaMissense_hg38.tsv.gz",
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+      "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+      "bytes": 642961469
+    },
+    {
+      "path": "clinvar_20260720.vcf.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260720.vcf.gz",
+      "sha256": "ecedd212660c7e04c94ffdf8d516ec6881283ab501f4b7700b87e82c65e4551b",
+      "bytes": 192806479
+    },
+    {
+      "path": "uniprot_reviewed_human_20261109.fasta.gz",
+      "url": "https://rest.uniprot.org/uniprotkb/stream?query=%28proteome%3AUP000005640%29%20AND%20%28reviewed%3Atrue%29&format=fasta&compressed=true",
+      "sha256": "97e06262e2679f9541d1b10245f480f1cd82e00a79e2c99db032e6669dd5b48d",
+      "bytes": 7505116
+    },
+    {
+      "path": "ensembl116_gene_info.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22entrezgene_id%22/%3E%3CAttribute%20name%3D%22hgnc_symbol%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "405fe9469363e4c896607f1f4b460a0a2f5aafcf16bc286946a6e3836bf66a46",
+      "bytes": 2236960
+    },
+    {
+      "path": "ensembl116_ortho_ptroglodytes.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22ptroglodytes_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "1826b867b03b6c9bb16f6668d9bd45e3d33be6d6b16cc47f5a5ecba7547c3ed7",
+      "bytes": 1954106
+    },
+    {
+      "path": "ensembl116_ortho_mmusculus.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22mmusculus_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "f4d68b70840cee47c4351a0016144484f7f960872c39dd681cf2f67bfc3abb7e",
+      "bytes": 2044064
+    },
+    {
+      "path": "ensembl116_ortho_ggallus.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22ggallus_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "de81fc669ac7abbe98967cfc78926df2f99b7c0159807ae0af09b1f864c26b2c",
+      "bytes": 1836547
+    },
+    {
+      "path": "ensembl116_ortho_drerio.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22drerio_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "e03833c898213b55a0b2fbc4d42c6e595ab469e444e76e6194c881eeecb04df8",
+      "bytes": 1956494
+    },
+    {
+      "path": "ensembl116_ortho_dmelanogaster.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22dmelanogaster_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "2f6d0f8557be182c9bf59f335d3a423c7696b7d16ae20dea6e563a7328c4d57d",
+      "bytes": 1888252
+    },
+    {
+      "path": "ensembl116_ortho_scerevisiae.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22scerevisiae_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "2ebf96509103a64536b51aecb002443612d910aa6347156b2352733e8715d65f",
+      "bytes": 1568049
+    }
+  ],
+  "variants": 164392,
+  "levels": [
+    "L1: 6 species",
+    "L2: 4-5 species",
+    "L3: 1-3 species + L4: 0 species"
+  ],
+  "bootstrap_replicates": 2000,
+  "bootstrap_unit": "variant; gene for within-gene summary",
+  "seed": 20260722,
+  "decision": "Do not retain this axis as a supported directional degradation claim: the AlphaMissense endpoint contrast is not positive with a confidence interval excluding zero. No gene has enough labeled variants at both endpoints for the specified within-gene calculation; gene composition remains unresolved.",
+  "host": "exxact05.broadinstitute.org",
+  "elapsed_seconds": 132.58403897285461,
+  "outputs": {
+    "composition.csv": "0a1cf37676d2dc193f1533e6f5159b99a8220d7cd1fb70426b3b54e56bc6f3d8",
+    "contrasts.csv": "c8e5fb136463755addb9af7c01bf9b2e53f7ec6256b6e3743de11f21a9d72d7c",
+    "controls.csv": "7830d9df92ee983e749bc01501b50bc683c73abfbfd1add6880ebe34e7113c09",
+    "curves.csv": "0ac1295e398446ead7a4227a20d74a8926b537fb09f705eadc5d7c6dcbb7e611",
+    "variants.csv": "acaeddeb560c52fd18d745c4d32e34090054b0585319297731fe9e1fad019fe3",
+    "within_gene.csv": "67c71455ced0d31fe1641cc679ace2debaeae9f4ca3c1746331b0063d2300201",
+    "within_gene_summary.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  }
+}

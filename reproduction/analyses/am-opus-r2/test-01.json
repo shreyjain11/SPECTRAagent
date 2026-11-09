@@ -402,5 +402,85 @@
     "review": "traceability_review.json",
     "record_id": "am-opus-r2/test-01",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/alphamissense/am-opus-r2/test-01.ipynb",
+    "html": "inline/alphamissense/am-opus-r2/test-01.html",
+    "execution_evidence": "inline/alphamissense/am-opus-r2/test-01.execution.json",
+    "published_notebook_sha256": "25aac6604f62aebcdd38fb8a999a06b47ece4dca80a986f204f53756d727f92e",
+    "published_html_sha256": "61d782980249009c4bd83ac32677928564e9c2157909b85220ddf346257ebb9a",
+    "code_cells": 13,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source / acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          6,
+          8
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 9,
+        "code_cells": [
+          11
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 12,
+        "code_cells": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 17,
+        "code_cells": [
+          19,
+          21
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. Decision and reason",
+        "markdown_cell": 22,
+        "code_cells": [
+          23,
+          24
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        23,
+        24
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/alphamissense/am-opus-r2/test-01.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

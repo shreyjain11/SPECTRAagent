@@ -82,7 +82,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-codex-r2/test-01",
     "disposition": "accepted",
-    "result": "Positively charged versus negatively charged chains differed by −0.102 TM-score [−0.177, −0.025]. Template transfer also declined (0.115), supporting shared difficulty.",
+    "result": "Positively charged versus negatively charged chains differed by \u22120.102 TM-score [\u22120.177, \u22120.025]. Template transfer also declined (0.115), supporting shared difficulty.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -90,5 +90,82 @@
     "review": "traceability_review.json",
     "record_id": "esmfold2-codex-r2/test-01",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/esmfold2/esmfold2-codex-r2/test-01.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/esmfold2/esmfold2-codex-r2/test-01.ipynb",
+    "html": "inline/esmfold2/esmfold2-codex-r2/test-01.html",
+    "execution_evidence": "inline/esmfold2/esmfold2-codex-r2/test-01.execution.json",
+    "published_notebook_sha256": "f34db1f857a5b26405714db5340350a63105b591b4d6a447ea40e83cc2292a6a",
+    "published_html_sha256": "e11db4118a9e04e5b89e1eae4eb7a23e32f8bb9d280800ff6cfee8f3f39dc51e",
+    "code_cells": 11,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model evaluation",
+        "markdown_cell": 8,
+        "code_cells": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 14,
+        "code_cells": [
+          15
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 16,
+        "code_cells": [
+          17
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        17
+      ]
+    },
+    "status": "executed_inline"
   }
 }

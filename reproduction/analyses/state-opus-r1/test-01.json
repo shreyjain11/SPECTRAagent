@@ -123,7 +123,7 @@
     }
   },
   "axis_levels": {
-    "definition": "Fraction of a drug’s targets occurring in the 2,023-gene Replogle-Nadig knockdown panel, used as a proxy for genetic training exposure.",
+    "definition": "Fraction of a drug\u2019s targets occurring in the 2,023-gene Replogle-Nadig knockdown panel, used as a proxy for genetic training exposure.",
     "calculation": "Code reconstructed from the recorded method and checked against retained per-drug feature values; the original executable script is missing.",
     "code": "materials/state/notebooks/state-opus-r1/test-01.py"
   },
@@ -198,7 +198,7 @@
     "source": "historical_decisions.json",
     "record_id": "state-opus-r1/test-01",
     "disposition": "accepted",
-    "result": "For lower coverage the adjusted association with overlap@N was partial Spearman ρ = −0.118 [−0.235, −0.003]. Raw uncovered-minus-covered overlap@N was −0.063. The exact training gene list was unavailable.",
+    "result": "For lower coverage the adjusted association with overlap@N was partial Spearman \u03c1 = \u22120.118 [\u22120.235, \u22120.003]. Raw uncovered-minus-covered overlap@N was \u22120.063. The exact training gene list was unavailable.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -206,5 +206,83 @@
     "review": "traceability_review.json",
     "record_id": "state-opus-r1/test-01",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-opus-r1/test-01.ipynb",
+    "html": "inline/state/state-opus-r1/test-01.html",
+    "execution_evidence": "inline/state/state-opus-r1/test-01.execution.json",
+    "published_notebook_sha256": "5a8585e387fec8de4dcb00ce3a0195d91727b1b12fa87280bd0714924cd57712",
+    "published_html_sha256": "6a31ed06e329097303a362696ace2938bd31c8a3f39ebf7e2c48f454108386d7",
+    "code_cells": 11,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source and acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7,
+          9
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results and released scores",
+        "markdown_cell": 10,
+        "code_cells": [
+          11
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 12,
+        "code_cells": [
+          13,
+          14,
+          16
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 17,
+        "code_cells": [
+          18,
+          19
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        18,
+        19
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-opus-r1/test-01.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

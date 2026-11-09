@@ -1,0 +1,88 @@
+{
+  "analysis_id": "conch-kimi-r2/test-01",
+  "notebook": "inline/conch/conch-kimi-r2/test-01.ipynb",
+  "html": "inline/conch/conch-kimi-r2/test-01.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 10,
+  "executed_cells": 10,
+  "errors": 0,
+  "notebook_sha256": "18ab3e1be19b454f6527b02363244c460faea8f30421c3ea4ee6b15587a5e907",
+  "html_sha256": "d7cf14e502b4eb11d4777ae0a39af0afdf661347d3680607323c9cc70ee7ac11",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source / acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 6,
+      "code_cells": [
+        7
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 8,
+      "code_cells": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 12,
+      "code_cells": [
+        13
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. Decision and reason",
+      "markdown_cell": 14,
+      "code_cells": [
+        15,
+        16
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "06a22106526117234642ecb4b8164895d4a58a0e05f04ad93f0690f8febec8a8",
+  "execution_evidence_entry_id": "conch-kimi-r2/test-01",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      15,
+      16
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 3178.968,
+  "python": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/conch/.venv/bin/python",
+  "calculation_evidence": []
+}

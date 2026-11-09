@@ -769,5 +769,82 @@
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/esmfold2/esmfold2-featured/test-10.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/esmfold2/esmfold2-featured/test-10.ipynb",
+    "html": "inline/esmfold2/esmfold2-featured/test-10.html",
+    "execution_evidence": "inline/esmfold2/esmfold2-featured/test-10.execution.json",
+    "published_notebook_sha256": "2309c7c8fa325e12b405f9b10c12bd7d50910d791390ddd07a7fa4f9826c03e0",
+    "published_html_sha256": "81f94c01559e93ca94aa956d05f90d5caf242849828eb63c0c68f41af8063bc2",
+    "code_cells": 11,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          6
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 7,
+        "code_cells": [
+          8,
+          9
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 10,
+        "code_cells": [
+          11,
+          12
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 13,
+        "code_cells": [
+          14,
+          15
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 16,
+        "code_cells": [
+          17
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        17
+      ]
+    },
+    "status": "executed_inline"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "analysis_id": "esmfold2-kimi-r1/test-02",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "targets": 340,
+  "new_inference_executed": false,
+  "input_archive_sha256": "c0c76766965d90de4128d0d3e11abadcf39f4acac8cff64c374657ee77172b24",
+  "reference_sequences_sha256": "e8111bbea699d0753f0d8e57c1cea1fa6a2521a70007e643926f3cb301ceaf96",
+  "search_binding": {
+    "query_sha256": "dfc8e90c989c7e391e2d3d84d787aae76d0fd6fcc568254709f010db1bad5559",
+    "reference_sha256": "e8111bbea699d0753f0d8e57c1cea1fa6a2521a70007e643926f3cb301ceaf96",
+    "binary_sha256": "190a6f34ae23465d8f894b05088364e889ee91f185ba26040922af7efdfa7ff7",
+    "sensitivity": 7.5,
+    "max_seqs": 20,
+    "coverage": 0.5
+  },
+  "search_output_sha256": "0ee5442700dc30edb1dc60e44f930ba64f62a109f70b9597a723971057eeb874",
+  "decision": "Accept the orphan weakness axis: one-sided p=4.6631e-05 (requires <0.01); gap=0.086 (requires \u22650.08); positive gap in every length bin=True."
+}

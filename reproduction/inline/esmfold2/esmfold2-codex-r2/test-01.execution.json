@@ -1,0 +1,98 @@
+{
+  "analysis_id": "esmfold2-codex-r2/test-01",
+  "notebook": "inline/esmfold2/esmfold2-codex-r2/test-01.ipynb",
+  "html": "inline/esmfold2/esmfold2-codex-r2/test-01.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 11,
+  "executed_cells": 11,
+  "errors": 0,
+  "notebook_sha256": "f34db1f857a5b26405714db5340350a63105b591b4d6a447ea40e83cc2292a6a",
+  "html_sha256": "e11db4118a9e04e5b89e1eae4eb7a23e32f8bb9d280800ff6cfee8f3f39dc51e",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source/acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 6,
+      "code_cells": [
+        7
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model evaluation",
+      "markdown_cell": 8,
+      "code_cells": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 14,
+      "code_cells": [
+        15
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 16,
+      "code_cells": [
+        17
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "80bf075e7f58e4a2f54658b1ea7d715ed9e6b5e467123c6f1e96500e3c136806",
+  "execution_evidence_entry_id": "esmfold2-codex-r2/test-01",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      17
+    ]
+  },
+  "input_manifests": [
+    {
+      "path": "inline/esmfold2/esmfold2-codex-r2/inputs/em_charge_manifest_final.csv",
+      "sha256": "94bceb56455113436d2884ca1e30316f0066a49a2aa1cc3a2fc3ef481c3338f1",
+      "bytes": 137539
+    }
+  ],
+  "elapsed_seconds": 2431.552,
+  "calculation_evidence": [
+    {
+      "path": "inline/esmfold2/esmfold2-codex-r2/test-01-evidence/CALCULATION_RECEIPT.json",
+      "sha256": "1ba6f14f059b6ce2aecc3d0f10839247e0c8e3e21df8f9ed5a145e9c13d96235"
+    }
+  ]
+}

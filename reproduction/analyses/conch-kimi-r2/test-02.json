@@ -112,5 +112,81 @@
     "review": "traceability_review.json",
     "record_id": "conch-kimi-r2/test-02",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/conch/conch-kimi-r2/test-02.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/conch/conch-kimi-r2/test-02.ipynb",
+    "html": "inline/conch/conch-kimi-r2/test-02.html",
+    "execution_evidence": "inline/conch/conch-kimi-r2/test-02.execution.json",
+    "published_notebook_sha256": "cdf1e4aa9570a6af09d768e521838c760f719db8cfa5ddc10af8068f22d289ea",
+    "published_html_sha256": "f73af4808c871d82815cb02539c839175aa52b4c5f56e5b8cf324e99d2f60f78",
+    "code_cells": 9,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source / acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 8,
+        "code_cells": [
+          9,
+          10
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 11,
+        "code_cells": [
+          12
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. Decision and reason",
+        "markdown_cell": 13,
+        "code_cells": [
+          14,
+          15
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        14,
+        15
+      ]
+    },
+    "status": "executed_inline"
   }
 }

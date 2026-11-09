@@ -1,0 +1,87 @@
+{
+  "analysis_id": "state-opus-r1/test-01",
+  "notebook": "inline/state/state-opus-r1/test-01.ipynb",
+  "html": "inline/state/state-opus-r1/test-01.html",
+  "completed": true,
+  "host": "exxact05",
+  "code_cells": 11,
+  "executed_cells": 11,
+  "errors": 0,
+  "notebook_sha256": "5a8585e387fec8de4dcb00ce3a0195d91727b1b12fa87280bd0714924cd57712",
+  "html_sha256": "6a31ed06e329097303a362696ace2938bd31c8a3f39ebf7e2c48f454108386d7",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source and acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 6,
+      "code_cells": [
+        7,
+        9
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results and released scores",
+      "markdown_cell": 10,
+      "code_cells": [
+        11
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 12,
+      "code_cells": [
+        13,
+        14,
+        16
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 17,
+      "code_cells": [
+        18,
+        19
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "7bc06c3bd0bd7bdc627730de234c8fe3c095610c5f95c7304c7ceef24ede9ee5",
+  "execution_evidence_entry_id": "state-opus-r1/test-01",
+  "embedded_figures": 5,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      18,
+      19
+    ]
+  },
+  "input_manifests": [],
+  "calculation_evidence": []
+}

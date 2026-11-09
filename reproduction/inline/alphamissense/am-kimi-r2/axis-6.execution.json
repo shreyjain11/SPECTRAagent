@@ -1,0 +1,92 @@
+{
+  "analysis_id": "am-kimi-r2/test-06",
+  "notebook": "inline/alphamissense/am-kimi-r2/axis-6.ipynb",
+  "html": "inline/alphamissense/am-kimi-r2/axis-6.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 10,
+  "executed_cells": 10,
+  "errors": 0,
+  "notebook_sha256": "5f01267446dfe58088c00a97023cf226985b695a3bab20043266cb47173c197a",
+  "html_sha256": "a8ee65324b37a1c55b76a1834cb7df8ea5ae4943db83f6dffb94ee504a1f1ada",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data acquisition",
+      "markdown_cell": 0,
+      "code_cells": [
+        1,
+        2
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Raw processing",
+      "markdown_cell": 3,
+      "code_cells": [
+        4,
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis and levels",
+      "markdown_cell": 6,
+      "code_cells": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results and references",
+      "markdown_cell": 10,
+      "code_cells": [
+        11
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 12,
+      "code_cells": [
+        13
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. Result and decision",
+      "markdown_cell": 14,
+      "code_cells": [
+        15
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "c9e6e71ace7d091a872684f8e47fe92f769c0eb6bb2864c91baef0638d09702c",
+  "execution_evidence_entry_id": "am-kimi-r2/axis-6",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      15
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 262.3972198963165,
+  "python": "/ewsc/yektefai/spectra_runs/alphamissense_nonprimary_reconstruction_20261109/.venv/bin/python",
+  "calculation_evidence": [
+    {
+      "path": "inline/alphamissense/am-kimi-r2/axis-6-evidence/execution.json",
+      "sha256": "0b2499efb51978f8ebfa823abde3ea4bb1aafe8aba98aa22989bf2f688bc908f"
+    }
+  ]
+}

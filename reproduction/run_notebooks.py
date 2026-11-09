@@ -23,7 +23,13 @@ ROOT = Path(__file__).resolve().parent
 def selected_implementation(record, implementation='preferred'):
     if implementation == 'public-bundle':
         return public_bundle_implementation(record)
-    return record['implementation']
+    if implementation == 'supporting':
+        return record['implementation']
+    if not record.get('inline_implementation'):
+        raise ValueError(f"{record['id']}: the preferred inline notebook is pending execution. "
+                         "Select an executed entry from reproduction/inline/index.json, "
+                         "or explicitly request --implementation supporting or public-bundle.")
+    return record['inline_implementation']
 
 
 def execute(record, output, timeout, implementation='preferred', python=None,
@@ -36,12 +42,13 @@ def execute(record, output, timeout, implementation='preferred', python=None,
     if destination.resolve() == notebook.resolve():
         raise ValueError('Execution output must not overwrite the published notebook.')
     destination.parent.mkdir(parents=True, exist_ok=True)
-    # A failed run must not present saved historical outputs as new execution.
+    # A failed run must not present saved outputs as a new execution.
     for cell in book.cells:
         if cell.cell_type == 'code':
             cell.execution_count = None
             cell.outputs = []
     book.metadata.pop('recovery_execution', None)
+    book.metadata.pop('analysis_execution', None)
     nbformat.write(book, destination)
     started = time.monotonic()
     result = {'id': record['id'], 'model': record_model(record),
@@ -50,7 +57,8 @@ def execute(record, output, timeout, implementation='preferred', python=None,
               'python': python or sys.executable,
               'original_workflow_requested': original_workflow,
               'started_at': datetime.datetime.now(datetime.timezone.utc).isoformat()}
-    command = [sys.executable, str(ROOT / 'primary' / 'execute_notebook.py'),
+    runner = ROOT / ('inline' if implementation == 'preferred' else 'primary') / 'execute_notebook.py'
+    command = [sys.executable, str(runner),
                str(destination), '--cwd', str(notebook.parent),
                '--python', result['python'], '--timeout', str(timeout)]
     if original_workflow:
@@ -60,7 +68,7 @@ def execute(record, output, timeout, implementation='preferred', python=None,
                                    stderr=subprocess.STDOUT, text=True, check=False)
         destination.with_suffix('.log').write_text(completed.stdout)
         executed = nbformat.read(destination, as_version=4)
-        receipt = executed.metadata.get('recovery_execution', {})
+        receipt = executed.metadata.get('analysis_execution' if implementation == 'preferred' else 'recovery_execution', {})
         result['executed_cells'] = sum(cell.cell_type == 'code' and
                                       cell.get('execution_count') is not None
                                       for cell in executed.cells)
@@ -90,11 +98,11 @@ def main():
     selection.add_argument('--model', choices=['state', 'esmfold2', 'conch', 'alphamissense'])
     selection.add_argument('--all', action='store_true')
     parser.add_argument('--output', type=Path, default=ROOT / '.executions')
-    parser.add_argument('--cell-timeout', type=int, default=1800)
+    parser.add_argument('--cell-timeout', type=int, default=86400)
     parser.add_argument('--workers', type=int, default=1, help='Number of model groups; notebooks within a model run sequentially.')
-    parser.add_argument('--implementation', choices=['preferred', 'public-bundle'],
-                        default='preferred', help='Preferred uses recovered primary notebooks where available; public-bundle uses the original 143 code-only notebooks.')
-    parser.add_argument('--primary-only', action='store_true', help='Limit the selection to the 44 recovered primary workflows.')
+    parser.add_argument('--implementation', choices=['preferred', 'supporting', 'public-bundle'],
+                        default='preferred', help='Preferred executes the six-section inline notebook. Supporting and public-bundle explicitly select alternate implementations.')
+    parser.add_argument('--primary-only', action='store_true', help='Limit the selection to the 44 primary workflows.')
     parser.add_argument('--python', default=sys.executable, help='Notebook Python interpreter; defaults to this interpreter.')
     parser.add_argument('--model-python', action='append', default=[], metavar='MODEL=PYTHON',
                         help='Override the notebook interpreter for one model; repeat for mixed environments.')
@@ -120,17 +128,24 @@ def main():
         groups.setdefault(model, []).append(record)
     if not groups:
         parser.error('No matching analysis records.')
+    if args.implementation == 'preferred':
+        pending = [record['id'] for records in groups.values() for record in records
+                   if not record.get('inline_implementation')]
+        if pending:
+            parser.error('Preferred inline execution is pending for: ' + ', '.join(pending))
     if args.analysis:
         found = {record['id'] for records in groups.values() for record in records}
         missing = set(args.analysis) - found
         if missing:
             parser.error('No matching selected analysis: ' + ', '.join(sorted(missing)))
     if args.original_workflow:
+        if args.implementation == 'preferred':
+            parser.error('Inline notebooks already execute their displayed source workflow with Run All; omit --original-workflow.')
         unsupported = [record['id'] for model, records in groups.items() for record in records
-                       if args.implementation != 'preferred' or
+                       if args.implementation != 'supporting' or
                        not record.get('primary_recovery') or model not in {'esmfold2', 'conch'}]
         if unsupported:
-            parser.error('--original-workflow requires preferred primary ESMFold2/CONCH notebooks; use --primary-only with --model or select individual analyses. Unsupported: ' + ', '.join(unsupported))
+            parser.error('--original-workflow applies only to supporting primary ESMFold2/CONCH notebooks. Unsupported: ' + ', '.join(unsupported))
     output = args.output.expanduser().resolve()
     output.mkdir(parents=True, exist_ok=True)
     # Bound native-library parallelism while several models execute concurrently.

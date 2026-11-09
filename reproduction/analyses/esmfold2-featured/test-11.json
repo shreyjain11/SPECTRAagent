@@ -788,5 +788,89 @@
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/esmfold2/esmfold2-featured/test-11.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/esmfold2/esmfold2-featured/test-11.ipynb",
+    "html": "inline/esmfold2/esmfold2-featured/test-11.html",
+    "execution_evidence": "inline/esmfold2/esmfold2-featured/test-11.execution.json",
+    "published_notebook_sha256": "9bb625e280621d33e67bffdca31e04c7e50340b92690f72f8b0d4df9ca6a51f9",
+    "published_html_sha256": "29f8258fbcfc78fbb2f36971f73fa8421622ed535b7af6ba545ab7a4c37ba108",
+    "code_cells": 17,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 9,
+        "code_cells": [
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 14,
+        "code_cells": [
+          15,
+          16
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 17,
+        "code_cells": [
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 21,
+        "code_cells": [
+          22,
+          23
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        22,
+        23
+      ]
+    },
+    "status": "executed_inline"
   }
 }

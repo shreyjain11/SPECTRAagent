@@ -1251,5 +1251,80 @@
         ]
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/alphamissense/am-primary/axis-7.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/alphamissense/am-primary/axis-7.ipynb",
+    "html": "inline/alphamissense/am-primary/axis-7.html",
+    "execution_evidence": "inline/alphamissense/am-primary/axis-7.execution.json",
+    "published_notebook_sha256": "aebf8edd5699be48c2f094318a50277f3a4bc6b571e126bb0349bfef449e94f0",
+    "published_html_sha256": "51d402e6a471925158c023a5494cf4c141756cc8a840abf7f901f6548168b8ba",
+    "code_cells": 9,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data acquisition",
+        "markdown_cell": 0,
+        "code_cells": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Raw processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          6
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis and levels",
+        "markdown_cell": 7,
+        "code_cells": [
+          8
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Released model scores and reference construction",
+        "markdown_cell": 9,
+        "code_cells": [
+          10
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 11,
+        "code_cells": [
+          12
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. Result and decision",
+        "markdown_cell": 13,
+        "code_cells": [
+          14
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        14
+      ]
+    },
+    "status": "executed_inline"
   }
 }

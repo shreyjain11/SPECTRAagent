@@ -1,0 +1,43 @@
+{
+  "axis": "Experimental dynamic range",
+  "sources": [
+    {
+      "path": "AlphaMissense_aa_substitutions.tsv.gz",
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_aa_substitutions.tsv.gz",
+      "sha256": "bc18d954a9aa6b9efab8e40d6d1912e32b774906cd3846a1f51066588e9c176d",
+      "bytes": 1207278510
+    },
+    {
+      "path": "DMS_ProteinGym_v1.3_substitutions.zip",
+      "url": "https://marks.hms.harvard.edu/proteingym/ProteinGym_v1.3/DMS_ProteinGym_substitutions.zip",
+      "sha256": "3a83766254ac9ac9984ec25cb73c6e010ea4418f5e35f143933e6b6e6473b921",
+      "bytes": 43021128
+    },
+    {
+      "path": "alphamissense-inputs.zip",
+      "url": "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/alphamissense-inputs.zip",
+      "sha256": "9088ab792238292f8f1ec5587f95876e0951a06484795266362d51b12641228c",
+      "bytes": 998791045
+    }
+  ],
+  "decision": "DMS dynamic range is lower in the first than the last occupancy level. Treat reduced experimental signal as a possible contributor to the performance curve; it does not by itself establish a predictor-specific defect.",
+  "host": "exxact05.broadinstitute.org",
+  "rows": 270572,
+  "assays": 72,
+  "bootstrap_replicates": 5000,
+  "bootstrap_unit": "assay",
+  "fresh_alignment_clustering": false,
+  "outputs": {
+    "position_features.csv": "f9ecb9ff9901f3ff71217c10e912a2db475e824ae96ea6befb4476f07d2a07bd",
+    "signal_summary.csv": "bd7ae77d304c742353b71bae53aef69ac38d48918acc9d9fb6ee7149e55882f9",
+    "per_assay.csv": "69639a733b89815d12a362fef236f20f03ea9d4906f5980fea51361b6321d49f",
+    "family_controls.csv": "5922a2bb75ead516b10ad217b2cdf77c1d859a920d2a6c7982a122b82dbaca1b",
+    "score_join_coverage.csv": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+    "composition.csv": "0f63d0f116520420a1bd3affada3288bc005237c40bf60f4b2eb2eb2a5c7462e",
+    "signal_by_assay.csv": "acab2deaf6b4557d959908a1fd3082b70d8526d6e81158c9fe955543e81c6ad2",
+    "individual_variants.csv.gz": "8300bb9a39403583c42870372f056c66c5436aedc168a64278b928139c479bdb",
+    "curves.csv": "550ae63af44130b8170e73b9467a48780db0568443fb1e83103adb3ee71fd4c1",
+    "contrasts.csv": "bd44bdfed03d9c0ff843e07d17c287abd2b5032908588b902e7e9f93cb3f86bb"
+  },
+  "elapsed_seconds": 212.33360528945923
+}

@@ -891,5 +891,83 @@
         "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
       }
     }
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-featured/test-19.ipynb",
+    "html": "inline/state/state-featured/test-19.html",
+    "execution_evidence": "inline/state/state-featured/test-19.execution.json",
+    "published_notebook_sha256": "6d1843f63cdad4fdf4e47b98143d9338e33fd4d55b3372a43602a019ca79695a",
+    "published_html_sha256": "a64e354ff194eaa8f35862abd10129449d6ead4a7e6e2156c019ec75033513fa",
+    "code_cells": 11,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          6,
+          7
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 8,
+        "code_cells": [
+          10,
+          11
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 12,
+        "code_cells": [
+          13
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 14,
+        "code_cells": [
+          15
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 16,
+        "code_cells": [
+          17,
+          18
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        17,
+        18
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-featured/test-19.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

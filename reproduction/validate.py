@@ -119,6 +119,32 @@ def check_payloads():
                 assert receipt['github_upload_digest_verified'] is True
     return checked
 
+def check_inline(record, entry):
+    """Check the preferred executable notebook separately from supporting files."""
+    from integrate_inline import code_review
+    implementation=record.get('inline_implementation')
+    if not implementation:
+        assert entry['notebook'] is None,record['id']
+        assert entry['inline_status'].startswith('pending'),record['id']
+        return False
+    assert implementation['format']=='inline_analysis_notebook'
+    assert entry['notebook']==implementation['notebook']
+    assert digest(implementation['notebook'])==implementation['published_notebook_sha256']
+    assert digest(implementation['html'])==implementation['published_html_sha256']
+    receipt=read(implementation['execution_evidence'])
+    assert receipt['analysis_id']==record['id'] and receipt['completed']
+    assert 'exxact05' in receipt['host'].lower()
+    assert receipt['notebook_sha256']==digest(implementation['notebook'])
+    assert receipt['html_sha256']==digest(implementation['html'])
+    sections,code=code_review(read(implementation['notebook']))
+    assert sections==implementation['sections']==receipt['sections']
+    assert len(code)==implementation['code_cells']==receipt['code_cells']==receipt['executed_cells']
+    assert not receipt['errors']
+    assert receipt['result_location']==implementation['calculated_result']
+    for item in receipt.get('calculation_evidence',[])+receipt.get('input_manifests',[]):
+        assert digest(item['path'])==item['sha256']
+    return True
+
 def main(allow_staged_downloads=False):
     index=read('index.json');sources=read(index['sources']);sourceids={x['id'] for x in sources}
     assert len(sourceids)==len(sources)
@@ -131,7 +157,7 @@ def main(allow_staged_downloads=False):
             assert s['anonymous_access_observed'] is True and s['http_status']==200 and s['checked_at']
         assert not re.search(r'(?:token|api_key|signature)=',s['url'],re.I)
     data,archives=check_public_archives({item['id']:item for item in sources})
-    count=0;cells=0;primary=0;ids=set();primaryids=set();sourceids_reconstructed=set();models={};samplefiles=set();legacy={}
+    count=0;cells=0;primary=0;inline=0;ids=set();primaryids=set();sourceids_reconstructed=set();models={};samplefiles=set();legacy={}
     decisions={d['id']:d for d in read(index['historical_decisions'])['records']}
     for investigation in index['investigations']:
         for entry in investigation['analyses']:
@@ -211,7 +237,11 @@ def main(allow_staged_downloads=False):
             for s in d['model_evaluation']['fine_tuning']['comparators']:file(s['evidence'])
             assert d['historical_decision']['record_id']==d['id']
             assert d['historical_decision']['result']==decisions[d['id']]['historical_result']
-            assert entry['notebook']==impl['notebook']
+            if index.get('preferred_notebook_format')=='inline_analysis_notebook':
+                inline+=check_inline(d,entry)
+                assert entry['supporting_notebook']==impl['notebook']
+            else:
+                assert entry['notebook']==impl['notebook']
             cells+=len(code);count+=1;models[investigation['model']]=models.get(investigation['model'],0)+1
     assert len(index['investigations'])==28 and count==143 and primary==44
     legacy_cells=sum(len(book['cells']) for _,book in legacy.values())
@@ -239,6 +269,14 @@ def main(allow_staged_downloads=False):
     assert all(nonprimary['counts'][category]==number for category,number in nonprimary_counts.items())
     file(index['primary_workflows'])
     payloads=check_payloads()
+    if index.get('preferred_notebook_format')=='inline_analysis_notebook':
+        preferred=read(index['preferred_notebooks'])
+        file(index['preferred_notebook_guide'])
+        file(index['preferred_workflow_review'])
+        assert {row['id'] for row in preferred['analyses']}==ids
+        assert sum(bool(row['notebook']) for row in preferred['analyses'])==inline
+        assert dict(Counter(row['status'] for row in preferred['analyses']))==preferred['counts']
+        print(json.dumps({'preferred_inline_notebooks_verified':inline,'preferred_pending':count-inline,'inline_status':preferred['counts']},indent=2))
     print(json.dumps({'investigations':28,'analyses':count,'primary_workflows':primary,'source_workflows_reconstructed':len(sourceids_reconstructed),'code_cells':cells,'legacy_materials_code_cells':legacy_cells,'legacy_execution_receipts_verified':executed,'public_sources':len(sources),'public_input_archives':len(archives),'downloads_not_yet_publicly_verified':staged,'linked_sample_tables':len(samplefiles),'payloads_verified':payloads,'traceability_review':review['counts'],'nonprimary_review':dict(nonprimary_counts),'per_model':models},indent=2))
 
 if __name__=='__main__':

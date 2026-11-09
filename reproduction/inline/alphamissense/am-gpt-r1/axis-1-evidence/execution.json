@@ -1,0 +1,69 @@
+{
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "elapsed_seconds": 335.56340169906616,
+  "sources": [
+    {
+      "path": "AlphaMissense_hg38.tsv.gz",
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+      "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+      "bytes": 642961469
+    },
+    {
+      "path": "variant_summary_2026-07.txt.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/archive/variant_summary_2026-07.txt.gz",
+      "sha256": "b3da921c707ff50cb4822f04d961834a9e89ef864b4c28bb5308245b93ac4077",
+      "bytes": 439937684
+    },
+    {
+      "path": "gencode.v32.annotation.gtf.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_32/gencode.v32.annotation.gtf.gz",
+      "sha256": "da9dc827e9a111c9bde60c55f55b7d37ffebc4649fc01f0745a670240e939ed4",
+      "bytes": 43097815
+    },
+    {
+      "path": "gencode.v32.pc_translations.fa.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_32/gencode.v32.pc_translations.fa.gz",
+      "sha256": "cfc212cfa28022ec4a31e04e9b4377b04a6d1fc13343afb7fc9f651f82954704",
+      "bytes": 11643034
+    }
+  ],
+  "rows": 200826,
+  "decision": "Accept: discrimination decreases near internal exon junctions",
+  "results": {
+    "discovery": {
+      "AM_far_minus_junction": 0.04617447360083815,
+      "AM_CI": [
+        0.03422517586640615,
+        0.060579725611426
+      ],
+      "reference_far_minus_junction": 0.04687064689342135,
+      "reference_CI": [
+        0.02015327449486371,
+        0.07440292826320319
+      ],
+      "paired_difference_CI": [
+        -0.02896179905259031,
+        0.026178974982005717
+      ]
+    },
+    "confirmation": {
+      "AM_far_minus_junction": 0.04347323649462198,
+      "AM_CI": [
+        0.03055999214257297,
+        0.05723180577728464
+      ],
+      "reference_far_minus_junction": 0.04326249606356636,
+      "reference_CI": [
+        0.01995071732643054,
+        0.06911447024300195
+      ],
+      "paired_difference_CI": [
+        -0.023510650818741322,
+        0.02203444977281245
+      ]
+    }
+  },
+  "custom_external_code_used": false,
+  "new_model_inference": false
+}

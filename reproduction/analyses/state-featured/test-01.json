@@ -886,5 +886,82 @@
         "history_notebook": "notebooks/00-original-downloads-and-axis-history.ipynb"
       }
     }
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-featured/test-01.ipynb",
+    "html": "inline/state/state-featured/test-01.html",
+    "execution_evidence": "inline/state/state-featured/test-01.execution.json",
+    "published_notebook_sha256": "b98453c7efc6edfde281805c9c7c9964fea785f2e21e9a24756dbecf50134692",
+    "published_html_sha256": "f560fb1afc0b631570a020ee2175e0e75ca2de28fda22931b83b743be38250cb",
+    "code_cells": 10,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          6,
+          7
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 8,
+        "code_cells": [
+          10
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 11,
+        "code_cells": [
+          12
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 13,
+        "code_cells": [
+          14
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 15,
+        "code_cells": [
+          16,
+          17
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        16,
+        17
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-featured/test-01.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

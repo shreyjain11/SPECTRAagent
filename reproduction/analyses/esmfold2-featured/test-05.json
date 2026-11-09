@@ -620,7 +620,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-featured/test-05",
     "disposition": "rejected",
-    "result": "Highest-minus-rest Cα-lDDT was −0.114 initially and −0.017 in confirmation. The confirmation interval crossed zero.",
+    "result": "Highest-minus-rest C\u03b1-lDDT was \u22120.114 initially and \u22120.017 in confirmation. The confirmation interval crossed zero.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -729,7 +729,7 @@
       },
       "levels": {
         "status": "original_assignment_or_frozen_fit_retained",
-        "description": "Original33-finite discovery quintiles;105eligible→78selected,77finite confirmation",
+        "description": "Original33-finite discovery quintiles;105eligible\u219278selected,77finite confirmation",
         "artifacts": [
           "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/eligible_unscored_acidic_window_pool.csv",
           "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv"
@@ -777,9 +777,98 @@
           "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_loop_state.json"
         ],
         "notebook_cell": 13,
-        "recorded_text": "## Original agent determination\n\nThe historical ledger marks the fresh local-acidic-window axis **failed_fresh_confirmation**. The exact best-by-pTM top-minus-rest contrast is −0.0172900832; its original bootstrap interval includes zero. The original discovery 33-target subset and original five-band curve are reproduced above. The recovered source is preserved even where its chemistry convention or selection order differs from other axes.",
+        "recorded_text": "## Original agent determination\n\nThe historical ledger marks the fresh local-acidic-window axis **failed_fresh_confirmation**. The exact best-by-pTM top-minus-rest contrast is \u22120.0172900832; its original bootstrap interval includes zero. The original discovery 33-target subset and original five-band curve are reproduced above. The recovered source is preserved even where its chemistry convention or selection order differs from other axes.",
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/esmfold2/esmfold2-featured/test-05.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/esmfold2/esmfold2-featured/test-05.ipynb",
+    "html": "inline/esmfold2/esmfold2-featured/test-05.html",
+    "execution_evidence": "inline/esmfold2/esmfold2-featured/test-05.execution.json",
+    "published_notebook_sha256": "3422c8dc3cc0a01e5a95f8b6dd4e2079dc15baa51ce6dea0ee2b78606614ef5a",
+    "published_html_sha256": "e490575d29d4fa765f1a77e32681e0fbb6a153b2e308128bcc847a0638e7c44f",
+    "code_cells": 23,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 6,
+        "code_cells": [
+          7,
+          8
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 9,
+        "code_cells": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 19,
+        "code_cells": [
+          20,
+          21
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 22,
+        "code_cells": [
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 28,
+        "code_cells": [
+          29
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        29
+      ]
+    },
+    "status": "executed_inline"
   }
 }

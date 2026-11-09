@@ -22,7 +22,7 @@
   },
   "axis_levels": {
     "definition": "How sparsely a held-out lineage was represented among training contexts.",
-    "calculation": "Input-side features rebuilt from original sources; levels and completeness/compound partitions computed from individual rows. See notebook stages3–4 and method policy.",
+    "calculation": "Input-side features rebuilt from original sources; levels and completeness/compound partitions computed from individual rows. See notebook stages3\u20134 and method policy.",
     "code": "reconstructed/state-codex-r1/notebooks/03-state-codex-r1-lineage.py"
   },
   "model_evaluation": {
@@ -45,7 +45,7 @@
   },
   "reconstruction_notes": [
     "Actual source-to-condition reconstruction executed on exxact05: public source hashes, input-side features, original released-DE scoring, eligibility, regressions, reference contrasts, curves and controls are linked.",
-    "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+    "Surviving original scripts01\u201304 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
     "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
     "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility.",
     "Original neural inference is not repeated: this investigation consumed official released predictions, whose full-feature errors are recomputed from the original individual DE rows."
@@ -282,5 +282,88 @@
     "pipeline_execution_evidence": "reconstructed/state-codex-r1/execution_evidence/03-state-codex-r1-lineage_pipeline.json",
     "analysis_execution_evidence": "reconstructed/state-codex-r1/execution_evidence/03-state-codex-r1-lineage_analysis.json",
     "policy": "reconstructed/state-codex-r1/computed/analysis/reconstruction_policy.json"
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-codex-r1/test-03.ipynb",
+    "html": "inline/state/state-codex-r1/test-03.html",
+    "execution_evidence": "inline/state/state-codex-r1/test-03.execution.json",
+    "published_notebook_sha256": "3eb9e014ef0adc93586107b259a33e1163fe0a1bc663a4d90de56f17948d8350",
+    "published_html_sha256": "18e29ad5e84b3ef097d31693c01e51759c6ef7c79efe69c8208f2949c742ed8c",
+    "code_cells": 17,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source and acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 10,
+        "code_cells": [
+          11,
+          12
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results and released scores",
+        "markdown_cell": 13,
+        "code_cells": [
+          14,
+          15
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 16,
+        "code_cells": [
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 22,
+        "code_cells": [
+          23
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        23
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-codex-r1/test-03.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

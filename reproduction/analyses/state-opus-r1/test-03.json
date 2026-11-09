@@ -207,5 +207,81 @@
     "review": "traceability_review.json",
     "record_id": "state-opus-r1/test-03",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-opus-r1/test-03.ipynb",
+    "html": "inline/state/state-opus-r1/test-03.html",
+    "execution_evidence": "inline/state/state-opus-r1/test-03.execution.json",
+    "published_notebook_sha256": "1f28f3fb77dca7c78ac116a04e3e265f6bd2c92e7abe7da48d59b99fc1f691d6",
+    "published_html_sha256": "8dc0c353e63aca834a61ccebc226500684dd6c4a9c27e4acc73f5320a0112c56",
+    "code_cells": 9,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source and acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results and released scores",
+        "markdown_cell": 8,
+        "code_cells": [
+          9
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 10,
+        "code_cells": [
+          11,
+          12
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 13,
+        "code_cells": [
+          14,
+          15
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        14,
+        15
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-opus-r1/test-03.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

@@ -118,5 +118,79 @@
     "review": "traceability_review.json",
     "record_id": "esmfold2-kimi-r1/test-02",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/esmfold2/esmfold2-kimi-r1/test-02.ipynb",
+    "html": "inline/esmfold2/esmfold2-kimi-r1/test-02.html",
+    "execution_evidence": "inline/esmfold2/esmfold2-kimi-r1/test-02.execution.json",
+    "published_notebook_sha256": "9a9da73c03d355acf2edaa77d9709d44c419bfc84976104b2848cb36a5a46fc6",
+    "published_html_sha256": "24504af3ed6d90cba51645604f2bad00a331783c0e9c70e51dbadf8dec4949b2",
+    "code_cells": 8,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 8,
+        "code_cells": [
+          9
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 10,
+        "code_cells": [
+          11,
+          12
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 13,
+        "code_cells": [
+          14
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        14
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/esmfold2/esmfold2-kimi-r1/test-02.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

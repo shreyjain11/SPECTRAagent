@@ -620,7 +620,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-featured/test-04",
     "disposition": "rejected",
-    "result": "Highest-minus-rest Cα-lDDT was −0.071 in discovery and +0.007 in confirmation.",
+    "result": "Highest-minus-rest C\u03b1-lDDT was \u22120.071 in discovery and +0.007 in confirmation.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -720,7 +720,7 @@
       },
       "axis": {
         "status": "definition_and_code_retained",
-        "definition": "Absolute sequence charge under each original program’s recorded chemistry convention",
+        "definition": "Absolute sequence charge under each original program\u2019s recorded chemistry convention",
         "artifacts": [
           "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/scripts/analyze_shared_axes.py",
           "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/summarize_charge_confirmation.py",
@@ -780,9 +780,99 @@
           "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_loop_state.json"
         ],
         "notebook_cell": 15,
-        "recorded_text": "## Recorded conclusion\n\nHighest-minus-rest Cα-lDDT was −0.071 in discovery and +0.007 in confirmation.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "recorded_text": "## Recorded conclusion\n\nHighest-minus-rest C\u03b1-lDDT was \u22120.071 in discovery and +0.007 in confirmation.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/esmfold2/esmfold2-featured/test-04.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/esmfold2/esmfold2-featured/test-04.ipynb",
+    "html": "inline/esmfold2/esmfold2-featured/test-04.html",
+    "execution_evidence": "inline/esmfold2/esmfold2-featured/test-04.execution.json",
+    "published_notebook_sha256": "c0509ae8e78601b1c6e4f5f45f557adeb08967bdd5746e94e2bd6faba6f8d506",
+    "published_html_sha256": "5955b2f9211b2198eb5be0aba690ed07e63ff6d1f067ec8fcf2a71a697a31e40",
+    "code_cells": 24,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 6,
+        "code_cells": [
+          7,
+          8
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 9,
+        "code_cells": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 19,
+        "code_cells": [
+          20,
+          21
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 22,
+        "code_cells": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 29,
+        "code_cells": [
+          30
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        30
+      ]
+    },
+    "status": "executed_inline"
   }
 }

@@ -1,0 +1,18 @@
+torch==2.5.0
+torchvision==0.20.0
+matplotlib==3.9.4
+timm==0.9.16
+transformers==4.40.1
+tokenizers==0.19.1
+huggingface-hub==0.23.5
+ftfy==6.3.1
+h5py==3.11.0
+open-clip-torch==2.24.0
+requests==2.34.2
+regex==2026.11.9
+safetensors==0.8.0
+nbformat==5.10.4
+nbclient==0.10.4
+nbconvert==7.16.6
+ipykernel==6.29.5
+conch @ git+https://github.com/mahmoodlab/CONCH.git@141cc09c7d4ff33d8eda562bd75169b457f71a62

@@ -1,0 +1,92 @@
+{
+  "analysis_id": "state-codex-r1/test-03",
+  "notebook": "inline/state/state-codex-r1/test-03.ipynb",
+  "html": "inline/state/state-codex-r1/test-03.html",
+  "completed": true,
+  "host": "exxact05",
+  "code_cells": 17,
+  "executed_cells": 17,
+  "errors": 0,
+  "notebook_sha256": "3eb9e014ef0adc93586107b259a33e1163fe0a1bc663a4d90de56f17948d8350",
+  "html_sha256": "18e29ad5e84b3ef097d31693c01e51759c6ef7c79efe69c8208f2949c742ed8c",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source and acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 5,
+      "code_cells": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 10,
+      "code_cells": [
+        11,
+        12
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results and released scores",
+      "markdown_cell": 13,
+      "code_cells": [
+        14,
+        15
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 16,
+      "code_cells": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 22,
+      "code_cells": [
+        23
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "7bc06c3bd0bd7bdc627730de234c8fe3c095610c5f95c7304c7ceef24ede9ee5",
+  "execution_evidence_entry_id": "state-codex-r1/test-03",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      23
+    ]
+  },
+  "input_manifests": [],
+  "calculation_evidence": []
+}

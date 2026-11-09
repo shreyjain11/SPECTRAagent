@@ -716,7 +716,7 @@
       },
       "levels": {
         "status": "original_assignment_or_frozen_fit_retained",
-        "description": "Original hash0–5 discovery cutpoints applied to hash6–9 and external/scaled sets",
+        "description": "Original hash0\u20135 discovery cutpoints applied to hash6\u20139 and external/scaled sets",
         "artifacts": [
           "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_ready_dataset/combined_prospective_features.csv"
         ]
@@ -770,5 +770,94 @@
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/esmfold2/esmfold2-featured/test-09.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/esmfold2/esmfold2-featured/test-09.ipynb",
+    "html": "inline/esmfold2/esmfold2-featured/test-09.html",
+    "execution_evidence": "inline/esmfold2/esmfold2-featured/test-09.execution.json",
+    "published_notebook_sha256": "ac02caf116239333d0b75565039d8e9a2dcea98319f180b2e017f34552915b3b",
+    "published_html_sha256": "d6eb7ff1ef98f211e14d7bb2253738a86b1b26b4d27804c66a2a794a67699a01",
+    "code_cells": 23,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 6,
+        "code_cells": [
+          7,
+          8
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 9,
+        "code_cells": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 19,
+        "code_cells": [
+          20,
+          21
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 22,
+        "code_cells": [
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 28,
+        "code_cells": [
+          29
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        29
+      ]
+    },
+    "status": "executed_inline"
   }
 }

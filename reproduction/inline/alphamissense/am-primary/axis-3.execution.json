@@ -1,0 +1,92 @@
+{
+  "analysis_id": "am-primary/test-03",
+  "notebook": "inline/alphamissense/am-primary/axis-3.ipynb",
+  "html": "inline/alphamissense/am-primary/axis-3.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 10,
+  "executed_cells": 10,
+  "errors": 0,
+  "notebook_sha256": "2104659d32c03ca5a1238b8297cee318fe0dc200ec247f5218c9cf0422875e1f",
+  "html_sha256": "c29061ca8acd006a1271a1612e216391845ae2000cac8b9f765c985bdc567f5a",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data acquisition",
+      "markdown_cell": 0,
+      "code_cells": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Raw processing",
+      "markdown_cell": 6,
+      "code_cells": [
+        7
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis and levels",
+      "markdown_cell": 8,
+      "code_cells": [
+        9
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Released model scores and reference construction",
+      "markdown_cell": 10,
+      "code_cells": [
+        11
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 12,
+      "code_cells": [
+        13
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. Result and decision",
+      "markdown_cell": 14,
+      "code_cells": [
+        15
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "9a304439c61a624124ba99b860aa4b6f09e9aadc097fffc7e1effe03940cd5f5",
+  "execution_evidence_entry_id": "am-primary/axis-3",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      15
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 1163.2730107307434,
+  "python": "/ewsc/yektefai/spectra_runs/alphamissense_nonprimary_reconstruction_20261109/.venv/bin/python",
+  "calculation_evidence": [
+    {
+      "path": "inline/alphamissense/am-primary/axis-3-evidence/execution.json",
+      "sha256": "9f03b0f4e9ac8a352d990851c82fbe56cca153ffcf34e1db961631113a369d16"
+    }
+  ]
+}

@@ -888,7 +888,7 @@
     "recovered_workflow": "primary/alphamissense/traceability.json"
   },
   "axis_levels": {
-    "definition": "Among columns supported by ≥200 effective sequences, compare occupancy ≥90% versus <70%.",
+    "definition": "Among columns supported by \u2265200 effective sequences, compare occupancy \u226590% versus <70%.",
     "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
     "code": "primary/alphamissense/am-primary/axis-5.py"
   },
@@ -1251,5 +1251,81 @@
         ]
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/alphamissense/am-primary/axis-5.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/alphamissense/am-primary/axis-5.ipynb",
+    "html": "inline/alphamissense/am-primary/axis-5.html",
+    "execution_evidence": "inline/alphamissense/am-primary/axis-5.execution.json",
+    "published_notebook_sha256": "00b45c39a0dd47b691ba038cc217ae03b67e280dd3551fbe2036f29a511bec39",
+    "published_html_sha256": "9bf81480d8d6b2dc1f65f72c77aa7ea20b67aa96eba23ff148ca0797008f1f6d",
+    "code_cells": 10,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data acquisition",
+        "markdown_cell": 0,
+        "code_cells": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Raw processing",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis and levels",
+        "markdown_cell": 8,
+        "code_cells": [
+          9
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Released model scores and reference construction",
+        "markdown_cell": 10,
+        "code_cells": [
+          11
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 12,
+        "code_cells": [
+          13
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. Result and decision",
+        "markdown_cell": 14,
+        "code_cells": [
+          15
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        15
+      ]
+    },
+    "status": "executed_inline"
   }
 }

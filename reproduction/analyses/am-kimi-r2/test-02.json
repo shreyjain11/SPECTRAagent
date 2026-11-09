@@ -93,7 +93,7 @@
     "source": "historical_decisions.json",
     "record_id": "am-kimi-r2/test-02",
     "disposition": "rejected",
-    "result": "AM AUC *higher* at low conservation (L1 0.929 vs L5 0.899, Δ=−0.030); gene-stratification reverses it → Simpson reversal Invalid as stated (gene-composition nuisance; gate rule 2 → re-attributed as B1)",
+    "result": "AM AUC *higher* at low conservation (L1 0.929 vs L5 0.899, \u0394=\u22120.030); gene-stratification reverses it \u2192 Simpson reversal Invalid as stated (gene-composition nuisance; gate rule 2 \u2192 re-attributed as B1)",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -101,5 +101,80 @@
     "review": "traceability_review.json",
     "record_id": "am-kimi-r2/test-02",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/alphamissense/am-kimi-r2/axis-2.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/alphamissense/am-kimi-r2/axis-2.ipynb",
+    "html": "inline/alphamissense/am-kimi-r2/axis-2.html",
+    "execution_evidence": "inline/alphamissense/am-kimi-r2/axis-2.execution.json",
+    "published_notebook_sha256": "3ce03bc3fac53e8ba0739bdbe8a508a4038a91ca871679aaa41c8b17bd763fa8",
+    "published_html_sha256": "8f30acfe3a92003bfe5283d5c8f59676e0288c55030e255bd328c9320e1c05d2",
+    "code_cells": 9,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data acquisition",
+        "markdown_cell": 0,
+        "code_cells": [
+          1,
+          2
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Raw processing",
+        "markdown_cell": 3,
+        "code_cells": [
+          4,
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis and levels",
+        "markdown_cell": 6,
+        "code_cells": [
+          7,
+          8
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results and references",
+        "markdown_cell": 9,
+        "code_cells": [
+          10
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 11,
+        "code_cells": [
+          12
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. Result and decision",
+        "markdown_cell": 13,
+        "code_cells": [
+          14
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        14
+      ]
+    },
+    "status": "executed_inline"
   }
 }

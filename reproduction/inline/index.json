@@ -1,0 +1,1299 @@
+{
+  "schema_version": 1,
+  "scope": "Six-section inline analysis workflows",
+  "counts": {
+    "executed_inline": 124,
+    "pending_execution": 18,
+    "documented_unperformed_candidate": 1
+  },
+  "analyses": [
+    {
+      "id": "esmfold2-featured/test-01",
+      "model": "ESMFold2",
+      "axis": "Evolutionary support",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-01.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-01.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-01.execution.json"
+    },
+    {
+      "id": "esmfold2-featured/test-02",
+      "model": "ESMFold2",
+      "axis": "CAMEO difficulty, length and resolution",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-02.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-02.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-02.execution.json"
+    },
+    {
+      "id": "esmfold2-featured/test-03",
+      "model": "ESMFold2",
+      "axis": "Flexible / non-helical composition",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-03.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-03.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-03.execution.json"
+    },
+    {
+      "id": "esmfold2-featured/test-04",
+      "model": "ESMFold2",
+      "axis": "Absolute sequence charge",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-04.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-04.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-04.execution.json"
+    },
+    {
+      "id": "esmfold2-featured/test-05",
+      "model": "ESMFold2",
+      "axis": "Acidic windows",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-05.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-05.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-05.execution.json"
+    },
+    {
+      "id": "esmfold2-featured/test-06",
+      "model": "ESMFold2",
+      "axis": "Cysteine fraction",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-06.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-06.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-06.execution.json"
+    },
+    {
+      "id": "esmfold2-featured/test-07",
+      "model": "ESMFold2",
+      "axis": "Viral envelope proteins",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-07.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-07.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-07.execution.json"
+    },
+    {
+      "id": "esmfold2-featured/test-08",
+      "model": "ESMFold2",
+      "axis": "Potential disulfide capacity",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-08.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-08.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-08.execution.json"
+    },
+    {
+      "id": "esmfold2-featured/test-09",
+      "model": "ESMFold2",
+      "axis": "Reference geometry",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-09.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-09.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-09.execution.json"
+    },
+    {
+      "id": "esmfold2-featured/test-10",
+      "model": "ESMFold2",
+      "axis": "Viral-disulfide pilot",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-10.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-10.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-10.execution.json"
+    },
+    {
+      "id": "esmfold2-featured/test-11",
+      "model": "ESMFold2",
+      "axis": "Envelope/fusion proxy",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-11.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-11.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-11.execution.json"
+    },
+    {
+      "id": "esmfold2-featured/test-12",
+      "model": "ESMFold2",
+      "axis": "Viral surface / low-helical subtype",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-featured/test-12.ipynb",
+      "html": "inline/esmfold2/esmfold2-featured/test-12.html",
+      "validation": "inline/esmfold2/esmfold2-featured/test-12.execution.json"
+    },
+    {
+      "id": "esmfold2-codex-r1/test-01",
+      "model": "ESMFold2",
+      "axis": "Pfam domain-repertoire similarity",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-codex-r1/test-02",
+      "model": "ESMFold2",
+      "axis": "Chain length and sequence homology",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-codex-r1/test-03",
+      "model": "ESMFold2",
+      "axis": "Disorder, coiled-coil and low complexity",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-codex-r1/test-04",
+      "model": "ESMFold2",
+      "axis": "Membrane topology",
+      "status": "documented_unperformed_candidate",
+      "notebook": "inline/esmfold2/esmfold2-codex-r1/test-04.ipynb",
+      "html": "inline/esmfold2/esmfold2-codex-r1/test-04.html",
+      "validation": "inline/esmfold2/esmfold2-codex-r1/test-04.execution.json"
+    },
+    {
+      "id": "esmfold2-codex-r2/test-01",
+      "model": "ESMFold2",
+      "axis": "Positive net charge on isolated cryo-EM chains",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-codex-r2/test-01.ipynb",
+      "html": "inline/esmfold2/esmfold2-codex-r2/test-01.html",
+      "validation": "inline/esmfold2/esmfold2-codex-r2/test-01.execution.json"
+    },
+    {
+      "id": "esmfold2-codex-r2/test-02",
+      "model": "ESMFold2",
+      "axis": "Internal sequence repeats",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-codex-r2/test-03",
+      "model": "ESMFold2",
+      "axis": "Low composition entropy",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-codex-r2/test-04",
+      "model": "ESMFold2",
+      "axis": "Isolated-chain oligomeric context",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-codex-r2/test-05",
+      "model": "ESMFold2",
+      "axis": "Dominant residue fraction",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-codex-r2/test-06",
+      "model": "ESMFold2",
+      "axis": "Cysteine, hydrophobic, glycine/proline and length screens",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-opus-r1/test-01",
+      "model": "ESMFold2",
+      "axis": "Coverage-weighted sequence identity",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-opus-r1/test-02",
+      "model": "ESMFold2",
+      "axis": "Length",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-opus-r1/test-03",
+      "model": "ESMFold2",
+      "axis": "Predicted disorder",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-opus-r1/test-04",
+      "model": "ESMFold2",
+      "axis": "Coverage, resolution and sequence composition",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-opus-r2/test-01",
+      "model": "ESMFold2",
+      "axis": "Sequence length",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-opus-r2/test-02",
+      "model": "ESMFold2",
+      "axis": "Training homology",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-opus-r2/test-03",
+      "model": "ESMFold2",
+      "axis": "Short-chain and long-chain failure tails",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-opus-r2/test-04",
+      "model": "ESMFold2",
+      "axis": "Resolution, composition and oligomeric state",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "esmfold2-kimi-r2/test-01",
+      "model": "ESMFold2",
+      "axis": "Maximum sequence identity",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-kimi-r2/test-01.ipynb",
+      "html": "inline/esmfold2/esmfold2-kimi-r2/test-01.html",
+      "validation": "inline/esmfold2/esmfold2-kimi-r2/test-01.execution.json"
+    },
+    {
+      "id": "esmfold2-kimi-r2/test-02",
+      "model": "ESMFold2",
+      "axis": "Missing-density and complex-context restrictions",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-kimi-r2/test-02.ipynb",
+      "html": "inline/esmfold2/esmfold2-kimi-r2/test-02.html",
+      "validation": "inline/esmfold2/esmfold2-kimi-r2/test-02.execution.json"
+    },
+    {
+      "id": "esmfold2-kimi-r1/test-01",
+      "model": "ESMFold2",
+      "axis": "Sequence identity and low complexity (ESMFold v1)",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-kimi-r1/test-01.ipynb",
+      "html": "inline/esmfold2/esmfold2-kimi-r1/test-01.html",
+      "validation": "inline/esmfold2/esmfold2-kimi-r1/test-01.execution.json"
+    },
+    {
+      "id": "esmfold2-kimi-r1/test-02",
+      "model": "ESMFold2",
+      "axis": "Graded identity and orphan threshold (v1)",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-kimi-r1/test-02.ipynb",
+      "html": "inline/esmfold2/esmfold2-kimi-r1/test-02.html",
+      "validation": "inline/esmfold2/esmfold2-kimi-r1/test-02.execution.json"
+    },
+    {
+      "id": "esmfold2-kimi-r1/test-03",
+      "model": "ESMFold2",
+      "axis": "Low-complexity fraction (v1)",
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-kimi-r1/test-03.ipynb",
+      "html": "inline/esmfold2/esmfold2-kimi-r1/test-03.html",
+      "validation": "inline/esmfold2/esmfold2-kimi-r1/test-03.execution.json"
+    },
+    {
+      "id": "state-featured/test-01",
+      "model": "STATE",
+      "axis": "Chemical similarity to training drugs",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-01.ipynb",
+      "html": "inline/state/state-featured/test-01.html",
+      "validation": "inline/state/state-featured/test-01.execution.json"
+    },
+    {
+      "id": "state-featured/test-02",
+      "model": "STATE",
+      "axis": "Dose represented in training",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-02.ipynb",
+      "html": "inline/state/state-featured/test-02.html",
+      "validation": "inline/state/state-featured/test-02.execution.json"
+    },
+    {
+      "id": "state-featured/test-03",
+      "model": "STATE",
+      "axis": "Reactome pathway-set similarity",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-03.ipynb",
+      "html": "inline/state/state-featured/test-03.html",
+      "validation": "inline/state/state-featured/test-03.execution.json"
+    },
+    {
+      "id": "state-featured/test-04",
+      "model": "STATE",
+      "axis": "Reactome mean",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-04.ipynb",
+      "html": "inline/state/state-featured/test-04.html",
+      "validation": "inline/state/state-featured/test-04.execution.json"
+    },
+    {
+      "id": "state-featured/test-05",
+      "model": "STATE",
+      "axis": "Reactome log-mean (REP)",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-05.ipynb",
+      "html": "inline/state/state-featured/test-05.html",
+      "validation": "inline/state/state-featured/test-05.execution.json"
+    },
+    {
+      "id": "state-featured/test-06",
+      "model": "STATE",
+      "axis": "Reactome minimum",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-06.ipynb",
+      "html": "inline/state/state-featured/test-06.html",
+      "validation": "inline/state/state-featured/test-06.execution.json"
+    },
+    {
+      "id": "state-featured/test-07",
+      "model": "STATE",
+      "axis": "HGNC log-mean",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-07.ipynb",
+      "html": "inline/state/state-featured/test-07.html",
+      "validation": "inline/state/state-featured/test-07.execution.json"
+    },
+    {
+      "id": "state-featured/test-08",
+      "model": "STATE",
+      "axis": "Gene-symbol prefix",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-08.ipynb",
+      "html": "inline/state/state-featured/test-08.html",
+      "validation": "inline/state/state-featured/test-08.execution.json"
+    },
+    {
+      "id": "state-featured/test-09",
+      "model": "STATE",
+      "axis": "Cell context and annotation counts",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-09.ipynb",
+      "html": "inline/state/state-featured/test-09.html",
+      "validation": "inline/state/state-featured/test-09.execution.json"
+    },
+    {
+      "id": "state-featured/test-10",
+      "model": "STATE",
+      "axis": "Multivariable adjustment",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-10.ipynb",
+      "html": "inline/state/state-featured/test-10.html",
+      "validation": "inline/state/state-featured/test-10.execution.json"
+    },
+    {
+      "id": "state-featured/test-11",
+      "model": "STATE",
+      "axis": "Zero-shot pathway support",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-11.ipynb",
+      "html": "inline/state/state-featured/test-11.html",
+      "validation": "inline/state/state-featured/test-11.execution.json"
+    },
+    {
+      "id": "state-featured/test-12",
+      "model": "STATE",
+      "axis": "Ligand-family training support",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-12.ipynb",
+      "html": "inline/state/state-featured/test-12.html",
+      "validation": "inline/state/state-featured/test-12.execution.json"
+    },
+    {
+      "id": "state-featured/test-13",
+      "model": "STATE",
+      "axis": "Reactome cross-ontology check",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-13.ipynb",
+      "html": "inline/state/state-featured/test-13.html",
+      "validation": "inline/state/state-featured/test-13.execution.json"
+    },
+    {
+      "id": "state-featured/test-14",
+      "model": "STATE",
+      "axis": "HGNC_gene_group cross-ontology check",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-14.ipynb",
+      "html": "inline/state/state-featured/test-14.html",
+      "validation": "inline/state/state-featured/test-14.execution.json"
+    },
+    {
+      "id": "state-featured/test-15",
+      "model": "STATE",
+      "axis": "GO_BP cross-ontology check",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-15.ipynb",
+      "html": "inline/state/state-featured/test-15.html",
+      "validation": "inline/state/state-featured/test-15.execution.json"
+    },
+    {
+      "id": "state-featured/test-16",
+      "model": "STATE",
+      "axis": "GO_MF cross-ontology check",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-16.ipynb",
+      "html": "inline/state/state-featured/test-16.html",
+      "validation": "inline/state/state-featured/test-16.execution.json"
+    },
+    {
+      "id": "state-featured/test-17",
+      "model": "STATE",
+      "axis": "GO_CC cross-ontology check",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-17.ipynb",
+      "html": "inline/state/state-featured/test-17.html",
+      "validation": "inline/state/state-featured/test-17.execution.json"
+    },
+    {
+      "id": "state-featured/test-18",
+      "model": "STATE",
+      "axis": "WikiPathways cross-ontology check",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-18.ipynb",
+      "html": "inline/state/state-featured/test-18.html",
+      "validation": "inline/state/state-featured/test-18.execution.json"
+    },
+    {
+      "id": "state-featured/test-19",
+      "model": "STATE",
+      "axis": "KEGG cross-ontology check",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-featured/test-19.ipynb",
+      "html": "inline/state/state-featured/test-19.html",
+      "validation": "inline/state/state-featured/test-19.execution.json"
+    },
+    {
+      "id": "state-codex-r1/test-01",
+      "model": "STATE",
+      "axis": "Basal transcriptomic distance",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-codex-r1/test-01.ipynb",
+      "html": "inline/state/state-codex-r1/test-01.html",
+      "validation": "inline/state/state-codex-r1/test-01.execution.json"
+    },
+    {
+      "id": "state-codex-r1/test-02",
+      "model": "STATE",
+      "axis": "Baseline S-phase heterogeneity",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-codex-r1/test-02.ipynb",
+      "html": "inline/state/state-codex-r1/test-02.html",
+      "validation": "inline/state/state-codex-r1/test-02.execution.json"
+    },
+    {
+      "id": "state-codex-r1/test-03",
+      "model": "STATE",
+      "axis": "Training-lineage scarcity",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-codex-r1/test-03.ipynb",
+      "html": "inline/state/state-codex-r1/test-03.html",
+      "validation": "inline/state/state-codex-r1/test-03.execution.json"
+    },
+    {
+      "id": "state-codex-r1/test-04",
+      "model": "STATE",
+      "axis": "Perturbation magnitude, DE count, cell count and dose",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-codex-r1/test-04.ipynb",
+      "html": "inline/state/state-codex-r1/test-04.html",
+      "validation": "inline/state/state-codex-r1/test-04.execution.json"
+    },
+    {
+      "id": "state-codex-r2/test-01",
+      "model": "STATE",
+      "axis": "Administered drug dose",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-codex-r2/test-01.ipynb",
+      "html": "inline/state/state-codex-r2/test-01.html",
+      "validation": "inline/state/state-codex-r2/test-01.execution.json"
+    },
+    {
+      "id": "state-codex-r2/test-02",
+      "model": "STATE",
+      "axis": "Baseline cross-cell-line distance",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-codex-r2/test-02.ipynb",
+      "html": "inline/state/state-codex-r2/test-02.html",
+      "validation": "inline/state/state-codex-r2/test-02.execution.json"
+    },
+    {
+      "id": "state-codex-r2/test-03",
+      "model": "STATE",
+      "axis": "Expected perturbation magnitude",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-codex-r2/test-03.ipynb",
+      "html": "inline/state/state-codex-r2/test-03.html",
+      "validation": "inline/state/state-codex-r2/test-03.execution.json"
+    },
+    {
+      "id": "state-codex-r2/test-04",
+      "model": "STATE",
+      "axis": "Sampling support, prospective dose displacement and checkpoint sensitivity",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-codex-r2/test-04.ipynb",
+      "html": "inline/state/state-codex-r2/test-04.html",
+      "validation": "inline/state/state-codex-r2/test-04.execution.json"
+    },
+    {
+      "id": "state-codex-r2/test-05",
+      "model": "STATE",
+      "axis": "Perturbation modality",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-codex-r2/test-05.ipynb",
+      "html": "inline/state/state-codex-r2/test-05.html",
+      "validation": "inline/state/state-codex-r2/test-05.execution.json"
+    },
+    {
+      "id": "state-opus-r1/test-01",
+      "model": "STATE",
+      "axis": "Drug-target training coverage",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-opus-r1/test-01.ipynb",
+      "html": "inline/state/state-opus-r1/test-01.html",
+      "validation": "inline/state/state-opus-r1/test-01.execution.json"
+    },
+    {
+      "id": "state-opus-r1/test-02",
+      "model": "STATE",
+      "axis": "Drug chemical novelty",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-opus-r1/test-02.ipynb",
+      "html": "inline/state/state-opus-r1/test-02.html",
+      "validation": "inline/state/state-opus-r1/test-02.execution.json"
+    },
+    {
+      "id": "state-opus-r1/test-03",
+      "model": "STATE",
+      "axis": "Cell-context novelty",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-opus-r1/test-03.ipynb",
+      "html": "inline/state/state-opus-r1/test-03.html",
+      "validation": "inline/state/state-opus-r1/test-03.execution.json"
+    },
+    {
+      "id": "state-opus-r1/test-04",
+      "model": "STATE",
+      "axis": "Intrinsic perturbation strength",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-opus-r1/test-04.ipynb",
+      "html": "inline/state/state-opus-r1/test-04.html",
+      "validation": "inline/state/state-opus-r1/test-04.execution.json"
+    },
+    {
+      "id": "state-opus-r2/test-01",
+      "model": "STATE",
+      "axis": "Gene-neighborhood coverage",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-opus-r2/test-01.ipynb",
+      "html": "inline/state/state-opus-r2/test-01.html",
+      "validation": "inline/state/state-opus-r2/test-01.execution.json"
+    },
+    {
+      "id": "state-opus-r2/test-02",
+      "model": "STATE",
+      "axis": "Chemical structure and mechanism coverage",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-opus-r2/test-02.ipynb",
+      "html": "inline/state/state-opus-r2/test-02.html",
+      "validation": "inline/state/state-opus-r2/test-02.execution.json"
+    },
+    {
+      "id": "state-opus-r2/test-03",
+      "model": "STATE",
+      "axis": "Drug-target or ligand functional density",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-opus-r2/test-03.ipynb",
+      "html": "inline/state/state-opus-r2/test-03.html",
+      "validation": "inline/state/state-opus-r2/test-03.execution.json"
+    },
+    {
+      "id": "state-opus-r2/test-04",
+      "model": "STATE",
+      "axis": "Cross-context screen coverage",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-opus-r2/test-04.ipynb",
+      "html": "inline/state/state-opus-r2/test-04.html",
+      "validation": "inline/state/state-opus-r2/test-04.execution.json"
+    },
+    {
+      "id": "state-opus-r2/test-05",
+      "model": "STATE",
+      "axis": "GO annotation count and perturbation strength",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-opus-r2/test-05.ipynb",
+      "html": "inline/state/state-opus-r2/test-05.html",
+      "validation": "inline/state/state-opus-r2/test-05.execution.json"
+    },
+    {
+      "id": "state-kimi-r1/test-01",
+      "model": "STATE",
+      "axis": "Gene\u2013cell-line pair exposure",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-kimi-r1/test-01.ipynb",
+      "html": "inline/state/state-kimi-r1/test-01.html",
+      "validation": "inline/state/state-kimi-r1/test-01.execution.json"
+    },
+    {
+      "id": "state-kimi-r1/test-02",
+      "model": "STATE",
+      "axis": "Graded gene exposure",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-kimi-r1/test-02.ipynb",
+      "html": "inline/state/state-kimi-r1/test-02.html",
+      "validation": "inline/state/state-kimi-r1/test-02.execution.json"
+    },
+    {
+      "id": "state-kimi-r1/test-03",
+      "model": "STATE",
+      "axis": "Embedding-norm proximity",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-kimi-r1/test-03.ipynb",
+      "html": "inline/state/state-kimi-r1/test-03.html",
+      "validation": "inline/state/state-kimi-r1/test-03.execution.json"
+    },
+    {
+      "id": "state-kimi-r1/test-04",
+      "model": "STATE",
+      "axis": "Cell count per observation",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-kimi-r1/test-04.ipynb",
+      "html": "inline/state/state-kimi-r1/test-04.html",
+      "validation": "inline/state/state-kimi-r1/test-04.execution.json"
+    },
+    {
+      "id": "state-kimi-r2/test-01",
+      "model": "STATE",
+      "axis": "Perturbation exposure in any cell line",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-kimi-r2/test-01.ipynb",
+      "html": "inline/state/state-kimi-r2/test-01.html",
+      "validation": "inline/state/state-kimi-r2/test-01.execution.json"
+    },
+    {
+      "id": "state-kimi-r2/test-02",
+      "model": "STATE",
+      "axis": "Graded training-support count",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-kimi-r2/test-02.ipynb",
+      "html": "inline/state/state-kimi-r2/test-02.html",
+      "validation": "inline/state/state-kimi-r2/test-02.execution.json"
+    },
+    {
+      "id": "state-kimi-r2/test-03",
+      "model": "STATE",
+      "axis": "Fixed-reference and embedding checks",
+      "status": "executed_inline",
+      "notebook": "inline/state/state-kimi-r2/test-03.ipynb",
+      "html": "inline/state/state-kimi-r2/test-03.html",
+      "validation": "inline/state/state-kimi-r2/test-03.execution.json"
+    },
+    {
+      "id": "conch-primary/test-01",
+      "model": "CONCH",
+      "axis": "Pooled color\u2013texture distance",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-primary/test-01.ipynb",
+      "html": "inline/conch/conch-primary/test-01.html",
+      "validation": "inline/conch/conch-primary/test-01.execution.json"
+    },
+    {
+      "id": "conch-primary/test-02",
+      "model": "CONCH",
+      "axis": "Color-only reference distance",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-primary/test-02.ipynb",
+      "html": "inline/conch/conch-primary/test-02.html",
+      "validation": "inline/conch/conch-primary/test-02.execution.json"
+    },
+    {
+      "id": "conch-primary/test-03",
+      "model": "CONCH",
+      "axis": "Texture-only reference distance",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-primary/test-03.ipynb",
+      "html": "inline/conch/conch-primary/test-03.html",
+      "validation": "inline/conch/conch-primary/test-03.execution.json"
+    },
+    {
+      "id": "conch-primary/test-04",
+      "model": "CONCH",
+      "axis": "Within-tumor tissue/stain distance",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-primary/test-04.ipynb",
+      "html": "inline/conch/conch-primary/test-04.html",
+      "validation": "inline/conch/conch-primary/test-04.execution.json"
+    },
+    {
+      "id": "conch-primary/test-05",
+      "model": "CONCH",
+      "axis": "Tissue-class composition",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-primary/test-05.ipynb",
+      "html": "inline/conch/conch-primary/test-05.html",
+      "validation": "inline/conch/conch-primary/test-05.execution.json"
+    },
+    {
+      "id": "conch-primary/test-06",
+      "model": "CONCH",
+      "axis": "Fixed reference classifiers",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-primary/test-06.ipynb",
+      "html": "inline/conch/conch-primary/test-06.html",
+      "validation": "inline/conch/conch-primary/test-06.execution.json"
+    },
+    {
+      "id": "conch-gpt-r1/test-01",
+      "model": "CONCH",
+      "axis": "Texture-only distance from the NCT reference",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r1/test-01.ipynb",
+      "html": "inline/conch/conch-gpt-r1/test-01.html",
+      "validation": "inline/conch/conch-gpt-r1/test-01.execution.json"
+    },
+    {
+      "id": "conch-gpt-r1/test-02",
+      "model": "CONCH",
+      "axis": "joint reference-distribution color-texture distance",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r1/test-02.ipynb",
+      "html": "inline/conch/conch-gpt-r1/test-02.html",
+      "validation": "inline/conch/conch-gpt-r1/test-02.execution.json"
+    },
+    {
+      "id": "conch-gpt-r1/test-03",
+      "model": "CONCH",
+      "axis": "tissue-background fragmentation / low tissue fraction",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r1/test-03.ipynb",
+      "html": "inline/conch/conch-gpt-r1/test-03.html",
+      "validation": "inline/conch/conch-gpt-r1/test-03.execution.json"
+    },
+    {
+      "id": "conch-gpt-r1/test-04",
+      "model": "CONCH",
+      "axis": "stain optical-density departure",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r1/test-04.ipynb",
+      "html": "inline/conch/conch-gpt-r1/test-04.html",
+      "validation": "inline/conch/conch-gpt-r1/test-04.execution.json"
+    },
+    {
+      "id": "conch-gpt-r1/test-05",
+      "model": "CONCH",
+      "axis": "blur/sharpness departure",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r1/test-05.ipynb",
+      "html": "inline/conch/conch-gpt-r1/test-05.html",
+      "validation": "inline/conch/conch-gpt-r1/test-05.execution.json"
+    },
+    {
+      "id": "conch-gpt-r1/test-06",
+      "model": "CONCH",
+      "axis": "JPEG corruption",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "conch-gpt-r1/test-07",
+      "model": "CONCH",
+      "axis": "Kather-2016 external transport panel",
+      "status": "pending_execution",
+      "notebook": null,
+      "html": null,
+      "validation": null
+    },
+    {
+      "id": "conch-gpt-r2/test-01",
+      "model": "CONCH",
+      "axis": "Joint colour-and-texture distance from NCT",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r2/test-01.ipynb",
+      "html": "inline/conch/conch-gpt-r2/test-01.html",
+      "validation": "inline/conch/conch-gpt-r2/test-01.execution.json"
+    },
+    {
+      "id": "conch-gpt-r2/test-02",
+      "model": "CONCH",
+      "axis": "stain drift",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r2/test-02.ipynb",
+      "html": "inline/conch/conch-gpt-r2/test-02.html",
+      "validation": "inline/conch/conch-gpt-r2/test-02.execution.json"
+    },
+    {
+      "id": "conch-gpt-r2/test-03",
+      "model": "CONCH",
+      "axis": "blur/sharpness",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r2/test-03.ipynb",
+      "html": "inline/conch/conch-gpt-r2/test-03.html",
+      "validation": "inline/conch/conch-gpt-r2/test-03.execution.json"
+    },
+    {
+      "id": "conch-gpt-r2/test-04",
+      "model": "CONCH",
+      "axis": "background/tissue fraction",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r2/test-04.ipynb",
+      "html": "inline/conch/conch-gpt-r2/test-04.html",
+      "validation": "inline/conch/conch-gpt-r2/test-04.execution.json"
+    },
+    {
+      "id": "conch-gpt-r2/test-05",
+      "model": "CONCH",
+      "axis": "compression artifacts",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r2/test-05.ipynb",
+      "html": "inline/conch/conch-gpt-r2/test-05.html",
+      "validation": "inline/conch/conch-gpt-r2/test-05.execution.json"
+    },
+    {
+      "id": "conch-gpt-r2/test-06",
+      "model": "CONCH",
+      "axis": "magnification/scale",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r2/test-06.ipynb",
+      "html": "inline/conch/conch-gpt-r2/test-06.html",
+      "validation": "inline/conch/conch-gpt-r2/test-06.execution.json"
+    },
+    {
+      "id": "conch-gpt-r2/test-07",
+      "model": "CONCH",
+      "axis": "external cohort/site",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r2/test-07.ipynb",
+      "html": "inline/conch/conch-gpt-r2/test-07.html",
+      "validation": "inline/conch/conch-gpt-r2/test-07.execution.json"
+    },
+    {
+      "id": "conch-opus-r1/test-01",
+      "model": "CONCH",
+      "axis": "Colour and stain distance, within tissue class",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-opus-r1/test-01.ipynb",
+      "html": "inline/conch/conch-opus-r1/test-01.html",
+      "validation": "inline/conch/conch-opus-r1/test-01.execution.json"
+    },
+    {
+      "id": "conch-opus-r1/test-02",
+      "model": "CONCH",
+      "axis": "Pooled appearance distance",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-opus-r1/test-02.ipynb",
+      "html": "inline/conch/conch-opus-r1/test-02.html",
+      "validation": "inline/conch/conch-opus-r1/test-02.execution.json"
+    },
+    {
+      "id": "conch-opus-r1/test-03",
+      "model": "CONCH",
+      "axis": "Image sharpness",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-opus-r1/test-03.ipynb",
+      "html": "inline/conch/conch-opus-r1/test-03.html",
+      "validation": "inline/conch/conch-opus-r1/test-03.execution.json"
+    },
+    {
+      "id": "conch-opus-r2/test-01",
+      "model": "CONCH",
+      "axis": "Controlled Gaussian blur",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-opus-r2/test-01.ipynb",
+      "html": "inline/conch/conch-opus-r2/test-01.html",
+      "validation": "inline/conch/conch-opus-r2/test-01.execution.json"
+    },
+    {
+      "id": "conch-opus-r2/test-02",
+      "model": "CONCH",
+      "axis": "Stain characteristics",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-opus-r2/test-02.ipynb",
+      "html": "inline/conch/conch-opus-r2/test-02.html",
+      "validation": "inline/conch/conch-opus-r2/test-02.execution.json"
+    },
+    {
+      "id": "conch-opus-r2/test-03",
+      "model": "CONCH",
+      "axis": "Class composition and stain",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-opus-r2/test-03.ipynb",
+      "html": "inline/conch/conch-opus-r2/test-03.html",
+      "validation": "inline/conch/conch-opus-r2/test-03.execution.json"
+    },
+    {
+      "id": "conch-kimi-r1/test-01",
+      "model": "CONCH",
+      "axis": "Effective acquisition magnification",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-kimi-r1/test-01.ipynb",
+      "html": "inline/conch/conch-kimi-r1/test-01.html",
+      "validation": "inline/conch/conch-kimi-r1/test-01.execution.json"
+    },
+    {
+      "id": "conch-kimi-r2/test-01",
+      "model": "CONCH",
+      "axis": "Effective spatial resolution",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-kimi-r2/test-01.ipynb",
+      "html": "inline/conch/conch-kimi-r2/test-01.html",
+      "validation": "inline/conch/conch-kimi-r2/test-01.execution.json"
+    },
+    {
+      "id": "conch-kimi-r2/test-02",
+      "model": "CONCH",
+      "axis": "Stain shift",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-kimi-r2/test-02.ipynb",
+      "html": "inline/conch/conch-kimi-r2/test-02.html",
+      "validation": "inline/conch/conch-kimi-r2/test-02.execution.json"
+    },
+    {
+      "id": "conch-kimi-r2/test-03",
+      "model": "CONCH",
+      "axis": "Site shift at native resolution",
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-kimi-r2/test-03.ipynb",
+      "html": "inline/conch/conch-kimi-r2/test-03.html",
+      "validation": "inline/conch/conch-kimi-r2/test-03.execution.json"
+    },
+    {
+      "id": "am-primary/test-01",
+      "model": "AlphaMissense",
+      "axis": "UniRef50 homolog count",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-primary/axis-1.ipynb",
+      "html": "inline/alphamissense/am-primary/axis-1.html",
+      "validation": "inline/alphamissense/am-primary/axis-1.execution.json"
+    },
+    {
+      "id": "am-primary/test-02",
+      "model": "AlphaMissense",
+      "axis": "gnomAD missense-variation support",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-primary/axis-2.ipynb",
+      "html": "inline/alphamissense/am-primary/axis-2.html",
+      "validation": "inline/alphamissense/am-primary/axis-2.execution.json"
+    },
+    {
+      "id": "am-primary/test-03",
+      "model": "AlphaMissense",
+      "axis": "Effective alignment depth",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-primary/axis-3.ipynb",
+      "html": "inline/alphamissense/am-primary/axis-3.html",
+      "validation": "inline/alphamissense/am-primary/axis-3.execution.json"
+    },
+    {
+      "id": "am-primary/test-04",
+      "model": "AlphaMissense",
+      "axis": "Alignment occupancy",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-primary/axis-4.ipynb",
+      "html": "inline/alphamissense/am-primary/axis-4.html",
+      "validation": "inline/alphamissense/am-primary/axis-4.execution.json"
+    },
+    {
+      "id": "am-primary/test-05",
+      "model": "AlphaMissense",
+      "axis": "Occupancy at high effective depth",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-primary/axis-5.ipynb",
+      "html": "inline/alphamissense/am-primary/axis-5.html",
+      "validation": "inline/alphamissense/am-primary/axis-5.execution.json"
+    },
+    {
+      "id": "am-primary/test-06",
+      "model": "AlphaMissense",
+      "axis": "Position-specific and substitution-score references",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-primary/axis-6.ipynb",
+      "html": "inline/alphamissense/am-primary/axis-6.html",
+      "validation": "inline/alphamissense/am-primary/axis-6.execution.json"
+    },
+    {
+      "id": "am-primary/test-07",
+      "model": "AlphaMissense",
+      "axis": "Experimental dynamic range",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-primary/axis-7.ipynb",
+      "html": "inline/alphamissense/am-primary/axis-7.html",
+      "validation": "inline/alphamissense/am-primary/axis-7.execution.json"
+    },
+    {
+      "id": "am-gpt-r1/test-01",
+      "model": "AlphaMissense",
+      "axis": "Distance to nearest internal exon boundary",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-gpt-r1/axis-1.ipynb",
+      "html": "inline/alphamissense/am-gpt-r1/axis-1.html",
+      "validation": "inline/alphamissense/am-gpt-r1/axis-1.execution.json"
+    },
+    {
+      "id": "am-gpt-r1/test-02",
+      "model": "AlphaMissense",
+      "axis": "Intrinsic disorder",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-gpt-r1/axis-2.ipynb",
+      "html": "inline/alphamissense/am-gpt-r1/axis-2.html",
+      "validation": "inline/alphamissense/am-gpt-r1/axis-2.execution.json"
+    },
+    {
+      "id": "am-gpt-r1/test-03",
+      "model": "AlphaMissense",
+      "axis": "Protein-interface context",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-gpt-r1/axis-3.ipynb",
+      "html": "inline/alphamissense/am-gpt-r1/axis-3.html",
+      "validation": "inline/alphamissense/am-gpt-r1/axis-3.execution.json"
+    },
+    {
+      "id": "am-gpt-r1/test-04",
+      "model": "AlphaMissense",
+      "axis": "Gene age",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-gpt-r1/axis-4.ipynb",
+      "html": "inline/alphamissense/am-gpt-r1/axis-4.html",
+      "validation": "inline/alphamissense/am-gpt-r1/axis-4.execution.json"
+    },
+    {
+      "id": "am-gpt-r1/test-05",
+      "model": "AlphaMissense",
+      "axis": "Protein-function mechanism check",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-gpt-r1/axis-5.ipynb",
+      "html": "inline/alphamissense/am-gpt-r1/axis-5.html",
+      "validation": "inline/alphamissense/am-gpt-r1/axis-5.execution.json"
+    },
+    {
+      "id": "am-gpt-r2/test-01",
+      "model": "AlphaMissense",
+      "axis": "Minimum exonic distance to an exon boundary",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-gpt-r2/axis-1.ipynb",
+      "html": "inline/alphamissense/am-gpt-r2/axis-1.html",
+      "validation": "inline/alphamissense/am-gpt-r2/axis-1.execution.json"
+    },
+    {
+      "id": "am-gpt-r2/test-02",
+      "model": "AlphaMissense",
+      "axis": "protein-protein interface/binding context",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-gpt-r2/axis-2.ipynb",
+      "html": "inline/alphamissense/am-gpt-r2/axis-2.html",
+      "validation": "inline/alphamissense/am-gpt-r2/axis-2.execution.json"
+    },
+    {
+      "id": "am-gpt-r2/test-03",
+      "model": "AlphaMissense",
+      "axis": "gene evolutionary age",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-gpt-r2/axis-3.ipynb",
+      "html": "inline/alphamissense/am-gpt-r2/axis-3.html",
+      "validation": "inline/alphamissense/am-gpt-r2/axis-3.execution.json"
+    },
+    {
+      "id": "am-gpt-r2/test-04",
+      "model": "AlphaMissense",
+      "axis": "local disorder/low structural confidence",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-gpt-r2/axis-4.ipynb",
+      "html": "inline/alphamissense/am-gpt-r2/axis-4.html",
+      "validation": "inline/alphamissense/am-gpt-r2/axis-4.execution.json"
+    },
+    {
+      "id": "am-opus-r1/test-01",
+      "model": "AlphaMissense",
+      "axis": "Evolutionary constraint at the variant position",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-opus-r1/test-01.ipynb",
+      "html": "inline/alphamissense/am-opus-r1/test-01.html",
+      "validation": "inline/alphamissense/am-opus-r1/test-01.execution.json"
+    },
+    {
+      "id": "am-opus-r1/test-02",
+      "model": "AlphaMissense",
+      "axis": "Whole-protein alignment depth",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-opus-r1/test-02.ipynb",
+      "html": "inline/alphamissense/am-opus-r1/test-02.html",
+      "validation": "inline/alphamissense/am-opus-r1/test-02.execution.json"
+    },
+    {
+      "id": "am-opus-r1/test-03",
+      "model": "AlphaMissense",
+      "axis": "Per-position alignment coverage",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-opus-r1/test-03.ipynb",
+      "html": "inline/alphamissense/am-opus-r1/test-03.html",
+      "validation": "inline/alphamissense/am-opus-r1/test-03.execution.json"
+    },
+    {
+      "id": "am-opus-r2/test-01",
+      "model": "AlphaMissense",
+      "axis": "AlphaFold residue-level confidence (pLDDT)",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-opus-r2/test-01.ipynb",
+      "html": "inline/alphamissense/am-opus-r2/test-01.html",
+      "validation": "inline/alphamissense/am-opus-r2/test-01.execution.json"
+    },
+    {
+      "id": "am-opus-r2/test-02",
+      "model": "AlphaMissense",
+      "axis": "Whole-protein alignment depth",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-opus-r2/test-02.ipynb",
+      "html": "inline/alphamissense/am-opus-r2/test-02.html",
+      "validation": "inline/alphamissense/am-opus-r2/test-02.execution.json"
+    },
+    {
+      "id": "am-opus-r2/test-03",
+      "model": "AlphaMissense",
+      "axis": "Within-assay alignment support",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-opus-r2/test-03.ipynb",
+      "html": "inline/alphamissense/am-opus-r2/test-03.html",
+      "validation": "inline/alphamissense/am-opus-r2/test-03.execution.json"
+    },
+    {
+      "id": "am-kimi-r1/test-01",
+      "model": "AlphaMissense",
+      "axis": "Nucleotide distance to the nearest exon boundary",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r1/axis-1.ipynb",
+      "html": "inline/alphamissense/am-kimi-r1/axis-1.html",
+      "validation": "inline/alphamissense/am-kimi-r1/axis-1.execution.json"
+    },
+    {
+      "id": "am-kimi-r1/test-02",
+      "model": "AlphaMissense",
+      "axis": "local sequence complexity (21-aa windowed entropy, quartiles)",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r1/axis-2.ipynb",
+      "html": "inline/alphamissense/am-kimi-r1/axis-2.html",
+      "validation": "inline/alphamissense/am-kimi-r1/axis-2.execution.json"
+    },
+    {
+      "id": "am-kimi-r1/test-03",
+      "model": "AlphaMissense",
+      "axis": "distance to nearest terminus (quartiles)",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r1/axis-3.ipynb",
+      "html": "inline/alphamissense/am-kimi-r1/axis-3.html",
+      "validation": "inline/alphamissense/am-kimi-r1/axis-3.execution.json"
+    },
+    {
+      "id": "am-kimi-r1/test-04",
+      "model": "AlphaMissense",
+      "axis": "protein length (quartiles)",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r1/axis-4.ipynb",
+      "html": "inline/alphamissense/am-kimi-r1/axis-4.html",
+      "validation": "inline/alphamissense/am-kimi-r1/axis-4.execution.json"
+    },
+    {
+      "id": "am-kimi-r1/test-05",
+      "model": "AlphaMissense",
+      "axis": "homology availability (ortholog count across 6 species; levels 6 / 4\u20135 / 0\u20133 after predeclared merge)",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r1/axis-5.ipynb",
+      "html": "inline/alphamissense/am-kimi-r1/axis-5.html",
+      "validation": "inline/alphamissense/am-kimi-r1/axis-5.execution.json"
+    },
+    {
+      "id": "am-kimi-r1/test-06",
+      "model": "AlphaMissense",
+      "axis": "population observability (AF tiers: unobserved / rare / common)",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r1/axis-6.ipynb",
+      "html": "inline/alphamissense/am-kimi-r1/axis-6.html",
+      "validation": "inline/alphamissense/am-kimi-r1/axis-6.execution.json"
+    },
+    {
+      "id": "am-kimi-r2/test-01",
+      "model": "AlphaMissense",
+      "axis": "AlphaFold residue-level confidence, within gene",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r2/axis-1.ipynb",
+      "html": "inline/alphamissense/am-kimi-r2/axis-1.html",
+      "validation": "inline/alphamissense/am-kimi-r2/axis-1.execution.json"
+    },
+    {
+      "id": "am-kimi-r2/test-02",
+      "model": "AlphaMissense",
+      "axis": "position phyloP (pooled)",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r2/axis-2.ipynb",
+      "html": "inline/alphamissense/am-kimi-r2/axis-2.html",
+      "validation": "inline/alphamissense/am-kimi-r2/axis-2.execution.json"
+    },
+    {
+      "id": "am-kimi-r2/test-03",
+      "model": "AlphaMissense",
+      "axis": "position phyloP, paired within-gene",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r2/axis-3.ipynb",
+      "html": "inline/alphamissense/am-kimi-r2/axis-3.html",
+      "validation": "inline/alphamissense/am-kimi-r2/axis-3.execution.json"
+    },
+    {
+      "id": "am-kimi-r2/test-04",
+      "model": "AlphaMissense",
+      "axis": "gene-level mean CDS phyloP (quintiles)",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r2/axis-4.ipynb",
+      "html": "inline/alphamissense/am-kimi-r2/axis-4.html",
+      "validation": "inline/alphamissense/am-kimi-r2/axis-4.execution.json"
+    },
+    {
+      "id": "am-kimi-r2/test-05",
+      "model": "AlphaMissense",
+      "axis": "Grantham substitution severity (4 levels)",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r2/axis-5.ipynb",
+      "html": "inline/alphamissense/am-kimi-r2/axis-5.html",
+      "validation": "inline/alphamissense/am-kimi-r2/axis-5.execution.json"
+    },
+    {
+      "id": "am-kimi-r2/test-06",
+      "model": "AlphaMissense",
+      "axis": "CpG mutational context (3 levels)",
+      "status": "executed_inline",
+      "notebook": "inline/alphamissense/am-kimi-r2/axis-6.ipynb",
+      "html": "inline/alphamissense/am-kimi-r2/axis-6.html",
+      "validation": "inline/alphamissense/am-kimi-r2/axis-6.execution.json"
+    }
+  ],
+  "checks_pending": []
+}

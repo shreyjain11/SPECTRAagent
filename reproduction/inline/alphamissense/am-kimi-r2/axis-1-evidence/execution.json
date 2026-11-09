@@ -1,0 +1,56 @@
+{
+  "axis": "Within-gene structural confidence",
+  "sources": [
+    {
+      "path": "AlphaMissense_hg38.tsv.gz",
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+      "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+      "bytes": 642961469
+    },
+    {
+      "path": "clinvar_20260720.vcf.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260720.vcf.gz",
+      "sha256": "ecedd212660c7e04c94ffdf8d516ec6881283ab501f4b7700b87e82c65e4551b",
+      "bytes": 192806479
+    },
+    {
+      "path": "gencode.v45.basic.annotation.gtf.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_45/gencode.v45.basic.annotation.gtf.gz",
+      "sha256": "c6e289b65241fe7a08bf655e4aced3ec8480d166cf83febc9d133db1a04034bb",
+      "bytes": 29623361
+    },
+    {
+      "path": "hg38.phyloP100way.bw",
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phyloP100way/hg38.phyloP100way.bw",
+      "sha256": "445fa3473c94fc209a6854692143371a57c05a387241e3de55933032ac024973",
+      "bytes": 9870053206
+    },
+    {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/alphafold/v6/UP000005640_9606_HUMAN_v6.tar",
+      "bytes": 5177506304,
+      "sha256": "1de6f3d7df0373be7d49e61cb4a9eb501b0a2216aeec262471812fac9faeeaa6",
+      "archive": "UP000005640_9606_HUMAN_v6.tar",
+      "release": "v6",
+      "proteome": "UP000005640",
+      "official_metadata_url": "https://ftp.ebi.ac.uk/pub/databases/alphafold/download_metadata.json",
+      "acquired_at_utc": "2026-11-09T21:05:09Z"
+    }
+  ],
+  "variants": 191074,
+  "bootstrap_replicates": 2000,
+  "bootstrap_unit": "gene",
+  "seed": 20260722,
+  "decision": "Retain a directional association: AlphaMissense discrimination is better at the last level than at the first within the same genes. The reference contrasts and strata characterize whether this is shared biological difficulty.",
+  "host": "exxact05.broadinstitute.org",
+  "elapsed_seconds": 826.9503698348999,
+  "outputs": {
+    "paired_summary.csv": "f6f8b80b867888236b6a033967ba4e8d93bf17cb2cd3f1af4142a1639cf7c5b9",
+    "paired_genes.csv": "fe6f26e71ea1376890dda650debeace24c47ccf03ac9e21015f701ce28831214",
+    "composition.csv": "f1dee39c84b500038f4607a1f875da935e0ca5c817c3ab026670e38f821bb903",
+    "variants.csv.gz": "8ffe072cbdb638d2afa8cd8518c9dcff3941ba8913ef6a219fe6b09b480344b5",
+    "curves.csv": "16f3d525bfe9de66ec5ec497dde0c6954e4fa180162ec6d7b395b3f6935090c4",
+    "contrasts.csv": "8c66d5b24b87429f0d808a0bd0182e09970f1a7e9268e007e047443b8bde7f68",
+    "all_levels_same_genes.csv": "a71ed96f003e59914025a684b6bd702adb5c684f505fc7a59927e5118e39654a",
+    "controls.csv": "c32c0593464d434d5604bde1eb43cb90922e96b0c16dd79626556deb11907f90"
+  }
+}

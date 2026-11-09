@@ -1,0 +1,46 @@
+{
+  "axis": "Substitution chemical distance",
+  "sources": [
+    {
+      "path": "AlphaMissense_hg38.tsv.gz",
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+      "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+      "bytes": 642961469
+    },
+    {
+      "path": "clinvar_20260720.vcf.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260720.vcf.gz",
+      "sha256": "ecedd212660c7e04c94ffdf8d516ec6881283ab501f4b7700b87e82c65e4551b",
+      "bytes": 192806479
+    },
+    {
+      "path": "gencode.v45.basic.annotation.gtf.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_45/gencode.v45.basic.annotation.gtf.gz",
+      "sha256": "c6e289b65241fe7a08bf655e4aced3ec8480d166cf83febc9d133db1a04034bb",
+      "bytes": 29623361
+    },
+    {
+      "path": "hg38.phyloP100way.bw",
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phyloP100way/hg38.phyloP100way.bw",
+      "sha256": "445fa3473c94fc209a6854692143371a57c05a387241e3de55933032ac024973",
+      "bytes": 9870053206
+    }
+  ],
+  "variants": 209344,
+  "bootstrap_replicates": 2000,
+  "bootstrap_unit": "gene",
+  "seed": 20260722,
+  "decision": "Do not retain a supported within-gene directional effect: the endpoint contrast interval includes zero. A pooled association alone is insufficient. The pooled and within-gene point estimates have opposite signs, showing sensitivity to gene composition.",
+  "host": "exxact05.broadinstitute.org",
+  "elapsed_seconds": 210.58555054664612,
+  "outputs": {
+    "paired_summary.csv": "3002b1783f2fd2f095b8a509a2096fdebdf56a683e68383a269267263e8e080e",
+    "paired_genes.csv": "a714cdb5ad3a119817911b2430ab8b008bcde80ebd7e5555b9e1f5653a86ddc5",
+    "composition.csv": "3ed7f1d217817e6157f5306b357b4717f58d3aad9784061c1d11f1453fea820b",
+    "variants.csv.gz": "58120d0c5fb720949ad10425cc52d2a8c145607bfbc8e001649316efaa56605c",
+    "curves.csv": "0beca81632abd996895f2aed37ae579d4f4740c41b75e4d39a797ae8ffd2b565",
+    "contrasts.csv": "1a6e30270c07fe70507e7f70b0d62b79971dac527acc0d39bc2db1fa5b351aef",
+    "all_levels_same_genes.csv": "4809ada012d3ebfe9cb35ea1a2eaae4aa01ca48c4980239053a8242258d62d13",
+    "controls.csv": "cb572c73afbcbdfeadfcb8d83ce6282c3965bfbf4fcf07c9e12a026a9ac88ad5"
+  }
+}

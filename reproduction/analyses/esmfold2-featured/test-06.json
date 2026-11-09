@@ -630,7 +630,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-featured/test-06",
     "disposition": "accepted",
-    "result": "Cα-lDDT averaged 0.901 in the lowest and 0.787 in the highest cysteine group (mean cysteine content 0.11% and 4.03%, respectively). The intermediate groups did not form a strictly monotone curve.",
+    "result": "C\u03b1-lDDT averaged 0.901 in the lowest and 0.787 in the highest cysteine group (mean cysteine content 0.11% and 4.03%, respectively). The intermediate groups did not form a strictly monotone curve.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -748,7 +748,7 @@
       },
       "levels": {
         "status": "original_assignment_or_frozen_fit_retained",
-        "description": "Original pre-exclusion quantiles on613pool→207eligible→95selected",
+        "description": "Original pre-exclusion quantiles on613pool\u2192207eligible\u219295selected",
         "artifacts": [
           "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/cys_confirmation_candidate_features.csv",
           "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/eligible_unscored_cys_pool.csv",
@@ -797,9 +797,97 @@
           "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_loop_state.json"
         ],
         "notebook_cell": 16,
-        "recorded_text": "## Recorded conclusion\n\nCα-lDDT averaged 0.901 in the lowest and 0.787 in the highest cysteine group (mean cysteine content 0.11% and 4.03%, respectively). The intermediate groups did not form a strictly monotone curve.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "recorded_text": "## Recorded conclusion\n\nC\u03b1-lDDT averaged 0.901 in the lowest and 0.787 in the highest cysteine group (mean cysteine content 0.11% and 4.03%, respectively). The intermediate groups did not form a strictly monotone curve.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/esmfold2/esmfold2-featured/test-06.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/esmfold2/esmfold2-featured/test-06.ipynb",
+    "html": "inline/esmfold2/esmfold2-featured/test-06.html",
+    "execution_evidence": "inline/esmfold2/esmfold2-featured/test-06.execution.json",
+    "published_notebook_sha256": "45bfcf8095d85f968e2bf1710643eb2103d8d88ac61103e3103bb448d897f4fc",
+    "published_html_sha256": "a02ab54659b38dd7e0ef98e47aeaedd399f5e974605aa22d37d48efa6eaf5165",
+    "code_cells": 22,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 6,
+        "code_cells": [
+          7,
+          8
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 9,
+        "code_cells": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 19,
+        "code_cells": [
+          20,
+          21
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 22,
+        "code_cells": [
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 27,
+        "code_cells": [
+          28
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        28
+      ]
+    },
+    "status": "executed_inline"
   }
 }

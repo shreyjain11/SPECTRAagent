@@ -351,5 +351,78 @@
         "scope": "Original agent determination, not newly assigned acceptance criteria"
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/conch/conch-primary/test-03.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/conch/conch-primary/test-03.ipynb",
+    "html": "inline/conch/conch-primary/test-03.html",
+    "execution_evidence": "inline/conch/conch-primary/test-03.execution.json",
+    "published_notebook_sha256": "338dc2e6b166d1adb6136df5ac220a3186de11bd9901587b2824edf21f70cf55",
+    "published_html_sha256": "fb2802d82af3a2d43d09032d1e4140b32d03f4ccb985911bf6b573a9a1fe5198",
+    "code_cells": 7,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 8,
+        "code_cells": [
+          9
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 10,
+        "code_cells": [
+          11
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 12,
+        "code_cells": [
+          13
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        13
+      ]
+    },
+    "status": "executed_inline"
   }
 }

@@ -82,7 +82,7 @@
     }
   },
   "axis_levels": {
-    "definition": "Convolve each tile with a Gaussian kernel with σ = 0, 1, 2 or 3 pixels. Score all conditions on the same tiles.",
+    "definition": "Convolve each tile with a Gaussian kernel with \u03c3 = 0, 1, 2 or 3 pixels. Score all conditions on the same tiles.",
     "calculation": "Recomputed from all original images.",
     "code": "materials/conch/notebooks/conch-opus-r2-01.py"
   },
@@ -173,7 +173,7 @@
     "source": "historical_decisions.json",
     "record_id": "conch-opus-r2/test-01",
     "disposition": "accepted",
-    "result": "Top-1 accuracy fell from 0.789 to 0.246 versus 0.932 to 0.609 for the fixed ImageNet ResNet-50. Extra CONCH loss 0.219 (95% CI 0.182–0.257). Independent of development, within the NCT source family.",
+    "result": "Top-1 accuracy fell from 0.789 to 0.246 versus 0.932 to 0.609 for the fixed ImageNet ResNet-50. Extra CONCH loss 0.219 (95% CI 0.182\u20130.257). Independent of development, within the NCT source family.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -181,5 +181,77 @@
     "review": "traceability_review.json",
     "record_id": "conch-opus-r2/test-01",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/conch/conch-opus-r2/test-01.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/conch/conch-opus-r2/test-01.ipynb",
+    "html": "inline/conch/conch-opus-r2/test-01.html",
+    "execution_evidence": "inline/conch/conch-opus-r2/test-01.execution.json",
+    "published_notebook_sha256": "250e256b6b4851fad4c7838435129b52a7a59c8a1a6ae82567fdbd0179658163",
+    "published_html_sha256": "d04dc7dea2defc108fccd6a492ef0537898b303d219cc2f44501ddf50553c540",
+    "code_cells": 6,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 3,
+        "code_cells": [
+          4
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 5,
+        "code_cells": [
+          6
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 7,
+        "code_cells": [
+          8
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 9,
+        "code_cells": [
+          10
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 11,
+        "code_cells": [
+          12
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        12
+      ]
+    },
+    "status": "executed_inline"
   }
 }

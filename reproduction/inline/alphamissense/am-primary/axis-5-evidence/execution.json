@@ -1,0 +1,49 @@
+{
+  "axis": "Occupancy within high effective depth",
+  "sources": [
+    {
+      "path": "AlphaMissense_aa_substitutions.tsv.gz",
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_aa_substitutions.tsv.gz",
+      "sha256": "bc18d954a9aa6b9efab8e40d6d1912e32b774906cd3846a1f51066588e9c176d",
+      "bytes": 1207278510
+    },
+    {
+      "path": "DMS_ProteinGym_v1.3_substitutions.zip",
+      "url": "https://marks.hms.harvard.edu/proteingym/ProteinGym_v1.3/DMS_ProteinGym_substitutions.zip",
+      "sha256": "3a83766254ac9ac9984ec25cb73c6e010ea4418f5e35f143933e6b6e6473b921",
+      "bytes": 43021128
+    },
+    {
+      "path": "alphamissense-inputs.zip",
+      "url": "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/alphamissense-inputs.zip",
+      "sha256": "9088ab792238292f8f1ec5587f95876e0951a06484795266362d51b12641228c",
+      "bytes": 998791045
+    },
+    {
+      "path": "am-original-linux-mmseqs.tar.gz",
+      "url": "https://raw.githubusercontent.com/shreyjain11/SPECTRAagent/8207614f1c0dc8639f69da8ed43e05d625581032/reproduction/primary/alphamissense/payloads/am-original-linux-mmseqs.tar.gz",
+      "sha256": "d53b0855819fe80146d5748eee4548f9b2006ecd1dd9cb0bc71be45b6e20c0b2",
+      "bytes": 8629845
+    }
+  ],
+  "decision": "Retain a directional association: predictive agreement is greater in the final level within the same assays. The displayed references, assay-family composition, residue concentration and DMS-spread controls constrain the interpretation.",
+  "host": "exxact05.broadinstitute.org",
+  "rows": 270572,
+  "assays": 72,
+  "bootstrap_replicates": 5000,
+  "bootstrap_unit": "assay",
+  "fresh_alignment_clustering": true,
+  "outputs": {
+    "position_features.csv": "5bfdb3e92218757adeb4b54968cd8682a7ed2cbd6c0bc5d3596428719d5d56ec",
+    "signal_summary.csv": "d1a5ac6b4fa59fb7c64c760b1ef55d6ed1dd6ec1c6c350a449743b16c67f89ae",
+    "per_assay.csv": "a075bffd4937e2cd8d7a3ee72d1bddff909684c2e55b56582b89fede2f4b4b2d",
+    "family_controls.csv": "df34f5cadaf8804804bb7be83cf90f0a573669282b201bc9b963dc8d57e93ec0",
+    "score_join_coverage.csv": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+    "composition.csv": "9bad03bf1b5d9e18f4c04431aa4b18faf1b8ab164324644e94fd7ba9f7a657e9",
+    "signal_by_assay.csv": "19dab0944a11d11a430195544639e1cda30c75e26b12c324e26d93d1c5e7118b",
+    "individual_variants.csv.gz": "0b0d2ba414b19c2c33e7704395e349a921612ff9e3dfd0c33c779ead02681aac",
+    "curves.csv": "580b5c6519433423c05293523d6f4341ee566507e327621119a76dcf1b644723",
+    "contrasts.csv": "0d2ccd847151733b6aa15b43f89b85e14fac0782257dea4e59907ffd8a7b9dc4"
+  },
+  "elapsed_seconds": 1023.0962860584259
+}

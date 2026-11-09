@@ -520,7 +520,7 @@
     "recovered_workflow": "primary/esmfold2/traceability.json"
   },
   "axis_levels": {
-    "definition": "floor(cysteine count / 2) × 100 / sequence length. The sequence-derived score counts possible pairs.",
+    "definition": "floor(cysteine count / 2) \u00d7 100 / sequence length. The sequence-derived score counts possible pairs.",
     "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
     "code": "primary/esmfold2/notebooks/test-08.py"
   },
@@ -620,7 +620,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-featured/test-08",
     "disposition": "accepted",
-    "result": "The 134 proteins at or above the 80th-percentile threshold averaged Cα-lDDT 0.713 versus 0.862 in the remaining 518. This measures a risk proxy, not experimentally observed bonds.",
+    "result": "The 134 proteins at or above the 80th-percentile threshold averaged C\u03b1-lDDT 0.713 versus 0.862 in the remaining 518. This measures a risk proxy, not experimentally observed bonds.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -816,9 +816,101 @@
           "original_runs/esmfold2_paper_ready_final_20260602/source_reports/reviewer_proofing_report.md"
         ],
         "notebook_cell": 14,
-        "recorded_text": "## Recorded conclusion\n\nThe 134 proteins at or above the 80th-percentile threshold averaged Cα-lDDT 0.713 versus 0.862 in the remaining 518. This measures a risk proxy, not experimentally observed bonds.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "recorded_text": "## Recorded conclusion\n\nThe 134 proteins at or above the 80th-percentile threshold averaged C\u03b1-lDDT 0.713 versus 0.862 in the remaining 518. This measures a risk proxy, not experimentally observed bonds.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/esmfold2/esmfold2-featured/test-08.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/esmfold2/esmfold2-featured/test-08.ipynb",
+    "html": "inline/esmfold2/esmfold2-featured/test-08.html",
+    "execution_evidence": "inline/esmfold2/esmfold2-featured/test-08.execution.json",
+    "published_notebook_sha256": "e737a6614c4993da39e777296421a5128dfaa65acb55796ba2c185ef994d3f43",
+    "published_html_sha256": "833cf22bfc78f8f1a573cea006122093e80dcf54507611656042b3cef4c72c3c",
+    "code_cells": 26,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 6,
+        "code_cells": [
+          7,
+          8
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 9,
+        "code_cells": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 22,
+        "code_cells": [
+          23,
+          24
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 25,
+        "code_cells": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 31,
+        "code_cells": [
+          32
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        32
+      ]
+    },
+    "status": "executed_inline"
   }
 }

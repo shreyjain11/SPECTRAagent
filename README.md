@@ -18,6 +18,10 @@ This repository contains the static Astro site and versioned protocol sources.
 The registry, submission service, audit records, and supporting datasets remain
 hosted separately. A local website build does not run an audit or start a backend.
 
+The [analysis notebooks](reproduction/README.md) cover 143 entries across 28
+investigations. Their [execution review](reproduction/PR_REVIEW.md) links the
+verified calculations, results, and setup instructions for each model family.
+
 ## Ways to contribute
 
 Contributions are welcome, including questions and suggestions without code.

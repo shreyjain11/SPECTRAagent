@@ -1,0 +1,89 @@
+{
+  "analysis_id": "esmfold2-kimi-r1/test-02",
+  "notebook": "inline/esmfold2/esmfold2-kimi-r1/test-02.ipynb",
+  "html": "inline/esmfold2/esmfold2-kimi-r1/test-02.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 8,
+  "executed_cells": 8,
+  "errors": 0,
+  "notebook_sha256": "9a9da73c03d355acf2edaa77d9709d44c419bfc84976104b2848cb36a5a46fc6",
+  "html_sha256": "24504af3ed6d90cba51645604f2bad00a331783c0e9c70e51dbadf8dec4949b2",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source/acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 6,
+      "code_cells": [
+        7
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 8,
+      "code_cells": [
+        9
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 10,
+      "code_cells": [
+        11,
+        12
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 13,
+      "code_cells": [
+        14
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "1fe41c3e3a76132a0dd37692fa42bae46e0e1b74655ab3809e597725b0bb4d43",
+  "execution_evidence_entry_id": "esmfold2-kimi-r1/test-02",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      14
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 47.364,
+  "calculation_evidence": [
+    {
+      "path": "inline/esmfold2/esmfold2-kimi-r1/test-02-evidence/CALCULATION_RECEIPT.json",
+      "sha256": "7a62606854750a70913d5cde3a8432c26ae0a532ea48c346ed3777fa105efdb7"
+    }
+  ]
+}

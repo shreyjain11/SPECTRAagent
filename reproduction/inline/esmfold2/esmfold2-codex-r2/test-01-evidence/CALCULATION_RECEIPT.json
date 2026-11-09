@@ -1,0 +1,2313 @@
+{
+  "analysis_id": "esmfold2-codex-r2/test-01",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "targets": 150,
+  "matched_sets": 50,
+  "new_inference_executed": true,
+  "model_source_revisions": {
+    "fold": "1ebf0e3481a5184eb6171d40615c79e384b48796",
+    "esmc": "45b0fa5d7fb06faefbd5e3b89bdcef35d564e79a"
+  },
+  "checkpoint": {
+    "config_sha256": "24606ca34a052d2de70c758030b2a9e3b74d038950deee6ceb960bb18d7fff3d",
+    "index_sha256": "f7b2e6c3b1e4c70b6fe69f8c098a34e4fe40c85934ce7d966e804d34bec242c9"
+  },
+  "settings": {
+    "seed": 0,
+    "num_loops": 3,
+    "num_sampling_steps": 14,
+    "num_diffusion_samples": 1,
+    "lm_mask_pct": 0.0,
+    "transformers": "5.22.2",
+    "torch": "2.6.0+cu124",
+    "precision": "float32 folding, bfloat16 ESMC, no outer autocast"
+  },
+  "usalign_commit": "4007fb27b5e32daf6e430753a2f74f57921f1eed",
+  "input_manifest_sha256": "94bceb56455113436d2884ca1e30316f0066a49a2aa1cc3a2fc3ef481c3338f1",
+  "source_files": {
+    "1AR1": {
+      "url": "https://files.rcsb.org/download/1AR1.cif.gz",
+      "sha256": "8d3e36e747e2b0f06b68445cd7d3863be20f5da8c6aeb00189b8a410046b1c03",
+      "bytes": 226589,
+      "headers": {
+        "ETag": "\"8e215a18abb34e15f4d489735d4f4997-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:42:06 GMT",
+        "Content-Length": "226589"
+      }
+    },
+    "1CP2": {
+      "url": "https://files.rcsb.org/download/1CP2.cif.gz",
+      "sha256": "ed3a20f7acd03288c771c99f6841c7619d94d5a6ca130acae331e23f88dfb4d5",
+      "bytes": 118643,
+      "headers": {
+        "ETag": "\"74bedb8ad0fad25fab1931860caaeea4-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:42:20 GMT",
+        "Content-Length": "118643"
+      }
+    },
+    "1FFT": {
+      "url": "https://files.rcsb.org/download/1FFT.cif.gz",
+      "sha256": "129e8b064e4d9e89a9e02434f314a2ce34038779e7d9511d9be5b08c1c0c07c3",
+      "bytes": 381677,
+      "headers": {
+        "ETag": "\"ce44d4cfe8fe6e0f475380beb1bc7440-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:42:46 GMT",
+        "Content-Length": "381677"
+      }
+    },
+    "1I1R": {
+      "url": "https://files.rcsb.org/download/1I1R.cif.gz",
+      "sha256": "aa9ca4689dfe081e6397fd5b1f981bdb80a4b9c7d77ae16b622db26b644dcba5",
+      "bytes": 118438,
+      "headers": {
+        "ETag": "\"f08d5bdca13826cdbbdad45d22e16257-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:06:23 GMT",
+        "Content-Length": "118438"
+      }
+    },
+    "1IZN": {
+      "url": "https://files.rcsb.org/download/1IZN.cif.gz",
+      "sha256": "e87fffb980d96f13bdeedcb133f01773aa88c7506d6b022a1425f662180dc691",
+      "bytes": 240633,
+      "headers": {
+        "ETag": "\"3eeadc944be1fc36eff3167fbd27d0c4-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:08:58 GMT",
+        "Content-Length": "240633"
+      }
+    },
+    "1JGX": {
+      "url": "https://files.rcsb.org/download/1JGX.cif.gz",
+      "sha256": "840fffa5b444b255aa2e7c468bae3ec0c5dab9d5ab55db8cfb578504ceb051f0",
+      "bytes": 199668,
+      "headers": {
+        "ETag": "\"e6925242ce240dbcb01d4a05aa9191b8-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:43:16 GMT",
+        "Content-Length": "199668"
+      }
+    },
+    "1K8K": {
+      "url": "https://files.rcsb.org/download/1K8K.cif.gz",
+      "sha256": "6aafc0cf491706a4077f8e10caaee1bc6d0fef4a5f14e388443ea3d87a800d94",
+      "bytes": 403391,
+      "headers": {
+        "ETag": "\"dee1cc02f7ccc316330e3252b4ee54de-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:12:32 GMT",
+        "Content-Length": "403391"
+      }
+    },
+    "1LNQ": {
+      "url": "https://files.rcsb.org/download/1LNQ.cif.gz",
+      "sha256": "22a7cb31cd9b1fab783cc6ec08efb56c3c262319ab32422ffd4e903f9d83fce4",
+      "bytes": 434145,
+      "headers": {
+        "ETag": "\"a701e8cd6388e384c4fb4cc39e872eeb-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:16:20 GMT",
+        "Content-Length": "434145"
+      }
+    },
+    "1SEV": {
+      "url": "https://files.rcsb.org/download/1SEV.cif.gz",
+      "sha256": "e28a3cdd41f37366ff2c5be173e637ab3934d8a4ac61ccbd7006094e159d257a",
+      "bytes": 134415,
+      "headers": {
+        "ETag": "\"2080702b3e401369a299736eb16108e7-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:34:31 GMT",
+        "Content-Length": "134415"
+      }
+    },
+    "1SHU": {
+      "url": "https://files.rcsb.org/download/1SHU.cif.gz",
+      "sha256": "3a5e098572c4651dd23b8bfaff7001b28b3d9e58889272a79853382d11757e46",
+      "bytes": 90132,
+      "headers": {
+        "ETag": "\"73ee7b65f4fe30144229f52d88b811a4-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:34:42 GMT",
+        "Content-Length": "90132"
+      }
+    },
+    "1V5W": {
+      "url": "https://files.rcsb.org/download/1V5W.cif.gz",
+      "sha256": "f227438f3414c296895160ac16da71382912c58821a19868c3d22790b0d5c276",
+      "bytes": 110819,
+      "headers": {
+        "ETag": "\"9f644a9f7044e4c31b015d56aa28fe5b-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:41:05 GMT",
+        "Content-Length": "110819"
+      }
+    },
+    "2AYU": {
+      "url": "https://files.rcsb.org/download/2AYU.cif.gz",
+      "sha256": "19734a5659743cce839e75c902e6d840c0fe18a6519ae83104bac3a95bde1e74",
+      "bytes": 66270,
+      "headers": {
+        "ETag": "\"0555be8cc055b4a31e1fa6007054aedd-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:46:19 GMT",
+        "Content-Length": "66270"
+      }
+    },
+    "2F9Y": {
+      "url": "https://files.rcsb.org/download/2F9Y.cif.gz",
+      "sha256": "89002b43c802f545401115a6eff933a903e1b924d979235ce1d8083a276650b3",
+      "bytes": 126376,
+      "headers": {
+        "ETag": "\"5298c29c4d7ff61b828aa90055fe0b3b-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:58:17 GMT",
+        "Content-Length": "126376"
+      }
+    },
+    "2HE9": {
+      "url": "https://files.rcsb.org/download/2HE9.cif.gz",
+      "sha256": "dc2b14bac4ace4857813a613b12f9620f6238b35650b2c28f61e311dfb75b098",
+      "bytes": 158555,
+      "headers": {
+        "ETag": "\"d9b6933d37f8ef7d275c1bf3c94a4718-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:04:33 GMT",
+        "Content-Length": "158555"
+      }
+    },
+    "2LCK": {
+      "url": "https://files.rcsb.org/download/2LCK.cif.gz",
+      "sha256": "1a0b4366a60d83a1ab57c856a0ea67db3df5b1eadfb5acb28c92bf861199d142",
+      "bytes": 1359068,
+      "headers": {
+        "ETag": "\"9d258acbc0b0b5ba757add4cd2e5ac60-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:15:34 GMT",
+        "Content-Length": "1359068"
+      }
+    },
+    "2LKN": {
+      "url": "https://files.rcsb.org/download/2LKN.cif.gz",
+      "sha256": "ee4acf5d6fca00d557f0dd87e538bc9bab089fd5f87f99941fe5aaa1e5f2f8ff",
+      "bytes": 1041292,
+      "headers": {
+        "ETag": "\"be638062ff33f3b456d4f5627758251f-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:16:08 GMT",
+        "Content-Length": "1041292"
+      }
+    },
+    "2VRE": {
+      "url": "https://files.rcsb.org/download/2VRE.cif.gz",
+      "sha256": "380062d60b5ccc6b022f6fdaa1a3033451b36a339d3a40d3a48bff043d7b32d6",
+      "bytes": 174277,
+      "headers": {
+        "ETag": "\"0dd0e016b2cba631d031f2452e9aee7d-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:42:39 GMT",
+        "Content-Length": "174277"
+      }
+    },
+    "2VWB": {
+      "url": "https://files.rcsb.org/download/2VWB.cif.gz",
+      "sha256": "9148946ae62d3c03e0d2354ba1f2667576ba5430c937000141d6e0a95132a07f",
+      "bytes": 214114,
+      "headers": {
+        "ETag": "\"049002f8123da033f6cf720c94d056cc-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:42:58 GMT",
+        "Content-Length": "214114"
+      }
+    },
+    "2XD8": {
+      "url": "https://files.rcsb.org/download/2XD8.cif.gz",
+      "sha256": "a7c1ae7e86bcc583b7c99cfe9dc3165bc66ff9efbf6e642fa45cd7a328592750",
+      "bytes": 80859,
+      "headers": {
+        "ETag": "\"3c8489cb1e79cc5b77943003c12f664e-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:46:45 GMT",
+        "Content-Length": "80859"
+      }
+    },
+    "2ZXE": {
+      "url": "https://files.rcsb.org/download/2ZXE.cif.gz",
+      "sha256": "2925ca0e8df8395778fb513e083e71149d2ba3f586b3f6ec554d73cf42659d73",
+      "bytes": 280674,
+      "headers": {
+        "ETag": "\"a4323365b27b5caa5867ca0ea93273b4-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:45:11 GMT",
+        "Content-Length": "280674"
+      }
+    },
+    "3AM2": {
+      "url": "https://files.rcsb.org/download/3AM2.cif.gz",
+      "sha256": "2b02c59c0dad83b46eaa60150102fc462c6a9a78bab2ad639cba97178554c5ed",
+      "bytes": 72557,
+      "headers": {
+        "ETag": "\"00089cdce120621d7c9ce35b37a15315-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:45:26 GMT",
+        "Content-Length": "72557"
+      }
+    },
+    "3E3R": {
+      "url": "https://files.rcsb.org/download/3E3R.cif.gz",
+      "sha256": "6dc5708d24ac9d42f46e49093aaeb968bd61e0078d4f7b99b8c93c1d2cd4dc7c",
+      "bytes": 87795,
+      "headers": {
+        "ETag": "\"30099368a4aeb96b12f374ed78212133-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:55:04 GMT",
+        "Content-Length": "87795"
+      }
+    },
+    "3GOD": {
+      "url": "https://files.rcsb.org/download/3GOD.cif.gz",
+      "sha256": "21c3f5c42cd3db6570c9162a609bef9da84fba611d61dc8fb22c6ddb404862a4",
+      "bytes": 270111,
+      "headers": {
+        "ETag": "\"1cffc2b440610cd18095ff3745bf5b16-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:02:25 GMT",
+        "Content-Length": "270111"
+      }
+    },
+    "3J6B": {
+      "url": "https://files.rcsb.org/download/3J6B.cif.gz",
+      "sha256": "3c6ffa8429817559bcce3db676b07087a40ab65b8709799b2d70874a6fa27323",
+      "bytes": 4822574,
+      "headers": {
+        "ETag": "\"0a9d438358946d1a4c4adc472776c51b-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:09:30 GMT",
+        "Content-Length": "4822574"
+      }
+    },
+    "3J9M": {
+      "url": "https://files.rcsb.org/download/3J9M.cif.gz",
+      "sha256": "67b0d336a366625d5cccaaf05472671b2c6779784e62bdbd151a4e9ac978bba9",
+      "bytes": 4071209,
+      "headers": {
+        "ETag": "\"8f61255325fe8f681e9bef63fe820518-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:09:44 GMT",
+        "Content-Length": "4071209"
+      }
+    },
+    "3JAP": {
+      "url": "https://files.rcsb.org/download/3JAP.cif.gz",
+      "sha256": "a13be2ecc9d7e37bb142245bfdf8194ddf2d6d957e7c0349a97c6edba6368db2",
+      "bytes": 2221448,
+      "headers": {
+        "ETag": "\"f613bfe62587de8045db4f7369bd4a17-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:09:48 GMT",
+        "Content-Length": "2221448"
+      }
+    },
+    "3JB5": {
+      "url": "https://files.rcsb.org/download/3JB5.cif.gz",
+      "sha256": "03aa04ea39f9f1e8fdd04084939caf7da8dedba37ddec9325192de42ebdac01c",
+      "bytes": 350286,
+      "headers": {
+        "ETag": "\"fc29d6e21f657f61f66e262ea26a97a0-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:09:53 GMT",
+        "Content-Length": "350286"
+      }
+    },
+    "3JC5": {
+      "url": "https://files.rcsb.org/download/3JC5.cif.gz",
+      "sha256": "e541a27a97a06d6328376e8c3f92cf6ee905f409bdae964f0c297dbb20722a15",
+      "bytes": 1016121,
+      "headers": {
+        "ETag": "\"e26b25456b9e5b011315f4ae881d7921-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:09:57 GMT",
+        "Content-Length": "1016121"
+      }
+    },
+    "3JCS": {
+      "url": "https://files.rcsb.org/download/3JCS.cif.gz",
+      "sha256": "c616a1756ac2bddf2c13b33b62597104c4fcac7ca0e435ca68b73c0e9b08b3cb",
+      "bytes": 2751587,
+      "headers": {
+        "ETag": "\"17938426d8131a2d11ba6b4d5250d1aa-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:09:58 GMT",
+        "Content-Length": "2751587"
+      }
+    },
+    "3JCT": {
+      "url": "https://files.rcsb.org/download/3JCT.cif.gz",
+      "sha256": "d0eadb599d86b819c85fa629951964d629a91879ca13a56c7da4a9e9ff20f821",
+      "bytes": 4059714,
+      "headers": {
+        "ETag": "\"443c5c1873dc3ae95437756c80b3ad7b-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:09:58 GMT",
+        "Content-Length": "4059714"
+      }
+    },
+    "3LHA": {
+      "url": "https://files.rcsb.org/download/3LHA.cif.gz",
+      "sha256": "380a329bac3543a2d63ad440e3206d9117faee4ad3fb95830e08c92a5b9c0bed",
+      "bytes": 136285,
+      "headers": {
+        "ETag": "\"9ef87643afc89f0e04f1f0223466ad06-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:15:56 GMT",
+        "Content-Length": "136285"
+      }
+    },
+    "3MK7": {
+      "url": "https://files.rcsb.org/download/3MK7.cif.gz",
+      "sha256": "04f2be80635879be77d02c0480262328e98a61d067b83409bacf2fe59726e52b",
+      "bytes": 1649203,
+      "headers": {
+        "ETag": "\"e72ce414ce0b9ed95712b4c4ec6a201e-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:43:38 GMT",
+        "Content-Length": "1649203"
+      }
+    },
+    "3O4L": {
+      "url": "https://files.rcsb.org/download/3O4L.cif.gz",
+      "sha256": "977274081fc9416bfe327832e2574e67dbbea337477885e1f7bec13919f66354",
+      "bytes": 367213,
+      "headers": {
+        "ETag": "\"656b0bfb30400161c1572afcb3ca2d95-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:22:48 GMT",
+        "Content-Length": "367213"
+      }
+    },
+    "3QWL": {
+      "url": "https://files.rcsb.org/download/3QWL.cif.gz",
+      "sha256": "cb19ba749652486c1e865021c84ce04758793e8e11f8380eb4531cedffdb3d8f",
+      "bytes": 123344,
+      "headers": {
+        "ETag": "\"2258f33dd036e3d64e2c6be05e95db5d-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:30:39 GMT",
+        "Content-Length": "123344"
+      }
+    },
+    "3U5Z": {
+      "url": "https://files.rcsb.org/download/3U5Z.cif.gz",
+      "sha256": "e2b3c680d05720d163c584a83dd0264b85b1c70d2194fe5aa7553901dcade154",
+      "bytes": 1801164,
+      "headers": {
+        "ETag": "\"9300aef723976b13751f87bc97ff07b1-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:44:30 GMT",
+        "Content-Length": "1801164"
+      }
+    },
+    "3X1L": {
+      "url": "https://files.rcsb.org/download/3X1L.cif.gz",
+      "sha256": "76b95688d08a505f2292b20d36434d28e4f051d30839ecab1593e11d976e02de",
+      "bytes": 530774,
+      "headers": {
+        "ETag": "\"f801e8c2dee6b1c170cf8acc30cf9189-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:45:57 GMT",
+        "Content-Length": "530774"
+      }
+    },
+    "4C2M": {
+      "url": "https://files.rcsb.org/download/4C2M.cif.gz",
+      "sha256": "6bbf14ea25df4f5cf1c95dca42dbc07b3ec2d6751764ebfc91b9142a2c9b5ea8",
+      "bytes": 3530615,
+      "headers": {
+        "ETag": "\"9feb5155440d60d05b21f4c954f3616b-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:49:29 GMT",
+        "Content-Length": "3530615"
+      }
+    },
+    "4CE4": {
+      "url": "https://files.rcsb.org/download/4CE4.cif.gz",
+      "sha256": "93218ef805d037ed6df99afd00914e729d14180d3e4ea8c90f8a28889001bba2",
+      "bytes": 1513947,
+      "headers": {
+        "ETag": "\"35dfaf93b2eb69af4033fca7345aa669-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:50:25 GMT",
+        "Content-Length": "1513947"
+      }
+    },
+    "4D10": {
+      "url": "https://files.rcsb.org/download/4D10.cif.gz",
+      "sha256": "5b58278fe6855472f29b1a9224eb3a2a533cbd836dc2d32525e983c2764576d2",
+      "bytes": 2026909,
+      "headers": {
+        "ETag": "\"2f9e1e47f1cf33042ca55eb2c839a801-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:52:13 GMT",
+        "Content-Length": "2026909"
+      }
+    },
+    "4GQB": {
+      "url": "https://files.rcsb.org/download/4GQB.cif.gz",
+      "sha256": "f8a26e4fee95db312137010864b4cb87a2be863ab77ae18d48fe13b2f5cfd5d5",
+      "bytes": 385756,
+      "headers": {
+        "ETag": "\"2d0f951c2c3bcfa928d71c22c2dc0887-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:02:36 GMT",
+        "Content-Length": "385756"
+      }
+    },
+    "4GWP": {
+      "url": "https://files.rcsb.org/download/4GWP.cif.gz",
+      "sha256": "87f83efb94b12b79189e2e44d1792de41e99ec9d2fb5e7386b0bf51da81d14e9",
+      "bytes": 291881,
+      "headers": {
+        "ETag": "\"455ea907bd87718a70abc4abb5b4d164-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:03:06 GMT",
+        "Content-Length": "291881"
+      }
+    },
+    "4LN3": {
+      "url": "https://files.rcsb.org/download/4LN3.cif.gz",
+      "sha256": "4c0d02889f6723e45975571c5ec800e06c5f30f58672f040ad26bad4fcf60ddf",
+      "bytes": 1148253,
+      "headers": {
+        "ETag": "\"d27a68acafa9f81182421c9e80be3050-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:16:21 GMT",
+        "Content-Length": "1148253"
+      }
+    },
+    "4UXT": {
+      "url": "https://files.rcsb.org/download/4UXT.cif.gz",
+      "sha256": "e8fe604b00e0c6531337318cce620efd65ec7d838fde192923b268d42bcb7fa0",
+      "bytes": 66690,
+      "headers": {
+        "ETag": "\"774b6f7cf631246e99e89f345a3747a4-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:40:29 GMT",
+        "Content-Length": "66690"
+      }
+    },
+    "4V19": {
+      "url": "https://files.rcsb.org/download/4V19.cif.gz",
+      "sha256": "4fdfe22120676cf55c7286dea0f203bd84e451a4fc7d81e493a96dcf2ecdf1c0",
+      "bytes": 1826318,
+      "headers": {
+        "ETag": "\"2c9ce61d947d11875c8c022d17313ae7-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:40:47 GMT",
+        "Content-Length": "1826318"
+      }
+    },
+    "5DSE": {
+      "url": "https://files.rcsb.org/download/5DSE.cif.gz",
+      "sha256": "1a2bc722f8ac0c961fa313ec02139f3d3fb187b62d1dec7bce6f4f990c8d48bd",
+      "bytes": 731395,
+      "headers": {
+        "ETag": "\"d482100f29d775e55f67bc522ae46334-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:54:16 GMT",
+        "Content-Length": "731395"
+      }
+    },
+    "5EKE": {
+      "url": "https://files.rcsb.org/download/5EKE.cif.gz",
+      "sha256": "078b70ad0e6080c072ac83c99ea447498ede3eec9ea3a6236b5c2c3a996e78c7",
+      "bytes": 502702,
+      "headers": {
+        "ETag": "\"7ef5bdb666b25dd1cba6c7be1d8efae5-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:56:21 GMT",
+        "Content-Length": "502702"
+      }
+    },
+    "5GJQ": {
+      "url": "https://files.rcsb.org/download/5GJQ.cif.gz",
+      "sha256": "697ca7631c19fa25b70c735e530e1d9ac49a096a6c3371efcc7cff28a51221ff",
+      "bytes": 2651136,
+      "headers": {
+        "ETag": "\"e43d1d77cce81cf29d18d27064f8d0d5-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:02:01 GMT",
+        "Content-Length": "2651136"
+      }
+    },
+    "5GPN": {
+      "url": "https://files.rcsb.org/download/5GPN.cif.gz",
+      "sha256": "cbac394a32fdeb661a36f4ad4e3c7e93535c46b8d85eea17182c4947d44e0076",
+      "bytes": 2062961,
+      "headers": {
+        "ETag": "\"d50a2ce3dc52b4e05284265ef14a8b12-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:42:55 GMT",
+        "Content-Length": "2062961"
+      }
+    },
+    "5HHJ": {
+      "url": "https://files.rcsb.org/download/5HHJ.cif.gz",
+      "sha256": "a592556c0c7f85f969278ba87a1ec3a91981884f76ee35e202e354f5aecbc475",
+      "bytes": 391461,
+      "headers": {
+        "ETag": "\"5b5261f7b194dc52537e59b2307afac9-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:04:49 GMT",
+        "Content-Length": "391461"
+      }
+    },
+    "5HVQ": {
+      "url": "https://files.rcsb.org/download/5HVQ.cif.gz",
+      "sha256": "383836936883245ae01c65979100337f444a316628cc7e4dd2d3f6af6e11372c",
+      "bytes": 201897,
+      "headers": {
+        "ETag": "\"40b9ff06d221a09912ae11d8e8af00fb-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:05:57 GMT",
+        "Content-Length": "201897"
+      }
+    },
+    "5IVW": {
+      "url": "https://files.rcsb.org/download/5IVW.cif.gz",
+      "sha256": "99ee5ebd7f278e614a4c66fbe87d5e80c4716c3bf1ad6d51b586781af5791175",
+      "bytes": 391332,
+      "headers": {
+        "ETag": "\"dfb93c6ff8c055fe61e461c19208ff9e-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:08:42 GMT",
+        "Content-Length": "391332"
+      }
+    },
+    "5IY6": {
+      "url": "https://files.rcsb.org/download/5IY6.cif.gz",
+      "sha256": "8e557052c044a5f6bdd9787a12ed9abe7122e393706464e9ebf98260f3caef1f",
+      "bytes": 1458419,
+      "headers": {
+        "ETag": "\"93aeb01f3d5850c12bddde20d9ea5c36-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:08:55 GMT",
+        "Content-Length": "1458419"
+      }
+    },
+    "5J1J": {
+      "url": "https://files.rcsb.org/download/5J1J.cif.gz",
+      "sha256": "9b096c6af35a081e271ca9ac616f4ded6e756e16835160f36ac392a9d7c0b887",
+      "bytes": 228889,
+      "headers": {
+        "ETag": "\"05f587e24678844177609f7caeaf9d70-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:09:09 GMT",
+        "Content-Length": "228889"
+      }
+    },
+    "5JSZ": {
+      "url": "https://files.rcsb.org/download/5JSZ.cif.gz",
+      "sha256": "8f720d1e9c0d03c290efe808c4b22fcaaa9e7fdbc1544b72661e093f5b8cf72b",
+      "bytes": 814072,
+      "headers": {
+        "ETag": "\"bccad5ff975ffe329735ed21067b81ba-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:11:13 GMT",
+        "Content-Length": "814072"
+      }
+    },
+    "5LZS": {
+      "url": "https://files.rcsb.org/download/5LZS.cif.gz",
+      "sha256": "53a97106fb00f181045bea86b86139ea25daf65f142087728056ce967da2b485",
+      "bytes": 5713744,
+      "headers": {
+        "ETag": "\"4aabe88d1ce07f8eb72d6f26a18538c2-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:17:13 GMT",
+        "Content-Length": "5713744"
+      }
+    },
+    "5M3N": {
+      "url": "https://files.rcsb.org/download/5M3N.cif.gz",
+      "sha256": "87ac293ef97d12a8f6df329172476a5bf5d3bcf99bf43af4e9d660b181220111",
+      "bytes": 77383,
+      "headers": {
+        "ETag": "\"24c3ab4a178daab9095b82fa1ff63d84-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:17:30 GMT",
+        "Content-Length": "77383"
+      }
+    },
+    "5MRC": {
+      "url": "https://files.rcsb.org/download/5MRC.cif.gz",
+      "sha256": "d11365108a0b81a5ced087e56342514866d79b945fdc502981cbf93a1f4ebb81",
+      "bytes": 5148773,
+      "headers": {
+        "ETag": "\"565fb8bf909b4ab66cf90ddd5aba3ab5-gz\"",
+        "Last-Modified": "Sat, 04 Oct 2025 06:02:14 GMT",
+        "Content-Length": "5148773"
+      }
+    },
+    "5ODC": {
+      "url": "https://files.rcsb.org/download/5ODC.cif.gz",
+      "sha256": "db0ee759fefcbed3b688ac644fb16588e6e6e78dbbf83ec8280f28b1f7e32cc9",
+      "bytes": 1629997,
+      "headers": {
+        "ETag": "\"76b93450a37bf10b076d1c9d027d4016-gz\"",
+        "Last-Modified": "Sat, 19 Sep 2026 10:01:06 GMT",
+        "Content-Length": "1629997"
+      }
+    },
+    "5OOL": {
+      "url": "https://files.rcsb.org/download/5OOL.cif.gz",
+      "sha256": "f09d95801f3f6b7855d79583e5409bfc9aada1d166093b18705c21f49e6f159f",
+      "bytes": 2316897,
+      "headers": {
+        "ETag": "\"894f19095782d57f37e5b401be649074-gz\"",
+        "Last-Modified": "Sat, 13 Dec 2025 19:55:51 GMT",
+        "Content-Length": "2316897"
+      }
+    },
+    "5UZ9": {
+      "url": "https://files.rcsb.org/download/5UZ9.cif.gz",
+      "sha256": "954ec8990da6c95a8dde32ef9b2e55d4737d11c8dde81f5afbd48b77dd9eb770",
+      "bytes": 2607894,
+      "headers": {
+        "ETag": "\"39bd62ceb893d403e57c9916dc34c809-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:40:38 GMT",
+        "Content-Length": "2607894"
+      }
+    },
+    "5VKU": {
+      "url": "https://files.rcsb.org/download/5VKU.cif.gz",
+      "sha256": "331c3da149115f565955c903f2a7a589efb66a7dd839af4cf0a1eff25048a3fa",
+      "bytes": 6143895,
+      "headers": {
+        "ETag": "\"c9aefba619b54b43a814407dbb96eae5-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:42:13 GMT",
+        "Content-Length": "6143895"
+      }
+    },
+    "5W0T": {
+      "url": "https://files.rcsb.org/download/5W0T.cif.gz",
+      "sha256": "9082a0d3379437074317dc1b371ae998a2d39599569181cb6e7faa3e597ad06c",
+      "bytes": 140311,
+      "headers": {
+        "ETag": "\"ffacbed85e123615f10063a2a57a44d0-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:43:15 GMT",
+        "Content-Length": "140311"
+      }
+    },
+    "5WLC": {
+      "url": "https://files.rcsb.org/download/5WLC.cif.gz",
+      "sha256": "f35eb1b1d36b7ea52707d6bd9943583a0d8b0b474d0d6426e81a66f2315b7433",
+      "bytes": 4824727,
+      "headers": {
+        "ETag": "\"fa10880f69fa519ae2749a7c252f00a1-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:44:47 GMT",
+        "Content-Length": "4824727"
+      }
+    },
+    "5YQ7": {
+      "url": "https://files.rcsb.org/download/5YQ7.cif.gz",
+      "sha256": "c82558193f4ce44d0507d00e4e081a46ed8dadfa16fd176696024342a22f540a",
+      "bytes": 492006,
+      "headers": {
+        "ETag": "\"f9fccfb3914455478a5734065148a7b2-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:45:03 GMT",
+        "Content-Length": "492006"
+      }
+    },
+    "5Z82": {
+      "url": "https://files.rcsb.org/download/5Z82.cif.gz",
+      "sha256": "2021aed5b8942985110b80c5ea16edec10b9bb0acff282f97c3e4337d69ac490",
+      "bytes": 132446,
+      "headers": {
+        "ETag": "\"83ae01b6081e299be29b136e5750c29f-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:51:01 GMT",
+        "Content-Length": "132446"
+      }
+    },
+    "6ADQ": {
+      "url": "https://files.rcsb.org/download/6ADQ.cif.gz",
+      "sha256": "0db11f04653c35b7b6a6911174234daa24afb4c119a7605956e7406778c61ebc",
+      "bytes": 1124783,
+      "headers": {
+        "ETag": "\"2356ee22b7058381054687ff93e705e9-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:42:04 GMT",
+        "Content-Length": "1124783"
+      }
+    },
+    "6B0X": {
+      "url": "https://files.rcsb.org/download/6B0X.cif.gz",
+      "sha256": "ac475a6f8a153543a2781dae6de5d30f03bdd24943777b5127cf52cd726bccdf",
+      "bytes": 389946,
+      "headers": {
+        "ETag": "\"4d443893d62f1681b2607962c6bb14c7-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:46:31 GMT",
+        "Content-Length": "389946"
+      }
+    },
+    "6BLB": {
+      "url": "https://files.rcsb.org/download/6BLB.cif.gz",
+      "sha256": "c68e59c3e91ebea40442bc0e21f4880a04cf6a91758962313360db7e4e14a639",
+      "bytes": 149198,
+      "headers": {
+        "ETag": "\"d60761c95b2c7b3d7714e5ae3844c9e9-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:48:07 GMT",
+        "Content-Length": "149198"
+      }
+    },
+    "6EXV": {
+      "url": "https://files.rcsb.org/download/6EXV.cif.gz",
+      "sha256": "408019968bf6b995428e64a85510b110e3f03319ae3ecd3001bdf1ec25c44eb3",
+      "bytes": 779651,
+      "headers": {
+        "ETag": "\"a0d771fe6a3023f056154bf5e9c28804-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:57:23 GMT",
+        "Content-Length": "779651"
+      }
+    },
+    "6GMH": {
+      "url": "https://files.rcsb.org/download/6GMH.cif.gz",
+      "sha256": "38906a2fbeb0b924c230996177eef727c6d7e9a41751c8e95309e9e9eb35ad68",
+      "bytes": 1283328,
+      "headers": {
+        "ETag": "\"7bc5ac853b80ecb06d4065703eb28323-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:02:17 GMT",
+        "Content-Length": "1283328"
+      }
+    },
+    "6H25": {
+      "url": "https://files.rcsb.org/download/6H25.cif.gz",
+      "sha256": "c9f90fe7e4244e6ab14dbbc01ecbaedbaf42627eab36f555af4d33e380ad4fed",
+      "bytes": 539347,
+      "headers": {
+        "ETag": "\"8d853c82695aa597080f0315dd2de09a-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:03:36 GMT",
+        "Content-Length": "539347"
+      }
+    },
+    "6JLU": {
+      "url": "https://files.rcsb.org/download/6JLU.cif.gz",
+      "sha256": "b31daae93e103407294e5f46e7870e866d021480a8f6b3a6a4ed5dfb82d63781",
+      "bytes": 2347628,
+      "headers": {
+        "ETag": "\"d38be99ccd7f0cbf5cf5e16a4aa41e3f-gz\"",
+        "Last-Modified": "Sat, 19 Sep 2026 10:00:26 GMT",
+        "Content-Length": "2347628"
+      }
+    },
+    "6K1H": {
+      "url": "https://files.rcsb.org/download/6K1H.cif.gz",
+      "sha256": "11afb3296b8c2d4f61bb6c996f1d841086e68ab5fe83baf00a82aa252f39bdbd",
+      "bytes": 270970,
+      "headers": {
+        "ETag": "\"8bbfe26aaaa92778fb71ced9e571763b-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:11:59 GMT",
+        "Content-Length": "270970"
+      }
+    },
+    "6K71": {
+      "url": "https://files.rcsb.org/download/6K71.cif.gz",
+      "sha256": "639812fb1a0ba2845e08ae4a7b38ef269e73e0e698117dc2eb48ed166816d272",
+      "bytes": 754822,
+      "headers": {
+        "ETag": "\"8faac00061576e7bca47e1dde5e1ce16-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:12:30 GMT",
+        "Content-Length": "754822"
+      }
+    },
+    "6KDV": {
+      "url": "https://files.rcsb.org/download/6KDV.cif.gz",
+      "sha256": "9e022d4f7bb01d1c272b16ed830f0b09070a002481bef59659fcf848706d882f",
+      "bytes": 257782,
+      "headers": {
+        "ETag": "\"7e80f96dc10633fdd49e37d952b44aaa-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:13:00 GMT",
+        "Content-Length": "257782"
+      }
+    },
+    "6KGX": {
+      "url": "https://files.rcsb.org/download/6KGX.cif.gz",
+      "sha256": "35f420989955fe6f316340f7f35f45cc283f5c3566a43e289def2d2f610d5b44",
+      "bytes": 22102276,
+      "headers": {
+        "ETag": "\"da1e582621ec8e97c944fb861a89c3b4-3-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:13:15 GMT",
+        "Content-Length": "22102276"
+      }
+    },
+    "6L4B": {
+      "url": "https://files.rcsb.org/download/6L4B.cif.gz",
+      "sha256": "8bbcf3efd37c517d50c27fb29e686adcd767e956149bb0a356ac9400bc4c619c",
+      "bytes": 343497,
+      "headers": {
+        "ETag": "\"8263ca15d702b8d6fb5b04e1d102ff63-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:15:02 GMT",
+        "Content-Length": "343497"
+      }
+    },
+    "6L4U": {
+      "url": "https://files.rcsb.org/download/6L4U.cif.gz",
+      "sha256": "2474deadce19c6a79f6229f7ee7ec172fba618c73c8b2f33397cca882a83a4cb",
+      "bytes": 1467875,
+      "headers": {
+        "ETag": "\"c417067f60746161162efd07b8dd2b59-gz\"",
+        "Last-Modified": "Sat, 19 Sep 2026 10:00:39 GMT",
+        "Content-Length": "1467875"
+      }
+    },
+    "6NT2": {
+      "url": "https://files.rcsb.org/download/6NT2.cif.gz",
+      "sha256": "a98994744be507a97840c613faa0bd7d9ca10be45c5521dccde345c47a5486d7",
+      "bytes": 579689,
+      "headers": {
+        "ETag": "\"2d9374dceda8fe42bfd82d617c46b8eb-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:22:02 GMT",
+        "Content-Length": "579689"
+      }
+    },
+    "6O9B": {
+      "url": "https://files.rcsb.org/download/6O9B.cif.gz",
+      "sha256": "5eebf4384a7fdd3513d5c6fe0b54aa87a0a16b51f0cb9adef31e007c7c8e68fc",
+      "bytes": 107340,
+      "headers": {
+        "ETag": "\"5ddbdadfff94d2b32d315530071f5205-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:23:11 GMT",
+        "Content-Length": "107340"
+      }
+    },
+    "6OHG": {
+      "url": "https://files.rcsb.org/download/6OHG.cif.gz",
+      "sha256": "ec5c98be6a9235709f0175aa8f8766ca6cc06dcf7ff9d89c9e0181c6f03aa87f",
+      "bytes": 248180,
+      "headers": {
+        "ETag": "\"5cdc3d6747d60a914d490cbfc3abaef7-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:23:48 GMT",
+        "Content-Length": "248180"
+      }
+    },
+    "6SGA": {
+      "url": "https://files.rcsb.org/download/6SGA.cif.gz",
+      "sha256": "eb9090cce8017764c10c369d9677376fa78207c93dee1295192d3cb557001b12",
+      "bytes": 3212385,
+      "headers": {
+        "ETag": "\"3d096e1e7bf57c3fde49d8d5abfc1f6c-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:34:40 GMT",
+        "Content-Length": "3212385"
+      }
+    },
+    "6TV6": {
+      "url": "https://files.rcsb.org/download/6TV6.cif.gz",
+      "sha256": "16868665c2400f2d6fb19dc3850cd8eac0e9cd02c9741d3c9a34dba9fad2dc5b",
+      "bytes": 296952,
+      "headers": {
+        "ETag": "\"d3d0895f46fefbaa55d7d262e55c8176-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:37:52 GMT",
+        "Content-Length": "296952"
+      }
+    },
+    "6U42": {
+      "url": "https://files.rcsb.org/download/6U42.cif.gz",
+      "sha256": "0be80fc003b2dc1ef79c78305d468ddc4318153e281ff75b63e93026625384f5",
+      "bytes": 29627914,
+      "headers": {
+        "ETag": "\"9b04f2e38d875bdf069b2a745a8fc79b-4-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:38:30 GMT",
+        "Content-Length": "29627914"
+      }
+    },
+    "6ULG": {
+      "url": "https://files.rcsb.org/download/6ULG.cif.gz",
+      "sha256": "c94f2b75cf2332788a9f380d3c57cb0aff6d0d24f79eba1ed6dcabec46ffd9a7",
+      "bytes": 406282,
+      "headers": {
+        "ETag": "\"55f5f948ccb09c6593cae6b0ed62c1b0-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:39:39 GMT",
+        "Content-Length": "406282"
+      }
+    },
+    "6VVO": {
+      "url": "https://files.rcsb.org/download/6VVO.cif.gz",
+      "sha256": "56fac4894ed5819cefcb873b6e63445c11801b33f02d9cadf3b02a2093cd90d9",
+      "bytes": 518208,
+      "headers": {
+        "ETag": "\"de1bfe6324ec1dd2f4eb6956e494e92e-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:42:56 GMT",
+        "Content-Length": "518208"
+      }
+    },
+    "6WXE": {
+      "url": "https://files.rcsb.org/download/6WXE.cif.gz",
+      "sha256": "58e6008b02a0d0973d46326e93bec838411672724902a40450bffac98423ba53",
+      "bytes": 4588124,
+      "headers": {
+        "ETag": "\"36fd17be75ae2976c455e2cc6a0bdb20-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:45:41 GMT",
+        "Content-Length": "4588124"
+      }
+    },
+    "6X89": {
+      "url": "https://files.rcsb.org/download/6X89.cif.gz",
+      "sha256": "9b265db9e2a0944f42f4a904ea39fae1d8d98de60677d6ceadc5c4a8279fbaa6",
+      "bytes": 1081075,
+      "headers": {
+        "ETag": "\"3d60b366a51568143f9b3f3b897bd8f3-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:44:54 GMT",
+        "Content-Length": "1081075"
+      }
+    },
+    "6YBT": {
+      "url": "https://files.rcsb.org/download/6YBT.cif.gz",
+      "sha256": "f93eac2edb8677c1aa93f3f425c7b42c6cb3098dc4b186546a216995a3bb1235",
+      "bytes": 200677,
+      "headers": {
+        "ETag": "\"3b4f165b4dd79626ee5841f9bc480fb1-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:49:00 GMT",
+        "Content-Length": "200677"
+      }
+    },
+    "6YR4": {
+      "url": "https://files.rcsb.org/download/6YR4.cif.gz",
+      "sha256": "bbfd71538dac96e5d95da14b0eec76652e7585ed8a7db691960f39d873351e22",
+      "bytes": 394676,
+      "headers": {
+        "ETag": "\"6c34a584a24fa56d5f31e054f5a27be1-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:34:46 GMT",
+        "Content-Length": "394676"
+      }
+    },
+    "6Z1P": {
+      "url": "https://files.rcsb.org/download/6Z1P.cif.gz",
+      "sha256": "34630878490bd0e1e0a5f716a6674cfd5ce4416caefb80b34cbcb8f820081aa2",
+      "bytes": 10998659,
+      "headers": {
+        "ETag": "\"eada9d0fe005eabd3011c52958694be3-2-gz\"",
+        "Last-Modified": "Sat, 19 Sep 2026 10:02:39 GMT",
+        "Content-Length": "10998659"
+      }
+    },
+    "7A6H": {
+      "url": "https://files.rcsb.org/download/7A6H.cif.gz",
+      "sha256": "4f71c8be62a0e3ff9f9bb9e8ec8d89c0235a1e2a0f169697ab213f0142d2e5ac",
+      "bytes": 938675,
+      "headers": {
+        "ETag": "\"4be9c740fbf5cde66f2fc21664d8083d-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:32:24 GMT",
+        "Content-Length": "938675"
+      }
+    },
+    "7CK6": {
+      "url": "https://files.rcsb.org/download/7CK6.cif.gz",
+      "sha256": "b0ccce11b09ba9b66722a6bada5d455ed64ddf28640f4ec2fa9ae4c127e4f537",
+      "bytes": 184081,
+      "headers": {
+        "ETag": "\"4713cd88a4f999f122b03dd9ce0f8017-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:50:55 GMT",
+        "Content-Length": "184081"
+      }
+    },
+    "7DM9": {
+      "url": "https://files.rcsb.org/download/7DM9.cif.gz",
+      "sha256": "b8b08861decc278eb09ba71bfc206e98b1ced2cc8da134ebf6b22efdecf393b3",
+      "bytes": 58062,
+      "headers": {
+        "ETag": "\"1ef7bad1c175831726df991673691c03-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:53:50 GMT",
+        "Content-Length": "58062"
+      }
+    },
+    "7DMP": {
+      "url": "https://files.rcsb.org/download/7DMP.cif.gz",
+      "sha256": "5d17f95f32a08cb60edefed96fb128062344f808d7f824062ede236bef6400e6",
+      "bytes": 295731,
+      "headers": {
+        "ETag": "\"66f27dc4274627a8388a506a8c12a08b-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:53:50 GMT",
+        "Content-Length": "295731"
+      }
+    },
+    "7EU2": {
+      "url": "https://files.rcsb.org/download/7EU2.cif.gz",
+      "sha256": "e92a4ca215b38100279d384e80f0dc3d3d46c014349cf48564a6f79b462d7961",
+      "bytes": 337019,
+      "headers": {
+        "ETag": "\"252e8ad064cb80f9f502580167b57df5-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:57:09 GMT",
+        "Content-Length": "337019"
+      }
+    },
+    "7JRG": {
+      "url": "https://files.rcsb.org/download/7JRG.cif.gz",
+      "sha256": "26c35fa857781350d2ed98b90f31d528fcf20fb415910be0f03d5ce2bfe76fcf",
+      "bytes": 774509,
+      "headers": {
+        "ETag": "\"3acbc670e7c8ae4590588abdaa5429d8-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:43:18 GMT",
+        "Content-Length": "774509"
+      }
+    },
+    "7KFT": {
+      "url": "https://files.rcsb.org/download/7KFT.cif.gz",
+      "sha256": "41bfc16005be561601f16331710587f230f417e5d0256bffa4251a2e5881536b",
+      "bytes": 304371,
+      "headers": {
+        "ETag": "\"9a2e62200574a732b2853ca78afe0e7c-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:13:11 GMT",
+        "Content-Length": "304371"
+      }
+    },
+    "7KHA": {
+      "url": "https://files.rcsb.org/download/7KHA.cif.gz",
+      "sha256": "1b885d7747751611a301d80ed11ab52d875ea1f5229b2238ee8fbedc8249a581",
+      "bytes": 523974,
+      "headers": {
+        "ETag": "\"f34b11147abf511239eabafa568b251c-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:13:20 GMT",
+        "Content-Length": "523974"
+      }
+    },
+    "7L70": {
+      "url": "https://files.rcsb.org/download/7L70.cif.gz",
+      "sha256": "649f35f5001ff001cc58db8528f6ac72ee518ee8b7a90b4854a72f95a2698e94",
+      "bytes": 570742,
+      "headers": {
+        "ETag": "\"106df0ea577cfb2281997bf862f25cfb-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:15:16 GMT",
+        "Content-Length": "570742"
+      }
+    },
+    "7LJ0": {
+      "url": "https://files.rcsb.org/download/7LJ0.cif.gz",
+      "sha256": "f17c3b1867a2e37f675c2a963bfa462f42255acd9d0c88d8100248652f683c4b",
+      "bytes": 57124,
+      "headers": {
+        "ETag": "\"2d077e1c28ac413485957f84ab61c8c3-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:16:06 GMT",
+        "Content-Length": "57124"
+      }
+    },
+    "7LWS": {
+      "url": "https://files.rcsb.org/download/7LWS.cif.gz",
+      "sha256": "ac99c648579cd78f97cb4536a306f6e78c1d9456c77ab554c274e5230564d59f",
+      "bytes": 574922,
+      "headers": {
+        "ETag": "\"b55116deb458577065bda7879647cd74-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:17:02 GMT",
+        "Content-Length": "574922"
+      }
+    },
+    "7MH2": {
+      "url": "https://files.rcsb.org/download/7MH2.cif.gz",
+      "sha256": "a870339379b61cab4483ab3c45b406ae8a1d6ade4a36c568c3960589715ff937",
+      "bytes": 210983,
+      "headers": {
+        "ETag": "\"f1aacb34b183c2bc79862d49acc9b108-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:18:31 GMT",
+        "Content-Length": "210983"
+      }
+    },
+    "7MIX": {
+      "url": "https://files.rcsb.org/download/7MIX.cif.gz",
+      "sha256": "4f44c1f92d1d8502c4efff8c1c89fb7fc71d0512361a401f5ee0e305d25bf734",
+      "bytes": 529138,
+      "headers": {
+        "ETag": "\"9f142b22c3a1251c73dfc1604e3e93fb-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:18:36 GMT",
+        "Content-Length": "529138"
+      }
+    },
+    "7O9K": {
+      "url": "https://files.rcsb.org/download/7O9K.cif.gz",
+      "sha256": "609e7535d31b5669cbbe265738bd64f597078fe0b62c7ef1b0a8ce36b63f20c7",
+      "bytes": 3145492,
+      "headers": {
+        "ETag": "\"984b6ec58b701c7f6dbf30045391da75-gz\"",
+        "Last-Modified": "Sat, 13 Dec 2025 19:55:47 GMT",
+        "Content-Length": "3145492"
+      }
+    },
+    "7ONU": {
+      "url": "https://files.rcsb.org/download/7ONU.cif.gz",
+      "sha256": "5804a86d666f27233e56034506fb3670a59b8b801e3f4afd8db47f7bc3b3423d",
+      "bytes": 354486,
+      "headers": {
+        "ETag": "\"97070f6c67ce94b89f74dc6c51347032-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:24:19 GMT",
+        "Content-Length": "354486"
+      }
+    },
+    "7QI6": {
+      "url": "https://files.rcsb.org/download/7QI6.cif.gz",
+      "sha256": "5ddcfb44fc26c45eb8910b2682da7de95f3b9c61d3f8d56111102190241df763",
+      "bytes": 7282787,
+      "headers": {
+        "ETag": "\"629f30649db1f2523900ee7c5eb52273-gz\"",
+        "Last-Modified": "Sat, 19 Sep 2026 10:01:27 GMT",
+        "Content-Length": "7282787"
+      }
+    },
+    "7T5Q": {
+      "url": "https://files.rcsb.org/download/7T5Q.cif.gz",
+      "sha256": "931e7f63669c744a2dfca5ad153c6b8e8546c9a99e1c7699b3a98879e4ae4b47",
+      "bytes": 568177,
+      "headers": {
+        "ETag": "\"57054e876cc462bdbf1c7394fec2c9ef-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:36:13 GMT",
+        "Content-Length": "568177"
+      }
+    },
+    "7Y4L": {
+      "url": "https://files.rcsb.org/download/7Y4L.cif.gz",
+      "sha256": "e6ade1ea5ec2340e5440213d9e93b8466754a2908e3389340feef35bd9d9cd61",
+      "bytes": 22618294,
+      "headers": {
+        "ETag": "\"ef83a9d9d58e74a1ff64ec82562cf829-3-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:48:33 GMT",
+        "Content-Length": "22618294"
+      }
+    },
+    "7Z30": {
+      "url": "https://files.rcsb.org/download/7Z30.cif.gz",
+      "sha256": "c552269d109766493f087fbfb54518e9893b3db0c8dec2e6aabe4ab3e3cf3224",
+      "bytes": 1067379,
+      "headers": {
+        "ETag": "\"b5477d72be22f875266c01aa197ee60d-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:50:44 GMT",
+        "Content-Length": "1067379"
+      }
+    },
+    "7ZPQ": {
+      "url": "https://files.rcsb.org/download/7ZPQ.cif.gz",
+      "sha256": "dec2751e3729ffd6a24255a0e03c3bff8833fe0d3b91334f438f4db4ffee0473",
+      "bytes": 5021084,
+      "headers": {
+        "ETag": "\"12483f7b9eee40711f5e9a89aeb95487-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:52:11 GMT",
+        "Content-Length": "5021084"
+      }
+    },
+    "8B6G": {
+      "url": "https://files.rcsb.org/download/8B6G.cif.gz",
+      "sha256": "130b312aeee77dcc71631714672312fc2101d7e648b179d82629812e5dcbfb0a",
+      "bytes": 976139,
+      "headers": {
+        "ETag": "\"0159b231323158b9e02d50c911b0eb52-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:32:29 GMT",
+        "Content-Length": "976139"
+      }
+    },
+    "8B6H": {
+      "url": "https://files.rcsb.org/download/8B6H.cif.gz",
+      "sha256": "b7c56a6951df006ac27a1838220b27986b74a4880661b2a9bcdf26993ec35ff3",
+      "bytes": 9079630,
+      "headers": {
+        "ETag": "\"bed06dc53a589852524f1f771b1debbf-2-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:32:29 GMT",
+        "Content-Length": "9079630"
+      }
+    },
+    "8BMP": {
+      "url": "https://files.rcsb.org/download/8BMP.cif.gz",
+      "sha256": "a39ad4c79c383f3749e30dc825b3f2a967614502a4792b679758037235a7b3fb",
+      "bytes": 212587,
+      "headers": {
+        "ETag": "\"d515c0cbd5aba430c5d1f097e1eb22d8-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:48:13 GMT",
+        "Content-Length": "212587"
+      }
+    },
+    "8BMW": {
+      "url": "https://files.rcsb.org/download/8BMW.cif.gz",
+      "sha256": "34a8862ea086fcbae2657d4503fe3e886d6bfbec916b2a4ff55fd3f25375fe71",
+      "bytes": 642226,
+      "headers": {
+        "ETag": "\"24fa475a6c872f48a9ced4032d6b4a61-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:48:13 GMT",
+        "Content-Length": "642226"
+      }
+    },
+    "8BQS": {
+      "url": "https://files.rcsb.org/download/8BQS.cif.gz",
+      "sha256": "79b081385a908c8ff419c985d64c19f33c524e774b20ef4d6a09bdd1aefbde00",
+      "bytes": 19266039,
+      "headers": {
+        "ETag": "\"81d0adb7877b4578e39e729ff20bc554-3-gz\"",
+        "Last-Modified": "Sat, 19 Sep 2026 09:59:15 GMT",
+        "Content-Length": "19266039"
+      }
+    },
+    "8BR8": {
+      "url": "https://files.rcsb.org/download/8BR8.cif.gz",
+      "sha256": "13f4e1840cb9efe037790d04144212fcf0e937067f85563a8cec3d769bb7ddef",
+      "bytes": 4003330,
+      "headers": {
+        "ETag": "\"fc3472a54973021d6a4982771b0a1780-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:48:37 GMT",
+        "Content-Length": "4003330"
+      }
+    },
+    "8CEN": {
+      "url": "https://files.rcsb.org/download/8CEN.cif.gz",
+      "sha256": "5e10d9ab9ddf32d755888fcc8b98acd9cbefe1dae34a50ab7084d8b6a04e6c53",
+      "bytes": 2375037,
+      "headers": {
+        "ETag": "\"a681a9ae36ab5288b7f753c728f589d0-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:32:37 GMT",
+        "Content-Length": "2375037"
+      }
+    },
+    "8CYI": {
+      "url": "https://files.rcsb.org/download/8CYI.cif.gz",
+      "sha256": "cd546ee21baacb8c5f24d1add43dcd236c360c65dfbb2df26873dfc202304d0e",
+      "bytes": 323516,
+      "headers": {
+        "ETag": "\"46c9071b92a0011698c3f2acd24278f7-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:52:01 GMT",
+        "Content-Length": "323516"
+      }
+    },
+    "8DFO": {
+      "url": "https://files.rcsb.org/download/8DFO.cif.gz",
+      "sha256": "09e7f47d58079380cc24a48f41e4c8251b5c0915858184c5191c5d991414585e",
+      "bytes": 600882,
+      "headers": {
+        "ETag": "\"e4056d2221a1eb6eac2a193cd5988b67-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:53:19 GMT",
+        "Content-Length": "600882"
+      }
+    },
+    "8DPS": {
+      "url": "https://files.rcsb.org/download/8DPS.cif.gz",
+      "sha256": "4b4d4ef1ca6aa7846179352a3534d710893ef884fd967d5f7446eb8a10625537",
+      "bytes": 252320,
+      "headers": {
+        "ETag": "\"edebe4d9b64219710fbec0c090d55dc9-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:54:04 GMT",
+        "Content-Length": "252320"
+      }
+    },
+    "8E2K": {
+      "url": "https://files.rcsb.org/download/8E2K.cif.gz",
+      "sha256": "814a40ae16a3328b1698894dad2f9652f3ee2e94295f6d145659b6bbb9f2c31f",
+      "bytes": 2363943,
+      "headers": {
+        "ETag": "\"b254046d0d68b0d122626d313da66b98-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:55:01 GMT",
+        "Content-Length": "2363943"
+      }
+    },
+    "8EBU": {
+      "url": "https://files.rcsb.org/download/8EBU.cif.gz",
+      "sha256": "5e0c32aa5f6d1d67435b5a5e486c58aa13facfcfbfc2e4a8c765011dddfeb79a",
+      "bytes": 585460,
+      "headers": {
+        "ETag": "\"b8aa728fdc211a4319445a17cf57b244-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:42:37 GMT",
+        "Content-Length": "585460"
+      }
+    },
+    "8ECK": {
+      "url": "https://files.rcsb.org/download/8ECK.cif.gz",
+      "sha256": "67ead59b38518e7f8a2f5632c2c6a6e850fc68d1120fc2f80968fa8bb9571c94",
+      "bytes": 681987,
+      "headers": {
+        "ETag": "\"a60fe544d1db665f13efba8914e8c19a-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:55:47 GMT",
+        "Content-Length": "681987"
+      }
+    },
+    "8ECN": {
+      "url": "https://files.rcsb.org/download/8ECN.cif.gz",
+      "sha256": "0ea2398f44b07ef14a4020f0148f42b778d7cfa675c03864ca8dc7e6571477e0",
+      "bytes": 858019,
+      "headers": {
+        "ETag": "\"4841149e6e794a352f2887b13591d51d-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:55:47 GMT",
+        "Content-Length": "858019"
+      }
+    },
+    "8EDU": {
+      "url": "https://files.rcsb.org/download/8EDU.cif.gz",
+      "sha256": "7ee8911ca068859217a4c975005289865d2f9aab39f5030412a18527b454b1dc",
+      "bytes": 695235,
+      "headers": {
+        "ETag": "\"072f3fcf8bde2211dd8ca302b1e3816d-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:55:52 GMT",
+        "Content-Length": "695235"
+      }
+    },
+    "8EOI": {
+      "url": "https://files.rcsb.org/download/8EOI.cif.gz",
+      "sha256": "51a090914a56474e2166abed43e29fcc90d168f7d847897d0946be0d888ef7a7",
+      "bytes": 678485,
+      "headers": {
+        "ETag": "\"b369c029832b750aeb21971d309c385e-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:56:42 GMT",
+        "Content-Length": "678485"
+      }
+    },
+    "8ES9": {
+      "url": "https://files.rcsb.org/download/8ES9.cif.gz",
+      "sha256": "d2554f6f9d4bc3d13ea98a80b2d8a2b3be2b3f638fbd684c43d0ab69f1c2bc7c",
+      "bytes": 330145,
+      "headers": {
+        "ETag": "\"57e03fd525d89526743e4fba5994367a-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:57:00 GMT",
+        "Content-Length": "330145"
+      }
+    },
+    "8FNC": {
+      "url": "https://files.rcsb.org/download/8FNC.cif.gz",
+      "sha256": "599096b8f2526b1ec846d1a214c3992e5843b9949ffdb42f9d478992a1ddc8ac",
+      "bytes": 441923,
+      "headers": {
+        "ETag": "\"2b3c11cf41002bf54685d237e7a1c7bc-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:59:26 GMT",
+        "Content-Length": "441923"
+      }
+    },
+    "8FW5": {
+      "url": "https://files.rcsb.org/download/8FW5.cif.gz",
+      "sha256": "839616e7ee87507e5a5a9c44e816c468747e5711a4b8a0895cedef0497233ed0",
+      "bytes": 619261,
+      "headers": {
+        "ETag": "\"4071b629fbced5423e3dafff3ad97b4f-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:42:49 GMT",
+        "Content-Length": "619261"
+      }
+    },
+    "8FZ7": {
+      "url": "https://files.rcsb.org/download/8FZ7.cif.gz",
+      "sha256": "943ad9fd872e98c1dfccaeba077876dcc9f4228cc9a0576375fcb546358b68cf",
+      "bytes": 383953,
+      "headers": {
+        "ETag": "\"db695e64133e0e868ccbcae3446e78d6-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:00:24 GMT",
+        "Content-Length": "383953"
+      }
+    },
+    "8GQD": {
+      "url": "https://files.rcsb.org/download/8GQD.cif.gz",
+      "sha256": "0f6325fd7940febb40a833e85a5571dffe5168a081562568c6d79bb8cc27df67",
+      "bytes": 285757,
+      "headers": {
+        "ETag": "\"75f350994bd16b5e57174ef2c0b817ee-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:02:38 GMT",
+        "Content-Length": "285757"
+      }
+    },
+    "8HDT": {
+      "url": "https://files.rcsb.org/download/8HDT.cif.gz",
+      "sha256": "04dcb7789171193f97231de7248cbb63a2076bd4d22cbc9c9fc0f777af639136",
+      "bytes": 543072,
+      "headers": {
+        "ETag": "\"77a9db77cf196c3e461b32d7a031a721-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:04:32 GMT",
+        "Content-Length": "543072"
+      }
+    },
+    "8HI1": {
+      "url": "https://files.rcsb.org/download/8HI1.cif.gz",
+      "sha256": "ff478356a8e1b2e07633bfcd4ed8f02c9b39242cc50a07c4fe9fac7153969d1e",
+      "bytes": 462480,
+      "headers": {
+        "ETag": "\"1ec17bcf63d494fa26deda54e0d62f6d-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:04:56 GMT",
+        "Content-Length": "462480"
+      }
+    },
+    "8HJU": {
+      "url": "https://files.rcsb.org/download/8HJU.cif.gz",
+      "sha256": "f583f317214b3440d190eb09a69bfafbb505eaff91331bec7375efd80884e516",
+      "bytes": 546402,
+      "headers": {
+        "ETag": "\"e18b1ed4aa96c81fe07fa23357cf7b4e-gz\"",
+        "Last-Modified": "Sat, 03 Oct 2026 09:29:52 GMT",
+        "Content-Length": "546402"
+      }
+    },
+    "8HQS": {
+      "url": "https://files.rcsb.org/download/8HQS.cif.gz",
+      "sha256": "c138953651d17261f89b3bc994b5b66b3fa7d302616e7113530196686b3af287",
+      "bytes": 505109,
+      "headers": {
+        "ETag": "\"e0c6304750818f2e879fe3c81418d352-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:05:35 GMT",
+        "Content-Length": "505109"
+      }
+    },
+    "8I4L": {
+      "url": "https://files.rcsb.org/download/8I4L.cif.gz",
+      "sha256": "bf454af1db58c2e5d9de1b2b830cd6d398fddb5cef1bf2b6d2868bbee29b7a3a",
+      "bytes": 428591,
+      "headers": {
+        "ETag": "\"19e013065026dade2c6b200e5fcdb46e-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:06:42 GMT",
+        "Content-Length": "428591"
+      }
+    },
+    "8IUF": {
+      "url": "https://files.rcsb.org/download/8IUF.cif.gz",
+      "sha256": "c054fe68ee3dabe22789c68fa23d16215993a06c6711b50f0ebef186b31fc513",
+      "bytes": 9451170,
+      "headers": {
+        "ETag": "\"57beb0caff844ee240e29cdd60268137-2-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:43:12 GMT",
+        "Content-Length": "9451170"
+      }
+    },
+    "8IWH": {
+      "url": "https://files.rcsb.org/download/8IWH.cif.gz",
+      "sha256": "40597d867bd1ec918212e90faa919a8f40160f22d58c141bdfc7d9e9483e34e3",
+      "bytes": 1756858,
+      "headers": {
+        "ETag": "\"5dc40d0e63709a82df28585312f2775c-gz\"",
+        "Last-Modified": "Sat, 03 Oct 2026 09:30:00 GMT",
+        "Content-Length": "1756858"
+      }
+    },
+    "8J5D": {
+      "url": "https://files.rcsb.org/download/8J5D.cif.gz",
+      "sha256": "60925f775a598d053d415e1ce2cf9a6bab61bc78d1c6764f88840e0f8656cd0b",
+      "bytes": 262271,
+      "headers": {
+        "ETag": "\"549f01943fcf2599e4841aab74a85e0e-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:09:28 GMT",
+        "Content-Length": "262271"
+      }
+    },
+    "8JFZ": {
+      "url": "https://files.rcsb.org/download/8JFZ.cif.gz",
+      "sha256": "f7f97c5b48083fd6537c51d1618bd2f252da175c071926330cb90cc9094a9d0f",
+      "bytes": 535417,
+      "headers": {
+        "ETag": "\"e2d346738a90fe1681571eea4be78cbe-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:10:13 GMT",
+        "Content-Length": "535417"
+      }
+    },
+    "8JVA": {
+      "url": "https://files.rcsb.org/download/8JVA.cif.gz",
+      "sha256": "351ab5e29df7353f9ae7a3a266a5616c179a9adc04d6d8c5c351bd7f6827e5fb",
+      "bytes": 175357,
+      "headers": {
+        "ETag": "\"cde36262b98f9008fc9fd2c94ec29fd7-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:11:30 GMT",
+        "Content-Length": "175357"
+      }
+    },
+    "8KG6": {
+      "url": "https://files.rcsb.org/download/8KG6.cif.gz",
+      "sha256": "ec36db367d89579cb9e5518c763528db186dfd2f9c0af6efbbda4bef67b8d560",
+      "bytes": 1701996,
+      "headers": {
+        "ETag": "\"12ea891a5c0e7c12f3161008f4042614-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:13:16 GMT",
+        "Content-Length": "1701996"
+      }
+    },
+    "8OIQ": {
+      "url": "https://files.rcsb.org/download/8OIQ.cif.gz",
+      "sha256": "43af879b22ea8d77c54396fa4b3ff115d0768f07031c27c842d6bb979245633f",
+      "bytes": 2654185,
+      "headers": {
+        "ETag": "\"61f568367b5b79f1a027938e18412aed-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:33:46 GMT",
+        "Content-Length": "2654185"
+      }
+    },
+    "8OLC": {
+      "url": "https://files.rcsb.org/download/8OLC.cif.gz",
+      "sha256": "e6e8007c8bf2a4375a253290f63f77c5a6f3046427d307d7a1652a9c8cd6e0bb",
+      "bytes": 1774240,
+      "headers": {
+        "ETag": "\"5e5f375238122cec8cee47bfaba48333-gz\"",
+        "Last-Modified": "Sat, 04 Oct 2025 06:02:30 GMT",
+        "Content-Length": "1774240"
+      }
+    },
+    "8OVB": {
+      "url": "https://files.rcsb.org/download/8OVB.cif.gz",
+      "sha256": "51bc39435733e5e38637362b2d1a833bc59f9bed999a331d884b078ccbc52b11",
+      "bytes": 642485,
+      "headers": {
+        "ETag": "\"0dae7cb64e6949355996e643851e7230-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:24:59 GMT",
+        "Content-Length": "642485"
+      }
+    },
+    "8P53": {
+      "url": "https://files.rcsb.org/download/8P53.cif.gz",
+      "sha256": "86f46c2959b9045b8f42767bc84288fee05dd62ef751d9fdc7dcec97f18dd25a",
+      "bytes": 418360,
+      "headers": {
+        "ETag": "\"f53fa314440f09c679160cc1c98bc75a-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:25:48 GMT",
+        "Content-Length": "418360"
+      }
+    },
+    "8PJ1": {
+      "url": "https://files.rcsb.org/download/8PJ1.cif.gz",
+      "sha256": "138a32332a54bc3d2e6c5112399238156c3ac846ee5fe5c4c911bccd1b3b5644",
+      "bytes": 3195891,
+      "headers": {
+        "ETag": "\"de51d5e6d0612cf9274e2452ce9d525f-gz\"",
+        "Last-Modified": "Sat, 27 Jun 2026 10:50:10 GMT",
+        "Content-Length": "3195891"
+      }
+    },
+    "8Q7Z": {
+      "url": "https://files.rcsb.org/download/8Q7Z.cif.gz",
+      "sha256": "7cc4f5789a386fe38703b516cf2be9a87655a50c924d9c1c31604f63137a62a8",
+      "bytes": 5033837,
+      "headers": {
+        "ETag": "\"4c30fb31675c34b06623c1cf7a87a388-gz\"",
+        "Last-Modified": "Sat, 27 Jun 2026 10:50:13 GMT",
+        "Content-Length": "5033837"
+      }
+    },
+    "8QMO": {
+      "url": "https://files.rcsb.org/download/8QMO.cif.gz",
+      "sha256": "baf4e2fddac738f0240cd304a072aa0451adc33c03796bf57a30f6b6fe6dd30c",
+      "bytes": 663551,
+      "headers": {
+        "ETag": "\"63e42714a8ac3db8393304680edc24b2-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:34:00 GMT",
+        "Content-Length": "663551"
+      }
+    },
+    "8QQK": {
+      "url": "https://files.rcsb.org/download/8QQK.cif.gz",
+      "sha256": "de4bb845929cc2f48e9e63a1768244774b59ced2eb5110b8b7f20c894768b984",
+      "bytes": 243558,
+      "headers": {
+        "ETag": "\"2d27d0ae9aead052259fc1050c664eca-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:34:01 GMT",
+        "Content-Length": "243558"
+      }
+    },
+    "8QSJ": {
+      "url": "https://files.rcsb.org/download/8QSJ.cif.gz",
+      "sha256": "b15d6bb63d8e50b4cbaaad1b00a498675589551d0387c1da67fbfe429791ad5f",
+      "bytes": 2817764,
+      "headers": {
+        "ETag": "\"3760d20b1e72f37f609142c5af148372-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:34:01 GMT",
+        "Content-Length": "2817764"
+      }
+    },
+    "8RL2": {
+      "url": "https://files.rcsb.org/download/8RL2.cif.gz",
+      "sha256": "36cb5b2160a9ef67082214830dbae83d7f6e0f0f66bdb03b3e52626d240cf1d2",
+      "bytes": 3515821,
+      "headers": {
+        "ETag": "\"5cf7e6005009d09f76e11a8f3429926d-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:32:38 GMT",
+        "Content-Length": "3515821"
+      }
+    },
+    "8RR1": {
+      "url": "https://files.rcsb.org/download/8RR1.cif.gz",
+      "sha256": "597a9eb05101615c306e735288d0f98d3dce93f738353123551cad54cbcc5a1d",
+      "bytes": 381994,
+      "headers": {
+        "ETag": "\"fdb1b3d8a6b08ef9262c5e21d93af43f-gz\"",
+        "Last-Modified": "Sat, 13 Dec 2025 19:56:23 GMT",
+        "Content-Length": "381994"
+      }
+    },
+    "8RVJ": {
+      "url": "https://files.rcsb.org/download/8RVJ.cif.gz",
+      "sha256": "ad2f32a484339e18f7044c5ff8efc20136c0bbfc1ed895d03cdb799f897f5d64",
+      "bytes": 273712,
+      "headers": {
+        "ETag": "\"080f82ecf46baddee9114ffed0a95e7b-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:33:23 GMT",
+        "Content-Length": "273712"
+      }
+    },
+    "8RWY": {
+      "url": "https://files.rcsb.org/download/8RWY.cif.gz",
+      "sha256": "92a6653e092835a5c557deb647bda0b016ee62c7fbbecbf6f66b014ce0700a86",
+      "bytes": 317180,
+      "headers": {
+        "ETag": "\"5b91f9b2a75726222f4c34385fd35635-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:34:09 GMT",
+        "Content-Length": "317180"
+      }
+    },
+    "8S5N": {
+      "url": "https://files.rcsb.org/download/8S5N.cif.gz",
+      "sha256": "50c9596ace844f2b92516e7bb3074526e97bf6e249920a4751e38503cfccb3f8",
+      "bytes": 1080098,
+      "headers": {
+        "ETag": "\"6ccaeb9cf4b7a0e3545c9f0d5d8131e9-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:34:02 GMT",
+        "Content-Length": "1080098"
+      }
+    },
+    "8S8D": {
+      "url": "https://files.rcsb.org/download/8S8D.cif.gz",
+      "sha256": "63808fe256b85892c84ba6b550b7069b64a7066e48d7ddd0c78d9c0e447bd06e",
+      "bytes": 1983962,
+      "headers": {
+        "ETag": "\"c72b735eac118044cca9f59fa283673c-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:34:12 GMT",
+        "Content-Length": "1983962"
+      }
+    },
+    "8SK6": {
+      "url": "https://files.rcsb.org/download/8SK6.cif.gz",
+      "sha256": "b696696c6d5b0979831ce0af0351bb65522dcbff4d19771dcd7c3013b8b76817",
+      "bytes": 289409,
+      "headers": {
+        "ETag": "\"2ff240d6a60bef564c0553a2527c22f6-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:34:56 GMT",
+        "Content-Length": "289409"
+      }
+    },
+    "8SMR": {
+      "url": "https://files.rcsb.org/download/8SMR.cif.gz",
+      "sha256": "c65b3694aa08ec3bbe7cd2190887a36908832a86bb4a7b662829ddca2644cb91",
+      "bytes": 626775,
+      "headers": {
+        "ETag": "\"de9b9072e1cf143c8b42077177014a9c-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:44:21 GMT",
+        "Content-Length": "626775"
+      }
+    },
+    "8SNB": {
+      "url": "https://files.rcsb.org/download/8SNB.cif.gz",
+      "sha256": "d3c005bdfa42d64fcc4865c204f8f0ef1edebf2830a5f943f6ae6bfd7e49e7fc",
+      "bytes": 27795279,
+      "headers": {
+        "ETag": "\"fcfda5489f91d679040de18bfbf18b1d-4-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:35:07 GMT",
+        "Content-Length": "27795279"
+      }
+    },
+    "8TES": {
+      "url": "https://files.rcsb.org/download/8TES.cif.gz",
+      "sha256": "08ebb9208a781c1121c4813094793e793c0a5e07d131e98eb0424861bf377e56",
+      "bytes": 2234612,
+      "headers": {
+        "ETag": "\"c968625e9b6246dda54f25479f61bf14-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:36:46 GMT",
+        "Content-Length": "2234612"
+      }
+    },
+    "8UNF": {
+      "url": "https://files.rcsb.org/download/8UNF.cif.gz",
+      "sha256": "b010dd29b2ba159dc8c9111b548abd000daaafbf86fcf16f2da2aab0c52556b1",
+      "bytes": 458659,
+      "headers": {
+        "ETag": "\"9faeeeaa8d5289c521609ebf4e62d1bd-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:44:35 GMT",
+        "Content-Length": "458659"
+      }
+    },
+    "8UNK": {
+      "url": "https://files.rcsb.org/download/8UNK.cif.gz",
+      "sha256": "938e8460328f39adbf0ecfe2af3aa47a3a881915f24a10706e1f4bb975f25e4d",
+      "bytes": 291189,
+      "headers": {
+        "ETag": "\"425839ef182532edef4e46b3bd9defcd-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:39:49 GMT",
+        "Content-Length": "291189"
+      }
+    },
+    "8UT8": {
+      "url": "https://files.rcsb.org/download/8UT8.cif.gz",
+      "sha256": "a6dbcb2485c69468994c28ed3190de22a7cb88a0bce1a4d79ccf1fbedc38f26f",
+      "bytes": 333646,
+      "headers": {
+        "ETag": "\"79ff487218fd2d05822273881e1516a6-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:40:13 GMT",
+        "Content-Length": "333646"
+      }
+    },
+    "8UX4": {
+      "url": "https://files.rcsb.org/download/8UX4.cif.gz",
+      "sha256": "23e4174cc72e7c9a64cddfacda4dce078a65c342ea2a24cf8d6cae914d1e2446",
+      "bytes": 5041853,
+      "headers": {
+        "ETag": "\"727a63b2f9e2a8372cd401690ccda0aa-gz\"",
+        "Last-Modified": "Sat, 24 Jan 2026 09:48:27 GMT",
+        "Content-Length": "5041853"
+      }
+    },
+    "8UX9": {
+      "url": "https://files.rcsb.org/download/8UX9.cif.gz",
+      "sha256": "16a0caac5578c4bc77922ff50e1b2944431a30d7a3e99040e675489e420751fd",
+      "bytes": 365164,
+      "headers": {
+        "ETag": "\"a1b0a843404071cf21666e057e93120e-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:40:31 GMT",
+        "Content-Length": "365164"
+      }
+    },
+    "8UZ2": {
+      "url": "https://files.rcsb.org/download/8UZ2.cif.gz",
+      "sha256": "652618642993eb04f89a48fd1d266ef82b19adb5a230fb7c0c843d8afae43b34",
+      "bytes": 457731,
+      "headers": {
+        "ETag": "\"c9246033fbae17af8ad2f95e6b3e76f2-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:40:40 GMT",
+        "Content-Length": "457731"
+      }
+    },
+    "8VCJ": {
+      "url": "https://files.rcsb.org/download/8VCJ.cif.gz",
+      "sha256": "871a02679c307d2b0ca20762ee3e92a182273e867cdfdfb1659a72ef97c171c2",
+      "bytes": 723000,
+      "headers": {
+        "ETag": "\"b784dac9f2256fd8ac7c102bdb49700b-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:41:43 GMT",
+        "Content-Length": "723000"
+      }
+    },
+    "8VD5": {
+      "url": "https://files.rcsb.org/download/8VD5.cif.gz",
+      "sha256": "e6f99f41341c9cc9c89350d3fc4f4cc410c987a9500d78888abe4892512b61ff",
+      "bytes": 453186,
+      "headers": {
+        "ETag": "\"b1e7c6ef29edd598efa257f6b5941b2d-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:41:47 GMT",
+        "Content-Length": "453186"
+      }
+    },
+    "8WT7": {
+      "url": "https://files.rcsb.org/download/8WT7.cif.gz",
+      "sha256": "608bd3302224204ef3acdb0ec0a810225427c825d4721e6d0c8da3f3d1c6d8a2",
+      "bytes": 391690,
+      "headers": {
+        "ETag": "\"32a7abc53e7908002006a088769e82ce-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:45:24 GMT",
+        "Content-Length": "391690"
+      }
+    },
+    "8XAN": {
+      "url": "https://files.rcsb.org/download/8XAN.cif.gz",
+      "sha256": "778ae07303606eceddd09c976c08e09481b20a28a97f8c532a61caace1643c37",
+      "bytes": 180971,
+      "headers": {
+        "ETag": "\"ea864dc5058e12d26e45b2bcbafcba41-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:46:36 GMT",
+        "Content-Length": "180971"
+      }
+    },
+    "8XMC": {
+      "url": "https://files.rcsb.org/download/8XMC.cif.gz",
+      "sha256": "caf286b4b3308125d8fabd0b68745b5cef23f24484e63ca1cf59aa0819d31eec",
+      "bytes": 958061,
+      "headers": {
+        "ETag": "\"6a8650684e7e8ccec9a0089a1c2d8806-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:47:23 GMT",
+        "Content-Length": "958061"
+      }
+    },
+    "8Y6V": {
+      "url": "https://files.rcsb.org/download/8Y6V.cif.gz",
+      "sha256": "c4820a9fbab973ed79362ff5cac6d0f75a8d4e0a4f3948b34f0c8769cd0cc626",
+      "bytes": 3064374,
+      "headers": {
+        "ETag": "\"1b548c21ee0944d1f8c79b7783ce2d42-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:48:41 GMT",
+        "Content-Length": "3064374"
+      }
+    },
+    "8ZDQ": {
+      "url": "https://files.rcsb.org/download/8ZDQ.cif.gz",
+      "sha256": "b74a29da7fcefdd35b8d8789ae99897535793b5a84bb83f2a9c8869b0a7c3c7d",
+      "bytes": 2284778,
+      "headers": {
+        "ETag": "\"205352b321a06ef97c4a7aeb1b817d3d-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:51:22 GMT",
+        "Content-Length": "2284778"
+      }
+    },
+    "8ZSK": {
+      "url": "https://files.rcsb.org/download/8ZSK.cif.gz",
+      "sha256": "763a15f7a2d854a03f78caeee34d54f3284add85d4019e82b75baa60a9acfe9d",
+      "bytes": 2056118,
+      "headers": {
+        "ETag": "\"2799639c898c92d68ea37bb91c0e78ab-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:45:10 GMT",
+        "Content-Length": "2056118"
+      }
+    },
+    "9AU7": {
+      "url": "https://files.rcsb.org/download/9AU7.cif.gz",
+      "sha256": "fc880969ab1bd194c7317aca926174b56038884f9d66dc547883ff6b7065bbfd",
+      "bytes": 429251,
+      "headers": {
+        "ETag": "\"f54738a5c05c87241d9047a06e7f9951-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:46:03 GMT",
+        "Content-Length": "429251"
+      }
+    },
+    "9B23": {
+      "url": "https://files.rcsb.org/download/9B23.cif.gz",
+      "sha256": "24151105ee8f1c322adb90d0ac8ea97a1e3ea007e51e22dfa1812928bf97f103",
+      "bytes": 116452,
+      "headers": {
+        "ETag": "\"2d73840234a18c4c8001fe8676429449-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:46:43 GMT",
+        "Content-Length": "116452"
+      }
+    },
+    "9B9G": {
+      "url": "https://files.rcsb.org/download/9B9G.cif.gz",
+      "sha256": "5d48add21e5d89f61368a6195efd5ed4dbc314c21d188576c78fcca505378938",
+      "bytes": 1115735,
+      "headers": {
+        "ETag": "\"9f9004a45c41cba1a9dbe0cfad886453-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:47:17 GMT",
+        "Content-Length": "1115735"
+      }
+    },
+    "9BH4": {
+      "url": "https://files.rcsb.org/download/9BH4.cif.gz",
+      "sha256": "c33646517ac83f2750c59befa342a949caf6fb1d10273a4b82dcdbb2d551e80d",
+      "bytes": 358294,
+      "headers": {
+        "ETag": "\"cda0bdcc27a6c14f777be6559ae889cd-gz\"",
+        "Last-Modified": "Sat, 24 Jan 2026 09:45:12 GMT",
+        "Content-Length": "358294"
+      }
+    },
+    "9CE3": {
+      "url": "https://files.rcsb.org/download/9CE3.cif.gz",
+      "sha256": "93fdaf33c66ded8bf4177f6d6291fea8e119a436c04a454147e6d6adc76e4d45",
+      "bytes": 921823,
+      "headers": {
+        "ETag": "\"f5831a320d67ad216b7f6e3b0425d2c4-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:50:28 GMT",
+        "Content-Length": "921823"
+      }
+    },
+    "9CMI": {
+      "url": "https://files.rcsb.org/download/9CMI.cif.gz",
+      "sha256": "367868ff9ed842e53d9a3dac7042d11c84cbbc4d6002ac4ef440de71a946bd67",
+      "bytes": 219656,
+      "headers": {
+        "ETag": "\"ef9a76a1ca8d068976eff564c9a7c5ab-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:51:06 GMT",
+        "Content-Length": "219656"
+      }
+    },
+    "9DM1": {
+      "url": "https://files.rcsb.org/download/9DM1.cif.gz",
+      "sha256": "e7d72fdef4c2afd422df0610cf6b1a2f9ce4ed02e579cf183b0f7e0b7742629e",
+      "bytes": 1178015,
+      "headers": {
+        "ETag": "\"6f733407ecf1b6b59ddd63e76fcbd099-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:42:32 GMT",
+        "Content-Length": "1178015"
+      }
+    },
+    "9DX3": {
+      "url": "https://files.rcsb.org/download/9DX3.cif.gz",
+      "sha256": "e64add071b4d623a983006d71470b21782683b8bc5da6c3bd8a4584b099a1b5b",
+      "bytes": 492876,
+      "headers": {
+        "ETag": "\"b84581ab025bf38d7a7896ebdd564e10-gz\"",
+        "Last-Modified": "Sat, 24 Jan 2026 09:45:38 GMT",
+        "Content-Length": "492876"
+      }
+    },
+    "9E2G": {
+      "url": "https://files.rcsb.org/download/9E2G.cif.gz",
+      "sha256": "8c9cfb4f9170cbda22303d5ea76605e89e0861a1d063b6562f3a3ef5cdf660bd",
+      "bytes": 26640425,
+      "headers": {
+        "ETag": "\"f08fa654acd2f9fecf84d912cee688cc-4-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:55:02 GMT",
+        "Content-Length": "26640425"
+      }
+    },
+    "9E5C": {
+      "url": "https://files.rcsb.org/download/9E5C.cif.gz",
+      "sha256": "784a7d0e14f2c2dba8084ea080082b35c399fee66ade0594c538cd6087803353",
+      "bytes": 85929443,
+      "headers": {
+        "ETag": "\"beaf048b201150db2d7173c762d054fe-11-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:55:15 GMT",
+        "Content-Length": "85929443"
+      }
+    },
+    "9E78": {
+      "url": "https://files.rcsb.org/download/9E78.cif.gz",
+      "sha256": "abff5d0ac554ffd4bb1b39175205d9e89b07653a508090acd67e1532b4daa502",
+      "bytes": 30161353,
+      "headers": {
+        "ETag": "\"d9987728c7d8b19fd769fc3f543f12af-4-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:55:25 GMT",
+        "Content-Length": "30161353"
+      }
+    },
+    "9E81": {
+      "url": "https://files.rcsb.org/download/9E81.cif.gz",
+      "sha256": "7afce16a07f004fd0e3c02b255bebeb050e473fd500b5b5526a80e8f8e4b4e70",
+      "bytes": 636796,
+      "headers": {
+        "ETag": "\"3dc3e10c033adac4b524a094886911f6-gz\"",
+        "Last-Modified": "Sun, 17 May 2026 01:16:51 GMT",
+        "Content-Length": "636796"
+      }
+    },
+    "9E8O": {
+      "url": "https://files.rcsb.org/download/9E8O.cif.gz",
+      "sha256": "f1d4509649c954e7b5b1a8073cfcf47fa4962decc54c1774301941128e229f27",
+      "bytes": 2072797,
+      "headers": {
+        "ETag": "\"5d45b6a0823d93c455d437c5a6b0ca20-gz\"",
+        "Last-Modified": "Sat, 21 Mar 2026 07:15:11 GMT",
+        "Content-Length": "2072797"
+      }
+    },
+    "9EG4": {
+      "url": "https://files.rcsb.org/download/9EG4.cif.gz",
+      "sha256": "52d62ff4187fe9f805037d1f94b1d76d7c296e7e098c36ff2feeba165311e89b",
+      "bytes": 520367,
+      "headers": {
+        "ETag": "\"7590cedf5a324fbd7514ca4964c311ee-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:56:05 GMT",
+        "Content-Length": "520367"
+      }
+    },
+    "9ETM": {
+      "url": "https://files.rcsb.org/download/9ETM.cif.gz",
+      "sha256": "94a8b7e3bec941d056838527bcf59b2f74b33715a88ef8fb3d4b46166c2f0deb",
+      "bytes": 197345,
+      "headers": {
+        "ETag": "\"3599cb2dd7084d889a182330f4bb7011-gz\"",
+        "Last-Modified": "Sun, 21 Sep 2025 23:57:06 GMT",
+        "Content-Length": "197345"
+      }
+    },
+    "9F5X": {
+      "url": "https://files.rcsb.org/download/9F5X.cif.gz",
+      "sha256": "6bdec77901a9ff3472b89dd5fdf7b3ad2cac271960c2c988d6cb40f35d249633",
+      "bytes": 3539003,
+      "headers": {
+        "ETag": "\"a588c58f62663ef52bbf6848c0c84d59-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:32:53 GMT",
+        "Content-Length": "3539003"
+      }
+    },
+    "9FMG": {
+      "url": "https://files.rcsb.org/download/9FMG.cif.gz",
+      "sha256": "b3390c51e096209fa29acc6e43ccdc0cbb54f699d660552e3ec0f2944e67e110",
+      "bytes": 362031,
+      "headers": {
+        "ETag": "\"a987a7cd9214be951175c9ddacad12c1-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:32:56 GMT",
+        "Content-Length": "362031"
+      }
+    },
+    "9FSP": {
+      "url": "https://files.rcsb.org/download/9FSP.cif.gz",
+      "sha256": "86ddb522d4299ff819bd1fb30bbfad053149a7a55697eb6df980fd316419edda",
+      "bytes": 1362411,
+      "headers": {
+        "ETag": "\"f5a850d3f67ca1e0e269ae37aa7e63d8-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:32:57 GMT",
+        "Content-Length": "1362411"
+      }
+    },
+    "9FZQ": {
+      "url": "https://files.rcsb.org/download/9FZQ.cif.gz",
+      "sha256": "75a4cae7d41fab32cb1398640e839e54c6295cc3a451cfb41858430baa4dd897",
+      "bytes": 125718,
+      "headers": {
+        "ETag": "\"b1e72a5b36f955f6405f01fd921f8710-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:00:25 GMT",
+        "Content-Length": "125718"
+      }
+    },
+    "9G33": {
+      "url": "https://files.rcsb.org/download/9G33.cif.gz",
+      "sha256": "d1702efaec62b8739876d331ce2071b399e09e20eb390fcbc602e50f146278bb",
+      "bytes": 4908453,
+      "headers": {
+        "ETag": "\"ab723d77465026f9b52938d2f0cc84b6-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:00:45 GMT",
+        "Content-Length": "4908453"
+      }
+    },
+    "9G6K": {
+      "url": "https://files.rcsb.org/download/9G6K.cif.gz",
+      "sha256": "b4f5ba3f608bc9b9ac6157cf557ee786e6326b43c913a654e4c6cdc3fbe5d894",
+      "bytes": 4555406,
+      "headers": {
+        "ETag": "\"c1eee564171d9fbfa277d23e12680555-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:01:01 GMT",
+        "Content-Length": "4555406"
+      }
+    },
+    "9G8O": {
+      "url": "https://files.rcsb.org/download/9G8O.cif.gz",
+      "sha256": "cdd5eb1fc00c752cba0e121d11f1cfb826dcaf5b34701466cdc10fec2494a922",
+      "bytes": 3230598,
+      "headers": {
+        "ETag": "\"1e662a7d1b948751772675e01f3f0317-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:01:10 GMT",
+        "Content-Length": "3230598"
+      }
+    },
+    "9GAE": {
+      "url": "https://files.rcsb.org/download/9GAE.cif.gz",
+      "sha256": "326dccc09c5b49ec999cbd8c9be534b5e5ff37a6e5ca6bd53908c2e18ee1c8b7",
+      "bytes": 1889103,
+      "headers": {
+        "ETag": "\"5887c5541570bf71587e3440a8485eaf-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:33:01 GMT",
+        "Content-Length": "1889103"
+      }
+    },
+    "9HCG": {
+      "url": "https://files.rcsb.org/download/9HCG.cif.gz",
+      "sha256": "97c161e15832c5ddd1b6d3034be345c3b9f923760d8c3c8d95e39f81e9c7de52",
+      "bytes": 4785219,
+      "headers": {
+        "ETag": "\"a894e99f3dc777cc35005d51a3b8fef0-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:33:08 GMT",
+        "Content-Length": "4785219"
+      }
+    },
+    "9HCH": {
+      "url": "https://files.rcsb.org/download/9HCH.cif.gz",
+      "sha256": "8a98e8eb1a2187667e4c5374baaa551d0ef912d14e48e16c2e22cfc456898dd7",
+      "bytes": 4791654,
+      "headers": {
+        "ETag": "\"81020ca0dc9da2010f782c90fa20f2fa-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:33:08 GMT",
+        "Content-Length": "4791654"
+      }
+    },
+    "9HLZ": {
+      "url": "https://files.rcsb.org/download/9HLZ.cif.gz",
+      "sha256": "38dd5fb8f7299ae35db3327dc86db7426d86c35ca8765e51f68eabc49225716c",
+      "bytes": 4962772,
+      "headers": {
+        "ETag": "\"87fca162fe9fe8d0d297ee2ce4027bce-gz\"",
+        "Last-Modified": "Sat, 07 Mar 2026 07:39:35 GMT",
+        "Content-Length": "4962772"
+      }
+    },
+    "9HNY": {
+      "url": "https://files.rcsb.org/download/9HNY.cif.gz",
+      "sha256": "2d634dc5889f6689671e58bb45188b2ccd1ddb4b380f4f75334879ac224fb184",
+      "bytes": 9699889,
+      "headers": {
+        "ETag": "\"188c91537eca38008cbca833955d0800-2-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:33:11 GMT",
+        "Content-Length": "9699889"
+      }
+    },
+    "9HWJ": {
+      "url": "https://files.rcsb.org/download/9HWJ.cif.gz",
+      "sha256": "34a7223ee4af8613f5d8676a5fad672d40040d89a620284bd4b0c33c08797b9f",
+      "bytes": 437211,
+      "headers": {
+        "ETag": "\"3bbf6fa9fc5184d7bd6f13f1a564be9f-gz\"",
+        "Last-Modified": "Sat, 21 Feb 2026 07:07:18 GMT",
+        "Content-Length": "437211"
+      }
+    },
+    "9HYU": {
+      "url": "https://files.rcsb.org/download/9HYU.cif.gz",
+      "sha256": "d38ba65f1a325f6c77075f3ff877ba81d5c3209e9e363312d3429ebc511128d4",
+      "bytes": 2308778,
+      "headers": {
+        "ETag": "\"00a874c66bde3c4405488cbb1f212a8d-gz\"",
+        "Last-Modified": "Sat, 19 Sep 2026 10:00:14 GMT",
+        "Content-Length": "2308778"
+      }
+    },
+    "9IRF": {
+      "url": "https://files.rcsb.org/download/9IRF.cif.gz",
+      "sha256": "fcb8cbfa59936a1aeb992df0d22b29adcba17492e79fba6d78b68631f8b96c80",
+      "bytes": 560839,
+      "headers": {
+        "ETag": "\"1b750dce21d35ced80d48b21a90ec7a0-gz\"",
+        "Last-Modified": "Sat, 21 Feb 2026 07:07:29 GMT",
+        "Content-Length": "560839"
+      }
+    },
+    "9JM0": {
+      "url": "https://files.rcsb.org/download/9JM0.cif.gz",
+      "sha256": "ea9b627c94ee91a80bca1cfcd2edf4cf2a1ed7a68c2f97f6e369609ce715d26a",
+      "bytes": 720632,
+      "headers": {
+        "ETag": "\"91729afa624cbc5f749e59a25219c1d7-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:10:46 GMT",
+        "Content-Length": "720632"
+      }
+    },
+    "9KCL": {
+      "url": "https://files.rcsb.org/download/9KCL.cif.gz",
+      "sha256": "8dea731d4b51a6c4739e780415a4f684c8e5cee31d26932a5f1f9d44a4fb52bc",
+      "bytes": 384328,
+      "headers": {
+        "ETag": "\"62e020b7373c547c3b1269bcc5c3a77c-gz\"",
+        "Last-Modified": "Sat, 15 Nov 2025 08:52:48 GMT",
+        "Content-Length": "384328"
+      }
+    },
+    "9KLK": {
+      "url": "https://files.rcsb.org/download/9KLK.cif.gz",
+      "sha256": "fc284c5ebd0f5314fc776ebf916d12a299e674a061d1696c387bd2223d507cd2",
+      "bytes": 224293,
+      "headers": {
+        "ETag": "\"56c81fc9c0e1c5109f39228444399129-gz\"",
+        "Last-Modified": "Sat, 29 Nov 2025 05:25:08 GMT",
+        "Content-Length": "224293"
+      }
+    },
+    "9KY7": {
+      "url": "https://files.rcsb.org/download/9KY7.cif.gz",
+      "sha256": "8978ed1838595dc206bc0b52576296234f0c7b1f879a0a398db9a944971cf278",
+      "bytes": 652640,
+      "headers": {
+        "ETag": "\"e6680d7d70c0ff5108327d64ee9a8551-gz\"",
+        "Last-Modified": "Sat, 13 Dec 2025 19:55:16 GMT",
+        "Content-Length": "652640"
+      }
+    },
+    "9LQ5": {
+      "url": "https://files.rcsb.org/download/9LQ5.cif.gz",
+      "sha256": "f80484bc2332346a04b62fb86a0c1fec371f97f1e95089348f29c9ff7465a2b9",
+      "bytes": 606044,
+      "headers": {
+        "ETag": "\"c93f54cf6083541d3639c3d81070ed8c-gz\"",
+        "Last-Modified": "Sat, 11 Jul 2026 13:12:07 GMT",
+        "Content-Length": "606044"
+      }
+    },
+    "9LTS": {
+      "url": "https://files.rcsb.org/download/9LTS.cif.gz",
+      "sha256": "cc9194167bca641f7b2e7dc1aa76b28f2e7b0dfc7c789dc60dcb39ed4a913052",
+      "bytes": 714590,
+      "headers": {
+        "ETag": "\"13d279f6edde9553715961753720b8e0-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:43:32 GMT",
+        "Content-Length": "714590"
+      }
+    },
+    "9M64": {
+      "url": "https://files.rcsb.org/download/9M64.cif.gz",
+      "sha256": "9b8277b88fbfc0c4e4d305c61857a2ecfba9a06d95a98efad9ff4569ba1b8dfa",
+      "bytes": 1449946,
+      "headers": {
+        "ETag": "\"e26a115718619198a4e6aa9dfda1c191-gz\"",
+        "Last-Modified": "Sat, 29 Nov 2025 05:25:23 GMT",
+        "Content-Length": "1449946"
+      }
+    },
+    "9MLC": {
+      "url": "https://files.rcsb.org/download/9MLC.cif.gz",
+      "sha256": "6afdc8f4929694244bbea325ea40bbf0e3f1ef969ac52be9276e5d855b7857d4",
+      "bytes": 1741241,
+      "headers": {
+        "ETag": "\"a9a883177164c5bca2e69b48f4304d93-gz\"",
+        "Last-Modified": "Sat, 30 May 2026 08:41:18 GMT",
+        "Content-Length": "1741241"
+      }
+    },
+    "9N49": {
+      "url": "https://files.rcsb.org/download/9N49.cif.gz",
+      "sha256": "c9db71fd26dec3dbe422b047dad9b76f26a22dc77a868992d8f7f4c9646279db",
+      "bytes": 180887,
+      "headers": {
+        "ETag": "\"57968d069a17d71d86aa8eb2c1dfdd87-gz\"",
+        "Last-Modified": "Mon, 22 Sep 2025 00:20:14 GMT",
+        "Content-Length": "180887"
+      }
+    },
+    "9N8J": {
+      "url": "https://files.rcsb.org/download/9N8J.cif.gz",
+      "sha256": "5b9fee2bd33b54865d7a5d6536ce849a89ea84767b8b8bb78e433186f94576ed",
+      "bytes": 275936,
+      "headers": {
+        "ETag": "\"1fa3fe27ec81029c3afc19b277d706ba-gz\"",
+        "Last-Modified": "Sat, 13 Jun 2026 03:35:17 GMT",
+        "Content-Length": "275936"
+      }
+    },
+    "9NFB": {
+      "url": "https://files.rcsb.org/download/9NFB.cif.gz",
+      "sha256": "c5beade36581e61a7cd184593b993a9c447a7d4de027bcc5bff61b45bf42ed4b",
+      "bytes": 141327,
+      "headers": {
+        "ETag": "\"f91a7f8c3ea8383ab9eeab9b3421d6b4-gz\"",
+        "Last-Modified": "Sat, 27 Dec 2025 04:22:52 GMT",
+        "Content-Length": "141327"
+      }
+    },
+    "9NFC": {
+      "url": "https://files.rcsb.org/download/9NFC.cif.gz",
+      "sha256": "95ef6ec22f9f96fe375c1062bf669d162d80c2baf90e70161a778e39a753ed28",
+      "bytes": 142067,
+      "headers": {
+        "ETag": "\"d109b22df1c451703100a96abbc42133-gz\"",
+        "Last-Modified": "Sat, 27 Dec 2025 04:22:52 GMT",
+        "Content-Length": "142067"
+      }
+    },
+    "9NJR": {
+      "url": "https://files.rcsb.org/download/9NJR.cif.gz",
+      "sha256": "5cf8244e4dd86338437568beefe52337ea6dd5c9dbf36797610764f03283cc2c",
+      "bytes": 314666,
+      "headers": {
+        "ETag": "\"7ae24a8e8165a883f1dfeff2b7e7050f-gz\"",
+        "Last-Modified": "Sat, 04 Oct 2025 06:02:20 GMT",
+        "Content-Length": "314666"
+      }
+    },
+    "9OJM": {
+      "url": "https://files.rcsb.org/download/9OJM.cif.gz",
+      "sha256": "6708ae8ddae50339accd6a31af1df429a9e277b641d9f5cd7fa65a2b4512117e",
+      "bytes": 1930016,
+      "headers": {
+        "ETag": "\"217db88ff7673198b043a28c35c5191f-gz\"",
+        "Last-Modified": "Sun, 09 Aug 2026 00:43:54 GMT",
+        "Content-Length": "1930016"
+      }
+    },
+    "9P11": {
+      "url": "https://files.rcsb.org/download/9P11.cif.gz",
+      "sha256": "204a38f021243ae94478ad8af2e338d814fbfe74999d14cac42d063bf65535f9",
+      "bytes": 673952,
+      "headers": {
+        "ETag": "\"2d12ac5978da19985b359040ccc85fad-gz\"",
+        "Last-Modified": "Sat, 13 Dec 2025 19:55:55 GMT",
+        "Content-Length": "673952"
+      }
+    },
+    "9QC6": {
+      "url": "https://files.rcsb.org/download/9QC6.cif.gz",
+      "sha256": "8d4455d8d16a6d0bfb2e1f29e63434306a272011dc569ae99ba82f6c2cda1152",
+      "bytes": 669158,
+      "headers": {
+        "ETag": "\"76ea93faac42b3e9804584c0b7307fc5-gz\"",
+        "Last-Modified": "Sat, 25 Jul 2026 05:06:02 GMT",
+        "Content-Length": "669158"
+      }
+    },
+    "9RT2": {
+      "url": "https://files.rcsb.org/download/9RT2.cif.gz",
+      "sha256": "1d0bffe0a1ff09cd049c53a9f838bd4d69a43ef21d005796d149fd1dbb46457e",
+      "bytes": 1302573,
+      "headers": {
+        "ETag": "\"49553c70cfd6a2026b93b8da934e5eb2-gz\"",
+        "Last-Modified": "Sat, 05 Sep 2026 15:34:08 GMT",
+        "Content-Length": "1302573"
+      }
+    },
+    "9SW6": {
+      "url": "https://files.rcsb.org/download/9SW6.cif.gz",
+      "sha256": "45289b0db224997d5d86c411ce0dbbd0d160cc7c95de5eef5b20001dc089953e",
+      "bytes": 2231575,
+      "headers": {
+        "ETag": "\"642dc37ad8e38af2c243a3b5553a2f94-gz\"",
+        "Last-Modified": "Sat, 03 Oct 2026 09:30:52 GMT",
+        "Content-Length": "2231575"
+      }
+    },
+    "9T17": {
+      "url": "https://files.rcsb.org/download/9T17.cif.gz",
+      "sha256": "4847a89879ddba51b92d6e3e6367adf4f9f8522191a865676278874d5c39d614",
+      "bytes": 251662,
+      "headers": {
+        "ETag": "\"9ee3630cf50873a62417b81de4eef130-gz\"",
+        "Last-Modified": "Sun, 17 May 2026 01:18:09 GMT",
+        "Content-Length": "251662"
+      }
+    },
+    "9UIQ": {
+      "url": "https://files.rcsb.org/download/9UIQ.cif.gz",
+      "sha256": "ae038990630e9e7425942de87c09f2b66f09ffa9e8154858959c4e4e028d677b",
+      "bytes": 464315,
+      "headers": {
+        "ETag": "\"6292e52a2c216976b77e8ad243a51638-gz\"",
+        "Last-Modified": "Sat, 21 Feb 2026 07:09:33 GMT",
+        "Content-Length": "464315"
+      }
+    },
+    "9VHE": {
+      "url": "https://files.rcsb.org/download/9VHE.cif.gz",
+      "sha256": "4904eb4be781218d17b589fe234d47364f1cf2249d083cb473eb51a4996cde49",
+      "bytes": 500864,
+      "headers": {
+        "ETag": "\"a33b678c89ca9ee44f85eb18328654a6-gz\"",
+        "Last-Modified": "Sat, 27 Dec 2025 04:24:08 GMT",
+        "Content-Length": "500864"
+      }
+    },
+    "9WJW": {
+      "url": "https://files.rcsb.org/download/9WJW.cif.gz",
+      "sha256": "816376855fe93821b8baa6d2e7f110522501cb93a5b9b251041697e319243989",
+      "bytes": 323002,
+      "headers": {
+        "ETag": "\"6616edaa961277d8e8f251434061c547-gz\"",
+        "Last-Modified": "Sat, 07 Mar 2026 07:42:09 GMT",
+        "Content-Length": "323002"
+      }
+    }
+  },
+  "decision": "Positive net charge meets the effect-size, uncertainty and adjusted-direction criteria for an accuracy decline in this cohort.",
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260716
+}

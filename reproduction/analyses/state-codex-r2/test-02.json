@@ -21,7 +21,7 @@
   },
   "axis_levels": {
     "definition": "Distance from the training cell states on two basal reference atlases.",
-    "calculation": "Source-derived features, frozen levels and cohort eligibility are computed in notebook stages3–4.",
+    "calculation": "Source-derived features, frozen levels and cohort eligibility are computed in notebook stages3\u20134.",
     "code": "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.py"
   },
   "model_evaluation": {
@@ -301,5 +301,83 @@
       }
     ],
     "policy": "reconstructed/state-codex-r2/methods/METHODS.md"
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-codex-r2/test-02.ipynb",
+    "html": "inline/state/state-codex-r2/test-02.html",
+    "execution_evidence": "inline/state/state-codex-r2/test-02.execution.json",
+    "published_notebook_sha256": "325137c8ccc1097340580afc569d68a4a2a926474c1cf17811397938e1d0ca4f",
+    "published_html_sha256": "7559017fce50c4e67cf3f132ff68e6860fff8b8545a59cb0ea97f5150ff65bfc",
+    "code_cells": 12,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source and acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 9,
+        "code_cells": [
+          11
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results and released scores",
+        "markdown_cell": 12,
+        "code_cells": [
+          14
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 15,
+        "code_cells": [
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 19,
+        "code_cells": [
+          20
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        20
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-codex-r2/test-02.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

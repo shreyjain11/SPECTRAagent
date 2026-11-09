@@ -1,0 +1,11 @@
+{
+  "analysis_id": "esmfold2-kimi-r1/test-03",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "input_archive_url": "https://github.com/shreyjain11/SPECTRAagent/releases/download/notebook-inputs-2026-11-08-v1/esmfold2-inputs.zip",
+  "input_archive_sha256": "c0c76766965d90de4128d0d3e11abadcf39f4acac8cff64c374657ee77172b24",
+  "targets": 320,
+  "new_inference_executed": false,
+  "calculation_scope": "full-sequence low-complexity calculation, coordinate scoring, per-target template-score join, curves, controls and decision",
+  "decision": "Keep the low-complexity axis exploratory: at least one level contains fewer than40 targets."
+}

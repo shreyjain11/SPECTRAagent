@@ -378,7 +378,7 @@
           "originals/run/artifacts/tum_expansion/analysis.json",
           "originals/scripts/report_tum_expansion.py"
         ],
-        "uncertainty": "Original Wilson intervals and original pooled levels1–7 versus8–10 contrast; fresh numerical results separated from hardcoded historical report prose."
+        "uncertainty": "Original Wilson intervals and original pooled levels1\u20137 versus8\u201310 contrast; fresh numerical results separated from hardcoded historical report prose."
       },
       "decision": {
         "text": "Retained original localized finding; 1,800-image confirmation and 4,000-image expansion. Original limit: weak for independent-site/deployment generalization.",
@@ -397,5 +397,83 @@
         "expansion_native_line": 1834
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/conch/conch-primary/test-04.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/conch/conch-primary/test-04.ipynb",
+    "html": "inline/conch/conch-primary/test-04.html",
+    "execution_evidence": "inline/conch/conch-primary/test-04.execution.json",
+    "published_notebook_sha256": "8e1c93c4de17dfe1c65fb933d5135b45030d9b1dc3b2d6c6cca4a53c3d2361f6",
+    "published_html_sha256": "887201f6b7b4d00e84d376f2306cd3a0c9aa6079c57af99519748340d4544484",
+    "code_cells": 12,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          6,
+          7
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 8,
+        "code_cells": [
+          9,
+          10
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 11,
+        "code_cells": [
+          12,
+          13
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 14,
+        "code_cells": [
+          15,
+          16
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 17,
+        "code_cells": [
+          18
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        18
+      ]
+    },
+    "status": "executed_inline"
   }
 }

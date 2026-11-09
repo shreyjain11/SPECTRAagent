@@ -1,0 +1,40 @@
+{
+  "checks_completed": [
+    "full143_record_validator",
+    "143_preferred_routing_and_pending_refusal_checks",
+    "143_explicit_supporting_and_public_bundle_routes",
+    "guide_relative_links_exist",
+    "new_orchestration_python_syntax",
+    "no_unlinked_notebook_artifacts",
+    "preferred_runner_executed_on_exxact05_with_virtual_environment",
+    "npm_run_check",
+    "independent_all_notebook_absolute_path_scan",
+    "411_documentation_links_resolve",
+    "download_and_model_cache_gitignore_preserves_shipped_manifests",
+    "no_credential_patterns_in_published_notebook_sources_and_outputs"
+  ],
+  "counts": {
+    "executed_inline": 124,
+    "pending_execution": 18,
+    "documented_unperformed_candidate": 1
+  },
+  "notebooks": 125,
+  "package_bytes": 193944610,
+  "execution_evidence_host": "exxact05",
+  "runner_smoke": {
+    "host": "exxact05.broadinstitute.org",
+    "completed": true,
+    "analysis_id": "esmfold2-codex-r1/test-04",
+    "code_cells": 6,
+    "executed_cells": 6,
+    "errors": 0,
+    "source_notebook_sha256": "edb1b226754fc61b675d369ae85d3f6f19b94ce0af1b688d7e225fbc9253eb75",
+    "runner_sha256": "6bbc2fa04d75a773656331f7508c330512d685291d5bb5d53ec1dec291970b57",
+    "elapsed_seconds": 4.623,
+    "interpreter_symlink_preserved": true
+  },
+  "packaging_copies_verified_executions": true,
+  "execution_index": "index.json",
+  "primary_notebooks_verified": 44,
+  "updated_utc": "2026-11-09T23:07:11.712276+00:00"
+}

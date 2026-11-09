@@ -1,0 +1,45 @@
+{
+  "axis": "Protein length",
+  "sources": [
+    {
+      "path": "AlphaMissense_hg38.tsv.gz",
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+      "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+      "bytes": 642961469
+    },
+    {
+      "path": "clinvar_20260720.vcf.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260720.vcf.gz",
+      "sha256": "ecedd212660c7e04c94ffdf8d516ec6881283ab501f4b7700b87e82c65e4551b",
+      "bytes": 192806479
+    },
+    {
+      "path": "uniprot_reviewed_human_20261109.fasta.gz",
+      "url": "https://rest.uniprot.org/uniprotkb/stream?query=%28proteome%3AUP000005640%29%20AND%20%28reviewed%3Atrue%29&format=fasta&compressed=true",
+      "sha256": "97e06262e2679f9541d1b10245f480f1cd82e00a79e2c99db032e6669dd5b48d",
+      "bytes": 7505116
+    }
+  ],
+  "variants": 164792,
+  "levels": [
+    "L1: highest quartile",
+    "L2",
+    "L3",
+    "L4: lowest quartile"
+  ],
+  "bootstrap_replicates": 2000,
+  "bootstrap_unit": "variant; gene for within-gene summary",
+  "seed": 20260722,
+  "decision": "Do not retain this axis as a supported directional degradation claim: the AlphaMissense endpoint contrast is not positive with a confidence interval excluding zero.",
+  "host": "exxact05.broadinstitute.org",
+  "elapsed_seconds": 133.24641180038452,
+  "outputs": {
+    "composition.csv": "29dac250f19e19a39adca5892215aa286586520b335ae908f0ba64243d3fa79b",
+    "contrasts.csv": "448eddf708ab2298a213b4a25cf92cefc7ab6911072f0e9be00596895d303ff2",
+    "controls.csv": "b6746784ceb50193af0130ceca9b381417916c2f4943c06c20d36382d84e5115",
+    "curves.csv": "db64cef258c7949d00c0208369ee4858454a084ab438688dc3803392768164bd",
+    "variants.csv": "986d76178a788700eaca637cd873895b2dfcb93c21218be9588fa8241f10c454",
+    "within_gene.csv": "0903509357b5b3811a66bd9f3c1acab9f22d33784a357f94ceaeb0cbc134f927",
+    "within_gene_summary.csv": "4e27ea28ba2acea8eddc5701e042ddf506e668c07417123dd21541b320455221"
+  }
+}

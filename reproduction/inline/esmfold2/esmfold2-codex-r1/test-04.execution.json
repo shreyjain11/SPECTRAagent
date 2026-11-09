@@ -1,0 +1,93 @@
+{
+  "analysis_id": "esmfold2-codex-r1/test-04",
+  "notebook": "inline/esmfold2/esmfold2-codex-r1/test-04.ipynb",
+  "html": "inline/esmfold2/esmfold2-codex-r1/test-04.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 6,
+  "executed_cells": 6,
+  "errors": 0,
+  "notebook_sha256": "edb1b226754fc61b675d369ae85d3f6f19b94ce0af1b688d7e225fbc9253eb75",
+  "html_sha256": "4782bc4a31fcd1501e9ac7d7d363cdcd38c22e8172838088dbc9adaa5df1f1c2",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source/acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 3,
+      "code_cells": [
+        4
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 5,
+      "code_cells": [
+        6
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 7,
+      "code_cells": [
+        8
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 9,
+      "code_cells": [
+        10
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 11,
+      "code_cells": [
+        12
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "de66420306a0d7795f9c2db59aa493ddc29561a86add696ed8ed3484e21a370c",
+  "execution_evidence_entry_id": "esmfold2-codex-r1/test-04",
+  "embedded_figures": 0,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      12
+    ]
+  },
+  "input_manifests": [
+    {
+      "path": "inline/esmfold2/esmfold2-codex-r1/inputs/investigation_record.md",
+      "sha256": "3e83e4ccd4052f695e59da095a81d3eb532159af254de47b4de614242410107c",
+      "bytes": 13476
+    }
+  ],
+  "elapsed_seconds": 4.132,
+  "calculation_evidence": [
+    {
+      "path": "inline/esmfold2/esmfold2-codex-r1/test-04-evidence/CALCULATION_RECEIPT.json",
+      "sha256": "313aab7a191e8e96191fa1fc677c0299328865a4397c966df461fc57334ad4cd"
+    }
+  ]
+}

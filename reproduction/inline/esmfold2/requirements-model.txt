@@ -1,0 +1,31 @@
+# Python3.11; versions used by the saved execution environment.
+# Install torch from https://download.pytorch.org/whl/cu124 before this file.
+torch==2.6.0
+transformers==5.22.2
+numpy==2.4.6
+pandas==3.0.3
+scipy==1.16.2
+biopython==1.87
+gemmi==0.7.5
+matplotlib==3.10.8
+huggingface-hub==1.31.0
+safetensors==0.8.0
+ipykernel==7.4.0
+tmtools==0.3.0
+nbformat==5.10.4
+nbclient==0.11.0
+nbconvert==7.17.2
+
+# Dependencies used by inline source-feature predictors and their builds.
+pytorch-lightning==2.5.5
+torchmetrics==1.8.2
+einops==0.8.1
+scikit-learn==1.7.2
+accelerate==1.12.0
+requests==2.32.5
+tqdm==4.67.1
+setuptools==65.5.0
+wheel==0.45.1
+packaging==25.0
+Cython==3.1.3
+urllib3==2.5.0

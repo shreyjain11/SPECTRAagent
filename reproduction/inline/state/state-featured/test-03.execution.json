@@ -1,0 +1,91 @@
+{
+  "analysis_id": "state-featured/test-03",
+  "notebook": "inline/state/state-featured/test-03.ipynb",
+  "html": "inline/state/state-featured/test-03.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 13,
+  "executed_cells": 13,
+  "errors": 0,
+  "notebook_sha256": "b534c75eb8f4c8c18e0cf9ffd06c9574f306019625262ede9245c39232d35978",
+  "html_sha256": "9c5cb2a0ff8753ae2f97746c0f0fade33db87f0a44d18f7fbee9bac6bfa2744c",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source/acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 5,
+      "code_cells": [
+        6,
+        7
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 8,
+      "code_cells": [
+        10,
+        12
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 13,
+      "code_cells": [
+        14
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 15,
+      "code_cells": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 19,
+      "code_cells": [
+        20,
+        21
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "4680a2fae8d977bd405c101f00f7a84903ccb7f678a8a32acc864708e7caceba",
+  "execution_evidence_entry_id": "state-featured/test-03",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      20,
+      21
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 13.481,
+  "python": "3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]",
+  "calculation_evidence": []
+}

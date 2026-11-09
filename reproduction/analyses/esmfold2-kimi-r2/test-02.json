@@ -185,5 +185,80 @@
     "review": "traceability_review.json",
     "record_id": "esmfold2-kimi-r2/test-02",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/esmfold2/esmfold2-kimi-r2/test-02.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/esmfold2/esmfold2-kimi-r2/test-02.ipynb",
+    "html": "inline/esmfold2/esmfold2-kimi-r2/test-02.html",
+    "execution_evidence": "inline/esmfold2/esmfold2-kimi-r2/test-02.execution.json",
+    "published_notebook_sha256": "bd8d05b98a48f262d3910383a587759e1d91a07b37e200846ef25f85d6d5a8cc",
+    "published_html_sha256": "833457271213c6d97d4c8c11becd01d500db1d9282fce8614802d0d7057f3074",
+    "code_cells": 8,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 3,
+        "code_cells": [
+          4
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 5,
+        "code_cells": [
+          6
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 7,
+        "code_cells": [
+          8
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 9,
+        "code_cells": [
+          10,
+          11
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 12,
+        "code_cells": [
+          13,
+          14
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        13,
+        14
+      ]
+    },
+    "status": "executed_inline"
   }
 }

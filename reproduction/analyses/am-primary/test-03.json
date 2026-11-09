@@ -1259,5 +1259,81 @@
         ]
       }
     }
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/alphamissense/am-primary/axis-3.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/alphamissense/am-primary/axis-3.ipynb",
+    "html": "inline/alphamissense/am-primary/axis-3.html",
+    "execution_evidence": "inline/alphamissense/am-primary/axis-3.execution.json",
+    "published_notebook_sha256": "2104659d32c03ca5a1238b8297cee318fe0dc200ec247f5218c9cf0422875e1f",
+    "published_html_sha256": "c29061ca8acd006a1271a1612e216391845ae2000cac8b9f765c985bdc567f5a",
+    "code_cells": 10,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data acquisition",
+        "markdown_cell": 0,
+        "code_cells": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Raw processing",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis and levels",
+        "markdown_cell": 8,
+        "code_cells": [
+          9
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Released model scores and reference construction",
+        "markdown_cell": 10,
+        "code_cells": [
+          11
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 12,
+        "code_cells": [
+          13
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. Result and decision",
+        "markdown_cell": 14,
+        "code_cells": [
+          15
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        15
+      ]
+    },
+    "status": "executed_inline"
   }
 }

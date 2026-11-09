@@ -98,5 +98,81 @@
     "review": "traceability_review.json",
     "record_id": "am-gpt-r2/test-01",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/alphamissense/am-gpt-r2/axis-1.ipynb",
+    "html": "inline/alphamissense/am-gpt-r2/axis-1.html",
+    "execution_evidence": "inline/alphamissense/am-gpt-r2/axis-1.execution.json",
+    "published_notebook_sha256": "37e30ece37c25d406991e95a5421ad6afdc0bff1888b5ab8fb9a7d544ba446f7",
+    "published_html_sha256": "0288bfa7a2dd80ebf64a959bf26f9984fdcdb0bd38fe6c853910070be79a48c8",
+    "code_cells": 10,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5,
+          6
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 7,
+        "code_cells": [
+          8,
+          9
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 10,
+        "code_cells": [
+          11,
+          12
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 13,
+        "code_cells": [
+          14
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 15,
+        "code_cells": [
+          16
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        16
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/alphamissense/am-gpt-r2/axis-1.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

@@ -1,0 +1,3 @@
+# Preserve the exact rendered outputs bound by execution hashes, including
+# pandas' preformatted table spacing.
+reproduction/inline/**/*.html whitespace=-blank-at-eol linguist-generated=true

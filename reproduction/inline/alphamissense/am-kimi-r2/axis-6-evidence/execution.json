@@ -1,0 +1,52 @@
+{
+  "axis": "CpG mutational context",
+  "sources": [
+    {
+      "path": "AlphaMissense_hg38.tsv.gz",
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+      "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+      "bytes": 642961469
+    },
+    {
+      "path": "clinvar_20260720.vcf.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260720.vcf.gz",
+      "sha256": "ecedd212660c7e04c94ffdf8d516ec6881283ab501f4b7700b87e82c65e4551b",
+      "bytes": 192806479
+    },
+    {
+      "path": "gencode.v45.basic.annotation.gtf.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_45/gencode.v45.basic.annotation.gtf.gz",
+      "sha256": "c6e289b65241fe7a08bf655e4aced3ec8480d166cf83febc9d133db1a04034bb",
+      "bytes": 29623361
+    },
+    {
+      "path": "hg38.phyloP100way.bw",
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phyloP100way/hg38.phyloP100way.bw",
+      "sha256": "445fa3473c94fc209a6854692143371a57c05a387241e3de55933032ac024973",
+      "bytes": 9870053206
+    },
+    {
+      "path": "hg38.fa.gz",
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz",
+      "sha256": "c1dd87068c254eb53d944f71e51d1311964fce8de24d6fc0effc9c61c01527d4",
+      "bytes": 983659424
+    }
+  ],
+  "variants": 209344,
+  "bootstrap_replicates": 2000,
+  "bootstrap_unit": "gene",
+  "seed": 20260722,
+  "decision": "Do not retain a supported within-gene directional effect: the endpoint contrast interval includes zero. A pooled association alone is insufficient. The pooled and within-gene point estimates have opposite signs, showing sensitivity to gene composition.",
+  "host": "exxact05.broadinstitute.org",
+  "elapsed_seconds": 257.54819345474243,
+  "outputs": {
+    "paired_summary.csv": "4c7d2a79dc1a8cba9148384960ddf1d55ec7c7f844f25d8e42caeeb7683d08b9",
+    "paired_genes.csv": "cc7a802f719eae0a1f895c5869f2dd0988e3789ca6535b8aca37ac021e5d1cd9",
+    "composition.csv": "c40fbe90119fd5d48a6b7cf2a9357afb69465a32726e2a7360abe74c3a7b6910",
+    "variants.csv.gz": "266acf9a63b60d6ec1491b2318e8030aa30e954feb356fd559552f469f43ec47",
+    "curves.csv": "4f34f5825a2c8bf1802e3c78d30cab0b1b27778a5fb452cb685c5ea2f74aea00",
+    "contrasts.csv": "dbb2a93f40d6698015f75b04a00a9ef651a63698120a11261c93a07e8b6baa9a",
+    "all_levels_same_genes.csv": "5ce602ac5a9958c2da6fc8a9150af60354e5e12c77e9bb48da19f271bb83f3ca",
+    "controls.csv": "cddc15bb095935d553c49bdd32b6f93a55dcdbc8e4294b8afb21ab16820a4cf9"
+  }
+}

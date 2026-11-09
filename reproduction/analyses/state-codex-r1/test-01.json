@@ -22,7 +22,7 @@
   },
   "axis_levels": {
     "definition": "Median standardized Euclidean distance to five nearest training contexts across 2,000 genes.",
-    "calculation": "Input-side features rebuilt from original sources; levels and completeness/compound partitions computed from individual rows. See notebook stages3–4 and method policy.",
+    "calculation": "Input-side features rebuilt from original sources; levels and completeness/compound partitions computed from individual rows. See notebook stages3\u20134 and method policy.",
     "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py"
   },
   "model_evaluation": {
@@ -45,7 +45,7 @@
   },
   "reconstruction_notes": [
     "Actual source-to-condition reconstruction executed on exxact05: public source hashes, input-side features, original released-DE scoring, eligibility, regressions, reference contrasts, curves and controls are linked.",
-    "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+    "Surviving original scripts01\u201304 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
     "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
     "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility.",
     "Original neural inference is not repeated: this investigation consumed official released predictions, whose full-feature errors are recomputed from the original individual DE rows."
@@ -108,7 +108,7 @@
     "source": "historical_decisions.json",
     "record_id": "state-codex-r1/test-01",
     "disposition": "rejected",
-    "result": "The frozen decline failed. RMSE slopes were −0.032 raw and −0.150 adjusted, indicating improvement as distance increased. The five contexts gave a coarse ordering test.",
+    "result": "The frozen decline failed. RMSE slopes were \u22120.032 raw and \u22120.150 adjusted, indicating improvement as distance increased. The five contexts gave a coarse ordering test.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -282,5 +282,92 @@
     "pipeline_execution_evidence": "reconstructed/state-codex-r1/execution_evidence/01-state-codex-r1-distance_pipeline.json",
     "analysis_execution_evidence": "reconstructed/state-codex-r1/execution_evidence/01-state-codex-r1-distance_analysis.json",
     "policy": "reconstructed/state-codex-r1/computed/analysis/reconstruction_policy.json"
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-codex-r1/test-01.ipynb",
+    "html": "inline/state/state-codex-r1/test-01.html",
+    "execution_evidence": "inline/state/state-codex-r1/test-01.execution.json",
+    "published_notebook_sha256": "d70837e634ee255d2afad139afc4e6b84a5b1ed10a1e780c46ed8c371ae693e6",
+    "published_html_sha256": "db80cc1740017e94316b16cfc57cd00f32ec3bc3066eecdc866947b679c49a5a",
+    "code_cells": 20,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          6,
+          7,
+          8,
+          10
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 11,
+        "code_cells": [
+          12,
+          13,
+          15,
+          17
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 18,
+        "code_cells": [
+          19,
+          20
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 21,
+        "code_cells": [
+          22,
+          23,
+          25,
+          27,
+          29
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 30,
+        "code_cells": [
+          31,
+          33
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        31,
+        33
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-codex-r1/test-01.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

@@ -152,7 +152,7 @@
     "source": "historical_decisions.json",
     "record_id": "state-kimi-r2/test-02",
     "disposition": "rejected",
-    "result": "The discovery gradient failed. Among seen perturbations K562 ρ = −0.083.",
+    "result": "The discovery gradient failed. Among seen perturbations K562 \u03c1 = \u22120.083.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -160,5 +160,87 @@
     "review": "traceability_review.json",
     "record_id": "state-kimi-r2/test-02",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-kimi-r2/test-02.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-kimi-r2/test-02.ipynb",
+    "html": "inline/state/state-kimi-r2/test-02.html",
+    "execution_evidence": "inline/state/state-kimi-r2/test-02.execution.json",
+    "published_notebook_sha256": "fefc3f43d38ef24e6a0b32c3c054aacaa615c009c89b4e32f1e92f1acb480831",
+    "published_html_sha256": "a907725c6649a80623a3a9336362e0d2ad3f84a2c191c5006c2f00ca7aaa9811",
+    "code_cells": 15,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source and acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model evaluation and reference scores",
+        "markdown_cell": 8,
+        "code_cells": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 14,
+        "code_cells": [
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 19,
+        "code_cells": [
+          20,
+          21
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        20,
+        21
+      ]
+    },
+    "status": "executed_inline"
   }
 }

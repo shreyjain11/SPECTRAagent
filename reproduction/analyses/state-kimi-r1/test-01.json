@@ -2,7 +2,7 @@
   "id": "state-kimi-r1/test-01",
   "investigation": "state-kimi-r1",
   "model": "STATE",
-  "axis": "Gene–cell-line pair exposure",
+  "axis": "Gene\u2013cell-line pair exposure",
   "dataset_split": {
     "description": "Exact gene/context units and cell counts verified; the individual cell-ID list is missing.",
     "input_inventory": "inputs/state.json",
@@ -223,7 +223,7 @@
     }
   },
   "axis_levels": {
-    "definition": "Compare an exact gene–cell-line pair included in training with a pair held out of the training split.",
+    "definition": "Compare an exact gene\u2013cell-line pair included in training with a pair held out of the training split.",
     "calculation": "Original per-record axis calculation and membership checked.",
     "code": "materials/state/notebooks/state-kimi-r1/test-01.py"
   },
@@ -303,7 +303,7 @@
     "source": "historical_decisions.json",
     "record_id": "state-kimi-r1/test-01",
     "disposition": "accepted",
-    "result": "Across three held-out confirmation contexts the pooled unseen-minus-seen difference in expression-change Pearson r was −0.118. No interval was published for the pooled estimate.",
+    "result": "Across three held-out confirmation contexts the pooled unseen-minus-seen difference in expression-change Pearson r was \u22120.118. No interval was published for the pooled estimate.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -311,5 +311,83 @@
     "review": "traceability_review.json",
     "record_id": "state-kimi-r1/test-01",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-kimi-r1/test-01.ipynb",
+    "html": "inline/state/state-kimi-r1/test-01.html",
+    "execution_evidence": "inline/state/state-kimi-r1/test-01.execution.json",
+    "published_notebook_sha256": "16f5d34a7433d9d2ef9e1866af881299157d0579929c9cf090c55377ebe7ae57",
+    "published_html_sha256": "ff185ebbd5b8e22e6c225d09201f1f166fc7624b42ff1c72fe28204aa41523e4",
+    "code_cells": 11,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source and acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results and reference scores",
+        "markdown_cell": 8,
+        "code_cells": [
+          9
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 10,
+        "code_cells": [
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 15,
+        "code_cells": [
+          16,
+          17
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        16,
+        17
+      ]
+    },
+    "status": "executed_inline"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-kimi-r1/test-01.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
   }
 }

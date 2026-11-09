@@ -21,7 +21,7 @@
   },
   "axis_levels": {
     "definition": "Secondary prespecified tests on the same Tahoe prospective aggregation.",
-    "calculation": "Source-derived features, frozen levels and cohort eligibility are computed in notebook stages3–4.",
+    "calculation": "Source-derived features, frozen levels and cohort eligibility are computed in notebook stages3\u20134.",
     "code": "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.py"
   },
   "model_evaluation": {
@@ -291,5 +291,79 @@
       }
     ],
     "policy": "reconstructed/state-codex-r2/methods/METHODS.md"
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-codex-r2/test-04.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-codex-r2/test-04.ipynb",
+    "html": "inline/state/state-codex-r2/test-04.html",
+    "execution_evidence": "inline/state/state-codex-r2/test-04.execution.json",
+    "published_notebook_sha256": "22aecc66c6452edb36c8f3c5618faa8284612fc452dd4e4323aefc7f1f9beb34",
+    "published_html_sha256": "669b2c04816872d0b11097daab1a20aa3910225907f63eb9f7147db13a91eac3",
+    "code_cells": 9,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source and acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 5,
+        "code_cells": [
+          7,
+          8
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 9,
+        "code_cells": [
+          10,
+          12
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results and released scores",
+        "markdown_cell": 13,
+        "code_cells": []
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 15,
+        "code_cells": [
+          16
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 17,
+        "code_cells": [
+          18
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        18
+      ]
+    },
+    "status": "executed_inline"
   }
 }

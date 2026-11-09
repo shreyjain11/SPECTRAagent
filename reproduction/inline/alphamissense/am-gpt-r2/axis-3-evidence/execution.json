@@ -1,0 +1,65 @@
+{
+  "sources": [
+    {
+      "path": "ensembl116_gene_info.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22entrezgene_id%22/%3E%3CAttribute%20name%3D%22hgnc_symbol%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "405fe9469363e4c896607f1f4b460a0a2f5aafcf16bc286946a6e3836bf66a46",
+      "bytes": 2236960
+    },
+    {
+      "path": "ensembl116_ortho_ptroglodytes.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22ptroglodytes_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "1826b867b03b6c9bb16f6668d9bd45e3d33be6d6b16cc47f5a5ecba7547c3ed7",
+      "bytes": 1954106
+    },
+    {
+      "path": "ensembl116_ortho_mmusculus.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22mmusculus_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "f4d68b70840cee47c4351a0016144484f7f960872c39dd681cf2f67bfc3abb7e",
+      "bytes": 2044064
+    },
+    {
+      "path": "ensembl116_ortho_ggallus.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22ggallus_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "de81fc669ac7abbe98967cfc78926df2f99b7c0159807ae0af09b1f864c26b2c",
+      "bytes": 1836547
+    },
+    {
+      "path": "ensembl116_ortho_drerio.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22drerio_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "e03833c898213b55a0b2fbc4d42c6e595ab469e444e76e6194c881eeecb04df8",
+      "bytes": 1956494
+    },
+    {
+      "path": "ensembl116_ortho_dmelanogaster.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22dmelanogaster_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "2f6d0f8557be182c9bf59f335d3a423c7696b7d16ae20dea6e563a7328c4d57d",
+      "bytes": 1888252
+    },
+    {
+      "path": "ensembl116_ortho_scerevisiae.tsv",
+      "url": "https://www.ensembl.org/biomart/martservice?query=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3C%21DOCTYPE%20Query%3E%3CQuery%20virtualSchemaName%3D%22default%22%20formatter%3D%22TSV%22%20header%3D%221%22%20uniqueRows%3D%221%22%20count%3D%22%22%20datasetConfigVersion%3D%220.6%22%3E%3CDataset%20name%3D%22hsapiens_gene_ensembl%22%20interface%3D%22default%22%3E%3CAttribute%20name%3D%22ensembl_gene_id%22/%3E%3CAttribute%20name%3D%22scerevisiae_homolog_ensembl_gene%22/%3E%3C/Dataset%3E%3C/Query%3E",
+      "release": 116,
+      "sha256": "2ebf96509103a64536b51aecb002443612d910aa6347156b2352733e8715d65f",
+      "bytes": 1568049
+    }
+  ],
+  "decision": "Defer target scoring: ortholog presence across six sampled species does not uniquely define gene age. Specify a phylogenetic ontology and absence policy before constructing age levels. This is not evidence that AlphaMissense performance is independent of gene age.",
+  "model_evaluation_performed": false,
+  "controls": {
+    "age_identifiable_from_presence_alone": false,
+    "absence_equivalent_to_gene_origin": false,
+    "ontology_and_tree_required": true
+  },
+  "host": "exxact05.broadinstitute.org",
+  "elapsed_seconds": 1.7078471183776855,
+  "outputs": {
+    "diagnostic_levels.csv": "2ed5d2fb4351a7679d12bd71247964183aac6d7812a554353c081427552ea7d5"
+  }
+}

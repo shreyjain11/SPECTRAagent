@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "path": "AlphaMissense_hg38.tsv.gz",
+      "url": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+      "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+      "bytes": 642961469
+    },
+    {
+      "path": "clinvar_20260606.vcf.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260606.vcf.gz",
+      "sha256": "c5bb136e1ac476d390d8110905e8224126ce7d43d5eae0e0bfe689fbe96b8726",
+      "bytes": 196569024
+    },
+    {
+      "path": "am-original-uniref-hits-20260606.m8.gz",
+      "url": "https://github.com/yashaektefaie/SPECTRAagent/releases/download/primary-reproduction-2026-11-08/am-original-uniref-hits-20260606.m8.gz",
+      "sha256": "265a1872bed445cf32c38798738bb988fd044dafdc4d5fb6fb5fb248fdca7e01",
+      "bytes": 183094126
+    }
+  ],
+  "decision": "Do not retain the proposed lower-support degradation claim: the complete calculated curve and endpoint interval do not jointly support the specified direction.",
+  "host": "exxact05.broadinstitute.org",
+  "rows": 194379,
+  "bootstrap_replicates": 500,
+  "bootstrap_unit": "uniprot",
+  "outputs": {
+    "composition.csv": "d3baddc20b89662fe3a14a359914c1dba5b95a0b3f08f957aa3041095d45ac28",
+    "variants.csv.gz": "bc3e762220f71fcac39e72045d1bac0cbaec1278feaf798bee46745ec4579b00",
+    "curves.csv": "9911e49ff49ae97f43bca60205aabc5ce94408d9088a865e7bf461ebbdef71ea",
+    "contrasts.csv": "3234ef21eedb7f401604b5a22c6b69898ff23699dabcbdbf7d3f4de436cbbc94",
+    "controls.csv": "39ee47554a17dceaf313bcba77ee451538548bde606c76ce1b26ff7cbcd921da"
+  }
+}

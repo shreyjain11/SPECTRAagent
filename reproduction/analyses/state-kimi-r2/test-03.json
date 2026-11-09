@@ -160,5 +160,88 @@
     "review": "traceability_review.json",
     "record_id": "state-kimi-r2/test-03",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "notebook": "inline/state/state-kimi-r2/test-03.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/state/state-kimi-r2/test-03.ipynb",
+    "html": "inline/state/state-kimi-r2/test-03.html",
+    "execution_evidence": "inline/state/state-kimi-r2/test-03.execution.json",
+    "published_notebook_sha256": "876112fbc7cbeedab51e6afdfa3bfad8be77c01bf2cd09ccd47fd581f1a5f38d",
+    "published_html_sha256": "140c30cabf274a87fbb1470ac498e53d2904a2a0523c75dcea50c133bc2c8622",
+    "code_cells": 16,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source and acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model evaluation and reference scores",
+        "markdown_cell": 8,
+        "code_cells": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 14,
+        "code_cells": [
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 20,
+        "code_cells": [
+          21,
+          22
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        21,
+        22
+      ]
+    },
+    "status": "executed_inline"
   }
 }

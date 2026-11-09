@@ -82,7 +82,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-opus-r1/test-03",
     "disposition": "rejected",
-    "result": "A discovery association of ρ = −0.139 did not replicate (confirmation ρ = −0.032, P = 0.52).",
+    "result": "A discovery association of \u03c1 = \u22120.139 did not replicate (confirmation \u03c1 = \u22120.032, P = 0.52).",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -90,5 +90,9 @@
     "review": "traceability_review.json",
     "record_id": "esmfold2-opus-r1/test-03",
     "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+  },
+  "preferred_route": "inline_implementation",
+  "preferred_result": {
+    "description": "Inline notebook execution is pending."
   }
 }
