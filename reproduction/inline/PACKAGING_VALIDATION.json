@@ -9,17 +9,17 @@
     "preferred_runner_executed_on_exxact05_with_virtual_environment",
     "npm_run_check",
     "independent_all_notebook_absolute_path_scan",
-    "411_documentation_links_resolve",
     "download_and_model_cache_gitignore_preserves_shipped_manifests",
-    "no_credential_patterns_in_published_notebook_sources_and_outputs"
+    "no_credential_patterns_in_published_notebook_sources_and_outputs",
+    "401_documentation_links_resolve"
   ],
   "counts": {
-    "executed_inline": 124,
-    "pending_execution": 18,
+    "executed_inline": 127,
+    "pending_execution": 15,
     "documented_unperformed_candidate": 1
   },
-  "notebooks": 125,
-  "package_bytes": 193944610,
+  "notebooks": 128,
+  "package_bytes": 196853835,
   "execution_evidence_host": "exxact05",
   "runner_smoke": {
     "host": "exxact05.broadinstitute.org",
@@ -36,5 +36,21 @@
   "packaging_copies_verified_executions": true,
   "execution_index": "index.json",
   "primary_notebooks_verified": 44,
-  "updated_utc": "2026-11-09T23:07:11.712276+00:00"
+  "updated_utc": "2026-11-09T23:55:07.852705+00:00",
+  "last_update_checks": {
+    "registry_records": 143,
+    "preferred_notebook_receipts": 128,
+    "pending_routes_refused": 15,
+    "explicit_supporting_and_public_bundle_routes": 143,
+    "local_documentation_links": 401,
+    "runner_and_git_configuration_unchanged": [
+      "reproduction/inline/execute_notebook.py",
+      "reproduction/run_notebooks.py",
+      ".gitignore",
+      ".gitattributes"
+    ],
+    "new_notebook_token_pattern_scan": "passed",
+    "scientific_execution": "existing verified exxact05 receipts; packaging does not rerun inference",
+    "npm_run_check": "passed"
+  }
 }

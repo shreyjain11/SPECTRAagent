@@ -2,8 +2,8 @@
   "schema_version": 1,
   "scope": "Six-section inline analysis workflows",
   "counts": {
-    "executed_inline": 124,
-    "pending_execution": 18,
+    "executed_inline": 127,
+    "pending_execution": 15,
     "documented_unperformed_candidate": 1
   },
   "analyses": [
@@ -164,10 +164,10 @@
       "id": "esmfold2-codex-r2/test-02",
       "model": "ESMFold2",
       "axis": "Internal sequence repeats",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-codex-r2/test-02.ipynb",
+      "html": "inline/esmfold2/esmfold2-codex-r2/test-02.html",
+      "validation": "inline/esmfold2/esmfold2-codex-r2/test-02.execution.json"
     },
     {
       "id": "esmfold2-codex-r2/test-03",
@@ -821,19 +821,19 @@
       "id": "conch-gpt-r1/test-06",
       "model": "CONCH",
       "axis": "JPEG corruption",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r1/test-06.ipynb",
+      "html": "inline/conch/conch-gpt-r1/test-06.html",
+      "validation": "inline/conch/conch-gpt-r1/test-06.execution.json"
     },
     {
       "id": "conch-gpt-r1/test-07",
       "model": "CONCH",
       "axis": "Kather-2016 external transport panel",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/conch/conch-gpt-r1/test-07.ipynb",
+      "html": "inline/conch/conch-gpt-r1/test-07.html",
+      "validation": "inline/conch/conch-gpt-r1/test-07.execution.json"
     },
     {
       "id": "conch-gpt-r2/test-01",

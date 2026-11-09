@@ -110,6 +110,78 @@
   },
   "preferred_route": "inline_implementation",
   "preferred_result": {
-    "description": "Inline notebook execution is pending."
+    "notebook": "inline/conch/conch-gpt-r1/test-06.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/conch/conch-gpt-r1/test-06.ipynb",
+    "html": "inline/conch/conch-gpt-r1/test-06.html",
+    "execution_evidence": "inline/conch/conch-gpt-r1/test-06.execution.json",
+    "published_notebook_sha256": "22d2106ede6dae183c62a14b58ed72b3ac828cf545c0387bd0fe0bf07339e849",
+    "published_html_sha256": "5ba35a82fe7d8bc04dea99903a3e5e1e7b145a88ae8a2e9142ead5a6f6789496",
+    "code_cells": 9,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source / acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model results or released scores",
+        "markdown_cell": 8,
+        "code_cells": [
+          9
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 10,
+        "code_cells": [
+          11,
+          12
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. Decision and reason",
+        "markdown_cell": 13,
+        "code_cells": [
+          14,
+          15
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        14,
+        15
+      ]
+    },
+    "status": "executed_inline"
   }
 }

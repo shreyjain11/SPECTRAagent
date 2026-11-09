@@ -2,14 +2,14 @@
 
 The catalog covers 143 entries across 28 investigations. Open the [notebook index](inline/INDEX.md) or [setup guide](inline/README.md) to review and run the notebooks.
 
-**124 analysis notebooks have completed on exxact05; 1 entry documents an unperformed candidate. 18 entries are pending verification.**
+**127 analysis notebooks have completed on exxact05; 1 entry documents an unperformed candidate. 15 entries are pending verification.**
 
 | Model | Executed analyses | Unperformed candidates | Pending | Total |
 |---|---:|---:|---:|---:|
 | AlphaMissense | 34 | 0 | 0 | 34 |
-| ESMFold2 | 18 | 1 | 16 | 35 |
+| ESMFold2 | 19 | 1 | 15 | 35 |
 | STATE | 44 | 0 | 0 | 44 |
-| CONCH | 28 | 0 | 2 | 30 |
+| CONCH | 30 | 0 | 0 | 30 |
 
 ## Review criteria
 
@@ -39,7 +39,6 @@ These entries are not published as verified inline analyses:
 - `esmfold2-codex-r1/test-01` — Pfam domain-repertoire similarity
 - `esmfold2-codex-r1/test-02` — Chain length and sequence homology
 - `esmfold2-codex-r1/test-03` — Disorder, coiled-coil and low complexity
-- `esmfold2-codex-r2/test-02` — Internal sequence repeats
 - `esmfold2-codex-r2/test-03` — Low composition entropy
 - `esmfold2-codex-r2/test-04` — Isolated-chain oligomeric context
 - `esmfold2-codex-r2/test-05` — Dominant residue fraction
@@ -52,5 +51,3 @@ These entries are not published as verified inline analyses:
 - `esmfold2-opus-r2/test-02` — Training homology
 - `esmfold2-opus-r2/test-03` — Short-chain and long-chain failure tails
 - `esmfold2-opus-r2/test-04` — Resolution, composition and oligomeric state
-- `conch-gpt-r1/test-06` — JPEG corruption
-- `conch-gpt-r1/test-07` — Kather-2016 external transport panel

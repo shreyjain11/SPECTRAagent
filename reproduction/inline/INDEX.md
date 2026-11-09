@@ -62,7 +62,7 @@ Open a notebook to read its code, executed outputs, and section 6 decision. The 
 | `esmfold2-codex-r1/test-03`<br>Disorder, coiled-coil and low complexity | pending execution |  |
 | `esmfold2-codex-r1/test-04`<br>Membrane topology | documented unperformed candidate | [Notebook](esmfold2/esmfold2-codex-r1/test-04.ipynb) · [HTML](esmfold2/esmfold2-codex-r1/test-04.html) · [Execution](esmfold2/esmfold2-codex-r1/test-04.execution.json) |
 | `esmfold2-codex-r2/test-01`<br>Positive net charge on isolated cryo-EM chains | executed inline | [Notebook](esmfold2/esmfold2-codex-r2/test-01.ipynb) · [HTML](esmfold2/esmfold2-codex-r2/test-01.html) · [Execution](esmfold2/esmfold2-codex-r2/test-01.execution.json) |
-| `esmfold2-codex-r2/test-02`<br>Internal sequence repeats | pending execution |  |
+| `esmfold2-codex-r2/test-02`<br>Internal sequence repeats | executed inline | [Notebook](esmfold2/esmfold2-codex-r2/test-02.ipynb) · [HTML](esmfold2/esmfold2-codex-r2/test-02.html) · [Execution](esmfold2/esmfold2-codex-r2/test-02.execution.json) |
 | `esmfold2-codex-r2/test-03`<br>Low composition entropy | pending execution |  |
 | `esmfold2-codex-r2/test-04`<br>Isolated-chain oligomeric context | pending execution |  |
 | `esmfold2-codex-r2/test-05`<br>Dominant residue fraction | pending execution |  |
@@ -145,8 +145,8 @@ Open a notebook to read its code, executed outputs, and section 6 decision. The 
 | `conch-gpt-r1/test-03`<br>tissue-background fragmentation / low tissue fraction | executed inline | [Notebook](conch/conch-gpt-r1/test-03.ipynb) · [HTML](conch/conch-gpt-r1/test-03.html) · [Execution](conch/conch-gpt-r1/test-03.execution.json) |
 | `conch-gpt-r1/test-04`<br>stain optical-density departure | executed inline | [Notebook](conch/conch-gpt-r1/test-04.ipynb) · [HTML](conch/conch-gpt-r1/test-04.html) · [Execution](conch/conch-gpt-r1/test-04.execution.json) |
 | `conch-gpt-r1/test-05`<br>blur/sharpness departure | executed inline | [Notebook](conch/conch-gpt-r1/test-05.ipynb) · [HTML](conch/conch-gpt-r1/test-05.html) · [Execution](conch/conch-gpt-r1/test-05.execution.json) |
-| `conch-gpt-r1/test-06`<br>JPEG corruption | pending execution |  |
-| `conch-gpt-r1/test-07`<br>Kather-2016 external transport panel | pending execution |  |
+| `conch-gpt-r1/test-06`<br>JPEG corruption | executed inline | [Notebook](conch/conch-gpt-r1/test-06.ipynb) · [HTML](conch/conch-gpt-r1/test-06.html) · [Execution](conch/conch-gpt-r1/test-06.execution.json) |
+| `conch-gpt-r1/test-07`<br>Kather-2016 external transport panel | executed inline | [Notebook](conch/conch-gpt-r1/test-07.ipynb) · [HTML](conch/conch-gpt-r1/test-07.html) · [Execution](conch/conch-gpt-r1/test-07.execution.json) |
 | `conch-gpt-r2/test-01`<br>Joint colour-and-texture distance from NCT | executed inline | [Notebook](conch/conch-gpt-r2/test-01.ipynb) · [HTML](conch/conch-gpt-r2/test-01.html) · [Execution](conch/conch-gpt-r2/test-01.execution.json) |
 | `conch-gpt-r2/test-02`<br>stain drift | executed inline | [Notebook](conch/conch-gpt-r2/test-02.ipynb) · [HTML](conch/conch-gpt-r2/test-02.html) · [Execution](conch/conch-gpt-r2/test-02.execution.json) |
 | `conch-gpt-r2/test-03`<br>blur/sharpness | executed inline | [Notebook](conch/conch-gpt-r2/test-03.ipynb) · [HTML](conch/conch-gpt-r2/test-03.html) · [Execution](conch/conch-gpt-r2/test-03.execution.json) |
