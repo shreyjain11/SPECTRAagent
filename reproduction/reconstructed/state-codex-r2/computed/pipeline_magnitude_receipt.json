@@ -1,0 +1,43 @@
+{
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "stage": "magnitude",
+  "derived_stage_policy": "recompute_from_source_inputs",
+  "executed_stages": [
+    "replogle_axis",
+    "replogle_scores",
+    "replogle_observations",
+    "replogle_analysis",
+    "tahoe_controls",
+    "closures"
+  ],
+  "reused_stages": [],
+  "receipts": [
+    {
+      "path": "computed/replogle_axis_receipt.json",
+      "sha256": "5199794463b66c7d9939f8f463c679066b06483604631ebab3dd5e77f026a683"
+    },
+    {
+      "path": "computed/replogle_scores_receipt.json",
+      "sha256": "5ed7444573b4871d55ad1e3970b0a3a4a0464c45d8d59e94865e7e31748c2992"
+    },
+    {
+      "path": "computed/replogle_observations_receipt.json",
+      "sha256": "a0116ab41b5455cd38ae0df559f2d87ddd0c5c9d28ace37e06503a08a470e656"
+    },
+    {
+      "path": "computed/replogle_analysis_receipt.json",
+      "sha256": "3936a80fb06d27e2ffb893fa029ff50722ca29d44cf8c651aa7a64355d869ea4"
+    },
+    {
+      "path": "computed/tahoe_controls_receipt.json",
+      "sha256": "17bf58f09721d0fa62dd92e997469759ff020703a8180384eef9f9cb862ae5dd"
+    },
+    {
+      "path": "computed/closures_receipt.json",
+      "sha256": "98dc388b3f76dd4f672afaeb385e9244e2415abc7e101cecdac2103abfa718a8"
+    }
+  ],
+  "completed_utc": "2026-11-09T15:01:32Z",
+  "historical_outputs_used_to_drive_calculations": false
+}

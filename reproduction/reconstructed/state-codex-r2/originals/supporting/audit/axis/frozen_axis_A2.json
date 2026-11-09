@@ -1,0 +1,43 @@
+{
+  "aggregation": "one prospective scalar per held-out context x perturbation; other-three-context mean is the fixed transfer aggregation",
+  "axis_name": "training-panel expected perturbation-effect magnitude",
+  "confirmation_set": "disjoint perturbation identities outside the 638 A1 discovery panel. This is condition-independent but shares experimental sources; an additional external-dataset replication is required for fully source-independent certification.",
+  "controller_version_sha256": "3797b6715c1eded9fac7f310facd3842067e52e5ec1db7e0417b06e5837b25bb",
+  "controls": [
+    "held-out true effect RMS log2 fold change",
+    "held-out number of significant DE genes at FDR<0.05",
+    "perturbed cell count and unique mapped-control count",
+    "held-out cell-line fixed effects",
+    "checkpoint selection (best primary; last secondary where same primary metric becomes available)",
+    "representation (ST-SE target; ST-HVG sensitivity is not treated as independent confirmation)",
+    "training-panel mean number of DE genes as alternate magnitude proxy"
+  ],
+  "deduplication": "one condition per normalized context and perturbation; feature duplicates rejected; discovery perturbation names excluded globally from confirmation",
+  "direction": "lower expected effect magnitude predicts lower signed-LFC Spearman performance",
+  "distance_metric": "negative log1p of training-panel mean RMS log2 fold change, so larger spectral parameter means weaker expected perturbation",
+  "error_spending_plan": "if directionally consistent but inconclusive, acquire an external perturbation dataset/checkpoint and use O'Brien-Fleming alpha1=.0056, cumulative alpha2=.05; never re-peek the same confirmation set",
+  "fixed_reference": "transfer-the-training-context mean: mean real log2-fold-change vector for p in the three training contexts, evaluated against held-out real p using the identical signed Spearman metric",
+  "frozen_utc": "2026-07-15T14:36:45.751719+00:00",
+  "gene_set": "the fixed, identically indexed 2,000 official STATE output features; complete finite features only",
+  "hypothesis_discovery_evidence": {
+    "context_residual_correlation": 0.7049515866038035,
+    "discovery_conditions": 2552,
+    "discovery_perturbations": 638,
+    "strongest_to_weakest_direction": "performance fell from rho 0.2780 in strongest expected-effect quintile to 0.0210 in weakest"
+  },
+  "hypothesis_source": "outcome-informed exploratory: nominated after the powered A1 distance axis was negative",
+  "inclusion_exclusion": "official ST-SE-Replogle zero-shot best-checkpoint conditions excluded from the 638 A1 balanced perturbations; require target prediction and real DE plus real DE for the same perturbation in all three training contexts; exclude non-targeting; require complete finite metric and controls",
+  "level_rule": "five equal-count levels within each held-out context, sorted from strongest expected response L1 to weakest expected response L5; stable mergesort of (magnitude, perturbation name) breaks ties",
+  "metric": "primary signed Spearman correlation across all 2,000 finite features between predicted and real log2 fold-change vectors; Fisher-z continuous regression and raw-rho five-level SPC",
+  "normalization": "log2 of official cell-eval fold_change, RMS within context and perturbation, arithmetic mean across the other three contexts, then log1p for regression",
+  "power_plan": "score all eligible disjoint conditions once after this contract is hashed; no subgroup or threshold changes",
+  "prospective_features": "for held-out context c and perturbation p, arithmetic mean over the other three training contexts of RMS log2 fold change across the same 2,000 output features; uses training-panel outcomes only and never the held-out outcome",
+  "sample_size_target": "at least 263 confirmation conditions total and at least 40 per spectral level, retaining all eligible disjoint conditions in one look; 263 is the frozen conservative d=0.20, alpha=.05, 90% paired-power target inherited from A1",
+  "success_criteria": {
+    "axis_order": "five nontrivial within-context levels with at least 40 conditions each and strictly decreasing mean prospective magnitude",
+    "controls": "weak-effect coefficient remains negative after held-out magnitude, nDE, and cell-count controls; if held-out magnitude fully explains it, re-attribute the finding to true effect magnitude and label training-panel magnitude a prospective proxy",
+    "degradation": "continuous weak-effect coefficient on Fisher-z performance is negative with perturbation-block bootstrap 95% CI below zero and L5-minus-L1 raw rho is negative",
+    "reference": "fixed transfer-mean reference scored on identical conditions/features/metric; retain a real shared degradation and call larger/comparable/smaller using the same +/-0.02 slope-difference ROPE"
+  },
+  "unit": "held-out cell-line x genetic perturbation condition; perturbation families in confirmation are disjoint from A1 discovery"
+}

@@ -1,0 +1,86 @@
+{
+  "status": "computed_from_public_inputs",
+  "scientific_execution_host": "exxact05.broadinstitute.org",
+  "completed_utc": "2026-11-09T15:02:47Z",
+  "sources": [
+    {
+      "path": "computed/tahoe/cohort.csv",
+      "bytes": 151283,
+      "sha256": "d17bfdee23ffe142c97c7fb65fabbe9be063bbbc0a422daad781c9174ce6c196"
+    },
+    {
+      "path": "computed/tahoe/condition_controls.csv",
+      "bytes": 482556,
+      "sha256": "fda740683f79870bebf7b04c1c20a5f275a872c977e6b81db54ccb3d11def951"
+    },
+    {
+      "path": "methods/sources.json",
+      "bytes": 26156,
+      "sha256": "e6c8850320e2006fe498de0b6b3fe6788a4723e9a2458d3a031f45076a2e9a64"
+    },
+    {
+      "path": "originals/supporting/audit/data/prospective/tahoe_pseudobulk_parquet_manifest.json",
+      "bytes": 1132104,
+      "sha256": "cf19ca624e02214ab8e90b3ee86a201a1d326348048feb27b739ed9292a290a1"
+    },
+    {
+      "path": "originals/supporting/audit/axis/frozen_axis_secondary.json",
+      "bytes": 6712,
+      "sha256": "24ee9c8afcc3289b70c4cb58cdcdf151b59b1e5940dc20f11ed143fc3e8de67c"
+    },
+    {
+      "path": "originals/supporting/audit/results/tahoe_prospective_summary.json",
+      "bytes": 1130,
+      "sha256": "0b0f98211e29f7ae34017e99871f82dc648d098490612f5983d77d086363aa10"
+    }
+  ],
+  "methods": {
+    "methods/acquire.py": "54a274b377b4ca4cf5774984538bc5c9b1c8ddc27945c22871a803fe1719d108",
+    "methods/closures.py": "7a317c0009d24773c0c268401b01c2d5e38edc9e642cbebdaecb9f7ab10e8d53",
+    "methods/common.py": "14f57d2ff1be8526dc1afd16f22d2a3e2add0f679a2b94e207a37f0afaca813f",
+    "methods/observation_controls.py": "d3cb7b51f2edfc23f422502539889ec96b48dcb3d354d9d5e5ee3432b4323747",
+    "methods/plots.py": "56629cb6c321dd55c9311abfa6a0c031eeb35c988a1776c563ca9daae561897f",
+    "methods/replogle.py": "a7585f1c74a3893ef3b029820852f39779cd2b117afac46fb2954d732c0e7ba3",
+    "methods/run_pipeline.py": "4320aabc4eec6549b3a0f14f11be3836d9f3db4ddbeb948efd3b567df024e967",
+    "methods/tahoe.py": "e71dd649e5fa02142080b4dd9508840f32636a697a0d661223286a0f06d92cd2",
+    "methods/test_methods.py": "d02931e5b4c0d3377eb955c71844617281c889e5ee071b030033573a2a456015"
+  },
+  "outputs": [
+    {
+      "path": "computed/closures/original_public_shard_inventory.csv",
+      "bytes": 229,
+      "sha256": "4f68836b38c049cb666d0f49645745a16b836d04b24814eb63bb29ce96d5a3ba"
+    },
+    {
+      "path": "computed/closures/support_levels.csv",
+      "bytes": 253,
+      "sha256": "6daabfa44476a3089e96dc559a06e85377aef1767417b1e5a8e670a5f15434ac"
+    },
+    {
+      "path": "computed/closures/release_modality_assignments.csv",
+      "bytes": 4659,
+      "sha256": "6efb6438785e63ccf70429726be2b6b377c3da735b7a8987b77387135f6dc8e6"
+    },
+    {
+      "path": "computed/closures/secondary_input_axes.csv",
+      "bytes": 404561,
+      "sha256": "c1771e99e0e8161c52e8ac8e3fe23ec1e7548eddd8bc7dc56e6aa5b5eec83715"
+    },
+    {
+      "path": "computed/closures/closure_diagnostics.json",
+      "bytes": 3550,
+      "sha256": "bc81a5d3f3476240b03dce7c09504c8122fd84baee653086172c8ec9302670e4"
+    }
+  ],
+  "checks": {
+    "support_units": 2985,
+    "release_rows": 23,
+    "modality_design_rank": 2
+  },
+  "documented_assumptions": [
+    "The original unfinished aggregation is not silently completed as a new biological analysis.",
+    "Secondary axis input values are regenerated from actual metadata; no original secondary performance curve existed.",
+    "The1536-block partial reconciliation and879-gene mapping rows did not survive this handoff; their counts/hash are retained historical evidence, not newly recomputed claims."
+  ],
+  "historical_outputs_used_as_calculation_inputs": false
+}

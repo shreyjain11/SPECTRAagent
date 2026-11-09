@@ -9,7 +9,8 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
 RICH_FORMATS={'recovered_historical_notebook','source_workflow_notebook'}
-SOURCE_WORKFLOW_IDS={f'state-codex-r1/test-{i:02d}' for i in range(1,5)}
+SOURCE_WORKFLOW_IDS=({f'state-codex-r1/test-{i:02d}' for i in range(1,5)}
+                     | {f'state-codex-r2/test-{i:02d}' for i in range(1,6)})
 def read(path):return json.loads((ROOT/path).read_text())
 def file(path):
     p=(ROOT/path).resolve()
@@ -177,9 +178,26 @@ def main(allow_staged_downloads=False):
                     pipeline=read(recovered['pipeline_execution_evidence'])
                     assert pipeline['completed'] and pipeline['derived_stage_policy']=='recompute_from_source_inputs'
                     assert 'exxact05' in pipeline['host'].lower()
-                    analysis=read(recovered['analysis_execution_evidence'])
-                    assert analysis['completed'] and analysis['scientific_workflow_executed']
-                    assert analysis['historical_aggregate_fallback'] is False
+                    if 'stage_execution_evidence' in recovered:
+                        receipts=recovered['stage_execution_evidence']
+                        assert receipts and len(receipts)==len(pipeline['receipts'])
+                        assert not pipeline['reused_stages']
+                        assert pipeline['historical_outputs_used_to_drive_calculations'] is False
+                        for saved,original in zip(receipts,pipeline['receipts']):
+                            assert saved['sha256']==original['sha256']==digest(saved['path'])
+                            analysis=read(saved['path'])
+                            assert analysis['status']=='computed_from_public_inputs'
+                            assert 'exxact05' in analysis['scientific_execution_host'].lower()
+                            assert analysis['historical_outputs_used_as_calculation_inputs'] is False
+                            package=Path(recovered['package_manifest']).parent
+                            for relative,expected in analysis['methods'].items():
+                                assert digest(str(package/relative))==expected
+                            for output in analysis['outputs']:
+                                assert digest(str(package/output['path']))==output['sha256']
+                    else:
+                        analysis=read(recovered['analysis_execution_evidence'])
+                        assert analysis['completed'] and analysis['scientific_workflow_executed']
+                        assert analysis['historical_aggregate_fallback'] is False
                     trace=read(recovered['traceability'])
                     assert trace['historical_aggregates_used_as_calculation_inputs'] is False
                     assert trace['scientific_execution_host']=='exxact05'

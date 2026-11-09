@@ -1,0 +1,90 @@
+{
+  "aggregation": "one unit per held-out context, drug, and dose; drug-cluster inference; all eligible A2e units retained",
+  "axes": [
+    {
+      "artifact_gate": "if an association is absorbed by sequencing-depth or true-effect controls, classify it as a measurement/sampling artifact rather than a biological generalizability failure",
+      "axis": "sampling support",
+      "candidate_id": "A3",
+      "controls": [
+        "held-out true effect RMS",
+        "held-out nDE",
+        "control-cell count",
+        "mean genes and UMIs",
+        "mitochondrial fraction",
+        "context",
+        "dose"
+      ],
+      "direction": "lower treated-cell support predicts lower STATE performance",
+      "levels": "five equal-count levels fixed by treated-cell count, high support to low support, with stable context/drug/dose tie breaking",
+      "prospective_feature": "negative log1p of treated-cell count; matched-control count is an adjusted covariate"
+    },
+    {
+      "axis": "dose displacement",
+      "candidate_id": "A5",
+      "controls": [
+        "drug fixed effects",
+        "context fixed effects",
+        "held-out true effect RMS",
+        "held-out nDE",
+        "treated and control cell counts"
+      ],
+      "direction": "lower dose predicts lower STATE performance because weaker responses approach the measurement floor",
+      "levels": "the three pre-existing balanced dose levels; no data-dependent binning",
+      "mechanism_gate": "if held-out true effect magnitude absorbs dose, reattribute the mechanism to response magnitude and retain dose only as its experimentally set proxy",
+      "prospective_feature": "ordered administered concentration 5.0, 0.5, 0.05 uM within each drug and context"
+    },
+    {
+      "axis": "representation and checkpoint family",
+      "candidate_id": "A6",
+      "controls": [
+        "identical target examples",
+        "context",
+        "drug",
+        "dose",
+        "checkpoint selection"
+      ],
+      "direction": "the A2e degradation should remain directionally consistent under the official ST-SE representation and last-checkpoint sensitivity tables",
+      "interpretation": "this is a robustness interaction, not an input-side axis by itself; discordance limits family-level transport but does not retroactively alter the ST-HVG primary result",
+      "levels": "paired official score rows on the identical eligible Tahoe perturbations and contexts wherever release coverage permits",
+      "prospective_feature": "released ST-HVG versus ST-SE model family and best versus last checkpoint"
+    }
+  ],
+  "axis_name": "Tahoe sampling-support, dose, and model-family secondary axes",
+  "confirmation_set": "the external Tahoe chemical confirmation set, source-independent from Replogle discovery",
+  "controller_version_sha256": "3797b6715c1eded9fac7f310facd3842067e52e5ec1db7e0417b06e5837b25bb",
+  "controls": [
+    "held-out true effect RMS",
+    "held-out nDE",
+    "treated and control cell count",
+    "mean genes and UMIs",
+    "mitochondrial fraction",
+    "context",
+    "drug",
+    "dose",
+    "checkpoint",
+    "representation"
+  ],
+  "deduplication": "one normalized context-drug-dose row; technical plates aggregated before scoring; paired family rows matched on exact context and perturbation",
+  "direction": "lower sampling support and lower dose predict lower performance; the primary A2e direction should remain consistent across released model-family sensitivities",
+  "distance_metric": "A3 negative log1p treated cells, A5 negative log dose in uM, A6 paired categorical interaction",
+  "error_spending_plan": "secondary estimates are descriptive and fully enumerated; none replaces or rescues the A2e primary look, and no repeated peeking is permitted",
+  "family_role": "mechanistically plausible axes required by the discovery brief; descriptive confirmation with drug-block bootstrap confidence intervals, not substitutes for the A2e primary look",
+  "frozen_utc": "2026-07-15T18:54:24.748062+00:00",
+  "gene_set": "the same 879 prospectively and uniquely mapped ST-HVG output genes as A2e for A3/A5; official full released score representation for A6, explicitly labeled non-identical when a paired 879-gene table is unavailable",
+  "hypothesis_source": "mechanistically plausible controls and candidate axes explicitly required by the audit brief and candidate ledger before Tahoe target access",
+  "inclusion_exclusion": "identical frozen A2e set of 199 complete drug triplets across five held-out cell lines; vehicle excluded; no outcome-dependent exclusions",
+  "level_rule": "A3 five stable equal-count levels from high to low treated-cell support; A5 fixed 5.0, 0.5, and 0.05 uM levels; A6 paired released family/checkpoint categories",
+  "metric": "signed Spearman correlation over the same 879 genes for A3/A5; official signed-LFC Spearman-compatible released score for A6 sensitivity",
+  "multiplicity": "report every estimate and interval; do not promote a secondary result to the preregistered A2e primary claim and do not tune thresholds after scoring",
+  "normalization": "official Tahoe metadata counts, administered uM dose, and official cell-eval scores; no held-out performance is used to construct an axis",
+  "power_plan": "single secondary look after the A2e primary score is materialized; 10,000 drug-block bootstrap draws; no threshold or subgroup revision",
+  "prospective_features": "A3 negative log1p treated-cell count; A5 administered concentration ordered 5.0 to 0.05 uM; A6 released representation/checkpoint family identifiers",
+  "sample_size_target": "A3/A5 use all 2,985 planned A2e units from 199 drug clusters; A6 reports all paired eligible official score rows and treats incomplete pairing as a release limitation",
+  "scope": "prospective secondary axes evaluated on the frozen Tahoe A2e confirmation set without changing its examples, features, or primary test",
+  "shared_metric": "signed Spearman correlation over the same prospectively mapped 879 genes",
+  "shared_resampling": "10,000 drug-cluster bootstrap draws, preserving the five contexts and three doses for each sampled drug",
+  "shared_unit": "held-out Tahoe cell line x drug x dose among the 2,985 A2e units",
+  "success_criteria": "report every axis estimate and drug-block 95% interval; call A3/A5 directional degradation only when the preregistered coefficient interval is below zero and endpoint ordering agrees; classify nuisance-absorbed A3 as artifact and magnitude-absorbed A5 as a proxy; use A6 only as sensitivity",
+  "target_access_state": "drafted before any Tahoe STATE prediction or real target DE output was read",
+  "unit": "held-out Tahoe cell line x chemical drug x dose condition"
+}

@@ -3,9 +3,9 @@
   "scientific_adjudication_performed": false,
   "counts": {
     "primary_workflow_packaged": 44,
-    "original_records_missing": 63,
+    "original_records_missing": 58,
     "calculation_replay_packaged": 32,
-    "source_workflow_reconstructed": 4
+    "source_workflow_reconstructed": 9
   },
   "criteria": [
     "data",
@@ -1698,162 +1698,361 @@
     {
       "id": "state-codex-r2/test-01",
       "axis": "Administered drug dose",
-      "coverage": "original_records_missing",
-      "notebook": "materials/state/notebooks/state-codex-r2/test-01.ipynb",
+      "coverage": "source_workflow_reconstructed",
+      "notebook": "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb",
       "stages": {
-        "data": "public_checksum_verified_retained_input_archive",
-        "processing": "missing_original_inputs_or_code",
-        "axis": "recorded_definition",
-        "levels": "original_individual_construction_missing",
-        "evaluation": "original_individual_computation_missing",
-        "curve": "summary_or_evidence_display_only",
-        "decision": "attributed_historical_summary"
+        "data": "source_workflow_computed_and_linked",
+        "processing": "source_workflow_computed_and_linked",
+        "axis": "source_workflow_computed_and_linked",
+        "levels": "source_workflow_computed_and_linked",
+        "evaluation": "source_workflow_computed_and_linked",
+        "curve": "source_workflow_computed_and_linked",
+        "decision": "source_workflow_computed_and_linked"
       },
-      "public_inputs": {
+      "execution_evidence": "reconstructed/state-codex-r2/notebooks/NOTEBOOK_VALIDATION.json",
+      "independent_review": "NONPRIMARY_REVIEW.json",
+      "remaining_traceability_gaps": [],
+      "coverage_limit": "Executable source calculations and historical stopping diagnostics. A9 estimates differ; unfinished A2e mapping rows remain unavailable. These limitations are explicit.",
+      "original_reconstruction_notes": [
+        "Pre-cleanup workspace /path/to/audit-home/codex_spectra_audits_v2/STATE, including per-sample data and exact analysis scripts.",
+        "Original axis input features and level-assignment outputs.",
+        "Original individual predictions/observations and matched reference outputs."
+      ],
+      "remaining_method_qualifications": [
+        "Original count/QC aggregation helper is missing; explicit all-cell technical-plate controls differ from retained adjusted estimates.",
+        "Original bootstrap seed is not known; seed 20260716 is documented.",
+        "Basal-reference slope differs slightly; the same-example count and frozen comparison classification agree."
+      ],
+      "stage_evidence": {
+        "data": [
+          "reconstructed/state-codex-r2/methods/sources.json",
+          "reconstructed/state-codex-r2/methods/acquire.py",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r2/methods/tahoe.py",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r2/computed/tahoe/cohort.csv",
+          "reconstructed/state-codex-r2/computed/tahoe/A7_contract_diagnostic.json",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r2/computed/tahoe/A8_units.csv",
+          "reconstructed/state-codex-r2/computed/tahoe/A10_units.csv",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r2/methods/tahoe.py",
+          "reconstructed/state-codex-r2/computed/tahoe/basal_reference_scores.csv",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r2/computed/tahoe/A8_summary.json",
+          "reconstructed/state-codex-r2/computed/tahoe/A10_summary.json",
+          "reconstructed/state-codex-r2/computed/figures/A8_curve.png",
+          "reconstructed/state-codex-r2/computed/figures/A10_curve.png",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r2/originals/REPORT.md",
+          "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-14"
+        ]
+      },
+      "legacy_public_inputs": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
         "prepare": "prepare_inputs.py",
         "notebook_preparation_cell": 0
       },
-      "execution_evidence": "execution.json",
-      "independent_review": "NONPRIMARY_REVIEW.json",
-      "remaining_traceability_gaps": [
-        "The public archive enables execution of the retained evidence/summary display; original individual inputs and/or calculations remain missing."
-      ],
-      "coverage_limit": "Executable retained calculation replay; complete original provenance is not certified. See per-entry review and original reconstruction notes. Scientific corrections or experiments not originally performed are not reproduction requirements.",
-      "original_reconstruction_notes": [
-        "Pre-cleanup workspace /path/to/audit-home/codex_spectra_audits_v2/STATE, including per-sample data and exact analysis scripts.",
-        "Original axis input features and level-assignment outputs.",
-        "Original individual predictions/observations and matched reference outputs."
-      ]
+      "public_sources": "reconstructed/state-codex-r2/methods/sources.json"
     },
     {
       "id": "state-codex-r2/test-02",
       "axis": "Baseline cross-cell-line distance",
-      "coverage": "original_records_missing",
-      "notebook": "materials/state/notebooks/state-codex-r2/test-02.ipynb",
+      "coverage": "source_workflow_reconstructed",
+      "notebook": "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb",
       "stages": {
-        "data": "public_checksum_verified_retained_input_archive",
-        "processing": "missing_original_inputs_or_code",
-        "axis": "recorded_definition",
-        "levels": "original_individual_construction_missing",
-        "evaluation": "original_individual_computation_missing",
-        "curve": "summary_or_evidence_display_only",
-        "decision": "attributed_historical_summary"
+        "data": "source_workflow_computed_and_linked",
+        "processing": "source_workflow_computed_and_linked",
+        "axis": "source_workflow_computed_and_linked",
+        "levels": "source_workflow_computed_and_linked",
+        "evaluation": "source_workflow_computed_and_linked",
+        "curve": "source_workflow_computed_and_linked",
+        "decision": "source_workflow_computed_and_linked"
       },
-      "public_inputs": {
+      "execution_evidence": "reconstructed/state-codex-r2/notebooks/NOTEBOOK_VALIDATION.json",
+      "independent_review": "NONPRIMARY_REVIEW.json",
+      "remaining_traceability_gaps": [],
+      "coverage_limit": "Executable source calculations and historical stopping diagnostics. A9 estimates differ; unfinished A2e mapping rows remain unavailable. These limitations are explicit.",
+      "original_reconstruction_notes": [
+        "Pre-cleanup workspace /path/to/audit-home/codex_spectra_audits_v2/STATE, including per-sample data and exact analysis scripts.",
+        "Original axis input features and level-assignment outputs.",
+        "Original individual predictions/observations and matched reference outputs."
+      ],
+      "remaining_method_qualifications": [
+        "Original report cosine/gene-block wording conflicts with the more specific frozen rank-distance/Jurkat-E6.1 evidence.",
+        "The paired fixed-effect adjustment is a contract-supported reconstruction; numerical agreement does not prove identity of the absent original helper.",
+        "HPA duplicate-symbol aggregation causes small distance differences without changing the recorded ordering."
+      ],
+      "stage_evidence": {
+        "data": [
+          "reconstructed/state-codex-r2/methods/sources.json",
+          "reconstructed/state-codex-r2/methods/acquire.py",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r2/methods/replogle.py",
+          "reconstructed/state-codex-r2/methods/observation_controls.py",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r2/computed/replogle/axis.csv",
+          "reconstructed/state-codex-r2/computed/replogle/axis_summary.json",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r2/computed/replogle/distance_units.csv",
+          "reconstructed/state-codex-r2/computed/replogle/score_summary.json",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r2/computed/replogle/unit_scores.csv",
+          "reconstructed/state-codex-r2/computed/replogle/cell_counts.csv",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r2/computed/replogle/distance_summary.json",
+          "reconstructed/state-codex-r2/computed/replogle/distance_curve.csv",
+          "reconstructed/state-codex-r2/computed/figures/distance_curve.png",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r2/originals/REPORT.md",
+          "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-14"
+        ]
+      },
+      "legacy_public_inputs": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
         "prepare": "prepare_inputs.py",
         "notebook_preparation_cell": 0
       },
-      "execution_evidence": "execution.json",
-      "independent_review": "NONPRIMARY_REVIEW.json",
-      "remaining_traceability_gaps": [
-        "The public archive enables execution of the retained evidence/summary display; original individual inputs and/or calculations remain missing."
-      ],
-      "coverage_limit": "Executable retained calculation replay; complete original provenance is not certified. See per-entry review and original reconstruction notes. Scientific corrections or experiments not originally performed are not reproduction requirements.",
-      "original_reconstruction_notes": [
-        "Pre-cleanup workspace /path/to/audit-home/codex_spectra_audits_v2/STATE, including per-sample data and exact analysis scripts.",
-        "Original axis input features and level-assignment outputs.",
-        "Original individual predictions/observations and matched reference outputs."
-      ]
+      "public_sources": "reconstructed/state-codex-r2/methods/sources.json"
     },
     {
       "id": "state-codex-r2/test-03",
       "axis": "Expected perturbation magnitude",
-      "coverage": "original_records_missing",
-      "notebook": "materials/state/notebooks/state-codex-r2/test-03.ipynb",
+      "coverage": "source_workflow_reconstructed",
+      "notebook": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb",
       "stages": {
-        "data": "public_checksum_verified_retained_input_archive",
-        "processing": "missing_original_inputs_or_code",
-        "axis": "recorded_definition",
-        "levels": "original_individual_construction_missing",
-        "evaluation": "original_individual_computation_missing",
-        "curve": "summary_or_evidence_display_only",
-        "decision": "attributed_historical_summary"
+        "data": "source_workflow_computed_and_linked",
+        "processing": "source_workflow_computed_and_linked",
+        "axis": "source_workflow_computed_and_linked",
+        "levels": "source_workflow_computed_and_linked",
+        "evaluation": "source_workflow_computed_and_linked",
+        "curve": "source_workflow_computed_and_linked",
+        "decision": "source_workflow_computed_and_linked"
       },
-      "public_inputs": {
+      "execution_evidence": "reconstructed/state-codex-r2/notebooks/NOTEBOOK_VALIDATION.json",
+      "independent_review": "NONPRIMARY_REVIEW.json",
+      "remaining_traceability_gaps": [],
+      "coverage_limit": "Executable source calculations and historical stopping diagnostics. A9 estimates differ; unfinished A2e mapping rows remain unavailable. These limitations are explicit.",
+      "original_reconstruction_notes": [
+        "Pre-cleanup workspace /path/to/audit-home/codex_spectra_audits_v2/STATE, including per-sample data and exact analysis scripts.",
+        "Original axis input features and level-assignment outputs.",
+        "Original individual predictions/observations and matched reference outputs."
+      ],
+      "remaining_method_qualifications": [
+        "Original A2e 879-gene mapping rows and 1536-block partial reconciliation map were not in the handoff; their retained hashes/counts are historical-only.",
+        "A2e was never scored. Its planned cohort and source inventory are rebuilt without fabricating a confirmation curve."
+      ],
+      "stage_evidence": {
+        "data": [
+          "reconstructed/state-codex-r2/methods/sources.json",
+          "reconstructed/state-codex-r2/methods/acquire.py",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r2/methods/replogle.py",
+          "reconstructed/state-codex-r2/methods/closures.py",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r2/computed/replogle/magnitude_units.csv",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r2/computed/replogle/A2_eligibility.csv",
+          "reconstructed/state-codex-r2/computed/replogle/released_condition_availability.csv",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r2/computed/replogle/unit_scores.csv",
+          "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r2/computed/replogle/magnitude_summary.json",
+          "reconstructed/state-codex-r2/computed/replogle/magnitude_curve.csv",
+          "reconstructed/state-codex-r2/computed/figures/magnitude_curve.png",
+          "reconstructed/state-codex-r2/computed/closures/original_public_shard_inventory.csv",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r2/originals/REPORT.md",
+          "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-14"
+        ]
+      },
+      "legacy_public_inputs": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
         "prepare": "prepare_inputs.py",
         "notebook_preparation_cell": 0
       },
-      "execution_evidence": "execution.json",
-      "independent_review": "NONPRIMARY_REVIEW.json",
-      "remaining_traceability_gaps": [
-        "The public archive enables execution of the retained evidence/summary display; original individual inputs and/or calculations remain missing."
-      ],
-      "coverage_limit": "Executable retained calculation replay; complete original provenance is not certified. See per-entry review and original reconstruction notes. Scientific corrections or experiments not originally performed are not reproduction requirements.",
-      "original_reconstruction_notes": [
-        "Pre-cleanup workspace /path/to/audit-home/codex_spectra_audits_v2/STATE, including per-sample data and exact analysis scripts.",
-        "Original axis input features and level-assignment outputs.",
-        "Original individual predictions/observations and matched reference outputs."
-      ]
+      "public_sources": "reconstructed/state-codex-r2/methods/sources.json"
     },
     {
       "id": "state-codex-r2/test-04",
       "axis": "Sampling support, prospective dose displacement and checkpoint sensitivity",
-      "coverage": "original_records_missing",
-      "notebook": "materials/state/notebooks/state-codex-r2/test-04.ipynb",
+      "coverage": "source_workflow_reconstructed",
+      "notebook": "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb",
       "stages": {
-        "data": "public_checksum_verified_retained_input_archive",
-        "processing": "missing_original_inputs_or_code",
-        "axis": "recorded_definition",
-        "levels": "original_individual_construction_missing",
-        "evaluation": "original_individual_computation_missing",
-        "curve": "summary_or_evidence_display_only",
-        "decision": "attributed_historical_summary"
+        "data": "source_workflow_computed_and_linked",
+        "processing": "source_workflow_computed_and_linked",
+        "axis": "source_workflow_computed_and_linked",
+        "levels": "source_workflow_computed_and_linked",
+        "evaluation": "source_workflow_computed_and_linked",
+        "curve": "source_workflow_computed_and_linked",
+        "decision": "source_workflow_computed_and_linked"
       },
-      "public_inputs": {
+      "execution_evidence": "reconstructed/state-codex-r2/notebooks/NOTEBOOK_VALIDATION.json",
+      "independent_review": "NONPRIMARY_REVIEW.json",
+      "remaining_traceability_gaps": [],
+      "coverage_limit": "Executable source calculations and historical stopping diagnostics. A9 estimates differ; unfinished A2e mapping rows remain unavailable. These limitations are explicit.",
+      "original_reconstruction_notes": [
+        "Pre-cleanup workspace /path/to/audit-home/codex_spectra_audits_v2/STATE, including per-sample data and exact analysis scripts.",
+        "Original axis input features and level-assignment outputs.",
+        "Original individual predictions/observations and matched reference outputs."
+      ],
+      "remaining_method_qualifications": [
+        "A3/A5/A6 originally stopped before scoring. Actual input axes and closure diagnostics are generated, with no invented outcome curves.",
+        "A9 was an actual measured investigation; it is recalculated, but the reconstructed metadata aggregation yields different estimates, shown alongside original evidence."
+      ],
+      "stage_evidence": {
+        "data": [
+          "reconstructed/state-codex-r2/methods/sources.json",
+          "reconstructed/state-codex-r2/methods/acquire.py",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r2/methods/tahoe.py",
+          "reconstructed/state-codex-r2/methods/closures.py",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r2/computed/closures/secondary_input_axes.csv",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r2/computed/closures/support_levels.csv",
+          "reconstructed/state-codex-r2/computed/tahoe/A9_units.csv",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+          "reconstructed/state-codex-r2/computed/tahoe/A9_units.csv",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r2/computed/tahoe/A9_summary.json",
+          "reconstructed/state-codex-r2/computed/figures/A9_curve.png",
+          "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r2/originals/REPORT.md",
+          "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-14"
+        ]
+      },
+      "legacy_public_inputs": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
         "prepare": "prepare_inputs.py",
         "notebook_preparation_cell": 0
       },
-      "execution_evidence": "execution.json",
-      "independent_review": "NONPRIMARY_REVIEW.json",
-      "remaining_traceability_gaps": [
-        "The public archive enables execution of the retained evidence/summary display; original individual inputs and/or calculations remain missing."
-      ],
-      "coverage_limit": "Executable retained calculation replay; complete original provenance is not certified. See per-entry review and original reconstruction notes. Scientific corrections or experiments not originally performed are not reproduction requirements.",
-      "original_reconstruction_notes": [
-        "Pre-cleanup workspace /path/to/audit-home/codex_spectra_audits_v2/STATE, including per-sample data and exact analysis scripts.",
-        "Original axis input features and level-assignment outputs.",
-        "Original individual predictions/observations and matched reference outputs."
-      ]
+      "public_sources": "reconstructed/state-codex-r2/methods/sources.json"
     },
     {
       "id": "state-codex-r2/test-05",
       "axis": "Perturbation modality",
-      "coverage": "original_records_missing",
-      "notebook": "materials/state/notebooks/state-codex-r2/test-05.ipynb",
+      "coverage": "source_workflow_reconstructed",
+      "notebook": "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb",
       "stages": {
-        "data": "public_checksum_verified_retained_input_archive",
-        "processing": "missing_original_inputs_or_code",
-        "axis": "recorded_definition",
-        "levels": "original_individual_construction_missing",
-        "evaluation": "original_individual_computation_missing",
-        "curve": "summary_or_evidence_display_only",
-        "decision": "attributed_historical_summary"
+        "data": "source_workflow_computed_and_linked",
+        "processing": "source_workflow_computed_and_linked",
+        "axis": "source_workflow_computed_and_linked",
+        "levels": "source_workflow_computed_and_linked",
+        "evaluation": "source_workflow_computed_and_linked",
+        "curve": "source_workflow_computed_and_linked",
+        "decision": "source_workflow_computed_and_linked"
       },
-      "public_inputs": {
+      "execution_evidence": "reconstructed/state-codex-r2/notebooks/NOTEBOOK_VALIDATION.json",
+      "independent_review": "NONPRIMARY_REVIEW.json",
+      "remaining_traceability_gaps": [],
+      "coverage_limit": "Executable source calculations and historical stopping diagnostics. A9 estimates differ; unfinished A2e mapping rows remain unavailable. These limitations are explicit.",
+      "original_reconstruction_notes": [
+        "Pre-cleanup workspace /path/to/audit-home/codex_spectra_audits_v2/STATE, including per-sample data and exact analysis scripts.",
+        "Original axis input features and level-assignment outputs.",
+        "Original individual predictions/observations and matched reference outputs."
+      ],
+      "remaining_method_qualifications": [
+        "The actual source-assignment design has exact dataset/modality collinearity. No identifiable modality coefficient or original performance curve exists."
+      ],
+      "stage_evidence": {
+        "data": [
+          "reconstructed/state-codex-r2/methods/sources.json",
+          "reconstructed/state-codex-r2/methods/acquire.py",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r2/methods/closures.py",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r2/computed/closures/release_modality_assignments.csv",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r2/computed/closures/release_modality_assignments.csv",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r2/originals/REPORT.md",
+          "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-14"
+        ]
+      },
+      "legacy_public_inputs": {
         "archive": "state-retained-inputs",
         "catalog": "data.json",
         "prepare": "prepare_inputs.py",
         "notebook_preparation_cell": 0
       },
-      "execution_evidence": "execution.json",
-      "independent_review": "NONPRIMARY_REVIEW.json",
-      "remaining_traceability_gaps": [
-        "The public archive enables execution of the retained evidence/summary display; original individual inputs and/or calculations remain missing."
-      ],
-      "coverage_limit": "Executable retained calculation replay; complete original provenance is not certified. See per-entry review and original reconstruction notes. Scientific corrections or experiments not originally performed are not reproduction requirements.",
-      "original_reconstruction_notes": [
-        "Pre-cleanup workspace /path/to/audit-home/codex_spectra_audits_v2/STATE, including per-sample data and exact analysis scripts.",
-        "Original axis input features and level-assignment outputs.",
-        "Original individual predictions/observations and matched reference outputs."
-      ]
+      "public_sources": "reconstructed/state-codex-r2/methods/sources.json"
     },
     {
       "id": "state-opus-r1/test-01",

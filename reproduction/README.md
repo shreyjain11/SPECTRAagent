@@ -2,9 +2,11 @@
 
 Start with the [44 primary notebooks](primary/README.md). They link the original data sources and processing, axis definitions, level construction, model results or released scores, curves or screening diagnostics, and the historical agent decisions. Retained, discarded and unresolved candidates remain represented.
 
-The [index](index.json) lists all 28 investigations and 143 entries. The [whole-PR review](PR_REVIEW.md) distinguishes 44 recovered primary workflows, 32 additional calculation replays with downloadable inputs, four [STATE Codex r1 source reconstructions](reconstructed/state-codex-r1/README.md), and 63 evidence/summary displays whose original individual calculations remain missing. All retained notebooks have input preparation routes; successful execution of a summary display does not restore the missing original work.
+The [index](index.json) lists all 28 investigations and 143 entries. The [whole-PR review](PR_REVIEW.md) distinguishes 44 recovered primary workflows, 32 additional calculation replays with downloadable inputs, nine STATE source reconstructions ([Codex r1](reconstructed/state-codex-r1/README.md), [Codex r2](reconstructed/state-codex-r2/README.md)), and 58 evidence/summary displays whose original individual calculations remain missing. All retained notebooks have input preparation routes; successful execution of a summary display does not restore the missing original work.
 
 The four STATE Codex r1 notebooks now recalculate features, released-prediction errors, regressions, curves and controls from verified public inputs by default. All four were executed on exxact05. Their original code-only exports remain available separately. Main results and saved curve means reproduce; two quintile-control estimates differ under the explicitly reconstructed binning method. See the [comparison table](reconstructed/state-codex-r1/computed/analysis/historical_comparison.csv) and [method qualifications](reconstructed/state-codex-r1/methods/METHODS.md).
+
+The five STATE Codex r2 notebooks also executed on exxact05, covering all original candidates and their stopping diagnostics. They rebuild dose and distance results from public releases, plus actual input/eligibility calculations for candidates that stopped before scoring. Original helpers were unavailable: reconstructed choices are explicit, the A9 mitochondrial result does not numerically reproduce, and unfinished A2e mapping rows remain missing. These limits are shown beside the historical results.
 
 ## What the records contain
 

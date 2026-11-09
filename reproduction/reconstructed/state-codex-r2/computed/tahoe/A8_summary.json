@@ -1,0 +1,95 @@
+{
+  "raw": {
+    "n": 2984,
+    "clusters": 199,
+    "coefficient": -0.0102967956287819,
+    "ci95": [
+      -0.02243942403312692,
+      0.0015679982384274626
+    ],
+    "draws": 10000,
+    "seed": 20260716,
+    "design_columns": [
+      "weakness",
+      "context=HOP62",
+      "context=HepG2/C3A",
+      "context=Hs 766T",
+      "context=PANC-1"
+    ],
+    "cluster_fixed_effect": true,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "weakness": -0.0102967956287819,
+      "context=HOP62": 0.1612137263591189,
+      "context=HepG2/C3A": -0.004094255002757383,
+      "context=Hs 766T": 0.029181080280503147,
+      "context=PANC-1": 0.03959663051497704
+    }
+  },
+  "adjusted": {
+    "n": 2984,
+    "clusters": 199,
+    "coefficient": -0.014724805167782528,
+    "ci95": [
+      -0.025938358917054795,
+      -0.003442421339472761
+    ],
+    "draws": 10000,
+    "seed": 20260716,
+    "design_columns": [
+      "weakness",
+      "log_n_de",
+      "log_n_treated",
+      "log_n_control",
+      "context=HOP62",
+      "context=HepG2/C3A",
+      "context=Hs 766T",
+      "context=PANC-1"
+    ],
+    "cluster_fixed_effect": true,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "weakness": -0.014724805167782528,
+      "log_n_de": -0.07593650148814876,
+      "log_n_treated": 0.17463692995520436,
+      "log_n_control": -0.08688954547801368,
+      "context=HOP62": 0.159162720867698,
+      "context=HepG2/C3A": -0.03817699238453178,
+      "context=Hs 766T": 0.014029899181290013,
+      "context=PANC-1": 0.021738640690918593
+    }
+  },
+  "curve": [
+    {
+      "level": 1,
+      "n": 995,
+      "clusters": 199,
+      "mean": 0.5817602008491768,
+      "ci_low": 0.5679952165425398,
+      "ci_high": 0.5953076141351282
+    },
+    {
+      "level": 2,
+      "n": 994,
+      "clusters": 199,
+      "mean": 0.562435041213725,
+      "ci_low": 0.542273089330556,
+      "ci_high": 0.5812900786423235
+    },
+    {
+      "level": 3,
+      "n": 995,
+      "clusters": 199,
+      "mean": 0.5665820027610122,
+      "ci_low": 0.5479261414348562,
+      "ci_high": 0.5829082370963568
+    }
+  ],
+  "endpoint": -0.015178198088164563,
+  "endpoint_ci95": [
+    -0.036107794349643015,
+    0.004761081860200264
+  ],
+  "score_exclusions": 1,
+  "recomputed_negative_degradation": false
+}

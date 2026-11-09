@@ -1,0 +1,77 @@
+{
+  "status": "computed_from_public_inputs",
+  "scientific_execution_host": "exxact05.broadinstitute.org",
+  "completed_utc": "2026-11-09T14:57:09Z",
+  "sources": [
+    {
+      "path": "inputs/metadata/depmap_24q4_protein_coding_tpm_logp1.csv",
+      "bytes": 506628654,
+      "sha256": "2a71dc94110efcc0221eae821bb93a9f03b54bea16f005818911a09d33383d56"
+    },
+    {
+      "path": "inputs/metadata/hpa_rna_celline.tsv.zip",
+      "bytes": 205861141,
+      "sha256": "e5b11779308c2720cfe89d9cb19932ad4c0c3fea0fa37e8c61a14d501995852a"
+    },
+    {
+      "path": "inputs/metadata/depmap_24q4_model.csv",
+      "bytes": 645696,
+      "sha256": "b7a0c1385e6cef30132b56aff61f1261d11e3f490490b355c430d32ee0dbdcfa"
+    }
+  ],
+  "methods": {
+    "methods/acquire.py": "54a274b377b4ca4cf5774984538bc5c9b1c8ddc27945c22871a803fe1719d108",
+    "methods/closures.py": "7a317c0009d24773c0c268401b01c2d5e38edc9e642cbebdaecb9f7ab10e8d53",
+    "methods/common.py": "14f57d2ff1be8526dc1afd16f22d2a3e2add0f679a2b94e207a37f0afaca813f",
+    "methods/observation_controls.py": "d3cb7b51f2edfc23f422502539889ec96b48dcb3d354d9d5e5ee3432b4323747",
+    "methods/plots.py": "56629cb6c321dd55c9311abfa6a0c031eeb35c988a1776c563ca9daae561897f",
+    "methods/replogle.py": "a7585f1c74a3893ef3b029820852f39779cd2b117afac46fb2954d732c0e7ba3",
+    "methods/run_pipeline.py": "4320aabc4eec6549b3a0f14f11be3836d9f3db4ddbeb948efd3b567df024e967",
+    "methods/tahoe.py": "e71dd649e5fa02142080b4dd9508840f32636a697a0d661223286a0f06d92cd2",
+    "methods/test_methods.py": "d02931e5b4c0d3377eb955c71844617281c889e5ee071b030033573a2a456015"
+  },
+  "outputs": [
+    {
+      "path": "computed/replogle/depmap_pairwise.csv",
+      "bytes": 320,
+      "sha256": "a9360a51a0f0cebc2cf44599e56d2d26ff1884ca49b148506fa103e02ff3beee"
+    },
+    {
+      "path": "computed/replogle/hpa_pairwise.csv",
+      "bytes": 300,
+      "sha256": "516c6f9cf651292a19892f76b5f0feae7511b37468517b6234e1400ef113ccec"
+    },
+    {
+      "path": "computed/replogle/hpa_e61_pairwise.csv",
+      "bytes": 298,
+      "sha256": "b0521303add0dcc5bab8601fa97ec8552287ba27895ef93ee3a110caf435191d"
+    },
+    {
+      "path": "computed/replogle/axis.csv",
+      "bytes": 420,
+      "sha256": "b3c04ace69e496cac25be08a0873729facf46a1737cf6d7626e6572e9c6ffa71"
+    },
+    {
+      "path": "computed/replogle/axis_summary.json",
+      "bytes": 307,
+      "sha256": "87fe65b2b8f1b23a658f0b27e997a55a4946c363bb91a89e1e1706750028dcdf"
+    },
+    {
+      "path": "computed/replogle/prospective_genes.csv",
+      "bytes": 122066,
+      "sha256": "0b2bfd86314a464113ecfff03defde949807aef866f884ffd28b51c2bed02319"
+    }
+  ],
+  "checks": {
+    "genes": 18979,
+    "nearest_unique_values": 2,
+    "panel_mean_unique_values": 4,
+    "hpa_rank_correlation": 1.0,
+    "hpa_e61_rank_correlation": 0.7999999999999999,
+    "definition": "mean of 1\u2212Spearman to other three contexts, per frozen contract; report prose says cosine and conflicts with contract"
+  },
+  "documented_assumptions": [
+    "Duplicate DepMap gene symbols and duplicate HPA gene/cell-line rows collapse by arithmetic mean; RPE1 clone expression uses coordinatewise median."
+  ],
+  "historical_outputs_used_as_calculation_inputs": false
+}

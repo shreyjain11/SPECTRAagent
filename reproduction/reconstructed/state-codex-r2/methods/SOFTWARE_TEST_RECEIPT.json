@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checks": [
+    "within-cluster fit equals explicit cluster-dummy OLS",
+    "pooled fit equals direct OLS",
+    "control missingness defines complete cases"
+  ],
+  "max_absolute_error": 9.43689570931383e-16
+}

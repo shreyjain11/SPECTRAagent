@@ -1,0 +1,108 @@
+{
+  "status": "all_notebooks_executed_and_exported",
+  "scientific_execution_host": "exxact05",
+  "notebooks": [
+    {
+      "notebook": "01-state-codex-r2-dose.ipynb",
+      "sha256": "d4ba84822581021743bbe924eb1b1b1e1c4194cd31ae2460913babbd1b88908d",
+      "html": "01-state-codex-r2-dose.html",
+      "html_sha256": "8b3dd0dd3a1f4df95fc8a897b29ccdb98a355d52d2296f6df1ea00129888215f",
+      "code_cells": 7,
+      "code_cells_executed": 7,
+      "error_outputs": 0,
+      "embedded_pngs": 2,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 72.229,
+        "error": null,
+        "original_workflow_requested": false,
+        "python": "/ewsc/yektefai/spectra_runs/state_codex_r2_reconstruction_20261109/.venv/bin/python",
+        "working_directory": "/ewsc/yektefai/spectra_runs/state_codex_r2_reconstruction_20261109"
+      },
+      "stage": "dose",
+      "historical_outcomes": "comparison targets and original stopping decisions only"
+    },
+    {
+      "notebook": "02-state-codex-r2-distance.ipynb",
+      "sha256": "05f17591a7779f1324e65a28412d7eca4ddca037b6cf1eecc250b664606adfa6",
+      "html": "02-state-codex-r2-distance.html",
+      "html_sha256": "a021e25f85ba47f3fc4cbb4a2297cc2412fe13f6f430aec958c9af19941cf3aa",
+      "code_cells": 7,
+      "code_cells_executed": 7,
+      "error_outputs": 0,
+      "embedded_pngs": 1,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 125.559,
+        "error": null,
+        "original_workflow_requested": false,
+        "python": "/ewsc/yektefai/spectra_runs/state_codex_r2_reconstruction_20261109/.venv/bin/python",
+        "working_directory": "/ewsc/yektefai/spectra_runs/state_codex_r2_reconstruction_20261109"
+      },
+      "stage": "distance",
+      "historical_outcomes": "comparison targets and original stopping decisions only"
+    },
+    {
+      "notebook": "03-state-codex-r2-magnitude.ipynb",
+      "sha256": "bfb4b1ac25103036fdd2044e39ea6233e0fed41281f8b3f65375a27f05853a95",
+      "html": "03-state-codex-r2-magnitude.html",
+      "html_sha256": "5d19084b43453fa576aeec1e346acfb4789b0519b6d7bf8e4e6f5181471439d5",
+      "code_cells": 7,
+      "code_cells_executed": 7,
+      "error_outputs": 0,
+      "embedded_pngs": 1,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 168.979,
+        "error": null,
+        "original_workflow_requested": false,
+        "python": "/ewsc/yektefai/spectra_runs/state_codex_r2_reconstruction_20261109/.venv/bin/python",
+        "working_directory": "/ewsc/yektefai/spectra_runs/state_codex_r2_reconstruction_20261109"
+      },
+      "stage": "magnitude",
+      "historical_outcomes": "comparison targets and original stopping decisions only"
+    },
+    {
+      "notebook": "04-state-codex-r2-secondary.ipynb",
+      "sha256": "8c1e9bea020d2df2f70dd418f1317d22bdd397913502fb64baf5c165a2c1401b",
+      "html": "04-state-codex-r2-secondary.html",
+      "html_sha256": "4c1f6b31165b212f6d02ce8ce60e81cfd5cb86011c30c46deefe354d824e6c66",
+      "code_cells": 7,
+      "code_cells_executed": 7,
+      "error_outputs": 0,
+      "embedded_pngs": 1,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 75.242,
+        "error": null,
+        "original_workflow_requested": false,
+        "python": "/ewsc/yektefai/spectra_runs/state_codex_r2_reconstruction_20261109/.venv/bin/python",
+        "working_directory": "/ewsc/yektefai/spectra_runs/state_codex_r2_reconstruction_20261109"
+      },
+      "stage": "secondary",
+      "historical_outcomes": "comparison targets and original stopping decisions only"
+    },
+    {
+      "notebook": "05-state-codex-r2-modality.ipynb",
+      "sha256": "f47ae2d8ffb4c23b4329fedd0b10fd350dd8b34fa18e63f24c8842ef5b9db989",
+      "html": "05-state-codex-r2-modality.html",
+      "html_sha256": "cddea85e55964c82008fa3cce47dceb463871a101050e810c1585aa4941413ff",
+      "code_cells": 7,
+      "code_cells_executed": 7,
+      "error_outputs": 0,
+      "embedded_pngs": 0,
+      "execution": {
+        "completed": true,
+        "elapsed_seconds": 46.788,
+        "error": null,
+        "original_workflow_requested": false,
+        "python": "/ewsc/yektefai/spectra_runs/state_codex_r2_reconstruction_20261109/.venv/bin/python",
+        "working_directory": "/ewsc/yektefai/spectra_runs/state_codex_r2_reconstruction_20261109"
+      },
+      "stage": "modality",
+      "historical_outcomes": "comparison targets and original stopping decisions only"
+    }
+  ],
+  "default_policy": "force_source_calculation",
+  "unscored_original_candidates": "actual input/eligibility/design diagnostics; no invented outcome curves"
+}

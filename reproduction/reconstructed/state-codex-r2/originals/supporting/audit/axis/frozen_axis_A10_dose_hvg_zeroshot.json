@@ -1,0 +1,33 @@
+{
+  "aggregation": "one context-drug-dose unit, drug and context fixed effects, drug-cluster bootstrap",
+  "axis_name": "Tahoe low-dose displacement on ST-HVG zero-shot STATE",
+  "confirmation_set": "official ST-HVG-Tahoe zero-shot state_generalization_zeroshot_X_hvg eval_best tables, unread before freeze",
+  "controller_version_sha256": "3797b6715c1eded9fac7f310facd3842067e52e5ec1db7e0417b06e5837b25bb",
+  "controls": [
+    "drug fixed effects",
+    "context fixed effects",
+    "held-out nDE",
+    "treated-cell count",
+    "matched-control-cell count"
+  ],
+  "deduplication": "one official score per normalized context-drug-dose",
+  "direction": "lower administered dose predicts lower STATE performance",
+  "discovery_confirmation_separation": "A8 ST-SE few-shot was the directionally consistent discovery/rescue trigger; ST-HVG zero-shot scores were sealed",
+  "distance_metric": "standardized negative base-10 log dose; larger is lower dose",
+  "error_spending_plan": "this is the sole rescue of the directionally consistent A8 dose candidate; no further dose checkpoint tests if it fails",
+  "fixed_reference": "equal-training-cell-line Tahoe pseudobulk LFC for the same drug-dose, scored against identical held-out response/significant genes without using held-out outcomes to predict",
+  "frozen_utc": "2026-07-16T13:55:54.713073+00:00",
+  "gene_set": "official significant-real-DE genes used by the released de_spearman_lfc_sig metric",
+  "hypothesis_source": "directionally consistent A8 dose result rescued once under the protocol on an unread representation/checkpoint",
+  "inclusion_exclusion": "199 drugs complete at all three doses across five official contexts; finite scores only; all missing rows reported",
+  "level_rule": "fixed experimental doses 5.0, 0.5, and 0.05 uM without binning",
+  "mechanism_gate": "if held-out nDE/cell support absorbs dose, attribute the driver to response magnitude or measurement floor and retain dose as the prospective experimental proxy",
+  "metric": "de_spearman_lfc_sig; Fisher-z coefficient per SD negative-log dose",
+  "normalization": "official signed-LFC Spearman transformed by Fisher z",
+  "power_plan": "single rescue look with 10,000 drug-cluster bootstrap draws using all complete examples",
+  "prospective_features": "administered concentration 5.0, 0.5, and 0.05 uM within each drug",
+  "reference_gate": "classify a confirmed degradation as larger, comparable, or smaller than the fixed reference; do not reject shared degradation",
+  "sample_size_target": "all available of 199 drug clusters and 2,985 planned units; minimum 150 drug clusters",
+  "success_criteria": "confirm degradation only when the unadjusted negative-log-dose coefficient CI is below zero and the 0.05-minus-5.0 uM raw-score contrast is negative; adjusted analysis must remain negative",
+  "unit": "held-out Tahoe cell line x drug x dose"
+}

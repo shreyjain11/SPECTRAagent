@@ -1,0 +1,310 @@
+{
+  "scope": "Original source calculations, screening diagnostics and historical decisions; no new scientific adjudication",
+  "scientific_execution_host": "exxact05",
+  "historical_aggregates_used_as_calculation_inputs": false,
+  "execution_evidence": "reconstructed/state-codex-r2/notebooks/NOTEBOOK_VALIDATION.json",
+  "entries": [
+    {
+      "id": "state-codex-r2/test-01",
+      "notebook": "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb",
+      "stages": {
+        "data": [
+          "reconstructed/state-codex-r2/methods/sources.json",
+          "reconstructed/state-codex-r2/methods/acquire.py",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r2/methods/tahoe.py",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r2/computed/tahoe/cohort.csv",
+          "reconstructed/state-codex-r2/computed/tahoe/A7_contract_diagnostic.json",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r2/computed/tahoe/A8_units.csv",
+          "reconstructed/state-codex-r2/computed/tahoe/A10_units.csv",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r2/methods/tahoe.py",
+          "reconstructed/state-codex-r2/computed/tahoe/basal_reference_scores.csv",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r2/computed/tahoe/A8_summary.json",
+          "reconstructed/state-codex-r2/computed/tahoe/A10_summary.json",
+          "reconstructed/state-codex-r2/computed/figures/A8_curve.png",
+          "reconstructed/state-codex-r2/computed/figures/A10_curve.png",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r2/originals/REPORT.md",
+          "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+          "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb#cell-14"
+        ]
+      },
+      "original_decision": {
+        "source": "historical_decisions.json",
+        "record_id": "state-codex-r2/test-01",
+        "disposition": "accepted",
+        "result": "Signed-LFC Spearman fell from 0.4738 to 0.4417. The low-minus-high contrast was −0.03204 [−0.04880, −0.01676]. The fixed basal reference was nearly flat; the model-reference slope contrast was inside the comparability band. Dose is an experimental condition.",
+        "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+      },
+      "original_candidate_ids": [
+        "A7",
+        "A8",
+        "A10",
+        "A10R"
+      ],
+      "method_qualifications": [
+        "Actual public-source calculations executed on exxact05. Original computational helpers were not recovered; reconstructed implementations are linked to retained frozen definitions.",
+        "Original released STATE outputs are scored and analyzed; fresh neural inference was not part of this investigation.",
+        "Historical reports and aggregate outcomes are comparison targets and stopping evidence, not calculation inputs. Numerical discrepancies are retained without parameter or input tuning.",
+        "Originally unscored candidates show acquisition, eligibility and design diagnostics; no new performance experiment is invented.",
+        "Original count/QC aggregation helper is missing; explicit all-cell technical-plate controls differ from retained adjusted estimates.",
+        "Original bootstrap seed is not known; seed 20260716 is documented.",
+        "Basal-reference slope differs slightly; the same-example count and frozen comparison classification agree."
+      ]
+    },
+    {
+      "id": "state-codex-r2/test-02",
+      "notebook": "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb",
+      "stages": {
+        "data": [
+          "reconstructed/state-codex-r2/methods/sources.json",
+          "reconstructed/state-codex-r2/methods/acquire.py",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r2/methods/replogle.py",
+          "reconstructed/state-codex-r2/methods/observation_controls.py",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r2/computed/replogle/axis.csv",
+          "reconstructed/state-codex-r2/computed/replogle/axis_summary.json",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r2/computed/replogle/distance_units.csv",
+          "reconstructed/state-codex-r2/computed/replogle/score_summary.json",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r2/computed/replogle/unit_scores.csv",
+          "reconstructed/state-codex-r2/computed/replogle/cell_counts.csv",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r2/computed/replogle/distance_summary.json",
+          "reconstructed/state-codex-r2/computed/replogle/distance_curve.csv",
+          "reconstructed/state-codex-r2/computed/figures/distance_curve.png",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r2/originals/REPORT.md",
+          "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+          "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb#cell-14"
+        ]
+      },
+      "original_decision": {
+        "source": "historical_decisions.json",
+        "record_id": "state-codex-r2/test-02",
+        "disposition": "rejected",
+        "result": "The frozen Replogle context ordering failed. Four-context permutation P = 0.583.",
+        "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+      },
+      "original_candidate_ids": [
+        "A1a",
+        "A1b"
+      ],
+      "method_qualifications": [
+        "Actual public-source calculations executed on exxact05. Original computational helpers were not recovered; reconstructed implementations are linked to retained frozen definitions.",
+        "Original released STATE outputs are scored and analyzed; fresh neural inference was not part of this investigation.",
+        "Historical reports and aggregate outcomes are comparison targets and stopping evidence, not calculation inputs. Numerical discrepancies are retained without parameter or input tuning.",
+        "Originally unscored candidates show acquisition, eligibility and design diagnostics; no new performance experiment is invented.",
+        "Original report cosine/gene-block wording conflicts with the more specific frozen rank-distance/Jurkat-E6.1 evidence.",
+        "The paired fixed-effect adjustment is a contract-supported reconstruction; numerical agreement does not prove identity of the absent original helper.",
+        "HPA duplicate-symbol aggregation causes small distance differences without changing the recorded ordering."
+      ]
+    },
+    {
+      "id": "state-codex-r2/test-03",
+      "notebook": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb",
+      "stages": {
+        "data": [
+          "reconstructed/state-codex-r2/methods/sources.json",
+          "reconstructed/state-codex-r2/methods/acquire.py",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r2/methods/replogle.py",
+          "reconstructed/state-codex-r2/methods/closures.py",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r2/computed/replogle/magnitude_units.csv",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r2/computed/replogle/A2_eligibility.csv",
+          "reconstructed/state-codex-r2/computed/replogle/released_condition_availability.csv",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r2/computed/replogle/unit_scores.csv",
+          "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r2/computed/replogle/magnitude_summary.json",
+          "reconstructed/state-codex-r2/computed/replogle/magnitude_curve.csv",
+          "reconstructed/state-codex-r2/computed/figures/magnitude_curve.png",
+          "reconstructed/state-codex-r2/computed/closures/original_public_shard_inventory.csv",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r2/originals/REPORT.md",
+          "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+          "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-14"
+        ]
+      },
+      "original_decision": {
+        "source": "historical_decisions.json",
+        "record_id": "state-codex-r2/test-03",
+        "disposition": "unresolved",
+        "result": "No eligible independent same-atlas confirmation targets remained. External Tahoe confirmation lacked a verified gene mapping and complete input scan.",
+        "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+      },
+      "original_candidate_ids": [
+        "A2",
+        "A2e"
+      ],
+      "method_qualifications": [
+        "Actual public-source calculations executed on exxact05. Original computational helpers were not recovered; reconstructed implementations are linked to retained frozen definitions.",
+        "Original released STATE outputs are scored and analyzed; fresh neural inference was not part of this investigation.",
+        "Historical reports and aggregate outcomes are comparison targets and stopping evidence, not calculation inputs. Numerical discrepancies are retained without parameter or input tuning.",
+        "Originally unscored candidates show acquisition, eligibility and design diagnostics; no new performance experiment is invented.",
+        "Original A2e 879-gene mapping rows and 1536-block partial reconciliation map were not in the handoff; their retained hashes/counts are historical-only.",
+        "A2e was never scored. Its planned cohort and source inventory are rebuilt without fabricating a confirmation curve."
+      ]
+    },
+    {
+      "id": "state-codex-r2/test-04",
+      "notebook": "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb",
+      "stages": {
+        "data": [
+          "reconstructed/state-codex-r2/methods/sources.json",
+          "reconstructed/state-codex-r2/methods/acquire.py",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r2/methods/tahoe.py",
+          "reconstructed/state-codex-r2/methods/closures.py",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r2/computed/closures/secondary_input_axes.csv",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r2/computed/closures/support_levels.csv",
+          "reconstructed/state-codex-r2/computed/tahoe/A9_units.csv",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+          "reconstructed/state-codex-r2/computed/tahoe/A9_units.csv",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r2/computed/tahoe/A9_summary.json",
+          "reconstructed/state-codex-r2/computed/figures/A9_curve.png",
+          "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r2/originals/REPORT.md",
+          "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+          "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb#cell-14"
+        ]
+      },
+      "original_decision": {
+        "source": "historical_decisions.json",
+        "record_id": "state-codex-r2/test-04",
+        "disposition": "unresolved",
+        "result": "The underlying input aggregation was incomplete. These reserve tests were not scored.",
+        "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+      },
+      "original_candidate_ids": [
+        "A3",
+        "A5",
+        "A6",
+        "A9"
+      ],
+      "method_qualifications": [
+        "Actual public-source calculations executed on exxact05. Original computational helpers were not recovered; reconstructed implementations are linked to retained frozen definitions.",
+        "Original released STATE outputs are scored and analyzed; fresh neural inference was not part of this investigation.",
+        "Historical reports and aggregate outcomes are comparison targets and stopping evidence, not calculation inputs. Numerical discrepancies are retained without parameter or input tuning.",
+        "Originally unscored candidates show acquisition, eligibility and design diagnostics; no new performance experiment is invented.",
+        "A3/A5/A6 originally stopped before scoring. Actual input axes and closure diagnostics are generated, with no invented outcome curves.",
+        "A9 was an actual measured investigation; it is recalculated, but the reconstructed metadata aggregation yields different estimates, shown alongside original evidence."
+      ]
+    },
+    {
+      "id": "state-codex-r2/test-05",
+      "notebook": "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb",
+      "stages": {
+        "data": [
+          "reconstructed/state-codex-r2/methods/sources.json",
+          "reconstructed/state-codex-r2/methods/acquire.py",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-2"
+        ],
+        "processing": [
+          "reconstructed/state-codex-r2/methods/closures.py",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-4"
+        ],
+        "axis": [
+          "reconstructed/state-codex-r2/computed/closures/release_modality_assignments.csv",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-6"
+        ],
+        "levels": [
+          "reconstructed/state-codex-r2/computed/closures/release_modality_assignments.csv",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-10"
+        ],
+        "curve": [
+          "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-12"
+        ],
+        "decision": [
+          "reconstructed/state-codex-r2/originals/REPORT.md",
+          "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+          "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb#cell-14"
+        ]
+      },
+      "original_decision": {
+        "source": "historical_decisions.json",
+        "record_id": "state-codex-r2/test-05",
+        "disposition": "unresolved",
+        "result": "Modality was confounded with dataset and checkpoint, preventing an isolated estimate.",
+        "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+      },
+      "original_candidate_ids": [
+        "A4"
+      ],
+      "method_qualifications": [
+        "Actual public-source calculations executed on exxact05. Original computational helpers were not recovered; reconstructed implementations are linked to retained frozen definitions.",
+        "Original released STATE outputs are scored and analyzed; fresh neural inference was not part of this investigation.",
+        "Historical reports and aggregate outcomes are comparison targets and stopping evidence, not calculation inputs. Numerical discrepancies are retained without parameter or input tuning.",
+        "Originally unscored candidates show acquisition, eligibility and design diagnostics; no new performance experiment is invented.",
+        "The actual source-assignment design has exact dataset/modality collinearity. No identifiable modality coefficient or original performance curve exists."
+      ]
+    }
+  ]
+}

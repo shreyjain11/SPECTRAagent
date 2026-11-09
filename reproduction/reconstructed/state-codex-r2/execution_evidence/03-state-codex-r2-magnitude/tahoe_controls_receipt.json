@@ -1,0 +1,39 @@
+{
+  "status": "computed_from_public_inputs",
+  "scientific_execution_host": "exxact05.broadinstitute.org",
+  "completed_utc": "2026-11-09T15:01:28Z",
+  "sources": [
+    {
+      "path": "inputs/metadata/tahoe_obs_metadata.parquet",
+      "bytes": 2293981573,
+      "sha256": "e51b24f3666f5f433c59ff01dd6fa33934627091455e89d929f2c1ddc87401fe"
+    }
+  ],
+  "methods": {
+    "methods/acquire.py": "54a274b377b4ca4cf5774984538bc5c9b1c8ddc27945c22871a803fe1719d108",
+    "methods/closures.py": "7a317c0009d24773c0c268401b01c2d5e38edc9e642cbebdaecb9f7ab10e8d53",
+    "methods/common.py": "14f57d2ff1be8526dc1afd16f22d2a3e2add0f679a2b94e207a37f0afaca813f",
+    "methods/observation_controls.py": "d3cb7b51f2edfc23f422502539889ec96b48dcb3d354d9d5e5ee3432b4323747",
+    "methods/plots.py": "56629cb6c321dd55c9311abfa6a0c031eeb35c988a1776c563ca9daae561897f",
+    "methods/replogle.py": "a7585f1c74a3893ef3b029820852f39779cd2b117afac46fb2954d732c0e7ba3",
+    "methods/run_pipeline.py": "4320aabc4eec6549b3a0f14f11be3836d9f3db4ddbeb948efd3b567df024e967",
+    "methods/tahoe.py": "e71dd649e5fa02142080b4dd9508840f32636a697a0d661223286a0f06d92cd2",
+    "methods/test_methods.py": "d02931e5b4c0d3377eb955c71844617281c889e5ee071b030033573a2a456015"
+  },
+  "outputs": [
+    {
+      "path": "computed/tahoe/condition_controls.csv",
+      "bytes": 482556,
+      "sha256": "fda740683f79870bebf7b04c1c20a5f275a872c977e6b81db54ccb3d11def951"
+    }
+  ],
+  "checks": {
+    "rows": 13787629,
+    "conditions": 5689,
+    "control_matching": "unique observed technical plates for each condition; each DMSO cell counted once per condition"
+  },
+  "documented_assumptions": [
+    "Original count helper absent; all public metadata cells are aggregated and control counts are matched by observed technical plates. This choice is explicit and tested against historical adjusted results, never tuned to them."
+  ],
+  "historical_outputs_used_as_calculation_inputs": false
+}

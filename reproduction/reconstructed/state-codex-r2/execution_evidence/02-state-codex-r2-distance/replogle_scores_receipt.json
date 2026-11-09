@@ -1,0 +1,132 @@
+{
+  "status": "computed_from_public_inputs",
+  "scientific_execution_host": "exxact05.broadinstitute.org",
+  "completed_utc": "2026-11-09T14:58:17Z",
+  "sources": [
+    {
+      "path": "inputs/ST-SE-Replogle/zeroshot/k562/eval_best.ckpt/k562_real_de.csv",
+      "bytes": 343530568,
+      "sha256": "a367d89432c430f6bef3d3efd23c0a543144c1c55bb94e64c818c97de2cbd1dd"
+    },
+    {
+      "path": "inputs/ST-SE-Replogle/zeroshot/k562/eval_best.ckpt/k562_pred_de.csv",
+      "bytes": 344243692,
+      "sha256": "230ac1f1f8342d0c7f563166b6e8f9afeae6a02a62d0b737fda64168dde49ba0"
+    },
+    {
+      "path": "inputs/ST-SE-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_real_de.csv",
+      "bytes": 380988038,
+      "sha256": "68fcb087841310e0e435b1bf63f1dbd69fc73c849d31a288f01d9d7ce40982ff"
+    },
+    {
+      "path": "inputs/ST-SE-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_pred_de.csv",
+      "bytes": 380905134,
+      "sha256": "fd3422f18087eaf8357112bc0fd87faa8f95ed2a9ad95f0e7c4107d52754a9ca"
+    },
+    {
+      "path": "inputs/ST-SE-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_real_de.csv",
+      "bytes": 331857105,
+      "sha256": "c0a9582aeec67230424e4d95fd26f5c2a6d9e841c13f804d46de1b74aaeddff7"
+    },
+    {
+      "path": "inputs/ST-SE-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_pred_de.csv",
+      "bytes": 332206930,
+      "sha256": "88c1e92c75525dcc6bcb5bd74938f91841d2654a92b8b17da8992f28b9f8bb42"
+    },
+    {
+      "path": "inputs/ST-SE-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_real_de.csv",
+      "bytes": 373246770,
+      "sha256": "8656cf2495e712f1d05110e702c70cbba7aa281c93075b814be0078cd53eb308"
+    },
+    {
+      "path": "inputs/ST-SE-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_pred_de.csv",
+      "bytes": 371395462,
+      "sha256": "b73237aad873fa97ddb79dcf055a3fb36d2f0a6ca13730af08fd36b04e83a126"
+    },
+    {
+      "path": "inputs/ST-HVG-Replogle/zeroshot/k562/eval_best.ckpt/k562_real_de.csv",
+      "bytes": 343530568,
+      "sha256": "a367d89432c430f6bef3d3efd23c0a543144c1c55bb94e64c818c97de2cbd1dd"
+    },
+    {
+      "path": "inputs/ST-HVG-Replogle/zeroshot/k562/eval_best.ckpt/k562_pred_de.csv",
+      "bytes": 321344933,
+      "sha256": "89b5d659f021eb9d64c41e282994453c3a7e968370cf62cef09ca3b3f7408a56"
+    },
+    {
+      "path": "inputs/ST-HVG-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_real_de.csv",
+      "bytes": 380988038,
+      "sha256": "68fcb087841310e0e435b1bf63f1dbd69fc73c849d31a288f01d9d7ce40982ff"
+    },
+    {
+      "path": "inputs/ST-HVG-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_pred_de.csv",
+      "bytes": 344695065,
+      "sha256": "a99a847e2bc783a73a64ea2c34ae065198b33ffc855b01d7d56d3fc5b31e694e"
+    },
+    {
+      "path": "inputs/ST-HVG-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_real_de.csv",
+      "bytes": 331857105,
+      "sha256": "c0a9582aeec67230424e4d95fd26f5c2a6d9e841c13f804d46de1b74aaeddff7"
+    },
+    {
+      "path": "inputs/ST-HVG-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_pred_de.csv",
+      "bytes": 299683790,
+      "sha256": "138ee80b5ecd3bec4badd4e91466e74467e55c6e3247643e33bf65378c8079f1"
+    },
+    {
+      "path": "inputs/ST-HVG-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_real_de.csv",
+      "bytes": 373246770,
+      "sha256": "8656cf2495e712f1d05110e702c70cbba7aa281c93075b814be0078cd53eb308"
+    },
+    {
+      "path": "inputs/ST-HVG-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_pred_de.csv",
+      "bytes": 347045906,
+      "sha256": "ae1a84742a3230e35414e38e2f289d5f7d3abd1b2f14a10683b16c134657aecc"
+    }
+  ],
+  "methods": {
+    "methods/acquire.py": "54a274b377b4ca4cf5774984538bc5c9b1c8ddc27945c22871a803fe1719d108",
+    "methods/closures.py": "7a317c0009d24773c0c268401b01c2d5e38edc9e642cbebdaecb9f7ab10e8d53",
+    "methods/common.py": "14f57d2ff1be8526dc1afd16f22d2a3e2add0f679a2b94e207a37f0afaca813f",
+    "methods/observation_controls.py": "d3cb7b51f2edfc23f422502539889ec96b48dcb3d354d9d5e5ee3432b4323747",
+    "methods/plots.py": "56629cb6c321dd55c9311abfa6a0c031eeb35c988a1776c563ca9daae561897f",
+    "methods/replogle.py": "a7585f1c74a3893ef3b029820852f39779cd2b117afac46fb2954d732c0e7ba3",
+    "methods/run_pipeline.py": "4320aabc4eec6549b3a0f14f11be3836d9f3db4ddbeb948efd3b567df024e967",
+    "methods/tahoe.py": "e71dd649e5fa02142080b4dd9508840f32636a697a0d661223286a0f06d92cd2",
+    "methods/test_methods.py": "d02931e5b4c0d3377eb955c71844617281c889e5ee071b030033573a2a456015"
+  },
+  "outputs": [
+    {
+      "path": "computed/replogle/unit_scores.csv",
+      "bytes": 304268,
+      "sha256": "e86e2ca72d99565f87c9ecfa479fe16495acd654f4bc6a685556114455f89da3"
+    },
+    {
+      "path": "computed/replogle/A2_eligibility.csv",
+      "bytes": 132554,
+      "sha256": "34108a8623b50ff1fb4527296f8a02501d2e29ecd67d0254571ac7514854124b"
+    },
+    {
+      "path": "computed/replogle/released_condition_availability.csv",
+      "bytes": 746390,
+      "sha256": "384fd163f5fca320dac13c2ebed5df1be7524212ebae0120ff322d67ccaef98d"
+    },
+    {
+      "path": "computed/replogle/score_summary.json",
+      "bytes": 186,
+      "sha256": "50b06e5b405628bbcbfd47b7e865c306fd4a2aa37f53a2b098525bd17674b1b8"
+    }
+  ],
+  "checks": {
+    "primary_balanced_perturbations": 638,
+    "finite_balanced_perturbations": 638,
+    "common_output_features": 2000,
+    "disjoint_candidates": 1385,
+    "eligible_disjoint_candidates": 0
+  },
+  "documented_assumptions": [
+    "Nonpositive fold_change is excluded before log2; no pseudocount is invented.",
+    "Duplicate output-feature entries collapse by mean log2 fold change."
+  ],
+  "historical_outputs_used_as_calculation_inputs": false
+}

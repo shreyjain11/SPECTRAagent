@@ -1,0 +1,58 @@
+[
+  {
+    "source": {
+      "path": "ST-SE-Replogle/zeroshot/k562/eval_best.ckpt/adata_real.h5ad",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/k562/eval_best.ckpt/adata_real.h5ad",
+      "bytes": 3079506036,
+      "sha256": "6951f4bffb532950c447e8dc300b2f42ab381c854273327f8cd38b84cfa4eb42",
+      "evidence": "Pinned original release; observation-only range extraction"
+    },
+    "access": "Pinned immutable H5AD; HTTP range extraction of obs only",
+    "full_source_sha256_verified": false,
+    "extracted_path": "inputs/observation_extracts/k562.parquet",
+    "extracted_sha256": "1fabb9c169d62406377c3724e7208474f4fac2bea75bcc4533bffc3c4ce9bd80",
+    "extracted_rows": 188590
+  },
+  {
+    "source": {
+      "path": "ST-SE-Replogle/zeroshot/jurkat/eval_best.ckpt/adata_real.h5ad",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/jurkat/eval_best.ckpt/adata_real.h5ad",
+      "bytes": 3012265108,
+      "sha256": "9df1a21e3b159fa3900a32dd8bd6b4d6dd8750838014d1d3997932d7cedc9673",
+      "evidence": "Pinned original release; observation-only range extraction"
+    },
+    "access": "Pinned immutable H5AD; HTTP range extraction of obs only",
+    "full_source_sha256_verified": false,
+    "extracted_path": "inputs/observation_extracts/jurkat.parquet",
+    "extracted_sha256": "0e82c9f308e2658359b86c0d77460a532993f33ed903df7488c3f1b940ad804a",
+    "extracted_rows": 184470
+  },
+  {
+    "source": {
+      "path": "ST-SE-Replogle/zeroshot/hepg2/eval_best.ckpt/adata_real.h5ad",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/hepg2/eval_best.ckpt/adata_real.h5ad",
+      "bytes": 1577727376,
+      "sha256": "75f79feff37c4334559ea88c1e2a27acd306eb7dee5a2e25f37c4860014ca2b9",
+      "evidence": "Pinned original release; observation-only range extraction"
+    },
+    "access": "Pinned immutable H5AD; HTTP range extraction of obs only",
+    "full_source_sha256_verified": false,
+    "extracted_path": "inputs/observation_extracts/hepg2.parquet",
+    "extracted_sha256": "1c4b0d674e090ccf8386ff44d4ef95771ddcbd8b8a9985087b851b69e5b11be6",
+    "extracted_rows": 96616
+  },
+  {
+    "source": {
+      "path": "ST-SE-Replogle/zeroshot/rpe1/eval_best.ckpt/adata_real.h5ad",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/rpe1/eval_best.ckpt/adata_real.h5ad",
+      "bytes": 2837025870,
+      "sha256": "f3363768db24b7eee9cb55507443366f8e15b6f9e5731ac415f533b757a5b5b1",
+      "evidence": "Pinned original release; observation-only range extraction"
+    },
+    "access": "Pinned immutable H5AD; HTTP range extraction of obs only",
+    "full_source_sha256_verified": false,
+    "extracted_path": "inputs/observation_extracts/rpe1.parquet",
+    "extracted_sha256": "d36506fa9c0a47adf5a385ab327825e2abe5b99ef4e9e9eefe5c37c2bb876c4a",
+    "extracted_rows": 173737
+  }
+]

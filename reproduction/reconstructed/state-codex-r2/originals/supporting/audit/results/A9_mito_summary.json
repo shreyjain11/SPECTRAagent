@@ -1,0 +1,47 @@
+{
+  "contract_sha256": "f0d3954d51b74400321dab942039e0b16d56f4c788f3c3275eaa1fafead24212",
+  "revision": "03b1971d7cc93a7535fd2e957c6948dba267378b",
+  "download_sha256": {
+    "C32": "cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79",
+    "HOP62": "dedd141ec8fdff513a19cb46f3bb95b76372b117935620b02f50f2f8e339d33d",
+    "HepG2-C3A": "a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb",
+    "Hs 766T": "4904a9d8a3ed52a2cccd9de85cd0eeec0277bcc07d184eefb8096395719a2746",
+    "PANC-1": "8483133246cf1dba89c76a94f8a407757f4714bff5c9534f66890fbfe3d7ec03"
+  },
+  "units": 2983,
+  "drugs": 199,
+  "context_counts": {
+    "C32": 597,
+    "HOP62": 597,
+    "HepG2/C3A": 597,
+    "Hs 766T": 596,
+    "PANC-1": 596
+  },
+  "level_counts": {
+    "L1": 597,
+    "L2": 597,
+    "L3": 596,
+    "L4": 597,
+    "L5": 596
+  },
+  "mean_score_by_mito_level": {
+    "L1": 0.45841975583445527,
+    "L2": 0.45988749525445394,
+    "L3": 0.4566583794046445,
+    "L4": 0.46323565292702523,
+    "L5": 0.47217602201609515
+  },
+  "mito_slope": -0.0004420760336845206,
+  "slope_ci95": [
+    -0.030201003684089518,
+    0.02834694022251126
+  ],
+  "adjusted_mito_slope": 0.025076649057903237,
+  "adjusted_slope_ci95": [
+    -0.009350960293088097,
+    0.05688975062505795
+  ],
+  "highest_minus_lowest_mito_score": 0.013756266181639887,
+  "degradation_confirmed_before_reference": false,
+  "reference_gate_status": "required next if confirmed"
+}

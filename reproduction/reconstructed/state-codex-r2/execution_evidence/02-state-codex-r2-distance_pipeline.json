@@ -1,0 +1,33 @@
+{
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "stage": "distance",
+  "derived_stage_policy": "recompute_from_source_inputs",
+  "executed_stages": [
+    "replogle_axis",
+    "replogle_scores",
+    "replogle_observations",
+    "replogle_analysis"
+  ],
+  "reused_stages": [],
+  "receipts": [
+    {
+      "path": "computed/replogle_axis_receipt.json",
+      "sha256": "9917e6a62ab0728de5449d1f06c01470bc701da7b3225af9252f19a66f18bbcb"
+    },
+    {
+      "path": "computed/replogle_scores_receipt.json",
+      "sha256": "8b42a50bf45659cfb47c8e29b89981d2ec6ee862417644dda263cdc4fd553d81"
+    },
+    {
+      "path": "computed/replogle_observations_receipt.json",
+      "sha256": "b114169029423d0c4028c735f382ec0d89ad4b547cc9ad39147dee328d2d4871"
+    },
+    {
+      "path": "computed/replogle_analysis_receipt.json",
+      "sha256": "208be9b432376f04eb7b25467b74a1766d52d49003f748b765f2adf10e3b1f1b"
+    }
+  ],
+  "completed_utc": "2026-11-09T14:58:42Z",
+  "historical_outputs_used_to_drive_calculations": false
+}

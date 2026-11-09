@@ -1,0 +1,111 @@
+{
+  "raw": {
+    "n": 2984,
+    "clusters": 199,
+    "coefficient": 0.02526415313870204,
+    "ci95": [
+      0.014108452047912425,
+      0.03619252941189629
+    ],
+    "draws": 10000,
+    "seed": 20260716,
+    "design_columns": [
+      "mito"
+    ],
+    "cluster_fixed_effect": true,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "mito": 0.02526415313870204
+    }
+  },
+  "adjusted": {
+    "n": 2984,
+    "clusters": 199,
+    "coefficient": 0.01782423109565295,
+    "ci95": [
+      -0.01723335196083973,
+      0.049995691569679306
+    ],
+    "draws": 10000,
+    "seed": 20260716,
+    "design_columns": [
+      "mito",
+      "log_n_de",
+      "log_n_treated",
+      "log_n_control",
+      "log_gene_mean",
+      "log_umi_mean",
+      "context=HOP62",
+      "context=HepG2/C3A",
+      "context=Hs 766T",
+      "context=PANC-1",
+      "dose=0.5",
+      "dose=5.0"
+    ],
+    "cluster_fixed_effect": true,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "mito": 0.01782423109565295,
+      "log_n_de": -0.03367450776897555,
+      "log_n_treated": 0.06766103994466698,
+      "log_n_control": -0.08762587777915563,
+      "log_gene_mean": 0.2226827229534666,
+      "log_umi_mean": -0.19168430193153718,
+      "context=HOP62": 0.1349449869662216,
+      "context=HepG2/C3A": -0.09007630349167374,
+      "context=Hs 766T": 0.13620511698110288,
+      "context=PANC-1": 0.07355451381611193,
+      "dose=0.5": 0.031246112612207326,
+      "dose=5.0": 0.08173067029539824
+    }
+  },
+  "curve": [
+    {
+      "level": 1.0,
+      "n": 597,
+      "clusters": 135,
+      "mean": 0.4581378112249324,
+      "ci_low": 0.4252838624288639,
+      "ci_high": 0.4891769769001736
+    },
+    {
+      "level": 2.0,
+      "n": 597,
+      "clusters": 182,
+      "mean": 0.4598979798637493,
+      "ci_low": 0.43481148140595727,
+      "ci_high": 0.4850153714721182
+    },
+    {
+      "level": 3.0,
+      "n": 597,
+      "clusters": 188,
+      "mean": 0.45581387236076293,
+      "ci_low": 0.4310811138636895,
+      "ci_high": 0.47974054600239113
+    },
+    {
+      "level": 4.0,
+      "n": 597,
+      "clusters": 190,
+      "mean": 0.4647662755385044,
+      "ci_low": 0.43750779471450535,
+      "ci_high": 0.4910791000912972
+    },
+    {
+      "level": 5.0,
+      "n": 596,
+      "clusters": 168,
+      "mean": 0.4700747609550619,
+      "ci_low": 0.43054818048022325,
+      "ci_high": 0.5076909670296849
+    }
+  ],
+  "endpoint": 0.011936949730129487,
+  "endpoint_ci95": [
+    -0.03613426831120516,
+    0.060653093039440956
+  ],
+  "score_exclusions": 1,
+  "recomputed_negative_degradation": false
+}

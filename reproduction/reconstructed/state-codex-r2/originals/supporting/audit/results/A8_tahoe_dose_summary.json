@@ -1,0 +1,48 @@
+{
+  "contract_sha256": "f874cc7555c36cb75f4e3ef5da48ed78d97b7e0d8872f105b4a3c5f2095e7f0e",
+  "official_revision": "03b1971d7cc93a7535fd2e957c6948dba267378b",
+  "download_sha256": {
+    "C32": "9fee724f7d5dc46a3e0061e264347ce4c8c5c29b6c0dac2dc67303bcae25894a",
+    "HOP62": "646052bbdb9844e1a2b94f19c095d0f5a07db9529010f41252c61ba228544d56",
+    "HepG2-C3A": "9106d01893815fbf77d85f4e2351da8a607adedc74edb62cc452c110812b09a2",
+    "Hs 766T": "80c38255fdce0444457f909d7ef9c2186a82c5476550bfe82604bd48896aae72",
+    "PANC-1": "5a40d67c26a428487d3b0f602b5b7a69006b5c4595eaaf0ffb5f44eaf5160239"
+  },
+  "units": 2984,
+  "unique_drugs": 199,
+  "context_counts": {
+    "C32": 597,
+    "HOP62": 597,
+    "HepG2/C3A": 597,
+    "Hs 766T": 597,
+    "PANC-1": 596
+  },
+  "dose_counts": {
+    "5.0": 995,
+    "0.5": 994,
+    "0.05": 995
+  },
+  "mean_score_by_dose": {
+    "5.0": 0.5817602008491768,
+    "0.5": 0.562435041213725,
+    "0.05": 0.5665820027610123
+  },
+  "weakness_slope_fisher_z_per_sd": -0.010296795628781868,
+  "slope_ci95": [
+    -0.022287318025030724,
+    0.0017720446331246462
+  ],
+  "low_minus_high_raw_score": -0.015178198088164448,
+  "low_minus_high_ci95": [
+    -0.036930794731899176,
+    0.004810051163403305
+  ],
+  "control_complete_units": 2983,
+  "adjusted_weakness_slope": -0.014055555232909288,
+  "adjusted_slope_ci95": [
+    -0.02547464166434668,
+    -0.0024667253337561177
+  ],
+  "directional_degradation_confirmed_before_reference": false,
+  "reference_gate_status": "required next if degradation is confirmed"
+}

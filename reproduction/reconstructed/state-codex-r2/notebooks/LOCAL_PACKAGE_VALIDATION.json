@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "files_retrieved": 103,
+  "bytes_retrieved": 11684797,
+  "notebooks": [
+    {
+      "notebook": "01-state-codex-r2-dose.ipynb",
+      "embedded_figures": 2,
+      "seconds": 72.229,
+      "hashes_and_execution_receipts": "passed"
+    },
+    {
+      "notebook": "02-state-codex-r2-distance.ipynb",
+      "embedded_figures": 1,
+      "seconds": 125.559,
+      "hashes_and_execution_receipts": "passed"
+    },
+    {
+      "notebook": "03-state-codex-r2-magnitude.ipynb",
+      "embedded_figures": 1,
+      "seconds": 168.979,
+      "hashes_and_execution_receipts": "passed"
+    },
+    {
+      "notebook": "04-state-codex-r2-secondary.ipynb",
+      "embedded_figures": 1,
+      "seconds": 75.242,
+      "hashes_and_execution_receipts": "passed"
+    },
+    {
+      "notebook": "05-state-codex-r2-modality.ipynb",
+      "embedded_figures": 0,
+      "seconds": 46.788,
+      "hashes_and_execution_receipts": "passed"
+    }
+  ],
+  "executed_cells": 35,
+  "errors": 0,
+  "local_scientific_execution": false,
+  "preliminary_all_receipt": "recovery_checks/preliminary_pipeline_all_receipt.json; not authoritative",
+  "single_cell_A9_note": "recovery_checks/A9_single_cell_observation.json"
+}

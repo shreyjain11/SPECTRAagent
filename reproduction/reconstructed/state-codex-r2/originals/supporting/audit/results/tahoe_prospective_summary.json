@@ -1,0 +1,32 @@
+{
+  "axis_preparation": "prospective; no Tahoe STATE result, pred_de, real_de, or agg_results file read",
+  "split_toml_sha256": "eac16fb06052dec9d6842dfae04d5ca693b847e3432f719a975adce205707783",
+  "contexts": [
+    "tahoe_holdout.C32",
+    "tahoe_holdout.HOP62",
+    "tahoe_holdout.HepG2/C3A",
+    "tahoe_holdout.Hs 766T",
+    "tahoe_holdout.PANC-1"
+  ],
+  "test_list_lengths": {
+    "tahoe_holdout.C32": 777,
+    "tahoe_holdout.HOP62": 778,
+    "tahoe_holdout.HepG2/C3A": 778,
+    "tahoe_holdout.Hs 766T": 778,
+    "tahoe_holdout.PANC-1": 778
+  },
+  "shared_unique_test_conditions": 735,
+  "complete_three_dose_drugs": 199,
+  "selected_drug_dose_conditions": 597,
+  "planned_context_condition_units": 2985,
+  "dose_counts": {
+    "0.05": 199,
+    "0.5": 199,
+    "5.0": 199
+  },
+  "uniquely_mapped_hvg_features": 879,
+  "mapping_sha256": "fc87bd1a3d2e2f066d6f049d2b384994a022b295d3d31db7a046a966a44ecb1d",
+  "cell_count_rows_available": 6594,
+  "cell_count_context_condition_pairs_available": 5688,
+  "condition_rule": "intersection across all five official test lists; retain drug identities with all 0.05/0.5/5.0 uM doses"
+}

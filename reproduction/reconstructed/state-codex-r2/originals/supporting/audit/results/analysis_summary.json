@@ -1,0 +1,61 @@
+{
+  "frozen_contract_sha256": "d440a75833ce5dfba1f9cc341b7813366e6d7fe80f28258365abc4b3540cc99f",
+  "balanced_perturbations_before_complete_case": 638,
+  "complete_balanced_perturbations": 638,
+  "power_target": 263,
+  "bootstrap_seed": 20260715,
+  "bootstrap_draws": 10000,
+  "context_order": [
+    "k562",
+    "jurkat",
+    "hepg2",
+    "rpe1"
+  ],
+  "distance": [
+    0.18046048740291556,
+    0.18354871448318624,
+    0.1947480151947483,
+    0.1957521627235205
+  ],
+  "state_se_slope_fisher_z_per_distance_sd": 0.0036351498041591,
+  "state_se_slope_ci95": [
+    0.0005219254160977738,
+    0.006870268011953176
+  ],
+  "state_hvg_slope_fisher_z_per_distance_sd": 0.020938478616903008,
+  "state_hvg_slope_ci95": [
+    0.01675380121407654,
+    0.02509219189688181
+  ],
+  "reference_slope_fisher_z_per_distance_sd": 0.037459341252624234,
+  "reference_slope_ci95": [
+    0.03267014016815983,
+    0.042199424065204605
+  ],
+  "state_minus_reference_slope": -0.03382419144846514,
+  "state_minus_reference_slope_ci95": [
+    -0.03835163108215709,
+    -0.02949704259857718
+  ],
+  "reference_gate_call": "not called: STATE did not show a valid monotonic degradation on the frozen distance axis",
+  "state_far_minus_near_raw_rho": -0.02743268261366466,
+  "state_far_minus_near_ci95": [
+    -0.03707648130096822,
+    -0.017942250573415662
+  ],
+  "adjusted_state_distance_coefficient": 0.006982944838682634,
+  "adjusted_state_distance_ci95": [
+    0.0030139178371029157,
+    0.01091881371196073
+  ],
+  "adjustment_covariates": [
+    "log1p effect RMS",
+    "log1p n DE genes",
+    "log1p perturbed cell count",
+    "log1p unique mapped control count"
+  ],
+  "exact_context_permutation_one_sided_p": 0.5833333333333334,
+  "exact_context_permutations": 24,
+  "target_degradation_success": false,
+  "representation_replication_success": false
+}

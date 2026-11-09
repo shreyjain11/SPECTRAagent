@@ -1,0 +1,256 @@
+{
+  "status": "computed_from_public_inputs",
+  "scientific_execution_host": "exxact05.broadinstitute.org",
+  "completed_utc": "2026-11-09T14:56:31Z",
+  "sources": [
+    {
+      "path": "inputs/ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_real_de.csv",
+      "bytes": 387383572,
+      "sha256": "19922ccec8820e43daa74dac907adeaa7b12d651308570650920762269f568d2"
+    },
+    {
+      "path": "inputs/ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_results.csv",
+      "bytes": 468117,
+      "sha256": "a0de78f621e8c6dfc67ac6ab6acbbab65fbd3aaddf7e56732ed6f03569d39f94"
+    },
+    {
+      "path": "inputs/ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_real_de.csv",
+      "bytes": 395844167,
+      "sha256": "05c3fa4a991b1e94cdd991be01a787bd779c384d66760b70fbd569ffe5411063"
+    },
+    {
+      "path": "inputs/ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_results.csv",
+      "bytes": 459434,
+      "sha256": "e3fef3287ccc5f38ac64c1c249915684a11dda7b38b43884b1f636cde792364a"
+    },
+    {
+      "path": "inputs/ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_real_de.csv",
+      "bytes": 381547673,
+      "sha256": "a038a095e74641cf068dc048a5e4f619b572c5b0b97ff9a10c47931ab75db13b"
+    },
+    {
+      "path": "inputs/ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_results.csv",
+      "bytes": 479496,
+      "sha256": "8f953408f94eadc1461851599a33e2a4f84e413621d5ee54a52a8746c2037691"
+    },
+    {
+      "path": "inputs/ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs 766T_real_de.csv",
+      "bytes": 389336629,
+      "sha256": "7d9f9e651c57a4ebb11ee04c256dac7a8b642b4736d3499c75cefa39908469d5"
+    },
+    {
+      "path": "inputs/ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs 766T_results.csv",
+      "bytes": 466949,
+      "sha256": "b9ab34b3d93a414e5db0650aaad70fb9bc558abade0e4c4eb3322ab3e4a47080"
+    },
+    {
+      "path": "inputs/ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_real_de.csv",
+      "bytes": 398029547,
+      "sha256": "2b9ed18f2dae9d83dbfa910d9e7e2cac1da7ad0f73e43bed40b8daaf62a254c9"
+    },
+    {
+      "path": "inputs/ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_results.csv",
+      "bytes": 461203,
+      "sha256": "2171a50b43d55ed6a5fae82c50685fd519b21b3a821872cb0e147a338d26a332"
+    },
+    {
+      "path": "inputs/ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/C32_results.csv",
+      "bytes": 281263,
+      "sha256": "9fee724f7d5dc46a3e0061e264347ce4c8c5c29b6c0dac2dc67303bcae25894a"
+    },
+    {
+      "path": "inputs/ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/HOP62_results.csv",
+      "bytes": 269030,
+      "sha256": "646052bbdb9844e1a2b94f19c095d0f5a07db9529010f41252c61ba228544d56"
+    },
+    {
+      "path": "inputs/ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/HepG2-C3A_results.csv",
+      "bytes": 287583,
+      "sha256": "9106d01893815fbf77d85f4e2351da8a607adedc74edb62cc452c110812b09a2"
+    },
+    {
+      "path": "inputs/ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/Hs 766T_results.csv",
+      "bytes": 277100,
+      "sha256": "80c38255fdce0444457f909d7ef9c2186a82c5476550bfe82604bd48896aae72"
+    },
+    {
+      "path": "inputs/ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/PANC-1_results.csv",
+      "bytes": 273025,
+      "sha256": "5a40d67c26a428487d3b0f602b5b7a69006b5c4595eaaf0ffb5f44eaf5160239"
+    },
+    {
+      "path": "inputs/ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_results.csv",
+      "bytes": 468674,
+      "sha256": "cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79"
+    },
+    {
+      "path": "inputs/ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_results.csv",
+      "bytes": 463111,
+      "sha256": "dedd141ec8fdff513a19cb46f3bb95b76372b117935620b02f50f2f8e339d33d"
+    },
+    {
+      "path": "inputs/ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_results.csv",
+      "bytes": 473841,
+      "sha256": "a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb"
+    },
+    {
+      "path": "inputs/ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs 766T_results.csv",
+      "bytes": 468068,
+      "sha256": "4904a9d8a3ed52a2cccd9de85cd0eeec0277bcc07d184eefb8096395719a2746"
+    },
+    {
+      "path": "inputs/ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_results.csv",
+      "bytes": 464280,
+      "sha256": "8483133246cf1dba89c76a94f8a407757f4714bff5c9534f66890fbfe3d7ec03"
+    },
+    {
+      "path": "inputs/metadata/generalization.toml",
+      "bytes": 150875,
+      "sha256": "eac16fb06052dec9d6842dfae04d5ca693b847e3432f719a975adce205707783"
+    },
+    {
+      "path": "inputs/metadata/tahoe_obs_metadata.parquet",
+      "bytes": 2293981573,
+      "sha256": "e51b24f3666f5f433c59ff01dd6fa33934627091455e89d929f2c1ddc87401fe"
+    },
+    {
+      "path": "originals/supporting/audit/axis/frozen_axis_A7_dose_official.json",
+      "bytes": 3726,
+      "sha256": "4d7b81ddde943b3a3996d7b933c3d898e1a0cd2683f9aba03bb0a41a5cd51315"
+    },
+    {
+      "path": "originals/supporting/audit/results/A10_dose_hvg_summary.json",
+      "bytes": 1526,
+      "sha256": "e7a29b7feb4a2957b3ed64f63273aa6add3eae060f57a96d799a500898a4a2a9"
+    },
+    {
+      "path": "originals/supporting/audit/results/A8_tahoe_dose_summary.json",
+      "bytes": 1530,
+      "sha256": "2bdfe7d85cced208cdf8931178ebd7bc5e08926858a5b8f0ad642f7b91b008da"
+    },
+    {
+      "path": "originals/supporting/audit/results/A9_mito_summary.json",
+      "bytes": 1441,
+      "sha256": "c37a1ec63399ae3a719789ca3e9a9b25e132f804b612d40f3554182d74bc778e"
+    }
+  ],
+  "methods": {
+    "methods/acquire.py": "54a274b377b4ca4cf5774984538bc5c9b1c8ddc27945c22871a803fe1719d108",
+    "methods/closures.py": "7a317c0009d24773c0c268401b01c2d5e38edc9e642cbebdaecb9f7ab10e8d53",
+    "methods/common.py": "14f57d2ff1be8526dc1afd16f22d2a3e2add0f679a2b94e207a37f0afaca813f",
+    "methods/observation_controls.py": "d3cb7b51f2edfc23f422502539889ec96b48dcb3d354d9d5e5ee3432b4323747",
+    "methods/plots.py": "56629cb6c321dd55c9311abfa6a0c031eeb35c988a1776c563ca9daae561897f",
+    "methods/replogle.py": "a7585f1c74a3893ef3b029820852f39779cd2b117afac46fb2954d732c0e7ba3",
+    "methods/run_pipeline.py": "4320aabc4eec6549b3a0f14f11be3836d9f3db4ddbeb948efd3b567df024e967",
+    "methods/tahoe.py": "e71dd649e5fa02142080b4dd9508840f32636a697a0d661223286a0f06d92cd2",
+    "methods/test_methods.py": "d02931e5b4c0d3377eb955c71844617281c889e5ee071b030033573a2a456015"
+  },
+  "outputs": [
+    {
+      "path": "computed/tahoe/cohort.csv",
+      "bytes": 151283,
+      "sha256": "d17bfdee23ffe142c97c7fb65fabbe9be063bbbc0a422daad781c9174ce6c196"
+    },
+    {
+      "path": "computed/tahoe/cohort_summary.json",
+      "bytes": 305,
+      "sha256": "294c23d54d67f954df43b2436f2c0dfc2124d44df1c70d4902aa178b4f01557a"
+    },
+    {
+      "path": "computed/tahoe/A7_contract_diagnostic.json",
+      "bytes": 733,
+      "sha256": "38e0d83eb21763fbe4a87340d2f851a8405d272c78d13d2b73dcd3ebc90a85f8"
+    },
+    {
+      "path": "computed/tahoe/condition_controls.csv",
+      "bytes": 482556,
+      "sha256": "fda740683f79870bebf7b04c1c20a5f275a872c977e6b81db54ccb3d11def951"
+    },
+    {
+      "path": "computed/tahoe/A8_curve.csv",
+      "bytes": 236,
+      "sha256": "97a380355e5b4e0f9a42f18416f5f773ff9cda035763687a74bf5ed84baeb351"
+    },
+    {
+      "path": "computed/tahoe/A8_units.csv",
+      "bytes": 735602,
+      "sha256": "95879eef2584473e33e64fd03648a8f042e84ecf841d085e84f2e8303ff7b862"
+    },
+    {
+      "path": "computed/tahoe/A8_summary.json",
+      "bytes": 2350,
+      "sha256": "0de4c09d30f5859db1982f41211f81c8f9153cb6c6d26cebae0d98b68fac23d8"
+    },
+    {
+      "path": "computed/tahoe/A8_excluded_scores.csv",
+      "bytes": 152,
+      "sha256": "06ced04997f1505edca025f5eae01caecc71801632c6ff445d136a3b11cfc0c3"
+    },
+    {
+      "path": "computed/tahoe/basal_reference_scores.csv",
+      "bytes": 148483,
+      "sha256": "e95134c5f26dcf0b48a5fb62aadd8b0a0c724d380e3a0cbb4e984ab6eb649f1d"
+    },
+    {
+      "path": "computed/tahoe/A10_curve.csv",
+      "bytes": 244,
+      "sha256": "5fd4bdad70c9f9a99e5d67036ecaf95e710a7d9a566f795a40f6576329f53120"
+    },
+    {
+      "path": "computed/tahoe/A10_units.csv",
+      "bytes": 806126,
+      "sha256": "9fb34ce67ebd7b7621953b55929bd54d2d99aadcddf5c3fd82ebe6fcc5c50214"
+    },
+    {
+      "path": "computed/tahoe/A10_summary.json",
+      "bytes": 4106,
+      "sha256": "143913742f39dca839fb37b4649802d9011112dc9d2a0f472b07b259c98137eb"
+    },
+    {
+      "path": "computed/tahoe/A10_excluded_scores.csv",
+      "bytes": 152,
+      "sha256": "06ced04997f1505edca025f5eae01caecc71801632c6ff445d136a3b11cfc0c3"
+    },
+    {
+      "path": "computed/tahoe/A9_curve.csv",
+      "bytes": 387,
+      "sha256": "11c72ac9e57a8b16f77e9041cc4a02a13d64a37469708e8399630453299e051d"
+    },
+    {
+      "path": "computed/tahoe/A9_units.csv",
+      "bytes": 748363,
+      "sha256": "09b32fbf9145c1199cfce0831d0b68b56138c60b67836987fc94933bc75a3d43"
+    },
+    {
+      "path": "computed/tahoe/A9_summary.json",
+      "bytes": 2655,
+      "sha256": "20d1ebbdf0dad9be8e5a97e0df387eaebe573c8b936da520bf932cadea47a040"
+    },
+    {
+      "path": "computed/tahoe/A9_excluded_scores.csv",
+      "bytes": 152,
+      "sha256": "06ced04997f1505edca025f5eae01caecc71801632c6ff445d136a3b11cfc0c3"
+    },
+    {
+      "path": "computed/tahoe/historical_comparison.json",
+      "bytes": 550,
+      "sha256": "56a1e29731086e1293ddaa5999040c72c75135b22ee3f8edbf24102325f924de"
+    }
+  ],
+  "checks": {
+    "analyses": [
+      "A8",
+      "A10",
+      "A9"
+    ],
+    "cohort_drugs": 199,
+    "cohort_units": 2985
+  },
+  "documented_assumptions": [
+    "Original executable analysis helpers absent; implementations follow frozen contracts.",
+    "Population-SD normalization over complete analyzed rows; unknown original dose-bootstrap seed is explicitly fixed at 20260716, 10000 draws.",
+    "Original count helper absent; metadata and technical-plate matching are documented in tahoe_controls_receipt.json.",
+    "The A7 written-sign contradiction is checked directly against its frozen contract; no A7 outcome analysis is invented."
+  ],
+  "historical_outputs_used_as_calculation_inputs": false
+}

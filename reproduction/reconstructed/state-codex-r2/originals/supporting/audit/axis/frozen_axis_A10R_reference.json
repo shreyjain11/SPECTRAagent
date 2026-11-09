@@ -1,0 +1,30 @@
+{
+  "aggregation": "same context-drug-dose units as A10 with drug and context fixed effects and 10,000 drug-cluster bootstrap draws",
+  "axis_name": "A10 same-example basal-expression reference gate",
+  "confirmation_set": "official A10 ST-HVG zero-shot real-DE tables",
+  "controller_version_sha256": "3797b6715c1eded9fac7f310facd3842067e52e5ec1db7e0417b06e5837b25bb",
+  "controls": [
+    "identical A10 examples",
+    "identical context/drug/dose",
+    "identical significant-gene representation"
+  ],
+  "deduplication": "one reference score per normalized context-drug-dose",
+  "direction": "larger negative-log dose predicts lower reference performance if the difficulty is shared",
+  "distance_metric": "standardized negative base-10 log dose",
+  "error_spending_plan": "single fixed reference computation; no predictor or threshold revision",
+  "frozen_utc": "2026-07-16T14:03:55.758027+00:00",
+  "gene_set": "the identical official significant-real-DE features used for each A10 condition",
+  "hypothesis_source": "required corrected closure reference; executable fallback after the hosted table failed to materialize the originally planned training-context mean",
+  "inclusion_exclusion": "A10 eligible conditions with at least 20 significant real-DE features and finite DMSO baseline values; report all exclusions",
+  "level_rule": "fixed 5.0, 0.5, and 0.05 uM levels",
+  "metric": "signed-LFC Spearman on the same significant features as the official A10 score",
+  "normalization": "fixed predictor ranks genes by negative log1p DMSO reference mean; score is Spearman correlation with signed real LFC and Fisher-z regression",
+  "outcome_separation": "the predictor uses only reference_mean; target fold_change and fdr are used solely for scoring",
+  "power_plan": "one reference look with 10,000 drug-cluster bootstrap draws",
+  "prospective_features": "administered dose axis and DMSO basal expression for each target context",
+  "reference_formula": "for each example predict signed response rank as negative rank of log1p DMSO baseline expression, a fixed model-independent mean-reversion rule",
+  "sample_size_target": "at least 2,500 same-example units and 150 drugs",
+  "schema_note": "the first 15 C32 rows were inspected to verify fields before freeze; no reference correlation or dose-level reference result was computed",
+  "success_criteria": "reference is descriptive and cannot reject A10; classify STATE degradation as larger when STATE-minus-reference slope is below -0.02, smaller when above 0.02, otherwise comparable",
+  "unit": "held-out Tahoe cell line x drug x dose"
+}

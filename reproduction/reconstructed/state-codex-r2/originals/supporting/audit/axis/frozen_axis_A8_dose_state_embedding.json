@@ -1,0 +1,32 @@
+{
+  "aggregation": "one official score per held-out context, drug, and dose; context and drug fixed effects; drug-cluster bootstrap",
+  "axis_name": "Tahoe administered-dose displacement for the ST-SE checkpoint",
+  "confirmation_set": "official ST-SE-Tahoe few-shot state_generalization_X_state eval_best score tables for C32, HOP62, HepG2-C3A, Hs 766T, and PANC-1; none read before this freeze",
+  "controller_version_sha256": "3797b6715c1eded9fac7f310facd3842067e52e5ec1db7e0417b06e5837b25bb",
+  "controls": [
+    "drug fixed effects",
+    "held-out context fixed effects",
+    "official held-out significant-DE-gene count",
+    "treated and matched-control cell counts"
+  ],
+  "deduplication": "one normalized context-drug-dose row from each official ST-SE result table",
+  "direction": "lower administered dose predicts lower ST-SE performance",
+  "distance_metric": "negative base-10 log dose in uM, standardized over the three balanced levels; larger values mean weaker/lower-dose challenge",
+  "error_spending_plan": "one ST-SE best-checkpoint look; last-checkpoint and zero-shot tables are sensitivities only and cannot rescue failure of the primary",
+  "fixed_reference": "equal-training-cell-line mean Tahoe pseudobulk LFC vector for the same drug-dose, scored against the same held-out response over the same significant-real-DE genes; predictions consume no held-out outcome",
+  "frozen_utc": "2026-07-16T13:49:12.477661+00:00",
+  "gene_set": "official released significant-real-DE gene set used by de_spearman_lfc_sig for each target condition",
+  "hypothesis_source": "predeclared dose mechanism; corrected sign before any ST-SE Tahoe score table was read after A7's textual sign contradiction was detected",
+  "inclusion_exclusion": "intersection of the five official test lists; retain 199 drugs having all three doses in every held-out context; vehicle excluded; finite official scores only with all missingness reported",
+  "level_rule": "three fixed experimental levels 5.0, 0.5, and 0.05 uM; no data-dependent binning",
+  "mechanism_gate": "adjust for held-out nDE and cell support; if absorbed, reattribute the mechanism to response magnitude or measurement floor and retain administered dose only as the prospective experimental proxy",
+  "metric": "official de_spearman_lfc_sig; primary coefficient is Fisher-z score on standardized negative log dose with drug and context fixed effects",
+  "normalization": "official cell-eval signed log-fold-change Spearman score; Fisher z for regression",
+  "power_plan": "one primary look using every available one of 199 complete drug clusters; 10,000 drug-cluster bootstrap draws preserving all dose/context observations",
+  "prospective_features": "ordered administered concentration within each drug: 5.0, 0.5, and 0.05 uM",
+  "reference_gate": "after establishing real ST-SE degradation, compare its slope with the same-example fixed reference and classify larger, comparable, or smaller; shared degradation remains a valid failure",
+  "sample_size_target": "at least 150 complete drug clusters; planned maximum 199 drugs and 2,985 units",
+  "success_criteria": "certify directional degradation only if the primary negative-log-dose coefficient and its 95% drug-block bootstrap interval are below zero and mean performance at 0.05 uM is below 5.0 uM",
+  "target_access_state": "ST-HVG C32 file header and initial rows were inspected after A7; no ST-SE Tahoe result, prediction, real-DE, or aggregate table was read before this A8 freeze",
+  "unit": "held-out Tahoe cell line x drug x dose"
+}

@@ -1,0 +1,91 @@
+{
+  "status": "computed_from_public_inputs",
+  "scientific_execution_host": "exxact05.broadinstitute.org",
+  "completed_utc": "2026-11-09T15:00:52Z",
+  "sources": [
+    {
+      "path": "computed/replogle/axis.csv",
+      "bytes": 420,
+      "sha256": "b3c04ace69e496cac25be08a0873729facf46a1737cf6d7626e6572e9c6ffa71"
+    },
+    {
+      "path": "computed/replogle/unit_scores.csv",
+      "bytes": 304268,
+      "sha256": "e86e2ca72d99565f87c9ecfa479fe16495acd654f4bc6a685556114455f89da3"
+    },
+    {
+      "path": "computed/replogle/cell_counts.csv",
+      "bytes": 126878,
+      "sha256": "39746e40fb141fac693a5ad9f370eb4a353e9a7078001401ca6ae44ac303cea3"
+    },
+    {
+      "path": "computed/replogle/A2_eligibility.csv",
+      "bytes": 132554,
+      "sha256": "34108a8623b50ff1fb4527296f8a02501d2e29ecd67d0254571ac7514854124b"
+    },
+    {
+      "path": "originals/supporting/audit/results/analysis_summary.json",
+      "bytes": 1830,
+      "sha256": "e33b9db14308219449db46ab968561d2cd48e75d06efb3951fffc5e4eda12229"
+    }
+  ],
+  "methods": {
+    "methods/acquire.py": "54a274b377b4ca4cf5774984538bc5c9b1c8ddc27945c22871a803fe1719d108",
+    "methods/closures.py": "7a317c0009d24773c0c268401b01c2d5e38edc9e642cbebdaecb9f7ab10e8d53",
+    "methods/common.py": "14f57d2ff1be8526dc1afd16f22d2a3e2add0f679a2b94e207a37f0afaca813f",
+    "methods/observation_controls.py": "d3cb7b51f2edfc23f422502539889ec96b48dcb3d354d9d5e5ee3432b4323747",
+    "methods/plots.py": "56629cb6c321dd55c9311abfa6a0c031eeb35c988a1776c563ca9daae561897f",
+    "methods/replogle.py": "a7585f1c74a3893ef3b029820852f39779cd2b117afac46fb2954d732c0e7ba3",
+    "methods/run_pipeline.py": "4320aabc4eec6549b3a0f14f11be3836d9f3db4ddbeb948efd3b567df024e967",
+    "methods/tahoe.py": "e71dd649e5fa02142080b4dd9508840f32636a697a0d661223286a0f06d92cd2",
+    "methods/test_methods.py": "d02931e5b4c0d3377eb955c71844617281c889e5ee071b030033573a2a456015"
+  },
+  "outputs": [
+    {
+      "path": "computed/replogle/distance_curve.csv",
+      "bytes": 994,
+      "sha256": "fd275e5d1325754dc334de241fb1ee4f76d4a349ea28fbcd781fedccb7394769"
+    },
+    {
+      "path": "computed/replogle/distance_units.csv",
+      "bytes": 861748,
+      "sha256": "8cdb1ea882fd5f2bc4aaef03c038fbedb9aff32d4790a81c4597e63034d1f92a"
+    },
+    {
+      "path": "computed/replogle/distance_summary.json",
+      "bytes": 4063,
+      "sha256": "137cdfaa58008643e5658aa82ed38038e38e847d9566ce2dc894f084ab6e5dbb"
+    },
+    {
+      "path": "computed/replogle/magnitude_curve.csv",
+      "bytes": 389,
+      "sha256": "7af4ca4b43664b1b2e78c672d49d3824c37d8d390216f16e89181315cd36a20e"
+    },
+    {
+      "path": "computed/replogle/magnitude_units.csv",
+      "bytes": 918856,
+      "sha256": "5b938fa647553abf3f589f85a37fc78c8f0ef501f36bfbf61db022b950d84adb"
+    },
+    {
+      "path": "computed/replogle/magnitude_summary.json",
+      "bytes": 1019,
+      "sha256": "13c83b895f3147368a1322afaa3f7c656a989f0826d179d5606b98cfa6bba47a"
+    },
+    {
+      "path": "computed/replogle/historical_comparison.json",
+      "bytes": 832,
+      "sha256": "2f7afed13a93ee92dc92ee3a97d14b183f4fe8a6555864edf9f7fd2f955e83b6"
+    }
+  ],
+  "checks": {
+    "perturbations": 638,
+    "units": 2552,
+    "eligible_disjoint_candidates": 0
+  },
+  "documented_assumptions": [
+    "Original executable helpers absent; unadjusted OLS and primary perturbation-fixed-effect adjustment follow the signed-LFC and paired-block contract. Pooled adjustment is an explicitly additional sensitivity.",
+    "Distance predictor standardized by population SD on all rows; fixed original seed 20260715 and 10000 draws.",
+    "A2 within-context equal-count levels use stable descending expected RMS and lexical perturbation ties; reported residual-correlation transform was not fully specified, so raw and negative-log1p versions are both labeled."
+  ],
+  "historical_outputs_used_as_calculation_inputs": false
+}

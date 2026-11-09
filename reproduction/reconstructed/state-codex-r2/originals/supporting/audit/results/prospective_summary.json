@@ -1,0 +1,57 @@
+{
+  "common_gene_count": 18979,
+  "primary_order_near_to_far": [
+    "k562",
+    "jurkat",
+    "hepg2",
+    "rpe1"
+  ],
+  "depmap_hpa_distance_spearman": 1.0,
+  "depmap_hpa_e61_distance_spearman": 0.8,
+  "levels": [
+    {
+      "context": "k562",
+      "distance": 0.18046048740291556,
+      "nearest_distance_diagnostic": 0.15167584785550658,
+      "nearest_training_context": "jurkat",
+      "level": "L1",
+      "hpa_distance": 0.18580962172010926,
+      "hpa_nearest_training_context": "jurkat",
+      "hpa_e61_sensitivity_distance": 0.18724513096279663,
+      "hpa_e61_sensitivity_nearest": "jurkat"
+    },
+    {
+      "context": "jurkat",
+      "distance": 0.18354871448318624,
+      "nearest_distance_diagnostic": 0.15167584785550658,
+      "nearest_training_context": "k562",
+      "level": "L2",
+      "hpa_distance": 0.19201104276868253,
+      "hpa_nearest_training_context": "k562",
+      "hpa_e61_sensitivity_distance": 0.20322355179258358,
+      "hpa_e61_sensitivity_nearest": "k562"
+    },
+    {
+      "context": "hepg2",
+      "distance": 0.1947480151947483,
+      "nearest_distance_diagnostic": 0.19141231190375707,
+      "nearest_training_context": "rpe1",
+      "level": "L3",
+      "hpa_distance": 0.1980507741776638,
+      "hpa_nearest_training_context": "k562",
+      "hpa_e61_sensitivity_distance": 0.20070575337540106,
+      "hpa_e61_sensitivity_nearest": "k562"
+    },
+    {
+      "context": "rpe1",
+      "distance": 0.1957521627235205,
+      "nearest_distance_diagnostic": 0.19141231190375707,
+      "nearest_training_context": "hepg2",
+      "level": "L4",
+      "hpa_distance": 0.21132053937388398,
+      "hpa_nearest_training_context": "hepg2",
+      "hpa_e61_sensitivity_distance": 0.21844255995736042,
+      "hpa_e61_sensitivity_nearest": "hepg2"
+    }
+  ]
+}

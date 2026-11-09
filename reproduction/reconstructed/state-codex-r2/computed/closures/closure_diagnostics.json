@@ -1,0 +1,108 @@
+{
+  "A2e": {
+    "original_status": "Unscored; original prospective pseudobulk reconciliation did not finish",
+    "reconstructed_cohort_drugs": 199,
+    "reconstructed_cohort_units": 2985,
+    "current_work": "Original cohort and source inventory reconstructed; original partial block map was not included in surviving handoff, so1536-block reconciliation is historical-only.",
+    "historical_retained_summary": {
+      "axis_preparation": "prospective; no Tahoe STATE result, pred_de, real_de, or agg_results file read",
+      "split_toml_sha256": "eac16fb06052dec9d6842dfae04d5ca693b847e3432f719a975adce205707783",
+      "contexts": [
+        "tahoe_holdout.C32",
+        "tahoe_holdout.HOP62",
+        "tahoe_holdout.HepG2/C3A",
+        "tahoe_holdout.Hs 766T",
+        "tahoe_holdout.PANC-1"
+      ],
+      "test_list_lengths": {
+        "tahoe_holdout.C32": 777,
+        "tahoe_holdout.HOP62": 778,
+        "tahoe_holdout.HepG2/C3A": 778,
+        "tahoe_holdout.Hs 766T": 778,
+        "tahoe_holdout.PANC-1": 778
+      },
+      "shared_unique_test_conditions": 735,
+      "complete_three_dose_drugs": 199,
+      "selected_drug_dose_conditions": 597,
+      "planned_context_condition_units": 2985,
+      "dose_counts": {
+        "0.05": 199,
+        "0.5": 199,
+        "5.0": 199
+      },
+      "uniquely_mapped_hvg_features": 879,
+      "mapping_sha256": "fc87bd1a3d2e2f066d6f049d2b384994a022b295d3d31db7a046a966a44ecb1d",
+      "cell_count_rows_available": 6594,
+      "cell_count_context_condition_pairs_available": 5688,
+      "condition_rule": "intersection across all five official test lists; retain drug identities with all 0.05/0.5/5.0 uM doses"
+    },
+    "original_879_gene_mapping_status": "Original mapping hash/definition survives; mapping rows were not included in this handoff. No879-gene outcome analysis was originally completed."
+  },
+  "A3": {
+    "original_status": "Unscored dependency closure",
+    "reconstructed_input_level_counts": [
+      {
+        "support_level": 1.0,
+        "units": 597,
+        "mean_treated": 4847.802345058626,
+        "min_treated": 3319.0,
+        "max_treated": 14192.0
+      },
+      {
+        "support_level": 2.0,
+        "units": 597,
+        "mean_treated": 2650.4388609715243,
+        "min_treated": 2154.0,
+        "max_treated": 3318.0
+      },
+      {
+        "support_level": 3.0,
+        "units": 597,
+        "mean_treated": 1772.0753768844222,
+        "min_treated": 1457.0,
+        "max_treated": 2154.0
+      },
+      {
+        "support_level": 4.0,
+        "units": 597,
+        "mean_treated": 1150.147403685092,
+        "min_treated": 881.0,
+        "max_treated": 1455.0
+      },
+      {
+        "support_level": 5.0,
+        "units": 596,
+        "mean_treated": 578.01677852349,
+        "min_treated": 1.0,
+        "max_treated": 881.0
+      }
+    ],
+    "outcome_test_performed": false
+  },
+  "A5": {
+    "original_status": "Unscored A2e-dependent dose test; distinct from completed A10",
+    "reconstructed_dose_levels": [
+      0.05,
+      0.5,
+      5.0
+    ],
+    "outcome_test_performed": false
+  },
+  "A6": {
+    "original_status": "Unscored A2e-dependent family interaction",
+    "release_assignment_rows": 23,
+    "outcome_test_performed": false
+  },
+  "A4": {
+    "original_status": "Nonidentifiable modality contrast",
+    "design_columns": [
+      "intercept",
+      "Tahoe dataset",
+      "chemical modality"
+    ],
+    "design_rank": 2,
+    "number_columns": 3,
+    "exact_modality_dataset_collinearity": true,
+    "outcome_test_performed": false
+  }
+}

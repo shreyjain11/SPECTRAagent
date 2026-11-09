@@ -4,6 +4,160 @@
   "model": "STATE",
   "axis": "Expected perturbation magnitude",
   "dataset_split": {
+    "description": "Verified original public data and released STATE outputs; real source rows processed into axes, individual measurements and original screening diagnostics.",
+    "input_inventory": "reconstructed/state-codex-r2/methods/sources.json",
+    "source_manifest": "reconstructed/state-codex-r2/methods/sources.json",
+    "legacy_input_inventory": "inputs/state.json",
+    "public_sources": [],
+    "sample_tables": [],
+    "public_inputs": {
+      "archive": "state-retained-inputs",
+      "catalog": "data.json",
+      "prepare": "prepare_inputs.py",
+      "notebook_preparation_cell": 0,
+      "implementation": "legacy_implementation"
+    },
+    "source_access_evidence": "reconstructed/state-codex-r2/execution_evidence/download_receipt.json"
+  },
+  "axis_levels": {
+    "definition": "Prospective estimate of perturbation response magnitude from training cells.",
+    "calculation": "Source-derived features, frozen levels and cohort eligibility are computed in notebook stages3–4.",
+    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py"
+  },
+  "model_evaluation": {
+    "measurements": "Original official released condition scores and individual DE rows, with source-calculated references and controls where originally performed; unscored candidates retain stopping diagnostics.",
+    "fine_tuning": {
+      "target_weight_updates_in_replay": false,
+      "target_fine_tuning_during_original_audit": null,
+      "original_training_evidence": "Original investigation used pinned public STATE releases; no target-weight changes in this reconstruction.",
+      "comparators": []
+    },
+    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py"
+  },
+  "curve": {
+    "aggregation_and_uncertainty": "Actual individual-row regressions, paired/cluster bootstraps, curves and original sensitivity controls are recalculated. Original unscored candidates display computed eligibility/design diagnostics.",
+    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py"
+  },
+  "insight": {
+    "comparison_controls_confirmation": "Historical reported decisions remain attributed. Recalculated values and explicit numerical differences are shown separately; A9 does not numerically reproduce.",
+    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py"
+  },
+  "reconstruction_notes": [
+    "Actual public-source calculations executed on exxact05. Original computational helpers were not recovered; reconstructed implementations are linked to retained frozen definitions.",
+    "Original released STATE outputs are scored and analyzed; fresh neural inference was not part of this investigation.",
+    "Historical reports and aggregate outcomes are comparison targets and stopping evidence, not calculation inputs. Numerical discrepancies are retained without parameter or input tuning.",
+    "Originally unscored candidates show acquisition, eligibility and design diagnostics; no new performance experiment is invented.",
+    "Original A2e 879-gene mapping rows and 1536-block partial reconciliation map were not in the handoff; their retained hashes/counts are historical-only.",
+    "A2e was never scored. Its planned cohort and source inventory are rebuilt without fabricating a confirmation curve."
+  ],
+  "implementation": {
+    "format": "source_workflow_notebook",
+    "notebook": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb",
+    "script": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py",
+    "html": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.html",
+    "supporting_code": "reconstructed/state-codex-r2/supporting_code.json",
+    "published_notebook_sha256": "bfb4b1ac25103036fdd2044e39ea6233e0fed41281f8b3f65375a27f05853a95",
+    "published_script_sha256": "ce97d7a43dfa115590424939db421daa35c761ce41959e376cd56f7e055c2bcb",
+    "cell_locations": [
+      {
+        "notebook_cell": 2,
+        "start_line": 1,
+        "end_line": 19
+      },
+      {
+        "notebook_cell": 4,
+        "start_line": 22,
+        "end_line": 28
+      },
+      {
+        "notebook_cell": 6,
+        "start_line": 31,
+        "end_line": 33
+      },
+      {
+        "notebook_cell": 8,
+        "start_line": 36,
+        "end_line": 41
+      },
+      {
+        "notebook_cell": 10,
+        "start_line": 44,
+        "end_line": 49
+      },
+      {
+        "notebook_cell": 12,
+        "start_line": 52,
+        "end_line": 57
+      },
+      {
+        "notebook_cell": 14,
+        "start_line": 60,
+        "end_line": 63
+      }
+    ],
+    "saved_code_cells": 7,
+    "saved_error_outputs": 0,
+    "changes": [
+      "Default Run All recalculates source-derived values and original analyses or stopping diagnostics.",
+      "Original computational helpers reconstructed from frozen definitions; differences and missing partial-work artifacts are explicit.",
+      "Legacy exports and their upstream execution report preserved."
+    ]
+  },
+  "requested_model": "STATE",
+  "historical_decision": {
+    "source": "historical_decisions.json",
+    "record_id": "state-codex-r2/test-03",
+    "disposition": "unresolved",
+    "result": "No eligible independent same-atlas confirmation targets remained. External Tahoe confirmation lacked a verified gene mapping and complete input scan.",
+    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
+  },
+  "traceability_review": {
+    "coverage": "source_workflow_reconstructed",
+    "review": "traceability_review.json",
+    "record_id": "state-codex-r2/test-03",
+    "scope": "Original calculations and stopping diagnostics, with explicitly reconstructed methods; no scientific re-adjudication."
+  },
+  "legacy_implementation": {
+    "notebook": "materials/state/notebooks/state-codex-r2/test-03.ipynb",
+    "script": "materials/state/notebooks/state-codex-r2/test-03.py",
+    "supporting_code": "code/state.json",
+    "cell_locations": [
+      {
+        "notebook_cell": 0,
+        "start_line": 1,
+        "end_line": 17
+      },
+      {
+        "notebook_cell": 1,
+        "start_line": 18,
+        "end_line": 35
+      },
+      {
+        "notebook_cell": 2,
+        "start_line": 36,
+        "end_line": 51
+      },
+      {
+        "notebook_cell": 3,
+        "start_line": 52,
+        "end_line": 55
+      }
+    ],
+    "original_notebook_sha256": "21ec6c91e478381038591e3dbf11b54242b92341fa996420c007f8f139e5d5f7",
+    "published_notebook_sha256": "a44eba76cb743c4349142f9131f3f8d28a8842345ba5db4aefa615b4697f481b",
+    "changes": [
+      "Code-only export; Markdown verdicts and saved outputs omitted.",
+      "Machine-specific home paths replaced with /path/to/audit-home where present.",
+      "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
+      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
+      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
+      "File checks use the published data and code hashes, including redacted provenance files.",
+      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
+    ],
+    "saved_code_cells": 4,
+    "saved_error_outputs": 0
+  },
+  "legacy_dataset_split": {
     "description": "The report survives, but the exact sample-level table needed for this test was not recovered.",
     "input_inventory": "inputs/state.json",
     "public_sources": [
@@ -79,86 +233,80 @@
       "notebook_preparation_cell": 0
     }
   },
-  "axis_levels": {
-    "definition": "Prospective estimate of perturbation response magnitude from training cells.",
-    "calculation": "Any retained script is available in the input bundle; missing source arrays prevent a full replay.",
-    "code": "materials/state/notebooks/state-codex-r2/test-03.py"
-  },
-  "model_evaluation": {
-    "measurements": "Original per-record predictions and outcomes missing.",
-    "fine_tuning": {
-      "target_weight_updates_in_replay": false,
-      "target_fine_tuning_during_original_audit": null,
-      "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
-      "comparators": []
-    },
-    "code": "materials/state/notebooks/state-codex-r2/test-03.py"
-  },
-  "curve": {
-    "aggregation_and_uncertainty": "Cannot compute a curve from missing individual observations.",
-    "code": "materials/state/notebooks/state-codex-r2/test-03.py"
-  },
-  "insight": {
-    "comparison_controls_confirmation": "Original report remains a historical record; its checks cannot be rerun from summaries.",
-    "code": "materials/state/notebooks/state-codex-r2/test-03.py"
-  },
-  "reconstruction_notes": [
+  "legacy_reconstruction_notes": [
     "Pre-cleanup workspace /path/to/audit-home/codex_spectra_audits_v2/STATE, including per-sample data and exact analysis scripts.",
     "Original axis input features and level-assignment outputs.",
     "Original individual predictions/observations and matched reference outputs."
   ],
-  "implementation": {
-    "notebook": "materials/state/notebooks/state-codex-r2/test-03.ipynb",
-    "script": "materials/state/notebooks/state-codex-r2/test-03.py",
-    "supporting_code": "code/state.json",
-    "cell_locations": [
+  "workflow_reconstruction": {
+    "traceability": "reconstructed/state-codex-r2/traceability.json",
+    "stages": {
+      "data": [
+        "reconstructed/state-codex-r2/methods/sources.json",
+        "reconstructed/state-codex-r2/methods/acquire.py",
+        "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-2"
+      ],
+      "processing": [
+        "reconstructed/state-codex-r2/methods/replogle.py",
+        "reconstructed/state-codex-r2/methods/closures.py",
+        "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-4"
+      ],
+      "axis": [
+        "reconstructed/state-codex-r2/computed/replogle/magnitude_units.csv",
+        "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-6"
+      ],
+      "levels": [
+        "reconstructed/state-codex-r2/computed/replogle/A2_eligibility.csv",
+        "reconstructed/state-codex-r2/computed/replogle/released_condition_availability.csv",
+        "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-8"
+      ],
+      "evaluation": [
+        "reconstructed/state-codex-r2/computed/replogle/unit_scores.csv",
+        "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+        "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-10"
+      ],
+      "curve": [
+        "reconstructed/state-codex-r2/computed/replogle/magnitude_summary.json",
+        "reconstructed/state-codex-r2/computed/replogle/magnitude_curve.csv",
+        "reconstructed/state-codex-r2/computed/figures/magnitude_curve.png",
+        "reconstructed/state-codex-r2/computed/closures/original_public_shard_inventory.csv",
+        "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-12"
+      ],
+      "decision": [
+        "reconstructed/state-codex-r2/originals/REPORT.md",
+        "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+        "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb#cell-14"
+      ]
+    },
+    "execution_evidence": "reconstructed/state-codex-r2/notebooks/NOTEBOOK_VALIDATION.json",
+    "package_manifest": "reconstructed/state-codex-r2/PACKAGE_MANIFEST.json",
+    "pipeline_execution_evidence": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude_pipeline.json",
+    "stage_execution_evidence": [
       {
-        "notebook_cell": 0,
-        "start_line": 1,
-        "end_line": 17
+        "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/replogle_axis_receipt.json",
+        "sha256": "5199794463b66c7d9939f8f463c679066b06483604631ebab3dd5e77f026a683"
       },
       {
-        "notebook_cell": 1,
-        "start_line": 18,
-        "end_line": 35
+        "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/replogle_scores_receipt.json",
+        "sha256": "5ed7444573b4871d55ad1e3970b0a3a4a0464c45d8d59e94865e7e31748c2992"
       },
       {
-        "notebook_cell": 2,
-        "start_line": 36,
-        "end_line": 51
+        "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/replogle_observations_receipt.json",
+        "sha256": "a0116ab41b5455cd38ae0df559f2d87ddd0c5c9d28ace37e06503a08a470e656"
       },
       {
-        "notebook_cell": 3,
-        "start_line": 52,
-        "end_line": 55
+        "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/replogle_analysis_receipt.json",
+        "sha256": "3936a80fb06d27e2ffb893fa029ff50722ca29d44cf8c651aa7a64355d869ea4"
+      },
+      {
+        "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/tahoe_controls_receipt.json",
+        "sha256": "17bf58f09721d0fa62dd92e997469759ff020703a8180384eef9f9cb862ae5dd"
+      },
+      {
+        "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/closures_receipt.json",
+        "sha256": "98dc388b3f76dd4f672afaeb385e9244e2415abc7e101cecdac2103abfa718a8"
       }
     ],
-    "original_notebook_sha256": "21ec6c91e478381038591e3dbf11b54242b92341fa996420c007f8f139e5d5f7",
-    "published_notebook_sha256": "a44eba76cb743c4349142f9131f3f8d28a8842345ba5db4aefa615b4697f481b",
-    "changes": [
-      "Code-only export; Markdown verdicts and saved outputs omitted.",
-      "Machine-specific home paths replaced with /path/to/audit-home where present.",
-      "Python export converts notebook magic syntax using IPython; notebook retains its original code syntax.",
-      "Python exports remove trailing whitespace only after checking that the parsed syntax tree is unchanged.",
-      "First cell downloads and verifies the public input archive, then locates the retained supporting code.",
-      "File checks use the published data and code hashes, including redacted provenance files.",
-      "Preparation works from the repository root, notebook directory, or exported script path, and can be rerun in the same kernel."
-    ],
-    "saved_code_cells": 4,
-    "saved_error_outputs": 0
-  },
-  "requested_model": "STATE",
-  "historical_decision": {
-    "source": "historical_decisions.json",
-    "record_id": "state-codex-r2/test-03",
-    "disposition": "unresolved",
-    "result": "No eligible independent same-atlas confirmation targets remained. External Tahoe confirmation lacked a verified gene mapping and complete input scan.",
-    "attribution": "Recorded historical registry summary; not a new reviewer verdict"
-  },
-  "traceability_review": {
-    "coverage": "original_records_missing",
-    "review": "traceability_review.json",
-    "record_id": "state-codex-r2/test-03",
-    "scope": "Original-workflow traceability only. New confirmation studies, corrected scientific conclusions and fresh inference not performed originally are not requirements."
+    "policy": "reconstructed/state-codex-r2/methods/METHODS.md"
   }
 }

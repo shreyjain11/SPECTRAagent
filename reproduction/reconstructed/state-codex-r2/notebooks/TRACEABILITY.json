@@ -1,0 +1,253 @@
+{
+  "scope": "Original source calculations, screening diagnostics and historical decisions; no new scientific adjudication",
+  "scientific_execution_host": "exxact05",
+  "historical_aggregate_outcomes_used_as_calculation_inputs": false,
+  "entries": [
+    {
+      "id": "state-codex-r2/test-01",
+      "notebook": "notebooks/01-state-codex-r2-dose.ipynb",
+      "original_candidate_ids": [
+        "A7",
+        "A8",
+        "A10",
+        "A10R"
+      ],
+      "default_pipeline_stage": "dose",
+      "default_force_source_calculation": true,
+      "pipeline_execution_evidence": "execution_evidence/01-state-codex-r2-dose_pipeline.json",
+      "stages": {
+        "data": [
+          "methods/sources.json",
+          "methods/acquire.py",
+          "notebooks/01-state-codex-r2-dose.ipynb#cell-2"
+        ],
+        "processing": [
+          "methods/tahoe.py",
+          "notebooks/01-state-codex-r2-dose.ipynb#cell-4"
+        ],
+        "axis": [
+          "computed/tahoe/cohort.csv",
+          "computed/tahoe/A7_contract_diagnostic.json",
+          "notebooks/01-state-codex-r2-dose.ipynb#cell-6"
+        ],
+        "levels": [
+          "computed/tahoe/A8_units.csv",
+          "computed/tahoe/A10_units.csv",
+          "notebooks/01-state-codex-r2-dose.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "methods/tahoe.py",
+          "computed/tahoe/basal_reference_scores.csv",
+          "notebooks/01-state-codex-r2-dose.ipynb#cell-10"
+        ],
+        "curve": [
+          "computed/tahoe/A8_summary.json",
+          "computed/tahoe/A10_summary.json",
+          "computed/figures/A8_curve.png",
+          "computed/figures/A10_curve.png",
+          "notebooks/01-state-codex-r2-dose.ipynb#cell-12"
+        ],
+        "decision": [
+          "originals/REPORT.md",
+          "originals/supporting/audit/candidate_axis_ledger.csv",
+          "notebooks/01-state-codex-r2-dose.ipynb#cell-14"
+        ]
+      }
+    },
+    {
+      "id": "state-codex-r2/test-02",
+      "notebook": "notebooks/02-state-codex-r2-distance.ipynb",
+      "original_candidate_ids": [
+        "A1a",
+        "A1b"
+      ],
+      "default_pipeline_stage": "distance",
+      "default_force_source_calculation": true,
+      "pipeline_execution_evidence": "execution_evidence/02-state-codex-r2-distance_pipeline.json",
+      "stages": {
+        "data": [
+          "methods/sources.json",
+          "methods/acquire.py",
+          "notebooks/02-state-codex-r2-distance.ipynb#cell-2"
+        ],
+        "processing": [
+          "methods/replogle.py",
+          "methods/observation_controls.py",
+          "notebooks/02-state-codex-r2-distance.ipynb#cell-4"
+        ],
+        "axis": [
+          "computed/replogle/axis.csv",
+          "computed/replogle/axis_summary.json",
+          "notebooks/02-state-codex-r2-distance.ipynb#cell-6"
+        ],
+        "levels": [
+          "computed/replogle/distance_units.csv",
+          "computed/replogle/score_summary.json",
+          "notebooks/02-state-codex-r2-distance.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "computed/replogle/unit_scores.csv",
+          "computed/replogle/cell_counts.csv",
+          "notebooks/02-state-codex-r2-distance.ipynb#cell-10"
+        ],
+        "curve": [
+          "computed/replogle/distance_summary.json",
+          "computed/replogle/distance_curve.csv",
+          "computed/figures/distance_curve.png",
+          "notebooks/02-state-codex-r2-distance.ipynb#cell-12"
+        ],
+        "decision": [
+          "originals/REPORT.md",
+          "originals/supporting/audit/candidate_axis_ledger.csv",
+          "notebooks/02-state-codex-r2-distance.ipynb#cell-14"
+        ]
+      }
+    },
+    {
+      "id": "state-codex-r2/test-03",
+      "notebook": "notebooks/03-state-codex-r2-magnitude.ipynb",
+      "original_candidate_ids": [
+        "A2",
+        "A2e"
+      ],
+      "default_pipeline_stage": "magnitude",
+      "default_force_source_calculation": true,
+      "pipeline_execution_evidence": "execution_evidence/03-state-codex-r2-magnitude_pipeline.json",
+      "stages": {
+        "data": [
+          "methods/sources.json",
+          "methods/acquire.py",
+          "notebooks/03-state-codex-r2-magnitude.ipynb#cell-2"
+        ],
+        "processing": [
+          "methods/replogle.py",
+          "methods/closures.py",
+          "notebooks/03-state-codex-r2-magnitude.ipynb#cell-4"
+        ],
+        "axis": [
+          "computed/replogle/magnitude_units.csv",
+          "notebooks/03-state-codex-r2-magnitude.ipynb#cell-6"
+        ],
+        "levels": [
+          "computed/replogle/A2_eligibility.csv",
+          "computed/replogle/released_condition_availability.csv",
+          "notebooks/03-state-codex-r2-magnitude.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "computed/replogle/unit_scores.csv",
+          "computed/closures/closure_diagnostics.json",
+          "notebooks/03-state-codex-r2-magnitude.ipynb#cell-10"
+        ],
+        "curve": [
+          "computed/replogle/magnitude_summary.json",
+          "computed/replogle/magnitude_curve.csv",
+          "computed/figures/magnitude_curve.png",
+          "computed/closures/original_public_shard_inventory.csv",
+          "notebooks/03-state-codex-r2-magnitude.ipynb#cell-12"
+        ],
+        "decision": [
+          "originals/REPORT.md",
+          "originals/supporting/audit/candidate_axis_ledger.csv",
+          "notebooks/03-state-codex-r2-magnitude.ipynb#cell-14"
+        ]
+      }
+    },
+    {
+      "id": "state-codex-r2/test-04",
+      "notebook": "notebooks/04-state-codex-r2-secondary.ipynb",
+      "original_candidate_ids": [
+        "A3",
+        "A5",
+        "A6",
+        "A9"
+      ],
+      "default_pipeline_stage": "secondary",
+      "default_force_source_calculation": true,
+      "pipeline_execution_evidence": "execution_evidence/04-state-codex-r2-secondary_pipeline.json",
+      "stages": {
+        "data": [
+          "methods/sources.json",
+          "methods/acquire.py",
+          "notebooks/04-state-codex-r2-secondary.ipynb#cell-2"
+        ],
+        "processing": [
+          "methods/tahoe.py",
+          "methods/closures.py",
+          "notebooks/04-state-codex-r2-secondary.ipynb#cell-4"
+        ],
+        "axis": [
+          "computed/closures/secondary_input_axes.csv",
+          "notebooks/04-state-codex-r2-secondary.ipynb#cell-6"
+        ],
+        "levels": [
+          "computed/closures/support_levels.csv",
+          "computed/tahoe/A9_units.csv",
+          "notebooks/04-state-codex-r2-secondary.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "computed/closures/closure_diagnostics.json",
+          "computed/tahoe/A9_units.csv",
+          "notebooks/04-state-codex-r2-secondary.ipynb#cell-10"
+        ],
+        "curve": [
+          "computed/tahoe/A9_summary.json",
+          "computed/figures/A9_curve.png",
+          "computed/closures/closure_diagnostics.json",
+          "notebooks/04-state-codex-r2-secondary.ipynb#cell-12"
+        ],
+        "decision": [
+          "originals/REPORT.md",
+          "originals/supporting/audit/candidate_axis_ledger.csv",
+          "notebooks/04-state-codex-r2-secondary.ipynb#cell-14"
+        ]
+      }
+    },
+    {
+      "id": "state-codex-r2/test-05",
+      "notebook": "notebooks/05-state-codex-r2-modality.ipynb",
+      "original_candidate_ids": [
+        "A4"
+      ],
+      "default_pipeline_stage": "modality",
+      "default_force_source_calculation": true,
+      "pipeline_execution_evidence": "execution_evidence/05-state-codex-r2-modality_pipeline.json",
+      "stages": {
+        "data": [
+          "methods/sources.json",
+          "methods/acquire.py",
+          "notebooks/05-state-codex-r2-modality.ipynb#cell-2"
+        ],
+        "processing": [
+          "methods/closures.py",
+          "notebooks/05-state-codex-r2-modality.ipynb#cell-4"
+        ],
+        "axis": [
+          "computed/closures/release_modality_assignments.csv",
+          "notebooks/05-state-codex-r2-modality.ipynb#cell-6"
+        ],
+        "levels": [
+          "computed/closures/release_modality_assignments.csv",
+          "notebooks/05-state-codex-r2-modality.ipynb#cell-8"
+        ],
+        "evaluation": [
+          "computed/closures/closure_diagnostics.json",
+          "notebooks/05-state-codex-r2-modality.ipynb#cell-10"
+        ],
+        "curve": [
+          "computed/closures/closure_diagnostics.json",
+          "notebooks/05-state-codex-r2-modality.ipynb#cell-12"
+        ],
+        "decision": [
+          "originals/REPORT.md",
+          "originals/supporting/audit/candidate_axis_ledger.csv",
+          "notebooks/05-state-codex-r2-modality.ipynb#cell-14"
+        ]
+      }
+    }
+  ],
+  "qualifications": [
+    "Original r2 computational helpers were not recovered; explicit reconstructions follow specific retained contracts and report numerical differences.",
+    "Original metadata/QC aggregation is unknown; declared reconstruction changes adjusted/A9 results.",
+    "A2e879mapping rows and1536partialblock rows remain absent; only original count/hash evidence survives. No unperformed biological test is invented."
+  ]
+}

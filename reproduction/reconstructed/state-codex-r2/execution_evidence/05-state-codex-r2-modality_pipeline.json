@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "stage": "modality",
+  "derived_stage_policy": "recompute_from_source_inputs",
+  "executed_stages": [
+    "tahoe_controls",
+    "closures"
+  ],
+  "reused_stages": [],
+  "receipts": [
+    {
+      "path": "computed/tahoe_controls_receipt.json",
+      "sha256": "fb2fda2c119c663aaa7f70c3287f7cb3d16396cc1d89c55e506d445707cb95cf"
+    },
+    {
+      "path": "computed/closures_receipt.json",
+      "sha256": "1f2fb1abbc116abc359925e530cd59e2aad9ed62b6d965c7d28f67d0f5ed9083"
+    }
+  ],
+  "completed_utc": "2026-11-09T15:03:36Z",
+  "historical_outputs_used_to_drive_calculations": false
+}

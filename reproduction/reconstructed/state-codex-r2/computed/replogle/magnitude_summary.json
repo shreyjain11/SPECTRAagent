@@ -1,0 +1,34 @@
+{
+  "expected_rms_context_residual_pearson": 0.7049515850202919,
+  "negative_log1p_rms_context_residual_pearson": -0.7008329182973592,
+  "fit": {
+    "n": 2552,
+    "clusters": 638,
+    "coefficient": -0.10789153768872423,
+    "ci95": [
+      -0.11390799290616625,
+      -0.10180329374391955
+    ],
+    "draws": 10000,
+    "seed": 20260715,
+    "design_columns": [
+      "intercept",
+      "weakness",
+      "context=jurkat",
+      "context=k562",
+      "context=rpe1"
+    ],
+    "cluster_fixed_effect": false,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "intercept": 0.16844269330824227,
+      "weakness": -0.10789153768872423,
+      "context=jurkat": -0.08104775590805735,
+      "context=k562": -0.08951757505146278,
+      "context=rpe1": -0.06205868776123437
+    }
+  },
+  "disjoint_candidates": 1385,
+  "eligible_confirmation_candidates": 0,
+  "decision": "No original confirmation outcome test: frozen complete-panel eligibility produced no disjoint candidates."
+}

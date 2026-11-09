@@ -1,0 +1,40 @@
+{
+  "investigation": "state-codex-r2",
+  "status": "five_source_workflow_notebooks_executed_and_exported",
+  "scientific_execution_host": "exxact05.broadinstitute.org",
+  "notebooks_executed": 5,
+  "code_cells_executed": 35,
+  "error_outputs": 0,
+  "default_notebook_policy": "Recompute the investigation from actual public source inputs with --force; verified raw downloads may be reused.",
+  "original_decisions_preserved": true,
+  "historical_outputs_used_to_fit_calculations": false,
+  "fresh_neural_inference_required": false,
+  "source_records": 49,
+  "pinned_remote_observation_objects": 4,
+  "declared_source_download_bytes_approximate": 10571000000,
+  "evidence": {
+    "notebook_validation": "notebooks/NOTEBOOK_VALIDATION.json",
+    "individual_execution_receipts": "execution_evidence/",
+    "source_manifest": "methods/sources.json",
+    "numerical_software_checks": "methods/SOFTWARE_TEST_RECEIPT.json",
+    "traceability": "traceability.json",
+    "methods": "methods/METHODS.md"
+  },
+  "reproduced_findings": [
+    "Prospective DepMap distances agree to floating-point precision; 18,979 common genes, two nearest-distance values, four final levels, and recorded HPA/Jurkat-E6.1 rank ordering are reproduced.",
+    "Replogle scoring reconstructs 638 shared perturbations across 2,000 output features. Primary, HVG, fixed-reference and contract-supported paired-adjusted distance coefficients agree with historical values within 5e-10.",
+    "Expected-magnitude discovery residual correlation is reproduced closely; actual released condition identities give 1,385 disjoint candidates and zero eligible four-context confirmations.",
+    "Dose cohort has 199 drugs, 597 conditions and 2,984 finite score units. A8 and A10 raw dose coefficients agree with history within 7e-17.",
+    "The A10 basal reference has 2,982 same-example units and the original comparable classification; its coefficient differs slightly.",
+    "A7's written sign contradiction, A3/A5/A6 input-level/dependency closures and A4 exact modality/dataset collinearity are explicitly calculated or inspected without inventing unperformed outcome curves."
+  ],
+  "remaining_numerical_reconstruction_limits": [
+    "A9 is NOT numerically replicated: reconstructed raw slope is +0.0252641531 versus original -0.0004420760. The original count/QC helper and precise raw-versus-adjusted specification did not survive. Both original and regenerated results are displayed.",
+    "The reconstructed metadata/control cohort has one extra Hs 766T condition. A real single-cell Encorafenib 0.5-uM condition has undefined sample SDs, but original listed controls are means/counts, so it is retained rather than excluded without evidence. See recovery_checks/A9_single_cell_observation.json.",
+    "Dose adjusted estimates differ under the documented all-cell technical-plate control reconstruction; the original adjusted negative finding remains attributed separately.",
+    "Original dose/bootstrap seed was not recovered; a documented seed is used. HPA numeric distances and the basal-reference slope have small differences.",
+    "Original A2e 879-gene mapping rows and 1,536-block partial reconciliation were absent from the handoff. Their hashes/counts remain historical evidence. No completed A2e biological test existed."
+  ],
+  "code_status": "Original frozen artifacts preserved unchanged; absent original computational helpers reconstructed explicitly. No original installed environment source copied.",
+  "pr_modified_by_this_package_owner": false
+}

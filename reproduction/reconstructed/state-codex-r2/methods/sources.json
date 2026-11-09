@@ -1,0 +1,422 @@
+{
+  "inputs": [
+    {
+      "path": "metadata/generalization.toml",
+      "url": "https://raw.githubusercontent.com/ArcInstitute/state/da4178c930dc917dac6b56faf10a33e21bd8e905/state_preprint_toml_files/tahoe_tomls/generalization.toml",
+      "sha256": "eac16fb06052dec9d6842dfae04d5ca693b847e3432f719a975adce205707783",
+      "bytes": 150875,
+      "evidence": "Original audit provenance"
+    },
+    {
+      "path": "metadata/depmap_24q4_protein_coding_tpm_logp1.csv",
+      "url": "https://ndownloader.figshare.com/files/51065489",
+      "sha256": "2a71dc94110efcc0221eae821bb93a9f03b54bea16f005818911a09d33383d56",
+      "bytes": 506628654,
+      "evidence": "Original audit provenance"
+    },
+    {
+      "path": "metadata/depmap_24q4_model.csv",
+      "url": "https://ndownloader.figshare.com/files/51065297",
+      "sha256": "b7a0c1385e6cef30132b56aff61f1261d11e3f490490b355c430d32ee0dbdcfa",
+      "bytes": 645696,
+      "evidence": "Original audit provenance"
+    },
+    {
+      "path": "metadata/hpa_rna_celline.tsv.zip",
+      "url": "https://www.proteinatlas.org/download/tsv/rna_celline.tsv.zip",
+      "sha256": "e5b11779308c2720cfe89d9cb19932ad4c0c3fea0fa37e8c61a14d501995852a",
+      "bytes": 205861141,
+      "evidence": "Original audit provenance"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/k562/eval_best.ckpt/k562_pred_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/k562/eval_best.ckpt/k562_pred_de.csv",
+      "bytes": 344243692,
+      "sha256": "230ac1f1f8342d0c7f563166b6e8f9afeae6a02a62d0b737fda64168dde49ba0",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/k562/eval_best.ckpt/k562_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/k562/eval_best.ckpt/k562_real_de.csv",
+      "bytes": 343530568,
+      "sha256": "a367d89432c430f6bef3d3efd23c0a543144c1c55bb94e64c818c97de2cbd1dd",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/k562/eval_best.ckpt/k562_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/k562/eval_best.ckpt/k562_results.csv",
+      "bytes": 528013,
+      "sha256": "eaf22cc6169fa98ab90913366529db232ac2109fe421599f66d47b14ffd183b3",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_pred_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/jurkat/eval_best.ckpt/jurkat_pred_de.csv",
+      "bytes": 380905134,
+      "sha256": "fd3422f18087eaf8357112bc0fd87faa8f95ed2a9ad95f0e7c4107d52754a9ca",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/jurkat/eval_best.ckpt/jurkat_real_de.csv",
+      "bytes": 380988038,
+      "sha256": "68fcb087841310e0e435b1bf63f1dbd69fc73c849d31a288f01d9d7ce40982ff",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/jurkat/eval_best.ckpt/jurkat_results.csv",
+      "bytes": 568100,
+      "sha256": "372db67f297565e5542cac1bda688586c07e03e92a999bea953a9df812ba5317",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_pred_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/hepg2/eval_best.ckpt/hepg2_pred_de.csv",
+      "bytes": 332206930,
+      "sha256": "88c1e92c75525dcc6bcb5bd74938f91841d2654a92b8b17da8992f28b9f8bb42",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/hepg2/eval_best.ckpt/hepg2_real_de.csv",
+      "bytes": 331857105,
+      "sha256": "c0a9582aeec67230424e4d95fd26f5c2a6d9e841c13f804d46de1b74aaeddff7",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/hepg2/eval_best.ckpt/hepg2_results.csv",
+      "bytes": 509894,
+      "sha256": "9b7b329faa11cfdfbbac37ad571bdf47e8af7f988d61561eab51d80dce9d643a",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_pred_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/rpe1/eval_best.ckpt/rpe1_pred_de.csv",
+      "bytes": 371395462,
+      "sha256": "b73237aad873fa97ddb79dcf055a3fb36d2f0a6ca13730af08fd36b04e83a126",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/rpe1/eval_best.ckpt/rpe1_real_de.csv",
+      "bytes": 373246770,
+      "sha256": "8656cf2495e712f1d05110e702c70cbba7aa281c93075b814be0078cd53eb308",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/rpe1/eval_best.ckpt/rpe1_results.csv",
+      "bytes": 535692,
+      "sha256": "ce7034b9e7af7255f44347ac9fdcbdd41e13b8ce674cab3c2700c0b41a1b1ffa",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/k562/eval_best.ckpt/k562_pred_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/k562/eval_best.ckpt/k562_pred_de.csv",
+      "bytes": 321344933,
+      "sha256": "89b5d659f021eb9d64c41e282994453c3a7e968370cf62cef09ca3b3f7408a56",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/k562/eval_best.ckpt/k562_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/k562/eval_best.ckpt/k562_real_de.csv",
+      "bytes": 343530568,
+      "sha256": "a367d89432c430f6bef3d3efd23c0a543144c1c55bb94e64c818c97de2cbd1dd",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/k562/eval_best.ckpt/k562_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/k562/eval_best.ckpt/k562_results.csv",
+      "bytes": 538095,
+      "sha256": "8bd145c4667e03c9e367079dcfb38126e4e1f06b562f8a3fa6d1eaa1d0ba5821",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_pred_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/jurkat/eval_best.ckpt/jurkat_pred_de.csv",
+      "bytes": 344695065,
+      "sha256": "a99a847e2bc783a73a64ea2c34ae065198b33ffc855b01d7d56d3fc5b31e694e",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/jurkat/eval_best.ckpt/jurkat_real_de.csv",
+      "bytes": 380988038,
+      "sha256": "68fcb087841310e0e435b1bf63f1dbd69fc73c849d31a288f01d9d7ce40982ff",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/jurkat/eval_best.ckpt/jurkat_results.csv",
+      "bytes": 582103,
+      "sha256": "3efc817549bbf24edd6e427fb99466f58de8fadb3a4b4335523f5cfac1bc8098",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_pred_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/hepg2/eval_best.ckpt/hepg2_pred_de.csv",
+      "bytes": 299683790,
+      "sha256": "138ee80b5ecd3bec4badd4e91466e74467e55c6e3247643e33bf65378c8079f1",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/hepg2/eval_best.ckpt/hepg2_real_de.csv",
+      "bytes": 331857105,
+      "sha256": "c0a9582aeec67230424e4d95fd26f5c2a6d9e841c13f804d46de1b74aaeddff7",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/hepg2/eval_best.ckpt/hepg2_results.csv",
+      "bytes": 506756,
+      "sha256": "0c930ad038b56c6f43d25896a15cd68e121d8902e5457718b4dfc9f163f10604",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_pred_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/rpe1/eval_best.ckpt/rpe1_pred_de.csv",
+      "bytes": 347045906,
+      "sha256": "ae1a84742a3230e35414e38e2f289d5f7d3abd1b2f14a10683b16c134657aecc",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/rpe1/eval_best.ckpt/rpe1_real_de.csv",
+      "bytes": 373246770,
+      "sha256": "8656cf2495e712f1d05110e702c70cbba7aa281c93075b814be0078cd53eb308",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-HVG-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Replogle/resolve/bb6a9562cbbf1fd152df14cc53b4cc7517c77175/zeroshot/rpe1/eval_best.ckpt/rpe1_results.csv",
+      "bytes": 575323,
+      "sha256": "c187b3a026c8381a84acbe5035efa30947a6774c82a6519749b1b37e85fdd14d",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "bb6a9562cbbf1fd152df14cc53b4cc7517c77175"
+    },
+    {
+      "path": "ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/C32_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/fewshot/state_generalization_X_state/eval_best.ckpt/C32_results.csv",
+      "bytes": 281263,
+      "sha256": "9fee724f7d5dc46a3e0061e264347ce4c8c5c29b6c0dac2dc67303bcae25894a",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "03b1971d7cc93a7535fd2e957c6948dba267378b"
+    },
+    {
+      "path": "ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/HOP62_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/fewshot/state_generalization_X_state/eval_best.ckpt/HOP62_results.csv",
+      "bytes": 269030,
+      "sha256": "646052bbdb9844e1a2b94f19c095d0f5a07db9529010f41252c61ba228544d56",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "03b1971d7cc93a7535fd2e957c6948dba267378b"
+    },
+    {
+      "path": "ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/HepG2-C3A_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/fewshot/state_generalization_X_state/eval_best.ckpt/HepG2-C3A_results.csv",
+      "bytes": 287583,
+      "sha256": "9106d01893815fbf77d85f4e2351da8a607adedc74edb62cc452c110812b09a2",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "03b1971d7cc93a7535fd2e957c6948dba267378b"
+    },
+    {
+      "path": "ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/Hs 766T_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/fewshot/state_generalization_X_state/eval_best.ckpt/Hs%20766T_results.csv",
+      "bytes": 277100,
+      "sha256": "80c38255fdce0444457f909d7ef9c2186a82c5476550bfe82604bd48896aae72",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "03b1971d7cc93a7535fd2e957c6948dba267378b"
+    },
+    {
+      "path": "ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/PANC-1_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/fewshot/state_generalization_X_state/eval_best.ckpt/PANC-1_results.csv",
+      "bytes": 273025,
+      "sha256": "5a40d67c26a428487d3b0f602b5b7a69006b5c4595eaaf0ffb5f44eaf5160239",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "03b1971d7cc93a7535fd2e957c6948dba267378b"
+    },
+    {
+      "path": "ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_results.csv",
+      "bytes": 468674,
+      "sha256": "cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "03b1971d7cc93a7535fd2e957c6948dba267378b"
+    },
+    {
+      "path": "ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_results.csv",
+      "bytes": 463111,
+      "sha256": "dedd141ec8fdff513a19cb46f3bb95b76372b117935620b02f50f2f8e339d33d",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "03b1971d7cc93a7535fd2e957c6948dba267378b"
+    },
+    {
+      "path": "ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_results.csv",
+      "bytes": 473841,
+      "sha256": "a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "03b1971d7cc93a7535fd2e957c6948dba267378b"
+    },
+    {
+      "path": "ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs 766T_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs%20766T_results.csv",
+      "bytes": 468068,
+      "sha256": "4904a9d8a3ed52a2cccd9de85cd0eeec0277bcc07d184eefb8096395719a2746",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "03b1971d7cc93a7535fd2e957c6948dba267378b"
+    },
+    {
+      "path": "ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Tahoe/resolve/03b1971d7cc93a7535fd2e957c6948dba267378b/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_results.csv",
+      "bytes": 464280,
+      "sha256": "8483133246cf1dba89c76a94f8a407757f4714bff5c9534f66890fbfe3d7ec03",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "03b1971d7cc93a7535fd2e957c6948dba267378b"
+    },
+    {
+      "path": "ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_real_de.csv",
+      "bytes": 387383572,
+      "sha256": "19922ccec8820e43daa74dac907adeaa7b12d651308570650920762269f568d2",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "ca6b751972493f8448e3256d1340ae70ad43e1e7"
+    },
+    {
+      "path": "ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_results.csv",
+      "bytes": 468117,
+      "sha256": "a0de78f621e8c6dfc67ac6ab6acbbab65fbd3aaddf7e56732ed6f03569d39f94",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "ca6b751972493f8448e3256d1340ae70ad43e1e7"
+    },
+    {
+      "path": "ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_real_de.csv",
+      "bytes": 395844167,
+      "sha256": "05c3fa4a991b1e94cdd991be01a787bd779c384d66760b70fbd569ffe5411063",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "ca6b751972493f8448e3256d1340ae70ad43e1e7"
+    },
+    {
+      "path": "ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_results.csv",
+      "bytes": 459434,
+      "sha256": "e3fef3287ccc5f38ac64c1c249915684a11dda7b38b43884b1f636cde792364a",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "ca6b751972493f8448e3256d1340ae70ad43e1e7"
+    },
+    {
+      "path": "ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_real_de.csv",
+      "bytes": 381547673,
+      "sha256": "a038a095e74641cf068dc048a5e4f619b572c5b0b97ff9a10c47931ab75db13b",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "ca6b751972493f8448e3256d1340ae70ad43e1e7"
+    },
+    {
+      "path": "ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_results.csv",
+      "bytes": 479496,
+      "sha256": "8f953408f94eadc1461851599a33e2a4f84e413621d5ee54a52a8746c2037691",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "ca6b751972493f8448e3256d1340ae70ad43e1e7"
+    },
+    {
+      "path": "ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs 766T_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs%20766T_real_de.csv",
+      "bytes": 389336629,
+      "sha256": "7d9f9e651c57a4ebb11ee04c256dac7a8b642b4736d3499c75cefa39908469d5",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "ca6b751972493f8448e3256d1340ae70ad43e1e7"
+    },
+    {
+      "path": "ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs 766T_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs%20766T_results.csv",
+      "bytes": 466949,
+      "sha256": "b9ab34b3d93a414e5db0650aaad70fb9bc558abade0e4c4eb3322ab3e4a47080",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "ca6b751972493f8448e3256d1340ae70ad43e1e7"
+    },
+    {
+      "path": "ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_real_de.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_real_de.csv",
+      "bytes": 398029547,
+      "sha256": "2b9ed18f2dae9d83dbfa910d9e7e2cac1da7ad0f73e43bed40b8daaf62a254c9",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "ca6b751972493f8448e3256d1340ae70ad43e1e7"
+    },
+    {
+      "path": "ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_results.csv",
+      "url": "https://huggingface.co/arcinstitute/ST-HVG-Tahoe/resolve/ca6b751972493f8448e3256d1340ae70ad43e1e7/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_results.csv",
+      "bytes": 461203,
+      "sha256": "2171a50b43d55ed6a5fae82c50685fd519b21b3a821872cb0e147a338d26a332",
+      "evidence": "HF LFS object at original audit revision",
+      "revision": "ca6b751972493f8448e3256d1340ae70ad43e1e7"
+    },
+    {
+      "path": "metadata/tahoe_obs_metadata.parquet",
+      "url": "https://huggingface.co/datasets/tahoebio/Tahoe-100M/resolve/2dc57900b7981cfcf5e211527169a0b006546a95/metadata/obs_metadata.parquet",
+      "bytes": 2293981573,
+      "sha256": "e51b24f3666f5f433c59ff01dd6fa33934627091455e89d929f2c1ddc87401fe",
+      "evidence": "Same public metadata bytes verified by original Codex r1; reconstructed source resolution for r2 count/QC controls"
+    }
+  ],
+  "remote_observations": [
+    {
+      "path": "ST-SE-Replogle/zeroshot/k562/eval_best.ckpt/adata_real.h5ad",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/k562/eval_best.ckpt/adata_real.h5ad",
+      "bytes": 3079506036,
+      "sha256": "6951f4bffb532950c447e8dc300b2f42ab381c854273327f8cd38b84cfa4eb42",
+      "evidence": "Pinned original release; observation-only range extraction"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/jurkat/eval_best.ckpt/adata_real.h5ad",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/jurkat/eval_best.ckpt/adata_real.h5ad",
+      "bytes": 3012265108,
+      "sha256": "9df1a21e3b159fa3900a32dd8bd6b4d6dd8750838014d1d3997932d7cedc9673",
+      "evidence": "Pinned original release; observation-only range extraction"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/hepg2/eval_best.ckpt/adata_real.h5ad",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/hepg2/eval_best.ckpt/adata_real.h5ad",
+      "bytes": 1577727376,
+      "sha256": "75f79feff37c4334559ea88c1e2a27acd306eb7dee5a2e25f37c4860014ca2b9",
+      "evidence": "Pinned original release; observation-only range extraction"
+    },
+    {
+      "path": "ST-SE-Replogle/zeroshot/rpe1/eval_best.ckpt/adata_real.h5ad",
+      "url": "https://huggingface.co/arcinstitute/ST-SE-Replogle/resolve/e324967ff4cea5ec199e29bcbb5c1f00e5b9d69c/zeroshot/rpe1/eval_best.ckpt/adata_real.h5ad",
+      "bytes": 2837025870,
+      "sha256": "f3363768db24b7eee9cb55507443366f8e15b6f9e5731ac415f533b757a5b5b1",
+      "evidence": "Pinned original release; observation-only range extraction"
+    }
+  ],
+  "created_utc": "2026-11-09T14:37:31Z"
+}

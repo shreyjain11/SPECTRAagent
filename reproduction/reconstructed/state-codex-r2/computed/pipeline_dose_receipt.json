@@ -1,0 +1,18 @@
+{
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "stage": "dose",
+  "derived_stage_policy": "recompute_from_source_inputs",
+  "executed_stages": [
+    "tahoe_analysis"
+  ],
+  "reused_stages": [],
+  "receipts": [
+    {
+      "path": "computed/tahoe_analysis_receipt.json",
+      "sha256": "87f11d4578326c9c6a6899717a80343b5d069a8cb2e4233047e205b752213e68"
+    }
+  ],
+  "completed_utc": "2026-11-09T14:56:36Z",
+  "historical_outputs_used_to_drive_calculations": false
+}

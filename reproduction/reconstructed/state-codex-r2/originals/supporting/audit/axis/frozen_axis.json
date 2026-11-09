@@ -1,0 +1,107 @@
+{
+  "aggregation": {
+    "depmap_hepg2": "ACH-000739",
+    "depmap_jurkat": "ACH-000995",
+    "depmap_k562": "ACH-000551",
+    "depmap_rpe1": "coordinatewise median of ACH-002462 through ACH-002467",
+    "hpa_hepg2": "Hep-G2",
+    "hpa_jurkat_primary": "JURKAT",
+    "hpa_jurkat_sensitivity": "Jurkat E6.1",
+    "hpa_k562": "K-562",
+    "hpa_rpe1": "hTERT-RPE1"
+  },
+  "axis_name": "panel-mean basal transcriptomic distance for an official zero-shot held-out cell line",
+  "confirmation_set": "All official ST-SE-Replogle zeroshot best-checkpoint rows are primary confirmation because the hypothesis is externally predeclared. ST-HVG-Replogle zeroshot best-checkpoint rows are a frozen representation/checkpoint replication on the same task; HPA is independent prospective-axis replication.",
+  "controller_version_sha256": "3adabc95221d38c17a57cf9119eac5da342ac55e2ba40893b2ff7b25b7b98ef3",
+  "controls": [
+    "true perturbation effect magnitude: real-LFC L2 norm divided by sqrt(number of genes)",
+    "number of real significant DE genes at FDR<0.05 when available",
+    "real and predicted cell counts per condition and control, acquired from official AnnData metadata",
+    "genetic perturbation identity as paired block",
+    "cell-line lineage and source identity",
+    "perturbation modality (fixed genetic CRISPRi here)",
+    "dose/time (fixed by source protocol; day 7 for Nadig screens and source-defined Replogle screens)",
+    "checkpoint selection (official best checkpoint primary; last checkpoint sensitivity)",
+    "representation (ST-SE primary; ST-HVG confirmation)",
+    "atlas identity mapping including Jurkat E6.1 sensitivity and RPE1-clone aggregation sensitivity"
+  ],
+  "deduplication": "one row per normalized context and perturbation; duplicate gene symbols collapsed by arithmetic mean within DE table; duplicated perturbation rows rejected",
+  "direction": "larger distance (lower similarity to nearest training context) predicts lower STATE performance",
+  "distance_metric": "arithmetic mean over the three training contexts of one minus Spearman rank correlation across the frozen common-gene set",
+  "error_spending_plan": "If the powered primary test is directionally consistent but inconclusive, one additional look is allowed only after predeclaring a fresh external-context increment. Use O'Brien-Fleming two-look one-sided boundaries alpha1=0.0056 and cumulative alpha2=0.05; do not repeatedly inspect the same four-context panel.",
+  "fixed_reference": {
+    "availability": "the other-three-context outcomes are training-panel observations available to the corresponding zero-shot STATE checkpoint",
+    "definition": "for each held-out context and perturbation, predict its real LFC vector as the arithmetic mean of the same perturbation's real LFC vectors in the other three contexts",
+    "matching": "score on the identical held-out context, perturbation, common genes, and signed Spearman metric as STATE; never consumes held-out outcome except for evaluation",
+    "name": "transfer-the-training-context mean"
+  },
+  "frozen_utc": "2026-07-15T14:18:35.932686+00:00",
+  "gene_set": "all unique HGNC-style protein-coding gene symbols present in both DepMap 24Q4 protein-coding TPM logp1 and HPA cell-line RNA tables; lexical order; no target-derived filtering",
+  "hypothesis_source": "user-prioritized predeclared axis; no STATE target outcomes inspected",
+  "inclusion_exclusion": "official zeroshot/best-checkpoint per-perturbation tables; exclude non-targeting control; primary balanced panel is perturbations present in all four real and predicted tables with complete finite LFC metric; no outcome-based subgrouping",
+  "level_rule": "four fixed levels L1-L4 are contexts sorted by increasing primary DepMap distance; lexical context breaks exact ties; HPA ordering is replication only and cannot change levels",
+  "metric": {
+    "direction": "higher is better",
+    "primary": "signed Spearman correlation across all common finite genes between predicted and real log2 fold-change vectors; Fisher-z used for regression, raw rho reported",
+    "secondary": [
+      "cell-eval pearson_delta",
+      "DE signed-LFC Spearman on significant genes",
+      "top-DE overlap"
+    ]
+  },
+  "normalization": {
+    "depmap": "source-provided log2(TPM+1)",
+    "hpa": "log2(nTPM+1)",
+    "rank_transform": "average ranks within each cell-line vector before Pearson correlation"
+  },
+  "power_plan": "Use every complete balanced perturbation up to the official shared-data ceiling in one look. Primary inference resamples perturbation blocks, retaining all four contexts. No target peeking before this contract is frozen.",
+  "prospective_features": {
+    "contexts": [
+      "hepg2",
+      "jurkat",
+      "k562",
+      "rpe1"
+    ],
+    "independent_replication": "Human Protein Atlas rna_celline.tsv, nTPM",
+    "primary": "DepMap 24Q4 OmicsExpressionProteinCodingGenesTPMLogp1.csv",
+    "training_panel_rule": "for each official leave-one-cell-line-out STATE checkpoint, the other three contexts are the training panel"
+  },
+  "prospective_validation": {
+    "common_gene_count": 18979,
+    "completed_before_target_access": true,
+    "depmap_hpa_distance_rank_correlation": 1.0,
+    "failed_predecessor": "A1a nearest-context aggregation produced two unique symmetric distances and was rejected before scoring",
+    "hpa_distances_in_primary_order": [
+      0.18580962172010926,
+      0.19201104276868253,
+      0.1980507741776638,
+      0.21132053937388398
+    ],
+    "hpa_jurkat_e61_sensitivity_rank_correlation": 0.8,
+    "primary_depmap_distances": [
+      0.18046048740291556,
+      0.18354871448318624,
+      0.1947480151947483,
+      0.1957521627235205
+    ],
+    "primary_depmap_order_near_to_far": [
+      "k562",
+      "jurkat",
+      "hepg2",
+      "rpe1"
+    ]
+  },
+  "sample_size_target": {
+    "ceiling": "all complete perturbations shared by the four official zero-shot contexts; if fewer than 263, use all and label underpowered rather than outcome-selecting",
+    "derivation": "paired standardized effect d=0.20, two-sided alpha 0.05, 90% power: ceil(((1.959964+1.281552)/0.20)^2)=263",
+    "minimum_balanced_perturbations": 263
+  },
+  "success_criteria": {
+    "atlas_replication": "report Spearman correlation of the four DepMap and HPA distances, exact ordering agreement, and E6.1 sensitivity; disagreement is a stability limitation, not an outcome-informed axis rewrite",
+    "axis_validity": "at least three unique, nontrivial DepMap panel-mean distances in fixed increasing order; report pairwise values and HPA rank replication without changing order",
+    "context_robustness": "leave-one-perturbation-family diagnostics and exact permutation of four context labels are reported; claim scope is limited to the four official contexts",
+    "reference_gate": "retain a real STATE degradation regardless of reference; call STATE degradation larger if slope difference STATE-reference CI is below -0.02, comparable/shared if its estimate and 95% CI intersect the [-0.02,0.02] ROPE, and smaller if above +0.02",
+    "target_degradation": "predeclared distance coefficient on Fisher-z performance is negative, perturbation-block bootstrap 95% CI excludes zero, and farthest-minus-nearest raw-rho contrast is negative"
+  },
+  "unit": "held-out cell-line x shared genetic perturbation; context is the independent axis level and perturbation is the paired block"
+}

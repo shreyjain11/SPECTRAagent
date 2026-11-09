@@ -1,0 +1,75 @@
+{
+  "investigation": "state-codex-r2",
+  "scope": "Reconstruct the original completed calculations and original unscored closure diagnostics; do not create new biological tests for unperformed candidates.",
+  "model_evaluation_mode": "Original public released prediction/real-DE tables and official scored outputs; no fresh STATE inference was originally needed.",
+  "execution_evidence": "notebooks/NOTEBOOK_VALIDATION.json",
+  "source_manifest": "methods/sources.json",
+  "methods": "methods/METHODS.md",
+  "axes": [
+    {
+      "record_id": "state-codex-r2/test-01",
+      "name": "Administered drug dose",
+      "original_candidates": ["A7", "A8", "A10", "A10R"],
+      "notebook": "notebooks/01-state-codex-r2-dose.ipynb",
+      "data_acquisition": ["methods/acquire.py", "methods/sources.json"],
+      "processing": ["methods/tahoe.py::cohort", "methods/tahoe.py::controls", "computed/tahoe/cohort.csv"],
+      "axis_and_levels": ["computed/tahoe/cohort_summary.json", "computed/tahoe/A7_contract_diagnostic.json"],
+      "evaluation": ["methods/tahoe.py::scores", "methods/tahoe.py::reference", "computed/tahoe/A8_units.csv", "computed/tahoe/A10_units.csv", "computed/tahoe/basal_reference_scores.csv"],
+      "curves_and_controls": ["computed/tahoe/A8_curve.csv", "computed/tahoe/A10_curve.csv", "computed/tahoe/A8_summary.json", "computed/tahoe/A10_summary.json"],
+      "historical_decision": ["originals/REPORT.md", "originals/supporting/audit/candidate_axis_ledger.csv"],
+      "reconstruction_limits": ["Original count/QC aggregation helper is missing; explicit all-cell technical-plate controls differ from retained adjusted estimates.", "Original bootstrap seed is not known; seed 20260716 is documented.", "Basal-reference slope differs slightly; the same-example count and frozen comparison classification agree."]
+    },
+    {
+      "record_id": "state-codex-r2/test-02",
+      "name": "Baseline cross-cell-line distance",
+      "original_candidates": ["A1a", "A1b"],
+      "notebook": "notebooks/02-state-codex-r2-distance.ipynb",
+      "data_acquisition": ["methods/acquire.py", "methods/observation_controls.py"],
+      "processing": ["methods/replogle.py::axes", "methods/replogle.py::de_matrix", "computed/replogle/prospective_genes.csv"],
+      "axis_and_levels": ["computed/replogle/axis.csv", "computed/replogle/axis_summary.json"],
+      "evaluation": ["methods/replogle.py::scores", "computed/replogle/unit_scores.csv", "computed/replogle/cell_counts.csv"],
+      "curves_and_controls": ["computed/replogle/distance_curve.csv", "computed/replogle/distance_summary.json", "computed/replogle/historical_comparison.json"],
+      "historical_decision": ["originals/supporting/audit/axis/frozen_axis.json", "originals/supporting/audit/results/analysis_summary.json"],
+      "reconstruction_limits": ["Original report cosine/gene-block wording conflicts with the more specific frozen rank-distance/Jurkat-E6.1 evidence.", "The paired fixed-effect adjustment is a contract-supported reconstruction; numerical agreement does not prove identity of the absent original helper.", "HPA duplicate-symbol aggregation causes small distance differences without changing the recorded ordering."]
+    },
+    {
+      "record_id": "state-codex-r2/test-03",
+      "name": "Expected perturbation magnitude",
+      "original_candidates": ["A2", "A2e"],
+      "notebook": "notebooks/03-state-codex-r2-magnitude.ipynb",
+      "data_acquisition": ["methods/acquire.py", "methods/sources.json"],
+      "processing": ["methods/replogle.py::scores", "methods/replogle.py::analyze"],
+      "axis_and_levels": ["computed/replogle/magnitude_units.csv"],
+      "evaluation": ["computed/replogle/unit_scores.csv", "computed/replogle/A2_eligibility.csv"],
+      "curves_and_controls": ["computed/replogle/magnitude_curve.csv", "computed/replogle/magnitude_summary.json", "computed/closures/closure_diagnostics.json"],
+      "historical_decision": ["originals/supporting/audit/axis/frozen_axis_A2.json", "originals/supporting/audit/results/A2_confirmation_summary.json"],
+      "reconstruction_limits": ["Original A2e 879-gene mapping rows and 1536-block partial reconciliation map were not in the handoff; their retained hashes/counts are historical-only.", "A2e was never scored. Its planned cohort and source inventory are rebuilt without fabricating a confirmation curve."]
+    },
+    {
+      "record_id": "state-codex-r2/test-04",
+      "name": "Sampling support, prospective dose displacement and checkpoint sensitivity",
+      "original_candidates": ["A3", "A5", "A6", "A9"],
+      "notebook": "notebooks/04-state-codex-r2-secondary.ipynb",
+      "data_acquisition": ["methods/acquire.py", "methods/sources.json"],
+      "processing": ["methods/tahoe.py::controls", "methods/closures.py::run"],
+      "axis_and_levels": ["computed/closures/secondary_input_axes.csv", "computed/closures/support_levels.csv"],
+      "evaluation": ["computed/tahoe/A9_units.csv", "computed/closures/release_modality_assignments.csv"],
+      "curves_and_controls": ["computed/tahoe/A9_curve.csv", "computed/tahoe/A9_summary.json", "computed/closures/closure_diagnostics.json"],
+      "historical_decision": ["originals/supporting/audit/axis/frozen_axis_secondary.json", "originals/supporting/audit/axis/frozen_axis_A9_mito.json", "originals/supporting/audit/candidate_axis_ledger.csv"],
+      "reconstruction_limits": ["A3/A5/A6 originally stopped before scoring. Actual input axes and closure diagnostics are generated, with no invented outcome curves.", "A9 was an actual measured investigation; it is recalculated, but the reconstructed metadata aggregation yields different estimates, shown alongside original evidence."]
+    },
+    {
+      "record_id": "state-codex-r2/test-05",
+      "name": "Perturbation modality",
+      "original_candidates": ["A4"],
+      "notebook": "notebooks/05-state-codex-r2-modality.ipynb",
+      "data_acquisition": ["methods/acquire.py", "methods/sources.json"],
+      "processing": ["methods/closures.py::run"],
+      "axis_and_levels": ["computed/closures/release_modality_assignments.csv"],
+      "evaluation": ["computed/closures/closure_diagnostics.json"],
+      "curves_and_controls": ["computed/closures/closure_diagnostics.json"],
+      "historical_decision": ["originals/supporting/audit/candidate_axis_ledger.csv", "originals/REPORT.md"],
+      "reconstruction_limits": ["The actual source-assignment design has exact dataset/modality collinearity. No identifiable modality coefficient or original performance curve exists."]
+    }
+  ]
+}

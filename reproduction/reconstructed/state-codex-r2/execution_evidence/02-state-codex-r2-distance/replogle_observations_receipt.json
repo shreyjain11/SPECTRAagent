@@ -1,0 +1,59 @@
+{
+  "status": "computed_from_public_inputs",
+  "scientific_execution_host": "exxact05.broadinstitute.org",
+  "completed_utc": "2026-11-09T14:58:35Z",
+  "sources": [
+    {
+      "path": "inputs/observation_extracts/k562.parquet",
+      "bytes": 1702938,
+      "sha256": "1fabb9c169d62406377c3724e7208474f4fac2bea75bcc4533bffc3c4ce9bd80"
+    },
+    {
+      "path": "inputs/observation_extracts/jurkat.parquet",
+      "bytes": 1635634,
+      "sha256": "0e82c9f308e2658359b86c0d77460a532993f33ed903df7488c3f1b940ad804a"
+    },
+    {
+      "path": "inputs/observation_extracts/hepg2.parquet",
+      "bytes": 889345,
+      "sha256": "1c4b0d674e090ccf8386ff44d4ef95771ddcbd8b8a9985087b851b69e5b11be6"
+    },
+    {
+      "path": "inputs/observation_extracts/rpe1.parquet",
+      "bytes": 1555244,
+      "sha256": "d36506fa9c0a47adf5a385ab327825e2abe5b99ef4e9e9eefe5c37c2bb876c4a"
+    }
+  ],
+  "methods": {
+    "methods/acquire.py": "54a274b377b4ca4cf5774984538bc5c9b1c8ddc27945c22871a803fe1719d108",
+    "methods/closures.py": "7a317c0009d24773c0c268401b01c2d5e38edc9e642cbebdaecb9f7ab10e8d53",
+    "methods/common.py": "14f57d2ff1be8526dc1afd16f22d2a3e2add0f679a2b94e207a37f0afaca813f",
+    "methods/observation_controls.py": "d3cb7b51f2edfc23f422502539889ec96b48dcb3d354d9d5e5ee3432b4323747",
+    "methods/plots.py": "56629cb6c321dd55c9311abfa6a0c031eeb35c988a1776c563ca9daae561897f",
+    "methods/replogle.py": "a7585f1c74a3893ef3b029820852f39779cd2b117afac46fb2954d732c0e7ba3",
+    "methods/run_pipeline.py": "4320aabc4eec6549b3a0f14f11be3836d9f3db4ddbeb948efd3b567df024e967",
+    "methods/tahoe.py": "e71dd649e5fa02142080b4dd9508840f32636a697a0d661223286a0f06d92cd2",
+    "methods/test_methods.py": "d02931e5b4c0d3377eb955c71844617281c889e5ee071b030033573a2a456015"
+  },
+  "outputs": [
+    {
+      "path": "computed/replogle/cell_counts.csv",
+      "bytes": 126878,
+      "sha256": "39746e40fb141fac693a5ad9f370eb4a353e9a7078001401ca6ae44ac303cea3"
+    },
+    {
+      "path": "computed/replogle/observation_source_receipt.json",
+      "bytes": 3063,
+      "sha256": "825c6d3797ea5c9a0355e2c0cb7712fd11ca291f22e38d59eff3d724a3dd16c8"
+    }
+  ],
+  "checks": {
+    "contexts": 4,
+    "unique_condition_rows": 5763,
+    "count_definition": "nunique pert_cell_barcode and nunique ctrl_cell_barcode within original gene/context"
+  },
+  "documented_assumptions": [
+    "Raw H5AD arrays are not downloaded; input-side observation extraction is pinned to original release objects and retains extracted-table checksums."
+  ],
+  "historical_outputs_used_as_calculation_inputs": false
+}

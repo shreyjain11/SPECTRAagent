@@ -1,0 +1,771 @@
+{
+  "raw_source_data_in_git": false,
+  "source_acquisition": "reconstructed/state-codex-r2/methods/sources.json",
+  "files": [
+    {
+      "path": "reconstructed/state-codex-r2/.gitignore",
+      "bytes": 70,
+      "sha256": "1f3bee84365b315a2928910bffe3423af118742580a487f01606e43ed2f9cca5"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/README.md",
+      "bytes": 4732,
+      "sha256": "8a156fe7020c6722112d25598d36c2af124ff7b18d9a29a674baa50f16faf94a"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/RECONSTRUCTION_STATUS.json",
+      "bytes": 3530,
+      "sha256": "74493be8c657df0dbe2ed177f47b8b6ced6045636a8148e9af1429cc3973b972"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/closures/closure_diagnostics.json",
+      "bytes": 3550,
+      "sha256": "bc81a5d3f3476240b03dce7c09504c8122fd84baee653086172c8ec9302670e4"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/closures/original_public_shard_inventory.csv",
+      "bytes": 229,
+      "sha256": "4f68836b38c049cb666d0f49645745a16b836d04b24814eb63bb29ce96d5a3ba"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/closures/release_modality_assignments.csv",
+      "bytes": 4659,
+      "sha256": "6efb6438785e63ccf70429726be2b6b377c3da735b7a8987b77387135f6dc8e6"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/closures/secondary_input_axes.csv",
+      "bytes": 404561,
+      "sha256": "c1771e99e0e8161c52e8ac8e3fe23ec1e7548eddd8bc7dc56e6aa5b5eec83715"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/closures/support_levels.csv",
+      "bytes": 253,
+      "sha256": "6daabfa44476a3089e96dc559a06e85377aef1767417b1e5a8e670a5f15434ac"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/closures_receipt.json",
+      "bytes": 3670,
+      "sha256": "1f2fb1abbc116abc359925e530cd59e2aad9ed62b6d965c7d28f67d0f5ed9083"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/figures/A10_curve.png",
+      "bytes": 41422,
+      "sha256": "72ce7024e15cebb948ab9df83e0bfb158c57635521ab2e516c2da17f128d8be8"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/figures/A8_curve.png",
+      "bytes": 40652,
+      "sha256": "52f3e036efa921c8d1fc821294933ef47a40ee239ae9b4eb5a7a85d763f6fe7a"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/figures/A9_curve.png",
+      "bytes": 35764,
+      "sha256": "70e29c34c1febfad229644eb2775d453212c050e37d3c7d72961d3987fe69cf2"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/figures/distance_curve.png",
+      "bytes": 75443,
+      "sha256": "05da87ad87cd301fc95e8359c1bbd17eb39c83a1ab21db3485201362fe4a0428"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/figures/magnitude_curve.png",
+      "bytes": 50485,
+      "sha256": "8d16ea87235e22ab40b66a4efd6337b696187ab557b53c096e13fefefe6ee8a9"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/pipeline_distance_receipt.json",
+      "bytes": 1025,
+      "sha256": "12e66370f6eba90ffbe30db60f1681f6e22a1fca8b3c1f4b39ca54faac8d2fce"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/pipeline_dose_receipt.json",
+      "bytes": 485,
+      "sha256": "064c3e458f2b7897dcddd82eb7b7473bdfed3ce3d153ac0c8a5e242d6e5c8da3"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/pipeline_magnitude_receipt.json",
+      "bytes": 1358,
+      "sha256": "cc9b54d4d9ecb2e938ab033c20751c11993f7941ed2498d35c5f11255c8bfbb9"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/pipeline_modality_receipt.json",
+      "bytes": 649,
+      "sha256": "da6206e8753b2b81862f372b9445049b21d0374acbb70be94621a3e0dda4f2ad"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/pipeline_secondary_receipt.json",
+      "bytes": 650,
+      "sha256": "2a1e197a5a1cb9a529d39a0d0fbe319c6962440879e0d35e9a16d7348bd4868e"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/A2_eligibility.csv",
+      "bytes": 132554,
+      "sha256": "34108a8623b50ff1fb4527296f8a02501d2e29ecd67d0254571ac7514854124b"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/axis.csv",
+      "bytes": 420,
+      "sha256": "b3c04ace69e496cac25be08a0873729facf46a1737cf6d7626e6572e9c6ffa71"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/axis_summary.json",
+      "bytes": 307,
+      "sha256": "87fe65b2b8f1b23a658f0b27e997a55a4946c363bb91a89e1e1706750028dcdf"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/cell_counts.csv",
+      "bytes": 126878,
+      "sha256": "39746e40fb141fac693a5ad9f370eb4a353e9a7078001401ca6ae44ac303cea3"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/depmap_pairwise.csv",
+      "bytes": 320,
+      "sha256": "a9360a51a0f0cebc2cf44599e56d2d26ff1884ca49b148506fa103e02ff3beee"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/distance_curve.csv",
+      "bytes": 994,
+      "sha256": "fd275e5d1325754dc334de241fb1ee4f76d4a349ea28fbcd781fedccb7394769"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/distance_summary.json",
+      "bytes": 4063,
+      "sha256": "137cdfaa58008643e5658aa82ed38038e38e847d9566ce2dc894f084ab6e5dbb"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/distance_units.csv",
+      "bytes": 861748,
+      "sha256": "8cdb1ea882fd5f2bc4aaef03c038fbedb9aff32d4790a81c4597e63034d1f92a"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/historical_comparison.json",
+      "bytes": 832,
+      "sha256": "2f7afed13a93ee92dc92ee3a97d14b183f4fe8a6555864edf9f7fd2f955e83b6"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/hpa_e61_pairwise.csv",
+      "bytes": 298,
+      "sha256": "b0521303add0dcc5bab8601fa97ec8552287ba27895ef93ee3a110caf435191d"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/hpa_pairwise.csv",
+      "bytes": 300,
+      "sha256": "516c6f9cf651292a19892f76b5f0feae7511b37468517b6234e1400ef113ccec"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/magnitude_curve.csv",
+      "bytes": 389,
+      "sha256": "7af4ca4b43664b1b2e78c672d49d3824c37d8d390216f16e89181315cd36a20e"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/magnitude_summary.json",
+      "bytes": 1019,
+      "sha256": "13c83b895f3147368a1322afaa3f7c656a989f0826d179d5606b98cfa6bba47a"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/magnitude_units.csv",
+      "bytes": 918856,
+      "sha256": "5b938fa647553abf3f589f85a37fc78c8f0ef501f36bfbf61db022b950d84adb"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/observation_source_receipt.json",
+      "bytes": 3063,
+      "sha256": "825c6d3797ea5c9a0355e2c0cb7712fd11ca291f22e38d59eff3d724a3dd16c8"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/prospective_genes.csv",
+      "bytes": 122066,
+      "sha256": "0b2bfd86314a464113ecfff03defde949807aef866f884ffd28b51c2bed02319"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/released_condition_availability.csv",
+      "bytes": 746390,
+      "sha256": "384fd163f5fca320dac13c2ebed5df1be7524212ebae0120ff322d67ccaef98d"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/score_summary.json",
+      "bytes": 186,
+      "sha256": "50b06e5b405628bbcbfd47b7e865c306fd4a2aa37f53a2b098525bd17674b1b8"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle/unit_scores.csv",
+      "bytes": 304268,
+      "sha256": "e86e2ca72d99565f87c9ecfa479fe16495acd654f4bc6a685556114455f89da3"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle_analysis_receipt.json",
+      "bytes": 3905,
+      "sha256": "3936a80fb06d27e2ffb893fa029ff50722ca29d44cf8c651aa7a64355d869ea4"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle_axis_receipt.json",
+      "bytes": 3219,
+      "sha256": "5199794463b66c7d9939f8f463c679066b06483604631ebab3dd5e77f026a683"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle_observations_receipt.json",
+      "bytes": 2572,
+      "sha256": "a0116ab41b5455cd38ae0df559f2d87ddd0c5c9d28ace37e06503a08a470e656"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/replogle_scores_receipt.json",
+      "bytes": 5583,
+      "sha256": "5ed7444573b4871d55ad1e3970b0a3a4a0464c45d8d59e94865e7e31748c2992"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A10_curve.csv",
+      "bytes": 244,
+      "sha256": "5fd4bdad70c9f9a99e5d67036ecaf95e710a7d9a566f795a40f6576329f53120"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A10_excluded_scores.csv",
+      "bytes": 152,
+      "sha256": "06ced04997f1505edca025f5eae01caecc71801632c6ff445d136a3b11cfc0c3"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A10_summary.json",
+      "bytes": 4106,
+      "sha256": "143913742f39dca839fb37b4649802d9011112dc9d2a0f472b07b259c98137eb"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A10_units.csv",
+      "bytes": 806126,
+      "sha256": "9fb34ce67ebd7b7621953b55929bd54d2d99aadcddf5c3fd82ebe6fcc5c50214"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A7_contract_diagnostic.json",
+      "bytes": 733,
+      "sha256": "38e0d83eb21763fbe4a87340d2f851a8405d272c78d13d2b73dcd3ebc90a85f8"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A8_curve.csv",
+      "bytes": 236,
+      "sha256": "97a380355e5b4e0f9a42f18416f5f773ff9cda035763687a74bf5ed84baeb351"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A8_excluded_scores.csv",
+      "bytes": 152,
+      "sha256": "06ced04997f1505edca025f5eae01caecc71801632c6ff445d136a3b11cfc0c3"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A8_summary.json",
+      "bytes": 2350,
+      "sha256": "0de4c09d30f5859db1982f41211f81c8f9153cb6c6d26cebae0d98b68fac23d8"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A8_units.csv",
+      "bytes": 735602,
+      "sha256": "95879eef2584473e33e64fd03648a8f042e84ecf841d085e84f2e8303ff7b862"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A9_curve.csv",
+      "bytes": 387,
+      "sha256": "11c72ac9e57a8b16f77e9041cc4a02a13d64a37469708e8399630453299e051d"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A9_excluded_scores.csv",
+      "bytes": 152,
+      "sha256": "06ced04997f1505edca025f5eae01caecc71801632c6ff445d136a3b11cfc0c3"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A9_summary.json",
+      "bytes": 2655,
+      "sha256": "20d1ebbdf0dad9be8e5a97e0df387eaebe573c8b936da520bf932cadea47a040"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/A9_units.csv",
+      "bytes": 748363,
+      "sha256": "09b32fbf9145c1199cfce0831d0b68b56138c60b67836987fc94933bc75a3d43"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/basal_reference_scores.csv",
+      "bytes": 148483,
+      "sha256": "e95134c5f26dcf0b48a5fb62aadd8b0a0c724d380e3a0cbb4e984ab6eb649f1d"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/cohort.csv",
+      "bytes": 151283,
+      "sha256": "d17bfdee23ffe142c97c7fb65fabbe9be063bbbc0a422daad781c9174ce6c196"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/cohort_summary.json",
+      "bytes": 305,
+      "sha256": "294c23d54d67f954df43b2436f2c0dfc2124d44df1c70d4902aa178b4f01557a"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/condition_controls.csv",
+      "bytes": 482556,
+      "sha256": "fda740683f79870bebf7b04c1c20a5f275a872c977e6b81db54ccb3d11def951"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe/historical_comparison.json",
+      "bytes": 550,
+      "sha256": "56a1e29731086e1293ddaa5999040c72c75135b22ee3f8edbf24102325f924de"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe_analysis_receipt.json",
+      "bytes": 10615,
+      "sha256": "402729efd1d82897c94aef14f6609dd366f152f0cdbe7cc732d170d9001c7a10"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/computed/tahoe_controls_receipt.json",
+      "bytes": 1941,
+      "sha256": "fb2fda2c119c663aaa7f70c3287f7cb3d16396cc1d89c55e506d445707cb95cf"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execute_all.py",
+      "bytes": 2221,
+      "sha256": "2148cebd0035252c29c980f69dfab4e9a3919a300d167ae0dc00a9ba7c5caa05"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execute_notebook.py",
+      "bytes": 3644,
+      "sha256": "fbfa67b91ff5e1e17170ba0cb33620ce800e40b44fbf59968c84f4eaa6267000"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/01-state-codex-r2-dose/tahoe_analysis_receipt.json",
+      "bytes": 10615,
+      "sha256": "87f11d4578326c9c6a6899717a80343b5d069a8cb2e4233047e205b752213e68"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/01-state-codex-r2-dose_pipeline.json",
+      "bytes": 485,
+      "sha256": "064c3e458f2b7897dcddd82eb7b7473bdfed3ce3d153ac0c8a5e242d6e5c8da3"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/02-state-codex-r2-distance/replogle_analysis_receipt.json",
+      "bytes": 3905,
+      "sha256": "208be9b432376f04eb7b25467b74a1766d52d49003f748b765f2adf10e3b1f1b"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/02-state-codex-r2-distance/replogle_axis_receipt.json",
+      "bytes": 3219,
+      "sha256": "9917e6a62ab0728de5449d1f06c01470bc701da7b3225af9252f19a66f18bbcb"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/02-state-codex-r2-distance/replogle_observations_receipt.json",
+      "bytes": 2572,
+      "sha256": "b114169029423d0c4028c735f382ec0d89ad4b547cc9ad39147dee328d2d4871"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/02-state-codex-r2-distance/replogle_scores_receipt.json",
+      "bytes": 5583,
+      "sha256": "8b42a50bf45659cfb47c8e29b89981d2ec6ee862417644dda263cdc4fd553d81"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/02-state-codex-r2-distance_pipeline.json",
+      "bytes": 1025,
+      "sha256": "12e66370f6eba90ffbe30db60f1681f6e22a1fca8b3c1f4b39ca54faac8d2fce"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/closures_receipt.json",
+      "bytes": 3670,
+      "sha256": "98dc388b3f76dd4f672afaeb385e9244e2415abc7e101cecdac2103abfa718a8"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/replogle_analysis_receipt.json",
+      "bytes": 3905,
+      "sha256": "3936a80fb06d27e2ffb893fa029ff50722ca29d44cf8c651aa7a64355d869ea4"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/replogle_axis_receipt.json",
+      "bytes": 3219,
+      "sha256": "5199794463b66c7d9939f8f463c679066b06483604631ebab3dd5e77f026a683"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/replogle_observations_receipt.json",
+      "bytes": 2572,
+      "sha256": "a0116ab41b5455cd38ae0df559f2d87ddd0c5c9d28ace37e06503a08a470e656"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/replogle_scores_receipt.json",
+      "bytes": 5583,
+      "sha256": "5ed7444573b4871d55ad1e3970b0a3a4a0464c45d8d59e94865e7e31748c2992"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude/tahoe_controls_receipt.json",
+      "bytes": 1941,
+      "sha256": "17bf58f09721d0fa62dd92e997469759ff020703a8180384eef9f9cb862ae5dd"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/03-state-codex-r2-magnitude_pipeline.json",
+      "bytes": 1358,
+      "sha256": "cc9b54d4d9ecb2e938ab033c20751c11993f7941ed2498d35c5f11255c8bfbb9"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/04-state-codex-r2-secondary/closures_receipt.json",
+      "bytes": 3670,
+      "sha256": "13d7fcf05c2e037cd6bedad327abaeb2c5bc64dfd0c045b714a703cc21e26fd4"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/04-state-codex-r2-secondary/tahoe_analysis_receipt.json",
+      "bytes": 10615,
+      "sha256": "402729efd1d82897c94aef14f6609dd366f152f0cdbe7cc732d170d9001c7a10"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/04-state-codex-r2-secondary_pipeline.json",
+      "bytes": 650,
+      "sha256": "2a1e197a5a1cb9a529d39a0d0fbe319c6962440879e0d35e9a16d7348bd4868e"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/05-state-codex-r2-modality/closures_receipt.json",
+      "bytes": 3670,
+      "sha256": "1f2fb1abbc116abc359925e530cd59e2aad9ed62b6d965c7d28f67d0f5ed9083"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/05-state-codex-r2-modality/tahoe_controls_receipt.json",
+      "bytes": 1941,
+      "sha256": "fb2fda2c119c663aaa7f70c3287f7cb3d16396cc1d89c55e506d445707cb95cf"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/05-state-codex-r2-modality_pipeline.json",
+      "bytes": 649,
+      "sha256": "da6206e8753b2b81862f372b9445049b21d0374acbb70be94621a3e0dda4f2ad"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/execution_evidence/download_receipt.json",
+      "bytes": 26989,
+      "sha256": "a0942296ffa7ea8f3edc41936f74e5cec0c68691d7604fd9ee30a48128348742"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/method_traceability.json",
+      "bytes": 6561,
+      "sha256": "658003c5760c97630889090f591faee89432b6f4b75db1e62d991e313764e26e"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/METHODS.md",
+      "bytes": 7418,
+      "sha256": "6ea1b3b8f7e387de124bc4067ac044d4aa6fe226237b12d2c97f89f4bfb53763"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/SOFTWARE_TEST_RECEIPT.json",
+      "bytes": 231,
+      "sha256": "40df2f5a867ffd45ff8943b417349651bc7e18440046e78ef7f931a7a3e763ab"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/acquire.py",
+      "bytes": 5787,
+      "sha256": "54a274b377b4ca4cf5774984538bc5c9b1c8ddc27945c22871a803fe1719d108"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/closures.py",
+      "bytes": 5021,
+      "sha256": "7a317c0009d24773c0c268401b01c2d5e38edc9e642cbebdaecb9f7ab10e8d53"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/common.py",
+      "bytes": 4597,
+      "sha256": "14f57d2ff1be8526dc1afd16f22d2a3e2add0f679a2b94e207a37f0afaca813f"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/observation_controls.py",
+      "bytes": 2859,
+      "sha256": "d3cb7b51f2edfc23f422502539889ec96b48dcb3d354d9d5e5ee3432b4323747"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/plots.py",
+      "bytes": 2262,
+      "sha256": "56629cb6c321dd55c9311abfa6a0c031eeb35c988a1776c563ca9daae561897f"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/replogle.py",
+      "bytes": 13845,
+      "sha256": "a7585f1c74a3893ef3b029820852f39779cd2b117afac46fb2954d732c0e7ba3"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/run_pipeline.py",
+      "bytes": 3614,
+      "sha256": "4320aabc4eec6549b3a0f14f11be3836d9f3db4ddbeb948efd3b567df024e967"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/sources.json",
+      "bytes": 26156,
+      "sha256": "e6c8850320e2006fe498de0b6b3fe6788a4723e9a2458d3a031f45076a2e9a64"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/tahoe.py",
+      "bytes": 10853,
+      "sha256": "e71dd649e5fa02142080b4dd9508840f32636a697a0d661223286a0f06d92cd2"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/methods/test_methods.py",
+      "bytes": 1589,
+      "sha256": "d02931e5b4c0d3377eb955c71844617281c889e5ee071b030033573a2a456015"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.html",
+      "bytes": 576732,
+      "sha256": "8b3dd0dd3a1f4df95fc8a897b29ccdb98a355d52d2296f6df1ea00129888215f"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb",
+      "bytes": 429397,
+      "sha256": "d4ba84822581021743bbe924eb1b1b1e1c4194cd31ae2460913babbd1b88908d"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.py",
+      "bytes": 3341,
+      "sha256": "b0d3d148a8d69c026f7f02bd0f94abb3a7e71a0fea61de28a4836fe0caf85829"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.html",
+      "bytes": 590805,
+      "sha256": "a021e25f85ba47f3fc4cbb4a2297cc2412fe13f6f430aec958c9af19941cf3aa"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb",
+      "bytes": 465193,
+      "sha256": "05f17591a7779f1324e65a28412d7eca4ddca037b6cf1eecc250b664606adfa6"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.py",
+      "bytes": 2978,
+      "sha256": "0df2f59bf3d39c5ea72cc3f2e45b0c8a582d8c94ed20edf2886808d390c913f9"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.html",
+      "bytes": 571519,
+      "sha256": "5d19084b43453fa576aeec1e346acfb4789b0519b6d7bf8e4e6f5181471439d5"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb",
+      "bytes": 469789,
+      "sha256": "bfb4b1ac25103036fdd2044e39ea6233e0fed41281f8b3f65375a27f05853a95"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py",
+      "bytes": 3123,
+      "sha256": "ce97d7a43dfa115590424939db421daa35c761ce41959e376cd56f7e055c2bcb"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.html",
+      "bytes": 492501,
+      "sha256": "4c1f6b31165b212f6d02ce8ce60e81cfd5cb86011c30c46deefe354d824e6c66"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb",
+      "bytes": 357382,
+      "sha256": "8c1e9bea020d2df2f70dd418f1317d22bdd397913502fb64baf5c165a2c1401b"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.py",
+      "bytes": 2851,
+      "sha256": "a78fb6a76db63016dd6ddd6fd904595cfd272e549cdec9343c640093d7af8d9e"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.html",
+      "bytes": 373904,
+      "sha256": "cddea85e55964c82008fa3cce47dceb463871a101050e810c1585aa4941413ff"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb",
+      "bytes": 179420,
+      "sha256": "f47ae2d8ffb4c23b4329fedd0b10fd350dd8b34fa18e63f24c8842ef5b9db989"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.py",
+      "bytes": 2411,
+      "sha256": "90f8897eebc29d40eb8c5aa370402e093c7265a37550cf3202b808ca083fba8b"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/LOCAL_PACKAGE_VALIDATION.json",
+      "bytes": 1207,
+      "sha256": "04ff4d752b1b2de7ec807ef209746334b3fad2c3794b745e75e6a1df320cf08d"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/NOTEBOOK_VALIDATION.json",
+      "bytes": 4641,
+      "sha256": "241f440b8e2fe7e23b6fef74b93964c569eff64d34f457ad50ac635f2b7e8c11"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/TRACEABILITY.json",
+      "bytes": 9119,
+      "sha256": "1f7929bc472d4d94d1c2d1dc260e7f8a63090c25659cacff090df707cde1ff06"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/build_notebooks.py",
+      "bytes": 24030,
+      "sha256": "7f7d1df7405740e0ce75a2e7ab649ad1448034b28b2433e4fe126a0b0ebb8d0d"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/render_notebooks.py",
+      "bytes": 2055,
+      "sha256": "307e37e65b2ad476dbb3e6cd9d3aa18952c10601a4e171285e107a2a8c15c9cc"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/notebooks/shared.py",
+      "bytes": 3813,
+      "sha256": "3364c7d5222a67fb101005959d4fe1219564591a7cb02d06071600595b967e6b"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/PROMPT.md",
+      "bytes": 4465,
+      "sha256": "afd6edaaddfde99b50ddfd0c0cd329cd3373ed81fa5307c7c728f8f2de126864"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/REPORT.md",
+      "bytes": 12903,
+      "sha256": "cc015176eb76ec2a6e9605fd509d9eba1431187f76a5559e43a703f1bbc45f7f"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/README.md",
+      "bytes": 752,
+      "sha256": "48ac8a084a725fd3e3f1c09d5c0e8e596a9a35da08906f3be150052830b79098"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/axis/frozen_axis.json",
+      "bytes": 7428,
+      "sha256": "d440a75833ce5dfba1f9cc341b7813366e6d7fe80f28258365abc4b3540cc99f"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/axis/frozen_axis_A10R_reference.json",
+      "bytes": 2601,
+      "sha256": "06cdb4e71e0b650970b77223424169afcdef33ae99f0071a6696e194d09fff32"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/axis/frozen_axis_A10_dose_hvg_zeroshot.json",
+      "bytes": 2884,
+      "sha256": "0fef61e0981ae75eaf988df4c1195adfc67115046ca4fab48549d9105ca65613"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/axis/frozen_axis_A2.json",
+      "bytes": 5000,
+      "sha256": "47a96614261e23341cfabb9c606013e44790685a5e0760a03bafe7672ee71982"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/axis/frozen_axis_A7_dose_official.json",
+      "bytes": 3726,
+      "sha256": "4d7b81ddde943b3a3996d7b933c3d898e1a0cd2683f9aba03bb0a41a5cd51315"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/axis/frozen_axis_A8_dose_state_embedding.json",
+      "bytes": 3559,
+      "sha256": "f874cc7555c36cb75f4e3ef5da48ed78d97b7e0d8872f105b4a3c5f2095e7f0e"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/axis/frozen_axis_A9_mito.json",
+      "bytes": 3682,
+      "sha256": "f0d3954d51b74400321dab942039e0b16d56f4c788f3c3275eaa1fafead24212"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/axis/frozen_axis_secondary.json",
+      "bytes": 6712,
+      "sha256": "24ee9c8afcc3289b70c4cb58cdcdf151b59b1e5940dc20f11ed143fc3e8de67c"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/candidate_axis_ledger.csv",
+      "bytes": 5453,
+      "sha256": "10264b53a9ea2a92fa21ced27cd8a18b37c8dc75532fa9325668daacf7da4243"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/data/prospective/tahoe_pseudobulk_parquet_manifest.json",
+      "bytes": 1132104,
+      "sha256": "cf19ca624e02214ab8e90b3ee86a201a1d326348048feb27b739ed9292a290a1"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/manifests/provenance.json",
+      "bytes": 22325,
+      "sha256": "a4df480155654da3c9f6c4ab04defa4b1603971f83819c70a4ede9d94080fa81"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/novelty_search.md",
+      "bytes": 2522,
+      "sha256": "ac999dbea75796804a4fe1f31a68a9bf8bdf4429479513a3a875cda71aa31ec1"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/plots/A10_dose_spc.svg",
+      "bytes": 1089,
+      "sha256": "a4aa224bce21072fab9ef2f2651c1afb9971f4790e213da21aabfb4daad520d5"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/plots/spc_state_vs_reference.svg",
+      "bytes": 3234,
+      "sha256": "c8a73d03968cb7fbcfc56b3bf13cfea9bf07709e5f75eb527f249369596ac54b"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/results/A10R_reference_summary.json",
+      "bytes": 513,
+      "sha256": "5e9f3300b0927ee72f7675ff7aa126681db777df7376abbfd66c326f9b264002"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/results/A10_dose_hvg_summary.json",
+      "bytes": 1526,
+      "sha256": "e7a29b7feb4a2957b3ed64f63273aa6add3eae060f57a96d799a500898a4a2a9"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/results/A10_dose_spc.csv",
+      "bytes": 293,
+      "sha256": "ed36b24797d39bcdae303e3e893a4e512b198db0ae3440eaf1c1b6869b129e7e"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/results/A2_confirmation_summary.json",
+      "bytes": 764,
+      "sha256": "0b970f5b13c451b9dc7eaed56e4e1a4f35e66a7e09dcfc037d58ad48c33349b4"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/results/A8_tahoe_dose_summary.json",
+      "bytes": 1530,
+      "sha256": "2bdfe7d85cced208cdf8931178ebd7bc5e08926858a5b8f0ad642f7b91b008da"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/results/A9_mito_summary.json",
+      "bytes": 1441,
+      "sha256": "c37a1ec63399ae3a719789ca3e9a9b25e132f804b612d40f3554182d74bc778e"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/results/analysis_summary.json",
+      "bytes": 1830,
+      "sha256": "e33b9db14308219449db46ab968561d2cd48e75d06efb3951fffc5e4eda12229"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/results/closure_summary.json",
+      "bytes": 1728,
+      "sha256": "3dab246e42d683bbd250b1e336050fe67169c5d761998aba7d20136846b12272"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/results/prospective_summary.json",
+      "bytes": 1790,
+      "sha256": "86c3991813226f1d6e13c853233ba62ceb1e8f1587119ca3071de6155f1f24d5"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/results/spc_table.csv",
+      "bytes": 1329,
+      "sha256": "808dce39f1d7194e021e4aeed2f094b36d2aeae8bfe35fdf04ff352dde9d920b"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/originals/supporting/audit/results/tahoe_prospective_summary.json",
+      "bytes": 1130,
+      "sha256": "0b0f98211e29f7ae34017e99871f82dc648d098490612f5983d77d086363aa10"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/recovery_checks/A9_single_cell_observation.json",
+      "bytes": 1941,
+      "sha256": "6e4d1335c969bf3a1315118849616e43d390dd7069dbddc2fbf6b8d7428dd074"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/recovery_checks/preliminary_pipeline_all_receipt.json",
+      "bytes": 1352,
+      "sha256": "b294f09d64c6608f7de2278e70e2a6b591f3028784fb900babe102da2166e43e"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/requirements-executed.txt",
+      "bytes": 1261,
+      "sha256": "f2880d92b33edec818072b7d25678eaf1da64a4188d6d41a323e00203ade8381"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/requirements.txt",
+      "bytes": 192,
+      "sha256": "0dea798931c915dc94ab09767e6d5e396f03d8b662b2212422f5e52a1762f1a1"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/supporting_code.json",
+      "bytes": 2749,
+      "sha256": "b8c1755403cedcc7b6974fc1e5e157a3cd74b29ea88e7b52f630166404199dd1"
+    },
+    {
+      "path": "reconstructed/state-codex-r2/traceability.json",
+      "bytes": 17991,
+      "sha256": "df58fd58c5d5b40021d39f9857b71a9df43a64518205b162e4a6b26b322849a2"
+    }
+  ]
+}

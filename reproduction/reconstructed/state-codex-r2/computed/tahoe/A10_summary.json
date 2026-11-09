@@ -1,0 +1,157 @@
+{
+  "raw": {
+    "n": 2984,
+    "clusters": 199,
+    "coefficient": -0.016921555199156744,
+    "ci95": [
+      -0.025074142865619688,
+      -0.009070434054279979
+    ],
+    "draws": 10000,
+    "seed": 20260716,
+    "design_columns": [
+      "weakness",
+      "context=HOP62",
+      "context=HepG2/C3A",
+      "context=Hs 766T",
+      "context=PANC-1"
+    ],
+    "cluster_fixed_effect": true,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "weakness": -0.016921555199156744,
+      "context=HOP62": 0.11585497176470122,
+      "context=HepG2/C3A": -0.01887104029886902,
+      "context=Hs 766T": 0.21814077638884505,
+      "context=PANC-1": 0.2511864769834424
+    }
+  },
+  "adjusted": {
+    "n": 2984,
+    "clusters": 199,
+    "coefficient": -0.0169874362942263,
+    "ci95": [
+      -0.024882634984298442,
+      -0.009149234753400211
+    ],
+    "draws": 10000,
+    "seed": 20260716,
+    "design_columns": [
+      "weakness",
+      "log_n_de",
+      "log_n_treated",
+      "log_n_control",
+      "context=HOP62",
+      "context=HepG2/C3A",
+      "context=Hs 766T",
+      "context=PANC-1"
+    ],
+    "cluster_fixed_effect": true,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "weakness": -0.0169874362942263,
+      "log_n_de": -0.00587618622489452,
+      "log_n_treated": 0.07525696761891278,
+      "log_n_control": -0.07116157081404345,
+      "context=HOP62": 0.12441531566485901,
+      "context=HepG2/C3A": -0.040018110871487586,
+      "context=Hs 766T": 0.2129295850376621,
+      "context=PANC-1": 0.2651501805460954
+    }
+  },
+  "curve": [
+    {
+      "level": 1,
+      "n": 995,
+      "clusters": 199,
+      "mean": 0.4737814650585844,
+      "ci_low": 0.46138462837254235,
+      "ci_high": 0.48603853266207603
+    },
+    {
+      "level": 2,
+      "n": 994,
+      "clusters": 199,
+      "mean": 0.4409053658562181,
+      "ci_low": 0.42287906651844803,
+      "ci_high": 0.45703296066652255
+    },
+    {
+      "level": 3,
+      "n": 995,
+      "clusters": 199,
+      "mean": 0.4417366287770568,
+      "ci_low": 0.42614806188231474,
+      "ci_high": 0.45572139767187075
+    }
+  ],
+  "endpoint": -0.0320448362815276,
+  "endpoint_ci95": [
+    -0.048030122450856146,
+    -0.016755780249608016
+  ],
+  "score_exclusions": 1,
+  "recomputed_negative_degradation": true,
+  "same_example_reference": {
+    "reference": {
+      "n": 2982,
+      "clusters": 199,
+      "coefficient": 0.0017236028699926494,
+      "ci95": [
+        -0.02180808701170072,
+        0.02526512794169945
+      ],
+      "draws": 10000,
+      "seed": 20260716,
+      "design_columns": [
+        "weakness",
+        "context=HOP62",
+        "context=HepG2/C3A",
+        "context=Hs 766T",
+        "context=PANC-1"
+      ],
+      "cluster_fixed_effect": true,
+      "axis_standardization": "population SD on all analyzed rows",
+      "coefficients": {
+        "weakness": 0.0017236028699926494,
+        "context=HOP62": 0.06084173975605062,
+        "context=HepG2/C3A": -0.00458385094221217,
+        "context=Hs 766T": 0.2958748414250191,
+        "context=PANC-1": 0.20617836372054585
+      }
+    },
+    "state": {
+      "n": 2982,
+      "clusters": 199,
+      "coefficient": -0.016927228813800363,
+      "ci95": [
+        -0.02508254995483016,
+        -0.009073475272824537
+      ],
+      "draws": 10000,
+      "seed": 20260716,
+      "design_columns": [
+        "weakness",
+        "context=HOP62",
+        "context=HepG2/C3A",
+        "context=Hs 766T",
+        "context=PANC-1"
+      ],
+      "cluster_fixed_effect": true,
+      "axis_standardization": "population SD on all analyzed rows",
+      "coefficients": {
+        "weakness": -0.016927228813800363,
+        "context=HOP62": 0.11585497176470086,
+        "context=HepG2/C3A": -0.017001963592331415,
+        "context=Hs 766T": 0.22014519073301675,
+        "context=PANC-1": 0.25146216038676356
+      }
+    },
+    "difference": -0.01865083168379301,
+    "difference_ci95": [
+      -0.042617664637441495,
+      0.004857382027254343
+    ],
+    "historical_rule_classification": "comparable"
+  }
+}

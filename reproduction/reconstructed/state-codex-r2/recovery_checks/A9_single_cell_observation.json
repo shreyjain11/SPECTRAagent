@@ -1,0 +1,46 @@
+{
+  "check": "Source-driven investigation of the one-row historical complete-QC discrepancy; no eligibility change or alternative fit was performed.",
+  "execution_host": "exxact05.broadinstitute.org",
+  "source_path": "inputs/metadata/tahoe_obs_metadata.parquet",
+  "source_sha256": "e51b24f3666f5f433c59ff01dd6fa33934627091455e89d929f2c1ddc87401fe",
+  "context": "Hs 766T",
+  "candidate_condition": {
+    "drug": "Encorafenib",
+    "dose_uM": 0.5,
+    "technical_plate": "plate2",
+    "treated_cell_count": 1,
+    "matched_plate_control_count": 2988,
+    "mean_mitochondrial_fraction_displayed": 0.147651,
+    "mean_gene_count": 341.0,
+    "mean_UMI_count": 447.0,
+    "sample_SD_mitochondrial_fraction": null,
+    "sample_SD_gene_count": null,
+    "sample_SD_UMI_count": null,
+    "null_reason": "Sample standard deviation is undefined for one observation."
+  },
+  "neighboring_low_count_condition": {
+    "drug": "SBI-0640756",
+    "dose_uM": 0.5,
+    "technical_plate": "plate2",
+    "treated_cell_count": 3,
+    "sample_standard_deviations_finite": true
+  },
+  "historical_evidence": {
+    "original_A9_complete_QC_units": 2983,
+    "reconstructed_units_with_specified_means_and_counts": 2984,
+    "original_Hs766T_units": 596,
+    "reconstructed_Hs766T_units": 597,
+    "original_control_fields": [
+      "drug fixed effects",
+      "context fixed effects",
+      "dose fixed effects",
+      "number of significant DE genes",
+      "treated-cell count",
+      "matched-control-cell count",
+      "mean genes per treated cell",
+      "mean UMIs per treated cell"
+    ]
+  },
+  "interpretation": "The single-cell condition could explain an undocumented exclusion based on a sample-SD field or broad complete-case operation. The surviving original field list does not require sample SD, so this observation does not establish the old rule and is not used to remove the condition or select a fit.",
+  "scientific_outputs_changed": false
+}

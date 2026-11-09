@@ -470,36 +470,36 @@
           "id": "state-codex-r2/test-01",
           "axis": "Administered drug dose",
           "path": "analyses/state-codex-r2/test-01.json",
-          "notebook": "materials/state/notebooks/state-codex-r2/test-01.ipynb",
-          "traceability_coverage": "original_records_missing"
+          "notebook": "reconstructed/state-codex-r2/notebooks/01-state-codex-r2-dose.ipynb",
+          "traceability_coverage": "source_workflow_reconstructed"
         },
         {
           "id": "state-codex-r2/test-02",
           "axis": "Baseline cross-cell-line distance",
           "path": "analyses/state-codex-r2/test-02.json",
-          "notebook": "materials/state/notebooks/state-codex-r2/test-02.ipynb",
-          "traceability_coverage": "original_records_missing"
+          "notebook": "reconstructed/state-codex-r2/notebooks/02-state-codex-r2-distance.ipynb",
+          "traceability_coverage": "source_workflow_reconstructed"
         },
         {
           "id": "state-codex-r2/test-03",
           "axis": "Expected perturbation magnitude",
           "path": "analyses/state-codex-r2/test-03.json",
-          "notebook": "materials/state/notebooks/state-codex-r2/test-03.ipynb",
-          "traceability_coverage": "original_records_missing"
+          "notebook": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.ipynb",
+          "traceability_coverage": "source_workflow_reconstructed"
         },
         {
           "id": "state-codex-r2/test-04",
           "axis": "Sampling support, prospective dose displacement and checkpoint sensitivity",
           "path": "analyses/state-codex-r2/test-04.json",
-          "notebook": "materials/state/notebooks/state-codex-r2/test-04.ipynb",
-          "traceability_coverage": "original_records_missing"
+          "notebook": "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.ipynb",
+          "traceability_coverage": "source_workflow_reconstructed"
         },
         {
           "id": "state-codex-r2/test-05",
           "axis": "Perturbation modality",
           "path": "analyses/state-codex-r2/test-05.json",
-          "notebook": "materials/state/notebooks/state-codex-r2/test-05.ipynb",
-          "traceability_coverage": "original_records_missing"
+          "notebook": "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.ipynb",
+          "traceability_coverage": "source_workflow_reconstructed"
         }
       ]
     },
@@ -1176,5 +1176,5 @@
   "historical_decisions": "historical_decisions.json",
   "traceability_review": "traceability_review.json",
   "primary_workflows": "primary/README.md",
-  "reconstructed_workflows": "reconstructed/state-codex-r1/README.md"
+  "reconstructed_workflows": "PR_REVIEW.md"
 }

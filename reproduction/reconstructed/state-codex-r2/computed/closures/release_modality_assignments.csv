@@ -1,0 +1,24 @@
+dataset,modality,model,representation,setting,context,source_path,source_sha256
+Replogle,genetic CRISPRi,ST-SE-Replogle,SE,zeroshot,k562,ST-SE-Replogle/zeroshot/k562/eval_best.ckpt/k562_results.csv,eaf22cc6169fa98ab90913366529db232ac2109fe421599f66d47b14ffd183b3
+Replogle,genetic CRISPRi,ST-SE-Replogle,SE,zeroshot,jurkat,ST-SE-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_results.csv,372db67f297565e5542cac1bda688586c07e03e92a999bea953a9df812ba5317
+Replogle,genetic CRISPRi,ST-SE-Replogle,SE,zeroshot,hepg2,ST-SE-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_results.csv,9b7b329faa11cfdfbbac37ad571bdf47e8af7f988d61561eab51d80dce9d643a
+Replogle,genetic CRISPRi,ST-SE-Replogle,SE,zeroshot,rpe1,ST-SE-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_results.csv,ce7034b9e7af7255f44347ac9fdcbdd41e13b8ce674cab3c2700c0b41a1b1ffa
+Replogle,genetic CRISPRi,ST-HVG-Replogle,HVG,zeroshot,k562,ST-HVG-Replogle/zeroshot/k562/eval_best.ckpt/k562_results.csv,8bd145c4667e03c9e367079dcfb38126e4e1f06b562f8a3fa6d1eaa1d0ba5821
+Replogle,genetic CRISPRi,ST-HVG-Replogle,HVG,zeroshot,jurkat,ST-HVG-Replogle/zeroshot/jurkat/eval_best.ckpt/jurkat_results.csv,3efc817549bbf24edd6e427fb99466f58de8fadb3a4b4335523f5cfac1bc8098
+Replogle,genetic CRISPRi,ST-HVG-Replogle,HVG,zeroshot,hepg2,ST-HVG-Replogle/zeroshot/hepg2/eval_best.ckpt/hepg2_results.csv,0c930ad038b56c6f43d25896a15cd68e121d8902e5457718b4dfc9f163f10604
+Replogle,genetic CRISPRi,ST-HVG-Replogle,HVG,zeroshot,rpe1,ST-HVG-Replogle/zeroshot/rpe1/eval_best.ckpt/rpe1_results.csv,c187b3a026c8381a84acbe5035efa30947a6774c82a6519749b1b37e85fdd14d
+Tahoe,chemical drug,ST-SE-Tahoe,SE,fewshot,C32,ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/C32_results.csv,9fee724f7d5dc46a3e0061e264347ce4c8c5c29b6c0dac2dc67303bcae25894a
+Tahoe,chemical drug,ST-SE-Tahoe,SE,fewshot,HOP62,ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/HOP62_results.csv,646052bbdb9844e1a2b94f19c095d0f5a07db9529010f41252c61ba228544d56
+Tahoe,chemical drug,ST-SE-Tahoe,SE,fewshot,HepG2-C3A,ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/HepG2-C3A_results.csv,9106d01893815fbf77d85f4e2351da8a607adedc74edb62cc452c110812b09a2
+Tahoe,chemical drug,ST-SE-Tahoe,SE,fewshot,Hs 766T,ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/Hs 766T_results.csv,80c38255fdce0444457f909d7ef9c2186a82c5476550bfe82604bd48896aae72
+Tahoe,chemical drug,ST-SE-Tahoe,SE,fewshot,PANC-1,ST-SE-Tahoe/fewshot/state_generalization_X_state/eval_best.ckpt/PANC-1_results.csv,5a40d67c26a428487d3b0f602b5b7a69006b5c4595eaaf0ffb5f44eaf5160239
+Tahoe,chemical drug,ST-SE-Tahoe,SE,zeroshot,C32,ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/C32_results.csv,cfb3517443ea659341b6be94f8b6828ef912ce21e0f3a0be4f3c5b29cd2dbc79
+Tahoe,chemical drug,ST-SE-Tahoe,SE,zeroshot,HOP62,ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HOP62_results.csv,dedd141ec8fdff513a19cb46f3bb95b76372b117935620b02f50f2f8e339d33d
+Tahoe,chemical drug,ST-SE-Tahoe,SE,zeroshot,HepG2-C3A,ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/HepG2-C3A_results.csv,a3c6d89ea4f07e395aac68db6a36222ced41f6acea648e8e5d008cd5912cf0fb
+Tahoe,chemical drug,ST-SE-Tahoe,SE,zeroshot,Hs 766T,ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/Hs 766T_results.csv,4904a9d8a3ed52a2cccd9de85cd0eeec0277bcc07d184eefb8096395719a2746
+Tahoe,chemical drug,ST-SE-Tahoe,SE,zeroshot,PANC-1,ST-SE-Tahoe/zeroshot/state_generalization_zeroshot_X_state/eval_best.ckpt/PANC-1_results.csv,8483133246cf1dba89c76a94f8a407757f4714bff5c9534f66890fbfe3d7ec03
+Tahoe,chemical drug,ST-HVG-Tahoe,HVG,zeroshot,C32,ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/C32_results.csv,a0de78f621e8c6dfc67ac6ab6acbbab65fbd3aaddf7e56732ed6f03569d39f94
+Tahoe,chemical drug,ST-HVG-Tahoe,HVG,zeroshot,HOP62,ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HOP62_results.csv,e3fef3287ccc5f38ac64c1c249915684a11dda7b38b43884b1f636cde792364a
+Tahoe,chemical drug,ST-HVG-Tahoe,HVG,zeroshot,HepG2-C3A,ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/HepG2-C3A_results.csv,8f953408f94eadc1461851599a33e2a4f84e413621d5ee54a52a8746c2037691
+Tahoe,chemical drug,ST-HVG-Tahoe,HVG,zeroshot,Hs 766T,ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/Hs 766T_results.csv,b9ab34b3d93a414e5db0650aaad70fb9bc558abade0e4c4eb3322ab3e4a47080
+Tahoe,chemical drug,ST-HVG-Tahoe,HVG,zeroshot,PANC-1,ST-HVG-Tahoe/zeroshot/state_generalization_zeroshot_X_hvg/eval_best.ckpt/PANC-1_results.csv,2171a50b43d55ed6a5fae82c50685fd519b21b3a821872cb0e147a338d26a332

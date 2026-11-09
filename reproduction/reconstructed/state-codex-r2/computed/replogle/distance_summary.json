@@ -1,0 +1,152 @@
+{
+  "state_se": {
+    "n": 2552,
+    "clusters": 638,
+    "coefficient": 0.003635149389853727,
+    "ci95": [
+      0.0003536610607250985,
+      0.006869264506085516
+    ],
+    "draws": 10000,
+    "seed": 20260715,
+    "design_columns": [
+      "intercept",
+      "distance"
+    ],
+    "cluster_fixed_effect": false,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "intercept": 0.11028668862805385,
+      "distance": 0.003635149389853727
+    }
+  },
+  "state_hvg": {
+    "n": 2552,
+    "clusters": 638,
+    "coefficient": 0.020938478616902952,
+    "ci95": [
+      0.016757678311506933,
+      0.025207889054321433
+    ],
+    "draws": 10000,
+    "seed": 20260715,
+    "design_columns": [
+      "intercept",
+      "distance"
+    ],
+    "cluster_fixed_effect": false,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "intercept": 0.17643135902162352,
+      "distance": 0.020938478616902952
+    }
+  },
+  "reference": {
+    "n": 2552,
+    "clusters": 638,
+    "coefficient": 0.03745934133887478,
+    "ci95": [
+      0.03273677017100967,
+      0.042334413502061616
+    ],
+    "draws": 10000,
+    "seed": 20260715,
+    "design_columns": [
+      "intercept",
+      "distance"
+    ],
+    "cluster_fixed_effect": false,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "intercept": 0.23170799711611054,
+      "distance": 0.03745934133887478
+    }
+  },
+  "adjusted_state_se": {
+    "n": 2552,
+    "clusters": 638,
+    "coefficient": 0.006982944371354851,
+    "ci95": [
+      0.003020388152357576,
+      0.010960595420531842
+    ],
+    "draws": 10000,
+    "seed": 20260715,
+    "design_columns": [
+      "distance",
+      "log_effect_rms",
+      "log_n_de",
+      "log_n_treated",
+      "log_n_control"
+    ],
+    "cluster_fixed_effect": true,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "distance": 0.006982944371354851,
+      "log_effect_rms": -0.036327945879329686,
+      "log_n_de": 0.03646958434400707,
+      "log_n_treated": -0.03663358807270839,
+      "log_n_control": 0.023385632975535958
+    }
+  },
+  "adjusted_state_se_pooled_sensitivity": {
+    "n": 2552,
+    "clusters": 638,
+    "coefficient": -0.030512309312588887,
+    "ci95": [
+      -0.03499153355030928,
+      -0.025969557834368856
+    ],
+    "draws": 10000,
+    "seed": 20260715,
+    "design_columns": [
+      "intercept",
+      "distance",
+      "log_effect_rms",
+      "log_n_de",
+      "log_n_treated",
+      "log_n_control"
+    ],
+    "cluster_fixed_effect": false,
+    "axis_standardization": "population SD on all analyzed rows",
+    "coefficients": {
+      "intercept": 0.11028668862805385,
+      "distance": -0.030512309312588887,
+      "log_effect_rms": 0.04896743223754497,
+      "log_n_de": 0.06851496854379004,
+      "log_n_treated": 0.015688397250611233,
+      "log_n_control": -1.0232689726557762e-05
+    }
+  },
+  "adjusted_specification_note": "Primary adjustment is a reconstructed perturbation-fixed-effect fit supported by the frozen paired-perturbation contract. Pooled OLS is an additional sensitivity. Numerical agreement with history corroborates but does not prove identity of the absent original helper.",
+  "exact_context_permutation": {
+    "n": 24,
+    "one_sided_p": 0.5833333333333334,
+    "slopes": [
+      0.00363514938985373,
+      0.006681054821941505,
+      -0.017435080518303617,
+      0.01958193961108854,
+      -0.01627836619179023,
+      0.017692748505514156,
+      0.0035114470460704227,
+      0.0065573524781581995,
+      -0.023368936215923147,
+      0.0230156791818853,
+      -0.02221222188940976,
+      0.021126488076310915,
+      -0.018007383211330934,
+      0.019009636918061228,
+      -0.023817536565167156,
+      0.022567078832641294,
+      -0.009759937449506734,
+      -0.00039234218109044164,
+      -0.016890891122232295,
+      0.01708022357507209,
+      -0.02270104447606852,
+      0.02063766548965215,
+      -0.009800159686921484,
+      -0.00043256441850519564
+    ]
+  }
+}
