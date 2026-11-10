@@ -1,0 +1,31 @@
+{
+  "archive": "esmfold2-codex-r1-public-snapshots-2026-11-09.tar.gz",
+  "bytes": 84230281,
+  "sha256": "19afd5ab0357951bae9337c09396657d699508c04b8de67cc1a6563a98c4e771",
+  "scope": "Three public PDB/SIFTS source snapshots used by the inline domain-repertoire analysis",
+  "snapshot_date": "2026-11-09",
+  "files": [
+    {
+      "path": "entries.idx",
+      "url": "https://files.wwpdb.org/pub/pdb/derived_data/index/entries.idx",
+      "bytes": 58028572,
+      "sha256": "f09390c2457df6023fec1afbebd0ec2787da87c5fc1066ecffc6ac4b688a47ad"
+    },
+    {
+      "path": "pdb_seqres.txt.gz",
+      "url": "https://files.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz",
+      "bytes": 68159581,
+      "sha256": "d824f704a947a32c5e6181976ffb6b8af297550765f78c5b16eb42eb763b4e09"
+    },
+    {
+      "path": "pdb_chain_pfam.tsv.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_pfam.tsv.gz",
+      "bytes": 4632171,
+      "sha256": "26ab29c67fe73def1ee02b38a5f2273f1961ca5ea8d86f50f55fa70f9f3f8c31"
+    }
+  ],
+  "download_url": "https://github.com/yashaektefaie/SPECTRAagent/releases/download/primary-reproduction-2026-11-08/esmfold2-codex-r1-public-snapshots-2026-11-09.tar.gz",
+  "public_download_verified_utc": "2026-11-10T15:44:55.585818+00:00",
+  "public_download_verified_bytes": 84230281,
+  "public_download_verified_sha256": "19afd5ab0357951bae9337c09396657d699508c04b8de67cc1a6563a98c4e771"
+}

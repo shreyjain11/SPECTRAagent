@@ -2,12 +2,12 @@
 
 The catalog covers 143 entries across 28 investigations. Open the [notebook index](inline/INDEX.md) or [setup guide](inline/README.md) to review and run the notebooks.
 
-**139 analysis notebooks have completed on exxact05; 1 entry documents an unperformed candidate. 3 entries are pending verification.**
+**142 analysis notebooks have completed on exxact05; 1 entry documents an unperformed candidate. 0 entries are pending verification.**
 
 | Model | Executed analyses | Unperformed candidates | Pending | Total |
 |---|---:|---:|---:|---:|
 | AlphaMissense | 34 | 0 | 0 | 34 |
-| ESMFold2 | 31 | 1 | 3 | 35 |
+| ESMFold2 | 34 | 1 | 0 | 35 |
 | STATE | 44 | 0 | 0 | 44 |
 | CONCH | 30 | 0 | 0 | 30 |
 
@@ -31,11 +31,3 @@ The registry and runner select the verified inline notebook by default. Section 
 ## Validation
 
 Run `python reproduction/validate.py` from the repository root to check all 143 registry entries, preferred notebook hashes and section maps, included input manifests, and supporting artifact links. [Packaging checks](inline/PACKAGING_VALIDATION.json) also record the runner test on exxact05.
-
-## Pending executions
-
-These entries are not published as verified inline analyses:
-
-- `esmfold2-codex-r1/test-01` — Pfam domain-repertoire similarity
-- `esmfold2-codex-r1/test-02` — Chain length and sequence homology
-- `esmfold2-codex-r1/test-03` — Disorder, coiled-coil and low complexity

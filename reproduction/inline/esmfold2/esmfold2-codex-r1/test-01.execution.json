@@ -1,0 +1,116 @@
+{
+  "analysis_id": "esmfold2-codex-r1/test-01",
+  "notebook": "inline/esmfold2/esmfold2-codex-r1/test-01.ipynb",
+  "html": "inline/esmfold2/esmfold2-codex-r1/test-01.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 17,
+  "executed_cells": 17,
+  "errors": 0,
+  "notebook_sha256": "c00591e4266ad22aa7272cade1e1b98157728319703db22df3563a137cb21b16",
+  "html_sha256": "92432210a81a7cfacbd823a6736af02869ba23ea846b1fadce01906048248323",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source/acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 5,
+      "code_cells": [
+        6
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 7,
+      "code_cells": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model evaluation",
+      "markdown_cell": 12,
+      "code_cells": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 19,
+      "code_cells": [
+        20,
+        21
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. Decision and explanation",
+      "markdown_cell": 22,
+      "code_cells": [
+        23
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "054c70c026ef1b40664154bcea715f3a379afad3de13fe5f71f40af981888c1d",
+  "execution_evidence_entry_id": "esmfold2-codex-r1/test-01",
+  "embedded_figures": 5,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      23
+    ]
+  },
+  "input_manifests": [
+    {
+      "path": "inline/esmfold2/esmfold2-codex-r1/inputs/investigation_record.md",
+      "sha256": "3e83e4ccd4052f695e59da095a81d3eb532159af254de47b4de614242410107c",
+      "bytes": 13476
+    }
+  ],
+  "elapsed_seconds": 1074.003,
+  "calculation_evidence": [
+    {
+      "path": "inline/esmfold2/esmfold2-codex-r1/test-01-evidence/CALCULATION_RECEIPT.json",
+      "sha256": "06e9c71f4425619f6e3844878df97a02a01db2cda6bd6d92b8c58a74e54e283b"
+    },
+    {
+      "path": "inline/esmfold2/esmfold2-codex-r1/PUBLIC_SOURCE_SNAPSHOT_ASSET.json",
+      "sha256": "e7700a2897d4817a7e1767322cb8bb71a53cb7711cee83be08acbf6295cd572f"
+    },
+    {
+      "path": "inline/esmfold2/esmfold2-codex-r1/PUBLIC_SOURCE_BOOTSTRAP_VALIDATION.json",
+      "sha256": "e1563ff8176fa3883b80c1db08261a27eb5502ed061c6c5f930fb3670147c7e6"
+    },
+    {
+      "path": "inline/esmfold2/esmfold2-codex-r1/PARALLEL_SCORING_VALIDATION.json",
+      "sha256": "31c7d04821c814361aab0a055f07a6d34402dab5ede754178ee880b25fa586ce"
+    }
+  ]
+}

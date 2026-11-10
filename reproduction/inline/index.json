@@ -2,8 +2,7 @@
   "schema_version": 1,
   "scope": "Six-section inline analysis workflows",
   "counts": {
-    "executed_inline": 139,
-    "pending_execution": 3,
+    "executed_inline": 142,
     "documented_unperformed_candidate": 1
   },
   "analyses": [
@@ -119,28 +118,28 @@
       "id": "esmfold2-codex-r1/test-01",
       "model": "ESMFold2",
       "axis": "Pfam domain-repertoire similarity",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-codex-r1/test-01.ipynb",
+      "html": "inline/esmfold2/esmfold2-codex-r1/test-01.html",
+      "validation": "inline/esmfold2/esmfold2-codex-r1/test-01.execution.json"
     },
     {
       "id": "esmfold2-codex-r1/test-02",
       "model": "ESMFold2",
       "axis": "Chain length and sequence homology",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-codex-r1/test-02.ipynb",
+      "html": "inline/esmfold2/esmfold2-codex-r1/test-02.html",
+      "validation": "inline/esmfold2/esmfold2-codex-r1/test-02.execution.json"
     },
     {
       "id": "esmfold2-codex-r1/test-03",
       "model": "ESMFold2",
       "axis": "Disorder, coiled-coil and low complexity",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-codex-r1/test-03.ipynb",
+      "html": "inline/esmfold2/esmfold2-codex-r1/test-03.html",
+      "validation": "inline/esmfold2/esmfold2-codex-r1/test-03.execution.json"
     },
     {
       "id": "esmfold2-codex-r1/test-04",

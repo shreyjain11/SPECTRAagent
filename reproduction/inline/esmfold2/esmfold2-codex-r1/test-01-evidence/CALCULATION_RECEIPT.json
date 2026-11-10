@@ -1,0 +1,130 @@
+{
+  "analysis_id": "esmfold2-codex-r1/test-01",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "source_snapshots": {
+    "entries.idx": {
+      "url": "https://files.wwpdb.org/pub/pdb/derived_data/index/entries.idx",
+      "sha256": "f09390c2457df6023fec1afbebd0ec2787da87c5fc1066ecffc6ac4b688a47ad",
+      "bytes": 58028572,
+      "headers": {
+        "ETag": "\"02b9d62907621b4212b374672abec0b9-7\"",
+        "Last-Modified": "Sat, 31 Oct 2026 06:10:25 GMT",
+        "Content-Length": "58028572"
+      }
+    },
+    "pdb_seqres.txt.gz": {
+      "url": "https://files.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz",
+      "sha256": "d824f704a947a32c5e6181976ffb6b8af297550765f78c5b16eb42eb763b4e09",
+      "bytes": 68159581,
+      "headers": {
+        "ETag": "\"55a90cdcaecbb1f5567f12a207bb3f09-9\"",
+        "Last-Modified": "Sat, 31 Oct 2026 11:57:36 GMT",
+        "Content-Length": "68159581"
+      }
+    },
+    "pdb_chain_pfam.tsv.gz": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_pfam.tsv.gz",
+      "sha256": "26ab29c67fe73def1ee02b38a5f2273f1961ca5ea8d86f50f55fa70f9f3f8c31",
+      "bytes": 4632171,
+      "headers": {
+        "ETag": "\"46ae6b-65f3bb27f125a\"",
+        "Last-Modified": "Sun, 01 Nov 2026 19:04:22 GMT",
+        "Content-Length": "4632171"
+      }
+    }
+  },
+  "panel_sha256": "1467f2f0041cad413e37efcd87c8466dff97c7236390d6e63f4359f7939934de",
+  "n_evaluated": 2517,
+  "n_primary": 1987,
+  "model_checkpoint": {
+    "config_sha256": "24606ca34a052d2de70c758030b2a9e3b74d038950deee6ceb960bb18d7fff3d",
+    "index_sha256": "f7b2e6c3b1e4c70b6fe69f8c098a34e4fe40c85934ce7d966e804d34bec242c9",
+    "weight_shards": {
+      "model-00001-of-00006.safetensors": "a24f050e2a2f9746b43b435c53719afc575a374fa302731b6911356a3d8b5cac",
+      "model-00002-of-00006.safetensors": "1af1615f6f6d1b3c0a24a63d9052a0ecad5b3831d1513c1a5fea73870c1bec73",
+      "model-00003-of-00006.safetensors": "357b55ec56192fd01a1cfc39a5260caf2242503ac7c554f614e43c7a469f0ced",
+      "model-00004-of-00006.safetensors": "f065aca1a13308bce41b78f728c28a0a29e3a9db6af531a74a258dbb06f8721b",
+      "model-00005-of-00006.safetensors": "e0c507dce5b2ddb22f77305607b4332506137850c5378e98e9729345264668b7",
+      "model-00006-of-00006.safetensors": "90015eb13bbeab54237b18d6748dbd47f4bfd108fdf45704d66e5c3a93f8df7c"
+    }
+  },
+  "model_settings": {
+    "seed": 0,
+    "num_loops": 3,
+    "num_sampling_steps": 68,
+    "num_diffusion_samples": 1,
+    "transformers": "5.22.2",
+    "torch": "2.6.0+cu124",
+    "precision": "native bfloat16 model parameters; library float32 coordinates; no outer autocast",
+    "float32_matmul_precision": "high"
+  },
+  "new_inference_targets": 0,
+  "verified_prediction_targets": 2517,
+  "software_controls": {
+    "sources": {
+      "tantan": {
+        "url": "https://gitlab.com/mcfrith/tantan/-/archive/f5b2dd61ddfa6f7b49ff5457750e177fb03649de/tantan-f5b2dd61ddfa6f7b49ff5457750e177fb03649de.tar.gz",
+        "filename": "tantan51.tar.gz",
+        "bytes": 103470,
+        "sha256": "9f3a57bccfb32a796ebb4376ede90ecce5a0c15578a881ed62b65c20a8c62b4b"
+      },
+      "ncoils": {
+        "url": "https://deb.debian.org/debian/pool/main/c/coils/coils_2002.orig.tar.gz",
+        "filename": "coils_2002.orig.tar.gz",
+        "bytes": 17880,
+        "sha256": "b6cf0c9671adfcc6db5c9b40d5f15376dd74624d2161ba511aeb8ce8c164f49b"
+      },
+      "metapredict": {
+        "url": "https://files.pythonhosted.org/packages/f8/75/7f828459b3b51fbd56dddb5c9d4bee613a6a25afb1e07c6b068f182dca4b/metapredict-3.0.2.tar.gz",
+        "filename": "metapredict-3.0.2.tar.gz",
+        "bytes": 14606239,
+        "sha256": "8c00f58641ae831799a5bd1d12e57af1c5f823b81fc14cb52e0f584b6df2604a"
+      }
+    },
+    "tantan_binary": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/esmfold2/calculations/codex-r1/third_party/tantan-f5b2dd61ddfa6f7b49ff5457750e177fb03649de/bin/tantan",
+    "tantan_binary_sha256": "470525690ab31492bb16bb09b5e067a96682dcd6b3a999c5bfbc3d8f3d08df54",
+    "ncoils_binary": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/esmfold2/calculations/codex-r1/third_party/coils-2002/ncoils",
+    "ncoils_binary_sha256": "ac41ea70d0de61cafd73059e76ece213900734656c2548418f6e41fd876d5eac",
+    "ncoils_matrix_sha256": "f82f85110f439730e3044d5f8510e3f530c41e516cfc98cbe4af8bc201561a63",
+    "python_target": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/esmfold2/calculations/codex-r1/third_party/python",
+    "build_commands": [
+      [
+        "make",
+        "-j2"
+      ],
+      [
+        "cc",
+        "-O2",
+        "-I.",
+        "-o",
+        "ncoils",
+        "ncoils.c",
+        "read_matrix.c",
+        "-lm"
+      ]
+    ],
+    "metapredict_v3_weights_sha256": "da1397faee2b05e8ee9c4790e03bdc9f08ed11d5aa21fff841f199a4f8999ea7"
+  },
+  "decision": "Accept lower Pfam repertoire proximity as a declining-accuracy regime in this evaluated population: the paired extreme interval and adjusted similarity coefficient are positive.",
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260714,
+  "outputs": {
+    "coiled_curves.csv": "d457606cd388ce16175d1d748bf9b6f039366067cd61a95d81a112bd810a8773",
+    "length_curves.csv": "2d3f8146caa4e2dcbea58a3b8d4d9b474388f0f1fccff96efd5a347997f88e5a",
+    "trend.csv": "6f2c29930ce665198655ff81bc755ba1d239d1a72d71ac3a8630113d58eb4738",
+    "stratified.csv": "fed3217d6530839665491c4da0041813e7c2267e1b538816a98d158f15802b53",
+    "single_controls.csv": "236440edf42ad161733ce32d6d93c643105740f31ecd0d6c05f7b38757e66424",
+    "scores.csv": "9d9a7460623d59c74523b4ee3291acc8489a5e9e97c7ed3030a366b66f9011d8",
+    "homology_curves.csv": "c8a3b6ace77bcf97ae867dc578da47ee3f44d7a030561800c90817f70d311465",
+    "extreme_contrast.json": "fc02314ee51cd7cf56acdf985c8cc7fb2f86ee7ab9e4c284186f36ea3112e664",
+    "extreme_adjustment.csv": "6da818b2d7dca8a0d2ae2ff83ba1088db32d92f3617eda98d40c9d4d35e96f1c",
+    "sensitivity_curves.csv": "2e127702182c00b2764aa0c68859306fe9b754e4dc2a5c51e84515e11e21b15e",
+    "disorder_curves.csv": "8d477273d42aa7209aa1cb633521cbc2f84eae3645331881aa459b1b105adba5",
+    "curves.csv": "7d7abd8cbcfcc81d81926f7c3a117418f6c3278200a745228b3af70ff8ad93d9",
+    "axis_levels.csv": "47217f1187c58c5f547fb1b5b1018c3df73cb19340027ab99293c00b6f3d2a2e",
+    "full_adjustment.csv": "7b5d195e798f813239f7136bc4710e15f681d6c7e0637f30964be0a761e19d11",
+    "sensitivity_fits.csv": "3885370f5bd54bcae2500f1d24e58429c0df3945b4e13f9ba6193901a46c69ee",
+    "sensitivities.csv": "f0ea2d7ccb674763f46405cf5f2ffc8f89a18972b5822af5574d29c97b260e23"
+  }
+}

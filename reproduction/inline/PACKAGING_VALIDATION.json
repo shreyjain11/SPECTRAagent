@@ -1,7 +1,6 @@
 {
   "checks_completed": [
     "full143_record_validator",
-    "143_preferred_routing_and_pending_refusal_checks",
     "143_explicit_supporting_and_public_bundle_routes",
     "guide_relative_links_exist",
     "new_orchestration_python_syntax",
@@ -11,15 +10,17 @@
     "independent_all_notebook_absolute_path_scan",
     "download_and_model_cache_gitignore_preserves_shipped_manifests",
     "no_credential_patterns_in_published_notebook_sources_and_outputs",
-    "446_documentation_links_resolve"
+    "455_documentation_links_resolve",
+    "143_preferred_routing_checks",
+    "codex_r1_snapshot_bootstrap_and_inline_code_fingerprints",
+    "codex_r1_serial_parallel_score_equality_12_targets"
   ],
   "counts": {
-    "executed_inline": 139,
-    "pending_execution": 3,
+    "executed_inline": 142,
     "documented_unperformed_candidate": 1
   },
-  "notebooks": 140,
-  "package_bytes": 208957265,
+  "notebooks": 143,
+  "package_bytes": 212988745,
   "execution_evidence_host": "exxact05",
   "runner_smoke": {
     "host": "exxact05.broadinstitute.org",
@@ -36,13 +37,13 @@
   "packaging_copies_verified_executions": true,
   "execution_index": "index.json",
   "primary_notebooks_verified": 44,
-  "updated_utc": "2026-11-10T15:42:25.170363+00:00",
+  "updated_utc": "2026-11-10T17:11:29.948563+00:00",
   "last_update_checks": {
     "registry_records": 143,
-    "preferred_notebook_receipts": 140,
-    "pending_routes_refused": 3,
+    "preferred_notebook_receipts": 143,
+    "pending_routes_refused": 0,
     "explicit_supporting_and_public_bundle_routes": 143,
-    "local_documentation_links": 446,
+    "local_documentation_links": 455,
     "runner_and_git_configuration_unchanged": [
       "reproduction/inline/execute_notebook.py",
       "reproduction/run_notebooks.py",
@@ -52,8 +53,11 @@
     "all_notebook_token_pattern_scan": "passed",
     "all_notebook_absolute_path_scan": "passed",
     "reviewed_unchanged_path_remapping_literals": 14,
-    "new_verified_analysis_notebooks": 12,
+    "new_verified_analysis_notebooks": 3,
     "scientific_execution": "verified exxact05 receipts; packaging does not rerun inference",
+    "codex_r1_acquisition_bootstrap": "fresh-cache execution passed and code fingerprint matches all three notebooks",
+    "codex_r1_parallel_scoring": "12 targets spanning 40 to 1024 residues match serial measurements; scorer fingerprint matches all three notebooks",
+    "codex_r1_calculation_receipts": "all three included, completed and bound to execution evidence",
     "npm_run_check": "passed",
     "git_diff_check": "passed"
   }

@@ -244,13 +244,23 @@ def main():
                     normalized['calculation_evidence'] = []
                     output_paths = raw.get('output_receipts', []) + ([raw['output_receipt']] if raw.get('output_receipt') else [])
                     for output in output_paths:
-                        evidence_path = source / family / output
-                        if not evidence_path.is_file():
+                        evidence_path = next((path for path in [source / family / output, notebook.parent / output]
+                                              if path.is_file()), None)
+                        if evidence_path is None:
                             continue
                         target = destination.parent / (destination.stem + '-evidence') / evidence_path.name
                         target.parent.mkdir(exist_ok=True)
                         shutil.copyfile(evidence_path, target)
                         normalized['calculation_evidence'].append({'path': str(target.relative_to(ROOT)), 'sha256': sha(target)})
+                    if output_paths and local_index.get(identifier, {}).get('status') != 'Documented unperformed candidate':
+                        for name in ['PUBLIC_SOURCE_SNAPSHOT_ASSET.json', 'PUBLIC_SOURCE_BOOTSTRAP_VALIDATION.json',
+                                     'PARALLEL_SCORING_VALIDATION.json']:
+                            evidence_path = notebook.parent / name
+                            if evidence_path.is_file():
+                                target = destination.parent / name
+                                shutil.copyfile(evidence_path, target)
+                                normalized['calculation_evidence'].append({'path': str(target.relative_to(ROOT)),
+                                                                          'sha256': sha(target)})
                     receipt_path = destination.with_suffix('.execution.json')
                     write(receipt_path, normalized)
                     unperformed = local_index.get(identifier, {}).get('status') == 'Documented unperformed candidate'

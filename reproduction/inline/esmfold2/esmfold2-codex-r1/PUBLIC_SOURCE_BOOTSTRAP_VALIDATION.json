@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "started": 1794325547.1757174,
+  "elapsed_seconds": 7.278875827789307,
+  "fresh_cache": true,
+  "archive_url": "https://github.com/yashaektefaie/SPECTRAagent/releases/download/primary-reproduction-2026-11-08/esmfold2-codex-r1-public-snapshots-2026-11-09.tar.gz",
+  "archive_sha256": "19afd5ab0357951bae9337c09396657d699508c04b8de67cc1a6563a98c4e771",
+  "source_receipts": {
+    "entries.idx": {
+      "url": "https://files.wwpdb.org/pub/pdb/derived_data/index/entries.idx",
+      "sha256": "f09390c2457df6023fec1afbebd0ec2787da87c5fc1066ecffc6ac4b688a47ad",
+      "bytes": 58028572,
+      "source_archive": {
+        "url": "https://github.com/yashaektefaie/SPECTRAagent/releases/download/primary-reproduction-2026-11-08/esmfold2-codex-r1-public-snapshots-2026-11-09.tar.gz",
+        "sha256": "19afd5ab0357951bae9337c09396657d699508c04b8de67cc1a6563a98c4e771"
+      }
+    },
+    "pdb_seqres.txt.gz": {
+      "url": "https://files.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz",
+      "sha256": "d824f704a947a32c5e6181976ffb6b8af297550765f78c5b16eb42eb763b4e09",
+      "bytes": 68159581,
+      "source_archive": {
+        "url": "https://github.com/yashaektefaie/SPECTRAagent/releases/download/primary-reproduction-2026-11-08/esmfold2-codex-r1-public-snapshots-2026-11-09.tar.gz",
+        "sha256": "19afd5ab0357951bae9337c09396657d699508c04b8de67cc1a6563a98c4e771"
+      }
+    },
+    "pdb_chain_pfam.tsv.gz": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_pfam.tsv.gz",
+      "sha256": "26ab29c67fe73def1ee02b38a5f2273f1961ca5ea8d86f50f55fa70f9f3f8c31",
+      "bytes": 4632171,
+      "source_archive": {
+        "url": "https://github.com/yashaektefaie/SPECTRAagent/releases/download/primary-reproduction-2026-11-08/esmfold2-codex-r1-public-snapshots-2026-11-09.tar.gz",
+        "sha256": "19afd5ab0357951bae9337c09396657d699508c04b8de67cc1a6563a98c4e771"
+      }
+    }
+  },
+  "code_sha256": "3b2890b482660dd5730404503b293d9686582ad5065841b49aed3a1377c849ba"
+}
