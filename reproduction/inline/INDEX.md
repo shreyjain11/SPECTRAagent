@@ -63,18 +63,18 @@ Open a notebook to read its code, executed outputs, and section 6 decision. The 
 | `esmfold2-codex-r1/test-04`<br>Membrane topology | documented unperformed candidate | [Notebook](esmfold2/esmfold2-codex-r1/test-04.ipynb) · [HTML](esmfold2/esmfold2-codex-r1/test-04.html) · [Execution](esmfold2/esmfold2-codex-r1/test-04.execution.json) |
 | `esmfold2-codex-r2/test-01`<br>Positive net charge on isolated cryo-EM chains | executed inline | [Notebook](esmfold2/esmfold2-codex-r2/test-01.ipynb) · [HTML](esmfold2/esmfold2-codex-r2/test-01.html) · [Execution](esmfold2/esmfold2-codex-r2/test-01.execution.json) |
 | `esmfold2-codex-r2/test-02`<br>Internal sequence repeats | executed inline | [Notebook](esmfold2/esmfold2-codex-r2/test-02.ipynb) · [HTML](esmfold2/esmfold2-codex-r2/test-02.html) · [Execution](esmfold2/esmfold2-codex-r2/test-02.execution.json) |
-| `esmfold2-codex-r2/test-03`<br>Low composition entropy | pending execution |  |
-| `esmfold2-codex-r2/test-04`<br>Isolated-chain oligomeric context | pending execution |  |
-| `esmfold2-codex-r2/test-05`<br>Dominant residue fraction | pending execution |  |
-| `esmfold2-codex-r2/test-06`<br>Cysteine, hydrophobic, glycine/proline and length screens | pending execution |  |
-| `esmfold2-opus-r1/test-01`<br>Coverage-weighted sequence identity | pending execution |  |
-| `esmfold2-opus-r1/test-02`<br>Length | pending execution |  |
-| `esmfold2-opus-r1/test-03`<br>Predicted disorder | pending execution |  |
-| `esmfold2-opus-r1/test-04`<br>Coverage, resolution and sequence composition | pending execution |  |
-| `esmfold2-opus-r2/test-01`<br>Sequence length | pending execution |  |
-| `esmfold2-opus-r2/test-02`<br>Training homology | pending execution |  |
-| `esmfold2-opus-r2/test-03`<br>Short-chain and long-chain failure tails | pending execution |  |
-| `esmfold2-opus-r2/test-04`<br>Resolution, composition and oligomeric state | pending execution |  |
+| `esmfold2-codex-r2/test-03`<br>Low composition entropy | executed inline | [Notebook](esmfold2/esmfold2-codex-r2/test-03.ipynb) · [HTML](esmfold2/esmfold2-codex-r2/test-03.html) · [Execution](esmfold2/esmfold2-codex-r2/test-03.execution.json) |
+| `esmfold2-codex-r2/test-04`<br>Isolated-chain oligomeric context | executed inline | [Notebook](esmfold2/esmfold2-codex-r2/test-04.ipynb) · [HTML](esmfold2/esmfold2-codex-r2/test-04.html) · [Execution](esmfold2/esmfold2-codex-r2/test-04.execution.json) |
+| `esmfold2-codex-r2/test-05`<br>Dominant residue fraction | executed inline | [Notebook](esmfold2/esmfold2-codex-r2/test-05.ipynb) · [HTML](esmfold2/esmfold2-codex-r2/test-05.html) · [Execution](esmfold2/esmfold2-codex-r2/test-05.execution.json) |
+| `esmfold2-codex-r2/test-06`<br>Cysteine, hydrophobic, glycine/proline and length screens | executed inline | [Notebook](esmfold2/esmfold2-codex-r2/test-06.ipynb) · [HTML](esmfold2/esmfold2-codex-r2/test-06.html) · [Execution](esmfold2/esmfold2-codex-r2/test-06.execution.json) |
+| `esmfold2-opus-r1/test-01`<br>Coverage-weighted sequence identity | executed inline | [Notebook](esmfold2/esmfold2-opus-r1/test-01.ipynb) · [HTML](esmfold2/esmfold2-opus-r1/test-01.html) · [Execution](esmfold2/esmfold2-opus-r1/test-01.execution.json) |
+| `esmfold2-opus-r1/test-02`<br>Length | executed inline | [Notebook](esmfold2/esmfold2-opus-r1/test-02.ipynb) · [HTML](esmfold2/esmfold2-opus-r1/test-02.html) · [Execution](esmfold2/esmfold2-opus-r1/test-02.execution.json) |
+| `esmfold2-opus-r1/test-03`<br>Predicted disorder | executed inline | [Notebook](esmfold2/esmfold2-opus-r1/test-03.ipynb) · [HTML](esmfold2/esmfold2-opus-r1/test-03.html) · [Execution](esmfold2/esmfold2-opus-r1/test-03.execution.json) |
+| `esmfold2-opus-r1/test-04`<br>Coverage, resolution and sequence composition | executed inline | [Notebook](esmfold2/esmfold2-opus-r1/test-04.ipynb) · [HTML](esmfold2/esmfold2-opus-r1/test-04.html) · [Execution](esmfold2/esmfold2-opus-r1/test-04.execution.json) |
+| `esmfold2-opus-r2/test-01`<br>Sequence length | executed inline | [Notebook](esmfold2/esmfold2-opus-r2/test-01.ipynb) · [HTML](esmfold2/esmfold2-opus-r2/test-01.html) · [Execution](esmfold2/esmfold2-opus-r2/test-01.execution.json) |
+| `esmfold2-opus-r2/test-02`<br>Training homology | executed inline | [Notebook](esmfold2/esmfold2-opus-r2/test-02.ipynb) · [HTML](esmfold2/esmfold2-opus-r2/test-02.html) · [Execution](esmfold2/esmfold2-opus-r2/test-02.execution.json) |
+| `esmfold2-opus-r2/test-03`<br>Short-chain and long-chain failure tails | executed inline | [Notebook](esmfold2/esmfold2-opus-r2/test-03.ipynb) · [HTML](esmfold2/esmfold2-opus-r2/test-03.html) · [Execution](esmfold2/esmfold2-opus-r2/test-03.execution.json) |
+| `esmfold2-opus-r2/test-04`<br>Resolution, composition and oligomeric state | executed inline | [Notebook](esmfold2/esmfold2-opus-r2/test-04.ipynb) · [HTML](esmfold2/esmfold2-opus-r2/test-04.html) · [Execution](esmfold2/esmfold2-opus-r2/test-04.execution.json) |
 | `esmfold2-kimi-r2/test-01`<br>Maximum sequence identity | executed inline | [Notebook](esmfold2/esmfold2-kimi-r2/test-01.ipynb) · [HTML](esmfold2/esmfold2-kimi-r2/test-01.html) · [Execution](esmfold2/esmfold2-kimi-r2/test-01.execution.json) |
 | `esmfold2-kimi-r2/test-02`<br>Missing-density and complex-context restrictions | executed inline | [Notebook](esmfold2/esmfold2-kimi-r2/test-02.ipynb) · [HTML](esmfold2/esmfold2-kimi-r2/test-02.html) · [Execution](esmfold2/esmfold2-kimi-r2/test-02.execution.json) |
 | `esmfold2-kimi-r1/test-01`<br>Sequence identity and low complexity (ESMFold v1) | executed inline | [Notebook](esmfold2/esmfold2-kimi-r1/test-01.ipynb) · [HTML](esmfold2/esmfold2-kimi-r1/test-01.html) · [Execution](esmfold2/esmfold2-kimi-r1/test-01.execution.json) |

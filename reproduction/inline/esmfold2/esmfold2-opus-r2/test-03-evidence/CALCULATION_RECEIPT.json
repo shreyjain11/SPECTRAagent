@@ -1,0 +1,25 @@
+{
+  "analysis_id": "esmfold2-opus-r2/test-03",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "input_population": 401,
+  "evaluated_population": 400,
+  "new_inference_executed": false,
+  "new_inference_targets": 0,
+  "verified_prediction_targets": 400,
+  "input_manifest_sha256": "35d8452170768a9b10521288603c575849af620787696a32fe1a187f108989d9",
+  "model_settings": {
+    "seed": 0,
+    "num_loops": 3,
+    "num_sampling_steps": 50,
+    "num_diffusion_samples": 1,
+    "transformers": "5.22.2",
+    "torch": "2.6.0+cu124",
+    "precision": "float32 folding, bfloat16 ESMC, no outer autocast"
+  },
+  "model_checkpoint": {
+    "config_sha256": "24606ca34a052d2de70c758030b2a9e3b74d038950deee6ceb960bb18d7fff3d",
+    "index_sha256": "f7b2e6c3b1e4c70b6fe69f8c098a34e4fe40c85934ce7d966e804d34bec242c9"
+  },
+  "decision": "The long-chain failure-fraction trend is unresolved at p<0.05."
+}

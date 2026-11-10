@@ -1,0 +1,99 @@
+{
+  "analysis_id": "esmfold2-opus-r2/test-04",
+  "notebook": "inline/esmfold2/esmfold2-opus-r2/test-04.ipynb",
+  "html": "inline/esmfold2/esmfold2-opus-r2/test-04.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 12,
+  "executed_cells": 12,
+  "errors": 0,
+  "notebook_sha256": "3c2a3a8ace4233d00651a7d1ac5126aca4402e8a14f752817e590af698ee3e8e",
+  "html_sha256": "0a71193082649e614fb5eaa0e113982a95eff091c3a584a1f4f9aa5d7646bb1b",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source/acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 6,
+      "code_cells": [
+        7
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model evaluation",
+      "markdown_cell": 8,
+      "code_cells": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 14,
+      "code_cells": [
+        15,
+        16
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 17,
+      "code_cells": [
+        18
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "4f617cb5e41244c84abe5700dabf5922459e42b1828f04053efdf5bfae8ddab6",
+  "execution_evidence_entry_id": "esmfold2-opus-r2/test-04",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      18
+    ]
+  },
+  "input_manifests": [
+    {
+      "path": "inline/esmfold2/esmfold2-opus-r2/inputs/protein_entity_ids.json",
+      "sha256": "35d8452170768a9b10521288603c575849af620787696a32fe1a187f108989d9",
+      "bytes": 5790
+    }
+  ],
+  "elapsed_seconds": 405.094,
+  "calculation_evidence": [
+    {
+      "path": "inline/esmfold2/esmfold2-opus-r2/test-04-evidence/CALCULATION_RECEIPT.json",
+      "sha256": "85fb909dfafd660d26961ca04d3c485373da3eb557d8e106ed93584f8d9203be"
+    }
+  ]
+}

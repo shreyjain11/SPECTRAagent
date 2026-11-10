@@ -2,12 +2,12 @@
 
 The catalog covers 143 entries across 28 investigations. Open the [notebook index](inline/INDEX.md) or [setup guide](inline/README.md) to review and run the notebooks.
 
-**127 analysis notebooks have completed on exxact05; 1 entry documents an unperformed candidate. 15 entries are pending verification.**
+**139 analysis notebooks have completed on exxact05; 1 entry documents an unperformed candidate. 3 entries are pending verification.**
 
 | Model | Executed analyses | Unperformed candidates | Pending | Total |
 |---|---:|---:|---:|---:|
 | AlphaMissense | 34 | 0 | 0 | 34 |
-| ESMFold2 | 19 | 1 | 15 | 35 |
+| ESMFold2 | 31 | 1 | 3 | 35 |
 | STATE | 44 | 0 | 0 | 44 |
 | CONCH | 30 | 0 | 0 | 30 |
 
@@ -39,15 +39,3 @@ These entries are not published as verified inline analyses:
 - `esmfold2-codex-r1/test-01` — Pfam domain-repertoire similarity
 - `esmfold2-codex-r1/test-02` — Chain length and sequence homology
 - `esmfold2-codex-r1/test-03` — Disorder, coiled-coil and low complexity
-- `esmfold2-codex-r2/test-03` — Low composition entropy
-- `esmfold2-codex-r2/test-04` — Isolated-chain oligomeric context
-- `esmfold2-codex-r2/test-05` — Dominant residue fraction
-- `esmfold2-codex-r2/test-06` — Cysteine, hydrophobic, glycine/proline and length screens
-- `esmfold2-opus-r1/test-01` — Coverage-weighted sequence identity
-- `esmfold2-opus-r1/test-02` — Length
-- `esmfold2-opus-r1/test-03` — Predicted disorder
-- `esmfold2-opus-r1/test-04` — Coverage, resolution and sequence composition
-- `esmfold2-opus-r2/test-01` — Sequence length
-- `esmfold2-opus-r2/test-02` — Training homology
-- `esmfold2-opus-r2/test-03` — Short-chain and long-chain failure tails
-- `esmfold2-opus-r2/test-04` — Resolution, composition and oligomeric state

@@ -2,8 +2,8 @@
   "schema_version": 1,
   "scope": "Six-section inline analysis workflows",
   "counts": {
-    "executed_inline": 127,
-    "pending_execution": 15,
+    "executed_inline": 139,
+    "pending_execution": 3,
     "documented_unperformed_candidate": 1
   },
   "analyses": [
@@ -173,109 +173,109 @@
       "id": "esmfold2-codex-r2/test-03",
       "model": "ESMFold2",
       "axis": "Low composition entropy",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-codex-r2/test-03.ipynb",
+      "html": "inline/esmfold2/esmfold2-codex-r2/test-03.html",
+      "validation": "inline/esmfold2/esmfold2-codex-r2/test-03.execution.json"
     },
     {
       "id": "esmfold2-codex-r2/test-04",
       "model": "ESMFold2",
       "axis": "Isolated-chain oligomeric context",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-codex-r2/test-04.ipynb",
+      "html": "inline/esmfold2/esmfold2-codex-r2/test-04.html",
+      "validation": "inline/esmfold2/esmfold2-codex-r2/test-04.execution.json"
     },
     {
       "id": "esmfold2-codex-r2/test-05",
       "model": "ESMFold2",
       "axis": "Dominant residue fraction",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-codex-r2/test-05.ipynb",
+      "html": "inline/esmfold2/esmfold2-codex-r2/test-05.html",
+      "validation": "inline/esmfold2/esmfold2-codex-r2/test-05.execution.json"
     },
     {
       "id": "esmfold2-codex-r2/test-06",
       "model": "ESMFold2",
       "axis": "Cysteine, hydrophobic, glycine/proline and length screens",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-codex-r2/test-06.ipynb",
+      "html": "inline/esmfold2/esmfold2-codex-r2/test-06.html",
+      "validation": "inline/esmfold2/esmfold2-codex-r2/test-06.execution.json"
     },
     {
       "id": "esmfold2-opus-r1/test-01",
       "model": "ESMFold2",
       "axis": "Coverage-weighted sequence identity",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-opus-r1/test-01.ipynb",
+      "html": "inline/esmfold2/esmfold2-opus-r1/test-01.html",
+      "validation": "inline/esmfold2/esmfold2-opus-r1/test-01.execution.json"
     },
     {
       "id": "esmfold2-opus-r1/test-02",
       "model": "ESMFold2",
       "axis": "Length",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-opus-r1/test-02.ipynb",
+      "html": "inline/esmfold2/esmfold2-opus-r1/test-02.html",
+      "validation": "inline/esmfold2/esmfold2-opus-r1/test-02.execution.json"
     },
     {
       "id": "esmfold2-opus-r1/test-03",
       "model": "ESMFold2",
       "axis": "Predicted disorder",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-opus-r1/test-03.ipynb",
+      "html": "inline/esmfold2/esmfold2-opus-r1/test-03.html",
+      "validation": "inline/esmfold2/esmfold2-opus-r1/test-03.execution.json"
     },
     {
       "id": "esmfold2-opus-r1/test-04",
       "model": "ESMFold2",
       "axis": "Coverage, resolution and sequence composition",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-opus-r1/test-04.ipynb",
+      "html": "inline/esmfold2/esmfold2-opus-r1/test-04.html",
+      "validation": "inline/esmfold2/esmfold2-opus-r1/test-04.execution.json"
     },
     {
       "id": "esmfold2-opus-r2/test-01",
       "model": "ESMFold2",
       "axis": "Sequence length",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-opus-r2/test-01.ipynb",
+      "html": "inline/esmfold2/esmfold2-opus-r2/test-01.html",
+      "validation": "inline/esmfold2/esmfold2-opus-r2/test-01.execution.json"
     },
     {
       "id": "esmfold2-opus-r2/test-02",
       "model": "ESMFold2",
       "axis": "Training homology",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-opus-r2/test-02.ipynb",
+      "html": "inline/esmfold2/esmfold2-opus-r2/test-02.html",
+      "validation": "inline/esmfold2/esmfold2-opus-r2/test-02.execution.json"
     },
     {
       "id": "esmfold2-opus-r2/test-03",
       "model": "ESMFold2",
       "axis": "Short-chain and long-chain failure tails",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-opus-r2/test-03.ipynb",
+      "html": "inline/esmfold2/esmfold2-opus-r2/test-03.html",
+      "validation": "inline/esmfold2/esmfold2-opus-r2/test-03.execution.json"
     },
     {
       "id": "esmfold2-opus-r2/test-04",
       "model": "ESMFold2",
       "axis": "Resolution, composition and oligomeric state",
-      "status": "pending_execution",
-      "notebook": null,
-      "html": null,
-      "validation": null
+      "status": "executed_inline",
+      "notebook": "inline/esmfold2/esmfold2-opus-r2/test-04.ipynb",
+      "html": "inline/esmfold2/esmfold2-opus-r2/test-04.html",
+      "validation": "inline/esmfold2/esmfold2-opus-r2/test-04.execution.json"
     },
     {
       "id": "esmfold2-kimi-r2/test-01",

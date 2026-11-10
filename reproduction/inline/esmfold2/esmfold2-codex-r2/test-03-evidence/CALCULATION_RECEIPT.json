@@ -1,0 +1,223 @@
+{
+  "analysis_id": "esmfold2-codex-r2/test-03",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "source_candidates": 11768,
+  "coordinate_eligible_pool": 1341,
+  "evaluated_targets": 240,
+  "selection_seed": 20260716,
+  "query": {
+    "type": "group",
+    "logical_operator": "and",
+    "nodes": [
+      {
+        "type": "terminal",
+        "service": "text",
+        "parameters": {
+          "attribute": "rcsb_accession_info.initial_release_date",
+          "operator": "greater_or_equal",
+          "value": "2021-10-01"
+        }
+      },
+      {
+        "type": "terminal",
+        "service": "text",
+        "parameters": {
+          "attribute": "rcsb_accession_info.initial_release_date",
+          "operator": "less_or_equal",
+          "value": "2026-05-26"
+        }
+      },
+      {
+        "type": "terminal",
+        "service": "text",
+        "parameters": {
+          "attribute": "entity_poly.rcsb_sample_sequence_length",
+          "operator": "range",
+          "value": {
+            "from": 289,
+            "to": 336
+          }
+        }
+      },
+      {
+        "type": "terminal",
+        "service": "text",
+        "parameters": {
+          "attribute": "rcsb_entry_info.resolution_combined",
+          "operator": "less_or_equal",
+          "value": 3.5
+        }
+      },
+      {
+        "type": "group",
+        "logical_operator": "or",
+        "nodes": [
+          {
+            "type": "terminal",
+            "service": "text",
+            "parameters": {
+              "attribute": "exptl.method",
+              "operator": "exact_match",
+              "value": "X-RAY DIFFRACTION"
+            }
+          },
+          {
+            "type": "terminal",
+            "service": "text",
+            "parameters": {
+              "attribute": "exptl.method",
+              "operator": "exact_match",
+              "value": "ELECTRON MICROSCOPY"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "excluded_source_entities": 166,
+  "foldbench_revision": "4273f6877d82bd0b2fa476d1b2f34d121cbccc70",
+  "foldbench_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/BEAM-Labs/FoldBench/4273f6877d82bd0b2fa476d1b2f34d121cbccc70/targets/interface_antibody_antigen.csv",
+      "sha256": "a66105766492357be2b31a14ba5e31a910f304ceec2a8640785ed9e2d4c49f62",
+      "bytes": 6836,
+      "headers": {
+        "ETag": "\"4bcf0220f7e960d57ff793b52962a808eea9064396d9160252bd23246f8bc680\"",
+        "Last-Modified": null,
+        "Content-Length": "6836"
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/BEAM-Labs/FoldBench/4273f6877d82bd0b2fa476d1b2f34d121cbccc70/targets/interface_protein_dna.csv",
+      "sha256": "1760dc7f1bcc285d59fc02325627965213f0ae477c2c873ff77ca02e71b7b55c",
+      "bytes": 10339,
+      "headers": {
+        "ETag": "\"c9116107e62416df671cca45be0dc2116550101eaabd8ee330764ccdee4ad398\"",
+        "Last-Modified": null,
+        "Content-Length": "10339"
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/BEAM-Labs/FoldBench/4273f6877d82bd0b2fa476d1b2f34d121cbccc70/targets/interface_protein_ligand.csv",
+      "sha256": "f0bf964ca1b9699e2036baa9bdfcc231e56181ec2a6df0f2eb24000e23cf3e0a",
+      "bytes": 22541,
+      "headers": {
+        "ETag": "\"f975faa20e3e49bf655b1d728902dea9d80c9e4dcb25b51f0696907b2320a8bf\"",
+        "Last-Modified": null,
+        "Content-Length": "22541"
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/BEAM-Labs/FoldBench/4273f6877d82bd0b2fa476d1b2f34d121cbccc70/targets/interface_protein_peptide.csv",
+      "sha256": "bd82883450e537b7d8ccd7598b29447c96c294d764ab495eae2af26a4120febb",
+      "bytes": 1880,
+      "headers": {
+        "ETag": "\"ca7fb51cff7c52e36270cb8ede2ef1c47f06eaf9a5c0fad9d1f79ff795d80644\"",
+        "Last-Modified": null,
+        "Content-Length": "1880"
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/BEAM-Labs/FoldBench/4273f6877d82bd0b2fa476d1b2f34d121cbccc70/targets/interface_protein_protein.csv",
+      "sha256": "1d5a1a451b6831399a941a2c1efe998af3668165b471553177c6f3b441a9c8a8",
+      "bytes": 9960,
+      "headers": {
+        "ETag": "\"611601da994071748e6cdd5f65d4f3610a5ae7aa6b2219735f7e28204a70d92e\"",
+        "Last-Modified": null,
+        "Content-Length": "9960"
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/BEAM-Labs/FoldBench/4273f6877d82bd0b2fa476d1b2f34d121cbccc70/targets/interface_protein_rna.csv",
+      "sha256": "96a990845ab979238c1ce884d2b4f17d5afa12802c28f7ff41ca3c94705bb5e6",
+      "bytes": 2265,
+      "headers": {
+        "ETag": "\"4f6efd43b5036fe50fb01bb573d29ec84a12270220e9649dd35e6c861956d5f9\"",
+        "Last-Modified": null,
+        "Content-Length": "2265"
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/BEAM-Labs/FoldBench/4273f6877d82bd0b2fa476d1b2f34d121cbccc70/targets/monomer_dna.csv",
+      "sha256": "53afab17891ff82bb2bda901960f1f8663438d4a37970e6dfcae3efa12d41ca5",
+      "bytes": 254,
+      "headers": {
+        "ETag": "\"1a353b2b8ff9afd3f0c484a32a93b3c7288fa1ab42d0aeaf49b658efcd727823\"",
+        "Last-Modified": null,
+        "Content-Length": "254"
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/BEAM-Labs/FoldBench/4273f6877d82bd0b2fa476d1b2f34d121cbccc70/targets/monomer_protein.csv",
+      "sha256": "43c2a5e9a73e84e00afb8d0108761547a8f9d6e52865e122792748c9c32bf595",
+      "bytes": 5694,
+      "headers": {
+        "ETag": "\"52844212ae19b4c57d9b6885925f81230fa5511b264488f365e2d915a6d53901\"",
+        "Last-Modified": null,
+        "Content-Length": "5694"
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/BEAM-Labs/FoldBench/4273f6877d82bd0b2fa476d1b2f34d121cbccc70/targets/monomer_rna.csv",
+      "sha256": "28855ddc99367041a3080aafbc010bf4e3238d6b0d3f1bc3048f7a74dac2db7c",
+      "bytes": 271,
+      "headers": {
+        "ETag": "\"dae54e9fd13bc83fd5c686368ee1c6102f8bd1e5ec3af9dfb110bffc051950ac\"",
+        "Last-Modified": null,
+        "Content-Length": "271"
+      }
+    }
+  ],
+  "paper_example_source": {
+    "doi": "10.64898/2026.06.03.729735",
+    "figure": "S14",
+    "pdb_ids": [
+      "9D1U",
+      "9KCV",
+      "9LDL",
+      "9LYQ",
+      "9M6X",
+      "9NFE"
+    ]
+  },
+  "search_binding": {
+    "query_sha256": "83d813ae282f0504ed2159c95daa7c3ee0d3b8483ff81ba9cb05038dcb7ec5c4",
+    "reference_sha256": "165ba7357bc108f1911a779576b54d7c50cd19343e1ce4fb7355429f36b911c4",
+    "binary_sha256": "b7ef6e0e33df5dd4fa9cf988cbd8b4988c11a3a1255d2c377f13e1bb40c157fb",
+    "sensitivity": 7.5,
+    "max_seqs": 500
+  },
+  "new_inference_executed": true,
+  "new_inference_targets": 158,
+  "verified_prediction_targets": 240,
+  "model_settings": {
+    "seed": 0,
+    "num_loops": 3,
+    "num_sampling_steps": 14,
+    "num_diffusion_samples": 1,
+    "lm_mask_pct": 0.0,
+    "transformers": "5.22.2",
+    "torch": "2.6.0+cu124",
+    "precision": "float32 folding, bfloat16 ESMC, no outer autocast"
+  },
+  "checkpoint": {
+    "config_sha256": "24606ca34a052d2de70c758030b2a9e3b74d038950deee6ceb960bb18d7fff3d",
+    "index_sha256": "f7b2e6c3b1e4c70b6fe69f8c098a34e4fe40c85934ce7d966e804d34bec242c9"
+  },
+  "bootstrap_unit": "independent targets within each level",
+  "control_columns": [
+    "sequence_length",
+    "distant_repeat4_coverage",
+    "template_sequence_identity",
+    "template_query_coverage",
+    "resolution_angstrom",
+    "target_resolved_ca_fraction",
+    "hydrophobic_fraction",
+    "cysteine_fraction",
+    "gly_pro_fraction",
+    "chain_multiplicity",
+    "method_X_ray"
+  ],
+  "decision": "The measured curve does not jointly meet the0.10 effect, interval and adjusted-direction requirements in this explicitly selected panel."
+}

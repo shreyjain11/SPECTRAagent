@@ -93,6 +93,79 @@
   },
   "preferred_route": "inline_implementation",
   "preferred_result": {
-    "description": "Inline notebook execution is pending."
+    "notebook": "inline/esmfold2/esmfold2-codex-r2/test-03.ipynb",
+    "section": 6,
+    "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "inline_implementation": {
+    "format": "inline_analysis_notebook",
+    "notebook": "inline/esmfold2/esmfold2-codex-r2/test-03.ipynb",
+    "html": "inline/esmfold2/esmfold2-codex-r2/test-03.html",
+    "execution_evidence": "inline/esmfold2/esmfold2-codex-r2/test-03.execution.json",
+    "published_notebook_sha256": "9e40888334952894122fa39e73048ab984532f1ea200bc6eca98d1ec5c911fd0",
+    "published_html_sha256": "cba405e576dbb3068649a225ec29de755136aa970a40b94073891f8f8dd5f926",
+    "code_cells": 11,
+    "sections": [
+      {
+        "number": 1,
+        "heading": "## 1. Data source/acquisition",
+        "markdown_cell": 1,
+        "code_cells": [
+          2,
+          3
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "## 2. Data processing",
+        "markdown_cell": 4,
+        "code_cells": [
+          5
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "## 3. Axis definition and level construction",
+        "markdown_cell": 6,
+        "code_cells": [
+          7
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "## 4. Model evaluation",
+        "markdown_cell": 8,
+        "code_cells": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "## 5. Curves and controls",
+        "markdown_cell": 14,
+        "code_cells": [
+          15
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "## 6. What the agent decided, and why",
+        "markdown_cell": 16,
+        "code_cells": [
+          17
+        ]
+      }
+    ],
+    "calculated_result": {
+      "section": 6,
+      "code_cells": [
+        17
+      ]
+    },
+    "status": "executed_inline"
   }
 }

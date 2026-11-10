@@ -1,0 +1,88 @@
+{
+  "analysis_id": "esmfold2-opus-r1/test-04",
+  "notebook": "inline/esmfold2/esmfold2-opus-r1/test-04.ipynb",
+  "html": "inline/esmfold2/esmfold2-opus-r1/test-04.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 12,
+  "executed_cells": 12,
+  "errors": 0,
+  "notebook_sha256": "468a68da979b1dd045b4da1bf2fad71a71069d4ec2facbcd332cd6c7e2740467",
+  "html_sha256": "92becebb89277c107bbf94fdf0f8c9b8df949b407f8485cb705ba1fa9c5c0a06",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source/acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 6,
+      "code_cells": [
+        7
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 8,
+      "code_cells": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 15,
+      "code_cells": [
+        16
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 17,
+      "code_cells": [
+        18
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "3e42f24c260a3be3ce9edc7b95da7837748d04616f5cd91c7d5525a771206c2d",
+  "execution_evidence_entry_id": "esmfold2-opus-r1/test-04",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      18
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 1250.532,
+  "calculation_evidence": []
+}
