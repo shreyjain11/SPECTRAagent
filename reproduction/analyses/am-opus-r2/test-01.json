@@ -262,12 +262,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_historical_analysis"
   },
   "axis_levels": {
     "definition": "AlphaFold residue-level confidence at the variant position, four levels with means 94.7, 83.8, 61.3 and 39.9",
     "calculation": "Coverage/PSSM regenerated from 66 alignments; pLDDT mapped from 61 PDBs; exact original levels and axis-specific protein splits reconstructed.",
-    "code": "materials/alphamissense/am-opus-r2/axis-1.py"
+    "code": "materials/alphamissense/am-opus-r2/axis-1.py",
+    "scope": "supporting_historical_analysis"
   },
   "model_evaluation": {
     "measurements": "Scientific input error: fragment coordinates give 37,014 incorrect AlphaMissense scores; historical replay and separate corrected-score sensitivity are both preserved",
@@ -277,15 +279,18 @@
       "original_training_evidence": "These calculations reuse released AlphaMissense scores without updating model weights. Upstream checkpoint training is separate from this audit.",
       "comparators": []
     },
-    "code": "materials/alphamissense/am-opus-r2/axis-1.py"
+    "code": "materials/alphamissense/am-opus-r2/axis-1.py",
+    "scope": "supporting_historical_analysis"
   },
   "curve": {
     "aggregation_and_uncertainty": "Original individual-measurement curve/paired effects reproduced; bootstrap calculated from assay-level observations, not summary inputs",
-    "code": "materials/alphamissense/am-opus-r2/axis-1.py"
+    "code": "materials/alphamissense/am-opus-r2/axis-1.py",
+    "scope": "supporting_historical_analysis"
   },
   "insight": {
     "comparison_controls_confirmation": "Original split and stated controls replayed; timing of independent selection is unproven. Corrected-score check is post hoc, not new confirmation",
-    "code": "materials/alphamissense/am-opus-r2/axis-1.py"
+    "code": "materials/alphamissense/am-opus-r2/axis-1.py",
+    "scope": "supporting_historical_analysis"
   },
   "reconstruction_notes": [
     "Original preprocessing command that generated supplied predictions.csv",
@@ -482,5 +487,176 @@
     "notebook": "inline/alphamissense/am-opus-r2/test-01.ipynb",
     "section": 6,
     "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "analysis_metadata_scope": {
+    "preferred_analysis": "current_inline_analysis",
+    "supporting_historical_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight",
+      "reconstruction_notes"
+    ],
+    "supporting_implementation": "implementation",
+    "description": "The top-level scientific fields and reconstruction notes describe the preserved historical supporting implementation. The corrected preferred notebook is described by current_inline_analysis."
+  },
+  "reconstruction_notes_scope": {
+    "implementation": "implementation",
+    "scope": "supporting_historical_analysis",
+    "current_limitations": "current_inline_analysis.limitations"
+  },
+  "current_inline_analysis": {
+    "scope": "corrected_inline_analysis",
+    "evidence": {
+      "notebook": "inline/alphamissense/am-opus-r2/test-01.ipynb",
+      "notebook_sha256": "25aac6604f62aebcdd38fb8a999a06b47ece4dca80a986f204f53756d727f92e",
+      "execution_record": "inline/alphamissense/am-opus-r2/test-01.execution.json",
+      "execution_record_sha256": "123c6a3d48c7c3c2645d61487bd6aa7ca60c331f5573c1c39fa08fa177f1a03c",
+      "cohort_output_cell": 13,
+      "result_section": 6,
+      "result_code_cells": [
+        23,
+        24
+      ],
+      "cell_index_base": 0,
+      "verification_method": "Metadata checked against saved outputs and visible calculation code; no new full scientific execution for this metadata update."
+    },
+    "dataset_split": {
+      "description": "Corrected official-score joins for the 73-assay, 64-protein panel, before axis-specific eligibility.",
+      "variants": 273135,
+      "assays": 73,
+      "proteins": 64,
+      "missing_released_scores": 0,
+      "historical_supporting_variants": 271201,
+      "restored_variants": 1934,
+      "splits_before_axis_eligibility": {
+        "confirmation": {
+          "variants": 144169,
+          "assays": 39,
+          "proteins": 34
+        },
+        "discovery": {
+          "variants": 128966,
+          "assays": 34,
+          "proteins": 30
+        }
+      },
+      "split_rule": "Discovery uses the first half of sorted pLDDT-annotated accessions after a NumPy seed-7 shuffle; other accessions are assigned to confirmation.",
+      "membership_scope": "The full source cohort is distinct from the eligible assays and variants contributing to each axis contrast."
+    },
+    "axis_levels": {
+      "definition": "Residue-level AlphaFold pLDDT mapped to the assay sequence.",
+      "levels": [
+        {
+          "lower": null,
+          "upper": 50,
+          "lower_inclusive": false,
+          "upper_inclusive": false
+        },
+        {
+          "lower": 50,
+          "upper": 70,
+          "lower_inclusive": true,
+          "upper_inclusive": false
+        },
+        {
+          "lower": 70,
+          "upper": 90,
+          "lower_inclusive": true,
+          "upper_inclusive": false
+        },
+        {
+          "lower": 90,
+          "upper": null,
+          "lower_inclusive": true,
+          "upper_inclusive": false
+        }
+      ],
+      "code_cells": [
+        11
+      ]
+    },
+    "model_evaluation": {
+      "description": "Assay-local substitutions are mapped to the pinned Swiss-Prot canonical sequence before joining official AlphaMissense scores by accession and mapped substitution. Exact substring offsets are used when available, otherwise local sequence alignment with a matching wild-type residue is required.",
+      "score_source": "Released official AlphaMissense amino-acid substitution scores.",
+      "fresh_target_inference": false,
+      "target_fine_tuning": false,
+      "score_join_code_cells": [
+        13
+      ],
+      "performance": "Absolute Spearman correlation of released AlphaMissense scores with DMS measurements within each eligible assay and level.",
+      "comparators": [
+        "BLOSUM62 substitution scores recalculated from variant amino acids.",
+        "PSSM log-ratio scores recalculated from raw aligned residue counts with one pseudocount per standard amino acid."
+      ]
+    },
+    "curve": {
+      "reported_result": {
+        "metric": "Mean paired high-minus-low within-assay absolute Spearman correlation",
+        "estimate": 0.323,
+        "confidence_interval_95": [
+          0.229,
+          0.406
+        ],
+        "eligible_assays": 27,
+        "confirmation_estimate": 0.39,
+        "reported_decimal_places": 3
+      },
+      "aggregation_and_uncertainty": "Paired high-minus-low effects average eligible assays with both extremes for all three predictors; 95% intervals bootstrap assays (2000 draws, seed 11). Values here retain the displayed precision."
+    },
+    "insight": {
+      "interpretation": "The pooled within-assay association is positive and the confirmation estimate has the same direction. Comparator-specific evidence is reported separately; the statement is not a full protocol-completion claim.",
+      "comparator_contrasts": [
+        {
+          "comparison": "AM minus BLOSUM",
+          "estimate": 0.159,
+          "confidence_interval_95": [
+            0.086,
+            0.23
+          ],
+          "interpretation": "a positive difference beyond this reference",
+          "reported_decimal_places": 3
+        },
+        {
+          "comparison": "AM minus PSSM",
+          "estimate": 0.048,
+          "confidence_interval_95": [
+            -0.017,
+            0.113
+          ],
+          "interpretation": "no established positive difference beyond this reference",
+          "reported_decimal_places": 3
+        }
+      ],
+      "confirmation_scope": "Reported split results are part of this corrected reconstruction; they do not establish independence from historical selection."
+    },
+    "limitations": [
+      "This metadata was extracted from the existing executed notebook and its hash-bound receipt; the metadata update did not independently rerun the full workflow.",
+      "The published sample tables in the top-level dataset_split belong to the historical supporting implementation. Current membership and scored-table files are generated by the inline notebook.",
+      "A reconstruction on previously studied assays does not establish that the original axis selection was independent of confirmation outcomes.",
+      "The notebook association rule uses a positive pooled interval and a positive confirmation point estimate; this is not verification of every AutoSPECTRA closure requirement."
+    ],
+    "notebook": "inline/alphamissense/am-opus-r2/test-01.ipynb",
+    "execution_evidence": "inline/alphamissense/am-opus-r2/test-01.execution.json",
+    "notebook_sha256": "25aac6604f62aebcdd38fb8a999a06b47ece4dca80a986f204f53756d727f92e",
+    "result_location": {
+      "notebook": "inline/alphamissense/am-opus-r2/test-01.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
   }
 }

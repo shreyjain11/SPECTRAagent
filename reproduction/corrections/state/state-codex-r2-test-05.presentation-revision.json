@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "analysis_id": "state-codex-r2/test-05",
+  "review_date": "2026-11-15",
+  "kind": "markdown_and_navigation_only",
+  "scientific_reexecution": false,
+  "original_commit": "bda8adc6611a1b668d4123e26c915849440e5ca5",
+  "original_artifacts": {
+    "notebook": {
+      "path": "inline/state/state-codex-r2/test-05.ipynb",
+      "sha256": "c15a93d7e98fdc5d573dba80d57a73672575b1d1db3f70975d23aefc35a26b75"
+    },
+    "html": {
+      "path": "inline/state/state-codex-r2/test-05.html",
+      "sha256": "430d58f29d378e0ff014e594dcfd7a03cc4c846a2f93fa19a16e5e3fdb19cc31"
+    },
+    "execution_evidence": {
+      "path": "corrections/state/state-codex-r2-test-05.original-execution.json",
+      "sha256": "27a3f72f01f31a1bf522318d39e4b16cb1fa7d5d4ba81d27547a31cfeec09bb8"
+    }
+  },
+  "published_artifacts": {
+    "notebook": {
+      "path": "inline/state/state-codex-r2/test-05.ipynb",
+      "sha256": "6678935f604efa83ac0ee973a94c3531c3fa6f118facffb79a0d5ddf463a898d"
+    },
+    "html": {
+      "path": "inline/state/state-codex-r2/test-05.html",
+      "sha256": "6152f3cf4630f1f5f6dcf1400bf5a0551743b0f63d0172cc653564bf4d1b8d89"
+    }
+  },
+  "modified_markdown_cells": [
+    0,
+    14
+  ],
+  "original_code_cells": [
+    {
+      "notebook_cell": 2,
+      "execution_count": 1,
+      "source_sha256": "bab51952eeb8afd87222d3884819ae93df3b1a497476b00318a61d5573577c75",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "6d284b4e19edc960481eaa0fa59d941087a36304ae68b05e00418caef69d6091"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 2,
+      "source_sha256": "8860dcd3d30934172d17122188eba29b24515bea4dbe46c6e6f8633eb8099f20",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "41619523d413b8033f427df4e393a103b4cd2893827202cb2c2c4bc9190d482d"
+    },
+    {
+      "notebook_cell": 4,
+      "execution_count": 3,
+      "source_sha256": "8df5f23fc96c06b293d12bdaad18d921dd5bb9bd4802f71ae53bbd3baaaa5e0d",
+      "outputs_sha256": "782534dcb094d6e7e08618606481e00ab7b504cc933b4cbce89e7d7f5187e973",
+      "cell_sha256": "3f2b9323b12fcc993d415dc7431d6afb8067008a398c47a3665893796dd87a6e"
+    },
+    {
+      "notebook_cell": 6,
+      "execution_count": 4,
+      "source_sha256": "8724a0699b1ef47a8a7ff50304adb35b9fffbea215b2c246a469eea9f97bbd0d",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "5fe7b764a3422314235d69a49300979ee3307fb3c32042d1d7ebee3d08787d75"
+    },
+    {
+      "notebook_cell": 7,
+      "execution_count": 5,
+      "source_sha256": "326a537cdaa923cce92ef7322b2f568424523e28943b3da450f82aca90814a8b",
+      "outputs_sha256": "d1e5ce0fc697283e9217431dcbb243c5a7837209d8d210629b39fc4d7d4bf984",
+      "cell_sha256": "9e00ddee036e176043cbd85dd9ffba83a2a2491a105a1e2285acb55ec4fbc7bd"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 6,
+      "source_sha256": "952417e3415cb444ed7160280d1bc69f3a4c75ae87f4442794581f50b4749e26",
+      "outputs_sha256": "f65c4ff3273a0460d9a068db4412fedc99c02c339a4facd550f595351de56a91",
+      "cell_sha256": "4c4fb0aa2bac403670826c18ba66e2643a857451b7112b925d1fda4a6782a107"
+    },
+    {
+      "notebook_cell": 13,
+      "execution_count": 7,
+      "source_sha256": "79739b983c22997a66a21a922a01df450a3619e5e534674a5c8f8dbb01f93d6e",
+      "outputs_sha256": "5052a0d1baec39ac65ec3935c59a04b8db614bb43b8d4d9c92f6367801d385f3",
+      "cell_sha256": "b5ca59a45a31a4725309a9a70f709c85e678e5576a37f991ffd11279df4adc99"
+    },
+    {
+      "notebook_cell": 15,
+      "execution_count": 8,
+      "source_sha256": "f68d765c05154cbf293c0f5d478bfed370481914ec2a24af527f3c31243b76c0",
+      "outputs_sha256": "0e9300e1287708d6c11a3b19c9c2c26f8065a5fd0b1c41f800f3a8459479fb5d",
+      "cell_sha256": "7bc54eaeb0ba8b48726a3fde0b338932a03efe183b5117a648c305767d5556cb"
+    }
+  ],
+  "published_code_cells": [
+    {
+      "notebook_cell": 2,
+      "execution_count": 1,
+      "source_sha256": "bab51952eeb8afd87222d3884819ae93df3b1a497476b00318a61d5573577c75",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "6d284b4e19edc960481eaa0fa59d941087a36304ae68b05e00418caef69d6091"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 2,
+      "source_sha256": "8860dcd3d30934172d17122188eba29b24515bea4dbe46c6e6f8633eb8099f20",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "41619523d413b8033f427df4e393a103b4cd2893827202cb2c2c4bc9190d482d"
+    },
+    {
+      "notebook_cell": 4,
+      "execution_count": 3,
+      "source_sha256": "8df5f23fc96c06b293d12bdaad18d921dd5bb9bd4802f71ae53bbd3baaaa5e0d",
+      "outputs_sha256": "782534dcb094d6e7e08618606481e00ab7b504cc933b4cbce89e7d7f5187e973",
+      "cell_sha256": "3f2b9323b12fcc993d415dc7431d6afb8067008a398c47a3665893796dd87a6e"
+    },
+    {
+      "notebook_cell": 6,
+      "execution_count": 4,
+      "source_sha256": "8724a0699b1ef47a8a7ff50304adb35b9fffbea215b2c246a469eea9f97bbd0d",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "5fe7b764a3422314235d69a49300979ee3307fb3c32042d1d7ebee3d08787d75"
+    },
+    {
+      "notebook_cell": 7,
+      "execution_count": 5,
+      "source_sha256": "326a537cdaa923cce92ef7322b2f568424523e28943b3da450f82aca90814a8b",
+      "outputs_sha256": "d1e5ce0fc697283e9217431dcbb243c5a7837209d8d210629b39fc4d7d4bf984",
+      "cell_sha256": "9e00ddee036e176043cbd85dd9ffba83a2a2491a105a1e2285acb55ec4fbc7bd"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 6,
+      "source_sha256": "952417e3415cb444ed7160280d1bc69f3a4c75ae87f4442794581f50b4749e26",
+      "outputs_sha256": "f65c4ff3273a0460d9a068db4412fedc99c02c339a4facd550f595351de56a91",
+      "cell_sha256": "4c4fb0aa2bac403670826c18ba66e2643a857451b7112b925d1fda4a6782a107"
+    },
+    {
+      "notebook_cell": 13,
+      "execution_count": 7,
+      "source_sha256": "79739b983c22997a66a21a922a01df450a3619e5e534674a5c8f8dbb01f93d6e",
+      "outputs_sha256": "5052a0d1baec39ac65ec3935c59a04b8db614bb43b8d4d9c92f6367801d385f3",
+      "cell_sha256": "b5ca59a45a31a4725309a9a70f709c85e678e5576a37f991ffd11279df4adc99"
+    },
+    {
+      "notebook_cell": 15,
+      "execution_count": 8,
+      "source_sha256": "f68d765c05154cbf293c0f5d478bfed370481914ec2a24af527f3c31243b76c0",
+      "outputs_sha256": "0e9300e1287708d6c11a3b19c9c2c26f8065a5fd0b1c41f800f3a8459479fb5d",
+      "cell_sha256": "7bc54eaeb0ba8b48726a3fde0b338932a03efe183b5117a648c305767d5556cb"
+    }
+  ],
+  "changes": [
+    "Clarified reconstructed methods versus recovered historical code.",
+    "Pointed numerical-result metadata to output-bearing cells in section 5 and interpretation to section 6.",
+    "Preserved every code cell, execution count and saved output."
+  ]
+}

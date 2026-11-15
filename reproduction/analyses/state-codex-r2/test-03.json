@@ -17,12 +17,14 @@
       "notebook_preparation_cell": 0,
       "implementation": "legacy_implementation"
     },
-    "source_access_evidence": "reconstructed/state-codex-r2/execution_evidence/download_receipt.json"
+    "source_access_evidence": "reconstructed/state-codex-r2/execution_evidence/download_receipt.json",
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Prospective estimate of perturbation response magnitude from training cells.",
     "calculation": "Source-derived features, frozen levels and cohort eligibility are computed in notebook stages3\u20134.",
-    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py"
+    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Original official released condition scores and individual DE rows, with source-calculated references and controls where originally performed; unscored candidates retain stopping diagnostics.",
@@ -32,15 +34,18 @@
       "original_training_evidence": "Original investigation used pinned public STATE releases; no target-weight changes in this reconstruction.",
       "comparators": []
     },
-    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py"
+    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Actual individual-row regressions, paired/cluster bootstraps, curves and original sensitivity controls are recalculated. Original unscored candidates display computed eligibility/design diagnostics.",
-    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py"
+    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Historical reported decisions remain attributed. Recalculated values and explicit numerical differences are shown separately; A9 does not numerically reproduce.",
-    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py"
+    "code": "reconstructed/state-codex-r2/notebooks/03-state-codex-r2-magnitude.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Actual public-source calculations executed on exxact05. Original computational helpers were not recovered; reconstructed implementations are linked to retained frozen definitions.",
@@ -314,8 +319,8 @@
     "notebook": "inline/state/state-codex-r2/test-03.ipynb",
     "html": "inline/state/state-codex-r2/test-03.html",
     "execution_evidence": "inline/state/state-codex-r2/test-03.execution.json",
-    "published_notebook_sha256": "396fb733e4ca2496a2838d097aeb07440e97b17089027e7045cc3b782ffc3205",
-    "published_html_sha256": "4e5c74622920eb8939c1f3b31f56ae4ba700886fabb54443207b9cabe361685a",
+    "published_notebook_sha256": "289e8c7fd67828654bfac5e7884bcdac3f808e6258a5a07f4e054d2bf2fd694c",
+    "published_html_sha256": "69fd70246e803614ab34eebe547d50d4d2989639c7cb856e9b08db296c8cf85d",
     "code_cells": 12,
     "sections": [
       {
@@ -374,17 +379,85 @@
       }
     ],
     "calculated_result": {
-      "section": 6,
+      "section": 5,
       "code_cells": [
-        20
-      ]
+        17,
+        18
+      ],
+      "interpretation": {
+        "section": 6,
+        "markdown_cell": 19
+      }
     },
-    "status": "executed_inline"
+    "status": "executed_inline",
+    "presentation_revision": {
+      "kind": "markdown_and_navigation_only",
+      "scientific_reexecution": false,
+      "code_and_outputs_unchanged": true,
+      "original_execution_evidence": {
+        "path": "corrections/state/state-codex-r2-test-03.original-execution.json",
+        "sha256": "8da54a04e50d5c0641ad620fe11976c4a98bdfdce89509bccc97e50a40e32e41"
+      },
+      "correction_record": {
+        "path": "corrections/state/state-codex-r2-test-03.presentation-revision.json",
+        "sha256": "b67e77c0180ff607376df0161ab5b96b3d7d3f71ffa11d56fa657e2fb5705786"
+      }
+    }
   },
   "preferred_route": "inline_implementation",
   "preferred_result": {
     "notebook": "inline/state/state-codex-r2/test-03.ipynb",
-    "section": 6,
-    "description": "Calculated decision and explanation displayed by this notebook."
+    "section": 5,
+    "code_cells": [
+      17,
+      18
+    ],
+    "interpretation": {
+      "section": 6,
+      "markdown_cell": 19
+    },
+    "description": "Calculated results or eligibility diagnostics in section 5; reconstructed interpretation in section 6. The final execution receipt is not a scientific result."
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/state/state-codex-r2/test-03.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/state/state-codex-r2/test-03.execution.json",
+    "notebook_sha256": "289e8c7fd67828654bfac5e7884bcdac3f808e6258a5a07f4e054d2bf2fd694c",
+    "result_location": {
+      "notebook": "inline/state/state-codex-r2/test-03.ipynb",
+      "section": 5,
+      "code_cells": [
+        17,
+        18
+      ],
+      "interpretation": {
+        "section": 6,
+        "markdown_cell": 19
+      },
+      "description": "Calculated results or eligibility diagnostics in section 5; reconstructed interpretation in section 6. The final execution receipt is not a scientific result."
+    }
   }
 }

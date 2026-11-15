@@ -18,12 +18,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "maximum Jaccard similarity between a post-cutoff chain's distinct Pfam-A accession set and the repertoire of any PDB chain released on or before 2021-09-30 (SIFTS pdb_chain_pfam release 2026-07-05, SHA-256 0c3151b51c1ce34a45c8a8860c527ed9d761ee0025a0797090819bb1a562275b)",
     "calculation": "Original sample-level evidence for this stage was not recovered.",
-    "code": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-01.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-01.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Original sample-level evidence for this stage was not recovered.",
@@ -33,15 +35,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-01.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-01.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Original sample-level evidence for this stage was not recovered.",
-    "code": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-01.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-01.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Original sample-level evidence for this stage was not recovered.",
-    "code": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-01.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-codex-r1/test-01.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Original exact target split manifest, sequences/alignments and feature-generation inputs.",
@@ -173,5 +178,46 @@
       ]
     },
     "status": "executed_inline"
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/esmfold2/esmfold2-codex-r1/test-01.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/esmfold2/esmfold2-codex-r1/test-01.execution.json",
+    "notebook_sha256": "c00591e4266ad22aa7272cade1e1b98157728319703db22df3563a137cb21b16",
+    "result_location": {
+      "notebook": "inline/esmfold2/esmfold2-codex-r1/test-01.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "historical_comparison": {
+      "relationship": "Current reconstruction of the stated question; exact historical sample and prediction identity is not established.",
+      "original_records": {
+        "path": "traceability_review.json",
+        "record_id": "esmfold2-codex-r1/test-01"
+      }
+    }
   }
 }

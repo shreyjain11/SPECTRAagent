@@ -1466,5 +1466,13 @@
   "preferred_notebooks": "inline/index.json",
   "preferred_notebook_guide": "inline/README.md",
   "preferred_notebook_format": "inline_analysis_notebook",
-  "preferred_workflow_review": "PR_REVIEW.md"
+  "preferred_workflow_review": "PR_REVIEW.md",
+  "preferred_scientific_fields": "current_inline_analysis",
+  "supporting_scientific_fields": [
+    "dataset_split",
+    "axis_levels",
+    "model_evaluation",
+    "curve",
+    "insight"
+  ]
 }

@@ -18,12 +18,14 @@
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0,
       "implementation": "legacy_implementation"
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Median standardized Euclidean distance to five nearest training contexts across 2,000 genes.",
     "calculation": "Input-side features rebuilt from original sources; levels and completeness/compound partitions computed from individual rows. See notebook stages3\u20134 and method policy.",
-    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py"
+    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Actual original released prediction/observed DE rows reduced using unchanged original full-feature log2-fold-change scorer; identity reference, DE counts and original observed-cell counts recomputed.",
@@ -33,15 +35,18 @@
       "original_training_evidence": "This investigation consumed pinned official STATE output releases. Reproduction recalculates errors and analysis; it does not update model weights.",
       "comparators": []
     },
-    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py"
+    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Condition-level target-centered regression and compound clustered inference; compound-balanced curves and paired10000-resample bootstrap uncertainty are recomputed. Dose/context/atlas/QC/indicator controls are linked; reconstructed choices recorded in policy.",
-    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py"
+    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "New calculated results are compared with original recorded coefficients, curves and decision grounds. Historical aggregate tables are comparison targets only. No new protocol or scientific verdict is imposed.",
-    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py"
+    "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Actual source-to-condition reconstruction executed on exxact05: public source hashes, input-side features, original released-DE scoring, eligibility, regressions, reference contrasts, curves and controls are linked.",
@@ -369,5 +374,39 @@
     "notebook": "inline/state/state-codex-r1/test-01.ipynb",
     "section": 6,
     "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/state/state-codex-r1/test-01.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/state/state-codex-r1/test-01.execution.json",
+    "notebook_sha256": "d70837e634ee255d2afad139afc4e6b84a5b1ed10a1e780c46ed8c371ae693e6",
+    "result_location": {
+      "notebook": "inline/state/state-codex-r1/test-01.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

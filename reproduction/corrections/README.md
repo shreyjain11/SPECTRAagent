@@ -1,0 +1,13 @@
+# November 15 consistency corrections
+
+These changes distinguish the preferred inline calculations from historical supporting records and correct presentation defects. They do not replace original scientific results or claim new full audit executions.
+
+- **AlphaMissense Opus:** all six records now describe the corrected inline cohort of 273,135 variants across 73 assays and 64 proteins, including 1,934 restored variants. Original 271,201-row records remain explicitly scoped to the supporting implementation. The metadata verifier checks current cohort counts, splits, effects and comparator statements against existing notebook outputs.
+- **CONCH GPT r2:** tests 01–05 and 07 now label the changing class populations in the plotted curve separately from the fixed common-endpoint-class contrast. The 22.15-point plotted CRC decline and 26.07-point endpoint contrast are different comparisons. Neither number was replaced. Numerical outputs, plots and scientific code are preserved.
+- **STATE Codex r2:** result pointers now identify the numerical outputs in section 5 and interpretation in section 6. A9's historical and reconstructed slopes are explicitly distinguished and linked between dose and secondary-candidate notebooks. The dose comparability label is identified as a point-estimate rule, not an equivalence test.
+- **Current versus historical analyses:** each analysis exposes `current_inline_analysis` separately from supporting fields and `historical_decision`. Historical traceability counts refer to the supporting implementations. CONCH Opus r2's current additional loss of 0.240741 remains separate from the historical 0.219; ESMFold reconstruction cohorts are not presented as exact historical recovery.
+- **CONCH presentation:** the setup guide points to existing execution receipts; Kimi r2's unmatched Markdown emphasis is closed. The notebook index provides search, model filters, conclusion links, setup guidance and analysis JSON links.
+
+Twelve notebooks have presentation revisions. Their original execution receipts are preserved, and correction records bind both original and revised fingerprints. Eleven revisions preserve every code cell and output. One changes only a closing bold delimiter in the display expression and corresponding saved Markdown; its numerical outputs are unchanged. Original HTML styling, code rendering and figures are preserved.
+
+Run `python reproduction/validate.py` to check the revised records and presentation provenance. The explicit AlphaMissense check is `python reproduction/corrections/alphamissense/verify_current_records.py`. `reconcile_record_scopes.py` refreshes the shared implementation-scoping fields from the per-entry records; it does not perform scientific calculations.

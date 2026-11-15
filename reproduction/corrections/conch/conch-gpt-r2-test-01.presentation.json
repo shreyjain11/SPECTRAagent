@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "analysis_id": "conch-gpt-r2/test-01",
+  "kind": "markdown_only",
+  "description": "Clarified the differing class populations in the CRC plotted curve and endpoint contrast; all code, numerical outputs and embedded figures are unchanged.",
+  "original_commit": "bda8adc6611a1b668d4123e26c915849440e5ca5",
+  "scientific_reexecution": false,
+  "original_notebook": {
+    "path": "inline/conch/conch-gpt-r2/test-01.ipynb",
+    "sha256": "bfe87d1bd1fab00c7e395f7d0184eccd5aa5df64da01cbb32553f46c530d87aa"
+  },
+  "revised_notebook": {
+    "path": "inline/conch/conch-gpt-r2/test-01.ipynb",
+    "sha256": "8b61da2ad030a3d69afd9de8940ae141e464297d44b8b2d4dd3fba178807b6cc"
+  },
+  "original_html": {
+    "path": "inline/conch/conch-gpt-r2/test-01.html",
+    "sha256": "76aae1042ebce6ef07c6fc5c3f7473300f7fbc8aeab357efacc18d78baf4d0c9"
+  },
+  "revised_html": {
+    "path": "inline/conch/conch-gpt-r2/test-01.html",
+    "sha256": "123dd88e8722675d6a6d8d66400ccda3287ceaca8042b00b17a588925b9064ff"
+  },
+  "original_execution_evidence": {
+    "path": "corrections/conch/original-execution/conch-gpt-r2-test-01.execution.json",
+    "sha256": "355c2dead9927e811a347f35aa84a9e82629569f096a14106dabb6bc82c03296"
+  },
+  "original_code_cells": [
+    {
+      "cell": 2,
+      "source_sha256": "39633c984e83728cc2659c125224021db2939a93328448a1db2a559dbdd7844a",
+      "outputs_sha256": "de4d564e8ab8e96906bf040480e59936ab41f10dfa3ad51584b75162b6227e1d",
+      "execution_count": 1
+    },
+    {
+      "cell": 3,
+      "source_sha256": "d8fa8065afd3b09b02c678d943c497669adfb3e5c09113a3f0ecdbbbe051b57f",
+      "outputs_sha256": "9a8467cb33dde6dc62e25e6ce49f4211c7a07f64b6ca61d7e7217a04b007ba86",
+      "execution_count": 2
+    },
+    {
+      "cell": 5,
+      "source_sha256": "9dd1face47f5a9a83489af455444b461495a9e5a985e6e0738933eceb42bfb9e",
+      "outputs_sha256": "2d77be210821b75d3b4f54546aee1b7f0b5f599bef939ec17079afe72827c744",
+      "execution_count": 3
+    },
+    {
+      "cell": 8,
+      "source_sha256": "72090910503d740bd6918e26a3da1167f8a16c1525939fbfffc053e8eaebcbbc",
+      "outputs_sha256": "04718328bef75bd3f3b529767bed7486c449fb2edea8ae6ff416d708431fe5ed",
+      "execution_count": 4
+    },
+    {
+      "cell": 10,
+      "source_sha256": "acb13670780e368945ae297c025640a923e3ab93979bb137bc1412d2dd9066c9",
+      "outputs_sha256": "476003a3e627968a168b3c4a8339aaa0b2381a48c0e4eb29e95099188b7e097c",
+      "execution_count": 5
+    },
+    {
+      "cell": 12,
+      "source_sha256": "da2b5510a502059435822b571a8808f6524c363f7c5442f5e6dce203352f769e",
+      "outputs_sha256": "9998dcd86339563812689b23933e2a8a53ea63cc73de055a72c07caca2056fd2",
+      "execution_count": 6
+    },
+    {
+      "cell": 14,
+      "source_sha256": "8102aa26dc783328ebcd439a07a5222e106f4e1c0dda94dcbe28ebf1bbecdc5d",
+      "outputs_sha256": "b7b4ba1eee6435d5565c7fad9d5cb32ce825ef575c45f9c8b0be21f74b77d5d3",
+      "execution_count": 7
+    },
+    {
+      "cell": 15,
+      "source_sha256": "a34a142837b21b4544c07176e1710df82e9a8210c6448a7672788cb9898d8381",
+      "outputs_sha256": "37b7ddceb8212e17b1a5bc5f9e3d0eaa144440936e9ed643c20aed965f3e97de",
+      "execution_count": 8
+    }
+  ],
+  "revised_code_cells": [
+    {
+      "cell": 2,
+      "source_sha256": "39633c984e83728cc2659c125224021db2939a93328448a1db2a559dbdd7844a",
+      "outputs_sha256": "de4d564e8ab8e96906bf040480e59936ab41f10dfa3ad51584b75162b6227e1d",
+      "execution_count": 1
+    },
+    {
+      "cell": 3,
+      "source_sha256": "d8fa8065afd3b09b02c678d943c497669adfb3e5c09113a3f0ecdbbbe051b57f",
+      "outputs_sha256": "9a8467cb33dde6dc62e25e6ce49f4211c7a07f64b6ca61d7e7217a04b007ba86",
+      "execution_count": 2
+    },
+    {
+      "cell": 5,
+      "source_sha256": "9dd1face47f5a9a83489af455444b461495a9e5a985e6e0738933eceb42bfb9e",
+      "outputs_sha256": "2d77be210821b75d3b4f54546aee1b7f0b5f599bef939ec17079afe72827c744",
+      "execution_count": 3
+    },
+    {
+      "cell": 8,
+      "source_sha256": "72090910503d740bd6918e26a3da1167f8a16c1525939fbfffc053e8eaebcbbc",
+      "outputs_sha256": "04718328bef75bd3f3b529767bed7486c449fb2edea8ae6ff416d708431fe5ed",
+      "execution_count": 4
+    },
+    {
+      "cell": 10,
+      "source_sha256": "acb13670780e368945ae297c025640a923e3ab93979bb137bc1412d2dd9066c9",
+      "outputs_sha256": "476003a3e627968a168b3c4a8339aaa0b2381a48c0e4eb29e95099188b7e097c",
+      "execution_count": 5
+    },
+    {
+      "cell": 12,
+      "source_sha256": "da2b5510a502059435822b571a8808f6524c363f7c5442f5e6dce203352f769e",
+      "outputs_sha256": "9998dcd86339563812689b23933e2a8a53ea63cc73de055a72c07caca2056fd2",
+      "execution_count": 6
+    },
+    {
+      "cell": 14,
+      "source_sha256": "8102aa26dc783328ebcd439a07a5222e106f4e1c0dda94dcbe28ebf1bbecdc5d",
+      "outputs_sha256": "b7b4ba1eee6435d5565c7fad9d5cb32ce825ef575c45f9c8b0be21f74b77d5d3",
+      "execution_count": 7
+    },
+    {
+      "cell": 15,
+      "source_sha256": "a34a142837b21b4544c07176e1710df82e9a8210c6448a7672788cb9898d8381",
+      "outputs_sha256": "37b7ddceb8212e17b1a5bc5f9e3d0eaa144440936e9ed643c20aed965f3e97de",
+      "execution_count": 8
+    }
+  ],
+  "changes": {
+    "markdown_cells_changed": [
+      11,
+      13
+    ],
+    "code_cells_changed": [],
+    "output_cells_changed": []
+  },
+  "verification": {
+    "source": "Existing embedded per-class recall table in code cell 12; values are rounded to six decimals in that table. No raw predictions or model outputs were regenerated.",
+    "classes_per_plotted_level": [
+      7,
+      9,
+      9,
+      8,
+      9
+    ],
+    "plotted_level_means_from_displayed_recalls": [
+      0.8579521428571428,
+      0.7457851111111111,
+      0.7696956666666668,
+      0.72148325,
+      0.6364155555555556
+    ],
+    "plotted_endpoint_drop_from_displayed_recalls": 0.2215365873015872,
+    "common_endpoint_classes": [
+      "DEB",
+      "LYM",
+      "MUC",
+      "MUS",
+      "NORM",
+      "STR",
+      "TUM"
+    ],
+    "common_endpoint_drop_from_displayed_recalls": 0.26071214285714284,
+    "saved_common_endpoint_drop": 0.260712
+  },
+  "html_renderer": {
+    "library": "nbconvert",
+    "version": "7.17.1",
+    "template": "lab",
+    "method": "Rendered only revised cell containers into the original HTML, preserving all other HTML bytes including page styles, scripts and embedded plots. Cells were not executed."
+  }
+}

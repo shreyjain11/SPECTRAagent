@@ -21,3 +21,11 @@ python reproduction/validate.py
 ```
 
 `integrate_inline.py --source /path/to/review-directory` refreshes the preferred route from completed, hash-matching notebook executions. It does not execute analyses or infer success from notebook existence. The website, hosted API, and scientific manuscript are separate from this notebook route.
+
+## Current and historical results
+
+For the preferred workflow, read each record's `current_inline_analysis`. Its `result_location` identifies the displayed scientific outputs and interpretation. The five top-level scientific objects (`dataset_split`, `axis_levels`, `model_evaluation`, `curve`, `insight`) describe the separately retained supporting implementation; `scientific_record_scope` makes that distinction explicit. `historical_decision` preserves the original reported result.
+
+The six AlphaMissense Opus inline notebooks use 273,135 variants before axis eligibility, including all 1,934 variants omitted by the original lookup. Historical reconstruction notes describe the older inputs, not the status of that corrected cohort. Current CONCH Opus r2 blur results and newly assembled ESMFold evaluation cohorts likewise remain separate from the original reported analyses.
+
+Presentation corrections retain original execution receipts and fingerprints. A `presentation_revision` documents changed Markdown, navigation or display formatting without claiming a fresh full scientific execution.

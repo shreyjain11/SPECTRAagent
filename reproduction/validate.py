@@ -141,6 +141,23 @@ def check_inline(record, entry):
     assert len(code)==implementation['code_cells']==receipt['code_cells']==receipt['executed_cells']
     assert not receipt['errors']
     assert receipt['result_location']==implementation['calculated_result']
+    location=implementation['calculated_result']
+    result_section=next(s for s in sections if s['number']==location['section'])
+    assert location['code_cells'] and set(location['code_cells'])<=set(result_section['code_cells'])
+    if 'interpretation' in location:
+        interpretation=location['interpretation']
+        section=next(s for s in sections if s['number']==interpretation['section'])
+        assert interpretation['markdown_cell']==section['markdown_cell']
+    from validate_presentation import check_revision
+    check_revision(receipt,read(implementation['notebook']),read,digest)
+    current=record['current_inline_analysis']
+    assert current['notebook']==implementation['notebook']
+    assert current['notebook_sha256']==implementation['published_notebook_sha256']
+    assert current['execution_evidence']==implementation['execution_evidence']
+    assert current['result_location']==record['preferred_result']
+    assert record['scientific_record_scope']['current_fields']=='current_inline_analysis'
+    for field in ['dataset_split','axis_levels','model_evaluation','curve','insight']:
+        assert record[field]['scope'] in ['supporting_implementation','supporting_historical_analysis']
     for item in receipt.get('calculation_evidence',[])+receipt.get('input_manifests',[]):
         assert digest(item['path'])==item['sha256']
     return True
@@ -277,6 +294,8 @@ def main(allow_staged_downloads=False):
         assert sum(bool(row['notebook']) for row in preferred['analyses'])==inline
         assert dict(Counter(row['status'] for row in preferred['analyses']))==preferred['counts']
         print(json.dumps({'preferred_inline_notebooks_verified':inline,'preferred_pending':count-inline,'inline_status':preferred['counts']},indent=2))
+    from corrections.alphamissense.verify_current_records import verify
+    assert len(verify())==6
     print(json.dumps({'investigations':28,'analyses':count,'primary_workflows':primary,'source_workflows_reconstructed':len(sourceids_reconstructed),'code_cells':cells,'legacy_materials_code_cells':legacy_cells,'legacy_execution_receipts_verified':executed,'public_sources':len(sources),'public_input_archives':len(archives),'downloads_not_yet_publicly_verified':staged,'linked_sample_tables':len(samplefiles),'payloads_verified':payloads,'traceability_review':review['counts'],'nonprimary_review':dict(nonprimary_counts),'per_model':models},indent=2))
 
 if __name__=='__main__':

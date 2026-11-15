@@ -18,12 +18,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Sequence entropy as an index of composition bias.",
     "calculation": "Original sample-level evidence for this stage was not recovered.",
-    "code": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-03.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-03.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Original sample-level evidence for this stage was not recovered.",
@@ -33,15 +35,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-03.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-03.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Original sample-level evidence for this stage was not recovered.",
-    "code": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-03.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-03.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Original sample-level evidence for this stage was not recovered.",
-    "code": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-03.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-codex-r2/test-03.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Original exact target split manifest, sequences/alignments and feature-generation inputs.",
@@ -167,5 +172,46 @@
       ]
     },
     "status": "executed_inline"
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/esmfold2/esmfold2-codex-r2/test-03.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/esmfold2/esmfold2-codex-r2/test-03.execution.json",
+    "notebook_sha256": "9e40888334952894122fa39e73048ab984532f1ea200bc6eca98d1ec5c911fd0",
+    "result_location": {
+      "notebook": "inline/esmfold2/esmfold2-codex-r2/test-03.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "historical_comparison": {
+      "relationship": "Current reconstruction of the stated question; exact historical sample and prediction identity is not established.",
+      "original_records": {
+        "path": "traceability_review.json",
+        "record_id": "esmfold2-codex-r2/test-03"
+      }
+    }
   }
 }

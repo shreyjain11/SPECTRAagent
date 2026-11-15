@@ -20,12 +20,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Stain change evaluated in the pilot.",
     "calculation": "Specification or code only.",
-    "code": "materials/conch/notebooks/conch-kimi-r2-02.py"
+    "code": "materials/conch/notebooks/conch-kimi-r2-02.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Missing individual predictions.",
@@ -46,15 +48,18 @@
         }
       ]
     },
-    "code": "materials/conch/notebooks/conch-kimi-r2-02.py"
+    "code": "materials/conch/notebooks/conch-kimi-r2-02.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Not reproducible from retained inputs.",
-    "code": "materials/conch/notebooks/conch-kimi-r2-02.py"
+    "code": "materials/conch/notebooks/conch-kimi-r2-02.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Reported conclusion only.",
-    "code": "materials/conch/notebooks/conch-kimi-r2-02.py"
+    "code": "materials/conch/notebooks/conch-kimi-r2-02.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Original per-image predictions at each stain factor were not retained; only the pilot aggregate table and transformation/scoring scripts remain.",
@@ -188,5 +193,39 @@
       ]
     },
     "status": "executed_inline"
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/conch/conch-kimi-r2/test-02.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/conch/conch-kimi-r2/test-02.execution.json",
+    "notebook_sha256": "cdf1e4aa9570a6af09d768e521838c760f719db8cfa5ddc10af8068f22d289ea",
+    "result_location": {
+      "notebook": "inline/conch/conch-kimi-r2/test-02.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

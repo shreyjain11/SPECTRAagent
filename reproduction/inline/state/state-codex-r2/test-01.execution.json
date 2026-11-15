@@ -7,8 +7,8 @@
   "code_cells": 10,
   "executed_cells": 10,
   "errors": 0,
-  "notebook_sha256": "c34634843e020715ca4399ea835960071bcca8a8a8acff899f136c5d767d317e",
-  "html_sha256": "9746f6f5c52656d2fb603f63712440f7949d4f6a2a91f493b8ee0cc477855605",
+  "notebook_sha256": "6bb2a443fc676c288ea716ed6dac95b75e7c63428671088adc822e4b0effc656",
+  "html_sha256": "6249996115a677c97bf17ce1a0fd896082e1ac44d41c7919e5f7075c02a8dd65",
   "sections": [
     {
       "number": 1,
@@ -68,18 +68,37 @@
   "execution_evidence_entry_id": "state-codex-r2/test-01",
   "embedded_figures": 3,
   "checks": [
-    "notebook_and_html_hash_match_execution_evidence",
     "all_code_cells_executed",
     "no_error_outputs",
     "six_sections_and_executed_inline_code",
-    "inline_code_static_check"
+    "inline_code_static_check",
+    "published_artifacts_match_presentation_revision",
+    "code_and_outputs_unchanged_from_original_execution"
   ],
   "result_location": {
-    "section": 6,
+    "section": 5,
     "code_cells": [
-      18
-    ]
+      16
+    ],
+    "interpretation": {
+      "section": 6,
+      "markdown_cell": 17
+    }
   },
   "input_manifests": [],
-  "calculation_evidence": []
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "kind": "markdown_and_navigation_only",
+    "scientific_reexecution": false,
+    "code_and_outputs_unchanged": true,
+    "original_execution_evidence": {
+      "path": "corrections/state/state-codex-r2-test-01.original-execution.json",
+      "sha256": "9a7e825ce6150952cc3907c3659e4fe0de0dafc1dec5833ae53b98d9f8ce97a2"
+    },
+    "correction_record": {
+      "path": "corrections/state/state-codex-r2-test-01.presentation-revision.json",
+      "sha256": "b1266556cf6fea924aff21ab652d7b3b8fab2a12659049ec3dccb682010cc29f"
+    }
+  },
+  "execution_scope": "Execution fields describe the preserved original code and outputs. The current notebook and HTML include a later Markdown/navigation revision; no scientific reexecution was performed."
 }

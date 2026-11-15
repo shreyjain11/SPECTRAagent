@@ -20,12 +20,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "foreground fraction and brightness distribution",
     "calculation": "Specification or code only.",
-    "code": "materials/conch/notebooks/conch-gpt-r2-04.py"
+    "code": "materials/conch/notebooks/conch-gpt-r2-04.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Missing individual predictions.",
@@ -35,15 +37,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/conch/notebooks/conch-gpt-r2-04.py"
+    "code": "materials/conch/notebooks/conch-gpt-r2-04.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Not reproducible from retained inputs.",
-    "code": "materials/conch/notebooks/conch-gpt-r2-04.py"
+    "code": "materials/conch/notebooks/conch-gpt-r2-04.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Reported conclusion only.",
-    "code": "materials/conch/notebooks/conch-gpt-r2-04.py"
+    "code": "materials/conch/notebooks/conch-gpt-r2-04.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "The original individual image feature matrices, level assignments and target/baseline predictions are missing from the retained July Codex bundle.",
@@ -114,8 +119,8 @@
     "notebook": "inline/conch/conch-gpt-r2/test-04.ipynb",
     "html": "inline/conch/conch-gpt-r2/test-04.html",
     "execution_evidence": "inline/conch/conch-gpt-r2/test-04.execution.json",
-    "published_notebook_sha256": "532b74bb27909709a318b7dc63a920fc61fe46af819afa26ce610c8440415112",
-    "published_html_sha256": "564e94a6faf8f4aae7df80c07407ca07bc28863dbf35cd6aafe11cda51050aff",
+    "published_notebook_sha256": "16a26d30ba5abd28b8f9e669924f890017299cc4c8eafe59e90312de7cdb4bd8",
+    "published_html_sha256": "e9c80779ba419d333afbee6707c809404ce85823cd4073b157509733ef605973",
     "code_cells": 8,
     "sections": [
       {
@@ -176,6 +181,53 @@
         15
       ]
     },
-    "status": "executed_inline"
+    "status": "executed_inline",
+    "presentation_revision": {
+      "kind": "markdown_only",
+      "original_execution_evidence": {
+        "path": "corrections/conch/original-execution/conch-gpt-r2-test-04.execution.json",
+        "sha256": "596403ba002eb76569f5af1df57a9dccd820c8439da5256989fecf029cbb9cd8"
+      },
+      "correction_record": {
+        "path": "corrections/conch/conch-gpt-r2-test-04.presentation.json",
+        "sha256": "b3b0d31e524a8d21212e39a5870e04c560c9f794acccf188e53febad81dad614"
+      },
+      "scientific_reexecution": false
+    },
+    "execution_scope": "Execution host, elapsed time, cell counts and calculation outputs describe the original artifact preserved in presentation_revision.original_execution_evidence. The published notebook and HTML include documented presentation changes only; no new full scientific execution was performed."
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/conch/conch-gpt-r2/test-04.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/conch/conch-gpt-r2/test-04.execution.json",
+    "notebook_sha256": "16a26d30ba5abd28b8f9e669924f890017299cc4c8eafe59e90312de7cdb4bd8",
+    "result_location": {
+      "notebook": "inline/conch/conch-gpt-r2/test-04.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

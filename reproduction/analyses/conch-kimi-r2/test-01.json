@@ -20,12 +20,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Effective spatial resolution, six levels from 0.5 to 4.0 micrometre per pixel, fixed after a pilot and confirmed on images not used in the pilot",
     "calculation": "Original image hashes ssim transforms and saved embedding cosines recomputed.",
-    "code": "materials/conch/notebooks/conch-kimi-r2-01.py"
+    "code": "materials/conch/notebooks/conch-kimi-r2-01.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Rescored target and openclip arrays.",
@@ -46,15 +48,18 @@
         }
       ]
     },
-    "code": "materials/conch/notebooks/conch-kimi-r2-01.py"
+    "code": "materials/conch/notebooks/conch-kimi-r2-01.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Original means exact new labeled intervals.",
-    "code": "materials/conch/notebooks/conch-kimi-r2-01.py"
+    "code": "materials/conch/notebooks/conch-kimi-r2-01.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Original paired tests exact.",
-    "code": "materials/conch/notebooks/conch-kimi-r2-01.py"
+    "code": "materials/conch/notebooks/conch-kimi-r2-01.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Fresh target and baseline image inference were not rerun. Original images and all scored class arrays are supplied; model predictions are rescored.",
@@ -140,8 +145,8 @@
     "notebook": "inline/conch/conch-kimi-r2/test-01.ipynb",
     "html": "inline/conch/conch-kimi-r2/test-01.html",
     "execution_evidence": "inline/conch/conch-kimi-r2/test-01.execution.json",
-    "published_notebook_sha256": "18ab3e1be19b454f6527b02363244c460faea8f30421c3ea4ee6b15587a5e907",
-    "published_html_sha256": "d7cf14e502b4eb11d4777ae0a39af0afdf661347d3680607323c9cc70ee7ac11",
+    "published_notebook_sha256": "723338e8464ffd70291d6503d6e2fe5a5597a03bc9b4f05463c55a6130efd8de",
+    "published_html_sha256": "0b6b7d9221da4c5f1cc4e36e31b3a0a216204c4856abf278a8dc387ea4324c81",
     "code_cells": 10,
     "sections": [
       {
@@ -204,6 +209,53 @@
         16
       ]
     },
-    "status": "executed_inline"
+    "status": "executed_inline",
+    "presentation_revision": {
+      "kind": "display_formatting_only",
+      "original_execution_evidence": {
+        "path": "corrections/conch/original-execution/conch-kimi-r2-test-01.execution.json",
+        "sha256": "4e9865f6a07f3eddeed1b12c27a2088612891cde2f15c16c9cbcf7d4fb432e89"
+      },
+      "correction_record": {
+        "path": "corrections/conch/conch-kimi-r2-test-01.presentation.json",
+        "sha256": "d6e52f132f216cfa0031785bcb60b7ab4a7b25bceb4d0afcfe0fa06c313003b5"
+      },
+      "scientific_reexecution": false
+    },
+    "execution_scope": "Execution host, elapsed time, cell counts and calculation outputs describe the original artifact preserved in presentation_revision.original_execution_evidence. The published notebook and HTML include documented presentation changes only; no new full scientific execution was performed."
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/conch/conch-kimi-r2/test-01.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/conch/conch-kimi-r2/test-01.execution.json",
+    "notebook_sha256": "723338e8464ffd70291d6503d6e2fe5a5597a03bc9b4f05463c55a6130efd8de",
+    "result_location": {
+      "notebook": "inline/conch/conch-kimi-r2/test-01.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

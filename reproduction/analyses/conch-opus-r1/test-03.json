@@ -79,12 +79,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Within-class natural tile sharpness, evaluated alongside stain distance.",
     "calculation": "All raw pixels to features distances levels recomputed.",
-    "code": "materials/conch/notebooks/conch-opus-r1-03.py"
+    "code": "materials/conch/notebooks/conch-opus-r1-03.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Rescored saved logits and refit baseline.",
@@ -100,15 +102,18 @@
         }
       ]
     },
-    "code": "materials/conch/notebooks/conch-opus-r1-03.py"
+    "code": "materials/conch/notebooks/conch-opus-r1-03.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Recomputed with new labeled uncertainty.",
-    "code": "materials/conch/notebooks/conch-opus-r1-03.py"
+    "code": "materials/conch/notebooks/conch-opus-r1-03.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Original blur residualization both split checks and joint class controls recomputed.",
-    "code": "materials/conch/notebooks/conch-opus-r1-03.py"
+    "code": "materials/conch/notebooks/conch-opus-r1-03.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Fresh CONCH inference was not rerun; complete archived target logits are rescored.",
@@ -259,5 +264,39 @@
       ]
     },
     "status": "executed_inline"
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/conch/conch-opus-r1/test-03.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/conch/conch-opus-r1/test-03.execution.json",
+    "notebook_sha256": "1a3a557bb2625fefc27790e8f6551b1d1f6a5bea219ad9cb1f65141e516aae74",
+    "result_location": {
+      "notebook": "inline/conch/conch-opus-r1/test-03.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

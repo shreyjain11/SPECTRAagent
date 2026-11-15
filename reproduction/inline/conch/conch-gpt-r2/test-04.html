@@ -8666,6 +8666,7 @@ Name: Scored images, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">¶</a></h2><p>Calculate balanced accuracy and class-stratified tile bootstrap intervals, paired model contrasts, within-class recall, and class-adjusted correctness regressions. The fully adjusted model includes stain, sharpness, frequency, compression and tissue controls. The final panels focus on this notebook’s candidate or control.</p>
+<p><strong>Reading the CRC curve and endpoint contrast.</strong> The plotted balanced-accuracy means use the classes available at each level: 7, 9, 9, 8 and 9. Their first-to-last decline is about 22.15 percentage points. The reported 26.07-point contrast and its interval instead use the seven classes present at both endpoints. These are different comparisons; the plotted line should not be read as the reported endpoint contrast. NORM has only two images at the far endpoint, so its class-specific estimate is imprecise. The Stanford curve and endpoint contrast both use eight classes.</p>
 </div>
 </div>
 </div>
@@ -9312,7 +9313,7 @@ Name: Scored images, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-Decision-and-reason">6. Decision and reason<a class="anchor-link" href="#6.-Decision-and-reason">¶</a></h2>
+<h2 id="6.-Decision-and-reason">6. Decision and reason<a class="anchor-link" href="#6.-Decision-and-reason">¶</a></h2><p>The decision below uses the common-class endpoint contrast. The available-class plotted curve is descriptive and uses the different class populations listed in section 5.</p>
 </div>
 </div>
 </div>

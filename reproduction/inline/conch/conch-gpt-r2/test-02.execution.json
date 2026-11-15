@@ -7,8 +7,8 @@
   "code_cells": 8,
   "executed_cells": 8,
   "errors": 0,
-  "notebook_sha256": "fc2ddb18bc58696194d79529936523137a0f39b3b2004422f1bf15055c1c66ce",
-  "html_sha256": "f0936ce4f76b0a3d30e9acd05d303e4e149309f6b11e486084e377dee74b0d3b",
+  "notebook_sha256": "c26cb9cf9709ad8a1198450c3644f0b6d8641837973094414511f53983541c5d",
+  "html_sha256": "fd78b1ae9ea284dc4c97bb13a39511f505cd280796043f4fe365503396283960",
   "sections": [
     {
       "number": 1,
@@ -66,7 +66,7 @@
   "execution_evidence_entry_id": "conch-gpt-r2/test-02",
   "embedded_figures": 2,
   "checks": [
-    "notebook_and_html_hash_match_execution_evidence",
+    "published_artifacts_match_documented_presentation_revision",
     "all_code_cells_executed",
     "no_error_outputs",
     "six_sections_and_executed_inline_code",
@@ -82,5 +82,18 @@
   "input_manifests": [],
   "elapsed_seconds": 484.784,
   "python": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/conch/.venv/bin/python",
-  "calculation_evidence": []
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "kind": "markdown_only",
+    "original_execution_evidence": {
+      "path": "corrections/conch/original-execution/conch-gpt-r2-test-02.execution.json",
+      "sha256": "d7d9a597d5e0fab7b4597b94eddbc95734cfd771895c763895b65d3247eced00"
+    },
+    "correction_record": {
+      "path": "corrections/conch/conch-gpt-r2-test-02.presentation.json",
+      "sha256": "ba96b7f942d8c76181b2df70be4cbe6cbef19d89d69b4410c218b1557e9efbe6"
+    },
+    "scientific_reexecution": false
+  },
+  "execution_scope": "Execution host, elapsed time, cell counts and calculation outputs describe the original artifact preserved in presentation_revision.original_execution_evidence. The published notebook and HTML include documented presentation changes only; no new full scientific execution was performed."
 }

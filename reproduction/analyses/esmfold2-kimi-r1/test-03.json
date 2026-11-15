@@ -18,12 +18,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Low-complexity fraction evaluated with ESMFold v1.",
     "calculation": "Low complexity from original sequences; identity levels from retained values.",
-    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-03.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-03.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "All660 target structures rescored with original function; baseline scores retained.",
@@ -33,15 +35,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-03.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-03.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Individual scores and endpoint recomputed.",
-    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-03.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-03.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Original confirmation and length checks replayed; off target esmfold v1.",
-    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-03.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r1/test-03.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "This original run evaluated ESMFold v1, not ESMFold2; it cannot support an ESMFold2 scientific result.",
@@ -190,5 +195,39 @@
     "notebook": "inline/esmfold2/esmfold2-kimi-r1/test-03.ipynb",
     "section": 6,
     "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/esmfold2/esmfold2-kimi-r1/test-03.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/esmfold2/esmfold2-kimi-r1/test-03.execution.json",
+    "notebook_sha256": "d66f7f03e6e94b68389611fb7273b44c7e20f2ed80f28b845aa5187df122d2bd",
+    "result_location": {
+      "notebook": "inline/esmfold2/esmfold2-kimi-r1/test-03.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

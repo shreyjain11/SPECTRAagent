@@ -24,12 +24,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "D1 CpG mutational context (3 levels)",
     "calculation": "Original analysis programs retained; not executable without original inputs",
-    "code": "materials/alphamissense/am-kimi-r2/axis-6.py"
+    "code": "materials/alphamissense/am-kimi-r2/axis-6.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Individual prediction / label pairs unavailable",
@@ -39,15 +41,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/alphamissense/am-kimi-r2/axis-6.py"
+    "code": "materials/alphamissense/am-kimi-r2/axis-6.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Only archived summaries retained; no recomputation claimed",
-    "code": "materials/alphamissense/am-kimi-r2/axis-6.py"
+    "code": "materials/alphamissense/am-kimi-r2/axis-6.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Historical claim retained; original controls cannot be fully rerun",
-    "code": "materials/alphamissense/am-kimi-r2/axis-6.py"
+    "code": "materials/alphamissense/am-kimi-r2/axis-6.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "tables/r2_eval_table.tsv",
@@ -177,5 +182,39 @@
       ]
     },
     "status": "executed_inline"
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/alphamissense/am-kimi-r2/axis-6.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/alphamissense/am-kimi-r2/axis-6.execution.json",
+    "notebook_sha256": "5f01267446dfe58088c00a97023cf226985b695a3bab20043266cb47173c197a",
+    "result_location": {
+      "notebook": "inline/alphamissense/am-kimi-r2/axis-6.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "analysis_id": "conch-kimi-r2/test-01",
+  "kind": "display_formatting_only",
+  "description": "Closed a missing Markdown emphasis delimiter in the decision display string and its saved Markdown output. Scientific calculations, decisions, numeric tables, figures and execution counts are unchanged. No notebook reexecution is claimed.",
+  "original_commit": "bda8adc6611a1b668d4123e26c915849440e5ca5",
+  "scientific_reexecution": false,
+  "original_notebook": {
+    "path": "inline/conch/conch-kimi-r2/test-01.ipynb",
+    "sha256": "18ab3e1be19b454f6527b02363244c460faea8f30421c3ea4ee6b15587a5e907"
+  },
+  "revised_notebook": {
+    "path": "inline/conch/conch-kimi-r2/test-01.ipynb",
+    "sha256": "723338e8464ffd70291d6503d6e2fe5a5597a03bc9b4f05463c55a6130efd8de"
+  },
+  "original_html": {
+    "path": "inline/conch/conch-kimi-r2/test-01.html",
+    "sha256": "d7cf14e502b4eb11d4777ae0a39af0afdf661347d3680607323c9cc70ee7ac11"
+  },
+  "revised_html": {
+    "path": "inline/conch/conch-kimi-r2/test-01.html",
+    "sha256": "0b6b7d9221da4c5f1cc4e36e31b3a0a216204c4856abf278a8dc387ea4324c81"
+  },
+  "original_execution_evidence": {
+    "path": "corrections/conch/original-execution/conch-kimi-r2-test-01.execution.json",
+    "sha256": "4e9865f6a07f3eddeed1b12c27a2088612891cde2f15c16c9cbcf7d4fb432e89"
+  },
+  "original_code_cells": [
+    {
+      "cell": 2,
+      "source_sha256": "a58fa62d61d9324ed61853c54e9ad42d4b09cd1bd13d656daabeb1ce339ab607",
+      "outputs_sha256": "6285e335e625d314d5866dac3d150676fad4c26d363ae866eb647b5b3a7e5353",
+      "execution_count": 1
+    },
+    {
+      "cell": 3,
+      "source_sha256": "33d9f3325320d90d9351e4131bc83a752fdf28d48d84694dc111b1a56cbe71f5",
+      "outputs_sha256": "ead02a8cc49f16ba47d712689b7232164371d7054963628345127b35fcd13fb7",
+      "execution_count": 2
+    },
+    {
+      "cell": 5,
+      "source_sha256": "dc63a1fe9fe2769935538e90006d91855ff1cc26ec1b083bd718ff7c3c2e7d83",
+      "outputs_sha256": "cc10319fe38c68fa32c76ff4123881171c414bd43068f781d2522452abd759d8",
+      "execution_count": 3
+    },
+    {
+      "cell": 7,
+      "source_sha256": "79dbaf72882c0cb073f1b9e4a17bfeccd356ecfc9d6ac13cc97852cd9b62a903",
+      "outputs_sha256": "9cf4906bf7654ccbd41ab8e7a542a5b01f4d1d3397a619d7419ebb5759f1ded7",
+      "execution_count": 4
+    },
+    {
+      "cell": 9,
+      "source_sha256": "7c29758af32c87987fe7bb01e4175a5d1b262102892e75e5387e80cfdb7f9a9b",
+      "outputs_sha256": "8a0155e75db9774473424960002689f91444661d2f5257c6d99edf5031981eae",
+      "execution_count": 5
+    },
+    {
+      "cell": 10,
+      "source_sha256": "34f9554157ccd81445e0c0c73976ccca06ffa73855467501fb88f2127c312338",
+      "outputs_sha256": "fba56490af440bedb4cf14f692cf1cbbb6c881375759a1aa8f533b439adb62bf",
+      "execution_count": 6
+    },
+    {
+      "cell": 11,
+      "source_sha256": "ca3870d004898fc4cb17ba3dea8b978ae917091fb1094a0dd1bbd47414cdfa81",
+      "outputs_sha256": "e2a2d194650f1d901b8f3d6d1a8418c9918a960321b544597ca282af6dda8948",
+      "execution_count": 7
+    },
+    {
+      "cell": 13,
+      "source_sha256": "7823c6b40bd5d5051d9664c52b6d3762869d6aa7ad588a02fe38e57154d37ed8",
+      "outputs_sha256": "fd3a26a079e3dfdd141acb1a0ce762986911c110ad04ace15ac099c770787897",
+      "execution_count": 8
+    },
+    {
+      "cell": 15,
+      "source_sha256": "84ba6b6262ae5d2b36002d7a77c598a435aa33061ef776d077ede0523833a4fe",
+      "outputs_sha256": "1bb872d6847822d76327b62d65fbbb03501bd75b0b49bee3589bd8b8d8963d58",
+      "execution_count": 9
+    },
+    {
+      "cell": 16,
+      "source_sha256": "a34a142837b21b4544c07176e1710df82e9a8210c6448a7672788cb9898d8381",
+      "outputs_sha256": "2e7ed4b56fa29117ae308d1d47a12ffd5d5eee315bce6d49eb02aff0696bfb67",
+      "execution_count": 10
+    }
+  ],
+  "revised_code_cells": [
+    {
+      "cell": 2,
+      "source_sha256": "a58fa62d61d9324ed61853c54e9ad42d4b09cd1bd13d656daabeb1ce339ab607",
+      "outputs_sha256": "6285e335e625d314d5866dac3d150676fad4c26d363ae866eb647b5b3a7e5353",
+      "execution_count": 1
+    },
+    {
+      "cell": 3,
+      "source_sha256": "33d9f3325320d90d9351e4131bc83a752fdf28d48d84694dc111b1a56cbe71f5",
+      "outputs_sha256": "ead02a8cc49f16ba47d712689b7232164371d7054963628345127b35fcd13fb7",
+      "execution_count": 2
+    },
+    {
+      "cell": 5,
+      "source_sha256": "dc63a1fe9fe2769935538e90006d91855ff1cc26ec1b083bd718ff7c3c2e7d83",
+      "outputs_sha256": "cc10319fe38c68fa32c76ff4123881171c414bd43068f781d2522452abd759d8",
+      "execution_count": 3
+    },
+    {
+      "cell": 7,
+      "source_sha256": "79dbaf72882c0cb073f1b9e4a17bfeccd356ecfc9d6ac13cc97852cd9b62a903",
+      "outputs_sha256": "9cf4906bf7654ccbd41ab8e7a542a5b01f4d1d3397a619d7419ebb5759f1ded7",
+      "execution_count": 4
+    },
+    {
+      "cell": 9,
+      "source_sha256": "7c29758af32c87987fe7bb01e4175a5d1b262102892e75e5387e80cfdb7f9a9b",
+      "outputs_sha256": "8a0155e75db9774473424960002689f91444661d2f5257c6d99edf5031981eae",
+      "execution_count": 5
+    },
+    {
+      "cell": 10,
+      "source_sha256": "34f9554157ccd81445e0c0c73976ccca06ffa73855467501fb88f2127c312338",
+      "outputs_sha256": "fba56490af440bedb4cf14f692cf1cbbb6c881375759a1aa8f533b439adb62bf",
+      "execution_count": 6
+    },
+    {
+      "cell": 11,
+      "source_sha256": "ca3870d004898fc4cb17ba3dea8b978ae917091fb1094a0dd1bbd47414cdfa81",
+      "outputs_sha256": "e2a2d194650f1d901b8f3d6d1a8418c9918a960321b544597ca282af6dda8948",
+      "execution_count": 7
+    },
+    {
+      "cell": 13,
+      "source_sha256": "7823c6b40bd5d5051d9664c52b6d3762869d6aa7ad588a02fe38e57154d37ed8",
+      "outputs_sha256": "fd3a26a079e3dfdd141acb1a0ce762986911c110ad04ace15ac099c770787897",
+      "execution_count": 8
+    },
+    {
+      "cell": 15,
+      "source_sha256": "1ccfa9c44cba8ca021082cbad1ef870f021130a196b2a51c35f0deb2dc23dafc",
+      "outputs_sha256": "1fe9495fb94f0c80977a41f8583b957e9bffa642328f18d5ac941cbc8fea2634",
+      "execution_count": 9
+    },
+    {
+      "cell": 16,
+      "source_sha256": "a34a142837b21b4544c07176e1710df82e9a8210c6448a7672788cb9898d8381",
+      "outputs_sha256": "2e7ed4b56fa29117ae308d1d47a12ffd5d5eee315bce6d49eb02aff0696bfb67",
+      "execution_count": 10
+    }
+  ],
+  "changes": {
+    "markdown_cells_changed": [],
+    "code_cells_changed": [
+      15
+    ],
+    "output_cells_changed": [
+      15
+    ],
+    "display_only_change": {
+      "cell": 15,
+      "old_source": "target=effects[effects.method=='CONCH'];supported=(target.low>0).all();display(Markdown('**'+('Accept resolution sensitivity across both panels.' if supported else 'Reject a confirmed resolution effect under the paired-interval criterion.')+' The paired drops and intervals are computed above. OpenCLIP and the frozen DINOv2 probe characterize whether the sensitivity is shared.'))\ndisplay(target)\n",
+      "new_source": "target=effects[effects.method=='CONCH'];supported=(target.low>0).all();display(Markdown('**'+('Accept resolution sensitivity across both panels.' if supported else 'Reject a confirmed resolution effect under the paired-interval criterion.')+'** The paired drops and intervals are computed above. OpenCLIP and the frozen DINOv2 probe characterize whether the sensitivity is shared.'))\ndisplay(target)\n",
+      "source_replacement": {
+        "old": "criterion.')+' The paired",
+        "new": "criterion.')+'** The paired"
+      },
+      "output_index": 0,
+      "mime_type": "text/markdown",
+      "old_output": "**Accept resolution sensitivity across both panels. The paired drops and intervals are computed above. OpenCLIP and the frozen DINOv2 probe characterize whether the sensitivity is shared.",
+      "new_output": "**Accept resolution sensitivity across both panels.** The paired drops and intervals are computed above. OpenCLIP and the frozen DINOv2 probe characterize whether the sensitivity is shared.",
+      "output_replacement": {
+        "old": "panels. The paired",
+        "new": "panels.** The paired"
+      }
+    }
+  },
+  "verification": {
+    "method": "Exact single-literal substitution in the display expression and exact single-literal substitution in its saved Markdown output; all other notebook content matched before rendering."
+  },
+  "html_renderer": {
+    "library": "nbconvert",
+    "version": "7.17.1",
+    "template": "lab",
+    "method": "Rendered only revised cell containers into the original HTML, preserving all other HTML bytes including page styles, scripts and embedded plots. Cells were not executed."
+  }
+}

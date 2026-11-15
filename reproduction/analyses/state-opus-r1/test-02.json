@@ -120,12 +120,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Morgan/Tanimoto nearest-neighbor drug similarity.",
     "calculation": "Archived per-drug chemical features are available, but original fingerprint code and exact reference exclusions are missing.",
-    "code": "materials/state/notebooks/state-opus-r1/test-02.py"
+    "code": "materials/state/notebooks/state-opus-r1/test-02.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Saved per-record model scores are used; raw prediction-level recalculation is unavailable.",
@@ -135,15 +137,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/state/notebooks/state-opus-r1/test-02.py"
+    "code": "materials/state/notebooks/state-opus-r1/test-02.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Computed from individual observations; uncertainty is labeled by resampling unit.",
-    "code": "materials/state/notebooks/state-opus-r1/test-02.py"
+    "code": "materials/state/notebooks/state-opus-r1/test-02.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Replays retained controls and separate context slices; no new independent cohort is claimed.",
-    "code": "materials/state/notebooks/state-opus-r1/test-02.py"
+    "code": "materials/state/notebooks/state-opus-r1/test-02.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Original expression predictions and observed matrices; actual genetic training gene lists (the audit used an evaluation-panel proxy).",
@@ -283,5 +288,39 @@
     "notebook": "inline/state/state-opus-r1/test-02.ipynb",
     "section": 6,
     "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/state/state-opus-r1/test-02.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/state/state-opus-r1/test-02.execution.json",
+    "notebook_sha256": "0ed133e2f27a7374f121b89571eddc0f5144298b549aa3598cfbd80564d43ce9",
+    "result_location": {
+      "notebook": "inline/state/state-opus-r1/test-02.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

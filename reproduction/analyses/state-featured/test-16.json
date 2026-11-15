@@ -681,12 +681,14 @@
       "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
     },
     "legacy_input_inventory": "inputs/state.json",
-    "recovered_workflow": "primary/state/traceability.json"
+    "recovered_workflow": "primary/state/traceability.json",
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Normalized training-gene support across the functional sets assigned to each test gene in GO_MF.",
     "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
-    "code": "primary/state/notebooks/test-16.py"
+    "code": "primary/state/notebooks/test-16.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Original released per-record evaluation scores, processed as the original agent did; no fresh STATE inference is required for this workflow.",
@@ -696,15 +698,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "primary/state/notebooks/test-16.py"
+    "code": "primary/state/notebooks/test-16.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
-    "code": "primary/state/notebooks/test-16.py"
+    "code": "primary/state/notebooks/test-16.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
-    "code": "primary/state/notebooks/test-16.py"
+    "code": "primary/state/notebooks/test-16.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "The workflow intentionally starts from the official scored files used by the original agent. Exact similarity ties can change nearest-drug names without changing values, levels or curves."
@@ -969,5 +974,39 @@
     "notebook": "inline/state/state-featured/test-16.ipynb",
     "section": 6,
     "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/state/state-featured/test-16.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/state/state-featured/test-16.execution.json",
+    "notebook_sha256": "cd187b8087e64393cf26b1a8ee790b8e5224fa115dcaf9f44155575cc5057ad5",
+    "result_location": {
+      "notebook": "inline/state/state-featured/test-16.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

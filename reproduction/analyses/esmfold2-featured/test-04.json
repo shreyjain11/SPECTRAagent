@@ -517,12 +517,14 @@
       "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
     },
     "legacy_input_inventory": "inputs/esmfold2.json",
-    "recovered_workflow": "primary/esmfold2/traceability.json"
+    "recovered_workflow": "primary/esmfold2/traceability.json",
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Absolute value of the sequence net-charge proxy per residue; larger values were predicted to be harder.",
     "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
-    "code": "primary/esmfold2/notebooks/test-04.py"
+    "code": "primary/esmfold2/notebooks/test-04.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Original individual model measurements and scoring/selection code are packaged. The optional full-workflow route uses the documented current implementation with pinned original weights.",
@@ -532,15 +534,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "primary/esmfold2/notebooks/test-04.py"
+    "code": "primary/esmfold2/notebooks/test-04.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
-    "code": "primary/esmfold2/notebooks/test-04.py"
+    "code": "primary/esmfold2/notebooks/test-04.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
-    "code": "primary/esmfold2/notebooks/test-04.py"
+    "code": "primary/esmfold2/notebooks/test-04.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "The full bulk-download/raw-feature/current-model route is connected but was not executed during this integration.",
@@ -874,5 +879,39 @@
       ]
     },
     "status": "executed_inline"
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/esmfold2/esmfold2-featured/test-04.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/esmfold2/esmfold2-featured/test-04.execution.json",
+    "notebook_sha256": "c0509ae8e78601b1c6e4f5f45f557adeb08967bdd5746e94e2bd6faba6f8d506",
+    "result_location": {
+      "notebook": "inline/esmfold2/esmfold2-featured/test-04.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

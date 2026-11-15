@@ -62,12 +62,14 @@
       "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
     },
     "legacy_input_inventory": "inputs/conch.json",
-    "recovered_workflow": "primary/conch/traceability.json"
+    "recovered_workflow": "primary/conch/traceability.json",
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Color-channel and intensity summaries and histograms measure divergence from the reference. Six groups ordered by decreasing similarity to a class-balanced reference of 1,800 NCT-CRC-HE-100K tiles (200 per class).",
     "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
-    "code": "primary/conch/code/02-conch-primary.py"
+    "code": "primary/conch/code/02-conch-primary.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Original target logits/labels and both follow-up panels are packaged. Pinned image acquisition, original CONCH scoring and analysis are connected in optional full-workflow mode.",
@@ -77,15 +79,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "primary/conch/code/02-conch-primary.py"
+    "code": "primary/conch/code/02-conch-primary.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
-    "code": "primary/conch/code/02-conch-primary.py"
+    "code": "primary/conch/code/02-conch-primary.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
-    "code": "primary/conch/code/02-conch-primary.py"
+    "code": "primary/conch/code/02-conch-primary.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "The full target-image download and new CONCH inference route is connected but has not been executed during this integration. It requires the documented model access and environment.",
@@ -419,5 +424,39 @@
       ]
     },
     "status": "executed_inline"
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/conch/conch-primary/test-02.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/conch/conch-primary/test-02.execution.json",
+    "notebook_sha256": "3aa39939ef74a02cb72ad93247fb454f3ad129fe77ea63bcd54eada6e355dd7f",
+    "result_location": {
+      "notebook": "inline/conch/conch-primary/test-02.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

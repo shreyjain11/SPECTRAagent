@@ -85,12 +85,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "maximum MMseqs2 sequence identity (fident, -s 7.5 --cov-mode 0 -c 0.8) to any PDB chain released before 2021-09-30",
     "calculation": "Max identity and levels recomputed from original mmseqs hits.",
-    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "All160 target and120 template structures rescored exact original rounding.",
@@ -100,15 +102,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Coordinate rescores aggregated with original rounding.",
-    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Observed density from coords and single entity controls recomputed; expansion checked.",
-    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.py"
+    "code": "materials/esmfold2/notebooks/esmfold2-kimi-r2/test-01.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Underlying reference/test FASTA and original search executable/database are not included; original hit-table aggregation is replayed, not the MMseqs search.",
@@ -260,5 +265,39 @@
       ]
     },
     "status": "executed_inline"
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/esmfold2/esmfold2-kimi-r2/test-01.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/esmfold2/esmfold2-kimi-r2/test-01.execution.json",
+    "notebook_sha256": "74f258ace5d08112460b3545290dc66eb5f87ec472cfb862a46f504213bc9be5",
+    "result_location": {
+      "notebook": "inline/esmfold2/esmfold2-kimi-r2/test-01.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

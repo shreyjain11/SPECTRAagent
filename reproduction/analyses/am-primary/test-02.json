@@ -885,12 +885,14 @@
       "scope": "Retained public-bundle notebook; the preferred primary notebook uses its own package bootstrap."
     },
     "legacy_input_inventory": "inputs/alphamissense.json",
-    "recovered_workflow": "primary/alphamissense/traceability.json"
+    "recovered_workflow": "primary/alphamissense/traceability.json",
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "For each gene, divide observed by possible missense variants in gnomAD v2.1.1 and use the highest-fraction transcript. Evaluate ClinVar AUROC in ten gene-balanced bins.",
     "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
-    "code": "primary/alphamissense/am-primary/axis-2.py"
+    "code": "primary/alphamissense/am-primary/axis-2.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Original released AlphaMissense predictions, benchmark joins and original comparator calculations; fresh target-model inference was not part of this workflow.",
@@ -900,15 +902,18 @@
       "original_training_evidence": "These calculations reuse released AlphaMissense scores without updating model weights. Upstream checkpoint training is separate from this audit.",
       "comparators": []
     },
-    "code": "primary/alphamissense/am-primary/axis-2.py"
+    "code": "primary/alphamissense/am-primary/axis-2.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Original curves, controls and selection calculations are traceable to retained individual measurements. Any added display diagnostics are labelled separately; prescoring rejections retain their actual diagnostic.",
-    "code": "primary/alphamissense/am-primary/axis-2.py"
+    "code": "primary/alphamissense/am-primary/axis-2.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Original comparisons and decision evidence are preserved. The historical decision is not reassigned from a new model run or an additional protocol review.",
-    "code": "primary/alphamissense/am-primary/axis-2.py"
+    "code": "primary/alphamissense/am-primary/axis-2.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Some large public-download/preparation steps have not been rerun in full. The default replay uses the exact retained inputs supplied by the package/bootstrap.",
@@ -1224,5 +1229,39 @@
       ]
     },
     "status": "executed_inline"
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/alphamissense/am-primary/axis-2.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/alphamissense/am-primary/axis-2.execution.json",
+    "notebook_sha256": "ccaaefc48b05dafac08f89accbbeac814490b80be7891b540def965d65682d00",
+    "result_location": {
+      "notebook": "inline/alphamissense/am-primary/axis-2.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

@@ -120,12 +120,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Number of truly differentially expressed genes, used as an outcome-derived control.",
     "calculation": "DE counts are read from the original scored records; they are outcome-derived annotations, not newly generated prospective features.",
-    "code": "materials/state/notebooks/state-opus-r1/test-04.py"
+    "code": "materials/state/notebooks/state-opus-r1/test-04.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Saved per-record model scores are used; raw prediction-level recalculation is unavailable.",
@@ -135,15 +137,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/state/notebooks/state-opus-r1/test-04.py"
+    "code": "materials/state/notebooks/state-opus-r1/test-04.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Retained individual scores are used to recompute the displayed contrasts, correlations or controls. No additional bootstrap interval is claimed.",
-    "code": "materials/state/notebooks/state-opus-r1/test-04.py"
+    "code": "materials/state/notebooks/state-opus-r1/test-04.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Replays retained controls and separate context slices; no new independent cohort is claimed.",
-    "code": "materials/state/notebooks/state-opus-r1/test-04.py"
+    "code": "materials/state/notebooks/state-opus-r1/test-04.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Original expression predictions and observed matrices; actual genetic training gene lists (the audit used an evaluation-panel proxy)."
@@ -282,5 +287,39 @@
       ]
     },
     "status": "executed_inline"
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/state/state-opus-r1/test-04.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/state/state-opus-r1/test-04.execution.json",
+    "notebook_sha256": "4f612d467aab4c303dd00318c46860b16ed1051223a4571166894189f01acf73",
+    "result_location": {
+      "notebook": "inline/state/state-opus-r1/test-04.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }

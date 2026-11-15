@@ -120,12 +120,14 @@
       "catalog": "data.json",
       "prepare": "prepare_inputs.py",
       "notebook_preparation_cell": 0
-    }
+    },
+    "scope": "supporting_implementation"
   },
   "axis_levels": {
     "definition": "Density of training-panel genes with functionally similar GO Biological Process annotations to the perturbed gene, measured by Jaccard similarity.",
     "calculation": "Original per-record axis calculation and membership checked.",
-    "code": "materials/state/notebooks/state-opus-r2/test-01.py"
+    "code": "materials/state/notebooks/state-opus-r2/test-01.py",
+    "scope": "supporting_implementation"
   },
   "model_evaluation": {
     "measurements": "Saved per-record model scores are used; raw prediction-level recalculation is unavailable.",
@@ -135,15 +137,18 @@
       "original_training_evidence": "The exported reconstruction code does not update target-model weights. Original checkpoint training or audit-specific adaptation was not established by the retained execution evidence.",
       "comparators": []
     },
-    "code": "materials/state/notebooks/state-opus-r2/test-01.py"
+    "code": "materials/state/notebooks/state-opus-r2/test-01.py",
+    "scope": "supporting_implementation"
   },
   "curve": {
     "aggregation_and_uncertainty": "Computed from individual observations; uncertainty is labeled by resampling unit.",
-    "code": "materials/state/notebooks/state-opus-r2/test-01.py"
+    "code": "materials/state/notebooks/state-opus-r2/test-01.py",
+    "scope": "supporting_implementation"
   },
   "insight": {
     "comparison_controls_confirmation": "Replays retained controls and separate context slices; no new independent cohort is claimed.",
-    "code": "materials/state/notebooks/state-opus-r2/test-01.py"
+    "code": "materials/state/notebooks/state-opus-r2/test-01.py",
+    "scope": "supporting_implementation"
   },
   "reconstruction_notes": [
     "Predicted and observed expression matrices for independent metric calculation; original model checkpoint provenance."
@@ -304,5 +309,39 @@
     "notebook": "inline/state/state-opus-r2/test-01.ipynb",
     "section": 6,
     "description": "Calculated decision and explanation displayed by this notebook."
+  },
+  "scientific_record_scope": {
+    "supporting_fields": [
+      "dataset_split",
+      "axis_levels",
+      "model_evaluation",
+      "curve",
+      "insight"
+    ],
+    "supporting_implementation": "implementation",
+    "current_fields": "current_inline_analysis",
+    "historical_result": "historical_decision",
+    "note": "Supporting fields describe the separately retained implementation. Use current_inline_analysis for the preferred notebook; historical equivalence is not inferred from successful execution."
+  },
+  "reconstruction_notes_scope": "supporting_implementation",
+  "current_inline_analysis": {
+    "notebook": "inline/state/state-opus-r2/test-01.ipynb",
+    "dataset_and_methods": {
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
+    },
+    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "execution_evidence": "inline/state/state-opus-r2/test-01.execution.json",
+    "notebook_sha256": "f2819c9022114bf1a58390ed86fe7c72624f9860a14711cf39dbf66a337efccf",
+    "result_location": {
+      "notebook": "inline/state/state-opus-r2/test-01.ipynb",
+      "section": 6,
+      "description": "Calculated decision and explanation displayed by this notebook."
+    }
   }
 }
