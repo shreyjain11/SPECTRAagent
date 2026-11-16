@@ -1,6 +1,6 @@
 # SPECTRA Generalizability Protocol
 
-Version: 2026-11-02.1
+Version: 2026-11-15.1
 
 This service exposes SPECTRA guidance and published findings over HTTPS, and
 accepts contributed audit cards into a pending review queue. Audits run in the
@@ -56,7 +56,8 @@ The loop is:
    contrast retains its bounded interpretation and cannot certify curve shape.
 7. Audit the evidence against the exact claim; distinguish a nuisance control
    from a test that changes the comparison being estimated.
-8. Update the claim ledger and next-action queue. For every supported candidate,
+8. Update the claim ledger, investigation notebooks and ordered summaries
+   described below, and the next-action queue. For every supported candidate,
    scout a compatible independent dataset unused in axis development, freeze and
    execute replication, and accept only if that replication passes. Otherwise
    follow the non-replication, inconclusive/invalid, or blocked route below and
@@ -461,6 +462,97 @@ normal HTTPS downloads with byte size, row count, and SHA-256 checksum. Hosted
 registry cards expose the download URLs and checksums in their `downloads`
 records. Follow those URLs for complete evidence; summaries are not a bulk
 transport mechanism.
+
+## Investigation Notebooks and Ordered Summaries
+
+For every investigation, retain a notebook for **every axis actually tested**,
+including unsuccessful, inconclusive and invalid experiments. Keep controls,
+replication attempts and corrected tests visible with the axis they evaluate;
+do not overwrite the original result with a later repair. An untested proposal
+belongs in the ledger as untested, not as an experiment with a fabricated curve.
+
+Record stable axis/test identifiers and execution order as the work happens.
+Preserve timestamps and genuine dependencies between tests. For a reconstructed
+investigation, distinguish recovered historical order from a new replay order.
+If historical order is unknown, say so; do not infer it from notebook numbers,
+filenames or the direction of the results.
+
+### Axis notebook: six ordered sections
+
+Each section must show the code used, its generated outputs, and only the brief
+explanation needed to understand the calculation. More than one code cell per
+section is allowed; the full custom analysis must remain visible in the notebook.
+
+1. **Data source/acquisition.** Show how to obtain every input used for this
+   axis, including public source links and download/cache-loading code. Record
+   dataset versions, filenames and hashes; distinguish original measurements,
+   annotations, reference data and saved model scores. Identify the exact
+   samples/splits and any access requirements rather than presenting an
+   inaccessible local path as a reproducible source.
+2. **Data processing.** Show parsing, joins, filtering, exclusions, missing-data
+   handling, transformations and split construction. Retain sample identifiers,
+   counts and the independent sampling or clustering unit through this stage.
+3. **Axis definition and level construction.** Show the feature formula,
+   reference population, input-only axis calculation, cutpoints and assignment
+   of each sample to a level. Include the frozen specification and executable
+   source-membership, ordering, ties and independent-support checks required
+   by this protocol.
+4. **Model results or released scores.** Show inference or the code used to
+   acquire and join precomputed predictions/scores to the evaluated samples.
+   Identify the exact model/checkpoint, task, metric and reference models. If
+   the model was fine-tuned, say so and include the fine-tuning code and
+   configuration, training/split provenance, resulting checkpoint and measured
+   performance. Training need not be repeated solely to prepare this notebook;
+   distinguish supplied fine-tuned outputs from fitting performed in this run.
+5. **Curves and controls.** Show code that calculates per-sample performance,
+   aggregates by level and generates the curves, uncertainty, comparisons and
+   controls. Use the declared independent units for uncertainty. Display the
+   actual plots and numerical results inline, with sample/cluster counts and
+   enough intermediate records to connect the inputs to the plotted values.
+6. **What the agent decided, and why.** State the exact claim tested, the
+   prespecified decision rule, the measured result and the reason for accepting
+   or rejecting that claim. Use inconclusive, invalid or blocked when the
+   evidence does not justify either conclusion. Distinguish discovery support
+   from protocol acceptance; a positive curve alone does not waive the existing
+   independent-dataset replication or other validity gates. Preserve any next
+   action actually prompted by the result.
+
+All agent-written analysis code, including helper functions and custom fitting,
+must be in the notebook. Do not hide it in imported local Python files, shell
+scripts, dynamically loaded code, or a separate custom pipeline. Standard and
+third-party libraries, including model implementations, may be imported; record
+their versions and show the custom configuration and calls. Auxiliary scripts
+may automate execution or presentation, but cannot replace the visible analysis.
+
+Generate every displayed curve or plot from the notebook code and data. No
+placeholder charts, manually supplied result pictures, or invented outputs.
+When a test produces no performance curve, show its actual diagnostic/result
+and explain why. Run the notebook from its documented inputs in a clean kernel
+before marking its reproduction complete. Saved predictions may be reused under
+the provenance rules above. If a stage cannot be executed, preserve the code,
+available evidence and precise gap; do not label it fully reproduced.
+
+### Investigation summaries
+
+Create two files from the same complete axis/test ledger:
+
+- **`INVESTIGATION.md`:** a short ordered list of the axes tested, with a link
+  to each axis notebook. Identify any revisits or replication attempts and
+  label the order as historical, newly executed, or unknown as appropriate.
+- **`INVESTIGATION.html`:** a human-readable sequence of compact, expandable
+  axis boxes, with arrows between successive tests. Label arrows as test order;
+  they do not imply causality or a hypothesis dependency unless that dependency
+  was actually recorded. Expanding a box shows its actual curve(s) or diagnostic,
+  a concise result, links to the data sources and measured/curve tables, and a
+  link below to view/download the notebook. Keep negative and inconclusive
+  tests as visible as positive ones. Unknown ordering must remain explicit
+  instead of drawing an invented sequence; parallel tests may share a stage.
+
+Check that the ledger, Markdown, HTML and notebooks cover the same tested axes
+and attempts in the recorded order. Open the HTML, exercise each expansion and
+notebook/data link, and verify that displayed plots and values match the saved
+notebook outputs. Reporting completeness is separate from scientific acceptance
+and does not reconstruct missing historical evidence.
 
 ## Closure Gate
 

@@ -1,6 +1,6 @@
 # SPECTRA Finish Review
 
-Version: 2026-10-29.1
+Version: 2026-11-15.1
 
 Run this review-and-execution loop in the current session before any final
 response. Do not wait for the user to paste it again. If useful, required work
@@ -256,6 +256,10 @@ check, or report correction:
 1. Update the claim ledger and A/B replication record with actual results,
    exposure history and the precise decision; discovery success alone cannot
    enter the accepted state.
+   Update the corresponding six-section axis notebook and the ordered
+   `INVESTIGATION.md` and `INVESTIGATION.html` summaries required by the protocol.
+   Include unsuccessful tests, controls, replication attempts and repairs;
+   preserve the actual chronology and earlier results.
 2. Rebuild the concrete next-action queue, generating a new plausible hypothesis
    when needed rather than treating an empty initial list as completion.
 3. If required work remains, execute the highest-value feasible authorized
@@ -280,6 +284,17 @@ something passes. A finish cycle must execute the next feasible required action,
 not merely recommend finding another dataset and stop.
 
 ## 7. Final response gate
+
+Before declaring the investigation complete, reconcile every tested axis and
+attempt with its notebook and both investigation summaries. Check that all
+custom analysis code is visible, sources and fitting/fine-tuning are identified,
+actual code-generated curves/results are inline, and decisions match the
+evidence. Verify the recorded execution scope and open the expandable HTML,
+including its notebook and data links. Missing reporting artifacts are remaining
+work when their creation is feasible; finished reports never substitute for the
+scientific gates below. At a user-directed stop or evidenced hard stop, preserve
+the available artifacts and state the unfinished reporting steps without
+fabricating results or continuing against the user's instruction.
 
 Give a final response only when one of these conditions holds:
 

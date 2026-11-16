@@ -1,5 +1,21 @@
 # Protocol changelog
 
+## Axis notebooks and investigation summaries — 2026-11-15.1
+
+- Require a six-section notebook for every tested axis, with visible custom
+  acquisition, processing, axis construction, model evaluation, curve/control
+  and decision code. Include actual generated outputs, data provenance and any
+  fine-tuning code/configuration; cached model outputs remain permitted.
+- Require a short ordered `INVESTIGATION.md` and an expandable
+  `INVESTIGATION.html`, both covering the same tests. Distinguish test order
+  from causal/dependency claims and recovered chronology from a new replay.
+- Add reporting checks to the controller and finish review. Protocol and
+  finish-review versions are both `2026-11-15.1`. Scientific axis-selection,
+  source-membership, replication and acceptance rules are unchanged.
+- This adds deliverable requirements for new investigations. Earlier audits
+  retain their recorded protocol versions; later packaging or replay does not
+  establish that their original execution followed these requirements.
+
 ## HTTPS access and sharing — 2026-11-02.1
 
 - Updated the protocol's access and sharing instructions for the hosted HTTPS
