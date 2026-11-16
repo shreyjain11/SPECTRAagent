@@ -133,12 +133,21 @@ def check_inline(record, entry):
     assert digest(implementation['html'])==implementation['published_html_sha256']
     receipt=read(implementation['execution_evidence'])
     assert receipt['analysis_id']==record['id'] and receipt['completed']
-    assert 'exxact05' in receipt['host'].lower()
+    scientific_revision = receipt.get('scientific_revision')
+    if not scientific_revision:
+        assert 'exxact05' in receipt['host'].lower()
     assert receipt['notebook_sha256']==digest(implementation['notebook'])
     assert receipt['html_sha256']==digest(implementation['html'])
-    sections,code=code_review(read(implementation['notebook']))
+    direct_cells = ()
+    if scientific_revision:
+        correction = read(scientific_revision['record']['path'])
+        if correction['execution'].get('engine') == 'python_exec':
+            direct_cells = correction['executed_notebook_cells']
+    sections,code=code_review(read(implementation['notebook']), direct_executed_cells=direct_cells)
     assert sections==implementation['sections']==receipt['sections']
-    assert len(code)==implementation['code_cells']==receipt['code_cells']==receipt['executed_cells']
+    assert len(code)==implementation['code_cells']==receipt['code_cells']
+    if not scientific_revision:
+        assert len(code)==receipt['executed_cells']
     assert not receipt['errors']
     assert receipt['result_location']==implementation['calculated_result']
     location=implementation['calculated_result']
@@ -148,8 +157,12 @@ def check_inline(record, entry):
         interpretation=location['interpretation']
         section=next(s for s in sections if s['number']==interpretation['section'])
         assert interpretation['markdown_cell']==section['markdown_cell']
-    from validate_presentation import check_revision
-    check_revision(receipt,read(implementation['notebook']),read,digest)
+    if scientific_revision:
+        from validate_scientific_revision import check_scientific_revision
+        check_scientific_revision(receipt,read(implementation['notebook']),read,digest,file)
+    else:
+        from validate_presentation import check_revision
+        check_revision(receipt,read(implementation['notebook']),read,digest)
     current=record['current_inline_analysis']
     assert current['notebook']==implementation['notebook']
     assert current['notebook_sha256']==implementation['published_notebook_sha256']

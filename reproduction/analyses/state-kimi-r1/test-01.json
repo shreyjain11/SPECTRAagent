@@ -322,8 +322,8 @@
     "notebook": "inline/state/state-kimi-r1/test-01.ipynb",
     "html": "inline/state/state-kimi-r1/test-01.html",
     "execution_evidence": "inline/state/state-kimi-r1/test-01.execution.json",
-    "published_notebook_sha256": "e9eb3dd620e8b2ac461649ca18a055f3c15e26eff7a5304ca7146fee07c98587",
-    "published_html_sha256": "b88218a07cab0eabd1b17aa27d79f550ae103cbb94a0458f35948a9b7ad10a70",
+    "published_notebook_sha256": "a1b86a3e6732319a7a962e2b6aa9946aaaa8fe1e3a7739ceae3ec2f0350d51fb",
+    "published_html_sha256": "338cb13e47f8da6d36ef608d2c181182616dd2e93be7b2b81ac8898dc9745f32",
     "code_cells": 11,
     "sections": [
       {
@@ -420,18 +420,18 @@
       ],
       "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
     },
-    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "verification_boundary": "Only the listed calculation/interpretation cells were executed; all other code cells and their saved outputs exactly match commit 1d3b45b. Kimi uses retained per-gene observed/predicted metrics and checkpoint norms; Opus uses retained official score rows and reconstructed annotation features. No new model inference. Gene-bootstrap intervals are conditional on existing contexts; the new split is retrospective sensitivity, not prospective confirmation.",
     "execution_evidence": "inline/state/state-kimi-r1/test-01.execution.json",
-    "notebook_sha256": "e9eb3dd620e8b2ac461649ca18a055f3c15e26eff7a5304ca7146fee07c98587",
+    "notebook_sha256": "a1b86a3e6732319a7a962e2b6aa9946aaaa8fe1e3a7739ceae3ec2f0350d51fb",
     "result_location": {
       "notebook": "inline/state/state-kimi-r1/test-01.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
     },
-    "interpretation_review": {
-      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
-      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
-      "presentation_record": "review_20261115/presentation/state-kimi-r1-test-01.revision.json"
+    "scientific_correction": {
+      "record": "corrections/scientific_20261115/records/state-kimi-r1-test-01.scientific-revision.json",
+      "execution_scope": "selected_cells_reexecuted",
+      "summary": "Replaced pooled independence assumptions and the invalid embedding Z with joint gene-bootstrap intervals."
     }
   }
 }

@@ -2,7 +2,7 @@
 
 The catalog covers 143 entries across 28 investigations. Open the [notebook index](inline/INDEX.md) or [setup guide](inline/README.md) to review and run the notebooks.
 
-**142 analysis notebooks have completed on exxact05; 1 entry documents an unperformed candidate. 0 entries are pending verification.**
+Original execution receipts cover **142 analysis notebooks on exxact05**; one entry documents an unperformed candidate. Subsequent [scientific corrections](corrections/scientific_20261115/README.md) reran 10 full STATE notebooks and the affected calculation cells in 11 other notebooks on the recorded local host. Their current receipts distinguish these scopes and preserve the earlier executions. Execution completion does not establish the scientific conclusion or external confirmation.
 
 | Model | Executed analyses | Unperformed candidates | Pending | Total |
 |---|---:|---:|---:|---:|
@@ -29,5 +29,8 @@ STATE and AlphaMissense notebooks identify the public individual scores they use
 The registry and runner select the verified inline notebook by default. Section 6 supplies its calculated result. Pending entries cannot silently select a supporting implementation.
 
 ## Validation
+
+`python reproduction/test_scientific_revision.py` checks the scientific-correction receipt schema, including preservation of unexecuted cells and the original evidence chain. Numerical comparisons and independently checked uncertainty calculations are linked from the correction report.
+
 
 Run `python reproduction/validate.py` from the repository root to check all 143 registry entries, preferred notebook hashes and section maps, included input manifests, and supporting artifact links. [Packaging checks](inline/PACKAGING_VALIDATION.json) also record the runner test on exxact05.

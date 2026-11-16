@@ -1,0 +1,100 @@
+{
+  "analysis_id": "state-kimi-r1/test-03",
+  "notebook": "inline/state/state-kimi-r1/test-03.ipynb",
+  "html": "inline/state/state-kimi-r1/test-03.html",
+  "completed": true,
+  "host": "exxact05",
+  "code_cells": 12,
+  "executed_cells": 12,
+  "errors": 0,
+  "notebook_sha256": "5393ad0380c3b9eea7af3ffc6b29ab178c472e6ba0d63b72c15db50e353816c5",
+  "html_sha256": "4b811c58be9e035f838f7aef6deca3114dcc4a05a6da583102b52d4986f1ef84",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source and acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 6,
+      "code_cells": [
+        7
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results and reference scores",
+      "markdown_cell": 8,
+      "code_cells": [
+        9
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 10,
+      "code_cells": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 16,
+      "code_cells": [
+        17,
+        18
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "7bc06c3bd0bd7bdc627730de234c8fe3c095610c5f95c7304c7ceef24ede9ee5",
+  "execution_evidence_entry_id": "state-kimi-r1/test-03",
+  "embedded_figures": 8,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      17,
+      18
+    ]
+  },
+  "input_manifests": [],
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/state-kimi-r1-test-03.previous-execution.json",
+      "sha256": "0501515ac5509722e9a7d848f098a29c69280c6f2385a776207631575b710aec"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/state-kimi-r1-test-03.revision.json",
+      "sha256": "d1499566447b8d276c0b00a89c7fa3b48a627ef9c38ab8dbc2e52bffdcd59404"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
+}

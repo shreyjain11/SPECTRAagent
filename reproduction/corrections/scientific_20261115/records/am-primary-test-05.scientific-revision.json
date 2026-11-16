@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "analysis_id": "am-primary/test-05",
+  "scientific_reexecution": true,
+  "mode": "selected_cells",
+  "reason": "Shared DMS uncertainty resamples proteins while retaining declared levels, endpoint and point-estimate weighting.",
+  "original_commit": "1d3b45baa344751b4c34ea825479c0f39b09ec21",
+  "original_artifacts": {
+    "notebook": {
+      "path": "inline/alphamissense/am-primary/axis-5.ipynb",
+      "sha256": "00b45c39a0dd47b691ba038cc217ae03b67e280dd3551fbe2036f29a511bec39"
+    },
+    "html": {
+      "path": "inline/alphamissense/am-primary/axis-5.html",
+      "sha256": "b0b406120fafa6963a1853520f016d573e537bfbcb587e226524dabc539a1479"
+    }
+  },
+  "published_artifacts": {
+    "notebook": {
+      "path": "inline/alphamissense/am-primary/axis-5.ipynb",
+      "sha256": "9a611e437cd95bf74bd7fba1c3c00597e18893743191e056a236fbedff946344",
+      "bytes": 188367
+    },
+    "html": {
+      "path": "inline/alphamissense/am-primary/axis-5.html",
+      "sha256": "a31c0c53ac192296fd4f7de9470e3a34633ec74ed15aa205b37addc5725d702f",
+      "bytes": 596432
+    }
+  },
+  "original_code_cells": [
+    {
+      "notebook_cell": 1,
+      "execution_count": 1,
+      "source_sha256": "f063a1ad5578cbcd72f6daa99146c3bda0f3b84ccbfbdc96a1fcabc5e4eae08f",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "3c781f57f8e1ec75054da06e6c9e602a218803eb941afdbf86c0c9b1ed41f156"
+    },
+    {
+      "notebook_cell": 2,
+      "execution_count": 2,
+      "source_sha256": "0af7bad2ac015697b1de0b22fc327eb9eb81db6278a0d4b3690890accb154f44",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "7689b706d67ae2198f1d5483a89a1c1037826e64cb774f947abcf7b82f235639"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 3,
+      "source_sha256": "ab8253288b60dac55cc8ceaae48727ff188e3845cddaf1c4a1ec9816489238a3",
+      "outputs_sha256": "109622f4beac3942f5c585f710867d80d223f566deea9b509ad147f737a860e3",
+      "cell_sha256": "fa1cb99f7dd20ac6b4b655f89172dcc3ce7c0be2c2ed14aacd3f3cf905427885"
+    },
+    {
+      "notebook_cell": 4,
+      "execution_count": 4,
+      "source_sha256": "4b207936be33e31720724b064f7c523a545c4483a6f2fea74b72b176014c3bef",
+      "outputs_sha256": "dbf2eabb5040816fdf829db829eb8f354d065795394c886a6f1add792ae9d109",
+      "cell_sha256": "d754e7d3ccef784d91b0ccde5ebf1db6d0494d746d44ac1c3223fbbd6a14ff71"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 5,
+      "source_sha256": "7639eaaca43608b6cfd6deb565cdf2ef5c04c7aba412638b192606318ae9cda2",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "c6924894ad337c0b75c04f1e60316bb680738bdc0999826bfc3eec3204b0aad8"
+    },
+    {
+      "notebook_cell": 7,
+      "execution_count": 6,
+      "source_sha256": "dd4add63efa810efa24d790688fada21d7601ed64f8eb9b5735a77944dab66c9",
+      "outputs_sha256": "2ae27686a67a63065bc72b76ea0b35ed3e923cf1c0928f7aba9928a2df355c2f",
+      "cell_sha256": "7a121e734c5f2340ddbbcf8d1921d8b4a1271ce8d230a9420dbda18118d83fb1"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 7,
+      "source_sha256": "69da4b81909ac2b0b55f6ecfdacd6635507086e6154a8f9d390b4a139d838ad3",
+      "outputs_sha256": "52437919977a59d9373358ead1169712e2f3688d964833d8153b8e794ac60435",
+      "cell_sha256": "6c0761ebadb8d03e2b4fe33a83e5cfe95f8469be03f5781d10ebb5c511d202b3"
+    },
+    {
+      "notebook_cell": 11,
+      "execution_count": 8,
+      "source_sha256": "6ec7327652263721a1fe77ee72e4b6ba27a8aecc5621405654ade5ef2b385ed7",
+      "outputs_sha256": "41a7e55f4890628cf54c2f909638e75ffb7999e34d546ab33af1eff89e02d872",
+      "cell_sha256": "77c4d542a7bc171721694c9a1655753b6ec20ad71ce5202e3f977cfed9ae3646"
+    },
+    {
+      "notebook_cell": 13,
+      "execution_count": 9,
+      "source_sha256": "ee59d2197f6239e7b3e2ebfe48c805907239feedc8abbff22896058f7335c4d3",
+      "outputs_sha256": "5e8588f3dbfb55bba63f72476ef7b74414b75ab0245d3e9ce32db62965a905be",
+      "cell_sha256": "99a5272c270f4ab228156fffdffc7a9ee0731582ad11a2008d5bf6d602090233"
+    },
+    {
+      "notebook_cell": 15,
+      "execution_count": 10,
+      "source_sha256": "9a22d66f362944fd7a72caf1fd5ca53cd46aaa68d6a9cffff3690503bef28286",
+      "outputs_sha256": "5130c31ab217fcd25747be4da86dfc55c2cf25370b025d2d78f1bb974f53a544",
+      "cell_sha256": "8ebd8329466bbbecda5e0dfcc3695ecd0ffc05e4f29ae83138d7f5ee6dcf71c2"
+    }
+  ],
+  "published_code_cells": [
+    {
+      "notebook_cell": 1,
+      "execution_count": 1,
+      "source_sha256": "f063a1ad5578cbcd72f6daa99146c3bda0f3b84ccbfbdc96a1fcabc5e4eae08f",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "3c781f57f8e1ec75054da06e6c9e602a218803eb941afdbf86c0c9b1ed41f156"
+    },
+    {
+      "notebook_cell": 2,
+      "execution_count": 2,
+      "source_sha256": "0af7bad2ac015697b1de0b22fc327eb9eb81db6278a0d4b3690890accb154f44",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "7689b706d67ae2198f1d5483a89a1c1037826e64cb774f947abcf7b82f235639"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 3,
+      "source_sha256": "ab8253288b60dac55cc8ceaae48727ff188e3845cddaf1c4a1ec9816489238a3",
+      "outputs_sha256": "109622f4beac3942f5c585f710867d80d223f566deea9b509ad147f737a860e3",
+      "cell_sha256": "fa1cb99f7dd20ac6b4b655f89172dcc3ce7c0be2c2ed14aacd3f3cf905427885"
+    },
+    {
+      "notebook_cell": 4,
+      "execution_count": 4,
+      "source_sha256": "4b207936be33e31720724b064f7c523a545c4483a6f2fea74b72b176014c3bef",
+      "outputs_sha256": "dbf2eabb5040816fdf829db829eb8f354d065795394c886a6f1add792ae9d109",
+      "cell_sha256": "d754e7d3ccef784d91b0ccde5ebf1db6d0494d746d44ac1c3223fbbd6a14ff71"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 5,
+      "source_sha256": "7639eaaca43608b6cfd6deb565cdf2ef5c04c7aba412638b192606318ae9cda2",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "c6924894ad337c0b75c04f1e60316bb680738bdc0999826bfc3eec3204b0aad8"
+    },
+    {
+      "notebook_cell": 7,
+      "execution_count": 6,
+      "source_sha256": "dd4add63efa810efa24d790688fada21d7601ed64f8eb9b5735a77944dab66c9",
+      "outputs_sha256": "2ae27686a67a63065bc72b76ea0b35ed3e923cf1c0928f7aba9928a2df355c2f",
+      "cell_sha256": "7a121e734c5f2340ddbbcf8d1921d8b4a1271ce8d230a9420dbda18118d83fb1"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 7,
+      "source_sha256": "69da4b81909ac2b0b55f6ecfdacd6635507086e6154a8f9d390b4a139d838ad3",
+      "outputs_sha256": "52437919977a59d9373358ead1169712e2f3688d964833d8153b8e794ac60435",
+      "cell_sha256": "6c0761ebadb8d03e2b4fe33a83e5cfe95f8469be03f5781d10ebb5c511d202b3"
+    },
+    {
+      "notebook_cell": 11,
+      "execution_count": 8,
+      "source_sha256": "6ec7327652263721a1fe77ee72e4b6ba27a8aecc5621405654ade5ef2b385ed7",
+      "outputs_sha256": "41a7e55f4890628cf54c2f909638e75ffb7999e34d546ab33af1eff89e02d872",
+      "cell_sha256": "77c4d542a7bc171721694c9a1655753b6ec20ad71ce5202e3f977cfed9ae3646"
+    },
+    {
+      "notebook_cell": 13,
+      "execution_count": 1,
+      "source_sha256": "3a78e1def10ef07983c9ec7086a2e51325235d3be25e4c39ee3c66da976c1673",
+      "outputs_sha256": "7e9aafde40c589e6efdccfc7822e9faccc0daee51dd6c36c2674e937d7f34938",
+      "cell_sha256": "076fe0bd7adc5c70597706c5d66fa961e0b7a220ec8ae57df89fcec07a63662d"
+    },
+    {
+      "notebook_cell": 15,
+      "execution_count": 2,
+      "source_sha256": "7cc35dbe14182cf408e212d5aa65b41055552b4854a04beb4d59744d40d892ba",
+      "outputs_sha256": "5ba652a24c10a1bd4e7980fb8192901171bb1529938131c51bc49cfe57f733ba",
+      "cell_sha256": "8f1b03395cae0ccfcc31d9c71d8babcb26a99537e45379cc33a8cffb7c07a8e2"
+    }
+  ],
+  "executed_notebook_cells": [
+    13,
+    15
+  ],
+  "changed_code_cells": [
+    13,
+    15
+  ],
+  "executed_cell_evidence": [
+    {
+      "notebook_cell": 13,
+      "execution_count": 1,
+      "source_sha256": "3a78e1def10ef07983c9ec7086a2e51325235d3be25e4c39ee3c66da976c1673",
+      "outputs_sha256": "7e9aafde40c589e6efdccfc7822e9faccc0daee51dd6c36c2674e937d7f34938",
+      "cell_sha256": "076fe0bd7adc5c70597706c5d66fa961e0b7a220ec8ae57df89fcec07a63662d"
+    },
+    {
+      "notebook_cell": 15,
+      "execution_count": 2,
+      "source_sha256": "7cc35dbe14182cf408e212d5aa65b41055552b4854a04beb4d59744d40d892ba",
+      "outputs_sha256": "5ba652a24c10a1bd4e7980fb8192901171bb1529938131c51bc49cfe57f733ba",
+      "cell_sha256": "8f1b03395cae0ccfcc31d9c71d8babcb26a99537e45379cc33a8cffb7c07a8e2"
+    }
+  ],
+  "execution": {
+    "host": "Shreys-MacBook-Pro",
+    "python": "3.13.2",
+    "elapsed_seconds": 3.992095167050138,
+    "started_at": "2026-11-16T03:09:41.801558+00:00",
+    "finished_at": "2026-11-16T03:09:45.793675+00:00",
+    "command": "python reproduction/corrections/scientific_20261115/alphamissense/execute_selected.py /private/tmp/am-primary-scientific-20261115",
+    "driver": {
+      "path": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "sha256": "bc69be4835ebea0d4612a69659008072f94fd577b8b8fcc0ce8f9419cfcdcb80",
+      "bytes": 8066
+    },
+    "log": {
+      "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/execution.log",
+      "sha256": "ac4210db1b01eed705e0d2e1f5509d6c842d62b5c0bed66d1067302d276e40da",
+      "bytes": 667
+    }
+  },
+  "inputs": [
+    {
+      "path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+      "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+      "bytes": 7265267,
+      "rows": 270572,
+      "role": "Actual scored DMS records and retained alignment-derived features consumed by the rerun"
+    },
+    {
+      "path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+      "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+      "bytes": 3421,
+      "role": "Coverage of retained benchmark variants joined to official AlphaMissense scores"
+    },
+    {
+      "path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+      "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+      "bytes": 957993,
+      "role": "Recorded alignment position features used for the unchanged axis definitions"
+    },
+    {
+      "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+      "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+      "bytes": 9447902,
+      "role": "Public source payload used to rebuild calculation inputs"
+    },
+    {
+      "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+      "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+      "bytes": 6629852,
+      "role": "Public source payload used to rebuild calculation inputs"
+    },
+    {
+      "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+      "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+      "bytes": 3723464,
+      "role": "Public source payload used to rebuild calculation inputs"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/composition.csv",
+      "sha256": "9bad03bf1b5d9e18f4c04431aa4b18faf1b8ab164324644e94fd7ba9f7a657e9",
+      "bytes": 348
+    },
+    {
+      "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/contrasts.csv",
+      "sha256": "33a3681acac89d5ac4e39afb48c2e6808b6641dc1429c57fab4b118dba8a1ddc",
+      "bytes": 642
+    },
+    {
+      "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/curves.csv",
+      "sha256": "eb8a4f09888917585754103c9b8f05863035239da5960b3eb4f500fca75b0c1e",
+      "bytes": 1747
+    },
+    {
+      "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/execution.json",
+      "sha256": "904e1b4d43440b3a77671a28a4d835603f1cc90a19f46781df9c3e9d4fe35082",
+      "bytes": 3020
+    },
+    {
+      "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/execution.log",
+      "sha256": "ac4210db1b01eed705e0d2e1f5509d6c842d62b5c0bed66d1067302d276e40da",
+      "bytes": 667
+    },
+    {
+      "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/family_controls.csv",
+      "sha256": "f565485edf8f7590a4ac6a81b724564ba5c68580b398c02c4c038c8712e2927c",
+      "bytes": 1204
+    },
+    {
+      "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/per_assay.csv",
+      "sha256": "005b59bdc8129f39a30440d59c5bdfd52ca3a5132097ed2f2af9144273545c8c",
+      "bytes": 52376
+    },
+    {
+      "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/signal_by_assay.csv",
+      "sha256": "1b3a129ccf7f3b15c5ce2fd0228a215a2041e9f09ef5710fcd094d03d75b6cb3",
+      "bytes": 21082
+    },
+    {
+      "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/signal_summary.csv",
+      "sha256": "ba48da41f0499137267c8e6f3e5e1faa4da5c4ae7404597534a4a31a598f69f1",
+      "bytes": 322
+    },
+    {
+      "path": "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json",
+      "sha256": "fabca44b37b27828fcab554219a8daec34a347133822186d7168907d64f82432",
+      "bytes": 8033
+    }
+  ],
+  "dependency_scope": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
+  "prerequisite_setup": {
+    "script": {
+      "path": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "sha256": "bc69be4835ebea0d4612a69659008072f94fd577b8b8fcc0ce8f9419cfcdcb80",
+      "bytes": 8066
+    },
+    "input_paths": [
+      "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+      "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+      "corrections/scientific_20261115/alphamissense/inputs/position_features.csv"
+    ],
+    "description": "The rebuild script regenerated selected variants and features from three already-public payloads. The execution driver then read these exact CSV inputs to restore panel, coverage and position-feature globals before executing the two named notebook cells; earlier notebook cells were not rerun.",
+    "reconstruction_script": {
+      "path": "corrections/scientific_20261115/alphamissense/rebuild_retained_inputs.py",
+      "sha256": "0f84402e4f9afbb298aa7190b316f8c47454a7f4db839bd8d6a8cd4286ed2a3f"
+    },
+    "deduplicated_exports": "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json"
+  }
+}

@@ -1268,8 +1268,8 @@
     "notebook": "inline/alphamissense/am-primary/axis-7.ipynb",
     "html": "inline/alphamissense/am-primary/axis-7.html",
     "execution_evidence": "inline/alphamissense/am-primary/axis-7.execution.json",
-    "published_notebook_sha256": "aebf8edd5699be48c2f094318a50277f3a4bc6b571e126bb0349bfef449e94f0",
-    "published_html_sha256": "a6ac555d1b4325b02752e8ead8eff9c4ebe58158961c05e4c5d3b77b84143407",
+    "published_notebook_sha256": "07ba1ee3bd46c1f45900e4a6fb536bfe2588339e6f28fcc73db07d4899daf460",
+    "published_html_sha256": "268317546e2847a1d9a41d29523a852930f628476ef7ab841239e73c75d0c343",
     "code_cells": 9,
     "sections": [
       {
@@ -1357,18 +1357,18 @@
       ],
       "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
     },
-    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "verification_boundary": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
     "execution_evidence": "inline/alphamissense/am-primary/axis-7.execution.json",
-    "notebook_sha256": "aebf8edd5699be48c2f094318a50277f3a4bc6b571e126bb0349bfef449e94f0",
+    "notebook_sha256": "07ba1ee3bd46c1f45900e4a6fb536bfe2588339e6f28fcc73db07d4899daf460",
     "result_location": {
       "notebook": "inline/alphamissense/am-primary/axis-7.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
     },
-    "interpretation_review": {
-      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
-      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
-      "presentation_record": "review_20261115/presentation/am-primary-test-07.revision.json"
+    "scientific_correction": {
+      "record": "corrections/scientific_20261115/records/am-primary-test-07.scientific-revision.json",
+      "execution_scope": "selected_cells_reexecuted",
+      "summary": "Shared DMS uncertainty resamples proteins while retaining declared levels, endpoint and point-estimate weighting."
     }
   }
 }

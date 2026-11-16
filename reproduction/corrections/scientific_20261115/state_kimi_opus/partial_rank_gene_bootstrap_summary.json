@@ -1,0 +1,80 @@
+{
+  "effect_adjusted": {
+    "HVG": {
+      "rho": 0.17782571544977843,
+      "ci95": [
+        0.14516550833950578,
+        0.21000994909220974
+      ],
+      "rows": 5440,
+      "gene_clusters": 1911,
+      "draws": 10000,
+      "seed": 20261115,
+      "continuous_controls": [
+        "de_nsig_counts_real"
+      ],
+      "context_indicators": [],
+      "scope": "gene-cluster bootstrap conditional on the observed contexts; ranks and residualization refitted per draw"
+    },
+    "SE": {
+      "rho": 0.16931055803488188,
+      "ci95": [
+        0.14065938890984125,
+        0.19820726837123964
+      ],
+      "rows": 5440,
+      "gene_clusters": 1911,
+      "draws": 10000,
+      "seed": 20261115,
+      "continuous_controls": [
+        "de_nsig_counts_real"
+      ],
+      "context_indicators": [],
+      "scope": "gene-cluster bootstrap conditional on the observed contexts; ranks and residualization refitted per draw"
+    }
+  },
+  "effect_coverage_context_adjusted": {
+    "HVG": {
+      "rho": 0.1473787744598139,
+      "ci95": [
+        0.11356194041289627,
+        0.18070452410406415
+      ],
+      "rows": 5440,
+      "gene_clusters": 1911,
+      "draws": 10000,
+      "seed": 20261115,
+      "continuous_controls": [
+        "de_nsig_counts_real",
+        "other_ctx_cov"
+      ],
+      "context_indicators": [
+        "context_jurkat",
+        "context_k562",
+        "context_rpe1"
+      ],
+      "scope": "gene-cluster bootstrap conditional on the observed contexts; ranks and residualization refitted per draw"
+    },
+    "SE": {
+      "rho": 0.12689549078649065,
+      "ci95": [
+        0.09579706052604688,
+        0.15975527703912246
+      ],
+      "rows": 5440,
+      "gene_clusters": 1911,
+      "draws": 10000,
+      "seed": 20261115,
+      "continuous_controls": [
+        "de_nsig_counts_real",
+        "other_ctx_cov"
+      ],
+      "context_indicators": [
+        "context_jurkat",
+        "context_k562",
+        "context_rpe1"
+      ],
+      "scope": "gene-cluster bootstrap conditional on the observed contexts; ranks and residualization refitted per draw"
+    }
+  }
+}

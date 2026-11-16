@@ -1,0 +1,106 @@
+{
+  "inputs": [
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores.csv.gz",
+      "sha256": "9f77e2afb4d06bfc9b4da86287154d4ad84a86ca95da04f1f515bfa4d79e23d8",
+      "bytes": 98097,
+      "compression": "gzip",
+      "uncompressed_sha256": "0c6c5a8d5ccd19ff877bb7271aaaeed7d841641d260e15864a4a68d609df3594",
+      "uncompressed_bytes": 231542,
+      "work_relative_path": "state-kimi-r1/results/per_unit_scores.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores_rpe1.csv.gz",
+      "sha256": "c62c92e48dca36ff471dbaccea5ca8f0764797630ff45b501123072d26d7440b",
+      "bytes": 106013,
+      "compression": "gzip",
+      "uncompressed_sha256": "3f747d8b2107cffe0c608d022fead3ea717b567673c02925f6e7e4a9786ac3ad",
+      "uncompressed_bytes": 243549,
+      "work_relative_path": "state-kimi-r1/results/per_unit_scores_rpe1.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores_jurkat.csv.gz",
+      "sha256": "a90bac23ab4f5295251c5cc9c6077c9cb03529e3c5f952c8779c4e3afbd9b04b",
+      "bytes": 108349,
+      "compression": "gzip",
+      "uncompressed_sha256": "d635f83beae6fa8bd146420eb3de0e4be551b76ddd28eeba18ce5aac4f9c7cb8",
+      "uncompressed_bytes": 250824,
+      "work_relative_path": "state-kimi-r1/results/per_unit_scores_jurkat.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores_hepg2.csv.gz",
+      "sha256": "05dfd26545b6ab3840d39c0cabf6c644e97cb1eb2ed3bbdd849e107b81db6081",
+      "bytes": 94291,
+      "compression": "gzip",
+      "uncompressed_sha256": "f0576bf4caebe52aac70fbbefc323756dea7859ee01c771e6805ed32cfd03f9d",
+      "uncompressed_bytes": 217679,
+      "work_relative_path": "state-kimi-r1/results/per_unit_scores_hepg2.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/proximity_embedding_norms_rpe1.csv.gz",
+      "sha256": "ab0800872e173fda88b3fd2514ffc9b027b2d8496e0a5e1505923f7e449057f6",
+      "bytes": 13468,
+      "compression": "gzip",
+      "uncompressed_sha256": "d3dbd5ed9ce532050a68d971c5bdcc9e09749e1c1dfd493651174cfac2eed2a8",
+      "uncompressed_bytes": 44327,
+      "work_relative_path": "state-kimi-r1/results/proximity_embedding_norms_rpe1.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/proximity_embedding_norms_jurkat.csv.gz",
+      "sha256": "e60478222ae8fcb147902a1f7afd00da46477e5db23434601883486f8fc4bba8",
+      "bytes": 13834,
+      "compression": "gzip",
+      "uncompressed_sha256": "450bb5b30cb9f4dc91970dce7aa669470d7c7e3f410428b77b8b3fca56e5e3c8",
+      "uncompressed_bytes": 45463,
+      "work_relative_path": "state-kimi-r1/results/proximity_embedding_norms_jurkat.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/proximity_embedding_norms_hepg2.csv.gz",
+      "sha256": "f73d4ad4985d12648f15700743fa6f0036851a47842fef7d3bb9744ff31e2601",
+      "bytes": 12024,
+      "compression": "gzip",
+      "uncompressed_sha256": "60122f79ef1f2800126f52bf92356c55c3dc32259a82834f47022a24b0324573",
+      "uncompressed_bytes": 39598,
+      "work_relative_path": "state-kimi-r1/results/proximity_embedding_norms_hepg2.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-opus-r2/data/predictions.csv.gz",
+      "sha256": "be559cebd51fad7176813098ef3c79e4f0d9fd91aa82cecdcbac798565e6efdc",
+      "bytes": 6261767,
+      "compression": "gzip",
+      "uncompressed_sha256": "28dbbc22f7482a8f720f096de47eb83a20e84f2dbf7656d5a8a019a7e7d08bc1",
+      "uncompressed_bytes": 25494601,
+      "work_relative_path": "state-opus-r2/data/predictions.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-opus-r2/spectra_run/artifacts/replogle_go_features.csv.gz",
+      "sha256": "b0936f7b8a7529d8f296021af3668c692f34afd6f0e9f6cc6db491c4d5eb3381",
+      "bytes": 21635,
+      "compression": "gzip",
+      "uncompressed_sha256": "3b5d4a7114c2ddbb3a8599454c6888781d81b713826631f6fa4adccd0db6ca9f",
+      "uncompressed_bytes": 74604,
+      "work_relative_path": "state-opus-r2/spectra_run/artifacts/replogle_go_features.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-opus-r2/spectra_run/artifacts/go_terms.json.gz",
+      "sha256": "e670731e747b5ea221a56db1588eecf54319cde54818d28ef9a221eb7d33cc10",
+      "bytes": 84875,
+      "compression": "gzip",
+      "uncompressed_sha256": "46d2dfb54e52226ee3ea791b0a48a45fd80da7da6e8e2e15f070268c2d259616",
+      "uncompressed_bytes": 585098,
+      "work_relative_path": "state-opus-r2/spectra_run/artifacts/go_terms.json",
+      "role": "Original annotation input for recomputed density features"
+    }
+  ],
+  "source_evidence": "input_evidence.json",
+  "restore_command": "python restore_inputs.py --work /path/to/work"
+}

@@ -1,0 +1,5 @@
+score,first,last,paired_assays,paired_proteins,mean_last_minus_first,ci_low,ci_high,bootstrap_proteins,ci_status
+am,insert,q4,44,40,0.2148376385083108,0.1569940215591449,0.27246823170422235,40,estimated_from_protein_clusters
+am,coarse_hard,coarse_easy,61,52,0.12411651559629329,0.08035315502820406,0.16684356716341164,52,estimated_from_protein_clusters
+blosum,insert,q4,44,40,0.12761838181699126,0.08009097141387976,0.17151812830173982,40,estimated_from_protein_clusters
+blosum,coarse_hard,coarse_easy,61,52,0.06387077954137202,0.02358356568492631,0.09982836008311481,52,estimated_from_protein_clusters

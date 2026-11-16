@@ -1,0 +1,51 @@
+{
+  "input": "reconstructed/state-codex-r1/computed/analysis/controls/per_condition_scores.csv",
+  "input_sha256": "b5343513c7f5dd25dbf68eac5d39a1b060b4814edeccdf8adfbb1bc99468058e",
+  "rows": 4020,
+  "executed_notebook_cells": [
+    21
+  ],
+  "max_allowed_display_rounding_error": 5.1e-07,
+  "checks": [
+    {
+      "column": "distance",
+      "max_abs_difference": 4.833672255927235e-07
+    },
+    {
+      "column": "ccle_distance",
+      "max_abs_difference": null
+    },
+    {
+      "column": "n_compounds",
+      "max_abs_difference": 0.0
+    },
+    {
+      "column": "n_conditions",
+      "max_abs_difference": 0.0
+    },
+    {
+      "column": "state_rmse_mean",
+      "max_abs_difference": 3.160687929160133e-07
+    },
+    {
+      "column": "state_rmse_ci_low",
+      "max_abs_difference": 4.466225127508494e-07
+    },
+    {
+      "column": "state_rmse_ci_high",
+      "max_abs_difference": 4.275305487411174e-07
+    },
+    {
+      "column": "identity_rmse_mean",
+      "max_abs_difference": 3.45675743362861e-07
+    },
+    {
+      "column": "identity_rmse_ci_low",
+      "max_abs_difference": 3.476898251530969e-07
+    },
+    {
+      "column": "identity_rmse_ci_high",
+      "max_abs_difference": 4.837044949024261e-07
+    }
+  ]
+}

@@ -7332,7 +7332,12 @@ a.anchor-link {
     if (!diagrams.length) {
       return;
     }
-    const mermaid = (await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs")).default;
+    const mermaid = (await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.10.0/mermaid.esm.min.mjs")).default;
+    const elkUrl = "https://cdnjs.cloudflare.com/ajax/libs/mermaid-layout-elk/0.1.9/mermaid-layout-elk.esm.min.mjs";
+    if(elkUrl) {
+      const elkLayouts = (await import(elkUrl)).default;
+      mermaid.registerLayoutLoaders(elkLayouts);
+    }
     const parser = new DOMParser();
 
     mermaid.initialize({
@@ -7429,7 +7434,8 @@ a.anchor-link {
      * Post-process to ensure mermaid diagrams contain only valid SVG and XHTML.
      */
     function cleanMermaidSvg(svg) {
-      return svg.replace(RE_VOID_ELEMENT, replaceVoidElement);
+      svg = svg.replace(RE_VOID_ELEMENT, replaceVoidElement);
+      return `${SVG_XML_HEADER}${svg}`;
     }
 
 
@@ -7455,6 +7461,285 @@ a.anchor-link {
       }
       return `<${tag} ${rest}>`;
     }
+
+
+  /**
+   * Named HTML entities with their decimal equivalent codes.
+   *
+   * @see https://www.w3.org/TR/WD-html40-970708/sgml/entities.html
+   * */
+  const HTML_ENTITIES = `<!ENTITY Aacute "&#193;">
+<!ENTITY aacute "&#225;">
+<!ENTITY Acirc "&#194;">
+<!ENTITY acirc "&#226;">
+<!ENTITY acute "&#180;">
+<!ENTITY AElig "&#198;">
+<!ENTITY aelig "&#230;">
+<!ENTITY Agrave "&#192;">
+<!ENTITY agrave "&#224;">
+<!ENTITY alefsym "&#8501;">
+<!ENTITY Alpha "&#913;">
+<!ENTITY alpha "&#945;">
+<!ENTITY amp "&#38;">
+<!ENTITY and "&#8869;">
+<!ENTITY ang "&#8736;">
+<!ENTITY Aring "&#197;">
+<!ENTITY aring "&#229;">
+<!ENTITY asymp "&#8776;">
+<!ENTITY Atilde "&#195;">
+<!ENTITY atilde "&#227;">
+<!ENTITY Auml "&#196;">
+<!ENTITY auml "&#228;">
+<!ENTITY bdquo "&#8222;">
+<!ENTITY Beta "&#914;">
+<!ENTITY beta "&#946;">
+<!ENTITY brvbar "&#166;">
+<!ENTITY bull "&#8226;">
+<!ENTITY cap "&#8745;">
+<!ENTITY Ccedil "&#199;">
+<!ENTITY ccedil "&#231;">
+<!ENTITY cedil "&#184;">
+<!ENTITY cent "&#162;">
+<!ENTITY Chi "&#935;">
+<!ENTITY chi "&#967;">
+<!ENTITY circ "&#710;">
+<!ENTITY clubs "&#9827;">
+<!ENTITY cong "&#8773;">
+<!ENTITY copy "&#169;">
+<!ENTITY crarr "&#8629;">
+<!ENTITY cup "&#8746;">
+<!ENTITY curren "&#164;">
+<!ENTITY dagger "&#8224;">
+<!ENTITY Dagger "&#8225;">
+<!ENTITY darr "&#8595;">
+<!ENTITY dArr "&#8659;">
+<!ENTITY deg "&#176;">
+<!ENTITY Delta "&#916;">
+<!ENTITY delta "&#948;">
+<!ENTITY diams "&#9830;">
+<!ENTITY divide "&#247;">
+<!ENTITY Eacute "&#201;">
+<!ENTITY eacute "&#233;">
+<!ENTITY Ecirc "&#202;">
+<!ENTITY ecirc "&#234;">
+<!ENTITY Egrave "&#200;">
+<!ENTITY egrave "&#232;">
+<!ENTITY empty "&#8709;">
+<!ENTITY emsp "&#8195;">
+<!ENTITY ensp "&#8194;">
+<!ENTITY epsilon "&#949;">
+<!ENTITY Epsilon "&#917;">
+<!ENTITY equiv "&#8801;">
+<!ENTITY Eta "&#919;">
+<!ENTITY eta "&#951;">
+<!ENTITY ETH "&#208;">
+<!ENTITY eth "&#240;">
+<!ENTITY Euml "&#203;">
+<!ENTITY euml "&#235;">
+<!ENTITY exist "&#8707;">
+<!ENTITY fnof "&#402;">
+<!ENTITY forall "&#8704;">
+<!ENTITY frac12 "&#189;">
+<!ENTITY frac14 "&#188;">
+<!ENTITY frac34 "&#190;">
+<!ENTITY frasl "&#8260;">
+<!ENTITY Gamma "&#915;">
+<!ENTITY gamma "&#947;">
+<!ENTITY ge "&#8805;">
+<!ENTITY gt "&#62;">
+<!ENTITY harr "&#8596;">
+<!ENTITY hArr "&#8660;">
+<!ENTITY hearts "&#9829;">
+<!ENTITY hellip "&#8230;">
+<!ENTITY Iacute "&#205;">
+<!ENTITY iacute "&#237;">
+<!ENTITY Icirc "&#206;">
+<!ENTITY icirc "&#238;">
+<!ENTITY iexcl "&#161;">
+<!ENTITY Igrave "&#204;">
+<!ENTITY igrave "&#236;">
+<!ENTITY image "&#8465;">
+<!ENTITY infin "&#8734;">
+<!ENTITY int "&#8747;">
+<!ENTITY Iota "&#921;">
+<!ENTITY iota "&#953;">
+<!ENTITY iquest "&#191;">
+<!ENTITY isin "&#8712;">
+<!ENTITY Iuml "&#207;">
+<!ENTITY iuml "&#239;">
+<!ENTITY Kappa "&#922;">
+<!ENTITY kappa "&#954;">
+<!ENTITY Lambda "&#923;">
+<!ENTITY lambda "&#955;">
+<!ENTITY lang "&#9001;">
+<!ENTITY laquo "&#171;">
+<!ENTITY larr "&#8592;">
+<!ENTITY lArr "&#8656;">
+<!ENTITY lceil "&#8968;">
+<!ENTITY ldquo "&#8220;">
+<!ENTITY le "&#8804;">
+<!ENTITY lfloor "&#8970;">
+<!ENTITY lowast "&#8727;">
+<!ENTITY loz "&#9674;">
+<!ENTITY lrm "&#8206;">
+<!ENTITY lsaquo "&#8249;">
+<!ENTITY lsquo "&#8216;">
+<!ENTITY lt "&#60;">
+<!ENTITY macr "&#175;">
+<!ENTITY mdash "&#8212;">
+<!ENTITY micro "&#181;">
+<!ENTITY middot "&#183;">
+<!ENTITY minus "&#8722;">
+<!ENTITY Mu "&#924;">
+<!ENTITY mu "&#956;">
+<!ENTITY nabla "&#8711;">
+<!ENTITY nbsp "&#160;">
+<!ENTITY ndash "&#8211;">
+<!ENTITY ne "&#8800;">
+<!ENTITY ni "&#8715;">
+<!ENTITY not "&#172;">
+<!ENTITY notin "&#8713;">
+<!ENTITY nsub "&#8836;">
+<!ENTITY Ntilde "&#209;">
+<!ENTITY ntilde "&#241;">
+<!ENTITY Nu "&#925;">
+<!ENTITY nu "&#957;">
+<!ENTITY Oacute "&#211;">
+<!ENTITY oacute "&#243;">
+<!ENTITY Ocirc "&#212;">
+<!ENTITY ocirc "&#244;">
+<!ENTITY OElig "&#338;">
+<!ENTITY oelig "&#339;">
+<!ENTITY Ograve "&#210;">
+<!ENTITY ograve "&#242;">
+<!ENTITY oline "&#8254;">
+<!ENTITY Omega "&#937;">
+<!ENTITY omega "&#969;">
+<!ENTITY Omicron "&#927;">
+<!ENTITY omicron "&#959;">
+<!ENTITY oplus "&#8853;">
+<!ENTITY or "&#8870;">
+<!ENTITY ordf "&#170;">
+<!ENTITY ordm "&#186;">
+<!ENTITY Oslash "&#216;">
+<!ENTITY oslash "&#248;">
+<!ENTITY Otilde "&#213;">
+<!ENTITY otilde "&#245;">
+<!ENTITY otimes "&#8855;">
+<!ENTITY Ouml "&#214;">
+<!ENTITY ouml "&#246;">
+<!ENTITY para "&#182;">
+<!ENTITY part "&#8706;">
+<!ENTITY permil "&#8240;">
+<!ENTITY perp "&#8869;">
+<!ENTITY Phi "&#934;">
+<!ENTITY phi "&#966;">
+<!ENTITY Pi "&#928;">
+<!ENTITY pi "&#960;">
+<!ENTITY piv "&#982;">
+<!ENTITY plusmn "&#177;">
+<!ENTITY pound "&#163;">
+<!ENTITY prime "&#8242;">
+<!ENTITY Prime "&#8243;">
+<!ENTITY prod "&#8719;">
+<!ENTITY prop "&#8733;">
+<!ENTITY Psi "&#936;">
+<!ENTITY psi "&#968;">
+<!ENTITY quot "&#34;">
+<!ENTITY radic "&#8730;">
+<!ENTITY rang "&#9002;">
+<!ENTITY raquo "&#187;">
+<!ENTITY rarr "&#8594;">
+<!ENTITY rArr "&#8658;">
+<!ENTITY rceil "&#8969;">
+<!ENTITY rdquo "&#8221;">
+<!ENTITY real "&#8476;">
+<!ENTITY reg "&#174;">
+<!ENTITY rfloor "&#8971;">
+<!ENTITY Rho "&#929;">
+<!ENTITY rho "&#961;">
+<!ENTITY rlm "&#8207;">
+<!ENTITY rsaquo "&#8250;">
+<!ENTITY rsquo "&#8217;">
+<!ENTITY sbquo "&#8218;">
+<!ENTITY Scaron "&#352;">
+<!ENTITY scaron "&#353;">
+<!ENTITY sdot "&#8901;">
+<!ENTITY sect "&#167;">
+<!ENTITY shy "&#173;">
+<!ENTITY Sigma "&#931;">
+<!ENTITY sigma "&#963;">
+<!ENTITY sigmaf "&#962;">
+<!ENTITY sim "&#8764;">
+<!ENTITY spades "&#9824;">
+<!ENTITY sub "&#8834;">
+<!ENTITY sube "&#8838;">
+<!ENTITY sum "&#8721;">
+<!ENTITY sup "&#8835;">
+<!ENTITY sup1 "&#185;">
+<!ENTITY sup2 "&#178;">
+<!ENTITY sup3 "&#179;">
+<!ENTITY supe "&#8839;">
+<!ENTITY szlig "&#223;">
+<!ENTITY Tau "&#932;">
+<!ENTITY tau "&#964;">
+<!ENTITY there4 "&#8756;">
+<!ENTITY Theta "&#920;">
+<!ENTITY theta "&#952;">
+<!ENTITY thetasym "&#977;">
+<!ENTITY thinsp "&#8201;">
+<!ENTITY THORN "&#222;">
+<!ENTITY thorn "&#254;">
+<!ENTITY tilde "&#732;">
+<!ENTITY times "&#215;">
+<!ENTITY trade "&#8482;">
+<!ENTITY Uacute "&#218;">
+<!ENTITY uacute "&#250;">
+<!ENTITY uarr "&#8593;">
+<!ENTITY uArr "&#8657;">
+<!ENTITY Ucirc "&#219;">
+<!ENTITY ucirc "&#251;">
+<!ENTITY Ugrave "&#217;">
+<!ENTITY ugrave "&#249;">
+<!ENTITY uml "&#168;">
+<!ENTITY upsih "&#978;">
+<!ENTITY Upsilon "&#933;">
+<!ENTITY upsilon "&#965;">
+<!ENTITY Uuml "&#220;">
+<!ENTITY uuml "&#252;">
+<!ENTITY weierp "&#8472;">
+<!ENTITY Xi "&#926;">
+<!ENTITY xi "&#958;">
+<!ENTITY Yacute "&#221;">
+<!ENTITY yacute "&#253;">
+<!ENTITY yen "&#165;">
+<!ENTITY Yuml "&#376;">
+<!ENTITY yuml "&#255;">
+<!ENTITY Zeta "&#918;">
+<!ENTITY zeta "&#950;">
+<!ENTITY zwj "&#8205;">
+<!ENTITY zwnj "&#8204;">`.replace(/\n/g, ' ');
+
+  /**
+   * A reasonably strict xml declaration.
+   */
+  const XML_DECL = '<?xml version="1.0" standalone="no"?>';
+
+  /**
+   * The beginning of the XML doctype declaration.
+   */
+  const DOCTYPE_START = `<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [`;
+
+  /**
+   * The end of the XML docype declaration.
+   */
+  const DOCTYPE_END = ']>';
+
+  /**
+   * A full header for an SVG XML document.
+   */
+  const SVG_XML_HEADER = `${XML_DECL}
+    ${DOCTYPE_START}${HTML_ENTITIES}${DOCTYPE_END}`;
 
     void Promise.all([...diagrams].map(renderOneMarmaid));
   });
@@ -7531,7 +7816,7 @@ body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
 </style>
 </head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
+<nav class="notebook-navigation"><a href="../../index.html">All notebooks</a> · <a href="../../../corrections/scientific_20261115/records/state-kimi-r1-test-04.scientific-revision.json">Correction record</a><p>Replaced pooled independence assumptions and the invalid embedding Z with joint gene-bootstrap intervals. Affected calculations rerun from retained records; other outputs retain their earlier execution.</p></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ae1ca34d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7750,9 +8035,8 @@ body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">&#182;</a></h2><p>A seen pair is present in the training means for its context. E counts the other contexts in which the gene occurs. Levels separate seen pairs from unseen pairs with E=3,2,1. The embedding diagnostic is the L2 norm of each gene column of <code>pert_encoder.0.weight</code>, mapped through that checkpoint’s one-hot dictionary.</p>
+<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">¶</a></h2><p>A seen pair is present in the training means for its context. E counts the other contexts in which the gene occurs. Levels separate seen pairs from unseen pairs with E=3,2,1. The embedding diagnostic is the L2 norm of each gene column of <code>pert_encoder.0.weight</code>, mapped through that checkpoint’s one-hot dictionary.</p>
 <p>This is the magnitude of a learned weight vector, not a distance from a query to its nearest training embedding.</p>
-
 </div>
 </div>
 </div>
@@ -8070,9 +8354,8 @@ body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">&#182;</a></h2><p>Use the same perturbation units for STATE and both references. Discovery tests the graded levels and adjusts for log effect magnitude and log cell count. The binary confirmation contrast is averaged equally across the three additional contexts; its separate Stouffer statistic uses square-root sample-size weights. Genes can recur across those contexts, so the pooled calculation does not establish independent-cohort replication.</p>
-<p><strong>Embedding pooled statistic:</strong> the saved <code>A1c_pooled_Z</code> adds Fisher-transformed correlations with square-root weights but omits the normalization required for a pooled Z statistic. Its reported Z and p value should not be used as calibrated evidence. Context-specific correlations and adjusted models are shown separately; a corrected, dependence-aware pooling analysis is still needed. Printed p values of 0 reflect numerical underflow, not exact zero probabilities.</p>
-
+<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">¶</a></h2><p>The discovery analysis tests the graded levels and adjusts for log effect magnitude and log cell count. Confirmation keeps the three context-specific comparisons separate. The pooled binary contrast weights contexts equally; the pooled embedding correlation Fisher-averages the context correlations with their fixed original n − 3 weights.</p>
+<p>Both pooled 95% intervals now use 10,000 joint gene-bootstrap draws (seed 20261115): each sampled gene carries all of its observed context rows, and tied ranks are recalculated in each draw. These intervals account for repeated genes across contexts, conditional on the three observed contexts. They do not establish independent-site replication. The previous pooled Z/p values have been removed; no pooled p value is reported.</p>
 </div>
 </div>
 </div>
@@ -8245,7 +8528,7 @@ L1_unseen_E1  0.0147  0.0072      3.4099  126.3717
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
@@ -8265,12 +8548,67 @@ L1_unseen_E1  0.0147  0.0072      3.4099  126.3717
         <span class="n">bs</span><span class="p">[</span><span class="n">b</span><span class="p">]</span> <span class="o">=</span> <span class="n">fn</span><span class="p">(</span><span class="n">rng</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
     <span class="k">return</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">bs</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)),</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">bs</span><span class="p">,</span> <span class="mf">97.5</span><span class="p">)))</span>
 
+<span class="k">def</span><span class="w"> </span><span class="nf">joint_gene_bootstrap</span><span class="p">(</span><span class="n">per</span><span class="p">,</span> <span class="n">n_boot</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">20261115</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Resample genes jointly across the observed contexts; recompute tied ranks."""</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">rankdata</span>
+    <span class="n">genes</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">()</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">gene</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">per</span><span class="o">.</span><span class="n">values</span><span class="p">())))</span>
+    <span class="n">gene_index</span> <span class="o">=</span> <span class="p">{</span><span class="n">g</span><span class="p">:</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">genes</span><span class="p">)}</span>
+    <span class="n">blocks</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">fixed_weights</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">context</span> <span class="ow">in</span> <span class="n">CTXS</span><span class="p">:</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">per</span><span class="p">[</span><span class="n">context</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">d</span><span class="o">.</span><span class="n">gene</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'Expected one perturbation unit per gene/context'</span><span class="p">)</span>
+        <span class="n">ids</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">gene</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">gene_index</span><span class="p">)</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+        <span class="n">seen</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">seen_pair</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">pearson_delta_state</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+        <span class="n">norm_values</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">emb_norm</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+        <span class="n">valid</span> <span class="o">=</span> <span class="p">(</span><span class="o">~</span><span class="n">seen</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">norm_values</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'Nonfinite prediction score'</span><span class="p">)</span>
+        <span class="n">blocks</span><span class="p">[</span><span class="n">context</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">ids</span><span class="p">,</span> <span class="n">seen</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">norm_values</span><span class="p">,</span> <span class="n">valid</span><span class="p">)</span>
+        <span class="n">fixed_weights</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">valid</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span> <span class="o">-</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="n">fixed_weights</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">fixed_weights</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">fixed_weights</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'Insufficient unseen units for the fixed pooling weights'</span><span class="p">)</span>
+    <span class="n">generator</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+    <span class="n">draws</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">n_boot</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_boot</span><span class="p">):</span>
+        <span class="n">multiplicity</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">generator</span><span class="o">.</span><span class="n">integers</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">genes</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">genes</span><span class="p">)),</span> <span class="n">minlength</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">genes</span><span class="p">))</span>
+        <span class="n">context_deltas</span><span class="p">,</span> <span class="n">context_rhos</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">context</span> <span class="ow">in</span> <span class="n">CTXS</span><span class="p">:</span>
+            <span class="n">ids</span><span class="p">,</span> <span class="n">seen</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">norm_values</span><span class="p">,</span> <span class="n">valid</span> <span class="o">=</span> <span class="n">blocks</span><span class="p">[</span><span class="n">context</span><span class="p">]</span>
+            <span class="n">weights</span> <span class="o">=</span> <span class="n">multiplicity</span><span class="p">[</span><span class="n">ids</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">weights</span><span class="p">[</span><span class="n">seen</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">weights</span><span class="p">[</span><span class="o">~</span><span class="n">seen</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'Degenerate seen/unseen bootstrap group'</span><span class="p">)</span>
+            <span class="n">context_deltas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">seen</span><span class="p">],</span> <span class="n">weights</span><span class="o">=</span><span class="n">weights</span><span class="p">[</span><span class="n">seen</span><span class="p">])</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="o">~</span><span class="n">seen</span><span class="p">],</span> <span class="n">weights</span><span class="o">=</span><span class="n">weights</span><span class="p">[</span><span class="o">~</span><span class="n">seen</span><span class="p">]))</span>
+            <span class="c1"># Expanding each gene by its sampled multiplicity preserves all tied ranks.</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">norm_values</span><span class="p">[</span><span class="n">valid</span><span class="p">],</span> <span class="n">weights</span><span class="p">[</span><span class="n">valid</span><span class="p">])</span>
+            <span class="n">yy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">valid</span><span class="p">],</span> <span class="n">weights</span><span class="p">[</span><span class="n">valid</span><span class="p">])</span>
+            <span class="n">rx</span><span class="p">,</span> <span class="n">ry</span> <span class="o">=</span> <span class="n">rankdata</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">rankdata</span><span class="p">(</span><span class="n">yy</span><span class="p">)</span>
+            <span class="n">rho</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">rx</span><span class="p">,</span> <span class="n">ry</span><span class="p">)[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">rho</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'Degenerate context correlation in bootstrap; no zero substitution'</span><span class="p">)</span>
+            <span class="n">context_rhos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rho</span><span class="p">)</span>
+        <span class="n">fisher</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arctanh</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">context_rhos</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.999</span><span class="p">,</span> <span class="mf">0.999</span><span class="p">))</span>
+        <span class="n">draws</span><span class="p">[</span><span class="n">b</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">context_deltas</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">fisher</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="n">fixed_weights</span><span class="p">))]</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">draws</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'binary_equal_context_delta'</span><span class="p">,</span> <span class="s1">'embedding_fisher_weighted_rho'</span><span class="p">])</span>
+    <span class="n">table</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">WORK</span> <span class="o">/</span> <span class="s1">'results/pooled_gene_bootstrap_draws.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">'resampling_unit'</span><span class="p">:</span> <span class="s1">'gene identity, shared across all observed contexts'</span><span class="p">,</span>
+        <span class="s1">'gene_clusters'</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">genes</span><span class="p">),</span> <span class="s1">'draws'</span><span class="p">:</span> <span class="n">n_boot</span><span class="p">,</span> <span class="s1">'seed'</span><span class="p">:</span> <span class="n">seed</span><span class="p">,</span>
+        <span class="s1">'scope'</span><span class="p">:</span> <span class="s1">'conditional on the three observed contexts; not independent-site replication'</span><span class="p">,</span>
+        <span class="s1">'embedding_context_weights'</span><span class="p">:</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">CTXS</span><span class="p">,</span> <span class="n">fixed_weights</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">())),</span>
+        <span class="s1">'binary_ci95'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="n">draws</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.025</span><span class="p">,</span> <span class="mf">0.975</span><span class="p">])</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+        <span class="s1">'embedding_ci95'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="n">draws</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.025</span><span class="p">,</span> <span class="mf">0.975</span><span class="p">])</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+    <span class="p">}</span>
+
 <span class="k">def</span><span class="w"> </span><span class="nf">analyze_confirmation</span><span class="p">():</span>
     <span class="n">per</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">CTXS</span><span class="p">:</span>
         <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">WORK</span> <span class="o">/</span> <span class="sa">f</span><span class="s1">'results/per_unit_scores_</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">.csv'</span><span class="p">))</span>
         <span class="n">nm</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">WORK</span> <span class="o">/</span> <span class="sa">f</span><span class="s1">'results/proximity_embedding_norms_</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">.csv'</span><span class="p">))[[</span><span class="s1">'gene'</span><span class="p">,</span> <span class="s1">'emb_norm'</span><span class="p">]]</span>
-        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">nm</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'gene'</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'left'</span><span class="p">)</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">nm</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'gene'</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'left'</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="s1">'one_to_one'</span><span class="p">)</span>
         <span class="n">per</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span>
     <span class="n">out</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'contexts'</span><span class="p">:</span> <span class="p">{}}</span>
     <span class="n">zs</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">deltas</span> <span class="o">=</span> <span class="p">([],</span> <span class="p">[],</span> <span class="p">[])</span>
@@ -8305,20 +8643,22 @@ L1_unseen_E1  0.0147  0.0072      3.4099  126.3717
         <span class="n">zs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
         <span class="n">ws</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">u</span><span class="p">)))</span>
         <span class="n">deltas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">d_state</span><span class="p">)</span>
-    <span class="n">Z</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">zs</span><span class="p">)</span> <span class="o">*</span> <span class="n">ws</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ws</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)))</span>
-    <span class="n">p_pool</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">Z</span><span class="p">))</span>
     <span class="n">pooled_delta</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">deltas</span><span class="p">))</span>
-    <span class="n">n_consistent</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">sum</span><span class="p">((</span><span class="n">d</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">deltas</span><span class="p">)))</span>
-    <span class="n">fz</span><span class="p">,</span> <span class="n">fw</span> <span class="o">=</span> <span class="p">([],</span> <span class="p">[])</span>
-    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">CTXS</span><span class="p">:</span>
-        <span class="n">r</span> <span class="o">=</span> <span class="n">out</span><span class="p">[</span><span class="s1">'contexts'</span><span class="p">][</span><span class="n">c</span><span class="p">][</span><span class="s1">'a1c_spearman_rho'</span><span class="p">]</span>
-        <span class="n">n</span> <span class="o">=</span> <span class="n">out</span><span class="p">[</span><span class="s1">'contexts'</span><span class="p">][</span><span class="n">c</span><span class="p">][</span><span class="s1">'a1c_n_unseen'</span><span class="p">]</span>
-        <span class="n">fz</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arctanh</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.999</span><span class="p">),</span> <span class="mf">0.999</span><span class="p">)))</span>
-        <span class="n">fw</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">3</span><span class="p">)</span>
-    <span class="n">r_pool</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">fz</span><span class="p">)</span> <span class="o">*</span> <span class="n">fw</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">fw</span><span class="p">)))</span>
-    <span class="n">Z_r</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">fz</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">fw</span><span class="p">)))</span>
-    <span class="n">p_r</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">Z_r</span><span class="p">))</span>
-    <span class="n">out</span><span class="p">[</span><span class="s1">'pooled'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">A1b_stouffer_Z</span><span class="o">=</span><span class="n">Z</span><span class="p">,</span> <span class="n">A1b_p_one_sided</span><span class="o">=</span><span class="n">p_pool</span><span class="p">,</span> <span class="n">A1b_pooled_delta</span><span class="o">=</span><span class="n">pooled_delta</span><span class="p">,</span> <span class="n">A1b_contexts_consistent</span><span class="o">=</span><span class="n">n_consistent</span><span class="p">,</span> <span class="n">A1b_pass</span><span class="o">=</span><span class="nb">bool</span><span class="p">(</span><span class="n">p_pool</span> <span class="o">&lt;</span> <span class="mf">0.04</span> <span class="ow">and</span> <span class="n">pooled_delta</span> <span class="o">&gt;=</span> <span class="mf">0.05</span> <span class="ow">and</span> <span class="p">(</span><span class="n">n_consistent</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">)),</span> <span class="n">A1c_pooled_spearman</span><span class="o">=</span><span class="n">r_pool</span><span class="p">,</span> <span class="n">A1c_pooled_Z</span><span class="o">=</span><span class="n">Z_r</span><span class="p">,</span> <span class="n">A1c_p_one_sided</span><span class="o">=</span><span class="n">p_r</span><span class="p">)</span>
+    <span class="n">n_consistent</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">d</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">deltas</span><span class="p">))</span>
+    <span class="n">fisher</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">arctanh</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">out</span><span class="p">[</span><span class="s1">'contexts'</span><span class="p">][</span><span class="n">c</span><span class="p">][</span><span class="s1">'a1c_spearman_rho'</span><span class="p">],</span> <span class="o">-</span><span class="mf">0.999</span><span class="p">,</span> <span class="mf">0.999</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">CTXS</span><span class="p">])</span>
+    <span class="n">fixed_weights</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">out</span><span class="p">[</span><span class="s1">'contexts'</span><span class="p">][</span><span class="n">c</span><span class="p">][</span><span class="s1">'a1c_n_unseen'</span><span class="p">]</span> <span class="o">-</span> <span class="mi">3</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">CTXS</span><span class="p">])</span>
+    <span class="n">r_pool</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">fisher</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="n">fixed_weights</span><span class="p">)))</span>
+    <span class="n">bootstrap</span> <span class="o">=</span> <span class="n">joint_gene_bootstrap</span><span class="p">(</span><span class="n">per</span><span class="p">)</span>
+    <span class="n">out</span><span class="p">[</span><span class="s1">'pooled'</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">'A1b_pooled_delta'</span><span class="p">:</span> <span class="n">pooled_delta</span><span class="p">,</span>
+        <span class="s1">'A1b_gene_bootstrap_ci95'</span><span class="p">:</span> <span class="n">bootstrap</span><span class="p">[</span><span class="s1">'binary_ci95'</span><span class="p">],</span>
+        <span class="s1">'A1b_contexts_consistent'</span><span class="p">:</span> <span class="n">n_consistent</span><span class="p">,</span>
+        <span class="s1">'A1c_pooled_spearman'</span><span class="p">:</span> <span class="n">r_pool</span><span class="p">,</span>
+        <span class="s1">'A1c_gene_bootstrap_ci95'</span><span class="p">:</span> <span class="n">bootstrap</span><span class="p">[</span><span class="s1">'embedding_ci95'</span><span class="p">],</span>
+        <span class="s1">'uncertainty'</span><span class="p">:</span> <span class="n">bootstrap</span><span class="p">,</span>
+        <span class="s1">'pooled_p_value'</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s1">'correction'</span><span class="p">:</span> <span class="s1">'Joint gene-bootstrap intervals replace the independence-based binary Z/p and the invalid unnormalized embedding Z/p.'</span><span class="p">,</span>
+    <span class="p">}</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">WORK</span> <span class="o">/</span> <span class="s1">'results/confirm_summary.json'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
@@ -8367,88 +8707,113 @@ L1_unseen_E1  0.0147  0.0072      3.4099  126.3717
     "rpe1": {
       "n_seen": 438,
       "n_unseen": 1061,
-      "mean_pd_seen": 0.6491532363659345,
-      "mean_pd_unseen": 0.5314014218276358,
-      "delta_state": 0.11775181453829864,
+      "mean_pd_seen": 0.6491532354166667,
+      "mean_pd_unseen": 0.5314014208911216,
+      "delta_state": 0.11775181452554506,
       "delta_boot_ci95": [
-        0.08259414939240671,
-        0.1526425293722618
+        0.08259415099911806,
+        0.15264252996452302
       ],
-      "z": 6.45107873771258,
-      "delta_B1": -0.0015301850096638425,
-      "delta_B2": 0.018545635819672557,
+      "z": 6.451078743832596,
+      "delta_B1": -0.001530186338177586,
+      "delta_B2": 0.018545636894244044,
       "adjusted_seen_coef": {
-        "coef": 0.1197689558919503,
-        "p": 5.269564989898557e-33
+        "coef": 0.11976895523912329,
+        "p": 5.26956990066003e-33
       },
       "a1c_spearman_rho": 0.4655901329024385,
-      "a1c_p_one_sided": 1.706302526903276e-58,
+      "a1c_p_one_sided": 1.7063025269032536e-58,
       "a1c_adjusted": {
-        "coef": -0.005868433041290207,
-        "p": 0.08765427871168702
+        "coef": -0.005868432014174569,
+        "p": 0.08765433485982288
       },
       "a1c_n_unseen": 1061
     },
     "jurkat": {
       "n_seen": 453,
       "n_unseen": 1084,
-      "mean_pd_seen": 0.4724011666805249,
-      "mean_pd_unseen": 0.35401361699626743,
-      "delta_state": 0.11838754968425746,
+      "mean_pd_seen": 0.47240116595050774,
+      "mean_pd_unseen": 0.35401361665744463,
+      "delta_state": 0.11838754929306311,
       "delta_boot_ci95": [
-        0.08759625989534064,
-        0.14928452258315766
+        0.08759625648563872,
+        0.14928452148345966
       ],
-      "z": 7.492028961803541,
-      "delta_B1": -0.004181167692241972,
-      "delta_B2": -0.0093322883099215,
+      "z": 7.49202895484386,
+      "delta_B1": -0.004181170410432367,
+      "delta_B2": -0.00933228683581061,
       "adjusted_seen_coef": {
-        "coef": 0.13284214885298906,
-        "p": 2.2110969715859128e-51
+        "coef": 0.13284214640982847,
+        "p": 2.2111034240398072e-51
       },
       "a1c_spearman_rho": 0.5451644604654684,
-      "a1c_p_one_sided": 3.0253156591749655e-85,
+      "a1c_p_one_sided": 3.0253156591750884e-85,
       "a1c_adjusted": {
-        "coef": 0.017352272071075356,
-        "p": 5.068692953343728e-08
+        "coef": 0.017352272820442907,
+        "p": 5.068685485904404e-08
       },
       "a1c_n_unseen": 1084
     },
     "hepg2": {
       "n_seen": 395,
       "n_unseen": 945,
-      "mean_pd_seen": 0.5187939885255138,
-      "mean_pd_unseen": 0.40174609079695844,
-      "delta_state": 0.1170478977285554,
+      "mean_pd_seen": 0.5187939869810126,
+      "mean_pd_unseen": 0.401746089454836,
+      "delta_state": 0.11704789752617667,
       "delta_boot_ci95": [
-        0.07845545711425012,
-        0.15669077739454448
+        0.07845545577755025,
+        0.1566907755345091
       ],
-      "z": 5.860951709500767,
-      "delta_B1": -0.013227217997857088,
-      "delta_B2": -0.004280057700506268,
+      "z": 5.860951703734086,
+      "delta_B1": -0.013227215716445473,
+      "delta_B2": -0.0042800531707344325,
       "adjusted_seen_coef": {
-        "coef": 0.10907551412880193,
-        "p": 1.0764082269622515e-29
+        "coef": 0.10907551395137745,
+        "p": 1.076408566020354e-29
       },
       "a1c_spearman_rho": 0.49915181717507306,
-      "a1c_p_one_sided": 5.4521438831928564e-61,
+      "a1c_p_one_sided": 5.452143883193265e-61,
       "a1c_adjusted": {
-        "coef": 0.00735895202535103,
-        "p": 0.0332632042282173
+        "coef": 0.007358953567628245,
+        "p": 0.033263166661493405
       },
       "a1c_n_unseen": 945
     }
   },
   "pooled": {
-    "A1b_stouffer_Z": 11.459085853502438,
-    "A1b_p_one_sided": 0.0,
-    "A1b_pooled_delta": 0.11772908731703717,
+    "A1b_pooled_delta": 0.11772908711492829,
+    "A1b_gene_bootstrap_ci95": [
+      0.0968726880817187,
+      0.13828840807059026
+    ],
     "A1b_contexts_consistent": 3,
-    "A1b_pass": true,
     "A1c_pooled_spearman": 0.504527501576208,
-    "A1c_pooled_Z": 53.336430163158965,
-    "A1c_p_one_sided": 0.0
+    "A1c_gene_bootstrap_ci95": [
+      0.47370373483347855,
+      0.5337876353934637
+    ],
+    "uncertainty": {
+      "resampling_unit": "gene identity, shared across all observed contexts",
+      "gene_clusters": 1949,
+      "draws": 10000,
+      "seed": 20261115,
+      "scope": "conditional on the three observed contexts; not independent-site replication",
+      "embedding_context_weights": {
+        "rpe1": 1058,
+        "jurkat": 1081,
+        "hepg2": 942
+      },
+      "binary_ci95": [
+        0.0968726880817187,
+        0.13828840807059026
+      ],
+      "embedding_ci95": [
+        0.47370373483347855,
+        0.5337876353934637
+      ]
+    },
+    "pooled_p_value": null,
+    "correction": "Joint gene-bootstrap intervals replace the independence-based binary Z/p and the invalid unnormalized embedding Z/p."
   }
 }
 </pre>
@@ -8911,8 +9276,7 @@ L1_unseen_E1  0.0147  0.0072      3.4099  126.3717
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">&#182;</a></h2><p>The cell-count analysis is a nuisance-control check at the perturbation-unit level. Cell count remains associated with performance, and the fitted seen-pair coefficient remains positive in the displayed adjusted models. This does not establish that all sampling or response-strength confounding has been removed.</p>
-
+<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">¶</a></h2><p>The cell-count analysis is a nuisance-control check at the perturbation-unit level. Cell count remains associated with performance, and the fitted seen-pair coefficient remains positive in the displayed adjusted models. This does not establish that all sampling or response-strength confounding has been removed.</p>
 </div>
 </div>
 </div>

@@ -1,0 +1,46 @@
+{
+  "method": "Independent calculation from retained individual variants to all saved per-assay Spearman correlations, followed by independently implemented whole-protein bootstrap of weighted curve ratios and mean paired assay contrasts. No imported correction helper.",
+  "source_sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+  "variants": 270572,
+  "assays": 72,
+  "proteins": 63,
+  "per_assay_rows_checked": 4229,
+  "unique_per_assay_statistics_recomputed": 1769,
+  "curve_estimates_and_intervals_checked": 79,
+  "paired_estimates_and_intervals_checked": 21,
+  "correctly_unavailable_intervals": 4,
+  "absolute_tolerance": 1e-14,
+  "entries": [
+    {
+      "axis": 3,
+      "per_assay_rows": 432,
+      "curve_rows": 14,
+      "contrast_rows": 4
+    },
+    {
+      "axis": 4,
+      "per_assay_rows": 964,
+      "curve_rows": 16,
+      "contrast_rows": 4
+    },
+    {
+      "axis": 5,
+      "per_assay_rows": 476,
+      "curve_rows": 10,
+      "contrast_rows": 4
+    },
+    {
+      "axis": 6,
+      "per_assay_rows": 1393,
+      "curve_rows": 23,
+      "contrast_rows": 5
+    },
+    {
+      "axis": 7,
+      "per_assay_rows": 964,
+      "curve_rows": 16,
+      "contrast_rows": 4
+    }
+  ],
+  "errors": []
+}

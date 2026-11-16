@@ -1,0 +1,5 @@
+Unnamed: 0,score,first,last,paired_assays_before,mean_last_minus_first_before,ci_low_before,ci_high_before,paired_assays_after,paired_proteins,mean_last_minus_first_after,ci_low_after,ci_high_after,bootstrap_proteins,ci_status
+0,am,depth0,depth4,1,0.523308,0.523308,0.523308,1,1,0.5233078800044343,,,1,insufficient_independent_proteins
+1,am,coarse_hard,coarse_easy,61,0.124117,0.083749,0.166171,61,52,0.1241165155962932,0.080353155028204,0.1668435671634116,52,estimated_from_protein_clusters
+2,blosum,depth0,depth4,1,0.037591,0.037591,0.037591,1,1,0.0375909339870549,,,1,insufficient_independent_proteins
+3,blosum,coarse_hard,coarse_easy,61,0.063871,0.032786,0.093992,61,52,0.063870779541372,0.0235835656849263,0.0998283600831148,52,estimated_from_protein_clusters

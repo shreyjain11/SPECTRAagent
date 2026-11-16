@@ -1,0 +1,114 @@
+{
+  "contexts": {
+    "rpe1": {
+      "n_seen": 438,
+      "n_unseen": 1061,
+      "mean_pd_seen": 0.6491532354166667,
+      "mean_pd_unseen": 0.5314014208911216,
+      "delta_state": 0.11775181452554506,
+      "delta_boot_ci95": [
+        0.08259415099911806,
+        0.15264252996452302
+      ],
+      "z": 6.451078743832596,
+      "delta_B1": -0.001530186338177586,
+      "delta_B2": 0.018545636894244044,
+      "adjusted_seen_coef": {
+        "coef": 0.11976895523912329,
+        "p": 5.26956990066003e-33
+      },
+      "a1c_spearman_rho": 0.4655901329024385,
+      "a1c_p_one_sided": 1.7063025269032536e-58,
+      "a1c_adjusted": {
+        "coef": -0.005868432014174569,
+        "p": 0.08765433485982288
+      },
+      "a1c_n_unseen": 1061
+    },
+    "jurkat": {
+      "n_seen": 453,
+      "n_unseen": 1084,
+      "mean_pd_seen": 0.47240116595050774,
+      "mean_pd_unseen": 0.35401361665744463,
+      "delta_state": 0.11838754929306311,
+      "delta_boot_ci95": [
+        0.08759625648563872,
+        0.14928452148345966
+      ],
+      "z": 7.49202895484386,
+      "delta_B1": -0.004181170410432367,
+      "delta_B2": -0.00933228683581061,
+      "adjusted_seen_coef": {
+        "coef": 0.13284214640982847,
+        "p": 2.2111034240398072e-51
+      },
+      "a1c_spearman_rho": 0.5451644604654684,
+      "a1c_p_one_sided": 3.0253156591750884e-85,
+      "a1c_adjusted": {
+        "coef": 0.017352272820442907,
+        "p": 5.068685485904404e-08
+      },
+      "a1c_n_unseen": 1084
+    },
+    "hepg2": {
+      "n_seen": 395,
+      "n_unseen": 945,
+      "mean_pd_seen": 0.5187939869810126,
+      "mean_pd_unseen": 0.401746089454836,
+      "delta_state": 0.11704789752617667,
+      "delta_boot_ci95": [
+        0.07845545577755025,
+        0.1566907755345091
+      ],
+      "z": 5.860951703734086,
+      "delta_B1": -0.013227215716445473,
+      "delta_B2": -0.0042800531707344325,
+      "adjusted_seen_coef": {
+        "coef": 0.10907551395137745,
+        "p": 1.076408566020354e-29
+      },
+      "a1c_spearman_rho": 0.49915181717507306,
+      "a1c_p_one_sided": 5.452143883193265e-61,
+      "a1c_adjusted": {
+        "coef": 0.007358953567628245,
+        "p": 0.033263166661493405
+      },
+      "a1c_n_unseen": 945
+    }
+  },
+  "pooled": {
+    "A1b_pooled_delta": 0.11772908711492829,
+    "A1b_gene_bootstrap_ci95": [
+      0.0968726880817187,
+      0.13828840807059026
+    ],
+    "A1b_contexts_consistent": 3,
+    "A1c_pooled_spearman": 0.504527501576208,
+    "A1c_gene_bootstrap_ci95": [
+      0.47370373483347855,
+      0.5337876353934637
+    ],
+    "uncertainty": {
+      "resampling_unit": "gene identity, shared across all observed contexts",
+      "gene_clusters": 1949,
+      "draws": 10000,
+      "seed": 20261115,
+      "scope": "conditional on the three observed contexts; not independent-site replication",
+      "embedding_context_weights": {
+        "rpe1": 1058,
+        "jurkat": 1081,
+        "hepg2": 942
+      },
+      "binary_ci95": [
+        0.0968726880817187,
+        0.13828840807059026
+      ],
+      "embedding_ci95": [
+        0.47370373483347855,
+        0.5337876353934637
+      ]
+    },
+    "pooled_p_value": null,
+    "correction": "Joint gene-bootstrap intervals replace the independence-based binary Z/p and the invalid unnormalized embedding Z/p."
+  }
+}

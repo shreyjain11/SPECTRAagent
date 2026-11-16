@@ -1,0 +1,45 @@
+{
+  "axis": "Alignment occupancy",
+  "sources": [
+    {
+      "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+      "url": "https://raw.githubusercontent.com/shreyjain11/SPECTRAagent/1d3b45baa344751b4c34ea825479c0f39b09ec21/reproduction/primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+      "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+      "bytes": 9447902
+    },
+    {
+      "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+      "url": "https://raw.githubusercontent.com/shreyjain11/SPECTRAagent/1d3b45baa344751b4c34ea825479c0f39b09ec21/reproduction/primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+      "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+      "bytes": 6629852
+    },
+    {
+      "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+      "url": "https://raw.githubusercontent.com/shreyjain11/SPECTRAagent/1d3b45baa344751b4c34ea825479c0f39b09ec21/reproduction/primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+      "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+      "bytes": 3723464
+    }
+  ],
+  "decision": "The fixed endpoint difference is positive in this cohort (44 paired assays; 40 proteins), with a protein-cluster interval excluding zero. This is a conditional association, not evidence that every AutoSPECTRA requirement is met. References, protein coverage, residue concentration and DMS-spread controls limit the interpretation.",
+  "host": "Shreys-MacBook-Pro",
+  "rows": 270572,
+  "assays": 72,
+  "bootstrap_replicates": 5000,
+  "bootstrap_unit": "protein cluster (all assays retained together)",
+  "fresh_alignment_clustering": false,
+  "outputs": {
+    "signal_by_assay.csv": "79214adb77b351dcf0c3720456914921287e232e4ec020bccc103996faeaa98d",
+    "per_assay.csv": "bddaaa3c68527cf27afec784fa4ff28ca52944295c969ea1aa5580ff737bc5de",
+    "corrected_contrasts.csv": "0fde898943f1852da596215a0ef8aaa26af7f2af75e2871f9264cbd264ad4615",
+    "individual_variants.csv.gz": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+    "family_controls.csv": "0d041a0a16570f1b84d73467d10b1002e3a9a1eac47b5fd85a52c049cebd922b",
+    "position_features.csv": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+    "composition.csv": "0f63d0f116520420a1bd3affada3288bc005237c40bf60f4b2eb2eb2a5c7462e",
+    "score_join_coverage.csv": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+    "signal_summary.csv": "9926b738874cd5198c05995c7a46b3c203778a372f1a6f10f87baadde4c88404",
+    "corrected_curves.csv": "3e3aab29b5c44a4216a2b92a34e8751f7408e2630910696e21d40f77adf0473f",
+    "contrasts.csv": "0fde898943f1852da596215a0ef8aaa26af7f2af75e2871f9264cbd264ad4615",
+    "curves.csv": "3e3aab29b5c44a4216a2b92a34e8751f7408e2630910696e21d40f77adf0473f"
+  },
+  "elapsed_seconds": 5.797557830810547
+}

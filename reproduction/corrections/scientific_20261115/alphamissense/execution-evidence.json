@@ -1,0 +1,946 @@
+{
+  "schema_version": 1,
+  "scope": "Selected scientific-cell reexecution from public retained records",
+  "entries": [
+    {
+      "analysis_id": "am-primary/test-03",
+      "original_commit": "1d3b45baa344751b4c34ea825479c0f39b09ec21",
+      "mode": "selected_cells",
+      "executed_notebook_cells": [
+        13,
+        15
+      ],
+      "changed_code_cells": [
+        13,
+        15
+      ],
+      "original_notebook_snapshot": {
+        "path": "corrections/scientific_20261115/alphamissense/before/axis-3/original.ipynb.gz",
+        "sha256": "ab1aaf3d0e94f84ad9eddeee810f107ee38963cfeff2597868872c68d231269e",
+        "bytes": 84761,
+        "compression": "gzip",
+        "notebook_sha256": "066e0584b7c959387df136915792d990ae6c7a2e8267da413901e3cb42cece3b"
+      },
+      "previous_execution_evidence": {
+        "path": "corrections/scientific_20261115/alphamissense/before/axis-3/previous-execution.json",
+        "sha256": "9f9eb658075fb2a50abddd6c54f53a5d81c2353b985cf713dc3aee11bd7c0121",
+        "bytes": 2958
+      },
+      "execution": {
+        "host": "Shreys-MacBook-Pro",
+        "python": "3.13.2",
+        "elapsed_seconds": 3.898231582948938,
+        "started_at": "2026-11-16T03:09:31.976153+00:00",
+        "finished_at": "2026-11-16T03:09:35.874413+00:00",
+        "command": "python reproduction/corrections/scientific_20261115/alphamissense/execute_selected.py /private/tmp/am-primary-scientific-20261115",
+        "driver": {
+          "path": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+          "sha256": "bc69be4835ebea0d4612a69659008072f94fd577b8b8fcc0ce8f9419cfcdcb80",
+          "bytes": 8066
+        },
+        "log": {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/execution.log",
+          "sha256": "68cc355e0648aa0cc6031d831bf03fa5b5a34724fd7f03bc6d00c52df3eeb0cd",
+          "bytes": 599
+        }
+      },
+      "inputs": [
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+          "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+          "bytes": 7265267,
+          "rows": 270572,
+          "role": "Actual scored DMS records and retained alignment-derived features consumed by the rerun"
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+          "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+          "bytes": 3421
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+          "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+          "bytes": 957993
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+          "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+          "bytes": 9447902,
+          "role": "Public source payload used to rebuild calculation inputs"
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+          "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+          "bytes": 6629852,
+          "role": "Public source payload used to rebuild calculation inputs"
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+          "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+          "bytes": 3723464,
+          "role": "Public source payload used to rebuild calculation inputs"
+        }
+      ],
+      "prerequisite_setup": {
+        "script": {
+          "path": "corrections/scientific_20261115/alphamissense/rebuild_retained_inputs.py",
+          "sha256": "0f84402e4f9afbb298aa7190b316f8c47454a7f4db839bd8d6a8cd4286ed2a3f",
+          "bytes": 4398
+        },
+        "input_paths": [
+          "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+          "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+          "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz"
+        ],
+        "description": "Rebuilt the original selected DMS variant/score join and retained alignment features from public payloads, then restored the panel, coverage and position-feature globals before executing the two recorded notebook cells. No fresh clustering or inference."
+      },
+      "output_artifacts": [
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/composition.csv",
+          "sha256": "8313e56e117f3409d8d5a33eeaa7df2dfc419bb582547661ac2f8cd3e0b532e1",
+          "bytes": 397
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/contrasts.csv",
+          "sha256": "01fcf8f481fad3d6d6f71a21da95f3578982416ef41ab15320774c26bf0483aa",
+          "bytes": 534
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/curves.csv",
+          "sha256": "b7a8652613c3b15bb0c4490fdcc442560c8aebfa7afc4a3f9f54b973b98f65ee",
+          "bytes": 2252
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/execution.json",
+          "sha256": "58e422e08441fbdd8527b422330cc6db1163ef8a474e15aafd28a2a77b18c31d",
+          "bytes": 2939
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/execution.log",
+          "sha256": "68cc355e0648aa0cc6031d831bf03fa5b5a34724fd7f03bc6d00c52df3eeb0cd",
+          "bytes": 599
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/family_controls.csv",
+          "sha256": "4e18c7c354d6f491c9ec7f55112cc9c2f0be003a1fbab8eecd8eeccf228a6201",
+          "bytes": 1207
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/per_assay.csv",
+          "sha256": "ecb1b7107fb3f5f5614cf60a9126f62e3479d5633c3a78034e6ff6163aa58feb",
+          "bytes": 46379
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/signal_by_assay.csv",
+          "sha256": "9c72c73a9af8713a5f0f98f5418d424e3bb3163f05a1c8809ad07de92a9b1502",
+          "bytes": 18390
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/signal_summary.csv",
+          "sha256": "4cc72d1e69d40c75f77613a180147b87690527fc843b07e60175ce10c47dd357",
+          "bytes": 399
+        }
+      ],
+      "dependency_scope": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
+      "decision": "The fixed endpoint contains 1 paired assay(s) from 1 protein(s); descriptive difference=0.523308. Between-protein uncertainty is unavailable (insufficient_independent_proteins). Insufficient independent replication to establish a general directional association.",
+      "primary_endpoint": [
+        {
+          "score": "am",
+          "first": "depth0",
+          "last": "depth4",
+          "paired_assays": 1,
+          "paired_proteins": 1,
+          "mean_last_minus_first": 0.52330788,
+          "ci_low": null,
+          "ci_high": null,
+          "bootstrap_proteins": 1,
+          "ci_status": "insufficient_independent_proteins"
+        }
+      ],
+      "deduplicated_outputs": [
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-3/individual_variants.csv.gz",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+          "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+          "bytes": 7265267
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-3/position_features.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+          "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+          "bytes": 957993
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-3/score_join_coverage.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+          "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+          "bytes": 3421
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-3/corrected_curves.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/curves.csv",
+          "sha256": "b7a8652613c3b15bb0c4490fdcc442560c8aebfa7afc4a3f9f54b973b98f65ee",
+          "bytes": 2252
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-3/corrected_contrasts.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/outputs/axis-3/contrasts.csv",
+          "sha256": "01fcf8f481fad3d6d6f71a21da95f3578982416ef41ab15320774c26bf0483aa",
+          "bytes": 534
+        }
+      ]
+    },
+    {
+      "analysis_id": "am-primary/test-04",
+      "original_commit": "1d3b45baa344751b4c34ea825479c0f39b09ec21",
+      "mode": "selected_cells",
+      "executed_notebook_cells": [
+        12,
+        14
+      ],
+      "changed_code_cells": [
+        12,
+        14
+      ],
+      "original_notebook_snapshot": {
+        "path": "corrections/scientific_20261115/alphamissense/before/axis-4/original.ipynb.gz",
+        "sha256": "a8b4668640eeb2306d770b0222d003976adcc465ac3d5924abde9b2eca8be686",
+        "bytes": 77608,
+        "compression": "gzip",
+        "notebook_sha256": "c23a60e71319890b26f136b059aa91e9c1e5a2810b959dad20de373ee624aee9"
+      },
+      "previous_execution_evidence": {
+        "path": "corrections/scientific_20261115/alphamissense/before/axis-4/previous-execution.json",
+        "sha256": "13f4fdb308a6245ef6c1623187d663f5cd25e8cf968faee4719eccb202d5e8d3",
+        "bytes": 2944
+      },
+      "execution": {
+        "host": "Shreys-MacBook-Pro",
+        "python": "3.13.2",
+        "elapsed_seconds": 5.797888458939269,
+        "started_at": "2026-11-16T03:09:35.938721+00:00",
+        "finished_at": "2026-11-16T03:09:41.736637+00:00",
+        "command": "python reproduction/corrections/scientific_20261115/alphamissense/execute_selected.py /private/tmp/am-primary-scientific-20261115",
+        "driver": {
+          "path": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+          "sha256": "bc69be4835ebea0d4612a69659008072f94fd577b8b8fcc0ce8f9419cfcdcb80",
+          "bytes": 8066
+        },
+        "log": {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/execution.log",
+          "sha256": "27e386d264235176b515764b594ec4addae4ee2753e0e7326527473652471c28",
+          "bytes": 667
+        }
+      },
+      "inputs": [
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+          "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+          "bytes": 7265267,
+          "rows": 270572,
+          "role": "Actual scored DMS records and retained alignment-derived features consumed by the rerun"
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+          "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+          "bytes": 3421
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+          "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+          "bytes": 957993
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+          "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+          "bytes": 9447902,
+          "role": "Public source payload used to rebuild calculation inputs"
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+          "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+          "bytes": 6629852,
+          "role": "Public source payload used to rebuild calculation inputs"
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+          "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+          "bytes": 3723464,
+          "role": "Public source payload used to rebuild calculation inputs"
+        }
+      ],
+      "prerequisite_setup": {
+        "script": {
+          "path": "corrections/scientific_20261115/alphamissense/rebuild_retained_inputs.py",
+          "sha256": "0f84402e4f9afbb298aa7190b316f8c47454a7f4db839bd8d6a8cd4286ed2a3f",
+          "bytes": 4398
+        },
+        "input_paths": [
+          "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+          "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+          "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz"
+        ],
+        "description": "Rebuilt the original selected DMS variant/score join and retained alignment features from public payloads, then restored the panel, coverage and position-feature globals before executing the two recorded notebook cells. No fresh clustering or inference."
+      },
+      "output_artifacts": [
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/composition.csv",
+          "sha256": "0f63d0f116520420a1bd3affada3288bc005237c40bf60f4b2eb2eb2a5c7462e",
+          "bytes": 488
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/contrasts.csv",
+          "sha256": "0fde898943f1852da596215a0ef8aaa26af7f2af75e2871f9264cbd264ad4615",
+          "bytes": 603
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/curves.csv",
+          "sha256": "3e3aab29b5c44a4216a2b92a34e8751f7408e2630910696e21d40f77adf0473f",
+          "bytes": 2615
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/execution.json",
+          "sha256": "ad34307e4e7e41a06431507c4f6bbaafbfb2514ae83a734877c72be437e5a57c",
+          "bytes": 3001
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/execution.log",
+          "sha256": "27e386d264235176b515764b594ec4addae4ee2753e0e7326527473652471c28",
+          "bytes": 667
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/family_controls.csv",
+          "sha256": "0d041a0a16570f1b84d73467d10b1002e3a9a1eac47b5fd85a52c049cebd922b",
+          "bytes": 1666
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/per_assay.csv",
+          "sha256": "bddaaa3c68527cf27afec784fa4ff28ca52944295c969ea1aa5580ff737bc5de",
+          "bytes": 99182
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/signal_by_assay.csv",
+          "sha256": "79214adb77b351dcf0c3720456914921287e232e4ec020bccc103996faeaa98d",
+          "bytes": 39453
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/signal_summary.csv",
+          "sha256": "9926b738874cd5198c05995c7a46b3c203778a372f1a6f10f87baadde4c88404",
+          "bytes": 426
+        }
+      ],
+      "dependency_scope": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
+      "decision": "The fixed endpoint difference is positive in this cohort (44 paired assays; 40 proteins), with a protein-cluster interval excluding zero. This is a conditional association, not evidence that every AutoSPECTRA requirement is met. References, protein coverage, residue concentration and DMS-spread controls limit the interpretation.",
+      "primary_endpoint": [
+        {
+          "score": "am",
+          "first": "insert",
+          "last": "q4",
+          "paired_assays": 44,
+          "paired_proteins": 40,
+          "mean_last_minus_first": 0.2148376385,
+          "ci_low": 0.1569940216,
+          "ci_high": 0.2724682317,
+          "bootstrap_proteins": 40,
+          "ci_status": "estimated_from_protein_clusters"
+        }
+      ],
+      "deduplicated_outputs": [
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-4/individual_variants.csv.gz",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+          "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+          "bytes": 7265267
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-4/position_features.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+          "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+          "bytes": 957993
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-4/score_join_coverage.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+          "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+          "bytes": 3421
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-4/corrected_curves.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/curves.csv",
+          "sha256": "3e3aab29b5c44a4216a2b92a34e8751f7408e2630910696e21d40f77adf0473f",
+          "bytes": 2615
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-4/corrected_contrasts.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/outputs/axis-4/contrasts.csv",
+          "sha256": "0fde898943f1852da596215a0ef8aaa26af7f2af75e2871f9264cbd264ad4615",
+          "bytes": 603
+        }
+      ]
+    },
+    {
+      "analysis_id": "am-primary/test-05",
+      "original_commit": "1d3b45baa344751b4c34ea825479c0f39b09ec21",
+      "mode": "selected_cells",
+      "executed_notebook_cells": [
+        13,
+        15
+      ],
+      "changed_code_cells": [
+        13,
+        15
+      ],
+      "original_notebook_snapshot": {
+        "path": "corrections/scientific_20261115/alphamissense/before/axis-5/original.ipynb.gz",
+        "sha256": "68d88a813c0020a9e57a64b3e74ec3ebef36e2f22cc95109fdf7f4160c795328",
+        "bytes": 83165,
+        "compression": "gzip",
+        "notebook_sha256": "00b45c39a0dd47b691ba038cc217ae03b67e280dd3551fbe2036f29a511bec39"
+      },
+      "previous_execution_evidence": {
+        "path": "corrections/scientific_20261115/alphamissense/before/axis-5/previous-execution.json",
+        "sha256": "f7e0cbcedf14e4fd5cba20e3a2c4803ad86f2a77f34399c9d460a41f6ab2f67e",
+        "bytes": 2958
+      },
+      "execution": {
+        "host": "Shreys-MacBook-Pro",
+        "python": "3.13.2",
+        "elapsed_seconds": 3.992095167050138,
+        "started_at": "2026-11-16T03:09:41.801558+00:00",
+        "finished_at": "2026-11-16T03:09:45.793675+00:00",
+        "command": "python reproduction/corrections/scientific_20261115/alphamissense/execute_selected.py /private/tmp/am-primary-scientific-20261115",
+        "driver": {
+          "path": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+          "sha256": "bc69be4835ebea0d4612a69659008072f94fd577b8b8fcc0ce8f9419cfcdcb80",
+          "bytes": 8066
+        },
+        "log": {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/execution.log",
+          "sha256": "ac4210db1b01eed705e0d2e1f5509d6c842d62b5c0bed66d1067302d276e40da",
+          "bytes": 667
+        }
+      },
+      "inputs": [
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+          "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+          "bytes": 7265267,
+          "rows": 270572,
+          "role": "Actual scored DMS records and retained alignment-derived features consumed by the rerun"
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+          "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+          "bytes": 3421
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+          "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+          "bytes": 957993
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+          "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+          "bytes": 9447902,
+          "role": "Public source payload used to rebuild calculation inputs"
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+          "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+          "bytes": 6629852,
+          "role": "Public source payload used to rebuild calculation inputs"
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+          "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+          "bytes": 3723464,
+          "role": "Public source payload used to rebuild calculation inputs"
+        }
+      ],
+      "prerequisite_setup": {
+        "script": {
+          "path": "corrections/scientific_20261115/alphamissense/rebuild_retained_inputs.py",
+          "sha256": "0f84402e4f9afbb298aa7190b316f8c47454a7f4db839bd8d6a8cd4286ed2a3f",
+          "bytes": 4398
+        },
+        "input_paths": [
+          "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+          "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+          "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz"
+        ],
+        "description": "Rebuilt the original selected DMS variant/score join and retained alignment features from public payloads, then restored the panel, coverage and position-feature globals before executing the two recorded notebook cells. No fresh clustering or inference."
+      },
+      "output_artifacts": [
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/composition.csv",
+          "sha256": "9bad03bf1b5d9e18f4c04431aa4b18faf1b8ab164324644e94fd7ba9f7a657e9",
+          "bytes": 348
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/contrasts.csv",
+          "sha256": "33a3681acac89d5ac4e39afb48c2e6808b6641dc1429c57fab4b118dba8a1ddc",
+          "bytes": 642
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/curves.csv",
+          "sha256": "eb8a4f09888917585754103c9b8f05863035239da5960b3eb4f500fca75b0c1e",
+          "bytes": 1747
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/execution.json",
+          "sha256": "904e1b4d43440b3a77671a28a4d835603f1cc90a19f46781df9c3e9d4fe35082",
+          "bytes": 3020
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/execution.log",
+          "sha256": "ac4210db1b01eed705e0d2e1f5509d6c842d62b5c0bed66d1067302d276e40da",
+          "bytes": 667
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/family_controls.csv",
+          "sha256": "f565485edf8f7590a4ac6a81b724564ba5c68580b398c02c4c038c8712e2927c",
+          "bytes": 1204
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/per_assay.csv",
+          "sha256": "005b59bdc8129f39a30440d59c5bdfd52ca3a5132097ed2f2af9144273545c8c",
+          "bytes": 52376
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/signal_by_assay.csv",
+          "sha256": "1b3a129ccf7f3b15c5ce2fd0228a215a2041e9f09ef5710fcd094d03d75b6cb3",
+          "bytes": 21082
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/signal_summary.csv",
+          "sha256": "ba48da41f0499137267c8e6f3e5e1faa4da5c4ae7404597534a4a31a598f69f1",
+          "bytes": 322
+        }
+      ],
+      "dependency_scope": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
+      "decision": "The fixed endpoint difference is positive in this cohort (19 paired assays; 17 proteins), with a protein-cluster interval excluding zero. This is a conditional association, not evidence that every AutoSPECTRA requirement is met. References, protein coverage, residue concentration and DMS-spread controls limit the interpretation.",
+      "primary_endpoint": [
+        {
+          "score": "am",
+          "first": "deep_occ<0.5",
+          "last": "deep_occ>=0.9",
+          "paired_assays": 19,
+          "paired_proteins": 17,
+          "mean_last_minus_first": 0.1519326792,
+          "ci_low": 0.0282734568,
+          "ci_high": 0.2837653291,
+          "bootstrap_proteins": 17,
+          "ci_status": "estimated_from_protein_clusters"
+        }
+      ],
+      "deduplicated_outputs": [
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-5/individual_variants.csv.gz",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+          "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+          "bytes": 7265267
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-5/position_features.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+          "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+          "bytes": 957993
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-5/score_join_coverage.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+          "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+          "bytes": 3421
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-5/corrected_curves.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/curves.csv",
+          "sha256": "eb8a4f09888917585754103c9b8f05863035239da5960b3eb4f500fca75b0c1e",
+          "bytes": 1747
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-5/corrected_contrasts.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/outputs/axis-5/contrasts.csv",
+          "sha256": "33a3681acac89d5ac4e39afb48c2e6808b6641dc1429c57fab4b118dba8a1ddc",
+          "bytes": 642
+        }
+      ]
+    },
+    {
+      "analysis_id": "am-primary/test-06",
+      "original_commit": "1d3b45baa344751b4c34ea825479c0f39b09ec21",
+      "mode": "selected_cells",
+      "executed_notebook_cells": [
+        13,
+        15
+      ],
+      "changed_code_cells": [
+        13,
+        15
+      ],
+      "original_notebook_snapshot": {
+        "path": "corrections/scientific_20261115/alphamissense/before/axis-6/original.ipynb.gz",
+        "sha256": "695a5427909fbd9a73fca18489e4315ac1c707cf45822810ee4f8f691a005df9",
+        "bytes": 94306,
+        "compression": "gzip",
+        "notebook_sha256": "52f39f87e0992a8a8bbd3cd7d82099badf2a543f9876ac86467a8a9af95b46d2"
+      },
+      "previous_execution_evidence": {
+        "path": "corrections/scientific_20261115/alphamissense/before/axis-6/previous-execution.json",
+        "sha256": "2b3f35df61bc8964ac30eb8962cc66fdd401a054116b57bc727bc7ce49f1f97b",
+        "bytes": 2958
+      },
+      "execution": {
+        "host": "Shreys-MacBook-Pro",
+        "python": "3.13.2",
+        "elapsed_seconds": 6.071721750078723,
+        "started_at": "2026-11-16T03:09:45.861023+00:00",
+        "finished_at": "2026-11-16T03:09:51.932772+00:00",
+        "command": "python reproduction/corrections/scientific_20261115/alphamissense/execute_selected.py /private/tmp/am-primary-scientific-20261115",
+        "driver": {
+          "path": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+          "sha256": "bc69be4835ebea0d4612a69659008072f94fd577b8b8fcc0ce8f9419cfcdcb80",
+          "bytes": 8066
+        },
+        "log": {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/execution.log",
+          "sha256": "0ec5928e56f7e7f50f3dd2f556a1fb9185d4f913227066feba3d1fea8813b44e",
+          "bytes": 667
+        }
+      },
+      "inputs": [
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+          "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+          "bytes": 7265267,
+          "rows": 270572,
+          "role": "Actual scored DMS records and retained alignment-derived features consumed by the rerun"
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+          "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+          "bytes": 3421
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+          "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+          "bytes": 957993
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+          "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+          "bytes": 9447902,
+          "role": "Public source payload used to rebuild calculation inputs"
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+          "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+          "bytes": 6629852,
+          "role": "Public source payload used to rebuild calculation inputs"
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+          "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+          "bytes": 3723464,
+          "role": "Public source payload used to rebuild calculation inputs"
+        }
+      ],
+      "prerequisite_setup": {
+        "script": {
+          "path": "corrections/scientific_20261115/alphamissense/rebuild_retained_inputs.py",
+          "sha256": "0f84402e4f9afbb298aa7190b316f8c47454a7f4db839bd8d6a8cd4286ed2a3f",
+          "bytes": 4398
+        },
+        "input_paths": [
+          "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+          "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+          "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz"
+        ],
+        "description": "Rebuilt the original selected DMS variant/score join and retained alignment features from public payloads, then restored the panel, coverage and position-feature globals before executing the two recorded notebook cells. No fresh clustering or inference."
+      },
+      "output_artifacts": [
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/composition.csv",
+          "sha256": "0f63d0f116520420a1bd3affada3288bc005237c40bf60f4b2eb2eb2a5c7462e",
+          "bytes": 488
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/contrasts.csv",
+          "sha256": "730ab0279944d982e5838c4e3bf88ec897dfdf76e4325de835efd263e0bce3dd",
+          "bytes": 733
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/curves.csv",
+          "sha256": "e5247ba618f279c7523ecdc6933dbce7f0b2e96559ef382b07b2f44722dc0538",
+          "bytes": 3696
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/execution.json",
+          "sha256": "fa762d5c4fc51b8c6b6ccac8981412c0738d1421f207c4db036f15643fc4c2f0",
+          "bytes": 3032
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/execution.log",
+          "sha256": "0ec5928e56f7e7f50f3dd2f556a1fb9185d4f913227066feba3d1fea8813b44e",
+          "bytes": 667
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/family_controls.csv",
+          "sha256": "6f68b723b722be43a23cbb026fb4b59510d80d5896bd2d3652365ee5ba8da75a",
+          "bytes": 2370
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/per_assay.csv",
+          "sha256": "4ccd78c99a0fc1946bd74036c6838117909c8128a4e5e96b5829c5d0cd516ccb",
+          "bytes": 142920
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/signal_by_assay.csv",
+          "sha256": "79214adb77b351dcf0c3720456914921287e232e4ec020bccc103996faeaa98d",
+          "bytes": 39453
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/signal_summary.csv",
+          "sha256": "9926b738874cd5198c05995c7a46b3c203778a372f1a6f10f87baadde4c88404",
+          "bytes": 426
+        }
+      ],
+      "dependency_scope": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
+      "decision": "The fixed endpoint difference is positive in this cohort (44 paired assays; 40 proteins), with a protein-cluster interval excluding zero. This is a conditional association, not evidence that every AutoSPECTRA requirement is met. References, protein coverage, residue concentration and DMS-spread controls limit the interpretation.",
+      "primary_endpoint": [
+        {
+          "score": "am",
+          "first": "insert",
+          "last": "q4",
+          "paired_assays": 44,
+          "paired_proteins": 40,
+          "mean_last_minus_first": 0.2148376385,
+          "ci_low": 0.1569940216,
+          "ci_high": 0.2724682317,
+          "bootstrap_proteins": 40,
+          "ci_status": "estimated_from_protein_clusters"
+        }
+      ],
+      "deduplicated_outputs": [
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-6/individual_variants.csv.gz",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+          "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+          "bytes": 7265267
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-6/position_features.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+          "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+          "bytes": 957993
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-6/score_join_coverage.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+          "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+          "bytes": 3421
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-6/corrected_curves.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/curves.csv",
+          "sha256": "e5247ba618f279c7523ecdc6933dbce7f0b2e96559ef382b07b2f44722dc0538",
+          "bytes": 3696
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-6/corrected_contrasts.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/outputs/axis-6/contrasts.csv",
+          "sha256": "730ab0279944d982e5838c4e3bf88ec897dfdf76e4325de835efd263e0bce3dd",
+          "bytes": 733
+        }
+      ]
+    },
+    {
+      "analysis_id": "am-primary/test-07",
+      "original_commit": "1d3b45baa344751b4c34ea825479c0f39b09ec21",
+      "mode": "selected_cells",
+      "executed_notebook_cells": [
+        12,
+        14
+      ],
+      "changed_code_cells": [
+        12,
+        14
+      ],
+      "original_notebook_snapshot": {
+        "path": "corrections/scientific_20261115/alphamissense/before/axis-7/original.ipynb.gz",
+        "sha256": "be42b212f62fe6e66cd3148d87f9925a73986e58b17214061226e36d98081318",
+        "bytes": 71714,
+        "compression": "gzip",
+        "notebook_sha256": "aebf8edd5699be48c2f094318a50277f3a4bc6b571e126bb0349bfef449e94f0"
+      },
+      "previous_execution_evidence": {
+        "path": "corrections/scientific_20261115/alphamissense/before/axis-7/previous-execution.json",
+        "sha256": "6093c0365f2a7c9831f6da5cb023e290c35669b089f574782dae5c99493cfd86",
+        "bytes": 2944
+      },
+      "execution": {
+        "host": "Shreys-MacBook-Pro",
+        "python": "3.13.2",
+        "elapsed_seconds": 5.804113833932206,
+        "started_at": "2026-11-16T03:09:52.001014+00:00",
+        "finished_at": "2026-11-16T03:09:57.805155+00:00",
+        "command": "python reproduction/corrections/scientific_20261115/alphamissense/execute_selected.py /private/tmp/am-primary-scientific-20261115",
+        "driver": {
+          "path": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+          "sha256": "bc69be4835ebea0d4612a69659008072f94fd577b8b8fcc0ce8f9419cfcdcb80",
+          "bytes": 8066
+        },
+        "log": {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/execution.log",
+          "sha256": "e937c13ebcebf4e6c32d8863c5add1c8d78a5cb38a60971a36ce75154adfdf36",
+          "bytes": 554
+        }
+      },
+      "inputs": [
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+          "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+          "bytes": 7265267,
+          "rows": 270572,
+          "role": "Actual scored DMS records and retained alignment-derived features consumed by the rerun"
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+          "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+          "bytes": 3421
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+          "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+          "bytes": 957993
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+          "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+          "bytes": 9447902,
+          "role": "Public source payload used to rebuild calculation inputs"
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+          "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+          "bytes": 6629852,
+          "role": "Public source payload used to rebuild calculation inputs"
+        },
+        {
+          "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+          "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+          "bytes": 3723464,
+          "role": "Public source payload used to rebuild calculation inputs"
+        }
+      ],
+      "prerequisite_setup": {
+        "script": {
+          "path": "corrections/scientific_20261115/alphamissense/rebuild_retained_inputs.py",
+          "sha256": "0f84402e4f9afbb298aa7190b316f8c47454a7f4db839bd8d6a8cd4286ed2a3f",
+          "bytes": 4398
+        },
+        "input_paths": [
+          "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+          "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+          "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz"
+        ],
+        "description": "Rebuilt the original selected DMS variant/score join and retained alignment features from public payloads, then restored the panel, coverage and position-feature globals before executing the two recorded notebook cells. No fresh clustering or inference."
+      },
+      "output_artifacts": [
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/composition.csv",
+          "sha256": "0f63d0f116520420a1bd3affada3288bc005237c40bf60f4b2eb2eb2a5c7462e",
+          "bytes": 488
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/contrasts.csv",
+          "sha256": "0fde898943f1852da596215a0ef8aaa26af7f2af75e2871f9264cbd264ad4615",
+          "bytes": 603
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/curves.csv",
+          "sha256": "3e3aab29b5c44a4216a2b92a34e8751f7408e2630910696e21d40f77adf0473f",
+          "bytes": 2615
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/execution.json",
+          "sha256": "7690599a5c9262509e73d069525367168a33226ebb0a27c61df2910bd618a149",
+          "bytes": 2895
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/execution.log",
+          "sha256": "e937c13ebcebf4e6c32d8863c5add1c8d78a5cb38a60971a36ce75154adfdf36",
+          "bytes": 554
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/family_controls.csv",
+          "sha256": "0d041a0a16570f1b84d73467d10b1002e3a9a1eac47b5fd85a52c049cebd922b",
+          "bytes": 1666
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/per_assay.csv",
+          "sha256": "bddaaa3c68527cf27afec784fa4ff28ca52944295c969ea1aa5580ff737bc5de",
+          "bytes": 99182
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/signal_by_assay.csv",
+          "sha256": "79214adb77b351dcf0c3720456914921287e232e4ec020bccc103996faeaa98d",
+          "bytes": 39453
+        },
+        {
+          "path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/signal_summary.csv",
+          "sha256": "9926b738874cd5198c05995c7a46b3c203778a372f1a6f10f87baadde4c88404",
+          "bytes": 426
+        }
+      ],
+      "dependency_scope": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
+      "decision": "DMS dynamic range is lower in the first than the last occupancy level. Treat reduced experimental signal as a possible contributor to the performance curve; it does not by itself establish a predictor-specific defect.",
+      "primary_endpoint": [
+        {
+          "score": "am",
+          "first": "insert",
+          "last": "q4",
+          "paired_assays": 44,
+          "paired_proteins": 40,
+          "mean_last_minus_first": 0.2148376385,
+          "ci_low": 0.1569940216,
+          "ci_high": 0.2724682317,
+          "bootstrap_proteins": 40,
+          "ci_status": "estimated_from_protein_clusters"
+        }
+      ],
+      "deduplicated_outputs": [
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-7/individual_variants.csv.gz",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+          "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+          "bytes": 7265267
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-7/position_features.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+          "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+          "bytes": 957993
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-7/score_join_coverage.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+          "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+          "bytes": 3421
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-7/corrected_curves.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/curves.csv",
+          "sha256": "3e3aab29b5c44a4216a2b92a34e8751f7408e2630910696e21d40f77adf0473f",
+          "bytes": 2615
+        },
+        {
+          "original_output": "corrections/scientific_20261115/alphamissense/outputs/axis-7/corrected_contrasts.csv",
+          "canonical_path": "corrections/scientific_20261115/alphamissense/outputs/axis-7/contrasts.csv",
+          "sha256": "0fde898943f1852da596215a0ef8aaa26af7f2af75e2871f9264cbd264ad4615",
+          "bytes": 603
+        }
+      ]
+    }
+  ]
+}

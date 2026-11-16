@@ -3,12 +3,15 @@
   "notebook": "inline/state/state-codex-r1/test-04.ipynb",
   "html": "inline/state/state-codex-r1/test-04.html",
   "completed": true,
-  "host": "exxact05",
+  "host": "Shreys-MacBook-Pro",
+  "python": "3.13.2",
+  "elapsed_seconds": 2.020257,
+  "execution_scope": "selected_cells_reexecuted",
   "code_cells": 21,
-  "executed_cells": 21,
+  "executed_cells": 1,
   "errors": 0,
-  "notebook_sha256": "7952746c79fc7fd00a4fdde574c01f2a3c4a5b11de07f8ba63e5d6068d0af701",
-  "html_sha256": "5694c7ae40bb4f27a14565cbe6259844c195a3c18a67787be459457476597d15",
+  "notebook_sha256": "13fb965f8139e8e019b997138bae3c405dd93c2efe7b4c19f64fc6ac4b3a1357",
+  "html_sha256": "5a9b7a70c22b399f908dae5f02d37aadcd3d369cee5758cdfbf22b2821693cc5",
   "sections": [
     {
       "number": 1,
@@ -75,34 +78,39 @@
     }
   ],
   "cell_index_base": 0,
-  "execution_evidence_source_sha256": "7bc06c3bd0bd7bdc627730de234c8fe3c095610c5f95c7304c7ceef24ede9ee5",
-  "execution_evidence_entry_id": "state-codex-r1/test-04",
-  "embedded_figures": 6,
-  "checks": [
-    "notebook_and_html_hash_match_execution_evidence",
-    "all_code_cells_executed",
-    "no_error_outputs",
-    "six_sections_and_executed_inline_code",
-    "inline_code_static_check"
-  ],
   "result_location": {
     "section": 6,
     "code_cells": [
       27
     ]
   },
-  "input_manifests": [],
-  "calculation_evidence": [],
-  "presentation_revision": {
-    "scientific_reexecution": false,
-    "original_execution_evidence": {
-      "path": "review_20261115/presentation/state-codex-r1-test-04.previous-execution.json",
-      "sha256": "06c465b720cd08c982c283c08b62e40f2aca058548c80be561d4278c3a048062"
+  "embedded_figures": 7,
+  "checks": [
+    "scientific_revision_artifacts_and_executed_cell_hashes",
+    "unchanged_cells_match_archived_notebook",
+    "no_error_outputs",
+    "six_sections_and_inline_code"
+  ],
+  "scientific_revision": {
+    "schema_version": 1,
+    "scientific_reexecution": true,
+    "mode": "selected_cells",
+    "previous_execution_evidence": {
+      "path": "corrections/scientific_20261115/records/state-codex-r1-test-04.previous-execution.json",
+      "sha256": "23a6f68457ccbd6cea5b2ab4d09a4d382e467df7e4ecdfaf47dcf62f341b5bd7",
+      "bytes": 2787
     },
-    "correction_record": {
-      "path": "review_20261115/presentation/state-codex-r1-test-04.revision.json",
-      "sha256": "a132f78b8a0efdad4ff7f3818e7d22ef23067170781a40d5690ea82441b748be"
+    "original_notebook_snapshot": {
+      "path": "corrections/scientific_20261115/records/state-codex-r1-test-04.original.ipynb.gz",
+      "sha256": "63c40d06e570848bfa7587ba1daf9d421ceb19fc0f94e2ec61c26fb1c6727e97",
+      "bytes": 258229,
+      "compression": "gzip",
+      "notebook_sha256": "7952746c79fc7fd00a4fdde574c01f2a3c4a5b11de07f8ba63e5d6068d0af701"
+    },
+    "record": {
+      "path": "corrections/scientific_20261115/records/state-codex-r1-test-04.scientific-revision.json",
+      "sha256": "04c15fa15d7b84f362729ce52faac32e53ce00f5ae1928f82bd32b2eb2602adb",
+      "bytes": 18522
     }
-  },
-  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
+  }
 }

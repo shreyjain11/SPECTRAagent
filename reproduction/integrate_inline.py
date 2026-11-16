@@ -31,7 +31,7 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def code_review(book):
+def code_review(book, direct_executed_cells=()):
     sections = []
     code = []
     current = None
@@ -63,7 +63,17 @@ def code_review(book):
             if re.search(r'(?:python|sys\.executable)[^\n]{0,220}[\w/-]+\.py[\'\"]', source):
                 problems.append(f'cell {index}: review external Python script invocation')
     assert [s['number'] for s in sections] == list(range(1, 7)), 'Six numbered sections required'
-    assert code and all(c.get('execution_count') is not None for c in code), 'Unexecuted code cells'
+    declared_direct = set(direct_executed_cells)
+    code_indices = {i for i, c in enumerate(book['cells']) if c['cell_type'] == 'code'}
+    assert declared_direct <= code_indices, 'Declared direct execution must identify code cells'
+    for i in code_indices:
+        cell = book['cells'][i]
+        if i in declared_direct:
+            from validate_scientific_revision import check_direct_cell
+            check_direct_cell(cell)
+        else:
+            assert cell.get('execution_count') is not None, 'Unexecuted code cells'
+    assert code, 'No code cells'
     assert not any(o.get('output_type') == 'error' for c in code for o in c.get('outputs', [])), 'Notebook error output'
     assert not problems, problems
     return sections, code
@@ -116,13 +126,21 @@ def candidates(source, family, identifier, local_index):
     return list(dict.fromkeys(safe))
 
 
+def execution_label(row):
+    correction = row.get('scientific_correction')
+    if correction:
+        return ('full notebook rerun' if correction['mode'] == 'full_notebook'
+                else 'affected calculations rerun')
+    return row['status'].replace('_', ' ')
+
+
 def html_page(rows):
     counts = Counter(row['status'] for row in rows)
     body = ['<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">',
             '<title>Inline analysis notebooks</title><style>body{font:16px system-ui;max-width:1250px;margin:3rem auto;padding:0 1rem;color:#172332}table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:.7rem;border-bottom:1px solid #dce2e8;vertical-align:top}th{background:#f2f6f9}a{color:#155c9b}nav,.filters{display:flex;gap:1rem;flex-wrap:wrap;margin:1.2rem 0}.field{display:grid;gap:.3rem}input,select{font:inherit;padding:.5rem;border:1px solid #8e9dac;border-radius:4px}input{width:min(26rem,70vw)}td small{display:block;color:#526171;margin-top:.25rem}a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #155c9b;outline-offset:3px}.table-wrap{overflow-x:auto}#empty{padding:1rem 0}[hidden]{display:none!important}</style>',
             '<main><h1>Inline analysis notebooks</h1><p>Acquisition, processing, axes and levels, model results, curves and controls, and conclusions in six sections.</p>',
             '<p>' + html.escape('; '.join(f'{value} {key.replace("_", " ")}' for key, value in sorted(counts.items()))) + '.</p>',
-            '<p>Execution records show that the displayed code ran. A reconstruction may use different samples or methods from the original audit. Read the conclusion and limitations before comparing results.</p>',
+            '<p>Execution records distinguish original runs from later full-notebook or selected-cell recalculations. A reconstruction may use different samples or methods from the original audit. Read the conclusion and limitations before comparing results.</p>',
             '<nav aria-label="Notebook resources"><a href="README.md">Setup and data access</a><a href="INDEX.md">Notebook index (Markdown)</a><a href="index.json">Notebook index (JSON)</a><a href="../traceability_review.json">Historical traceability (JSON)</a></nav>',
             '<p>Some workflows require GPU compute or approved model access; CONCH weights require publisher approval. Setup requirements are listed by model in the guide.</p>',
             '<div class="filters"><div class="field"><label for="search">Search notebooks</label><input id="search" type="search" placeholder="Axis, run or model"></div><div class="field"><label for="model">Model</label><select id="model"><option value="">All models</option>' + ''.join('<option>' + html.escape(family) + '</option>' for family in FAMILIES) + '</select></div></div>',
@@ -141,7 +159,7 @@ def html_page(rows):
             links += ' · '.join(f'<a href="{html.escape(row[k].removeprefix("inline/"), quote=True)}">{label}</a>' for k, label in [('html', 'Results and code'), ('notebook', 'Notebook'), ('validation', 'Execution evidence')])
         links += '<br><a href="../analyses/' + html.escape(row['id'], quote=True) + '.json">Analysis JSON</a>'
         text = f"{row['id']} {row['axis']} {row['model']}"
-        body.append('<tr data-model="' + html.escape(row['model'], quote=True) + '" data-search="' + html.escape(text.lower(), quote=True) + '"><td>' + html.escape(row['axis']) + '<small>' + html.escape(row['model'] + ' · ' + row['id']) + '</small></td><td>' + html.escape(row['status'].replace('_', ' ')) + '</td><td>' + links + '</td></tr>')
+        body.append('<tr data-model="' + html.escape(row['model'], quote=True) + '" data-search="' + html.escape(text.lower(), quote=True) + '"><td>' + html.escape(row['axis']) + '<small>' + html.escape(row['model'] + ' · ' + row['id']) + '</small></td><td>' + html.escape(execution_label(row)) + '</td><td>' + links + '</td></tr>')
     body.append('</tbody></table></div><p id="empty" hidden>No notebooks match these filters.</p></main>')
     body.append(r"""<script>
 const search = document.querySelector('#search');
@@ -175,7 +193,7 @@ def markdown_index(rows):
             if row['notebook']:
                 links = ' · '.join(f"[{label}]({row[key].removeprefix('inline/')})" for key, label in [('notebook', 'Notebook'), ('html', 'HTML'), ('validation', 'Execution')])
             axis = row['axis'].replace('|', '\\|').replace('\n', ' ')
-            lines.append(f"| `{row['id']}`<br>{axis} | {row['status'].replace('_', ' ')} | {links} |")
+            lines.append(f"| `{row['id']}`<br>{axis} | {execution_label(row)} | {links} |")
         lines.append('')
     return '\n'.join(lines)
 

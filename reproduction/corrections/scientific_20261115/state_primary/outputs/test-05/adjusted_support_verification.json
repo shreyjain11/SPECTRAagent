@@ -1,0 +1,62 @@
+[
+  {
+    "analysis_id": "state-featured/test-05",
+    "adjust_de_count": false,
+    "n_rows": 6640,
+    "input_sha256": "4efdff4ceffa02e1635c31eeb90cb601ba9106a6f69707237bb12321f57242ea",
+    "previous_coef": 0.07787641538415764,
+    "term": "support_log_mean_z",
+    "coef": 0.07787641538415757,
+    "se": 0.005103431165149591,
+    "ci_low": 0.06786515677009348,
+    "ci_high": 0.08788767399822166,
+    "t": 15.25961904139347,
+    "p_two_sided": 1.0018649501413456e-48,
+    "n_gene_clusters": 1391,
+    "cluster_df": 1390,
+    "design_rank": 7,
+    "n_design_columns": 7,
+    "n_excluded_missing": 0,
+    "covariance": "CR1 canonical-gene clusters; t(G-1)",
+    "reference_categories": "{\"context\": \"hepg2\", \"representation\": \"HVG\"}",
+    "independent_statsmodels_se": 0.0051034311651495575,
+    "duplicated_rows_se_ratio": 0.9997739176457191,
+    "corrected_function_runtime_warnings": 0,
+    "reference_backend_warning_count": 12,
+    "reference_backend_warning_messages": [
+      "divide by zero encountered in matmul",
+      "invalid value encountered in matmul",
+      "overflow encountered in matmul"
+    ]
+  },
+  {
+    "analysis_id": "state-featured/test-05",
+    "adjust_de_count": true,
+    "n_rows": 6640,
+    "input_sha256": "4efdff4ceffa02e1635c31eeb90cb601ba9106a6f69707237bb12321f57242ea",
+    "previous_coef": 0.02844803805288391,
+    "term": "support_log_mean_z",
+    "coef": 0.028448038052883894,
+    "se": 0.0031499914404186044,
+    "ci_low": 0.022268787677671962,
+    "ci_high": 0.03462728842809582,
+    "t": 9.031147731977143,
+    "p_two_sided": 5.528368995667381e-19,
+    "n_gene_clusters": 1391,
+    "cluster_df": 1390,
+    "design_rank": 8,
+    "n_design_columns": 8,
+    "n_excluded_missing": 0,
+    "covariance": "CR1 canonical-gene clusters; t(G-1)",
+    "reference_categories": "{\"context\": \"hepg2\", \"representation\": \"HVG\"}",
+    "independent_statsmodels_se": 0.003149991440418583,
+    "duplicated_rows_se_ratio": 0.9997362124060659,
+    "corrected_function_runtime_warnings": 0,
+    "reference_backend_warning_count": 12,
+    "reference_backend_warning_messages": [
+      "divide by zero encountered in matmul",
+      "invalid value encountered in matmul",
+      "overflow encountered in matmul"
+    ]
+  }
+]

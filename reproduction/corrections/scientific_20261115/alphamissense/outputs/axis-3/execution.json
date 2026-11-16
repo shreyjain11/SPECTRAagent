@@ -1,0 +1,45 @@
+{
+  "axis": "Effective alignment depth",
+  "sources": [
+    {
+      "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+      "url": "https://raw.githubusercontent.com/shreyjain11/SPECTRAagent/1d3b45baa344751b4c34ea825479c0f39b09ec21/reproduction/primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+      "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+      "bytes": 9447902
+    },
+    {
+      "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+      "url": "https://raw.githubusercontent.com/shreyjain11/SPECTRAagent/1d3b45baa344751b4c34ea825479c0f39b09ec21/reproduction/primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+      "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+      "bytes": 6629852
+    },
+    {
+      "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+      "url": "https://raw.githubusercontent.com/shreyjain11/SPECTRAagent/1d3b45baa344751b4c34ea825479c0f39b09ec21/reproduction/primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+      "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+      "bytes": 3723464
+    }
+  ],
+  "decision": "The fixed endpoint contains 1 paired assay(s) from 1 protein(s); descriptive difference=0.523308. Between-protein uncertainty is unavailable (insufficient_independent_proteins). Insufficient independent replication to establish a general directional association.",
+  "host": "Shreys-MacBook-Pro",
+  "rows": 270572,
+  "assays": 72,
+  "bootstrap_replicates": 5000,
+  "bootstrap_unit": "protein cluster (all assays retained together)",
+  "fresh_alignment_clustering": false,
+  "outputs": {
+    "signal_by_assay.csv": "9c72c73a9af8713a5f0f98f5418d424e3bb3163f05a1c8809ad07de92a9b1502",
+    "per_assay.csv": "ecb1b7107fb3f5f5614cf60a9126f62e3479d5633c3a78034e6ff6163aa58feb",
+    "corrected_contrasts.csv": "01fcf8f481fad3d6d6f71a21da95f3578982416ef41ab15320774c26bf0483aa",
+    "individual_variants.csv.gz": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+    "family_controls.csv": "4e18c7c354d6f491c9ec7f55112cc9c2f0be003a1fbab8eecd8eeccf228a6201",
+    "position_features.csv": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+    "composition.csv": "8313e56e117f3409d8d5a33eeaa7df2dfc419bb582547661ac2f8cd3e0b532e1",
+    "score_join_coverage.csv": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+    "signal_summary.csv": "4cc72d1e69d40c75f77613a180147b87690527fc843b07e60175ce10c47dd357",
+    "corrected_curves.csv": "b7a8652613c3b15bb0c4490fdcc442560c8aebfa7afc4a3f9f54b973b98f65ee",
+    "contrasts.csv": "01fcf8f481fad3d6d6f71a21da95f3578982416ef41ab15320774c26bf0483aa",
+    "curves.csv": "b7a8652613c3b15bb0c4490fdcc442560c8aebfa7afc4a3f9f54b973b98f65ee"
+  },
+  "elapsed_seconds": 3.897892951965332
+}

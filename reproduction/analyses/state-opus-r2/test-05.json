@@ -243,8 +243,8 @@
     "notebook": "inline/state/state-opus-r2/test-05.ipynb",
     "html": "inline/state/state-opus-r2/test-05.html",
     "execution_evidence": "inline/state/state-opus-r2/test-05.execution.json",
-    "published_notebook_sha256": "4ad6c2702dfd912463ac3ddc3eec671a9566fc888b485aab1a6463beeffbf8e0",
-    "published_html_sha256": "0211459978c61c05ff41ae892d06fe922e9638ab954931157c488feb51d41bc6",
+    "published_notebook_sha256": "64c8a72319c00ec070e38403b94df19e044eee39f1075982fd04e1c93f02b082",
+    "published_html_sha256": "ed50522f26517e4313f8dfff46826b7dc577bbfc6f8a454cc1bf8ee06548fe7b",
     "code_cells": 13,
     "sections": [
       {
@@ -343,18 +343,18 @@
       ],
       "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
     },
-    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "verification_boundary": "Only the listed calculation/interpretation cells were executed; all other code cells and their saved outputs exactly match commit 1d3b45b. Kimi uses retained per-gene observed/predicted metrics and checkpoint norms; Opus uses retained official score rows and reconstructed annotation features. No new model inference. Gene-bootstrap intervals are conditional on existing contexts; the new split is retrospective sensitivity, not prospective confirmation.",
     "execution_evidence": "inline/state/state-opus-r2/test-05.execution.json",
-    "notebook_sha256": "4ad6c2702dfd912463ac3ddc3eec671a9566fc888b485aab1a6463beeffbf8e0",
+    "notebook_sha256": "64c8a72319c00ec070e38403b94df19e044eee39f1075982fd04e1c93f02b082",
     "result_location": {
       "notebook": "inline/state/state-opus-r2/test-05.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
     },
-    "interpretation_review": {
-      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
-      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
-      "presentation_record": "review_20261115/presentation/state-opus-r2-test-05.revision.json"
+    "scientific_correction": {
+      "record": "corrections/scientific_20261115/records/state-opus-r2-test-05.scientific-revision.json",
+      "execution_scope": "selected_cells_reexecuted",
+      "summary": "Corrected categorical context adjustment, gene-cluster uncertainty and the reproducible gene-half sensitivity split."
     }
   }
 }

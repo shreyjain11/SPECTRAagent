@@ -1,0 +1,675 @@
+[
+  {
+    "analysis_id": "state-featured/test-05",
+    "mode": "full_notebook",
+    "executed_notebook_cells": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      12,
+      14,
+      16,
+      17,
+      19,
+      21,
+      22
+    ],
+    "summary": "Corrected redundant regression controls and canonical-gene-clustered uncertainty.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "started_at": "2026-11-16T03:02:39.310019Z",
+      "finished_at": "2026-11-16T03:03:00.166251Z",
+      "elapsed_seconds": 22.441,
+      "command": "env STATE_PRIMARY_INPUTS=/private/tmp/state-primary-correction-inputs /opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py /private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-05.ipynb --cwd /private/tmp/state-primary-correction-runs/test-05 --timeout 600",
+      "driver": "inline/execute_notebook.py",
+      "log": "corrections/scientific_20261115/state_primary/outputs/test-05/runner.log"
+    },
+    "inputs": [
+      {
+        "path": "primary/state/payloads/state-official-score-cache.tar.gz",
+        "role": "Public archive containing the exact official-score bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/payloads/state-historical-annotations.tar.gz",
+        "role": "Public archive containing the exact historical annotation bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/k562.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+        "role": "Pinned context split definition"
+      }
+    ],
+    "output_artifacts": [
+      "corrections/scientific_20261115/state_primary/outputs/test-05/curve.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-05/trends.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-05/execution_record.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-05/adjusted_coefficients.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-05/annotated_extreme_contrasts.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-05/pathway_count_strata.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-05/adjusted_support_verification.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-05/verified_source_manifest.json"
+    ],
+    "dependency_scope": "Every code cell rerun from pinned, hash-verified cached public score, annotation and split inputs. The source archives and split files bind the consumed bytes; verified_source_manifest.json identifies each extracted source. Released model scores reused; no fresh STATE inference. Cohort, axis and outcome definitions unchanged."
+  },
+  {
+    "analysis_id": "state-featured/test-09",
+    "mode": "full_notebook",
+    "executed_notebook_cells": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      12,
+      14,
+      16,
+      17,
+      19,
+      21,
+      22
+    ],
+    "summary": "Corrected redundant regression controls and canonical-gene-clustered uncertainty.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "started_at": "2026-11-16T03:02:39.310079Z",
+      "finished_at": "2026-11-16T03:03:00.166367Z",
+      "elapsed_seconds": 22.441,
+      "command": "env STATE_PRIMARY_INPUTS=/private/tmp/state-primary-correction-inputs /opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py /private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-09.ipynb --cwd /private/tmp/state-primary-correction-runs/test-09 --timeout 600",
+      "driver": "inline/execute_notebook.py",
+      "log": "corrections/scientific_20261115/state_primary/outputs/test-09/runner.log"
+    },
+    "inputs": [
+      {
+        "path": "primary/state/payloads/state-official-score-cache.tar.gz",
+        "role": "Public archive containing the exact official-score bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/payloads/state-historical-annotations.tar.gz",
+        "role": "Public archive containing the exact historical annotation bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/k562.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+        "role": "Pinned context split definition"
+      }
+    ],
+    "output_artifacts": [
+      "corrections/scientific_20261115/state_primary/outputs/test-09/curve.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-09/trends.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-09/execution_record.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-09/adjusted_coefficients.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-09/annotated_extreme_contrasts.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-09/pathway_count_strata.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-09/adjusted_support_verification.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-09/verified_source_manifest.json"
+    ],
+    "dependency_scope": "Every code cell rerun from pinned, hash-verified cached public score, annotation and split inputs. The source archives and split files bind the consumed bytes; verified_source_manifest.json identifies each extracted source. Released model scores reused; no fresh STATE inference. Cohort, axis and outcome definitions unchanged."
+  },
+  {
+    "analysis_id": "state-featured/test-10",
+    "mode": "full_notebook",
+    "executed_notebook_cells": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      12,
+      14,
+      16,
+      17,
+      19,
+      21,
+      22
+    ],
+    "summary": "Corrected redundant regression controls and canonical-gene-clustered uncertainty.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "started_at": "2026-11-16T03:02:39.310862Z",
+      "finished_at": "2026-11-16T03:03:00.174706Z",
+      "elapsed_seconds": 22.444,
+      "command": "env STATE_PRIMARY_INPUTS=/private/tmp/state-primary-correction-inputs /opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py /private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-10.ipynb --cwd /private/tmp/state-primary-correction-runs/test-10 --timeout 600",
+      "driver": "inline/execute_notebook.py",
+      "log": "corrections/scientific_20261115/state_primary/outputs/test-10/runner.log"
+    },
+    "inputs": [
+      {
+        "path": "primary/state/payloads/state-official-score-cache.tar.gz",
+        "role": "Public archive containing the exact official-score bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/payloads/state-historical-annotations.tar.gz",
+        "role": "Public archive containing the exact historical annotation bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/k562.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+        "role": "Pinned context split definition"
+      }
+    ],
+    "output_artifacts": [
+      "corrections/scientific_20261115/state_primary/outputs/test-10/curve.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-10/trends.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-10/execution_record.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-10/adjusted_coefficients.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-10/annotated_extreme_contrasts.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-10/pathway_count_strata.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-10/adjusted_support_verification.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-10/verified_source_manifest.json"
+    ],
+    "dependency_scope": "Every code cell rerun from pinned, hash-verified cached public score, annotation and split inputs. The source archives and split files bind the consumed bytes; verified_source_manifest.json identifies each extracted source. Released model scores reused; no fresh STATE inference. Cohort, axis and outcome definitions unchanged."
+  },
+  {
+    "analysis_id": "state-featured/test-13",
+    "mode": "full_notebook",
+    "executed_notebook_cells": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      11,
+      13,
+      15,
+      17,
+      18
+    ],
+    "summary": "Corrected redundant regression controls and canonical-gene-clustered uncertainty.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "started_at": "2026-11-16T03:03:02.128231Z",
+      "finished_at": "2026-11-16T03:03:21.310986Z",
+      "elapsed_seconds": 20.731,
+      "command": "env STATE_PRIMARY_INPUTS=/private/tmp/state-primary-correction-inputs /opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py /private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-13.ipynb --cwd /private/tmp/state-primary-correction-runs/test-13 --timeout 600",
+      "driver": "inline/execute_notebook.py",
+      "log": "corrections/scientific_20261115/state_primary/outputs/test-13/runner.log"
+    },
+    "inputs": [
+      {
+        "path": "primary/state/payloads/state-official-score-cache.tar.gz",
+        "role": "Public archive containing the exact official-score bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/payloads/state-historical-annotations.tar.gz",
+        "role": "Public archive containing the exact historical annotation bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/k562.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+        "role": "Pinned context split definition"
+      }
+    ],
+    "output_artifacts": [
+      "corrections/scientific_20261115/state_primary/outputs/test-13/curve.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-13/trends.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-13/execution_record.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-13/adjusted_support_verification.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-13/verified_source_manifest.json"
+    ],
+    "dependency_scope": "Every code cell rerun from pinned, hash-verified cached public score, annotation and split inputs. The source archives and split files bind the consumed bytes; verified_source_manifest.json identifies each extracted source. Released model scores reused; no fresh STATE inference. Cohort, axis and outcome definitions unchanged."
+  },
+  {
+    "analysis_id": "state-featured/test-14",
+    "mode": "full_notebook",
+    "executed_notebook_cells": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      11,
+      13,
+      15,
+      17,
+      18
+    ],
+    "summary": "Corrected redundant regression controls and canonical-gene-clustered uncertainty.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "started_at": "2026-11-16T03:03:02.128606Z",
+      "finished_at": "2026-11-16T03:03:20.652439Z",
+      "elapsed_seconds": 19.977,
+      "command": "env STATE_PRIMARY_INPUTS=/private/tmp/state-primary-correction-inputs /opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py /private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-14.ipynb --cwd /private/tmp/state-primary-correction-runs/test-14 --timeout 600",
+      "driver": "inline/execute_notebook.py",
+      "log": "corrections/scientific_20261115/state_primary/outputs/test-14/runner.log"
+    },
+    "inputs": [
+      {
+        "path": "primary/state/payloads/state-official-score-cache.tar.gz",
+        "role": "Public archive containing the exact official-score bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/payloads/state-historical-annotations.tar.gz",
+        "role": "Public archive containing the exact historical annotation bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/k562.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+        "role": "Pinned context split definition"
+      }
+    ],
+    "output_artifacts": [
+      "corrections/scientific_20261115/state_primary/outputs/test-14/curve.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-14/trends.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-14/execution_record.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-14/adjusted_support_verification.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-14/verified_source_manifest.json"
+    ],
+    "dependency_scope": "Every code cell rerun from pinned, hash-verified cached public score, annotation and split inputs. The source archives and split files bind the consumed bytes; verified_source_manifest.json identifies each extracted source. Released model scores reused; no fresh STATE inference. Cohort, axis and outcome definitions unchanged."
+  },
+  {
+    "analysis_id": "state-featured/test-15",
+    "mode": "full_notebook",
+    "executed_notebook_cells": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      11,
+      13,
+      15,
+      17,
+      18
+    ],
+    "summary": "Corrected redundant regression controls and canonical-gene-clustered uncertainty.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "started_at": "2026-11-16T03:03:02.128471Z",
+      "finished_at": "2026-11-16T03:03:22.712392Z",
+      "elapsed_seconds": 22.47,
+      "command": "env STATE_PRIMARY_INPUTS=/private/tmp/state-primary-correction-inputs /opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py /private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-15.ipynb --cwd /private/tmp/state-primary-correction-runs/test-15 --timeout 600",
+      "driver": "inline/execute_notebook.py",
+      "log": "corrections/scientific_20261115/state_primary/outputs/test-15/runner.log"
+    },
+    "inputs": [
+      {
+        "path": "primary/state/payloads/state-official-score-cache.tar.gz",
+        "role": "Public archive containing the exact official-score bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/payloads/state-historical-annotations.tar.gz",
+        "role": "Public archive containing the exact historical annotation bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/k562.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+        "role": "Pinned context split definition"
+      }
+    ],
+    "output_artifacts": [
+      "corrections/scientific_20261115/state_primary/outputs/test-15/curve.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-15/trends.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-15/execution_record.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-15/adjusted_support_verification.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-15/verified_source_manifest.json"
+    ],
+    "dependency_scope": "Every code cell rerun from pinned, hash-verified cached public score, annotation and split inputs. The source archives and split files bind the consumed bytes; verified_source_manifest.json identifies each extracted source. Released model scores reused; no fresh STATE inference. Cohort, axis and outcome definitions unchanged."
+  },
+  {
+    "analysis_id": "state-featured/test-16",
+    "mode": "full_notebook",
+    "executed_notebook_cells": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      11,
+      13,
+      15,
+      17,
+      18
+    ],
+    "summary": "Corrected redundant regression controls and canonical-gene-clustered uncertainty.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "started_at": "2026-11-16T03:03:22.868098Z",
+      "finished_at": "2026-11-16T03:03:44.051798Z",
+      "elapsed_seconds": 22.956,
+      "command": "env STATE_PRIMARY_INPUTS=/private/tmp/state-primary-correction-inputs /opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py /private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-16.ipynb --cwd /private/tmp/state-primary-correction-runs/test-16 --timeout 600",
+      "driver": "inline/execute_notebook.py",
+      "log": "corrections/scientific_20261115/state_primary/outputs/test-16/runner.log"
+    },
+    "inputs": [
+      {
+        "path": "primary/state/payloads/state-official-score-cache.tar.gz",
+        "role": "Public archive containing the exact official-score bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/payloads/state-historical-annotations.tar.gz",
+        "role": "Public archive containing the exact historical annotation bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/k562.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+        "role": "Pinned context split definition"
+      }
+    ],
+    "output_artifacts": [
+      "corrections/scientific_20261115/state_primary/outputs/test-16/curve.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-16/trends.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-16/execution_record.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-16/adjusted_support_verification.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-16/verified_source_manifest.json"
+    ],
+    "dependency_scope": "Every code cell rerun from pinned, hash-verified cached public score, annotation and split inputs. The source archives and split files bind the consumed bytes; verified_source_manifest.json identifies each extracted source. Released model scores reused; no fresh STATE inference. Cohort, axis and outcome definitions unchanged."
+  },
+  {
+    "analysis_id": "state-featured/test-17",
+    "mode": "full_notebook",
+    "executed_notebook_cells": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      11,
+      13,
+      15,
+      17,
+      18
+    ],
+    "summary": "Corrected redundant regression controls and canonical-gene-clustered uncertainty.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "started_at": "2026-11-16T03:03:23.225409Z",
+      "finished_at": "2026-11-16T03:03:44.065431Z",
+      "elapsed_seconds": 22.342,
+      "command": "env STATE_PRIMARY_INPUTS=/private/tmp/state-primary-correction-inputs /opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py /private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-17.ipynb --cwd /private/tmp/state-primary-correction-runs/test-17 --timeout 600",
+      "driver": "inline/execute_notebook.py",
+      "log": "corrections/scientific_20261115/state_primary/outputs/test-17/runner.log"
+    },
+    "inputs": [
+      {
+        "path": "primary/state/payloads/state-official-score-cache.tar.gz",
+        "role": "Public archive containing the exact official-score bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/payloads/state-historical-annotations.tar.gz",
+        "role": "Public archive containing the exact historical annotation bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/k562.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+        "role": "Pinned context split definition"
+      }
+    ],
+    "output_artifacts": [
+      "corrections/scientific_20261115/state_primary/outputs/test-17/curve.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-17/trends.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-17/execution_record.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-17/adjusted_support_verification.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-17/verified_source_manifest.json"
+    ],
+    "dependency_scope": "Every code cell rerun from pinned, hash-verified cached public score, annotation and split inputs. The source archives and split files bind the consumed bytes; verified_source_manifest.json identifies each extracted source. Released model scores reused; no fresh STATE inference. Cohort, axis and outcome definitions unchanged."
+  },
+  {
+    "analysis_id": "state-featured/test-18",
+    "mode": "full_notebook",
+    "executed_notebook_cells": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      11,
+      13,
+      15,
+      17,
+      18
+    ],
+    "summary": "Corrected redundant regression controls and canonical-gene-clustered uncertainty.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "started_at": "2026-11-16T03:03:24.505550Z",
+      "finished_at": "2026-11-16T03:03:43.627890Z",
+      "elapsed_seconds": 20.226,
+      "command": "env STATE_PRIMARY_INPUTS=/private/tmp/state-primary-correction-inputs /opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py /private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-18.ipynb --cwd /private/tmp/state-primary-correction-runs/test-18 --timeout 600",
+      "driver": "inline/execute_notebook.py",
+      "log": "corrections/scientific_20261115/state_primary/outputs/test-18/runner.log"
+    },
+    "inputs": [
+      {
+        "path": "primary/state/payloads/state-official-score-cache.tar.gz",
+        "role": "Public archive containing the exact official-score bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/payloads/state-historical-annotations.tar.gz",
+        "role": "Public archive containing the exact historical annotation bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/k562.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+        "role": "Pinned context split definition"
+      }
+    ],
+    "output_artifacts": [
+      "corrections/scientific_20261115/state_primary/outputs/test-18/curve.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-18/trends.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-18/execution_record.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-18/adjusted_support_verification.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-18/verified_source_manifest.json"
+    ],
+    "dependency_scope": "Every code cell rerun from pinned, hash-verified cached public score, annotation and split inputs. The source archives and split files bind the consumed bytes; verified_source_manifest.json identifies each extracted source. Released model scores reused; no fresh STATE inference. Cohort, axis and outcome definitions unchanged."
+  },
+  {
+    "analysis_id": "state-featured/test-19",
+    "mode": "full_notebook",
+    "executed_notebook_cells": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      11,
+      13,
+      15,
+      17,
+      18
+    ],
+    "summary": "Corrected redundant regression controls and canonical-gene-clustered uncertainty.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "started_at": "2026-11-16T03:03:45.221112Z",
+      "finished_at": "2026-11-16T03:04:00.189204Z",
+      "elapsed_seconds": 16.14,
+      "command": "env STATE_PRIMARY_INPUTS=/private/tmp/state-primary-correction-inputs /opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py /private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-19.ipynb --cwd /private/tmp/state-primary-correction-runs/test-19 --timeout 600",
+      "driver": "inline/execute_notebook.py",
+      "log": "corrections/scientific_20261115/state_primary/outputs/test-19/runner.log"
+    },
+    "inputs": [
+      {
+        "path": "primary/state/payloads/state-official-score-cache.tar.gz",
+        "role": "Public archive containing the exact official-score bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/payloads/state-historical-annotations.tar.gz",
+        "role": "Public archive containing the exact historical annotation bytes verified by the notebook"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/k562.toml",
+        "role": "Pinned context split definition"
+      },
+      {
+        "path": "primary/state/original/state_generalizability_20260602_single_controller/external/state/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+        "role": "Pinned context split definition"
+      }
+    ],
+    "output_artifacts": [
+      "corrections/scientific_20261115/state_primary/outputs/test-19/curve.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-19/trends.csv",
+      "corrections/scientific_20261115/state_primary/outputs/test-19/execution_record.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-19/adjusted_support_verification.json",
+      "corrections/scientific_20261115/state_primary/outputs/test-19/verified_source_manifest.json"
+    ],
+    "dependency_scope": "Every code cell rerun from pinned, hash-verified cached public score, annotation and split inputs. The source archives and split files bind the consumed bytes; verified_source_manifest.json identifies each extracted source. Released model scores reused; no fresh STATE inference. Cohort, axis and outcome definitions unchanged."
+  },
+  {
+    "analysis_id": "state-codex-r1/test-04",
+    "mode": "selected_cells",
+    "executed_notebook_cells": [
+      21
+    ],
+    "summary": "Corrected the S-phase plot label; recomputed points and intervals match the prior displayed values.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "started_at": "2026-11-16T02:58:12.395691Z",
+      "finished_at": "2026-11-16T02:58:14.415948Z",
+      "elapsed_seconds": 2.020257,
+      "command": "/opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/corrections/scientific_20261115/state_plot/rerun_plot.py /private/tmp/state-plot-correction",
+      "driver": "corrections/scientific_20261115/state_plot/rerun_plot.py",
+      "log": "corrections/scientific_20261115/state_plot/outputs/execution.json"
+    },
+    "inputs": [
+      {
+        "path": "reconstructed/state-codex-r1/computed/analysis/controls/per_condition_scores.csv",
+        "role": "Retained per-condition model/reference scores and S-phase axis values",
+        "rows": 17040
+      }
+    ],
+    "prerequisite_setup": {
+      "script": "corrections/scientific_20261115/state_plot/rerun_plot.py",
+      "input_paths": [
+        "reconstructed/state-codex-r1/computed/analysis/controls/per_condition_scores.csv"
+      ],
+      "description": "Restore hvg_best confirmation records and join S-phase SD by cell line; execute the actual corrected plot cell with the original seed and bootstrap repetitions."
+    },
+    "output_artifacts": [
+      "corrections/scientific_20261115/state_plot/outputs/corrected_curve.csv",
+      "corrections/scientific_20261115/state_plot/outputs/controls_curve.png",
+      "corrections/scientific_20261115/state_plot/outputs/numerical_check.json"
+    ],
+    "dependency_scope": "Only cell 21 reexecuted from retained per-condition scores (4020 confirmation records, 268 compounds across five contexts). Every plotted point/interval checked against prior output at its six-decimal display precision. All other scientific cells and outputs remain byte-identical to the previous revision."
+  }
+]

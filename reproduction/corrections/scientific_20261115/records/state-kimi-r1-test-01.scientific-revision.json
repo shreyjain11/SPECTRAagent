@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "analysis_id": "state-kimi-r1/test-01",
+  "scientific_reexecution": true,
+  "mode": "selected_cells",
+  "reason": "Replaced pooled independence assumptions and the invalid embedding Z with joint gene-bootstrap intervals.",
+  "original_commit": "1d3b45baa344751b4c34ea825479c0f39b09ec21",
+  "original_artifacts": {
+    "notebook": {
+      "path": "inline/state/state-kimi-r1/test-01.ipynb",
+      "sha256": "e9eb3dd620e8b2ac461649ca18a055f3c15e26eff7a5304ca7146fee07c98587"
+    },
+    "html": {
+      "path": "inline/state/state-kimi-r1/test-01.html",
+      "sha256": "b88218a07cab0eabd1b17aa27d79f550ae103cbb94a0458f35948a9b7ad10a70"
+    }
+  },
+  "published_artifacts": {
+    "notebook": {
+      "path": "inline/state/state-kimi-r1/test-01.ipynb",
+      "sha256": "a1b86a3e6732319a7a962e2b6aa9946aaaa8fe1e3a7739ceae3ec2f0350d51fb",
+      "bytes": 479062
+    },
+    "html": {
+      "path": "inline/state/state-kimi-r1/test-01.html",
+      "sha256": "338cb13e47f8da6d36ef608d2c181182616dd2e93be7b2b81ac8898dc9745f32",
+      "bytes": 876968
+    }
+  },
+  "original_code_cells": [
+    {
+      "notebook_cell": 2,
+      "execution_count": 1,
+      "source_sha256": "db8ab86f91fc1e92d6ccb846e269e6ed2b526d685bd10150b3f5d7fd93c9e489",
+      "outputs_sha256": "d897dae2ea6909a098ee3f978992560d6d7cc199a74c7a7b9c82e1d7b76f008e",
+      "cell_sha256": "6bb243f46bb0ca47d8581f3c0ebe8e830394c3dcb2381e3a631633e4f9f46487"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 2,
+      "source_sha256": "643391f9dd32219c1b939cc17e811376736a61840f28d49a45910a1b2ae76fe0",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "1dcc354db1cde77b3dc87da18d2b22ad5c994e201c4cfa57def64b1f786d7f43"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 3,
+      "source_sha256": "ecbb6a9b0111e12191004b5e14f9181bc4a1943897adb73818ac4ddb5ea3e833",
+      "outputs_sha256": "72ab28d0f1a924e911e5b2dd13b737aa5127c8b6f8231d530ee554961c0c01bf",
+      "cell_sha256": "9280747cfd4dd8829b76de2713facc3ecdd33b89b8f247a7b8c2a2d6aad984ff"
+    },
+    {
+      "notebook_cell": 7,
+      "execution_count": 4,
+      "source_sha256": "83f43ce25bfc4031d7f65052c1888e2ab426a72f6c501a452728a1f9aeccad18",
+      "outputs_sha256": "20e45450741d2069f25263806d915fc209dc679363f6167ecaeb7967273ef805",
+      "cell_sha256": "501895d880f42f6a1bfc6d7d42e801fc34dfb2a0ae4760cdecc3dcdba3973a4e"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 5,
+      "source_sha256": "4779f1a20c11674559533fca4d8d6d4a405b811c44482007f0c58b3b9f369c67",
+      "outputs_sha256": "b1fa7c00ee202f540eeb6cc610394ce7c0a6d96bac536070a70dc4cdf958c55f",
+      "cell_sha256": "35f706d8baf7b71cfa2e638dd4000baf4e8b663c941a7bd04c29e41b46fcd0c8"
+    },
+    {
+      "notebook_cell": 11,
+      "execution_count": 6,
+      "source_sha256": "6143ea916693fe6421d26b9e3fb586ce28939ddf2d425742fc78770851e6723b",
+      "outputs_sha256": "25c79486a6ff8c1f1c386ede5ed8113cc0f5f70a57b7824ebccb578ef8753ae7",
+      "cell_sha256": "d2775e53dba4285e7dccb1740b5ba71dd9a788b75914a1026baee523a898e9d5"
+    },
+    {
+      "notebook_cell": 12,
+      "execution_count": 7,
+      "source_sha256": "df25f68332248c7045b52cec44add65580f9ca76c090560040e409d87dcc0471",
+      "outputs_sha256": "5004e65391605f51fabe22700b99572b1c0e4226fa8cacfd07640f6fd022f14c",
+      "cell_sha256": "d2728014cd8f7fb772cfd326d69d29854f09fbfd6de725eb36b5271197c15d22"
+    },
+    {
+      "notebook_cell": 13,
+      "execution_count": 8,
+      "source_sha256": "461184ea4ea1cfe933ec7029b168e772b028460407eb05bc7ce11994a37d0ce7",
+      "outputs_sha256": "bd681a469f19bafca1b9f9efa0540926c190d936a62bdf99ccf3072603500404",
+      "cell_sha256": "95d1203acb1f323073881ddc2c4cda9c126d081433c59e3bd0731dd1ac52c7ce"
+    },
+    {
+      "notebook_cell": 14,
+      "execution_count": 9,
+      "source_sha256": "6ba19190c09f5d7c3f6efb1aee97a1985131ffcd09aacd1732493d8ee31be138",
+      "outputs_sha256": "e41427e1d34242df454a2e14e818f1ca7bf50c97c08324c0149e5e3664be7ce7",
+      "cell_sha256": "e7d89844011443c2d9e0ace77500bd5152278084d359a672a0a6554dff337cb3"
+    },
+    {
+      "notebook_cell": 16,
+      "execution_count": 10,
+      "source_sha256": "031b4d480ffc6a8c9cdaa730180a7ad7a970b7924945508824a70a1d9dd552ab",
+      "outputs_sha256": "ffc5a5eb1cd8c8e6944b93c7cb522191b9be529d258720ff3dc14ccb344058c8",
+      "cell_sha256": "41330cd3e1352dc2e1f3ba7a680eccaff196dfe8458fa27b3bd102e90c050fca"
+    },
+    {
+      "notebook_cell": 17,
+      "execution_count": 11,
+      "source_sha256": "40cbdf3dd9395e51242e679fd384da877aea806c1af2025317d99a65936b440e",
+      "outputs_sha256": "34701dc4edb8e3df3b0b0d83927f1dd8e0126a1cff482ba8f3f9f7053ffd9824",
+      "cell_sha256": "903a9ce20576b39cf401644c54e9b843e8893206b469ab86feb04e088da6a676"
+    }
+  ],
+  "published_code_cells": [
+    {
+      "notebook_cell": 2,
+      "execution_count": 1,
+      "source_sha256": "db8ab86f91fc1e92d6ccb846e269e6ed2b526d685bd10150b3f5d7fd93c9e489",
+      "outputs_sha256": "d897dae2ea6909a098ee3f978992560d6d7cc199a74c7a7b9c82e1d7b76f008e",
+      "cell_sha256": "6bb243f46bb0ca47d8581f3c0ebe8e830394c3dcb2381e3a631633e4f9f46487"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 2,
+      "source_sha256": "643391f9dd32219c1b939cc17e811376736a61840f28d49a45910a1b2ae76fe0",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "1dcc354db1cde77b3dc87da18d2b22ad5c994e201c4cfa57def64b1f786d7f43"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 3,
+      "source_sha256": "ecbb6a9b0111e12191004b5e14f9181bc4a1943897adb73818ac4ddb5ea3e833",
+      "outputs_sha256": "72ab28d0f1a924e911e5b2dd13b737aa5127c8b6f8231d530ee554961c0c01bf",
+      "cell_sha256": "9280747cfd4dd8829b76de2713facc3ecdd33b89b8f247a7b8c2a2d6aad984ff"
+    },
+    {
+      "notebook_cell": 7,
+      "execution_count": 4,
+      "source_sha256": "83f43ce25bfc4031d7f65052c1888e2ab426a72f6c501a452728a1f9aeccad18",
+      "outputs_sha256": "20e45450741d2069f25263806d915fc209dc679363f6167ecaeb7967273ef805",
+      "cell_sha256": "501895d880f42f6a1bfc6d7d42e801fc34dfb2a0ae4760cdecc3dcdba3973a4e"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 5,
+      "source_sha256": "4779f1a20c11674559533fca4d8d6d4a405b811c44482007f0c58b3b9f369c67",
+      "outputs_sha256": "b1fa7c00ee202f540eeb6cc610394ce7c0a6d96bac536070a70dc4cdf958c55f",
+      "cell_sha256": "35f706d8baf7b71cfa2e638dd4000baf4e8b663c941a7bd04c29e41b46fcd0c8"
+    },
+    {
+      "notebook_cell": 11,
+      "execution_count": 6,
+      "source_sha256": "6143ea916693fe6421d26b9e3fb586ce28939ddf2d425742fc78770851e6723b",
+      "outputs_sha256": "25c79486a6ff8c1f1c386ede5ed8113cc0f5f70a57b7824ebccb578ef8753ae7",
+      "cell_sha256": "d2775e53dba4285e7dccb1740b5ba71dd9a788b75914a1026baee523a898e9d5"
+    },
+    {
+      "notebook_cell": 12,
+      "execution_count": null,
+      "source_sha256": "f2996e7ef23ad8ef6b5e6af086e687c8ddd697ad026e3b6a59be9bb63ad50265",
+      "outputs_sha256": "c489816b48f1cc96f7cc4409a767a11df458546a4e2a7aadd173597600e5740c",
+      "cell_sha256": "8f7b57be7e0a3d5580bc916ef705e61e0dd7bf45af14ff359ea09935a81c44e1"
+    },
+    {
+      "notebook_cell": 13,
+      "execution_count": 8,
+      "source_sha256": "461184ea4ea1cfe933ec7029b168e772b028460407eb05bc7ce11994a37d0ce7",
+      "outputs_sha256": "bd681a469f19bafca1b9f9efa0540926c190d936a62bdf99ccf3072603500404",
+      "cell_sha256": "95d1203acb1f323073881ddc2c4cda9c126d081433c59e3bd0731dd1ac52c7ce"
+    },
+    {
+      "notebook_cell": 14,
+      "execution_count": 9,
+      "source_sha256": "6ba19190c09f5d7c3f6efb1aee97a1985131ffcd09aacd1732493d8ee31be138",
+      "outputs_sha256": "e41427e1d34242df454a2e14e818f1ca7bf50c97c08324c0149e5e3664be7ce7",
+      "cell_sha256": "e7d89844011443c2d9e0ace77500bd5152278084d359a672a0a6554dff337cb3"
+    },
+    {
+      "notebook_cell": 16,
+      "execution_count": null,
+      "source_sha256": "5dcd997b2afea3f1a33142ae9e43c58fa5ce6d2a1c5a5cb56696beebe4493c04",
+      "outputs_sha256": "4429ede5cd364853d0070b7ee9eefefadbe594e7fe4808f9335013839eef5cb6",
+      "cell_sha256": "62ec1ecc3bf4c66784614aeaeec80d341a9d628a3a7b261b3477a50a7c367430"
+    },
+    {
+      "notebook_cell": 17,
+      "execution_count": 11,
+      "source_sha256": "40cbdf3dd9395e51242e679fd384da877aea806c1af2025317d99a65936b440e",
+      "outputs_sha256": "34701dc4edb8e3df3b0b0d83927f1dd8e0126a1cff482ba8f3f9f7053ffd9824",
+      "cell_sha256": "903a9ce20576b39cf401644c54e9b843e8893206b469ab86feb04e088da6a676"
+    }
+  ],
+  "executed_notebook_cells": [
+    12,
+    16
+  ],
+  "changed_code_cells": [
+    12,
+    16
+  ],
+  "executed_cell_evidence": [
+    {
+      "notebook_cell": 12,
+      "execution_count": null,
+      "source_sha256": "f2996e7ef23ad8ef6b5e6af086e687c8ddd697ad026e3b6a59be9bb63ad50265",
+      "outputs_sha256": "c489816b48f1cc96f7cc4409a767a11df458546a4e2a7aadd173597600e5740c",
+      "cell_sha256": "8f7b57be7e0a3d5580bc916ef705e61e0dd7bf45af14ff359ea09935a81c44e1"
+    },
+    {
+      "notebook_cell": 16,
+      "execution_count": null,
+      "source_sha256": "5dcd997b2afea3f1a33142ae9e43c58fa5ce6d2a1c5a5cb56696beebe4493c04",
+      "outputs_sha256": "4429ede5cd364853d0070b7ee9eefefadbe594e7fe4808f9335013839eef5cb6",
+      "cell_sha256": "62ec1ecc3bf4c66784614aeaeec80d341a9d628a3a7b261b3477a50a7c367430"
+    }
+  ],
+  "execution": {
+    "host": "Shreys-MacBook-Pro",
+    "python": "3.13.2",
+    "started_at": "2026-11-16T03:07:19.823846+00:00",
+    "finished_at": "2026-11-16T03:07:56.613152+00:00",
+    "elapsed_seconds": 10.307215915992856,
+    "command": "MPLCONFIGDIR=/private/tmp/spectra-review-mpl OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python reproduction/corrections/scientific_20261115/state_kimi_opus/execute_changed_cells.py --repository /private/tmp/spectra-pr-review-20261115 --work /private/tmp/state-scientific-correction-20261115/work --part kimi",
+    "driver": {
+      "path": "corrections/scientific_20261115/state_kimi_opus/kimi_executed_driver.py",
+      "sha256": "226756a5769c43b377f4c92444de31a6757895a2a380e687bae4a35cd6a68407",
+      "bytes": 5110
+    },
+    "log": {
+      "path": "corrections/scientific_20261115/state_kimi_opus/kimi_execution.json",
+      "sha256": "4d4861384e98f956eb2852cdd8ba5769488a413ff47a72179dd8173c8f19c7e3",
+      "bytes": 47678
+    },
+    "engine": "python_exec"
+  },
+  "inputs": [
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores.csv.gz",
+      "sha256": "9f77e2afb4d06bfc9b4da86287154d4ad84a86ca95da04f1f515bfa4d79e23d8",
+      "bytes": 98097,
+      "compression": "gzip",
+      "uncompressed_sha256": "0c6c5a8d5ccd19ff877bb7271aaaeed7d841641d260e15864a4a68d609df3594",
+      "uncompressed_bytes": 231542,
+      "work_relative_path": "state-kimi-r1/results/per_unit_scores.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores_rpe1.csv.gz",
+      "sha256": "c62c92e48dca36ff471dbaccea5ca8f0764797630ff45b501123072d26d7440b",
+      "bytes": 106013,
+      "compression": "gzip",
+      "uncompressed_sha256": "3f747d8b2107cffe0c608d022fead3ea717b567673c02925f6e7e4a9786ac3ad",
+      "uncompressed_bytes": 243549,
+      "work_relative_path": "state-kimi-r1/results/per_unit_scores_rpe1.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores_jurkat.csv.gz",
+      "sha256": "a90bac23ab4f5295251c5cc9c6077c9cb03529e3c5f952c8779c4e3afbd9b04b",
+      "bytes": 108349,
+      "compression": "gzip",
+      "uncompressed_sha256": "d635f83beae6fa8bd146420eb3de0e4be551b76ddd28eeba18ce5aac4f9c7cb8",
+      "uncompressed_bytes": 250824,
+      "work_relative_path": "state-kimi-r1/results/per_unit_scores_jurkat.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores_hepg2.csv.gz",
+      "sha256": "05dfd26545b6ab3840d39c0cabf6c644e97cb1eb2ed3bbdd849e107b81db6081",
+      "bytes": 94291,
+      "compression": "gzip",
+      "uncompressed_sha256": "f0576bf4caebe52aac70fbbefc323756dea7859ee01c771e6805ed32cfd03f9d",
+      "uncompressed_bytes": 217679,
+      "work_relative_path": "state-kimi-r1/results/per_unit_scores_hepg2.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/proximity_embedding_norms_rpe1.csv.gz",
+      "sha256": "ab0800872e173fda88b3fd2514ffc9b027b2d8496e0a5e1505923f7e449057f6",
+      "bytes": 13468,
+      "compression": "gzip",
+      "uncompressed_sha256": "d3dbd5ed9ce532050a68d971c5bdcc9e09749e1c1dfd493651174cfac2eed2a8",
+      "uncompressed_bytes": 44327,
+      "work_relative_path": "state-kimi-r1/results/proximity_embedding_norms_rpe1.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/proximity_embedding_norms_jurkat.csv.gz",
+      "sha256": "e60478222ae8fcb147902a1f7afd00da46477e5db23434601883486f8fc4bba8",
+      "bytes": 13834,
+      "compression": "gzip",
+      "uncompressed_sha256": "450bb5b30cb9f4dc91970dce7aa669470d7c7e3f410428b77b8b3fca56e5e3c8",
+      "uncompressed_bytes": 45463,
+      "work_relative_path": "state-kimi-r1/results/proximity_embedding_norms_jurkat.csv",
+      "role": "Exact consumed retained input"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/proximity_embedding_norms_hepg2.csv.gz",
+      "sha256": "f73d4ad4985d12648f15700743fa6f0036851a47842fef7d3bb9744ff31e2601",
+      "bytes": 12024,
+      "compression": "gzip",
+      "uncompressed_sha256": "60122f79ef1f2800126f52bf92356c55c3dc32259a82834f47022a24b0324573",
+      "uncompressed_bytes": 39598,
+      "work_relative_path": "state-kimi-r1/results/proximity_embedding_norms_hepg2.csv",
+      "role": "Exact consumed retained input"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/confirm_summary.json",
+      "sha256": "9ddc4638a50589d0043112e15d6a016bf936226bfb2802884a3bcc06f2d375da",
+      "bytes": 3294
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/pooled_gene_bootstrap_draws.csv",
+      "sha256": "4e8f765a628bf237fbfa897d604fccdf7bad68f6b2c30eef422cbb6e14706fb8",
+      "bytes": 388930
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/kimi_execution.json",
+      "sha256": "4d4861384e98f956eb2852cdd8ba5769488a413ff47a72179dd8173c8f19c7e3",
+      "bytes": 47678
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/real_data_checks.json",
+      "sha256": "1e7fe0aa78663784d709b87f740db2e1eae5f7473e89b6c54c07202c2a659a39",
+      "bytes": 539
+    }
+  ],
+  "dependency_scope": "Only the listed calculation/interpretation cells were executed; all other code cells and their saved outputs exactly match commit 1d3b45b. Kimi uses retained per-gene observed/predicted metrics and checkpoint norms; Opus uses retained official score rows and reconstructed annotation features. No new model inference. Gene-bootstrap intervals are conditional on existing contexts; the new split is retrospective sensitivity, not prospective confirmation.",
+  "prerequisite_setup": {
+    "script": {
+      "path": "corrections/scientific_20261115/state_kimi_opus/prepare_executed_inputs.py",
+      "sha256": "84c86fe81e0df132e5edf35c30f67c13f19ef92b2f4e96e21a1297dcb93ef609",
+      "bytes": 3523
+    },
+    "input_paths": [
+      "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores.csv.gz",
+      "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores_rpe1.csv.gz",
+      "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores_jurkat.csv.gz",
+      "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/per_unit_scores_hepg2.csv.gz",
+      "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/proximity_embedding_norms_rpe1.csv.gz",
+      "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/proximity_embedding_norms_jurkat.csv.gz",
+      "corrections/scientific_20261115/state_kimi_opus/inputs/state-kimi-r1/results/proximity_embedding_norms_hepg2.csv.gz"
+    ],
+    "description": "Prepared hash-verified public retained tables at the declared WORK directory; rechecked Opus zero-shot metrics against eight pinned official files and recomputed the original GO feature. Runner restores WORK and reads these inputs before executing the selected cells. Compressed exact consumed bytes are provided; restore_inputs.py is the portable restoration path."
+  }
+}

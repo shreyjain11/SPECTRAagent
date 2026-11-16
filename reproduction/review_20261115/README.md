@@ -1,5 +1,7 @@
 # Individual notebook review — November 15, 2026
 
+**Subsequent calculation fixes:** the fixable STATE and AlphaMissense issues identified below were corrected and rerun in [21 notebooks](../corrections/scientific_20261115/README.md). This ledger describes the earlier review; the linked correction records contain the current calculations and exact execution scope.
+
 The [combined ledger](all-143-entry-review.json) covers **all 143 entries in 28 investigations**, using the canonical IDs in [the reproduction index](../index.json). It preserves the full findings and metadata from each model's review; each entry's original review is under `review`.
 
 | Model | Entries | Individual review | Additional notes |
@@ -26,7 +28,7 @@ The [presentation comparison](presentation-independent-check.json) records code/
 
 These counts describe different kinds of checks and should not be combined into a count of independently reproduced analyses.
 
-## Issues still requiring care or new computation
+## Findings at the time of this review
 
 - **STATE Kimi r1:** the pooled embedding statistic omits required normalization, and recurring genes complicate independence. The saved statistic remains visible with an explicit warning. It needs a dependence-aware recalculation before inferential use.
 - **STATE Opus r2 test 05:** context adjustment treats categories as numeric codes, and the hash split is process-dependent. Stronger adjustment/holdout claims require explicit categorical indicators and a reproducible split. Primary STATE controls also contain redundant indicators and nonclustered uncertainty.

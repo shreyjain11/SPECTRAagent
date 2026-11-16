@@ -1,0 +1,317 @@
+{
+  "host": "Shreys-MacBook-Pro",
+  "driver": "opus_executed_driver.py",
+  "driver_sha256": "226756a5769c43b377f4c92444de31a6757895a2a380e687bae4a35cd6a68407",
+  "elapsed_seconds": 24.052214709110558,
+  "baseline_commit": "1d3b45b",
+  "plan_sha256": "d196e256727318e62bb61916fbd2d4f7580b38ece96b62157c147bd07906cade",
+  "execution_started_utc": "2026-11-16T03:09:33.699067+00:00",
+  "execution_completed_utc": "2026-11-16T03:09:57.751353+00:00",
+  "command": "reproduction/corrections/scientific_20261115/state_kimi_opus/execute_changed_cells.py --repository /private/tmp/spectra-pr-review-20261115 --work /private/tmp/state-scientific-correction-20261115/work --part opus",
+  "python": "3.13.2",
+  "versions": {
+    "numpy": "2.1.2",
+    "pandas": "2.3.1",
+    "scipy": "1.16.0",
+    "statsmodels": "0.14.6",
+    "matplotlib": "3.10.3"
+  },
+  "input_evidence": "input_evidence.json",
+  "full_notebook_reexecution": false,
+  "model_inference": false,
+  "cells": [
+    {
+      "notebook": "reproduction/inline/state/state-opus-r2/test-05.ipynb",
+      "cell_index": 13,
+      "source_sha256": "e256afc2196e0d719d9713fa2c827604e8f21eda3c53482a3a216e68252ea402",
+      "baseline_source_sha256": "0a6cb865e0ec573aa35a08726a598bdb67889e6a2c3a8b8d2221fec60e5c18ae",
+      "baseline_outputs_sha256": "79ab22282f1c617ec0674edc78df5bf3f94c98a90d2f2c4fb482e6738026e92f",
+      "outputs_sha256": "20dfd42da69c2fbdd3dcf15ec534564b776e7641e7f9838a9e2cdaeec3c15320",
+      "started_at_utc": "2026-11-16T03:09:33.699416+00:00",
+      "duration_seconds": 0.5249031668063253,
+      "execution": "Python exec of this exact cell source on the declared retained inputs; no notebook-wide execution",
+      "before_outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "=== 1) fewshot vs zeroshot: density effect (go_ndense) — train-novelty should SHRINK in fewshot ===\n",
+            "  zeroshot  HVG: rho(go_ndense,overlap)=+0.295 p=7.9e-110 n=5440\n",
+            "  zeroshot  SE: rho(go_ndense,overlap)=+0.285 p=2.8e-102 n=5440\n",
+            "  fewshot   HVG: rho(go_ndense,overlap)=+0.323 p=9.7e-94 n=3842\n",
+            "  fewshot   SE: rho(go_ndense,overlap)=+0.295 p=4.7e-78 n=3842\n",
+            "\n",
+            "=== 2) control for REAL effect size (de_nsig_counts_real = # sig DE genes in real data) ===\n",
+            "-- HVG --\n",
+            "   overall: rho(realeffect,overlap)=+0.665  rho(density,overlap)=+0.295\n",
+            "   within Q1low: rho(density,overlap)=+0.178 p=2.3e-11 n=1390\n",
+            "   within Q2: rho(density,overlap)=+0.178 p=4.7e-11 n=1342\n",
+            "   within Q3: rho(density,overlap)=+0.247 p=3.6e-20 n=1349\n",
+            "   within Q4high: rho(density,overlap)=+0.220 p=2.1e-16 n=1359\n",
+            "-- SE --\n",
+            "   overall: rho(realeffect,overlap)=+0.630  rho(density,overlap)=+0.285\n",
+            "   within Q1low: rho(density,overlap)=+0.087 p=1.2e-03 n=1390\n",
+            "   within Q2: rho(density,overlap)=+0.135 p=6.5e-07 n=1342\n",
+            "   within Q3: rho(density,overlap)=+0.272 p=2.6e-24 n=1349\n",
+            "   within Q4high: rho(density,overlap)=+0.258 p=4.3e-22 n=1359\n",
+            "\n",
+            "=== 3) is density just cross-context coverage? corr(go_ndense, other_ctx_cov) ===\n",
+            "  gene-level rho(go_ndense, other_ctx_cov)=+0.045\n",
+            "  within full-coverage genes (ctx_cov=3) HVG: rho(density,overlap)=+0.274 p=2.2e-42 n=2388\n",
+            "  within full-coverage genes (ctx_cov=3) SE: rho(density,overlap)=+0.240 p=1.4e-32 n=2388\n"
+          ]
+        }
+      ],
+      "after_outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "=== 1) fewshot vs zeroshot: density effect (go_ndense) — descriptive protocol sensitivity ===\n",
+            "  zeroshot  HVG: rho(go_ndense,overlap)=+0.295 n=5440\n",
+            "  zeroshot  SE: rho(go_ndense,overlap)=+0.285 n=5440\n",
+            "  fewshot   HVG: rho(go_ndense,overlap)=+0.323 n=3842\n",
+            "  fewshot   SE: rho(go_ndense,overlap)=+0.295 n=3842\n",
+            "\n",
+            "=== 2) control for REAL effect size (de_nsig_counts_real = # sig DE genes in real data) ===\n",
+            "-- HVG --\n",
+            "   overall: rho(realeffect,overlap)=+0.665  rho(density,overlap)=+0.295\n",
+            "   within Q1low: rho(density,overlap)=+0.178 n=1390\n",
+            "   within Q2: rho(density,overlap)=+0.178 n=1342\n",
+            "   within Q3: rho(density,overlap)=+0.247 n=1349\n",
+            "   within Q4high: rho(density,overlap)=+0.220 n=1359\n",
+            "-- SE --\n",
+            "   overall: rho(realeffect,overlap)=+0.630  rho(density,overlap)=+0.285\n",
+            "   within Q1low: rho(density,overlap)=+0.087 n=1390\n",
+            "   within Q2: rho(density,overlap)=+0.135 n=1342\n",
+            "   within Q3: rho(density,overlap)=+0.272 n=1349\n",
+            "   within Q4high: rho(density,overlap)=+0.258 n=1359\n",
+            "\n",
+            "=== 3) is density just cross-context coverage? corr(go_ndense, other_ctx_cov) ===\n",
+            "  gene-level rho(go_ndense, other_ctx_cov)=+0.045\n",
+            "  within full-coverage genes (ctx_cov=3) HVG: rho(density,overlap)=+0.274 n=2388\n",
+            "  within full-coverage genes (ctx_cov=3) SE: rho(density,overlap)=+0.240 n=2388\n"
+          ]
+        }
+      ]
+    },
+    {
+      "notebook": "reproduction/inline/state/state-opus-r2/test-05.ipynb",
+      "cell_index": 14,
+      "source_sha256": "7f5f136f2e02e283ff99419452fb1e95467a27b6498a82967cb30c9d92684be7",
+      "baseline_source_sha256": "6d82ea2e0ddcfdcc8088213bb03ecc217e7fc03f6f0993978c06b296693fb801",
+      "baseline_outputs_sha256": "66a57583c1a7a628188d11f9e1cff127e4bd1d57dbc91f7ecac6766f933b0787",
+      "outputs_sha256": "d8384250b43b32f56d5384af2869506027fc5bcaee75613164e4e598ad3300f6",
+      "started_at_utc": "2026-11-16T03:09:34.226075+00:00",
+      "duration_seconds": 23.03530712495558,
+      "execution": "Python exec of this exact cell source on the declared retained inputs; no notebook-wide execution",
+      "before_outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "=== 1) FIXED-N metrics (removes N-varies-with-effect-size confound) ===\n",
+            "   density=go_meantop5 ; expect + at fixed N\n",
+            "   HVG overlap_at_50   : rho=+0.236 p=9.8e-70\n",
+            "   HVG overlap_at_100  : rho=+0.249 p=5.8e-78\n",
+            "   HVG overlap_at_200  : rho=+0.261 p=4.1e-85\n",
+            "   HVG overlap_at_500  : rho=+0.272 p=9.0e-93\n",
+            "   HVG precision_at_100: rho=+0.240 p=2.0e-72\n",
+            "\n",
+            "   SE overlap_at_50   : rho=+0.225 p=1.6e-63\n",
+            "   SE overlap_at_100  : rho=+0.249 p=1.8e-77\n",
+            "   SE overlap_at_200  : rho=+0.258 p=3.8e-83\n",
+            "   SE overlap_at_500  : rho=+0.264 p=1.9e-87\n",
+            "   SE precision_at_100: rho=+0.239 p=1.4e-71\n",
+            "\n",
+            "=== 2) PARTIAL correlation: density vs overlap_at_N controlling for real effect size (nsig_real) ===\n",
+            "   HVG: partial rho(density,overlap | nsig_real)=+0.178 p=6.9e-40 n=5440\n",
+            "   SE: partial rho(density,overlap | nsig_real)=+0.169 p=2.9e-36 n=5440\n",
+            "\n",
+            "=== 3) PARTIAL controlling for nsig_real + cross-context coverage + context ===\n",
+            "   HVG: partial rho(density,overlap | nsig_real,ctxcov,context)=+0.169 p=5.7e-36\n",
+            "   SE: partial rho(density,overlap | nsig_real,ctxcov,context)=+0.157 p=2.4e-31\n",
+            "\n",
+            "=== 4) does density predict real effect size itself? (mechanism check) ===\n",
+            "   gene-level rho(density, mean nsig_real)=+0.238 p=4.6e-26  (dense genes DO have larger real effects)\n"
+          ]
+        }
+      ],
+      "after_outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "=== 1) Fixed-N metric sensitivity (descriptive correlations; no pooled-row p values) ===\n",
+            "   HVG overlap_at_50   : rho=+0.236\n",
+            "   HVG overlap_at_100  : rho=+0.249\n",
+            "   HVG overlap_at_200  : rho=+0.261\n",
+            "   HVG overlap_at_500  : rho=+0.272\n",
+            "   HVG precision_at_100: rho=+0.240\n",
+            "   SE overlap_at_50   : rho=+0.225\n",
+            "   SE overlap_at_100  : rho=+0.249\n",
+            "   SE overlap_at_200  : rho=+0.258\n",
+            "   SE overlap_at_500  : rho=+0.264\n",
+            "   SE precision_at_100: rho=+0.239\n",
+            "\n",
+            "=== Partial rank correlation: effect_adjusted ===\n",
+            "   HVG: rho=+0.177826; gene-bootstrap 95% CI=[0.14516550833950578, 0.21000994909220974]; genes=1911; rows=5440\n",
+            "   SE: rho=+0.169311; gene-bootstrap 95% CI=[0.14065938890984125, 0.19820726837123964]; genes=1911; rows=5440\n",
+            "\n",
+            "=== Partial rank correlation: effect_coverage_context_adjusted ===\n",
+            "   HVG: rho=+0.147379; gene-bootstrap 95% CI=[0.11356194041289627, 0.18070452410406415]; genes=1911; rows=5440\n",
+            "   SE: rho=+0.126895; gene-bootstrap 95% CI=[0.09579706052604688, 0.15975527703912246]; genes=1911; rows=5440\n",
+            "\n",
+            "=== Density versus mean observed DE count, at gene level ===\n",
+            "   rho=+0.238; p=4.6e-26; descriptive association, not causal mechanism\n"
+          ]
+        }
+      ]
+    },
+    {
+      "notebook": "reproduction/inline/state/state-opus-r2/test-05.ipynb",
+      "cell_index": 15,
+      "source_sha256": "482c963d3a7b49aed738cc610ba123777e71075a8f8d95382dd2f57dc7a5590e",
+      "baseline_source_sha256": "a743a122f964d1026c5fb1a20af4c55d164b9dd84d8e1b83b7e04d6477609b82",
+      "baseline_outputs_sha256": "64e5cd79ee61000d6e8a02fcd3b90e61ea88aa454a2984bd150b7dc3db8b39b8",
+      "outputs_sha256": "acf5e05b2434a98020d4f90c616b0469b65f6688ef29941caf6b8badddf1a9d3",
+      "started_at_utc": "2026-11-16T03:09:57.262570+00:00",
+      "duration_seconds": 0.23917995812371373,
+      "execution": "Python exec of this exact cell source on the declared retained inputs; no notebook-wide execution",
+      "before_outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "=== A) PER-CONTEXT replication (each context independent) ===\n",
+            "   HVG hepg2  : rho=+0.299 p=1.5e-27 n=1269\n",
+            "   HVG jurkat : rho=+0.277 p=1.3e-26 n=1436\n",
+            "   HVG k562   : rho=+0.260 p=1.0e-21 n=1310\n",
+            "   HVG rpe1   : rho=+0.251 p=6.9e-22 n=1425\n",
+            "\n",
+            "   SE hepg2  : rho=+0.290 p=5.6e-26 n=1269\n",
+            "   SE jurkat : rho=+0.251 p=5.1e-22 n=1436\n",
+            "   SE k562   : rho=+0.270 p=2.6e-23 n=1310\n",
+            "   SE rpe1   : rho=+0.233 p=6.0e-19 n=1425\n",
+            "\n",
+            "=== B) MODULE ROBUSTNESS: exclude big functional modules, re-test ===\n",
+            "   HVG excl top-decile density: rho=+0.253 p=3.3e-72 n=4893\n",
+            "   HVG middle 80% only    : rho=+0.225 p=1.5e-51 n=4403\n",
+            "   SE excl top-decile density: rho=+0.247 p=3.7e-69 n=4893\n",
+            "   SE middle 80% only    : rho=+0.215 p=3.5e-47 n=4403\n",
+            "\n",
+            "=== C) UNBIASED effect: gene-level 50/50 holdout (median split by hash of gene name) ===\n",
+            "   HVG gene-half 0: rho=+0.317 p=1.4e-65 n=2770\n",
+            "   HVG gene-half 1: rho=+0.229 p=3.7e-33 n=2670\n",
+            "   SE gene-half 0: rho=+0.303 p=9.4e-60 n=2770\n",
+            "   SE gene-half 1: rho=+0.226 p=2.1e-32 n=2670\n",
+            "\n",
+            "=== D) sample of L1_novel (orphan) vs L4_covered (dense) genes ===\n",
+            "  most NOVEL (sparse) genes: ['POGLUT3', 'AHCY', 'MCEE', 'WBP1L', 'DTYMK', 'GNPNAT1', 'COASY', 'ESYT2', 'UXS1', 'PSAT1', 'ZC3H18', 'FASTKD5', 'GYG1', 'FUNDC2', 'PTGR2']\n",
+            "  most COVERED (dense) genes: ['MRPL27', 'MRPL24', 'MRPL23', 'MRPL22', 'RPL19', 'MRPL20', 'MRPL19', 'MRPL17', 'MRPL16', 'MRPL15', 'MRPL14', 'MRPS31', 'MRPS33', 'MRPL2', 'RPL38']\n"
+          ]
+        }
+      ],
+      "after_outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "=== A) Per-context associations in the same benchmark (genes can recur) ===\n",
+            "   HVG hepg2  : rho=+0.299 p=1.5e-27 n=1269\n",
+            "   HVG jurkat : rho=+0.277 p=1.3e-26 n=1436\n",
+            "   HVG k562   : rho=+0.260 p=1.0e-21 n=1310\n",
+            "   HVG rpe1   : rho=+0.251 p=6.9e-22 n=1425\n",
+            "\n",
+            "   SE hepg2  : rho=+0.290 p=5.6e-26 n=1269\n",
+            "   SE jurkat : rho=+0.251 p=5.1e-22 n=1436\n",
+            "   SE k562   : rho=+0.270 p=2.6e-23 n=1310\n",
+            "   SE rpe1   : rho=+0.233 p=6.0e-19 n=1425\n",
+            "\n",
+            "=== B) Density trimming sensitivity: exclude the highest-density decile ===\n",
+            "   HVG excl top-decile density: rho=+0.253 n=4893\n",
+            "   HVG middle 80% only    : rho=+0.225 n=4403\n",
+            "   SE excl top-decile density: rho=+0.247 n=4893\n",
+            "   SE middle 80% only    : rho=+0.215 n=4403\n",
+            "\n",
+            "=== C) Reproducible gene-half sensitivity split (not prospective confirmation) ===\n",
+            "Split salt: STATE-OPUS-R2-sensitivity-v1| gene counts: {0: 956, 1: 955}\n",
+            "   HVG gene-half 0: rho=+0.279 n=2724\n",
+            "   HVG gene-half 1: rho=+0.264 n=2716\n",
+            "   SE gene-half 0: rho=+0.269 n=2724\n",
+            "   SE gene-half 1: rho=+0.256 n=2716\n",
+            "\n",
+            "=== D) Examples at the sparse and dense ends of the evaluation-gene panel ===\n",
+            "  lowest-density evaluation genes: ['POGLUT3', 'AHCY', 'MCEE', 'WBP1L', 'DTYMK', 'GNPNAT1', 'COASY', 'ESYT2', 'UXS1', 'PSAT1', 'ZC3H18', 'FASTKD5', 'GYG1', 'FUNDC2', 'PTGR2']\n",
+            "  highest-density evaluation genes: ['MRPL27', 'MRPL24', 'MRPL23', 'MRPL22', 'RPL19', 'MRPL20', 'MRPL19', 'MRPL17', 'MRPL16', 'MRPL15', 'MRPL14', 'MRPS31', 'MRPS33', 'MRPL2', 'RPL38']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "notebook": "reproduction/inline/state/state-opus-r2/test-05.ipynb",
+      "cell_index": 16,
+      "source_sha256": "c6216b5b0ddd358ee680b081466c63efde9d2af341692af8b8ace761ecd49bc4",
+      "baseline_source_sha256": "31b0425c70a6373e54ed49d39bc614393cccf711026e53d317f32ef300ed5bfe",
+      "baseline_outputs_sha256": "ef0b7f8bc9ff46e0fc384b0043e076bd56f3b9bf8ff8d94c68f882b34552985c",
+      "outputs_sha256": "69f446d8ce6e4f20b4fe6b4afa82cb9ecad7e356a130fc9a60db311f85c2dc23",
+      "started_at_utc": "2026-11-16T03:09:57.502976+00:00",
+      "duration_seconds": 0.24617258389480412,
+      "execution": "Python exec of this exact cell source on the declared retained inputs; no notebook-wide execution",
+      "before_outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "=== Densified SPC (deciles; D1=most novel, D10=most covered) — overlap_at_N mean ===\n",
+            "representation     HVG      SE\n",
+            "decile                        \n",
+            "1               0.0793  0.0332\n",
+            "2               0.0962  0.0436\n",
+            "3               0.0910  0.0427\n",
+            "4               0.1071  0.0532\n",
+            "5               0.1280  0.0622\n",
+            "6               0.1536  0.0807\n",
+            "7               0.1741  0.0986\n",
+            "8               0.1813  0.1105\n",
+            "9               0.1739  0.1019\n",
+            "10              0.1875  0.1128\n",
+            "\n",
+            "=== \"Pure\" train-coverage: SPC within STRONG-effect perturbations only (removes intrinsic-difficulty) ===\n",
+            "  HVG (strong-effect only): rho=+0.232 p=1.7e-34 n=2708  L1=0.164 L4=0.250 ratio=1.52x\n",
+            "  SE (strong-effect only): rho=+0.268 p=1.3e-45 n=2708  L1=0.082 L4=0.167 ratio=2.02x\n",
+            "\n",
+            "Saved SPC tables.\n"
+          ]
+        }
+      ],
+      "after_outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "=== Density curve (deciles; D1=sparsest, D10=densest) — overlap_at_N mean ===\n",
+            "representation     HVG      SE\n",
+            "decile                        \n",
+            "1               0.0793  0.0332\n",
+            "2               0.0962  0.0436\n",
+            "3               0.0910  0.0427\n",
+            "4               0.1071  0.0532\n",
+            "5               0.1280  0.0622\n",
+            "6               0.1536  0.0807\n",
+            "7               0.1741  0.0986\n",
+            "8               0.1813  0.1105\n",
+            "9               0.1739  0.1019\n",
+            "10              0.1875  0.1128\n",
+            "\n",
+            "=== Density sensitivity among above-median observed-DE conditions (does not remove all difficulty) ===\n",
+            "  HVG (strong-effect only): rho=+0.232 n=2708  L1=0.164 L4=0.250 ratio=1.52x\n",
+            "  SE (strong-effect only): rho=+0.268 n=2708  L1=0.082 L4=0.167 ratio=2.02x\n",
+            "\n",
+            "Saved SPC tables.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}

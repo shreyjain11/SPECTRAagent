@@ -1,0 +1,427 @@
+[
+  {
+    "analysis_id": "am-primary/test-03",
+    "mode": "selected_cells",
+    "executed_notebook_cells": [
+      13,
+      15
+    ],
+    "inputs": [
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+        "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+        "bytes": 7265267,
+        "rows": 270572,
+        "role": "Actual scored DMS records and retained alignment-derived features consumed by the rerun"
+      },
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+        "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+        "bytes": 3421,
+        "role": "Coverage of retained benchmark variants joined to official AlphaMissense scores"
+      },
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+        "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+        "bytes": 957993,
+        "role": "Recorded alignment position features used for the unchanged axis definitions"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+        "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+        "bytes": 9447902,
+        "role": "Public source payload used to rebuild calculation inputs"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+        "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+        "bytes": 6629852,
+        "role": "Public source payload used to rebuild calculation inputs"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+        "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+        "bytes": 3723464,
+        "role": "Public source payload used to rebuild calculation inputs"
+      }
+    ],
+    "dependency_scope": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
+    "summary": "Protein-cluster uncertainty replaces assay resampling; the one-protein depth endpoint cannot establish a general directional association.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "elapsed_seconds": 3.898231582948938,
+      "started_at": "2026-11-16T03:09:31.976153+00:00",
+      "finished_at": "2026-11-16T03:09:35.874413+00:00",
+      "command": "python reproduction/corrections/scientific_20261115/alphamissense/execute_selected.py /private/tmp/am-primary-scientific-20261115",
+      "driver": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "log": "corrections/scientific_20261115/alphamissense/outputs/axis-3/execution.log"
+    },
+    "prerequisite_setup": {
+      "script": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "input_paths": [
+        "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+        "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+        "corrections/scientific_20261115/alphamissense/inputs/position_features.csv"
+      ],
+      "description": "The rebuild script regenerated selected variants and features from three already-public payloads. The execution driver then read these exact CSV inputs to restore panel, coverage and position-feature globals before executing the two named notebook cells; earlier notebook cells were not rerun.",
+      "reconstruction_script": {
+        "path": "corrections/scientific_20261115/alphamissense/rebuild_retained_inputs.py",
+        "sha256": "0f84402e4f9afbb298aa7190b316f8c47454a7f4db839bd8d6a8cd4286ed2a3f"
+      },
+      "deduplicated_exports": "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json"
+    },
+    "output_artifacts": [
+      "corrections/scientific_20261115/alphamissense/outputs/axis-3/composition.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-3/contrasts.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-3/curves.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-3/execution.json",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-3/execution.log",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-3/family_controls.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-3/per_assay.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-3/signal_by_assay.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-3/signal_summary.csv",
+      "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json"
+    ]
+  },
+  {
+    "analysis_id": "am-primary/test-04",
+    "mode": "selected_cells",
+    "executed_notebook_cells": [
+      12,
+      14
+    ],
+    "inputs": [
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+        "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+        "bytes": 7265267,
+        "rows": 270572,
+        "role": "Actual scored DMS records and retained alignment-derived features consumed by the rerun"
+      },
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+        "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+        "bytes": 3421,
+        "role": "Coverage of retained benchmark variants joined to official AlphaMissense scores"
+      },
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+        "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+        "bytes": 957993,
+        "role": "Recorded alignment position features used for the unchanged axis definitions"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+        "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+        "bytes": 9447902,
+        "role": "Public source payload used to rebuild calculation inputs"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+        "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+        "bytes": 6629852,
+        "role": "Public source payload used to rebuild calculation inputs"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+        "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+        "bytes": 3723464,
+        "role": "Public source payload used to rebuild calculation inputs"
+      }
+    ],
+    "dependency_scope": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
+    "summary": "Shared DMS uncertainty resamples proteins while retaining declared levels, endpoint and point-estimate weighting.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "elapsed_seconds": 5.797888458939269,
+      "started_at": "2026-11-16T03:09:35.938721+00:00",
+      "finished_at": "2026-11-16T03:09:41.736637+00:00",
+      "command": "python reproduction/corrections/scientific_20261115/alphamissense/execute_selected.py /private/tmp/am-primary-scientific-20261115",
+      "driver": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "log": "corrections/scientific_20261115/alphamissense/outputs/axis-4/execution.log"
+    },
+    "prerequisite_setup": {
+      "script": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "input_paths": [
+        "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+        "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+        "corrections/scientific_20261115/alphamissense/inputs/position_features.csv"
+      ],
+      "description": "The rebuild script regenerated selected variants and features from three already-public payloads. The execution driver then read these exact CSV inputs to restore panel, coverage and position-feature globals before executing the two named notebook cells; earlier notebook cells were not rerun.",
+      "reconstruction_script": {
+        "path": "corrections/scientific_20261115/alphamissense/rebuild_retained_inputs.py",
+        "sha256": "0f84402e4f9afbb298aa7190b316f8c47454a7f4db839bd8d6a8cd4286ed2a3f"
+      },
+      "deduplicated_exports": "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json"
+    },
+    "output_artifacts": [
+      "corrections/scientific_20261115/alphamissense/outputs/axis-4/composition.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-4/contrasts.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-4/curves.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-4/execution.json",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-4/execution.log",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-4/family_controls.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-4/per_assay.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-4/signal_by_assay.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-4/signal_summary.csv",
+      "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json"
+    ]
+  },
+  {
+    "analysis_id": "am-primary/test-05",
+    "mode": "selected_cells",
+    "executed_notebook_cells": [
+      13,
+      15
+    ],
+    "inputs": [
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+        "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+        "bytes": 7265267,
+        "rows": 270572,
+        "role": "Actual scored DMS records and retained alignment-derived features consumed by the rerun"
+      },
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+        "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+        "bytes": 3421,
+        "role": "Coverage of retained benchmark variants joined to official AlphaMissense scores"
+      },
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+        "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+        "bytes": 957993,
+        "role": "Recorded alignment position features used for the unchanged axis definitions"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+        "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+        "bytes": 9447902,
+        "role": "Public source payload used to rebuild calculation inputs"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+        "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+        "bytes": 6629852,
+        "role": "Public source payload used to rebuild calculation inputs"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+        "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+        "bytes": 3723464,
+        "role": "Public source payload used to rebuild calculation inputs"
+      }
+    ],
+    "dependency_scope": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
+    "summary": "Shared DMS uncertainty resamples proteins while retaining declared levels, endpoint and point-estimate weighting.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "elapsed_seconds": 3.992095167050138,
+      "started_at": "2026-11-16T03:09:41.801558+00:00",
+      "finished_at": "2026-11-16T03:09:45.793675+00:00",
+      "command": "python reproduction/corrections/scientific_20261115/alphamissense/execute_selected.py /private/tmp/am-primary-scientific-20261115",
+      "driver": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "log": "corrections/scientific_20261115/alphamissense/outputs/axis-5/execution.log"
+    },
+    "prerequisite_setup": {
+      "script": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "input_paths": [
+        "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+        "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+        "corrections/scientific_20261115/alphamissense/inputs/position_features.csv"
+      ],
+      "description": "The rebuild script regenerated selected variants and features from three already-public payloads. The execution driver then read these exact CSV inputs to restore panel, coverage and position-feature globals before executing the two named notebook cells; earlier notebook cells were not rerun.",
+      "reconstruction_script": {
+        "path": "corrections/scientific_20261115/alphamissense/rebuild_retained_inputs.py",
+        "sha256": "0f84402e4f9afbb298aa7190b316f8c47454a7f4db839bd8d6a8cd4286ed2a3f"
+      },
+      "deduplicated_exports": "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json"
+    },
+    "output_artifacts": [
+      "corrections/scientific_20261115/alphamissense/outputs/axis-5/composition.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-5/contrasts.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-5/curves.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-5/execution.json",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-5/execution.log",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-5/family_controls.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-5/per_assay.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-5/signal_by_assay.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-5/signal_summary.csv",
+      "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json"
+    ]
+  },
+  {
+    "analysis_id": "am-primary/test-06",
+    "mode": "selected_cells",
+    "executed_notebook_cells": [
+      13,
+      15
+    ],
+    "inputs": [
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+        "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+        "bytes": 7265267,
+        "rows": 270572,
+        "role": "Actual scored DMS records and retained alignment-derived features consumed by the rerun"
+      },
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+        "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+        "bytes": 3421,
+        "role": "Coverage of retained benchmark variants joined to official AlphaMissense scores"
+      },
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+        "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+        "bytes": 957993,
+        "role": "Recorded alignment position features used for the unchanged axis definitions"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+        "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+        "bytes": 9447902,
+        "role": "Public source payload used to rebuild calculation inputs"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+        "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+        "bytes": 6629852,
+        "role": "Public source payload used to rebuild calculation inputs"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+        "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+        "bytes": 3723464,
+        "role": "Public source payload used to rebuild calculation inputs"
+      }
+    ],
+    "dependency_scope": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
+    "summary": "Shared DMS uncertainty resamples proteins while retaining declared levels, endpoint and point-estimate weighting.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "elapsed_seconds": 6.071721750078723,
+      "started_at": "2026-11-16T03:09:45.861023+00:00",
+      "finished_at": "2026-11-16T03:09:51.932772+00:00",
+      "command": "python reproduction/corrections/scientific_20261115/alphamissense/execute_selected.py /private/tmp/am-primary-scientific-20261115",
+      "driver": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "log": "corrections/scientific_20261115/alphamissense/outputs/axis-6/execution.log"
+    },
+    "prerequisite_setup": {
+      "script": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "input_paths": [
+        "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+        "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+        "corrections/scientific_20261115/alphamissense/inputs/position_features.csv"
+      ],
+      "description": "The rebuild script regenerated selected variants and features from three already-public payloads. The execution driver then read these exact CSV inputs to restore panel, coverage and position-feature globals before executing the two named notebook cells; earlier notebook cells were not rerun.",
+      "reconstruction_script": {
+        "path": "corrections/scientific_20261115/alphamissense/rebuild_retained_inputs.py",
+        "sha256": "0f84402e4f9afbb298aa7190b316f8c47454a7f4db839bd8d6a8cd4286ed2a3f"
+      },
+      "deduplicated_exports": "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json"
+    },
+    "output_artifacts": [
+      "corrections/scientific_20261115/alphamissense/outputs/axis-6/composition.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-6/contrasts.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-6/curves.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-6/execution.json",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-6/execution.log",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-6/family_controls.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-6/per_assay.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-6/signal_by_assay.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-6/signal_summary.csv",
+      "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json"
+    ]
+  },
+  {
+    "analysis_id": "am-primary/test-07",
+    "mode": "selected_cells",
+    "executed_notebook_cells": [
+      12,
+      14
+    ],
+    "inputs": [
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+        "sha256": "612592a0ca57e7ce215bbd1cfe3d038fa717231045f88f597298f4ba11e26e72",
+        "bytes": 7265267,
+        "rows": 270572,
+        "role": "Actual scored DMS records and retained alignment-derived features consumed by the rerun"
+      },
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+        "sha256": "d993f0b8e43b97f159818ed82a4ebc689e418c8650b57de607801682ccf9dc9b",
+        "bytes": 3421,
+        "role": "Coverage of retained benchmark variants joined to official AlphaMissense scores"
+      },
+      {
+        "path": "corrections/scientific_20261115/alphamissense/inputs/position_features.csv",
+        "sha256": "b3dc3ceaff3363c0c817b05d23baec9bb589467cd4970f0493f4371311246207",
+        "bytes": 957993,
+        "role": "Recorded alignment position features used for the unchanged axis definitions"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-frozen-panel-and-score-inputs.tar.gz",
+        "sha256": "f046a73925bfbbf7aea1636e3a817fed43fc65f295ec76c14f5efb7d94ffba8e",
+        "bytes": 9447902,
+        "role": "Public source payload used to rebuild calculation inputs"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-original-dms-members.tar.gz",
+        "sha256": "6698e019bf11e7cb46280a9493d78b990ab617d74a57c4998813fb32c185e578",
+        "bytes": 6629852,
+        "role": "Public source payload used to rebuild calculation inputs"
+      },
+      {
+        "path": "primary/alphamissense/payloads/am-recorded-alignment-results.tar.gz",
+        "sha256": "ae256a3d0a7b416699c4e82768876ccb81e14a6cc40b8dbff894365960307a41",
+        "bytes": 3723464,
+        "role": "Public source payload used to rebuild calculation inputs"
+      }
+    ],
+    "dependency_scope": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
+    "summary": "Shared DMS uncertainty resamples proteins while retaining declared levels, endpoint and point-estimate weighting.",
+    "execution": {
+      "host": "Shreys-MacBook-Pro",
+      "python": "3.13.2",
+      "elapsed_seconds": 5.804113833932206,
+      "started_at": "2026-11-16T03:09:52.001014+00:00",
+      "finished_at": "2026-11-16T03:09:57.805155+00:00",
+      "command": "python reproduction/corrections/scientific_20261115/alphamissense/execute_selected.py /private/tmp/am-primary-scientific-20261115",
+      "driver": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "log": "corrections/scientific_20261115/alphamissense/outputs/axis-7/execution.log"
+    },
+    "prerequisite_setup": {
+      "script": "corrections/scientific_20261115/alphamissense/execute_selected.py",
+      "input_paths": [
+        "corrections/scientific_20261115/alphamissense/inputs/individual_variants.csv.gz",
+        "corrections/scientific_20261115/alphamissense/inputs/score_join_coverage.csv",
+        "corrections/scientific_20261115/alphamissense/inputs/position_features.csv"
+      ],
+      "description": "The rebuild script regenerated selected variants and features from three already-public payloads. The execution driver then read these exact CSV inputs to restore panel, coverage and position-feature globals before executing the two named notebook cells; earlier notebook cells were not rerun.",
+      "reconstruction_script": {
+        "path": "corrections/scientific_20261115/alphamissense/rebuild_retained_inputs.py",
+        "sha256": "0f84402e4f9afbb298aa7190b316f8c47454a7f4db839bd8d6a8cd4286ed2a3f"
+      },
+      "deduplicated_exports": "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json"
+    },
+    "output_artifacts": [
+      "corrections/scientific_20261115/alphamissense/outputs/axis-7/composition.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-7/contrasts.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-7/curves.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-7/execution.json",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-7/execution.log",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-7/family_controls.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-7/per_assay.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-7/signal_by_assay.csv",
+      "corrections/scientific_20261115/alphamissense/outputs/axis-7/signal_summary.csv",
+      "corrections/scientific_20261115/alphamissense/DEDUPLICATED_ARTIFACTS.json"
+    ]
+  }
+]

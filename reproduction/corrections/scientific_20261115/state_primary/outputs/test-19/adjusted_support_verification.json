@@ -1,0 +1,32 @@
+[
+  {
+    "analysis_id": "state-featured/test-19",
+    "adjust_de_count": true,
+    "n_rows": 4414,
+    "input_sha256": "4195b552a32dc07d5227a8fd104001eb66756af3639b4b4b787c85c81e4da365",
+    "previous_coef": 0.02545955235794928,
+    "term": "support_norm_log_mean_z",
+    "coef": 0.025459552357949507,
+    "se": 0.003759547164486991,
+    "ci_low": 0.018081341958464746,
+    "ci_high": 0.03283776275743427,
+    "t": 6.771973124434413,
+    "p_two_sided": 2.2532411512956513e-11,
+    "n_gene_clusters": 928,
+    "cluster_df": 927,
+    "design_rank": 8,
+    "n_design_columns": 8,
+    "n_excluded_missing": 0,
+    "covariance": "CR1 canonical-gene clusters; t(G-1)",
+    "reference_categories": "{\"context\": \"hepg2\", \"representation\": \"HVG\"}",
+    "independent_statsmodels_se": 0.0037595471644869313,
+    "duplicated_rows_se_ratio": 0.999603005879089,
+    "corrected_function_runtime_warnings": 0,
+    "reference_backend_warning_count": 6,
+    "reference_backend_warning_messages": [
+      "divide by zero encountered in matmul",
+      "invalid value encountered in matmul",
+      "overflow encountered in matmul"
+    ]
+  }
+]

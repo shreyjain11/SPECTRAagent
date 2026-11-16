@@ -1,0 +1,89 @@
+{
+  "review_scope": "Independent method and numerical review of the November15 STATE scientific corrections; no fresh model inference.",
+  "checks": [
+    {
+      "name": "scientific_revision_validator",
+      "tests": 11,
+      "result": "all passed",
+      "command": "python -m unittest discover -s reproduction -p test_scientific_revision.py -v"
+    },
+    {
+      "name": "archived_presentation_chains",
+      "notebooks": 143,
+      "depth_counts": {
+        "1": 131,
+        "2": 12
+      },
+      "source_commit": "1d3b45baa344751b4c34ea825479c0f39b09ec21",
+      "result": "original notebook snapshots and all retained presentation boundaries match"
+    },
+    {
+      "name": "primary_design",
+      "tables": 10,
+      "rows_each": 8116,
+      "unique_genes_each": 1708,
+      "missing_or_nonfinite_de_counts": 0,
+      "max_subsets_per_context": 1,
+      "result": "subset is redundant with context; no DE missingness changes the sample"
+    },
+    {
+      "name": "primary_matmul_warning_diagnosis",
+      "analysis": "state-featured/test-10",
+      "numpy": "2.1.2",
+      "matmul_runtime_warnings": 12,
+      "explicit_einsum_runtime_warnings": 0,
+      "max_abs_se_difference": 6.938893903907228e-18,
+      "max_abs_ci_difference": 2.7755575615628914e-17,
+      "result": "explicit non-BLAS contractions preserve results without suppressing warnings"
+    },
+    {
+      "name": "kimi_joint_bootstrap",
+      "independent_expanded_row_draws": 3,
+      "estimands_per_draw": 2,
+      "all_seen_flags_binary": true,
+      "all_embedding_norms_finite": true,
+      "percentile_intervals_checked": 2,
+      "saved_bootstrap_draws": 10000,
+      "absolute_tolerance": 1e-14,
+      "result": "independent draws and both intervals match"
+    },
+    {
+      "name": "opus_cluster_bootstrap",
+      "independent_expanded_row_rank_regression_draws": 12,
+      "specifications": 2,
+      "representations": 2,
+      "max_abs_difference": 7.216449660063518e-16,
+      "percentile_intervals_checked": 4,
+      "saved_bootstrap_draws": 10000,
+      "result": "direct expanded-row ranks and residual regression match weighted implementation"
+    }
+  ],
+  "limitations": [
+    "Checked the declared retained-data estimands, not new independent contexts or fresh target inference.",
+    "The deterministic Opus half-split is retrospective sensitivity, not prospective independent confirmation.",
+    "Primary inference is conditional on the observed contexts and additive covariate specification.",
+    "Scientific execution receipts must be integrated and validated against the final rendered artifacts after all reruns."
+  ],
+  "checked_artifacts": [
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/confirm_summary.json",
+      "sha256": "9ddc4638a50589d0043112e15d6a016bf936226bfb2802884a3bcc06f2d375da"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/pooled_gene_bootstrap_draws.csv",
+      "sha256": "4e8f765a628bf237fbfa897d604fccdf7bad68f6b2c30eef422cbb6e14706fb8"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/partial_rank_gene_bootstrap_summary.json",
+      "sha256": "a682b265e9afa778711fe163cf831673dd0bc3a45b36ffe52fda36a0b53ccb08"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_kimi_opus/partial_rank_gene_bootstrap_draws.csv",
+      "sha256": "30c65804ee894243f40d78e4af04a143699c7d581f6f503f64f3f08b0624889c"
+    },
+    {
+      "path": "corrections/scientific_20261115/state_primary/regression-verification.json",
+      "sha256": "b81e84bbfc65c1953b9d19def27468fa5e8cd08c49bc843ba26d2fd5b54f58b2"
+    }
+  ]
+}

@@ -3,12 +3,15 @@
   "notebook": "inline/state/state-opus-r2/test-05.ipynb",
   "html": "inline/state/state-opus-r2/test-05.html",
   "completed": true,
-  "host": "exxact05",
+  "host": "Shreys-MacBook-Pro",
+  "python": "3.13.2",
+  "elapsed_seconds": 24.045562833780423,
+  "execution_scope": "selected_cells_reexecuted",
   "code_cells": 13,
-  "executed_cells": 13,
+  "executed_cells": 4,
   "errors": 0,
-  "notebook_sha256": "4ad6c2702dfd912463ac3ddc3eec671a9566fc888b485aab1a6463beeffbf8e0",
-  "html_sha256": "0211459978c61c05ff41ae892d06fe922e9638ab954931157c488feb51d41bc6",
+  "notebook_sha256": "64c8a72319c00ec070e38403b94df19e044eee39f1075982fd04e1c93f02b082",
+  "html_sha256": "ed50522f26517e4313f8dfff46826b7dc577bbfc6f8a454cc1bf8ee06548fe7b",
   "sections": [
     {
       "number": 1,
@@ -67,16 +70,6 @@
     }
   ],
   "cell_index_base": 0,
-  "execution_evidence_source_sha256": "7bc06c3bd0bd7bdc627730de234c8fe3c095610c5f95c7304c7ceef24ede9ee5",
-  "execution_evidence_entry_id": "state-opus-r2/test-05",
-  "embedded_figures": 1,
-  "checks": [
-    "notebook_and_html_hash_match_execution_evidence",
-    "all_code_cells_executed",
-    "no_error_outputs",
-    "six_sections_and_executed_inline_code",
-    "inline_code_static_check"
-  ],
   "result_location": {
     "section": 6,
     "code_cells": [
@@ -84,18 +77,33 @@
       21
     ]
   },
-  "input_manifests": [],
-  "calculation_evidence": [],
-  "presentation_revision": {
-    "scientific_reexecution": false,
-    "original_execution_evidence": {
-      "path": "review_20261115/presentation/state-opus-r2-test-05.previous-execution.json",
-      "sha256": "8e049de5886a14bddeb68308c38bb61c159b25488258c3419d421ff328e3132d"
+  "embedded_figures": 2,
+  "checks": [
+    "scientific_revision_artifacts_and_executed_cell_hashes",
+    "unchanged_cells_match_archived_notebook",
+    "no_error_outputs",
+    "six_sections_and_inline_code"
+  ],
+  "scientific_revision": {
+    "schema_version": 1,
+    "scientific_reexecution": true,
+    "mode": "selected_cells",
+    "previous_execution_evidence": {
+      "path": "corrections/scientific_20261115/records/state-opus-r2-test-05.previous-execution.json",
+      "sha256": "51fcc7e91ba5701b098c02e78a7e3f29eabad09dca6c8157fa0af11daf193580",
+      "bytes": 2696
     },
-    "correction_record": {
-      "path": "review_20261115/presentation/state-opus-r2-test-05.revision.json",
-      "sha256": "18d93515c3f77d5b63e2128fda60fb6da8354438e2babeae0256e4561ce13232"
+    "original_notebook_snapshot": {
+      "path": "corrections/scientific_20261115/records/state-opus-r2-test-05.original.ipynb.gz",
+      "sha256": "6ad56a5893b6f97ad17715c7241d669b0c71fe39aab3981bb38ffe0aabbd6714",
+      "bytes": 63573,
+      "compression": "gzip",
+      "notebook_sha256": "4ad6c2702dfd912463ac3ddc3eec671a9566fc888b485aab1a6463beeffbf8e0"
+    },
+    "record": {
+      "path": "corrections/scientific_20261115/records/state-opus-r2-test-05.scientific-revision.json",
+      "sha256": "7fe696e9aa983f52e56c62038a62edb9696fa676ff926327d35809b2f50f456c",
+      "bytes": 16745
     }
-  },
-  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
+  }
 }

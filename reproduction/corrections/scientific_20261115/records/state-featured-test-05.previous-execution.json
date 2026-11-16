@@ -1,0 +1,103 @@
+{
+  "analysis_id": "state-featured/test-05",
+  "notebook": "inline/state/state-featured/test-05.ipynb",
+  "html": "inline/state/state-featured/test-05.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 13,
+  "executed_cells": 13,
+  "errors": 0,
+  "notebook_sha256": "2c3a3a55dce96d494d2cd345a9d282541950d007f4b7e14f290bc4f68f31336d",
+  "html_sha256": "61a62f46f404efaf834e0b8f98f22d5185103f76efd02b401aa06bfc060933f5",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source/acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 5,
+      "code_cells": [
+        6,
+        7
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 8,
+      "code_cells": [
+        10,
+        12
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 13,
+      "code_cells": [
+        14
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 15,
+      "code_cells": [
+        16,
+        17,
+        19
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 20,
+      "code_cells": [
+        21,
+        22
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "5bcfc6d8ab3f2078bdc132738dee9fc9140bec03c4459513d9f7f52508dfa9b6",
+  "execution_evidence_entry_id": "state-featured/test-05",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      21,
+      22
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 13.549,
+  "python": "3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]",
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/state-featured-test-05.previous-execution.json",
+      "sha256": "98f25ca963ec482cf40f45e6d6d796197b9c4f0f4b1469b4c5060d4bd201013d"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/state-featured-test-05.revision.json",
+      "sha256": "bb711c4f6662cc23bec1d07061135fbe650a7a4a2a8186e114c8acf0615435f3"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
+}

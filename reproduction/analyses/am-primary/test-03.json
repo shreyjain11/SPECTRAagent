@@ -1276,8 +1276,8 @@
     "notebook": "inline/alphamissense/am-primary/axis-3.ipynb",
     "html": "inline/alphamissense/am-primary/axis-3.html",
     "execution_evidence": "inline/alphamissense/am-primary/axis-3.execution.json",
-    "published_notebook_sha256": "066e0584b7c959387df136915792d990ae6c7a2e8267da413901e3cb42cece3b",
-    "published_html_sha256": "8e253e29694dc375564a04829e3f508f7769528e37a7a254ab7db2b35bc1291b",
+    "published_notebook_sha256": "0ca47516c2911703cb9ed9ad2258168c2922c2577ce70e5625077d3912b2f42d",
+    "published_html_sha256": "33675e7bb46b07a7294ae8b893420851fc31df5ab78c0ea40ffea2861e53b500",
     "code_cells": 10,
     "sections": [
       {
@@ -1366,18 +1366,18 @@
       ],
       "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
     },
-    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "verification_boundary": "Only the per-assay statistic/aggregation/plot cell and decision/export cell were executed now. Other scientific cells retain exact earlier code and outputs. Recorded profiles replace fresh clustering only for this declared recalculation; a small PSSM reference difference is documented.",
     "execution_evidence": "inline/alphamissense/am-primary/axis-3.execution.json",
-    "notebook_sha256": "066e0584b7c959387df136915792d990ae6c7a2e8267da413901e3cb42cece3b",
+    "notebook_sha256": "0ca47516c2911703cb9ed9ad2258168c2922c2577ce70e5625077d3912b2f42d",
     "result_location": {
       "notebook": "inline/alphamissense/am-primary/axis-3.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
     },
-    "interpretation_review": {
-      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
-      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
-      "presentation_record": "review_20261115/presentation/am-primary-test-03.revision.json"
+    "scientific_correction": {
+      "record": "corrections/scientific_20261115/records/am-primary-test-03.scientific-revision.json",
+      "execution_scope": "selected_cells_reexecuted",
+      "summary": "Protein-cluster uncertainty replaces assay resampling; the one-protein depth endpoint cannot establish a general directional association."
     }
   }
 }

@@ -1,0 +1,145 @@
+{
+  "kimi": {
+    "before": {
+      "A1b_stouffer_Z": 11.459085853502438,
+      "A1b_p_one_sided": 0.0,
+      "A1b_pooled_delta": 0.11772908731703717,
+      "A1b_contexts_consistent": 3,
+      "A1b_pass": true,
+      "A1c_pooled_spearman": 0.504527501576208,
+      "A1c_pooled_Z": 53.336430163158965,
+      "A1c_p_one_sided": 0.0
+    },
+    "after": {
+      "A1b_pooled_delta": 0.11772908711492829,
+      "A1b_gene_bootstrap_ci95": [
+        0.0968726880817187,
+        0.13828840807059026
+      ],
+      "A1b_contexts_consistent": 3,
+      "A1c_pooled_spearman": 0.504527501576208,
+      "A1c_gene_bootstrap_ci95": [
+        0.47370373483347855,
+        0.5337876353934637
+      ],
+      "uncertainty": {
+        "resampling_unit": "gene identity, shared across all observed contexts",
+        "gene_clusters": 1949,
+        "draws": 10000,
+        "seed": 20261115,
+        "scope": "conditional on the three observed contexts; not independent-site replication",
+        "embedding_context_weights": {
+          "rpe1": 1058,
+          "jurkat": 1081,
+          "hepg2": 942
+        },
+        "binary_ci95": [
+          0.0968726880817187,
+          0.13828840807059026
+        ],
+        "embedding_ci95": [
+          0.47370373483347855,
+          0.5337876353934637
+        ]
+      },
+      "pooled_p_value": null,
+      "correction": "Joint gene-bootstrap intervals replace the independence-based binary Z/p and the invalid unnormalized embedding Z/p."
+    },
+    "note": "Same raw association estimands. Corrected uncertainty uses shared gene clusters, conditional on the observed contexts; no pooled p is reported. Retained per-gene decimal tables can produce tiny numeric differences from earlier upstream metric recomputation."
+  },
+  "opus": {
+    "before_context_adjustment": {
+      "HVG": {
+        "partial_rho_numeric_context_codes": 0.16859357154334553,
+        "naive_row_p": 5.6791673547014166e-36,
+        "naive_row_p_is_not_used_for_corrected_inference": true
+      },
+      "SE": {
+        "partial_rho_numeric_context_codes": 0.15694026245629714,
+        "naive_row_p": 2.435811518810027e-31,
+        "naive_row_p_is_not_used_for_corrected_inference": true
+      }
+    },
+    "after": {
+      "effect_adjusted": {
+        "HVG": {
+          "rho": 0.17782571544977843,
+          "ci95": [
+            0.14516550833950578,
+            0.21000994909220974
+          ],
+          "rows": 5440,
+          "gene_clusters": 1911,
+          "draws": 10000,
+          "seed": 20261115,
+          "continuous_controls": [
+            "de_nsig_counts_real"
+          ],
+          "context_indicators": [],
+          "scope": "gene-cluster bootstrap conditional on the observed contexts; ranks and residualization refitted per draw"
+        },
+        "SE": {
+          "rho": 0.16931055803488188,
+          "ci95": [
+            0.14065938890984125,
+            0.19820726837123964
+          ],
+          "rows": 5440,
+          "gene_clusters": 1911,
+          "draws": 10000,
+          "seed": 20261115,
+          "continuous_controls": [
+            "de_nsig_counts_real"
+          ],
+          "context_indicators": [],
+          "scope": "gene-cluster bootstrap conditional on the observed contexts; ranks and residualization refitted per draw"
+        }
+      },
+      "effect_coverage_context_adjusted": {
+        "HVG": {
+          "rho": 0.1473787744598139,
+          "ci95": [
+            0.11356194041289627,
+            0.18070452410406415
+          ],
+          "rows": 5440,
+          "gene_clusters": 1911,
+          "draws": 10000,
+          "seed": 20261115,
+          "continuous_controls": [
+            "de_nsig_counts_real",
+            "other_ctx_cov"
+          ],
+          "context_indicators": [
+            "context_jurkat",
+            "context_k562",
+            "context_rpe1"
+          ],
+          "scope": "gene-cluster bootstrap conditional on the observed contexts; ranks and residualization refitted per draw"
+        },
+        "SE": {
+          "rho": 0.12689549078649065,
+          "ci95": [
+            0.09579706052604688,
+            0.15975527703912246
+          ],
+          "rows": 5440,
+          "gene_clusters": 1911,
+          "draws": 10000,
+          "seed": 20261115,
+          "continuous_controls": [
+            "de_nsig_counts_real",
+            "other_ctx_cov"
+          ],
+          "context_indicators": [
+            "context_jurkat",
+            "context_k562",
+            "context_rpe1"
+          ],
+          "scope": "gene-cluster bootstrap conditional on the observed contexts; ranks and residualization refitted per draw"
+        }
+      }
+    },
+    "split_change": "Original hash-based split depended on process-specific Python hash randomization. New SHA256 split is balanced and reproducible; it is labelled a retrospective sensitivity split."
+  }
+}

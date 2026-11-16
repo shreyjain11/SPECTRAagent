@@ -902,8 +902,8 @@
     "notebook": "inline/state/state-featured/test-17.ipynb",
     "html": "inline/state/state-featured/test-17.html",
     "execution_evidence": "inline/state/state-featured/test-17.execution.json",
-    "published_notebook_sha256": "727fabf0150a16d59eca264cd84f4cd649da779c2a40ca48d096d6bc0277db22",
-    "published_html_sha256": "8da2ba9aa8f511bb0389685ef24a775f6e2afef251e37f79eeca4e1192c24b32",
+    "published_notebook_sha256": "4445c731d382f2949cee1c22a9a0851bf9144cd2d62e2a81864a2a330772990f",
+    "published_html_sha256": "21f7a20f1d888371765db33a041f314fa09b5a97acafe2e2bfa7eaaceebf5e8e",
     "code_cells": 11,
     "sections": [
       {
@@ -1000,18 +1000,18 @@
       ],
       "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
     },
-    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "verification_boundary": "Every code cell rerun from pinned, hash-verified cached public score, annotation and split inputs. The source archives and split files bind the consumed bytes; verified_source_manifest.json identifies each extracted source. Released model scores reused; no fresh STATE inference. Cohort, axis and outcome definitions unchanged.",
     "execution_evidence": "inline/state/state-featured/test-17.execution.json",
-    "notebook_sha256": "727fabf0150a16d59eca264cd84f4cd649da779c2a40ca48d096d6bc0277db22",
+    "notebook_sha256": "4445c731d382f2949cee1c22a9a0851bf9144cd2d62e2a81864a2a330772990f",
     "result_location": {
       "notebook": "inline/state/state-featured/test-17.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
     },
-    "interpretation_review": {
-      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
-      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
-      "presentation_record": "review_20261115/presentation/state-featured-test-17.revision.json"
+    "scientific_correction": {
+      "record": "corrections/scientific_20261115/records/state-featured-test-17.scientific-revision.json",
+      "execution_scope": "full_notebook_reexecuted",
+      "summary": "Corrected redundant regression controls and canonical-gene-clustered uncertainty."
     }
   }
 }

@@ -293,8 +293,8 @@
     "notebook": "inline/state/state-codex-r1/test-04.ipynb",
     "html": "inline/state/state-codex-r1/test-04.html",
     "execution_evidence": "inline/state/state-codex-r1/test-04.execution.json",
-    "published_notebook_sha256": "7952746c79fc7fd00a4fdde574c01f2a3c4a5b11de07f8ba63e5d6068d0af701",
-    "published_html_sha256": "5694c7ae40bb4f27a14565cbe6259844c195a3c18a67787be459457476597d15",
+    "published_notebook_sha256": "13fb965f8139e8e019b997138bae3c405dd93c2efe7b4c19f64fc6ac4b3a1357",
+    "published_html_sha256": "5a9b7a70c22b399f908dae5f02d37aadcd3d369cee5758cdfbf22b2821693cc5",
     "code_cells": 21,
     "sections": [
       {
@@ -400,18 +400,18 @@
       ],
       "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
     },
-    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "verification_boundary": "Only cell 21 reexecuted from retained per-condition scores (4020 confirmation records, 268 compounds across five contexts). Every plotted point/interval checked against prior output at its six-decimal display precision. All other scientific cells and outputs remain byte-identical to the previous revision.",
     "execution_evidence": "inline/state/state-codex-r1/test-04.execution.json",
-    "notebook_sha256": "7952746c79fc7fd00a4fdde574c01f2a3c4a5b11de07f8ba63e5d6068d0af701",
+    "notebook_sha256": "13fb965f8139e8e019b997138bae3c405dd93c2efe7b4c19f64fc6ac4b3a1357",
     "result_location": {
       "notebook": "inline/state/state-codex-r1/test-04.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
     },
-    "interpretation_review": {
-      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
-      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
-      "presentation_record": "review_20261115/presentation/state-codex-r1-test-04.revision.json"
+    "scientific_correction": {
+      "record": "corrections/scientific_20261115/records/state-codex-r1-test-04.scientific-revision.json",
+      "execution_scope": "selected_cells_reexecuted",
+      "summary": "Corrected the S-phase plot label; recomputed points and intervals match the prior displayed values."
     }
   }
 }

@@ -1,0 +1,350 @@
+{
+  "scope": "Independent helper tests and recomputation from actual per-assay records after the selected-cell rerun. No inference, fresh alignment or historical chronology claim.",
+  "checks": [
+    {
+      "check": "single-protein guard",
+      "detail": "One assay and multiple assays of one protein both return unavailable intervals."
+    },
+    {
+      "check": "whole-cluster resampling",
+      "detail": "Helper matches explicit row concatenation when one protein has repeated assays and unequal weights."
+    },
+    {
+      "check": "constant resampling guard",
+      "detail": "No zero-width empirical interval is emitted for an unvarying cluster distribution."
+    },
+    {
+      "check": "axis-3 counts, estimands and endpoint reconstruction",
+      "detail": "14 curve rows; all eligible assay/protein/variant counts preserved. AM/BLOSUM point estimates agree with previous displayed values within 5.1e-7."
+    },
+    {
+      "check": "axis-4 counts, estimands and endpoint reconstruction",
+      "detail": "16 curve rows; all eligible assay/protein/variant counts preserved. AM/BLOSUM point estimates agree with previous displayed values within 5.1e-7."
+    },
+    {
+      "check": "axis-5 counts, estimands and endpoint reconstruction",
+      "detail": "10 curve rows; all eligible assay/protein/variant counts preserved. AM/BLOSUM point estimates agree with previous displayed values within 5.1e-7."
+    },
+    {
+      "check": "axis-6 counts, estimands and endpoint reconstruction",
+      "detail": "23 curve rows; all eligible assay/protein/variant counts preserved. AM/BLOSUM point estimates agree with previous displayed values within 5.1e-7."
+    },
+    {
+      "check": "axis-7 counts, estimands and endpoint reconstruction",
+      "detail": "16 curve rows; all eligible assay/protein/variant counts preserved. AM/BLOSUM point estimates agree with previous displayed values within 5.1e-7."
+    },
+    {
+      "check": "axis-1 clinical bootstrap inspection",
+      "detail": {
+        "minimum_cluster_count": 1450,
+        "scientific_cells_changed": false
+      }
+    },
+    {
+      "check": "axis-2 clinical bootstrap inspection",
+      "detail": {
+        "minimum_cluster_count": 1364,
+        "scientific_cells_changed": false
+      }
+    }
+  ],
+  "before_after": [
+    {
+      "axis": 3,
+      "curve_rows": 14,
+      "max_curve_point_difference_from_displayed_before": 4.658477759655888e-07,
+      "max_non_pssm_endpoint_difference": 4.844037067991414e-07,
+      "endpoint_counts_unchanged": true,
+      "current_primary_contrasts": [
+        {
+          "score": "am",
+          "first": "depth0",
+          "last": "depth4",
+          "paired_assays": 1,
+          "paired_proteins": 1,
+          "mean_last_minus_first": 0.52330788,
+          "ci_low": null,
+          "ci_high": null,
+          "bootstrap_proteins": 1,
+          "ci_status": "insufficient_independent_proteins"
+        },
+        {
+          "score": "am",
+          "first": "coarse_hard",
+          "last": "coarse_easy",
+          "paired_assays": 61,
+          "paired_proteins": 52,
+          "mean_last_minus_first": 0.1241165156,
+          "ci_low": 0.080353155,
+          "ci_high": 0.1668435672,
+          "bootstrap_proteins": 52,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "blosum",
+          "first": "depth0",
+          "last": "depth4",
+          "paired_assays": 1,
+          "paired_proteins": 1,
+          "mean_last_minus_first": 0.037590934,
+          "ci_low": null,
+          "ci_high": null,
+          "bootstrap_proteins": 1,
+          "ci_status": "insufficient_independent_proteins"
+        },
+        {
+          "score": "blosum",
+          "first": "coarse_hard",
+          "last": "coarse_easy",
+          "paired_assays": 61,
+          "paired_proteins": 52,
+          "mean_last_minus_first": 0.0638707795,
+          "ci_low": 0.0235835657,
+          "ci_high": 0.0998283601,
+          "bootstrap_proteins": 52,
+          "ci_status": "estimated_from_protein_clusters"
+        }
+      ]
+    },
+    {
+      "axis": 4,
+      "curve_rows": 16,
+      "max_curve_point_difference_from_displayed_before": 4.874008978084099e-07,
+      "max_non_pssm_endpoint_difference": 4.844037067991414e-07,
+      "endpoint_counts_unchanged": true,
+      "current_primary_contrasts": [
+        {
+          "score": "am",
+          "first": "insert",
+          "last": "q4",
+          "paired_assays": 44,
+          "paired_proteins": 40,
+          "mean_last_minus_first": 0.2148376385,
+          "ci_low": 0.1569940216,
+          "ci_high": 0.2724682317,
+          "bootstrap_proteins": 40,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "am",
+          "first": "coarse_hard",
+          "last": "coarse_easy",
+          "paired_assays": 61,
+          "paired_proteins": 52,
+          "mean_last_minus_first": 0.1241165156,
+          "ci_low": 0.080353155,
+          "ci_high": 0.1668435672,
+          "bootstrap_proteins": 52,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "blosum",
+          "first": "insert",
+          "last": "q4",
+          "paired_assays": 44,
+          "paired_proteins": 40,
+          "mean_last_minus_first": 0.1276183818,
+          "ci_low": 0.0800909714,
+          "ci_high": 0.1715181283,
+          "bootstrap_proteins": 40,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "blosum",
+          "first": "coarse_hard",
+          "last": "coarse_easy",
+          "paired_assays": 61,
+          "paired_proteins": 52,
+          "mean_last_minus_first": 0.0638707795,
+          "ci_low": 0.0235835657,
+          "ci_high": 0.0998283601,
+          "bootstrap_proteins": 52,
+          "ci_status": "estimated_from_protein_clusters"
+        }
+      ]
+    },
+    {
+      "axis": 5,
+      "curve_rows": 10,
+      "max_curve_point_difference_from_displayed_before": 4.802232387024485e-07,
+      "max_non_pssm_endpoint_difference": 4.844037067991414e-07,
+      "endpoint_counts_unchanged": true,
+      "current_primary_contrasts": [
+        {
+          "score": "am",
+          "first": "deep_occ<0.5",
+          "last": "deep_occ>=0.9",
+          "paired_assays": 19,
+          "paired_proteins": 17,
+          "mean_last_minus_first": 0.1519326792,
+          "ci_low": 0.0282734568,
+          "ci_high": 0.2837653291,
+          "bootstrap_proteins": 17,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "am",
+          "first": "coarse_hard",
+          "last": "coarse_easy",
+          "paired_assays": 61,
+          "paired_proteins": 52,
+          "mean_last_minus_first": 0.1241165156,
+          "ci_low": 0.080353155,
+          "ci_high": 0.1668435672,
+          "bootstrap_proteins": 52,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "blosum",
+          "first": "deep_occ<0.5",
+          "last": "deep_occ>=0.9",
+          "paired_assays": 19,
+          "paired_proteins": 17,
+          "mean_last_minus_first": 0.0152246083,
+          "ci_low": -0.0449781087,
+          "ci_high": 0.0784246621,
+          "bootstrap_proteins": 17,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "blosum",
+          "first": "coarse_hard",
+          "last": "coarse_easy",
+          "paired_assays": 61,
+          "paired_proteins": 52,
+          "mean_last_minus_first": 0.0638707795,
+          "ci_low": 0.0235835657,
+          "ci_high": 0.0998283601,
+          "bootstrap_proteins": 52,
+          "ci_status": "estimated_from_protein_clusters"
+        }
+      ]
+    },
+    {
+      "axis": 6,
+      "curve_rows": 23,
+      "max_curve_point_difference_from_displayed_before": 7.32928212310302e-06,
+      "max_non_pssm_endpoint_difference": 4.844037067991414e-07,
+      "endpoint_counts_unchanged": true,
+      "current_primary_contrasts": [
+        {
+          "score": "am",
+          "first": "insert",
+          "last": "q4",
+          "paired_assays": 44,
+          "paired_proteins": 40,
+          "mean_last_minus_first": 0.2148376385,
+          "ci_low": 0.1569940216,
+          "ci_high": 0.2724682317,
+          "bootstrap_proteins": 40,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "am",
+          "first": "coarse_hard",
+          "last": "coarse_easy",
+          "paired_assays": 61,
+          "paired_proteins": 52,
+          "mean_last_minus_first": 0.1241165156,
+          "ci_low": 0.080353155,
+          "ci_high": 0.1668435672,
+          "bootstrap_proteins": 52,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "blosum",
+          "first": "insert",
+          "last": "q4",
+          "paired_assays": 44,
+          "paired_proteins": 40,
+          "mean_last_minus_first": 0.1276183818,
+          "ci_low": 0.0800909714,
+          "ci_high": 0.1715181283,
+          "bootstrap_proteins": 40,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "blosum",
+          "first": "coarse_hard",
+          "last": "coarse_easy",
+          "paired_assays": 61,
+          "paired_proteins": 52,
+          "mean_last_minus_first": 0.0638707795,
+          "ci_low": 0.0235835657,
+          "ci_high": 0.0998283601,
+          "bootstrap_proteins": 52,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "pssm",
+          "first": "coarse_hard",
+          "last": "coarse_easy",
+          "paired_assays": 57,
+          "paired_proteins": 49,
+          "mean_last_minus_first": 0.1479476954,
+          "ci_low": 0.0981349783,
+          "ci_high": 0.1970407539,
+          "bootstrap_proteins": 49,
+          "ci_status": "estimated_from_protein_clusters"
+        }
+      ]
+    },
+    {
+      "axis": 7,
+      "curve_rows": 16,
+      "max_curve_point_difference_from_displayed_before": 4.874008978084099e-07,
+      "max_non_pssm_endpoint_difference": 4.844037067991414e-07,
+      "endpoint_counts_unchanged": true,
+      "current_primary_contrasts": [
+        {
+          "score": "am",
+          "first": "insert",
+          "last": "q4",
+          "paired_assays": 44,
+          "paired_proteins": 40,
+          "mean_last_minus_first": 0.2148376385,
+          "ci_low": 0.1569940216,
+          "ci_high": 0.2724682317,
+          "bootstrap_proteins": 40,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "am",
+          "first": "coarse_hard",
+          "last": "coarse_easy",
+          "paired_assays": 61,
+          "paired_proteins": 52,
+          "mean_last_minus_first": 0.1241165156,
+          "ci_low": 0.080353155,
+          "ci_high": 0.1668435672,
+          "bootstrap_proteins": 52,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "blosum",
+          "first": "insert",
+          "last": "q4",
+          "paired_assays": 44,
+          "paired_proteins": 40,
+          "mean_last_minus_first": 0.1276183818,
+          "ci_low": 0.0800909714,
+          "ci_high": 0.1715181283,
+          "bootstrap_proteins": 40,
+          "ci_status": "estimated_from_protein_clusters"
+        },
+        {
+          "score": "blosum",
+          "first": "coarse_hard",
+          "last": "coarse_easy",
+          "paired_assays": 61,
+          "paired_proteins": 52,
+          "mean_last_minus_first": 0.0638707795,
+          "ci_low": 0.0235835657,
+          "ci_high": 0.0998283601,
+          "bootstrap_proteins": 52,
+          "ci_status": "estimated_from_protein_clusters"
+        }
+      ]
+    }
+  ]
+}
