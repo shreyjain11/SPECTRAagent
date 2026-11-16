@@ -620,7 +620,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-featured/test-07",
     "disposition": "accepted",
-    "result": "Mean C\u03b1-lDDT was 0.591 for 105 viral/phage proteins and 0.899 for 184 others. The 11 E/E2/envelope-E proteins averaged 0.396 versus 0.803 for the remaining 278.",
+    "result": "Mean Cα-lDDT was 0.591 for 105 viral/phage proteins and 0.899 for 184 others. The 11 E/E2/envelope-E proteins averaged 0.396 versus 0.803 for the remaining 278.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -770,7 +770,7 @@
           "original_runs/esmfold2_global_hypothesis_audit_20260602/global_hypothesis_audit_report.md"
         ],
         "notebook_cell": 14,
-        "recorded_text": "## Recorded conclusion\n\nMean C\u03b1-lDDT was 0.591 for 105 viral/phage proteins and 0.899 for 184 others. The 11 E/E2/envelope-E proteins averaged 0.396 versus 0.803 for the remaining 278.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "recorded_text": "## Recorded conclusion\n\nMean Cα-lDDT was 0.591 for 105 viral/phage proteins and 0.899 for 184 others. The 11 E/E2/envelope-E proteins averaged 0.396 versus 0.803 for the remaining 278.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
@@ -786,8 +786,8 @@
     "notebook": "inline/esmfold2/esmfold2-featured/test-07.ipynb",
     "html": "inline/esmfold2/esmfold2-featured/test-07.html",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-07.execution.json",
-    "published_notebook_sha256": "1445c121cb1fc6f950a7d074456e03ce0ae522f638bea961f5b7f41d20c6d303",
-    "published_html_sha256": "12186c5934b229bd8384d3c735968a41cb7b13c0c54ccd4766d72ec8d6c7314a",
+    "published_notebook_sha256": "e6953332172fcaf6c9bd34a3f65a26c6d37eb4fec57293af7424740399e10244",
+    "published_html_sha256": "ddc35eb1b4f3033f3d54f8eb6c1d7f4565d554e2d2028221afbf7864c0b2b215",
     "code_cells": 25,
     "sections": [
       {
@@ -893,11 +893,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-07.execution.json",
-    "notebook_sha256": "1445c121cb1fc6f950a7d074456e03ce0ae522f638bea961f5b7f41d20c6d303",
+    "notebook_sha256": "e6953332172fcaf6c9bd34a3f65a26c6d37eb4fec57293af7424740399e10244",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-featured/test-07.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-featured-test-07.revision.json"
     }
   }
 }

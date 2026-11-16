@@ -23,7 +23,7 @@
   },
   "axis_levels": {
     "definition": "Block or adjust for magnitude, gene count, cell count and dose.",
-    "calculation": "Input-side features rebuilt from original sources; levels and completeness/compound partitions computed from individual rows. See notebook stages3\u20134 and method policy.",
+    "calculation": "Input-side features rebuilt from original sources; levels and completeness/compound partitions computed from individual rows. See notebook stages3–4 and method policy.",
     "code": "reconstructed/state-codex-r1/notebooks/04-state-codex-r1-controls.py",
     "scope": "supporting_implementation"
   },
@@ -50,7 +50,7 @@
   },
   "reconstruction_notes": [
     "Actual source-to-condition reconstruction executed on exxact05: public source hashes, input-side features, original released-DE scoring, eligibility, regressions, reference contrasts, curves and controls are linked.",
-    "Surviving original scripts01\u201304 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+    "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
     "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
     "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility.",
     "Original neural inference is not repeated: this investigation consumed official released predictions, whose full-feature errors are recomputed from the original individual DE rows."
@@ -293,8 +293,8 @@
     "notebook": "inline/state/state-codex-r1/test-04.ipynb",
     "html": "inline/state/state-codex-r1/test-04.html",
     "execution_evidence": "inline/state/state-codex-r1/test-04.execution.json",
-    "published_notebook_sha256": "173cb82b533fa82c9fec5bda1f7eced4f747fe777b28a0087e0b74b0c63081a6",
-    "published_html_sha256": "f5e819e8ab94302213f977e83b03a2fb57c333092429f21eca74d56b6f9ab6bf",
+    "published_notebook_sha256": "7952746c79fc7fd00a4fdde574c01f2a3c4a5b11de07f8ba63e5d6068d0af701",
+    "published_html_sha256": "5694c7ae40bb4f27a14565cbe6259844c195a3c18a67787be459457476597d15",
     "code_cells": 21,
     "sections": [
       {
@@ -402,11 +402,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/state/state-codex-r1/test-04.execution.json",
-    "notebook_sha256": "173cb82b533fa82c9fec5bda1f7eced4f747fe777b28a0087e0b74b0c63081a6",
+    "notebook_sha256": "7952746c79fc7fd00a4fdde574c01f2a3c4a5b11de07f8ba63e5d6068d0af701",
     "result_location": {
       "notebook": "inline/state/state-codex-r1/test-04.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-codex-r1-test-04.revision.json"
     }
   }
 }

@@ -1,0 +1,547 @@
+{
+  "scope": "Independent arithmetic and helper checks against saved notebook outputs. No fresh inference, full notebook execution, original chronology reconstruction, or raw-input download was performed by this script.",
+  "notebooks_inspected_for_saved_errors": 34,
+  "check_count": 21,
+  "checks": [
+    {
+      "entry": "am-kimi-r1/test-01",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am",
+          "calculated_from_rounded_curve": 0.04265200000000002,
+          "reported": 0.042653,
+          "absolute_error": 9.999999999801834e-07
+        },
+        {
+          "score": "neg_blosum62",
+          "calculated_from_rounded_curve": 0.05412499999999998,
+          "reported": 0.054125,
+          "absolute_error": 2.0816681711721685e-17
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": 0.059755,
+          "reported": 0.059755,
+          "absolute_error": 0.0
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r1/test-02",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am",
+          "calculated_from_rounded_curve": -0.011209000000000024,
+          "reported": -0.011209,
+          "absolute_error": 2.42861286636753e-17
+        },
+        {
+          "score": "neg_blosum62",
+          "calculated_from_rounded_curve": 0.023745000000000016,
+          "reported": 0.023745,
+          "absolute_error": 1.734723475976807e-17
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": 0.005979999999999985,
+          "reported": 0.00598,
+          "absolute_error": 1.474514954580286e-17
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r1/test-03",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am",
+          "calculated_from_rounded_curve": -0.008830999999999922,
+          "reported": -0.008831,
+          "absolute_error": 7.806255641895632e-17
+        },
+        {
+          "score": "neg_blosum62",
+          "calculated_from_rounded_curve": 0.02384300000000006,
+          "reported": 0.023844,
+          "absolute_error": 9.999999999420195e-07
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": 0.03078700000000001,
+          "reported": 0.030786,
+          "absolute_error": 1.000000000007939e-06
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r1/test-04",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am",
+          "calculated_from_rounded_curve": -0.016133000000000064,
+          "reported": -0.016133,
+          "absolute_error": 6.245004513516506e-17
+        },
+        {
+          "score": "neg_blosum62",
+          "calculated_from_rounded_curve": 0.002663000000000082,
+          "reported": 0.002663,
+          "absolute_error": 8.196568423990414e-17
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": 0.022917999999999994,
+          "reported": 0.022918,
+          "absolute_error": 6.938893903907228e-18
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r1/test-05",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am",
+          "calculated_from_rounded_curve": -0.015929000000000082,
+          "reported": -0.015929,
+          "absolute_error": 8.326672684688674e-17
+        },
+        {
+          "score": "neg_blosum62",
+          "calculated_from_rounded_curve": -0.001639000000000057,
+          "reported": -0.00164,
+          "absolute_error": 9.999999999428869e-07
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": -0.023729,
+          "reported": -0.023729,
+          "absolute_error": 0.0
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r1/test-06",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am",
+          "calculated_from_rounded_curve": 0.148459,
+          "reported": 0.148459,
+          "absolute_error": 0.0
+        },
+        {
+          "score": "neg_blosum62",
+          "calculated_from_rounded_curve": 0.13889300000000004,
+          "reported": 0.138893,
+          "absolute_error": 5.551115123125783e-17
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": 0.09862300000000002,
+          "reported": 0.098623,
+          "absolute_error": 1.3877787807814457e-17
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r2/test-01",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am_mean",
+          "calculated_from_rounded_curve": 0.01011200000000001,
+          "reported": 0.010112,
+          "absolute_error": 1.0408340855860843e-17
+        },
+        {
+          "score": "am_min",
+          "calculated_from_rounded_curve": 0.010101000000000027,
+          "reported": 0.0101,
+          "absolute_error": 1.000000000027021e-06
+        },
+        {
+          "score": "am_max",
+          "calculated_from_rounded_curve": 0.010114000000000067,
+          "reported": 0.010114,
+          "absolute_error": 6.765421556309548e-17
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": 0.006917000000000062,
+          "reported": 0.006917,
+          "absolute_error": 6.158268339717665e-17
+        },
+        {
+          "score": "phyloP",
+          "calculated_from_rounded_curve": -0.055008999999999975,
+          "reported": -0.055008,
+          "absolute_error": 9.999999999732445e-07
+        },
+        {
+          "score": "gene_mean_phyloP",
+          "calculated_from_rounded_curve": 0.014263999999999943,
+          "reported": 0.014264,
+          "absolute_error": 5.724587470723463e-17
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r2/test-01",
+      "check": "paired-gene mean endpoint arithmetic",
+      "details": {
+        "rows": 6,
+        "maximum_absolute_error": 9.999999999871223e-07
+      }
+    },
+    {
+      "entry": "am-kimi-r2/test-02",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am_mean",
+          "calculated_from_rounded_curve": -0.030190999999999968,
+          "reported": -0.030191,
+          "absolute_error": 3.122502256758253e-17
+        },
+        {
+          "score": "am_min",
+          "calculated_from_rounded_curve": -0.030212999999999934,
+          "reported": -0.030213,
+          "absolute_error": 6.591949208711867e-17
+        },
+        {
+          "score": "am_max",
+          "calculated_from_rounded_curve": -0.030178000000000038,
+          "reported": -0.030178,
+          "absolute_error": 3.8163916471489756e-17
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": 0.05857499999999993,
+          "reported": 0.058574,
+          "absolute_error": 9.999999999316111e-07
+        },
+        {
+          "score": "phyloP",
+          "calculated_from_rounded_curve": -0.009808000000000039,
+          "reported": -0.009808,
+          "absolute_error": 3.8163916471489756e-17
+        },
+        {
+          "score": "gene_mean_phyloP",
+          "calculated_from_rounded_curve": -0.214092,
+          "reported": -0.214092,
+          "absolute_error": 0.0
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r2/test-02",
+      "check": "paired-gene mean endpoint arithmetic",
+      "details": {
+        "rows": 6,
+        "maximum_absolute_error": 1.0000000000356946e-06
+      }
+    },
+    {
+      "entry": "am-kimi-r2/test-03",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am_mean",
+          "calculated_from_rounded_curve": -0.04006200000000004,
+          "reported": -0.040062,
+          "absolute_error": 4.163336342344337e-17
+        },
+        {
+          "score": "am_min",
+          "calculated_from_rounded_curve": -0.04008400000000001,
+          "reported": -0.040084,
+          "absolute_error": 6.938893903907228e-18
+        },
+        {
+          "score": "am_max",
+          "calculated_from_rounded_curve": -0.040049,
+          "reported": -0.040049,
+          "absolute_error": 0.0
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": 0.007739999999999969,
+          "reported": 0.00774,
+          "absolute_error": 3.122502256758253e-17
+        },
+        {
+          "score": "phyloP",
+          "calculated_from_rounded_curve": -0.09177000000000002,
+          "reported": -0.09177,
+          "absolute_error": 1.3877787807814457e-17
+        },
+        {
+          "score": "gene_mean_phyloP",
+          "calculated_from_rounded_curve": -0.17631599999999997,
+          "reported": -0.176316,
+          "absolute_error": 2.7755575615628914e-17
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r2/test-03",
+      "check": "paired-gene mean endpoint arithmetic",
+      "details": {
+        "rows": 6,
+        "maximum_absolute_error": 1.0000000000218168e-06
+      }
+    },
+    {
+      "entry": "am-kimi-r2/test-04",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am_mean",
+          "calculated_from_rounded_curve": 0.002933999999999992,
+          "reported": 0.002934,
+          "absolute_error": 7.806255641895632e-18
+        },
+        {
+          "score": "am_min",
+          "calculated_from_rounded_curve": 0.0029210000000000624,
+          "reported": 0.002922,
+          "absolute_error": 9.999999999376827e-07
+        },
+        {
+          "score": "am_max",
+          "calculated_from_rounded_curve": 0.002943000000000029,
+          "reported": 0.002943,
+          "absolute_error": 2.905661822261152e-17
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": -0.025126000000000093,
+          "reported": -0.025126,
+          "absolute_error": 9.367506770274758e-17
+        },
+        {
+          "score": "phyloP",
+          "calculated_from_rounded_curve": -0.108406,
+          "reported": -0.108406,
+          "absolute_error": 0.0
+        },
+        {
+          "score": "gene_mean_phyloP",
+          "calculated_from_rounded_curve": -0.14762300000000006,
+          "reported": -0.147623,
+          "absolute_error": 5.551115123125783e-17
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r2/test-05",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am_mean",
+          "calculated_from_rounded_curve": -0.004483000000000015,
+          "reported": -0.004483,
+          "absolute_error": 1.474514954580286e-17
+        },
+        {
+          "score": "am_min",
+          "calculated_from_rounded_curve": -0.004503000000000035,
+          "reported": -0.004503,
+          "absolute_error": 3.469446951953614e-17
+        },
+        {
+          "score": "am_max",
+          "calculated_from_rounded_curve": -0.004471000000000003,
+          "reported": -0.004471,
+          "absolute_error": 2.6020852139652106e-18
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": 0.06816999999999995,
+          "reported": 0.06817,
+          "absolute_error": 4.163336342344337e-17
+        },
+        {
+          "score": "phyloP",
+          "calculated_from_rounded_curve": -0.030486000000000013,
+          "reported": -0.030486,
+          "absolute_error": 1.3877787807814457e-17
+        },
+        {
+          "score": "gene_mean_phyloP",
+          "calculated_from_rounded_curve": -0.029503999999999975,
+          "reported": -0.029504,
+          "absolute_error": 2.42861286636753e-17
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r2/test-05",
+      "check": "paired-gene mean endpoint arithmetic",
+      "details": {
+        "rows": 6,
+        "maximum_absolute_error": 9.999999999628362e-07
+      }
+    },
+    {
+      "entry": "am-kimi-r2/test-06",
+      "check": "endpoint arithmetic for all saved predictors",
+      "details": [
+        {
+          "score": "am_mean",
+          "calculated_from_rounded_curve": -0.0032839999999999536,
+          "reported": -0.003284,
+          "absolute_error": 4.640385298237959e-17
+        },
+        {
+          "score": "am_min",
+          "calculated_from_rounded_curve": -0.0032969999999999944,
+          "reported": -0.003298,
+          "absolute_error": 1.0000000000057706e-06
+        },
+        {
+          "score": "am_max",
+          "calculated_from_rounded_curve": -0.003275000000000028,
+          "reported": -0.003275,
+          "absolute_error": 2.7755575615628914e-17
+        },
+        {
+          "score": "grantham",
+          "calculated_from_rounded_curve": -0.081067,
+          "reported": -0.081067,
+          "absolute_error": 0.0
+        },
+        {
+          "score": "phyloP",
+          "calculated_from_rounded_curve": -0.015840999999999994,
+          "reported": -0.015841,
+          "absolute_error": 6.938893903907228e-18
+        },
+        {
+          "score": "gene_mean_phyloP",
+          "calculated_from_rounded_curve": 0.018530999999999964,
+          "reported": 0.018531,
+          "absolute_error": 3.469446951953614e-17
+        }
+      ]
+    },
+    {
+      "entry": "am-kimi-r2/test-06",
+      "check": "paired-gene mean endpoint arithmetic",
+      "details": {
+        "rows": 6,
+        "maximum_absolute_error": 1.0000000000591133e-06
+      }
+    },
+    {
+      "entry": "am-opus-r1/test-02",
+      "check": "recomputed Spearman correlations from printed per-assay records",
+      "details": [
+        {
+          "subset": "All",
+          "n": 73,
+          "rho": 0.04603517441656281,
+          "p": 0.6989478510604069
+        },
+        {
+          "subset": "Excluding stability",
+          "n": 59,
+          "rho": 0.15495674644114574,
+          "p": 0.24124799667249028
+        },
+        {
+          "subset": "Stability only",
+          "n": 14,
+          "rho": -0.24395604395604395,
+          "p": 0.400624803916119
+        },
+        {
+          "subset": "Discovery",
+          "n": 38,
+          "rho": 0.05789646630983592,
+          "p": 0.7298948521094136
+        },
+        {
+          "subset": "Confirmation",
+          "n": 35,
+          "rho": 0.008685298223544084,
+          "p": 0.9605067459782497
+        }
+      ]
+    },
+    {
+      "entry": "am-opus-r2/test-02",
+      "check": "recomputed Spearman correlations from printed per-assay records",
+      "details": [
+        {
+          "subset": "All",
+          "n": 73,
+          "rho": 0.04603517441656281,
+          "p": 0.6989478510604069
+        },
+        {
+          "subset": "Excluding stability",
+          "n": 59,
+          "rho": 0.15495674644114574,
+          "p": 0.24124799667249028
+        },
+        {
+          "subset": "Stability only",
+          "n": 14,
+          "rho": -0.24395604395604395,
+          "p": 0.400624803916119
+        },
+        {
+          "subset": "Discovery",
+          "n": 37,
+          "rho": 0.13979132477465886,
+          "p": 0.4092605347288506
+        },
+        {
+          "subset": "Confirmation",
+          "n": 36,
+          "rho": -0.03244078377348303,
+          "p": 0.8510141373617803
+        }
+      ]
+    },
+    {
+      "entry": "am-gpt-r1/test-01",
+      "check": "weighted-AUROC helper against sklearn",
+      "details": {
+        "trials": 100,
+        "ties": true,
+        "zero_weights": true,
+        "maximum_absolute_error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "entry": "am-opus-r2/test-03",
+      "check": "right-closed coverage-bin boundary check",
+      "details": {
+        "values": [
+          0,
+          0.5,
+          0.5000001,
+          0.95,
+          0.9500001,
+          1
+        ],
+        "levels": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ]
+      }
+    }
+  ]
+}

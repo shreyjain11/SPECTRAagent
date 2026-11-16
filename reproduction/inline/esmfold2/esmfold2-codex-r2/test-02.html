@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script>
+<title>ESMFold2 — Distant internal repeats</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script>
 (function() {
   function addWidgetsRenderer() {
     var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
@@ -7820,8 +7820,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cell-000">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7840,7 +7862,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">¶</a></h2><p>Query experimental PDB protein entities first released2021-10-01 through2026-05-26, length289–336 and resolution≤3.5Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.</p>
+<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">&#182;</a></h2><p>Query experimental PDB protein entities first released 2021-10-01 through 2026-05-26, length 289–336 and resolution ≤3.5 Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit 4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before 2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.</p>
+
 </div>
 </div>
 </div>
@@ -8007,7 +8030,8 @@ Search implementation: 8cc5ce367b5638c4306c2d7cfc652dd099a4643f
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">¶</a></h2><p>Remove duplicate canonical sequences and40%-identity clusters with bidirectional80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require≥90% aligned sequence identity,≥80% query alignment coverage and≥80% resolved C-alpha coverage. Discovery entries precede2025; confirmation entries are later, with globally disjoint clusters.</p>
+<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">&#182;</a></h2><p>Remove duplicate canonical sequences and 40%-identity clusters with bidirectional 80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require ≥90% aligned sequence identity,≥80% query alignment coverage and ≥80% resolved C-alpha coverage. Discovery entries precede 2025; confirmation entries are later, with globally disjoint clusters.</p>
+
 </div>
 </div>
 </div>
@@ -8219,7 +8243,8 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">¶</a></h2><p>Calculate exact4-mer repeat coverage at separations≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and12-residue low-complexity windows. Repeat levels are0,0.02–0.04,≥0.05; entropy thresholds are0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are1,2–3,≥4; dominance thresholds are0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.</p>
+<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">&#182;</a></h2><p>Calculate exact 4-mer repeat coverage at separations ≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and 12-residue low-complexity windows. Repeat levels are 0, 0.02–0.04,≥0.05; entropy thresholds are 0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are 1, 2–3,≥4; dominance thresholds are 0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed 20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.</p>
+
 </div>
 </div>
 </div>
@@ -8513,7 +8538,8 @@ Selection seed:20260716; SHA256 anchor order and minimum-cost input matching
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Model-evaluation">4. Model evaluation<a class="anchor-link" href="#4.-Model-evaluation">¶</a></h2><p>Run pinned Biohub ESMFold2 weights through Transformers5.22.2 with3 loops,14 diffusion steps,1 sample and seed0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than3 template C-alpha atoms is an abstention with score0.</p>
+<h2 id="4.-Model-evaluation">4. Model evaluation<a class="anchor-link" href="#4.-Model-evaluation">&#182;</a></h2><p>Run pinned Biohub ESMFold2 weights through Transformers 5.22.2 with 3 loops, 14 diffusion steps, 1 sample and seed 0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than 3 template C-alpha atoms is an abstention with score 0.</p>
+
 </div>
 </div>
 </div>
@@ -9634,7 +9660,8 @@ var element = document.getElementById('20d1cb1c-1e1d-4032-93e1-4a0bb29b7113');
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">¶</a></h2><p>Bootstrap10000 times with seed20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.</p>
+<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">&#182;</a></h2><p>Bootstrap 10000 times with seed 20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays 40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.</p>
+
 </div>
 </div>
 </div>
@@ -9920,7 +9947,9 @@ var element = document.getElementById('20d1cb1c-1e1d-4032-93e1-4a0bb29b7113');
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">¶</a></h2><p>Use the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.</p>
+<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">&#182;</a></h2><p>Use the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.</p>
+<p>The 120-target repeat panel has a model endpoint decline of only 0.0037 TM-score, with an interval spanning zero and non-monotone adjusted means. It does not confirm the proposed repeat weakness; it does not establish robustness to every form of repetition.</p>
+
 </div>
 </div>
 </div>
@@ -9956,7 +9985,7 @@ var element = document.getElementById('20d1cb1c-1e1d-4032-93e1-4a0bb29b7113');
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>The measured curve does not jointly meet the0.10 effect, interval and adjusted-direction requirements in this explicitly selected panel.
+<pre>The measured curve does not jointly meet the 0.10 effect, interval and adjusted-direction requirements in this explicitly selected panel.
 Same-example reference: template reference declines more
 </pre>
 </div>

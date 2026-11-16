@@ -87,7 +87,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-codex-r1/test-01",
     "disposition": "accepted",
-    "result": "Low-minus-high mean target-normalized TM-score was \u22120.096 [\u22120.116, \u22120.075]. Template transfer declined by 0.473 on the same chains, indicating shared difficulty.",
+    "result": "Low-minus-high mean target-normalized TM-score was −0.096 [−0.116, −0.075]. Template transfer declined by 0.473 on the same chains, indicating shared difficulty.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -107,8 +107,8 @@
     "notebook": "inline/esmfold2/esmfold2-codex-r1/test-01.ipynb",
     "html": "inline/esmfold2/esmfold2-codex-r1/test-01.html",
     "execution_evidence": "inline/esmfold2/esmfold2-codex-r1/test-01.execution.json",
-    "published_notebook_sha256": "c00591e4266ad22aa7272cade1e1b98157728319703db22df3563a137cb21b16",
-    "published_html_sha256": "92432210a81a7cfacbd823a6736af02869ba23ea846b1fadce01906048248323",
+    "published_notebook_sha256": "32e5fb6116d41f236b28e06da556e09baea3e60268da0c88eb9faec1f115a32c",
+    "published_html_sha256": "1f2da7a5f678018cac921c96ab938f1b54c0b35ea8f79d56b8585a808dbc408c",
     "code_cells": 17,
     "sections": [
       {
@@ -206,7 +206,7 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-codex-r1/test-01.execution.json",
-    "notebook_sha256": "c00591e4266ad22aa7272cade1e1b98157728319703db22df3563a137cb21b16",
+    "notebook_sha256": "32e5fb6116d41f236b28e06da556e09baea3e60268da0c88eb9faec1f115a32c",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-codex-r1/test-01.ipynb",
       "section": 6,
@@ -218,6 +218,11 @@
         "path": "traceability_review.json",
         "record_id": "esmfold2-codex-r1/test-01"
       }
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-codex-r1-test-01.revision.json"
     }
   }
 }

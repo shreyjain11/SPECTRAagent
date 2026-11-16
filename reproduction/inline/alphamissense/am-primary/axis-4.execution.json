@@ -8,7 +8,7 @@
   "executed_cells": 9,
   "errors": 0,
   "notebook_sha256": "c23a60e71319890b26f136b059aa91e9c1e5a2810b959dad20de373ee624aee9",
-  "html_sha256": "3835050dc684a64508e672ae280e0831812d573ea256d16825e0105e0789ba31",
+  "html_sha256": "4a47c27e64675e0e9e7093a3f3f618090f71f4129e040c14278f5eef3ee64b43",
   "sections": [
     {
       "number": 1,
@@ -87,5 +87,17 @@
       "path": "inline/alphamissense/am-primary/axis-4-evidence/execution.json",
       "sha256": "376a99911203712377b5c795d02b6cefdc24b3c7e52a01c64079a3699a77ec9c"
     }
-  ]
+  ],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/am-primary-test-04.previous-execution.json",
+      "sha256": "3332468532a78903e256e67d6e2e5d1b09c17d2b5a2aa286c78ebaf4adc954e5"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/am-primary-test-04.revision.json",
+      "sha256": "218f1c9e89a76eb7032f94b40704cdb7ff15a485ce7ccc6eaf47250b08712688"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

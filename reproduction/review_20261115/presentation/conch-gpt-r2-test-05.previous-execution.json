@@ -1,0 +1,99 @@
+{
+  "analysis_id": "conch-gpt-r2/test-05",
+  "notebook": "inline/conch/conch-gpt-r2/test-05.ipynb",
+  "html": "inline/conch/conch-gpt-r2/test-05.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 8,
+  "executed_cells": 8,
+  "errors": 0,
+  "notebook_sha256": "08e597fe0d8599b70d7397c681d0eeeb0479e60a0b0aca14267743e35bdc3094",
+  "html_sha256": "3e9f90c22ee04a2e8fbf7bc8b934a1390299b655cd9e29d05e9938fbf3f0cebc",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source / acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 6,
+      "code_cells": [
+        8
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 9,
+      "code_cells": [
+        10
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 11,
+      "code_cells": [
+        12
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. Decision and reason",
+      "markdown_cell": 13,
+      "code_cells": [
+        14,
+        15
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "ef274b76d8c31ebd0c01e99c055e2786356a0b82f2687b2cf03139875c994d24",
+  "execution_evidence_entry_id": "conch-gpt-r2/test-05",
+  "embedded_figures": 2,
+  "checks": [
+    "published_artifacts_match_documented_presentation_revision",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      14,
+      15
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 706.253,
+  "python": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/conch/.venv/bin/python",
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "kind": "markdown_only",
+    "original_execution_evidence": {
+      "path": "corrections/conch/original-execution/conch-gpt-r2-test-05.execution.json",
+      "sha256": "f382c3035d9fb53887c9f781b44dab4755e11fe796a9cd1d77b2f3c129a08f24"
+    },
+    "correction_record": {
+      "path": "corrections/conch/conch-gpt-r2-test-05.presentation.json",
+      "sha256": "6c1cca44fdcf828c7b19e1edac96702bb28e9c81e172a11a335b2387b455180a"
+    },
+    "scientific_reexecution": false
+  },
+  "execution_scope": "Execution host, elapsed time, cell counts and calculation outputs describe the original artifact preserved in presentation_revision.original_execution_evidence. The published notebook and HTML include documented presentation changes only; no new full scientific execution was performed."
+}

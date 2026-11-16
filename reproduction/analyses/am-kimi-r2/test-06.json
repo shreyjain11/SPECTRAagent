@@ -98,7 +98,7 @@
     "source": "historical_decisions.json",
     "record_id": "am-kimi-r2/test-06",
     "disposition": "rejected",
-    "result": "AM: pooled +0.003, paired (808 genes) \u22120.005 [\u22120.012,+0.002]. Grantham reference degrades at CpG (+0.080) while AM does not Negative for AM at adequate power",
+    "result": "AM: pooled +0.003, paired (808 genes) −0.005 [−0.012,+0.002]. Grantham reference degrades at CpG (+0.080) while AM does not Negative for AM at adequate power",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -118,8 +118,8 @@
     "notebook": "inline/alphamissense/am-kimi-r2/axis-6.ipynb",
     "html": "inline/alphamissense/am-kimi-r2/axis-6.html",
     "execution_evidence": "inline/alphamissense/am-kimi-r2/axis-6.execution.json",
-    "published_notebook_sha256": "5f01267446dfe58088c00a97023cf226985b695a3bab20043266cb47173c197a",
-    "published_html_sha256": "a8ee65324b37a1c55b76a1834cb7df8ea5ae4943db83f6dffb94ee504a1f1ada",
+    "published_notebook_sha256": "d479faffbf98387accb3b42f61510804ddea7b676af92aa0d2145efe8d3632f0",
+    "published_html_sha256": "92d6f2fe2f7ba936ae93671972bb9aad6c547c23929f6d73169870b338b757d4",
     "code_cells": 10,
     "sections": [
       {
@@ -210,11 +210,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/alphamissense/am-kimi-r2/axis-6.execution.json",
-    "notebook_sha256": "5f01267446dfe58088c00a97023cf226985b695a3bab20043266cb47173c197a",
+    "notebook_sha256": "d479faffbf98387accb3b42f61510804ddea7b676af92aa0d2145efe8d3632f0",
     "result_location": {
       "notebook": "inline/alphamissense/am-kimi-r2/axis-6.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-kimi-r2-test-06.revision.json"
     }
   }
 }

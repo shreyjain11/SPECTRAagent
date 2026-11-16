@@ -685,7 +685,7 @@
     "scope": "supporting_implementation"
   },
   "axis_levels": {
-    "definition": "Check whether 0.05, 0.5 and 5 \u00b5M define levels of novelty relative to training exposure.",
+    "definition": "Check whether 0.05, 0.5 and 5 µM define levels of novelty relative to training exposure.",
     "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
     "code": "primary/state/notebooks/test-02.py",
     "scope": "supporting_implementation"
@@ -896,8 +896,8 @@
     "notebook": "inline/state/state-featured/test-02.ipynb",
     "html": "inline/state/state-featured/test-02.html",
     "execution_evidence": "inline/state/state-featured/test-02.execution.json",
-    "published_notebook_sha256": "7899e8e7f8415526633099652c442d4bd0d2d7d3d55d58c88000ab606e2a3561",
-    "published_html_sha256": "a63201df40075709af75235761624ab2896072240fdb08fc67705915f8f5d47e",
+    "published_notebook_sha256": "57735f0b33c0ab618fcdcf340fb8b5ddb2edd130b29dfa78f35f48c6858d2dbe",
+    "published_html_sha256": "81f5066219d5db07a8e2fa484bb59c37a9c8cef3c29e3da5d82bc62c282ce6dd",
     "code_cells": 10,
     "sections": [
       {
@@ -995,11 +995,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/state/state-featured/test-02.execution.json",
-    "notebook_sha256": "7899e8e7f8415526633099652c442d4bd0d2d7d3d55d58c88000ab606e2a3561",
+    "notebook_sha256": "57735f0b33c0ab618fcdcf340fb8b5ddb2edd130b29dfa78f35f48c6858d2dbe",
     "result_location": {
       "notebook": "inline/state/state-featured/test-02.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-featured-test-02.revision.json"
     }
   }
 }

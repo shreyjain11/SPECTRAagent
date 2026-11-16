@@ -117,8 +117,8 @@
     "notebook": "inline/alphamissense/am-kimi-r1/axis-1.ipynb",
     "html": "inline/alphamissense/am-kimi-r1/axis-1.html",
     "execution_evidence": "inline/alphamissense/am-kimi-r1/axis-1.execution.json",
-    "published_notebook_sha256": "f5cfdcd1c02b9a5204d1d1730d78df082412a648b5a48858d95593b538f7c9ef",
-    "published_html_sha256": "b0e1be1769edf9bd4e038717c7db6aa2124f409d604a7a34e3abd2caea0cb317",
+    "published_notebook_sha256": "10dd70f603bf592c34f51aa6392e1b157ad389b9013cffafbbdb7704f58343d2",
+    "published_html_sha256": "e662b2331e12d27665fb7a0fc4cf99f3626a3b285f4b0ed40f567808d9587f5c",
     "code_cells": 8,
     "sections": [
       {
@@ -207,11 +207,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/alphamissense/am-kimi-r1/axis-1.execution.json",
-    "notebook_sha256": "f5cfdcd1c02b9a5204d1d1730d78df082412a648b5a48858d95593b538f7c9ef",
+    "notebook_sha256": "10dd70f603bf592c34f51aa6392e1b157ad389b9013cffafbbdb7704f58343d2",
     "result_location": {
       "notebook": "inline/alphamissense/am-kimi-r1/axis-1.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-kimi-r1-test-01.revision.json"
     }
   }
 }

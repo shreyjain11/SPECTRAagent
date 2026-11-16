@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ESMFold2 — Pfam domain-repertoire proximity</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7793,8 +7793,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cell-000">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7813,9 +7835,10 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">¶</a></h2><p>Use the public PDB sequence/index and SIFTS domain snapshots downloaded on November9,2026, with exact content fingerprints below. Query actual initial release dates: the reference ends September30,2021 and the evaluation window is October1,2021–June30,2026. Each dynamically selected coordinate and annotation response is also fingerprinted. These notebooks calculate a common input-defined cohort; its actual IDs and counts are produced below. No precomputed structural outcomes select the cohort.</p>
+<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">&#182;</a></h2><p>Use the public PDB sequence/index and SIFTS domain snapshots downloaded on November 9, 2026, with exact content fingerprints below. Query actual initial release dates: the reference ends September 30, 2021 and the evaluation window is October 1, 2021–June 30, 2026. Each dynamically selected coordinate and annotation response is also fingerprinted. These notebooks calculate a common input-defined cohort; its actual IDs and counts are produced below. No precomputed structural outcomes select the cohort.</p>
 <p>Sources: <a href="https://files.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz">wwPDB sequence records</a>, <a href="https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_pfam.tsv.gz">SIFTS Pfam mappings</a>, <a href="https://search.rcsb.org/">RCSB search</a>, <a href="https://metapredict.readthedocs.io/">metapredict</a>, <a href="https://gitlab.com/mcfrith/tantan">TANTAN</a>, <a href="https://www.russelllab.org/coils/coils/">NCOILS</a>.</p>
 <p>An empty cache downloads the immutable public-source archive linked below and verifies the archive and every member against their SHA256 fingerprints. Official PDB/SIFTS URLs remain recorded for each source.</p>
+
 </div>
 </div>
 </div>
@@ -8215,7 +8238,8 @@ read_matrix.c:52:10: warning: implicit declaration of function ‘strncmp’ [-W
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">¶</a></h2><p>Retain standard-residue protein chains of40–1024 amino acids, X-ray or cryo-EM structures at≤3.5Å and the exact release window. Collapse identical sequences. Domain identities are distinct Pfam accessions from SIFTS. Taxonomy, domain interval coverage and biological-assembly annotations are input covariates, never model outcomes.</p>
+<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">&#182;</a></h2><p>Retain standard-residue protein chains of 40–1024 amino acids, X-ray or cryo-EM structures at ≤3.5 Å and the exact release window. Collapse identical sequences. Domain identities are distinct Pfam accessions from SIFTS. Taxonomy, domain interval coverage and biological-assembly annotations are input covariates, never model outcomes.</p>
+
 </div>
 </div>
 </div>
@@ -8510,8 +8534,9 @@ read_matrix.c:52:10: warning: implicit declaration of function ‘strncmp’ [-W
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">¶</a></h2><p>For every post-cutoff chain with at least two distinct Pfam accessions, calculate the maximum Jaccard similarity to any pre-cutoff chain repertoire with at least two accessions. Levels are L0=1,L1=[.67,1),L2=[.34,.67),L3&lt;.34. Cluster candidates with MMseqs2 at40% identity/80% coverage and choose representatives using input metadata. Fixed hash rankings request1517/30/131/322 primary chains plus530 auxiliary controls balanced over50-residue length strata; actual availability after coordinate QC is reported. Require≥70% observed C-alpha coverage, check coordinate/sequence consistency, and retain the≥80% subset for sensitivity.</p>
-<p>Sequence-only controls use metapredict3.0.2 V3 disorder≥.5, NCOILS21-residue-window probability≥.5, and TANTAN51 protein masking. Fractions use full sequence length. Missing Pfam interval coverage is reported and outcome-independently median-imputed with a missing indicator. The same eligible pre-cutoff library supplies the deterministic highest-bit-score homology hit and aligned coordinate transfer.</p>
+<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">&#182;</a></h2><p>For every post-cutoff chain with at least two distinct Pfam accessions, calculate the maximum Jaccard similarity to any pre-cutoff chain repertoire with at least two accessions. Levels are L0=1,L1=[.67, 1),L2=[.34,.67),L3&lt;.34. Cluster candidates with MMseqs2 at 40% identity/80% coverage and choose representatives using input metadata. Fixed hash rankings request 1517/30/131/322 primary chains plus 530 auxiliary controls balanced over 50-residue length strata; actual availability after coordinate QC is reported. Require ≥70% observed C-alpha coverage, check coordinate/sequence consistency, and retain the ≥80% subset for sensitivity.</p>
+<p>Sequence-only controls use metapredict 3.0.2 V3 disorder ≥.5, NCOILS 21-residue-window probability ≥.5, and TANTAN 51 protein masking. Fractions use full sequence length. Missing Pfam interval coverage is reported and outcome-independently median-imputed with a missing indicator. The same eligible pre-cutoff library supplies the deterministic highest-bit-score homology hit and aligned coordinate transfer.</p>
+
 </div>
 </div>
 </div>
@@ -9710,8 +9735,9 @@ read_matrix.c:52:10: warning: implicit declaration of function ‘strncmp’ [-W
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Model-evaluation">4. Model evaluation<a class="anchor-link" href="#4.-Model-evaluation">¶</a></h2><p>Use the full released Biohub ESMFold2 and ESMC6B weights at the pinned revisions shown below through Transformers5.22.2. No fine-tuning is performed. Each sequence receives3 loops,68 diffusion steps,1 sample and seed0; model parameters use the <a href="https://huggingface.co/docs/transformers/v5.21.0/en/model_doc/esmfold2">documented native bfloat16 inference preset</a>, with coordinate operations handled by the library in float32 and no outer autocast. Float32 matrix multiplication uses the explicit high precision policy (TF32 where supported). The visible public converter creates the required weight layout. Cached predictions are accepted only with the same sequence, checkpoint, settings and coordinate fingerprint.</p>
-<p>US-align measures TM-score normalized by observed experimental-target length, plus aligned RMSD. C-alpha lDDT uses common sequence-indexed residues, native distances&lt;15Å and thresholds.5/1/2/4Å. Template coordinates transfer only across aligned residue columns, with zero TM-score for a missing/unusable reference; complete-reference cases are shown separately.</p>
+<h2 id="4.-Model-evaluation">4. Model evaluation<a class="anchor-link" href="#4.-Model-evaluation">&#182;</a></h2><p>Use the full released Biohub ESMFold2 and ESMC6B weights at the pinned revisions shown below through Transformers 5.22.2. No fine-tuning is performed. Each sequence receives 3 loops, 68 diffusion steps, 1 sample and seed 0; model parameters use the <a href="https://huggingface.co/docs/transformers/v5.21.0/en/model_doc/esmfold2">documented native bfloat16 inference preset</a>, with coordinate operations handled by the library in float32 and no outer autocast. Float32 matrix multiplication uses the explicit high precision policy (TF32 where supported). The visible public converter creates the required weight layout. Cached predictions are accepted only with the same sequence, checkpoint, settings and coordinate fingerprint.</p>
+<p>US-align measures TM-score normalized by observed experimental-target length, plus aligned RMSD. C-alpha lDDT uses common sequence-indexed residues, native distances &lt;15 Å and thresholds.5/1/2/4 Å. Template coordinates transfer only across aligned residue columns, with zero TM-score for a missing/unusable reference; complete-reference cases are shown separately.</p>
+
 </div>
 </div>
 </div>
@@ -10569,7 +10595,8 @@ read_matrix.c:52:10: warning: implicit declaration of function ‘strncmp’ [-W
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">¶</a></h2><p>Recalculate all curves and uncertainty from individual predictions. Use10000 chain-resampling bootstrap draws, seed20260714; model/reference contrasts use the same chain draws. Fit HC3 uncertainty with a4-df natural cubic length spline plus homology, release date, method, resolution, coordinate coverage, Pfam count/coverage, taxonomy, low complexity, disorder, coiled-coil burden and assembly annotations. Show single-control attenuation and≥80% coverage, annotated-monomer and complete-reference sensitivities. An attenuation above80% together with p≥.05 marks a control that removes the primary contrast; this criterion is fixed before evaluating outputs.</p>
+<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">&#182;</a></h2><p>Recalculate all curves and uncertainty from individual predictions. Use 10000 chain-resampling bootstrap draws, seed 20260714; model/reference contrasts use the same chain draws. Fit HC3 uncertainty with a4-df natural cubic length spline plus homology, release date, method, resolution, coordinate coverage, Pfam count/coverage, taxonomy, low complexity, disorder, coiled-coil burden and assembly annotations. Show single-control attenuation and ≥80% coverage, annotated-monomer and complete-reference sensitivities. An attenuation above 80% together with p≥.05 marks a control that removes the primary contrast; this criterion is fixed before evaluating outputs.</p>
+
 </div>
 </div>
 </div>
@@ -12443,7 +12470,9 @@ dtype: object</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-Decision-and-explanation">6. Decision and explanation<a class="anchor-link" href="#6.-Decision-and-explanation">¶</a></h2><p>Use the calculated effect sizes, uncertainty, adjusted coefficients and controls below. A result applies to the actual selected input population and model implementation; it does not establish performance outside this cohort.</p>
+<h2 id="6.-Decision-and-explanation">6. Decision and explanation<a class="anchor-link" href="#6.-Decision-and-explanation">&#182;</a></h2><p>Use the calculated effect sizes, uncertainty, adjusted coefficients and controls below. A result applies to the actual selected input population and model implementation; it does not establish performance outside this cohort.</p>
+<p>The current reconstruction evaluates 1,987 primary-axis chains and 530 auxiliary controls. The extreme-level model decline is 0.0953 TM-score; the template decline is larger (0.4858). This is a cohort association with shared difficulty under that comparator, not excess ESMFold2 degradation or recovery of the exact historical cohort. Some adjustment designs are rank deficient; aliased nuisance coefficients should not receive separate biological interpretations.</p>
+
 </div>
 </div>
 </div>

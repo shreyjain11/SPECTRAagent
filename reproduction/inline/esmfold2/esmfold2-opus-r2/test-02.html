@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ESMFold2 — Training-pool sequence identity</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7793,8 +7793,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cell-000">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7813,7 +7835,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">¶</a></h2><p>The input manifest specifies401 protein-entity identifiers from a prediction-file inventory. Acquire metadata and coordinates for those identifiers, then apply the stated sequence, experimental and structure-coverage rules. The evaluated count is calculated below. Download PDB sequences and the experimental-entry IDs deposited through2021-09-30 for the sequence-similarity reference; record all response fingerprints.</p>
+<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">&#182;</a></h2><p>The input manifest specifies 401 protein-entity identifiers from a prediction-file inventory. Acquire metadata and coordinates for those identifiers, then apply the stated sequence, experimental and structure-coverage rules. The evaluated count is calculated below. Download PDB sequences and the experimental-entry IDs deposited through 2021-09-30 for the sequence-similarity reference; record all response fingerprints.</p>
+
 </div>
 </div>
 </div>
@@ -8085,7 +8108,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">¶</a></h2><p>Require X-ray structures at≤3.5Å, deposition after2021-09-30, length40–1023, standard residues with≤2%X, at least30 experimental C-alpha atoms and≥40% coordinate coverage. Collapse exact duplicates and40%-identity clusters, keeping the best-resolution member. Extract the first specified author chain. Calculate amino-acid entropy and composition.</p>
+<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">&#182;</a></h2><p>Require X-ray structures at ≤3.5 Å, deposition after 2021-09-30, length 40–1023, standard residues with ≤2%X, at least 30 experimental C-alpha atoms and ≥40% coordinate coverage. Collapse exact duplicates and 40%-identity clusters, keeping the best-resolution member. Extract the first specified author chain. Calculate amino-acid entropy and composition.</p>
+
 </div>
 </div>
 </div>
@@ -8346,7 +8370,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">¶</a></h2><p>Construct the seven length levels40–127,128–199,200–287,288–399,400–511,512–767 and768–1023; the last is exploratory. Search the pre-cutoff sequence database with sensitivity7.5 and up to500 hits/query. Maximum identity uses hits with query coverage≥0.5, or the maximum among all hits if none meets coverage. Homology controls use0–30%,30–60%,60–90% and90–100%.</p>
+<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">&#182;</a></h2><p>Construct the seven length levels 40–127, 128–199, 200–287, 288–399, 400–511, 512–767 and 768–1023; the last is exploratory. Search the pre-cutoff sequence database with sensitivity 7.5 and up to 500 hits/query. Maximum identity uses hits with query coverage ≥0.5, or the maximum among all hits if none meets coverage. Homology controls use 0–30%, 30–60%, 60–90% and 90–100%.</p>
+
 </div>
 </div>
 </div>
@@ -8613,7 +8638,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Model-evaluation">4. Model evaluation<a class="anchor-link" href="#4.-Model-evaluation">¶</a></h2><p>Predict the eligible input sequences with ESMFold2, seed0,3 loops,50 diffusion steps and1 sample, using the pinned Biohub weights through Transformers5.22.2. Reuse only predictions whose input/model/settings binding and coordinate hash verify. Score each prediction against its native chain with US-align; score the closest pre-cutoff template on the same target. A missing template remains uncovered.</p>
+<h2 id="4.-Model-evaluation">4. Model evaluation<a class="anchor-link" href="#4.-Model-evaluation">&#182;</a></h2><p>Predict the eligible input sequences with ESMFold2, seed 0, 3 loops, 50 diffusion steps and 1 sample, using the pinned Biohub weights through Transformers 5.22.2. Reuse only predictions whose input/model/settings binding and coordinate hash verify. Score each prediction against its native chain with US-align; score the closest pre-cutoff template on the same target. A missing template remains uncovered.</p>
+
 </div>
 </div>
 </div>
@@ -9187,7 +9213,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">¶</a></h2><p>Calculate bootstrap mean curves, tail probabilities, long-arm tertiles, continuous associations and HC3-adjusted coefficients. Compare model/reference length slopes within homology groups having at least15 covered examples.</p>
+<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">&#182;</a></h2><p>Calculate bootstrap mean curves, tail probabilities, long-arm tertiles, continuous associations and HC3-adjusted coefficients. Compare model/reference length slopes within homology groups having at least 15 covered examples.</p>
+
 </div>
 </div>
 </div>
@@ -9573,7 +9600,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">¶</a></h2><p>State the result supported by the calculated input population and controls.</p>
+<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">&#182;</a></h2><p>State the result supported by the calculated input population and controls.</p>
+<p>The reference is the pre-cutoff public PDB pool, not a verified manifest of training examples. The adjusted identity coefficient is near zero and unresolved. Template coverage is only 25 of 63 targets in the lowest-identity primary bin, so unpaired curve means do not describe identical target populations.</p>
+
 </div>
 </div>
 </div>

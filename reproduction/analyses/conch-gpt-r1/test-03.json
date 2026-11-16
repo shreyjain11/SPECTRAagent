@@ -124,8 +124,8 @@
     "notebook": "inline/conch/conch-gpt-r1/test-03.ipynb",
     "html": "inline/conch/conch-gpt-r1/test-03.html",
     "execution_evidence": "inline/conch/conch-gpt-r1/test-03.execution.json",
-    "published_notebook_sha256": "75177efeba5a84bbe078e589d63341999d32e0906d2deb8992fced337105aeff",
-    "published_html_sha256": "3d26ecaba84e51d0e1849646bbd2ee0ccc17aebb1cc58d5f098d9b3352452376",
+    "published_notebook_sha256": "10613dc4a9cb44b626656ac417133d8d918f3f81a40fca9406bc7172ec178824",
+    "published_html_sha256": "c8ecbcb5d0fb58f81bb28b7c6be1cf0974d811a835612328bfdf52bd962abf68",
     "code_cells": 9,
     "sections": [
       {
@@ -216,11 +216,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/conch/conch-gpt-r1/test-03.execution.json",
-    "notebook_sha256": "75177efeba5a84bbe078e589d63341999d32e0906d2deb8992fced337105aeff",
+    "notebook_sha256": "10613dc4a9cb44b626656ac417133d8d918f3f81a40fca9406bc7172ec178824",
     "result_location": {
       "notebook": "inline/conch/conch-gpt-r1/test-03.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/conch-gpt-r1-test-03.revision.json"
     }
   }
 }

@@ -1,0 +1,62 @@
+[
+  {
+    "subset":"All targets",
+    "n":160,
+    "high_n":40,
+    "low_n":40,
+    "high_minus_low":0.086107,
+    "ci_lo":0.0087007735,
+    "ci_hi":0.1635132265,
+    "welch_p":0.0298570449,
+    "rho":-0.2026093986,
+    "trend_p":0.0101862918
+  },
+  {
+    "subset":"Observed fraction\u22650.8",
+    "n":147,
+    "high_n":37,
+    "low_n":34,
+    "high_minus_low":0.0569243641,
+    "ci_lo":-0.0195470597,
+    "ci_hi":0.1333957879,
+    "welch_p":0.1413517188,
+    "rho":-0.1756156358,
+    "trend_p":0.0333691526
+  },
+  {
+    "subset":"Single protein entity",
+    "n":118,
+    "high_n":21,
+    "low_n":31,
+    "high_minus_low":0.1289987404,
+    "ci_lo":0.0460106393,
+    "ci_hi":0.2119868415,
+    "welch_p":0.0032844193,
+    "rho":-0.4303553236,
+    "trend_p":0.0000011503
+  },
+  {
+    "subset":"Both filters",
+    "n":111,
+    "high_n":21,
+    "low_n":25,
+    "high_minus_low":0.0873652952,
+    "ci_lo":0.00971163,
+    "ci_hi":0.1650189605,
+    "welch_p":0.0287818255,
+    "rho":-0.3759634036,
+    "trend_p":0.000047743
+  },
+  {
+    "subset":"Expansion only",
+    "n":128,
+    "high_n":32,
+    "low_n":32,
+    "high_minus_low":0.0598103125,
+    "ci_lo":-0.0217004104,
+    "ci_hi":0.1413210354,
+    "welch_p":0.1468017105,
+    "rho":-0.1770128441,
+    "trend_p":0.0456257207
+  }
+]

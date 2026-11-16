@@ -323,8 +323,8 @@
     "notebook": "inline/state/state-kimi-r1/test-03.ipynb",
     "html": "inline/state/state-kimi-r1/test-03.html",
     "execution_evidence": "inline/state/state-kimi-r1/test-03.execution.json",
-    "published_notebook_sha256": "1b182edcbadc2187df3bbb57e2dc1b6896c6bfbcfb0dd14aee95cdfd916416b5",
-    "published_html_sha256": "25a6760f82deef5cb49877d9a0c1172dc7e23f590e22559bf614029c1443fa2b",
+    "published_notebook_sha256": "5393ad0380c3b9eea7af3ffc6b29ab178c472e6ba0d63b72c15db50e353816c5",
+    "published_html_sha256": "4b811c58be9e035f838f7aef6deca3114dcc4a05a6da583102b52d4986f1ef84",
     "code_cells": 12,
     "sections": [
       {
@@ -424,11 +424,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/state/state-kimi-r1/test-03.execution.json",
-    "notebook_sha256": "1b182edcbadc2187df3bbb57e2dc1b6896c6bfbcfb0dd14aee95cdfd916416b5",
+    "notebook_sha256": "5393ad0380c3b9eea7af3ffc6b29ab178c472e6ba0d63b72c15db50e353816c5",
     "result_location": {
       "notebook": "inline/state/state-kimi-r1/test-03.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-kimi-r1-test-03.revision.json"
     }
   }
 }

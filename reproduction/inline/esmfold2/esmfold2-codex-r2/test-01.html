@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script>
+<title>ESMFold2 — Positive net charge in isolated cryo-EM chains</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script>
 (function() {
   function addWidgetsRenderer() {
     var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
@@ -7820,8 +7820,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cell-000">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8444,7 +8466,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">¶</a></h2><p>Charge is((K+R)−(D+E))/length. Levels are≤−0.0253702, above that through0, and&gt;0. Verify that each matched set contains exactly one chain at each level.</p>
+<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">&#182;</a></h2><p>Charge is ((K+R)−(D+E))/length. Levels are ≤−0.0253702, above that through 0, and &gt;0. Verify that each matched set contains exactly one chain at each level.</p>
+
 </div>
 </div>
 </div>
@@ -8657,7 +8680,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Model-evaluation">4. Model evaluation<a class="anchor-link" href="#4.-Model-evaluation">¶</a></h2><p>Use the specified Biohub weights through Transformers5.22.2. The two visible converter cells implement the public Hugging Face tensor-layout conversion; an already converted checkpoint may be supplied through ESMFOLD_CHECKPOINT. Predict every sequence with seed0,3 loops,14 diffusion steps and1 sample. A cached prediction is reused only if its input/model/settings receipt and coordinate hash match. US-align calculates target-normalized TM-score for model and template coordinates.</p>
+<h2 id="4.-Model-evaluation">4. Model evaluation<a class="anchor-link" href="#4.-Model-evaluation">&#182;</a></h2><p>Use the specified Biohub weights through Transformers 5.22.2. The two visible converter cells implement the public Hugging Face tensor-layout conversion; an already converted checkpoint may be supplied through ESMFOLD_CHECKPOINT. Predict every sequence with seed 0, 3 loops, 14 diffusion steps and 1 sample. A cached prediction is reused only if its input/model/settings receipt and coordinate hash match. US-align calculates target-normalized TM-score for model and template coordinates.</p>
+
 </div>
 </div>
 </div>
@@ -9192,7 +9216,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">¶</a></h2><p>Bootstrap50 matched triplets10000 times with seed20260716. Plot raw model and same-target template curves; fit standardized continuous-charge regression with HC3 uncertainty and a categorical-charge model for adjusted means. The controls are length, entropy, repeats, composition, chain multiplicity, template identity/coverage, resolution and resolved C-alpha fraction.</p>
+<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">&#182;</a></h2><p>Bootstrap 50 matched triplets 10000 times with seed 20260716. Plot raw model and same-target template curves; fit standardized continuous-charge regression with HC3 uncertainty and a categorical-charge model for adjusted means. The controls are length, entropy, repeats, composition, chain multiplicity, template identity/coverage, resolution and resolved C-alpha fraction.</p>
+
 </div>
 </div>
 </div>
@@ -9446,7 +9471,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">¶</a></h2><p>Apply the−0.09 effect threshold, matched-set interval, monotone adjusted means and negative adjusted charge coefficient to the calculated results. Characterize the effect using the paired template contrast.</p>
+<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">&#182;</a></h2><p>Apply the −0.09 effect threshold, matched-set interval, monotone adjusted means and negative adjusted charge coefficient to the calculated results. Characterize the effect using the paired template contrast.</p>
+<p>In the fixed 150-chain cohort, the negative-to-positive charge contrast is a 0.1006 TM-score decline. The model-minus-template decline is −0.0130 with a 95% interval of [−0.1197, 0.0928]. Thus the measured decline is supported, but greater model-specific degradation or statistical equivalence to the reference is not established.</p>
+
 </div>
 </div>
 </div>

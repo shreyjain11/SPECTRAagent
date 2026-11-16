@@ -7,8 +7,8 @@
   "code_cells": 9,
   "executed_cells": 9,
   "errors": 0,
-  "notebook_sha256": "4f612d467aab4c303dd00318c46860b16ed1051223a4571166894189f01acf73",
-  "html_sha256": "f74821cfae588d64ef1392d73db8b34916550d849508ef1156290e7f1a813452",
+  "notebook_sha256": "726135d308beca7b132af0034aa188beebf07c96e744be8eea2290169f1520f7",
+  "html_sha256": "f619daeac88045ba9a2df447a6ff6e45a18ddf0fb14fc80f0fc042f6c6f80e25",
   "sections": [
     {
       "number": 1,
@@ -81,5 +81,17 @@
     ]
   },
   "input_manifests": [],
-  "calculation_evidence": []
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/state-opus-r1-test-04.previous-execution.json",
+      "sha256": "9af09a05ee6f6fb3fdfce863212de0cead0d74eff426e4d0f85243368f8ffadd"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/state-opus-r1-test-04.revision.json",
+      "sha256": "dd653a75ed9452c35a0fae1f45a832ce10e1455f7b0077b1e91077dd88862408"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

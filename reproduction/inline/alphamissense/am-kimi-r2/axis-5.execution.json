@@ -8,7 +8,7 @@
   "executed_cells": 9,
   "errors": 0,
   "notebook_sha256": "e4bbd264be341cee548a4cdba69a2c040f664655d82ec3881520710f35b089e6",
-  "html_sha256": "60ca2adeb68974a95903cc2231dc7f24c7c8a768f6c56379018851d3b76ba43b",
+  "html_sha256": "33fbf59fc077cee8944c60473378e0cfdc76f6d49a2c57aad31c2010d30808cb",
   "sections": [
     {
       "number": 1,
@@ -87,5 +87,17 @@
       "path": "inline/alphamissense/am-kimi-r2/axis-5-evidence/execution.json",
       "sha256": "6be8225e3a246b316ab4f0bbe46e645a211b6ee5c70c4cce75484061a1334b93"
     }
-  ]
+  ],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/am-kimi-r2-test-05.previous-execution.json",
+      "sha256": "107c30a32481c026c0209a14e5e3f4668420e469c27ff4f0bbc436eafbdc516b"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/am-kimi-r2-test-05.revision.json",
+      "sha256": "f5fb000b9d659378d36e71841216d7d76ee52164be4e1477e52d97e75f021de7"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

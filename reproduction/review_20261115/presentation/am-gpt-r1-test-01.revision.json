@@ -1,0 +1,179 @@
+{
+  "analysis_id": "am-gpt-r1/test-01",
+  "original_commit": "dfe2a55acebe3ba00df217e1f18b8148de6ff78f",
+  "kind": "reviewed_markdown_and_layout",
+  "scientific_reexecution": false,
+  "original_artifacts": {
+    "notebook": {
+      "path": "inline/alphamissense/am-gpt-r1/axis-1.ipynb",
+      "sha256": "5dea69abf6ba6e35efbce261caed9ac0e792550d828c4ec5826954b17ff135e8"
+    },
+    "html": {
+      "path": "inline/alphamissense/am-gpt-r1/axis-1.html",
+      "sha256": "4f49ee172f7eb55ddcebed1cbf8dc97c53db53f501343f028a92203ca10a7983"
+    }
+  },
+  "published_artifacts": {
+    "notebook": {
+      "path": "inline/alphamissense/am-gpt-r1/axis-1.ipynb",
+      "sha256": "44c1cefce41e8f80da5253132f917d69929c084dfb858054e67ff9173b392982"
+    },
+    "html": {
+      "path": "inline/alphamissense/am-gpt-r1/axis-1.html",
+      "sha256": "aeb3da59fd8f54f95c2f68525ce01503e8b741d96334ce06d0ee782cfddf6381"
+    }
+  },
+  "modified_markdown_cells": [
+    7,
+    15
+  ],
+  "original_code_cells": [
+    {
+      "notebook_cell": 2,
+      "execution_count": 1,
+      "source_sha256": "d1a3f3759edf093429f8371510b31b9d3ac8c70bd8d3eabd97118397b4d29b88",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "4d150bc36d9a23182fd9db4cbecedc1d82b367a02bd4b0c6969de09c924a3461"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 2,
+      "source_sha256": "55aa3b31f0fa36014a5577a08bd446538ec743f21bb63cf7a0099b7101bb5f2f",
+      "outputs_sha256": "77363780966997b8db42ac6c016760f94e0b6693fa965abd6f83cc3d3e4b59f8",
+      "cell_sha256": "fc4406597cea7280b527098cd4ac5085d03ae2943a168eef7f6ca6b55059af89"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 3,
+      "source_sha256": "c606ac366078aad124d93881f8d09c97f90e60308f9ab798beb136260a4e9eaa",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "16065f5b7ef9ad3990d25460e056c3d32419d096c649cc38dc9df28ad702dc9a"
+    },
+    {
+      "notebook_cell": 6,
+      "execution_count": 4,
+      "source_sha256": "1ea38585105e0712d054c6c75f78a5c4b6f555485039b91449caaaa29eb7b7ef",
+      "outputs_sha256": "fd25af6f928fd6f8f04ad7d0255ff9c6a3f75943961dfbcb15ae90884e428b5f",
+      "cell_sha256": "e7551fc2949b946db92e60747c1eb8deb7d144cc56f8dc66151fef447b008def"
+    },
+    {
+      "notebook_cell": 8,
+      "execution_count": 5,
+      "source_sha256": "9039796030986b693c47968f289f52ce65552971cefbd53fa9aa3ebfb37a095a",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "0971d82101fe7efdd452e8877fe209a7b975ed29ee7c2b5aa000e746173c1cb2"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 6,
+      "source_sha256": "69748f03513b6415279b27375301689a97a277c27e855dc9299f6d7213675200",
+      "outputs_sha256": "4483cb9608222f75870ae987e0168e2bfb72911e2c40562c0945bc2d25a8e66d",
+      "cell_sha256": "96e596d622f3604a572a4e83475a05c488547e540e8cccd02aa75b4401fa01e5"
+    },
+    {
+      "notebook_cell": 11,
+      "execution_count": 7,
+      "source_sha256": "c79f1993bb323445dc8ee6f55374b69c7e1160f17f5d94a6be6fb8841ae39b40",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "05adc32f9ef7cbf17a937f1a4178acfd5db53578378623ff65a6e53f29ce3919"
+    },
+    {
+      "notebook_cell": 12,
+      "execution_count": 8,
+      "source_sha256": "22720da1133b0c72bbbd8edcb7ab1a500a53fce84ee415563375cb0c4804a8d3",
+      "outputs_sha256": "c67e02d6c276d796e9676bfa39d0107f6442409c4f894941857a02b42c9063ff",
+      "cell_sha256": "5fb5f83980aae8630b3d53b29f20968e132eaff8ff0f28e4ef7d74cf53da2b60"
+    },
+    {
+      "notebook_cell": 14,
+      "execution_count": 9,
+      "source_sha256": "dff81f8dfefd0d15b2dd3498301c719c8773b86e2ff4bdd126ee5ad3789ab071",
+      "outputs_sha256": "675fac1699e03d7fa1d6a0bca131c07ba9893c52e52b4fe873a90fb0b2c6e192",
+      "cell_sha256": "a87c7a7c8733bbbaef65623e51d0d4b50ee78b272327d57aa544333cd6f18884"
+    },
+    {
+      "notebook_cell": 16,
+      "execution_count": 10,
+      "source_sha256": "be87b7b99fd3344b43e0641f19f4ce604bb66ede33403d3b930c25ce8f646d68",
+      "outputs_sha256": "269204b05c194099d5963bed4c4783a28a7d56caa2efc40eca9bb9b629cdb5cc",
+      "cell_sha256": "374bf8b455733afff85300fe4ffc1851d046583288f6479e70b48d288ba05c33"
+    }
+  ],
+  "published_code_cells": [
+    {
+      "notebook_cell": 2,
+      "execution_count": 1,
+      "source_sha256": "d1a3f3759edf093429f8371510b31b9d3ac8c70bd8d3eabd97118397b4d29b88",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "4d150bc36d9a23182fd9db4cbecedc1d82b367a02bd4b0c6969de09c924a3461"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 2,
+      "source_sha256": "55aa3b31f0fa36014a5577a08bd446538ec743f21bb63cf7a0099b7101bb5f2f",
+      "outputs_sha256": "77363780966997b8db42ac6c016760f94e0b6693fa965abd6f83cc3d3e4b59f8",
+      "cell_sha256": "fc4406597cea7280b527098cd4ac5085d03ae2943a168eef7f6ca6b55059af89"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 3,
+      "source_sha256": "c606ac366078aad124d93881f8d09c97f90e60308f9ab798beb136260a4e9eaa",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "16065f5b7ef9ad3990d25460e056c3d32419d096c649cc38dc9df28ad702dc9a"
+    },
+    {
+      "notebook_cell": 6,
+      "execution_count": 4,
+      "source_sha256": "1ea38585105e0712d054c6c75f78a5c4b6f555485039b91449caaaa29eb7b7ef",
+      "outputs_sha256": "fd25af6f928fd6f8f04ad7d0255ff9c6a3f75943961dfbcb15ae90884e428b5f",
+      "cell_sha256": "e7551fc2949b946db92e60747c1eb8deb7d144cc56f8dc66151fef447b008def"
+    },
+    {
+      "notebook_cell": 8,
+      "execution_count": 5,
+      "source_sha256": "9039796030986b693c47968f289f52ce65552971cefbd53fa9aa3ebfb37a095a",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "0971d82101fe7efdd452e8877fe209a7b975ed29ee7c2b5aa000e746173c1cb2"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 6,
+      "source_sha256": "69748f03513b6415279b27375301689a97a277c27e855dc9299f6d7213675200",
+      "outputs_sha256": "4483cb9608222f75870ae987e0168e2bfb72911e2c40562c0945bc2d25a8e66d",
+      "cell_sha256": "96e596d622f3604a572a4e83475a05c488547e540e8cccd02aa75b4401fa01e5"
+    },
+    {
+      "notebook_cell": 11,
+      "execution_count": 7,
+      "source_sha256": "c79f1993bb323445dc8ee6f55374b69c7e1160f17f5d94a6be6fb8841ae39b40",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "05adc32f9ef7cbf17a937f1a4178acfd5db53578378623ff65a6e53f29ce3919"
+    },
+    {
+      "notebook_cell": 12,
+      "execution_count": 8,
+      "source_sha256": "22720da1133b0c72bbbd8edcb7ab1a500a53fce84ee415563375cb0c4804a8d3",
+      "outputs_sha256": "c67e02d6c276d796e9676bfa39d0107f6442409c4f894941857a02b42c9063ff",
+      "cell_sha256": "5fb5f83980aae8630b3d53b29f20968e132eaff8ff0f28e4ef7d74cf53da2b60"
+    },
+    {
+      "notebook_cell": 14,
+      "execution_count": 9,
+      "source_sha256": "dff81f8dfefd0d15b2dd3498301c719c8773b86e2ff4bdd126ee5ad3789ab071",
+      "outputs_sha256": "675fac1699e03d7fa1d6a0bca131c07ba9893c52e52b4fe873a90fb0b2c6e192",
+      "cell_sha256": "a87c7a7c8733bbbaef65623e51d0d4b50ee78b272327d57aa544333cd6f18884"
+    },
+    {
+      "notebook_cell": 16,
+      "execution_count": 10,
+      "source_sha256": "be87b7b99fd3344b43e0641f19f4ce604bb66ede33403d3b930c25ce8f646d68",
+      "outputs_sha256": "269204b05c194099d5963bed4c4783a28a7d56caa2efc40eca9bb9b629cdb5cc",
+      "cell_sha256": "374bf8b455733afff85300fe4ffc1851d046583288f6479e70b48d288ba05c33"
+    }
+  ],
+  "previous_inline_implementation": {
+    "path": "review_20261115/presentation/am-gpt-r1-test-01.previous-inline-implementation.json",
+    "sha256": "5d6bbfd20f6bdc5c373a72c5193b5fd78304bd53dc782c87943a9f57a9369837"
+  },
+  "layout": "Readable paragraph spacing; whitespace-only corrections to joined words/numbers in rendered outputs; scrollable code and wide outputs; responsive image width; descriptive page title and index link."
+}

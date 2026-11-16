@@ -31,6 +31,23 @@ def verify(root=ROOT):
     for identifier, expected_historical_hash in EXPECTED_PRESERVED_SHA256.items():
         record = json.loads((root / 'analyses' / (identifier + '.json')).read_text())
         preserved = {key: record[key] for key in PRESERVED}
+        implementation = record['inline_implementation']
+        receipt = json.loads((root / implementation['execution_evidence']).read_text())
+        revision = receipt.get('presentation_revision', {}).get('correction_record')
+        if revision:
+            assert digest(root / revision['path']) == revision['sha256']
+            change = json.loads((root / revision['path']).read_text())
+            snapshot = change.get('previous_inline_implementation')
+            if snapshot:
+                assert digest(root / snapshot['path']) == snapshot['sha256']
+                previous = json.loads((root / snapshot['path']).read_text())
+                mutable_hashes = {'published_notebook_sha256', 'published_html_sha256'}
+                assert {k: v for k, v in implementation.items() if k not in mutable_hashes} == {
+                    k: v for k, v in previous.items() if k not in mutable_hashes}
+                # The historical metadata is immutable; only the current
+                # presentation hashes move. The main validator separately
+                # verifies unchanged scientific cells and their saved outputs.
+                preserved['inline_implementation'] = previous
         for key in SCIENTIFIC:
             preserved[key] = dict(preserved[key])
             assert preserved[key].pop('scope') == 'supporting_historical_analysis', (identifier, key)

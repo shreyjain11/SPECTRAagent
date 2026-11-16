@@ -7,8 +7,8 @@
   "code_cells": 9,
   "executed_cells": 9,
   "errors": 0,
-  "notebook_sha256": "06a9e6d64cc82e85bf81ed38e20021bf9b1f64b5b09f79aee90f9d02a286badc",
-  "html_sha256": "b2e1ebd358d10a2cbbafef390e6be1e1df195716b8588ab74de9a055163c2c34",
+  "notebook_sha256": "e2bb43129c0599bf6c9da1bdb083726b1816e18a54bc3d4d55e2445fea036b10",
+  "html_sha256": "38a0c57ddaf46663008a327357863d3dc0466a57b9d75dd905530734db498eaa",
   "sections": [
     {
       "number": 1,
@@ -86,17 +86,16 @@
   "input_manifests": [],
   "calculation_evidence": [],
   "presentation_revision": {
-    "kind": "markdown_and_navigation_only",
     "scientific_reexecution": false,
-    "code_and_outputs_unchanged": true,
     "original_execution_evidence": {
-      "path": "corrections/state/state-codex-r2-test-04.original-execution.json",
-      "sha256": "9d2f7c6782d305759751dfdbda38854a70d5ddb939a14bc07a6a7e18515e30e4"
+      "path": "review_20261115/presentation/state-codex-r2-test-04.previous-execution.json",
+      "sha256": "506d1f5c26a941c8a2f61824fdc5c84fa711aaa2e54eabd3ef9ec44703ea7378"
     },
     "correction_record": {
-      "path": "corrections/state/state-codex-r2-test-04.presentation-revision.json",
-      "sha256": "f789321f5c95d01b2d1e5af550054d2be0b577b9b5ecbd2e044b7da46ddb373e"
+      "path": "review_20261115/presentation/state-codex-r2-test-04.revision.json",
+      "sha256": "01db31c48ee6882b10f1b89fd06e63b816e983c85371b06429ca8d7222638d70"
     }
   },
-  "execution_scope": "Execution fields describe the preserved original code and outputs. The current notebook and HTML include a later Markdown/navigation revision; no scientific reexecution was performed."
+  "execution_scope": "Execution fields describe the preserved original code and outputs. The current notebook and HTML include a later Markdown/navigation revision; no scientific reexecution was performed.",
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

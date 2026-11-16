@@ -22,7 +22,7 @@
   },
   "axis_levels": {
     "definition": "Genetic versus chemical perturbations.",
-    "calculation": "Source-derived features, frozen levels and cohort eligibility are computed in notebook stages3\u20134.",
+    "calculation": "Source-derived features, frozen levels and cohort eligibility are computed in notebook stages3–4.",
     "code": "reconstructed/state-codex-r2/notebooks/05-state-codex-r2-modality.py",
     "scope": "supporting_implementation"
   },
@@ -310,7 +310,7 @@
     "html": "inline/state/state-codex-r2/test-05.html",
     "execution_evidence": "inline/state/state-codex-r2/test-05.execution.json",
     "published_notebook_sha256": "6678935f604efa83ac0ee973a94c3531c3fa6f118facffb79a0d5ddf463a898d",
-    "published_html_sha256": "6152f3cf4630f1f5f6dcf1400bf5a0551743b0f63d0172cc653564bf4d1b8d89",
+    "published_html_sha256": "4e2ff359e63d612eda531a9e7941446475b5fba933e5b488dba23845a72e08f8",
     "code_cells": 8,
     "sections": [
       {
@@ -427,6 +427,11 @@
         "markdown_cell": 14
       },
       "description": "Calculated results or eligibility diagnostics in section 5; reconstructed interpretation in section 6. The final execution receipt is not a scientific result."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-codex-r2-test-05.revision.json"
     }
   }
 }

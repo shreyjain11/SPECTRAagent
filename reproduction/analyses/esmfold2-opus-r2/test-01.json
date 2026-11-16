@@ -87,7 +87,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-opus-r2/test-01",
     "disposition": "rejected",
-    "result": "Across 260 scored chains, the frozen monotone decline was absent. Spearman \u03c1 = +0.176; adjusted \u03b2 = +0.019, P = 0.11. Chains above the tested 40\u2013767 residue range were unavailable.",
+    "result": "Across 260 scored chains, the frozen monotone decline was absent. Spearman ρ = +0.176; adjusted β = +0.019, P = 0.11. Chains above the tested 40–767 residue range were unavailable.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -107,8 +107,8 @@
     "notebook": "inline/esmfold2/esmfold2-opus-r2/test-01.ipynb",
     "html": "inline/esmfold2/esmfold2-opus-r2/test-01.html",
     "execution_evidence": "inline/esmfold2/esmfold2-opus-r2/test-01.execution.json",
-    "published_notebook_sha256": "81c7cddfafb21640dcf4927cdf6b95833208d31a7c0a2468114b21cb1decd1c6",
-    "published_html_sha256": "46762824b47cc12595369c2e524432d54dc0359b1e444877e52e6112eaf686eb",
+    "published_notebook_sha256": "c914543a7cf197b16ee6788930f282e8261a3675b8eeff9bee185571529514cd",
+    "published_html_sha256": "b8b9f77e3893ca4502e5b7808281289578204d9f4cb52dd3e9f372ceebae0cf2",
     "code_cells": 12,
     "sections": [
       {
@@ -201,7 +201,7 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-opus-r2/test-01.execution.json",
-    "notebook_sha256": "81c7cddfafb21640dcf4927cdf6b95833208d31a7c0a2468114b21cb1decd1c6",
+    "notebook_sha256": "c914543a7cf197b16ee6788930f282e8261a3675b8eeff9bee185571529514cd",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-opus-r2/test-01.ipynb",
       "section": 6,
@@ -213,6 +213,11 @@
         "path": "traceability_review.json",
         "record_id": "esmfold2-opus-r2/test-01"
       }
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-opus-r2-test-01.revision.json"
     }
   }
 }

@@ -1,0 +1,101 @@
+{
+  "analysis_id": "conch-kimi-r2/test-01",
+  "notebook": "inline/conch/conch-kimi-r2/test-01.ipynb",
+  "html": "inline/conch/conch-kimi-r2/test-01.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 10,
+  "executed_cells": 10,
+  "errors": 0,
+  "notebook_sha256": "723338e8464ffd70291d6503d6e2fe5a5597a03bc9b4f05463c55a6130efd8de",
+  "html_sha256": "0b6b7d9221da4c5f1cc4e36e31b3a0a216204c4856abf278a8dc387ea4324c81",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source / acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 6,
+      "code_cells": [
+        7
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 8,
+      "code_cells": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 12,
+      "code_cells": [
+        13
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. Decision and reason",
+      "markdown_cell": 14,
+      "code_cells": [
+        15,
+        16
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "06a22106526117234642ecb4b8164895d4a58a0e05f04ad93f0690f8febec8a8",
+  "execution_evidence_entry_id": "conch-kimi-r2/test-01",
+  "embedded_figures": 1,
+  "checks": [
+    "published_artifacts_match_documented_presentation_revision",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      15,
+      16
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 3178.968,
+  "python": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/conch/.venv/bin/python",
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "kind": "display_formatting_only",
+    "original_execution_evidence": {
+      "path": "corrections/conch/original-execution/conch-kimi-r2-test-01.execution.json",
+      "sha256": "4e9865f6a07f3eddeed1b12c27a2088612891cde2f15c16c9cbcf7d4fb432e89"
+    },
+    "correction_record": {
+      "path": "corrections/conch/conch-kimi-r2-test-01.presentation.json",
+      "sha256": "d6e52f132f216cfa0031785bcb60b7ab4a7b25bceb4d0afcfe0fa06c313003b5"
+    },
+    "scientific_reexecution": false
+  },
+  "execution_scope": "Execution host, elapsed time, cell counts and calculation outputs describe the original artifact preserved in presentation_revision.original_execution_evidence. The published notebook and HTML include documented presentation changes only; no new full scientific execution was performed."
+}

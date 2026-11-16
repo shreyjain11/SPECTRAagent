@@ -1,0 +1,349 @@
+{
+  "scope": "Small independent calculations from retained public-derived tables. No fresh inference, bootstrap rerun, or raw-source redownload.",
+  "checks": [
+    {
+      "entry": "state-codex-r1/test-01",
+      "check": "discovery state_raw within-target OLS",
+      "recomputed": -0.04861817273381671,
+      "expected": -0.04861817273381645,
+      "absolute_difference": 2.5673907444456745e-16,
+      "agrees_within_1e_9": true,
+      "rows": 1660,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-01",
+      "check": "discovery state_adjusted within-target OLS",
+      "recomputed": -0.16502755656885695,
+      "expected": -0.16502755656885637,
+      "absolute_difference": 5.828670879282072e-16,
+      "agrees_within_1e_9": true,
+      "rows": 1660,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-01",
+      "check": "discovery identity_raw within-target OLS",
+      "recomputed": 0.15590221446930042,
+      "expected": 0.1559022144692996,
+      "absolute_difference": 8.049116928532385e-16,
+      "agrees_within_1e_9": true,
+      "rows": 1660,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-01",
+      "check": "confirmation state_raw within-target OLS",
+      "recomputed": -0.0322131470929509,
+      "expected": -0.03221314709295117,
+      "absolute_difference": 2.706168622523819e-16,
+      "agrees_within_1e_9": true,
+      "rows": 4020,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-01",
+      "check": "confirmation state_adjusted within-target OLS",
+      "recomputed": -0.15003501777680175,
+      "expected": -0.15003501777680278,
+      "absolute_difference": 1.0269562977782698e-15,
+      "agrees_within_1e_9": true,
+      "rows": 4020,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-01",
+      "check": "confirmation identity_raw within-target OLS",
+      "recomputed": 0.16320594652295198,
+      "expected": 0.1632059465229533,
+      "absolute_difference": 1.3322676295501878e-15,
+      "agrees_within_1e_9": true,
+      "rows": 4020,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-01",
+      "check": "all state_raw within-target OLS",
+      "recomputed": -0.03700757360066763,
+      "expected": -0.037007573600668836,
+      "absolute_difference": 1.2073675392798577e-15,
+      "agrees_within_1e_9": true,
+      "rows": 5680,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-01",
+      "check": "all state_adjusted within-target OLS",
+      "recomputed": -0.15461895761887917,
+      "expected": -0.15461895761888417,
+      "absolute_difference": 4.9960036108132044e-15,
+      "agrees_within_1e_9": true,
+      "rows": 5680,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-01",
+      "check": "all identity_raw within-target OLS",
+      "recomputed": 0.16107140511290138,
+      "expected": 0.16107140511290663,
+      "absolute_difference": 5.245803791353865e-15,
+      "agrees_within_1e_9": true,
+      "rows": 5680,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/distance/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-02",
+      "check": "discovery state_raw within-target OLS",
+      "recomputed": 0.09157260880968497,
+      "expected": 0.09157260880968442,
+      "absolute_difference": 5.551115123125783e-16,
+      "agrees_within_1e_9": true,
+      "rows": 1660,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/s_phase/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-02",
+      "check": "discovery state_adjusted within-target OLS",
+      "recomputed": 0.09342109055195147,
+      "expected": 0.09342109055195093,
+      "absolute_difference": 5.412337245047638e-16,
+      "agrees_within_1e_9": true,
+      "rows": 1660,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/s_phase/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-02",
+      "check": "discovery identity_raw within-target OLS",
+      "recomputed": -0.02977010497386684,
+      "expected": -0.029770104973866684,
+      "absolute_difference": 1.5612511283791264e-16,
+      "agrees_within_1e_9": true,
+      "rows": 1660,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/s_phase/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-02",
+      "check": "confirmation state_raw within-target OLS",
+      "recomputed": 0.08056142430069484,
+      "expected": 0.08056142430069513,
+      "absolute_difference": 2.914335439641036e-16,
+      "agrees_within_1e_9": true,
+      "rows": 4020,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/s_phase/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-02",
+      "check": "confirmation state_adjusted within-target OLS",
+      "recomputed": 0.09514923847360009,
+      "expected": 0.0951492384736003,
+      "absolute_difference": 2.0816681711721685e-16,
+      "agrees_within_1e_9": true,
+      "rows": 4020,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/s_phase/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-02",
+      "check": "confirmation identity_raw within-target OLS",
+      "recomputed": -0.03870414198820581,
+      "expected": -0.03870414198820594,
+      "absolute_difference": 1.249000902703301e-16,
+      "agrees_within_1e_9": true,
+      "rows": 4020,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/s_phase/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-02",
+      "check": "all state_raw within-target OLS",
+      "recomputed": 0.08377948174522203,
+      "expected": 0.0837794817452237,
+      "absolute_difference": 1.6792123247455493e-15,
+      "agrees_within_1e_9": true,
+      "rows": 5680,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/s_phase/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-02",
+      "check": "all state_adjusted within-target OLS",
+      "recomputed": 0.09488299892620175,
+      "expected": 0.09488299892620372,
+      "absolute_difference": 1.970645868709653e-15,
+      "agrees_within_1e_9": true,
+      "rows": 5680,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/s_phase/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-02",
+      "check": "all identity_raw within-target OLS",
+      "recomputed": -0.03609313821288778,
+      "expected": -0.036093138212888495,
+      "absolute_difference": 7.147060721024445e-16,
+      "agrees_within_1e_9": true,
+      "rows": 5680,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/s_phase/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-03",
+      "check": "discovery state_raw within-target OLS",
+      "recomputed": 0.137390114456955,
+      "expected": 0.13739011445695376,
+      "absolute_difference": 1.2490009027033011e-15,
+      "agrees_within_1e_9": true,
+      "rows": 1660,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/lineage/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-03",
+      "check": "discovery state_adjusted within-target OLS",
+      "recomputed": 0.02134127584970424,
+      "expected": 0.02134127584970418,
+      "absolute_difference": 6.245004513516506e-17,
+      "agrees_within_1e_9": true,
+      "rows": 1660,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/lineage/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-03",
+      "check": "discovery identity_raw within-target OLS",
+      "recomputed": 0.12053099820653311,
+      "expected": 0.12053099820653206,
+      "absolute_difference": 1.0547118733938987e-15,
+      "agrees_within_1e_9": true,
+      "rows": 1660,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/lineage/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-03",
+      "check": "confirmation state_raw within-target OLS",
+      "recomputed": 0.13824382333082993,
+      "expected": 0.13824382333083018,
+      "absolute_difference": 2.498001805406602e-16,
+      "agrees_within_1e_9": true,
+      "rows": 4020,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/lineage/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-03",
+      "check": "confirmation state_adjusted within-target OLS",
+      "recomputed": 0.032225992879319,
+      "expected": 0.032225992879319126,
+      "absolute_difference": 1.249000902703301e-16,
+      "agrees_within_1e_9": true,
+      "rows": 4020,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/lineage/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-03",
+      "check": "confirmation identity_raw within-target OLS",
+      "recomputed": 0.12558217085956735,
+      "expected": 0.12558217085956758,
+      "absolute_difference": 2.220446049250313e-16,
+      "agrees_within_1e_9": true,
+      "rows": 4020,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/lineage/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-03",
+      "check": "all state_raw within-target OLS",
+      "recomputed": 0.1379943239064288,
+      "expected": 0.13799432390642274,
+      "absolute_difference": 6.050715484207103e-15,
+      "agrees_within_1e_9": true,
+      "rows": 5680,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/lineage/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-03",
+      "check": "all state_adjusted within-target OLS",
+      "recomputed": 0.029015219349214923,
+      "expected": 0.029015219349213542,
+      "absolute_difference": 1.3808398868775384e-15,
+      "agrees_within_1e_9": true,
+      "rows": 5680,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/lineage/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r1/test-03",
+      "check": "all identity_raw within-target OLS",
+      "recomputed": 0.12410594786590423,
+      "expected": 0.12410594786589882,
+      "absolute_difference": 5.412337245047638e-15,
+      "agrees_within_1e_9": true,
+      "rows": 5680,
+      "input": "reproduction/reconstructed/state-codex-r1/computed/analysis/lineage/per_condition_scores.csv"
+    },
+    {
+      "entry": "state-codex-r2/test-02",
+      "check": "state_se raw standardized-distance OLS",
+      "recomputed": 0.0036351493898537026,
+      "expected": 0.003635149389853727,
+      "absolute_difference": 2.42861286636753e-17,
+      "agrees_within_1e_9": true
+    },
+    {
+      "entry": "state-codex-r2/test-02",
+      "check": "state_hvg raw standardized-distance OLS",
+      "recomputed": 0.02093847861690279,
+      "expected": 0.020938478616902952,
+      "absolute_difference": 1.6306400674181987e-16,
+      "agrees_within_1e_9": true
+    },
+    {
+      "entry": "state-codex-r2/test-02",
+      "check": "reference raw standardized-distance OLS",
+      "recomputed": 0.0374593413388745,
+      "expected": 0.03745934133887478,
+      "absolute_difference": 2.8449465006019636e-16,
+      "agrees_within_1e_9": true
+    },
+    {
+      "entry": "state-codex-r2/test-02",
+      "check": "adjusted within-perturbation distance OLS",
+      "recomputed": 0.006982944371354959,
+      "expected": 0.006982944371354851,
+      "absolute_difference": 1.0842021724855044e-16,
+      "agrees_within_1e_9": true
+    },
+    {
+      "entry": "state-codex-r2/test-03",
+      "check": "context-adjusted expected-magnitude weakness OLS",
+      "recomputed": -0.1078915376887242,
+      "expected": -0.10789153768872423,
+      "absolute_difference": 2.7755575615628914e-17,
+      "agrees_within_1e_9": true
+    },
+    {
+      "entry": "state-codex-r2/test-03",
+      "check": "expected_rms_context_residual_pearson",
+      "recomputed": 0.7049515850202918,
+      "expected": 0.7049515850202919,
+      "absolute_difference": 1.1102230246251565e-16,
+      "agrees_within_1e_9": true
+    },
+    {
+      "entry": "state-codex-r2/test-03",
+      "check": "negative_log1p_rms_context_residual_pearson",
+      "recomputed": -0.7008329182973596,
+      "expected": -0.7008329182973592,
+      "absolute_difference": 4.440892098500626e-16,
+      "agrees_within_1e_9": true
+    },
+    {
+      "entry": "state-kimi-r1/test-03",
+      "check": "saved unnormalized Fisher sum",
+      "recomputed": 53.336430163158965,
+      "expected": 53.336430163158965,
+      "absolute_difference": 0.0,
+      "agrees_within_1e_9": true,
+      "interpretation": "Matches preserved code/output, but this sum is not a calibrated pooled Z statistic."
+    },
+    {
+      "entry": "state-kimi-r1/test-03",
+      "check": "normalization demonstration only",
+      "recomputed": {
+        "equal_stouffer": 30.793802312313506,
+        "fisher_weighted_under_independence": 30.82629675549592
+      },
+      "interpretation": "Arithmetic demonstration, not recommended pooled inference: recurring genes require dependence-aware analysis."
+    }
+  ]
+}

@@ -303,7 +303,7 @@
     "source": "historical_decisions.json",
     "record_id": "am-opus-r1/test-03",
     "disposition": "accepted",
-    "result": "Agreement declined 0.095 (95% CI 0.050\u20130.141) versus 0.075 for BLOSUM62. The difference in declines included zero.",
+    "result": "Agreement declined 0.095 (95% CI 0.050–0.141) versus 0.075 for BLOSUM62. The difference in declines included zero.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -317,8 +317,8 @@
     "notebook": "inline/alphamissense/am-opus-r1/test-03.ipynb",
     "html": "inline/alphamissense/am-opus-r1/test-03.html",
     "execution_evidence": "inline/alphamissense/am-opus-r1/test-03.execution.json",
-    "published_notebook_sha256": "9a9d1083a150ac87c4921695b645f9d20f6038892253596c885404fe407f347c",
-    "published_html_sha256": "a5e9120b631cbf96df4b6fbaf3c97a44c1525b83ab7bc3c6c5ee9eacf65815a9",
+    "published_notebook_sha256": "9ed7b8cbf74c203358cbe2d0a7d0d5d468a6df91ee6d801045ccbf0172bc98f6",
+    "published_html_sha256": "5b521fc0d9f0c5fc1eb6039e508b65bc8ff62a1744dd0fa644d9a56f7cee4cf1",
     "code_cells": 11,
     "sections": [
       {
@@ -412,9 +412,9 @@
     "scope": "corrected_inline_analysis",
     "evidence": {
       "notebook": "inline/alphamissense/am-opus-r1/test-03.ipynb",
-      "notebook_sha256": "9a9d1083a150ac87c4921695b645f9d20f6038892253596c885404fe407f347c",
+      "notebook_sha256": "9ed7b8cbf74c203358cbe2d0a7d0d5d468a6df91ee6d801045ccbf0172bc98f6",
       "execution_record": "inline/alphamissense/am-opus-r1/test-03.execution.json",
-      "execution_record_sha256": "65a4d508a2b8f533dfc8b962ffb57cd722d36bdee357d3c38bf507576594e38b",
+      "execution_record_sha256": "382acc99ddb8fb78199ca2b0828e8b8c856edc521ff0cba30ff86a3ad8dcb560",
       "cohort_output_cell": 12,
       "result_section": 6,
       "result_code_cells": [
@@ -516,11 +516,16 @@
     ],
     "notebook": "inline/alphamissense/am-opus-r1/test-03.ipynb",
     "execution_evidence": "inline/alphamissense/am-opus-r1/test-03.execution.json",
-    "notebook_sha256": "9a9d1083a150ac87c4921695b645f9d20f6038892253596c885404fe407f347c",
+    "notebook_sha256": "9ed7b8cbf74c203358cbe2d0a7d0d5d468a6df91ee6d801045ccbf0172bc98f6",
     "result_location": {
       "notebook": "inline/alphamissense/am-opus-r1/test-03.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-opus-r1-test-03.revision.json"
     }
   },
   "scientific_record_scope": {

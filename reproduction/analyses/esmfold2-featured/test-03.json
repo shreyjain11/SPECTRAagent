@@ -630,7 +630,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-featured/test-03",
     "disposition": "rejected",
-    "result": "Highest-stress minus remaining targets was \u22120.179 in discovery and +0.031 in confirmation. The CAMEO association did not generalize.",
+    "result": "Highest-stress minus remaining targets was −0.179 in discovery and +0.031 in confirmation. The CAMEO association did not generalize.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -751,7 +751,7 @@
       },
       "axis": {
         "status": "definition_and_code_retained",
-        "definition": "Mean percentile rank of proline and Chou\u2013Fasman beta/turn-minus-helix components",
+        "definition": "Mean percentile rank of proline and Chou–Fasman beta/turn-minus-helix components",
         "artifacts": [
           "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/score_axes.py",
           "original_runs/esmfold2_single_controller_final_run/beyond_evolutionary_support_sequence_composition_spc/scripts/build_nonerror_features.py",
@@ -901,7 +901,7 @@
           "original_runs/esmfold2_external_flexible_axis_expanded_20260601T170049Z/expanded_external_report.md"
         ],
         "notebook_cell": 16,
-        "recorded_text": "## Recorded conclusion\n\nHighest-stress minus remaining targets was \u22120.179 in discovery and +0.031 in confirmation. The CAMEO association did not generalize.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "recorded_text": "## Recorded conclusion\n\nHighest-stress minus remaining targets was −0.179 in discovery and +0.031 in confirmation. The CAMEO association did not generalize.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
@@ -917,8 +917,8 @@
     "notebook": "inline/esmfold2/esmfold2-featured/test-03.ipynb",
     "html": "inline/esmfold2/esmfold2-featured/test-03.html",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-03.execution.json",
-    "published_notebook_sha256": "0b19e11880fce27fb27962db57d3840b340c5d7b008ef8599bba028f0973ec0e",
-    "published_html_sha256": "853d825f2693ce3d7b59861a9b8bee48bbc086237748933033cab53ce80940d4",
+    "published_notebook_sha256": "f78dff95ef31ab44763a1942d407b0c6a6dc0a400dcd6e2163337dd017d52cc7",
+    "published_html_sha256": "878647be1b61a909319d8fc14b70ea8a1b3467b17e6e3a375462c9882baa17cc",
     "code_cells": 26,
     "sections": [
       {
@@ -1025,11 +1025,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-03.execution.json",
-    "notebook_sha256": "0b19e11880fce27fb27962db57d3840b340c5d7b008ef8599bba028f0973ec0e",
+    "notebook_sha256": "f78dff95ef31ab44763a1942d407b0c6a6dc0a400dcd6e2163337dd017d52cc7",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-featured/test-03.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-featured-test-03.revision.json"
     }
   }
 }

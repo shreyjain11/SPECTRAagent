@@ -98,7 +98,7 @@
     "source": "historical_decisions.json",
     "record_id": "am-kimi-r2/test-05",
     "disposition": "rejected",
-    "result": "\u0394(T4\u2212T1)=\u22120.005; paired (604 genes) +0.010 [\u22120.004,+0.024] Negative at adequate power",
+    "result": "Δ(T4−T1)=−0.005; paired (604 genes) +0.010 [−0.004,+0.024] Negative at adequate power",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -119,7 +119,7 @@
     "html": "inline/alphamissense/am-kimi-r2/axis-5.html",
     "execution_evidence": "inline/alphamissense/am-kimi-r2/axis-5.execution.json",
     "published_notebook_sha256": "e4bbd264be341cee548a4cdba69a2c040f664655d82ec3881520710f35b089e6",
-    "published_html_sha256": "60ca2adeb68974a95903cc2231dc7f24c7c8a768f6c56379018851d3b76ba43b",
+    "published_html_sha256": "33fbf59fc077cee8944c60473378e0cfdc76f6d49a2c57aad31c2010d30808cb",
     "code_cells": 9,
     "sections": [
       {
@@ -214,6 +214,11 @@
       "notebook": "inline/alphamissense/am-kimi-r2/axis-5.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-kimi-r2-test-05.revision.json"
     }
   }
 }

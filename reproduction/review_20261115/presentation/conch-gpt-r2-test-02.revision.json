@@ -1,0 +1,151 @@
+{
+  "analysis_id": "conch-gpt-r2/test-02",
+  "original_commit": "dfe2a55acebe3ba00df217e1f18b8148de6ff78f",
+  "kind": "reviewed_markdown_and_layout",
+  "scientific_reexecution": false,
+  "original_artifacts": {
+    "notebook": {
+      "path": "inline/conch/conch-gpt-r2/test-02.ipynb",
+      "sha256": "c26cb9cf9709ad8a1198450c3644f0b6d8641837973094414511f53983541c5d"
+    },
+    "html": {
+      "path": "inline/conch/conch-gpt-r2/test-02.html",
+      "sha256": "fd78b1ae9ea284dc4c97bb13a39511f505cd280796043f4fe365503396283960"
+    }
+  },
+  "published_artifacts": {
+    "notebook": {
+      "path": "inline/conch/conch-gpt-r2/test-02.ipynb",
+      "sha256": "373adf7db746b491abade3a1359f28845c6f24f0ae2f4cea5e62b33b9579a335"
+    },
+    "html": {
+      "path": "inline/conch/conch-gpt-r2/test-02.html",
+      "sha256": "a8f47db7c149816cd64eb5e8485d2dce8e7bc2ad38d306be5103dd4f74da3022"
+    }
+  },
+  "modified_markdown_cells": [
+    0,
+    13
+  ],
+  "original_code_cells": [
+    {
+      "notebook_cell": 2,
+      "execution_count": 1,
+      "source_sha256": "ca057ebd32b066f01e305d9953d3cfd086ef2a7e2d49b844b8e6cc95f4c49cf4",
+      "outputs_sha256": "de4d564e8ab8e96906bf040480e59936ab41f10dfa3ad51584b75162b6227e1d",
+      "cell_sha256": "b1131e529bca5fed58e1b1bb791ec1150b95adc426e2795276718a058c65251e"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 2,
+      "source_sha256": "d8fa8065afd3b09b02c678d943c497669adfb3e5c09113a3f0ecdbbbe051b57f",
+      "outputs_sha256": "9a8467cb33dde6dc62e25e6ce49f4211c7a07f64b6ca61d7e7217a04b007ba86",
+      "cell_sha256": "f71db7f6ef93e7dc9c94d36bbcab91852b518ea21c6322322e13b7b55bb1e0bb"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 3,
+      "source_sha256": "9dd1face47f5a9a83489af455444b461495a9e5a985e6e0738933eceb42bfb9e",
+      "outputs_sha256": "2d77be210821b75d3b4f54546aee1b7f0b5f599bef939ec17079afe72827c744",
+      "cell_sha256": "3472c313093e300f616bfd53301044d0931526b8d1fd47358499a5f723b5f7df"
+    },
+    {
+      "notebook_cell": 8,
+      "execution_count": 4,
+      "source_sha256": "72090910503d740bd6918e26a3da1167f8a16c1525939fbfffc053e8eaebcbbc",
+      "outputs_sha256": "04718328bef75bd3f3b529767bed7486c449fb2edea8ae6ff416d708431fe5ed",
+      "cell_sha256": "ab936d5658fab70fc54c5d170162d0e2096c65f2d0f39f575dd772a46edb1735"
+    },
+    {
+      "notebook_cell": 10,
+      "execution_count": 5,
+      "source_sha256": "acb13670780e368945ae297c025640a923e3ab93979bb137bc1412d2dd9066c9",
+      "outputs_sha256": "476003a3e627968a168b3c4a8339aaa0b2381a48c0e4eb29e95099188b7e097c",
+      "cell_sha256": "a24422e8a375eafe711c601c3d167c4030a6b99fa3fae85fc83bfeae7f7ebc1b"
+    },
+    {
+      "notebook_cell": 12,
+      "execution_count": 6,
+      "source_sha256": "da2b5510a502059435822b571a8808f6524c363f7c5442f5e6dce203352f769e",
+      "outputs_sha256": "7052f5f4b99c767f7e477b60552cf059c1859ed47402d4ad09aab363fdaea1c4",
+      "cell_sha256": "1d30af4917ba66ece72d68a29f1f73a275d8c6d260634e8b2762c50402da35e3"
+    },
+    {
+      "notebook_cell": 14,
+      "execution_count": 7,
+      "source_sha256": "8102aa26dc783328ebcd439a07a5222e106f4e1c0dda94dcbe28ebf1bbecdc5d",
+      "outputs_sha256": "100f2b904d4947816b243bf51ed25f70a2d43895cbae7e13d562711fd00f0c8a",
+      "cell_sha256": "e47ad7cc6a4099f35c72a1ba7136c3c70580e907f378b7bbe8083e88c9a2d590"
+    },
+    {
+      "notebook_cell": 15,
+      "execution_count": 8,
+      "source_sha256": "a34a142837b21b4544c07176e1710df82e9a8210c6448a7672788cb9898d8381",
+      "outputs_sha256": "7624ac087abe25b43ec2ee8ae2064a782625fb578d0bb4747403275542e98a07",
+      "cell_sha256": "655537429562d7b97ab2024c122daadd1580a6bba1c8a60886a941ff72d7bd88"
+    }
+  ],
+  "published_code_cells": [
+    {
+      "notebook_cell": 2,
+      "execution_count": 1,
+      "source_sha256": "ca057ebd32b066f01e305d9953d3cfd086ef2a7e2d49b844b8e6cc95f4c49cf4",
+      "outputs_sha256": "de4d564e8ab8e96906bf040480e59936ab41f10dfa3ad51584b75162b6227e1d",
+      "cell_sha256": "b1131e529bca5fed58e1b1bb791ec1150b95adc426e2795276718a058c65251e"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 2,
+      "source_sha256": "d8fa8065afd3b09b02c678d943c497669adfb3e5c09113a3f0ecdbbbe051b57f",
+      "outputs_sha256": "9a8467cb33dde6dc62e25e6ce49f4211c7a07f64b6ca61d7e7217a04b007ba86",
+      "cell_sha256": "f71db7f6ef93e7dc9c94d36bbcab91852b518ea21c6322322e13b7b55bb1e0bb"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 3,
+      "source_sha256": "9dd1face47f5a9a83489af455444b461495a9e5a985e6e0738933eceb42bfb9e",
+      "outputs_sha256": "2d77be210821b75d3b4f54546aee1b7f0b5f599bef939ec17079afe72827c744",
+      "cell_sha256": "3472c313093e300f616bfd53301044d0931526b8d1fd47358499a5f723b5f7df"
+    },
+    {
+      "notebook_cell": 8,
+      "execution_count": 4,
+      "source_sha256": "72090910503d740bd6918e26a3da1167f8a16c1525939fbfffc053e8eaebcbbc",
+      "outputs_sha256": "04718328bef75bd3f3b529767bed7486c449fb2edea8ae6ff416d708431fe5ed",
+      "cell_sha256": "ab936d5658fab70fc54c5d170162d0e2096c65f2d0f39f575dd772a46edb1735"
+    },
+    {
+      "notebook_cell": 10,
+      "execution_count": 5,
+      "source_sha256": "acb13670780e368945ae297c025640a923e3ab93979bb137bc1412d2dd9066c9",
+      "outputs_sha256": "476003a3e627968a168b3c4a8339aaa0b2381a48c0e4eb29e95099188b7e097c",
+      "cell_sha256": "a24422e8a375eafe711c601c3d167c4030a6b99fa3fae85fc83bfeae7f7ebc1b"
+    },
+    {
+      "notebook_cell": 12,
+      "execution_count": 6,
+      "source_sha256": "da2b5510a502059435822b571a8808f6524c363f7c5442f5e6dce203352f769e",
+      "outputs_sha256": "7052f5f4b99c767f7e477b60552cf059c1859ed47402d4ad09aab363fdaea1c4",
+      "cell_sha256": "1d30af4917ba66ece72d68a29f1f73a275d8c6d260634e8b2762c50402da35e3"
+    },
+    {
+      "notebook_cell": 14,
+      "execution_count": 7,
+      "source_sha256": "8102aa26dc783328ebcd439a07a5222e106f4e1c0dda94dcbe28ebf1bbecdc5d",
+      "outputs_sha256": "100f2b904d4947816b243bf51ed25f70a2d43895cbae7e13d562711fd00f0c8a",
+      "cell_sha256": "e47ad7cc6a4099f35c72a1ba7136c3c70580e907f378b7bbe8083e88c9a2d590"
+    },
+    {
+      "notebook_cell": 15,
+      "execution_count": 8,
+      "source_sha256": "a34a142837b21b4544c07176e1710df82e9a8210c6448a7672788cb9898d8381",
+      "outputs_sha256": "7624ac087abe25b43ec2ee8ae2064a782625fb578d0bb4747403275542e98a07",
+      "cell_sha256": "655537429562d7b97ab2024c122daadd1580a6bba1c8a60886a941ff72d7bd88"
+    }
+  ],
+  "previous_inline_implementation": {
+    "path": "review_20261115/presentation/conch-gpt-r2-test-02.previous-inline-implementation.json",
+    "sha256": "41286b1859834193c7c7a31748ec31fbcc1916b50612c490d6faacc150a5696c"
+  },
+  "layout": "Readable paragraph spacing; whitespace-only corrections to joined words/numbers in rendered outputs; scrollable code and wide outputs; responsive image width; descriptive page title and index link."
+}

@@ -625,7 +625,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-featured/test-02",
     "disposition": "control",
-    "result": "Mean C\u03b1-lDDT across easy, medium and hard categories was 0.918, 0.861 and 0.737. These benchmark controls do not establish three independent discoveries.",
+    "result": "Mean Cα-lDDT across easy, medium and hard categories was 0.918, 0.861 and 0.737. These benchmark controls do not establish three independent discoveries.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -768,7 +768,7 @@
           "original_runs/esmfold2_single_controller_final_run/spectra_loop_state.json"
         ],
         "notebook_cell": 15,
-        "recorded_text": "## Recorded conclusion\n\nMean C\u03b1-lDDT across easy, medium and hard categories was 0.918, 0.861 and 0.737. These benchmark controls do not establish three independent discoveries.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "recorded_text": "## Recorded conclusion\n\nMean Cα-lDDT across easy, medium and hard categories was 0.918, 0.861 and 0.737. These benchmark controls do not establish three independent discoveries.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
@@ -784,8 +784,8 @@
     "notebook": "inline/esmfold2/esmfold2-featured/test-02.ipynb",
     "html": "inline/esmfold2/esmfold2-featured/test-02.html",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-02.execution.json",
-    "published_notebook_sha256": "9837829bce1f3611dd031154e878c4ee43e3cc1e1b0a7a294d8a0ccfc9b70cc4",
-    "published_html_sha256": "45504ebd185c457202a9c7c0805ed93dfd959fdf4f5668d7e6bb77f23bf07fbc",
+    "published_notebook_sha256": "a32e8f9cb77ecb435f09b829356e39a629edf09dc33c4b8017e4176cb06e1368",
+    "published_html_sha256": "8cb64e722019277d218ad7148243df865f2cac20cc30e51347fd90c78cc3af56",
     "code_cells": 12,
     "sections": [
       {
@@ -879,11 +879,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-02.execution.json",
-    "notebook_sha256": "9837829bce1f3611dd031154e878c4ee43e3cc1e1b0a7a294d8a0ccfc9b70cc4",
+    "notebook_sha256": "a32e8f9cb77ecb435f09b829356e39a629edf09dc33c4b8017e4176cb06e1368",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-featured/test-02.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-featured-test-02.revision.json"
     }
   }
 }

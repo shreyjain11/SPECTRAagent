@@ -7,8 +7,8 @@
   "code_cells": 10,
   "executed_cells": 10,
   "errors": 0,
-  "notebook_sha256": "b98453c7efc6edfde281805c9c7c9964fea785f2e21e9a24756dbecf50134692",
-  "html_sha256": "f560fb1afc0b631570a020ee2175e0e75ca2de28fda22931b83b743be38250cb",
+  "notebook_sha256": "8c51a1c5c0850a4049770484440dc6c851b1cf0c9f26f1d7976f0ad5e7fe81f3",
+  "html_sha256": "0dcade398b282402962e0b58fc18ae0c6b7295e924e2cbc900fb6d36e2073db5",
   "sections": [
     {
       "number": 1,
@@ -84,5 +84,17 @@
   "input_manifests": [],
   "elapsed_seconds": 13.33,
   "python": "3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]",
-  "calculation_evidence": []
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/state-featured-test-01.previous-execution.json",
+      "sha256": "cf8c34d5bd838e1a28812a86d8b42d1889dcc47db9fde0475615c538498487a3"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/state-featured-test-01.revision.json",
+      "sha256": "80fa2ba0373a3d2b6fa866c7fb9bb1d739ea7ff2cb8200ac412cf6f51022db0b"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

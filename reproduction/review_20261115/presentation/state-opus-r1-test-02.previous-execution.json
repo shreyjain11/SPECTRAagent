@@ -1,0 +1,85 @@
+{
+  "analysis_id": "state-opus-r1/test-02",
+  "notebook": "inline/state/state-opus-r1/test-02.ipynb",
+  "html": "inline/state/state-opus-r1/test-02.html",
+  "completed": true,
+  "host": "exxact05",
+  "code_cells": 9,
+  "executed_cells": 9,
+  "errors": 0,
+  "notebook_sha256": "0ed133e2f27a7374f121b89571eddc0f5144298b549aa3598cfbd80564d43ce9",
+  "html_sha256": "35c417fb49ae2f41dffa751c922652ced5c82c2f8a484337e2d6929a46d8518b",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source and acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 6,
+      "code_cells": [
+        7
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results and released scores",
+      "markdown_cell": 9,
+      "code_cells": [
+        10
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 11,
+      "code_cells": [
+        12,
+        13
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 14,
+      "code_cells": [
+        15,
+        16
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "7bc06c3bd0bd7bdc627730de234c8fe3c095610c5f95c7304c7ceef24ede9ee5",
+  "execution_evidence_entry_id": "state-opus-r1/test-02",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      15,
+      16
+    ]
+  },
+  "input_manifests": [],
+  "calculation_evidence": []
+}

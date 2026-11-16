@@ -116,7 +116,7 @@
     "html": "inline/alphamissense/am-gpt-r2/axis-2.html",
     "execution_evidence": "inline/alphamissense/am-gpt-r2/axis-2.execution.json",
     "published_notebook_sha256": "f072c5b10999b225808d03ac327e4b10ff3f856923cf0642145defe59a9bd7f4",
-    "published_html_sha256": "f493064e17f27904b918b83081b84fc39fe01e0cf25e379b322a1b78d400cd43",
+    "published_html_sha256": "b8ee7f789103a8581074500d3289c358f7facb8cdae1d6cd2e0a0c3a1cb389e6",
     "code_cells": 8,
     "sections": [
       {
@@ -211,6 +211,11 @@
       "notebook": "inline/alphamissense/am-gpt-r2/axis-2.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-gpt-r2-test-02.revision.json"
     }
   }
 }

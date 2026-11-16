@@ -87,7 +87,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-opus-r1/test-03",
     "disposition": "rejected",
-    "result": "A discovery association of \u03c1 = \u22120.139 did not replicate (confirmation \u03c1 = \u22120.032, P = 0.52).",
+    "result": "A discovery association of ρ = −0.139 did not replicate (confirmation ρ = −0.032, P = 0.52).",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -107,8 +107,8 @@
     "notebook": "inline/esmfold2/esmfold2-opus-r1/test-03.ipynb",
     "html": "inline/esmfold2/esmfold2-opus-r1/test-03.html",
     "execution_evidence": "inline/esmfold2/esmfold2-opus-r1/test-03.execution.json",
-    "published_notebook_sha256": "81b8cc79ce58ea5cb849066db7f786fef5b1f859d5a4b7ce666278ec5de719fa",
-    "published_html_sha256": "6139cdebd5da32ca004d461ffb173a8e8981db2600cf3e32534d2d8e47fd329b",
+    "published_notebook_sha256": "5a95a901641769e8f6fd9934056eeb4f31c86af911f538c96d6b58f718943784",
+    "published_html_sha256": "bbd51d1625e079f0d31aa58a7ff72fdfc966a67ac404196cba6bc706c1e634bb",
     "code_cells": 12,
     "sections": [
       {
@@ -201,7 +201,7 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-opus-r1/test-03.execution.json",
-    "notebook_sha256": "81b8cc79ce58ea5cb849066db7f786fef5b1f859d5a4b7ce666278ec5de719fa",
+    "notebook_sha256": "5a95a901641769e8f6fd9934056eeb4f31c86af911f538c96d6b58f718943784",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-opus-r1/test-03.ipynb",
       "section": 6,
@@ -213,6 +213,11 @@
         "path": "traceability_review.json",
         "record_id": "esmfold2-opus-r1/test-03"
       }
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-opus-r1-test-03.revision.json"
     }
   }
 }

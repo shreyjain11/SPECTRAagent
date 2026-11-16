@@ -7,8 +7,8 @@
   "code_cells": 6,
   "executed_cells": 6,
   "errors": 0,
-  "notebook_sha256": "e2c8d939ab406233a9b94051d509ad6636ed34d2ea4372e76f34586a5f87aeee",
-  "html_sha256": "50059c3d6ce9f34719eee85b4173b027a918ed6318078f0d83eafdb637e78463",
+  "notebook_sha256": "ed21a3cf3fb4573a499f665f1834db67c122457b269cd0f98872eb8d28e09604",
+  "html_sha256": "119dc3b276b804158a006f96c62a4a37b01f03531b8fe8f9516d55b8222aef44",
   "sections": [
     {
       "number": 1,
@@ -77,5 +77,17 @@
     ]
   },
   "input_manifests": [],
-  "calculation_evidence": []
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/conch-opus-r1-test-02.previous-execution.json",
+      "sha256": "4cb53180d4d53b7ec9f33cb29c1b32c2dc0c60f89b79cb1686b308eb201c921e"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/conch-opus-r1-test-02.revision.json",
+      "sha256": "ef8b121f413347316009e49a23fc4fb0f3164514df40586f599e91577bbb1ab8"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

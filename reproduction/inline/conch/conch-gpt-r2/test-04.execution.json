@@ -7,8 +7,8 @@
   "code_cells": 8,
   "executed_cells": 8,
   "errors": 0,
-  "notebook_sha256": "16a26d30ba5abd28b8f9e669924f890017299cc4c8eafe59e90312de7cdb4bd8",
-  "html_sha256": "e9c80779ba419d333afbee6707c809404ce85823cd4073b157509733ef605973",
+  "notebook_sha256": "2ddb2a0a6499334becdf4ed937c19b43acef4f6e0748dcac6f36ec0fe7d115a8",
+  "html_sha256": "82dccbfeebab2feb1e15ace886d40082c108f05af99076e4395049da5a4c98e1",
   "sections": [
     {
       "number": 1,
@@ -84,16 +84,16 @@
   "python": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/conch/.venv/bin/python",
   "calculation_evidence": [],
   "presentation_revision": {
-    "kind": "markdown_only",
+    "scientific_reexecution": false,
     "original_execution_evidence": {
-      "path": "corrections/conch/original-execution/conch-gpt-r2-test-04.execution.json",
-      "sha256": "596403ba002eb76569f5af1df57a9dccd820c8439da5256989fecf029cbb9cd8"
+      "path": "review_20261115/presentation/conch-gpt-r2-test-04.previous-execution.json",
+      "sha256": "a66a4b49d65f83f665ad5448feec7bde962e01407d4aab42451a28e162951aa2"
     },
     "correction_record": {
-      "path": "corrections/conch/conch-gpt-r2-test-04.presentation.json",
-      "sha256": "b3b0d31e524a8d21212e39a5870e04c560c9f794acccf188e53febad81dad614"
-    },
-    "scientific_reexecution": false
+      "path": "review_20261115/presentation/conch-gpt-r2-test-04.revision.json",
+      "sha256": "3efa612f809ff7728ffee42e7b5d779a752c0bce9df47d6b4c40b64fd236c3b5"
+    }
   },
-  "execution_scope": "Execution host, elapsed time, cell counts and calculation outputs describe the original artifact preserved in presentation_revision.original_execution_evidence. The published notebook and HTML include documented presentation changes only; no new full scientific execution was performed."
+  "execution_scope": "Execution host, elapsed time, cell counts and calculation outputs describe the original artifact preserved in presentation_revision.original_execution_evidence. The published notebook and HTML include documented presentation changes only; no new full scientific execution was performed.",
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

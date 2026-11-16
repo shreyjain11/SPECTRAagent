@@ -182,7 +182,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-kimi-r2/test-01",
     "disposition": "accepted",
-    "result": "The lowest-minus-highest-identity TM-score contrast was \u22120.086, with a Welch interval of [\u22120.163, \u22120.009] reconstructed from reported group means, SDs and counts. The template baseline deteriorated more severely.",
+    "result": "The lowest-minus-highest-identity TM-score contrast was −0.086, with a Welch interval of [−0.163, −0.009] reconstructed from reported group means, SDs and counts. The template baseline deteriorated more severely.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -202,8 +202,8 @@
     "notebook": "inline/esmfold2/esmfold2-kimi-r2/test-01.ipynb",
     "html": "inline/esmfold2/esmfold2-kimi-r2/test-01.html",
     "execution_evidence": "inline/esmfold2/esmfold2-kimi-r2/test-01.execution.json",
-    "published_notebook_sha256": "74f258ace5d08112460b3545290dc66eb5f87ec472cfb862a46f504213bc9be5",
-    "published_html_sha256": "acba4664b0c9d1019f4099f67ad32dfc91cd79b7f3b1d5c53d6fecfa86503cdc",
+    "published_notebook_sha256": "7fb3324e0f972ee2825ed7c8ce570e0eb74982a4dee0301ee516d593b8907e1f",
+    "published_html_sha256": "81f1e0b14113e97e6ab8e7bb2dbb415ad340015c39f3820480768ba9b038cce8",
     "code_cells": 8,
     "sections": [
       {
@@ -293,11 +293,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-kimi-r2/test-01.execution.json",
-    "notebook_sha256": "74f258ace5d08112460b3545290dc66eb5f87ec472cfb862a46f504213bc9be5",
+    "notebook_sha256": "7fb3324e0f972ee2825ed7c8ce570e0eb74982a4dee0301ee516d593b8907e1f",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-kimi-r2/test-01.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-kimi-r2-test-01.revision.json"
     }
   }
 }

@@ -1,0 +1,1387 @@
+[
+  {
+    "id": "esmfold2-featured/test-01",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The displayed result is a localized low-support association in the CAMEO panel: the high-minus-low support difference is 0.1956 C-alpha lDDT. Alignment depth is a measured support proxy; these data do not identify the model’s exact training-set membership or establish a universal degradation law.",
+    "code_cells": 12,
+    "markdown_changes": [
+      {
+        "cell": 5,
+        "before": "## 2. Data processing\n\nParse sequences and experimental chains; remove A3M insertions before measuring alignment support. Reference eligibility requires at least30 C-alpha positions, no unknown query residues and query/reference identity of at least0.80. The model evaluation covers eligible sequences of at most650 residues.\n",
+        "after": "## 2. Data processing\n\nParse sequences and experimental chains; remove A3M insertions before measuring alignment support. Reference eligibility requires at least 30 C-alpha positions, no unknown query residues and query/reference identity of at least 0.80. The model evaluation covers eligible sequences of at most 650 residues.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 3. Axis definition and level construction\n\nEvolutionary support is log10(non-query alignment rows+1). Increasing stress levels correspond to decreasing support. Construct5 and8 equal-count ranked bins and the thresholds ≥3.0,2.6–3.0 and<2.6. CAMEO difficulty uses the supplied ordered category; length uses5 increasing bins. The calibration population is fixed by input/reference eligibility before performance is joined.\n",
+        "after": "## 3. Axis definition and level construction\n\nEvolutionary support is log10(non-query alignment rows+1). Increasing stress levels correspond to decreasing support. Construct 5 and 8 equal-count ranked bins and the thresholds ≥3.0, 2.6–3.0 and <2.6. CAMEO difficulty uses the supplied ordered category; length uses 5 increasing bins. The calibration population is fixed by input/reference eligibility before performance is joined.\n"
+      },
+      {
+        "cell": 10,
+        "before": "## 4. Model results or released scores\n\nUse the package’s per-target ESMFold2 measurements:3 loops,14 diffusion steps and1 sample, with the query sequence as model input. The A3M alignment is an axis attribute; it is not supplied to the model. The visible functions below also define model-output coordinate extraction, alignment and scoring for an available compatible checkpoint.\n",
+        "after": "## 4. Model results or released scores\n\nUse the package’s per-target ESMFold2 measurements:3 loops, 14 diffusion steps and 1 sample, with the query sequence as model input. The A3M alignment is an axis attribute; it is not supplied to the model. The visible functions below also define model-output coordinate extraction, alignment and scoring for an available compatible checkpoint.\n"
+      },
+      {
+        "cell": 13,
+        "before": "## 5. Curves and controls\n\nCalculate level means and95% target-resampling intervals. Compare the model with the extended-chain reference on the same targets. Inspect continuous rank associations and regressions adjusting for length, resolution, reference accuracy and CAMEO difficulty.\n",
+        "after": "## 5. Curves and controls\n\nCalculate level means and 95% target-resampling intervals. Compare the model with the extended-chain reference on the same targets. Inspect continuous rank associations and regressions adjusting for length, resolution, reference accuracy and CAMEO difficulty.\n"
+      },
+      {
+        "cell": 16,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated direction, curve shape and controls below to state the result for this protein panel.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated direction, curve shape and controls below to state the result for this protein panel.\n\nThe displayed result is a localized low-support association in the CAMEO panel: the high-minus-low support difference is 0.1956 C-alpha lDDT. Alignment depth is a measured support proxy; these data do not identify the model’s exact training-set membership or establish a universal degradation law.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-featured/test-02",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "CAMEO difficulty is associated with lower accuracy in this panel. The length association points in the opposite direction to a longer-chain failure, and the resolution rank test is inconclusive. These observational controls do not establish causation.",
+    "code_cells": 12,
+    "markdown_changes": [
+      {
+        "cell": 5,
+        "before": "## 2. Data processing\n\nParse sequences and experimental chains; remove A3M insertions before measuring alignment support. Reference eligibility requires at least30 C-alpha positions, no unknown query residues and query/reference identity of at least0.80. The model evaluation covers eligible sequences of at most650 residues.\n",
+        "after": "## 2. Data processing\n\nParse sequences and experimental chains; remove A3M insertions before measuring alignment support. Reference eligibility requires at least 30 C-alpha positions, no unknown query residues and query/reference identity of at least 0.80. The model evaluation covers eligible sequences of at most 650 residues.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 3. Axis definition and level construction\n\nEvolutionary support is log10(non-query alignment rows+1). Increasing stress levels correspond to decreasing support. Construct5 and8 equal-count ranked bins and the thresholds ≥3.0,2.6–3.0 and<2.6. CAMEO difficulty uses the supplied ordered category; length uses5 increasing bins. The calibration population is fixed by input/reference eligibility before performance is joined.\n",
+        "after": "## 3. Axis definition and level construction\n\nEvolutionary support is log10(non-query alignment rows+1). Increasing stress levels correspond to decreasing support. Construct 5 and 8 equal-count ranked bins and the thresholds ≥3.0, 2.6–3.0 and <2.6. CAMEO difficulty uses the supplied ordered category; length uses 5 increasing bins. The calibration population is fixed by input/reference eligibility before performance is joined.\n"
+      },
+      {
+        "cell": 10,
+        "before": "## 4. Model results or released scores\n\nUse the package’s per-target ESMFold2 measurements:3 loops,14 diffusion steps and1 sample, with the query sequence as model input. The A3M alignment is an axis attribute; it is not supplied to the model. The visible functions below also define model-output coordinate extraction, alignment and scoring for an available compatible checkpoint.\n",
+        "after": "## 4. Model results or released scores\n\nUse the package’s per-target ESMFold2 measurements:3 loops, 14 diffusion steps and 1 sample, with the query sequence as model input. The A3M alignment is an axis attribute; it is not supplied to the model. The visible functions below also define model-output coordinate extraction, alignment and scoring for an available compatible checkpoint.\n"
+      },
+      {
+        "cell": 13,
+        "before": "## 5. Curves and controls\n\nCalculate level means and95% target-resampling intervals. Compare the model with the extended-chain reference on the same targets. Inspect continuous rank associations and regressions adjusting for length, resolution, reference accuracy and CAMEO difficulty.\n",
+        "after": "## 5. Curves and controls\n\nCalculate level means and 95% target-resampling intervals. Compare the model with the extended-chain reference on the same targets. Inspect continuous rank associations and regressions adjusting for length, resolution, reference accuracy and CAMEO difficulty.\n"
+      },
+      {
+        "cell": 16,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated direction, curve shape and controls below to state the result for this protein panel.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated direction, curve shape and controls below to state the result for this protein panel.\n\nCAMEO difficulty is associated with lower accuracy in this panel. The length association points in the opposite direction to a longer-chain failure, and the resolution rank test is inconclusive. These observational controls do not establish causation.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-featured/test-03",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The 107-target follow-up does not confirm the proposed flexible/non-helical decline: the primary top-minus-lower estimate is +0.0311 C-alpha lDDT, with a bootstrap interval spanning zero. Earlier screening curves and oracle sample selection do not override that follow-up result.",
+    "code_cells": 26,
+    "markdown_changes": [
+      {
+        "cell": 31,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n\nThe 107-target follow-up does not confirm the proposed flexible/non-helical decline: the primary top-minus-lower estimate is +0.0311 C-alpha lDDT, with a bootstrap interval spanning zero. Earlier screening curves and oracle sample selection do not override that follow-up result.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-featured/test-04",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The charge follow-up does not confirm a decline: the primary top-minus-lower estimate is +0.0069 C-alpha lDDT, with a bootstrap interval spanning zero. This concerns absolute sequence charge; it is distinct from the signed-charge cryo-EM comparison in Codex r2.",
+    "code_cells": 24,
+    "markdown_changes": [
+      {
+        "cell": 29,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n\nThe charge follow-up does not confirm a decline: the primary top-minus-lower estimate is +0.0069 C-alpha lDDT, with a bootstrap interval spanning zero. This concerns absolute sequence charge; it is distinct from the signed-charge cryo-EM comparison in Codex r2.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-featured/test-05",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The acidic-window follow-up has 77 finite results from 78 targets. Its primary top-minus-lower estimate is −0.0173 C-alpha lDDT, with a 95% bootstrap interval of [−0.0803, 0.0318]. The adjusted coefficient is negative, but the primary endpoint contrast remains unresolved. The generic direction labels below are descriptive and do not establish confirmation.",
+    "code_cells": 23,
+    "markdown_changes": [
+      {
+        "cell": 28,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n\nThe acidic-window follow-up has 77 finite results from 78 targets. Its primary top-minus-lower estimate is −0.0173 C-alpha lDDT, with a 95% bootstrap interval of [−0.0803, 0.0318]. The adjusted coefficient is negative, but the primary endpoint contrast remains unresolved. The generic direction labels below are descriptive and do not establish confirmation.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-featured/test-06",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The cysteine follow-up has 93 finite results from the 95-target panel, including 17 in the high group. Its primary top-minus-lower estimate is −0.0943 C-alpha lDDT, with an interval of [−0.2003, −0.0017]. This supports a cohort-specific association; cysteine fraction alone does not identify actual disulfide bonds or a universal mechanism.",
+    "code_cells": 22,
+    "markdown_changes": [
+      {
+        "cell": 27,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n\nThe cysteine follow-up has 93 finite results from the 95-target panel, including 17 in the high group. Its primary top-minus-lower estimate is −0.0943 C-alpha lDDT, with an interval of [−0.2003, −0.0017]. This supports a cohort-specific association; cysteine fraction alone does not identify actual disulfide bonds or a universal mechanism.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-featured/test-07",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "These pooled screens compare several sequence and protein-description subsets. Their pointwise intervals do not by themselves establish an independently confirmed viral-envelope effect. The separate pilot, envelope and surface-panel analyses are reported in tests 10–12.",
+    "code_cells": 25,
+    "markdown_changes": [
+      {
+        "cell": 30,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n\nThese pooled screens compare several sequence and protein-description subsets. Their pointwise intervals do not by themselves establish an independently confirmed viral-envelope effect. The separate pilot, envelope and surface-panel analyses are reported in tests 10–12.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-featured/test-08",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "Potential disulfide capacity is a sequence proxy based on cysteine pairs, not a measurement of formed disulfide bonds. The displayed pooled and subtype screens are descriptive; the combined viral/disulfide pilot is evaluated separately in test 10.",
+    "code_cells": 26,
+    "markdown_changes": [
+      {
+        "cell": 31,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n\nPotential disulfide capacity is a sequence proxy based on cysteine pairs, not a measurement of formed disulfide bonds. The displayed pooled and subtype screens are descriptive; the combined viral/disulfide pilot is evaluated separately in test 10.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-featured/test-09",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "These geometry features are computed from experimental reference structures. They are retrospective structure-based diagnostics, not properties available from a sequence-only query. A declining endpoint in the summary table is not itself a confirmed prospective failure axis.",
+    "code_cells": 23,
+    "markdown_changes": [
+      {
+        "cell": 28,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe decision below is calculated from the available level curves. A decline is identified only when increasing stress lowers the level mean; uncertainty and adjusted controls above determine how strongly that direction is supported.\n\nThese geometry features are computed from experimental reference structures. They are retrospective structure-based diagnostics, not properties available from a sequence-only query. A declining endpoint in the summary table is not itself a confirmed prospective failure axis.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-featured/test-10",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The pilot includes only eight targets in the combined high regime. Its −0.0922 C-alpha lDDT contrast has a 95% interval of [−0.2799, 0.0562], so the direction is suggestive and the contrast is unresolved.",
+    "code_cells": 11,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nAcquire36 protein sequences and their RCSB experimental structures using the public cohort manifest and content fingerprints. The evaluation package supplies individual model samples. The input regime covers chains80–500 residues with resolution≤4Å, excluding previously evaluated target IDs and exact sequences.\n",
+        "after": "## 1. Data source/acquisition\n\nAcquire 36 protein sequences and their RCSB experimental structures using the public cohort manifest and content fingerprints. The evaluation package supplies individual model samples. The input regime covers chains 80–500 residues with resolution ≤4 Å, excluding previously evaluated target IDs and exact sequences.\n"
+      },
+      {
+        "cell": 7,
+        "before": "## 3. Axis definition and level construction\n\nViral context is an organism name containing “virus” or “phage”. Disulfide capacity is floor(cysteine count/2) per100 residues; capacity≥1.2 is dense. Add the two indicators to obtain levels0,1,2.\n",
+        "after": "## 3. Axis definition and level construction\n\nViral context is an organism name containing “virus” or “phage”. Disulfide capacity is floor(cysteine count/2) per 100 residues; capacity ≥1.2 is dense. Add the two indicators to obtain levels 0, 1, 2.\n"
+      },
+      {
+        "cell": 13,
+        "before": "## 5. Curves and controls\n\nCalculate the three-level curves under pTM selection, pLDDT selection, best-accuracy selection and the first finite sample. Estimate the top-versus-lower contrast by5000 bootstrap draws. Adjust for length, resolution, viral context and disulfide density; also inspect GDT-TS, RMSD and the extended-chain reference.\n",
+        "after": "## 5. Curves and controls\n\nCalculate the three-level curves under pTM selection, pLDDT selection, best-accuracy selection and the first finite sample. Estimate the top-versus-lower contrast by 5000 bootstrap draws. Adjust for length, resolution, viral context and disulfide density; also inspect GDT-TS, RMSD and the extended-chain reference.\n"
+      },
+      {
+        "cell": 16,
+        "before": "## 6. What the agent decided, and why\n\nEvaluate the calculated contrast and its interval, with the pilot sample size shown explicitly.\n",
+        "after": "## 6. What the agent decided, and why\n\nEvaluate the calculated contrast and its interval, with the pilot sample size shown explicitly.\n\nThe pilot includes only eight targets in the combined high regime. Its −0.0922 C-alpha lDDT contrast has a 95% interval of [−0.2799, 0.0562], so the direction is suggestive and the contrast is unresolved.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-featured/test-11",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The prespecified envelope/fusion proxy is unresolved in the 38-target panel: −0.0149 C-alpha lDDT, with an interval spanning zero. The 16 additional candidate contrasts use this same panel and are exploratory; their pointwise intervals are not independent confirmation.",
+    "code_cells": 17,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nAcquire the specified viral/envelope protein cohorts and fingerprint-verified experimental structures. The source package includes individual model samples and RCSB sequence/organism/description metadata; calculations below use those individual inputs. The38-target envelope panel and45-target surface panel exclude prior exact target/sequence matches and use release year≥2024.\n",
+        "after": "## 1. Data source/acquisition\n\nAcquire the specified viral/envelope protein cohorts and fingerprint-verified experimental structures. The source package includes individual model samples and RCSB sequence/organism/description metadata; calculations below use those individual inputs. The 38-target envelope panel and 45-target surface panel exclude prior exact target/sequence matches and use release year ≥2024.\n"
+      },
+      {
+        "cell": 5,
+        "before": "## 2. Data processing\n\nParse experimental chains, count resolved residues and compute sequence quantities: cysteine density, potential disulfide pairs, N-X-S/T glycosylation motifs, maximum19-residue Kyte–Doolittle average and maximum21-residue hydrophobic fraction.\n",
+        "after": "## 2. Data processing\n\nParse experimental chains, count resolved residues and compute sequence quantities: cysteine density, potential disulfide pairs, N-X-S/T glycosylation motifs, maximum 19-residue Kyte–Doolittle average and maximum 21-residue hydrophobic fraction.\n"
+      },
+      {
+        "cell": 9,
+        "before": "## 3. Axis definition and level construction\n\nEnvelope/fusion level is the sum of disulfide density≥1.2 pairs/100 residues and the joint condition of hydropathy proxy≥1.8 with≤2 glycosylation motifs. The surface regime uses text-defined surface proteins excluding capsid/enzyme controls, disulfide density≥1.2 and hydropathy proxy<2.55. The code explicitly constructs all16 envelope candidate indicators and surface subtypes before joining outcomes.\n",
+        "after": "## 3. Axis definition and level construction\n\nEnvelope/fusion level is the sum of disulfide density ≥1.2 pairs/100 residues and the joint condition of hydropathy proxy ≥1.8 with ≤2 glycosylation motifs. The surface regime uses text-defined surface proteins excluding capsid/enzyme controls, disulfide density ≥1.2 and hydropathy proxy <2.55. The code explicitly constructs all 16 envelope candidate indicators and surface subtypes before joining outcomes.\n"
+      },
+      {
+        "cell": 17,
+        "before": "## 5. Curves and controls\n\nCalculate all four sample-selection curves, bootstrap contrasts and reference behavior. Envelope controls adjust length/resolution/method; the16 candidate contrasts use5000 bootstrap draws. The surface panel separately evaluates the class-II E/E2 subtype and related protein-name groups.\n",
+        "after": "## 5. Curves and controls\n\nCalculate all four sample-selection curves, bootstrap contrasts and reference behavior. Envelope controls adjust length/resolution/method; the 16 candidate contrasts use 5000 bootstrap draws. The surface panel separately evaluates the class-II E/E2 subtype and related protein-name groups.\n"
+      },
+      {
+        "cell": 21,
+        "before": "## 6. What the agent decided, and why\n\nApply the effect-size and uncertainty conditions to the calculated panel results, distinguishing exploratory candidate contrasts from independent panel results.\n",
+        "after": "## 6. What the agent decided, and why\n\nApply the effect-size and uncertainty conditions to the calculated panel results, distinguishing exploratory candidate contrasts from independent panel results.\n\nThe prespecified envelope/fusion proxy is unresolved in the 38-target panel: −0.0149 C-alpha lDDT, with an interval spanning zero. The 16 additional candidate contrasts use this same panel and are exploratory; their pointwise intervals are not independent confirmation.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-featured/test-12",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The broad surface regime is unresolved: +0.0219 C-alpha lDDT with an interval spanning zero. The class-II E/E2 subset has eight targets and a negative contrast (−0.2301; interval [−0.3073, −0.1535]). That narrower subtype contrast does not validate the broad regime, and the name-defined subtypes remain subject to the stated selection scope.",
+    "code_cells": 18,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nAcquire the specified viral/envelope protein cohorts and fingerprint-verified experimental structures. The source package includes individual model samples and RCSB sequence/organism/description metadata; calculations below use those individual inputs. The38-target envelope panel and45-target surface panel exclude prior exact target/sequence matches and use release year≥2024.\n",
+        "after": "## 1. Data source/acquisition\n\nAcquire the specified viral/envelope protein cohorts and fingerprint-verified experimental structures. The source package includes individual model samples and RCSB sequence/organism/description metadata; calculations below use those individual inputs. The 38-target envelope panel and 45-target surface panel exclude prior exact target/sequence matches and use release year ≥2024.\n"
+      },
+      {
+        "cell": 5,
+        "before": "## 2. Data processing\n\nParse experimental chains, count resolved residues and compute sequence quantities: cysteine density, potential disulfide pairs, N-X-S/T glycosylation motifs, maximum19-residue Kyte–Doolittle average and maximum21-residue hydrophobic fraction.\n",
+        "after": "## 2. Data processing\n\nParse experimental chains, count resolved residues and compute sequence quantities: cysteine density, potential disulfide pairs, N-X-S/T glycosylation motifs, maximum 19-residue Kyte–Doolittle average and maximum 21-residue hydrophobic fraction.\n"
+      },
+      {
+        "cell": 9,
+        "before": "## 3. Axis definition and level construction\n\nEnvelope/fusion level is the sum of disulfide density≥1.2 pairs/100 residues and the joint condition of hydropathy proxy≥1.8 with≤2 glycosylation motifs. The surface regime uses text-defined surface proteins excluding capsid/enzyme controls, disulfide density≥1.2 and hydropathy proxy<2.55. The code explicitly constructs all16 envelope candidate indicators and surface subtypes before joining outcomes.\n",
+        "after": "## 3. Axis definition and level construction\n\nEnvelope/fusion level is the sum of disulfide density ≥1.2 pairs/100 residues and the joint condition of hydropathy proxy ≥1.8 with ≤2 glycosylation motifs. The surface regime uses text-defined surface proteins excluding capsid/enzyme controls, disulfide density ≥1.2 and hydropathy proxy <2.55. The code explicitly constructs all 16 envelope candidate indicators and surface subtypes before joining outcomes.\n"
+      },
+      {
+        "cell": 17,
+        "before": "## 5. Curves and controls\n\nCalculate all four sample-selection curves, bootstrap contrasts and reference behavior. Envelope controls adjust length/resolution/method; the16 candidate contrasts use5000 bootstrap draws. The surface panel separately evaluates the class-II E/E2 subtype and related protein-name groups.\n",
+        "after": "## 5. Curves and controls\n\nCalculate all four sample-selection curves, bootstrap contrasts and reference behavior. Envelope controls adjust length/resolution/method; the 16 candidate contrasts use 5000 bootstrap draws. The surface panel separately evaluates the class-II E/E2 subtype and related protein-name groups.\n"
+      },
+      {
+        "cell": 22,
+        "before": "## 6. What the agent decided, and why\n\nApply the effect-size and uncertainty conditions to the calculated panel results, distinguishing exploratory candidate contrasts from independent panel results.\n",
+        "after": "## 6. What the agent decided, and why\n\nApply the effect-size and uncertainty conditions to the calculated panel results, distinguishing exploratory candidate contrasts from independent panel results.\n\nThe broad surface regime is unresolved: +0.0219 C-alpha lDDT with an interval spanning zero. The class-II E/E2 subset has eight targets and a negative contrast (−0.2301; interval [−0.3073, −0.1535]). That narrower subtype contrast does not validate the broad regime, and the name-defined subtypes remain subject to the stated selection scope.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-codex-r1/test-01",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The current reconstruction evaluates 1,987 primary-axis chains and 530 auxiliary controls. The extreme-level model decline is 0.0953 TM-score; the template decline is larger (0.4858). This is a cohort association with shared difficulty under that comparator, not excess ESMFold2 degradation or recovery of the exact historical cohort. Some adjustment designs are rank deficient; aliased nuisance coefficients should not receive separate biological interpretations.",
+    "code_cells": 17,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nUse the public PDB sequence/index and SIFTS domain snapshots downloaded on November9,2026, with exact content fingerprints below. Query actual initial release dates: the reference ends September30,2021 and the evaluation window is October1,2021–June30,2026. Each dynamically selected coordinate and annotation response is also fingerprinted. These notebooks calculate a common input-defined cohort; its actual IDs and counts are produced below. No precomputed structural outcomes select the cohort.\n\nSources: [wwPDB sequence records](https://files.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz), [SIFTS Pfam mappings](https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_pfam.tsv.gz), [RCSB search](https://search.rcsb.org/), [metapredict](https://metapredict.readthedocs.io/), [TANTAN](https://gitlab.com/mcfrith/tantan), [NCOILS](https://www.russelllab.org/coils/coils/).\n\nAn empty cache downloads the immutable public-source archive linked below and verifies the archive and every member against their SHA256 fingerprints. Official PDB/SIFTS URLs remain recorded for each source.\n",
+        "after": "## 1. Data source/acquisition\n\nUse the public PDB sequence/index and SIFTS domain snapshots downloaded on November 9, 2026, with exact content fingerprints below. Query actual initial release dates: the reference ends September 30, 2021 and the evaluation window is October 1, 2021–June 30, 2026. Each dynamically selected coordinate and annotation response is also fingerprinted. These notebooks calculate a common input-defined cohort; its actual IDs and counts are produced below. No precomputed structural outcomes select the cohort.\n\nSources: [wwPDB sequence records](https://files.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz), [SIFTS Pfam mappings](https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_pfam.tsv.gz), [RCSB search](https://search.rcsb.org/), [metapredict](https://metapredict.readthedocs.io/), [TANTAN](https://gitlab.com/mcfrith/tantan), [NCOILS](https://www.russelllab.org/coils/coils/).\n\nAn empty cache downloads the immutable public-source archive linked below and verifies the archive and every member against their SHA256 fingerprints. Official PDB/SIFTS URLs remain recorded for each source.\n"
+      },
+      {
+        "cell": 5,
+        "before": "## 2. Data processing\n\nRetain standard-residue protein chains of40–1024 amino acids, X-ray or cryo-EM structures at≤3.5Å and the exact release window. Collapse identical sequences. Domain identities are distinct Pfam accessions from SIFTS. Taxonomy, domain interval coverage and biological-assembly annotations are input covariates, never model outcomes.\n",
+        "after": "## 2. Data processing\n\nRetain standard-residue protein chains of 40–1024 amino acids, X-ray or cryo-EM structures at ≤3.5 Å and the exact release window. Collapse identical sequences. Domain identities are distinct Pfam accessions from SIFTS. Taxonomy, domain interval coverage and biological-assembly annotations are input covariates, never model outcomes.\n"
+      },
+      {
+        "cell": 7,
+        "before": "## 3. Axis definition and level construction\n\nFor every post-cutoff chain with at least two distinct Pfam accessions, calculate the maximum Jaccard similarity to any pre-cutoff chain repertoire with at least two accessions. Levels are L0=1,L1=[.67,1),L2=[.34,.67),L3<.34. Cluster candidates with MMseqs2 at40% identity/80% coverage and choose representatives using input metadata. Fixed hash rankings request1517/30/131/322 primary chains plus530 auxiliary controls balanced over50-residue length strata; actual availability after coordinate QC is reported. Require≥70% observed C-alpha coverage, check coordinate/sequence consistency, and retain the≥80% subset for sensitivity.\n\nSequence-only controls use metapredict3.0.2 V3 disorder≥.5, NCOILS21-residue-window probability≥.5, and TANTAN51 protein masking. Fractions use full sequence length. Missing Pfam interval coverage is reported and outcome-independently median-imputed with a missing indicator. The same eligible pre-cutoff library supplies the deterministic highest-bit-score homology hit and aligned coordinate transfer.\n",
+        "after": "## 3. Axis definition and level construction\n\nFor every post-cutoff chain with at least two distinct Pfam accessions, calculate the maximum Jaccard similarity to any pre-cutoff chain repertoire with at least two accessions. Levels are L0=1,L1=[.67, 1),L2=[.34,.67),L3<.34. Cluster candidates with MMseqs2 at 40% identity/80% coverage and choose representatives using input metadata. Fixed hash rankings request 1517/30/131/322 primary chains plus 530 auxiliary controls balanced over 50-residue length strata; actual availability after coordinate QC is reported. Require ≥70% observed C-alpha coverage, check coordinate/sequence consistency, and retain the ≥80% subset for sensitivity.\n\nSequence-only controls use metapredict 3.0.2 V3 disorder ≥.5, NCOILS 21-residue-window probability ≥.5, and TANTAN 51 protein masking. Fractions use full sequence length. Missing Pfam interval coverage is reported and outcome-independently median-imputed with a missing indicator. The same eligible pre-cutoff library supplies the deterministic highest-bit-score homology hit and aligned coordinate transfer.\n"
+      },
+      {
+        "cell": 12,
+        "before": "## 4. Model evaluation\n\nUse the full released Biohub ESMFold2 and ESMC6B weights at the pinned revisions shown below through Transformers5.22.2. No fine-tuning is performed. Each sequence receives3 loops,68 diffusion steps,1 sample and seed0; model parameters use the [documented native bfloat16 inference preset](https://huggingface.co/docs/transformers/v5.21.0/en/model_doc/esmfold2), with coordinate operations handled by the library in float32 and no outer autocast. Float32 matrix multiplication uses the explicit high precision policy (TF32 where supported). The visible public converter creates the required weight layout. Cached predictions are accepted only with the same sequence, checkpoint, settings and coordinate fingerprint.\n\nUS-align measures TM-score normalized by observed experimental-target length, plus aligned RMSD. C-alpha lDDT uses common sequence-indexed residues, native distances<15Å and thresholds.5/1/2/4Å. Template coordinates transfer only across aligned residue columns, with zero TM-score for a missing/unusable reference; complete-reference cases are shown separately.\n",
+        "after": "## 4. Model evaluation\n\nUse the full released Biohub ESMFold2 and ESMC6B weights at the pinned revisions shown below through Transformers 5.22.2. No fine-tuning is performed. Each sequence receives 3 loops, 68 diffusion steps, 1 sample and seed 0; model parameters use the [documented native bfloat16 inference preset](https://huggingface.co/docs/transformers/v5.21.0/en/model_doc/esmfold2), with coordinate operations handled by the library in float32 and no outer autocast. Float32 matrix multiplication uses the explicit high precision policy (TF32 where supported). The visible public converter creates the required weight layout. Cached predictions are accepted only with the same sequence, checkpoint, settings and coordinate fingerprint.\n\nUS-align measures TM-score normalized by observed experimental-target length, plus aligned RMSD. C-alpha lDDT uses common sequence-indexed residues, native distances <15 Å and thresholds.5/1/2/4 Å. Template coordinates transfer only across aligned residue columns, with zero TM-score for a missing/unusable reference; complete-reference cases are shown separately.\n"
+      },
+      {
+        "cell": 19,
+        "before": "## 5. Curves and controls\n\nRecalculate all curves and uncertainty from individual predictions. Use10000 chain-resampling bootstrap draws, seed20260714; model/reference contrasts use the same chain draws. Fit HC3 uncertainty with a4-df natural cubic length spline plus homology, release date, method, resolution, coordinate coverage, Pfam count/coverage, taxonomy, low complexity, disorder, coiled-coil burden and assembly annotations. Show single-control attenuation and≥80% coverage, annotated-monomer and complete-reference sensitivities. An attenuation above80% together with p≥.05 marks a control that removes the primary contrast; this criterion is fixed before evaluating outputs.\n",
+        "after": "## 5. Curves and controls\n\nRecalculate all curves and uncertainty from individual predictions. Use 10000 chain-resampling bootstrap draws, seed 20260714; model/reference contrasts use the same chain draws. Fit HC3 uncertainty with a4-df natural cubic length spline plus homology, release date, method, resolution, coordinate coverage, Pfam count/coverage, taxonomy, low complexity, disorder, coiled-coil burden and assembly annotations. Show single-control attenuation and ≥80% coverage, annotated-monomer and complete-reference sensitivities. An attenuation above 80% together with p≥.05 marks a control that removes the primary contrast; this criterion is fixed before evaluating outputs.\n"
+      },
+      {
+        "cell": 22,
+        "before": "## 6. Decision and explanation\n\nUse the calculated effect sizes, uncertainty, adjusted coefficients and controls below. A result applies to the actual selected input population and model implementation; it does not establish performance outside this cohort.\n",
+        "after": "## 6. Decision and explanation\n\nUse the calculated effect sizes, uncertainty, adjusted coefficients and controls below. A result applies to the actual selected input population and model implementation; it does not establish performance outside this cohort.\n\nThe current reconstruction evaluates 1,987 primary-axis chains and 530 auxiliary controls. The extreme-level model decline is 0.0953 TM-score; the template decline is larger (0.4858). This is a cohort association with shared difficulty under that comparator, not excess ESMFold2 degradation or recovery of the exact historical cohort. Some adjustment designs are rank deficient; aliased nuisance coefficients should not receive separate biological interpretations.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-codex-r1/test-02",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "Length and homology are covariate and reference checks on the same reconstructed population. Their displayed curves are not independent replications of the Pfam result. The template comparison uses the available pre-cutoff reference and its stated abstention handling.",
+    "code_cells": 17,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nUse the public PDB sequence/index and SIFTS domain snapshots downloaded on November9,2026, with exact content fingerprints below. Query actual initial release dates: the reference ends September30,2021 and the evaluation window is October1,2021–June30,2026. Each dynamically selected coordinate and annotation response is also fingerprinted. These notebooks calculate a common input-defined cohort; its actual IDs and counts are produced below. No precomputed structural outcomes select the cohort.\n\nSources: [wwPDB sequence records](https://files.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz), [SIFTS Pfam mappings](https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_pfam.tsv.gz), [RCSB search](https://search.rcsb.org/), [metapredict](https://metapredict.readthedocs.io/), [TANTAN](https://gitlab.com/mcfrith/tantan), [NCOILS](https://www.russelllab.org/coils/coils/).\n\nAn empty cache downloads the immutable public-source archive linked below and verifies the archive and every member against their SHA256 fingerprints. Official PDB/SIFTS URLs remain recorded for each source.\n",
+        "after": "## 1. Data source/acquisition\n\nUse the public PDB sequence/index and SIFTS domain snapshots downloaded on November 9, 2026, with exact content fingerprints below. Query actual initial release dates: the reference ends September 30, 2021 and the evaluation window is October 1, 2021–June 30, 2026. Each dynamically selected coordinate and annotation response is also fingerprinted. These notebooks calculate a common input-defined cohort; its actual IDs and counts are produced below. No precomputed structural outcomes select the cohort.\n\nSources: [wwPDB sequence records](https://files.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz), [SIFTS Pfam mappings](https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_pfam.tsv.gz), [RCSB search](https://search.rcsb.org/), [metapredict](https://metapredict.readthedocs.io/), [TANTAN](https://gitlab.com/mcfrith/tantan), [NCOILS](https://www.russelllab.org/coils/coils/).\n\nAn empty cache downloads the immutable public-source archive linked below and verifies the archive and every member against their SHA256 fingerprints. Official PDB/SIFTS URLs remain recorded for each source.\n"
+      },
+      {
+        "cell": 5,
+        "before": "## 2. Data processing\n\nRetain standard-residue protein chains of40–1024 amino acids, X-ray or cryo-EM structures at≤3.5Å and the exact release window. Collapse identical sequences. Domain identities are distinct Pfam accessions from SIFTS. Taxonomy, domain interval coverage and biological-assembly annotations are input covariates, never model outcomes.\n",
+        "after": "## 2. Data processing\n\nRetain standard-residue protein chains of 40–1024 amino acids, X-ray or cryo-EM structures at ≤3.5 Å and the exact release window. Collapse identical sequences. Domain identities are distinct Pfam accessions from SIFTS. Taxonomy, domain interval coverage and biological-assembly annotations are input covariates, never model outcomes.\n"
+      },
+      {
+        "cell": 7,
+        "before": "## 3. Axis definition and level construction\n\nFor every post-cutoff chain with at least two distinct Pfam accessions, calculate the maximum Jaccard similarity to any pre-cutoff chain repertoire with at least two accessions. Levels are L0=1,L1=[.67,1),L2=[.34,.67),L3<.34. Cluster candidates with MMseqs2 at40% identity/80% coverage and choose representatives using input metadata. Fixed hash rankings request1517/30/131/322 primary chains plus530 auxiliary controls balanced over50-residue length strata; actual availability after coordinate QC is reported. Require≥70% observed C-alpha coverage, check coordinate/sequence consistency, and retain the≥80% subset for sensitivity.\n\nSequence-only controls use metapredict3.0.2 V3 disorder≥.5, NCOILS21-residue-window probability≥.5, and TANTAN51 protein masking. Fractions use full sequence length. Missing Pfam interval coverage is reported and outcome-independently median-imputed with a missing indicator. The same eligible pre-cutoff library supplies the deterministic highest-bit-score homology hit and aligned coordinate transfer.\n",
+        "after": "## 3. Axis definition and level construction\n\nFor every post-cutoff chain with at least two distinct Pfam accessions, calculate the maximum Jaccard similarity to any pre-cutoff chain repertoire with at least two accessions. Levels are L0=1,L1=[.67, 1),L2=[.34,.67),L3<.34. Cluster candidates with MMseqs2 at 40% identity/80% coverage and choose representatives using input metadata. Fixed hash rankings request 1517/30/131/322 primary chains plus 530 auxiliary controls balanced over 50-residue length strata; actual availability after coordinate QC is reported. Require ≥70% observed C-alpha coverage, check coordinate/sequence consistency, and retain the ≥80% subset for sensitivity.\n\nSequence-only controls use metapredict 3.0.2 V3 disorder ≥.5, NCOILS 21-residue-window probability ≥.5, and TANTAN 51 protein masking. Fractions use full sequence length. Missing Pfam interval coverage is reported and outcome-independently median-imputed with a missing indicator. The same eligible pre-cutoff library supplies the deterministic highest-bit-score homology hit and aligned coordinate transfer.\n"
+      },
+      {
+        "cell": 12,
+        "before": "## 4. Model evaluation\n\nUse the full released Biohub ESMFold2 and ESMC6B weights at the pinned revisions shown below through Transformers5.22.2. No fine-tuning is performed. Each sequence receives3 loops,68 diffusion steps,1 sample and seed0; model parameters use the [documented native bfloat16 inference preset](https://huggingface.co/docs/transformers/v5.21.0/en/model_doc/esmfold2), with coordinate operations handled by the library in float32 and no outer autocast. Float32 matrix multiplication uses the explicit high precision policy (TF32 where supported). The visible public converter creates the required weight layout. Cached predictions are accepted only with the same sequence, checkpoint, settings and coordinate fingerprint.\n\nUS-align measures TM-score normalized by observed experimental-target length, plus aligned RMSD. C-alpha lDDT uses common sequence-indexed residues, native distances<15Å and thresholds.5/1/2/4Å. Template coordinates transfer only across aligned residue columns, with zero TM-score for a missing/unusable reference; complete-reference cases are shown separately.\n",
+        "after": "## 4. Model evaluation\n\nUse the full released Biohub ESMFold2 and ESMC6B weights at the pinned revisions shown below through Transformers 5.22.2. No fine-tuning is performed. Each sequence receives 3 loops, 68 diffusion steps, 1 sample and seed 0; model parameters use the [documented native bfloat16 inference preset](https://huggingface.co/docs/transformers/v5.21.0/en/model_doc/esmfold2), with coordinate operations handled by the library in float32 and no outer autocast. Float32 matrix multiplication uses the explicit high precision policy (TF32 where supported). The visible public converter creates the required weight layout. Cached predictions are accepted only with the same sequence, checkpoint, settings and coordinate fingerprint.\n\nUS-align measures TM-score normalized by observed experimental-target length, plus aligned RMSD. C-alpha lDDT uses common sequence-indexed residues, native distances <15 Å and thresholds.5/1/2/4 Å. Template coordinates transfer only across aligned residue columns, with zero TM-score for a missing/unusable reference; complete-reference cases are shown separately.\n"
+      },
+      {
+        "cell": 19,
+        "before": "## 5. Curves and controls\n\nRecalculate all curves and uncertainty from individual predictions. Use10000 chain-resampling bootstrap draws, seed20260714; model/reference contrasts use the same chain draws. Fit HC3 uncertainty with a4-df natural cubic length spline plus homology, release date, method, resolution, coordinate coverage, Pfam count/coverage, taxonomy, low complexity, disorder, coiled-coil burden and assembly annotations. Show single-control attenuation and≥80% coverage, annotated-monomer and complete-reference sensitivities. An attenuation above80% together with p≥.05 marks a control that removes the primary contrast; this criterion is fixed before evaluating outputs.\n",
+        "after": "## 5. Curves and controls\n\nRecalculate all curves and uncertainty from individual predictions. Use 10000 chain-resampling bootstrap draws, seed 20260714; model/reference contrasts use the same chain draws. Fit HC3 uncertainty with a4-df natural cubic length spline plus homology, release date, method, resolution, coordinate coverage, Pfam count/coverage, taxonomy, low complexity, disorder, coiled-coil burden and assembly annotations. Show single-control attenuation and ≥80% coverage, annotated-monomer and complete-reference sensitivities. An attenuation above 80% together with p≥.05 marks a control that removes the primary contrast; this criterion is fixed before evaluating outputs.\n"
+      },
+      {
+        "cell": 22,
+        "before": "## 6. Decision and explanation\n\nUse the calculated effect sizes, uncertainty, adjusted coefficients and controls below. A result applies to the actual selected input population and model implementation; it does not establish performance outside this cohort.\n",
+        "after": "## 6. Decision and explanation\n\nUse the calculated effect sizes, uncertainty, adjusted coefficients and controls below. A result applies to the actual selected input population and model implementation; it does not establish performance outside this cohort.\n\nLength and homology are covariate and reference checks on the same reconstructed population. Their displayed curves are not independent replications of the Pfam result. The template comparison uses the available pre-cutoff reference and its stated abstention handling.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-codex-r1/test-03",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "Disorder and coiled-coil burden have negative conditional coefficients in this population. Failing to remove the primary Pfam contrast does not mean these features have no association with accuracy. These are same-cohort controls, not separate confirmed failure-axis tests.",
+    "code_cells": 17,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nUse the public PDB sequence/index and SIFTS domain snapshots downloaded on November9,2026, with exact content fingerprints below. Query actual initial release dates: the reference ends September30,2021 and the evaluation window is October1,2021–June30,2026. Each dynamically selected coordinate and annotation response is also fingerprinted. These notebooks calculate a common input-defined cohort; its actual IDs and counts are produced below. No precomputed structural outcomes select the cohort.\n\nSources: [wwPDB sequence records](https://files.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz), [SIFTS Pfam mappings](https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_pfam.tsv.gz), [RCSB search](https://search.rcsb.org/), [metapredict](https://metapredict.readthedocs.io/), [TANTAN](https://gitlab.com/mcfrith/tantan), [NCOILS](https://www.russelllab.org/coils/coils/).\n\nAn empty cache downloads the immutable public-source archive linked below and verifies the archive and every member against their SHA256 fingerprints. Official PDB/SIFTS URLs remain recorded for each source.\n",
+        "after": "## 1. Data source/acquisition\n\nUse the public PDB sequence/index and SIFTS domain snapshots downloaded on November 9, 2026, with exact content fingerprints below. Query actual initial release dates: the reference ends September 30, 2021 and the evaluation window is October 1, 2021–June 30, 2026. Each dynamically selected coordinate and annotation response is also fingerprinted. These notebooks calculate a common input-defined cohort; its actual IDs and counts are produced below. No precomputed structural outcomes select the cohort.\n\nSources: [wwPDB sequence records](https://files.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz), [SIFTS Pfam mappings](https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_pfam.tsv.gz), [RCSB search](https://search.rcsb.org/), [metapredict](https://metapredict.readthedocs.io/), [TANTAN](https://gitlab.com/mcfrith/tantan), [NCOILS](https://www.russelllab.org/coils/coils/).\n\nAn empty cache downloads the immutable public-source archive linked below and verifies the archive and every member against their SHA256 fingerprints. Official PDB/SIFTS URLs remain recorded for each source.\n"
+      },
+      {
+        "cell": 5,
+        "before": "## 2. Data processing\n\nRetain standard-residue protein chains of40–1024 amino acids, X-ray or cryo-EM structures at≤3.5Å and the exact release window. Collapse identical sequences. Domain identities are distinct Pfam accessions from SIFTS. Taxonomy, domain interval coverage and biological-assembly annotations are input covariates, never model outcomes.\n",
+        "after": "## 2. Data processing\n\nRetain standard-residue protein chains of 40–1024 amino acids, X-ray or cryo-EM structures at ≤3.5 Å and the exact release window. Collapse identical sequences. Domain identities are distinct Pfam accessions from SIFTS. Taxonomy, domain interval coverage and biological-assembly annotations are input covariates, never model outcomes.\n"
+      },
+      {
+        "cell": 7,
+        "before": "## 3. Axis definition and level construction\n\nFor every post-cutoff chain with at least two distinct Pfam accessions, calculate the maximum Jaccard similarity to any pre-cutoff chain repertoire with at least two accessions. Levels are L0=1,L1=[.67,1),L2=[.34,.67),L3<.34. Cluster candidates with MMseqs2 at40% identity/80% coverage and choose representatives using input metadata. Fixed hash rankings request1517/30/131/322 primary chains plus530 auxiliary controls balanced over50-residue length strata; actual availability after coordinate QC is reported. Require≥70% observed C-alpha coverage, check coordinate/sequence consistency, and retain the≥80% subset for sensitivity.\n\nSequence-only controls use metapredict3.0.2 V3 disorder≥.5, NCOILS21-residue-window probability≥.5, and TANTAN51 protein masking. Fractions use full sequence length. Missing Pfam interval coverage is reported and outcome-independently median-imputed with a missing indicator. The same eligible pre-cutoff library supplies the deterministic highest-bit-score homology hit and aligned coordinate transfer.\n",
+        "after": "## 3. Axis definition and level construction\n\nFor every post-cutoff chain with at least two distinct Pfam accessions, calculate the maximum Jaccard similarity to any pre-cutoff chain repertoire with at least two accessions. Levels are L0=1,L1=[.67, 1),L2=[.34,.67),L3<.34. Cluster candidates with MMseqs2 at 40% identity/80% coverage and choose representatives using input metadata. Fixed hash rankings request 1517/30/131/322 primary chains plus 530 auxiliary controls balanced over 50-residue length strata; actual availability after coordinate QC is reported. Require ≥70% observed C-alpha coverage, check coordinate/sequence consistency, and retain the ≥80% subset for sensitivity.\n\nSequence-only controls use metapredict 3.0.2 V3 disorder ≥.5, NCOILS 21-residue-window probability ≥.5, and TANTAN 51 protein masking. Fractions use full sequence length. Missing Pfam interval coverage is reported and outcome-independently median-imputed with a missing indicator. The same eligible pre-cutoff library supplies the deterministic highest-bit-score homology hit and aligned coordinate transfer.\n"
+      },
+      {
+        "cell": 12,
+        "before": "## 4. Model evaluation\n\nUse the full released Biohub ESMFold2 and ESMC6B weights at the pinned revisions shown below through Transformers5.22.2. No fine-tuning is performed. Each sequence receives3 loops,68 diffusion steps,1 sample and seed0; model parameters use the [documented native bfloat16 inference preset](https://huggingface.co/docs/transformers/v5.21.0/en/model_doc/esmfold2), with coordinate operations handled by the library in float32 and no outer autocast. Float32 matrix multiplication uses the explicit high precision policy (TF32 where supported). The visible public converter creates the required weight layout. Cached predictions are accepted only with the same sequence, checkpoint, settings and coordinate fingerprint.\n\nUS-align measures TM-score normalized by observed experimental-target length, plus aligned RMSD. C-alpha lDDT uses common sequence-indexed residues, native distances<15Å and thresholds.5/1/2/4Å. Template coordinates transfer only across aligned residue columns, with zero TM-score for a missing/unusable reference; complete-reference cases are shown separately.\n",
+        "after": "## 4. Model evaluation\n\nUse the full released Biohub ESMFold2 and ESMC6B weights at the pinned revisions shown below through Transformers 5.22.2. No fine-tuning is performed. Each sequence receives 3 loops, 68 diffusion steps, 1 sample and seed 0; model parameters use the [documented native bfloat16 inference preset](https://huggingface.co/docs/transformers/v5.21.0/en/model_doc/esmfold2), with coordinate operations handled by the library in float32 and no outer autocast. Float32 matrix multiplication uses the explicit high precision policy (TF32 where supported). The visible public converter creates the required weight layout. Cached predictions are accepted only with the same sequence, checkpoint, settings and coordinate fingerprint.\n\nUS-align measures TM-score normalized by observed experimental-target length, plus aligned RMSD. C-alpha lDDT uses common sequence-indexed residues, native distances <15 Å and thresholds.5/1/2/4 Å. Template coordinates transfer only across aligned residue columns, with zero TM-score for a missing/unusable reference; complete-reference cases are shown separately.\n"
+      },
+      {
+        "cell": 19,
+        "before": "## 5. Curves and controls\n\nRecalculate all curves and uncertainty from individual predictions. Use10000 chain-resampling bootstrap draws, seed20260714; model/reference contrasts use the same chain draws. Fit HC3 uncertainty with a4-df natural cubic length spline plus homology, release date, method, resolution, coordinate coverage, Pfam count/coverage, taxonomy, low complexity, disorder, coiled-coil burden and assembly annotations. Show single-control attenuation and≥80% coverage, annotated-monomer and complete-reference sensitivities. An attenuation above80% together with p≥.05 marks a control that removes the primary contrast; this criterion is fixed before evaluating outputs.\n",
+        "after": "## 5. Curves and controls\n\nRecalculate all curves and uncertainty from individual predictions. Use 10000 chain-resampling bootstrap draws, seed 20260714; model/reference contrasts use the same chain draws. Fit HC3 uncertainty with a4-df natural cubic length spline plus homology, release date, method, resolution, coordinate coverage, Pfam count/coverage, taxonomy, low complexity, disorder, coiled-coil burden and assembly annotations. Show single-control attenuation and ≥80% coverage, annotated-monomer and complete-reference sensitivities. An attenuation above 80% together with p≥.05 marks a control that removes the primary contrast; this criterion is fixed before evaluating outputs.\n"
+      },
+      {
+        "cell": 22,
+        "before": "## 6. Decision and explanation\n\nUse the calculated effect sizes, uncertainty, adjusted coefficients and controls below. A result applies to the actual selected input population and model implementation; it does not establish performance outside this cohort.\n",
+        "after": "## 6. Decision and explanation\n\nUse the calculated effect sizes, uncertainty, adjusted coefficients and controls below. A result applies to the actual selected input population and model implementation; it does not establish performance outside this cohort.\n\nDisorder and coiled-coil burden have negative conditional coefficients in this population. Failing to remove the primary Pfam contrast does not mean these features have no association with accuracy. These are same-cohort controls, not separate confirmed failure-axis tests.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-codex-r1/test-04",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "This entry documents an unperformed membrane candidate. It contains no membrane-axis model evaluation and supports no positive or negative performance claim.",
+    "code_cells": 6,
+    "markdown_changes": [
+      {
+        "cell": 11,
+        "before": "## 6. What the agent decided, and why\n\nThe investigation closed after its primary axis, so membrane topology did not proceed to an independent test. This is not evidence of a negative membrane effect.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe investigation closed after its primary axis, so membrane topology did not proceed to an independent test. This is not evidence of a negative membrane effect.\n\nThis entry documents an unperformed membrane candidate. It contains no membrane-axis model evaluation and supports no positive or negative performance claim.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-codex-r2/test-01",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "In the fixed 150-chain cohort, the negative-to-positive charge contrast is a 0.1006 TM-score decline. The model-minus-template decline is −0.0130 with a 95% interval of [−0.1197, 0.0928]. Thus the measured decline is supported, but greater model-specific degradation or statistical equivalence to the reference is not established.",
+    "code_cells": 11,
+    "markdown_changes": [
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nCharge is((K+R)−(D+E))/length. Levels are≤−0.0253702, above that through0, and>0. Verify that each matched set contains exactly one chain at each level.\n",
+        "after": "## 3. Axis definition and level construction\n\nCharge is ((K+R)−(D+E))/length. Levels are ≤−0.0253702, above that through 0, and >0. Verify that each matched set contains exactly one chain at each level.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model evaluation\n\nUse the specified Biohub weights through Transformers5.22.2. The two visible converter cells implement the public Hugging Face tensor-layout conversion; an already converted checkpoint may be supplied through ESMFOLD_CHECKPOINT. Predict every sequence with seed0,3 loops,14 diffusion steps and1 sample. A cached prediction is reused only if its input/model/settings receipt and coordinate hash match. US-align calculates target-normalized TM-score for model and template coordinates.\n",
+        "after": "## 4. Model evaluation\n\nUse the specified Biohub weights through Transformers 5.22.2. The two visible converter cells implement the public Hugging Face tensor-layout conversion; an already converted checkpoint may be supplied through ESMFOLD_CHECKPOINT. Predict every sequence with seed 0, 3 loops, 14 diffusion steps and 1 sample. A cached prediction is reused only if its input/model/settings receipt and coordinate hash match. US-align calculates target-normalized TM-score for model and template coordinates.\n"
+      },
+      {
+        "cell": 14,
+        "before": "## 5. Curves and controls\n\nBootstrap50 matched triplets10000 times with seed20260716. Plot raw model and same-target template curves; fit standardized continuous-charge regression with HC3 uncertainty and a categorical-charge model for adjusted means. The controls are length, entropy, repeats, composition, chain multiplicity, template identity/coverage, resolution and resolved C-alpha fraction.\n",
+        "after": "## 5. Curves and controls\n\nBootstrap 50 matched triplets 10000 times with seed 20260716. Plot raw model and same-target template curves; fit standardized continuous-charge regression with HC3 uncertainty and a categorical-charge model for adjusted means. The controls are length, entropy, repeats, composition, chain multiplicity, template identity/coverage, resolution and resolved C-alpha fraction.\n"
+      },
+      {
+        "cell": 16,
+        "before": "## 6. What the agent decided, and why\n\nApply the−0.09 effect threshold, matched-set interval, monotone adjusted means and negative adjusted charge coefficient to the calculated results. Characterize the effect using the paired template contrast.\n",
+        "after": "## 6. What the agent decided, and why\n\nApply the −0.09 effect threshold, matched-set interval, monotone adjusted means and negative adjusted charge coefficient to the calculated results. Characterize the effect using the paired template contrast.\n\nIn the fixed 150-chain cohort, the negative-to-positive charge contrast is a 0.1006 TM-score decline. The model-minus-template decline is −0.0130 with a 95% interval of [−0.1197, 0.0928]. Thus the measured decline is supported, but greater model-specific degradation or statistical equivalence to the reference is not established.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-codex-r2/test-02",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The 120-target repeat panel has a model endpoint decline of only 0.0037 TM-score, with an interval spanning zero and non-monotone adjusted means. It does not confirm the proposed repeat weakness; it does not establish robustness to every form of repetition.",
+    "code_cells": 11,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nQuery experimental PDB protein entities first released2021-10-01 through2026-05-26, length289–336 and resolution≤3.5Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.\n",
+        "after": "## 1. Data source/acquisition\n\nQuery experimental PDB protein entities first released 2021-10-01 through 2026-05-26, length 289–336 and resolution ≤3.5 Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit 4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before 2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.\n"
+      },
+      {
+        "cell": 4,
+        "before": "## 2. Data processing\n\nRemove duplicate canonical sequences and40%-identity clusters with bidirectional80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require≥90% aligned sequence identity,≥80% query alignment coverage and≥80% resolved C-alpha coverage. Discovery entries precede2025; confirmation entries are later, with globally disjoint clusters.\n",
+        "after": "## 2. Data processing\n\nRemove duplicate canonical sequences and 40%-identity clusters with bidirectional 80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require ≥90% aligned sequence identity,≥80% query alignment coverage and ≥80% resolved C-alpha coverage. Discovery entries precede 2025; confirmation entries are later, with globally disjoint clusters.\n"
+      },
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nCalculate exact4-mer repeat coverage at separations≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and12-residue low-complexity windows. Repeat levels are0,0.02–0.04,≥0.05; entropy thresholds are0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are1,2–3,≥4; dominance thresholds are0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.\n",
+        "after": "## 3. Axis definition and level construction\n\nCalculate exact 4-mer repeat coverage at separations ≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and 12-residue low-complexity windows. Repeat levels are 0, 0.02–0.04,≥0.05; entropy thresholds are 0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are 1, 2–3,≥4; dominance thresholds are 0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed 20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model evaluation\n\nRun pinned Biohub ESMFold2 weights through Transformers5.22.2 with3 loops,14 diffusion steps,1 sample and seed0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than3 template C-alpha atoms is an abstention with score0.\n",
+        "after": "## 4. Model evaluation\n\nRun pinned Biohub ESMFold2 weights through Transformers 5.22.2 with 3 loops, 14 diffusion steps, 1 sample and seed 0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than 3 template C-alpha atoms is an abstention with score 0.\n"
+      },
+      {
+        "cell": 14,
+        "before": "## 5. Curves and controls\n\nBootstrap10000 times with seed20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.\n",
+        "after": "## 5. Curves and controls\n\nBootstrap 10000 times with seed 20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays 40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.\n"
+      },
+      {
+        "cell": 16,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.\n\nThe 120-target repeat panel has a model endpoint decline of only 0.0037 TM-score, with an interval spanning zero and non-monotone adjusted means. It does not confirm the proposed repeat weakness; it does not establish robustness to every form of repetition.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-codex-r2/test-03",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The 240-target entropy panel has a high-risk-minus-low-risk difference of +0.00295 TM-score, with an interval spanning zero. The template reference declines more, but that comparison is not evidence of an ESMFold2 entropy failure. The 40/60/80-per-level summaries are nested subsets, not independent replications.",
+    "code_cells": 11,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nQuery experimental PDB protein entities first released2021-10-01 through2026-05-26, length289–336 and resolution≤3.5Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.\n",
+        "after": "## 1. Data source/acquisition\n\nQuery experimental PDB protein entities first released 2021-10-01 through 2026-05-26, length 289–336 and resolution ≤3.5 Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit 4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before 2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.\n"
+      },
+      {
+        "cell": 4,
+        "before": "## 2. Data processing\n\nRemove duplicate canonical sequences and40%-identity clusters with bidirectional80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require≥90% aligned sequence identity,≥80% query alignment coverage and≥80% resolved C-alpha coverage. Discovery entries precede2025; confirmation entries are later, with globally disjoint clusters.\n",
+        "after": "## 2. Data processing\n\nRemove duplicate canonical sequences and 40%-identity clusters with bidirectional 80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require ≥90% aligned sequence identity,≥80% query alignment coverage and ≥80% resolved C-alpha coverage. Discovery entries precede 2025; confirmation entries are later, with globally disjoint clusters.\n"
+      },
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nCalculate exact4-mer repeat coverage at separations≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and12-residue low-complexity windows. Repeat levels are0,0.02–0.04,≥0.05; entropy thresholds are0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are1,2–3,≥4; dominance thresholds are0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.\n",
+        "after": "## 3. Axis definition and level construction\n\nCalculate exact 4-mer repeat coverage at separations ≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and 12-residue low-complexity windows. Repeat levels are 0, 0.02–0.04,≥0.05; entropy thresholds are 0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are 1, 2–3,≥4; dominance thresholds are 0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed 20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model evaluation\n\nRun pinned Biohub ESMFold2 weights through Transformers5.22.2 with3 loops,14 diffusion steps,1 sample and seed0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than3 template C-alpha atoms is an abstention with score0.\n",
+        "after": "## 4. Model evaluation\n\nRun pinned Biohub ESMFold2 weights through Transformers 5.22.2 with 3 loops, 14 diffusion steps, 1 sample and seed 0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than 3 template C-alpha atoms is an abstention with score 0.\n"
+      },
+      {
+        "cell": 14,
+        "before": "## 5. Curves and controls\n\nBootstrap10000 times with seed20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.\n",
+        "after": "## 5. Curves and controls\n\nBootstrap 10000 times with seed 20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays 40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.\n"
+      },
+      {
+        "cell": 16,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.\n\nThe 240-target entropy panel has a high-risk-minus-low-risk difference of +0.00295 TM-score, with an interval spanning zero. The template reference declines more, but that comparison is not evidence of an ESMFold2 entropy failure. The 40/60/80-per-level summaries are nested subsets, not independent replications.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-codex-r2/test-04",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The 147-target multiplicity panel has a 0.0292 TM-score endpoint decline, with an interval spanning zero. Entity copy count is an experimental-structure context proxy; it is not a direct intervention on the model input or proof of a biological oligomerization effect.",
+    "code_cells": 11,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nQuery experimental PDB protein entities first released2021-10-01 through2026-05-26, length289–336 and resolution≤3.5Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.\n",
+        "after": "## 1. Data source/acquisition\n\nQuery experimental PDB protein entities first released 2021-10-01 through 2026-05-26, length 289–336 and resolution ≤3.5 Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit 4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before 2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.\n"
+      },
+      {
+        "cell": 4,
+        "before": "## 2. Data processing\n\nRemove duplicate canonical sequences and40%-identity clusters with bidirectional80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require≥90% aligned sequence identity,≥80% query alignment coverage and≥80% resolved C-alpha coverage. Discovery entries precede2025; confirmation entries are later, with globally disjoint clusters.\n",
+        "after": "## 2. Data processing\n\nRemove duplicate canonical sequences and 40%-identity clusters with bidirectional 80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require ≥90% aligned sequence identity,≥80% query alignment coverage and ≥80% resolved C-alpha coverage. Discovery entries precede 2025; confirmation entries are later, with globally disjoint clusters.\n"
+      },
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nCalculate exact4-mer repeat coverage at separations≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and12-residue low-complexity windows. Repeat levels are0,0.02–0.04,≥0.05; entropy thresholds are0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are1,2–3,≥4; dominance thresholds are0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.\n",
+        "after": "## 3. Axis definition and level construction\n\nCalculate exact 4-mer repeat coverage at separations ≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and 12-residue low-complexity windows. Repeat levels are 0, 0.02–0.04,≥0.05; entropy thresholds are 0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are 1, 2–3,≥4; dominance thresholds are 0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed 20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model evaluation\n\nRun pinned Biohub ESMFold2 weights through Transformers5.22.2 with3 loops,14 diffusion steps,1 sample and seed0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than3 template C-alpha atoms is an abstention with score0.\n",
+        "after": "## 4. Model evaluation\n\nRun pinned Biohub ESMFold2 weights through Transformers 5.22.2 with 3 loops, 14 diffusion steps, 1 sample and seed 0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than 3 template C-alpha atoms is an abstention with score 0.\n"
+      },
+      {
+        "cell": 14,
+        "before": "## 5. Curves and controls\n\nBootstrap10000 times with seed20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.\n",
+        "after": "## 5. Curves and controls\n\nBootstrap 10000 times with seed 20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays 40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.\n"
+      },
+      {
+        "cell": 16,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.\n\nThe 147-target multiplicity panel has a 0.0292 TM-score endpoint decline, with an interval spanning zero. Entity copy count is an experimental-structure context proxy; it is not a direct intervention on the model input or proof of a biological oligomerization effect.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-codex-r2/test-05",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The 240-target dominant-residue panel has a high-risk-minus-low-risk difference of +0.00853 TM-score, with an interval spanning zero. It does not confirm the proposed weakness in this selected panel.",
+    "code_cells": 11,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nQuery experimental PDB protein entities first released2021-10-01 through2026-05-26, length289–336 and resolution≤3.5Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.\n",
+        "after": "## 1. Data source/acquisition\n\nQuery experimental PDB protein entities first released 2021-10-01 through 2026-05-26, length 289–336 and resolution ≤3.5 Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit 4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before 2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.\n"
+      },
+      {
+        "cell": 4,
+        "before": "## 2. Data processing\n\nRemove duplicate canonical sequences and40%-identity clusters with bidirectional80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require≥90% aligned sequence identity,≥80% query alignment coverage and≥80% resolved C-alpha coverage. Discovery entries precede2025; confirmation entries are later, with globally disjoint clusters.\n",
+        "after": "## 2. Data processing\n\nRemove duplicate canonical sequences and 40%-identity clusters with bidirectional 80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require ≥90% aligned sequence identity,≥80% query alignment coverage and ≥80% resolved C-alpha coverage. Discovery entries precede 2025; confirmation entries are later, with globally disjoint clusters.\n"
+      },
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nCalculate exact4-mer repeat coverage at separations≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and12-residue low-complexity windows. Repeat levels are0,0.02–0.04,≥0.05; entropy thresholds are0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are1,2–3,≥4; dominance thresholds are0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.\n",
+        "after": "## 3. Axis definition and level construction\n\nCalculate exact 4-mer repeat coverage at separations ≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and 12-residue low-complexity windows. Repeat levels are 0, 0.02–0.04,≥0.05; entropy thresholds are 0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are 1, 2–3,≥4; dominance thresholds are 0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed 20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model evaluation\n\nRun pinned Biohub ESMFold2 weights through Transformers5.22.2 with3 loops,14 diffusion steps,1 sample and seed0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than3 template C-alpha atoms is an abstention with score0.\n",
+        "after": "## 4. Model evaluation\n\nRun pinned Biohub ESMFold2 weights through Transformers 5.22.2 with 3 loops, 14 diffusion steps, 1 sample and seed 0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than 3 template C-alpha atoms is an abstention with score 0.\n"
+      },
+      {
+        "cell": 14,
+        "before": "## 5. Curves and controls\n\nBootstrap10000 times with seed20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.\n",
+        "after": "## 5. Curves and controls\n\nBootstrap 10000 times with seed 20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays 40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.\n"
+      },
+      {
+        "cell": 16,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.\n\nThe 240-target dominant-residue panel has a high-risk-minus-low-risk difference of +0.00853 TM-score, with an interval spanning zero. It does not confirm the proposed weakness in this selected panel.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-codex-r2/test-06",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The 45-target screen assigns candidate direction labels from correlation signs. A direction label is not a significance test or confirmation. The same discovery outcomes are used to screen multiple features; subsequent confirmation panels must be interpreted separately.",
+    "code_cells": 11,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nQuery experimental PDB protein entities first released2021-10-01 through2026-05-26, length289–336 and resolution≤3.5Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.\n",
+        "after": "## 1. Data source/acquisition\n\nQuery experimental PDB protein entities first released 2021-10-01 through 2026-05-26, length 289–336 and resolution ≤3.5 Å, from X-ray or electron-microscopy experiments. Download their canonical sequences and metadata. Exclude PDB entries named in all nine FoldBench target lists at commit 4273f6877d82bd0b2fa476d1b2f34d121cbccc70 and the six large-complex examples in paper Figure S14. Build the sequence-reference corpus from entries released strictly before 2021-09-30. Public responses and software binaries are fingerprinted. The input population is the current public response to these explicit fixed-date queries; the actual counts are printed.\n"
+      },
+      {
+        "cell": 4,
+        "before": "## 2. Data processing\n\nRemove duplicate canonical sequences and40%-identity clusters with bidirectional80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require≥90% aligned sequence identity,≥80% query alignment coverage and≥80% resolved C-alpha coverage. Discovery entries precede2025; confirmation entries are later, with globally disjoint clusters.\n",
+        "after": "## 2. Data processing\n\nRemove duplicate canonical sequences and 40%-identity clusters with bidirectional 80% coverage. Keep the best-resolution representative, with deterministic SHA256 tie breaking. Download experimental coordinates and require ≥90% aligned sequence identity,≥80% query alignment coverage and ≥80% resolved C-alpha coverage. Discovery entries precede 2025; confirmation entries are later, with globally disjoint clusters.\n"
+      },
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nCalculate exact4-mer repeat coverage at separations≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and12-residue low-complexity windows. Repeat levels are0,0.02–0.04,≥0.05; entropy thresholds are0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are1,2–3,≥4; dominance thresholds are0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.\n",
+        "after": "## 3. Axis definition and level construction\n\nCalculate exact 4-mer repeat coverage at separations ≥24, normalized amino-acid entropy, dominant-residue fraction, charge, composition and 12-residue low-complexity windows. Repeat levels are 0, 0.02–0.04,≥0.05; entropy thresholds are 0.9329365/0.9504774 with lower entropy higher risk; multiplicity levels are 1, 2–3,≥4; dominance thresholds are 0.1043496/0.1212767. Calculate pre-cutoff homology identity and coverage with MMseqs2. Order candidates by SHA256(seed 20260716:entityID). For repeat/context and their discovery screen, choose high-risk anchors and minimum-cost matches on standardized input controls. For entropy/dominance, select the stated number independently within each level by that input-only order. The selected count and every assigned level are shown.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model evaluation\n\nRun pinned Biohub ESMFold2 weights through Transformers5.22.2 with3 loops,14 diffusion steps,1 sample and seed0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than3 template C-alpha atoms is an abstention with score0.\n",
+        "after": "## 4. Model evaluation\n\nRun pinned Biohub ESMFold2 weights through Transformers 5.22.2 with 3 loops, 14 diffusion steps, 1 sample and seed 0. Verify cached predictions against sequence/model/settings and coordinate hashes. US-align scores model and highest-identity pre-cutoff template coordinates against each experimental chain. A missing template or fewer than 3 template C-alpha atoms is an abstention with score 0.\n"
+      },
+      {
+        "cell": 14,
+        "before": "## 5. Curves and controls\n\nBootstrap10000 times with seed20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.\n",
+        "after": "## 5. Curves and controls\n\nBootstrap 10000 times with seed 20260716: matched input sets for repeat/context and independent targets within each level for entropy/dominance. Reuse the same target draws for the model/reference paired contrast. Calculate model/reference curves and paired degradation contrasts. Use HC3 regressions for continuous-axis effects and adjusted categorical means; the visible CONTROL_COLUMNS dictionary specifies the exact nuisance variables for each axis. Entropy displays 40/60/80-per-level information summaries. Candidate screens display raw feature values, scatterplots and directional correlations.\n"
+      },
+      {
+        "cell": 16,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated effect, uncertainty and adjusted direction; show discovery screens as candidate dispositions rather than completed independent experiments.\n\nThe 45-target screen assigns candidate direction labels from correlation signs. A direction label is not a significance test or confirmation. The same discovery outcomes are used to screen multiple features; subsequent confirmation panels must be interpreted separately.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-opus-r1/test-01",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "On the current confirmation split, lower homology support is associated with lower fixed-correspondence TM-score (low-minus-high −0.083, interval [−0.121, −0.045]). The matched AlphaFold comparison supports a larger ESMFold2 drop on covered examples. This is relative to that particular reference and cohort, not a claim about every comparator or exact replay of the historical run.",
+    "code_cells": 12,
+    "markdown_changes": [
+      {
+        "cell": 17,
+        "before": "## 6. What the agent decided, and why\n\nEvaluate the confirmation effect and its uncertainty. Acceptance requires the expected direction, an adjusted p-value below 0.05 and an endpoint interval excluding zero. Greater homology dependence than AlphaFold requires a positive matched-reference difference-in-differences interval. Control associations are reported separately and do not create an independent causal claim.\n",
+        "after": "## 6. What the agent decided, and why\n\nEvaluate the confirmation effect and its uncertainty. Acceptance requires the expected direction, an adjusted p-value below 0.05 and an endpoint interval excluding zero. Greater homology dependence than AlphaFold requires a positive matched-reference difference-in-differences interval. Control associations are reported separately and do not create an independent causal claim.\n\nOn the current confirmation split, lower homology support is associated with lower fixed-correspondence TM-score (low-minus-high −0.083, interval [−0.121, −0.045]). The matched AlphaFold comparison supports a larger ESMFold2 drop on covered examples. This is relative to that particular reference and cohort, not a claim about every comparator or exact replay of the historical run.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-opus-r1/test-02",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The confirmation length association is positive after covariate adjustment, opposite to the proposed longer-chain decline. The negative low-minus-high contrast means shorter chains scored worse here; it is not evidence for a longer-chain failure.",
+    "code_cells": 12,
+    "markdown_changes": [
+      {
+        "cell": 17,
+        "before": "## 6. What the agent decided, and why\n\nEvaluate the confirmation effect and its uncertainty. Acceptance requires the expected direction, an adjusted p-value below 0.05 and an endpoint interval excluding zero. Greater homology dependence than AlphaFold requires a positive matched-reference difference-in-differences interval. Control associations are reported separately and do not create an independent causal claim.\n",
+        "after": "## 6. What the agent decided, and why\n\nEvaluate the confirmation effect and its uncertainty. Acceptance requires the expected direction, an adjusted p-value below 0.05 and an endpoint interval excluding zero. Greater homology dependence than AlphaFold requires a positive matched-reference difference-in-differences interval. Control associations are reported separately and do not create an independent causal claim.\n\nThe confirmation length association is positive after covariate adjustment, opposite to the proposed longer-chain decline. The negative low-minus-high contrast means shorter chains scored worse here; it is not evidence for a longer-chain failure.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-opus-r1/test-03",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The confirmation disorder association is negative after covariate adjustment, and the low-minus-high disorder contrast is positive (0.062; interval [0.024, 0.102]). This supports a cohort association with the sequence-derived FoldIndex proxy, not a causal effect of experimentally measured disorder.",
+    "code_cells": 12,
+    "markdown_changes": [
+      {
+        "cell": 17,
+        "before": "## 6. What the agent decided, and why\n\nEvaluate the confirmation effect and its uncertainty. Acceptance requires the expected direction, an adjusted p-value below 0.05 and an endpoint interval excluding zero. Greater homology dependence than AlphaFold requires a positive matched-reference difference-in-differences interval. Control associations are reported separately and do not create an independent causal claim.\n",
+        "after": "## 6. What the agent decided, and why\n\nEvaluate the confirmation effect and its uncertainty. Acceptance requires the expected direction, an adjusted p-value below 0.05 and an endpoint interval excluding zero. Greater homology dependence than AlphaFold requires a positive matched-reference difference-in-differences interval. Control associations are reported separately and do not create an independent causal claim.\n\nThe confirmation disorder association is negative after covariate adjustment, and the low-minus-high disorder contrast is positive (0.062; interval [0.024, 0.102]). This supports a cohort association with the sequence-derived FoldIndex proxy, not a causal effect of experimentally measured disorder.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-opus-r1/test-04",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "These six controls are evaluated on the same confirmation cohort. The displayed Bonferroni column adjusts this control family for multiplicity; the other notebooks’ “adjusted” correlations refer to covariate adjustment. The controls do not create six independent causal failure axes.",
+    "code_cells": 12,
+    "markdown_changes": [
+      {
+        "cell": 17,
+        "before": "## 6. What the agent decided, and why\n\nEvaluate the confirmation effect and its uncertainty. Acceptance requires the expected direction, an adjusted p-value below 0.05 and an endpoint interval excluding zero. Greater homology dependence than AlphaFold requires a positive matched-reference difference-in-differences interval. Control associations are reported separately and do not create an independent causal claim.\n",
+        "after": "## 6. What the agent decided, and why\n\nEvaluate the confirmation effect and its uncertainty. Acceptance requires the expected direction, an adjusted p-value below 0.05 and an endpoint interval excluding zero. Greater homology dependence than AlphaFold requires a positive matched-reference difference-in-differences interval. Control associations are reported separately and do not create an independent causal claim.\n\nThese six controls are evaluated on the same confirmation cohort. The displayed Bonferroni column adjusts this control family for multiplicity; the other notebooks’ “adjusted” correlations refer to covariate adjustment. The controls do not create six independent causal failure axes.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-opus-r2/test-01",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "Of 401 supplied identifiers, 400 are evaluated and 384 lie in the primary length range. The adjusted length coefficient is positive and unresolved at p < 0.05; the level means are non-monotone. This does not support a general longer-chain decline. Model and template curve means use different coverage counts; matched-reference analyses are reported separately.",
+    "code_cells": 12,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nThe input manifest specifies401 protein-entity identifiers from a prediction-file inventory. Acquire metadata and coordinates for those identifiers, then apply the stated sequence, experimental and structure-coverage rules. The evaluated count is calculated below. Download PDB sequences and the experimental-entry IDs deposited through2021-09-30 for the sequence-similarity reference; record all response fingerprints.\n",
+        "after": "## 1. Data source/acquisition\n\nThe input manifest specifies 401 protein-entity identifiers from a prediction-file inventory. Acquire metadata and coordinates for those identifiers, then apply the stated sequence, experimental and structure-coverage rules. The evaluated count is calculated below. Download PDB sequences and the experimental-entry IDs deposited through 2021-09-30 for the sequence-similarity reference; record all response fingerprints.\n"
+      },
+      {
+        "cell": 4,
+        "before": "## 2. Data processing\n\nRequire X-ray structures at≤3.5Å, deposition after2021-09-30, length40–1023, standard residues with≤2%X, at least30 experimental C-alpha atoms and≥40% coordinate coverage. Collapse exact duplicates and40%-identity clusters, keeping the best-resolution member. Extract the first specified author chain. Calculate amino-acid entropy and composition.\n",
+        "after": "## 2. Data processing\n\nRequire X-ray structures at ≤3.5 Å, deposition after 2021-09-30, length 40–1023, standard residues with ≤2%X, at least 30 experimental C-alpha atoms and ≥40% coordinate coverage. Collapse exact duplicates and 40%-identity clusters, keeping the best-resolution member. Extract the first specified author chain. Calculate amino-acid entropy and composition.\n"
+      },
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nConstruct the seven length levels40–127,128–199,200–287,288–399,400–511,512–767 and768–1023; the last is exploratory. Search the pre-cutoff sequence database with sensitivity7.5 and up to500 hits/query. Maximum identity uses hits with query coverage≥0.5, or the maximum among all hits if none meets coverage. Homology controls use0–30%,30–60%,60–90% and90–100%.\n",
+        "after": "## 3. Axis definition and level construction\n\nConstruct the seven length levels 40–127, 128–199, 200–287, 288–399, 400–511, 512–767 and 768–1023; the last is exploratory. Search the pre-cutoff sequence database with sensitivity 7.5 and up to 500 hits/query. Maximum identity uses hits with query coverage ≥0.5, or the maximum among all hits if none meets coverage. Homology controls use 0–30%, 30–60%, 60–90% and 90–100%.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model evaluation\n\nPredict the eligible input sequences with ESMFold2, seed0,3 loops,50 diffusion steps and1 sample, using the pinned Biohub weights through Transformers5.22.2. Reuse only predictions whose input/model/settings binding and coordinate hash verify. Score each prediction against its native chain with US-align; score the closest pre-cutoff template on the same target. A missing template remains uncovered.\n",
+        "after": "## 4. Model evaluation\n\nPredict the eligible input sequences with ESMFold2, seed 0, 3 loops, 50 diffusion steps and 1 sample, using the pinned Biohub weights through Transformers 5.22.2. Reuse only predictions whose input/model/settings binding and coordinate hash verify. Score each prediction against its native chain with US-align; score the closest pre-cutoff template on the same target. A missing template remains uncovered.\n"
+      },
+      {
+        "cell": 14,
+        "before": "## 5. Curves and controls\n\nCalculate bootstrap mean curves, tail probabilities, long-arm tertiles, continuous associations and HC3-adjusted coefficients. Compare model/reference length slopes within homology groups having at least15 covered examples.\n",
+        "after": "## 5. Curves and controls\n\nCalculate bootstrap mean curves, tail probabilities, long-arm tertiles, continuous associations and HC3-adjusted coefficients. Compare model/reference length slopes within homology groups having at least 15 covered examples.\n"
+      },
+      {
+        "cell": 17,
+        "before": "## 6. What the agent decided, and why\n\nState the result supported by the calculated input population and controls.\n",
+        "after": "## 6. What the agent decided, and why\n\nState the result supported by the calculated input population and controls.\n\nOf 401 supplied identifiers, 400 are evaluated and 384 lie in the primary length range. The adjusted length coefficient is positive and unresolved at p < 0.05; the level means are non-monotone. This does not support a general longer-chain decline. Model and template curve means use different coverage counts; matched-reference analyses are reported separately.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-opus-r2/test-02",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The reference is the pre-cutoff public PDB pool, not a verified manifest of training examples. The adjusted identity coefficient is near zero and unresolved. Template coverage is only 25 of 63 targets in the lowest-identity primary bin, so unpaired curve means do not describe identical target populations.",
+    "code_cells": 12,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nThe input manifest specifies401 protein-entity identifiers from a prediction-file inventory. Acquire metadata and coordinates for those identifiers, then apply the stated sequence, experimental and structure-coverage rules. The evaluated count is calculated below. Download PDB sequences and the experimental-entry IDs deposited through2021-09-30 for the sequence-similarity reference; record all response fingerprints.\n",
+        "after": "## 1. Data source/acquisition\n\nThe input manifest specifies 401 protein-entity identifiers from a prediction-file inventory. Acquire metadata and coordinates for those identifiers, then apply the stated sequence, experimental and structure-coverage rules. The evaluated count is calculated below. Download PDB sequences and the experimental-entry IDs deposited through 2021-09-30 for the sequence-similarity reference; record all response fingerprints.\n"
+      },
+      {
+        "cell": 4,
+        "before": "## 2. Data processing\n\nRequire X-ray structures at≤3.5Å, deposition after2021-09-30, length40–1023, standard residues with≤2%X, at least30 experimental C-alpha atoms and≥40% coordinate coverage. Collapse exact duplicates and40%-identity clusters, keeping the best-resolution member. Extract the first specified author chain. Calculate amino-acid entropy and composition.\n",
+        "after": "## 2. Data processing\n\nRequire X-ray structures at ≤3.5 Å, deposition after 2021-09-30, length 40–1023, standard residues with ≤2%X, at least 30 experimental C-alpha atoms and ≥40% coordinate coverage. Collapse exact duplicates and 40%-identity clusters, keeping the best-resolution member. Extract the first specified author chain. Calculate amino-acid entropy and composition.\n"
+      },
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nConstruct the seven length levels40–127,128–199,200–287,288–399,400–511,512–767 and768–1023; the last is exploratory. Search the pre-cutoff sequence database with sensitivity7.5 and up to500 hits/query. Maximum identity uses hits with query coverage≥0.5, or the maximum among all hits if none meets coverage. Homology controls use0–30%,30–60%,60–90% and90–100%.\n",
+        "after": "## 3. Axis definition and level construction\n\nConstruct the seven length levels 40–127, 128–199, 200–287, 288–399, 400–511, 512–767 and 768–1023; the last is exploratory. Search the pre-cutoff sequence database with sensitivity 7.5 and up to 500 hits/query. Maximum identity uses hits with query coverage ≥0.5, or the maximum among all hits if none meets coverage. Homology controls use 0–30%, 30–60%, 60–90% and 90–100%.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model evaluation\n\nPredict the eligible input sequences with ESMFold2, seed0,3 loops,50 diffusion steps and1 sample, using the pinned Biohub weights through Transformers5.22.2. Reuse only predictions whose input/model/settings binding and coordinate hash verify. Score each prediction against its native chain with US-align; score the closest pre-cutoff template on the same target. A missing template remains uncovered.\n",
+        "after": "## 4. Model evaluation\n\nPredict the eligible input sequences with ESMFold2, seed 0, 3 loops, 50 diffusion steps and 1 sample, using the pinned Biohub weights through Transformers 5.22.2. Reuse only predictions whose input/model/settings binding and coordinate hash verify. Score each prediction against its native chain with US-align; score the closest pre-cutoff template on the same target. A missing template remains uncovered.\n"
+      },
+      {
+        "cell": 14,
+        "before": "## 5. Curves and controls\n\nCalculate bootstrap mean curves, tail probabilities, long-arm tertiles, continuous associations and HC3-adjusted coefficients. Compare model/reference length slopes within homology groups having at least15 covered examples.\n",
+        "after": "## 5. Curves and controls\n\nCalculate bootstrap mean curves, tail probabilities, long-arm tertiles, continuous associations and HC3-adjusted coefficients. Compare model/reference length slopes within homology groups having at least 15 covered examples.\n"
+      },
+      {
+        "cell": 17,
+        "before": "## 6. What the agent decided, and why\n\nState the result supported by the calculated input population and controls.\n",
+        "after": "## 6. What the agent decided, and why\n\nState the result supported by the calculated input population and controls.\n\nThe reference is the pre-cutoff public PDB pool, not a verified manifest of training examples. The adjusted identity coefficient is near zero and unresolved. Template coverage is only 25 of 63 targets in the lowest-identity primary bin, so unpaired curve means do not describe identical target populations.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-opus-r2/test-03",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The displayed tail fractions vary by length, but the long-arm model failure trend is unresolved (p = 0.3973). The 16-target longest bin is exploratory. A few low-scoring tails do not establish a monotone longer-chain failure.",
+    "code_cells": 12,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nThe input manifest specifies401 protein-entity identifiers from a prediction-file inventory. Acquire metadata and coordinates for those identifiers, then apply the stated sequence, experimental and structure-coverage rules. The evaluated count is calculated below. Download PDB sequences and the experimental-entry IDs deposited through2021-09-30 for the sequence-similarity reference; record all response fingerprints.\n",
+        "after": "## 1. Data source/acquisition\n\nThe input manifest specifies 401 protein-entity identifiers from a prediction-file inventory. Acquire metadata and coordinates for those identifiers, then apply the stated sequence, experimental and structure-coverage rules. The evaluated count is calculated below. Download PDB sequences and the experimental-entry IDs deposited through 2021-09-30 for the sequence-similarity reference; record all response fingerprints.\n"
+      },
+      {
+        "cell": 4,
+        "before": "## 2. Data processing\n\nRequire X-ray structures at≤3.5Å, deposition after2021-09-30, length40–1023, standard residues with≤2%X, at least30 experimental C-alpha atoms and≥40% coordinate coverage. Collapse exact duplicates and40%-identity clusters, keeping the best-resolution member. Extract the first specified author chain. Calculate amino-acid entropy and composition.\n",
+        "after": "## 2. Data processing\n\nRequire X-ray structures at ≤3.5 Å, deposition after 2021-09-30, length 40–1023, standard residues with ≤2%X, at least 30 experimental C-alpha atoms and ≥40% coordinate coverage. Collapse exact duplicates and 40%-identity clusters, keeping the best-resolution member. Extract the first specified author chain. Calculate amino-acid entropy and composition.\n"
+      },
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nConstruct the seven length levels40–127,128–199,200–287,288–399,400–511,512–767 and768–1023; the last is exploratory. Search the pre-cutoff sequence database with sensitivity7.5 and up to500 hits/query. Maximum identity uses hits with query coverage≥0.5, or the maximum among all hits if none meets coverage. Homology controls use0–30%,30–60%,60–90% and90–100%.\n",
+        "after": "## 3. Axis definition and level construction\n\nConstruct the seven length levels 40–127, 128–199, 200–287, 288–399, 400–511, 512–767 and 768–1023; the last is exploratory. Search the pre-cutoff sequence database with sensitivity 7.5 and up to 500 hits/query. Maximum identity uses hits with query coverage ≥0.5, or the maximum among all hits if none meets coverage. Homology controls use 0–30%, 30–60%, 60–90% and 90–100%.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model evaluation\n\nPredict the eligible input sequences with ESMFold2, seed0,3 loops,50 diffusion steps and1 sample, using the pinned Biohub weights through Transformers5.22.2. Reuse only predictions whose input/model/settings binding and coordinate hash verify. Score each prediction against its native chain with US-align; score the closest pre-cutoff template on the same target. A missing template remains uncovered.\n",
+        "after": "## 4. Model evaluation\n\nPredict the eligible input sequences with ESMFold2, seed 0, 3 loops, 50 diffusion steps and 1 sample, using the pinned Biohub weights through Transformers 5.22.2. Reuse only predictions whose input/model/settings binding and coordinate hash verify. Score each prediction against its native chain with US-align; score the closest pre-cutoff template on the same target. A missing template remains uncovered.\n"
+      },
+      {
+        "cell": 14,
+        "before": "## 5. Curves and controls\n\nCalculate bootstrap mean curves, tail probabilities, long-arm tertiles, continuous associations and HC3-adjusted coefficients. Compare model/reference length slopes within homology groups having at least15 covered examples.\n",
+        "after": "## 5. Curves and controls\n\nCalculate bootstrap mean curves, tail probabilities, long-arm tertiles, continuous associations and HC3-adjusted coefficients. Compare model/reference length slopes within homology groups having at least 15 covered examples.\n"
+      },
+      {
+        "cell": 17,
+        "before": "## 6. What the agent decided, and why\n\nState the result supported by the calculated input population and controls.\n",
+        "after": "## 6. What the agent decided, and why\n\nState the result supported by the calculated input population and controls.\n\nThe displayed tail fractions vary by length, but the long-arm model failure trend is unresolved (p = 0.3973). The 16-target longest bin is exploratory. A few low-scoring tails do not establish a monotone longer-chain failure.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-opus-r2/test-04",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "Resolution and copy count have nominal adjusted associations; the entropy coefficient is unresolved. These are observational covariate checks in the same panel. The printed p < 0.05 labels are nominal and do not by themselves account for testing multiple features.",
+    "code_cells": 12,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nThe input manifest specifies401 protein-entity identifiers from a prediction-file inventory. Acquire metadata and coordinates for those identifiers, then apply the stated sequence, experimental and structure-coverage rules. The evaluated count is calculated below. Download PDB sequences and the experimental-entry IDs deposited through2021-09-30 for the sequence-similarity reference; record all response fingerprints.\n",
+        "after": "## 1. Data source/acquisition\n\nThe input manifest specifies 401 protein-entity identifiers from a prediction-file inventory. Acquire metadata and coordinates for those identifiers, then apply the stated sequence, experimental and structure-coverage rules. The evaluated count is calculated below. Download PDB sequences and the experimental-entry IDs deposited through 2021-09-30 for the sequence-similarity reference; record all response fingerprints.\n"
+      },
+      {
+        "cell": 4,
+        "before": "## 2. Data processing\n\nRequire X-ray structures at≤3.5Å, deposition after2021-09-30, length40–1023, standard residues with≤2%X, at least30 experimental C-alpha atoms and≥40% coordinate coverage. Collapse exact duplicates and40%-identity clusters, keeping the best-resolution member. Extract the first specified author chain. Calculate amino-acid entropy and composition.\n",
+        "after": "## 2. Data processing\n\nRequire X-ray structures at ≤3.5 Å, deposition after 2021-09-30, length 40–1023, standard residues with ≤2%X, at least 30 experimental C-alpha atoms and ≥40% coordinate coverage. Collapse exact duplicates and 40%-identity clusters, keeping the best-resolution member. Extract the first specified author chain. Calculate amino-acid entropy and composition.\n"
+      },
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nConstruct the seven length levels40–127,128–199,200–287,288–399,400–511,512–767 and768–1023; the last is exploratory. Search the pre-cutoff sequence database with sensitivity7.5 and up to500 hits/query. Maximum identity uses hits with query coverage≥0.5, or the maximum among all hits if none meets coverage. Homology controls use0–30%,30–60%,60–90% and90–100%.\n",
+        "after": "## 3. Axis definition and level construction\n\nConstruct the seven length levels 40–127, 128–199, 200–287, 288–399, 400–511, 512–767 and 768–1023; the last is exploratory. Search the pre-cutoff sequence database with sensitivity 7.5 and up to 500 hits/query. Maximum identity uses hits with query coverage ≥0.5, or the maximum among all hits if none meets coverage. Homology controls use 0–30%, 30–60%, 60–90% and 90–100%.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model evaluation\n\nPredict the eligible input sequences with ESMFold2, seed0,3 loops,50 diffusion steps and1 sample, using the pinned Biohub weights through Transformers5.22.2. Reuse only predictions whose input/model/settings binding and coordinate hash verify. Score each prediction against its native chain with US-align; score the closest pre-cutoff template on the same target. A missing template remains uncovered.\n",
+        "after": "## 4. Model evaluation\n\nPredict the eligible input sequences with ESMFold2, seed 0, 3 loops, 50 diffusion steps and 1 sample, using the pinned Biohub weights through Transformers 5.22.2. Reuse only predictions whose input/model/settings binding and coordinate hash verify. Score each prediction against its native chain with US-align; score the closest pre-cutoff template on the same target. A missing template remains uncovered.\n"
+      },
+      {
+        "cell": 14,
+        "before": "## 5. Curves and controls\n\nCalculate bootstrap mean curves, tail probabilities, long-arm tertiles, continuous associations and HC3-adjusted coefficients. Compare model/reference length slopes within homology groups having at least15 covered examples.\n",
+        "after": "## 5. Curves and controls\n\nCalculate bootstrap mean curves, tail probabilities, long-arm tertiles, continuous associations and HC3-adjusted coefficients. Compare model/reference length slopes within homology groups having at least 15 covered examples.\n"
+      },
+      {
+        "cell": 17,
+        "before": "## 6. What the agent decided, and why\n\nState the result supported by the calculated input population and controls.\n",
+        "after": "## 6. What the agent decided, and why\n\nState the result supported by the calculated input population and controls.\n\nResolution and copy count have nominal adjusted associations; the entropy coefficient is unresolved. These are observational covariate checks in the same panel. The printed p < 0.05 labels are nominal and do not by themselves account for testing multiple features.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-kimi-r1/test-01",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "These are ESMFold v1 predictions, not ESMFold2 predictions. The four means are not monotone and the endpoint difference (0.0806) is below the stated 0.15 threshold, despite the small trend p-value. Reference coverage falls to 10 of 80 targets in the lowest-support group.",
+    "code_cells": 8,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nDownload the released panel sequences, experimental residue mappings, model predictions and individual template-reference measurements. Query experimental PDB entries released by2020-05-01 and download the public PDB sequence file; record the exact response hashes. The date filter is fixed; source bytes are the retrieved public version. Use MMseqs2 15-6f452. Query the experimental method and resolution for every panel entry from the RCSB API; retain missing resolution explicitly.\n",
+        "after": "## 1. Data source/acquisition\n\nDownload the released panel sequences, experimental residue mappings, model predictions and individual template-reference measurements. Query experimental PDB entries released by 2020-05-01 and download the public PDB sequence file; record the exact response hashes. The date filter is fixed; source bytes are the retrieved public version. Use MMseqs2 15-6f452. Query the experimental method and resolution for every panel entry from the RCSB API; retain missing resolution explicitly.\n"
+      },
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nSearch the pre-cutoff database at sensitivity7.5 with up to20 hits/query. Define support as the maximum sequence identity among hits covering at least50% of the query, or zero with no qualifying hit. Four levels use≥80%,50–80%,30–50%,<30%; the binary axis uses30%. Calculate12-residue low-complexity windows and three length strata directly.\n",
+        "after": "## 3. Axis definition and level construction\n\nSearch the pre-cutoff database at sensitivity 7.5 with up to 20 hits/query. Define support as the maximum sequence identity among hits covering at least 50% of the query, or zero with no qualifying hit. Four levels use ≥80%, 50–80%, 30–50%,<30%; the binary axis uses 30%. Calculate 12-residue low-complexity windows and three length strata directly.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model results or released scores\n\nScore the released ESMFold v1 coordinates against their experimental residue mappings with10 weighted-superposition iterations. Join individual released template-reference scores; their coverage is shown explicitly. The inference function is visible for an initialized fair-esm ESMFold v1 model. This run evaluates released model predictions. Compute mean Cα pLDDT directly from the confidence values in the prediction PDB files.\n",
+        "after": "## 4. Model results or released scores\n\nScore the released ESMFold v1 coordinates against their experimental residue mappings with 10 weighted-superposition iterations. Join individual released template-reference scores; their coverage is shown explicitly. The inference function is visible for an initialized fair-esm ESMFold v1 model. This run evaluates released model predictions. Compute mean Cα pLDDT directly from the confidence values in the prediction PDB files.\n"
+      },
+      {
+        "cell": 13,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated curve, uncertainty, effect size and controls to state the supported conclusion.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated curve, uncertainty, effect size and controls to state the supported conclusion.\n\nThese are ESMFold v1 predictions, not ESMFold2 predictions. The four means are not monotone and the endpoint difference (0.0806) is below the stated 0.15 threshold, despite the small trend p-value. Reference coverage falls to 10 of 80 targets in the lowest-support group.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-kimi-r1/test-02",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "These are ESMFold v1 predictions. The binary non-orphan-minus-orphan difference is 0.0862 TM-score and remains positive in all three length strata. Only 27 of 170 orphans have a template reference, so the pooled model drop cannot establish a matched model-specific effect across the full orphan cohort.",
+    "code_cells": 8,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nDownload the released panel sequences, experimental residue mappings, model predictions and individual template-reference measurements. Query experimental PDB entries released by2020-05-01 and download the public PDB sequence file; record the exact response hashes. The date filter is fixed; source bytes are the retrieved public version. Use MMseqs2 15-6f452. Query the experimental method and resolution for every panel entry from the RCSB API; retain missing resolution explicitly.\n",
+        "after": "## 1. Data source/acquisition\n\nDownload the released panel sequences, experimental residue mappings, model predictions and individual template-reference measurements. Query experimental PDB entries released by 2020-05-01 and download the public PDB sequence file; record the exact response hashes. The date filter is fixed; source bytes are the retrieved public version. Use MMseqs2 15-6f452. Query the experimental method and resolution for every panel entry from the RCSB API; retain missing resolution explicitly.\n"
+      },
+      {
+        "cell": 6,
+        "before": "## 3. Axis definition and level construction\n\nSearch the pre-cutoff database at sensitivity7.5 with up to20 hits/query. Define support as the maximum sequence identity among hits covering at least50% of the query, or zero with no qualifying hit. Four levels use≥80%,50–80%,30–50%,<30%; the binary axis uses30%. Calculate12-residue low-complexity windows and three length strata directly.\n",
+        "after": "## 3. Axis definition and level construction\n\nSearch the pre-cutoff database at sensitivity 7.5 with up to 20 hits/query. Define support as the maximum sequence identity among hits covering at least 50% of the query, or zero with no qualifying hit. Four levels use ≥80%, 50–80%, 30–50%,<30%; the binary axis uses 30%. Calculate 12-residue low-complexity windows and three length strata directly.\n"
+      },
+      {
+        "cell": 8,
+        "before": "## 4. Model results or released scores\n\nScore the released ESMFold v1 coordinates against their experimental residue mappings with10 weighted-superposition iterations. Join individual released template-reference scores; their coverage is shown explicitly. The inference function is visible for an initialized fair-esm ESMFold v1 model. This run evaluates released model predictions. Compute mean Cα pLDDT directly from the confidence values in the prediction PDB files.\n",
+        "after": "## 4. Model results or released scores\n\nScore the released ESMFold v1 coordinates against their experimental residue mappings with 10 weighted-superposition iterations. Join individual released template-reference scores; their coverage is shown explicitly. The inference function is visible for an initialized fair-esm ESMFold v1 model. This run evaluates released model predictions. Compute mean Cα pLDDT directly from the confidence values in the prediction PDB files.\n"
+      },
+      {
+        "cell": 13,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated curve, uncertainty, effect size and controls to state the supported conclusion.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated curve, uncertainty, effect size and controls to state the supported conclusion.\n\nThese are ESMFold v1 predictions. The binary non-orphan-minus-orphan difference is 0.0862 TM-score and remains positive in all three length strata. Only 27 of 170 orphans have a template reference, so the pooled model drop cannot establish a matched model-specific effect across the full orphan cohort.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-kimi-r1/test-03",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "These are ESMFold v1 predictions. The highest low-complexity level has only 16 targets, and its mean score is higher rather than lower than the first level. This remains an exploratory, underfilled comparison and is not an ESMFold2 result.",
+    "code_cells": 6,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nDownload the public analysis package, including320 query sequences, experimental C-alpha coordinates with residue-index mappings, ESMFold v1 predictions and individual template-reference measurements. The panel uses X-ray PDB chains released2023-01-01 through2024-06-30, resolution≤3Å, length40–400 and resolved fraction≥0.70, with30%-identity deduplication.\n",
+        "after": "## 1. Data source/acquisition\n\nDownload the public analysis package, including 320 query sequences, experimental C-alpha coordinates with residue-index mappings, ESMFold v1 predictions and individual template-reference measurements. The panel uses X-ray PDB chains released 2023-01-01 through 2024-06-30, resolution ≤3 Å, length 40–400 and resolved fraction ≥0.70, with 30%-identity deduplication.\n"
+      },
+      {
+        "cell": 5,
+        "before": "## 3. Axis definition and level construction\n\nScan12-residue windows; mark every residue in a window with Shannon entropy<2.2 bits and merge overlapping marks. The axis is the fraction marked. Levels are<5%,5–10%,10–20% and≥20%.\n",
+        "after": "## 3. Axis definition and level construction\n\nScan 12-residue windows; mark every residue in a window with Shannon entropy <2.2 bits and merge overlapping marks. The axis is the fraction marked. Levels are <5%, 5–10%, 10–20% and ≥20%.\n"
+      },
+      {
+        "cell": 7,
+        "before": "## 4. Model results or released scores\n\nCalculate TM-score, GDT-TS, GDT-HA and RMSD from released ESMFold v1 predictions using the experimental residue mapping. The weighted superposition uses10 iterations and normalization by resolved reference length. Template-reference scores are individual released measurements. The visible inference function takes an initialized fair-esm ESMFold v1 model; this notebook evaluates the released model coordinates.\n",
+        "after": "## 4. Model results or released scores\n\nCalculate TM-score, GDT-TS, GDT-HA and RMSD from released ESMFold v1 predictions using the experimental residue mapping. The weighted superposition uses 10 iterations and normalization by resolved reference length. Template-reference scores are individual released measurements. The visible inference function takes an initialized fair-esm ESMFold v1 model; this notebook evaluates the released model coordinates.\n"
+      },
+      {
+        "cell": 9,
+        "before": "## 5. Curves and controls\n\nCalculate means and95% Student-t intervals, with explicit per-level counts. Inspect resolved fraction, template coverage and the three length strata. The low-complexity axis is exploratory if any level has fewer than40 targets.\n",
+        "after": "## 5. Curves and controls\n\nCalculate means and 95% Student-t intervals, with explicit per-level counts. Inspect resolved fraction, template coverage and the three length strata. The low-complexity axis is exploratory if any level has fewer than 40 targets.\n"
+      },
+      {
+        "cell": 11,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated counts, curve direction and endpoint contrast to determine the supported conclusion.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated counts, curve direction and endpoint contrast to determine the supported conclusion.\n\nThese are ESMFold v1 predictions. The highest low-complexity level has only 16 targets, and its mean score is higher rather than lower than the first level. This remains an exploratory, underfilled comparison and is not an ESMFold2 result.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-kimi-r2/test-01",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "The pooled 160-target endpoint is significant (0.0861 TM-score; p = 0.0299), but the 128-target expansion does not independently confirm it (0.0598; p = 0.1468). The level means are non-monotone. No template is available in the lowest-identity bin, so a four-level matched degradation comparison is unavailable.",
+    "code_cells": 8,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nDownload the fixed public analysis package. It contains MMseqs2 alignment hits, sequence clusters, cohort metadata, experimental C-alpha structures, model predictions and template-copy predictions. The cohort consists of160 protein entities released from2023-01-14, X-ray resolution≤3Å, length40–400, with40 entities per identity level. The search reference consists of PDB entries released before2021-09-30; search settings are sensitivity7.5, coverage0.8, coverage mode0.\n",
+        "after": "## 1. Data source/acquisition\n\nDownload the fixed public analysis package. It contains MMseqs2 alignment hits, sequence clusters, cohort metadata, experimental C-alpha structures, model predictions and template-copy predictions. The cohort consists of 160 protein entities released from 2023-01-14, X-ray resolution ≤3 Å, length 40–400, with 40 entities per identity level. The search reference consists of PDB entries released before 2021-09-30; search settings are sensitivity 7.5, coverage 0.8, coverage mode 0.\n"
+      },
+      {
+        "cell": 3,
+        "before": "## 2. Data processing\n\nRead the entity manifest, alignments and cluster assignments. Check disjoint pilot/expansion membership and unique40%-identity clusters. Extract experimental C-alpha positions and calculate observed-residue fraction; read the number of protein entities from the supplied RCSB entry metadata.\n",
+        "after": "## 2. Data processing\n\nRead the entity manifest, alignments and cluster assignments. Check disjoint pilot/expansion membership and unique 40%-identity clusters. Extract experimental C-alpha positions and calculate observed-residue fraction; read the number of protein entities from the supplied RCSB entry metadata.\n"
+      },
+      {
+        "cell": 5,
+        "before": "## 3. Axis definition and level construction\n\nThe axis is maximum identity among the supplied MMseqs2 hits, with0 for no hit. Levels are≥80%,40–80%,20–40% and<20%. Calculate values and levels directly from the hit table. Length strata are40–120,121–250 and251–400.\n",
+        "after": "## 3. Axis definition and level construction\n\nThe axis is maximum identity among the supplied MMseqs2 hits, with 0 for no hit. Levels are ≥80%, 40–80%, 20–40% and <20%. Calculate values and levels directly from the hit table. Length strata are 40–120, 121–250 and 251–400.\n"
+      },
+      {
+        "cell": 7,
+        "before": "## 4. Model results or released scores\n\nThe public package provides ESMFold2 coordinates generated with3 loops,50 diffusion steps,1 sample and seed0. This notebook calculates every TM-score from those coordinates and experimental structures. It also scores template-copy coordinates, where available, with normalization by experimental chain length. The visible inference function accepts a compatible standard Transformers ESMFold2 checkpoint for generating another structure; this evaluation uses the released predictions.\n",
+        "after": "## 4. Model results or released scores\n\nThe public package provides ESMFold2 coordinates generated with 3 loops, 50 diffusion steps, 1 sample and seed 0. This notebook calculates every TM-score from those coordinates and experimental structures. It also scores template-copy coordinates, where available, with normalization by experimental chain length. The visible inference function accepts a compatible standard Transformers ESMFold2 checkpoint for generating another structure; this evaluation uses the released predictions.\n"
+      },
+      {
+        "cell": 9,
+        "before": "## 5. Curves and controls\n\nCalculate means and95% Student-t intervals, the high-minus-low identity contrast, ordered Spearman association and the same measurements after observed-density and complex-context filtering. Test the disjoint128-target expansion separately. Template contrasts use only targets with a defined template prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate means and 95% Student-t intervals, the high-minus-low identity contrast, ordered Spearman association and the same measurements after observed-density and complex-context filtering. Test the disjoint 128-target expansion separately. Template contrasts use only targets with a defined template prediction.\n"
+      },
+      {
+        "cell": 12,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated endpoint and trend tests to assess decreasing-identity performance, then distinguish the tested controls and template coverage.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated endpoint and trend tests to assess decreasing-identity performance, then distinguish the tested controls and template coverage.\n\nThe pooled 160-target endpoint is significant (0.0861 TM-score; p = 0.0299), but the 128-target expansion does not independently confirm it (0.0598; p = 0.1468). The level means are non-monotone. No template is available in the lowest-identity bin, so a four-level matched degradation comparison is unavailable.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  },
+  {
+    "id": "esmfold2-kimi-r2/test-02",
+    "review_scope": "Individual prose, saved result tables and decision logic reviewed; common acquisition, scoring and aggregation functions inspected across the family. No fresh model inference.",
+    "evidence_checked": [
+      "dataset and split description",
+      "axis and level code",
+      "model/version and score source",
+      "reported curve and uncertainty",
+      "conclusion relative to displayed controls and confirmation"
+    ],
+    "interpretation": "These are sensitivity analyses of the same 160 targets, not additional independent cohorts. The observed-fraction-only restriction has an unresolved endpoint, while the single-entity and combined restrictions retain an endpoint difference. The expansion remains inconclusive and lowest-bin template coverage is absent.",
+    "code_cells": 8,
+    "markdown_changes": [
+      {
+        "cell": 1,
+        "before": "## 1. Data source/acquisition\n\nDownload the fixed public analysis package. It contains MMseqs2 alignment hits, sequence clusters, cohort metadata, experimental C-alpha structures, model predictions and template-copy predictions. The cohort consists of160 protein entities released from2023-01-14, X-ray resolution≤3Å, length40–400, with40 entities per identity level. The search reference consists of PDB entries released before2021-09-30; search settings are sensitivity7.5, coverage0.8, coverage mode0.\n",
+        "after": "## 1. Data source/acquisition\n\nDownload the fixed public analysis package. It contains MMseqs2 alignment hits, sequence clusters, cohort metadata, experimental C-alpha structures, model predictions and template-copy predictions. The cohort consists of 160 protein entities released from 2023-01-14, X-ray resolution ≤3 Å, length 40–400, with 40 entities per identity level. The search reference consists of PDB entries released before 2021-09-30; search settings are sensitivity 7.5, coverage 0.8, coverage mode 0.\n"
+      },
+      {
+        "cell": 3,
+        "before": "## 2. Data processing\n\nRead the entity manifest, alignments and cluster assignments. Check disjoint pilot/expansion membership and unique40%-identity clusters. Extract experimental C-alpha positions and calculate observed-residue fraction; read the number of protein entities from the supplied RCSB entry metadata.\n",
+        "after": "## 2. Data processing\n\nRead the entity manifest, alignments and cluster assignments. Check disjoint pilot/expansion membership and unique 40%-identity clusters. Extract experimental C-alpha positions and calculate observed-residue fraction; read the number of protein entities from the supplied RCSB entry metadata.\n"
+      },
+      {
+        "cell": 5,
+        "before": "## 3. Axis definition and level construction\n\nThe axis is maximum identity among the supplied MMseqs2 hits, with0 for no hit. Levels are≥80%,40–80%,20–40% and<20%. Calculate values and levels directly from the hit table. Length strata are40–120,121–250 and251–400.\n",
+        "after": "## 3. Axis definition and level construction\n\nThe axis is maximum identity among the supplied MMseqs2 hits, with 0 for no hit. Levels are ≥80%, 40–80%, 20–40% and <20%. Calculate values and levels directly from the hit table. Length strata are 40–120, 121–250 and 251–400.\n"
+      },
+      {
+        "cell": 7,
+        "before": "## 4. Model results or released scores\n\nThe public package provides ESMFold2 coordinates generated with3 loops,50 diffusion steps,1 sample and seed0. This notebook calculates every TM-score from those coordinates and experimental structures. It also scores template-copy coordinates, where available, with normalization by experimental chain length. The visible inference function accepts a compatible standard Transformers ESMFold2 checkpoint for generating another structure; this evaluation uses the released predictions.\n",
+        "after": "## 4. Model results or released scores\n\nThe public package provides ESMFold2 coordinates generated with 3 loops, 50 diffusion steps, 1 sample and seed 0. This notebook calculates every TM-score from those coordinates and experimental structures. It also scores template-copy coordinates, where available, with normalization by experimental chain length. The visible inference function accepts a compatible standard Transformers ESMFold2 checkpoint for generating another structure; this evaluation uses the released predictions.\n"
+      },
+      {
+        "cell": 9,
+        "before": "## 5. Curves and controls\n\nCalculate means and95% Student-t intervals, the high-minus-low identity contrast, ordered Spearman association and the same measurements after observed-density and complex-context filtering. Test the disjoint128-target expansion separately. Template contrasts use only targets with a defined template prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate means and 95% Student-t intervals, the high-minus-low identity contrast, ordered Spearman association and the same measurements after observed-density and complex-context filtering. Test the disjoint 128-target expansion separately. Template contrasts use only targets with a defined template prediction.\n"
+      },
+      {
+        "cell": 12,
+        "before": "## 6. What the agent decided, and why\n\nUse the calculated endpoint and trend tests to assess decreasing-identity performance, then distinguish the tested controls and template coverage.\n",
+        "after": "## 6. What the agent decided, and why\n\nUse the calculated endpoint and trend tests to assess decreasing-identity performance, then distinguish the tested controls and template coverage.\n\nThese are sensitivity analyses of the same 160 targets, not additional independent cohorts. The observed-fraction-only restriction has an unresolved endpoint, while the single-entity and combined restrictions retain an endpoint difference. The expansion remains inconclusive and lowest-bin template coverage is absent.\n"
+      }
+    ],
+    "numerical_reexecution_in_this_review": false,
+    "remaining_limits": [
+      "Current reconstruction is not assumed identical to the original historical audit.",
+      "Execution evidence does not independently validate every upstream prediction."
+    ]
+  }
+]

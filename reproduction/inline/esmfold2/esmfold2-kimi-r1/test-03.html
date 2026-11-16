@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ESMFold v1 — Low-complexity sequence fraction</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7793,8 +7793,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cell-000">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7813,7 +7835,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">¶</a></h2><p>Download the public analysis package, including320 query sequences, experimental C-alpha coordinates with residue-index mappings, ESMFold v1 predictions and individual template-reference measurements. The panel uses X-ray PDB chains released2023-01-01 through2024-06-30, resolution≤3Å, length40–400 and resolved fraction≥0.70, with30%-identity deduplication.</p>
+<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">&#182;</a></h2><p>Download the public analysis package, including 320 query sequences, experimental C-alpha coordinates with residue-index mappings, ESMFold v1 predictions and individual template-reference measurements. The panel uses X-ray PDB chains released 2023-01-01 through 2024-06-30, resolution ≤3 Å, length 40–400 and resolved fraction ≥0.70, with 30%-identity deduplication.</p>
+
 </div>
 </div>
 </div>
@@ -8049,7 +8072,8 @@ Acquired data files: 1508
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">¶</a></h2><p>Scan12-residue windows; mark every residue in a window with Shannon entropy&lt;2.2 bits and merge overlapping marks. The axis is the fraction marked. Levels are&lt;5%,5–10%,10–20% and≥20%.</p>
+<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">&#182;</a></h2><p>Scan 12-residue windows; mark every residue in a window with Shannon entropy &lt;2.2 bits and merge overlapping marks. The axis is the fraction marked. Levels are &lt;5%, 5–10%, 10–20% and ≥20%.</p>
+
 </div>
 </div>
 </div>
@@ -8290,7 +8314,8 @@ Acquired data files: 1508
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Model-results-or-released-scores">4. Model results or released scores<a class="anchor-link" href="#4.-Model-results-or-released-scores">¶</a></h2><p>Calculate TM-score, GDT-TS, GDT-HA and RMSD from released ESMFold v1 predictions using the experimental residue mapping. The weighted superposition uses10 iterations and normalization by resolved reference length. Template-reference scores are individual released measurements. The visible inference function takes an initialized fair-esm ESMFold v1 model; this notebook evaluates the released model coordinates.</p>
+<h2 id="4.-Model-results-or-released-scores">4. Model results or released scores<a class="anchor-link" href="#4.-Model-results-or-released-scores">&#182;</a></h2><p>Calculate TM-score, GDT-TS, GDT-HA and RMSD from released ESMFold v1 predictions using the experimental residue mapping. The weighted superposition uses 10 iterations and normalization by resolved reference length. Template-reference scores are individual released measurements. The visible inference function takes an initialized fair-esm ESMFold v1 model; this notebook evaluates the released model coordinates.</p>
+
 </div>
 </div>
 </div>
@@ -8515,7 +8540,8 @@ Acquired data files: 1508
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">¶</a></h2><p>Calculate means and95% Student-t intervals, with explicit per-level counts. Inspect resolved fraction, template coverage and the three length strata. The low-complexity axis is exploratory if any level has fewer than40 targets.</p>
+<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">&#182;</a></h2><p>Calculate means and 95% Student-t intervals, with explicit per-level counts. Inspect resolved fraction, template coverage and the three length strata. The low-complexity axis is exploratory if any level has fewer than 40 targets.</p>
+
 </div>
 </div>
 </div>
@@ -8879,7 +8905,9 @@ Acquired data files: 1508
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">¶</a></h2><p>Use the calculated counts, curve direction and endpoint contrast to determine the supported conclusion.</p>
+<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">&#182;</a></h2><p>Use the calculated counts, curve direction and endpoint contrast to determine the supported conclusion.</p>
+<p>These are ESMFold v1 predictions. The highest low-complexity level has only 16 targets, and its mean score is higher rather than lower than the first level. This remains an exploratory, underfilled comparison and is not an ESMFold2 result.</p>
+
 </div>
 </div>
 </div>
@@ -8917,7 +8945,7 @@ Acquired data files: 1508
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Keep the low-complexity axis exploratory: at least one level contains fewer than40 targets.
+<pre>Keep the low-complexity axis exploratory: at least one level contains fewer than 40 targets.
 Counts by level: {'B1': 203, 'B2': 50, 'B3': 51, 'B4': 16}
 Strictly decreasing means: False ; B1-minus-B4 TM-score: -0.0509607450738917
 </pre>

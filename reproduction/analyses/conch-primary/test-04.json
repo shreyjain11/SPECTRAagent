@@ -383,7 +383,7 @@
           "originals/run/artifacts/tum_expansion/analysis.json",
           "originals/scripts/report_tum_expansion.py"
         ],
-        "uncertainty": "Original Wilson intervals and original pooled levels1\u20137 versus8\u201310 contrast; fresh numerical results separated from hardcoded historical report prose."
+        "uncertainty": "Original Wilson intervals and original pooled levels1–7 versus8–10 contrast; fresh numerical results separated from hardcoded historical report prose."
       },
       "decision": {
         "text": "Retained original localized finding; 1,800-image confirmation and 4,000-image expansion. Original limit: weak for independent-site/deployment generalization.",
@@ -414,8 +414,8 @@
     "notebook": "inline/conch/conch-primary/test-04.ipynb",
     "html": "inline/conch/conch-primary/test-04.html",
     "execution_evidence": "inline/conch/conch-primary/test-04.execution.json",
-    "published_notebook_sha256": "8e1c93c4de17dfe1c65fb933d5135b45030d9b1dc3b2d6c6cca4a53c3d2361f6",
-    "published_html_sha256": "887201f6b7b4d00e84d376f2306cd3a0c9aa6079c57af99519748340d4544484",
+    "published_notebook_sha256": "00300511d316ca2c32e090646d742428e6e6c85900d28d6d19a972f8a0886fc5",
+    "published_html_sha256": "247953204702f25c038eb089693fedde795795b6056c6585cf13950c29090ecf",
     "code_cells": 12,
     "sections": [
       {
@@ -508,11 +508,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/conch/conch-primary/test-04.execution.json",
-    "notebook_sha256": "8e1c93c4de17dfe1c65fb933d5135b45030d9b1dc3b2d6c6cca4a53c3d2361f6",
+    "notebook_sha256": "00300511d316ca2c32e090646d742428e6e6c85900d28d6d19a972f8a0886fc5",
     "result_location": {
       "notebook": "inline/conch/conch-primary/test-04.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/conch-primary-test-04.revision.json"
     }
   }
 }

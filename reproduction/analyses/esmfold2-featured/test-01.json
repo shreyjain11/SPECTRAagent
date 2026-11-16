@@ -625,7 +625,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-featured/test-01",
     "disposition": "accepted",
-    "result": "Mean C\u03b1-lDDT was 0.919 in the 105 targets at or above log-depth 3 and 0.723 in the other 33. Spearman \u03c1 = 0.379, P = 4.49 \u00d7 10\u207b\u2076.",
+    "result": "Mean Cα-lDDT was 0.919 in the 105 targets at or above log-depth 3 and 0.723 in the other 33. Spearman ρ = 0.379, P = 4.49 × 10⁻⁶.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -727,7 +727,7 @@
       },
       "levels": {
         "status": "original_assignment_or_frozen_fit_retained",
-        "description": "Original depth quintiles/eighths plus >=3,2.6\u20133,<2.6 bands",
+        "description": "Original depth quintiles/eighths plus >=3,2.6–3,<2.6 bands",
         "artifacts": [
           "original_runs/esmfold2_single_controller_final_run/spectra_ready_dataset/candidate_features.csv"
         ]
@@ -769,7 +769,7 @@
           "original_runs/esmfold2_single_controller_final_run/spectra_loop_state.json"
         ],
         "notebook_cell": 15,
-        "recorded_text": "## Recorded conclusion\n\nMean C\u03b1-lDDT was 0.919 in the 105 targets at or above log-depth 3 and 0.723 in the other 33. Spearman \u03c1 = 0.379, P = 4.49 \u00d7 10\u207b\u2076.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "recorded_text": "## Recorded conclusion\n\nMean Cα-lDDT was 0.919 in the 105 targets at or above log-depth 3 and 0.723 in the other 33. Spearman ρ = 0.379, P = 4.49 × 10⁻⁶.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
@@ -785,8 +785,8 @@
     "notebook": "inline/esmfold2/esmfold2-featured/test-01.ipynb",
     "html": "inline/esmfold2/esmfold2-featured/test-01.html",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-01.execution.json",
-    "published_notebook_sha256": "1cbb90c3c4264e61cd6587b97690edbbac8f6b616c2b9c92ad2bf9ed2ed3042d",
-    "published_html_sha256": "5698c5cef4afb189613ca705296e6e5a6058572a38cbe414e78c5b4e127f3e30",
+    "published_notebook_sha256": "38a38e82e740ab6916ff914ff0cfb8be9a701a9b36f0cadd646d29d697d0cfc4",
+    "published_html_sha256": "9a560609663def11df6f012bcd5b522ba4856f2641a6673922dbc39eddad582d",
     "code_cells": 12,
     "sections": [
       {
@@ -880,11 +880,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-01.execution.json",
-    "notebook_sha256": "1cbb90c3c4264e61cd6587b97690edbbac8f6b616c2b9c92ad2bf9ed2ed3042d",
+    "notebook_sha256": "38a38e82e740ab6916ff914ff0cfb8be9a701a9b36f0cadd646d29d697d0cfc4",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-featured/test-01.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-featured-test-01.revision.json"
     }
   }
 }

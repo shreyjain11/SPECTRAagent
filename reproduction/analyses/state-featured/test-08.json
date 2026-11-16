@@ -685,7 +685,7 @@
     "scope": "supporting_implementation"
   },
   "axis_levels": {
-    "definition": "Number of training genes sharing the test gene\u2019s symbol-family prefix.",
+    "definition": "Number of training genes sharing the test gene’s symbol-family prefix.",
     "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
     "code": "primary/state/notebooks/test-08.py",
     "scope": "supporting_implementation"
@@ -901,8 +901,8 @@
     "notebook": "inline/state/state-featured/test-08.ipynb",
     "html": "inline/state/state-featured/test-08.html",
     "execution_evidence": "inline/state/state-featured/test-08.execution.json",
-    "published_notebook_sha256": "5420b31ff9d1abd197f9d776cd79f64648c7c4893d2a6fb93b3c99f7c1f0c703",
-    "published_html_sha256": "80cb4d318076266276e4381918ad0c768b97bb82e6c50aebebddba0d776c26b8",
+    "published_notebook_sha256": "f1d06e88f5749d2111bc480feef06d4d998d0e2ea5558bcaaec3df16a3b6e226",
+    "published_html_sha256": "04dcd4367fa1633153a53d1ee49ee8147cd48cb769cd647a0bf80d1a2e61a61b",
     "code_cells": 12,
     "sections": [
       {
@@ -1002,11 +1002,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/state/state-featured/test-08.execution.json",
-    "notebook_sha256": "5420b31ff9d1abd197f9d776cd79f64648c7c4893d2a6fb93b3c99f7c1f0c703",
+    "notebook_sha256": "f1d06e88f5749d2111bc480feef06d4d998d0e2ea5558bcaaec3df16a3b6e226",
     "result_location": {
       "notebook": "inline/state/state-featured/test-08.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-featured-test-08.revision.json"
     }
   }
 }

@@ -157,7 +157,7 @@
     "source": "historical_decisions.json",
     "record_id": "state-kimi-r2/test-01",
     "disposition": "accepted",
-    "result": "The K562 discovery contrast was \u22120.152 [\u22120.176, \u22120.128] in expression-change Pearson r. The held-out Jurkat, HepG2 and RPE1 contrasts were \u22120.114, \u22120.055 and \u22120.045. The binary boundary was fixed after inspecting discovery.",
+    "result": "The K562 discovery contrast was −0.152 [−0.176, −0.128] in expression-change Pearson r. The held-out Jurkat, HepG2 and RPE1 contrasts were −0.114, −0.055 and −0.045. The binary boundary was fixed after inspecting discovery.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -177,8 +177,8 @@
     "notebook": "inline/state/state-kimi-r2/test-01.ipynb",
     "html": "inline/state/state-kimi-r2/test-01.html",
     "execution_evidence": "inline/state/state-kimi-r2/test-01.execution.json",
-    "published_notebook_sha256": "1daa62d22db1edcf2e9f34ae06549491e1d4b0d00c921820460d7261b037b175",
-    "published_html_sha256": "9620d3b628ae06476be738f2267fd902cd3c0f39f23b2c53294538de35df41d6",
+    "published_notebook_sha256": "9b2a3e7656205fb70737d60a5ae4894a004e9ba9172798fca8d2b24256f26d90",
+    "published_html_sha256": "f8deb068b7a1bddc6945e1d7f9abb250a8e5fd5e3170d1c3c32c28533230d237",
     "code_cells": 15,
     "sections": [
       {
@@ -275,11 +275,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/state/state-kimi-r2/test-01.execution.json",
-    "notebook_sha256": "1daa62d22db1edcf2e9f34ae06549491e1d4b0d00c921820460d7261b037b175",
+    "notebook_sha256": "9b2a3e7656205fb70737d60a5ae4894a004e9ba9172798fca8d2b24256f26d90",
     "result_location": {
       "notebook": "inline/state/state-kimi-r2/test-01.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-kimi-r2-test-01.revision.json"
     }
   }
 }

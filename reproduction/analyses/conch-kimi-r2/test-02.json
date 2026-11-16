@@ -129,8 +129,8 @@
     "notebook": "inline/conch/conch-kimi-r2/test-02.ipynb",
     "html": "inline/conch/conch-kimi-r2/test-02.html",
     "execution_evidence": "inline/conch/conch-kimi-r2/test-02.execution.json",
-    "published_notebook_sha256": "cdf1e4aa9570a6af09d768e521838c760f719db8cfa5ddc10af8068f22d289ea",
-    "published_html_sha256": "f73af4808c871d82815cb02539c839175aa52b4c5f56e5b8cf324e99d2f60f78",
+    "published_notebook_sha256": "be478df1b7fbd2dd0b8c588df5da00af22bc67710e336558befa3746a9aacbe9",
+    "published_html_sha256": "af2fdb934e9b7f829c46d02e9bc8f3cf84a37a205540ad0e0836036ecb69b507",
     "code_cells": 9,
     "sections": [
       {
@@ -221,11 +221,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/conch/conch-kimi-r2/test-02.execution.json",
-    "notebook_sha256": "cdf1e4aa9570a6af09d768e521838c760f719db8cfa5ddc10af8068f22d289ea",
+    "notebook_sha256": "be478df1b7fbd2dd0b8c588df5da00af22bc67710e336558befa3746a9aacbe9",
     "result_location": {
       "notebook": "inline/conch/conch-kimi-r2/test-02.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/conch-kimi-r2-test-02.revision.json"
     }
   }
 }

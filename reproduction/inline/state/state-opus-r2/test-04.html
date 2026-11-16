@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>STATE OPUS-R2 — Cross-context screen coverage</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7793,8 +7793,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=50529a0a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8445,7 +8467,8 @@ Name: condition_rows, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>GO-BP density is the mean of the five largest Jaccard similarities to other annotated genes; self-membership is excluded. Quartiles are assigned across genes, independently of context and model score.</p>
+<p>For each perturbed gene, count the distinct contexts in which it appears in the evaluated Replogle panel and subtract one for the current context. The levels are 0, 1, 2 and 3 other screened contexts. This is evaluation-panel screen coverage, not a count from a verified training manifest.</p>
+
 </div>
 </div>
 </div>
@@ -8456,7 +8479,8 @@ Name: condition_rows, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Model-results-and-released-scores">4. Model results and released scores<a class="anchor-link" href="#4.-Model-results-and-released-scores">¶</a></h2><p>The primary metric is released <code>overlap_at_N</code>; higher is better. Fixed-N overlaps, DE counts, representation changes and protocol changes remain separate controls. Drug-level analyses average all eligible condition rows within drug.</p>
+<h2 id="4.-Model-results-and-released-scores">4. Model results and released scores<a class="anchor-link" href="#4.-Model-results-and-released-scores">&#182;</a></h2><p>Use released zero-shot overlap@N for each gene–context condition, keeping HVG and SE separate. Aggregate by the number of other contexts carrying the gene perturbation.</p>
+
 </div>
 </div>
 </div>
@@ -8837,7 +8861,8 @@ other_ctx_cov
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Cross-context screen coverage is a screening diagnostic; representation and effect-size dependence limit a direct training-exposure interpretation.</p>
+<p>The main separation is between genes screened in no other context and genes screened in at least one. Performance does not increase monotonically across 1, 2 and 3 other contexts. Treat this as a binary screen-coverage association, not a graded training-exposure effect.</p>
+
 </div>
 </div>
 </div>

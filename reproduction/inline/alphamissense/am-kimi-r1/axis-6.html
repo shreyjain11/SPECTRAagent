@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Population observability</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7508,8 +7508,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f7ed1526">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8033,7 +8055,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Axis-and-levels">3. Axis and levels<a class="anchor-link" href="#3.-Axis-and-levels">¶</a></h2><p>Levels use input features only. Quartile boundaries, when used, are calculated on the sequence-verified cohort without labels. Exon distance includes transcript terminal exon edges. Low-support predefined levels are merged using variant counts only.</p>
+<h2 id="3.-Axis-and-levels">3. Axis and levels<a class="anchor-link" href="#3.-Axis-and-levels">&#182;</a></h2><p>The feature is the maximum available AF_ESP, AF_EXAC and AF_TGP annotation in ClinVar. The first group, labeled “unobserved” in the saved output, means all three annotations are missing; it does not establish absence from population sequencing. The remaining groups use recorded frequency &lt;0.001 or ≥0.001. The ordering is annotation availability/frequency, not measured training exposure.</p>
+
 </div>
 </div>
 </div>
@@ -9008,7 +9031,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-Result-and-decision">6. Result and decision<a class="anchor-link" href="#6.-Result-and-decision">¶</a></h2><p>The decision uses the newly calculated AlphaMissense contrast, its interval, fixed-reference direction, and the displayed controls. A positive endpoint contrast means performance falls from the first level to the last.</p>
+<h2 id="6.-Result-and-decision">6. Result and decision<a class="anchor-link" href="#6.-Result-and-decision">&#182;</a></h2><p>The decision uses the newly calculated AlphaMissense contrast, its interval, fixed-reference direction, and the displayed controls. A positive endpoint contrast means performance falls from the first level to the last.</p>
+<p>Only 40 variants in the highest-frequency group carry a pathogenic label. The six-gene paired contrast has an interval from −0.036744 to 0.234209. The supported marginal decline therefore does not establish a within-gene or population-independent effect; ascertainment and missing-annotation differences remain unresolved.</p>
+
 </div>
 </div>
 </div>

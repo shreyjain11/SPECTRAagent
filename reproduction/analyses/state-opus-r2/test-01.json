@@ -223,7 +223,7 @@
     "source": "historical_decisions.json",
     "record_id": "state-opus-r2/test-01",
     "disposition": "accepted",
-    "result": "HVG overlap@N rose from 0.090 to 0.185 across four coverage quartiles, a low-minus-high difference of \u22120.095. The slope reproduced across four contexts. A same-task baseline could not be computed, and the result did not generalize to drugs or cytokines.",
+    "result": "HVG overlap@N rose from 0.090 to 0.185 across four coverage quartiles, a low-minus-high difference of −0.095. The slope reproduced across four contexts. A same-task baseline could not be computed, and the result did not generalize to drugs or cytokines.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -237,8 +237,8 @@
     "notebook": "inline/state/state-opus-r2/test-01.ipynb",
     "html": "inline/state/state-opus-r2/test-01.html",
     "execution_evidence": "inline/state/state-opus-r2/test-01.execution.json",
-    "published_notebook_sha256": "f2819c9022114bf1a58390ed86fe7c72624f9860a14711cf39dbf66a337efccf",
-    "published_html_sha256": "c5c48f48c8f72e695211794e313388c66e28646beb3e628e9974a73e4d6e31cd",
+    "published_notebook_sha256": "ab70e27796fd10bb61f48463184ceb749dec7b1a416f51a06a155c6457a037ec",
+    "published_html_sha256": "dbd0bdfb966e85b4ea36a580df5b68cb66d0dcf88725372a3d030a67c379e1ac",
     "code_cells": 11,
     "sections": [
       {
@@ -337,11 +337,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/state/state-opus-r2/test-01.execution.json",
-    "notebook_sha256": "f2819c9022114bf1a58390ed86fe7c72624f9860a14711cf39dbf66a337efccf",
+    "notebook_sha256": "ab70e27796fd10bb61f48463184ceb749dec7b1a416f51a06a155c6457a037ec",
     "result_location": {
       "notebook": "inline/state/state-opus-r2/test-01.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-opus-r2-test-01.revision.json"
     }
   }
 }

@@ -807,8 +807,8 @@
     "notebook": "inline/esmfold2/esmfold2-featured/test-12.ipynb",
     "html": "inline/esmfold2/esmfold2-featured/test-12.html",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-12.execution.json",
-    "published_notebook_sha256": "0849db4b00d3766ea27146da8dd48ff6a43fc28c1de9720a9a501838946bfc8d",
-    "published_html_sha256": "cf3777b4549879e25c71551b7f869e476ebb0c264845f11557ae8052fb554e49",
+    "published_notebook_sha256": "c945b17e79a4e50e632a1574ac89923ac9aad17acb55e6b7edcd69f56e2c83f1",
+    "published_html_sha256": "a234f57170b43e7dad03eca8d63a68ff30ba844b5def5aa88bcbb9d0f9a3cd1d",
     "code_cells": 18,
     "sections": [
       {
@@ -908,11 +908,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-12.execution.json",
-    "notebook_sha256": "0849db4b00d3766ea27146da8dd48ff6a43fc28c1de9720a9a501838946bfc8d",
+    "notebook_sha256": "c945b17e79a4e50e632a1574ac89923ac9aad17acb55e6b7edcd69f56e2c83f1",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-featured/test-12.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-featured-test-12.revision.json"
     }
   }
 }

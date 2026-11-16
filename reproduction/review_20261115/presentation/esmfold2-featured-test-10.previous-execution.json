@@ -1,0 +1,92 @@
+{
+  "analysis_id": "esmfold2-featured/test-10",
+  "notebook": "inline/esmfold2/esmfold2-featured/test-10.ipynb",
+  "html": "inline/esmfold2/esmfold2-featured/test-10.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 11,
+  "executed_cells": 11,
+  "errors": 0,
+  "notebook_sha256": "2309c7c8fa325e12b405f9b10c12bd7d50910d791390ddd07a7fa4f9826c03e0",
+  "html_sha256": "81f94c01559e93ca94aa956d05f90d5caf242849828eb63c0c68f41af8063bc2",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source/acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 5,
+      "code_cells": [
+        6
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 7,
+      "code_cells": [
+        8,
+        9
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 10,
+      "code_cells": [
+        11,
+        12
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 13,
+      "code_cells": [
+        14,
+        15
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 16,
+      "code_cells": [
+        17
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "95d9d2bffa0951a7ba1db30fdde6939613e774797d7258ffb1910130001c8b80",
+  "execution_evidence_entry_id": "esmfold2-featured/test-10",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      17
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 26.554,
+  "calculation_evidence": [
+    {
+      "path": "inline/esmfold2/esmfold2-featured/test-10-evidence/CALCULATION_RECEIPT.json",
+      "sha256": "64b4626d41577c9b045ccdd3288cd856293f564c10e5625f4532042c0b5b0f40"
+    }
+  ]
+}

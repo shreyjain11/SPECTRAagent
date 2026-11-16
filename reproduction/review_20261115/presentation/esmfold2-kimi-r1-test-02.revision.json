@@ -1,0 +1,153 @@
+{
+  "analysis_id": "esmfold2-kimi-r1/test-02",
+  "original_commit": "dfe2a55acebe3ba00df217e1f18b8148de6ff78f",
+  "kind": "reviewed_markdown_and_layout",
+  "scientific_reexecution": false,
+  "original_artifacts": {
+    "notebook": {
+      "path": "inline/esmfold2/esmfold2-kimi-r1/test-02.ipynb",
+      "sha256": "9a9da73c03d355acf2edaa77d9709d44c419bfc84976104b2848cb36a5a46fc6"
+    },
+    "html": {
+      "path": "inline/esmfold2/esmfold2-kimi-r1/test-02.html",
+      "sha256": "24504af3ed6d90cba51645604f2bad00a331783c0e9c70e51dbadf8dec4949b2"
+    }
+  },
+  "published_artifacts": {
+    "notebook": {
+      "path": "inline/esmfold2/esmfold2-kimi-r1/test-02.ipynb",
+      "sha256": "8076600b631b3e34a6b9a683fa3dd88446d6f6c14165b5b61f098d30000b45a3"
+    },
+    "html": {
+      "path": "inline/esmfold2/esmfold2-kimi-r1/test-02.html",
+      "sha256": "e351b788796ae8cef54795849e903513d9a73b7ff2c38334832f2122f332f4a9"
+    }
+  },
+  "modified_markdown_cells": [
+    1,
+    6,
+    8,
+    13
+  ],
+  "original_code_cells": [
+    {
+      "notebook_cell": 2,
+      "execution_count": 1,
+      "source_sha256": "b11eade7e8889d5a836c063d0aebd29193636f4e39d12b774b8e277e6a8e0281",
+      "outputs_sha256": "1450fc79c5b6ad72af634b6771845db3bf14703efc3c373e7e79e4d1530d8872",
+      "cell_sha256": "a3a105d1e1522ccb29755717d09ff426a07abe5583736593c79386f5260a9a23"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 2,
+      "source_sha256": "0ce0c233275b904a6809f3424139dbef826a54fe3035436fa7b2e5b7999ac3a7",
+      "outputs_sha256": "eb87b457a67fd9c46a480c7a2aaea783e5f5a62ee7235d8c4129c8c826c22648",
+      "cell_sha256": "271bf9a2c02f98991a3e6ddc59e6e1245fd3a26bed71457d342a33b403f160d6"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 3,
+      "source_sha256": "8629eed8327528c53573cd50c9451689c54f7bdc7f14f73ec731aeb95aaf2b22",
+      "outputs_sha256": "a7f599f3949c553b88742d8137878163e68b4967df1d27970f4a362a77350038",
+      "cell_sha256": "1c319c5d3054914e5b922ff09fef56dcd2a9ab2c5ade5929a6690897a3e623a5"
+    },
+    {
+      "notebook_cell": 7,
+      "execution_count": 4,
+      "source_sha256": "bf31b47cbc74bc98dbcf15c8edcbeac371f944421a3a5663ebf42e8252d4ca87",
+      "outputs_sha256": "bdf481e9103ab2c35a57707860e80c56cf20a12abb8180ea68d962d37daabe7f",
+      "cell_sha256": "919c5fed4d63a63097532d161fcf604ee8f3177f258187622ee16a60b4e850cd"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 5,
+      "source_sha256": "8454d96e43a6f6466dff4fc99892fcde1468134c45551143a07f72f78dfa3837",
+      "outputs_sha256": "3181b6e530047740bdc6fa5514a214422e413abd5550a3e9aa62a9b94642743a",
+      "cell_sha256": "3f0205e4f29aa2059bead5ffbd8a79130bbeb6e154e9acc1db8b26b065a6d97d"
+    },
+    {
+      "notebook_cell": 11,
+      "execution_count": 6,
+      "source_sha256": "befbd7486bb2fffd15b94a2a65e5d9a94e9a5a149fb629dab42c2fab0c9d3c0b",
+      "outputs_sha256": "560e0fdedbb3671833bf843b7f02598f23d2dc1a8d1ef1bf8e93da95c5d92686",
+      "cell_sha256": "b4b9654c3ad68fc8333e3d5d12fbb251ff925add422df6671312662a1d355551"
+    },
+    {
+      "notebook_cell": 12,
+      "execution_count": 7,
+      "source_sha256": "14e8a1b67362af72ff7197434958a2661efc5e13aad3c3b327245adf95fb1918",
+      "outputs_sha256": "c3852e257d05aa07320b67110a1f267053fd9e6079872bd3b892bee7271fb665",
+      "cell_sha256": "a3a12f2915503ea473b9f4d03526b1f0bdc00cddaf494550af9065bc4a7a3bde"
+    },
+    {
+      "notebook_cell": 14,
+      "execution_count": 8,
+      "source_sha256": "968004a0affe1cdc5316a1d7270571852d53765182aabf27eec7af84eccd43c2",
+      "outputs_sha256": "bf205d6e5752337d29f552ecd32c98b2230a0cb8b21e83cc29026f6178ac9cae",
+      "cell_sha256": "70fd4fd339eec4cb293019a83b293d6c14aa333e9c80630711150cd89695f6bd"
+    }
+  ],
+  "published_code_cells": [
+    {
+      "notebook_cell": 2,
+      "execution_count": 1,
+      "source_sha256": "b11eade7e8889d5a836c063d0aebd29193636f4e39d12b774b8e277e6a8e0281",
+      "outputs_sha256": "1450fc79c5b6ad72af634b6771845db3bf14703efc3c373e7e79e4d1530d8872",
+      "cell_sha256": "a3a105d1e1522ccb29755717d09ff426a07abe5583736593c79386f5260a9a23"
+    },
+    {
+      "notebook_cell": 3,
+      "execution_count": 2,
+      "source_sha256": "0ce0c233275b904a6809f3424139dbef826a54fe3035436fa7b2e5b7999ac3a7",
+      "outputs_sha256": "eb87b457a67fd9c46a480c7a2aaea783e5f5a62ee7235d8c4129c8c826c22648",
+      "cell_sha256": "271bf9a2c02f98991a3e6ddc59e6e1245fd3a26bed71457d342a33b403f160d6"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 3,
+      "source_sha256": "8629eed8327528c53573cd50c9451689c54f7bdc7f14f73ec731aeb95aaf2b22",
+      "outputs_sha256": "a7f599f3949c553b88742d8137878163e68b4967df1d27970f4a362a77350038",
+      "cell_sha256": "1c319c5d3054914e5b922ff09fef56dcd2a9ab2c5ade5929a6690897a3e623a5"
+    },
+    {
+      "notebook_cell": 7,
+      "execution_count": 4,
+      "source_sha256": "bf31b47cbc74bc98dbcf15c8edcbeac371f944421a3a5663ebf42e8252d4ca87",
+      "outputs_sha256": "bdf481e9103ab2c35a57707860e80c56cf20a12abb8180ea68d962d37daabe7f",
+      "cell_sha256": "919c5fed4d63a63097532d161fcf604ee8f3177f258187622ee16a60b4e850cd"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 5,
+      "source_sha256": "8454d96e43a6f6466dff4fc99892fcde1468134c45551143a07f72f78dfa3837",
+      "outputs_sha256": "3181b6e530047740bdc6fa5514a214422e413abd5550a3e9aa62a9b94642743a",
+      "cell_sha256": "3f0205e4f29aa2059bead5ffbd8a79130bbeb6e154e9acc1db8b26b065a6d97d"
+    },
+    {
+      "notebook_cell": 11,
+      "execution_count": 6,
+      "source_sha256": "befbd7486bb2fffd15b94a2a65e5d9a94e9a5a149fb629dab42c2fab0c9d3c0b",
+      "outputs_sha256": "560e0fdedbb3671833bf843b7f02598f23d2dc1a8d1ef1bf8e93da95c5d92686",
+      "cell_sha256": "b4b9654c3ad68fc8333e3d5d12fbb251ff925add422df6671312662a1d355551"
+    },
+    {
+      "notebook_cell": 12,
+      "execution_count": 7,
+      "source_sha256": "14e8a1b67362af72ff7197434958a2661efc5e13aad3c3b327245adf95fb1918",
+      "outputs_sha256": "c3852e257d05aa07320b67110a1f267053fd9e6079872bd3b892bee7271fb665",
+      "cell_sha256": "a3a12f2915503ea473b9f4d03526b1f0bdc00cddaf494550af9065bc4a7a3bde"
+    },
+    {
+      "notebook_cell": 14,
+      "execution_count": 8,
+      "source_sha256": "968004a0affe1cdc5316a1d7270571852d53765182aabf27eec7af84eccd43c2",
+      "outputs_sha256": "bf205d6e5752337d29f552ecd32c98b2230a0cb8b21e83cc29026f6178ac9cae",
+      "cell_sha256": "70fd4fd339eec4cb293019a83b293d6c14aa333e9c80630711150cd89695f6bd"
+    }
+  ],
+  "previous_inline_implementation": {
+    "path": "review_20261115/presentation/esmfold2-kimi-r1-test-02.previous-inline-implementation.json",
+    "sha256": "dedeea0ad3d3d44874f7bd94a7ee5c92c7f7d16684c73103f8f05a10c50b6bc6"
+  },
+  "layout": "Readable paragraph spacing; whitespace-only corrections to joined words/numbers in rendered outputs; scrollable code and wide outputs; responsive image width; descriptive page title and index link."
+}

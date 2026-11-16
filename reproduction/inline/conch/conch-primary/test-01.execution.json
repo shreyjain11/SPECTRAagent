@@ -8,7 +8,7 @@
   "executed_cells": 7,
   "errors": 0,
   "notebook_sha256": "13c5d809ef8ba37de967cd724e485e8b910101e0dd7d27adb96b9e1edc55880e",
-  "html_sha256": "9fd04fc03c1dc47200994fa29f76dd13db476e39acd046e4dd421990ff24ce32",
+  "html_sha256": "b579c35843362b62d1c5ca229c872b572e092213569338ab60053e20849beee4",
   "sections": [
     {
       "number": 1,
@@ -78,5 +78,17 @@
     ]
   },
   "input_manifests": [],
-  "calculation_evidence": []
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/conch-primary-test-01.previous-execution.json",
+      "sha256": "efc94685c9f91028effe06b1384d5767814de04de5d2b0fd030f1f1a61faea18"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/conch-primary-test-01.revision.json",
+      "sha256": "355a1e6e8d1252350ad6b6a9f10983f0c6a6c1a5790382d258982e681968be67"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

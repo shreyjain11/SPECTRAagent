@@ -413,8 +413,8 @@
     "notebook": "inline/alphamissense/am-opus-r2/test-02.ipynb",
     "html": "inline/alphamissense/am-opus-r2/test-02.html",
     "execution_evidence": "inline/alphamissense/am-opus-r2/test-02.execution.json",
-    "published_notebook_sha256": "217a4b188cd7a7e27622aa5aab86535df38b0d687645c3880057b9d74b904d60",
-    "published_html_sha256": "409d9dc238f047232504fcc691444a8ca267e20aed3cef108dd9295119baceb1",
+    "published_notebook_sha256": "c69c4ef89f00a38b1091e91ff94c6394b6ee5002d29d10572dd25ee48523b4b2",
+    "published_html_sha256": "e477c70ec0efa65716521270220cf7b97c405451126f35be3b6bb311a2d14905",
     "code_cells": 9,
     "sections": [
       {
@@ -506,9 +506,9 @@
     "scope": "corrected_inline_analysis",
     "evidence": {
       "notebook": "inline/alphamissense/am-opus-r2/test-02.ipynb",
-      "notebook_sha256": "217a4b188cd7a7e27622aa5aab86535df38b0d687645c3880057b9d74b904d60",
+      "notebook_sha256": "c69c4ef89f00a38b1091e91ff94c6394b6ee5002d29d10572dd25ee48523b4b2",
       "execution_record": "inline/alphamissense/am-opus-r2/test-02.execution.json",
-      "execution_record_sha256": "9c0269fd3439fabee25b8060f55837abb5e9aba52304e51ef3b759a9a7377a34",
+      "execution_record_sha256": "065fbca2fabcf6cef163d4a94ff55f0d9dca8ecf8f5336176cc05a5c3a495423",
       "cohort_output_cell": 10,
       "result_section": 6,
       "result_code_cells": [
@@ -612,11 +612,16 @@
     ],
     "notebook": "inline/alphamissense/am-opus-r2/test-02.ipynb",
     "execution_evidence": "inline/alphamissense/am-opus-r2/test-02.execution.json",
-    "notebook_sha256": "217a4b188cd7a7e27622aa5aab86535df38b0d687645c3880057b9d74b904d60",
+    "notebook_sha256": "c69c4ef89f00a38b1091e91ff94c6394b6ee5002d29d10572dd25ee48523b4b2",
     "result_location": {
       "notebook": "inline/alphamissense/am-opus-r2/test-02.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-opus-r2-test-02.revision.json"
     }
   },
   "scientific_record_scope": {

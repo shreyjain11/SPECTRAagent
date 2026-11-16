@@ -7,8 +7,8 @@
   "code_cells": 8,
   "executed_cells": 8,
   "errors": 0,
-  "notebook_sha256": "f5cfdcd1c02b9a5204d1d1730d78df082412a648b5a48858d95593b538f7c9ef",
-  "html_sha256": "b0e1be1769edf9bd4e038717c7db6aa2124f409d604a7a34e3abd2caea0cb317",
+  "notebook_sha256": "10dd70f603bf592c34f51aa6392e1b157ad389b9013cffafbbdb7704f58343d2",
+  "html_sha256": "e662b2331e12d27665fb7a0fc4cf99f3626a3b285f4b0ed40f567808d9587f5c",
   "sections": [
     {
       "number": 1,
@@ -86,5 +86,17 @@
       "path": "inline/alphamissense/am-kimi-r1/axis-1-evidence/execution.json",
       "sha256": "5f7f8bb7a6f70a2082b080a43de439fc8d9d4d83768533ce1c57d2b1d3dfc103"
     }
-  ]
+  ],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/am-kimi-r1-test-01.previous-execution.json",
+      "sha256": "e9fa3fa5ae41c22ce36ef1b29c46214d95bec1c59c4549fa1db402ead17950f5"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/am-kimi-r1-test-01.revision.json",
+      "sha256": "ba06b7ef4195d5901faccb39da6dbd8ad90d03617fcf5a68beb23f2da3b93e53"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

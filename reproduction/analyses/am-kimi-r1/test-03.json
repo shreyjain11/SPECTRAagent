@@ -97,7 +97,7 @@
     "source": "historical_decisions.json",
     "record_id": "am-kimi-r1/test-03",
     "disposition": "rejected",
-    "result": "AM 0.959\u21920.968 (\u0394=\u22120.0088, CI \u22120.0116..\u22120.0062); both references degrade (+0.024, +0.031) NEGATIVE (high power, reversed).",
+    "result": "AM 0.959→0.968 (Δ=−0.0088, CI −0.0116..−0.0062); both references degrade (+0.024, +0.031) NEGATIVE (high power, reversed).",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -117,8 +117,8 @@
     "notebook": "inline/alphamissense/am-kimi-r1/axis-3.ipynb",
     "html": "inline/alphamissense/am-kimi-r1/axis-3.html",
     "execution_evidence": "inline/alphamissense/am-kimi-r1/axis-3.execution.json",
-    "published_notebook_sha256": "60d1d5f35ef4252b36d09b3eaa16b8efd6360077c8b3db4a2438a689161cb450",
-    "published_html_sha256": "f4a275183c5f946c583af727a06c9a0c1d684fada23deb9cbf6ff971b622a70f",
+    "published_notebook_sha256": "abe78e462c83596c0ee20b535502188956c99cbd255e0c7963c56a3389abe165",
+    "published_html_sha256": "6deb3401e86bae41546734f20823d1db5af79576578078ea0ba335bfe569d87d",
     "code_cells": 8,
     "sections": [
       {
@@ -207,11 +207,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/alphamissense/am-kimi-r1/axis-3.execution.json",
-    "notebook_sha256": "60d1d5f35ef4252b36d09b3eaa16b8efd6360077c8b3db4a2438a689161cb450",
+    "notebook_sha256": "abe78e462c83596c0ee20b535502188956c99cbd255e0c7963c56a3389abe165",
     "result_location": {
       "notebook": "inline/alphamissense/am-kimi-r1/axis-3.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-kimi-r1-test-03.revision.json"
     }
   }
 }

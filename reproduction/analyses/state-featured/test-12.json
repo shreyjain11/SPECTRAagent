@@ -902,8 +902,8 @@
     "notebook": "inline/state/state-featured/test-12.ipynb",
     "html": "inline/state/state-featured/test-12.html",
     "execution_evidence": "inline/state/state-featured/test-12.execution.json",
-    "published_notebook_sha256": "8b94650e6980d8285463f63b4a9d3421390494684d4d0420e44b8d95e878487b",
-    "published_html_sha256": "5048d9eb951fd2a1104e2f7eba1dfee7ea54e52bc25e64d6d8355b6cadc885f3",
+    "published_notebook_sha256": "71a748a625e71a75f39efeb1aa2bcc093e1d8ef7fc8d3a6e45b8adc4f2179197",
+    "published_html_sha256": "bff3ee30c4d680bc6b5f160af1ff7bdbccc69b8aae172d5969ba649986ea8224",
     "code_cells": 11,
     "sections": [
       {
@@ -1002,11 +1002,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/state/state-featured/test-12.execution.json",
-    "notebook_sha256": "8b94650e6980d8285463f63b4a9d3421390494684d4d0420e44b8d95e878487b",
+    "notebook_sha256": "71a748a625e71a75f39efeb1aa2bcc093e1d8ef7fc8d3a6e45b8adc4f2179197",
     "result_location": {
       "notebook": "inline/state/state-featured/test-12.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-featured-test-12.revision.json"
     }
   }
 }

@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>CONCH · Kimi R2 · Stain shift</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7507,8 +7507,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2e872b64">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7516,7 +7538,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="CONCH-%C2%B7-Kimi-R2-%C2%B7-Stain-shift">CONCH · Kimi R2 · Stain shift<a class="anchor-link" href="#CONCH-%C2%B7-Kimi-R2-%C2%B7-Stain-shift">¶</a></h1><p>All custom acquisition and analysis code is in this notebook. Use Python3.11 and the pinned CONCH library141cc09c7d4ff33d8eda562bd75169b457f71a62, torch2.5.0, torchvision0.20.0, open_clip_torch2.24.0, NumPy1.26.4, pandas2.2.2, sklearn1.5.2, scikit-image0.24.0 and Pillow10.4.0.</p>
+<h1 id="CONCH-%C2%B7-Kimi-R2-%C2%B7-Stain-shift">CONCH &#183; Kimi R2 &#183; Stain shift<a class="anchor-link" href="#CONCH-%C2%B7-Kimi-R2-%C2%B7-Stain-shift">&#182;</a></h1><p>All custom acquisition and analysis code is in this notebook. Use Python 3.11 and the pinned CONCH library 141cc09c7d4ff33d8eda562bd75169b457f71a62, torch 2.5.0, torchvision 0.20.0, open_clip_torch 2.24.0, NumPy 1.26.4, pandas 2.2.2, sklearn 1.5.2, scikit-image 0.24.0 and Pillow 10.4.0.</p>
+
 </div>
 </div>
 </div>
@@ -7527,19 +7550,20 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-Data-source-/-acquisition">1. Data source / acquisition<a class="anchor-link" href="#1.-Data-source-/-acquisition">¶</a></h2><p>Acquire the pinned CRC validation image shards. The resolution and site investigations also acquire the complete public NCT image inventory to select the seeded reference-training and confirmation panels. Model sources and weights are loaded explicitly in section4.</p>
+<h2 id="1.-Data-source-/-acquisition">1. Data source / acquisition<a class="anchor-link" href="#1.-Data-source-/-acquisition">&#182;</a></h2><p>Acquire the pinned CRC validation image shards. This stain screen uses a 900-image CRC pilot; it does not acquire an NCT confirmation panel. Model sources and weights are loaded explicitly in section 4.</p>
 <p><strong>Environment setup before starting the kernel (Linux, Python 3.11):</strong></p>
 <p>Create this shared GPT/Kimi environment before opening the notebook. Keep it separate from the primary CONCH environment, which uses different numerical-library versions.</p>
 <div class="highlight"><pre><span></span>python3.11<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv-conch-shared
 .venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">torch</span><span class="o">==</span><span class="m">2</span>.5.0<span class="w"> </span><span class="nv">torchvision</span><span class="o">==</span><span class="m">0</span>.20.0<span class="w"> </span>--index-url<span class="w"> </span>https://download.pytorch.org/whl/cu124
 .venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">numpy</span><span class="o">==</span><span class="m">1</span>.26.4<span class="w"> </span><span class="nv">scipy</span><span class="o">==</span><span class="m">1</span>.13.1<span class="w"> </span><span class="nv">pandas</span><span class="o">==</span><span class="m">2</span>.2.2<span class="w"> </span>scikit-learn<span class="o">==</span><span class="m">1</span>.5.2<span class="w"> </span><span class="nv">Pillow</span><span class="o">==</span><span class="m">10</span>.4.0<span class="w"> </span><span class="nv">pyarrow</span><span class="o">==</span><span class="m">16</span>.1.0<span class="w"> </span>scikit-image<span class="o">==</span><span class="m">0</span>.24.0<span class="w"> </span><span class="nv">statsmodels</span><span class="o">==</span><span class="m">0</span>.14.2<span class="w"> </span>opencv-python-headless<span class="o">==</span><span class="m">4</span>.10.0.84
 .venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">matplotlib</span><span class="o">==</span><span class="m">3</span>.9.4<span class="w"> </span><span class="nv">timm</span><span class="o">==</span><span class="m">0</span>.9.16<span class="w"> </span><span class="nv">transformers</span><span class="o">==</span><span class="m">4</span>.40.1<span class="w"> </span><span class="nv">tokenizers</span><span class="o">==</span><span class="m">0</span>.19.1<span class="w"> </span>huggingface-hub<span class="o">==</span><span class="m">0</span>.23.5<span class="w"> </span><span class="nv">ftfy</span><span class="o">==</span><span class="m">6</span>.3.1<span class="w"> </span><span class="nv">h5py</span><span class="o">==</span><span class="m">3</span>.11.0<span class="w"> </span>open-clip-torch<span class="o">==</span><span class="m">2</span>.24.0<span class="w"> </span><span class="nv">requests</span><span class="o">==</span><span class="m">2</span>.34.2<span class="w"> </span><span class="nv">regex</span><span class="o">==</span><span class="m">2026</span>.11.9<span class="w"> </span><span class="nv">safetensors</span><span class="o">==</span><span class="m">0</span>.8.0<span class="w"> </span><span class="nv">nbformat</span><span class="o">==</span><span class="m">5</span>.10.4<span class="w"> </span><span class="nv">nbclient</span><span class="o">==</span><span class="m">0</span>.10.4<span class="w"> </span><span class="nv">nbconvert</span><span class="o">==</span><span class="m">7</span>.16.6<span class="w"> </span><span class="nv">ipykernel</span><span class="o">==</span><span class="m">6</span>.29.5
-.venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-deps<span class="w"> </span><span class="s2">"git+https://github.com/mahmoodlab/CONCH.git@141cc09c7d4ff33d8eda562bd75169b457f71a62"</span>
-.venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>ipykernel<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>--name<span class="w"> </span>conch-gpt-kimi-inline<span class="w"> </span>--display-name<span class="w"> </span><span class="s2">"CONCH GPT/Kimi"</span>
+.venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-deps<span class="w"> </span><span class="s2">&quot;git+https://github.com/mahmoodlab/CONCH.git@141cc09c7d4ff33d8eda562bd75169b457f71a62&quot;</span>
+.venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>ipykernel<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>--name<span class="w"> </span>conch-gpt-kimi-inline<span class="w"> </span>--display-name<span class="w"> </span><span class="s2">&quot;CONCH GPT/Kimi&quot;</span>
 </pre></div>
 <p>Select <strong>CONCH GPT/Kimi</strong> before Run All. The CUDA 12.4 wheels require a compatible NVIDIA driver; the code also selects CPU if CUDA is unavailable. Authenticate with Hugging Face using an account that can access <code>MahmoodLab/conch</code> before the checkpoint-download cell. The <code>huggingface-cli login</code> command is provided by the pinned Hub package.</p>
 <p>The default input directory is <code>inputs/</code> below the notebook working directory. Set <code>CONCH_INPUTS</code> before starting the kernel to reuse a shared raw-input directory. The notebook verifies its declared downloaded inputs and runs the calculations shown below, including the stated scoring or eligibility diagnostic. All analysis-specific functions are inline; the installed CONCH package is the pinned public model implementation.</p>
-<p>The reference models use OpenCLIP 2.24.0 (<code>ViT-B-32</code>, <code>laion2b_s34b_b79k</code>) and the public DINOv2 <code>dinov2_vitb14</code> implementation at revision <code>7764ea0f912e53c92e82eb78a2a1631e92725fc8</code>. Their released weights are fetched by the inline model cell. DINOv2 ran with standard PyTorch attention; <code>xformers</code> and the DINO training packages are not required. CONCH uses the public transform at its default 448×448 model-input size; the resolution intervention is applied to source images before this transform.</p>
+<p>The reference uses OpenCLIP 2.24.0 (<code>ViT-B-32</code>, <code>laion2b_s34b_b79k</code>). Its released weights are fetched by the inline model cell. This entry does not run DINOv2. CONCH uses the public transform at its default 448×448 model-input size; the HED intervention is applied to source images before this transform.</p>
+
 </div>
 </div>
 </div>
@@ -7751,7 +7775,8 @@ Name: CRC images, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">¶</a></h2><p>Decode RGB images and retain the original tissue-class labels. The exploratory pilot samples100 tiles per class with seed20260722. NCT uses500/class for the frozen reference head,400/class for evaluation and100/class as unused buffer, selected without outcomes.</p>
+<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">&#182;</a></h2><p>Decode RGB images and retain the original tissue-class labels. The exploratory pilot samples 100 tiles per class with seed 20260722. The same 900 pilot images are evaluated at each stain-perturbation level. No separate confirmation panel is evaluated.</p>
+
 </div>
 </div>
 </div>
@@ -7806,7 +7831,8 @@ Name: Pilot images, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">¶</a></h2><p>Resolution changes use bicubic downsampling followed by bicubic restoration to the original image size. Stain changes multiply HED channels by seeded log-normal factors; the measured image change is mean absolute LAB difference. Site uses the two declared cohorts at native resolution and is not a continuous intervention.</p>
+<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">&#182;</a></h2><p>Multiply HED channels by seeded log-normal factors at strengths 0, 0.1, 0.2 and 0.4. Measure the image change as mean absolute LAB difference. This is a specified synthetic stain intervention, not a natural site-shift measurement.</p>
+
 </div>
 </div>
 </div>
@@ -7908,7 +7934,8 @@ Name: Pilot images, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Model-results-or-released-scores">4. Model results or released scores<a class="anchor-link" href="#4.-Model-results-or-released-scores">¶</a></h2><p>Run the released CONCH and OpenCLIP encoders with the same CRC prompt ensemble. Neither encoder is fine-tuned. Resolution/site also train the displayed logistic head on frozen DINOv2 features from the NCT training split; evaluation images never fit this head.</p>
+<h2 id="4.-Model-results-or-released-scores">4. Model results or released scores<a class="anchor-link" href="#4.-Model-results-or-released-scores">&#182;</a></h2><p>Run the released CONCH and OpenCLIP encoders with the same CRC prompt ensemble. Neither encoder is fine-tuned. No classifier head is fitted in this stain screen.</p>
+
 </div>
 </div>
 </div>
@@ -8141,7 +8168,8 @@ Name: Pilot images, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">¶</a></h2><p>Compute class-balanced accuracy, class-stratified tile bootstrap intervals, paired native-minus-most-degraded contrasts, and per-class results. Resolution ordering is checked with SSIM and DINOv2 similarity to each image’s native form. Fixed reference models use identical images and levels.</p>
+<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">&#182;</a></h2><p>Compute class-balanced accuracy, class-stratified tile bootstrap intervals, paired unperturbed-minus-highest-strength contrasts, and per-class results. Stain-change magnitude is checked with mean absolute LAB difference. Fixed reference models use identical images and levels.</p>
+
 </div>
 </div>
 </div>

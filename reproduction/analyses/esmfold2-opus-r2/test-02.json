@@ -87,7 +87,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-opus-r2/test-02",
     "disposition": "rejected",
-    "result": "Adjusted \u03b2 approximately zero, P = 0.93.",
+    "result": "Adjusted β approximately zero, P = 0.93.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -107,8 +107,8 @@
     "notebook": "inline/esmfold2/esmfold2-opus-r2/test-02.ipynb",
     "html": "inline/esmfold2/esmfold2-opus-r2/test-02.html",
     "execution_evidence": "inline/esmfold2/esmfold2-opus-r2/test-02.execution.json",
-    "published_notebook_sha256": "e906ab8c9734ec0c31f26e0cda97c6df97ec937b4d2328784a0de3bee45620ff",
-    "published_html_sha256": "ad53fd0a14883a0ed1c547c4841b5080b0845a8a4fb32a0f3ccd6d2249ca2bff",
+    "published_notebook_sha256": "b896f5b71537974a3d1b2d2d9dce09e67297b0eb4a59e9e49fd669c20e9b28d2",
+    "published_html_sha256": "463bfde2850ecb554ad27c524d85b911169b287f2c723100a7d9a09bce496d61",
     "code_cells": 12,
     "sections": [
       {
@@ -201,7 +201,7 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-opus-r2/test-02.execution.json",
-    "notebook_sha256": "e906ab8c9734ec0c31f26e0cda97c6df97ec937b4d2328784a0de3bee45620ff",
+    "notebook_sha256": "b896f5b71537974a3d1b2d2d9dce09e67297b0eb4a59e9e49fd669c20e9b28d2",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-opus-r2/test-02.ipynb",
       "section": 6,
@@ -213,6 +213,11 @@
         "path": "traceability_review.json",
         "record_id": "esmfold2-opus-r2/test-02"
       }
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-opus-r2-test-02.revision.json"
     }
   }
 }

@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ESMFold2 — CAMEO difficulty, length and resolution</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7793,8 +7793,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cell-000">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8072,7 +8094,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">¶</a></h2><p>Parse sequences and experimental chains; remove A3M insertions before measuring alignment support. Reference eligibility requires at least30 C-alpha positions, no unknown query residues and query/reference identity of at least0.80. The model evaluation covers eligible sequences of at most650 residues.</p>
+<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">&#182;</a></h2><p>Parse sequences and experimental chains; remove A3M insertions before measuring alignment support. Reference eligibility requires at least 30 C-alpha positions, no unknown query residues and query/reference identity of at least 0.80. The model evaluation covers eligible sequences of at most 650 residues.</p>
+
 </div>
 </div>
 </div>
@@ -8490,7 +8513,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">¶</a></h2><p>Evolutionary support is log10(non-query alignment rows+1). Increasing stress levels correspond to decreasing support. Construct5 and8 equal-count ranked bins and the thresholds ≥3.0,2.6–3.0 and&lt;2.6. CAMEO difficulty uses the supplied ordered category; length uses5 increasing bins. The calibration population is fixed by input/reference eligibility before performance is joined.</p>
+<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">&#182;</a></h2><p>Evolutionary support is log10(non-query alignment rows+1). Increasing stress levels correspond to decreasing support. Construct 5 and 8 equal-count ranked bins and the thresholds ≥3.0, 2.6–3.0 and &lt;2.6. CAMEO difficulty uses the supplied ordered category; length uses 5 increasing bins. The calibration population is fixed by input/reference eligibility before performance is joined.</p>
+
 </div>
 </div>
 </div>
@@ -8694,7 +8718,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Model-results-or-released-scores">4. Model results or released scores<a class="anchor-link" href="#4.-Model-results-or-released-scores">¶</a></h2><p>Use the package’s per-target ESMFold2 measurements:3 loops,14 diffusion steps and1 sample, with the query sequence as model input. The A3M alignment is an axis attribute; it is not supplied to the model. The visible functions below also define model-output coordinate extraction, alignment and scoring for an available compatible checkpoint.</p>
+<h2 id="4.-Model-results-or-released-scores">4. Model results or released scores<a class="anchor-link" href="#4.-Model-results-or-released-scores">&#182;</a></h2><p>Use the package’s per-target ESMFold2 measurements:3 loops, 14 diffusion steps and 1 sample, with the query sequence as model input. The A3M alignment is an axis attribute; it is not supplied to the model. The visible functions below also define model-output coordinate extraction, alignment and scoring for an available compatible checkpoint.</p>
+
 </div>
 </div>
 </div>
@@ -9072,7 +9097,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">¶</a></h2><p>Calculate level means and95% target-resampling intervals. Compare the model with the extended-chain reference on the same targets. Inspect continuous rank associations and regressions adjusting for length, resolution, reference accuracy and CAMEO difficulty.</p>
+<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">&#182;</a></h2><p>Calculate level means and 95% target-resampling intervals. Compare the model with the extended-chain reference on the same targets. Inspect continuous rank associations and regressions adjusting for length, resolution, reference accuracy and CAMEO difficulty.</p>
+
 </div>
 </div>
 </div>
@@ -9426,7 +9452,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">¶</a></h2><p>Use the calculated direction, curve shape and controls below to state the result for this protein panel.</p>
+<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">&#182;</a></h2><p>Use the calculated direction, curve shape and controls below to state the result for this protein panel.</p>
+<p>CAMEO difficulty is associated with lower accuracy in this panel. The length association points in the opposite direction to a longer-chain failure, and the resolution rank test is inconclusive. These observational controls do not establish causation.</p>
+
 </div>
 </div>
 </div>

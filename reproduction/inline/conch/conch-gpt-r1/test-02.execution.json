@@ -7,8 +7,8 @@
   "code_cells": 8,
   "executed_cells": 8,
   "errors": 0,
-  "notebook_sha256": "82f7a0448e8a53cfeb9c631ddd7faf62b291ff25a7f846c667f209f4aebba495",
-  "html_sha256": "73d6fd75f47441d22d2cd0e45b38a85cfea6c1577dd32855c7cc04abfa13035c",
+  "notebook_sha256": "9d12ca16dd0bf0585b2083dbbd55042d29ecd5766a0b4c9ad5dd95295da6487d",
+  "html_sha256": "6e6b0a76b637aa083cb35caa02162824811dab5252a1f56f671a845ffc14c367",
   "sections": [
     {
       "number": 1,
@@ -82,5 +82,17 @@
   "input_manifests": [],
   "elapsed_seconds": 1486.827,
   "python": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/conch/.venv/bin/python",
-  "calculation_evidence": []
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/conch-gpt-r1-test-02.previous-execution.json",
+      "sha256": "dbe00a13f5a000cb3b356dcddeb894bd7424cce325c20d14d001778ec135ca5a"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/conch-gpt-r1-test-02.revision.json",
+      "sha256": "8f10f3ddd688c33b35c69b22ec1e2df12cb0118ce45e514d03fff708fc2aff0d"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

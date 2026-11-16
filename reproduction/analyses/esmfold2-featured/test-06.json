@@ -635,7 +635,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-featured/test-06",
     "disposition": "accepted",
-    "result": "C\u03b1-lDDT averaged 0.901 in the lowest and 0.787 in the highest cysteine group (mean cysteine content 0.11% and 4.03%, respectively). The intermediate groups did not form a strictly monotone curve.",
+    "result": "Cα-lDDT averaged 0.901 in the lowest and 0.787 in the highest cysteine group (mean cysteine content 0.11% and 4.03%, respectively). The intermediate groups did not form a strictly monotone curve.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -753,7 +753,7 @@
       },
       "levels": {
         "status": "original_assignment_or_frozen_fit_retained",
-        "description": "Original pre-exclusion quantiles on613pool\u2192207eligible\u219295selected",
+        "description": "Original pre-exclusion quantiles on613pool→207eligible→95selected",
         "artifacts": [
           "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/cys_confirmation_candidate_features.csv",
           "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_ready_dataset/eligible_unscored_cys_pool.csv",
@@ -802,7 +802,7 @@
           "original_runs/esmfold2_all_scored_evidence_loop_20260601T230100Z/spectra_loop_state.json"
         ],
         "notebook_cell": 16,
-        "recorded_text": "## Recorded conclusion\n\nC\u03b1-lDDT averaged 0.901 in the lowest and 0.787 in the highest cysteine group (mean cysteine content 0.11% and 4.03%, respectively). The intermediate groups did not form a strictly monotone curve.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "recorded_text": "## Recorded conclusion\n\nCα-lDDT averaged 0.901 in the lowest and 0.787 in the highest cysteine group (mean cysteine content 0.11% and 4.03%, respectively). The intermediate groups did not form a strictly monotone curve.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
@@ -818,8 +818,8 @@
     "notebook": "inline/esmfold2/esmfold2-featured/test-06.ipynb",
     "html": "inline/esmfold2/esmfold2-featured/test-06.html",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-06.execution.json",
-    "published_notebook_sha256": "45bfcf8095d85f968e2bf1710643eb2103d8d88ac61103e3103bb448d897f4fc",
-    "published_html_sha256": "a02ab54659b38dd7e0ef98e47aeaedd399f5e974605aa22d37d48efa6eaf5165",
+    "published_notebook_sha256": "3a224e51f7712646c4dce5593157d2a92cae0168cc62c414988a901c10c21e3f",
+    "published_html_sha256": "233fc58c1b6b3960e69d918aaecc3fe851fdb14d2f5b3730595082c56e1614ad",
     "code_cells": 22,
     "sections": [
       {
@@ -922,11 +922,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-06.execution.json",
-    "notebook_sha256": "45bfcf8095d85f968e2bf1710643eb2103d8d88ac61103e3103bb448d897f4fc",
+    "notebook_sha256": "3a224e51f7712646c4dce5593157d2a92cae0168cc62c414988a901c10c21e3f",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-featured/test-06.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-featured-test-06.revision.json"
     }
   }
 }

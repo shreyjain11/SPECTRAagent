@@ -7,8 +7,8 @@
   "code_cells": 12,
   "executed_cells": 12,
   "errors": 0,
-  "notebook_sha256": "1b182edcbadc2187df3bbb57e2dc1b6896c6bfbcfb0dd14aee95cdfd916416b5",
-  "html_sha256": "25a6760f82deef5cb49877d9a0c1172dc7e23f590e22559bf614029c1443fa2b",
+  "notebook_sha256": "5393ad0380c3b9eea7af3ffc6b29ab178c472e6ba0d63b72c15db50e353816c5",
+  "html_sha256": "4b811c58be9e035f838f7aef6deca3114dcc4a05a6da583102b52d4986f1ef84",
   "sections": [
     {
       "number": 1,
@@ -84,5 +84,17 @@
     ]
   },
   "input_manifests": [],
-  "calculation_evidence": []
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/state-kimi-r1-test-03.previous-execution.json",
+      "sha256": "0501515ac5509722e9a7d848f098a29c69280c6f2385a776207631575b710aec"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/state-kimi-r1-test-03.revision.json",
+      "sha256": "d1499566447b8d276c0b00a89c7fa3b48a627ef9c38ab8dbc2e52bffdcd59404"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

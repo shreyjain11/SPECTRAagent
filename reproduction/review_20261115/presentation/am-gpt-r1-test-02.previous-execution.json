@@ -1,0 +1,89 @@
+{
+  "analysis_id": "am-gpt-r1/test-02",
+  "notebook": "inline/alphamissense/am-gpt-r1/axis-2.ipynb",
+  "html": "inline/alphamissense/am-gpt-r1/axis-2.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 7,
+  "executed_cells": 7,
+  "errors": 0,
+  "notebook_sha256": "9af03615c8ab839e71c3178d004e9f8983f634837e6606ec47f83392ee5e697f",
+  "html_sha256": "ffad1c34347c7745b4be48e47868dd406652539d05a6b2f163e9663839e2252c",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data acquisition",
+      "markdown_cell": 0,
+      "code_cells": [
+        1,
+        2
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Raw processing",
+      "markdown_cell": 3,
+      "code_cells": [
+        4
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis and levels",
+      "markdown_cell": 5,
+      "code_cells": [
+        7
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 8,
+      "code_cells": [
+        9
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Diagnostic curves and controls",
+      "markdown_cell": 10,
+      "code_cells": [
+        11
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. Decision and reason",
+      "markdown_cell": 12,
+      "code_cells": [
+        13
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "caebee7e31f26cc40e99727ad6e6540ec23af9a4a777413590c5edefaf9a86fe",
+  "execution_evidence_entry_id": "am-gpt-r1/axis-2",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      13
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 6.465090751647949,
+  "python": "/ewsc/yektefai/spectra_runs/alphamissense_nonprimary_reconstruction_20261109/.venv/bin/python",
+  "calculation_evidence": [
+    {
+      "path": "inline/alphamissense/am-gpt-r1/axis-2-evidence/execution.json",
+      "sha256": "b1a489e562859260acd5ac008d6be60006f5581376ee416aaa7acf55fa709272"
+    }
+  ]
+}

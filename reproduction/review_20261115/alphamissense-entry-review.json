@@ -1,0 +1,2292 @@
+[
+  {
+    "id": "am-primary/test-01",
+    "notebook": "inline/alphamissense/am-primary/axis-1.ipynb",
+    "axis": "UniRef50 homolog count",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "saved_output_cells": [
+      2,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "dataset_and_split": "Pinned ClinVar June 6 2026 GRCh38, at least one review star, P/LP versus B/LB; official AlphaMissense genomic scores. Transcript rows retained according to implemented mapping; no fresh AlphaMissense inference.",
+    "axis_and_levels": "UniRef50 homolog counts from retained MMseqs2 per-hit records: sensitivity 5.7, E<=1e-3, coverage 0.5 mode 0, max 10000 hits; log10(1+count), protein-balanced deciles.",
+    "model_evaluation": "194408 candidate rows; 29 missing-hit rows excluded. Protein-weighted AUROC, same weights for negative BLOSUM62; 500 protein-bootstrap replicates.",
+    "curve_and_insight": "AM first-to-last change -0.000427, interval [-0.012798,0.014870]; rho -0.212121, p .556306. BLOSUM change +.044395. No supported higher-support AM endpoint improvement.",
+    "remaining_limits": [
+      "Replays retained sequence-search hits rather than a fresh 268 GB search.",
+      "No independent confirmation cohort; protein/transcript multiplicity must retain stated weighting."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-primary/test-02",
+    "notebook": "inline/alphamissense/am-primary/axis-2.ipynb",
+    "axis": "gnomAD missense-variation support",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "saved_output_cells": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "dataset_and_split": "Pinned ClinVar June 6 2026 GRCh38, at least one review star, P/LP versus B/LB; official AlphaMissense genomic scores. Transcript rows retained according to implemented mapping; no fresh AlphaMissense inference.",
+    "axis_and_levels": "gnomAD 2.1.1 observed/possible missense saturation; maximum saturation transcript per gene; gene-balanced deciles. Observed/expected missense is a distinct diagnostic.",
+    "model_evaluation": "Gene-weighted AUROC and 500 gene-bootstrap replicates; negative BLOSUM62 uses matching records.",
+    "curve_and_insight": "AM endpoint +.009253, interval [-.002069,.019098]; rho -.163636, p .651477. No resolved positive endpoint; BLOSUM endpoint +.033123.",
+    "remaining_limits": [
+      "Population variation saturation is not a direct training-membership measure.",
+      "Same-cohort observational comparison; transcript choice and cohort composition remain relevant."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-primary/test-03",
+    "notebook": "inline/alphamissense/am-primary/axis-3.ipynb",
+    "axis": "Effective alignment depth",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "saved_output_cells": [
+      3,
+      4,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "dataset_and_split": "ProteinGym v1.3 selected 73 assays, 66 raw alignments; 374790 raw DMS rows to 273135 valid single substitutions. Exact canonical-substring mapping retains 270572 scored variants in 72 assays and 63 proteins.",
+    "axis_and_levels": "Fresh MMseqs identity/coverage clusters yield inverse-cluster-size sequence weights; column Neff levels 0-2,2-10,10-50,50-200,>=200.",
+    "model_evaluation": "Official saved AlphaMissense scores; absolute per-assay Spearman, at least 20 variants per assay/level. Variant-weighted curves; 5000 assay-bootstrap replicates; BLOSUM62 and/or PSSM reference as shown.",
+    "curve_and_insight": "AM curve .009080,.175657,.306915,.488384,.478640 is not strictly monotone. Extreme paired delta .523308 contains only ONE assay; identical bootstrap limits are degenerate. The lowest bin covers six terminal positions in one protein.",
+    "remaining_limits": [
+      "The endpoint cannot establish an assay-general depth effect.",
+      "The 61-assay coarse occupancy control is a different property and does not validate depth.",
+      "Repeated assays of a protein are not independent bootstrap units; absolute correlation discards sign."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [
+      {
+        "cell": 14,
+        "reason": "Qualify a one-assay degenerate bootstrap and prevent a separate occupancy contrast from validating depth."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-primary/test-04",
+    "notebook": "inline/alphamissense/am-primary/axis-4.ipynb",
+    "axis": "Alignment occupancy",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "saved_output_cells": [
+      3,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "dataset_and_split": "ProteinGym v1.3 selected 73 assays, 66 raw alignments; 374790 raw DMS rows to 273135 valid single substitutions. Exact canonical-substring mapping retains 270572 scored variants in 72 assays and 63 proteins.",
+    "axis_and_levels": "MSA raw occupancy includes insertion sites and fixed supported-site thresholds .945,.987,.998,.999.",
+    "model_evaluation": "Official saved AlphaMissense scores; absolute per-assay Spearman, at least 20 variants per assay/level. Variant-weighted curves; 5000 assay-bootstrap replicates; BLOSUM62 and/or PSSM reference as shown.",
+    "curve_and_insight": "AM insertion-to-high curve .266139 to .515019; 44 paired assays have delta .214838 [.157120,.272263]. BLOSUM paired delta .127618 [.080169,.171628].",
+    "remaining_limits": [
+      "Comparators also change; this alone is not excess target degradation.",
+      "Assay-bootstrap dependence and absolute correlation caveats; no independent new cohort."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-primary/test-05",
+    "notebook": "inline/alphamissense/am-primary/axis-5.ipynb",
+    "axis": "Occupancy at high effective depth",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "saved_output_cells": [
+      3,
+      4,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "dataset_and_split": "ProteinGym v1.3 selected 73 assays, 66 raw alignments; 374790 raw DMS rows to 273135 valid single substitutions. Exact canonical-substring mapping retains 270572 scored variants in 72 assays and 63 proteins.",
+    "axis_and_levels": "Restrict Neff>=200; nested occupancy groups <.5, <.7 and >=.9.",
+    "model_evaluation": "Official saved AlphaMissense scores; absolute per-assay Spearman, at least 20 variants per assay/level. Variant-weighted curves; 5000 assay-bootstrap replicates; BLOSUM62 and/or PSSM reference as shown.",
+    "curve_and_insight": "AM group means .385615,.305365,.474778. 19 paired assays delta .151933 [.026952,.273660]; BLOSUM .015225 [-.049835,.076459].",
+    "remaining_limits": [
+      "First two groups overlap; they are not three independent graded levels.",
+      "Target/reference differences require a joint contrast, not comparison of separate significance labels."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-primary/test-06",
+    "notebook": "inline/alphamissense/am-primary/axis-6.ipynb",
+    "axis": "Position-specific and substitution-score references",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "saved_output_cells": [
+      3,
+      4,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "dataset_and_split": "ProteinGym v1.3 selected 73 assays, 66 raw alignments; 374790 raw DMS rows to 273135 valid single substitutions. Exact canonical-substring mapping retains 270572 scored variants in 72 assays and 63 proteins.",
+    "axis_and_levels": "Same occupancy strata; sequence-weighted PSSM with .5 pseudocount and mutant/wild-type log score; insertion sites lack PSSM.",
+    "model_evaluation": "Official saved AlphaMissense scores; absolute per-assay Spearman, at least 20 variants per assay/level. Variant-weighted curves; 5000 assay-bootstrap replicates; BLOSUM62 and/or PSSM reference as shown.",
+    "curve_and_insight": "PSSM q0-to-q4 curve .307688 to .479518. Coarse occupancy AM delta .124117 uses 61 assays; PSSM .147948 uses 57. The prose does not treat these unequal-cohort contrasts as a matched DiD.",
+    "remaining_limits": [
+      "Reference eligibility differs from AM; a matched cohort is required for excess-degradation claims.",
+      "Absolute correlations and repeated-assay dependence remain."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-primary/test-07",
+    "notebook": "inline/alphamissense/am-primary/axis-7.ipynb",
+    "axis": "Experimental dynamic range",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "saved_output_cells": [
+      3,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "dataset_and_split": "ProteinGym v1.3 selected 73 assays, 66 raw alignments; 374790 raw DMS rows to 273135 valid single substitutions. Exact canonical-substring mapping retains 270572 scored variants in 72 assays and 63 proteins.",
+    "axis_and_levels": "DMS-score dynamic range within occupancy groups, relative to assay-wide spread.",
+    "model_evaluation": "DMS standard-deviation diagnostic, rather than a new AlphaMissense score.",
+    "curve_and_insight": "Relative spread .730188 in insertion group versus 1.003639 in highest occupancy. Experimental/biological outcome range could contribute to the correlation curve.",
+    "remaining_limits": [
+      "Does not independently measure predictor-specific performance or establish causality."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-gpt-r1/test-01",
+    "notebook": "inline/alphamissense/am-gpt-r1/axis-1.ipynb",
+    "axis": "Distance to nearest internal exon boundary",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      1,
+      4,
+      7,
+      10,
+      13,
+      15
+    ],
+    "reviewed_code_cells": [
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      11,
+      12,
+      14,
+      16
+    ],
+    "saved_output_cells": [
+      3,
+      6,
+      9,
+      12,
+      14,
+      16
+    ],
+    "dataset_and_split": "ClinVar July 2026 monthly release and exact-version GENCODE v32 transcripts; unambiguous official AM mapping; position 1 and WT checks. Seed-prefixed first 32 SHA bits of gene symbol modulo 10 determines gene-separated discovery/confirmation.",
+    "axis_and_levels": "Distance to internal coding-exon boundaries only; transcript terminal edges excluded; levels >=50,20-49,3-19,0-2 nt.",
+    "model_evaluation": "AM and negative BLOSUM62 AUROC; paired gene-cluster bootstrap 2000; extreme matching by gene/label/substitution; gene-cluster regression.",
+    "curve_and_insight": "Confirmation far-minus-junction AM .043473 [.030560,.057232]; reference .043262; target-minus-reference CI [-.023511,.022034]. Same-ClinVar gene-separated confirmation supports shared loss, not demonstrated excess model decline.",
+    "remaining_limits": [
+      "No external confirmation dataset.",
+      "The matched-substitution design fixes the BLOSUM score within pairs; its zero matched contrast is structural."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-gpt-r1/test-01",
+        "check": "weighted-AUROC helper against sklearn",
+        "details": {
+          "trials": 100,
+          "ties": true,
+          "zero_weights": true,
+          "maximum_absolute_error": 1.1102230246251565e-16
+        }
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 7,
+        "reason": "Correct prose spacing around distance levels and gene ID; preserve split identifiers."
+      },
+      {
+        "cell": 15,
+        "reason": "Make reference comparison and confirmation scope explicit."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-gpt-r1/test-02",
+    "notebook": "inline/alphamissense/am-gpt-r1/axis-2.ipynb",
+    "axis": "Intrinsic disorder",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      5,
+      6,
+      8,
+      10,
+      12
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      7,
+      9,
+      11,
+      13
+    ],
+    "saved_output_cells": [
+      2,
+      4,
+      7,
+      9,
+      11,
+      13
+    ],
+    "dataset_and_split": "ProteinGym human metadata and AlphaFold structures: 96 assays, 81 proteins.",
+    "axis_and_levels": "C-alpha pLDDT eligibility bins <50,50-70,70-90,>=90; counts 8637,2396,7736,15414.",
+    "model_evaluation": "No AM performance curve is evaluated; availability and prior-literature checks only.",
+    "curve_and_insight": "Low pLDDT is a confidence proxy, not experimentally measured disorder. The entry defers a rediscovery of an already documented axis.",
+    "remaining_limits": [
+      "Eligibility decision, not a negative performance result.",
+      "Literature citation was read as notebook context, not independently re-audited in this local review."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-gpt-r1/test-03",
+    "notebook": "inline/alphamissense/am-gpt-r1/axis-3.ipynb",
+    "axis": "Protein-interface context",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      5,
+      6,
+      8,
+      10,
+      12
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      7,
+      9,
+      11,
+      13
+    ],
+    "saved_output_cells": [
+      2,
+      4,
+      7,
+      9,
+      11,
+      13
+    ],
+    "dataset_and_split": "Same 81 human AlphaFold structures, each with one protein chain; eight binding assays/proteins in metadata.",
+    "axis_and_levels": "Physical partner-contact interface cannot be computed from these monomers alone.",
+    "model_evaluation": "No interface-stratified AM evaluation.",
+    "curve_and_insight": "Deferral is consistent with absent partner coordinates; binding-assay labels are not physical interface annotations.",
+    "remaining_limits": [
+      "No positive or negative interface-performance conclusion."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-gpt-r1/test-04",
+    "notebook": "inline/alphamissense/am-gpt-r1/axis-4.ipynb",
+    "axis": "Gene age",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      4,
+      6,
+      7,
+      9,
+      11,
+      13
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      10,
+      12,
+      14
+    ],
+    "saved_output_cells": [
+      2,
+      3,
+      5,
+      8,
+      10,
+      12,
+      14
+    ],
+    "dataset_and_split": "Ensembl Genes release 116 live BioMart; six species: chimp, mouse, chicken, zebrafish, fly, yeast.",
+    "axis_and_levels": "Ortholog-presence count; 0-6 species counts 61682,5021,3390,2680,6019,5120,2499.",
+    "model_evaluation": "No AM performance calculation.",
+    "curve_and_insight": "Feasibility records are not a frozen gene-age ontology or tested degradation curve.",
+    "remaining_limits": [
+      "Acquisition asserts the current registry is release 116 even with cached responses; later release can stop replay.",
+      "Absence policy and age interpretation are incomplete; no scientific negative result."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [
+      {
+        "cell": 4,
+        "reason": "Disclose live endpoint dependence without changing acquisition code."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-gpt-r1/test-05",
+    "notebook": "inline/alphamissense/am-gpt-r1/axis-5.ipynb",
+    "axis": "Protein-function mechanism check",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      5,
+      7,
+      10,
+      12
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      9,
+      11,
+      13,
+      14
+    ],
+    "saved_output_cells": [
+      2,
+      4,
+      6,
+      8,
+      11,
+      13,
+      14
+    ],
+    "dataset_and_split": "94 human ProteinGym assays/80 proteins after missing accessions; 479142 raw rows, 322353 eligible singles, 321055 canonical scored records; 104462 have unambiguous exon-distance mapping.",
+    "axis_and_levels": "Same internal-exon axis; exact-substring or residue-matching local alignment corrects canonical coordinates; protein gene-split partitions.",
+    "model_evaluation": "Signed Spearman of negative pathogenicity versus DMS function; protein-bootstrap 2000; BLOSUM reference.",
+    "curve_and_insight": "Confirmation far-minus-junction .001591 [-.049530,.053280]; reference -.005604 [-.039490,.030725]. Inconclusive mechanism test.",
+    "remaining_limits": [
+      "Does not establish absence of a protein-function effect or identify the mechanism of clinical splice association.",
+      "Some score/mapping exclusions remain explicitly counted."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [
+      {
+        "cell": 12,
+        "reason": "Do not interpret an interval spanning zero as absence of a protein-function mechanism."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-gpt-r2/test-01",
+    "notebook": "inline/alphamissense/am-gpt-r2/axis-1.ipynb",
+    "axis": "Minimum exonic distance to an exon boundary",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      1,
+      4,
+      7,
+      10,
+      13,
+      15
+    ],
+    "reviewed_code_cells": [
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      11,
+      12,
+      14,
+      16
+    ],
+    "saved_output_cells": [
+      3,
+      6,
+      9,
+      12,
+      14,
+      16
+    ],
+    "dataset_and_split": "ClinVar July 2026 monthly release and exact-version GENCODE v32 transcripts; unambiguous official AM mapping; position 1 and WT checks. Germline restriction. First 64 SHA bits of version-stripped gene ID modulo 10; excludes cross-partition proteins determines gene-separated discovery/confirmation.",
+    "axis_and_levels": "Distance to internal coding-exon boundaries only; transcript terminal edges excluded; levels >=31,11-30,3-10,0-2 nt.",
+    "model_evaluation": "AM and negative BLOSUM62 AUROC; paired gene-cluster bootstrap 2000; extreme matching by gene/label/substitution; gene-cluster regression.",
+    "curve_and_insight": "Confirmation far-minus-junction AM .044547 [.033469,.056993]; reference .061129; target-minus-reference CI [-.043636,.008431]. Same-ClinVar gene-separated confirmation supports shared loss, not demonstrated excess model decline.",
+    "remaining_limits": [
+      "No external confirmation dataset.",
+      "The matched-substitution design fixes the BLOSUM score within pairs; its zero matched contrast is structural."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [
+      {
+        "cell": 7,
+        "reason": "Correct prose spacing around distance levels and gene ID; preserve split identifiers."
+      },
+      {
+        "cell": 15,
+        "reason": "Make reference comparison and confirmation scope explicit."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-gpt-r2/test-02",
+    "notebook": "inline/alphamissense/am-gpt-r2/axis-2.ipynb",
+    "axis": "protein-protein interface/binding context",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      13
+    ],
+    "saved_output_cells": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      13
+    ],
+    "dataset_and_split": "Same 321055 canonically mapped scored DMS records as mechanism analysis.",
+    "axis_and_levels": "ProteinGym assay-category labels, including binding, not physical residue-interface labels.",
+    "model_evaluation": "Signed per-assay Spearman; category median with protein bootstrap 2000.",
+    "curve_and_insight": "Binding discovery has two proteins/two assays, median .574999; confirmation five/five, median .365869. Fails stated minimum three proteins in both partitions; descriptive only.",
+    "remaining_limits": [
+      "Categories are nominal, not graded proximity.",
+      "No general interface effect or full confirmation."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-gpt-r2/test-03",
+    "notebook": "inline/alphamissense/am-gpt-r2/axis-3.ipynb",
+    "axis": "gene evolutionary age",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      4,
+      6,
+      7,
+      9,
+      11,
+      13
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      10,
+      12,
+      14
+    ],
+    "saved_output_cells": [
+      2,
+      3,
+      5,
+      8,
+      10,
+      12,
+      14
+    ],
+    "dataset_and_split": "Ensembl Genes release 116 live BioMart; six species: chimp, mouse, chicken, zebrafish, fly, yeast.",
+    "axis_and_levels": "Ortholog-presence count; 0-6 species counts 61682,5021,3390,2680,6019,5120,2499.",
+    "model_evaluation": "No AM performance calculation.",
+    "curve_and_insight": "Feasibility records are not a frozen gene-age ontology or tested degradation curve.",
+    "remaining_limits": [
+      "Acquisition asserts the current registry is release 116 even with cached responses; later release can stop replay.",
+      "Absence policy and age interpretation are incomplete; no scientific negative result."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [
+      {
+        "cell": 4,
+        "reason": "Disclose live endpoint dependence without changing acquisition code."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-gpt-r2/test-04",
+    "notebook": "inline/alphamissense/am-gpt-r2/axis-4.ipynb",
+    "axis": "local disorder/low structural confidence",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      5,
+      6,
+      8,
+      10,
+      12
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      7,
+      9,
+      11,
+      13
+    ],
+    "saved_output_cells": [
+      2,
+      4,
+      7,
+      9,
+      11,
+      13
+    ],
+    "dataset_and_split": "ProteinGym human metadata and AlphaFold structures: 96 assays, 81 proteins.",
+    "axis_and_levels": "C-alpha pLDDT eligibility bins <50,50-70,70-90,>=90; counts 8637,2396,7736,15414.",
+    "model_evaluation": "No AM performance curve is evaluated; availability and prior-literature checks only.",
+    "curve_and_insight": "Low pLDDT is a confidence proxy, not experimentally measured disorder. The entry defers a rediscovery of an already documented axis.",
+    "remaining_limits": [
+      "Eligibility decision, not a negative performance result.",
+      "Literature citation was read as notebook context, not independently re-audited in this local review."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-opus-r1/test-01",
+    "notebook": "inline/alphamissense/am-opus-r1/test-01.ipynb",
+    "axis": "Evolutionary constraint at the variant position",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      1,
+      4,
+      6,
+      8,
+      9,
+      11,
+      13,
+      16,
+      17,
+      19
+    ],
+    "reviewed_code_cells": [
+      2,
+      3,
+      5,
+      7,
+      10,
+      12,
+      14,
+      15,
+      18,
+      20,
+      21
+    ],
+    "saved_output_cells": [
+      2,
+      3,
+      5,
+      7,
+      10,
+      12,
+      15,
+      18,
+      20,
+      21
+    ],
+    "dataset_and_split": "Current corrected join: 273135 variants, 73 assays, 64 proteins, no missing official AM scores. This restores 1934 rows relative to historical 271201. Canonical alignment and score correction are a current reconstruction, not a newly executed original audit. MD5 accession parity splits 139453 discovery and 133682 confirmation variants.",
+    "axis_and_levels": "Fresh phmmer profiles against pinned Swiss-Prot; reported-hit cap 8000; negative entropy conservation in within-assay rank 3/5 levels with position tie-break.",
+    "model_evaluation": "Absolute per-assay Spearman, at least 50 variants and >5 DMS/>2 predictor distinct values; BLOSUM62/PSSM controls. Assay bootstrap (5000 r1, 2000 r2); multiple assays can share a protein.",
+    "curve_and_insight": "Three-level AM .326581,.439868,.491763. Paired 70-assay delta .165182 [.124180,.207340]; 35-assay confirmation .158163 [.090356,.225370]. AM-minus-BLOSUM .102548 [.061320,.144847]; AM-minus-PSSM -.038666 [-.076589,.001012].",
+    "remaining_limits": [
+      "Five-level curve not strictly monotone.",
+      "Split is protein-separated within the same assay collection; current chronology does not establish historical prospective freezing.",
+      "Reported hits include more than inclusion-threshold hits; absolute correlations discard sign."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [
+      {
+        "cell": 11,
+        "reason": "Clarify the scientific meaning of an absolute-correlation metric."
+      },
+      {
+        "cell": 19,
+        "reason": "Separate reconstructed association calculation from historical protocol certification."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-opus-r1/test-02",
+    "notebook": "inline/alphamissense/am-opus-r1/test-02.ipynb",
+    "axis": "Whole-protein alignment depth",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      1,
+      4,
+      6,
+      7,
+      9,
+      12,
+      13,
+      15
+    ],
+    "reviewed_code_cells": [
+      2,
+      3,
+      5,
+      8,
+      10,
+      11,
+      14,
+      16,
+      17
+    ],
+    "saved_output_cells": [
+      2,
+      3,
+      5,
+      8,
+      10,
+      11,
+      14,
+      16,
+      17
+    ],
+    "dataset_and_split": "Current corrected join: 273135 variants, 73 assays, 64 proteins, no missing official AM scores. This restores 1934 rows relative to historical 271201. Canonical alignment and score correction are a current reconstruction, not a newly executed original audit. MD5 protein split: 38/35 assays.",
+    "axis_and_levels": "Released whole-assay MSA_Neff/L metadata, not the fresh per-position profile or newly estimated Neff.",
+    "model_evaluation": "Absolute per-assay Spearman, at least 50 variants and >5 DMS/>2 predictor distinct values; BLOSUM62/PSSM controls. Assay bootstrap (5000 r1, 2000 r2); multiple assays can share a protein.",
+    "curve_and_insight": "Pooled 73-assay rho .046035, p .698948; non-stability 59 rho .154957, p .241248; stability 14 rho -.243956, p .400625. Both splits are unresolved.",
+    "remaining_limits": [
+      "Seventy-three assays are not 73 independent proteins; standard correlation p values are not protein-clustered.",
+      "Identical pooled data across r1/r2 do not constitute independent replication.",
+      "No monotone association detected is narrower than absence of all depth dependence."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-opus-r1/test-02",
+        "check": "recomputed Spearman correlations from printed per-assay records",
+        "details": [
+          {
+            "subset": "All",
+            "n": 73,
+            "rho": 0.04603517441656281,
+            "p": 0.6989478510604069
+          },
+          {
+            "subset": "Excluding stability",
+            "n": 59,
+            "rho": 0.15495674644114574,
+            "p": 0.24124799667249028
+          },
+          {
+            "subset": "Stability only",
+            "n": 14,
+            "rho": -0.24395604395604395,
+            "p": 0.400624803916119
+          },
+          {
+            "subset": "Discovery",
+            "n": 38,
+            "rho": 0.05789646630983592,
+            "p": 0.7298948521094136
+          },
+          {
+            "subset": "Confirmation",
+            "n": 35,
+            "rho": 0.008685298223544084,
+            "p": 0.9605067459782497
+          }
+        ]
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 9,
+        "reason": "Clarify the scientific meaning of an absolute-correlation metric."
+      },
+      {
+        "cell": 15,
+        "reason": "Scope continuous depth screen and unclustered assay-level significance."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-opus-r1/test-03",
+    "notebook": "inline/alphamissense/am-opus-r1/test-03.ipynb",
+    "axis": "Per-position alignment coverage",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      1,
+      4,
+      6,
+      8,
+      9,
+      11,
+      13,
+      16,
+      17,
+      19
+    ],
+    "reviewed_code_cells": [
+      2,
+      3,
+      5,
+      7,
+      10,
+      12,
+      14,
+      15,
+      18,
+      20,
+      21
+    ],
+    "saved_output_cells": [
+      2,
+      3,
+      5,
+      7,
+      10,
+      12,
+      15,
+      18,
+      20,
+      21
+    ],
+    "dataset_and_split": "Current corrected join: 273135 variants, 73 assays, 64 proteins, no missing official AM scores. This restores 1934 rows relative to historical 271201. Canonical alignment and score correction are a current reconstruction, not a newly executed original audit. MD5 accession-parity split.",
+    "axis_and_levels": "phmmer aligned-residue coverage / reported-hit count; 3/5 within-assay rank groups. Overlapping domains may count more than once.",
+    "model_evaluation": "Absolute per-assay Spearman, at least 50 variants and >5 DMS/>2 predictor distinct values; BLOSUM62/PSSM controls. Assay bootstrap (5000 r1, 2000 r2); multiple assays can share a protein.",
+    "curve_and_insight": "Three-level means .392133,.452220,.490541; 71-assay delta .098409 [.048261,.148444]; confirmation .113432 [.052639,.176058]. AM-BLOSUM .019460 [-.023201,.061670]; AM-PSSM -.016575 [-.049579,.016244].",
+    "remaining_limits": [
+      "Shared support association, not excess target loss.",
+      "Ranked fresh-profile coverage differs from raw-MSA occupancy in r2.",
+      "Current reconstruction does not establish historical selection chronology."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [
+      {
+        "cell": 11,
+        "reason": "Clarify the scientific meaning of an absolute-correlation metric."
+      },
+      {
+        "cell": 19,
+        "reason": "Separate reconstructed association calculation from historical protocol certification."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-opus-r2/test-01",
+    "notebook": "inline/alphamissense/am-opus-r2/test-01.ipynb",
+    "axis": "AlphaFold residue-level confidence (pLDDT)",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      1,
+      5,
+      7,
+      9,
+      10,
+      12,
+      14,
+      17,
+      18,
+      20,
+      22
+    ],
+    "reviewed_code_cells": [
+      2,
+      3,
+      4,
+      6,
+      8,
+      11,
+      13,
+      15,
+      16,
+      19,
+      21,
+      23,
+      24
+    ],
+    "saved_output_cells": [
+      2,
+      3,
+      4,
+      6,
+      8,
+      11,
+      13,
+      16,
+      19,
+      21,
+      23,
+      24
+    ],
+    "dataset_and_split": "Current corrected join: 273135 variants, 73 assays, 64 proteins, no missing official AM scores. This restores 1934 rows relative to historical 271201. Canonical alignment and score correction are a current reconstruction, not a newly executed original audit. Seed-7 protein split; confidence available for 270563 rows. BRCA2, OBSCN and UBR5 lack structures.",
+    "axis_and_levels": "AlphaFold C-alpha pLDDT bins <50,50-<70,70-<90,>=90; counts 23054,14313,59769,173427; canonical structure mapping checks. Raw-MSA coverage is a covariate.",
+    "model_evaluation": "Absolute per-assay Spearman, at least 50 variants and >5 DMS/>2 predictor distinct values; BLOSUM62/PSSM controls. Assay bootstrap (5000 r1, 2000 r2); multiple assays can share a protein.",
+    "curve_and_insight": "AM curve .172611,.202027,.376436,.510761. Paired 27-assay delta .323066 [.229376,.405641]; confirmation 16 delta .390037 [.278717,.480064]. AM-BLOSUM .159307 [.086280,.230185]; AM-PSSM .048225 [-.017431,.112941].",
+    "remaining_limits": [
+      "Confidence is not a direct disorder annotation.",
+      "Within-assay OLS nuisance adjustment uses ordinary, not assay-clustered standard errors.",
+      "Selection/confirmation chronology remains a reconstructed split, not external replication."
+    ],
+    "numerical_checks": [],
+    "markdown_changes": [
+      {
+        "cell": 12,
+        "reason": "Clarify the scientific meaning of an absolute-correlation metric."
+      },
+      {
+        "cell": 22,
+        "reason": "Separate reconstructed association calculation from historical protocol certification."
+      },
+      {
+        "cell": 20,
+        "reason": "Qualify unclustered adjusted-control uncertainty."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-opus-r2/test-02",
+    "notebook": "inline/alphamissense/am-opus-r2/test-02.ipynb",
+    "axis": "Whole-protein alignment depth",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      1,
+      4,
+      6,
+      7,
+      9,
+      12,
+      13,
+      15
+    ],
+    "reviewed_code_cells": [
+      2,
+      3,
+      5,
+      8,
+      10,
+      11,
+      14,
+      16,
+      17
+    ],
+    "saved_output_cells": [
+      2,
+      3,
+      5,
+      8,
+      10,
+      11,
+      14,
+      16,
+      17
+    ],
+    "dataset_and_split": "Current corrected join: 273135 variants, 73 assays, 64 proteins, no missing official AM scores. This restores 1934 rows relative to historical 271201. Canonical alignment and score correction are a current reconstruction, not a newly executed original audit.Seed-7 shuffled protein split: 37/36 assays.",
+    "axis_and_levels": "Released whole-assay MSA_Neff/L metadata, not the fresh per-position profile or newly estimated Neff.",
+    "model_evaluation": "Absolute per-assay Spearman, at least 50 variants and >5 DMS/>2 predictor distinct values; BLOSUM62/PSSM controls. Assay bootstrap (5000 r1, 2000 r2); multiple assays can share a protein.",
+    "curve_and_insight": "Pooled 73-assay rho .046035, p .698948; non-stability 59 rho .154957, p .241248; stability 14 rho -.243956, p .400625. Both splits are unresolved.",
+    "remaining_limits": [
+      "Seventy-three assays are not 73 independent proteins; standard correlation p values are not protein-clustered.",
+      "Identical pooled data across r1/r2 do not constitute independent replication.",
+      "No monotone association detected is narrower than absence of all depth dependence."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-opus-r2/test-02",
+        "check": "recomputed Spearman correlations from printed per-assay records",
+        "details": [
+          {
+            "subset": "All",
+            "n": 73,
+            "rho": 0.04603517441656281,
+            "p": 0.6989478510604069
+          },
+          {
+            "subset": "Excluding stability",
+            "n": 59,
+            "rho": 0.15495674644114574,
+            "p": 0.24124799667249028
+          },
+          {
+            "subset": "Stability only",
+            "n": 14,
+            "rho": -0.24395604395604395,
+            "p": 0.400624803916119
+          },
+          {
+            "subset": "Discovery",
+            "n": 37,
+            "rho": 0.13979132477465886,
+            "p": 0.4092605347288506
+          },
+          {
+            "subset": "Confirmation",
+            "n": 36,
+            "rho": -0.03244078377348303,
+            "p": 0.8510141373617803
+          }
+        ]
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 9,
+        "reason": "Clarify the scientific meaning of an absolute-correlation metric."
+      },
+      {
+        "cell": 15,
+        "reason": "Scope continuous depth screen and unclustered assay-level significance."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-opus-r2/test-03",
+    "notebook": "inline/alphamissense/am-opus-r2/test-03.ipynb",
+    "axis": "Within-assay alignment support",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      1,
+      5,
+      7,
+      9,
+      10,
+      12,
+      14,
+      17,
+      18,
+      20,
+      22
+    ],
+    "reviewed_code_cells": [
+      2,
+      3,
+      4,
+      6,
+      8,
+      11,
+      13,
+      15,
+      16,
+      19,
+      21,
+      23,
+      24
+    ],
+    "saved_output_cells": [
+      2,
+      3,
+      4,
+      6,
+      8,
+      11,
+      13,
+      16,
+      19,
+      21,
+      23,
+      24
+    ],
+    "dataset_and_split": "Current corrected join: 273135 variants, 73 assays, 64 proteins, no missing official AM scores. This restores 1934 rows relative to historical 271201. Canonical alignment and score correction are a current reconstruction, not a newly executed original audit. Seed-7 protein split.",
+    "axis_and_levels": "Raw-MSA occupancy right-closed bins <=.50,>.50 to <=.95,>.95; six-level sensitivity thresholds .1,.5,.8,.95,.99.",
+    "model_evaluation": "Absolute per-assay Spearman, at least 50 variants and >5 DMS/>2 predictor distinct values; BLOSUM62/PSSM controls. Assay bootstrap (5000 r1, 2000 r2); multiple assays can share a protein.",
+    "curve_and_insight": "AM curve .293463,.388581,.464736; 43 paired assays .210820 [.149487,.267062]; confirmation 24 .268719 [.194694,.340684]. AM-BLOSUM .107365 [.055997,.155924]; AM-PSSM -.012390 [-.056550,.031365].",
+    "remaining_limits": [
+      "Saved short label <.50 omits equality; adjacent prose now states implemented boundary exactly.",
+      "Shared alignment-support control, not independently established target-specific loss.",
+      "Ordinary OLS adjustment errors not assay-clustered."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-opus-r2/test-03",
+        "check": "right-closed coverage-bin boundary check",
+        "details": {
+          "values": [
+            0,
+            0.5,
+            0.5000001,
+            0.95,
+            0.9500001,
+            1
+          ],
+          "levels": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2
+          ]
+        }
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 12,
+        "reason": "Clarify the scientific meaning of an absolute-correlation metric."
+      },
+      {
+        "cell": 22,
+        "reason": "Separate reconstructed association calculation from historical protocol certification."
+      },
+      {
+        "cell": 20,
+        "reason": "Qualify unclustered adjusted-control uncertainty."
+      },
+      {
+        "cell": 10,
+        "reason": "State exact pd.cut edge semantics without changing saved plotted output."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r1/test-01",
+    "notebook": "inline/alphamissense/am-kimi-r1/axis-1.ipynb",
+    "axis": "Nucleotide distance to the nearest exon boundary",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      6,
+      8,
+      10,
+      12
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "saved_output_cells": [
+      2,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "dataset_and_split": "ClinVar July 20 2026 VCF, plain P/LP/B/LB labels and review-status exclusion; exact official AM genomic join, first protein-substitution duplicate retained, canonical WT and >=11-aa window checks. 164792 scored variants; 1864 WT mismatches and 63 missing proteins excluded.",
+    "axis_and_levels": "GENCODE v50 version-stripped transcript lookup, including transcript terminal edges; >=30,11-29,3-10,0-2 nt. 6660 missing distances; 158132 retained.",
+    "model_evaluation": "AM, negative BLOSUM62 and Grantham AUROC; 2000 variant-bootstrap replicates; review>=2 and composition strata; within-gene extremes require >=5 rows and both labels in each group.",
+    "curve_and_insight": "AM .967866 to .925214; decline .042653 [.035326,.050310]; refs decline .054125 and .059755. Within 75 genes .088403 [.048223,.130752].",
+    "remaining_limits": [
+      "External edges differ from Codex internal-boundary definition.",
+      "Variant-bootstrap marginal CI does not cluster by gene; no independent external cohort."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r1/test-01",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am",
+            "calculated_from_rounded_curve": 0.04265200000000002,
+            "reported": 0.042653,
+            "absolute_error": 9.999999999801834e-07
+          },
+          {
+            "score": "neg_blosum62",
+            "calculated_from_rounded_curve": 0.05412499999999998,
+            "reported": 0.054125,
+            "absolute_error": 2.0816681711721685e-17
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": 0.059755,
+            "reported": 0.059755,
+            "absolute_error": 0.0
+          }
+        ]
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 6,
+        "reason": "Prevent conflating distinct exon-distance definitions across runs."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r1/test-02",
+    "notebook": "inline/alphamissense/am-kimi-r1/axis-2.ipynb",
+    "axis": "local sequence complexity (21-aa windowed entropy, quartiles)",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      6,
+      8,
+      10,
+      12
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "saved_output_cells": [
+      2,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "dataset_and_split": "ClinVar July 20 2026 VCF, plain P/LP/B/LB labels and review-status exclusion; exact official AM genomic join, first protein-substitution duplicate retained, canonical WT and >=11-aa window checks. 164792 scored variants; 1864 WT mismatches and 63 missing proteins excluded.",
+    "axis_and_levels": "Shannon entropy of local 21-aa window; quartiles 3.136864,3.344698,3.5008145, high to low.",
+    "model_evaluation": "AM, negative BLOSUM62 and Grantham AUROC; 2000 variant-bootstrap replicates; review>=2 and composition strata; within-gene extremes require >=5 rows and both labels in each group.",
+    "curve_and_insight": "AM .957359 to .968568; first-minus-last -.011209 [-.013880,-.008555]. Within 390 genes +.008989 [-.006466,.022559].",
+    "remaining_limits": [
+      "Marginal direction differs from within-gene point; no established within-gene complexity effect."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r1/test-02",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am",
+            "calculated_from_rounded_curve": -0.011209000000000024,
+            "reported": -0.011209,
+            "absolute_error": 2.42861286636753e-17
+          },
+          {
+            "score": "neg_blosum62",
+            "calculated_from_rounded_curve": 0.023745000000000016,
+            "reported": 0.023745,
+            "absolute_error": 1.734723475976807e-17
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": 0.005979999999999985,
+            "reported": 0.00598,
+            "absolute_error": 1.474514954580286e-17
+          }
+        ]
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 6,
+        "reason": "Replace unrelated copied exon-distance prose with the implemented axis and its scope."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r1/test-03",
+    "notebook": "inline/alphamissense/am-kimi-r1/axis-3.ipynb",
+    "axis": "distance to nearest terminus (quartiles)",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      6,
+      8,
+      10,
+      12
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "saved_output_cells": [
+      2,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "dataset_and_split": "ClinVar July 20 2026 VCF, plain P/LP/B/LB labels and review-status exclusion; exact official AM genomic join, first protein-substitution duplicate retained, canonical WT and >=11-aa window checks. 164792 scored variants; 1864 WT mismatches and 63 missing proteins excluded.",
+    "axis_and_levels": "Minimum amino-acid distance to either protein terminus; quartiles 90,204,444, far to near.",
+    "model_evaluation": "AM, negative BLOSUM62 and Grantham AUROC; 2000 variant-bootstrap replicates; review>=2 and composition strata; within-gene extremes require >=5 rows and both labels in each group.",
+    "curve_and_insight": "AM .958864 to .967695; delta -.008831 [-.011524,-.006176]. Within 144 genes -.004238 [-.039797,.033804].",
+    "remaining_limits": [
+      "No terminal-proximity degradation demonstrated; marginal composition association is not a general robustness claim."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r1/test-03",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am",
+            "calculated_from_rounded_curve": -0.008830999999999922,
+            "reported": -0.008831,
+            "absolute_error": 7.806255641895632e-17
+          },
+          {
+            "score": "neg_blosum62",
+            "calculated_from_rounded_curve": 0.02384300000000006,
+            "reported": 0.023844,
+            "absolute_error": 9.999999999420195e-07
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": 0.03078700000000001,
+            "reported": 0.030786,
+            "absolute_error": 1.000000000007939e-06
+          }
+        ]
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 6,
+        "reason": "Replace unrelated copied exon-distance prose with the implemented axis and its scope."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r1/test-04",
+    "notebook": "inline/alphamissense/am-kimi-r1/axis-4.ipynb",
+    "axis": "protein length (quartiles)",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      6,
+      8,
+      10,
+      12
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "saved_output_cells": [
+      2,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "dataset_and_split": "ClinVar July 20 2026 VCF, plain P/LP/B/LB labels and review-status exclusion; exact official AM genomic join, first protein-substitution duplicate retained, canonical WT and >=11-aa window checks. 164792 scored variants; 1864 WT mismatches and 63 missing proteins excluded.",
+    "axis_and_levels": "Canonical protein length variant-weighted quartiles 510,917,1834, long to short.",
+    "model_evaluation": "AM, negative BLOSUM62 and Grantham AUROC; 2000 variant-bootstrap replicates; review>=2 and composition strata; within-gene extremes require >=5 rows and both labels in each group.",
+    "curve_and_insight": "AM .955024 to .971157; delta -.016133 [-.018991,-.013387]. Only two within-gene records, .030172 [0,.060345]. Review>=2 stratum reverses direction (+.011890).",
+    "remaining_limits": [
+      "Marginal association is sensitive to cohort/review composition; two gene records do not constitute general within-gene confirmation."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r1/test-04",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am",
+            "calculated_from_rounded_curve": -0.016133000000000064,
+            "reported": -0.016133,
+            "absolute_error": 6.245004513516506e-17
+          },
+          {
+            "score": "neg_blosum62",
+            "calculated_from_rounded_curve": 0.002663000000000082,
+            "reported": 0.002663,
+            "absolute_error": 8.196568423990414e-17
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": 0.022917999999999994,
+            "reported": 0.022918,
+            "absolute_error": 6.938893903907228e-18
+          }
+        ]
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 6,
+        "reason": "Replace unrelated copied exon-distance prose with the implemented axis and its scope."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r1/test-05",
+    "notebook": "inline/alphamissense/am-kimi-r1/axis-5.ipynb",
+    "axis": "homology availability (ortholog count across 6 species; levels 6 / 4–5 / 0–3 after predeclared merge)",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      5,
+      8,
+      10,
+      12,
+      14
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      6,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "saved_output_cells": [
+      2,
+      4,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "dataset_and_split": "ClinVar July 20 2026 VCF, plain P/LP/B/LB labels and review-status exclusion; exact official AM genomic join, first protein-substitution duplicate retained, canonical WT and >=11-aa window checks. 164792 scored variants; 1864 WT mismatches and 63 missing proteins excluded. 400 missing ortholog annotations excluded (164392 retained).",
+    "axis_and_levels": "Six-species Ensembl 116 ortholog count, max across Entrez mappings. Levels 6,4-5,0-3; counts19620,107865,36907.",
+    "model_evaluation": "AM, negative BLOSUM62 and Grantham AUROC; 2000 variant-bootstrap replicates; review>=2 and composition strata; within-gene extremes require >=5 rows and both labels in each group.",
+    "curve_and_insight": "AM .958448 to .974377; delta -.015929 [-.019010,-.012881]. No within-gene contrast because the property is gene-constant.",
+    "remaining_limits": [
+      "Ortholog breadth is not a directly estimated gene age.",
+      "No missing-data implication should be drawn from structurally impossible within-gene comparison."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r1/test-05",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am",
+            "calculated_from_rounded_curve": -0.015929000000000082,
+            "reported": -0.015929,
+            "absolute_error": 8.326672684688674e-17
+          },
+          {
+            "score": "neg_blosum62",
+            "calculated_from_rounded_curve": -0.001639000000000057,
+            "reported": -0.00164,
+            "absolute_error": 9.999999999428869e-07
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": -0.023729,
+            "reported": -0.023729,
+            "absolute_error": 0.0
+          }
+        ]
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 8,
+        "reason": "Replace unrelated copied exon-distance prose with the implemented axis and its scope."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r1/test-06",
+    "notebook": "inline/alphamissense/am-kimi-r1/axis-6.ipynb",
+    "axis": "population observability (AF tiers: unobserved / rare / common)",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      6,
+      8,
+      10,
+      12
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "saved_output_cells": [
+      2,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "dataset_and_split": "ClinVar July 20 2026 VCF, plain P/LP/B/LB labels and review-status exclusion; exact official AM genomic join, first protein-substitution duplicate retained, canonical WT and >=11-aa window checks. 164792 scored variants; 1864 WT mismatches and 63 missing proteins excluded.",
+    "axis_and_levels": "Maximum reported ESP/EXAC/TGP AF; missing, <.001, >=.001. Counts100417,39224,25151; pathogenic41092,3546,40.",
+    "model_evaluation": "AM, negative BLOSUM62 and Grantham AUROC; 2000 variant-bootstrap replicates; review>=2 and composition strata; within-gene extremes require >=5 rows and both labels in each group.",
+    "curve_and_insight": "AM .968770,.925415,.820311; marginal delta .148459 [.097143,.208961]. Within six genes .073985 [-.036744,.234209]; references also decline.",
+    "remaining_limits": [
+      "Only 40 pathogenic variants in high-AF group; matching/label prevalence differs strongly.",
+      "Missing AF does not mean zero population frequency.",
+      "Supports marginal association only; within-gene excess decline unresolved."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r1/test-06",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am",
+            "calculated_from_rounded_curve": 0.148459,
+            "reported": 0.148459,
+            "absolute_error": 0.0
+          },
+          {
+            "score": "neg_blosum62",
+            "calculated_from_rounded_curve": 0.13889300000000004,
+            "reported": 0.138893,
+            "absolute_error": 5.551115123125783e-17
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": 0.09862300000000002,
+            "reported": 0.098623,
+            "absolute_error": 1.3877787807814457e-17
+          }
+        ]
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 6,
+        "reason": "Replace unrelated copied exon-distance prose with the implemented axis and its scope."
+      },
+      {
+        "cell": 12,
+        "reason": "Expose sparse pathogenic support and inconclusive within-gene control for population observability."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r2/test-01",
+    "notebook": "inline/alphamissense/am-kimi-r2/axis-1.ipynb",
+    "axis": "AlphaFold residue-level confidence, within gene",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      4,
+      7,
+      11,
+      13,
+      15
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      14,
+      16
+    ],
+    "saved_output_cells": [
+      2,
+      3,
+      6,
+      8,
+      9,
+      10,
+      12,
+      14,
+      16
+    ],
+    "dataset_and_split": "ClinVar July 20 2026; first CLNSIG field including combined labels, no review-star filter. 209344 unique genomic alleles; average official AM score across matched transcripts, min/max sensitivity; Grantham from first protein variant. Position phyloP missing 2, gene mean missing746. AlphaFold v6 F1 structures; 191074 confidence-eligible variants. Missing confidence10.3645% benign/5.3209% pathogenic.",
+    "axis_and_levels": "pLDDT <50,50-70,70-90,>=90; counts59546,15796,43394,72338. First AF fragments omit long-protein tails.",
+    "model_evaluation": "Joint gene-cluster bootstrap 2000 for all scores and levels. Within-gene endpoint comparison requires >=2 of each label in both levels; means of per-gene AUROC contrasts. No fresh AM inference or external panel.",
+    "curve_and_insight": "Pooled AM .941198 to .951310; delta .010112 [-.006211,.039593]. Within160genes .078166 [.047886,.109003]; Grantham within-gene .082472 also positive.",
+    "remaining_limits": [
+      "Within-gene target association is supported, pooled interval unresolved.",
+      "No joint target-minus-reference DiD establishes model-specificity.",
+      "Official 5.17GB archive acquisition hash is recorded after acquisition, not pre-pinned."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r2/test-01",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am_mean",
+            "calculated_from_rounded_curve": 0.01011200000000001,
+            "reported": 0.010112,
+            "absolute_error": 1.0408340855860843e-17
+          },
+          {
+            "score": "am_min",
+            "calculated_from_rounded_curve": 0.010101000000000027,
+            "reported": 0.0101,
+            "absolute_error": 1.000000000027021e-06
+          },
+          {
+            "score": "am_max",
+            "calculated_from_rounded_curve": 0.010114000000000067,
+            "reported": 0.010114,
+            "absolute_error": 6.765421556309548e-17
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": 0.006917000000000062,
+            "reported": 0.006917,
+            "absolute_error": 6.158268339717665e-17
+          },
+          {
+            "score": "phyloP",
+            "calculated_from_rounded_curve": -0.055008999999999975,
+            "reported": -0.055008,
+            "absolute_error": 9.999999999732445e-07
+          },
+          {
+            "score": "gene_mean_phyloP",
+            "calculated_from_rounded_curve": 0.014263999999999943,
+            "reported": 0.014264,
+            "absolute_error": 5.724587470723463e-17
+          }
+        ]
+      },
+      {
+        "entry": "am-kimi-r2/test-01",
+        "check": "paired-gene mean endpoint arithmetic",
+        "details": {
+          "rows": 6,
+          "maximum_absolute_error": 9.999999999871223e-07
+        }
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 15,
+        "reason": "Scope the positive structural-confidence result to its actual estimand and controls."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r2/test-02",
+    "notebook": "inline/alphamissense/am-kimi-r2/axis-2.ipynb",
+    "axis": "position phyloP (pooled)",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      6,
+      9,
+      11,
+      13
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      10,
+      12,
+      14
+    ],
+    "saved_output_cells": [
+      2,
+      5,
+      7,
+      8,
+      10,
+      12,
+      14
+    ],
+    "dataset_and_split": "ClinVar July 20 2026; first CLNSIG field including combined labels, no review-star filter. 209344 unique genomic alleles; average official AM score across matched transcripts, min/max sensitivity; Grantham from first protein variant. Position phyloP missing 2, gene mean missing746.",
+    "axis_and_levels": "UCSC hg38 phyloP100way per variant position; five bins <0,0-2,2-4,4-6,>=6.",
+    "model_evaluation": "Joint gene-cluster bootstrap 2000 for all scores and levels. Within-gene endpoint comparison requires >=2 of each label in both levels; means of per-gene AUROC contrasts. No fresh AM inference or external panel.",
+    "curve_and_insight": "AM .928966 to .898775; delta -.030191 [-.045391,-.014702]. Within41genes -.018727 [-.060968,.022444].",
+    "remaining_limits": [
+      "Conditional phenotype discrimination across conservation strata can reflect selection/composition; no supported within-gene degradation."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r2/test-02",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am_mean",
+            "calculated_from_rounded_curve": -0.030190999999999968,
+            "reported": -0.030191,
+            "absolute_error": 3.122502256758253e-17
+          },
+          {
+            "score": "am_min",
+            "calculated_from_rounded_curve": -0.030212999999999934,
+            "reported": -0.030213,
+            "absolute_error": 6.591949208711867e-17
+          },
+          {
+            "score": "am_max",
+            "calculated_from_rounded_curve": -0.030178000000000038,
+            "reported": -0.030178,
+            "absolute_error": 3.8163916471489756e-17
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": 0.05857499999999993,
+            "reported": 0.058574,
+            "absolute_error": 9.999999999316111e-07
+          },
+          {
+            "score": "phyloP",
+            "calculated_from_rounded_curve": -0.009808000000000039,
+            "reported": -0.009808,
+            "absolute_error": 3.8163916471489756e-17
+          },
+          {
+            "score": "gene_mean_phyloP",
+            "calculated_from_rounded_curve": -0.214092,
+            "reported": -0.214092,
+            "absolute_error": 0.0
+          }
+        ]
+      },
+      {
+        "entry": "am-kimi-r2/test-02",
+        "check": "paired-gene mean endpoint arithmetic",
+        "details": {
+          "rows": 6,
+          "maximum_absolute_error": 1.0000000000356946e-06
+        }
+      }
+    ],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r2/test-03",
+    "notebook": "inline/alphamissense/am-kimi-r2/axis-3.ipynb",
+    "axis": "position phyloP, paired within-gene",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      6,
+      9,
+      11,
+      13
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      10,
+      12,
+      14
+    ],
+    "saved_output_cells": [
+      2,
+      5,
+      7,
+      8,
+      10,
+      12,
+      14
+    ],
+    "dataset_and_split": "ClinVar July 20 2026; first CLNSIG field including combined labels, no review-star filter. 209344 unique genomic alleles; average official AM score across matched transcripts, min/max sensitivity; Grantham from first protein variant. Position phyloP missing 2, gene mean missing746.",
+    "axis_and_levels": "Same per-position phyloP pooled into <2,2-6,>=6; counts96034,49239,64069.",
+    "model_evaluation": "Joint gene-cluster bootstrap 2000 for all scores and levels. Within-gene endpoint comparison requires >=2 of each label in both levels; means of per-gene AUROC contrasts. No fresh AM inference or external panel.",
+    "curve_and_insight": "AM .938837 to .898775; delta -.040062 [-.048732,-.031217]. Within279genes -.015023 [-.032801,.001648].",
+    "remaining_limits": [
+      "Same cohort/property as five-bin screen, not independent replication; within-gene interval includes zero."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r2/test-03",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am_mean",
+            "calculated_from_rounded_curve": -0.04006200000000004,
+            "reported": -0.040062,
+            "absolute_error": 4.163336342344337e-17
+          },
+          {
+            "score": "am_min",
+            "calculated_from_rounded_curve": -0.04008400000000001,
+            "reported": -0.040084,
+            "absolute_error": 6.938893903907228e-18
+          },
+          {
+            "score": "am_max",
+            "calculated_from_rounded_curve": -0.040049,
+            "reported": -0.040049,
+            "absolute_error": 0.0
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": 0.007739999999999969,
+            "reported": 0.00774,
+            "absolute_error": 3.122502256758253e-17
+          },
+          {
+            "score": "phyloP",
+            "calculated_from_rounded_curve": -0.09177000000000002,
+            "reported": -0.09177,
+            "absolute_error": 1.3877787807814457e-17
+          },
+          {
+            "score": "gene_mean_phyloP",
+            "calculated_from_rounded_curve": -0.17631599999999997,
+            "reported": -0.176316,
+            "absolute_error": 2.7755575615628914e-17
+          }
+        ]
+      },
+      {
+        "entry": "am-kimi-r2/test-03",
+        "check": "paired-gene mean endpoint arithmetic",
+        "details": {
+          "rows": 6,
+          "maximum_absolute_error": 1.0000000000218168e-06
+        }
+      }
+    ],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r2/test-04",
+    "notebook": "inline/alphamissense/am-kimi-r2/axis-4.ipynb",
+    "axis": "gene-level mean CDS phyloP (quintiles)",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      6,
+      9,
+      11,
+      13
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      10,
+      12,
+      14
+    ],
+    "saved_output_cells": [
+      2,
+      5,
+      7,
+      8,
+      10,
+      12,
+      14
+    ],
+    "dataset_and_split": "ClinVar July 20 2026; first CLNSIG field including combined labels, no review-star filter. 209344 unique genomic alleles; average official AM score across matched transcripts, min/max sensitivity; Grantham from first protein variant. Position phyloP missing 2, gene mean missing746. 208598 gene-feature-eligible variants.",
+    "axis_and_levels": "Mean phyloP over covered CDS bases of longest GENCODE v45 transcript; cuts1.8001,2.8121,3.5615,4.2782.",
+    "model_evaluation": "Joint gene-cluster bootstrap 2000 for all scores and levels. Within-gene endpoint comparison requires >=2 of each label in both levels; means of per-gene AUROC contrasts. No fresh AM inference or external panel.",
+    "curve_and_insight": "AM .953385 to .956319; delta .002934 [-.005376,.012122]. Empty paired-gene table is expected because each gene has one feature value.",
+    "remaining_limits": [
+      "No within-gene estimand exists for this axis; empty table is not evidence of missing raw data."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r2/test-04",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am_mean",
+            "calculated_from_rounded_curve": 0.002933999999999992,
+            "reported": 0.002934,
+            "absolute_error": 7.806255641895632e-18
+          },
+          {
+            "score": "am_min",
+            "calculated_from_rounded_curve": 0.0029210000000000624,
+            "reported": 0.002922,
+            "absolute_error": 9.999999999376827e-07
+          },
+          {
+            "score": "am_max",
+            "calculated_from_rounded_curve": 0.002943000000000029,
+            "reported": 0.002943,
+            "absolute_error": 2.905661822261152e-17
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": -0.025126000000000093,
+            "reported": -0.025126,
+            "absolute_error": 9.367506770274758e-17
+          },
+          {
+            "score": "phyloP",
+            "calculated_from_rounded_curve": -0.108406,
+            "reported": -0.108406,
+            "absolute_error": 0.0
+          },
+          {
+            "score": "gene_mean_phyloP",
+            "calculated_from_rounded_curve": -0.14762300000000006,
+            "reported": -0.147623,
+            "absolute_error": 5.551115123125783e-17
+          }
+        ]
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 13,
+        "reason": "Explain why within-gene pairing is undefined for a gene-level feature."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r2/test-05",
+    "notebook": "inline/alphamissense/am-kimi-r2/axis-5.ipynb",
+    "axis": "Grantham substitution severity (4 levels)",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      6,
+      9,
+      11,
+      13
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      10,
+      12,
+      14
+    ],
+    "saved_output_cells": [
+      2,
+      5,
+      7,
+      8,
+      10,
+      12,
+      14
+    ],
+    "dataset_and_split": "ClinVar July 20 2026; first CLNSIG field including combined labels, no review-star filter. 209344 unique genomic alleles; average official AM score across matched transcripts, min/max sensitivity; Grantham from first protein variant. Position phyloP missing 2, gene mean missing746.",
+    "axis_and_levels": "Grantham substitution distance <60,60-100,100-150,>=150; counts101123,56587,33229,18405.",
+    "model_evaluation": "Joint gene-cluster bootstrap 2000 for all scores and levels. Within-gene endpoint comparison requires >=2 of each label in both levels; means of per-gene AUROC contrasts. No fresh AM inference or external panel.",
+    "curve_and_insight": "AM .950196 to .945713; pooled delta -.004483 [-.012838,.004189]; within255genes +.012055 [-.003075,.026989].",
+    "remaining_limits": [
+      "Both primary marginal and within-gene intervals include zero despite opposite point directions.",
+      "Same feature also serves as comparator; conclusions are restricted to AM discrimination within these strata."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r2/test-05",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am_mean",
+            "calculated_from_rounded_curve": -0.004483000000000015,
+            "reported": -0.004483,
+            "absolute_error": 1.474514954580286e-17
+          },
+          {
+            "score": "am_min",
+            "calculated_from_rounded_curve": -0.004503000000000035,
+            "reported": -0.004503,
+            "absolute_error": 3.469446951953614e-17
+          },
+          {
+            "score": "am_max",
+            "calculated_from_rounded_curve": -0.004471000000000003,
+            "reported": -0.004471,
+            "absolute_error": 2.6020852139652106e-18
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": 0.06816999999999995,
+            "reported": 0.06817,
+            "absolute_error": 4.163336342344337e-17
+          },
+          {
+            "score": "phyloP",
+            "calculated_from_rounded_curve": -0.030486000000000013,
+            "reported": -0.030486,
+            "absolute_error": 1.3877787807814457e-17
+          },
+          {
+            "score": "gene_mean_phyloP",
+            "calculated_from_rounded_curve": -0.029503999999999975,
+            "reported": -0.029504,
+            "absolute_error": 2.42861286636753e-17
+          }
+        ]
+      },
+      {
+        "entry": "am-kimi-r2/test-05",
+        "check": "paired-gene mean endpoint arithmetic",
+        "details": {
+          "rows": 6,
+          "maximum_absolute_error": 9.999999999628362e-07
+        }
+      }
+    ],
+    "markdown_changes": [],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  },
+  {
+    "id": "am-kimi-r2/test-06",
+    "notebook": "inline/alphamissense/am-kimi-r2/axis-6.ipynb",
+    "axis": "CpG mutational context (3 levels)",
+    "review_scope": "Every prose cell, scientific code cell and saved result output reviewed individually; shared functions compared across related entries. No fresh inference or complete notebook rerun in this review.",
+    "reviewed_markdown_cells": [
+      0,
+      3,
+      6,
+      10,
+      12,
+      14
+    ],
+    "reviewed_code_cells": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      13,
+      15
+    ],
+    "saved_output_cells": [
+      2,
+      5,
+      7,
+      8,
+      9,
+      11,
+      13,
+      15
+    ],
+    "dataset_and_split": "ClinVar July 20 2026; first CLNSIG field including combined labels, no review-star filter. 209344 unique genomic alleles; average official AM score across matched transcripts, min/max sensitivity; Grantham from first protein variant. Position phyloP missing 2, gene mean missing746. Reference nucleotide matches verified for all209344 alleles.",
+    "axis_and_levels": "hg38 CpG categories: non-CpG146636, other-CpG10050, C-to-T/G-to-A CpG transition52658.",
+    "model_evaluation": "Joint gene-cluster bootstrap 2000 for all scores and levels. Within-gene endpoint comparison requires >=2 of each label in both levels; means of per-gene AUROC contrasts. No fresh AM inference or external panel.",
+    "curve_and_insight": "AM .958619 to .955335; pooled delta -.003284 [-.007061,.000525]; within808genes .004912 [-.002247,.011959].",
+    "remaining_limits": [
+      "Categorical contrast, not a continuous higher-feature curve.",
+      "No resolved endpoint difference or general absence claim."
+    ],
+    "numerical_checks": [
+      {
+        "entry": "am-kimi-r2/test-06",
+        "check": "endpoint arithmetic for all saved predictors",
+        "details": [
+          {
+            "score": "am_mean",
+            "calculated_from_rounded_curve": -0.0032839999999999536,
+            "reported": -0.003284,
+            "absolute_error": 4.640385298237959e-17
+          },
+          {
+            "score": "am_min",
+            "calculated_from_rounded_curve": -0.0032969999999999944,
+            "reported": -0.003298,
+            "absolute_error": 1.0000000000057706e-06
+          },
+          {
+            "score": "am_max",
+            "calculated_from_rounded_curve": -0.003275000000000028,
+            "reported": -0.003275,
+            "absolute_error": 2.7755575615628914e-17
+          },
+          {
+            "score": "grantham",
+            "calculated_from_rounded_curve": -0.081067,
+            "reported": -0.081067,
+            "absolute_error": 0.0
+          },
+          {
+            "score": "phyloP",
+            "calculated_from_rounded_curve": -0.015840999999999994,
+            "reported": -0.015841,
+            "absolute_error": 6.938893903907228e-18
+          },
+          {
+            "score": "gene_mean_phyloP",
+            "calculated_from_rounded_curve": 0.018530999999999964,
+            "reported": 0.018531,
+            "absolute_error": 3.469446951953614e-17
+          }
+        ]
+      },
+      {
+        "entry": "am-kimi-r2/test-06",
+        "check": "paired-gene mean endpoint arithmetic",
+        "details": {
+          "rows": 6,
+          "maximum_absolute_error": 1.0000000000591133e-06
+        }
+      }
+    ],
+    "markdown_changes": [
+      {
+        "cell": 14,
+        "reason": "Replace generic higher-level advantage language with the actual categorical CpG contrast."
+      }
+    ],
+    "formatting_review": "Notebook Markdown source checked; code/output data preserved. HTML regeneration and rendered browser review handled separately."
+  }
+]

@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>CONCH · GPT R2 · Magnification and scale</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7507,8 +7507,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8fe2a895">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7516,7 +7538,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="CONCH-%C2%B7-GPT-R2-%C2%B7-Magnification-and-scale">CONCH · GPT R2 · Magnification and scale<a class="anchor-link" href="#CONCH-%C2%B7-GPT-R2-%C2%B7-Magnification-and-scale">¶</a></h1><p>Run all cells in order. Acquisition, image processing, axis construction, inference, controls and the decision are written in this notebook. Python3.11 is used with PyTorch2.5.0, torchvision0.20.0, NumPy1.26.4, pandas2.2.2, scikit-learn1.5.2, Pillow10.4.0, pyarrow16.1.0, statsmodels0.14.2 and the pinned official CONCH library. Install CONCH from <code>git+https://github.com/mahmoodlab/CONCH.git@141cc09c7d4ff33d8eda562bd75169b457f71a62</code>. Your Hugging Face account must have access to the CONCH weights.</p>
+<h1 id="CONCH-%C2%B7-GPT-R2-%C2%B7-Magnification-and-scale">CONCH &#183; GPT R2 &#183; Magnification and scale<a class="anchor-link" href="#CONCH-%C2%B7-GPT-R2-%C2%B7-Magnification-and-scale">&#182;</a></h1><p>Run all cells in order. Acquisition, image processing, scale-metadata inspection and the eligibility decision are written in this notebook. This entry does not run model inference. Python 3.11 is used with PyTorch 2.5.0, torchvision 0.20.0, NumPy 1.26.4, pandas 2.2.2, scikit-learn 1.5.2, Pillow 10.4.0, pyarrow 16.1.0, statsmodels 0.14.2 and the pinned official CONCH library. Install CONCH from <code>git+https://github.com/mahmoodlab/CONCH.git@141cc09c7d4ff33d8eda562bd75169b457f71a62</code>. No CONCH checkpoint access is needed for this input diagnostic.</p>
+
 </div>
 </div>
 </div>
@@ -7527,19 +7550,20 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-Data-source-/-acquisition">1. Data source / acquisition<a class="anchor-link" href="#1.-Data-source-/-acquisition">¶</a></h2><p>CRC-VAL-HE-7K and the NCT reference come from the pinned public Hugging Face dataset revision. The reference selects 4,860 tiles: 540 per tissue class, using the specified parquet row groups and evenly spaced records. Stanford comes from its pinned public normalized validation archive. The code downloads the image bytes; existing downloads are reused only after identity checks.</p>
+<h2 id="1.-Data-source-/-acquisition">1. Data source / acquisition<a class="anchor-link" href="#1.-Data-source-/-acquisition">&#182;</a></h2><p>CRC-VAL-HE-7K and the NCT reference come from the pinned public Hugging Face dataset revision. The reference selects 4,860 tiles: 540 per tissue class, using the specified parquet row groups and evenly spaced records. Stanford comes from its pinned public normalized validation archive. The code downloads the image bytes; existing downloads are reused only after identity checks.</p>
 <p><strong>Environment setup before starting the kernel (Linux, Python 3.11):</strong></p>
 <p>Create this shared GPT/Kimi environment before opening the notebook. Keep it separate from the primary CONCH environment, which uses different numerical-library versions.</p>
 <div class="highlight"><pre><span></span>python3.11<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv-conch-shared
 .venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">torch</span><span class="o">==</span><span class="m">2</span>.5.0<span class="w"> </span><span class="nv">torchvision</span><span class="o">==</span><span class="m">0</span>.20.0<span class="w"> </span>--index-url<span class="w"> </span>https://download.pytorch.org/whl/cu124
 .venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">numpy</span><span class="o">==</span><span class="m">1</span>.26.4<span class="w"> </span><span class="nv">scipy</span><span class="o">==</span><span class="m">1</span>.13.1<span class="w"> </span><span class="nv">pandas</span><span class="o">==</span><span class="m">2</span>.2.2<span class="w"> </span>scikit-learn<span class="o">==</span><span class="m">1</span>.5.2<span class="w"> </span><span class="nv">Pillow</span><span class="o">==</span><span class="m">10</span>.4.0<span class="w"> </span><span class="nv">pyarrow</span><span class="o">==</span><span class="m">16</span>.1.0<span class="w"> </span>scikit-image<span class="o">==</span><span class="m">0</span>.24.0<span class="w"> </span><span class="nv">statsmodels</span><span class="o">==</span><span class="m">0</span>.14.2<span class="w"> </span>opencv-python-headless<span class="o">==</span><span class="m">4</span>.10.0.84
 .venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">matplotlib</span><span class="o">==</span><span class="m">3</span>.9.4<span class="w"> </span><span class="nv">timm</span><span class="o">==</span><span class="m">0</span>.9.16<span class="w"> </span><span class="nv">transformers</span><span class="o">==</span><span class="m">4</span>.40.1<span class="w"> </span><span class="nv">tokenizers</span><span class="o">==</span><span class="m">0</span>.19.1<span class="w"> </span>huggingface-hub<span class="o">==</span><span class="m">0</span>.23.5<span class="w"> </span><span class="nv">ftfy</span><span class="o">==</span><span class="m">6</span>.3.1<span class="w"> </span><span class="nv">h5py</span><span class="o">==</span><span class="m">3</span>.11.0<span class="w"> </span>open-clip-torch<span class="o">==</span><span class="m">2</span>.24.0<span class="w"> </span><span class="nv">requests</span><span class="o">==</span><span class="m">2</span>.34.2<span class="w"> </span><span class="nv">regex</span><span class="o">==</span><span class="m">2026</span>.11.9<span class="w"> </span><span class="nv">safetensors</span><span class="o">==</span><span class="m">0</span>.8.0<span class="w"> </span><span class="nv">nbformat</span><span class="o">==</span><span class="m">5</span>.10.4<span class="w"> </span><span class="nv">nbclient</span><span class="o">==</span><span class="m">0</span>.10.4<span class="w"> </span><span class="nv">nbconvert</span><span class="o">==</span><span class="m">7</span>.16.6<span class="w"> </span><span class="nv">ipykernel</span><span class="o">==</span><span class="m">6</span>.29.5
-.venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-deps<span class="w"> </span><span class="s2">"git+https://github.com/mahmoodlab/CONCH.git@141cc09c7d4ff33d8eda562bd75169b457f71a62"</span>
-.venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>ipykernel<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>--name<span class="w"> </span>conch-gpt-kimi-inline<span class="w"> </span>--display-name<span class="w"> </span><span class="s2">"CONCH GPT/Kimi"</span>
+.venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-deps<span class="w"> </span><span class="s2">&quot;git+https://github.com/mahmoodlab/CONCH.git@141cc09c7d4ff33d8eda562bd75169b457f71a62&quot;</span>
+.venv-conch-shared/bin/python<span class="w"> </span>-m<span class="w"> </span>ipykernel<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>--name<span class="w"> </span>conch-gpt-kimi-inline<span class="w"> </span>--display-name<span class="w"> </span><span class="s2">&quot;CONCH GPT/Kimi&quot;</span>
 </pre></div>
-<p>Select <strong>CONCH GPT/Kimi</strong> before Run All. The CUDA 12.4 wheels require a compatible NVIDIA driver; the code also selects CPU if CUDA is unavailable. Authenticate with Hugging Face using an account that can access <code>MahmoodLab/conch</code> before the checkpoint-download cell. The <code>huggingface-cli login</code> command is provided by the pinned Hub package.</p>
+<p>Select <strong>CONCH GPT/Kimi</strong> before Run All. This input diagnostic can use the shared environment, but it does not require a GPU or gated CONCH checkpoint access.</p>
 <p>The default input directory is <code>inputs/</code> below the notebook working directory. Set <code>CONCH_INPUTS</code> before starting the kernel to reuse a shared raw-input directory. The notebook verifies its declared downloaded inputs and runs the calculations shown below, including the stated scoring or eligibility diagnostic. All analysis-specific functions are inline; the installed CONCH package is the pinned public model implementation.</p>
-<p>The CONCH model-input transform is explicitly set to 224×224 in the scoring cell. Reference-network weights and transforms are specified in that same cell.</p>
+<p>This entry only measures inputs and evaluation eligibility. It does not load CONCH or reference-network weights and does not produce model predictions.</p>
+
 </div>
 </div>
 </div>

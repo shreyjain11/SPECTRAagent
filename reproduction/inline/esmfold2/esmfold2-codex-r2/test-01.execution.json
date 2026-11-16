@@ -7,8 +7,8 @@
   "code_cells": 11,
   "executed_cells": 11,
   "errors": 0,
-  "notebook_sha256": "3882565ac66ea155b238c047851195059eb85f3ca16973ad510b43f6c7b23057",
-  "html_sha256": "7a5452f371139cf0f45a6c8a8e8001cd44cdd5e95054bc4ab8217da8a4ffc80e",
+  "notebook_sha256": "93deb64fadd8c489d41eab7dcb3be85d9b57f03ac49e39383d5f31c2777c609e",
+  "html_sha256": "85a0e016e061e7460b9b65412368a0d3e01265db0324ba5655698febc626010d",
   "sections": [
     {
       "number": 1,
@@ -94,5 +94,17 @@
       "path": "inline/esmfold2/esmfold2-codex-r2/test-01-evidence/CALCULATION_RECEIPT.json",
       "sha256": "12f0f3755124e919353a7b4225b95a2929185570547ad25be89111bfd9a7de6d"
     }
-  ]
+  ],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/esmfold2-codex-r2-test-01.previous-execution.json",
+      "sha256": "7214fcc8fa3eac03d6113c46ccf8b159386cfb889a365905477d737a0c586d73"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/esmfold2-codex-r2-test-01.revision.json",
+      "sha256": "bd96626b7feb0c44c6b31b0bcd7f250680bfaf375fee26acabb8aa7564816a65"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

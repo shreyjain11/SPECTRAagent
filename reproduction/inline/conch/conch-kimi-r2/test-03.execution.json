@@ -7,8 +7,8 @@
   "code_cells": 10,
   "executed_cells": 10,
   "errors": 0,
-  "notebook_sha256": "74ea4d0faa4d96196a85491b62ef07299d43cd8a8a452449c7d985d1a13efb1f",
-  "html_sha256": "f878afaaf6a1dc3efe20d57c1da134eb8d7474ac2ba20e55f30f4372dc649b2d",
+  "notebook_sha256": "9bc6928605be993d64746d0b1478c7c10191526bfef7daa3d5cb85f78d67c0cd",
+  "html_sha256": "862b635832b196bc7498d84e1f6d5646ead9acdaabd0ac56c6a352903892450f",
   "sections": [
     {
       "number": 1,
@@ -84,5 +84,17 @@
   "input_manifests": [],
   "elapsed_seconds": 573.668,
   "python": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/conch/.venv/bin/python",
-  "calculation_evidence": []
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/conch-kimi-r2-test-03.previous-execution.json",
+      "sha256": "588a264c088f7c34f4e98e38d51d18d74a1b4c137ec1f4647881a84a60a3468d"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/conch-kimi-r2-test-03.revision.json",
+      "sha256": "e18b9a0f29d83708e242236b8d4983ab690d68cc66a5ab83e3fabfc135fb02e5"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

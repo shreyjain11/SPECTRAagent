@@ -110,8 +110,8 @@
     "notebook": "inline/alphamissense/am-gpt-r1/axis-4.ipynb",
     "html": "inline/alphamissense/am-gpt-r1/axis-4.html",
     "execution_evidence": "inline/alphamissense/am-gpt-r1/axis-4.execution.json",
-    "published_notebook_sha256": "d8a0f2c415f1801e2d899854d5635cd54cb324482c0daefb7da6da3201b5427a",
-    "published_html_sha256": "b23c8ed756d1ccf27de639a11282915784d7fd327dd9ffbc19467d61c0e6e6f6",
+    "published_notebook_sha256": "772e93672a9282ec57bcabc02e61cc3b9eb1126d6ff1e3ad92f1eee979db7936",
+    "published_html_sha256": "3b3455719392e7c7887856cb7f0af2fa011b2139897efaa76bf283905857ef31",
     "code_cells": 8,
     "sections": [
       {
@@ -200,11 +200,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/alphamissense/am-gpt-r1/axis-4.execution.json",
-    "notebook_sha256": "d8a0f2c415f1801e2d899854d5635cd54cb324482c0daefb7da6da3201b5427a",
+    "notebook_sha256": "772e93672a9282ec57bcabc02e61cc3b9eb1126d6ff1e3ad92f1eee979db7936",
     "result_location": {
       "notebook": "inline/alphamissense/am-gpt-r1/axis-4.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-gpt-r1-test-04.revision.json"
     }
   }
 }

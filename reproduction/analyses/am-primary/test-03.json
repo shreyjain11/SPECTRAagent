@@ -1276,8 +1276,8 @@
     "notebook": "inline/alphamissense/am-primary/axis-3.ipynb",
     "html": "inline/alphamissense/am-primary/axis-3.html",
     "execution_evidence": "inline/alphamissense/am-primary/axis-3.execution.json",
-    "published_notebook_sha256": "2104659d32c03ca5a1238b8297cee318fe0dc200ec247f5218c9cf0422875e1f",
-    "published_html_sha256": "c29061ca8acd006a1271a1612e216391845ae2000cac8b9f765c985bdc567f5a",
+    "published_notebook_sha256": "066e0584b7c959387df136915792d990ae6c7a2e8267da413901e3cb42cece3b",
+    "published_html_sha256": "8e253e29694dc375564a04829e3f508f7769528e37a7a254ab7db2b35bc1291b",
     "code_cells": 10,
     "sections": [
       {
@@ -1368,11 +1368,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/alphamissense/am-primary/axis-3.execution.json",
-    "notebook_sha256": "2104659d32c03ca5a1238b8297cee318fe0dc200ec247f5218c9cf0422875e1f",
+    "notebook_sha256": "066e0584b7c959387df136915792d990ae6c7a2e8267da413901e3cb42cece3b",
     "result_location": {
       "notebook": "inline/alphamissense/am-primary/axis-3.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-primary-test-03.revision.json"
     }
   }
 }

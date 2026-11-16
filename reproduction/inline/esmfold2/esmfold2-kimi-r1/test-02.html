@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ESMFold v1 — Orphan versus non-orphan proteins</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7793,8 +7793,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cell-000">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7813,7 +7835,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">¶</a></h2><p>Download the released panel sequences, experimental residue mappings, model predictions and individual template-reference measurements. Query experimental PDB entries released by2020-05-01 and download the public PDB sequence file; record the exact response hashes. The date filter is fixed; source bytes are the retrieved public version. Use MMseqs2 15-6f452. Query the experimental method and resolution for every panel entry from the RCSB API; retain missing resolution explicitly.</p>
+<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">&#182;</a></h2><p>Download the released panel sequences, experimental residue mappings, model predictions and individual template-reference measurements. Query experimental PDB entries released by 2020-05-01 and download the public PDB sequence file; record the exact response hashes. The date filter is fixed; source bytes are the retrieved public version. Use MMseqs2 15-6f452. Query the experimental method and resolution for every panel entry from the RCSB API; retain missing resolution explicitly.</p>
+
 </div>
 </div>
 </div>
@@ -8189,7 +8212,8 @@ Experimental entries released by2020-05-01: 163218
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">¶</a></h2><p>Search the pre-cutoff database at sensitivity7.5 with up to20 hits/query. Define support as the maximum sequence identity among hits covering at least50% of the query, or zero with no qualifying hit. Four levels use≥80%,50–80%,30–50%,&lt;30%; the binary axis uses30%. Calculate12-residue low-complexity windows and three length strata directly.</p>
+<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">&#182;</a></h2><p>Search the pre-cutoff database at sensitivity 7.5 with up to 20 hits/query. Define support as the maximum sequence identity among hits covering at least 50% of the query, or zero with no qualifying hit. Four levels use ≥80%, 50–80%, 30–50%,&lt;30%; the binary axis uses 30%. Calculate 12-residue low-complexity windows and three length strata directly.</p>
+
 </div>
 </div>
 </div>
@@ -8386,7 +8410,8 @@ Experimental entries released by2020-05-01: 163218
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Model-results-or-released-scores">4. Model results or released scores<a class="anchor-link" href="#4.-Model-results-or-released-scores">¶</a></h2><p>Score the released ESMFold v1 coordinates against their experimental residue mappings with10 weighted-superposition iterations. Join individual released template-reference scores; their coverage is shown explicitly. The inference function is visible for an initialized fair-esm ESMFold v1 model. This run evaluates released model predictions. Compute mean Cα pLDDT directly from the confidence values in the prediction PDB files.</p>
+<h2 id="4.-Model-results-or-released-scores">4. Model results or released scores<a class="anchor-link" href="#4.-Model-results-or-released-scores">&#182;</a></h2><p>Score the released ESMFold v1 coordinates against their experimental residue mappings with 10 weighted-superposition iterations. Join individual released template-reference scores; their coverage is shown explicitly. The inference function is visible for an initialized fair-esm ESMFold v1 model. This run evaluates released model predictions. Compute mean Cα pLDDT directly from the confidence values in the prediction PDB files.</p>
+
 </div>
 </div>
 </div>
@@ -9046,7 +9071,9 @@ Experimental entries released by2020-05-01: 163218
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">¶</a></h2><p>Use the calculated curve, uncertainty, effect size and controls to state the supported conclusion.</p>
+<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">&#182;</a></h2><p>Use the calculated curve, uncertainty, effect size and controls to state the supported conclusion.</p>
+<p>These are ESMFold v1 predictions. The binary non-orphan-minus-orphan difference is 0.0862 TM-score and remains positive in all three length strata. Only 27 of 170 orphans have a template reference, so the pooled model drop cannot establish a matched model-specific effect across the full orphan cohort.</p>
+
 </div>
 </div>
 </div>

@@ -107,8 +107,8 @@
     "notebook": "inline/esmfold2/esmfold2-codex-r2/test-04.ipynb",
     "html": "inline/esmfold2/esmfold2-codex-r2/test-04.html",
     "execution_evidence": "inline/esmfold2/esmfold2-codex-r2/test-04.execution.json",
-    "published_notebook_sha256": "78398e26d89facfdbfb5cfaabe2f5fa5a37f2c9ac509470931b43101f4e59586",
-    "published_html_sha256": "417e0a706c0a4d9f2454f1437ea69a631772407ba6c716627f2de15dacc07ff7",
+    "published_notebook_sha256": "94bc65e6901774b94a28dfa5f6d1a04f560a7770f965638df8e8e3a5ca22d5b0",
+    "published_html_sha256": "4a820a069eebd867bea43fc3801890a633508338cbe7bdc0481025928a0287a1",
     "code_cells": 11,
     "sections": [
       {
@@ -200,7 +200,7 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-codex-r2/test-04.execution.json",
-    "notebook_sha256": "78398e26d89facfdbfb5cfaabe2f5fa5a37f2c9ac509470931b43101f4e59586",
+    "notebook_sha256": "94bc65e6901774b94a28dfa5f6d1a04f560a7770f965638df8e8e3a5ca22d5b0",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-codex-r2/test-04.ipynb",
       "section": 6,
@@ -212,6 +212,11 @@
         "path": "traceability_review.json",
         "record_id": "esmfold2-codex-r2/test-04"
       }
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-codex-r2-test-04.revision.json"
     }
   }
 }

@@ -204,7 +204,7 @@
     "source": "historical_decisions.json",
     "record_id": "state-opus-r1/test-02",
     "disposition": "rejected",
-    "result": "The quartile curve was flat and Spearman \u03c1 = \u22120.02.",
+    "result": "The quartile curve was flat and Spearman ρ = −0.02.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -218,8 +218,8 @@
     "notebook": "inline/state/state-opus-r1/test-02.ipynb",
     "html": "inline/state/state-opus-r1/test-02.html",
     "execution_evidence": "inline/state/state-opus-r1/test-02.execution.json",
-    "published_notebook_sha256": "0ed133e2f27a7374f121b89571eddc0f5144298b549aa3598cfbd80564d43ce9",
-    "published_html_sha256": "35c417fb49ae2f41dffa751c922652ced5c82c2f8a484337e2d6929a46d8518b",
+    "published_notebook_sha256": "4855dff92960d1f80cc6b867a68f89829fa2127b9df73f882af9b2f254de17d2",
+    "published_html_sha256": "567370bae3434a93c7dccb8627599417282d1b71d6ad02f42e5a7d1fb64aa16e",
     "code_cells": 9,
     "sections": [
       {
@@ -316,11 +316,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/state/state-opus-r1/test-02.execution.json",
-    "notebook_sha256": "0ed133e2f27a7374f121b89571eddc0f5144298b549aa3598cfbd80564d43ce9",
+    "notebook_sha256": "4855dff92960d1f80cc6b867a68f89829fa2127b9df73f882af9b2f254de17d2",
     "result_location": {
       "notebook": "inline/state/state-opus-r1/test-02.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-opus-r1-test-02.revision.json"
     }
   }
 }

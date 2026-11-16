@@ -83,7 +83,7 @@
     "scope": "supporting_implementation"
   },
   "axis_levels": {
-    "definition": "Convolve each tile with a Gaussian kernel with \u03c3 = 0, 1, 2 or 3 pixels. Score all conditions on the same tiles.",
+    "definition": "Convolve each tile with a Gaussian kernel with σ = 0, 1, 2 or 3 pixels. Score all conditions on the same tiles.",
     "calculation": "Recomputed from all original images.",
     "code": "materials/conch/notebooks/conch-opus-r2-01.py",
     "scope": "supporting_implementation"
@@ -178,7 +178,7 @@
     "source": "historical_decisions.json",
     "record_id": "conch-opus-r2/test-01",
     "disposition": "accepted",
-    "result": "Top-1 accuracy fell from 0.789 to 0.246 versus 0.932 to 0.609 for the fixed ImageNet ResNet-50. Extra CONCH loss 0.219 (95% CI 0.182\u20130.257). Independent of development, within the NCT source family.",
+    "result": "Top-1 accuracy fell from 0.789 to 0.246 versus 0.932 to 0.609 for the fixed ImageNet ResNet-50. Extra CONCH loss 0.219 (95% CI 0.182–0.257). Independent of development, within the NCT source family.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -198,8 +198,8 @@
     "notebook": "inline/conch/conch-opus-r2/test-01.ipynb",
     "html": "inline/conch/conch-opus-r2/test-01.html",
     "execution_evidence": "inline/conch/conch-opus-r2/test-01.execution.json",
-    "published_notebook_sha256": "250e256b6b4851fad4c7838435129b52a7a59c8a1a6ae82567fdbd0179658163",
-    "published_html_sha256": "d04dc7dea2defc108fccd6a492ef0537898b303d219cc2f44501ddf50553c540",
+    "published_notebook_sha256": "d12bb768b14aea9979871fb63a41d08f73e9d5e5277ab7c49c960cba5b6a083e",
+    "published_html_sha256": "4c12080498bf0862c479a8d2d1ea723a3e9ec492b826e1e6f949d97b6f65ee6f",
     "code_cells": 6,
     "sections": [
       {
@@ -286,7 +286,7 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/conch/conch-opus-r2/test-01.execution.json",
-    "notebook_sha256": "250e256b6b4851fad4c7838435129b52a7a59c8a1a6ae82567fdbd0179658163",
+    "notebook_sha256": "d12bb768b14aea9979871fb63a41d08f73e9d5e5277ab7c49c960cba5b6a083e",
     "result_location": {
       "notebook": "inline/conch/conch-opus-r2/test-01.ipynb",
       "section": 6,
@@ -310,6 +310,11 @@
       ],
       "historical_additional_loss": 0.219,
       "scope": "Controlled blur on the NCT source family. The current reconstruction and original reported estimate are separate results."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/conch-opus-r2-test-01.revision.json"
     }
   }
 }

@@ -1,0 +1,84 @@
+{
+  "format": "inline_analysis_notebook",
+  "notebook": "inline/conch/conch-kimi-r2/test-01.ipynb",
+  "html": "inline/conch/conch-kimi-r2/test-01.html",
+  "execution_evidence": "inline/conch/conch-kimi-r2/test-01.execution.json",
+  "published_notebook_sha256": "723338e8464ffd70291d6503d6e2fe5a5597a03bc9b4f05463c55a6130efd8de",
+  "published_html_sha256": "0b6b7d9221da4c5f1cc4e36e31b3a0a216204c4856abf278a8dc387ea4324c81",
+  "code_cells": 10,
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source / acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 6,
+      "code_cells": [
+        7
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 8,
+      "code_cells": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 12,
+      "code_cells": [
+        13
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. Decision and reason",
+      "markdown_cell": 14,
+      "code_cells": [
+        15,
+        16
+      ]
+    }
+  ],
+  "calculated_result": {
+    "section": 6,
+    "code_cells": [
+      15,
+      16
+    ]
+  },
+  "status": "executed_inline",
+  "presentation_revision": {
+    "kind": "display_formatting_only",
+    "original_execution_evidence": {
+      "path": "corrections/conch/original-execution/conch-kimi-r2-test-01.execution.json",
+      "sha256": "4e9865f6a07f3eddeed1b12c27a2088612891cde2f15c16c9cbcf7d4fb432e89"
+    },
+    "correction_record": {
+      "path": "corrections/conch/conch-kimi-r2-test-01.presentation.json",
+      "sha256": "d6e52f132f216cfa0031785bcb60b7ab4a7b25bceb4d0afcfe0fa06c313003b5"
+    },
+    "scientific_reexecution": false
+  },
+  "execution_scope": "Execution host, elapsed time, cell counts and calculation outputs describe the original artifact preserved in presentation_revision.original_execution_evidence. The published notebook and HTML include documented presentation changes only; no new full scientific execution was performed."
+}

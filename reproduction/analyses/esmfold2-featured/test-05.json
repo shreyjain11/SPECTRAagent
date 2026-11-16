@@ -625,7 +625,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-featured/test-05",
     "disposition": "rejected",
-    "result": "Highest-minus-rest C\u03b1-lDDT was \u22120.114 initially and \u22120.017 in confirmation. The confirmation interval crossed zero.",
+    "result": "Highest-minus-rest Cα-lDDT was −0.114 initially and −0.017 in confirmation. The confirmation interval crossed zero.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -734,7 +734,7 @@
       },
       "levels": {
         "status": "original_assignment_or_frozen_fit_retained",
-        "description": "Original33-finite discovery quintiles;105eligible\u219278selected,77finite confirmation",
+        "description": "Original33-finite discovery quintiles;105eligible→78selected,77finite confirmation",
         "artifacts": [
           "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/eligible_unscored_acidic_window_pool.csv",
           "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_ready_dataset/acidic_window_confirmation_candidate_features.csv"
@@ -782,7 +782,7 @@
           "original_runs/esmfold2_all_evidence_confirmation_loop_20260601T215426Z/spectra_loop_state.json"
         ],
         "notebook_cell": 13,
-        "recorded_text": "## Original agent determination\n\nThe historical ledger marks the fresh local-acidic-window axis **failed_fresh_confirmation**. The exact best-by-pTM top-minus-rest contrast is \u22120.0172900832; its original bootstrap interval includes zero. The original discovery 33-target subset and original five-band curve are reproduced above. The recovered source is preserved even where its chemistry convention or selection order differs from other axes.",
+        "recorded_text": "## Original agent determination\n\nThe historical ledger marks the fresh local-acidic-window axis **failed_fresh_confirmation**. The exact best-by-pTM top-minus-rest contrast is −0.0172900832; its original bootstrap interval includes zero. The original discovery 33-target subset and original five-band curve are reproduced above. The recovered source is preserved even where its chemistry convention or selection order differs from other axes.",
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
@@ -798,8 +798,8 @@
     "notebook": "inline/esmfold2/esmfold2-featured/test-05.ipynb",
     "html": "inline/esmfold2/esmfold2-featured/test-05.html",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-05.execution.json",
-    "published_notebook_sha256": "3422c8dc3cc0a01e5a95f8b6dd4e2079dc15baa51ce6dea0ee2b78606614ef5a",
-    "published_html_sha256": "e490575d29d4fa765f1a77e32681e0fbb6a153b2e308128bcc847a0638e7c44f",
+    "published_notebook_sha256": "7d11376449765aae5028ea90d5f5e336f42cedf52b5148fe1004e6a55da74bee",
+    "published_html_sha256": "7e2a8b3f9a1ca29056a4610ec4f899b31a2c3662bb42b9b848bffb3f24b8fc8e",
     "code_cells": 23,
     "sections": [
       {
@@ -903,11 +903,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-05.execution.json",
-    "notebook_sha256": "3422c8dc3cc0a01e5a95f8b6dd4e2079dc15baa51ce6dea0ee2b78606614ef5a",
+    "notebook_sha256": "7d11376449765aae5028ea90d5f5e336f42cedf52b5148fe1004e6a55da74bee",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-featured/test-05.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-featured-test-05.revision.json"
     }
   }
 }

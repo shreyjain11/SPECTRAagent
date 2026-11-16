@@ -369,7 +369,7 @@
     "html": "inline/conch/conch-primary/test-03.html",
     "execution_evidence": "inline/conch/conch-primary/test-03.execution.json",
     "published_notebook_sha256": "338dc2e6b166d1adb6136df5ac220a3186de11bd9901587b2824edf21f70cf55",
-    "published_html_sha256": "fb2802d82af3a2d43d09032d1e4140b32d03f4ccb985911bf6b573a9a1fe5198",
+    "published_html_sha256": "765ac7bee69c4d71509756a196050d4c32e91039e3b81a44f5da654bde8bb0bc",
     "code_cells": 7,
     "sections": [
       {
@@ -462,6 +462,11 @@
       "notebook": "inline/conch/conch-primary/test-03.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/conch-primary-test-03.revision.json"
     }
   }
 }

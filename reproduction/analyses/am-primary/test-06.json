@@ -1269,7 +1269,7 @@
     "html": "inline/alphamissense/am-primary/axis-6.html",
     "execution_evidence": "inline/alphamissense/am-primary/axis-6.execution.json",
     "published_notebook_sha256": "52f39f87e0992a8a8bbd3cd7d82099badf2a543f9876ac86467a8a9af95b46d2",
-    "published_html_sha256": "08ce585c1a17edf540d3301bcb603d92d29d9fd6b5f6103f0c5157c2b104833a",
+    "published_html_sha256": "2c4134355897532740bb1d261a10792e5f52cf1007228bae3bf62b38b701f08f",
     "code_cells": 10,
     "sections": [
       {
@@ -1365,6 +1365,11 @@
       "notebook": "inline/alphamissense/am-primary/axis-6.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-primary-test-06.revision.json"
     }
   }
 }

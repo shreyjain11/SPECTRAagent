@@ -721,7 +721,7 @@
       },
       "levels": {
         "status": "original_assignment_or_frozen_fit_retained",
-        "description": "Original hash0\u20135 discovery cutpoints applied to hash6\u20139 and external/scaled sets",
+        "description": "Original hash0–5 discovery cutpoints applied to hash6–9 and external/scaled sets",
         "artifacts": [
           "original_runs/esmfold2_new_axes_after_scaling_external_20260531T193531Z/spectra_ready_dataset/combined_prospective_features.csv"
         ]
@@ -787,8 +787,8 @@
     "notebook": "inline/esmfold2/esmfold2-featured/test-09.ipynb",
     "html": "inline/esmfold2/esmfold2-featured/test-09.html",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-09.execution.json",
-    "published_notebook_sha256": "ac02caf116239333d0b75565039d8e9a2dcea98319f180b2e017f34552915b3b",
-    "published_html_sha256": "d6eb7ff1ef98f211e14d7bb2253738a86b1b26b4d27804c66a2a794a67699a01",
+    "published_notebook_sha256": "8305a03622e107a04da2cc495d7b915daba0a65b54a6e8bb7c9edceba46e16bb",
+    "published_html_sha256": "6a2488ace917c02d0c286e287a14cba9f96d4ec8f8bf116e88a6693a548897a9",
     "code_cells": 23,
     "sections": [
       {
@@ -892,11 +892,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-09.execution.json",
-    "notebook_sha256": "ac02caf116239333d0b75565039d8e9a2dcea98319f180b2e017f34552915b3b",
+    "notebook_sha256": "8305a03622e107a04da2cc495d7b915daba0a65b54a6e8bb7c9edceba46e16bb",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-featured/test-09.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-featured-test-09.revision.json"
     }
   }
 }

@@ -1002,7 +1002,7 @@
     "source": "historical_decisions.json",
     "record_id": "am-primary/test-02",
     "disposition": "rejected",
-    "result": "No monotonic decline: \u03c1 = \u22120.16, P = 0.6515 across the ten bin medians and AUROCs. Intervals used 400 gene bootstraps.",
+    "result": "No monotonic decline: ρ = −0.16, P = 0.6515 across the ten bin medians and AUROCs. Intervals used 400 gene bootstraps.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -1169,7 +1169,7 @@
     "html": "inline/alphamissense/am-primary/axis-2.html",
     "execution_evidence": "inline/alphamissense/am-primary/axis-2.execution.json",
     "published_notebook_sha256": "ccaaefc48b05dafac08f89accbbeac814490b80be7891b540def965d65682d00",
-    "published_html_sha256": "1d06b653cacdc98fba6985b463047fe76d5cb206ea522f67f3ac7ecae76d4c37",
+    "published_html_sha256": "9512b62885a8127612e1b3eca1c144901733592081004c2fb4c92d256e3777c3",
     "code_cells": 7,
     "sections": [
       {
@@ -1262,6 +1262,11 @@
       "notebook": "inline/alphamissense/am-primary/axis-2.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-primary-test-02.revision.json"
     }
   }
 }

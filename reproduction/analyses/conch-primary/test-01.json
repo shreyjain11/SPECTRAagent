@@ -2,7 +2,7 @@
   "id": "conch-primary/test-01",
   "investigation": "conch-primary",
   "model": "CONCH",
-  "axis": "Pooled color\u2013texture distance",
+  "axis": "Pooled color–texture distance",
   "dataset_split": {
     "description": "Original frozen records and source identities are preserved; packaged inputs and executable acquisition steps are documented in the linked recovery chain.",
     "input_inventory": "primary/conch/PAYLOAD_MANIFEST.json",
@@ -194,7 +194,7 @@
     "source": "historical_decisions.json",
     "record_id": "conch-primary/test-01",
     "disposition": "rejected",
-    "result": "Raw accuracy increased with distance (Spearman \u03c1 = +0.77 across six bins), while balanced accuracy fell (\u03c1 = \u22120.77). Adipose and background class enrichment changed the pooled trend.",
+    "result": "Raw accuracy increased with distance (Spearman ρ = +0.77 across six bins), while balanced accuracy fell (ρ = −0.77). Adipose and background class enrichment changed the pooled trend.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -372,7 +372,7 @@
     "html": "inline/conch/conch-primary/test-01.html",
     "execution_evidence": "inline/conch/conch-primary/test-01.execution.json",
     "published_notebook_sha256": "13c5d809ef8ba37de967cd724e485e8b910101e0dd7d27adb96b9e1edc55880e",
-    "published_html_sha256": "9fd04fc03c1dc47200994fa29f76dd13db476e39acd046e4dd421990ff24ce32",
+    "published_html_sha256": "b579c35843362b62d1c5ca229c872b572e092213569338ab60053e20849beee4",
     "code_cells": 7,
     "sections": [
       {
@@ -465,6 +465,11 @@
       "notebook": "inline/conch/conch-primary/test-01.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/conch-primary-test-01.revision.json"
     }
   }
 }

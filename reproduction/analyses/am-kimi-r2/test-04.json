@@ -98,7 +98,7 @@
     "source": "historical_decisions.json",
     "record_id": "am-kimi-r2/test-04",
     "disposition": "rejected",
-    "result": "AM flat: 0.953/0.958/0.953/0.948/0.956; \u0394=+0.003, CI [\u22120.005,+0.012]; phyloP-as-predictor collapses (\u0394=\u22120.108) while AM does not Negative at adequate power (AM robust where its conservation reference fails)",
+    "result": "AM flat: 0.953/0.958/0.953/0.948/0.956; Δ=+0.003, CI [−0.005,+0.012]; phyloP-as-predictor collapses (Δ=−0.108) while AM does not Negative at adequate power (AM robust where its conservation reference fails)",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -118,8 +118,8 @@
     "notebook": "inline/alphamissense/am-kimi-r2/axis-4.ipynb",
     "html": "inline/alphamissense/am-kimi-r2/axis-4.html",
     "execution_evidence": "inline/alphamissense/am-kimi-r2/axis-4.execution.json",
-    "published_notebook_sha256": "7b1878bec10d7ea70fa803bd2ccfe43f2e2dc41d332ec248c0366efdc06b744e",
-    "published_html_sha256": "097f3e06ba94544b7ed4688ee18f4f2275f1a4fef690097913c3180135120bb2",
+    "published_notebook_sha256": "d8c4245b57c84643277a171f9daeee7ec0175807e064ea91246cf4d8fa7ae21a",
+    "published_html_sha256": "67551c37bbd81e483e7fdc79db23d4fe5e0b317f7b1a30570d809b6db9f1d286",
     "code_cells": 9,
     "sections": [
       {
@@ -209,11 +209,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/alphamissense/am-kimi-r2/axis-4.execution.json",
-    "notebook_sha256": "7b1878bec10d7ea70fa803bd2ccfe43f2e2dc41d332ec248c0366efdc06b744e",
+    "notebook_sha256": "d8c4245b57c84643277a171f9daeee7ec0175807e064ea91246cf4d8fa7ae21a",
     "result_location": {
       "notebook": "inline/alphamissense/am-kimi-r2/axis-4.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-kimi-r2-test-04.revision.json"
     }
   }
 }

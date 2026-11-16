@@ -23,7 +23,7 @@
   },
   "axis_levels": {
     "definition": "Median standardized Euclidean distance to five nearest training contexts across 2,000 genes.",
-    "calculation": "Input-side features rebuilt from original sources; levels and completeness/compound partitions computed from individual rows. See notebook stages3\u20134 and method policy.",
+    "calculation": "Input-side features rebuilt from original sources; levels and completeness/compound partitions computed from individual rows. See notebook stages3–4 and method policy.",
     "code": "reconstructed/state-codex-r1/notebooks/01-state-codex-r1-distance.py",
     "scope": "supporting_implementation"
   },
@@ -50,7 +50,7 @@
   },
   "reconstruction_notes": [
     "Actual source-to-condition reconstruction executed on exxact05: public source hashes, input-side features, original released-DE scoring, eligibility, regressions, reference contrasts, curves and controls are linked.",
-    "Surviving original scripts01\u201304 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
+    "Surviving original scripts01–04 are unchanged. Missing continuation methods are explicitly reconstructed from original report/native evidence; final seed and standardization inheritance are recorded in reconstruction_policy.json.",
     "The historically named matching sensitivity is implemented using the eight retained effect/cell-count quintile indicators. Within-partition cutpoint construction is a disclosed reconstruction choice.",
     "Historical aggregate tables are validation targets only. Numerical differences remain reported; no target result determines inputs, parameters or eligibility.",
     "Original neural inference is not repeated: this investigation consumed official released predictions, whose full-feature errors are recomputed from the original individual DE rows."
@@ -113,7 +113,7 @@
     "source": "historical_decisions.json",
     "record_id": "state-codex-r1/test-01",
     "disposition": "rejected",
-    "result": "The frozen decline failed. RMSE slopes were \u22120.032 raw and \u22120.150 adjusted, indicating improvement as distance increased. The five contexts gave a coarse ordering test.",
+    "result": "The frozen decline failed. RMSE slopes were −0.032 raw and −0.150 adjusted, indicating improvement as distance increased. The five contexts gave a coarse ordering test.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -293,8 +293,8 @@
     "notebook": "inline/state/state-codex-r1/test-01.ipynb",
     "html": "inline/state/state-codex-r1/test-01.html",
     "execution_evidence": "inline/state/state-codex-r1/test-01.execution.json",
-    "published_notebook_sha256": "d70837e634ee255d2afad139afc4e6b84a5b1ed10a1e780c46ed8c371ae693e6",
-    "published_html_sha256": "db80cc1740017e94316b16cfc57cd00f32ec3bc3066eecdc866947b679c49a5a",
+    "published_notebook_sha256": "2b8c70b619b24aa04fe9858f4953d5bd5a9bda230b73402ec11781bc7fbf23d5",
+    "published_html_sha256": "16c11abd522587ecab3fa096255f3f8d8851121291d1377b3266743ad4ed02b3",
     "code_cells": 20,
     "sections": [
       {
@@ -402,11 +402,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/state/state-codex-r1/test-01.execution.json",
-    "notebook_sha256": "d70837e634ee255d2afad139afc4e6b84a5b1ed10a1e780c46ed8c371ae693e6",
+    "notebook_sha256": "2b8c70b619b24aa04fe9858f4953d5bd5a9bda230b73402ec11781bc7fbf23d5",
     "result_location": {
       "notebook": "inline/state/state-codex-r1/test-01.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-codex-r1-test-01.revision.json"
     }
   }
 }

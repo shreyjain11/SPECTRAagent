@@ -889,7 +889,7 @@
     "scope": "supporting_implementation"
   },
   "axis_levels": {
-    "definition": "Among columns supported by \u2265200 effective sequences, compare occupancy \u226590% versus <70%.",
+    "definition": "Among columns supported by ≥200 effective sequences, compare occupancy ≥90% versus <70%.",
     "calculation": "Original feature/level construction or explicitly preserved frozen memberships; exact source functions and inputs are linked in primary_recovery.stages.",
     "code": "primary/alphamissense/am-primary/axis-5.py",
     "scope": "supporting_implementation"
@@ -1269,7 +1269,7 @@
     "html": "inline/alphamissense/am-primary/axis-5.html",
     "execution_evidence": "inline/alphamissense/am-primary/axis-5.execution.json",
     "published_notebook_sha256": "00b45c39a0dd47b691ba038cc217ae03b67e280dd3551fbe2036f29a511bec39",
-    "published_html_sha256": "9bf81480d8d6b2dc1f65f72c77aa7ea20b67aa96eba23ff148ca0797008f1f6d",
+    "published_html_sha256": "b0b406120fafa6963a1853520f016d573e537bfbcb587e226524dabc539a1479",
     "code_cells": 10,
     "sections": [
       {
@@ -1365,6 +1365,11 @@
       "notebook": "inline/alphamissense/am-primary/axis-5.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-primary-test-05.revision.json"
     }
   }
 }

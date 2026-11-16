@@ -97,7 +97,7 @@
     "source": "historical_decisions.json",
     "record_id": "am-kimi-r1/test-06",
     "disposition": "unresolved",
-    "result": "AM 0.969\u21920.925\u21920.820; but extreme tier has only 40 positives and is a label-ascertainment artifact regime EXPLORATORY, not certified (nuisance label artifact at the extreme; shared at the well-powered rare tier).",
+    "result": "AM 0.969→0.925→0.820; but extreme tier has only 40 positives and is a label-ascertainment artifact regime EXPLORATORY, not certified (nuisance label artifact at the extreme; shared at the well-powered rare tier).",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -117,8 +117,8 @@
     "notebook": "inline/alphamissense/am-kimi-r1/axis-6.ipynb",
     "html": "inline/alphamissense/am-kimi-r1/axis-6.html",
     "execution_evidence": "inline/alphamissense/am-kimi-r1/axis-6.execution.json",
-    "published_notebook_sha256": "82f4994566e10901908d4b1fd8b245ebdee70c6fd818d2218fa1fb201e535539",
-    "published_html_sha256": "840bf56564f1fa1970c6acc0b19df25e5459013a430ca7af2fc5a4158371f8b9",
+    "published_notebook_sha256": "b3c46259f949b64cf3b51bdc978e673863c44be62cd3faedb2b6b7cd8c90452e",
+    "published_html_sha256": "63a0d1d16ff886d714cb2cb58f881e51ecc44f8970cf29b095dddf745bd209d3",
     "code_cells": 8,
     "sections": [
       {
@@ -207,11 +207,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/alphamissense/am-kimi-r1/axis-6.execution.json",
-    "notebook_sha256": "82f4994566e10901908d4b1fd8b245ebdee70c6fd818d2218fa1fb201e535539",
+    "notebook_sha256": "b3c46259f949b64cf3b51bdc978e673863c44be62cd3faedb2b6b7cd8c90452e",
     "result_location": {
       "notebook": "inline/alphamissense/am-kimi-r1/axis-6.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-kimi-r1-test-06.revision.json"
     }
   }
 }

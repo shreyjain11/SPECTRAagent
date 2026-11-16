@@ -7,8 +7,8 @@
   "code_cells": 12,
   "executed_cells": 12,
   "errors": 0,
-  "notebook_sha256": "f68b7cfd4291cc958a7b22ddc01c5765ff740c4c66b487d7a4fc95fd425ea83f",
-  "html_sha256": "c71509fa38cc4653619781e896b4c2db48f15ecb065588ef981094ab4edfb3c9",
+  "notebook_sha256": "57d62cb1e682b4c8314a70a8c9649e6f6ff561ec256e4686a0d046687b9e6dd2",
+  "html_sha256": "3293fd2877a55d93f463ade7a711c94f187d4456c15902af5f59a29ada374d15",
   "sections": [
     {
       "number": 1,
@@ -91,17 +91,16 @@
   "input_manifests": [],
   "calculation_evidence": [],
   "presentation_revision": {
-    "kind": "markdown_and_navigation_only",
     "scientific_reexecution": false,
-    "code_and_outputs_unchanged": true,
     "original_execution_evidence": {
-      "path": "corrections/state/state-codex-r2-test-02.original-execution.json",
-      "sha256": "91272828d5bea18b1c94d35ab80840b186bc96943fcdc7a23e197f0e5f1fd06e"
+      "path": "review_20261115/presentation/state-codex-r2-test-02.previous-execution.json",
+      "sha256": "8679976c81491e241af078655106aab3b8279d8648b49eaa5560952ef83956db"
     },
     "correction_record": {
-      "path": "corrections/state/state-codex-r2-test-02.presentation-revision.json",
-      "sha256": "d6551f1c88d70e144814443c6accb0f38890daa80b6ad9484858cee7ffe601c3"
+      "path": "review_20261115/presentation/state-codex-r2-test-02.revision.json",
+      "sha256": "693a094323f6acc9e0c2626169b8dff4edd1b774e49eeb264b1754685d3b649f"
     }
   },
-  "execution_scope": "Execution fields describe the preserved original code and outputs. The current notebook and HTML include a later Markdown/navigation revision; no scientific reexecution was performed."
+  "execution_scope": "Execution fields describe the preserved original code and outputs. The current notebook and HTML include a later Markdown/navigation revision; no scientific reexecution was performed.",
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

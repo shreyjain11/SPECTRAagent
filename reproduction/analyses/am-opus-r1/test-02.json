@@ -303,7 +303,7 @@
     "source": "historical_decisions.json",
     "record_id": "am-opus-r1/test-02",
     "disposition": "rejected",
-    "result": "Across 73 assays agreement increased as depth decreased (\u03c1 = \u22120.30). Stability assays confounded the pooled relationship.",
+    "result": "Across 73 assays agreement increased as depth decreased (ρ = −0.30). Stability assays confounded the pooled relationship.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -317,8 +317,8 @@
     "notebook": "inline/alphamissense/am-opus-r1/test-02.ipynb",
     "html": "inline/alphamissense/am-opus-r1/test-02.html",
     "execution_evidence": "inline/alphamissense/am-opus-r1/test-02.execution.json",
-    "published_notebook_sha256": "84b63f12514ab8e37cf76c1825bb331175da4e62b3c33e138e63c0151c039265",
-    "published_html_sha256": "a3539aab5bd35012f33f579608999ebc4aaec70933eb3babe110396896de47f4",
+    "published_notebook_sha256": "61ba3165e3ac48b13dd235fe88a95b206354ed6d8fa37f245acf7036eaa4d248",
+    "published_html_sha256": "f4a27137a4f76aae7df4819104cae6b2382fdbb78ce42132098033768e8495e1",
     "code_cells": 9,
     "sections": [
       {
@@ -410,9 +410,9 @@
     "scope": "corrected_inline_analysis",
     "evidence": {
       "notebook": "inline/alphamissense/am-opus-r1/test-02.ipynb",
-      "notebook_sha256": "84b63f12514ab8e37cf76c1825bb331175da4e62b3c33e138e63c0151c039265",
+      "notebook_sha256": "61ba3165e3ac48b13dd235fe88a95b206354ed6d8fa37f245acf7036eaa4d248",
       "execution_record": "inline/alphamissense/am-opus-r1/test-02.execution.json",
-      "execution_record_sha256": "e15ff3f07eb4a41e795be6f6c2ba9675d899d69bbcab07910bc81430eb784916",
+      "execution_record_sha256": "04b74c94efbebc8a99c31ada042c84522e1deecdd4f73dfda35eb733ce1cc561",
       "cohort_output_cell": 10,
       "result_section": 6,
       "result_code_cells": [
@@ -516,11 +516,16 @@
     ],
     "notebook": "inline/alphamissense/am-opus-r1/test-02.ipynb",
     "execution_evidence": "inline/alphamissense/am-opus-r1/test-02.execution.json",
-    "notebook_sha256": "84b63f12514ab8e37cf76c1825bb331175da4e62b3c33e138e63c0151c039265",
+    "notebook_sha256": "61ba3165e3ac48b13dd235fe88a95b206354ed6d8fa37f245acf7036eaa4d248",
     "result_location": {
       "notebook": "inline/alphamissense/am-opus-r1/test-02.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-opus-r1-test-02.revision.json"
     }
   },
   "scientific_record_scope": {

@@ -22,7 +22,7 @@
   },
   "axis_levels": {
     "definition": "Secondary prespecified tests on the same Tahoe prospective aggregation.",
-    "calculation": "Source-derived features, frozen levels and cohort eligibility are computed in notebook stages3\u20134.",
+    "calculation": "Source-derived features, frozen levels and cohort eligibility are computed in notebook stages3–4.",
     "code": "reconstructed/state-codex-r2/notebooks/04-state-codex-r2-secondary.py",
     "scope": "supporting_implementation"
   },
@@ -315,8 +315,8 @@
     "notebook": "inline/state/state-codex-r2/test-04.ipynb",
     "html": "inline/state/state-codex-r2/test-04.html",
     "execution_evidence": "inline/state/state-codex-r2/test-04.execution.json",
-    "published_notebook_sha256": "06a9e6d64cc82e85bf81ed38e20021bf9b1f64b5b09f79aee90f9d02a286badc",
-    "published_html_sha256": "b2e1ebd358d10a2cbbafef390e6be1e1df195716b8588ab74de9a055163c2c34",
+    "published_notebook_sha256": "e2bb43129c0599bf6c9da1bdb083726b1816e18a54bc3d4d55e2445fea036b10",
+    "published_html_sha256": "38a0c57ddaf46663008a327357863d3dc0466a57b9d75dd905530734db498eaa",
     "code_cells": 9,
     "sections": [
       {
@@ -422,7 +422,7 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/state/state-codex-r2/test-04.execution.json",
-    "notebook_sha256": "06a9e6d64cc82e85bf81ed38e20021bf9b1f64b5b09f79aee90f9d02a286badc",
+    "notebook_sha256": "e2bb43129c0599bf6c9da1bdb083726b1816e18a54bc3d4d55e2445fea036b10",
     "result_location": {
       "notebook": "inline/state/state-codex-r2/test-04.ipynb",
       "section": 5,
@@ -434,6 +434,11 @@
         "markdown_cell": 17
       },
       "description": "Calculated results or eligibility diagnostics in section 5; reconstructed interpretation in section 6. The final execution receipt is not a scientific result."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-codex-r2-test-04.revision.json"
     }
   }
 }

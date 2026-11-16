@@ -625,7 +625,7 @@
     "source": "historical_decisions.json",
     "record_id": "esmfold2-featured/test-04",
     "disposition": "rejected",
-    "result": "Highest-minus-rest C\u03b1-lDDT was \u22120.071 in discovery and +0.007 in confirmation.",
+    "result": "Highest-minus-rest Cα-lDDT was −0.071 in discovery and +0.007 in confirmation.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "legacy_implementation": {
@@ -725,7 +725,7 @@
       },
       "axis": {
         "status": "definition_and_code_retained",
-        "definition": "Absolute sequence charge under each original program\u2019s recorded chemistry convention",
+        "definition": "Absolute sequence charge under each original program’s recorded chemistry convention",
         "artifacts": [
           "original_runs/esmfold2_shared_axis_cameo_rcsb_20260601T173500Z/scripts/analyze_shared_axes.py",
           "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/scripts/summarize_charge_confirmation.py",
@@ -785,7 +785,7 @@
           "original_runs/esmfold2_charge_axis_fresh_rcsb_confirmation_20260601T205925Z/spectra_loop_state.json"
         ],
         "notebook_cell": 15,
-        "recorded_text": "## Recorded conclusion\n\nHighest-minus-rest C\u03b1-lDDT was \u22120.071 in discovery and +0.007 in confirmation.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
+        "recorded_text": "## Recorded conclusion\n\nHighest-minus-rest Cα-lDDT was −0.071 in discovery and +0.007 in confirmation.\n\nReproduction limitations are listed above. Original reported results remain separate from the recomputed outputs.",
         "note": "This is the original determination, not a new protocol assessment or a new determination from fresh inference."
       }
     }
@@ -801,8 +801,8 @@
     "notebook": "inline/esmfold2/esmfold2-featured/test-04.ipynb",
     "html": "inline/esmfold2/esmfold2-featured/test-04.html",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-04.execution.json",
-    "published_notebook_sha256": "c0509ae8e78601b1c6e4f5f45f557adeb08967bdd5746e94e2bd6faba6f8d506",
-    "published_html_sha256": "5955b2f9211b2198eb5be0aba690ed07e63ff6d1f067ec8fcf2a71a697a31e40",
+    "published_notebook_sha256": "8ffe9b89d68b101887595d6a4c97c7c0e12965666b6bc4100c21ec2d2562a30a",
+    "published_html_sha256": "fea477fb4bcf194289e2452e6ebf827748a37d51b75f480f90a3907db3d11851",
     "code_cells": 24,
     "sections": [
       {
@@ -907,11 +907,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/esmfold2/esmfold2-featured/test-04.execution.json",
-    "notebook_sha256": "c0509ae8e78601b1c6e4f5f45f557adeb08967bdd5746e94e2bd6faba6f8d506",
+    "notebook_sha256": "8ffe9b89d68b101887595d6a4c97c7c0e12965666b6bc4100c21ec2d2562a30a",
     "result_location": {
       "notebook": "inline/esmfold2/esmfold2-featured/test-04.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/esmfold2-featured-test-04.revision.json"
     }
   }
 }

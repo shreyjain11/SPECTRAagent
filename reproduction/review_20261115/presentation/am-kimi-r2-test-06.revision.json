@@ -1,0 +1,178 @@
+{
+  "analysis_id": "am-kimi-r2/test-06",
+  "original_commit": "dfe2a55acebe3ba00df217e1f18b8148de6ff78f",
+  "kind": "reviewed_markdown_and_layout",
+  "scientific_reexecution": false,
+  "original_artifacts": {
+    "notebook": {
+      "path": "inline/alphamissense/am-kimi-r2/axis-6.ipynb",
+      "sha256": "5f01267446dfe58088c00a97023cf226985b695a3bab20043266cb47173c197a"
+    },
+    "html": {
+      "path": "inline/alphamissense/am-kimi-r2/axis-6.html",
+      "sha256": "a8ee65324b37a1c55b76a1834cb7df8ea5ae4943db83f6dffb94ee504a1f1ada"
+    }
+  },
+  "published_artifacts": {
+    "notebook": {
+      "path": "inline/alphamissense/am-kimi-r2/axis-6.ipynb",
+      "sha256": "d479faffbf98387accb3b42f61510804ddea7b676af92aa0d2145efe8d3632f0"
+    },
+    "html": {
+      "path": "inline/alphamissense/am-kimi-r2/axis-6.html",
+      "sha256": "92d6f2fe2f7ba936ae93671972bb9aad6c547c23929f6d73169870b338b757d4"
+    }
+  },
+  "modified_markdown_cells": [
+    14
+  ],
+  "original_code_cells": [
+    {
+      "notebook_cell": 1,
+      "execution_count": 1,
+      "source_sha256": "f063a1ad5578cbcd72f6daa99146c3bda0f3b84ccbfbdc96a1fcabc5e4eae08f",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "ebcddf7f3ea177be5d4ef4e55989c8f9221a4278edbf917b5d2e0ba4f23724ca"
+    },
+    {
+      "notebook_cell": 2,
+      "execution_count": 2,
+      "source_sha256": "7192055ee0727d2c8fa6ba62bae99c2e53a66d2bb5e0a728c284ca4e91d86682",
+      "outputs_sha256": "5b56deb7926938c0af0fa61e6dd54104cfb984ad2d224f2dc10400e38b8a5338",
+      "cell_sha256": "4d585b1d75f3e169a86bb9eeb89669bd2a50400fc6851ac31f5e80662e01200b"
+    },
+    {
+      "notebook_cell": 4,
+      "execution_count": 3,
+      "source_sha256": "6af8a7e4b996505dc9293681b5241e68e194b7e4d2019a9f26c797c88e2957d7",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "0fd2c8ac0997a94532886fdd7a5bbc62b508edff5160a686951f2564b455ced6"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 4,
+      "source_sha256": "b6648cd348fcbf129961d649ef32d5dc3bbedbf1e66f75feb6c41cebececa876",
+      "outputs_sha256": "2d7a59b2b74471546ada2dbafabf93203ada6484f2945198821a418d6cc3053d",
+      "cell_sha256": "fba2d6b75fdc04aaf2de14a8bb12676db68150d2502c50038ddf50fed2ba0dcb"
+    },
+    {
+      "notebook_cell": 7,
+      "execution_count": 5,
+      "source_sha256": "3ece508adaf48bce3a15300e9f06ebe2cc1fcb6d812ef231f2d1783cbdc87855",
+      "outputs_sha256": "32e51f1433ae10ec347922f298eb23574d59553665cb100fa55768aa5394d5a0",
+      "cell_sha256": "44964da61b0e9c16c3eae10be62bf387ed89066d912d8c088dbc78709fca9a34"
+    },
+    {
+      "notebook_cell": 8,
+      "execution_count": 6,
+      "source_sha256": "63e2c233a53292f61b72a5865b9969f5adc65d9b4d4481edcf7ca6b3ea653e71",
+      "outputs_sha256": "c4e2ed40846ece8d5d6439626147c941f0c4753b3ced58982da6ab629c8213e6",
+      "cell_sha256": "6c565c6d8f7407a80d0a14f068599602861177f5f61b90824e7711dcb2b745f1"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 7,
+      "source_sha256": "f02d03cf8de2b98bb13e534482f90ee7b8fdf066af021584d192183160fb55c3",
+      "outputs_sha256": "47b101179a5a437ee17aaa4b8de8159a473754db61900a36d47ea1182ff509e4",
+      "cell_sha256": "747bcd2801dae8076e49c6e54be4ebd8ef3d6f4464bed7b001f880f2fac170f8"
+    },
+    {
+      "notebook_cell": 11,
+      "execution_count": 8,
+      "source_sha256": "ead61969e8f42d09c142680c16960d6d33b46385f4f06693893688d47ef1db27",
+      "outputs_sha256": "ea0a6bfbbf2a8a086e63ab01338941b8e11297e40834dce6e000218e53939ddd",
+      "cell_sha256": "2166da58f29eb213840c30b00b47bd254ef9ddb8ca5fb839781429dce13217ef"
+    },
+    {
+      "notebook_cell": 13,
+      "execution_count": 9,
+      "source_sha256": "54640828f581748a637f2fca3140fd6aa35bd89aa4cce1639b7a1a22001d7f9b",
+      "outputs_sha256": "06338b0b9aecbecaf09d64d8f4d7e543b4cd2b62768ab521eb0c645197a79493",
+      "cell_sha256": "c43b64dfc80b833f8139ce7ab9f21b703bfd601229df91b8649bf3eab093985a"
+    },
+    {
+      "notebook_cell": 15,
+      "execution_count": 10,
+      "source_sha256": "a44fde0a3ab0b5fbff3f1319f519af9dbfeaf3b4f4bfb775ed17be3e7663bee0",
+      "outputs_sha256": "06f9d780fb9dfeb81b93bae7ef4fc1304d47b8840a0599da986addd4ec96ecb4",
+      "cell_sha256": "e13b0f0c42696d993aba86363de75172d4b2b53d1f92ebdb21acb61b3e9515ff"
+    }
+  ],
+  "published_code_cells": [
+    {
+      "notebook_cell": 1,
+      "execution_count": 1,
+      "source_sha256": "f063a1ad5578cbcd72f6daa99146c3bda0f3b84ccbfbdc96a1fcabc5e4eae08f",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "ebcddf7f3ea177be5d4ef4e55989c8f9221a4278edbf917b5d2e0ba4f23724ca"
+    },
+    {
+      "notebook_cell": 2,
+      "execution_count": 2,
+      "source_sha256": "7192055ee0727d2c8fa6ba62bae99c2e53a66d2bb5e0a728c284ca4e91d86682",
+      "outputs_sha256": "5b56deb7926938c0af0fa61e6dd54104cfb984ad2d224f2dc10400e38b8a5338",
+      "cell_sha256": "4d585b1d75f3e169a86bb9eeb89669bd2a50400fc6851ac31f5e80662e01200b"
+    },
+    {
+      "notebook_cell": 4,
+      "execution_count": 3,
+      "source_sha256": "6af8a7e4b996505dc9293681b5241e68e194b7e4d2019a9f26c797c88e2957d7",
+      "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "cell_sha256": "0fd2c8ac0997a94532886fdd7a5bbc62b508edff5160a686951f2564b455ced6"
+    },
+    {
+      "notebook_cell": 5,
+      "execution_count": 4,
+      "source_sha256": "b6648cd348fcbf129961d649ef32d5dc3bbedbf1e66f75feb6c41cebececa876",
+      "outputs_sha256": "2d7a59b2b74471546ada2dbafabf93203ada6484f2945198821a418d6cc3053d",
+      "cell_sha256": "fba2d6b75fdc04aaf2de14a8bb12676db68150d2502c50038ddf50fed2ba0dcb"
+    },
+    {
+      "notebook_cell": 7,
+      "execution_count": 5,
+      "source_sha256": "3ece508adaf48bce3a15300e9f06ebe2cc1fcb6d812ef231f2d1783cbdc87855",
+      "outputs_sha256": "32e51f1433ae10ec347922f298eb23574d59553665cb100fa55768aa5394d5a0",
+      "cell_sha256": "44964da61b0e9c16c3eae10be62bf387ed89066d912d8c088dbc78709fca9a34"
+    },
+    {
+      "notebook_cell": 8,
+      "execution_count": 6,
+      "source_sha256": "63e2c233a53292f61b72a5865b9969f5adc65d9b4d4481edcf7ca6b3ea653e71",
+      "outputs_sha256": "c4e2ed40846ece8d5d6439626147c941f0c4753b3ced58982da6ab629c8213e6",
+      "cell_sha256": "6c565c6d8f7407a80d0a14f068599602861177f5f61b90824e7711dcb2b745f1"
+    },
+    {
+      "notebook_cell": 9,
+      "execution_count": 7,
+      "source_sha256": "f02d03cf8de2b98bb13e534482f90ee7b8fdf066af021584d192183160fb55c3",
+      "outputs_sha256": "47b101179a5a437ee17aaa4b8de8159a473754db61900a36d47ea1182ff509e4",
+      "cell_sha256": "747bcd2801dae8076e49c6e54be4ebd8ef3d6f4464bed7b001f880f2fac170f8"
+    },
+    {
+      "notebook_cell": 11,
+      "execution_count": 8,
+      "source_sha256": "ead61969e8f42d09c142680c16960d6d33b46385f4f06693893688d47ef1db27",
+      "outputs_sha256": "ea0a6bfbbf2a8a086e63ab01338941b8e11297e40834dce6e000218e53939ddd",
+      "cell_sha256": "2166da58f29eb213840c30b00b47bd254ef9ddb8ca5fb839781429dce13217ef"
+    },
+    {
+      "notebook_cell": 13,
+      "execution_count": 9,
+      "source_sha256": "54640828f581748a637f2fca3140fd6aa35bd89aa4cce1639b7a1a22001d7f9b",
+      "outputs_sha256": "06338b0b9aecbecaf09d64d8f4d7e543b4cd2b62768ab521eb0c645197a79493",
+      "cell_sha256": "c43b64dfc80b833f8139ce7ab9f21b703bfd601229df91b8649bf3eab093985a"
+    },
+    {
+      "notebook_cell": 15,
+      "execution_count": 10,
+      "source_sha256": "a44fde0a3ab0b5fbff3f1319f519af9dbfeaf3b4f4bfb775ed17be3e7663bee0",
+      "outputs_sha256": "06f9d780fb9dfeb81b93bae7ef4fc1304d47b8840a0599da986addd4ec96ecb4",
+      "cell_sha256": "e13b0f0c42696d993aba86363de75172d4b2b53d1f92ebdb21acb61b3e9515ff"
+    }
+  ],
+  "previous_inline_implementation": {
+    "path": "review_20261115/presentation/am-kimi-r2-test-06.previous-inline-implementation.json",
+    "sha256": "58d30cfde38a62f153dc73cff7d5e220d0f45a6db5bebb473343f82a7405cd01"
+  },
+  "layout": "Readable paragraph spacing; whitespace-only corrections to joined words/numbers in rendered outputs; scrollable code and wide outputs; responsive image width; descriptive page title and index link."
+}

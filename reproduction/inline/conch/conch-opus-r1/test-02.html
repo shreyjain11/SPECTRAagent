@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>CONCH Opus R1 — Pooled appearance distance</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7507,8 +7507,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a16b7891">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7527,14 +7549,15 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">¶</a></h2><p>Use the full 7,180-image CRC-VAL panel and a300-image-per-class NCT reference. Pin the public dataset, model and prompt revisions below and verify raw bytes. The reference sampling is deterministic: sort full-population image names, then select 300 per class without replacement with NumPy RandomState 1234. Use Python 3.11, NumPy 1.26.4, Pandas 2.2.2, SciPy 1.13.1, scikit-learn 1.5.2, scikit-image 0.24.0, statsmodels 0.14.2, Pillow 10.4.0, PyTorch 2.5.0 and torchvision 0.20.0, with the pinned public CONCH source. Set CONCH_INPUTS and CONCH_SOURCE for an existing cache.</p>
+<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">&#182;</a></h2><p>Use the full 7,180-image CRC-VAL panel and a 300-image-per-class NCT reference. Pin the public dataset, model and prompt revisions below and verify raw bytes. The reference sampling is deterministic: sort full-population image names, then select 300 per class without replacement with NumPy RandomState 1234. Use Python 3.11, NumPy 1.26.4, Pandas 2.2.2, SciPy 1.13.1, scikit-learn 1.5.2, scikit-image 0.24.0, statsmodels 0.14.2, Pillow 10.4.0, PyTorch 2.5.0 and torchvision 0.20.0, with the pinned public CONCH source. Set CONCH_INPUTS and CONCH_SOURCE for an existing cache.</p>
 <p><strong>Environment setup before starting the kernel (Linux/CUDA 12.4):</strong></p>
 <div class="highlight"><pre><span></span>python3.11<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv-conch-opus
 .venv-conch-opus/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">torch</span><span class="o">==</span><span class="m">2</span>.5.0<span class="w"> </span><span class="nv">torchvision</span><span class="o">==</span><span class="m">0</span>.20.0<span class="w"> </span>--index-url<span class="w"> </span>https://download.pytorch.org/whl/cu124
 .venv-conch-opus/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">numpy</span><span class="o">==</span><span class="m">1</span>.26.4<span class="w"> </span><span class="nv">scipy</span><span class="o">==</span><span class="m">1</span>.13.1<span class="w"> </span><span class="nv">pandas</span><span class="o">==</span><span class="m">2</span>.2.2<span class="w"> </span>scikit-learn<span class="o">==</span><span class="m">1</span>.5.2<span class="w"> </span><span class="nv">Pillow</span><span class="o">==</span><span class="m">10</span>.4.0<span class="w"> </span><span class="nv">pyarrow</span><span class="o">==</span><span class="m">16</span>.1.0<span class="w"> </span>scikit-image<span class="o">==</span><span class="m">0</span>.24.0<span class="w"> </span><span class="nv">statsmodels</span><span class="o">==</span><span class="m">0</span>.14.2<span class="w"> </span>opencv-python-headless<span class="o">==</span><span class="m">4</span>.10.0.84<span class="w"> </span><span class="nv">matplotlib</span><span class="o">==</span><span class="m">3</span>.9.4<span class="w"> </span><span class="nv">timm</span><span class="o">==</span><span class="m">0</span>.9.16<span class="w"> </span><span class="nv">transformers</span><span class="o">==</span><span class="m">4</span>.40.1<span class="w"> </span><span class="nv">tokenizers</span><span class="o">==</span><span class="m">0</span>.19.1<span class="w"> </span>huggingface-hub<span class="o">==</span><span class="m">0</span>.23.5<span class="w"> </span><span class="nv">ftfy</span><span class="o">==</span><span class="m">6</span>.3.1<span class="w"> </span><span class="nv">h5py</span><span class="o">==</span><span class="m">3</span>.11.0<span class="w"> </span><span class="nv">open_clip_torch</span><span class="o">==</span><span class="m">2</span>.24.0<span class="w"> </span><span class="nv">requests</span><span class="o">==</span><span class="m">2</span>.32.3<span class="w"> </span><span class="nv">nbformat</span><span class="o">==</span><span class="m">5</span>.10.4<span class="w"> </span><span class="nv">nbclient</span><span class="o">==</span><span class="m">0</span>.10.4<span class="w"> </span><span class="nv">nbconvert</span><span class="o">==</span><span class="m">7</span>.16.6<span class="w"> </span><span class="nv">ipykernel</span><span class="o">==</span><span class="m">6</span>.29.5
-.venv-conch-opus/bin/python<span class="w"> </span>-m<span class="w"> </span>ipykernel<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>--name<span class="w"> </span>conch-opus<span class="w"> </span>--display-name<span class="w"> </span><span class="s2">"conch-opus"</span>
+.venv-conch-opus/bin/python<span class="w"> </span>-m<span class="w"> </span>ipykernel<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>--name<span class="w"> </span>conch-opus<span class="w"> </span>--display-name<span class="w"> </span><span class="s2">&quot;conch-opus&quot;</span>
 </pre></div>
 <p>Select that kernel before Run All. The acquisition cell clones the pinned public CONCH implementation; every analysis-specific function remains inline below. Raw tiles are 224×224; the pinned public CONCH transform resizes model inputs to its default 448×448. The pixel-axis calculations use the raw-tile resolution.</p>
+
 </div>
 </div>
 </div>
@@ -8092,7 +8115,9 @@ CONCH accuracy 0.7727019498607243
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">¶</a></h2><p>Compare CONCH and a fixed multinomial logistic classifier trained on reference color features. Show tissue-balanced curves, pooled tissue composition, class-controlled logistic fits, sharpness controls in both directions and a held-out half with discovery-frozen tertile thresholds (seed 7). Report the incremental pseudo-R² and class-specific partial correlations.</p>
+<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">&#182;</a></h2><p>Compare CONCH and a fixed multinomial logistic classifier trained on reference color features. Show tissue-balanced curves, pooled tissue composition, class-controlled logistic fits, sharpness controls in both directions and a held-out half with discovery-frozen tertile thresholds (seed 7). Report the incremental pseudo-R² and class-specific partial correlations.</p>
+<p>The split is an internal image-level check of the selected analysis. Whole-cohort exploratory fits are also shown; this split does not independently validate axis selection or establish transport across patients or sites.</p>
+
 </div>
 </div>
 </div>
@@ -8949,7 +8974,8 @@ dtype: float64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">¶</a></h2><p>The decision follows the actual pooled and class-controlled curves and the held-out joint fit. A sharpness result is a corruption result. A stain result is bounded by tissue heterogeneity and the strength of its effect after sharpness control.</p>
+<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">&#182;</a></h2><p>The decision follows the actual pooled and class-controlled curves and the held-out joint fit. The sharpness result is an observational image-quality association; this notebook does not apply a controlled blur intervention. A stain result is bounded by tissue heterogeneity and the strength of its effect after sharpness control.</p>
+
 </div>
 </div>
 </div>

@@ -7,8 +7,8 @@
   "code_cells": 11,
   "executed_cells": 11,
   "errors": 0,
-  "notebook_sha256": "9a9d1083a150ac87c4921695b645f9d20f6038892253596c885404fe407f347c",
-  "html_sha256": "a5e9120b631cbf96df4b6fbaf3c97a44c1525b83ab7bc3c6c5ee9eacf65815a9",
+  "notebook_sha256": "9ed7b8cbf74c203358cbe2d0a7d0d5d468a6df91ee6d801045ccbf0172bc98f6",
+  "html_sha256": "5b521fc0d9f0c5fc1eb6039e508b65bc8ff62a1744dd0fa644d9a56f7cee4cf1",
   "sections": [
     {
       "number": 1,
@@ -85,5 +85,17 @@
   "input_manifests": [],
   "elapsed_seconds": 334.31,
   "python": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/state/state-featured/.venv/bin/python",
-  "calculation_evidence": []
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/am-opus-r1-test-03.previous-execution.json",
+      "sha256": "65a4d508a2b8f533dfc8b962ffb57cd722d36bdee357d3c38bf507576594e38b"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/am-opus-r1-test-03.revision.json",
+      "sha256": "4903d338c4b17597f994886c099083fbe33254d0c490af77be74f575c54138a0"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
 }

@@ -1,0 +1,602 @@
+{
+  "base_commit": "dfe2a55",
+  "scientific_code_outputs_unchanged": true,
+  "changes": {
+    "state-opus-r1/test-02.ipynb": [
+      {
+        "cell_index": 14,
+        "before": "## 6. What the agent decided, and why",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated chemical-novelty correlation is near zero (rho = −0.023, p = 0.654 across 377 drugs). Neighbors come from the evaluated drug panel; the analysis does not identify the model’s exact training chemistry.\n"
+      }
+    ],
+    "state-opus-r1/test-04.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "## 4. Model results and released scores\n\nThe primary metric is released `overlap_at_N`; higher is better. Fixed-N overlaps, DE counts, representation changes and protocol changes remain separate controls. Drug-level analyses average all eligible condition rows within drug.",
+        "after": "## 4. Model results and released scores\n\nUse each released condition’s overlap@N and observed DE-gene count within its dataset, protocol and representation panel. The quintile curves do not first average all conditions within a drug. Observed DE count is an outcome-derived difficulty measure.\n"
+      },
+      {
+        "cell_index": 14,
+        "before": "## 6. What the agent decided, and why",
+        "after": "## 6. What the agent decided, and why\n\nAll 12 displayed panels have positive rank correlations between observed DE count and overlap@N. This describes a response-strength association; it does not validate an input-only novelty axis or remove response strength as an explanation for other curves.\n"
+      }
+    ],
+    "state-opus-r1/test-01.ipynb": [
+      {
+        "cell_index": 17,
+        "before": "## 6. What the agent decided, and why",
+        "after": "## 6. What the agent decided, and why\n\nThe zero-shot coverage association is positive, but the response-adjusted result is modest and representation-dependent: HVG partial rho is about 0.120 (p = 0.053), and SE partial rho is about 0.131 (p = 0.034). This supports a panel-coverage association, not verified exposure to the exact training gene list.\n"
+      }
+    ],
+    "state-opus-r1/test-03.ipynb": [
+      {
+        "cell_index": 6,
+        "before": "## 3. Axis definition and level construction",
+        "after": "## 3. Axis definition and level construction\n\nThe calculation labels K562 and RPE1 as “training-like” and Jurkat and HepG2 as “other.” These are the declared comparison groups, not membership verified against a training manifest. The axis is binary.\n"
+      },
+      {
+        "cell_index": 8,
+        "before": "## 4. Model results and released scores\n\nThe primary metric is released `overlap_at_N`; higher is better. Fixed-N overlaps, DE counts, representation changes and protocol changes remain separate controls. Drug-level analyses average all eligible condition rows within drug.",
+        "after": "## 4. Model results and released scores\n\nWithin each representation, average the zero-shot overlap@N for each gene across the available contexts in each group, then pair genes appearing in both groups. A group mean can contain one or both of its contexts. Bootstrap the paired gene-level group differences.\n"
+      },
+      {
+        "cell_index": 13,
+        "before": "## 6. What the agent decided, and why",
+        "after": "## 6. What the agent decided, and why\n\nThe paired contrast changes sign by representation: training-like minus other is −0.0124 for HVG and +0.0303 for SE. It does not support one consistent context-novelty degradation direction.\n"
+      }
+    ],
+    "state-kimi-r1/test-02.ipynb": [
+      {
+        "cell_index": 6,
+        "before": "## 3. Axis definition and level construction\n\nA seen pair is present in the training means for its context. E counts the other contexts in which the gene occurs. Levels separate seen pairs from unseen pairs with E=3,2,1. Embedding proximity is the L2 norm of each gene column of `pert_encoder.0.weight`, mapped through that checkpoint’s one-hot dictionary.",
+        "after": "## 3. Axis definition and level construction\n\nA seen pair is present in the training means for its context. E counts the other contexts in which the gene occurs. Levels separate seen pairs from unseen pairs with E=3,2,1. The embedding diagnostic is the L2 norm of each gene column of `pert_encoder.0.weight`, mapped through that checkpoint’s one-hot dictionary.\n\nThis is the magnitude of a learned weight vector, not a distance from a query to its nearest training embedding.\n"
+      },
+      {
+        "cell_index": 10,
+        "before": "## 5. Curves and controls\n\nUse the same units for STATE and both references. The discovery analysis tests the graded levels and controls for log effect magnitude and log cell count. Confirmation pools the three additional contexts using square-root sample-size weights.",
+        "after": "## 5. Curves and controls\n\nUse the same perturbation units for STATE and both references. Discovery tests the graded levels and adjusts for log effect magnitude and log cell count. The binary confirmation contrast is averaged equally across the three additional contexts; its separate Stouffer statistic uses square-root sample-size weights. Genes can recur across those contexts, so the pooled calculation does not establish independent-cohort replication.\n\n**Embedding pooled statistic:** the saved `A1c_pooled_Z` adds Fisher-transformed correlations with square-root weights but omits the normalization required for a pooled Z statistic. Its reported Z and p value should not be used as calibrated evidence. Context-specific correlations and adjusted models are shown separately; a corrected, dependence-aware pooling analysis is still needed. Printed p values of 0 reflect numerical underflow, not exact zero probabilities.\n"
+      },
+      {
+        "cell_index": 15,
+        "before": "## 6. What the agent decided, and why",
+        "after": "## 6. What the agent decided, and why\n\nThe K562 discovery curve does not improve with more other-context exposure among unseen pairs: E = 1, 2 and 3 have mean delta correlations about 0.374, 0.355 and 0.315. The binary seen/unseen separation is a different result and cannot substitute for this rejected graded hypothesis.\n"
+      }
+    ],
+    "state-kimi-r1/test-04.ipynb": [
+      {
+        "cell_index": 6,
+        "before": "## 3. Axis definition and level construction\n\nA seen pair is present in the training means for its context. E counts the other contexts in which the gene occurs. Levels separate seen pairs from unseen pairs with E=3,2,1. Embedding proximity is the L2 norm of each gene column of `pert_encoder.0.weight`, mapped through that checkpoint’s one-hot dictionary.",
+        "after": "## 3. Axis definition and level construction\n\nA seen pair is present in the training means for its context. E counts the other contexts in which the gene occurs. Levels separate seen pairs from unseen pairs with E=3,2,1. The embedding diagnostic is the L2 norm of each gene column of `pert_encoder.0.weight`, mapped through that checkpoint’s one-hot dictionary.\n\nThis is the magnitude of a learned weight vector, not a distance from a query to its nearest training embedding.\n"
+      },
+      {
+        "cell_index": 10,
+        "before": "## 5. Curves and controls\n\nUse the same units for STATE and both references. The discovery analysis tests the graded levels and controls for log effect magnitude and log cell count. Confirmation pools the three additional contexts using square-root sample-size weights.",
+        "after": "## 5. Curves and controls\n\nUse the same perturbation units for STATE and both references. Discovery tests the graded levels and adjusts for log effect magnitude and log cell count. The binary confirmation contrast is averaged equally across the three additional contexts; its separate Stouffer statistic uses square-root sample-size weights. Genes can recur across those contexts, so the pooled calculation does not establish independent-cohort replication.\n\n**Embedding pooled statistic:** the saved `A1c_pooled_Z` adds Fisher-transformed correlations with square-root weights but omits the normalization required for a pooled Z statistic. Its reported Z and p value should not be used as calibrated evidence. Context-specific correlations and adjusted models are shown separately; a corrected, dependence-aware pooling analysis is still needed. Printed p values of 0 reflect numerical underflow, not exact zero probabilities.\n"
+      },
+      {
+        "cell_index": 16,
+        "before": "## 6. What the agent decided, and why",
+        "after": "## 6. What the agent decided, and why\n\nThe cell-count analysis is a nuisance-control check at the perturbation-unit level. Cell count remains associated with performance, and the fitted seen-pair coefficient remains positive in the displayed adjusted models. This does not establish that all sampling or response-strength confounding has been removed.\n"
+      }
+    ],
+    "state-kimi-r1/test-01.ipynb": [
+      {
+        "cell_index": 6,
+        "before": "## 3. Axis definition and level construction\n\nA seen pair is present in the training means for its context. E counts the other contexts in which the gene occurs. Levels separate seen pairs from unseen pairs with E=3,2,1. Embedding proximity is the L2 norm of each gene column of `pert_encoder.0.weight`, mapped through that checkpoint’s one-hot dictionary.",
+        "after": "## 3. Axis definition and level construction\n\nA seen pair is present in the training means for its context. E counts the other contexts in which the gene occurs. Levels separate seen pairs from unseen pairs with E=3,2,1. The embedding diagnostic is the L2 norm of each gene column of `pert_encoder.0.weight`, mapped through that checkpoint’s one-hot dictionary.\n\nThis is the magnitude of a learned weight vector, not a distance from a query to its nearest training embedding.\n"
+      },
+      {
+        "cell_index": 10,
+        "before": "## 5. Curves and controls\n\nUse the same units for STATE and both references. The discovery analysis tests the graded levels and controls for log effect magnitude and log cell count. Confirmation pools the three additional contexts using square-root sample-size weights.",
+        "after": "## 5. Curves and controls\n\nUse the same perturbation units for STATE and both references. Discovery tests the graded levels and adjusts for log effect magnitude and log cell count. The binary confirmation contrast is averaged equally across the three additional contexts; its separate Stouffer statistic uses square-root sample-size weights. Genes can recur across those contexts, so the pooled calculation does not establish independent-cohort replication.\n\n**Embedding pooled statistic:** the saved `A1c_pooled_Z` adds Fisher-transformed correlations with square-root weights but omits the normalization required for a pooled Z statistic. Its reported Z and p value should not be used as calibrated evidence. Context-specific correlations and adjusted models are shown separately; a corrected, dependence-aware pooling analysis is still needed. Printed p values of 0 reflect numerical underflow, not exact zero probabilities.\n"
+      },
+      {
+        "cell_index": 15,
+        "before": "## 6. What the agent decided, and why",
+        "after": "## 6. What the agent decided, and why\n\nSeen gene–context pairs have higher mean delta correlation than unseen pairs in each of the three additional contexts (differences about 0.117–0.118). This is a binary association within the released Replogle evaluation, not a graded exposure curve or validation on a new experimental cohort.\n"
+      }
+    ],
+    "state-kimi-r1/test-03.ipynb": [
+      {
+        "cell_index": 6,
+        "before": "## 3. Axis definition and level construction\n\nA seen pair is present in the training means for its context. E counts the other contexts in which the gene occurs. Levels separate seen pairs from unseen pairs with E=3,2,1. Embedding proximity is the L2 norm of each gene column of `pert_encoder.0.weight`, mapped through that checkpoint’s one-hot dictionary.",
+        "after": "## 3. Axis definition and level construction\n\nA seen pair is present in the training means for its context. E counts the other contexts in which the gene occurs. Levels separate seen pairs from unseen pairs with E=3,2,1. The embedding diagnostic is the L2 norm of each gene column of `pert_encoder.0.weight`, mapped through that checkpoint’s one-hot dictionary.\n\nThis is the magnitude of a learned weight vector, not a distance from a query to its nearest training embedding.\n"
+      },
+      {
+        "cell_index": 10,
+        "before": "## 5. Curves and controls\n\nUse the same units for STATE and both references. The discovery analysis tests the graded levels and controls for log effect magnitude and log cell count. Confirmation pools the three additional contexts using square-root sample-size weights.",
+        "after": "## 5. Curves and controls\n\nUse the same perturbation units for STATE and both references. Discovery tests the graded levels and adjusts for log effect magnitude and log cell count. The binary confirmation contrast is averaged equally across the three additional contexts; its separate Stouffer statistic uses square-root sample-size weights. Genes can recur across those contexts, so the pooled calculation does not establish independent-cohort replication.\n\n**Embedding pooled statistic:** the saved `A1c_pooled_Z` adds Fisher-transformed correlations with square-root weights but omits the normalization required for a pooled Z statistic. Its reported Z and p value should not be used as calibrated evidence. Context-specific correlations and adjusted models are shown separately; a corrected, dependence-aware pooling analysis is still needed. Printed p values of 0 reflect numerical underflow, not exact zero probabilities.\n"
+      },
+      {
+        "cell_index": 16,
+        "before": "## 6. What the agent decided, and why",
+        "after": "## 6. What the agent decided, and why\n\nEmbedding norm has positive unadjusted correlations in the three additional contexts, but adjusted coefficients are not consistent: RPE1 is negative and not significant, while Jurkat and HepG2 are positive. Do not use the invalid pooled embedding Z/p above to upgrade this diagnostic into a confirmed proximity axis.\n"
+      }
+    ],
+    "state-codex-r2/test-02.ipynb": [
+      {
+        "cell_index": 19,
+        "before": "## 6. What the agent decided, and why\n\nReject basal distance as a robust predictive generalization axis: assess the finite four-context permutation resolution, paired adjustment, representation check, reference trend and the independent HPA ordering together.\n\nThe interpretation here refers to the reconstructed calculations in section 5. The final code cell records execution; it does not calculate a scientific decision.\n",
+        "after": "## 6. What the agent decided, and why\n\nReject basal distance as a robust predictive generalization axis: assess the finite four-context permutation resolution, paired adjustment, representation check, reference trend and the independent HPA ordering together.\n\nThe interpretation here refers to the reconstructed calculations in section 5. The final code cell records execution; it does not calculate a scientific decision.\n\nAll 638 perturbations observed in all four contexts were assigned to the analysis cohort. The remaining 1,385 candidates lie outside that intersection, so none can satisfy the same complete-four-context rule. The zero eligible count follows from this cohort construction; it does not show that every alternative split or external confirmation source is unavailable.\n\nHPA supplies an alternative baseline-expression ordering for these contexts, not new STATE performance observations. Four contexts also limit the resolution of context-level permutation inference.\n"
+      }
+    ],
+    "state-codex-r2/test-04.ipynb": [
+      {
+        "cell_index": 11,
+        "before": "Use the intersection of the five public test lists, requiring the complete 0.05, 0.5 and 5 μM triplet. Dose weakness is −log10(dose); levels increase from 5 to 0.05 μM. A sign criterion that requires a positive slope while predicting lower scores at weaker dose is contradictory; that formulation is retired before outcome testing.",
+        "after": "Use the intersection of the five public Tahoe test lists with complete 0.05, 0.5 and 5 μM triplets. The sampling-support table assigns five rank-based levels of −log(1 + treated-cell count); weaker sampling has a larger value. The prospective dose-displacement and checkpoint-family entries are eligibility records. The three-level administered-dose curve is calculated separately in test-01.\n"
+      }
+    ],
+    "state-codex-r2/test-01.ipynb": [
+      {
+        "cell_index": 17,
+        "before": "## 6. What the agent decided, and why\n\nRetain dose-related degradation where weaker administered dose lowers signed-LFC prediction correlation across the three ordered levels and the adjusted direction agrees. Compare STATE and the same-example basal reference before attributing the trend specifically to STATE. The mitochondrial candidate is evaluated separately using its own ordered levels.\n\nThe interpretation here refers to the reconstructed calculations in section 5. The final code cell records execution; it does not calculate a scientific decision.\n\nFor A10, the saved “comparable” label means only that the STATE-minus-reference **point estimate** (−0.018651) falls inside the declared ±0.02 band. Its 95% interval is [−0.042618, +0.004857], so this does not establish statistical equivalence within that band. The A9 mitochondrial reconstruction differs from the historical estimate, as explained above.\n",
+        "after": "## 6. What the agent decided, and why\n\nRetain dose-related degradation where weaker administered dose lowers signed-LFC prediction correlation across the three ordered levels and the adjusted direction agrees. Compare STATE and the same-example basal reference before attributing the trend specifically to STATE. The mitochondrial candidate is evaluated separately using its own ordered levels.\n\nThe interpretation here refers to the reconstructed calculations in section 5. The final code cell records execution; it does not calculate a scientific decision.\n\nFor A10, the saved “comparable” label means only that the STATE-minus-reference **point estimate** (−0.018651) falls inside the declared ±0.02 band. Its 95% interval is [−0.042618, +0.004857], so this does not establish statistical equivalence within that band. The A9 mitochondrial reconstruction differs from the historical estimate, as explained above.\n\nA8 (ST-SE few-shot) has a negative raw dose-weakness slope whose 95% interval includes zero; its adjusted slope is negative. A10 (ST-HVG zero-shot) has a negative raw slope with an interval below zero. These are distinct released model settings on the Tahoe panel, not a newly acquired independent confirmation cohort.\n"
+      }
+    ],
+    "state-codex-r2/test-03.ipynb": [
+      {
+        "cell_index": 19,
+        "before": "## 6. What the agent decided, and why\n\nNominate expected magnitude on the discovery curve, but do not claim confirmation: no disjoint perturbation meets the required complete four-context observation-and-prediction eligibility.\n\nThe interpretation here refers to the reconstructed calculations in section 5. The final code cell records execution; it does not calculate a scientific decision.\n",
+        "after": "## 6. What the agent decided, and why\n\nNominate expected magnitude on the discovery curve, but do not claim confirmation: no disjoint perturbation meets the required complete four-context observation-and-prediction eligibility.\n\nThe interpretation here refers to the reconstructed calculations in section 5. The final code cell records execution; it does not calculate a scientific decision.\n\nAll 638 perturbations observed in all four contexts were assigned to the analysis cohort. The remaining 1,385 candidates lie outside that intersection, so none can satisfy the same complete-four-context rule. The zero eligible count follows from this cohort construction; it does not show that every alternative split or external confirmation source is unavailable.\n"
+      }
+    ],
+    "state-featured/test-09.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n",
+        "after": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n\nThis is a reconstruction from the public evaluation inventory and split definitions, rather than a recovered training-sample manifest. The confirmation contexts come from the same benchmark, and genes may recur across contexts.\n"
+      },
+      {
+        "cell_index": 15,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 18,
+        "before": "Exclude the unannotated level, compare support extremes within each context, and stratify the extreme groups into pathway-count quartiles (at least five examples per extreme). The multivariable control standardizes support and annotation count, adds context/representation/subset indicators, and optionally adjusts for log(1 + observed DE-gene count).\n",
+        "after": "Exclude the unannotated level, compare support extremes within each context, and stratify the extreme groups into pathway-count quartiles (at least five examples per extreme). The multivariable control standardizes support and annotation count, adds context/representation/subset indicators, and optionally adjusts for log(1 + observed DE-gene count).\n\nThe pathway-count control uses quartile strata rather than exact matching. In the regression, discovery/confirmation subset is determined by context, so those indicator columns are redundant and the pseudoinverse does not identify their individual coefficients. The reported standard errors treat condition rows as independent; they are not clustered by recurring gene.\n"
+      },
+      {
+        "cell_index": 20,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-10.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n",
+        "after": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n\nThis is a reconstruction from the public evaluation inventory and split definitions, rather than a recovered training-sample manifest. The confirmation contexts come from the same benchmark, and genes may recur across contexts.\n"
+      },
+      {
+        "cell_index": 15,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 18,
+        "before": "Exclude the unannotated level, compare support extremes within each context, and stratify the extreme groups into pathway-count quartiles (at least five examples per extreme). The multivariable control standardizes support and annotation count, adds context/representation/subset indicators, and optionally adjusts for log(1 + observed DE-gene count).\n",
+        "after": "Exclude the unannotated level, compare support extremes within each context, and stratify the extreme groups into pathway-count quartiles (at least five examples per extreme). The multivariable control standardizes support and annotation count, adds context/representation/subset indicators, and optionally adjusts for log(1 + observed DE-gene count).\n\nThe pathway-count control uses quartile strata rather than exact matching. In the regression, discovery/confirmation subset is determined by context, so those indicator columns are redundant and the pseudoinverse does not identify their individual coefficients. The reported standard errors treat condition rows as independent; they are not clustered by recurring gene.\n"
+      },
+      {
+        "cell_index": 20,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-12.ipynb": [
+      {
+        "cell_index": 16,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low family-support contrast is negative in both representations, so this check does not support the proposed relationship. Ties leave two populated support levels. Confirmation contains CD4 Memory and CD14 Mono for HVG, but only CD14 Mono for SE; the two representations therefore do not cover the same confirmation contexts.\n"
+      }
+    ],
+    "state-featured/test-16.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "GO_MF memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n",
+        "after": "GO_MF memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n\nThe reference genes are reconstructed from the public score inventory and split definitions. Alternative annotation sources reuse the same benchmark genes and outcomes; they are feature checks, not additional independent cohorts.\n"
+      },
+      {
+        "cell_index": 14,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 16,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-14.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "HGNC_gene_group memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n",
+        "after": "HGNC_gene_group memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n\nThe reference genes are reconstructed from the public score inventory and split definitions. Alternative annotation sources reuse the same benchmark genes and outcomes; they are feature checks, not additional independent cohorts.\n"
+      },
+      {
+        "cell_index": 14,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 16,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-13.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "Reactome memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n",
+        "after": "Reactome memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n\nThe reference genes are reconstructed from the public score inventory and split definitions. Alternative annotation sources reuse the same benchmark genes and outcomes; they are feature checks, not additional independent cohorts.\n"
+      },
+      {
+        "cell_index": 14,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 16,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-08.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n",
+        "after": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n\nThis is a reconstruction from the public evaluation inventory and split definitions, rather than a recovered training-sample manifest. The confirmation contexts come from the same benchmark, and genes may recur across contexts.\n"
+      },
+      {
+        "cell_index": 11,
+        "before": "The axis feature is `symbol_family_candidate_train_count`. Its calculation is shown above. Positive discovery values determine the 25th, 50th and 75th percentile cutpoints; the same cutpoints are then applied to confirmation. A zero annotation count creates a separate `L0_no_annotation` level.\n",
+        "after": "The axis feature is `symbol_family_candidate_train_count`. Its calculation is shown above. Positive discovery values determine the 25th, 50th and 75th percentile cutpoints; the same cutpoints are then applied to confirmation. Here the count is the number of reference genes sharing the symbol prefix. The legacy `L0_no_annotation` label means no matching reference prefix, not missing biological annotation. The prefix is a naming proxy, not a curated gene-family assignment.\n"
+      },
+      {
+        "cell_index": 15,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 18,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-11.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n",
+        "after": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n\nThis is a reconstruction from the public evaluation inventory and split definitions, rather than a recovered training-sample manifest. The confirmation contexts come from the same benchmark, and genes may recur across contexts.\n"
+      },
+      {
+        "cell_index": 15,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 18,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-15.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "GO_BP memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n",
+        "after": "GO_BP memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n\nThe reference genes are reconstructed from the public score inventory and split definitions. Alternative annotation sources reuse the same benchmark genes and outcomes; they are feature checks, not additional independent cohorts.\n"
+      },
+      {
+        "cell_index": 14,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 16,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-17.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "GO_CC memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n",
+        "after": "GO_CC memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n\nThe reference genes are reconstructed from the public score inventory and split definitions. Alternative annotation sources reuse the same benchmark genes and outcomes; they are feature checks, not additional independent cohorts.\n"
+      },
+      {
+        "cell_index": 14,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 16,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-02.ipynb": [
+      {
+        "cell_index": 15,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nAll three concentrations are represented in the reconstructed training-reference combinations, so dose is not retained as a training-novelty axis. This eligibility finding does not test whether lower dose reduces prediction accuracy. The per-dose means use different numbers of condition rows and are not a balanced within-drug comparison.\n"
+      }
+    ],
+    "state-featured/test-19.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "KEGG memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n",
+        "after": "KEGG memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n\nThe reference genes are reconstructed from the public score inventory and split definitions. Alternative annotation sources reuse the same benchmark genes and outcomes; they are feature checks, not additional independent cohorts.\n"
+      },
+      {
+        "cell_index": 14,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 16,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-04.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n",
+        "after": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n\nThis is a reconstruction from the public evaluation inventory and split definitions, rather than a recovered training-sample manifest. The confirmation contexts come from the same benchmark, and genes may recur across contexts.\n"
+      },
+      {
+        "cell_index": 15,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 18,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-06.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n",
+        "after": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n\nThis is a reconstruction from the public evaluation inventory and split definitions, rather than a recovered training-sample manifest. The confirmation contexts come from the same benchmark, and genes may recur across contexts.\n"
+      },
+      {
+        "cell_index": 15,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 18,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-01.ipynb": [
+      {
+        "cell_index": 15,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe high-similarity groups have lower mean overlap@N than the low-similarity groups in both representations, so this calculation does not support the proposed chemical-similarity degradation. The reference is reconstructed from metadata and held-out drug lists; it is not a recovered sample-level training manifest. The comparison is not matched for dose or response strength.\n"
+      }
+    ],
+    "state-featured/test-18.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "WikiPathways memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n",
+        "after": "WikiPathways memberships define the annotation sets. For each target gene, count training-reference genes in each annotated set, average log(1 + count), and normalize by log(1 + training-set size). Freeze quartiles on positive annotated few-shot discovery support. Apply those levels to few-shot confirmation and zero-shot examples.\n\nThe reference genes are reconstructed from the public score inventory and split definitions. Alternative annotation sources reuse the same benchmark genes and outcomes; they are feature checks, not additional independent cohorts.\n"
+      },
+      {
+        "cell_index": 14,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 16,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-03.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n",
+        "after": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n\nThis is a reconstruction from the public evaluation inventory and split definitions, rather than a recovered training-sample manifest. The confirmation contexts come from the same benchmark, and genes may recur across contexts.\n"
+      },
+      {
+        "cell_index": 15,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 19,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nHigher pathway-set similarity is associated with higher overlap@N in the confirmation contexts. Tied discovery cutpoints leave only two populated annotated levels, L1 and L2; L0 contains genes without pathway annotations. The generic decision below compares L0 with L2, whereas the annotated-only bootstrap above compares L1 with L2. Neither the extra unannotated group nor the printed acceptance label establishes three informative similarity levels or completion of the full protocol.\n"
+      }
+    ],
+    "state-featured/test-07.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n",
+        "after": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n\nThis is a reconstruction from the public evaluation inventory and split definitions, rather than a recovered training-sample manifest. The confirmation contexts come from the same benchmark, and genes may recur across contexts.\n"
+      },
+      {
+        "cell_index": 15,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 18,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-featured/test-05.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n",
+        "after": "A training-reference gene set is formed in each context from the genes in the zero-shot score inventory after subtracting the few-shot validation and test genes. Gene symbols are joined to HGNC aliases, Reactome pathway memberships and HGNC groups. Discovery contexts are HepG2 and K562; confirmation contexts are Jurkat and RPE1.\n\nThis is a reconstruction from the public evaluation inventory and split definitions, rather than a recovered training-sample manifest. The confirmation contexts come from the same benchmark, and genes may recur across contexts.\n"
+      },
+      {
+        "cell_index": 15,
+        "before": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n",
+        "after": "## 5. Curves and controls\n\nCalculate per-level means from the individual condition rows. The plots keep each representation and discovery/confirmation subset separate. Controls and contrasts below are calculated from the same rows. Higher overlap@N indicates better prediction.\n\nCurve points are group means. A table column labelled standard deviation describes spread between records, not a confidence interval. Explicit bootstrap intervals, where present, resample condition rows and do not account for repeated genes across contexts or representations.\n"
+      },
+      {
+        "cell_index": 20,
+        "before": "## 6. What the agent decided, and why\n\nThe decision below follows the calculated curve and relevant controls. A positive high-minus-low support contrast means better prediction where training-reference support is higher.\n",
+        "after": "## 6. What the agent decided, and why\n\nThe calculated high-minus-low support contrast is positive in the displayed confirmation comparisons. The printed acceptance label applies to the implemented endpoint-and-level checks, not to completion of every AutoSPECTRA requirement. When L0 is included, the contrast combines missing annotation with low support; annotated-only controls, where shown, address that distinction. These checks reuse the released benchmark and do not establish confirmation in a new experimental cohort.\n"
+      }
+    ],
+    "state-opus-r2/test-02.ipynb": [
+      {
+        "cell_index": 9,
+        "before": "## 4. Model results and released scores\n\nThe primary metric is released `overlap_at_N`; higher is better. Fixed-N overlaps, DE counts, representation changes and protocol changes remain separate controls. Drug-level analyses average all eligible condition rows within drug.",
+        "after": "## 4. Model results and released scores\n\nUse released overlap@N. The chemical-similarity curve averages condition rows within similarity quartiles in the zero-shot panel; it is not an equal-weight drug-level curve. The mechanism-of-action diagnostic pools few-shot and zero-shot rows and is an unadjusted categorical comparison.\n"
+      }
+    ],
+    "state-opus-r2/test-04.ipynb": [
+      {
+        "cell_index": 8,
+        "before": "GO-BP density is the mean of the five largest Jaccard similarities to other annotated genes; self-membership is excluded. Quartiles are assigned across genes, independently of context and model score.",
+        "after": "For each perturbed gene, count the distinct contexts in which it appears in the evaluated Replogle panel and subtract one for the current context. The levels are 0, 1, 2 and 3 other screened contexts. This is evaluation-panel screen coverage, not a count from a verified training manifest.\n"
+      },
+      {
+        "cell_index": 9,
+        "before": "## 4. Model results and released scores\n\nThe primary metric is released `overlap_at_N`; higher is better. Fixed-N overlaps, DE counts, representation changes and protocol changes remain separate controls. Drug-level analyses average all eligible condition rows within drug.",
+        "after": "## 4. Model results and released scores\n\nUse released zero-shot overlap@N for each gene–context condition, keeping HVG and SE separate. Aggregate by the number of other contexts carrying the gene perturbation.\n"
+      },
+      {
+        "cell_index": 16,
+        "before": "Cross-context screen coverage is a screening diagnostic; representation and effect-size dependence limit a direct training-exposure interpretation.",
+        "after": "The main separation is between genes screened in no other context and genes screened in at least one. Performance does not increase monotonically across 1, 2 and 3 other contexts. Treat this as a binary screen-coverage association, not a graded training-exposure effect.\n"
+      }
+    ],
+    "state-opus-r2/test-01.ipynb": [
+      {
+        "cell_index": 8,
+        "before": "GO-BP density is the mean of the five largest Jaccard similarities to other annotated genes; self-membership is excluded. Quartiles are assigned across genes, independently of context and model score.",
+        "after": "GO-BP density is the mean of the five largest Jaccard similarities to other annotated genes; self-membership is excluded. Quartiles are assigned across genes, independently of context and model score.\n\nThe neighbor pool is the annotated evaluation gene panel. It is not restricted to genes verified to be in training, so the feature measures functional neighborhood density within that panel.\n"
+      },
+      {
+        "cell_index": 17,
+        "before": "Functional neighborhood density is assessed by the ordered curve, held-out-context confirmation and independent CC/pathway ordering. Its interpretation must account for observed perturbation strength.",
+        "after": "Functional neighborhood density is positively associated with overlap@N in the displayed contexts. The saved “farthest from training” wording refers to low density in the evaluation gene panel, not measured distance from a verified training set. CC and pathway checks use alternative annotations of the same genes; they are not independent outcome cohorts. Response strength and annotation density remain relevant alternative explanations.\n"
+      }
+    ],
+    "state-opus-r2/test-03.ipynb": [
+      {
+        "cell_index": 8,
+        "before": "GO-BP density is the mean of the five largest Jaccard similarities to other annotated genes; self-membership is excluded. Quartiles are assigned across genes, independently of context and model score.",
+        "after": "For a drug, take the maximum GO-BP neighborhood density among its mapped target genes. For Parse ligands, use the density of the mapped gene. The density comes from the annotated Replogle evaluation gene panel, with self-membership excluded; it is not an exact training-exposure measurement. Keep family-specific mappings and exclusions explicit.\n"
+      },
+      {
+        "cell_index": 9,
+        "before": "## 4. Model results and released scores\n\nThe primary metric is released `overlap_at_N`; higher is better. Fixed-N overlaps, DE counts, representation changes and protocol changes remain separate controls. Drug-level analyses average all eligible condition rows within drug.",
+        "after": "## 4. Model results and released scores\n\nUse released overlap@N for mapped Tahoe drug conditions and mapped Parse ligand conditions. The displayed correlations and level means use condition rows; the model representations and evaluation protocols remain separate.\n"
+      },
+      {
+        "cell_index": 17,
+        "before": "Drug-target and ligand annotations test transfer across perturbation families. Retain the family-specific evidence and annotation exclusions; do not equate all family signals.",
+        "after": "The mapped Tahoe zero-shot and Parse comparisons do not show a consistent positive relationship between functional density and overlap@N. Some few-shot Tahoe correlations are weakly negative. These checks therefore do not confirm transfer of the Replogle neighborhood association across perturbation families.\n"
+      }
+    ],
+    "state-opus-r2/test-05.ipynb": [
+      {
+        "cell_index": 8,
+        "before": "GO-BP density is the mean of the five largest Jaccard similarities to other annotated genes; self-membership is excluded. Quartiles are assigned across genes, independently of context and model score.",
+        "after": "GO-BP density is the mean of the five largest Jaccard similarities to other annotated genes; self-membership is excluded. Quartiles are assigned across genes, independently of context and model score.\n\nThe neighbor pool is the annotated evaluation gene panel, not a recovered training manifest. The downstream controls use both neighborhood density and annotation-count features.\n"
+      },
+      {
+        "cell_index": 9,
+        "before": "## 4. Model results and released scores\n\nThe primary metric is released `overlap_at_N`; higher is better. Fixed-N overlaps, DE counts, representation changes and protocol changes remain separate controls. Drug-level analyses average all eligible condition rows within drug.",
+        "after": "## 4. Model results and released scores\n\nUse the released gene–context condition scores. Compare overlap@N with fixed-N metrics and inspect response-strength and annotation controls. These calculations do not average conditions within drugs.\n"
+      },
+      {
+        "cell_index": 11,
+        "before": "## 5. Curves and controls",
+        "after": "## 5. Curves and controls\n\n**Limits of the saved control labels:** “module robustness” below removes high-density genes or keeps the middle density range; it does not exclude named functional modules. The “unbiased” gene holdout uses Python `hash(gene) % 2`, without a fixed hash seed here, so membership can change between processes and does not reproduce the original split. Restricting to above-median DE counts is not exact effect matching and does not remove all intrinsic difficulty. The context-adjusted partial-rank calculation uses a numeric category code, not separate context indicator variables.\n"
+      },
+      {
+        "cell_index": 19,
+        "before": "Annotation count and perturbation strength explain part of the neighborhood relationship. Fixed-N metrics, partial rank correlations, gene holdout, context/module robustness and effect-matched curves determine how much signal remains.",
+        "after": "Positive neighborhood associations remain in several displayed fixed-N, annotation and response-strength checks. Those checks are sensitivity analyses within the same benchmark. The hash-defined halves are not evidence of a reproducibly frozen independent confirmation split, density trimming is not module exclusion, and the numeric-context adjustment is not a categorical fixed-effects model. The saved “pure train-coverage” wording overstates what these controls establish.\n"
+      }
+    ],
+    "state-kimi-r2/test-02.ipynb": [
+      {
+        "cell_index": 8,
+        "before": "## 4. Model evaluation and reference scores\n\nThe complete public inference procedure is below. It uses checkpoint cell-set length 64 and seed 42. Reuse requires the exact input, checkpoint, code identity and prediction hash. Observed deltas subtract observed controls; STATE deltas subtract predicted controls. R1 averages the same gene’s observed deltas across other contexts; missing same-gene references fall back to R2, the equally weighted mean of all training gene–context deltas.",
+        "after": "## 4. Model evaluation and reference scores\n\nThe complete public inference procedure is below. It uses checkpoint cell-set length 64 and seed 42. Reuse requires the exact input, checkpoint, code identity and prediction hash. Observed deltas subtract observed controls; STATE deltas subtract predicted controls. R1 averages the same gene’s observed deltas across other contexts; missing same-gene references fall back to R2, the equally weighted mean of all training gene–context deltas.\n\nThe saved execution reused the verified shared prediction cache; it did not rerun inference in each notebook. No audit-specific fine-tuning is performed. All four contexts belong to the same Replogle source dataset.\n"
+      },
+      {
+        "cell_index": 19,
+        "before": "## 6. What the agent decided, and why",
+        "after": "## 6. What the agent decided, and why\n\nAmong exposed genes, the support–performance rank correlation changes sign across contexts. In K562, the three positive-support level means decrease as support increases. The calculations do not support a general graded support curve.\n"
+      }
+    ],
+    "state-kimi-r2/test-01.ipynb": [
+      {
+        "cell_index": 8,
+        "before": "## 4. Model evaluation and reference scores\n\nThe complete public inference procedure is below. It uses checkpoint cell-set length 64 and seed 42. Reuse requires the exact input, checkpoint, code identity and prediction hash. Observed deltas subtract observed controls; STATE deltas subtract predicted controls. R1 averages the same gene’s observed deltas across other contexts; missing same-gene references fall back to R2, the equally weighted mean of all training gene–context deltas.",
+        "after": "## 4. Model evaluation and reference scores\n\nThe complete public inference procedure is below. It uses checkpoint cell-set length 64 and seed 42. Reuse requires the exact input, checkpoint, code identity and prediction hash. Observed deltas subtract observed controls; STATE deltas subtract predicted controls. R1 averages the same gene’s observed deltas across other contexts; missing same-gene references fall back to R2, the equally weighted mean of all training gene–context deltas.\n\nThe saved execution reused the verified shared prediction cache; it did not rerun inference in each notebook. No audit-specific fine-tuning is performed. All four contexts belong to the same Replogle source dataset.\n"
+      },
+      {
+        "cell_index": 19,
+        "before": "## 6. What the agent decided, and why",
+        "after": "## 6. What the agent decided, and why\n\nThe seen-minus-unseen delta-correlation difference is positive in K562 and all three additional contexts. This supports the binary exposure association in this dataset. It does not establish a monotonic benefit from increasing support among already exposed genes.\n"
+      }
+    ],
+    "state-kimi-r2/test-03.ipynb": [
+      {
+        "cell_index": 8,
+        "before": "## 4. Model evaluation and reference scores\n\nThe complete public inference procedure is below. It uses checkpoint cell-set length 64 and seed 42. Reuse requires the exact input, checkpoint, code identity and prediction hash. Observed deltas subtract observed controls; STATE deltas subtract predicted controls. R1 averages the same gene’s observed deltas across other contexts; missing same-gene references fall back to R2, the equally weighted mean of all training gene–context deltas.",
+        "after": "## 4. Model evaluation and reference scores\n\nThe complete public inference procedure is below. It uses checkpoint cell-set length 64 and seed 42. Reuse requires the exact input, checkpoint, code identity and prediction hash. Observed deltas subtract observed controls; STATE deltas subtract predicted controls. R1 averages the same gene’s observed deltas across other contexts; missing same-gene references fall back to R2, the equally weighted mean of all training gene–context deltas.\n\nThe saved execution reused the verified shared prediction cache; it did not rerun inference in each notebook. No audit-specific fine-tuning is performed. All four contexts belong to the same Replogle source dataset.\n"
+      },
+      {
+        "cell_index": 20,
+        "before": "## 6. What the agent decided, and why",
+        "after": "## 6. What the agent decided, and why\n\nUnseen-gene STATE performance is below the global training-mean reference in the displayed contexts, but the exposure contrast relative to the same-gene reference is not uniformly larger. Embedding norms are descriptive checkpoint measurements; their separation is not a causal test of the failure mechanism.\n"
+      }
+    ],
+    "state-codex-r1/test-02.ipynb": [
+      {
+        "cell_index": 8,
+        "before": "## 3. Axis definition and level construction\n\nThe compound split is the first 16 hexadecimal digits of SHA-256 modulo 10: buckets 0–2 form discovery, 3–9 confirmation. Retain conditions present in all five contexts and compounds with at least two doses. Standardize the axis with sample SD over all released condition rows before eligibility filtering.",
+        "after": "## 3. Axis definition and level construction\n\nThe compound split is the first 16 hexadecimal digits of SHA-256 modulo 10: buckets 0–2 form discovery, 3–9 confirmation. Retain conditions present in all five contexts and compounds with at least two doses. Standardize the axis with sample SD over all released condition rows before eligibility filtering.\n\nThe axis is the standard deviation of S-phase scores among DMSO control cells in each context. Larger values indicate greater baseline cell-cycle heterogeneity. The primary released predictions are ST-SE Tahoe `eval_best.ckpt`; the five contexts define the ordered levels.\n"
+      },
+      {
+        "cell_index": 21,
+        "before": "## 6. What the agent decided, and why\n\nReject a monotonic S-phase heterogeneity degradation axis. The baseline measurement is reproducible across plates and QC filters, but the confirmation curve is not steadily worsening across the five ordered contexts.",
+        "after": "## 6. What the agent decided, and why\n\nReject a monotonic S-phase heterogeneity degradation axis. The baseline measurement is reproducible across plates and QC filters, but the confirmation curve is not steadily worsening across the five ordered contexts.\n\nA positive raw or adjusted slope can coexist with this rejection: the ordered context means are non-monotonic. This is a rejection of a consistently worsening curve, not of every association with S-phase variability.\n"
+      }
+    ],
+    "state-codex-r1/test-04.ipynb": [
+      {
+        "cell_index": 18,
+        "before": "## 5. Curves and controls\n\nWithin-target regressions compare contexts for the same compound and dose. Continuous controls are no-effect RMSE, log(1 + significant-gene count), and log(1 + cell count). Confidence intervals resample compounds 10,000 times; paired fits use the same draws. Context curves first average doses within each compound, then weight compounds equally.",
+        "after": "## 5. Curves and controls\n\nWithin-target regressions compare contexts for the same compound and dose. Continuous controls are no-effect RMSE, log(1 + significant-gene count), and log(1 + cell count). Confidence intervals resample compounds 10,000 times; paired fits use the same draws. Context curves first average doses within each compound, then weight compounds equally.\n\n**First plot label:** its x values are S-phase-score standard deviations (about 0.121–0.329), using ST-HVG errors. The saved x-axis label incorrectly lists the notebook’s four control topics. The later panels separately plot response magnitude, DE count, cell count and dose; those are not the x values of the first plot.\n"
+      }
+    ],
+    "state-codex-r1/test-01.ipynb": [
+      {
+        "cell_index": 30,
+        "before": "## 6. What the agent decided, and why\n\n**Decision: reject the proposed distance-related worsening.** The hypothesis was that STATE prediction error increases as a held-out cell line becomes more distant in baseline expression from the training-reference panel. The raw and adjusted STATE slopes are negative, and the quintile and independent-atlas controls retain that direction.\n\nThe table below summarizes the calculated slopes. Positive slopes indicate greater prediction error at greater distance; negative slopes indicate lower error. The decision follows these results and the confirmation curve in section 5.\n",
+        "after": "## 6. What the agent decided, and why\n\n**Decision: reject the proposed distance-related worsening.** The hypothesis was that STATE prediction error increases as a held-out cell line becomes more distant in baseline expression from the training-reference panel. The raw and adjusted STATE slopes are negative, and the quintile and independent-atlas controls retain that direction.\n\nThe table below summarizes the calculated slopes. Positive slopes indicate greater prediction error at greater distance; negative slopes indicate lower error. The decision follows these results and the confirmation curve in section 5.\n\nConfirmation holds out compounds within the same five cell lines. The CCLE check changes the expression atlas, not the evaluated outcome cohort. Compound-resampling intervals quantify uncertainty across compounds conditional on those five contexts.\n"
+      }
+    ],
+    "state-codex-r1/test-03.ipynb": [
+      {
+        "cell_index": 10,
+        "before": "## 3. Axis definition and level construction\n\nThe compound split is the first 16 hexadecimal digits of SHA-256 modulo 10: buckets 0–2 form discovery, 3–9 confirmation. Retain conditions present in all five contexts and compounds with at least two doses. Standardize the axis with sample SD over all released condition rows before eligibility filtering.",
+        "after": "## 3. Axis definition and level construction\n\nThe compound split is the first 16 hexadecimal digits of SHA-256 modulo 10: buckets 0–2 form discovery, 3–9 confirmation. Retain conditions present in all five contexts and compounds with at least two doses. Standardize the axis with sample SD over all released condition rows before eligibility filtering.\n\nLineage scarcity is −log(1 + the number of mapped training-reference contexts sharing the held-out line’s DepMap lineage). The primary predictions are ST-SE Tahoe `eval_last.ckpt`. This is a count of reference contexts, not a direct molecular-distance measurement.\n"
+      },
+      {
+        "cell_index": 22,
+        "before": "## 6. What the agent decided, and why\n\nReject a stable lineage-scarcity degradation axis. Inspect the adjusted slope, dose sensitivities and the result excluding HepG2/C3A; dependence on one context or dose does not establish a robust axis.",
+        "after": "## 6. What the agent decided, and why\n\nReject a stable lineage-scarcity degradation axis. Inspect the adjusted slope, dose sensitivities and the result excluding HepG2/C3A; dependence on one context or dose does not establish a robust axis.\n\nThe primary adjusted slope is positive, but omitting HepG2/C3A reverses it. The rejection concerns that sensitivity and representation dependence, not a claim that all fitted slopes are zero.\n"
+      }
+    ]
+  }
+}

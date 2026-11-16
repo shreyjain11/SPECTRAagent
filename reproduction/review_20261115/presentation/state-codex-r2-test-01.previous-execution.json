@@ -1,0 +1,104 @@
+{
+  "analysis_id": "state-codex-r2/test-01",
+  "notebook": "inline/state/state-codex-r2/test-01.ipynb",
+  "html": "inline/state/state-codex-r2/test-01.html",
+  "completed": true,
+  "host": "exxact05",
+  "code_cells": 10,
+  "executed_cells": 10,
+  "errors": 0,
+  "notebook_sha256": "6bb2a443fc676c288ea716ed6dac95b75e7c63428671088adc822e4b0effc656",
+  "html_sha256": "6249996115a677c97bf17ce1a0fd896082e1ac44d41c7919e5f7075c02a8dd65",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source and acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 5,
+      "code_cells": [
+        7,
+        8
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 9,
+      "code_cells": [
+        10
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results and released scores",
+      "markdown_cell": 12,
+      "code_cells": [
+        13
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 14,
+      "code_cells": [
+        15,
+        16
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. What the agent decided, and why",
+      "markdown_cell": 17,
+      "code_cells": [
+        18
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "7bc06c3bd0bd7bdc627730de234c8fe3c095610c5f95c7304c7ceef24ede9ee5",
+  "execution_evidence_entry_id": "state-codex-r2/test-01",
+  "embedded_figures": 3,
+  "checks": [
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check",
+    "published_artifacts_match_presentation_revision",
+    "code_and_outputs_unchanged_from_original_execution"
+  ],
+  "result_location": {
+    "section": 5,
+    "code_cells": [
+      16
+    ],
+    "interpretation": {
+      "section": 6,
+      "markdown_cell": 17
+    }
+  },
+  "input_manifests": [],
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "kind": "markdown_and_navigation_only",
+    "scientific_reexecution": false,
+    "code_and_outputs_unchanged": true,
+    "original_execution_evidence": {
+      "path": "corrections/state/state-codex-r2-test-01.original-execution.json",
+      "sha256": "9a7e825ce6150952cc3907c3659e4fe0de0dafc1dec5833ae53b98d9f8ce97a2"
+    },
+    "correction_record": {
+      "path": "corrections/state/state-codex-r2-test-01.presentation-revision.json",
+      "sha256": "b1266556cf6fea924aff21ab652d7b3b8fab2a12659049ec3dccb682010cc29f"
+    }
+  },
+  "execution_scope": "Execution fields describe the preserved original code and outputs. The current notebook and HTML include a later Markdown/navigation revision; no scientific reexecution was performed."
+}

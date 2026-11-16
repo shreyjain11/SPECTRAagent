@@ -98,7 +98,7 @@
     "source": "historical_decisions.json",
     "record_id": "am-kimi-r2/test-03",
     "disposition": "rejected",
-    "result": "\u0394(HIGH\u2212LOW)=\u22120.015, CI [\u22120.033, +0.002], 279 genes Negative at adequate power (CI excludes +0.05)",
+    "result": "Δ(HIGH−LOW)=−0.015, CI [−0.033, +0.002], 279 genes Negative at adequate power (CI excludes +0.05)",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -119,7 +119,7 @@
     "html": "inline/alphamissense/am-kimi-r2/axis-3.html",
     "execution_evidence": "inline/alphamissense/am-kimi-r2/axis-3.execution.json",
     "published_notebook_sha256": "031a826a27a8acf30b1034fe0fcbcb3f58bc0e841137dbb086a3102022bdb816",
-    "published_html_sha256": "756433e3a9bcf71eb5b109ff87836023d044c34951e316f1c3f8f49088a19938",
+    "published_html_sha256": "2cf28ee00654c46ab0dc639496865ec0831e309b3c3466bffc36980e7430a7c4",
     "code_cells": 9,
     "sections": [
       {
@@ -214,6 +214,11 @@
       "notebook": "inline/alphamissense/am-kimi-r2/axis-3.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/am-kimi-r2-test-03.revision.json"
     }
   }
 }

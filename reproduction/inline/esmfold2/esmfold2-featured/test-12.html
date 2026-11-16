@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ESMFold2 — Surface/disulfide/low-helical regime and subtype controls</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7793,8 +7793,30 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style id="spectra-notebook-layout">
+/* Notebook presentation: preserve the recorded code, tables and figures. */
+body.jp-Notebook { margin: 0 auto; max-width: 1280px; padding: 24px 20px 48px; }
+.jp-Cell { margin-bottom: 14px; }
+.jp-RenderedMarkdown { line-height: 1.55; overflow-wrap: anywhere; }
+.jp-RenderedMarkdown p { margin: 0 0 1em; }
+.jp-RenderedMarkdown h2 { margin-top: 1.6em; margin-bottom: .7em; scroll-margin-top: 20px; }
+.jp-InputArea-editor { min-width: 0; overflow-x: auto !important; }
+.jp-InputArea-editor pre { white-space: pre; padding-bottom: 8px; }
+.jp-OutputArea-output { min-width: 0; max-width: 100%; overflow-x: auto; }
+.jp-RenderedHTMLCommon table { margin: .6em 0 1em; }
+.jp-RenderedText pre { padding-bottom: 8px; white-space: pre-wrap; word-break: normal; overflow-wrap: normal; }
+.jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-navigation { margin: 0 0 20px 78px; font: 14px system-ui, sans-serif; }
+.notebook-navigation a { color: #155c9b; }
+@media (max-width: 640px) {
+  body.jp-Notebook { padding: 16px 10px 32px; }
+  .jp-InputPrompt, .jp-OutputPrompt { min-width: 42px; flex-basis: 42px; font-size: 10px; }
+  .notebook-navigation { margin-left: 42px; }
+}
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="notebook-navigation" aria-label="Notebook navigation"><a href="../../index.html">All notebooks</a></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cell-000">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7813,7 +7835,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">¶</a></h2><p>Acquire the specified viral/envelope protein cohorts and fingerprint-verified experimental structures. The source package includes individual model samples and RCSB sequence/organism/description metadata; calculations below use those individual inputs. The38-target envelope panel and45-target surface panel exclude prior exact target/sequence matches and use release year≥2024.</p>
+<h2 id="1.-Data-source/acquisition">1. Data source/acquisition<a class="anchor-link" href="#1.-Data-source/acquisition">&#182;</a></h2><p>Acquire the specified viral/envelope protein cohorts and fingerprint-verified experimental structures. The source package includes individual model samples and RCSB sequence/organism/description metadata; calculations below use those individual inputs. The 38-target envelope panel and 45-target surface panel exclude prior exact target/sequence matches and use release year ≥2024.</p>
+
 </div>
 </div>
 </div>
@@ -8628,7 +8651,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">¶</a></h2><p>Parse experimental chains, count resolved residues and compute sequence quantities: cysteine density, potential disulfide pairs, N-X-S/T glycosylation motifs, maximum19-residue Kyte–Doolittle average and maximum21-residue hydrophobic fraction.</p>
+<h2 id="2.-Data-processing">2. Data processing<a class="anchor-link" href="#2.-Data-processing">&#182;</a></h2><p>Parse experimental chains, count resolved residues and compute sequence quantities: cysteine density, potential disulfide pairs, N-X-S/T glycosylation motifs, maximum 19-residue Kyte–Doolittle average and maximum 21-residue hydrophobic fraction.</p>
+
 </div>
 </div>
 </div>
@@ -9642,7 +9666,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">¶</a></h2><p>Envelope/fusion level is the sum of disulfide density≥1.2 pairs/100 residues and the joint condition of hydropathy proxy≥1.8 with≤2 glycosylation motifs. The surface regime uses text-defined surface proteins excluding capsid/enzyme controls, disulfide density≥1.2 and hydropathy proxy&lt;2.55. The code explicitly constructs all16 envelope candidate indicators and surface subtypes before joining outcomes.</p>
+<h2 id="3.-Axis-definition-and-level-construction">3. Axis definition and level construction<a class="anchor-link" href="#3.-Axis-definition-and-level-construction">&#182;</a></h2><p>Envelope/fusion level is the sum of disulfide density ≥1.2 pairs/100 residues and the joint condition of hydropathy proxy ≥1.8 with ≤2 glycosylation motifs. The surface regime uses text-defined surface proteins excluding capsid/enzyme controls, disulfide density ≥1.2 and hydropathy proxy &lt;2.55. The code explicitly constructs all 16 envelope candidate indicators and surface subtypes before joining outcomes.</p>
+
 </div>
 </div>
 </div>
@@ -11811,7 +11836,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">¶</a></h2><p>Calculate all four sample-selection curves, bootstrap contrasts and reference behavior. Envelope controls adjust length/resolution/method; the16 candidate contrasts use5000 bootstrap draws. The surface panel separately evaluates the class-II E/E2 subtype and related protein-name groups.</p>
+<h2 id="5.-Curves-and-controls">5. Curves and controls<a class="anchor-link" href="#5.-Curves-and-controls">&#182;</a></h2><p>Calculate all four sample-selection curves, bootstrap contrasts and reference behavior. Envelope controls adjust length/resolution/method; the 16 candidate contrasts use 5000 bootstrap draws. The surface panel separately evaluates the class-II E/E2 subtype and related protein-name groups.</p>
+
 </div>
 </div>
 </div>
@@ -13240,7 +13266,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">¶</a></h2><p>Apply the effect-size and uncertainty conditions to the calculated panel results, distinguishing exploratory candidate contrasts from independent panel results.</p>
+<h2 id="6.-What-the-agent-decided,-and-why">6. What the agent decided, and why<a class="anchor-link" href="#6.-What-the-agent-decided,-and-why">&#182;</a></h2><p>Apply the effect-size and uncertainty conditions to the calculated panel results, distinguishing exploratory candidate contrasts from independent panel results.</p>
+<p>The broad surface regime is unresolved: +0.0219 C-alpha lDDT with an interval spanning zero. The class-II E/E2 subset has eight targets and a negative contrast (−0.2301; interval [−0.3073, −0.1535]). That narrower subtype contrast does not validate the broad regime, and the name-defined subtypes remain subject to the stated selection scope.</p>
+
 </div>
 </div>
 </div>

@@ -157,7 +157,7 @@
     "source": "historical_decisions.json",
     "record_id": "state-kimi-r2/test-02",
     "disposition": "rejected",
-    "result": "The discovery gradient failed. Among seen perturbations K562 \u03c1 = \u22120.083.",
+    "result": "The discovery gradient failed. Among seen perturbations K562 ρ = −0.083.",
     "attribution": "Recorded historical registry summary; not a new reviewer verdict"
   },
   "traceability_review": {
@@ -177,8 +177,8 @@
     "notebook": "inline/state/state-kimi-r2/test-02.ipynb",
     "html": "inline/state/state-kimi-r2/test-02.html",
     "execution_evidence": "inline/state/state-kimi-r2/test-02.execution.json",
-    "published_notebook_sha256": "fefc3f43d38ef24e6a0b32c3c054aacaa615c009c89b4e32f1e92f1acb480831",
-    "published_html_sha256": "a907725c6649a80623a3a9336362e0d2ad3f84a2c191c5006c2f00ca7aaa9811",
+    "published_notebook_sha256": "63c1df74358358fa10ac82a6ddbb132e076e89e31af3a84890daa47b474609d8",
+    "published_html_sha256": "23426b7a5c246eeed8e5d301986652f0681d849b68fc81d75d6bcf61b49ea977",
     "code_cells": 15,
     "sections": [
       {
@@ -275,11 +275,16 @@
     },
     "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
     "execution_evidence": "inline/state/state-kimi-r2/test-02.execution.json",
-    "notebook_sha256": "fefc3f43d38ef24e6a0b32c3c054aacaa615c009c89b4e32f1e92f1acb480831",
+    "notebook_sha256": "63c1df74358358fa10ac82a6ddbb132e076e89e31af3a84890daa47b474609d8",
     "result_location": {
       "notebook": "inline/state/state-kimi-r2/test-02.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
+    },
+    "interpretation_review": {
+      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
+      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
+      "presentation_record": "review_20261115/presentation/state-kimi-r2-test-02.revision.json"
     }
   }
 }

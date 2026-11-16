@@ -1,0 +1,1139 @@
+[
+  {
+    "id": "conch-gpt-r1-test-01",
+    "notebook": "reproduction/inline/conch/conch-gpt-r1/test-01.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 9,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "CRC common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.12238159999999998,
+          "reported": 0.122381,
+          "classes": 5
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Stanford common-class endpoint contrast",
+        "value": {
+          "recomputed": -0.014493249999999985,
+          "reported": -0.014493,
+          "classes": 4
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Adjusted coefficient/odds-ratio arithmetic",
+        "value": 7.171136202632766e-07,
+        "evidence": "exp(beta) compared with displayed odds ratio for all fitted terms; display rounding tolerance2e-6."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r1-test-02",
+    "notebook": "reproduction/inline/conch/conch-gpt-r1/test-02.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 8,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Eligibility count rule",
+        "value": {
+          "CRC": [
+            "BACK",
+            "LYM",
+            "MUC",
+            "STR",
+            "TUM"
+          ],
+          "Stanford": [
+            "LYM",
+            "MUC",
+            "MUS",
+            "TUM"
+          ]
+        },
+        "evidence": "Recomputed >=50 perclass in every level directly from saved counts. No prediction performance checked because none is claimed."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r1-test-03",
+    "notebook": "reproduction/inline/conch/conch-gpt-r1/test-03.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 9,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "CRC common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.12238159999999998,
+          "reported": 0.122381,
+          "classes": 5
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Stanford common-class endpoint contrast",
+        "value": {
+          "recomputed": -0.014493249999999985,
+          "reported": -0.014493,
+          "classes": 4
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Adjusted coefficient/odds-ratio arithmetic",
+        "value": 7.171136202632766e-07,
+        "evidence": "exp(beta) compared with displayed odds ratio for all fitted terms; display rounding tolerance2e-6."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r1-test-04",
+    "notebook": "reproduction/inline/conch/conch-gpt-r1/test-04.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 9,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "CRC common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.12238159999999998,
+          "reported": 0.122381,
+          "classes": 5
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Stanford common-class endpoint contrast",
+        "value": {
+          "recomputed": -0.014493249999999985,
+          "reported": -0.014493,
+          "classes": 4
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Adjusted coefficient/odds-ratio arithmetic",
+        "value": 7.171136202632766e-07,
+        "evidence": "exp(beta) compared with displayed odds ratio for all fitted terms; display rounding tolerance2e-6."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r1-test-05",
+    "notebook": "reproduction/inline/conch/conch-gpt-r1/test-05.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 9,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "CRC common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.12238159999999998,
+          "reported": 0.122381,
+          "classes": 5
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Stanford common-class endpoint contrast",
+        "value": {
+          "recomputed": -0.014493249999999985,
+          "reported": -0.014493,
+          "classes": 4
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Adjusted coefficient/odds-ratio arithmetic",
+        "value": 7.171136202632766e-07,
+        "evidence": "exp(beta) compared with displayed odds ratio for all fitted terms; display rounding tolerance2e-6."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r1-test-06",
+    "notebook": "reproduction/inline/conch/conch-gpt-r1/test-06.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 9,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "CRC common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.12238159999999998,
+          "reported": 0.122381,
+          "classes": 5
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Stanford common-class endpoint contrast",
+        "value": {
+          "recomputed": -0.014493249999999985,
+          "reported": -0.014493,
+          "classes": 4
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Adjusted coefficient/odds-ratio arithmetic",
+        "value": 7.171136202632766e-07,
+        "evidence": "exp(beta) compared with displayed odds ratio for all fitted terms; display rounding tolerance2e-6."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r1-test-07",
+    "notebook": "reproduction/inline/conch/conch-gpt-r1/test-07.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 8,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Eligibility count rule",
+        "value": {
+          "CRC": [
+            "BACK",
+            "LYM",
+            "MUC",
+            "STR",
+            "TUM"
+          ],
+          "Kather": [
+            "STR"
+          ],
+          "Stanford": [
+            "LYM",
+            "MUC",
+            "MUS",
+            "TUM"
+          ]
+        },
+        "evidence": "Recomputed >=50 perclass in every level directly from saved counts. No prediction performance checked because none is claimed."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r2-test-01",
+    "notebook": "reproduction/inline/conch/conch-gpt-r2/test-01.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 8,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "CRC common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.26071214285714284,
+          "reported": 0.260712,
+          "classes": 7
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Stanford common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.043366624999999985,
+          "reported": 0.043367,
+          "classes": 8
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Adjusted coefficient/odds-ratio arithmetic",
+        "value": 7.464361464482039e-07,
+        "evidence": "exp(beta) compared with displayed odds ratio for all fitted terms; display rounding tolerance2e-6."
+      },
+      {
+        "check": "CRC plotted versus endpoint class populations",
+        "value": {
+          "classes": [
+            7,
+            9,
+            9,
+            8,
+            9
+          ],
+          "plotted_drop": 0.2215365873015872
+        },
+        "evidence": "Available-class means independently recomputed; endpoint contrast uses common7 above."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r2-test-02",
+    "notebook": "reproduction/inline/conch/conch-gpt-r2/test-02.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 8,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "CRC common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.26071214285714284,
+          "reported": 0.260712,
+          "classes": 7
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Stanford common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.043366624999999985,
+          "reported": 0.043367,
+          "classes": 8
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Adjusted coefficient/odds-ratio arithmetic",
+        "value": 7.464361464482039e-07,
+        "evidence": "exp(beta) compared with displayed odds ratio for all fitted terms; display rounding tolerance2e-6."
+      },
+      {
+        "check": "CRC plotted versus endpoint class populations",
+        "value": {
+          "classes": [
+            7,
+            9,
+            9,
+            8,
+            9
+          ],
+          "plotted_drop": 0.2215365873015872
+        },
+        "evidence": "Available-class means independently recomputed; endpoint contrast uses common7 above."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r2-test-03",
+    "notebook": "reproduction/inline/conch/conch-gpt-r2/test-03.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 8,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "CRC common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.26071214285714284,
+          "reported": 0.260712,
+          "classes": 7
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Stanford common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.043366624999999985,
+          "reported": 0.043367,
+          "classes": 8
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Adjusted coefficient/odds-ratio arithmetic",
+        "value": 7.464361464482039e-07,
+        "evidence": "exp(beta) compared with displayed odds ratio for all fitted terms; display rounding tolerance2e-6."
+      },
+      {
+        "check": "CRC plotted versus endpoint class populations",
+        "value": {
+          "classes": [
+            7,
+            9,
+            9,
+            8,
+            9
+          ],
+          "plotted_drop": 0.2215365873015872
+        },
+        "evidence": "Available-class means independently recomputed; endpoint contrast uses common7 above."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r2-test-04",
+    "notebook": "reproduction/inline/conch/conch-gpt-r2/test-04.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 8,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "CRC common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.26071214285714284,
+          "reported": 0.260712,
+          "classes": 7
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Stanford common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.043366624999999985,
+          "reported": 0.043367,
+          "classes": 8
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Adjusted coefficient/odds-ratio arithmetic",
+        "value": 7.464361464482039e-07,
+        "evidence": "exp(beta) compared with displayed odds ratio for all fitted terms; display rounding tolerance2e-6."
+      },
+      {
+        "check": "CRC plotted versus endpoint class populations",
+        "value": {
+          "classes": [
+            7,
+            9,
+            9,
+            8,
+            9
+          ],
+          "plotted_drop": 0.2215365873015872
+        },
+        "evidence": "Available-class means independently recomputed; endpoint contrast uses common7 above."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r2-test-05",
+    "notebook": "reproduction/inline/conch/conch-gpt-r2/test-05.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 8,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "CRC common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.26071214285714284,
+          "reported": 0.260712,
+          "classes": 7
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Stanford common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.043366624999999985,
+          "reported": 0.043367,
+          "classes": 8
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Adjusted coefficient/odds-ratio arithmetic",
+        "value": 7.464361464482039e-07,
+        "evidence": "exp(beta) compared with displayed odds ratio for all fitted terms; display rounding tolerance2e-6."
+      },
+      {
+        "check": "CRC plotted versus endpoint class populations",
+        "value": {
+          "classes": [
+            7,
+            9,
+            9,
+            8,
+            9
+          ],
+          "plotted_drop": 0.2215365873015872
+        },
+        "evidence": "Available-class means independently recomputed; endpoint contrast uses common7 above."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r2-test-06",
+    "notebook": "reproduction/inline/conch/conch-gpt-r2/test-06.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 8,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Magnification metadata availability",
+        "value": [
+          {
+            "cohort": "CRC",
+            "images": 7180,
+            "explicit_mpp_records": 0
+          },
+          {
+            "cohort": "NCT-reference",
+            "images": 4860,
+            "explicit_mpp_records": 0
+          },
+          {
+            "cohort": "Stanford",
+            "images": 17949,
+            "explicit_mpp_records": 0
+          }
+        ],
+        "evidence": "Saved image metadata screen; this is not a model-performance test."
+      }
+    ]
+  },
+  {
+    "id": "conch-gpt-r2-test-07",
+    "notebook": "reproduction/inline/conch/conch-gpt-r2/test-07.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 8,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "CRC common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.26071214285714284,
+          "reported": 0.260712,
+          "classes": 7
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Stanford common-class endpoint contrast",
+        "value": {
+          "recomputed": 0.043366624999999985,
+          "reported": 0.043367,
+          "classes": 8
+        },
+        "evidence": "Saved within-class recall pivot, common nonmissing endpoints."
+      },
+      {
+        "check": "Adjusted coefficient/odds-ratio arithmetic",
+        "value": 7.464361464482039e-07,
+        "evidence": "exp(beta) compared with displayed odds ratio for all fitted terms; display rounding tolerance2e-6."
+      },
+      {
+        "check": "CRC plotted versus endpoint class populations",
+        "value": {
+          "classes": [
+            7,
+            9,
+            9,
+            8,
+            9
+          ],
+          "plotted_drop": 0.2215365873015872
+        },
+        "evidence": "Available-class means independently recomputed; endpoint contrast uses common7 above."
+      }
+    ]
+  },
+  {
+    "id": "conch-kimi-r1-test-01",
+    "notebook": "reproduction/inline/conch/conch-kimi-r1/test-01.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 8,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "All method/panel endpoint drops",
+        "value": [
+          {
+            "cohort": "CRC validation",
+            "method": "CONCH",
+            "recomputed": 0.680288,
+            "reported": 0.680288
+          },
+          {
+            "cohort": "CRC validation",
+            "method": "ResNet50 kNN fixed",
+            "recomputed": 0.47041399999999994,
+            "reported": 0.470414
+          },
+          {
+            "cohort": "CRC validation",
+            "method": "ResNet50 kNN refit",
+            "recomputed": 0.38608299999999995,
+            "reported": 0.386083
+          }
+        ],
+        "evidence": "Independently subtracted saved curve endpoints; error<2e-6 from six-decimal printing."
+      },
+      {
+        "check": "Balanced accuracy from class recalls",
+        "value": {
+          "comparisons": 15,
+          "max_absolute_error": 6.66666666759852e-07
+        },
+        "evidence": "Arithmetic mean of all nine saved per-class recalls at every method/panel/level."
+      }
+    ]
+  },
+  {
+    "id": "conch-kimi-r2-test-01",
+    "notebook": "reproduction/inline/conch/conch-kimi-r2/test-01.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 10,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "All method/panel endpoint drops",
+        "value": [
+          {
+            "cohort": "CRC validation",
+            "method": "CONCH",
+            "recomputed": 0.6168199999999999,
+            "reported": 0.61682
+          },
+          {
+            "cohort": "CRC validation",
+            "method": "DINOv2 logistic",
+            "recomputed": 0.21698499999999998,
+            "reported": 0.216985
+          },
+          {
+            "cohort": "CRC validation",
+            "method": "OpenCLIP",
+            "recomputed": -0.020581000000000016,
+            "reported": -0.020582
+          },
+          {
+            "cohort": "NCT confirmation",
+            "method": "CONCH",
+            "recomputed": 0.6338889999999999,
+            "reported": 0.633889
+          },
+          {
+            "cohort": "NCT confirmation",
+            "method": "DINOv2 logistic",
+            "recomputed": 0.29500000000000004,
+            "reported": 0.295
+          },
+          {
+            "cohort": "NCT confirmation",
+            "method": "OpenCLIP",
+            "recomputed": -0.031944,
+            "reported": -0.031944
+          }
+        ],
+        "evidence": "Independently subtracted saved curve endpoints; error<2e-6 from six-decimal printing."
+      },
+      {
+        "check": "Balanced accuracy from class recalls",
+        "value": {
+          "comparisons": 36,
+          "max_absolute_error": 6.666666666765853e-07
+        },
+        "evidence": "Arithmetic mean of all nine saved per-class recalls at every method/panel/level."
+      }
+    ]
+  },
+  {
+    "id": "conch-kimi-r2-test-02",
+    "notebook": "reproduction/inline/conch/conch-kimi-r2/test-02.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 9,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "All method/panel endpoint drops",
+        "value": [
+          {
+            "cohort": "CRC pilot",
+            "method": "CONCH",
+            "recomputed": 0.02444400000000002,
+            "reported": 0.024444
+          },
+          {
+            "cohort": "CRC pilot",
+            "method": "OpenCLIP",
+            "recomputed": -0.0022220000000000018,
+            "reported": -0.002222
+          }
+        ],
+        "evidence": "Independently subtracted saved curve endpoints; error<2e-6 from six-decimal printing."
+      },
+      {
+        "check": "Balanced accuracy from class recalls",
+        "value": {
+          "comparisons": 8,
+          "max_absolute_error": 4.44444444441805e-07
+        },
+        "evidence": "Arithmetic mean of all nine saved per-class recalls at every method/panel/level."
+      }
+    ]
+  },
+  {
+    "id": "conch-kimi-r2-test-03",
+    "notebook": "reproduction/inline/conch/conch-kimi-r2/test-03.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 10,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Native cohort comparison scope",
+        "value": {
+          "levels": [
+            1
+          ],
+          "panels": [
+            "CRC validation",
+            "NCT confirmation"
+          ]
+        },
+        "evidence": "One native level; no degradation effect table expected."
+      },
+      {
+        "check": "Balanced accuracy from class recalls",
+        "value": {
+          "comparisons": 6,
+          "max_absolute_error": 3.3333333332441484e-07
+        },
+        "evidence": "Arithmetic mean of all nine saved per-class recalls at every method/panel/level."
+      }
+    ]
+  },
+  {
+    "id": "conch-opus-r1-test-01",
+    "notebook": "reproduction/inline/conch/conch-opus-r1/test-01.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 6,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Logistic coefficients to odds ratios",
+        "value": 8.65132057370488e-06,
+        "evidence": "Full and internal split coefficient tables; maxrounding difference."
+      }
+    ]
+  },
+  {
+    "id": "conch-opus-r1-test-02",
+    "notebook": "reproduction/inline/conch/conch-opus-r1/test-02.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 6,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Logistic coefficients to odds ratios",
+        "value": 8.65132057370488e-06,
+        "evidence": "Full and internal split coefficient tables; maxrounding difference."
+      }
+    ]
+  },
+  {
+    "id": "conch-opus-r1-test-03",
+    "notebook": "reproduction/inline/conch/conch-opus-r1/test-03.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 6,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Logistic coefficients to odds ratios",
+        "value": 8.65132057370488e-06,
+        "evidence": "Full and internal split coefficient tables; maxrounding difference."
+      }
+    ]
+  },
+  {
+    "id": "conch-opus-r2-test-01",
+    "notebook": "reproduction/inline/conch/conch-opus-r2/test-01.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 6,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Paired-blur point estimates",
+        "value": {
+          "target_drop": 0.537962962962963,
+          "baseline_drop": 0.2972222222222222,
+          "difference_in_differences": 0.24074074074074076,
+          "n": 1080,
+          "conch_correct": [
+            839,
+            729,
+            442,
+            258
+          ],
+          "reference_correct": [
+            1014,
+            971,
+            866,
+            693
+          ]
+        },
+        "evidence": "Integer correct counts recovered from rounded saved accuracy \u00d71080; independent arithmetic. Bootstrap interval not reexecuted."
+      }
+    ]
+  },
+  {
+    "id": "conch-opus-r2-test-02",
+    "notebook": "reproduction/inline/conch/conch-opus-r2/test-02.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 6,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Paired-blur point estimates",
+        "value": {
+          "target_drop": 0.537962962962963,
+          "baseline_drop": 0.2972222222222222,
+          "difference_in_differences": 0.24074074074074076,
+          "n": 1080,
+          "conch_correct": [
+            839,
+            729,
+            442,
+            258
+          ],
+          "reference_correct": [
+            1014,
+            971,
+            866,
+            693
+          ]
+        },
+        "evidence": "Integer correct counts recovered from rounded saved accuracy \u00d71080; independent arithmetic. Bootstrap interval not reexecuted."
+      }
+    ]
+  },
+  {
+    "id": "conch-opus-r2-test-03",
+    "notebook": "reproduction/inline/conch/conch-opus-r2/test-03.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 6,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Paired-blur point estimates",
+        "value": {
+          "target_drop": 0.537962962962963,
+          "baseline_drop": 0.2972222222222222,
+          "difference_in_differences": 0.24074074074074076,
+          "n": 1080,
+          "conch_correct": [
+            839,
+            729,
+            442,
+            258
+          ],
+          "reference_correct": [
+            1014,
+            971,
+            866,
+            693
+          ]
+        },
+        "evidence": "Integer correct counts recovered from rounded saved accuracy \u00d71080; independent arithmetic. Bootstrap interval not reexecuted."
+      }
+    ]
+  },
+  {
+    "id": "conch-primary-test-01",
+    "notebook": "reproduction/inline/conch/conch-primary/test-01.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 7,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Spearman balanced_accuracy",
+        "value": -0.48571428571428577,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman mean_class_adjusted_correct_residual",
+        "value": -0.7142857142857143,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman stable_class_macro_recall",
+        "value": 0.8285714285714287,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      }
+    ]
+  },
+  {
+    "id": "conch-primary-test-02",
+    "notebook": "reproduction/inline/conch/conch-primary/test-02.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 7,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Spearman balanced_accuracy",
+        "value": -0.08571428571428573,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman mean_class_adjusted_correct_residual",
+        "value": -0.5428571428571429,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman stable_class_macro_recall",
+        "value": -0.942857142857143,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      }
+    ]
+  },
+  {
+    "id": "conch-primary-test-03",
+    "notebook": "reproduction/inline/conch/conch-primary/test-03.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 7,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Spearman balanced_accuracy",
+        "value": -0.7714285714285715,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman mean_class_adjusted_correct_residual",
+        "value": -0.7714285714285715,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman stable_class_macro_recall",
+        "value": -0.49280538030458115,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      }
+    ]
+  },
+  {
+    "id": "conch-primary-test-04",
+    "notebook": "reproduction/inline/conch/conch-primary/test-04.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 12,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Spearman balanced_accuracy",
+        "value": -0.942857142857143,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman mean_class_adjusted_correct_residual",
+        "value": -0.3142857142857143,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman stable_class_macro_recall",
+        "value": -1.0,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Tumor main contrast and normal interval",
+        "value": {
+          "low_group_successes": 2549,
+          "high_group_successes": 793,
+          "difference": 0.24952380952380948,
+          "ci95": [
+            0.2207229742414264,
+            0.27832464480619257
+          ]
+        },
+        "evidence": "Rounded saved recall \u00d7 sample count recovers exact integer successes; recomputed pooled levels1\u20137 versus8\u201310."
+      },
+      {
+        "check": "Tumor confirmation correlation",
+        "value": -0.8116794499134279,
+        "evidence": "Saved six-level tumor table."
+      }
+    ]
+  },
+  {
+    "id": "conch-primary-test-05",
+    "notebook": "reproduction/inline/conch/conch-primary/test-05.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 7,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Spearman balanced_accuracy",
+        "value": -0.48571428571428577,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman mean_class_adjusted_correct_residual",
+        "value": -0.7142857142857143,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman stable_class_macro_recall",
+        "value": 0.8285714285714287,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      }
+    ]
+  },
+  {
+    "id": "conch-primary-test-06",
+    "notebook": "reproduction/inline/conch/conch-primary/test-06.ipynb",
+    "checks": [
+      {
+        "check": "Code syntax and saved-output errors",
+        "value": {
+          "code_cells": 7,
+          "errors": 0
+        },
+        "evidence": "All code cells parsed; all saved output objects inspected."
+      },
+      {
+        "check": "Spearman balanced_accuracy",
+        "value": -0.48571428571428577,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman mean_class_adjusted_correct_residual",
+        "value": -0.7142857142857143,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      },
+      {
+        "check": "Spearman stable_class_macro_recall",
+        "value": 0.8285714285714287,
+        "evidence": "Recomputed from saved six-level table, independently of notebook decision code."
+      }
+    ]
+  }
+]

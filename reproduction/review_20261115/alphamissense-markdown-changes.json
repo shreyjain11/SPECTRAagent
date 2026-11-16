@@ -1,0 +1,233 @@
+[
+  {
+    "notebook": "reproduction/inline/alphamissense/am-primary/axis-3.ipynb",
+    "cell": 14,
+    "reason": "Qualify a one-assay degenerate bootstrap and prevent a separate occupancy contrast from validating depth.",
+    "before": "## 6. Result and decision\n\nThe calculated endpoint contrast informs the directional decision. Controls characterize whether the pattern follows experimental signal or shared position difficulty; absolute correlations alone do not establish a model-specific defect.\n",
+    "after": "## 6. Result and decision\n\nThe depth0-to-depth4 paired contrast contains only one assay. Its estimated difference is 0.523308, and resampling that one assay produces the same value every time; the zero-width interval does not measure uncertainty across assays. The lowest-depth group contains six positions in one protein, all terminal. Treat this endpoint comparison as descriptive, despite the automated directional label below.\n\nThe coarse occupancy comparison includes 61 paired assays, but it tests a different property and does not independently validate the effective-depth claim. The depth curve is not strictly monotonic. No general depth-dependent degradation is established by the one-assay endpoint contrast.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-gpt-r1/axis-1.ipynb",
+    "cell": 7,
+    "reason": "Correct prose spacing around distance levels and gene ID; preserve split identifiers.",
+    "before": "## 3. Axis definition and level construction\nDistance is the minimum exonic base distance to an internal boundary on the exact versioned transcript; the boundary base is 0. External transcript edges are excluded. Levels run far→junction. Partitions use input-side gene identifiers.\nLevels: ≥50,20–49,3–19,0–2nt. The first 32 bits of SHA256(\"spectra-alphamissense-splice-v1|\"+geneSymbol) modulo 10 assign discovery 0–3 and confirmation 4–9.\n",
+    "after": "## 3. Axis definition and level construction\nDistance is the minimum exonic base distance to an internal boundary on the exact versioned transcript; the boundary base is 0. External transcript edges are excluded. Levels run far→junction. Partitions use input-side gene identifiers.\nLevels: ≥50, 20–49, 3–19 and 0–2 nt. The first 32 bits of SHA256(\"spectra-alphamissense-splice-v1|\"+geneSymbol) modulo 10 assign discovery 0–3 and confirmation 4–9.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-gpt-r1/axis-1.ipynb",
+    "cell": 15,
+    "reason": "Make reference comparison and confirmation scope explicit.",
+    "before": "## 6. What the agent decided, and why\nThe calculated confirmation contrast and gene-bootstrap interval determine the decision. A positive far-minus-junction difference means worse discrimination at junctions. The reference characterizes whether the difficulty is shared.\n",
+    "after": "## 6. What the agent decided, and why\nThe calculated confirmation contrast and gene-bootstrap interval determine the decision. A positive far-minus-junction difference means worse discrimination at junctions. The reference characterizes whether the difficulty is shared.\n\nThe target-minus-BLOSUM62 decline interval includes zero. This supports a junction-associated loss of discrimination on the stated cohort, without establishing a larger decline than this reference. The confirmation partition is a gene-separated subset of the same ClinVar release, not an external dataset.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-gpt-r2/axis-1.ipynb",
+    "cell": 7,
+    "reason": "Correct prose spacing around distance levels and gene ID; preserve split identifiers.",
+    "before": "## 3. Axis definition and level construction\nDistance is the minimum exonic base distance to an internal boundary on the exact versioned transcript; the boundary base is 0. External transcript edges are excluded. Levels run far→junction. Partitions use input-side gene identifiers.\nLevels: ≥31,11–30,3–10,0–2nt. The first 64 bits of SHA256(version-stripped GENCODE geneID) modulo 10 assign discovery 0–3 and confirmation 4–9. Only germline records are included; proteins spanning partitions are excluded.\n",
+    "after": "## 3. Axis definition and level construction\nDistance is the minimum exonic base distance to an internal boundary on the exact versioned transcript; the boundary base is 0. External transcript edges are excluded. Levels run far→junction. Partitions use input-side gene identifiers.\nLevels: ≥31, 11–30, 3–10 and 0–2 nt. The first 64 bits of SHA256(version-stripped GENCODE gene ID) modulo 10 assign discovery 0–3 and confirmation 4–9. Only germline records are included; proteins spanning partitions are excluded.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-gpt-r2/axis-1.ipynb",
+    "cell": 15,
+    "reason": "Make reference comparison and confirmation scope explicit.",
+    "before": "## 6. What the agent decided, and why\nThe calculated confirmation contrast and gene-bootstrap interval determine the decision. A positive far-minus-junction difference means worse discrimination at junctions. The reference characterizes whether the difficulty is shared.\n",
+    "after": "## 6. What the agent decided, and why\nThe calculated confirmation contrast and gene-bootstrap interval determine the decision. A positive far-minus-junction difference means worse discrimination at junctions. The reference characterizes whether the difficulty is shared.\n\nThe target-minus-BLOSUM62 decline interval includes zero. This supports a junction-associated loss of discrimination on the stated cohort, without establishing a larger decline than this reference. The confirmation partition is a gene-separated subset of the same ClinVar release, not an external dataset.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-gpt-r1/axis-5.ipynb",
+    "cell": 12,
+    "reason": "Do not interpret an interval spanning zero as absence of a protein-function mechanism.",
+    "before": "## 6. Result and decision\n\nA protein-function effect at the same distance levels would support a shared protein-context explanation. Its absence limits a purely protein-function explanation of the clinical splice-distance result.\n",
+    "after": "## 6. Result and decision\n\nThe confirmation far-minus-junction contrast is 0.001591, with a protein-bootstrap interval from −0.049530 to 0.053280. This is inconclusive: it neither confirms a distance-dependent protein-function effect nor establishes that such an effect is absent. It does not resolve the mechanism behind the clinical splice-distance association.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-gpt-r1/axis-4.ipynb",
+    "cell": 4,
+    "reason": "Disclose live endpoint dependence without changing acquisition code.",
+    "before": "## 2. Raw processing\n\nParse Ensembl 116 gene mappings and raw ortholog-presence responses separately for six species. Presence in sampled species is an observed annotation; it is not automatically an inferred age of origin.\n",
+    "after": "## 2. Raw processing\n\nParse Ensembl 116 gene mappings and raw ortholog-presence responses separately for six species. Presence in sampled species is an observed annotation; it is not automatically an inferred age of origin.\n\nThe acquisition cell requires the live BioMart registry to report release 116, even when cached responses exist. A later registry release will stop it; the saved response hashes identify this execution but do not provide an archived download endpoint.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-gpt-r2/axis-3.ipynb",
+    "cell": 4,
+    "reason": "Disclose live endpoint dependence without changing acquisition code.",
+    "before": "## 2. Raw processing\n\nParse Ensembl 116 gene mappings and raw ortholog-presence responses separately for six species. Presence in sampled species is an observed annotation; it is not automatically an inferred age of origin.\n",
+    "after": "## 2. Raw processing\n\nParse Ensembl 116 gene mappings and raw ortholog-presence responses separately for six species. Presence in sampled species is an observed annotation; it is not automatically an inferred age of origin.\n\nThe acquisition cell requires the live BioMart registry to report release 116, even when cached responses exist. A later registry release will stop it; the saved response hashes identify this execution but do not provide an archived download endpoint.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r1/test-01.ipynb",
+    "cell": 11,
+    "reason": "Clarify the scientific meaning of an absolute-correlation metric.",
+    "before": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n",
+    "after": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n\nAbsolute correlation measures agreement strength and discards its sign. It is not a test that every assay has the expected direction.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r1/test-01.ipynb",
+    "cell": 19,
+    "reason": "Separate reconstructed association calculation from historical protocol certification.",
+    "before": "## 6. Decision and reason\n",
+    "after": "## 6. Decision and reason\n\nThe automated association label below uses a positive pooled interval and a positive confirmation point estimate. It is not a full protocol-completion verdict. The partitions contain different proteins from this fixed ProteinGym panel; this reconstruction does not establish the chronology or independence of the original axis-selection process. Intervals resample assays, so multiple assays of one protein remain dependent.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r1/test-02.ipynb",
+    "cell": 9,
+    "reason": "Clarify the scientific meaning of an absolute-correlation metric.",
+    "before": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n",
+    "after": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n\nAbsolute correlation measures agreement strength and discards its sign. It is not a test that every assay has the expected direction.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r1/test-02.ipynb",
+    "cell": 15,
+    "reason": "Scope continuous depth screen and unclustered assay-level significance.",
+    "before": "## 6. Decision and reason\n",
+    "after": "## 6. Decision and reason\n\nThis is a continuous screen of 73 assays from 64 proteins. Repeated assays from one protein are not independent, and the displayed Spearman p-values do not adjust for that clustering. Failure to support the positive association does not establish that depth has no effect.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r1/test-03.ipynb",
+    "cell": 11,
+    "reason": "Clarify the scientific meaning of an absolute-correlation metric.",
+    "before": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n",
+    "after": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n\nAbsolute correlation measures agreement strength and discards its sign. It is not a test that every assay has the expected direction.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r1/test-03.ipynb",
+    "cell": 19,
+    "reason": "Separate reconstructed association calculation from historical protocol certification.",
+    "before": "## 6. Decision and reason\n",
+    "after": "## 6. Decision and reason\n\nThe automated association label below uses a positive pooled interval and a positive confirmation point estimate. It is not a full protocol-completion verdict. The partitions contain different proteins from this fixed ProteinGym panel; this reconstruction does not establish the chronology or independence of the original axis-selection process. Intervals resample assays, so multiple assays of one protein remain dependent.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r2/test-01.ipynb",
+    "cell": 12,
+    "reason": "Clarify the scientific meaning of an absolute-correlation metric.",
+    "before": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n",
+    "after": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n\nAbsolute correlation measures agreement strength and discards its sign. It is not a test that every assay has the expected direction.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r2/test-01.ipynb",
+    "cell": 22,
+    "reason": "Separate reconstructed association calculation from historical protocol certification.",
+    "before": "## 6. Decision and reason\n",
+    "after": "## 6. Decision and reason\n\nThe automated association label below uses a positive pooled interval and a positive confirmation point estimate. It is not a full protocol-completion verdict. The partitions contain different proteins from this fixed ProteinGym panel; this reconstruction does not establish the chronology or independence of the original axis-selection process. Intervals resample assays, so multiple assays of one protein remain dependent.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r2/test-02.ipynb",
+    "cell": 9,
+    "reason": "Clarify the scientific meaning of an absolute-correlation metric.",
+    "before": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n",
+    "after": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n\nAbsolute correlation measures agreement strength and discards its sign. It is not a test that every assay has the expected direction.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r2/test-02.ipynb",
+    "cell": 15,
+    "reason": "Scope continuous depth screen and unclustered assay-level significance.",
+    "before": "## 6. Decision and reason\n",
+    "after": "## 6. Decision and reason\n\nThis is a continuous screen of 73 assays from 64 proteins. Repeated assays from one protein are not independent, and the displayed Spearman p-values do not adjust for that clustering. Failure to support the positive association does not establish that depth has no effect.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r2/test-03.ipynb",
+    "cell": 12,
+    "reason": "Clarify the scientific meaning of an absolute-correlation metric.",
+    "before": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n",
+    "after": "## 4. Model results or released scores\n\nRead the downloaded official AlphaMissense table and align each assay target to its pinned Swiss-Prot canonical sequence, then join on UniProt accession plus the mapped full-protein amino-acid substitution. The code displays mapping methods and excluded variants. AlphaMissense is used as released; this analysis does not fine-tune it. Performance is absolute Spearman correlation against each assay’s experimental scores, so assays with opposite effect conventions remain comparable.\n\nAbsolute correlation measures agreement strength and discards its sign. It is not a test that every assay has the expected direction.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r2/test-03.ipynb",
+    "cell": 22,
+    "reason": "Separate reconstructed association calculation from historical protocol certification.",
+    "before": "## 6. Decision and reason\n",
+    "after": "## 6. Decision and reason\n\nThe automated association label below uses a positive pooled interval and a positive confirmation point estimate. It is not a full protocol-completion verdict. The partitions contain different proteins from this fixed ProteinGym panel; this reconstruction does not establish the chronology or independence of the original axis-selection process. Intervals resample assays, so multiple assays of one protein remain dependent.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r2/test-01.ipynb",
+    "cell": 20,
+    "reason": "Qualify unclustered adjusted-control uncertainty.",
+    "before": "Separate alignment support from structural confidence and assay dynamic range by binning within assay, centering each variable within assay, and fitting the displayed ordinary least-squares model. Both coverage-based and confidence-based bins are evaluated.\n",
+    "after": "Separate alignment support from structural confidence and assay dynamic range by binning within assay, centering each variable within assay, and fitting the displayed ordinary least-squares model. Both coverage-based and confidence-based bins are evaluated.\n\nThe reported standard errors are ordinary OLS errors, not clustered by assay or protein. Centering within assays does not remove dependence between bins from the same assay, so these t-values are descriptive adjustment diagnostics.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r2/test-03.ipynb",
+    "cell": 20,
+    "reason": "Qualify unclustered adjusted-control uncertainty.",
+    "before": "Separate alignment support from structural confidence and assay dynamic range by binning within assay, centering each variable within assay, and fitting the displayed ordinary least-squares model. Both coverage-based and confidence-based bins are evaluated.\n",
+    "after": "Separate alignment support from structural confidence and assay dynamic range by binning within assay, centering each variable within assay, and fitting the displayed ordinary least-squares model. Both coverage-based and confidence-based bins are evaluated.\n\nThe reported standard errors are ordinary OLS errors, not clustered by assay or protein. Centering within assays does not remove dependence between bins from the same assay, so these t-values are descriptive adjustment diagnostics.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-opus-r2/test-03.ipynb",
+    "cell": 10,
+    "reason": "State exact pd.cut edge semantics without changing saved plotted output.",
+    "before": "The axis is the fraction of alignment rows with an amino-acid character at the variant column. Evaluate three fixed coverage levels and a six-level check. Values outside the alignment are excluded, with their counts displayed. Discovery and confirmation split proteins, rather than variants, with seed 7.\n",
+    "after": "The axis is the fraction of alignment rows with an amino-acid character at the variant column. Evaluate three fixed coverage levels and a six-level check. Values outside the alignment are excluded, with their counts displayed. Discovery and confirmation split proteins, rather than variants, with seed 7.\n\nThe code uses right-closed intervals: coverage ≤0.50, >0.50 to ≤0.95, and >0.95. The six-level boundaries are 0.10, 0.50, 0.80, 0.95 and 0.99, also included in the lower group. The saved plot’s first label, “<.50”, is shorthand; values exactly 0.50 belong to that first group.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-kimi-r1/axis-2.ipynb",
+    "cell": 6,
+    "reason": "Replace unrelated copied exon-distance prose with the implemented axis and its scope.",
+    "before": "## 3. Axis and levels\n\nLevels use input features only. Quartile boundaries, when used, are calculated on the sequence-verified cohort without labels. Exon distance includes transcript terminal exon edges. Low-support predefined levels are merged using variant counts only.\n",
+    "after": "## 3. Axis and levels\n\nLocal complexity is Shannon entropy in the wild-type sequence window, extending up to ten residues on each side of the variant. Levels use cohort quartiles of this input feature, ordered from highest to lowest entropy; labels and target scores do not determine the cutpoints.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-kimi-r1/axis-3.ipynb",
+    "cell": 6,
+    "reason": "Replace unrelated copied exon-distance prose with the implemented axis and its scope.",
+    "before": "## 3. Axis and levels\n\nLevels use input features only. Quartile boundaries, when used, are calculated on the sequence-verified cohort without labels. Exon distance includes transcript terminal exon edges. Low-support predefined levels are merged using variant counts only.\n",
+    "after": "## 3. Axis and levels\n\nTerminal distance is the minimum number of residues between the variant and either protein end. Levels use cohort quartiles, ordered from farthest to nearest. Protein length and gene composition differ strongly across these levels.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-kimi-r1/axis-4.ipynb",
+    "cell": 6,
+    "reason": "Replace unrelated copied exon-distance prose with the implemented axis and its scope.",
+    "before": "## 3. Axis and levels\n\nLevels use input features only. Quartile boundaries, when used, are calculated on the sequence-verified cohort without labels. Exon distance includes transcript terminal exon edges. Low-support predefined levels are merged using variant counts only.\n",
+    "after": "## 3. Axis and levels\n\nProtein length is the canonical sequence length. Cohort quartiles are ordered from longest to shortest; they are variant-weighted rather than equal-sized groups of proteins. A within-gene contrast is generally undefined for a fixed protein length, so the two eligible gene records in the diagnostic table are not broad within-gene confirmation.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-kimi-r1/axis-5.ipynb",
+    "cell": 8,
+    "reason": "Replace unrelated copied exon-distance prose with the implemented axis and its scope.",
+    "before": "## 3. Axis and levels\n\nLevels use input features only. Quartile boundaries, when used, are calculated on the sequence-verified cohort without labels. Exon distance includes transcript terminal exon edges. Low-support predefined levels are merged using variant counts only.\n",
+    "after": "## 3. Axis and levels\n\nThe feature counts how many of six sampled species have an Ensembl ortholog annotation. Multiple Ensembl records for an Entrez identifier use the maximum count. Levels start at six, four to five, one to three, and zero species; the last two merge because the zero-species group has fewer than 1,000 variants. This measures annotation breadth, not gene age. The feature is gene-level, so an empty within-gene endpoint panel is expected.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-kimi-r1/axis-6.ipynb",
+    "cell": 6,
+    "reason": "Replace unrelated copied exon-distance prose with the implemented axis and its scope.",
+    "before": "## 3. Axis and levels\n\nLevels use input features only. Quartile boundaries, when used, are calculated on the sequence-verified cohort without labels. Exon distance includes transcript terminal exon edges. Low-support predefined levels are merged using variant counts only.\n",
+    "after": "## 3. Axis and levels\n\nThe feature is the maximum available AF_ESP, AF_EXAC and AF_TGP annotation in ClinVar. The first group, labeled “unobserved” in the saved output, means all three annotations are missing; it does not establish absence from population sequencing. The remaining groups use recorded frequency <0.001 or ≥0.001. The ordering is annotation availability/frequency, not measured training exposure.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-kimi-r1/axis-6.ipynb",
+    "cell": 12,
+    "reason": "Expose sparse pathogenic support and inconclusive within-gene control for population observability.",
+    "before": "## 6. Result and decision\n\nThe decision uses the newly calculated AlphaMissense contrast, its interval, fixed-reference direction, and the displayed controls. A positive endpoint contrast means performance falls from the first level to the last.\n",
+    "after": "## 6. Result and decision\n\nThe decision uses the newly calculated AlphaMissense contrast, its interval, fixed-reference direction, and the displayed controls. A positive endpoint contrast means performance falls from the first level to the last.\n\nOnly 40 variants in the highest-frequency group carry a pathogenic label. The six-gene paired contrast has an interval from −0.036744 to 0.234209. The supported marginal decline therefore does not establish a within-gene or population-independent effect; ascertainment and missing-annotation differences remain unresolved.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-kimi-r1/axis-1.ipynb",
+    "cell": 6,
+    "reason": "Prevent conflating distinct exon-distance definitions across runs.",
+    "before": "## 3. Axis and levels\n\nLevels use input features only. Quartile boundaries, when used, are calculated on the sequence-verified cohort without labels. Exon distance includes transcript terminal exon edges. Low-support predefined levels are merged using variant counts only.\n",
+    "after": "## 3. Axis and levels\n\nLevels use input features only. Quartile boundaries, when used, are calculated on the sequence-verified cohort without labels. Exon distance includes transcript terminal exon edges. Low-support predefined levels are merged using variant counts only.\n\nThe implementation matches version-stripped transcript identifiers to GENCODE v50 and includes terminal exon edges. It is not the exact versioned-transcript/internal-boundary definition used by the Codex splice-distance analyses.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-kimi-r2/axis-1.ipynb",
+    "cell": 15,
+    "reason": "Scope the positive structural-confidence result to its actual estimand and controls.",
+    "before": "## 6. Result and decision\n\nPositive last-minus-first differences indicate better discrimination at higher levels. The within-gene interval drives the directional interpretation when paired genes are available; pooled estimates alone cannot remove gene composition.\n",
+    "after": "## 6. Result and decision\n\nPositive last-minus-first differences indicate better discrimination at higher levels. The within-gene interval drives the directional interpretation when paired genes are available; pooled estimates alone cannot remove gene composition.\n\nThe within-gene estimate uses 160 eligible genes and is positive, while the pooled endpoint interval includes zero. Grantham also has a positive within-gene contrast; no paired target-minus-reference interval is calculated here. This is an observational within-gene association, without independent external confirmation.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-kimi-r2/axis-4.ipynb",
+    "cell": 13,
+    "reason": "Explain why within-gene pairing is undefined for a gene-level feature.",
+    "before": "## 6. Result and decision\n\nPositive last-minus-first differences indicate better discrimination at higher levels. The within-gene interval drives the directional interpretation when paired genes are available; pooled estimates alone cannot remove gene composition.\n",
+    "after": "## 6. Result and decision\n\nPositive last-minus-first differences indicate better discrimination at higher levels. The within-gene interval drives the directional interpretation when paired genes are available; pooled estimates alone cannot remove gene composition.\n\nEach gene has one coding-sequence conservation value, so no gene can occupy both endpoint groups. The empty paired-gene table is a consequence of the feature definition, not missing variant data. The applicable estimate is the gene-clustered pooled endpoint contrast.\n"
+  },
+  {
+    "notebook": "reproduction/inline/alphamissense/am-kimi-r2/axis-6.ipynb",
+    "cell": 14,
+    "reason": "Replace generic higher-level advantage language with the actual categorical CpG contrast.",
+    "before": "## 6. Result and decision\n\nPositive last-minus-first differences indicate better discrimination at higher levels. The within-gene interval drives the directional interpretation when paired genes are available; pooled estimates alone cannot remove gene composition.\n",
+    "after": "## 6. Result and decision\n\nThe endpoint comparison is CpG transitions minus non-CpG variants. These are mutation categories, not successive levels of a continuous biological quantity. The within-gene AlphaMissense difference is 0.004912 across 808 genes, with an interval from −0.002247 to 0.011959; it does not support a directional difference. The pooled point estimate has the opposite sign, showing sensitivity to gene composition.\n"
+  }
+]

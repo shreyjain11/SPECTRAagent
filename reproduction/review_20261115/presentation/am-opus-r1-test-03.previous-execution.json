@@ -1,0 +1,89 @@
+{
+  "analysis_id": "am-opus-r1/test-03",
+  "notebook": "inline/alphamissense/am-opus-r1/test-03.ipynb",
+  "html": "inline/alphamissense/am-opus-r1/test-03.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 11,
+  "executed_cells": 11,
+  "errors": 0,
+  "notebook_sha256": "9a9d1083a150ac87c4921695b645f9d20f6038892253596c885404fe407f347c",
+  "html_sha256": "a5e9120b631cbf96df4b6fbaf3c97a44c1525b83ab7bc3c6c5ee9eacf65815a9",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source / acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 4,
+      "code_cells": [
+        5,
+        7
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 8,
+      "code_cells": [
+        10
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 11,
+      "code_cells": [
+        12,
+        14,
+        15
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 16,
+      "code_cells": [
+        18
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. Decision and reason",
+      "markdown_cell": 19,
+      "code_cells": [
+        20,
+        21
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "4a70fec77a90ff3298e3af00295a46ac3b746afc87d796b47c24997f2b3294b4",
+  "execution_evidence_entry_id": "am-opus-r1/test-03",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      20,
+      21
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 334.31,
+  "python": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/state/state-featured/.venv/bin/python",
+  "calculation_evidence": []
+}
