@@ -1,0 +1,72 @@
+{
+  "analysis_id": "am-opus-r2-test-03",
+  "checked_at_utc": "2026-11-16T13:43:19.244431+00:00",
+  "method": "Independently compute statistics from exported individual assay/control rows. Bootstrap weights apply to original rows; sign flips independently apply to individual assay contrasts; Spearman uses independently centered tied ranks; regression uses full explicit assay dummy design in statsmodels.",
+  "files": {
+    "before-after-adjusted_controls.csv": "e6d58149d59e40aaaab062624b4a7ce5f75f6181acf4c85c52f0c2203e5e1729",
+    "before-after-curves.csv": "e3f5b8ff2d720a2d7bfb0fb8108769519925dac4cb026e8112b87f6ac87881ae",
+    "released_score_position_mapping.csv": "308a180cf17556562486a973fdcf5dfed2329bff1aa3bbb196d3f4e54c9dde43",
+    "paired_effects.csv": "00e6a46459e8e998afed99d3eb45bb41b409112ab7801ec6bc161a73259313f6",
+    "adjusted_controls.csv": "b276fb7c315ed69ee2d2bc2130f39be3759fbce3308ef6f2555615f4957dbd40",
+    "alignment_column_measurements.csv": "7acbe1170894e8655a4e974687ef848c954c56afc1c42ee2ffc7cb72115784eb",
+    "control_cells_plddt.csv": "4dbda5d331958aa3cb0ebddd0ec946f8d4e72fa5573b3877f3d89d44ae8c0537",
+    "before-after-paired_effects.csv": "1929fd32b8e3aa88bad734e8eef5a7b9e20a7ffa403e87f7ec7c341984747369",
+    "control_cells_coverage.csv": "2a05858593d30d612812f6b0adcc98c9c93ac00fb8f3a0a6d16f3bbf809e08bf",
+    "assay_level_scores.csv": "be3f77cb68e4217600c5aab54f0d76287a3e01b9143d63a7822559f5dbca8233",
+    "structure_mapping_diagnostics.csv": "4f81ddf5223602bc7ccb799a689c6daa30fd0efcaf58eed6416bd4205e215ec9",
+    "curves.csv": "a2919e7c32482f2b832ad8abb90601598dd45f12d33f308d546142cb5bcf583a",
+    "input_processing_counts.csv": "804084efdd19ebf59cfa08d7075e61d70aa5b967e287ab661c4cd5db8f87bd86"
+  },
+  "checks": {
+    "curve_points": 27,
+    "paired_comparisons": 40,
+    "bootstrap_draws_per_statistic": 10000,
+    "all_cluster_intervals_counts_and_sign_flip_tests_reproduced": true,
+    "split_protein_disjoint": true,
+    "pooled_AM_effects": [
+      {
+        "scheme": "3 coverage levels",
+        "mean": 0.21081993655281184,
+        "ci95": [
+          0.1491726803643766,
+          0.2714677472143058
+        ],
+        "assays": 43,
+        "proteins": 38
+      },
+      {
+        "scheme": "6 coverage levels",
+        "mean": 0.2721560088499706,
+        "ci95": [
+          0.19429497404501064,
+          0.3463703179624821
+        ],
+        "assays": 32,
+        "proteins": 28
+      }
+    ],
+    "adjusted_controls": [
+      {
+        "binning": "coverage",
+        "assays": 67,
+        "proteins": 59,
+        "rows": 377,
+        "effective_design_rank": 70,
+        "max_coefficient_difference": 2.3418766925686896e-16,
+        "max_standard_error_difference": 5.898059818321144e-16,
+        "warnings": []
+      },
+      {
+        "binning": "plddt",
+        "assays": 64,
+        "proteins": 56,
+        "rows": 378,
+        "effective_design_rank": 67,
+        "max_coefficient_difference": 1.8318679906315083e-15,
+        "max_standard_error_difference": 3.469446951953614e-15,
+        "warnings": []
+      }
+    ]
+  },
+  "issues": []
+}

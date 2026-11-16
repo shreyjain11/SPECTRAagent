@@ -901,8 +901,8 @@
     "notebook": "inline/state/state-featured/test-03.ipynb",
     "html": "inline/state/state-featured/test-03.html",
     "execution_evidence": "inline/state/state-featured/test-03.execution.json",
-    "published_notebook_sha256": "e03d6f4570a7766c9e2e6655e0b802283c109069853de3c191d13dce82f52313",
-    "published_html_sha256": "e47310050e27cb4d3875b2c21a8d7c85b23ae60236f03412ea6f886bdb929f24",
+    "published_notebook_sha256": "8ab5f94bcd0724e031f8e881c9465b77412d3019502fe7261c2740af2546ab95",
+    "published_html_sha256": "0f50886f7f1f9791b0885ff13bb8adcc082a0980d8ccad955a394218bef5762c",
     "code_cells": 13,
     "sections": [
       {
@@ -1001,18 +1001,96 @@
       ],
       "description": "Use the acquisition, sample selection, axis construction and model evaluation shown by this inline notebook."
     },
-    "verification_boundary": "Saved executed outputs and their provenance; not a new full execution performed by the November 15 consistency correction.",
+    "verification_boundary": "All 13 notebook code cells executed in a clean Jupyter kernel using 22 SHA256-verified public files. Original and corrected per-condition records, level/feature assignments, released scores, curve tables, descriptive trends and figure are byte-identical. The endpoint interval uses whole canonical-gene clusters jointly across both levels and observed contexts, retaining the row-weighted mean difference. The result is conditional on the fixed context panels and reconstructed reference; it is not a three-level curve, new prospective confirmation, new model inference, or full protocol completion.",
     "execution_evidence": "inline/state/state-featured/test-03.execution.json",
-    "notebook_sha256": "e03d6f4570a7766c9e2e6655e0b802283c109069853de3c191d13dce82f52313",
+    "notebook_sha256": "8ab5f94bcd0724e031f8e881c9465b77412d3019502fe7261c2740af2546ab95",
     "result_location": {
       "notebook": "inline/state/state-featured/test-03.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
     },
-    "interpretation_review": {
-      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
-      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
-      "presentation_record": "review_20261115/presentation/state-featured-test-03.revision.json"
+    "scientific_correction": {
+      "record": "corrections/dependence_20261116/records/state-featured-test-03.scientific-revision.json",
+      "execution_scope": "full_notebook_reexecuted",
+      "summary": "Replace independent condition-row endpoint resampling with joint canonical-gene cluster resampling. The unchanged L2-minus-L1 contrast is reported as a two-level association in the observed contexts, not full protocol acceptance."
+    },
+    "curve": {
+      "metric": "Row-weighted mean overlap@N, L2 minus L1",
+      "aggregation_and_uncertainty": "Joint canonical-gene bootstrap across both endpoints and observed contexts; 2,000 draws, seed 7, 95% percentile intervals.",
+      "contrasts": [
+        {
+          "subset": "confirmation_jurkat_rpe1",
+          "representation": "HVG",
+          "high_level": "L2_mid",
+          "low_level": "L1_low",
+          "estimate": 0.0960271634672713,
+          "confidence_interval_95": [
+            0.0738748499733249,
+            0.1190981648388985
+          ],
+          "gene_clusters": 1222,
+          "low_rows": 597,
+          "high_rows": 1156,
+          "populated_annotated_levels": 2
+        },
+        {
+          "subset": "confirmation_jurkat_rpe1",
+          "representation": "SE",
+          "high_level": "L2_mid",
+          "low_level": "L1_low",
+          "estimate": 0.0842760864423546,
+          "confidence_interval_95": [
+            0.0624765327077392,
+            0.1059510161554703
+          ],
+          "gene_clusters": 1222,
+          "low_rows": 597,
+          "high_rows": 1156,
+          "populated_annotated_levels": 2
+        },
+        {
+          "subset": "discovery_hepg2_k562",
+          "representation": "HVG",
+          "high_level": "L2_mid",
+          "low_level": "L1_low",
+          "estimate": 0.117516040980006,
+          "confidence_interval_95": [
+            0.0928329339543909,
+            0.1411704797128674
+          ],
+          "gene_clusters": 1147,
+          "low_rows": 549,
+          "high_rows": 1018,
+          "populated_annotated_levels": 2
+        },
+        {
+          "subset": "discovery_hepg2_k562",
+          "representation": "SE",
+          "high_level": "L2_mid",
+          "low_level": "L1_low",
+          "estimate": 0.0983335656070087,
+          "confidence_interval_95": [
+            0.0751714442391708,
+            0.1214098211957917
+          ],
+          "gene_clusters": 1147,
+          "low_rows": 549,
+          "high_rows": 1018,
+          "populated_annotated_levels": 2
+        }
+      ],
+      "evidence": {
+        "path": "corrections/dependence_20261116/state/before-after-contrasts.csv",
+        "sha256": "d7721aaf516f5529b126963d9c439cd0bf7c749cf8aeb1ff52dfee79daa12a8d"
+      }
+    },
+    "insight": {
+      "interpretation": "Higher annotated similarity is associated with higher overlap@N in the two populated annotated levels for both representations and context subsets. This is a bounded two-level comparison, not a validated three-level curve or full protocol acceptance.",
+      "limitations": [
+        "Unannotated L0 is descriptive and does not supply a third similarity level.",
+        "Inference is conditional on the observed contexts and reconstructed reference membership.",
+        "Released scores were reused; this correction did not run fresh model inference or establish independent external confirmation."
+      ]
     }
   }
 }

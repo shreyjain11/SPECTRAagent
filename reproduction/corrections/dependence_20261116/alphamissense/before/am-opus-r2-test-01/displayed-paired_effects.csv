@@ -1,0 +1,21 @@
+Unnamed: 0,subset,scheme,comparison,mean,low,high,n_assays,wilcoxon_p
+0,All,4 confidence levels,AM,0.323066,0.229376,0.405641,27,1.311302e-06
+1,All,4 confidence levels,BLOSUM,0.163759,0.121958,0.20559,27,2.041459e-06
+2,All,4 confidence levels,PSSM,0.274841,0.208517,0.334981,27,7.450581e-08
+3,All,4 confidence levels,AM minus BLOSUM,0.159307,0.08628,0.230185,27,0.0003807098
+4,All,4 confidence levels,AM minus PSSM,0.048225,-0.017431,0.112941,27,0.09056485
+5,Discovery,4 confidence levels,AM,0.225653,0.094066,0.363469,11,0.01367188
+6,Discovery,4 confidence levels,BLOSUM,0.123106,0.052893,0.186649,11,0.01855469
+7,Discovery,4 confidence levels,PSSM,0.255968,0.161056,0.363196,11,0.002929688
+8,Discovery,4 confidence levels,AM minus BLOSUM,0.102547,0.005029,0.205234,11,0.08300781
+9,Discovery,4 confidence levels,AM minus PSSM,-0.030314,-0.146526,0.085659,11,0.6376953
+10,Confirmation,4 confidence levels,AM,0.390037,0.278717,0.480064,16,9.155273e-05
+11,Confirmation,4 confidence levels,BLOSUM,0.191708,0.144361,0.236374,16,6.103516e-05
+12,Confirmation,4 confidence levels,PSSM,0.287817,0.208401,0.36291,16,3.051758e-05
+13,Confirmation,4 confidence levels,AM minus BLOSUM,0.198329,0.09692,0.28432,16,0.004180908
+14,Confirmation,4 confidence levels,AM minus PSSM,0.102221,0.04444,0.162491,16,0.002685547
+15,Excluding stability,4 confidence levels,AM,0.328013,0.239243,0.41309,26,2.086163e-06
+16,Excluding stability,4 confidence levels,BLOSUM,0.171517,0.13252,0.209373,26,1.2815e-06
+17,Excluding stability,4 confidence levels,PSSM,0.264372,0.20433,0.323589,26,1.490116e-07
+18,Excluding stability,4 confidence levels,AM minus BLOSUM,0.156496,0.08212,0.230558,26,0.0006641448
+19,Excluding stability,4 confidence levels,AM minus PSSM,0.06364,0.003843,0.122636,26,0.03341016

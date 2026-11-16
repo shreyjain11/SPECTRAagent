@@ -317,8 +317,8 @@
     "notebook": "inline/alphamissense/am-opus-r1/test-02.ipynb",
     "html": "inline/alphamissense/am-opus-r1/test-02.html",
     "execution_evidence": "inline/alphamissense/am-opus-r1/test-02.execution.json",
-    "published_notebook_sha256": "61ba3165e3ac48b13dd235fe88a95b206354ed6d8fa37f245acf7036eaa4d248",
-    "published_html_sha256": "f4a27137a4f76aae7df4819104cae6b2382fdbb78ce42132098033768e8495e1",
+    "published_notebook_sha256": "f51aa3edb9ed23a93f2d6de93359e5f84c4fb7cc7fcc2910e288bfcbb1451f6a",
+    "published_html_sha256": "a381604d15be2169bb2c385d10e701345ad5f19080d8c2cf393cf4ce3744ae59",
     "code_cells": 9,
     "sections": [
       {
@@ -410,9 +410,9 @@
     "scope": "corrected_inline_analysis",
     "evidence": {
       "notebook": "inline/alphamissense/am-opus-r1/test-02.ipynb",
-      "notebook_sha256": "61ba3165e3ac48b13dd235fe88a95b206354ed6d8fa37f245acf7036eaa4d248",
+      "notebook_sha256": "f51aa3edb9ed23a93f2d6de93359e5f84c4fb7cc7fcc2910e288bfcbb1451f6a",
       "execution_record": "inline/alphamissense/am-opus-r1/test-02.execution.json",
-      "execution_record_sha256": "04b74c94efbebc8a99c31ada042c84522e1deecdd4f73dfda35eb733ce1cc561",
+      "execution_record_sha256": "c26473ed5d4901b42938e83bd469eee5325099990a26b0034fd5568e9134bcb8",
       "cohort_output_cell": 10,
       "result_section": 6,
       "result_code_cells": [
@@ -420,7 +420,11 @@
         17
       ],
       "cell_index_base": 0,
-      "verification_method": "Metadata checked against saved outputs and visible calculation code; no new full scientific execution for this metadata update."
+      "verification_method": "Full notebook reexecution from pinned public inputs; current numerical metadata is bound to the exported correction results and execution record.",
+      "statistical_result": {
+        "path": "corrections/dependence_20261116/alphamissense/current_results.json",
+        "sha256": "4a94926079581dd52dce4d58bd6cf85a74ee9fa9400f0d97819aa1c6a3ef3382"
+      }
     },
     "dataset_split": {
       "description": "Corrected official-score joins for the 73-assay, 64-protein panel, before axis-specific eligibility.",
@@ -466,66 +470,91 @@
     },
     "curve": {
       "reported_result": {
-        "metric": "Spearman correlation of assay-level alignment depth with within-assay absolute Spearman agreement",
         "control_associations": [
           {
             "subset": "All",
-            "assays": 73,
-            "rho": 0.046035,
-            "p": 0.698948
+            "n_assays": 73,
+            "n_proteins": 64,
+            "rho": 0.046035174416563,
+            "low": -0.23126121119966,
+            "high": 0.31269266527847,
+            "valid_bootstrap_draws": 10000,
+            "interval_method": "protein-block percentile bootstrap; Spearman reranked within each draw",
+            "limited_clusters": false
           },
           {
             "subset": "Excluding stability",
-            "assays": 59,
-            "rho": 0.154957,
-            "p": 0.241248
+            "n_assays": 59,
+            "n_proteins": 50,
+            "rho": 0.154956746441146,
+            "low": -0.150169608119837,
+            "high": 0.454656815707005,
+            "valid_bootstrap_draws": 10000,
+            "interval_method": "protein-block percentile bootstrap; Spearman reranked within each draw",
+            "limited_clusters": false
           },
           {
             "subset": "Stability only",
-            "assays": 14,
-            "rho": -0.243956,
-            "p": 0.400625
+            "n_assays": 14,
+            "n_proteins": 14,
+            "rho": -0.243956043956044,
+            "low": -0.674851026973521,
+            "high": 0.356016889514426,
+            "valid_bootstrap_draws": 10000,
+            "interval_method": "protein-block percentile bootstrap; Spearman reranked within each draw",
+            "limited_clusters": false
           },
           {
             "subset": "Discovery",
-            "assays": 38,
-            "rho": 0.057896,
-            "p": 0.729895
+            "n_assays": 38,
+            "n_proteins": 34,
+            "rho": 0.057896466309836,
+            "low": -0.32078709442103,
+            "high": 0.409945940403691,
+            "valid_bootstrap_draws": 10000,
+            "interval_method": "protein-block percentile bootstrap; Spearman reranked within each draw",
+            "limited_clusters": false
           },
           {
             "subset": "Confirmation",
-            "assays": 35,
-            "rho": 0.008685,
-            "p": 0.960507
+            "n_assays": 35,
+            "n_proteins": 30,
+            "rho": 0.008685298223544,
+            "low": -0.402084656424803,
+            "high": 0.422912467669898,
+            "valid_bootstrap_draws": 10000,
+            "interval_method": "protein-block percentile bootstrap; Spearman reranked within each draw",
+            "limited_clusters": false
           }
         ],
-        "reported_decimal_places": 6
+        "uncertainty": "protein-block percentile bootstrap; Spearman reranked within each draw; no iid p-values"
       },
-      "aggregation_and_uncertainty": "Assay-level depth/performance Spearman associations, including assay-family and split restrictions; no graded within-assay curve is claimed."
+      "aggregation_and_uncertainty": "Spearman correlation across the original assay rows. Percentile 95% intervals use 10,000 whole-protein bootstrap draws, retaining all assays of each selected protein and reranking each expanded draw. No iid analytic p-values or bootstrap-tail p-values. Assay and protein counts are reported; intervals are nominal and are not adjusted for the exploratory comparisons."
     },
     "insight": {
-      "interpretation": "The pooled and non-stability assay analyses do not establish a positive whole-protein depth relationship. The two Opus depth entries share this cohort and pooled calculation; they are not independent corroboration.",
+      "interpretation": "The declared protein-cluster intervals do not establish a consistently positive depth association. Nominal within-panel estimates using the corrected official-score join; reconstructed splits do not establish independence of original axis selection.",
       "comparator_contrasts": [],
       "confirmation_scope": "Reported split results are part of this corrected reconstruction; they do not establish independence from historical selection."
     },
     "limitations": [
-      "This metadata was extracted from the existing executed notebook and its hash-bound receipt; the metadata update did not independently rerun the full workflow.",
+      "Protein-cluster uncertainty is conditional on this retained assay panel. The intervals are pointwise and do not correct for multiple exploratory comparisons.",
       "The published sample tables in the top-level dataset_split belong to the historical supporting implementation. Current membership and scored-table files are generated by the inline notebook.",
       "A reconstruction on previously studied assays does not establish that the original axis selection was independent of confirmation outcomes.",
       "The original sequence-weighting procedure underlying the released whole-protein depth metadata is not regenerated here."
     ],
     "notebook": "inline/alphamissense/am-opus-r1/test-02.ipynb",
     "execution_evidence": "inline/alphamissense/am-opus-r1/test-02.execution.json",
-    "notebook_sha256": "61ba3165e3ac48b13dd235fe88a95b206354ed6d8fa37f245acf7036eaa4d248",
+    "notebook_sha256": "f51aa3edb9ed23a93f2d6de93359e5f84c4fb7cc7fcc2910e288bfcbb1451f6a",
     "result_location": {
       "notebook": "inline/alphamissense/am-opus-r1/test-02.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
     },
-    "interpretation_review": {
-      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
-      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
-      "presentation_record": "review_20261115/presentation/am-opus-r1-test-02.revision.json"
+    "verification_boundary": "Every visible code cell was executed from four checksum-pinned public raw sources, including the official corrected-position AlphaMissense score join. No fresh model inference or audit-specific fine-tuning. Protein clustering changes uncertainty and its interpretation; reconstructed partitions remain within the original fixed panel. The combined current_results.json is assembled directly from each notebook's exported CURRENT_RESULTS.json by corrections/dependence_20261116/alphamissense/build_current_results.py. This full raw reconstruction is not claimed to reproduce historical floating-point values byte for byte.",
+    "scientific_correction": {
+      "record": "corrections/dependence_20261116/records/am-opus-r1-test-02.scientific-revision.json",
+      "execution_scope": "full_notebook_reexecuted",
+      "summary": "Reexecuted all code cells with protein-aware uncertainty and the corrected 273,135-variant score join; original assay weighting and axis definitions are retained. Historical-to-current numerical replay differences are reported separately."
     }
   },
   "scientific_record_scope": {

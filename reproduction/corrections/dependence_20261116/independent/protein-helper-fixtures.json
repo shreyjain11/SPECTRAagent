@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-11-16T13:33:50.995385+00:00",
+  "checks": [
+    "Unequal protein block sizes preserve the assay-weighted mean and 10000-draw percentile interval.",
+    "Exact protein-block sign-flip p-value agrees with independent itertools enumeration.",
+    "A single protein gives descriptive mean but no population interval or test.",
+    "Tied depth values use reranked expanded rows; valid draw count independently matches; >5% degenerate draws correctly withhold the interval."
+  ],
+  "fixtures_only": true,
+  "issues": []
+}

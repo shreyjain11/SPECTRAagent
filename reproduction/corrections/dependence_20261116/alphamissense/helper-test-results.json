@@ -1,0 +1,41 @@
+{
+  "scope": "Synthetic numerical tests of clustering/estimand mechanics; not scientific validation",
+  "tests": [
+    {
+      "check": "Unequal cluster sizes retain the assay-weighted point mean3 rather than protein-weighted4.5",
+      "verified": true
+    },
+    {
+      "check": "Two-protein bootstrap includes whole A and B blocks",
+      "verified": true
+    },
+    {
+      "check": "One-protein interval unavailable despite multiple assays",
+      "verified": true
+    },
+    {
+      "check": "Exact sign-flip flips both A assay contrasts together",
+      "verified": true
+    },
+    {
+      "check": "One-protein paired test unavailable",
+      "verified": true
+    },
+    {
+      "check": "All-zero paired contrasts produce p1",
+      "verified": true
+    },
+    {
+      "check": "Depth bootstrap equals independent expanded-block reranking",
+      "verified": true
+    },
+    {
+      "check": "Depth point estimate remains original assay-level Spearman",
+      "verified": true
+    },
+    {
+      "check": "Fixed-seed bootstrap deterministic",
+      "verified": true
+    }
+  ]
+}

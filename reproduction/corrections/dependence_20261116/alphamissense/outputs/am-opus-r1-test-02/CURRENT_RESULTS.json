@@ -1,0 +1,74 @@
+{
+  "analysis_id": "am-opus-r1/test-02",
+  "cohort": {
+    "variants": 273135,
+    "assays": 73,
+    "proteins": 64
+  },
+  "statistical_unit": "protein accession; assay-weighted point estimates retained",
+  "decision": "The declared protein-cluster intervals do not establish a consistently positive depth association",
+  "new_inference": false,
+  "audit_fine_tuning": false,
+  "scope": "Nominal within-panel estimates using the corrected official-score join; reconstructed splits do not establish independence of original axis selection.",
+  "reported_result": {
+    "control_associations": [
+      {
+        "subset": "All",
+        "n_assays": 73,
+        "n_proteins": 64,
+        "rho": 0.046035174416563,
+        "low": -0.23126121119966,
+        "high": 0.31269266527847,
+        "valid_bootstrap_draws": 10000,
+        "interval_method": "protein-block percentile bootstrap; Spearman reranked within each draw",
+        "limited_clusters": false
+      },
+      {
+        "subset": "Excluding stability",
+        "n_assays": 59,
+        "n_proteins": 50,
+        "rho": 0.154956746441146,
+        "low": -0.150169608119837,
+        "high": 0.454656815707005,
+        "valid_bootstrap_draws": 10000,
+        "interval_method": "protein-block percentile bootstrap; Spearman reranked within each draw",
+        "limited_clusters": false
+      },
+      {
+        "subset": "Stability only",
+        "n_assays": 14,
+        "n_proteins": 14,
+        "rho": -0.243956043956044,
+        "low": -0.674851026973521,
+        "high": 0.356016889514426,
+        "valid_bootstrap_draws": 10000,
+        "interval_method": "protein-block percentile bootstrap; Spearman reranked within each draw",
+        "limited_clusters": false
+      },
+      {
+        "subset": "Discovery",
+        "n_assays": 38,
+        "n_proteins": 34,
+        "rho": 0.057896466309836,
+        "low": -0.32078709442103,
+        "high": 0.409945940403691,
+        "valid_bootstrap_draws": 10000,
+        "interval_method": "protein-block percentile bootstrap; Spearman reranked within each draw",
+        "limited_clusters": false
+      },
+      {
+        "subset": "Confirmation",
+        "n_assays": 35,
+        "n_proteins": 30,
+        "rho": 0.008685298223544,
+        "low": -0.402084656424803,
+        "high": 0.422912467669898,
+        "valid_bootstrap_draws": 10000,
+        "interval_method": "protein-block percentile bootstrap; Spearman reranked within each draw",
+        "limited_clusters": false
+      }
+    ],
+    "uncertainty": "protein-block percentile bootstrap; Spearman reranked within each draw; no iid p-values"
+  },
+  "comparator_contrasts": []
+}

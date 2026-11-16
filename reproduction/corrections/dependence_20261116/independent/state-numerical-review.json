@@ -1,0 +1,101 @@
+{
+  "checked_at_utc": "2026-11-16T13:30:34.247186+00:00",
+  "analysis": "state-featured/test-03",
+  "method": "Independently reconstruct every bootstrap draw by physically concatenating all original rows for each sampled gene; recompute endpoint means without using notebook helpers or saved cluster sums.",
+  "all_individual_rows_and_curves_unchanged": true,
+  "source_files": {
+    "/private/tmp/state-test03-dependence-20261116/after/state_primary_outputs/test-03/per_condition_results.csv": "f48cdf97b979bbd8a8ac4078ba9120ccdb6070e8399afbff571ea52dab7cb6bf",
+    "/private/tmp/state-test03-dependence-20261116/after/state_primary_outputs/test-03/bootstrap_contrasts.csv": "895cc882650c598ca1f54ed9120821063d9590f009aff9b34ca658671a1f362e",
+    "/private/tmp/state-test03-dependence-20261116/after/state_primary_outputs/test-03/bootstrap_draws.csv": "a00f22f59fa6b7d423319032e93e206c24b9331c7133ab6120c307bafe8e318b",
+    "/private/tmp/state-test03-dependence-20261116/after/state_primary_outputs/test-03/bootstrap_gene_membership.csv": "268658dcf414cc7beb6775327788420da77cb9ccab11d3b60e1a1373958bd310"
+  },
+  "strata": [
+    {
+      "subset": "confirmation_jurkat_rpe1",
+      "representation": "HVG",
+      "endpoint_levels": [
+        "L1_low",
+        "L2_mid"
+      ],
+      "row_count": 1753,
+      "canonical_genes": 1222,
+      "genes_crossing_endpoints": 99,
+      "point": 0.09602716346727133,
+      "ci95": [
+        0.07387484997332494,
+        0.11909816483889854
+      ],
+      "expanded_row_draws_checked": 2000,
+      "maximum_absolute_draw_difference": 1.942890293094024e-16,
+      "all_draw_endpoint_counts_match": true,
+      "all_gene_membership_sufficient_statistics_match": true
+    },
+    {
+      "subset": "confirmation_jurkat_rpe1",
+      "representation": "SE",
+      "endpoint_levels": [
+        "L1_low",
+        "L2_mid"
+      ],
+      "row_count": 1753,
+      "canonical_genes": 1222,
+      "genes_crossing_endpoints": 99,
+      "point": 0.0842760864423546,
+      "ci95": [
+        0.0624765327077393,
+        0.10595101615547031
+      ],
+      "expanded_row_draws_checked": 2000,
+      "maximum_absolute_draw_difference": 1.6653345369377348e-16,
+      "all_draw_endpoint_counts_match": true,
+      "all_gene_membership_sufficient_statistics_match": true
+    },
+    {
+      "subset": "discovery_hepg2_k562",
+      "representation": "HVG",
+      "endpoint_levels": [
+        "L1_low",
+        "L2_mid"
+      ],
+      "row_count": 1567,
+      "canonical_genes": 1147,
+      "genes_crossing_endpoints": 100,
+      "point": 0.11751604098000609,
+      "ci95": [
+        0.09283293395439099,
+        0.14117047971286734
+      ],
+      "expanded_row_draws_checked": 2000,
+      "maximum_absolute_draw_difference": 1.942890293094024e-16,
+      "all_draw_endpoint_counts_match": true,
+      "all_gene_membership_sufficient_statistics_match": true
+    },
+    {
+      "subset": "discovery_hepg2_k562",
+      "representation": "SE",
+      "endpoint_levels": [
+        "L1_low",
+        "L2_mid"
+      ],
+      "row_count": 1567,
+      "canonical_genes": 1147,
+      "genes_crossing_endpoints": 100,
+      "point": 0.09833356560700879,
+      "ci95": [
+        0.07517144423917083,
+        0.12140982119579176
+      ],
+      "expanded_row_draws_checked": 2000,
+      "maximum_absolute_draw_difference": 1.3877787807814457e-16,
+      "all_draw_endpoint_counts_match": true,
+      "all_gene_membership_sufficient_statistics_match": true
+    }
+  ],
+  "scoped_interpretation_matches_corrected_annotated_contrasts": true,
+  "limitations": [
+    "Conditional on retained contexts, gene-reference reconstruction, annotation snapshots and frozen cutpoints.",
+    "Only two annotated levels: no three-level curve or full-protocol-completion conclusion.",
+    "This review verifies the dependency correction and unchanged saved-score analysis, not fresh model inference."
+  ],
+  "issues": []
+}

@@ -1,0 +1,45 @@
+{
+  "analysis_id": "am-opus-r1-test-03",
+  "original_formula_on_current_rows": [
+    {
+      "table": "curves.csv",
+      "rows": 24,
+      "max_absolute_point_difference": 1.1102230246251565e-16,
+      "eligible_assay_counts_identical": true
+    },
+    {
+      "table": "paired_effects.csv",
+      "rows": 50,
+      "max_absolute_point_difference": 1.0018028073766061e-16,
+      "eligible_assay_counts_identical": true
+    }
+  ],
+  "historical_display_comparison": [
+    {
+      "table": "curves.csv",
+      "displayed_numeric_rows_compared": 24,
+      "max_absolute_difference": 2.7688053044760963e-06,
+      "maximum_difference_row": {
+        "scheme": "5 levels",
+        "method": "PSSM",
+        "level": "1"
+      },
+      "historical_display": 0.319091,
+      "fresh_value": 0.3190937688053045,
+      "available_precision": "Six displayed decimals; exact original persisted assay rows unavailable."
+    },
+    {
+      "table": "paired_effects.csv",
+      "displayed_numeric_rows_compared": 50,
+      "max_absolute_difference": 3.317482116793613e-06,
+      "maximum_difference_row": {
+        "subset": "Discovery",
+        "scheme": "3 levels",
+        "comparison": "PSSM"
+      },
+      "historical_display": 0.102703,
+      "fresh_value": 0.1027063174821168,
+      "available_precision": "Six displayed decimals; exact original persisted assay rows unavailable."
+    }
+  ]
+}

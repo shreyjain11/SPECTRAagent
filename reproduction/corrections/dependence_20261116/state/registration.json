@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {
+      "analysis_id": "state-featured/test-03",
+      "mode": "full_notebook",
+      "executed_notebook_cells": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        10,
+        12,
+        14,
+        16,
+        17,
+        18,
+        20,
+        21
+      ],
+      "summary": "Replace independent condition-row endpoint resampling with joint canonical-gene cluster resampling. The unchanged L2-minus-L1 contrast is reported as a two-level association in the observed contexts, not full protocol acceptance.",
+      "execution": {
+        "host": "Shreys-MacBook-Pro",
+        "python": "3.13.2 | packaged by conda-forge | (main, Feb 17 2025, 14:02:48) [Clang 18.1.8 ]",
+        "engine": "jupyter",
+        "started_at": "2026-11-16T13:29:08.335589+00:00",
+        "finished_at": "2026-11-16T13:29:24.843867+00:00",
+        "elapsed_seconds": 16.50802508299239,
+        "command": "/opt/homebrew/Caskroom/miniconda/base/bin/python /private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py /private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-03.ipynb --cwd /private/tmp/state-test03-dependence-20261116/after --timeout 600",
+        "working_directory": "/private/tmp/state-test03-dependence-20261116/after",
+        "environment": {
+          "STATE_PRIMARY_INPUTS": "/private/tmp/state-primary-correction-inputs",
+          "PYTHONHASHSEED": "0",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "driver": "corrections/dependence_20261116/state/execute.py",
+        "log": "corrections/dependence_20261116/state/after-execution.json",
+        "command_argv": [
+          "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+          "/private/tmp/spectra-pr-review-20261115/reproduction/inline/execute_notebook.py",
+          "/private/tmp/spectra-pr-review-20261115/reproduction/inline/state/state-featured/test-03.ipynb",
+          "--cwd",
+          "/private/tmp/state-test03-dependence-20261116/after",
+          "--timeout",
+          "600"
+        ]
+      },
+      "inputs": [
+        {
+          "path": "corrections/dependence_20261116/state/input-manifest.json",
+          "role": "Exact URLs, bytes and SHA256 for all 22 public inputs consumed and independently reverified during the full notebook replay."
+        },
+        {
+          "path": "corrections/dependence_20261116/state/PLAN.json",
+          "role": "Correction plan fixed before original or corrected numerical replay; preserves the estimand, rows, scores, reference and cutpoints."
+        }
+      ],
+      "output_artifacts": [
+        "corrections/dependence_20261116/state/before-after-contrasts.csv",
+        "corrections/dependence_20261116/state/verification.json",
+        "corrections/dependence_20261116/state/verification.log",
+        "corrections/dependence_20261116/state/per-condition-results.csv.gz",
+        "corrections/dependence_20261116/state/after/bootstrap_contrasts.csv",
+        "corrections/dependence_20261116/state/after/bootstrap_draws.csv",
+        "corrections/dependence_20261116/state/after/bootstrap_gene_membership.csv",
+        "corrections/dependence_20261116/state/after/curve.csv",
+        "corrections/dependence_20261116/state/after/trends.csv",
+        "corrections/dependence_20261116/state/after/context_trends.csv",
+        "corrections/dependence_20261116/state/after/execution_record.json",
+        "corrections/dependence_20261116/state/before/bootstrap_contrasts.csv",
+        "corrections/dependence_20261116/state/before/curve.csv",
+        "corrections/dependence_20261116/state/before/trends.csv",
+        "corrections/dependence_20261116/state/before/context_trends.csv",
+        "corrections/dependence_20261116/state/before/execution_record.json",
+        "corrections/dependence_20261116/state/before-execution.json",
+        "corrections/dependence_20261116/state/before.log",
+        "corrections/dependence_20261116/state/after.log",
+        "corrections/dependence_20261116/state/environment.json"
+      ],
+      "dependency_scope": "All 13 notebook code cells executed in a clean Jupyter kernel using 22 SHA256-verified public files. Original and corrected per-condition records, level/feature assignments, released scores, curve tables, descriptive trends and figure are byte-identical. The endpoint interval uses whole canonical-gene clusters jointly across both levels and observed contexts, retaining the row-weighted mean difference. The result is conditional on the fixed context panels and reconstructed reference; it is not a three-level curve, new prospective confirmation, new model inference, or full protocol completion."
+    }
+  ]
+}

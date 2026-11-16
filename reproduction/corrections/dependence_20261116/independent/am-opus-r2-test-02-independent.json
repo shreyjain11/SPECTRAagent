@@ -1,0 +1,74 @@
+{
+  "analysis_id": "am-opus-r2-test-02",
+  "checked_at_utc": "2026-11-16T13:43:18.303774+00:00",
+  "method": "Independently compute statistics from exported individual assay/control rows. Bootstrap weights apply to original rows; sign flips independently apply to individual assay contrasts; Spearman uses independently centered tied ranks; regression uses full explicit assay dummy design in statsmodels.",
+  "files": {
+    "assay_performance.csv": "cf35829bbff0d85338f7a70193108a5e921f9cefcaad197f7bcf316f7c56ce42",
+    "before-after-depth_controls.csv": "12a5c25119f0bb4d18f7065d30485f42c74c3699eaaecd2fe157f157289c8fe7",
+    "released_score_position_mapping.csv": "308a180cf17556562486a973fdcf5dfed2329bff1aa3bbb196d3f4e54c9dde43",
+    "depth_controls.csv": "a7f68ec6f1115a233a9528577e10c58f2c7745041e6bc30d2e4143c36bd1456d",
+    "axis_definition.csv": "9232f7381be136ae723677e2bd0d2a00f6c9a1b1e22208ee3796793caf036cab",
+    "input_processing_counts.csv": "804084efdd19ebf59cfa08d7075e61d70aa5b967e287ab661c4cd5db8f87bd86"
+  },
+  "checks": {
+    "depth": [
+      {
+        "subset": "All",
+        "n_assays": 73,
+        "n_proteins": 64,
+        "rho": 0.0460351744165628,
+        "ci95": [
+          -0.2312612111996598,
+          0.31269266527847
+        ],
+        "independent_draws_checked": 10000
+      },
+      {
+        "subset": "Excluding stability",
+        "n_assays": 59,
+        "n_proteins": 50,
+        "rho": 0.1549567464411457,
+        "ci95": [
+          -0.1501696081198371,
+          0.4546568157070046
+        ],
+        "independent_draws_checked": 10000
+      },
+      {
+        "subset": "Stability only",
+        "n_assays": 14,
+        "n_proteins": 14,
+        "rho": -0.2439560439560439,
+        "ci95": [
+          -0.6748510269735213,
+          0.3560168895144264
+        ],
+        "independent_draws_checked": 10000
+      },
+      {
+        "subset": "Discovery",
+        "n_assays": 37,
+        "n_proteins": 32,
+        "rho": 0.1397913247746588,
+        "ci95": [
+          -0.2349745892334477,
+          0.4992812615030709
+        ],
+        "independent_draws_checked": 10000
+      },
+      {
+        "subset": "Confirmation",
+        "n_assays": 36,
+        "n_proteins": 32,
+        "rho": -0.032440783773483,
+        "ci95": [
+          -0.4304794062507039,
+          0.3792995207426332
+        ],
+        "independent_draws_checked": 10000
+      }
+    ],
+    "split_protein_disjoint": true
+  },
+  "issues": []
+}

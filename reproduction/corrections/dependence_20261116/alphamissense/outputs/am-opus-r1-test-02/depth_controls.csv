@@ -1,0 +1,6 @@
+subset,n_assays,n_proteins,rho,low,high,valid_bootstrap_draws,interval_method,limited_clusters
+All,73,64,0.04603517441656281,-0.23126121119965987,0.31269266527847006,10000,protein-block percentile bootstrap; Spearman reranked within each draw,False
+Excluding stability,59,50,0.15495674644114574,-0.15016960811983718,0.4546568157070046,10000,protein-block percentile bootstrap; Spearman reranked within each draw,False
+Stability only,14,14,-0.24395604395604395,-0.6748510269735213,0.35601688951442645,10000,protein-block percentile bootstrap; Spearman reranked within each draw,False
+Discovery,38,34,0.05789646630983592,-0.3207870944210297,0.40994594040369114,10000,protein-block percentile bootstrap; Spearman reranked within each draw,False
+Confirmation,35,30,0.008685298223544084,-0.4020846564248028,0.42291246766989793,10000,protein-block percentile bootstrap; Spearman reranked within each draw,False

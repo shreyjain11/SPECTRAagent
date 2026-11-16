@@ -3,12 +3,15 @@
   "notebook": "inline/alphamissense/am-opus-r1/test-01.ipynb",
   "html": "inline/alphamissense/am-opus-r1/test-01.html",
   "completed": true,
-  "host": "exxact05.broadinstitute.org",
+  "host": "Shreys-MacBook-Pro",
+  "python": "3.13.2",
+  "elapsed_seconds": 214.2399495828431,
+  "execution_scope": "full_notebook_reexecuted",
   "code_cells": 11,
   "executed_cells": 11,
   "errors": 0,
-  "notebook_sha256": "2574e5f8c11087dec40bbdf097cd3ee96d1758f78310d665ee36d25b170cbcbf",
-  "html_sha256": "5df43096cdbcb340dc482337e96f79e998cdcbd0b6a473358680c43542661c5b",
+  "notebook_sha256": "b972fb72562b1070016bd081f414f516774d3a75755a8b0c7067f6d7f885661f",
+  "html_sha256": "7aa15978f8ea4e5fc1339f3b31f2bac92dede3df7745cc94bf8ad635d8a5bb93",
   "sections": [
     {
       "number": 1,
@@ -65,16 +68,6 @@
     }
   ],
   "cell_index_base": 0,
-  "execution_evidence_source_sha256": "3c35ef652c86a8644b180da6b5643728507ff01b054984136441d4f1b1bca2a9",
-  "execution_evidence_entry_id": "am-opus-r1/test-01",
-  "embedded_figures": 1,
-  "checks": [
-    "notebook_and_html_hash_match_execution_evidence",
-    "all_code_cells_executed",
-    "no_error_outputs",
-    "six_sections_and_executed_inline_code",
-    "inline_code_static_check"
-  ],
   "result_location": {
     "section": 6,
     "code_cells": [
@@ -82,20 +75,34 @@
       21
     ]
   },
-  "input_manifests": [],
-  "elapsed_seconds": 350.704,
-  "python": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/state/state-featured/.venv/bin/python",
-  "calculation_evidence": [],
-  "presentation_revision": {
-    "scientific_reexecution": false,
-    "original_execution_evidence": {
-      "path": "review_20261115/presentation/am-opus-r1-test-01.previous-execution.json",
-      "sha256": "141d28730e7373416b5727baaafc99096b1679d1e4f88e51d7bb740f45691d6c"
+  "embedded_figures": 1,
+  "checks": [
+    "scientific_revision_artifacts_and_executed_cell_hashes",
+    "unchanged_cells_match_archived_notebook",
+    "no_error_outputs",
+    "six_sections_and_inline_code",
+    "all_code_cells_executed"
+  ],
+  "scientific_revision": {
+    "schema_version": 1,
+    "scientific_reexecution": true,
+    "mode": "full_notebook",
+    "previous_execution_evidence": {
+      "path": "corrections/dependence_20261116/records/am-opus-r1-test-01.previous-execution.json",
+      "sha256": "4c0ae7180bf3463453411ca22477538da4e562c605ecabf1540b6470bd0adfc5",
+      "bytes": 2811
     },
-    "correction_record": {
-      "path": "review_20261115/presentation/am-opus-r1-test-01.revision.json",
-      "sha256": "9626bf9f4a02a5e8306daea2db7f399507244973c1bec4cb80ccd0f2eecc3d8b"
+    "original_notebook_snapshot": {
+      "path": "corrections/dependence_20261116/records/am-opus-r1-test-01.original.ipynb.gz",
+      "sha256": "00f84408e61a7af736263917d911104d4468061b2cfcfdbbeee42ffa050d6eca",
+      "bytes": 111289,
+      "compression": "gzip",
+      "notebook_sha256": "2574e5f8c11087dec40bbdf097cd3ee96d1758f78310d665ee36d25b170cbcbf"
+    },
+    "record": {
+      "path": "corrections/dependence_20261116/records/am-opus-r1-test-01.scientific-revision.json",
+      "sha256": "c19a12ebf3574079ff8fd8574188d5237a481af153728279a33c3aea00895093",
+      "bytes": 17542
     }
-  },
-  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
+  }
 }

@@ -1,0 +1,40 @@
+{
+  "analysis_id": "state-featured/test-03",
+  "frozen_at_utc": "2026-11-16T13:27:20.691606+00:00",
+  "original_commit": "01461707b4c37faba205b053c4c623a58cbd0cb1",
+  "original_notebook_sha256": "e03d6f4570a7766c9e2e6655e0b802283c109069853de3c191d13dce82f52313",
+  "change": "Replace independent condition-row endpoint bootstrap with canonical-gene cluster bootstrap; use annotated endpoints in the printed interpretation.",
+  "unchanged": [
+    "Public input bytes and hashes",
+    "HGNC canonicalization",
+    "Reconstructed reference construction",
+    "Existing discovery/confirmation contexts",
+    "Discovery quantile cutpoints and populated levels",
+    "Every released score, sample row and level assignment",
+    "Row-weighted high-minus-low overlap_at_N point estimate",
+    "2,000 draws; numpy default_rng seed 7; percentile 2.5% and 97.5% endpoints"
+  ],
+  "resampling": {
+    "within": [
+      "spectra_subset",
+      "representation"
+    ],
+    "cluster": "gene_symbol_canonical",
+    "sampling_frame": "Sorted union of canonical genes with finite overlap_at_N in either populated annotated endpoint.",
+    "draw": "Sample G gene indices uniformly with replacement, where G is the number of union genes. Give every retained row of each gene across contexts and both endpoints the same draw multiplicity.",
+    "statistic": "Weighted sum of high-level scores divided by high-level row count minus corresponding low-level mean. Multiplicity replicates whole genes, not separately sampled endpoint groups or equally weighted gene means.",
+    "undefined_draw": "Retain NaN and record invalid draw when either endpoint has no rows; compute CI from finite draws; do not impute zero.",
+    "conditioning": "Observed contexts, fixed reference/annotations/levels; no resampling of contexts or new independent validation."
+  },
+  "interpretation": "Only two annotated levels are populated; L0 is missing annotation. Report L2-minus-L1 contrast and cluster interval separately for HVG and SE. The retained descriptive L0 plots/trends do not establish a three-level relationship. Do not label full protocol acceptance.",
+  "checks": [
+    "Full original and corrected notebooks in fresh kernels using the same verified public-input cache",
+    "Before/after row, feature, level, score and curve table equality",
+    "Independent gene-index bootstrap reconstruction from persisted per-condition rows",
+    "Several draws checked by physically expanding each selected gene block",
+    "Count genes spanning endpoints/contexts, valid draws and finite scores",
+    "No missing code execution or error outputs; six numbered sections; authentic execution timing and hashes"
+  ],
+  "model_inference_performed": false,
+  "fine_tuning_performed": false
+}

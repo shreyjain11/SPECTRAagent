@@ -1,0 +1,24 @@
+{
+  "analysis_id": "am-opus-r1-test-02",
+  "original_formula_on_current_rows": [
+    {
+      "table": "depth_controls.csv",
+      "rows": 5,
+      "max_absolute_point_difference": 0.0,
+      "eligible_assay_counts_identical": true
+    }
+  ],
+  "historical_display_comparison": [
+    {
+      "table": "depth_controls.csv",
+      "displayed_numeric_rows_compared": 5,
+      "max_absolute_difference": 4.6630983589757147e-07,
+      "maximum_difference_row": {
+        "subset": "Discovery"
+      },
+      "historical_display": 0.057896,
+      "fresh_value": 0.0578964663098359,
+      "available_precision": "Six displayed decimals; exact original persisted assay rows unavailable."
+    }
+  ]
+}

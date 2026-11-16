@@ -1,0 +1,264 @@
+{
+  "comparisons": [
+    {
+      "analysis_id": "am-opus-r1-test-01",
+      "table": "curves.csv",
+      "point_estimate": "mean",
+      "rows": 24,
+      "original_notebook_cell": 18,
+      "original_output": 1,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 1.1965960337312342e-05,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": false
+    },
+    {
+      "analysis_id": "am-opus-r1-test-01",
+      "table": "paired_effects.csv",
+      "point_estimate": "mean",
+      "rows": 50,
+      "original_notebook_cell": 18,
+      "original_output": 2,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 3.728300671940188e-05,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": false
+    },
+    {
+      "analysis_id": "am-opus-r1-test-02",
+      "table": "depth_controls.csv",
+      "point_estimate": "rho",
+      "rows": 5,
+      "original_notebook_cell": 14,
+      "original_output": 0,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 4.6630983589757147e-07,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": true
+    },
+    {
+      "analysis_id": "am-opus-r1-test-03",
+      "table": "curves.csv",
+      "point_estimate": "mean",
+      "rows": 24,
+      "original_notebook_cell": 18,
+      "original_output": 1,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 2.7688053044760963e-06,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": false
+    },
+    {
+      "analysis_id": "am-opus-r1-test-03",
+      "table": "paired_effects.csv",
+      "point_estimate": "mean",
+      "rows": 50,
+      "original_notebook_cell": 18,
+      "original_output": 2,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 3.317482116793613e-06,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": false
+    },
+    {
+      "analysis_id": "am-opus-r2-test-01",
+      "table": "curves.csv",
+      "point_estimate": "mean",
+      "rows": 12,
+      "original_notebook_cell": 19,
+      "original_output": 1,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 4.7101707779939606e-07,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": true
+    },
+    {
+      "analysis_id": "am-opus-r2-test-01",
+      "table": "paired_effects.csv",
+      "point_estimate": "mean",
+      "rows": 20,
+      "original_notebook_cell": 19,
+      "original_output": 2,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 4.928222459010811e-07,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": true
+    },
+    {
+      "analysis_id": "am-opus-r2-test-01",
+      "table": "adjusted_controls.csv",
+      "point_estimate": "beta",
+      "rows": 6,
+      "original_notebook_cell": 21,
+      "original_output": 0,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 3.542131272182836e-07,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": true
+    },
+    {
+      "analysis_id": "am-opus-r2-test-02",
+      "table": "depth_controls.csv",
+      "point_estimate": "rho",
+      "rows": 5,
+      "original_notebook_cell": 14,
+      "original_output": 0,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 3.2477465880531575e-07,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": true
+    },
+    {
+      "analysis_id": "am-opus-r2-test-03",
+      "table": "curves.csv",
+      "point_estimate": "mean",
+      "rows": 27,
+      "original_notebook_cell": 19,
+      "original_output": 1,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 4.920471212976896e-07,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": true
+    },
+    {
+      "analysis_id": "am-opus-r2-test-03",
+      "table": "paired_effects.csv",
+      "point_estimate": "mean",
+      "rows": 40,
+      "original_notebook_cell": 19,
+      "original_output": 2,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 4.977719900989275e-07,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": true
+    },
+    {
+      "analysis_id": "am-opus-r2-test-03",
+      "table": "adjusted_controls.csv",
+      "point_estimate": "beta",
+      "rows": 6,
+      "original_notebook_cell": 21,
+      "original_output": 0,
+      "comparison_scope": "agreement to original displayed six-decimal precision; not exact historical floating-point identity",
+      "max_abs_difference": 3.542131272182836e-07,
+      "tolerance": 5.1e-07,
+      "matches_original_display_precision": true
+    }
+  ],
+  "uncertainty_schema_changes": [
+    {
+      "analysis_id": "am-opus-r1-test-01",
+      "table": "curves.csv",
+      "changed_uncertainty_columns": [
+        "high",
+        "low"
+      ],
+      "removed_iid_columns": []
+    },
+    {
+      "analysis_id": "am-opus-r1-test-01",
+      "table": "paired_effects.csv",
+      "changed_uncertainty_columns": [
+        "high",
+        "low"
+      ],
+      "removed_iid_columns": [
+        "wilcoxon_p"
+      ]
+    },
+    {
+      "analysis_id": "am-opus-r1-test-02",
+      "table": "depth_controls.csv",
+      "changed_uncertainty_columns": [],
+      "removed_iid_columns": [
+        "p"
+      ]
+    },
+    {
+      "analysis_id": "am-opus-r1-test-03",
+      "table": "curves.csv",
+      "changed_uncertainty_columns": [
+        "high",
+        "low"
+      ],
+      "removed_iid_columns": []
+    },
+    {
+      "analysis_id": "am-opus-r1-test-03",
+      "table": "paired_effects.csv",
+      "changed_uncertainty_columns": [
+        "high",
+        "low"
+      ],
+      "removed_iid_columns": [
+        "wilcoxon_p"
+      ]
+    },
+    {
+      "analysis_id": "am-opus-r2-test-01",
+      "table": "curves.csv",
+      "changed_uncertainty_columns": [
+        "high",
+        "low"
+      ],
+      "removed_iid_columns": []
+    },
+    {
+      "analysis_id": "am-opus-r2-test-01",
+      "table": "paired_effects.csv",
+      "changed_uncertainty_columns": [
+        "high",
+        "low"
+      ],
+      "removed_iid_columns": [
+        "wilcoxon_p"
+      ]
+    },
+    {
+      "analysis_id": "am-opus-r2-test-01",
+      "table": "adjusted_controls.csv",
+      "changed_uncertainty_columns": [
+        "standard_error",
+        "t"
+      ],
+      "removed_iid_columns": []
+    },
+    {
+      "analysis_id": "am-opus-r2-test-02",
+      "table": "depth_controls.csv",
+      "changed_uncertainty_columns": [],
+      "removed_iid_columns": [
+        "p"
+      ]
+    },
+    {
+      "analysis_id": "am-opus-r2-test-03",
+      "table": "curves.csv",
+      "changed_uncertainty_columns": [
+        "high",
+        "low"
+      ],
+      "removed_iid_columns": []
+    },
+    {
+      "analysis_id": "am-opus-r2-test-03",
+      "table": "paired_effects.csv",
+      "changed_uncertainty_columns": [
+        "high",
+        "low"
+      ],
+      "removed_iid_columns": [
+        "wilcoxon_p"
+      ]
+    },
+    {
+      "analysis_id": "am-opus-r2-test-03",
+      "table": "adjusted_controls.csv",
+      "changed_uncertainty_columns": [
+        "standard_error",
+        "t"
+      ],
+      "removed_iid_columns": []
+    }
+  ]
+}

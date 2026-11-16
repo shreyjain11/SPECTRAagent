@@ -1,0 +1,35 @@
+{
+  "analysis_id": "am-opus-r1/test-03",
+  "host": "Shreys-MacBook-Pro",
+  "python": "3.13.2",
+  "started_at": "2026-11-16T13:42:32.274761+00:00",
+  "finished_at": "2026-11-16T13:46:03.165034+00:00",
+  "elapsed_seconds": 210.8907130828593,
+  "executed_notebook_cells": [
+    2,
+    3,
+    5,
+    7,
+    10,
+    12,
+    14,
+    15,
+    18,
+    20,
+    21
+  ],
+  "source_notebook_sha256": "9ed7b8cbf74c203358cbe2d0a7d0d5d468a6df91ee6d801045ccbf0172bc98f6",
+  "executed_notebook_sha256": "16b8b17ba76da29664ba31ad0a20ba4e7c9dc17f657abcc5685b00ecd03be2c1",
+  "scientific_source_unchanged": true,
+  "input_cache": "/private/tmp/am-opus-dependence-inputs-20261116",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "/private/tmp/spectra-pr-review-20261115/reproduction/corrections/dependence_20261116/alphamissense/execute_notebook.py",
+    "/private/tmp/am-opus-original-method-replay-20261116/am-opus-r1-test-03/original.ipynb",
+    "--cwd",
+    "/private/tmp/am-opus-original-method-replay-20261116/am-opus-r1-test-03",
+    "--timeout",
+    "3600"
+  ],
+  "role": "Exact original-method full replay on the same pinned public sources and present environment; not the historical execution"
+}

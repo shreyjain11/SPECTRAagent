@@ -1,6 +1,6 @@
 # Scientific calculation corrections — November 15, 2026
 
-The calculation issues found in the individual notebook review are corrected in **21 notebooks**. Ten STATE primary notebooks were executed in full. The affected calculation and interpretation cells were executed in eleven other notebooks; their remaining code cells and saved outputs are unchanged. This is a correction of retained-data analyses, not new model inference or new external validation.
+This revision corrected the calculation issues listed below in **21 notebooks**. Ten STATE primary notebooks were executed in full. The affected calculation and interpretation cells were executed in eleven other notebooks; their remaining code cells and saved outputs are unchanged. [Seven additional dependence corrections](../dependence_20261116/README.md) address the AlphaMissense Opus notebooks and STATE primary test 03. These are corrections of retained-data analyses, not new model inference or new external validation.
 
 | Analyses | Correction | Result after correction |
 |---|---|---|
@@ -36,6 +36,6 @@ python reproduction/corrections/scientific_20261115/alphamissense/verify_correct
 
 The STATE primary regression checks compare coefficients and clustered intervals against an independent implementation, assert full-rank controls, and test that repeating gene records does not create independent information. Kimi/Opus checks compare weighted bootstrap calculations against explicit resampled rows. AlphaMissense checks cover one-protein guards, whole-protein resampling, preserved counts and unchanged endpoint estimates. The plot was independently recomputed from the 17,040-row retained source, using its 4,020 confirmation records.
 
-These changes resolve the identified calculation defects. They do not supply missing historical records, change the ESMFold v1 analysis into ESMFold2, or turn internal/tile-level comparisons into independent patient/site confirmation. Those boundaries remain explicit in the relevant notebooks.
+These changes resolve the calculation defects listed above. They do not supply missing historical records, change the ESMFold v1 analysis into ESMFold2, or turn internal/tile-level comparisons into independent patient/site confirmation. Those boundaries remain explicit in the relevant notebooks.
 
 The [final independent integration check](../../review_20261115/scientific-final-integration-independent-check.json) verifies all 21 corrections and confirms that the other 122 notebook files remain unchanged. The [independent AlphaMissense check](../../review_20261115/alphamissense-science-independent-check.json) recalculates the assay statistics and corrected intervals from individual variants. [Browser checks](browser-checks.json) cover the 21 revised pages.

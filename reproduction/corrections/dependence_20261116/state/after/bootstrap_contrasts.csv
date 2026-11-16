@@ -1,0 +1,5 @@
+subset,representation,gap_high_minus_low,ci_low,ci_high,low_n,high_n,low_genes,high_genes,gene_clusters,genes_in_both_levels,genes_in_multiple_contexts,bootstrap_draws,finite_draws,empty_endpoint_draws,bootstrap_seed,resampling_unit,low_level,high_level,populated_annotated_levels
+confirmation_jurkat_rpe1,HVG,0.09602716346727133,0.07387484997332494,0.11909816483889854,597,1156,450,871,1222,99,531,2000,2000,0,7,canonical_gene,L1_low,L2_mid,2
+confirmation_jurkat_rpe1,SE,0.0842760864423546,0.06247653270773927,0.10595101615547031,597,1156,450,871,1222,99,531,2000,2000,0,7,canonical_gene,L1_low,L2_mid,2
+discovery_hepg2_k562,HVG,0.11751604098000609,0.09283293395439099,0.1411704797128674,549,1018,459,788,1147,100,420,2000,2000,0,7,canonical_gene,L1_low,L2_mid,2
+discovery_hepg2_k562,SE,0.09833356560700879,0.07517144423917083,0.12140982119579179,549,1018,459,788,1147,100,420,2000,2000,0,7,canonical_gene,L1_low,L2_mid,2

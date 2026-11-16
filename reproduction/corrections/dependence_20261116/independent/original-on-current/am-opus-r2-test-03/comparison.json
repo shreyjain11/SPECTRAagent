@@ -1,0 +1,57 @@
+{
+  "analysis_id": "am-opus-r2-test-03",
+  "original_formula_on_current_rows": [
+    {
+      "table": "curves.csv",
+      "rows": 27,
+      "max_absolute_point_difference": 1.1102230246251565e-16,
+      "eligible_assay_counts_identical": true
+    },
+    {
+      "table": "paired_effects.csv",
+      "rows": 40,
+      "max_absolute_point_difference": 1.1102230246251565e-16,
+      "eligible_assay_counts_identical": true
+    }
+  ],
+  "historical_display_comparison": [
+    {
+      "table": "curves.csv",
+      "displayed_numeric_rows_compared": 27,
+      "max_absolute_difference": 4.920471212976896e-07,
+      "maximum_difference_row": {
+        "scheme": "6 coverage levels",
+        "method": "PSSM",
+        "level": "0"
+      },
+      "historical_display": 0.181781,
+      "fresh_value": 0.1817814920471213,
+      "available_precision": "Six displayed decimals; exact original persisted assay rows unavailable."
+    },
+    {
+      "table": "paired_effects.csv",
+      "displayed_numeric_rows_compared": 40,
+      "max_absolute_difference": 4.977719900989275e-07,
+      "maximum_difference_row": {
+        "subset": "Excluding stability",
+        "scheme": "3 coverage levels",
+        "comparison": "BLOSUM"
+      },
+      "historical_display": 0.121173,
+      "fresh_value": 0.1211725022280099,
+      "available_precision": "Six displayed decimals; exact original persisted assay rows unavailable."
+    }
+  ],
+  "original_regression_formula_on_current_bins": [
+    {
+      "binning": "coverage",
+      "max_absolute_point_difference": 1.3877787807814457e-16,
+      "scope": "Exact original centered OLS formula evaluated on current bin rows; no claim of exact old unretained bin-row identity."
+    },
+    {
+      "binning": "plddt",
+      "max_absolute_point_difference": 2.636779683484747e-16,
+      "scope": "Exact original centered OLS formula evaluated on current bin rows; no claim of exact old unretained bin-row identity."
+    }
+  ]
+}

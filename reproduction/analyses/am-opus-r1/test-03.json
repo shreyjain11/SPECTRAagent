@@ -317,8 +317,8 @@
     "notebook": "inline/alphamissense/am-opus-r1/test-03.ipynb",
     "html": "inline/alphamissense/am-opus-r1/test-03.html",
     "execution_evidence": "inline/alphamissense/am-opus-r1/test-03.execution.json",
-    "published_notebook_sha256": "9ed7b8cbf74c203358cbe2d0a7d0d5d468a6df91ee6d801045ccbf0172bc98f6",
-    "published_html_sha256": "5b521fc0d9f0c5fc1eb6039e508b65bc8ff62a1744dd0fa644d9a56f7cee4cf1",
+    "published_notebook_sha256": "61d43ed3bac1b06c527a4d84911b154d0e701cd39bc9342ba229a67f4958a9a0",
+    "published_html_sha256": "8832beb2df05abdcc071a5b152726dfa4abdd6b7601e1a86fa8af2c6802e5750",
     "code_cells": 11,
     "sections": [
       {
@@ -412,9 +412,9 @@
     "scope": "corrected_inline_analysis",
     "evidence": {
       "notebook": "inline/alphamissense/am-opus-r1/test-03.ipynb",
-      "notebook_sha256": "9ed7b8cbf74c203358cbe2d0a7d0d5d468a6df91ee6d801045ccbf0172bc98f6",
+      "notebook_sha256": "61d43ed3bac1b06c527a4d84911b154d0e701cd39bc9342ba229a67f4958a9a0",
       "execution_record": "inline/alphamissense/am-opus-r1/test-03.execution.json",
-      "execution_record_sha256": "382acc99ddb8fb78199ca2b0828e8b8c856edc521ff0cba30ff86a3ad8dcb560",
+      "execution_record_sha256": "1ca543c1a2515f80da685156a83454d4b2133215169919d9ad8090d4755d4ff9",
       "cohort_output_cell": 12,
       "result_section": 6,
       "result_code_cells": [
@@ -422,7 +422,11 @@
         21
       ],
       "cell_index_base": 0,
-      "verification_method": "Metadata checked against saved outputs and visible calculation code; no new full scientific execution for this metadata update."
+      "verification_method": "Full notebook reexecution from pinned public inputs; current numerical metadata is bound to the exported correction results and execution record.",
+      "statistical_result": {
+        "path": "corrections/dependence_20261116/alphamissense/current_results.json",
+        "sha256": "4a94926079581dd52dce4d58bd6cf85a74ee9fa9400f0d97819aa1c6a3ef3382"
+      }
     },
     "dataset_split": {
       "description": "Corrected official-score joins for the 73-assay, 64-protein panel, before axis-specific eligibility.",
@@ -470,62 +474,425 @@
     },
     "curve": {
       "reported_result": {
-        "metric": "Mean paired high-minus-low within-assay absolute Spearman correlation",
-        "estimate": 0.098,
-        "confidence_interval_95": [
-          0.048,
-          0.148
+        "main_scheme": "3 levels",
+        "primary_contrasts": [
+          {
+            "subset": "All",
+            "scheme": "3 levels",
+            "comparison": "AM",
+            "mean": 0.098408817783768,
+            "low": 0.041719550594747,
+            "high": 0.150830930083793,
+            "n_assays": 71,
+            "n_proteins": 63,
+            "limited_clusters": false,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "sign_flip_p": 0.000639987200256,
+            "sign_flip_method": "Monte Carlo protein-block sign flip"
+          },
+          {
+            "subset": "Discovery",
+            "scheme": "3 levels",
+            "comparison": "AM",
+            "mean": 0.083803194864194,
+            "low": -0.011613289130648,
+            "high": 0.166592139621659,
+            "n_assays": 36,
+            "n_proteins": 33,
+            "limited_clusters": false,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "sign_flip_p": 0.070998580028399,
+            "sign_flip_method": "Monte Carlo protein-block sign flip"
+          },
+          {
+            "subset": "Confirmation",
+            "scheme": "3 levels",
+            "comparison": "AM",
+            "mean": 0.113431744215331,
+            "low": 0.05204236817266,
+            "high": 0.172277921272158,
+            "n_assays": 35,
+            "n_proteins": 30,
+            "limited_clusters": false,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "sign_flip_p": 0.001919961600768,
+            "sign_flip_method": "Monte Carlo protein-block sign flip"
+          },
+          {
+            "subset": "Excluding stability",
+            "scheme": "3 levels",
+            "comparison": "AM",
+            "mean": 0.111504869532094,
+            "low": 0.043833411508252,
+            "high": 0.168151542013227,
+            "n_assays": 57,
+            "n_proteins": 49,
+            "limited_clusters": false,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "sign_flip_p": 0.000619987600248,
+            "sign_flip_method": "Monte Carlo protein-block sign flip"
+          },
+          {
+            "subset": "At least 30 homologs",
+            "scheme": "3 levels",
+            "comparison": "AM",
+            "mean": 0.09681703144044,
+            "low": 0.033764707540976,
+            "high": 0.152798375606176,
+            "n_assays": 62,
+            "n_proteins": 55,
+            "limited_clusters": false,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "sign_flip_p": 0.002139957200856,
+            "sign_flip_method": "Monte Carlo protein-block sign flip"
+          }
         ],
-        "eligible_assays": 71,
-        "confirmation_estimate": 0.113,
-        "reported_decimal_places": 3
+        "curve_estimates": [
+          {
+            "scheme": "3 levels",
+            "method": "AM",
+            "level": 0,
+            "mean": 0.392132648286412,
+            "low": 0.345004223391501,
+            "high": 0.43782432947703,
+            "n_assays": 71,
+            "n_proteins": 63,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "3 levels",
+            "method": "AM",
+            "level": 1,
+            "mean": 0.452219744727393,
+            "low": 0.412939621880882,
+            "high": 0.489557970792238,
+            "n_assays": 71,
+            "n_proteins": 63,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "3 levels",
+            "method": "AM",
+            "level": 2,
+            "mean": 0.490541466070181,
+            "low": 0.447693632669349,
+            "high": 0.530759511265288,
+            "n_assays": 71,
+            "n_proteins": 63,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "3 levels",
+            "method": "BLOSUM",
+            "level": 0,
+            "mean": 0.166396271094527,
+            "low": 0.142290665390268,
+            "high": 0.192259570629942,
+            "n_assays": 71,
+            "n_proteins": 63,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "3 levels",
+            "method": "BLOSUM",
+            "level": 1,
+            "mean": 0.226926752495088,
+            "low": 0.200022919514055,
+            "high": 0.253932330521144,
+            "n_assays": 71,
+            "n_proteins": 63,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "3 levels",
+            "method": "BLOSUM",
+            "level": 2,
+            "mean": 0.245345374797836,
+            "low": 0.218096634520182,
+            "high": 0.273030622429041,
+            "n_assays": 71,
+            "n_proteins": 63,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "3 levels",
+            "method": "PSSM",
+            "level": 0,
+            "mean": 0.272876203694534,
+            "low": 0.227452647559128,
+            "high": 0.317616892758941,
+            "n_assays": 71,
+            "n_proteins": 63,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "3 levels",
+            "method": "PSSM",
+            "level": 1,
+            "mean": 0.318556762041112,
+            "low": 0.280781758946484,
+            "high": 0.358534457447546,
+            "n_assays": 71,
+            "n_proteins": 63,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "3 levels",
+            "method": "PSSM",
+            "level": 2,
+            "mean": 0.387861477531333,
+            "low": 0.350504773320836,
+            "high": 0.425494211661771,
+            "n_assays": 71,
+            "n_proteins": 63,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "AM",
+            "level": 0,
+            "mean": 0.351256600482804,
+            "low": 0.303447196465157,
+            "high": 0.399018954130369,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "AM",
+            "level": 1,
+            "mean": 0.437711567806162,
+            "low": 0.393356382293777,
+            "high": 0.480335391192388,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "AM",
+            "level": 2,
+            "mean": 0.466161333986299,
+            "low": 0.416723871135438,
+            "high": 0.512494752585809,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "AM",
+            "level": 3,
+            "mean": 0.466239370978325,
+            "low": 0.423956178604202,
+            "high": 0.50766404127993,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "AM",
+            "level": 4,
+            "mean": 0.490291538495785,
+            "low": 0.439050261171227,
+            "high": 0.537385640310617,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "BLOSUM",
+            "level": 0,
+            "mean": 0.156180000957086,
+            "low": 0.130025697669331,
+            "high": 0.183736969444237,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "BLOSUM",
+            "level": 1,
+            "mean": 0.202211453794524,
+            "low": 0.171499057441371,
+            "high": 0.234191680600939,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "BLOSUM",
+            "level": 2,
+            "mean": 0.236203710733485,
+            "low": 0.208654752773036,
+            "high": 0.265138434997451,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "BLOSUM",
+            "level": 3,
+            "mean": 0.228782577968378,
+            "low": 0.204198084761338,
+            "high": 0.252855133478773,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "BLOSUM",
+            "level": 4,
+            "mean": 0.249419322371958,
+            "low": 0.219287374105658,
+            "high": 0.278835891721604,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "PSSM",
+            "level": 0,
+            "mean": 0.25530287264428,
+            "low": 0.215538078052399,
+            "high": 0.296535649728205,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "PSSM",
+            "level": 1,
+            "mean": 0.319093768805305,
+            "low": 0.273580159768069,
+            "high": 0.365386432334489,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "PSSM",
+            "level": 2,
+            "mean": 0.312448606838846,
+            "low": 0.268511529222403,
+            "high": 0.35713445708302,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "PSSM",
+            "level": 3,
+            "mean": 0.354903649919302,
+            "low": 0.315340516152146,
+            "high": 0.393469897614272,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          },
+          {
+            "scheme": "5 levels",
+            "method": "PSSM",
+            "level": 4,
+            "mean": 0.39720621964501,
+            "low": 0.349088705726,
+            "high": 0.444511341964698,
+            "n_assays": 65,
+            "n_proteins": 57,
+            "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+            "limited_clusters": false
+          }
+        ],
+        "uncertainty": "protein-block percentile bootstrap of the assay-weighted mean; nominal protein-block sign-flip tests assume joint sign symmetry"
       },
-      "aggregation_and_uncertainty": "Paired high-minus-low effects average eligible assays with both extremes for all three predictors; 95% intervals bootstrap assays (5000 draws, seed 0). Values here retain the displayed precision."
+      "aggregation_and_uncertainty": "Arithmetic means of eligible assay-level absolute Spearman correlations and matched assay-level endpoint contrasts, preserving assay weighting. Percentile 95% intervals use 10,000 whole-protein bootstrap draws. Two-sided protein-block sign-flip tests use exact enumeration for at most 16 proteins or 50,000 Monte Carlo draws otherwise and assume joint sign symmetry within each protein. All assays of one protein move together; assay/protein counts and limited-cluster flags are reported. Intervals/tests are nominal and are not multiplicity-adjusted."
     },
     "insight": {
-      "interpretation": "The pooled within-assay association is positive and the confirmation estimate has the same direction. Comparator-specific evidence is reported separately; the statement is not a full protocol-completion claim.",
+      "interpretation": "The pooled protein-cluster interval supports a positive axis association within this panel. Nominal within-panel estimates using the corrected official-score join; reconstructed splits do not establish independence of original axis selection.",
       "comparator_contrasts": [
         {
+          "subset": "All",
+          "scheme": "3 levels",
           "comparison": "AM minus BLOSUM",
-          "estimate": 0.019,
-          "confidence_interval_95": [
-            -0.023,
-            0.062
-          ],
-          "interpretation": "no established positive difference beyond this reference",
-          "reported_decimal_places": 3
+          "mean": 0.019459714080459,
+          "low": -0.027804399296696,
+          "high": 0.064277035907224,
+          "n_assays": 71,
+          "n_proteins": 63,
+          "limited_clusters": false,
+          "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+          "sign_flip_p": 0.428091438171237,
+          "sign_flip_method": "Monte Carlo protein-block sign flip"
         },
         {
+          "subset": "All",
+          "scheme": "3 levels",
           "comparison": "AM minus PSSM",
-          "estimate": -0.017,
-          "confidence_interval_95": [
-            -0.05,
-            0.016
-          ],
-          "interpretation": "no established positive difference beyond this reference",
-          "reported_decimal_places": 3
+          "mean": -0.016576456053031,
+          "low": -0.050093883921896,
+          "high": 0.017475378974953,
+          "n_assays": 71,
+          "n_proteins": 63,
+          "limited_clusters": false,
+          "interval_method": "protein-block percentile bootstrap; assay-weighted mean",
+          "sign_flip_p": 0.344853102937941,
+          "sign_flip_method": "Monte Carlo protein-block sign flip"
         }
       ],
       "confirmation_scope": "Reported split results are part of this corrected reconstruction; they do not establish independence from historical selection."
     },
     "limitations": [
-      "This metadata was extracted from the existing executed notebook and its hash-bound receipt; the metadata update did not independently rerun the full workflow.",
+      "Protein-cluster uncertainty is conditional on this retained assay panel. The intervals are pointwise and do not correct for multiple exploratory comparisons.",
       "The published sample tables in the top-level dataset_split belong to the historical supporting implementation. Current membership and scored-table files are generated by the inline notebook.",
-      "A reconstruction on previously studied assays does not establish that the original axis selection was independent of confirmation outcomes.",
-      "The notebook association rule uses a positive pooled interval and a positive confirmation point estimate; this is not verification of every AutoSPECTRA closure requirement."
+      "A reconstruction on previously studied assays does not establish that the original axis selection was independent of confirmation outcomes."
     ],
     "notebook": "inline/alphamissense/am-opus-r1/test-03.ipynb",
     "execution_evidence": "inline/alphamissense/am-opus-r1/test-03.execution.json",
-    "notebook_sha256": "9ed7b8cbf74c203358cbe2d0a7d0d5d468a6df91ee6d801045ccbf0172bc98f6",
+    "notebook_sha256": "61d43ed3bac1b06c527a4d84911b154d0e701cd39bc9342ba229a67f4958a9a0",
     "result_location": {
       "notebook": "inline/alphamissense/am-opus-r1/test-03.ipynb",
       "section": 6,
       "description": "Calculated decision and explanation displayed by this notebook."
     },
-    "interpretation_review": {
-      "scope": "Individual notebook prose, calculations and saved outputs reviewed; no fresh inference or complete scientific reexecution.",
-      "notes": "Read the reviewed Markdown beside the saved outputs; saved code-generated labels do not supersede the stated limitations.",
-      "presentation_record": "review_20261115/presentation/am-opus-r1-test-03.revision.json"
+    "verification_boundary": "Every visible code cell was executed from four checksum-pinned public raw sources, including the official corrected-position AlphaMissense score join. No fresh model inference or audit-specific fine-tuning. Protein clustering changes uncertainty and its interpretation; reconstructed partitions remain within the original fixed panel. The combined current_results.json is assembled directly from each notebook's exported CURRENT_RESULTS.json by corrections/dependence_20261116/alphamissense/build_current_results.py. This full raw reconstruction is not claimed to reproduce historical floating-point values byte for byte.",
+    "scientific_correction": {
+      "record": "corrections/dependence_20261116/records/am-opus-r1-test-03.scientific-revision.json",
+      "execution_scope": "full_notebook_reexecuted",
+      "summary": "Reexecuted all code cells with protein-aware uncertainty and the corrected 273,135-variant score join; original assay weighting and axis definitions are retained. Historical-to-current numerical replay differences are reported separately."
     }
   },
   "scientific_record_scope": {

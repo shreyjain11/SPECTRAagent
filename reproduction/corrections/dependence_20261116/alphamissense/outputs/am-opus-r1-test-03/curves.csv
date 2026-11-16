@@ -1,0 +1,25 @@
+scheme,method,level,mean,low,high,n_assays,n_proteins,interval_method,limited_clusters
+3 levels,AM,0,0.39213264828641237,0.3450042233915014,0.43782432947703026,71,63,protein-block percentile bootstrap; assay-weighted mean,False
+3 levels,AM,1,0.4522197447273932,0.4129396218808821,0.48955797079223784,71,63,protein-block percentile bootstrap; assay-weighted mean,False
+3 levels,AM,2,0.4905414660701808,0.4476936326693489,0.5307595112652878,71,63,protein-block percentile bootstrap; assay-weighted mean,False
+3 levels,BLOSUM,0,0.16639627109452687,0.14229066539026802,0.19225957062994228,71,63,protein-block percentile bootstrap; assay-weighted mean,False
+3 levels,BLOSUM,1,0.22692675249508779,0.20002291951405501,0.25393233052114383,71,63,protein-block percentile bootstrap; assay-weighted mean,False
+3 levels,BLOSUM,2,0.2453453747978359,0.21809663452018188,0.2730306224290412,71,63,protein-block percentile bootstrap; assay-weighted mean,False
+3 levels,PSSM,0,0.27287620369453414,0.22745264755912817,0.31761689275894056,71,63,protein-block percentile bootstrap; assay-weighted mean,False
+3 levels,PSSM,1,0.31855676204111166,0.2807817589464843,0.35853445744754586,71,63,protein-block percentile bootstrap; assay-weighted mean,False
+3 levels,PSSM,2,0.3878614775313332,0.35050477332083574,0.4254942116617709,71,63,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,AM,0,0.3512566004828043,0.303447196465157,0.3990189541303687,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,AM,1,0.437711567806162,0.3933563822937772,0.4803353911923882,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,AM,2,0.46616133398629883,0.4167238711354375,0.5124947525858087,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,AM,3,0.4662393709783251,0.42395617860420187,0.5076640412799297,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,AM,4,0.49029153849578544,0.439050261171227,0.5373856403106173,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,BLOSUM,0,0.15618000095708612,0.1300256976693313,0.18373696944423706,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,BLOSUM,1,0.20221145379452415,0.17149905744137076,0.23419168060093928,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,BLOSUM,2,0.23620371073348453,0.2086547527730358,0.26513843499745093,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,BLOSUM,3,0.22878257796837798,0.20419808476133786,0.2528551334787728,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,BLOSUM,4,0.2494193223719581,0.21928737410565816,0.2788358917216044,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,PSSM,0,0.25530287264427987,0.2155380780523989,0.2965356497282047,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,PSSM,1,0.31909376880530455,0.27358015976806854,0.3653864323344888,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,PSSM,2,0.3124486068388462,0.2685115292224031,0.3571344570830199,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,PSSM,3,0.3549036499193019,0.31534051615214603,0.3934698976142725,65,57,protein-block percentile bootstrap; assay-weighted mean,False
+5 levels,PSSM,4,0.39720621964500985,0.3490887057259995,0.4445113419646975,65,57,protein-block percentile bootstrap; assay-weighted mean,False

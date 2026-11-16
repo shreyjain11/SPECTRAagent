@@ -1,0 +1,115 @@
+{
+  "verified_at_utc": "2026-11-16T13:30:58.570282+00:00",
+  "analysis_id": "state-featured/test-03",
+  "verification_python": "3.13.2 | packaged by conda-forge | (main, Feb 17 2025, 14:02:48) [Clang 18.1.8 ]",
+  "verification_driver_sha256": "9b79fbb3d4f89af0071fdee6b04f85b1db8927394c42bc96f00fdb63a62a0d48",
+  "plan_sha256": "4927b9321160c16f101f17f28aad0d919a5f2fdc7418f6d771873ef391f06225",
+  "original_notebook_sha256": "e03d6f4570a7766c9e2e6655e0b802283c109069853de3c191d13dce82f52313",
+  "corrected_executed_notebook_sha256": "3c52c5a5e89afbcd210576182e0ef7b8ed58e67a3c57f8faa8d6e43278db58e0",
+  "all_13_code_cells_executed_in_fresh_kernel": true,
+  "six_sections_have_executed_code": true,
+  "no_error_outputs": true,
+  "changed_source_cells": [
+    0,
+    15,
+    16,
+    18,
+    19,
+    20,
+    21
+  ],
+  "unchanged_outputs": {
+    "per_condition_results.csv": {
+      "sha256": "f48cdf97b979bbd8a8ac4078ba9120ccdb6070e8399afbff571ea52dab7cb6bf",
+      "bytes": 5535401,
+      "before_equals_after": true
+    },
+    "curve.csv": {
+      "sha256": "8ef290f069f5182e16382c852bdd6ca4f91bb43a16f14dad1e7485bbf3034b16",
+      "bytes": 3353,
+      "before_equals_after": true
+    },
+    "trends.csv": {
+      "sha256": "f7d02dde98588018eeef7f331d0c0eca28b732c6d7fb73841ed70c8a7af5368b",
+      "bytes": 606,
+      "before_equals_after": true
+    },
+    "context_trends.csv": {
+      "sha256": "09fa69d2b3f8cc6f87dedb02f722c40346513d4eebb19682e9d2d3892ca72d73",
+      "bytes": 875,
+      "before_equals_after": true
+    },
+    "curve.png": {
+      "sha256": "ca8b651b849c52215bda4eb691e28781eba9c26e8ac9ec968ce973cad3081e70",
+      "bytes": 123132,
+      "before_equals_after": true
+    }
+  },
+  "verified_public_input_files": 22,
+  "bootstrap_checks": [
+    {
+      "subset": "confirmation_jurkat_rpe1",
+      "representation": "HVG",
+      "point_estimate_unchanged": true,
+      "all_2000_draws_match_independent_expanded_blocks": true,
+      "rows": 1753,
+      "gene_clusters": 1222,
+      "genes_in_both_levels": 99,
+      "genes_in_multiple_contexts": 531,
+      "finite_draws": 2000,
+      "ci_low": 0.07387484997332494,
+      "ci_high": 0.11909816483889854,
+      "point": 0.09602716346727133
+    },
+    {
+      "subset": "confirmation_jurkat_rpe1",
+      "representation": "SE",
+      "point_estimate_unchanged": true,
+      "all_2000_draws_match_independent_expanded_blocks": true,
+      "rows": 1753,
+      "gene_clusters": 1222,
+      "genes_in_both_levels": 99,
+      "genes_in_multiple_contexts": 531,
+      "finite_draws": 2000,
+      "ci_low": 0.0624765327077393,
+      "ci_high": 0.10595101615547031,
+      "point": 0.0842760864423546
+    },
+    {
+      "subset": "discovery_hepg2_k562",
+      "representation": "HVG",
+      "point_estimate_unchanged": true,
+      "all_2000_draws_match_independent_expanded_blocks": true,
+      "rows": 1567,
+      "gene_clusters": 1147,
+      "genes_in_both_levels": 100,
+      "genes_in_multiple_contexts": 420,
+      "finite_draws": 2000,
+      "ci_low": 0.09283293395439099,
+      "ci_high": 0.14117047971286734,
+      "point": 0.11751604098000609
+    },
+    {
+      "subset": "discovery_hepg2_k562",
+      "representation": "SE",
+      "point_estimate_unchanged": true,
+      "all_2000_draws_match_independent_expanded_blocks": true,
+      "rows": 1567,
+      "gene_clusters": 1147,
+      "genes_in_both_levels": 100,
+      "genes_in_multiple_contexts": 420,
+      "finite_draws": 2000,
+      "ci_low": 0.07517144423917083,
+      "ci_high": 0.12140982119579176,
+      "point": 0.09833356560700879
+    }
+  ],
+  "interpretation_uses_annotated_gene_intervals": true,
+  "limits": [
+    "Two populated annotated levels, not three or more informative similarity levels",
+    "Intervals conditional on fixed contexts, reference and annotations",
+    "Reconstructed training reference; not recovered original training manifest",
+    "Computational correction of released scores, not new inference or new prospective confirmation",
+    "Separate representation-specific intervals; no combined or simultaneous inference across representations"
+  ]
+}

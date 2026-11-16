@@ -26,6 +26,41 @@ def output_text(output):
     return ''.join(output.get('text', data.get('text/markdown', data.get('text/plain', []))))
 
 
+def verified_json(root, artifact):
+    path = (root / artifact['path']).resolve()
+    assert path.is_relative_to(root.resolve()), 'Artifact escapes repository'
+    assert digest(path) == artifact['sha256'], artifact['path']
+    return json.loads(path.read_text())
+
+
+def before_scientific_revisions(root, receipt):
+    """Recover the preserved presentation boundary without using current hashes."""
+    seen = set()
+    while receipt.get('scientific_revision'):
+        item = receipt['scientific_revision']['previous_execution_evidence']
+        assert item['path'] not in seen, 'Cyclic scientific history'
+        seen.add(item['path'])
+        receipt = verified_json(root, item)
+    return receipt
+
+
+def check_statistical_summary(root, identifier, current, receipt):
+    """Bind current quantitative metadata to the executed correction outputs."""
+    source = current['evidence']['statistical_result']
+    summary = verified_json(root, source)[identifier]
+    revision = verified_json(root, receipt['scientific_revision']['record'])
+    matching = [a for a in revision['output_artifacts']
+                if a['path'] == source['path'] and a['sha256'] == source['sha256']]
+    assert len(matching) == 1, 'Statistical summary is not a recorded correction output'
+    assert current['curve']['reported_result'] == summary['reported_result'], identifier
+    assert current['curve']['aggregation_and_uncertainty'] == summary['aggregation_and_uncertainty'], identifier
+    for key in ['comparator_contrasts', 'interpretation']:
+        assert current['insight'][key] == summary[key], (identifier, key)
+    assert current['insight'].get('adjusted_controls') == summary.get('adjusted_controls'), identifier
+    assert current['evidence']['verification_method'].strip()
+    return summary
+
+
 def verify(root=ROOT):
     checked = []
     for identifier, expected_historical_hash in EXPECTED_PRESERVED_SHA256.items():
@@ -33,7 +68,8 @@ def verify(root=ROOT):
         preserved = {key: record[key] for key in PRESERVED}
         implementation = record['inline_implementation']
         receipt = json.loads((root / implementation['execution_evidence']).read_text())
-        revision = receipt.get('presentation_revision', {}).get('correction_record')
+        historical_receipt = before_scientific_revisions(root, receipt)
+        revision = historical_receipt.get('presentation_revision', {}).get('correction_record')
         if revision:
             assert digest(root / revision['path']) == revision['sha256']
             change = json.loads((root / revision['path']).read_text())
@@ -42,8 +78,9 @@ def verify(root=ROOT):
                 assert digest(root / snapshot['path']) == snapshot['sha256']
                 previous = json.loads((root / snapshot['path']).read_text())
                 mutable_hashes = {'published_notebook_sha256', 'published_html_sha256'}
-                assert {k: v for k, v in implementation.items() if k not in mutable_hashes} == {
-                    k: v for k, v in previous.items() if k not in mutable_hashes}
+                if not receipt.get('scientific_revision'):
+                    assert {k: v for k, v in implementation.items() if k not in mutable_hashes} == {
+                        k: v for k, v in previous.items() if k not in mutable_hashes}
                 # The historical metadata is immutable; only the current
                 # presentation hashes move. The main validator separately
                 # verifies unchanged scientific cells and their saved outputs.
@@ -90,7 +127,9 @@ def verify(root=ROOT):
                        if cell['cell_type'] == 'markdown' and ''.join(cell['source']).startswith('## 6'))
         results = [text.strip() for index, text in outputs if index > section and text.strip()]
         reported = current['curve']['reported_result']
-        if identifier.endswith('test-02'):
+        if receipt.get('scientific_revision'):
+            check_statistical_summary(root, identifier, current, receipt)
+        elif identifier.endswith('test-02'):
             controls = next(text for _, text in outputs
                             if 'Excluding stability' in text and 'n_assays' in text and 'rho' in text)
             expected = [{'subset': name, 'assays': int(n), 'rho': float(rho), 'p': float(p)}

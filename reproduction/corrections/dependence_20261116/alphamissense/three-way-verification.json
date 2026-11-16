@@ -1,0 +1,77 @@
+{
+  "scope": "The protein-dependence correction leaves current reconstructed point estimates and assay eligibility unchanged. Historical display differences also appear in the unmodified full replay; their exact original-platform cause is not identified.",
+  "analyses": [
+    {
+      "analysis_id": "am-opus-r1/test-01",
+      "unmodified_original_full_replay": true,
+      "same_pinned_public_inputs_and_current_environment": true,
+      "checks": [
+        {
+          "table": "assay_level_scores.csv",
+          "exact_dataframe_equal": true,
+          "rows": 535
+        },
+        {
+          "table": "input_processing_counts.csv",
+          "exact_dataframe_equal": true,
+          "rows": 73
+        },
+        {
+          "table": "released_score_position_mapping.csv",
+          "exact_dataframe_equal": true,
+          "rows": 73
+        },
+        {
+          "table": "curves.csv",
+          "rows": 24,
+          "max_mean_difference_original_replay_to_correction": 0.0,
+          "identical_assay_counts": true,
+          "historical_comparison": "historical displayed precision only; no full original Nov9 assay outputs available"
+        },
+        {
+          "table": "paired_effects.csv",
+          "rows": 50,
+          "max_mean_difference_original_replay_to_correction": 0.0,
+          "identical_assay_counts": true,
+          "historical_comparison": "historical displayed precision only; no full original Nov9 assay outputs available"
+        }
+      ]
+    },
+    {
+      "analysis_id": "am-opus-r1/test-03",
+      "unmodified_original_full_replay": true,
+      "same_pinned_public_inputs_and_current_environment": true,
+      "checks": [
+        {
+          "table": "assay_level_scores.csv",
+          "exact_dataframe_equal": true,
+          "rows": 538
+        },
+        {
+          "table": "input_processing_counts.csv",
+          "exact_dataframe_equal": true,
+          "rows": 73
+        },
+        {
+          "table": "released_score_position_mapping.csv",
+          "exact_dataframe_equal": true,
+          "rows": 73
+        },
+        {
+          "table": "curves.csv",
+          "rows": 24,
+          "max_mean_difference_original_replay_to_correction": 0.0,
+          "identical_assay_counts": true,
+          "historical_comparison": "historical displayed precision only; no full original Nov9 assay outputs available"
+        },
+        {
+          "table": "paired_effects.csv",
+          "rows": 50,
+          "max_mean_difference_original_replay_to_correction": 0.0,
+          "identical_assay_counts": true,
+          "historical_comparison": "historical displayed precision only; no full original Nov9 assay outputs available"
+        }
+      ]
+    }
+  ]
+}

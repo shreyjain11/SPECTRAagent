@@ -1,0 +1,44 @@
+{
+  "analysis_id": "am-opus-r1-test-03",
+  "checked_at_utc": "2026-11-16T13:39:55.180300+00:00",
+  "method": "Independently compute statistics from exported individual assay/control rows. Bootstrap weights apply to original rows; sign flips independently apply to individual assay contrasts; Spearman uses independently centered tied ranks; regression uses full explicit assay dummy design in statsmodels.",
+  "files": {
+    "before-after-curves.csv": "f9e6b1613a334c75bff5e0239b488f48ed0b11abecebca9fb9c784630782fdc8",
+    "released_score_position_mapping.csv": "308a180cf17556562486a973fdcf5dfed2329bff1aa3bbb196d3f4e54c9dde43",
+    "paired_effects.csv": "23feaa91dacafae58b1f2ed2c315385d010773f1242dc831d2a6ee089cc11d2b",
+    "before-after-paired_effects.csv": "43bff47cf265f8bae0ffd2d3dd739074d409ee4d7605c76950e8ac0700cce556",
+    "assay_level_scores.csv": "e09f4545974bd7e4425cf4ad5a2e930578489688cfbdefdab31cee2bc3cdbabb",
+    "curves.csv": "91244f60841c2366de7ff81c588f07dc6ef890e36db648137ee32664b93e8264",
+    "input_processing_counts.csv": "804084efdd19ebf59cfa08d7075e61d70aa5b967e287ab661c4cd5db8f87bd86"
+  },
+  "checks": {
+    "curve_points": 24,
+    "paired_comparisons": 50,
+    "bootstrap_draws_per_statistic": 10000,
+    "all_cluster_intervals_counts_and_sign_flip_tests_reproduced": true,
+    "split_protein_disjoint": true,
+    "pooled_AM_effects": [
+      {
+        "scheme": "3 levels",
+        "mean": 0.09840881778376843,
+        "ci95": [
+          0.04171955059474711,
+          0.15083093008379325
+        ],
+        "assays": 71,
+        "proteins": 63
+      },
+      {
+        "scheme": "5 levels",
+        "mean": 0.13903493801298109,
+        "ci95": [
+          0.07628078612993547,
+          0.19661784699258672
+        ],
+        "assays": 65,
+        "proteins": 57
+      }
+    ]
+  },
+  "issues": []
+}

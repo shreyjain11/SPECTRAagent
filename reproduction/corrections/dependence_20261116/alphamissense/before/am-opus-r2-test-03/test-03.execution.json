@@ -1,0 +1,103 @@
+{
+  "analysis_id": "am-opus-r2/test-03",
+  "notebook": "inline/alphamissense/am-opus-r2/test-03.ipynb",
+  "html": "inline/alphamissense/am-opus-r2/test-03.html",
+  "completed": true,
+  "host": "exxact05.broadinstitute.org",
+  "code_cells": 13,
+  "executed_cells": 13,
+  "errors": 0,
+  "notebook_sha256": "7d1954cb39c3c7489651b3afbabec82b0fef05f223ee50b922653f5bf9bfa01b",
+  "html_sha256": "2c28c9e9fdb86bf19c407328785553349effc38807fd763ea9b6d5c6ce0fe742",
+  "sections": [
+    {
+      "number": 1,
+      "heading": "## 1. Data source / acquisition",
+      "markdown_cell": 1,
+      "code_cells": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "## 2. Data processing",
+      "markdown_cell": 5,
+      "code_cells": [
+        6,
+        8
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "## 3. Axis definition and level construction",
+      "markdown_cell": 9,
+      "code_cells": [
+        11
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "## 4. Model results or released scores",
+      "markdown_cell": 12,
+      "code_cells": [
+        13,
+        15,
+        16
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "## 5. Curves and controls",
+      "markdown_cell": 17,
+      "code_cells": [
+        19,
+        21
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "## 6. Decision and reason",
+      "markdown_cell": 22,
+      "code_cells": [
+        23,
+        24
+      ]
+    }
+  ],
+  "cell_index_base": 0,
+  "execution_evidence_source_sha256": "afb3afd458e8da5388de20cefdf628b0dbfaf77b646348930050382405906581",
+  "execution_evidence_entry_id": "am-opus-r2/test-03",
+  "embedded_figures": 1,
+  "checks": [
+    "notebook_and_html_hash_match_execution_evidence",
+    "all_code_cells_executed",
+    "no_error_outputs",
+    "six_sections_and_executed_inline_code",
+    "inline_code_static_check"
+  ],
+  "result_location": {
+    "section": 6,
+    "code_cells": [
+      23,
+      24
+    ]
+  },
+  "input_manifests": [],
+  "elapsed_seconds": 180.185,
+  "python": "/ewsc/yektefai/spectra_runs/all_axes_inline_20261109/state/state-featured/.venv/bin/python",
+  "calculation_evidence": [],
+  "presentation_revision": {
+    "scientific_reexecution": false,
+    "original_execution_evidence": {
+      "path": "review_20261115/presentation/am-opus-r2-test-03.previous-execution.json",
+      "sha256": "efc4d9b1a9571ff8210f3547568d9310ebcdf3b2d88149f33a0b9608acb7cbcb"
+    },
+    "correction_record": {
+      "path": "review_20261115/presentation/am-opus-r2-test-03.revision.json",
+      "sha256": "c3a00b42bcf8f87bcd996c8830a9b35a72bf079256d9d8f590373834db4632a0"
+    }
+  },
+  "presentation_note": "The original execution is retained separately. This revision changes explanatory Markdown and HTML layout; scientific code, saved numbers and figures are unchanged."
+}

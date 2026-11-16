@@ -1,6 +1,6 @@
 # Individual notebook review — November 15, 2026
 
-**Subsequent calculation fixes:** the fixable STATE and AlphaMissense issues identified below were corrected and rerun in [21 notebooks](../corrections/scientific_20261115/README.md). This ledger describes the earlier review; the linked correction records contain the current calculations and exact execution scope.
+**Subsequent calculation fixes:** [21 notebook corrections](../corrections/scientific_20261115/README.md) were followed by [seven dependence corrections](../corrections/dependence_20261116/README.md) for AlphaMissense Opus and STATE primary test 03. This ledger describes the earlier review; the linked correction records contain the current calculations and exact execution scope. Neither the review nor these corrections certify every scientific conclusion.
 
 The [combined ledger](all-143-entry-review.json) covers **all 143 entries in 28 investigations**, using the canonical IDs in [the reproduction index](../index.json). It preserves the full findings and metadata from each model's review; each entry's original review is under `review`.
 
